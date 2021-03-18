@@ -148,7 +148,7 @@ function htmlTemplate() {
             prefix: '@@',
             basepath: '@file'
         }))
-        .pipe(dest('./'))
+        .pipe(dest('./dist'))
 }
 
 exports.html = htmlTemplate;
