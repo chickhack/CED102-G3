@@ -29,7 +29,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "開發": "gulp browser",
     "合併CSS": "gulp concat",
-    "合併HTML":"gulp htmlall",
+    "合併HTML":"gulp html",
     "合併scss": "gulp style"
   },
   "author": "",
