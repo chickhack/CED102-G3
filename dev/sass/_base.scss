@@ -28,8 +28,8 @@ $fontScale: (
 
 // 字行距
 $lineHeight: (
-    "high": 50,
-    "low" : 32
+    "high": 50px,
+    "low" : 32px,
 );
 
 @each $k, $v in $lineHeight{

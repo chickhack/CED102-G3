@@ -1,7 +1,10 @@
 body{
-    background-color:#0c0d18 ;
-    color:#C9ADA7;
+    font-family:"Haettenschweiler","Microsoft JhengHei", sans-serif;
+    color: $pink;
+    background-color:$darkblue;
+    font-size: 14px;
 }
+
 img{
     display: block;
 }
@@ -31,14 +34,17 @@ img.jupiter{
 }
 
 img.jupiter_a1{
-    height:350px;
+    max-width:280px;
     
 }
 
 div.word{
 position: absolute;
-  top: 185px;
-  left: 100px;
+  top: 190px;
+  left: 95px;
+}
+h3{
+    font-weight: bold;
 }
 
 div.price{
@@ -49,9 +55,5 @@ div.price{
     position: relative;
 }
 
-img.card{
-    height:150px;
-    top:20px;
-    left: 43px; 
-}
+
 
