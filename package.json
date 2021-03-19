@@ -8,13 +8,13 @@
     "renew": "更新dist每次pull下來時",
     "watch": "執行監聽開始開發時",
     "browser": "同步檢視更新"
-},
-"scripts": {
+  },
+  "scripts": {
     "dev": "npm install",
     "renew": "gulp u",
     "watch": "gulp w",
     "browser": "gulp browser"
-},
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sexfat/ced102.git"
