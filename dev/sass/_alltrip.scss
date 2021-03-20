@@ -1,59 +1,126 @@
-body{
-    font-family:"Haettenschweiler","Microsoft JhengHei", sans-serif;
+body {
+    font-family: "Haettenschweiler", "Microsoft JhengHei", sans-serif;
     color: $pink;
-    background-color:$darkblue;
+    background-color: $darkblue;
     font-size: 14px;
 }
 
-img{
+div.bk {
+    width: 500px;
+    height: 500px;
+    // border:1px solid red;
+    position: absolute;
+    left: 250px;
+    top: 50px;
+}
+
+
+// <!-- ----------first -->
+
+.hottrip {
+    display: inline-flex;
+    padding-bottom: 150px;
+}
+
+img {
     display: block;
 }
 
-h1.title{
+h2.title {
     display: inline-block;
-    padding-left: 200px;
     padding-right: 50px;
     position: relative;
+    vertical-align: top;
+    top: 200px;
+    letter-spacing: 10px;
+    font-size: 32px;
 }
 
-.hottrip{
-    display: inline-flex;
-   
-}
-div.jupiter_top{
-    position: relative;
-    padding-top: 100px;
-    text-align: center;
-    margin: 30px;
-}
-img.jupiter{
-    height:160px;
-    position: absolute;
-    top:20px;
-    left: 65px; 
-}
-
-img.jupiter_a1{
-    max-width:280px;
-    
-}
-
-div.word{
-position: absolute;
-  top: 190px;
-  left: 95px;
-}
-h3{
+h3 {
     font-weight: bold;
 }
 
-div.price{
-    background-color: #AD6E4A;
-    padding:8px;
-    width: 100px;
-    margin:0px auto;
+div.planet_top {
     position: relative;
+    padding-top: 100px;
+    text-align: center;
+    margin: 20px;
+}
+
+img.planet {
+    height: 160px;
+    position: absolute;
+    top: 20px;
+    left: 65px;
+}
+
+img.planet_a1 {
+    max-width: 280px;
+}
+
+div.word {
+    position: absolute;
+    top: 190px;
+    left: 95px;
+}
+
+div.price {
+    background-color: #AD6E4A;
+    letter-spacing: 3px;
+    padding: 8px;
+    width: 100px;
+    margin: 0px auto;
+    position: relative;
+    top: -36px;
+}
+
+// <!-- ---------分隔線 -->
+
+hr {
+    border: none;
+    width: 55%;
+    margin: 0 auto;
+    border-top: 1px solid $gold;
+    height: 0;
 }
 
 
+// <!-- ---------second -->
 
+.second {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.mars {
+    display: inline-flex;
+}
+
+div.planet2 {
+    position: relative;
+    text-align: center;
+    margin-right: 50px;
+}
+
+div.planet2_pic {
+    margin-bottom: 0;
+}
+
+
+h2 {
+    font-weight: bold;
+}
+
+img.planet2_pic {
+    max-width: 240px;
+}
+
+div.price2 {
+    background-color: #AD6E4A;
+    letter-spacing: 3px;
+    padding: 8px;
+    width: 100px;
+    position: relative;
+    top: -36px;
+    left: 70px;
+}
