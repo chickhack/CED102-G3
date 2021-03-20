@@ -619,7 +619,9 @@ ul.tab-title li.selected {
   font-size: 48px;
 }
 
-img.trippic {
-  max-width: 500px;
+.grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=all.css.map */
