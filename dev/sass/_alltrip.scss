@@ -15,6 +15,27 @@ div.bk {
     opacity: 0.6;
 }
 
+div.bk2 {
+    width: 1300px;
+    height: 1300px;
+    // border:1px solid red;
+    position: absolute;
+    left:50px;
+    top: 650px;
+    opacity: 0.03;
+    transform:rotate(90deg);
+}
+
+div.bk3 {
+    width: 300px;
+    height: 300px;
+    // border:1px solid red;
+    position: absolute;
+    left: -120px;
+    top: 400px;
+    opacity: 0.3;
+}
+
 .border{
     border: 1px solid $gold;
     margin:0px auto;
@@ -102,6 +123,7 @@ div.price {
 .select{
     position: relative;
     bottom:4px;
+    color: $gold;
 
 }
 .tripselect{
@@ -113,7 +135,10 @@ div.price {
 .icon{
     width:25px;
     cursor: pointer;
+    z-index: 2;
 }
+
+
 
 // <!-- ---------分隔線 -->
 
@@ -131,6 +156,12 @@ hr {
 .second {
     width: 60%;
     margin: 0 auto;
+    padding-top: 150px;
+    padding-bottom:150px;
+}
+.alltrip{
+    margin: 0 auto;
+    text-align: center;
 }
 
 .mars {
@@ -160,4 +191,26 @@ div.price2 {
     position: relative;
     top: -36px;
     left: 70px;
+}
+
+.word2{
+    position: relative;
+    top: -25px;
+
+}
+
+.word2_name{
+    font-weight: bold;
+    color: $gold;
+    letter-spacing: 3px;
+    font-size: 16px;
+}
+
+.word2_tag{
+    border: 1px solid $pink;
+    // border-radius:5px;
+    width: 50px;
+    margin: 0 auto;
+    color: $pink;
+    font-size: 14px;
 }
