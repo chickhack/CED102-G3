@@ -13,13 +13,14 @@
     <header>
         @@include('./layout/header.html')
     </header>
+    <!-- <div class="border padding_left_9"></div> -->
     <div class="bk">
         <img src="../dev/img/trip/bk.png">
     </div>
     <!-- ----------first -->
-    <div class="first padding_top_3">
-        <h2 class="title line_high padding_left_9 h2">親眼見證宇宙世界<br> 改變你的內在世界</h2>
-        <div class="hottrip padding_top_10">
+    <div class="first ">
+        <h2 class="title line_high h1"><span class="h4">下訂即能出發，最短一天就能</span><br>讓你親眼見證宇宙<br> 改變你的內在世界</h2>
+        <div class="hottrip">
             <div class="planet_top">
                 <img class="planet" src="../dev/img/trip/moon.png" alt="jupiter">
                 <img class="planet_a1" src="../dev/img/trip/trip_moon/moon_a1_ps.png" alt="jupitertrip">
@@ -29,7 +30,12 @@
                     <h4>初階</h4>
                 </div>
                 <div class="price h3">$2000</div>
-                <div class="h3 padding_top_3">精選星球景點</div>
+                <div class="tripselect">
+                    <img class="icon" src="../dev/img/icon/left.png" alt="">
+                    <div class="h4 padding_top_1 select">精選星球景點</div>
+                    <img src="../dev/img/icon/right.png" alt="" class="icon">
+                </div>
+            
             </div>
             <div class="planet_top">
                 <img class="planet" src="../dev/img/trip/jupiter.png" alt="jupiter">
@@ -54,7 +60,7 @@
         </div>
     </div>
 
-   
+
     <!-- ---------分隔線 -->
     <hr class="padding_top_3">
 
@@ -149,6 +155,7 @@
     <footer>
         @@include('./layout/footer.html')
     </footer>
+
 </body>
 
 </html>
