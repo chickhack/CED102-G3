@@ -23,10 +23,10 @@
     @@include('./layout/header.html')
     <div class="container-fluid">
       <div class="col-12" id="tab" align="center">
-          <div class="col-10" id="frame">
+          <div class="col-10 frame">
             <div class="title">星星世界</div>
             <ul class="tab-title">
-              <li><a href="tab01">火星</a></li>
+              <li class="selected"><a href="tab01">火星</a></li>
               <li><a href="tab02">月球</a></li>
               <li><a href="tab03">土星</a></li>
               <li><a href="tab04">木星</a></li>
@@ -34,13 +34,29 @@
               <li><a href="tab04">木星</a></li>
               <li><a href="tab04">木星</a></li>
             </ul>
-          <div id="tab01" class="tab-inner">
-              <p>火星</p>
+          <div id="tab01" class="col-10 tab-inner">
+            <div class="desc col-5 ">
+              <h3>火星</h3>
               <p>
                 火星大氣以二氧化碳為主，既稀薄又寒冷，其表面特徵讓人聯想起月球上的撞擊坑，以及地球上的山谷、沙漠和極地冰蓋。
               </p>
-              <canvas id="canvas" width="1000" height="800" style="border:1px solid grey"></canvas>
+            </div>
+            <div class="data col-5 ">
+              <div class="grav">
+                <p>38%</p>
+                <p>重力</p>
+              </div>
+              <div class="day">
+                <p>24hr</p>
+                <p>一天</p>
+              </div>
+              <div class="temp">
+                <p>-60F</p>
+                <p>溫度</p>
+              </div>
+            </div>
           </div>
+          <canvas id="canvas" width="1000" height="800" style="border:1px solid grey"></canvas>
           <div class="col-6">
             <img src="../dev/img/planet/mars_1.jpg" />
             <img src="../dev/img/planet/mars_2.jpg" />
