@@ -1,0 +1,248 @@
+body {
+  font-family: "Haettenschweiler","Microsoft JhengHei", sans-serif;
+  color: #C9ADA7;
+  font-size: 14px;
+}
+
+h1, .h1 {
+  font-size: 42px;
+}
+
+h2, .h2 {
+  font-size: 32px;
+}
+
+h3, .h3 {
+  font-size: 20px;
+}
+
+p, .p {
+  font-size: 14px;
+}
+
+.line_high {
+  line-height: 50px;
+}
+
+.line_low {
+  line-height: 32px;
+}
+
+@font-face {
+  font-family: "Microsoft Yahei", "Haettenschweiler", sans-serif;
+  src: local("./fonts/msjh.ttc"), local("./fonts/msjhbd.ttc"), local("./fonts/HATTEN.TTF");
+}
+
+.padding_left_1 {
+  padding-left: 8px;
+}
+
+.padding_left_2 {
+  padding-left: 16px;
+}
+
+.padding_left_3 {
+  padding-left: 24px;
+}
+
+.padding_left_4 {
+  padding-left: 32px;
+}
+
+.padding_left_5 {
+  padding-left: 40px;
+}
+
+.padding_left_6 {
+  padding-left: 48px;
+}
+
+.padding_left_7 {
+  padding-left: 56px;
+}
+
+.padding_left_8 {
+  padding-left: 64px;
+}
+
+.padding_left_9 {
+  padding-left: 72px;
+}
+
+.padding_left_10 {
+  padding-left: 80px;
+}
+
+.padding_top_1 {
+  padding-top: 8px;
+}
+
+.padding_top_2 {
+  padding-top: 16px;
+}
+
+.padding_top_3 {
+  padding-top: 24px;
+}
+
+.padding_top_4 {
+  padding-top: 32px;
+}
+
+.padding_top_5 {
+  padding-top: 40px;
+}
+
+.padding_top_6 {
+  padding-top: 48px;
+}
+
+.padding_top_7 {
+  padding-top: 56px;
+}
+
+.padding_top_8 {
+  padding-top: 64px;
+}
+
+.padding_top_9 {
+  padding-top: 72px;
+}
+
+.padding_top_10 {
+  padding-top: 80px;
+}
+
+.margin_left_1 {
+  margin-left: 8px;
+}
+
+.margin_left_2 {
+  margin-left: 16px;
+}
+
+.margin_left_3 {
+  margin-left: 24px;
+}
+
+.margin_left_4 {
+  margin-left: 32px;
+}
+
+.margin_left_5 {
+  margin-left: 40px;
+}
+
+.margin_left_6 {
+  margin-left: 48px;
+}
+
+.margin_left_7 {
+  margin-left: 56px;
+}
+
+.margin_left_8 {
+  margin-left: 64px;
+}
+
+.margin_left_9 {
+  margin-left: 72px;
+}
+
+.margin_left_10 {
+  margin-left: 80px;
+}
+
+.margin_top_1 {
+  margin-top: 8px;
+}
+
+.margin_top_2 {
+  margin-top: 16px;
+}
+
+.margin_top_3 {
+  margin-top: 24px;
+}
+
+.margin_top_4 {
+  margin-top: 32px;
+}
+
+.margin_top_5 {
+  margin-top: 40px;
+}
+
+.margin_top_6 {
+  margin-top: 48px;
+}
+
+.margin_top_7 {
+  margin-top: 56px;
+}
+
+.margin_top_8 {
+  margin-top: 64px;
+}
+
+.margin_top_9 {
+  margin-top: 72px;
+}
+
+.margin_top_10 {
+  margin-top: 80px;
+}
+
+.button_large {
+  width: 150px;
+  padding: 15px;
+  text-align: center;
+  border: 1px solid #AD6E4A;
+}
+
+.button_min {
+  width: 100px;
+  padding: 15px;
+  text-align: center;
+  border: 1px solid #AD6E4A;
+}
+
+.icon {
+  max-width: 20px;
+}
+
+body {
+  font-family: "Haettenschweiler","Microsoft JhengHei", sans-serif;
+  color: #C9ADA7;
+  background-color: #0c0d18;
+  font-size: 14px;
+}
+
+.title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 20px;
+  font-size: 42px;
+}
+
+ul.tab-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+ul.tab-title li {
+  padding: 10px 40px;
+}
+
+ul.tab-title li a {
+  text-decoration: none;
+}
+/*# sourceMappingURL=planet.css.map */
