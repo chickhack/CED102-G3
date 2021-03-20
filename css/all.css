@@ -56,8 +56,12 @@ img {
 *,
 *:before,
 *:after {
+<<<<<<< HEAD
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
+=======
+  box-sizing: inherit;
+>>>>>>> bdcf168332cdf4c0b3a89e5f4ffe6bb1ccb87e84
   margin: 0;
   padding: 0;
 }
@@ -286,6 +290,7 @@ p, .p {
 }
 
 nav {
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -297,6 +302,12 @@ nav {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+=======
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+>>>>>>> bdcf168332cdf4c0b3a89e5f4ffe6bb1ccb87e84
   background-color: #0c0d18;
   position: fixed;
   width: 100%;
@@ -316,6 +327,7 @@ nav .logo h1 a {
 }
 
 nav .nav-links {
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -328,6 +340,12 @@ nav .nav-links {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+=======
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-end;
+>>>>>>> bdcf168332cdf4c0b3a89e5f4ffe6bb1ccb87e84
   width: 60%;
 }
 
@@ -336,6 +354,7 @@ nav .nav-links a {
 }
 
 nav .nav-icons {
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -347,6 +366,12 @@ nav .nav-icons {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+=======
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+>>>>>>> bdcf168332cdf4c0b3a89e5f4ffe6bb1ccb87e84
   width: 12%;
 }
 
@@ -377,6 +402,7 @@ footer .links .logo {
   max-width: 128px;
   position: relative;
   left: 50%;
+<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
@@ -398,6 +424,20 @@ footer .links .footer-links {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+=======
+  transform: translateX(-50%);
+}
+
+footer .links .footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  width: 70%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+>>>>>>> bdcf168332cdf4c0b3a89e5f4ffe6bb1ccb87e84
 }
 
 footer .links .footer-links a {
@@ -408,8 +448,12 @@ footer .footer_moon {
   position: relative;
   left: 50%;
   max-width: 350px;
+<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+=======
+  transform: translateX(-50%);
+>>>>>>> bdcf168332cdf4c0b3a89e5f4ffe6bb1ccb87e84
 }
 
 footer .smoke {
@@ -417,8 +461,12 @@ footer .smoke {
   left: 50%;
   bottom: 0;
   width: 100%;
+<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+=======
+  transform: translateX(-50%);
+>>>>>>> bdcf168332cdf4c0b3a89e5f4ffe6bb1ccb87e84
 }
 
 body {
@@ -438,8 +486,11 @@ h1.title {
 }
 
 .hottrip {
+<<<<<<< HEAD
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
+=======
+>>>>>>> bdcf168332cdf4c0b3a89e5f4ffe6bb1ccb87e84
   display: inline-flex;
 }
 
