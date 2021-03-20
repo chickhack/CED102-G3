@@ -4,21 +4,13 @@ body{
     background-color:$darkblue;
     font-size: 14px;
 }
-.test{
-    color:orange;
-
-}
-
-body{
-    font-family:"Haettenschweiler","Microsoft JhengHei", sans-serif;
-    color: $pink;
-    background-color:$darkblue;
-    font-size: 14px;
+#frame{
+    border: 1px solid $gold;
 }
 .title{
     display: flex;
     justify-content: center;
-    padding-top: 20px;
+    padding-top: 100px;
     font-size: 42px;
 }
 ul.tab-title{
