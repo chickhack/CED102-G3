@@ -400,13 +400,29 @@ div.bk {
   width: 500px;
   height: 500px;
   position: absolute;
-  left: 250px;
-  top: 50px;
+  left: 450px;
+  top: 60px;
+  opacity: 0.6;
+}
+
+.border {
+  border: 1px solid #AD6E4A;
+  margin: 0px auto;
+  width: 90%;
+  height: 100%;
+  top: 80px;
+  position: absolute;
+  opacity: 0.2;
+}
+
+.first {
+  padding-left: 150px;
 }
 
 .hottrip {
   display: inline-flex;
-  padding-bottom: 150px;
+  padding-top: 160px;
+  padding-bottom: 80px;
 }
 
 img {
@@ -415,12 +431,17 @@ img {
 
 h2.title {
   display: inline-block;
-  padding-right: 50px;
+  padding-right: 80px;
   position: relative;
   vertical-align: top;
   top: 100px;
   letter-spacing: 10px;
-  font-size: 32px;
+}
+
+span.h4 {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 10px;
 }
 
 h3 {

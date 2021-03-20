@@ -56,12 +56,8 @@ img {
 *,
 *:before,
 *:after {
-<<<<<<< HEAD
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
-=======
-  box-sizing: inherit;
->>>>>>> bdcf168332cdf4c0b3a89e5f4ffe6bb1ccb87e84
   margin: 0;
   padding: 0;
 }
