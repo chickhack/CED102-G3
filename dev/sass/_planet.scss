@@ -9,3 +9,28 @@ body{
 
 }
 
+body{
+    font-family:"Haettenschweiler","Microsoft JhengHei", sans-serif;
+    color: $pink;
+    background-color:$darkblue;
+    font-size: 14px;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    font-size: 42px;
+}
+ul.tab-title{
+    display: flex;
+    justify-content: center;
+    li{
+        padding: 10px 40px ;
+
+        a {
+            text-decoration: none;
+        }
+
+    }
+}
+

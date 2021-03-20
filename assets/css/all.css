@@ -457,4 +457,31 @@ body {
 .test {
   color: orange;
 }
+
+body {
+  font-family: "Haettenschweiler","Microsoft JhengHei", sans-serif;
+  color: #C9ADA7;
+  background-color: #0c0d18;
+  font-size: 14px;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  font-size: 42px;
+}
+
+ul.tab-title {
+  display: flex;
+  justify-content: center;
+}
+
+ul.tab-title li {
+  padding: 10px 40px;
+}
+
+ul.tab-title li a {
+  text-decoration: none;
+}
 /*# sourceMappingURL=all.css.map */
