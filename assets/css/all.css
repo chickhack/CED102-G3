@@ -94,11 +94,11 @@ p, .p {
 }
 
 .line_high {
-  line-height: 50;
+  line-height: 50px;
 }
 
 .line_low {
-  line-height: 32;
+  line-height: 32px;
 }
 
 @font-face {
@@ -299,7 +299,7 @@ nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-  background-image: url("../images/logo.png");
+  background-image: url("../img/logo.png");
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -345,7 +345,7 @@ footer {
 
 footer .links {
   position: absolute;
-  bottom: 10%;
+  bottom: 20%;
   width: 100%;
   z-index: 1;
 }
@@ -354,6 +354,7 @@ footer .links .logo {
   max-width: 128px;
   position: relative;
   left: 50%;
+  bottom: 50px;
   transform: translateX(-50%);
 }
 
@@ -362,9 +363,10 @@ footer .links .footer-links {
   justify-content: center;
   align-items: center;
   justify-content: space-around;
-  width: 70%;
+  width: 55%;
   position: relative;
   left: 50%;
+  bottom: 30px;
   transform: translateX(-50%);
 }
 
@@ -375,7 +377,7 @@ footer .links .footer-links a {
 footer .footer_moon {
   position: relative;
   left: 50%;
-  max-width: 350px;
+  max-width: 550px;
   transform: translateX(-50%);
 }
 
@@ -385,5 +387,74 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   transform: translateX(-50%);
+}
+
+body {
+  font-family: "Haettenschweiler","Microsoft JhengHei", sans-serif;
+  color: #C9ADA7;
+  background-color: #0c0d18;
+  font-size: 14px;
+}
+
+img {
+  display: block;
+}
+
+h1.title {
+  display: inline-block;
+  padding-left: 200px;
+  padding-right: 50px;
+  position: relative;
+}
+
+.hottrip {
+  display: inline-flex;
+}
+
+div.jupiter_top {
+  position: relative;
+  padding-top: 100px;
+  text-align: center;
+  margin: 30px;
+}
+
+img.jupiter {
+  height: 160px;
+  position: absolute;
+  top: 20px;
+  left: 65px;
+}
+
+img.jupiter_a1 {
+  max-width: 280px;
+}
+
+div.word {
+  position: absolute;
+  top: 190px;
+  left: 95px;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+div.price {
+  background-color: #AD6E4A;
+  padding: 8px;
+  width: 100px;
+  margin: 0px auto;
+  position: relative;
+}
+
+body {
+  font-family: "Haettenschweiler","Microsoft JhengHei", sans-serif;
+  color: #C9ADA7;
+  background-color: #0c0d18;
+  font-size: 14px;
+}
+
+.test {
+  color: orange;
 }
 /*# sourceMappingURL=all.css.map */
