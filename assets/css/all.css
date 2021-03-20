@@ -405,6 +405,25 @@ div.bk {
   opacity: 0.6;
 }
 
+div.bk2 {
+  width: 1300px;
+  height: 1300px;
+  position: absolute;
+  left: 50px;
+  top: 650px;
+  opacity: 0.03;
+  transform: rotate(90deg);
+}
+
+div.bk3 {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: -120px;
+  top: 400px;
+  opacity: 0.3;
+}
+
 .border {
   border: 1px solid #AD6E4A;
   margin: 0px auto;
@@ -487,6 +506,7 @@ div.price {
 .select {
   position: relative;
   bottom: 4px;
+  color: #AD6E4A;
 }
 
 .tripselect {
@@ -498,6 +518,7 @@ div.price {
 .icon {
   width: 25px;
   cursor: pointer;
+  z-index: 2;
 }
 
 hr {
@@ -511,6 +532,13 @@ hr {
 .second {
   width: 60%;
   margin: 0 auto;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+.alltrip {
+  margin: 0 auto;
+  text-align: center;
 }
 
 .mars {
@@ -539,6 +567,26 @@ div.price2 {
   position: relative;
   top: -36px;
   left: 70px;
+}
+
+.word2 {
+  position: relative;
+  top: -25px;
+}
+
+.word2_name {
+  font-weight: bold;
+  color: #AD6E4A;
+  letter-spacing: 3px;
+  font-size: 16px;
+}
+
+.word2_tag {
+  border: 1px solid #C9ADA7;
+  width: 50px;
+  margin: 0 auto;
+  color: #C9ADA7;
+  font-size: 14px;
 }
 
 body {
@@ -595,9 +643,5 @@ ul.tab-title li.selected {
 
 .tab-inner .data .day p {
   font-size: 48px;
-}
-
-.grid {
-  display: flex;
 }
 /*# sourceMappingURL=all.css.map */
