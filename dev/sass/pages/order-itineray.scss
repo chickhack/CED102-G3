@@ -1,0 +1,477 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+input[type="number"]{
+    -moz-appearance: textfield;
+}
+body{
+    background-color: #0c0d18;
+}
+//svg箭頭
+.svgRight::before{
+    content: url(../img/chevron-compact-right.svg)!important;
+    width: 20px;
+    height: 20px;
+    
+}
+//寬
+.width-50{
+    width: 50%;
+}
+//背景色
+.backco{
+    background-color: #0c0d18;
+
+}
+//標題顏色
+.titi{
+    background-color: #0c0d18;
+    line-height: 80px;
+}
+//文字靠右對齊
+.textRight{
+    text-align: right;
+}
+// 文字間距
+.textHeight-1{
+    line-height: 10px;
+}
+.textHeight-2{
+    line-height: 20px;
+}
+// 表單背景色
+.backcol{
+    background-color: #3a3a3e;
+}
+//分隔線
+.divider{
+    padding-top: 1%;
+    // padding-bottom: 1%;           
+    border-bottom: 1px solid;
+    border-color:  #ad6e4a;
+    width: 90%;
+    margin: 0 auto;
+}
+//內文分隔線
+.divider-1{
+    padding-top: 1%;
+    // padding-bottom: 1%;           
+    border-bottom: 1px solid;
+    border-color:  #ad6e4a;
+    width: 96%;
+    // margin: 0 auto;
+}
+// 文字顏色
+.textcolor{
+    color: #fff;
+    font-size: 16px;
+}
+// 內文標題
+.h4{
+    font-size: 24px;
+    color: #fff;
+    margin: 0;
+}
+.h5{
+    font-size: 24px;
+    color: #fff;
+    margin: 0;
+    width: 100%;
+    max-width: 150px;
+}
+//總價文字
+.h6{
+    font-weight: 900;
+    color: #C9ADA7;
+    font-size: 24px;
+    width: 100%;
+    margin: 0;
+}
+.h7{
+    // font-weight: 700;
+    color: #ad6e4a;
+    line-height: 30px;
+    font-size: 24px;
+    width: 100%;
+    margin: 0;
+}
+.h8{
+    line-height:30px ;
+    color: #C9ADA7;
+    font-size: 16px;
+    width: 100%;
+    margin: 0;
+}
+.h9{
+    color: #ad6e4a;
+    font-size: 16px;
+    line-height: 30px;
+}
+// 文字的間距
+.letter-spacing-1{
+    letter-spacing: 1px;
+}
+.letter-spacing-2{
+    letter-spacing: 2px;
+    
+}
+.padding_right-1{
+    padding-right: 8px;
+}
+.padding_right-2{
+    padding-right: 16px;
+}
+.padding_right-3{
+    padding-right: 24px;
+}
+.padding_bottom-1{
+    padding-bottom: 5%;
+}
+// 交通工具用縮圖
+.imgs{
+    width: 100%;
+    max-width: 100px;
+    height: 100%;
+    max-height: 50px;
+    object-fit: contain;
+}
+//行程用縮圖
+.imgsr{
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    max-height: 150px;
+    object-fit: cover;
+}
+#paymethod-coin-nu{
+    background-color: #3a3a3e;
+    border: 1px solid #AD6E4A;
+    height: 25px;
+    color: #fff;
+    font-size: 16px;
+    
+    letter-spacing: 2px;
+    border-radius: 5px;
+}
+//付款按鈕
+.button_large-1{
+    width: 150px;
+    font-size: 24px;
+    color: #fff;
+    background-color: #ad6e4a;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #AD6E4A;
+}
+form{
+    padding: 120px 0 500px 0;
+    height:100%;
+    // margin-bottom: 200px;
+    .orderinfo{
+        .container{
+            .row{
+                    justify-content: center;
+                    align-content: center;     
+                    .col-7{
+                        background-color: #3a3a3c;
+                        border-radius: 5px;
+                        padding-bottom: 10px;
+                            .btn-openmenu{
+                                // padding: 2% 0 0 5%;
+                                width: 100%;
+                                text-align: left;
+                                background-color: #3a3a3c;
+                                border-radius: 5px;
+                                outline: none;
+                                border:none;
+                                color: #fff;
+                                font-size: 24px;
+                                
+                            }
+                            .btn-openmenu::before{
+                                content:url(../img/chevron-down.svg);
+                                padding-right: 8px;
+                                display: inline-block;
+                                width: 20px;
+                                height: 20px;
+                                
+                            }
+                            
+                            .row{
+                            
+                            
+                                .col-5{
+                                    
+        
+                                    display: flex;
+                                    color: #fff;
+                                    flex-direction: column;
+                                   
+                                    input{
+                                        font-size: 16px;
+                                        color: #fff;
+                                        width: 80%;
+                                        background-color: #3a3a3c;
+                                        border: 1px solid #ad6e4a;
+                                        border-radius: 5px;
+                                        height: 40px;
+                                    }
+                                }
+                                .col-11{
+                                    // padding-left: 0px;
+                                    margin: 0;
+                                    display: flex;
+                                    align-content:flex-start; 
+                                    flex-direction: column;
+                                    color: white;
+                                    
+                                    input{
+                                        color: #fff;
+                                        width: 90%;
+                                        background-color: #3a3a3c;
+                                        border: 1px solid #ad6e4a;
+                                        border-radius: 5px;
+                                        height: 40px;
+                                    }
+                                }
+                            }
+                    
+                     }
+             }
+                
+        }
+    }
+    .ltineraryinfo{
+        .container{
+
+            .row{
+                justify-content: center;
+                align-content: center;
+                .col-7{
+                    // line-height: 50px;
+                    .row{
+                        margin-bottom: 50px;
+                        background-color:#3a3a3c;
+                        border-radius: 5px;
+                        .col-11{
+                            display: flex;
+                            // justify-content: center;
+                            align-content: center;
+                            padding: 5% 0;
+                            
+                                img{
+                                    width: 100%;
+                                    max-width: 150px;
+                                    height: auto;
+                                    max-height: 90px;
+                                    object-fit: cover;
+                                }
+                                .textinfo{
+                                    width: 100%;
+                                    .textinfo-1{
+                                        
+                                        display: flex;
+                                        // justify-content: center;
+                                        // align-content: center;
+                                        align-items: baseline;
+                                        width: 100%;
+                                        height: 100%;
+                                        p{
+                                            font-size: 16px;
+                                            max-height: 50px;
+                                            color: #fff;
+                                            
+                                            img{
+                                                max-width: 20px;
+                                                object-fit: cover;
+                                                vertical-align: middle;
+                                            }
+                                        }
+                                    }
+                                }
+                           
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .addPay{
+        .container{
+            .row{
+                justify-content: center;
+                .col-7{
+                   
+                    border-radius: 5px;
+                    .btn-addPay{
+                        width: 100%;
+                        text-align: left;
+                        background-color: #3a3a3c;
+                        outline: none;
+                        border:none;
+                        color: #fff;
+                        font-size: 24px;
+                        
+                    }
+                    .btn-addPay::before{
+                        content:url(../img/chevron-down.svg);   
+                        display: inline-block;
+                        width: 20px;
+                        height: 20px;
+                        padding-right: 8px;
+                    }
+                    .automena{
+                        .row{
+                            .col-11{
+                                display: flex;
+                                // justify-content: center;
+                                // align-items:center;
+                                    // padding-bottom: 10%;
+
+                                    .traffic-div{
+                                        display: flex;
+                                        justify-content: space-around;
+                                        align-content: flex-start;
+                                        align-items: center;
+                                        background-color: #ad6e4a;
+                                        width: 100%;
+                                        border-radius: 5px;
+                                        height: 100%;
+                                        margin: 0 10px 0px 10px;
+                                        padding: 1% 0;
+                                        .coin{
+                                            height: 100%;
+                                            // width: 50%;
+                                            display: flex;
+                                            align-items: flex-end;
+                                        }
+                                
+                                    }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .paymethod{
+        .row{
+            justify-content: center;
+            
+            .col-7{
+                .paymethod-automanu{
+                    // display: none;
+                    // align-items: center;
+                    // align-content: center;
+                    // vertical-align: middle;
+                    .row{
+                        .col-11{
+                            .paymethod-automanu-car-automanu{
+                                display: none;
+                                input{
+                                    width: 100%;
+                                    font-size: 16px;
+                                    height: 30px;
+                                    background-color: #3a3a3e;
+                                    border:1px solid #AD6E4A;
+                                    border-radius: 5px;
+                                    // outline: none;
+                                    
+                                }
+                            }
+                        }
+                        .col-5{
+                            input.paymethod-coin-btn{
+                                width: 50px;
+                                height: 20px;
+                                outline: none;
+                                border-color:  #ad6e4a;
+                                background-color: #ad6e4a;
+                                color: #fff;
+                                line-height: 0px;
+                            }
+                        }
+                        .col-4{
+                            display: flex;
+                            align-items: center;
+                            
+                            .intput-nu{
+                                background-color:#3a3a3e;
+                            }
+                            
+                           
+                        }
+
+
+                    }
+                        
+                    
+                }
+                .btn-paymethod{
+                    width: 100%;
+                    text-align: justify;
+                    background-color: #3a3a3c;
+                    outline: none;
+                    border:none;
+                    color: #fff;
+                    font-size: 24px;
+                }
+                .btn-paymethod::before{
+                    content:url(../img/chevron-down.svg);   
+                    display: inline-block;
+                    width: 20px;
+                    height: 20px;
+                    padding-right: 8px;
+                }
+                
+
+            }
+        }
+    }
+    .orderDetails{
+        .row{
+            justify-content: center;
+            .allpay-div{
+                display: flex;
+                justify-content:flex-end
+            }
+            .col-7{
+                .orderDetails-automanu{
+                    .col-11{
+                        display: flex;
+                        .orderDetails-automanu-textdiv{
+                            width: 100%;
+                            .textbox{
+                                display: flex;
+                                width: 100%;
+                            }
+                            .icon{
+                                vertical-align: middle;
+                            }
+                        }
+                    }
+                }
+                .btn-orderDetails{
+                    // margin-left: 20px;
+                    width: 100%;
+                    text-align: left;
+                    background-color: #3a3a3c;
+                    outline: none;
+                    border:none;
+                    color: #fff;
+                    font-size: 24px;
+                }
+                .btn-orderDetails::before{
+                    content:url(../img/chevron-down.svg);   
+                    display: inline-block;
+                    width: 20px;
+                    height: 20px;
+                    padding-right: 8px;
+                }
+            }
+        }
+    }
+}
+
+
