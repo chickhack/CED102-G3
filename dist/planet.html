@@ -2,8 +2,22 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>星星世界</title>
+    <link rel="stylesheet" href="./css/all.css" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <!-- <link rel="stylesheet" href="../css/planet.css"></link> -->
+    <link rel="stylesheet" href="./css/all.css"></link>
+    <!-- canvas -->
+    <script src="./js/planet_canvas.js"></script>
   </head>
   <body>
     <nav>
@@ -21,18 +35,67 @@
         <li><a href=""><img src="./images/round-account-button-with-user-inside_(1).png" alt="" class="icon"></a></li> -->
     </ul>
     <ul class="nav-icons">
-        <li><a href=""><img src="./images/ticket.png" alt="" class="icon"></a></li>
-        <li><a href=""><img src="./images/shopping-cart_(1).png" alt="" class="icon"></a></li>
-        <li><a href=""><img src="./images/round-account-button-with-user-inside_(1).png" alt="" class="icon"></a></li>
+        <li><a href=""><img src="./img/ticket.png" alt="" class="icon"></a></li>
+        <li><a href=""><img src="./img/shopping-cart_(1).png" alt="" class="icon"></a></li>
+        <li><a href=""><img src="./img/round-account-button-with-user-inside_(1).png" alt="" class="icon"></a></li>
     </ul>
     <div class="burger">
         <div class="line1"></div>
         <div class="line2"></div>
         <div class="line3"></div>
     </div>
-</nav>; <footer class="padding_top_5">
+</nav>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12" id="tab">
+          <div class="title">星星世界</div>
+          <ul class="tab-title">
+            <li><a href="tab01">火星</a></li>
+            <li><a href="tab02">月球</a></li>
+            <li><a href="tab03">土星</a></li>
+            <li><a href="tab04">木星</a></li>
+            <li><a href="tab04">木星</a></li>
+            <li><a href="tab04">木星</a></li>
+            <li><a href="tab04">木星</a></li>
+          
+          </ul>
+          <div id="tab01" class="tab-inner">
+            <div class="test">TEST</div>
+            <p>火星</p>
+            <p>
+              火星大氣以二氧化碳為主，既稀薄又寒冷，其表面特徵讓人聯想起月球上的撞擊坑，以及地球上的山谷、沙漠和極地冰蓋。
+            </p>
+            <canvas id="canvas" width="1000" height="800" style="border:1px solid grey"></canvas>
+          </div>
+          <!-- <div id="tab02" class="tab-inner">
+            <p>月球</p>
+          </div>
+          <div id="tab03" class="tab-inner">
+            <p>土星</p>
+          </div>
+          <div id="tab04" class="tab-inner">
+            <p>木星</p>
+          </div> -->
+        </div>
+        <div class="col-6">
+          <img src="../dev/img/planet/mars_1.jpg" />
+          <img src="../dev/img/planet/mars_2.jpg" />
+          <img src="../dev/img/planet/mars_3.jpg" />
+        </div>
+        <div class="col-6">
+          <p>
+            火星屬於地質行星，火星算是人類探勘最多的行星了，地表上沙丘、礫石遍布，泥土中充滿鐵礦物質而氧化後生鏽從而讓表面上看起來呈現是紅色的樣子，火星上有太陽系裡最高的火山比地球珠穆朗瑪峰高出了三倍。
+            有個名為 Valles Marineris
+            的大峽谷長度超過4800公里，寬度320公里深度7公里，是地球上的大峽谷十倍，也有人稱這大峽谷為巨獸的爪痕。
+            火星的大氣稀薄，主要由二氧化碳，氮氣和氬氣組成。由於懸浮的塵埃而不是我們在地球上看到的熟悉的藍色，天空將是朦朧的和紅色的。火星稀疏的大氣層並不能為隕石，小行星和彗星等物體的撞擊提供很多保護。
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="padding_top_5">
     <div class="links">
-        <div class="logo"><img src="./images/logo.png" alt=""></div>
+        <div class="logo"><img src="./img/logo.png" alt=""></div>
         <ul class="footer-links margin_top_2">
             <li><a href="">太空互動</a></li>
             <li><a href="">玩家排行</a></li>
@@ -41,9 +104,9 @@
             <li><a href="">星球商城</a></li>
         </ul>
     </div>
-    <img src="./images/footer_moon.png" alt="" class="footer_moon">
-    <img src="./images/smoke.png" alt="" class="smoke">
+    <img src="./img/footer_moon.png" alt="" class="footer_moon">
+    <img src="./img/smoke.png" alt="" class="smoke">
 </footer>
-;
+
   </body>
 </html>

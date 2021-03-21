@@ -1,4 +1,14 @@
-@import "_base";
+body{
+    font-family:"Haettenschweiler","Microsoft JhengHei", sans-serif;
+    color: $pink;
+    background-color:$darkblue;
+    font-size: 14px;
+}
+.test{
+    color:orange;
+
+}
+
 body{
     font-family:"Haettenschweiler","Microsoft JhengHei", sans-serif;
     color: $pink;
@@ -23,3 +33,4 @@ ul.tab-title{
 
     }
 }
+
