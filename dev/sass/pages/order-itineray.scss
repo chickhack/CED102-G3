@@ -8,10 +8,30 @@ input[type="number"]{
 body{
     background-color: #0c0d18;
 }
+//svg箭頭
+.svgRight::before{
+    content: url(../img/chevron-compact-right.svg)!important;
+    width: 20px;
+    height: 20px;
+    
+}
+//寬
+.width-50{
+    width: 50%;
+}
+//背景色
+.backco{
+    background-color: #0c0d18;
+
+}
 //標題顏色
 .titi{
     background-color: #0c0d18;
     line-height: 80px;
+}
+//文字靠右對齊
+.textRight{
+    text-align: right;
 }
 // 文字間距
 .textHeight-1{
@@ -33,6 +53,15 @@ body{
     width: 90%;
     margin: 0 auto;
 }
+//內文分隔線
+.divider-1{
+    padding-top: 1%;
+    // padding-bottom: 1%;           
+    border-bottom: 1px solid;
+    border-color:  #ad6e4a;
+    width: 96%;
+    // margin: 0 auto;
+}
 // 文字顏色
 .textcolor{
     color: #fff;
@@ -43,6 +72,41 @@ body{
     font-size: 24px;
     color: #fff;
     margin: 0;
+}
+.h5{
+    font-size: 24px;
+    color: #fff;
+    margin: 0;
+    width: 100%;
+    max-width: 150px;
+}
+//總價文字
+.h6{
+    font-weight: 900;
+    color: #C9ADA7;
+    font-size: 24px;
+    width: 100%;
+    margin: 0;
+}
+.h7{
+    // font-weight: 700;
+    color: #ad6e4a;
+    line-height: 30px;
+    font-size: 24px;
+    width: 100%;
+    margin: 0;
+}
+.h8{
+    line-height:30px ;
+    color: #C9ADA7;
+    font-size: 16px;
+    width: 100%;
+    margin: 0;
+}
+.h9{
+    color: #ad6e4a;
+    font-size: 16px;
+    line-height: 30px;
 }
 // 文字的間距
 .letter-spacing-1{
@@ -55,16 +119,30 @@ body{
 .padding_right-1{
     padding-right: 8px;
 }
+.padding_right-2{
+    padding-right: 16px;
+}
+.padding_right-3{
+    padding-right: 24px;
+}
 .padding_bottom-1{
     padding-bottom: 5%;
 }
-// 縮圖
+// 交通工具用縮圖
 .imgs{
     width: 100%;
     max-width: 100px;
     height: 100%;
     max-height: 50px;
     object-fit: contain;
+}
+//行程用縮圖
+.imgsr{
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    max-height: 150px;
+    object-fit: cover;
 }
 #paymethod-coin-nu{
     background-color: #3a3a3e;
@@ -75,6 +153,16 @@ body{
     
     letter-spacing: 2px;
     border-radius: 5px;
+}
+//付款按鈕
+.button_large-1{
+    width: 150px;
+    font-size: 24px;
+    color: #fff;
+    background-color: #ad6e4a;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #AD6E4A;
 }
 form{
     padding: 120px 0 500px 0;
@@ -101,14 +189,14 @@ form{
                                 font-size: 24px;
                                 
                             }
-                            // .btn-openmenu::before{
-                            //     content: '';
-                            //     display: inline-block;
-                            //     width: 20px;
-                            //     height: 20px;
-                            //     background-image: url(../imgs/arrow-light.png);
-                            //     background-size: cover;
-                            // }
+                            .btn-openmenu::before{
+                                content:url(../img/chevron-down.svg);
+                                padding-right: 8px;
+                                display: inline-block;
+                                width: 20px;
+                                height: 20px;
+                                
+                            }
                             
                             .row{
                             
@@ -132,6 +220,7 @@ form{
                                 }
                                 .col-11{
                                     // padding-left: 0px;
+                                    margin: 0;
                                     display: flex;
                                     align-content:flex-start; 
                                     flex-direction: column;
@@ -225,6 +314,13 @@ form{
                         font-size: 24px;
                         
                     }
+                    .btn-addPay::before{
+                        content:url(../img/chevron-down.svg);   
+                        display: inline-block;
+                        width: 20px;
+                        height: 20px;
+                        padding-right: 8px;
+                    }
                     .automena{
                         .row{
                             .col-11{
@@ -280,16 +376,11 @@ form{
                                     border:1px solid #AD6E4A;
                                     border-radius: 5px;
                                     // outline: none;
+                                    
                                 }
                             }
                         }
-                        .col-4{
-                            display: flex;
-                            align-items: center;
-                            
-                            .intput-nu{
-                                background-color:#3a3a3e;
-                            }
+                        .col-5{
                             input.paymethod-coin-btn{
                                 width: 50px;
                                 height: 20px;
@@ -299,6 +390,15 @@ form{
                                 color: #fff;
                                 line-height: 0px;
                             }
+                        }
+                        .col-4{
+                            display: flex;
+                            align-items: center;
+                            
+                            .intput-nu{
+                                background-color:#3a3a3e;
+                            }
+                            
                            
                         }
 
@@ -316,9 +416,61 @@ form{
                     color: #fff;
                     font-size: 24px;
                 }
+                .btn-paymethod::before{
+                    content:url(../img/chevron-down.svg);   
+                    display: inline-block;
+                    width: 20px;
+                    height: 20px;
+                    padding-right: 8px;
+                }
                 
 
             }
         }
     }
+    .orderDetails{
+        .row{
+            justify-content: center;
+            .allpay-div{
+                display: flex;
+                justify-content:flex-end
+            }
+            .col-7{
+                .orderDetails-automanu{
+                    .col-11{
+                        display: flex;
+                        .orderDetails-automanu-textdiv{
+                            width: 100%;
+                            .textbox{
+                                display: flex;
+                                width: 100%;
+                            }
+                            .icon{
+                                vertical-align: middle;
+                            }
+                        }
+                    }
+                }
+                .btn-orderDetails{
+                    // margin-left: 20px;
+                    width: 100%;
+                    text-align: left;
+                    background-color: #3a3a3c;
+                    outline: none;
+                    border:none;
+                    color: #fff;
+                    font-size: 24px;
+                }
+                .btn-orderDetails::before{
+                    content:url(../img/chevron-down.svg);   
+                    display: inline-block;
+                    width: 20px;
+                    height: 20px;
+                    padding-right: 8px;
+                }
+            }
+        }
+    }
 }
+
+

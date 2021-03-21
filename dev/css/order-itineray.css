@@ -11,9 +11,27 @@ body {
   background-color: #0c0d18;
 }
 
+.svgRight::before {
+  content: url(../img/chevron-compact-right.svg) !important;
+  width: 20px;
+  height: 20px;
+}
+
+.width-50 {
+  width: 50%;
+}
+
+.backco {
+  background-color: #0c0d18;
+}
+
 .titi {
   background-color: #0c0d18;
   line-height: 80px;
+}
+
+.textRight {
+  text-align: right;
 }
 
 .textHeight-1 {
@@ -36,6 +54,13 @@ body {
   margin: 0 auto;
 }
 
+.divider-1 {
+  padding-top: 1%;
+  border-bottom: 1px solid;
+  border-color: #ad6e4a;
+  width: 96%;
+}
+
 .textcolor {
   color: #fff;
   font-size: 16px;
@@ -45,6 +70,44 @@ body {
   font-size: 24px;
   color: #fff;
   margin: 0;
+}
+
+.h5 {
+  font-size: 24px;
+  color: #fff;
+  margin: 0;
+  width: 100%;
+  max-width: 150px;
+}
+
+.h6 {
+  font-weight: 900;
+  color: #C9ADA7;
+  font-size: 24px;
+  width: 100%;
+  margin: 0;
+}
+
+.h7 {
+  color: #ad6e4a;
+  line-height: 30px;
+  font-size: 24px;
+  width: 100%;
+  margin: 0;
+}
+
+.h8 {
+  line-height: 30px;
+  color: #C9ADA7;
+  font-size: 16px;
+  width: 100%;
+  margin: 0;
+}
+
+.h9 {
+  color: #ad6e4a;
+  font-size: 16px;
+  line-height: 30px;
 }
 
 .letter-spacing-1 {
@@ -59,6 +122,14 @@ body {
   padding-right: 8px;
 }
 
+.padding_right-2 {
+  padding-right: 16px;
+}
+
+.padding_right-3 {
+  padding-right: 24px;
+}
+
 .padding_bottom-1 {
   padding-bottom: 5%;
 }
@@ -71,6 +142,14 @@ body {
   object-fit: contain;
 }
 
+.imgsr {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  max-height: 150px;
+  object-fit: cover;
+}
+
 #paymethod-coin-nu {
   background-color: #3a3a3e;
   border: 1px solid #AD6E4A;
@@ -79,6 +158,16 @@ body {
   font-size: 16px;
   letter-spacing: 2px;
   border-radius: 5px;
+}
+
+.button_large-1 {
+  width: 150px;
+  font-size: 24px;
+  color: #fff;
+  background-color: #ad6e4a;
+  padding: 15px;
+  text-align: center;
+  border: 1px solid #AD6E4A;
 }
 
 form {
@@ -108,6 +197,14 @@ form .orderinfo .container .row .col-7 .btn-openmenu {
   font-size: 24px;
 }
 
+form .orderinfo .container .row .col-7 .btn-openmenu::before {
+  content: url(../img/chevron-down.svg);
+  padding-right: 8px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+
 form .orderinfo .container .row .col-7 .row .col-5 {
   display: flex;
   color: #fff;
@@ -125,6 +222,7 @@ form .orderinfo .container .row .col-7 .row .col-5 input {
 }
 
 form .orderinfo .container .row .col-7 .row .col-11 {
+  margin: 0;
   display: flex;
   align-content: flex-start;
   flex-direction: column;
@@ -206,6 +304,14 @@ form .addPay .container .row .col-7 .btn-addPay {
   font-size: 24px;
 }
 
+form .addPay .container .row .col-7 .btn-addPay::before {
+  content: url(../img/chevron-down.svg);
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  padding-right: 8px;
+}
+
 form .addPay .container .row .col-7 .automena .row .col-11 {
   display: flex;
 }
@@ -242,16 +348,7 @@ form .paymethod .row .col-7 .paymethod-automanu .row .col-11 .paymethod-automanu
   border-radius: 5px;
 }
 
-form .paymethod .row .col-7 .paymethod-automanu .row .col-4 {
-  display: flex;
-  align-items: center;
-}
-
-form .paymethod .row .col-7 .paymethod-automanu .row .col-4 .intput-nu {
-  background-color: #3a3a3e;
-}
-
-form .paymethod .row .col-7 .paymethod-automanu .row .col-4 input.paymethod-coin-btn {
+form .paymethod .row .col-7 .paymethod-automanu .row .col-5 input.paymethod-coin-btn {
   width: 50px;
   height: 20px;
   outline: none;
@@ -259,6 +356,15 @@ form .paymethod .row .col-7 .paymethod-automanu .row .col-4 input.paymethod-coin
   background-color: #ad6e4a;
   color: #fff;
   line-height: 0px;
+}
+
+form .paymethod .row .col-7 .paymethod-automanu .row .col-4 {
+  display: flex;
+  align-items: center;
+}
+
+form .paymethod .row .col-7 .paymethod-automanu .row .col-4 .intput-nu {
+  background-color: #3a3a3e;
 }
 
 form .paymethod .row .col-7 .btn-paymethod {
@@ -269,5 +375,57 @@ form .paymethod .row .col-7 .btn-paymethod {
   border: none;
   color: #fff;
   font-size: 24px;
+}
+
+form .paymethod .row .col-7 .btn-paymethod::before {
+  content: url(../img/chevron-down.svg);
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  padding-right: 8px;
+}
+
+form .orderDetails .row {
+  justify-content: center;
+}
+
+form .orderDetails .row .allpay-div {
+  display: flex;
+  justify-content: flex-end;
+}
+
+form .orderDetails .row .col-7 .orderDetails-automanu .col-11 {
+  display: flex;
+}
+
+form .orderDetails .row .col-7 .orderDetails-automanu .col-11 .orderDetails-automanu-textdiv {
+  width: 100%;
+}
+
+form .orderDetails .row .col-7 .orderDetails-automanu .col-11 .orderDetails-automanu-textdiv .textbox {
+  display: flex;
+  width: 100%;
+}
+
+form .orderDetails .row .col-7 .orderDetails-automanu .col-11 .orderDetails-automanu-textdiv .icon {
+  vertical-align: middle;
+}
+
+form .orderDetails .row .col-7 .btn-orderDetails {
+  width: 100%;
+  text-align: left;
+  background-color: #3a3a3c;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+}
+
+form .orderDetails .row .col-7 .btn-orderDetails::before {
+  content: url(../img/chevron-down.svg);
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  padding-right: 8px;
 }
 /*# sourceMappingURL=order-itineray.css.map */
