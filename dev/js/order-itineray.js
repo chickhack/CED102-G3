@@ -20,3 +20,6 @@ $('.btn-orderDetails').click(function(){
     $('.btn-orderDetails').toggleClass("svgRight");
     
 });
+$('#paymethod-automanu-car').click(function(){
+    $('#car-auto').slideToggle();
+});

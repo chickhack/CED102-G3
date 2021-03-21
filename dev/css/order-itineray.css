@@ -339,6 +339,10 @@ form .paymethod .row {
   justify-content: center;
 }
 
+form .paymethod .row .col-7 .paymethod-automanu .row .col-11 .paymethod-automanu-car-automanu {
+  display: none;
+}
+
 form .paymethod .row .col-7 .paymethod-automanu .row .col-11 .paymethod-automanu-car-automanu input {
   width: 100%;
   font-size: 16px;

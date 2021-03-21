@@ -361,13 +361,14 @@ form{
             
             .col-7{
                 .paymethod-automanu{
-                    // display: flex;
+                    // display: none;
                     // align-items: center;
                     // align-content: center;
                     // vertical-align: middle;
                     .row{
                         .col-11{
                             .paymethod-automanu-car-automanu{
+                                display: none;
                                 input{
                                     width: 100%;
                                     font-size: 16px;
