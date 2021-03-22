@@ -88,7 +88,7 @@ exports.browser = function browsersync() {
 };
 
 exports.w = function watchFiles() {
-    watch(['./dev/sass/**/*.scss', '!dev/sass/pages/*.scss'], commonStyle);
+    watch(['./dev/sass/*.scss', '!dev/sass/pages/*.scss'], commonStyle);
     watch('./dev/sass/pages/*.scss', pageStyle);
     watch('./dev/**/*.html', includeHTML);
     watch('./dev/img/*', moveImg);
