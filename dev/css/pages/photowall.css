@@ -11,7 +11,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 5%;
+  padding-top: 6%;
 }
 
 .grid-item {
@@ -30,6 +30,14 @@ body {
 }
 
 .more {
+  margin-left: 40px;
+}
+
+.button {
+  background-color: transparent;
+  border-width: 0px;
+  outline: none;
+  padding: 10px;
   margin-left: 40px;
 }
 
