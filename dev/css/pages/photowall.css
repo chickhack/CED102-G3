@@ -1,0 +1,52 @@
+body {
+  font-family: "Haettenschweiler","Microsoft JhengHei", sans-serif;
+  color: #C9ADA7;
+  background-color: #0c0d18;
+}
+
+.grid {
+  display: flex;
+  justify-content: center;
+}
+
+.grid-item {
+  margin: 20px;
+  border: 1px solid #AD6E4A;
+}
+
+.action-box {
+  display: flex;
+}
+
+.heart, .share, .message, .more {
+  padding: 10px;
+}
+
+.more {
+  margin-left: 40px;
+}
+
+.article {
+  display: flex;
+  margin-bottom: 20px;
+  width: 230px;
+}
+
+.member_photo {
+  margin-right: 15px;
+  padding: 10px;
+}
+
+.article .member_photo img, .article_2 .member_photo img {
+  border-radius: 50%;
+}
+
+.text {
+  line-height: 36px;
+  color: #fff;
+}
+
+.article_2 {
+  display: flex;
+}
+/*# sourceMappingURL=photowall.css.map */
