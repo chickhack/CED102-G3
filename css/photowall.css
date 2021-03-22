@@ -6,7 +6,14 @@ body {
 
 .grid {
   display: flex;
+<<<<<<< HEAD
   justify-content: center;
+=======
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 5%;
+>>>>>>> dev
 }
 
 .grid-item {
