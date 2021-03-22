@@ -7,7 +7,6 @@ body {
 .grid {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
 }
 
 .grid-item {
@@ -23,6 +22,10 @@ body {
   padding: 10px;
 }
 
+.more {
+  margin-left: 40px;
+}
+
 .article {
   display: flex;
   margin-bottom: 20px;
@@ -34,7 +37,7 @@ body {
   padding: 10px;
 }
 
-.message .member_photo img, .message_2 .member_photo img {
+.article .member_photo img, .article_2 .member_photo img {
   border-radius: 50%;
 }
 
