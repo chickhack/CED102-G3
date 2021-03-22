@@ -1,0 +1,92 @@
+.car-top{
+    height: 1000px;
+    padding-top: 15%;
+}
+body{
+    background-color: #0c0d18;
+    
+}
+//圖片對齊
+.vvvvv{
+    vertical-align: middle;
+}
+// 表單背景色
+.backcol{
+    background-color: #3a3a3e;
+}
+// 標題文字
+.text-1{
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 80px;
+}
+// 內文標提
+.p-text-1{
+    font-weight: 700;
+    font-size: 24px;
+    color: #fff;
+    margin: 0px;
+    letter-spacing: 1px;
+}
+//內文文字
+.p-text-2{
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+.p-text-3{
+    font-size: 16px;
+    color: #ad6e4a;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+//行程用縮圖
+.imgsr{
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    max-height: 100px;
+    object-fit: cover;
+}
+//日期按鈕
+.btn-date{
+    border: 1px solid #ad6e4a;
+    color: #ad6e4a;
+    background-color: #3a3a3e;
+}
+// 向下箭頭
+.bi{
+    fill: #ad6e4a;
+}
+// .data-down::after{
+//     content: url(../img/date-chevron-down.svg);
+//     width: 20px;
+//     height: 20px;
+//     // z-index: -1;
+// }
+//input-icon日期替換
+::-webkit-calendar-picker-indicator { 
+
+    color:#ad6e4a; 
+    background-image: url(../img/date-chevron-down.svg);
+    width: 20px;
+    height: 20px;
+    opacity: 1; 
+} 
+
+
+.row{
+    justify-content: center;
+    .col-8{
+        .row{
+            .col-12{
+                display: flex;
+                justify-content: space-around;
+                padding: 2% 1%;
+                border-radius: 5px;
+                
+            }
+        }
+    }
+}
