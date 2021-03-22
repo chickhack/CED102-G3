@@ -15,8 +15,12 @@ body{
 }
 .action-box{
   display:flex;
+  position: relative;
+  bottom: 40px;
+  background-color:black;
+  opacity: 0.5;
 }
-.heart,.share,.message,.more{
+.heart,.share,.message{
   padding: 10px;
 }
 .more{
