@@ -57,6 +57,7 @@ function includeHTML() {
         .pipe(dest('dist/'));
 }
 
+
 function killDist() {
     return src('dist', { read: false, allowEmpty: true }).pipe(
         clean({

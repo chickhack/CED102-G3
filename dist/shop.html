@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>星球商城</title>
+    <link rel="stylesheet" href="./css/shop.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.12/vue.js'></script>
+</head>
+<body>
+    <div class="container">
+        <nav>
+    <div class="logo">
+        <h1><a href="index.html">SPACED</a></h1>
+    </div>
+    <ul class="nav-links">
+        <li class="margin_left_5"><a href="">太空互動</a></li>
+        <li class="margin_left_5"><a href="">玩家排行</a></li>
+        <li class="margin_left_5"><a href="">星星世界</a></li>
+        <li class="margin_left_5"><a href="">星球景點</a></li>
+        <li class="margin_left_5"><a href="">星球商城</a></li>
+        <!-- <li><a href=""><img src="./images/ticket.png" alt="" class="icon"></a></li>
+        <li><a href=""><img src="./images/shopping-cart_(1).png" alt="" class="icon"></a></li>
+        <li><a href=""><img src="./images/round-account-button-with-user-inside_(1).png" alt="" class="icon"></a></li> -->
+    </ul>
+    <ul class="nav-icons">
+        <li><a href=""><img src="./img/ticket.png" alt="" class="icon"></a></li>
+        <li><a href=""><img src="./img/shopping-cart_(1).png" alt="" class="icon"></a></li>
+        <li><a href=""><img src="./img/round-account-button-with-user-inside_(1).png" alt="" class="icon"></a></li>
+    </ul>
+    <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+</nav>
+        <section class="shop">
+            <h4 class="margin_top_5">在這裡可滿足你上外太空的一切需求 !</h3>
+            <div class="shopAll margin_top_5">
+                <div class="aside">
+                    <ul>
+                        <li class="btn">裝備</li>
+                        <li class="btn">甜點</li>
+                        <li class="btn">紀念品</li>
+                        <li class="btn">交通工具</li>
+                        <li class="btn">其他</li>
+                    </ul>
+                </div>
+                <div class="main">
+                    <ul class="chooseBtn margin_left_5">
+                        <li class="btn margin_left_1">新品</li>
+                        <li class="btn margin_left_1">熱門</li>
+                        <li class="btn margin_left_1">紀念品</li>
+                        <li class="btn margin_left_1">交通工具</li>
+                        <li class="btn margin_left_1">其他</li>
+                    </ul>
+                    <div id="app">
+                        <div class="productAll margin_left_5">
+                            <ul>
+                                <li v-for="item in products" class="margin_top_5">
+                                    <a href="product.html">
+                                        <img :src="item.img" alt="" class="margin_top_2">
+                                        <div class="item">
+                                            <div class="info">
+                                                <p>{{item.name}}</p>
+                                                <p class="margin_top_1"> ${{item.price}}</p>
+                                            </div>
+                                            <img :src="item.cart" class="icon">
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="padding_top_5">
+    <div class="links">
+        <div class="logo"><img src="./img/logo.png" alt=""></div>
+        <ul class="footer-links margin_top_2">
+            <li><a href="">太空互動</a></li>
+            <li><a href="">玩家排行</a></li>
+            <li><a href="">星星世界</a></li>
+            <li><a href="">星球景點</a></li>
+            <li><a href="">星球商城</a></li>
+        </ul>
+    </div>
+    <img src="./img/footer_moon.png" alt="" class="footer_moon">
+    <img src="./img/smoke.png" alt="" class="smoke">
+</footer>
+
+    </div>
+    <!-- vue -->
+    <script>
+        let vm = new Vue({
+            el: "#app",
+            data: {
+                products: [{
+                    img: "./img/shop/shoes.png",
+                    name: "宇宙平衡鞋",
+                    price: 5000,
+                    cart: "./img/shop/cart.png",
+                },{
+                    img: "./img/shop/cloth.png",
+                    name: "太空衣",
+                    price: 10000,
+                    cart: "./img/shop/cart.png",
+                },{
+                    img: "./img/shop/helmet.png",
+                    name: "宇宙帽",
+                    price: 8000,
+                    cart: "./img/shop/cart.png",
+                },{
+                    img: "./img/shop/helmet.png",
+                    name: "宇宙帽",
+                    price: 8000,
+                    cart: "./img/shop/cart.png",
+                },{
+                    img: "./img/shop/helmet.png",
+                    name: "宇宙帽",
+                    price: 8000,
+                    cart: "./img/shop/cart.png",
+                },{
+                    img: "./img/shop/shoes.png",
+                    name: "宇宙平衡鞋",
+                    price: 5000,
+                    cart: "./img/shop/cart.png",
+                },{
+                    img: "./img/shop/shoes.png",
+                    name: "宇宙平衡鞋",
+                    price: 5000,
+                    cart: "./img/shop/cart.png",
+                },{
+                    img: "./img/shop/cloth.png",
+                    name: "太空衣",
+                    price: 10000,
+                    cart: "./img/shop/cart.png",
+                },{
+                    img: "./img/shop/cloth.png",
+                    name: "太空衣",
+                    price: 10000,
+                    cart: "./img/shop/cart.png",
+                },]
+            }
+        })
+    </script>
+</body>
+</html>
