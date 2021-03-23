@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/pages/product.css">
+    <title>星球商城</title>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.12/vue.js'></script>
+</head>
+<body>
+    <nav>
+    <div class="logo">
+        <h1><a href="index.html">SPACED</a></h1>
+    </div>
+    <ul class="nav-links">
+        <li class="margin_left_5"><a href="">太空互動</a></li>
+        <li class="margin_left_5"><a href="">玩家排行</a></li>
+        <li class="margin_left_5"><a href="">星星世界</a></li>
+        <li class="margin_left_5"><a href="">星球景點</a></li>
+        <li class="margin_left_5"><a href="">星球商城</a></li>
+        <!-- <li><a href=""><img src="./images/ticket.png" alt="" class="icon"></a></li>
+        <li><a href=""><img src="./images/shopping-cart_(1).png" alt="" class="icon"></a></li>
+        <li><a href=""><img src="./images/round-account-button-with-user-inside_(1).png" alt="" class="icon"></a></li> -->
+    </ul>
+    <ul class="nav-icons">
+        <li><a href=""><img src="./img/ticket.png" alt="" class="icon"></a></li>
+        <li><a href=""><img src="./img/shopping-cart_(1).png" alt="" class="icon"></a></li>
+        <li><a href=""><img src="./img/round-account-button-with-user-inside_(1).png" alt="" class="icon"></a></li>
+    </ul>
+    <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+</nav>
+    <section class="container">
+        <div class="product">
+            <div class="img">
+                <img src="./img/shop/shoes.png" alt="" class="bigImg">
+                <div class="smallImg margin_top_2">
+                    <div class="imgDetail img1">
+                        <img src="./img/shop/shoesDetail-1.png" alt="">
+                    </div>
+                    <div class="imgDetail img2">
+                        <img src="./img/shop/shoesDetail-2.png" alt="">
+                    </div>
+                    <div class="imgDetail img3">
+                        <img src="./img/shop/shoesDetail-3.png" alt="">
+                    </div>
+                    <div class="imgDetail img4">
+                        <img src="./img/shop/shoes.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <form class="detail margin_left_4">
+                <p>裝備</p>
+                <h3 class="margin_top_1">宇宙平衡鞋</h3>
+                <hr class="margin_top_1">
+                <p class="margin_top_1 line_low">穿上這雙鞋，協助你在無重力的宇宙暢行無阻!
+                    <br>
+                    獨家專利打造，讓你的旅程加倍舒適~
+                </p>
+                <p class="margin_top_2"><strong>價格</strong></p>
+                <p class="h3">$5000</p>
+                <div class="quantity margin_top_2">
+                    <label for="quantity">數量</label>
+                    <div class="as margin_top_2">
+                        <span class="minus">&minus;</span>
+                        <input type="number" name="quantity" id="quantity" value="1" min="0">
+                        <span class="add">&plus;</span>
+                    </div>
+                    <p class="button_large margin_top_2">加入購物車</p>
+                    <p class="button_large margin_top_2">立即購買</p>
+                </div>
+            </form>
+        </div>
+        <p class="describe line_low">選用高質感的超細纖維皮革，具有真皮的透氣度與柔軟度，軟可彎折，
+            輕量好攜帶，精緻銜扣設計讓整體質感大提升，兩種可後踩設計，出
+            門方便又省時，橡膠防滑鞋底，有效降低打滑危機
+        </p>
+        <div class="comment" id="app">
+            <h3>買家評論</h3>
+            <div class="score margin_top_1">
+                <p class="h3 number">{{number}}</p>
+                <div class="starMessage margin_left_1">
+                    <ul class="stars">
+                        <li v-for="star in totalStar" class="star">
+                            <img class="icon" src="./img/shop/star.png">
+                        </li>
+                    </ul>
+                    <div class="messageNum margin_top_1 margin_left_1">100則留言</div>
+                </div>
+                <p class="more">瀏覽評論</p>
+            </div>
+        </div>
+    </section>
+    <script src="./js/addMinus.js"></script>
+    <script src="./js/productImgChange.js"></script>
+    <script>
+        let vm = new Vue({
+            el: "#app",
+            data:{
+                number: 4.8,
+                totalStar: 5,
+                comment: [{
+                    src: "./img/shop/user.png",
+                    name: "Doris",
+                    date: "21.03.11",
+                    content: "選用高質感的超細纖維皮革，具有真皮的透氣度與柔軟度，軟可彎折，輕量好攜帶，精緻銜扣設計讓整體質感大提升，兩種可後踩設計，出門方便又省時，橡膠防滑鞋底，有效降低打滑危機"
+                }],
+                computed:{
+                    subContent(){
+                        if(this.content.length > 20){
+                            return this.content.substr(1,10);
+                        }else{
+                            return this.content;
+                        }
+                    }
+                }
+            }
+        })
+    </script>
+</body>
+</html>

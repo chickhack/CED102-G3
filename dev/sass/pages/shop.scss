@@ -1,0 +1,85 @@
+@import "../all.scss";
+
+section.shop{
+    // border: 1px solid $gold;
+    margin: 0 40px;
+    text-align: center;
+    color: $white;
+    h3{
+        font-weight: 300;
+    }
+    .btn{
+        cursor: pointer;
+    }
+    .shopAll{
+        @include flex_middle();
+        align-items: start;
+        .aside{
+            width: 20%;
+            position: sticky;
+            top: 100px;
+            left: 0;
+            margin-top: 88px;
+            // border: 1px solid #fff;
+            li{
+                border: 1px solid $pink;
+                padding: 16px 0;
+                background-color: #292B41;
+                border: none;
+                background-image: url("../../img/shop/arrow-right.png");
+                background-repeat: no-repeat;
+                background-position: right 20px center;
+                background-size: 10px;
+            }
+        }
+        .main{
+            width: 68%;
+            // border: 1px solid $pink;
+            .chooseBtn{
+                display: flex;
+                justify-content: space-around;
+                .btn{
+                    border: 1px solid $gold;
+                    padding: 16px 0;
+                    width: 150px;
+                }
+            }
+            .productAll{
+                letter-spacing: 5px;
+                ul{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: start;
+                    flex-wrap: wrap;
+                    // border: 1px solid $pink;
+                    li{
+                        width: 30%;
+                        // border: 1px solid #fff;
+                        a{
+                            padding: 10px 0 10px 0;
+                            @include flex_middle();
+                            flex-direction: column;
+                            background-color: $white;
+                            color: black;
+                            img{
+                                width: 50%;
+                            }
+                            .item{
+                                text-align: left;
+                                width: 100%;
+                                @include flex_middle();
+                                justify-content: space-around;
+                                padding-top: 20px;
+                                // border: 1px solid #fff;
+                                .info{
+                                    padding: 16px 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

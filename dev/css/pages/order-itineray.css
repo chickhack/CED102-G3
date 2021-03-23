@@ -12,11 +12,7 @@ body {
 }
 
 .svgRight::before {
-<<<<<<< HEAD
-  content: url(../img/chevron-compact-right.svg) !important;
-=======
   content: url(../../img/chevron-compact-right.svg) !important;
->>>>>>> chickhack
   width: 20px;
   height: 20px;
 }
@@ -202,11 +198,7 @@ form .orderinfo .container .row .col-7 .btn-openmenu {
 }
 
 form .orderinfo .container .row .col-7 .btn-openmenu::before {
-<<<<<<< HEAD
-  content: url(../img/chevron-down.svg);
-=======
   content: url(../../img/chevron-down.svg);
->>>>>>> chickhack
   padding-right: 8px;
   display: inline-block;
   width: 20px;
@@ -313,11 +305,7 @@ form .addPay .container .row .col-7 .btn-addPay {
 }
 
 form .addPay .container .row .col-7 .btn-addPay::before {
-<<<<<<< HEAD
-  content: url(../img/chevron-down.svg);
-=======
   content: url(../../img/chevron-down.svg);
->>>>>>> chickhack
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -394,11 +382,7 @@ form .paymethod .row .col-7 .btn-paymethod {
 }
 
 form .paymethod .row .col-7 .btn-paymethod::before {
-<<<<<<< HEAD
-  content: url(../img/chevron-down.svg);
-=======
   content: url(../../img/chevron-down.svg);
->>>>>>> chickhack
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -442,11 +426,7 @@ form .orderDetails .row .col-7 .btn-orderDetails {
 }
 
 form .orderDetails .row .col-7 .btn-orderDetails::before {
-<<<<<<< HEAD
-  content: url(../img/chevron-down.svg);
-=======
   content: url(../../img/chevron-down.svg);
->>>>>>> chickhack
   display: inline-block;
   width: 20px;
   height: 20px;
