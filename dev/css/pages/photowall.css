@@ -5,8 +5,13 @@ body {
 }
 
 .grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 5%;
 }
 
 .grid-item {
@@ -15,6 +20,8 @@ body {
 }
 
 .action-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -26,7 +33,13 @@ body {
   margin-left: 40px;
 }
 
+.button {
+  padding: 10px;
+}
+
 .article {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-bottom: 20px;
   width: 230px;
@@ -47,6 +60,8 @@ body {
 }
 
 .article_2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 /*# sourceMappingURL=photowall.css.map */
