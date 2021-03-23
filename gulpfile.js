@@ -45,6 +45,7 @@ function pageStyle() {
         .pipe(dest('dist/css/pages/'));
 }
 
+
 function includeHTML() {
     return src('dev/*.html')
         .pipe(
