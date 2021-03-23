@@ -1,13 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <!-- 引用的css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/all.css">
+  <link rel="stylesheet" href="./css/account.css">
+  <title>會員</title>
 </head>
+
+<style>
+  body{
+    background-color: #0c0d18;
+  }
+
+  .wellcome {
+    padding: 80px 80px 0px 80px;
+    display:flex;
+    align-items:center;
+    /* justify-content:center; */
+  }
+  span.account_name{
+    line-height: 20px;
+  }
+  .spacedinfo {
+    font-size: 20px;
+    font-family: "Haettenschweiler", "Microsoft JhengHei", sans-serif;
+  }
+  img.account_levimg {
+    max-width: 40px;
+    padding-left: 10px;
+  }
+
+  .account{
+    border: 1px solid #AD6E4A;
+    background-color: #292b41;
+    margin: 25px 80px 0px 80px;
+  }
+  .account_card{
+    padding: 20px;
+  }
+
+  .your_lev{
+    font-size: 20px;
+    font-family: "Haettenschweiler", "Microsoft JhengHei", sans-serif;
+  }
+
+  footer{
+    padding-top: 100px
+  }
+
+</style>
+
 <body>
-  @@include('./layout/header.html');
-  @@include('./layout/footer.html');
+  <header>
+    @@include('./layout/header.html');
+  </header>
+
+  <div class="wellcome">
+    <div>
+      <h2 class="spacedinfo"><span class="account_name">嗨，spaced!</span><br>
+                             <span class="account_num">spaced會員編號100918156</span>
+      </h2>
+    </div>
+    <img class="account_levimg" src="../dev/img/account/lev1.png" alt="lev">
+  </div>
+
+  <div class="account">
+    <div class="account_card">
+      <div class="lev_info">
+        <h2 class="your_lev">
+          <span class="lev_name">冒險者</span>
+          <span class="account_total">累積旅行3顆星球、5個景點</span>
+          <span class="account_money">目前持有999,999宇宙幣</span>
+        </h2>
+      </div>
+      <div class="lev_acc">
+        <h2><span>12個月內累積</span></h2>
+      </div>
+      <div class="lev">
+        <div class=nowlev_img>
+          <h2 class="nowlev"><img class="nowlev" src="../dev/img/account/lev1.png" alt="lev"><br>
+            <span class="nowacc">80,000積分</span><br>
+          </h2>
+        </div>
+        <img class="account_rocket" src="../dev/img/account/rocket4.png" alt="rocket">
+        <div class=nextlev_img>
+          <h2 class="nextlev"><img class="nextlev" src="../dev/img/account/lev2.png" alt="lev"><br>
+            <span class="nextacc">目前尚需80,000積分<br>才能升級至初星者</span>
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    @@include('./layout/footer.html');
+  </footer>
+
+  <!-- 引用的js -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>

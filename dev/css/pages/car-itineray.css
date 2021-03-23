@@ -1,0 +1,112 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.car-top {
+  height: 1000px;
+  padding-top: 15%;
+}
+
+body {
+  background-color: #0c0d18;
+}
+
+.vvvvv {
+  vertical-align: middle;
+}
+
+.backcol {
+  background-color: #3a3a3e;
+}
+
+.text-1 {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 80px;
+}
+
+.p-text-1 {
+  font-weight: 700;
+  font-size: 24px;
+  color: #fff;
+  margin: 0px;
+  letter-spacing: 1px;
+}
+
+.p-text-2 {
+  font-size: 16px;
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+.p-text-3 {
+  font-size: 16px;
+  color: #ad6e4a;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+.imgsr {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  max-height: 100px;
+  object-fit: cover;
+}
+
+.btn-date {
+  border: 1px solid #ad6e4a;
+  color: #ad6e4a;
+  background-color: #3a3a3e;
+  height: 30px;
+  text-align: center;
+}
+
+.bi {
+  fill: #ad6e4a;
+}
+
+::-webkit-calendar-picker-indicator {
+  color: #ad6e4a;
+  background-image: url(../../img/date-chevron-down.svg);
+  width: 20px;
+  height: 20px;
+  opacity: 1;
+}
+
+.btn-pull {
+  color: #ad6e4a;
+  background-color: #3a3a3e;
+  font-size: 24px;
+  border: 1px solid #ad6e4a;
+  width: 30px;
+  height: 30px;
+  line-height: 0px;
+  padding-bottom: 1px;
+}
+
+.btn-nu {
+  color: #ad6e4a;
+  background-color: #3a3a3e;
+  font-size: 24px;
+  border: 0px solid #ad6e4a;
+  width: 40px;
+  height: 30px;
+  line-height: 0px;
+  text-align: center;
+  outline: none;
+}
+
+.row {
+  justify-content: center;
+}
+
+.row .col-8 .row .col-12 {
+  display: flex;
+  justify-content: space-around;
+  padding: 2% 1%;
+  border-radius: 5px;
+}
+/*# sourceMappingURL=car-itineray.css.map */

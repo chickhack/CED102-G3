@@ -5,12 +5,8 @@ body {
 }
 
 .grid {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   padding-top: 5%;
 }
 
@@ -20,8 +16,6 @@ body {
 }
 
 .action-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
   bottom: 40px;
@@ -38,16 +32,18 @@ body {
 }
 
 .button {
+<<<<<<< HEAD:dev/css/pages/photowall.css
   background-color: transparent;
   border-width: 0px;
   outline: none;
   padding: 10px;
   margin-left: 40px;
+=======
+  padding: 10px;
+>>>>>>> dev:css/photowall.css
 }
 
 .article {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-bottom: 20px;
   width: 230px;
@@ -68,8 +64,6 @@ body {
 }
 
 .article_2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 /*# sourceMappingURL=photowall.css.map */
