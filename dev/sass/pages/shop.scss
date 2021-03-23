@@ -2,6 +2,7 @@
 
 section.shop{
     // border: 1px solid $gold;
+    // padding-top: 15vh;
     margin: 0 40px;
     text-align: center;
     color: $white;
@@ -16,8 +17,8 @@ section.shop{
         align-items: start;
         .aside{
             width: 20%;
-            position: sticky;
-            top: 100px;
+            // position: sticky;
+            top: 15vh;
             left: 0;
             margin-top: 88px;
             // border: 1px solid #fff;
