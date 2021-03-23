@@ -9,31 +9,28 @@ body{
   flex-wrap: wrap;
   justify-content: center;
   align-items: start;
-  padding-top: 6%;
+  padding-top: 5%;
+  font-size: 12px;
 }
 .grid-item{
-  margin: 20px;
+  margin: 10px;
   border: 1px solid #AD6E4A;
   width: 250px;
-
-  //test
-  display: inline-block;
+  // display: inline-block;
+  border-radius: 5px;
 }
-.grid .grid-item:nth-child(n+9){
+.grid .grid-item:nth-child(n+11){
   display: none;
 }
 .action-box{
   display:flex;
-  position: relative;
   bottom: 48px;
   background-color:black;
   opacity: 0.5;
+  position: relative;
 }
 .heart,.share,.message{
   padding: 10px;
-}
-.more{
-  margin-left: 40px;
 }
 .action-box .button{
   background-color: transparent;
@@ -42,10 +39,17 @@ body{
   padding: 10px;
   margin-left: 40px;
 }
+.article_all{
+  position: relative;
+  bottom: 48px;
+}
 .article{
   display: flex;
-  margin-bottom: 20px;
-  width: 230px;
+  width: 250px;
+}
+.name{
+  line-height: 51px;
+  color: #fff;
 }
 .member_photo{
   margin-right: 15px;
@@ -55,11 +59,14 @@ body{
   border-radius: 50%;
 }
 .text{
-  line-height: 36px;
+  padding: 0 15px;
   color:#fff;
+  line-height: 18px;
+
 }
 .article_2{
   display: flex;
+  margin-top: 10px;
 }
 
 .col-md-12{
@@ -77,9 +84,9 @@ body{
 
 .col-md-1 {
   display: inline-block;
-  position: relative;
+  position: sticky;
   left: 1300px;
-  bottom: 100px;
+  bottom: 120px;
   
 }
 .col-md-1 .button_2 .post_button{

@@ -299,7 +299,9 @@ nav {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   background-color: #0c0d18;
-  position: fixed;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   width: 100%;
   min-height: 12vh;
 }
@@ -308,7 +310,7 @@ nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-  background-image: url("../../img/logo.png");
+  background-image: url("../img/logo.png");
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -420,6 +422,7 @@ footer .smoke {
   left: 50%;
   bottom: 0;
   width: 100%;
+  height: 80%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }

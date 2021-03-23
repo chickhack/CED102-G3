@@ -8,16 +8,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
-<<<<<<< HEAD
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-=======
-  justify-content: center;
->>>>>>> dev
-  padding-top: 5%;
-=======
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: center;
@@ -26,18 +16,18 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
-  padding-top: 6%;
->>>>>>> d57137fb4a3839170bdcbb9c72e58adc577c9b82
+  padding-top: 5%;
+  font-size: 12px;
 }
 
 .grid-item {
-  margin: 20px;
+  margin: 10px;
   border: 1px solid #AD6E4A;
   width: 250px;
-  display: inline-block;
+  border-radius: 5px;
 }
 
-.grid .grid-item:nth-child(n+9) {
+.grid .grid-item:nth-child(n+11) {
   display: none;
 }
 
@@ -45,18 +35,14 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
   bottom: 48px;
   background-color: black;
   opacity: 0.5;
+  position: relative;
 }
 
 .heart, .share, .message {
   padding: 10px;
-}
-
-.more {
-  margin-left: 40px;
 }
 
 .action-box .button {
@@ -67,12 +53,21 @@ body {
   margin-left: 40px;
 }
 
+.article_all {
+  position: relative;
+  bottom: 48px;
+}
+
 .article {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 20px;
-  width: 230px;
+  width: 250px;
+}
+
+.name {
+  line-height: 51px;
+  color: #fff;
 }
 
 .member_photo {
@@ -85,14 +80,16 @@ body {
 }
 
 .text {
-  line-height: 36px;
+  padding: 0 15px;
   color: #fff;
+  line-height: 18px;
 }
 
 .article_2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 10px;
 }
 
 .col-md-12 {
@@ -110,9 +107,10 @@ body {
 
 .col-md-1 {
   display: inline-block;
-  position: relative;
+  position: -webkit-sticky;
+  position: sticky;
   left: 1300px;
-  bottom: 100px;
+  bottom: 120px;
 }
 
 .col-md-1 .button_2 .post_button {
