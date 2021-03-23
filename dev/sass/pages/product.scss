@@ -14,7 +14,7 @@ input[type=number] {
 .product{
     @include flex_middle();
     align-items: start;
-    margin-top: 40px;
+    padding-top: 15vh;
     .img{
         max-width: 500px;
         // border: 1px solid white;
@@ -55,6 +55,8 @@ input[type=number] {
             margin-left: 0;
             margin-right: 0;
             width: 80%;
+            border: 1px solid $gold;
+            background-color: $gold;
         }
         .h3{
             letter-spacing: 3px;
@@ -82,7 +84,7 @@ input[type=number] {
                 }
             }
             .button_large{
-                max-width: 100%;
+                width: 100%;
                 padding: 8px 0;
             }
         }
