@@ -8,6 +8,16 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
+<<<<<<< HEAD
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+=======
+  justify-content: center;
+>>>>>>> dev
+  padding-top: 5%;
+=======
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: center;
@@ -17,6 +27,7 @@ body {
       -ms-flex-align: start;
           align-items: start;
   padding-top: 6%;
+>>>>>>> d57137fb4a3839170bdcbb9c72e58adc577c9b82
 }
 
 .grid-item {
