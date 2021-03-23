@@ -12,15 +12,11 @@
       integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
       crossorigin="anonymous"
     />
-    <!-- <link rel="stylesheet" href="../css/planet.css"></link> -->
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/all.css" />
-    <link rel="stylesheet" href="../dist/css/pages/planet.css"></link>
-    <!-- canvas -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r126/three.min.js"
-      integrity="sha512-n8IpKWzDnBOcBhRlHirMZOUvEq2bLRMuJGjuVqbzUJwtTsgwOgK5aS0c1JA647XWYfqvXve8k3PtZdzpipFjgg=="
-      crossorigin="anonymous"
-    ></script>
+    <link rel="stylesheet" href="../css/pages/planet.css"></link>
+
     <style></style>
   </head>
   <body>
@@ -30,9 +26,9 @@
         <div class="col-11 frame">
           <div class="title">星星世界</div>
           <ul class="tab-title">
-            <li class="selected"><a href="tab01">火星</a></li>
-            <li><a href="tab02">月球</a></li>
-            <li><a href="tab03">土星</a></li>
+            <li class="selected"><a href="#tab01">火星</a></li>
+            <li><a href="#tab02">月球</a></li>
+            <li><a href="#tab03">土星</a></li>
             <li><a href="tab04">木星</a></li>
             <li><a href="tab04">木星</a></li>
             <li><a href="tab04">木星</a></li>
@@ -48,19 +44,79 @@
             <div class="data col-6">
               <div class="grav">
                 <span>38</span>
-                <span class="sub">％</span>
+                <span class="data-mid">％</span>
                 <p>重力</p>
               </div>
               <div class="day">
                 <span>24</span>
-                <span class="sub">HR</span>
+                <span class="data-low">HR</span>
                 <p>一天</p>
               </div>
               <div class="temp">
-                <span>-60</span>
-                <span class="sub">F</span>
+                <span class="data-mid">-</span>
+                <span>60</span>
+                <span class="data-high">F</span>
                 <p>溫度</p>
               </div>
+            </div>
+          </div>
+          <div id="tab02" class="col-10 tab-inner">
+            <div class="intro col-6">
+              <h3>月球</h3>
+              <p>
+                火星大氣以二氧化碳為主，既稀薄又寒冷，其表面特徵讓人聯想起月球上的撞擊坑，以及地球上的山谷、沙漠和極地冰蓋。
+              </p>
+            </div>
+            <div class="data col-6">
+              <div class="grav">
+                <span>38</span>
+                <span class="data-mid">％</span>
+                <p>重力</p>
+              </div>
+              <div class="day">
+                <span>24</span>
+                <span class="data-low">HR</span>
+                <p>一天</p>
+              </div>
+              <div class="temp">
+                <span class="data-mid">-</span>
+                <span>60</span>
+                <span class="data-high">F</span>
+                <p>溫度</p>
+              </div>
+            </div>
+          </div>
+          <div id="tab03" class="col-10 tab-inner">
+            <div class="intro col-6">
+              <h3>土星</h3>
+              <p>
+                火星大氣以二氧化碳為主，既稀薄又寒冷，其表面特徵讓人聯想起月球上的撞擊坑，以及地球上的山谷、沙漠和極地冰蓋。
+              </p>
+            </div>
+            <div class="data col-6">
+              <div class="grav">
+                <span>38</span>
+                <span class="data-mid">％</span>
+                <p>重力</p>
+              </div>
+              <div class="day">
+                <span>24</span>
+                <span class="data-low">HR</span>
+                <p>一天</p>
+              </div>
+              <div class="temp">
+                <span class="data-mid">-</span>
+                <span>60</span>
+                <span class="data-high">F</span>
+                <p>溫度</p>
+              </div>
+            </div>
+          </div>
+          <div id="tab04" class="col-10 tab-inner">
+            <div class="intro col-6">
+              <p>
+                coming soon
+              </p>
             </div>
           </div>
           <div class="tab-active col-12">
@@ -69,16 +125,6 @@
               style="max-width: 500px"
               class="geoplanet"
             />
-            <div class="outline"></div>
-            <div class="cover_rd"></div>
-            <div class="geoopt">
-              <div class="cover_sq">
-                <span class="geo2"></span>
-              </div>
-              <div class="cover_sq">
-                <span class="geo3"></span>
-              </div>
-            </div>
           </div>
           <div class="content">
             <div class="col-6 imgs">
@@ -110,7 +156,6 @@
                 有個名為 Valles
                 Marineris的大峽谷長度超過4800公里，寬度320公里深度7公里，是地球上的大峽谷十倍，也有人稱這大峽谷為巨獸的爪痕。<br /><br />
                 火星的大氣稀薄，主要由二氧化碳，氮氣和氬氣組成。由於懸浮的塵埃而不是我們在地球上看到的熟悉的藍色，天空將是朦朧的和紅色的。火星稀疏的大氣層並不能為隕石，小行星和彗星等物體的撞擊提供很多保護。<br /><br />
-                火星的自轉軸傾斜23.4度，這點與地球很相似所以火星上是存在著四季的，但是火星上每一季的時間相對於地球會很長，北半球的春季與南半球的秋季是194個地球日。北半秋季與南半春季是142個地球日。北半冬季與南半夏季是154個地球日。北半夏季與南半夏季是178個地球日。<br />
               </p>
             </div>
           </div>
@@ -119,5 +164,17 @@
     </div>
     <footer>@@include('./layout/footer.html')</footer>
     
+
+    <script>
+      $(function(){
+        var $li = $('ul.tab-title li');
+            $($li.eq(0).addClass('selected').find('a').attr('href')).siblings('.tab-inner').hide();
+
+            $li.click(function(){
+              $($(this).find('a').attr('href')).show().siblings('.tab-inner').hide();
+              $(this).addClass('selected').siblings('.selected').removeClass('selected');
+            });
+      });
+    </script>
   </body>
 </html>
