@@ -10,7 +10,7 @@ const browserSync = require('browser-sync').create();
 const reload = browserSync.reload; //browser的方法 更新後~
 
 function moveImg() {
-    return src('dev/img/*').pipe(dest('dist/img/'));
+    return src('dev/img/**').pipe(dest('dist/img/'));
 }
 
 function concatJSAndMove() {
