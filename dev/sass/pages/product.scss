@@ -1,0 +1,128 @@
+@import "../all.scss";
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.product{
+    @include flex_middle();
+    align-items: start;
+    padding-top: 15vh;
+    .img{
+        max-width: 500px;
+        // border: 1px solid white;
+        text-align: center;
+        @include flex_middle();
+        flex-direction: column;
+        .bigImg{
+            width: 90%;
+            height: 250px;
+            background-color: $white;
+        }
+        .smallImg{
+            @include flex_middle();
+            justify-content: space-around;
+            width: 90%;
+            .imgDetail{
+                max-width: 100px;
+                background-color: $white;
+                cursor: pointer;
+                margin: 0 4px;
+                padding: 4px;
+                img{
+                    width: 60px;
+                    height: 56px;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+    .detail{
+        width: 30%;
+        // border: 1px solid $white;
+        text-align: left;
+        strong{
+            font-weight: 700;
+        }
+        hr{
+            margin-left: 0;
+            margin-right: 0;
+            width: 80%;
+            border: 1px solid $gold;
+            background-color: $gold;
+        }
+        .h3{
+            letter-spacing: 3px;
+        }
+        .quantity{
+            label{
+                display: block;
+            }
+            .as{
+                color: $gold;
+                input[type=number]{
+                    max-width: 50px;
+                    background-color: transparent;
+                    outline: none;
+                    border: none;
+                    text-align: center;
+                    color: $gold;
+                }
+                span{
+                    border: 1px solid $gold;
+                    outline: none;
+                    background-color: transparent;
+                    padding: 4px 8px;
+                    cursor: pointer;
+                }
+            }
+            .button_large{
+                width: 100%;
+                padding: 8px 0;
+            }
+        }
+    }
+}
+
+.describe{
+    // border: 1px solid white;
+    max-width: 300px;
+    margin: 80px auto;
+    text-align: center;
+}
+
+.comment{
+    border: 1px solid white;
+    width: 53%;
+    margin: 0 auto;
+    .score{
+        display: flex;
+        align-items: center;
+        position: relative;
+        .number{
+            background-color: $gold;
+            padding: 8px;
+        }
+        .stars{
+            @include flex_middle();
+            .star{
+                margin-left: 4px;
+            }
+            .icon{
+                width: 15px;
+            }
+        }
+        .more{
+            position: absolute;
+            right: 0;
+            text-decoration: underline;
+        }
+    }
+}

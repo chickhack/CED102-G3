@@ -40,7 +40,7 @@
         <div class="orderinfo">
             <div class="container">
                 <div class="row">
-                    <div class="col-7">
+                    <div class="col-7 line_high">
                         
                         <button class="btn-openmenu padding_top_2" type="button" id="btn-opmenu"> 
                             <!-- <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
@@ -49,18 +49,19 @@
                             訂購人資訊
 
                         </button>
-                        <div class="divider"></div>
-                            <div id="orderinfo-automenu">
-                                <div class="row g-5 " id="">
+                        <div id="orderinfo-automenu" >
+                                <div class="divider "></div>
+                                <div class="row" id="">
                                     <div class="col-5 padding_left_5">
                                         <label for="last-name" class="textcolor line_high">名字</label>
                                         <input type="text" id="last-name" class="letter-spacing-1" name="last-name" required>
-                                        <label for="phone" class="textcolor line_high">連絡電話</label>
-                                        <input type="tel" id="phone" class="letter-spacing-2" name="phone" pattern="[0-9]{4}[0-9]{6}" required>
-                                    </div>
-                                    <div class="col-5 ">
                                         <label for="first-name" class="textcolor line_high">姓氏</label>
                                         <input type="text" id="first-name" class="letter-spacing-1" name="first-name" required>
+                                        
+                                    </div>
+                                    <div class="col-5 padding_left_5">
+                                        <label for="phone" class="textcolor line_high">連絡電話</label>
+                                        <input type="tel" id="phone" class="letter-spacing-2 oioi" name="phone" pattern="[0-9]{4}[0-9]{6}" required>
                                     </div>
                                     <div class="col-11 padding_left_7 padding_bottom-1">
                                         <label for="email" class="textcolor line_high">電子信箱</label>
