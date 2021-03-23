@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+body {
+  font-family: "Haettenschweiler","Microsoft JhengHei", sans-serif;
+  color: #C9ADA7;
+  font-size: 14px;
+=======
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -56,7 +62,8 @@ img {
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
   margin: 0;
   padding: 0;
 }
@@ -76,6 +83,7 @@ body {
   color: #C9ADA7;
   font-size: 14px;
   background-color: #0c0d18;
+>>>>>>> dev
 }
 
 h1, .h1 {
@@ -103,7 +111,11 @@ p, .p {
 }
 
 @font-face {
+<<<<<<< HEAD
+  font-family: "Microsoft Yahei", "Haettenschweiler", sans-serif;
+=======
   font-family: "Microsoft JhengHei";
+>>>>>>> dev
   src: local("./fonts/msjh.ttc"), local("./fonts/msjhbd.ttc"), local("./fonts/HATTEN.TTF");
 }
 
@@ -285,11 +297,20 @@ p, .p {
   max-width: 20px;
 }
 
+<<<<<<< HEAD
+=======
 nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   background-color: #0c0d18;
   position: fixed;
   width: 100%;
@@ -309,10 +330,18 @@ nav .logo h1 a {
 }
 
 nav .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   width: 60%;
 }
 
@@ -321,10 +350,17 @@ nav .nav-links a {
 }
 
 nav .nav-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 12%;
 }
 
@@ -356,19 +392,28 @@ footer .links .logo {
   position: relative;
   left: 50%;
   bottom: 50px;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 footer .links .footer-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 55%;
   position: relative;
   left: 50%;
   bottom: 30px;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 footer .links .footer-links a {
@@ -379,7 +424,8 @@ footer .footer_moon {
   position: relative;
   left: 50%;
   max-width: 550px;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 footer .smoke {
@@ -387,9 +433,11 @@ footer .smoke {
   left: 50%;
   bottom: 0;
   width: 100%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
+>>>>>>> dev
 body {
   font-family: "Haettenschweiler","Microsoft JhengHei", sans-serif;
   color: #C9ADA7;
@@ -407,16 +455,52 @@ canvas {
 }
 
 .title {
+<<<<<<< HEAD
+<<<<<<< HEAD
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+=======
   display: flex;
   justify-content: center;
+>>>>>>> dev
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+>>>>>>> d57137fb4a3839170bdcbb9c72e58adc577c9b82
   padding-top: 100px;
   font-size: 42px;
 }
 
 ul.tab-title {
   padding-top: 50px;
+<<<<<<< HEAD
+<<<<<<< HEAD
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+=======
   display: flex;
   justify-content: center;
+>>>>>>> dev
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+>>>>>>> d57137fb4a3839170bdcbb9c72e58adc577c9b82
 }
 
 ul.tab-title li {
@@ -434,12 +518,42 @@ ul.tab-title li.selected {
 
 .tab-inner {
   border-top: 1px solid #AD6E4A;
+<<<<<<< HEAD
+<<<<<<< HEAD
+  display: -webkit-box;
+  display: -ms-flexbox;
+=======
+>>>>>>> dev
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> d57137fb4a3839170bdcbb9c72e58adc577c9b82
   display: flex;
 }
 
 .tab-inner .intro {
+<<<<<<< HEAD
+<<<<<<< HEAD
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+=======
   display: flex;
   flex-direction: column;
+>>>>>>> dev
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+>>>>>>> d57137fb4a3839170bdcbb9c72e58adc577c9b82
   margin-top: 50px;
   text-align: left;
 }
@@ -451,8 +565,26 @@ ul.tab-title li.selected {
 }
 
 .tab-inner .data {
+<<<<<<< HEAD
+<<<<<<< HEAD
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+=======
   display: flex;
   justify-content: flex-end;
+>>>>>>> dev
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+>>>>>>> d57137fb4a3839170bdcbb9c72e58adc577c9b82
   margin-top: 50px;
 }
 
@@ -497,7 +629,17 @@ ul.tab-title li.selected {
   background-image: url(../../dev/img/planet/crater.jpg);
   background-position: top;
   position: relative;
+<<<<<<< HEAD
+<<<<<<< HEAD
+  -webkit-transform: translate(-112%, -220%);
+          transform: translate(-112%, -220%);
+=======
   transform: translate(-112%, -220%);
+>>>>>>> dev
+=======
+  -webkit-transform: translate(-112%, -220%);
+          transform: translate(-112%, -220%);
+>>>>>>> d57137fb4a3839170bdcbb9c72e58adc577c9b82
 }
 
 .tab-active .outline {
@@ -506,13 +648,39 @@ ul.tab-title li.selected {
   width: 190px;
   border-radius: 50%;
   position: relative;
+<<<<<<< HEAD
+<<<<<<< HEAD
+  -webkit-transform: translate(-100%, -100%);
+          transform: translate(-100%, -100%);
+=======
   transform: translate(-100%, -100%);
+>>>>>>> dev
+=======
+  -webkit-transform: translate(-100%, -100%);
+          transform: translate(-100%, -100%);
+>>>>>>> d57137fb4a3839170bdcbb9c72e58adc577c9b82
 }
 
 .tab-active .geoopt {
   position: absolute;
+<<<<<<< HEAD
+<<<<<<< HEAD
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+=======
   display: flex;
   column-gap: 30px;
+>>>>>>> dev
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+>>>>>>> d57137fb4a3839170bdcbb9c72e58adc577c9b82
   right: 0px;
   top: 700px;
 }
@@ -524,19 +692,43 @@ ul.tab-title li.selected {
 }
 
 .tab-active .geoopt .cover_sq span.geo2 {
+<<<<<<< HEAD
+  background-image: url(../../dev/img/planet/crater_1.jpg);
+=======
   background-image: url(../../img/planet/crater_1.jpg);
+>>>>>>> dev
   background-size: 130%;
   background-position: center;
 }
 
 .tab-active .geoopt .cover_sq span.geo3 {
+<<<<<<< HEAD
+  background-image: url(../../dev/img/planet/crater_2.png);
+=======
   background-image: url(../../img/planet/crater_2.png);
+>>>>>>> dev
   background-position: top;
 }
 
 .content {
+<<<<<<< HEAD
+<<<<<<< HEAD
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+=======
   display: flex;
   flex-wrap: wrap;
+>>>>>>> dev
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+>>>>>>> d57137fb4a3839170bdcbb9c72e58adc577c9b82
 }
 
 .content .imgs {
@@ -545,20 +737,59 @@ ul.tab-title li.selected {
 }
 
 .content .imgs .img1 {
-  transform: translate(10%);
+<<<<<<< HEAD
+<<<<<<< HEAD
+  -webkit-transform: translate(10%);
+          transform: translate(10%);
 }
 
 .content .imgs .img2 {
-  transform: translateX(-10%);
+  -webkit-transform: translateX(-10%);
+          transform: translateX(-10%);
 }
 
 .content .imgs .img3 {
-  transform: translate(-70%, -350px);
+  -webkit-transform: translate(-70%, -350px);
+          transform: translate(-70%, -350px);
 }
 
 .content .desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+=======
+  transform: translate(10%);
+=======
+  -webkit-transform: translate(10%);
+          transform: translate(10%);
+>>>>>>> d57137fb4a3839170bdcbb9c72e58adc577c9b82
+}
+
+.content .imgs .img2 {
+  -webkit-transform: translateX(-10%);
+          transform: translateX(-10%);
+}
+
+.content .imgs .img3 {
+  -webkit-transform: translate(-70%, -350px);
+          transform: translate(-70%, -350px);
+}
+
+.content .desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+<<<<<<< HEAD
   align-items: center;
+>>>>>>> dev
+=======
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+>>>>>>> d57137fb4a3839170bdcbb9c72e58adc577c9b82
 }
 
 .content .desc p {
