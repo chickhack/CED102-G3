@@ -72,9 +72,10 @@ input[type=button], input[type=submit], input[type=file], button {
 }
 
 body {
-  font-family: "Haettenschweiler","Microsoft JhengHei", sans-serif;
+  font-family: "Microsoft JhengHei", sans-serif;
   color: #C9ADA7;
   font-size: 14px;
+  background-color: #0c0d18;
 }
 
 h1, .h1 {
@@ -102,7 +103,7 @@ p, .p {
 }
 
 @font-face {
-  font-family: "Microsoft Yahei", "Haettenschweiler", sans-serif;
+  font-family: "Microsoft JhengHei";
   src: local("./fonts/msjh.ttc"), local("./fonts/msjhbd.ttc"), local("./fonts/HATTEN.TTF");
 }
 
@@ -523,13 +524,13 @@ ul.tab-title li.selected {
 }
 
 .tab-active .geoopt .cover_sq span.geo2 {
-  background-image: url(../../dev/img/planet/crater_1.jpg);
+  background-image: url(../../img/planet/crater_1.jpg);
   background-size: 130%;
   background-position: center;
 }
 
 .tab-active .geoopt .cover_sq span.geo3 {
-  background-image: url(../../dev/img/planet/crater_2.png);
+  background-image: url(../../img/planet/crater_2.png);
   background-position: top;
 }
 
