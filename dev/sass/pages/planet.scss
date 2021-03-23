@@ -73,10 +73,19 @@ ul.tab-title{
         span{
             font-size: 48px;
         }
-        span.sub{
+        span.data-high{
+            vertical-align:top;
             font-size: 24px;
         }
+        span.data-mid{
+            font-size: 24px;
+        }
+        span.data-low{
+            font-size: 24px;
+            font-stretch: narrower;
+        }
         p{
+            margin-top: 5px;
             font-size: 16px;
         }
 
@@ -147,7 +156,7 @@ ul.tab-title{
         display:flex;
         align-items: center;
         p{
-            line-height: 1.5rem;
+            line-height: 2rem;
             text-align: justify;
             max-width: 500px;
         }
