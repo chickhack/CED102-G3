@@ -390,203 +390,101 @@ footer .smoke {
   transform: translateX(-50%);
 }
 
-body {
-  font-family: "Haettenschweiler", "Microsoft JhengHei", sans-serif;
-  color: #C9ADA7;
-  background-color: #0c0d18;
-  font-size: 14px;
-}
-
-div.bk {
-  width: 500px;
-  height: 500px;
-  position: absolute;
-  left: 450px;
-  top: 60px;
-  opacity: 0.6;
-}
-
-div.bk2 {
-  width: 1300px;
-  height: 1300px;
-  position: absolute;
-  left: 59px;
-  top: 730px;
-  opacity: 0.03;
-  transform: rotate(90deg);
-}
-
-div.bk3 {
-  width: 300px;
-  height: 300px;
-  position: absolute;
-  left: -120px;
-  top: 400px;
-  opacity: 0.3;
-}
-
-.border {
-  border: 1px solid #AD6E4A;
-  margin: 0px auto;
-  width: 90%;
-  height: 100%;
-  top: 80px;
-  position: absolute;
-  opacity: 0.2;
-}
-
-.first {
-  padding-left: 150px;
-}
-
-.hottrip {
-  display: inline-flex;
-  padding-top: 160px;
-  padding-bottom: 80px;
-  overflow: hidden;
-  max-width: 820px;
-}
-
-img {
-  display: block;
-}
-
-h2.title {
-  display: inline-block;
-  padding-right: 80px;
-  position: relative;
-  vertical-align: top;
-  top: 180px;
-  letter-spacing: 10px;
-}
-
-span.h4 {
-  font-size: 20px;
-  font-weight: 500;
-  letter-spacing: 10px;
-}
-
-h3 {
-  font-weight: bold;
-}
-
-div.planet_top {
-  position: relative;
-  padding-top: 80px;
+section.shop {
+  margin: 0 40px;
   text-align: center;
-  margin: 20px;
+  color: #ffffff;
 }
 
-img.planet {
-  height: 160px;
-  position: absolute;
-  top: 20px;
-  left: 65px;
+section.shop h3 {
+  font-weight: 300;
 }
 
-img.planet_a1 {
-  max-width: 280px;
-}
-
-div.word {
-  position: absolute;
-  top: 190px;
-  left: 95px;
-}
-
-div.price {
-  background-color: #AD6E4A;
-  letter-spacing: 3px;
-  padding: 8px;
-  width: 100px;
-  margin: 0px auto;
-  position: relative;
-  top: -36px;
-}
-
-.select {
-  position: relative;
-  bottom: 4px;
-  color: #AD6E4A;
-}
-
-.tripselect {
-  display: inline-flex;
-  width: 280px;
-  justify-content: space-between;
-}
-
-.icon {
-  width: 25px;
+section.shop .btn {
   cursor: pointer;
-  z-index: 2;
 }
 
-hr {
-  border: none;
-  width: 55%;
-  margin: 0 auto;
-  border-top: 1px solid #AD6E4A;
-  height: 0;
+section.shop .shopAll {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: start;
 }
 
-.second {
-  width: 60%;
-  margin: 0 auto;
-  padding-top: 150px;
-  padding-bottom: 150px;
+section.shop .shopAll .aside {
+  width: 20%;
+  position: sticky;
+  top: 100px;
+  left: 0;
+  margin-top: 88px;
 }
 
-.alltrip {
-  margin: 0 auto;
-  text-align: center;
-}
-
-.mars {
-  display: inline-flex;
-}
-
-div.planet2 {
-  position: relative;
-  text-align: center;
-  margin-right: 50px;
-}
-
-h2 {
-  font-weight: bold;
-}
-
-img.planet2_pic {
-  max-width: 240px;
-}
-
-div.price2 {
-  background-color: #AD6E4A;
-  letter-spacing: 3px;
-  padding: 8px;
-  width: 100px;
-  position: relative;
-  top: -36px;
-  left: 70px;
-}
-
-.word2 {
-  position: relative;
-  top: -25px;
-}
-
-.word2_name {
-  font-weight: bold;
-  color: #AD6E4A;
-  letter-spacing: 3px;
-  font-size: 16px;
-}
-
-.word2_tag {
+section.shop .shopAll .aside li {
   border: 1px solid #C9ADA7;
-  width: 50px;
-  margin: 0 auto;
-  color: #C9ADA7;
-  font-size: 14px;
+  padding: 16px 0;
+  background-color: #292B41;
+  border: none;
+  background-image: url("../../img/shop/arrow-right.png");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  background-size: 10px;
 }
-/*# sourceMappingURL=alltrip.css.map */
+
+section.shop .shopAll .main {
+  width: 68%;
+}
+
+section.shop .shopAll .main .chooseBtn {
+  display: flex;
+  justify-content: space-around;
+}
+
+section.shop .shopAll .main .chooseBtn .btn {
+  border: 1px solid #AD6E4A;
+  padding: 16px 0;
+  width: 150px;
+}
+
+section.shop .shopAll .main .productAll {
+  letter-spacing: 5px;
+}
+
+section.shop .shopAll .main .productAll ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-wrap: wrap;
+}
+
+section.shop .shopAll .main .productAll ul li {
+  width: 30%;
+}
+
+section.shop .shopAll .main .productAll ul li a {
+  padding: 10px 0 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ffffff;
+  color: black;
+}
+
+section.shop .shopAll .main .productAll ul li a img {
+  width: 50%;
+}
+
+section.shop .shopAll .main .productAll ul li a .item {
+  text-align: left;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 20px;
+}
+
+section.shop .shopAll .main .productAll ul li a .item .info {
+  padding: 16px 0;
+}
+/*# sourceMappingURL=shop.css.map */
