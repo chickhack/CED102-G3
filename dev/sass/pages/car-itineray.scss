@@ -1,3 +1,7 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
 .car-top{
     height: 1000px;
     padding-top: 15%;
@@ -54,6 +58,8 @@ body{
     border: 1px solid #ad6e4a;
     color: #ad6e4a;
     background-color: #3a3a3e;
+    height: 30px;
+    text-align: center;
 }
 // 向下箭頭
 .bi{
@@ -75,7 +81,29 @@ body{
     height: 20px;
     opacity: 1; 
 } 
-
+//加減按鈕
+.btn-pull{
+    color:#ad6e4a;
+    background-color: #3a3a3e;
+    font-size: 24px;
+    border: 1px solid #ad6e4a;
+    width: 30px;
+    height: 30px;
+    line-height: 0px;
+    padding-bottom: 1px; 
+}
+// 數量的按鈕
+.btn-nu{
+    color:#ad6e4a;
+    background-color: #3a3a3e;
+    font-size: 24px;
+    border: 0px solid #ad6e4a;
+    width: 40px;
+    height: 30px;
+    line-height: 0px;
+    text-align: center; 
+    outline: none;
+}
 
 .row{
     justify-content: center;
