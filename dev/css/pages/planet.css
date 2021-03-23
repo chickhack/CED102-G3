@@ -1,7 +1,88 @@
+<<<<<<< HEAD
 body {
   font-family: "Haettenschweiler","Microsoft JhengHei", sans-serif;
   color: #C9ADA7;
   font-size: 14px;
+=======
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+input[type=button], input[type=submit], input[type=file], button {
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+
+body {
+  font-family: "Microsoft JhengHei", sans-serif;
+  color: #C9ADA7;
+  font-size: 14px;
+  background-color: #0c0d18;
+>>>>>>> dev
 }
 
 h1, .h1 {
@@ -29,7 +110,11 @@ p, .p {
 }
 
 @font-face {
+<<<<<<< HEAD
   font-family: "Microsoft Yahei", "Haettenschweiler", sans-serif;
+=======
+  font-family: "Microsoft JhengHei";
+>>>>>>> dev
   src: local("./fonts/msjh.ttc"), local("./fonts/msjhbd.ttc"), local("./fonts/HATTEN.TTF");
 }
 
@@ -211,6 +296,114 @@ p, .p {
   max-width: 20px;
 }
 
+<<<<<<< HEAD
+=======
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #0c0d18;
+  position: fixed;
+  width: 100%;
+  min-height: 12vh;
+}
+
+nav .logo h1 a {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  background-image: url("../../img/logo.png");
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 30px;
+}
+
+nav .nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-end;
+  width: 60%;
+}
+
+nav .nav-links a {
+  color: #ffffff;
+}
+
+nav .nav-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  width: 12%;
+}
+
+nav .burger {
+  display: none;
+}
+
+nav .burger div {
+  width: 25px;
+  height: 2px;
+  background-color: #ffffff;
+  margin: 5px;
+}
+
+footer {
+  background-color: #0c0d18;
+  position: relative;
+}
+
+footer .links {
+  position: absolute;
+  bottom: 20%;
+  width: 100%;
+  z-index: 1;
+}
+
+footer .links .logo {
+  max-width: 128px;
+  position: relative;
+  left: 50%;
+  bottom: 50px;
+  transform: translateX(-50%);
+}
+
+footer .links .footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  width: 55%;
+  position: relative;
+  left: 50%;
+  bottom: 30px;
+  transform: translateX(-50%);
+}
+
+footer .links .footer-links a {
+  color: #ffffff;
+}
+
+footer .footer_moon {
+  position: relative;
+  left: 50%;
+  max-width: 550px;
+  transform: translateX(-50%);
+}
+
+footer .smoke {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 100%;
+  transform: translateX(-50%);
+}
+
+>>>>>>> dev
 body {
   font-family: "Haettenschweiler","Microsoft JhengHei", sans-serif;
   color: #C9ADA7;
@@ -228,24 +421,34 @@ canvas {
 }
 
 .title {
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+=======
+  display: flex;
+  justify-content: center;
+>>>>>>> dev
   padding-top: 100px;
   font-size: 42px;
 }
 
 ul.tab-title {
   padding-top: 50px;
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+=======
+  display: flex;
+  justify-content: center;
+>>>>>>> dev
 }
 
 ul.tab-title li {
@@ -263,12 +466,16 @@ ul.tab-title li.selected {
 
 .tab-inner {
   border-top: 1px solid #AD6E4A;
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
+=======
+>>>>>>> dev
   display: flex;
 }
 
 .tab-inner .intro {
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -276,6 +483,10 @@ ul.tab-title li.selected {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+=======
+  display: flex;
+  flex-direction: column;
+>>>>>>> dev
   margin-top: 50px;
   text-align: left;
 }
@@ -287,12 +498,17 @@ ul.tab-title li.selected {
 }
 
 .tab-inner .data {
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+=======
+  display: flex;
+  justify-content: flex-end;
+>>>>>>> dev
   margin-top: 50px;
 }
 
@@ -337,8 +553,12 @@ ul.tab-title li.selected {
   background-image: url(../../dev/img/planet/crater.jpg);
   background-position: top;
   position: relative;
+<<<<<<< HEAD
   -webkit-transform: translate(-112%, -220%);
           transform: translate(-112%, -220%);
+=======
+  transform: translate(-112%, -220%);
+>>>>>>> dev
 }
 
 .tab-active .outline {
@@ -347,17 +567,26 @@ ul.tab-title li.selected {
   width: 190px;
   border-radius: 50%;
   position: relative;
+<<<<<<< HEAD
   -webkit-transform: translate(-100%, -100%);
           transform: translate(-100%, -100%);
+=======
+  transform: translate(-100%, -100%);
+>>>>>>> dev
 }
 
 .tab-active .geoopt {
   position: absolute;
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-column-gap: 30px;
           column-gap: 30px;
+=======
+  display: flex;
+  column-gap: 30px;
+>>>>>>> dev
   right: 0px;
   top: 700px;
 }
@@ -369,22 +598,35 @@ ul.tab-title li.selected {
 }
 
 .tab-active .geoopt .cover_sq span.geo2 {
+<<<<<<< HEAD
   background-image: url(../../dev/img/planet/crater_1.jpg);
+=======
+  background-image: url(../../img/planet/crater_1.jpg);
+>>>>>>> dev
   background-size: 130%;
   background-position: center;
 }
 
 .tab-active .geoopt .cover_sq span.geo3 {
+<<<<<<< HEAD
   background-image: url(../../dev/img/planet/crater_2.png);
+=======
+  background-image: url(../../img/planet/crater_2.png);
+>>>>>>> dev
   background-position: top;
 }
 
 .content {
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+=======
+  display: flex;
+  flex-wrap: wrap;
+>>>>>>> dev
 }
 
 .content .imgs {
@@ -393,6 +635,7 @@ ul.tab-title li.selected {
 }
 
 .content .imgs .img1 {
+<<<<<<< HEAD
   -webkit-transform: translate(10%);
           transform: translate(10%);
 }
@@ -414,6 +657,22 @@ ul.tab-title li.selected {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+=======
+  transform: translate(10%);
+}
+
+.content .imgs .img2 {
+  transform: translateX(-10%);
+}
+
+.content .imgs .img3 {
+  transform: translate(-70%, -350px);
+}
+
+.content .desc {
+  display: flex;
+  align-items: center;
+>>>>>>> dev
 }
 
 .content .desc p {

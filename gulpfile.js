@@ -10,7 +10,7 @@ const browserSync = require('browser-sync').create();
 const reload = browserSync.reload; //browser的方法 更新後~
 
 function moveImg() {
-    return src('dev/img/*').pipe(dest('dist/img/'));
+    return src('dev/img/**').pipe(dest('dist/img/'));
 }
 
 function concatJSAndMove() {
@@ -45,6 +45,7 @@ function pageStyle() {
         .pipe(dest('dist/css/pages/'));
 }
 
+
 function includeHTML() {
     return src('dev/*.html')
         .pipe(
@@ -55,6 +56,7 @@ function includeHTML() {
         )
         .pipe(dest('dist/'));
 }
+
 
 function killDist() {
     return src('dist', { read: false, allowEmpty: true }).pipe(
@@ -75,7 +77,7 @@ exports.browser = function browsersync() {
         // browser: "chrome",
         server: {
             baseDir: './dist', //跟目錄設定
-            index: 'index.html', //需更改成自己頁面的名稱
+            index: 'shop.html', //需更改成自己頁面的名稱
             injectChanges: false,
         },
     });

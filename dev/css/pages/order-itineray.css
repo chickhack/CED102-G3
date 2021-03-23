@@ -9,10 +9,11 @@ input[type="number"] {
 
 body {
   background-color: #0c0d18;
+  font-family: "Microsoft JhengHei";
 }
 
 .svgRight::before {
-  content: url(../img/chevron-compact-right.svg) !important;
+  content: url(../../img/chevron-compact-right.svg) !important;
   width: 20px;
   height: 20px;
 }
@@ -203,7 +204,7 @@ form .orderinfo .container .row .col-7 .btn-openmenu {
 }
 
 form .orderinfo .container .row .col-7 .btn-openmenu::before {
-  content: url(../img/chevron-down.svg);
+  content: url(../../img/chevron-down.svg);
   padding-right: 8px;
   display: inline-block;
   width: 20px;
@@ -335,7 +336,7 @@ form .addPay .container .row .col-7 .btn-addPay {
 }
 
 form .addPay .container .row .col-7 .btn-addPay::before {
-  content: url(../img/chevron-down.svg);
+  content: url(../../img/chevron-down.svg);
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -430,7 +431,7 @@ form .paymethod .row .col-7 .btn-paymethod {
 }
 
 form .paymethod .row .col-7 .btn-paymethod::before {
-  content: url(../img/chevron-down.svg);
+  content: url(../../img/chevron-down.svg);
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -484,7 +485,7 @@ form .orderDetails .row .col-7 .btn-orderDetails {
 }
 
 form .orderDetails .row .col-7 .btn-orderDetails::before {
-  content: url(../img/chevron-down.svg);
+  content: url(../../img/chevron-down.svg);
   display: inline-block;
   width: 20px;
   height: 20px;
