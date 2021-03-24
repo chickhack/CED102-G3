@@ -313,7 +313,10 @@ nav {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   background-color: #0c0d18;
+<<<<<<< HEAD
   position: -webkit-sticky;
+=======
+>>>>>>> kai
   position: sticky;
   top: 0;
   width: 100%;
@@ -437,8 +440,12 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
+<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+=======
+  transform: translateX(-50%);
+>>>>>>> kai
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -457,6 +464,7 @@ input[type=number] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -466,6 +474,12 @@ input[type=number] {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
+=======
+  justify-content: center;
+  align-items: center;
+  align-items: start;
+  padding-top: 15vh;
+>>>>>>> kai
 }
 
 .product .img {
