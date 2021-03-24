@@ -293,6 +293,11 @@ little, .little {
   max-width: 20px;
 }
 
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 nav {
   display: flex;
   justify-content: center;
@@ -303,13 +308,14 @@ nav {
   top: 0;
   width: 100%;
   min-height: 12vh;
+  z-index: 9999;
 }
 
 nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-  background-image: url("../img/logo.png");
+  background-image: url("../../img/logo.png");
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
