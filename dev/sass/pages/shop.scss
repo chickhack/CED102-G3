@@ -1,8 +1,7 @@
 @import "../all.scss";
 
 section.shop{
-    // border: 1px solid $gold;
-    // padding-top: 15vh;
+    // margin-top: 50px;
     margin: 0 40px;
     text-align: center;
     color: $white;
@@ -47,6 +46,7 @@ section.shop{
             }
             .productAll{
                 letter-spacing: 5px;
+                margin-bottom: 100px;
                 ul{
                     display: flex;
                     justify-content: space-between;
