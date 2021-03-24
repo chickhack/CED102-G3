@@ -306,9 +306,12 @@ nav {
   justify-content: space-around;
   background-color: #0c0d18;
 <<<<<<< HEAD
+<<<<<<< HEAD
   position: -webkit-sticky;
 =======
 >>>>>>> kai
+=======
+>>>>>>> chickhack
   position: sticky;
   top: 0;
   width: 100%;
@@ -408,11 +411,15 @@ footer .smoke {
   width: 100%;
   height: 80%;
 <<<<<<< HEAD
+<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 =======
   transform: translateX(-50%);
 >>>>>>> kai
+=======
+  transform: translateX(-50%);
+>>>>>>> chickhack
 }
 
 body {
@@ -461,7 +468,19 @@ div.bk3 {
 }
 
 .first {
+<<<<<<< HEAD
   padding-left: 100px;
+=======
+  padding-left: 150px;
+}
+
+.hottrip {
+  display: inline-flex;
+  padding-top: 160px;
+  padding-bottom: 80px;
+  overflow: hidden;
+  max-width: 820px;
+>>>>>>> chickhack
 }
 
 img {
@@ -559,6 +578,7 @@ img.plus {
 
 .tripselect {
   display: inline-flex;
+<<<<<<< HEAD
   width: 260px;
   justify-content: space-between;
 }
@@ -567,6 +587,10 @@ img.plus {
   position: relative;
   bottom: 4px;
   color: #AD6E4A;
+=======
+  width: 280px;
+  justify-content: space-between;
+>>>>>>> chickhack
 }
 
 .icon {
@@ -592,8 +616,13 @@ hr {
   text-align: center;
 }
 
+<<<<<<< HEAD
 .tripcard_all {
   display: flex;
+=======
+.mars {
+  display: inline-flex;
+>>>>>>> chickhack
 }
 
 .tripcard {

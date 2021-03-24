@@ -436,8 +436,13 @@ footer .smoke {
   left: 50%;
   bottom: 0;
   width: 100%;
+<<<<<<< HEAD
   height: 80%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+=======
+  transform: translateX(-50%);
+  height: 80%;
+>>>>>>> chickhack
 }
 /*# sourceMappingURL=all.css.map */

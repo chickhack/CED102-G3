@@ -7,6 +7,7 @@ body {
 .grid {
   display: flex;
 <<<<<<< HEAD
+<<<<<<< HEAD
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: center;
@@ -18,11 +19,16 @@ body {
   padding-top: 5%;
   font-size: 12px;
 =======
+=======
+>>>>>>> chickhack
   flex-wrap: wrap;
   justify-content: center;
   align-items: start;
   padding-top: 6%;
+<<<<<<< HEAD
 >>>>>>> kai
+=======
+>>>>>>> chickhack
 }
 
 .grid-item {
