@@ -56,8 +56,7 @@ img {
 *,
 *:before,
 *:after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
   margin: 0;
   padding: 0;
 }
@@ -297,48 +296,26 @@ little, .little {
 .container {
   max-width: 1440px;
   margin: 0 auto;
-  padding-top: 15vh;
 }
 
 nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
   background-color: #0c0d18;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
-<<<<<<< HEAD
-  position: -webkit-sticky;
-=======
->>>>>>> kai
-<<<<<<< HEAD
->>>>>>> 207fcd1e44351eec63eaaaa2987e1e8204ee7e60
-=======
-=======
->>>>>>> chickhack
->>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
   position: sticky;
   top: 0;
   width: 100%;
   min-height: 12vh;
+  z-index: 9999;
 }
 
 nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-  background-image: url("../img/logo.png");
+  background-image: url("../../img/logo.png");
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -347,18 +324,10 @@ nav .logo h1 a {
 }
 
 nav .nav-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-end;
   width: 60%;
 }
 
@@ -367,17 +336,10 @@ nav .nav-links a {
 }
 
 nav .nav-icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
   width: 12%;
 }
 
@@ -409,28 +371,19 @@ footer .links .logo {
   position: relative;
   left: 50%;
   bottom: 50px;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 footer .links .footer-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
   width: 55%;
   position: relative;
   left: 50%;
   bottom: 30px;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 footer .links .footer-links a {
@@ -441,8 +394,7 @@ footer .footer_moon {
   position: relative;
   left: 50%;
   max-width: 550px;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 footer .smoke {
@@ -451,153 +403,43 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
-<<<<<<< HEAD
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-=======
-<<<<<<< HEAD
->>>>>>> 207fcd1e44351eec63eaaaa2987e1e8204ee7e60
-=======
-=======
->>>>>>> chickhack
->>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
   transform: translateX(-50%);
->>>>>>> kai
 }
 
-section.shop {
-  margin: 0 40px;
-  text-align: center;
-  color: #ffffff;
+nav {
+  background-color: transparent;
 }
 
-section.shop h3 {
-  font-weight: 300;
+body {
+  background: -webkit-linear-gradient(bottom, #0c0d18 5%, transparent 75%), url("../../img/home/mainBannerBg.jpg") no-repeat bottom;
+  height: 100vh;
+  background-size: 100%;
+  background-position: top;
 }
 
-section.shop .btn {
-  cursor: pointer;
-}
-
-section.shop .shopAll {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
-}
-
-section.shop .shopAll .aside {
-  width: 20%;
-  top: 15vh;
-  left: 0;
-  margin-top: 88px;
-}
-
-section.shop .shopAll .aside li {
-  border: 1px solid #C9ADA7;
-  padding: 16px 0;
-  background-color: #292B41;
-  border: none;
-  background-image: url("../../img/shop/arrow-right.png");
-  background-repeat: no-repeat;
-  background-position: right 20px center;
-  background-size: 10px;
-}
-
-section.shop .shopAll .main {
-  width: 68%;
-}
-
-section.shop .shopAll .main .chooseBtn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-section.shop .shopAll .main .chooseBtn .btn {
+.frame {
   border: 1px solid #AD6E4A;
-  padding: 16px 0;
-  width: 150px;
 }
 
-section.shop .shopAll .main .productAll {
-  letter-spacing: 5px;
-}
-
-section.shop .shopAll .main .productAll ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.banner .slogan {
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10%;
 }
 
-section.shop .shopAll .main .productAll ul li {
-  width: 30%;
+.banner .slogan p {
+  font-size: 100px;
+  color: white;
+  font-family: "Haettenschweiler", sans-serif;
+  letter-spacing: -2px;
 }
 
-section.shop .shopAll .main .productAll ul li a {
-  padding: 10px 0 10px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
+.banner .scroll {
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background-color: #ffffff;
-  color: black;
+  justify-content: center;
 }
 
-section.shop .shopAll .main .productAll ul li a img {
-  width: 50%;
+.banner .scroll img {
+  margin-top: 20%;
 }
-
-section.shop .shopAll .main .productAll ul li a .item {
-  text-align: left;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding-top: 20px;
-}
-
-section.shop .shopAll .main .productAll ul li a .item .info {
-  padding: 16px 0;
-}
-/*# sourceMappingURL=shop.css.map */
+/*# sourceMappingURL=index.css.map */

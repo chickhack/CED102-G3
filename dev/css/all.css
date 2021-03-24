@@ -1,16 +1,84 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -20,8 +88,17 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
@@ -29,17 +106,21 @@ body {
   line-height: 1;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
   content: none;
 }
 
@@ -57,7 +138,7 @@ img {
 *:before,
 *:after {
   -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
   margin: 0;
   padding: 0;
 }
@@ -67,39 +148,48 @@ a {
   text-decoration: none;
 }
 
-input[type=button], input[type=submit], input[type=file], button {
+input[type="button"],
+input[type="submit"],
+input[type="file"],
+button {
   cursor: pointer;
   -webkit-appearance: none;
 }
 
 body {
   font-family: "Microsoft JhengHei", sans-serif;
-  color: #C9ADA7;
+  color: #c9ada7;
   font-size: 14px;
   background-color: #0c0d18;
 }
 
-h1, .h1 {
+h1,
+.h1 {
   font-size: 32px;
 }
 
-h2, .h2 {
+h2,
+.h2 {
   font-size: 24px;
 }
 
-h3, .h3 {
+h3,
+.h3 {
   font-size: 18px;
 }
 
-h4, .h4 {
+h4,
+.h4 {
   font-size: 16px;
 }
 
-p, .p {
+p,
+.p {
   font-size: 14px;
 }
 
-little, .little {
+little,
+.little {
   font-size: 12px;
 }
 
@@ -113,7 +203,8 @@ little, .little {
 
 @font-face {
   font-family: "Microsoft JhengHei";
-  src: local("./fonts/msjh.ttc"), local("./fonts/msjhbd.ttc"), local("./fonts/HATTEN.TTF");
+  src: local("./fonts/msjh.ttc"), local("./fonts/msjhbd.ttc"),
+    local("./fonts/HATTEN.TTF");
 }
 
 .padding_left_1 {
@@ -280,14 +371,14 @@ little, .little {
   width: 150px;
   padding: 15px;
   text-align: center;
-  border: 1px solid #AD6E4A;
+  border: 1px solid #ad6e4a;
 }
 
 .button_min {
   width: 100px;
   padding: 15px;
   text-align: center;
-  border: 1px solid #AD6E4A;
+  border: 1px solid #ad6e4a;
 }
 
 .icon {
@@ -305,13 +396,13 @@ nav {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   background-color: #0c0d18;
   position: -webkit-sticky;
   position: sticky;
@@ -337,14 +428,14 @@ nav .nav-links {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   width: 60%;
 }
 
@@ -357,13 +448,13 @@ nav .nav-icons {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   width: 12%;
 }
 
@@ -396,7 +487,7 @@ footer .links .logo {
   left: 50%;
   bottom: 50px;
   -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 footer .links .footer-links {
@@ -404,19 +495,19 @@ footer .links .footer-links {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   width: 55%;
   position: relative;
   left: 50%;
   bottom: 30px;
   -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 footer .links .footer-links a {
@@ -428,7 +519,7 @@ footer .footer_moon {
   left: 50%;
   max-width: 550px;
   -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 footer .smoke {
@@ -436,8 +527,17 @@ footer .smoke {
   left: 50%;
   bottom: 0;
   width: 100%;
+<<<<<<< HEAD
   height: 80%;
   -webkit-transform: translateX(-50%);
+<<<<<<< HEAD
+  transform: translateX(-50%);
+=======
           transform: translateX(-50%);
+=======
+  transform: translateX(-50%);
+  height: 80%;
+>>>>>>> chickhack
+>>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
 }
 /*# sourceMappingURL=all.css.map */

@@ -1,0 +1,42 @@
+@import "../all.scss";
+
+// header設定
+nav{
+    background-color: transparent;
+}
+
+body{
+    background: -webkit-linear-gradient(bottom, $darkblue 5%, transparent 75%), url('../../img/home/mainBannerBg.jpg') no-repeat bottom
+    ;
+    height: 100vh;
+    background-size: 100%;
+    background-position: top;
+}
+.frame{
+    border: 1px solid $gold;
+}
+.banner{
+    
+    .slogan {
+        display: flex;
+        justify-content: center;
+        margin-top: 10%;
+
+        p{
+            font-size: 100px;
+            color: white;
+            font-family: "Haettenschweiler", sans-serif;
+            letter-spacing:-2px;
+        }
+    }
+    .scroll{
+        display: flex;
+        justify-content: center;
+        img{
+            margin-top: 20%;
+        }
+    }
+    
+}
+
+
