@@ -1,0 +1,30 @@
+// 排行榜表頭顏色與文字
+.le-color{
+    background-color: #16193b;
+    font-size: 18px;
+    color: #fff;
+}
+//排行榜背景色
+.ba-color{
+    background-color: #292b41;
+}
+// 自身排名文字顏色
+.text-color{
+    background-color: #1d1e2e;
+    color: #c9ada7;
+    font-size: 16px;
+}
+//
+.text-{
+    justify-content: center;
+}
+.container{
+    .row{
+        .col-10{
+            display: flex;
+            .col-2{
+                text-align: center;
+            }
+        }
+    }
+}

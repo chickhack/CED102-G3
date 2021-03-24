@@ -4,8 +4,9 @@ input::-webkit-inner-spin-button {
 }
 
 .car-top {
-  height: 1000px;
-  padding-top: 15%;
+  min-height: 50vh;
+  height: 100%;
+  padding-top: 15vh;
 }
 
 body {
@@ -13,7 +14,8 @@ body {
 }
 
 .vvvvv {
-  vertical-align: middle;
+  width: 16px;
+  height: 16px;
 }
 
 .backcol {
@@ -21,14 +23,14 @@ body {
 }
 
 .text-1 {
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 900;
   line-height: 80px;
 }
 
 .p-text-1 {
   font-weight: 700;
-  font-size: 24px;
+  font-size: 18px;
   color: #fff;
   margin: 0px;
   letter-spacing: 1px;
@@ -53,11 +55,12 @@ body {
   max-width: 150px;
   height: auto;
   max-height: 100px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .btn-date {
+  letter-spacing: 2px;
+  padding: 0 5px;
   border: 1px solid #ad6e4a;
   color: #ad6e4a;
   background-color: #3a3a3e;
@@ -101,17 +104,12 @@ body {
 }
 
 .row {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .row .col-8 .row .col-12 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   padding: 2% 1%;
   border-radius: 5px;
 }
