@@ -79,19 +79,27 @@ body {
 }
 
 h1, .h1 {
-  font-size: 42px;
-}
-
-h2, .h2 {
   font-size: 32px;
 }
 
+h2, .h2 {
+  font-size: 24px;
+}
+
 h3, .h3 {
-  font-size: 20px;
+  font-size: 18px;
+}
+
+h4, .h4 {
+  font-size: 16px;
 }
 
 p, .p {
   font-size: 14px;
+}
+
+little, .little {
+  font-size: 12px;
 }
 
 .line_high {
@@ -291,7 +299,8 @@ nav {
   align-items: center;
   justify-content: space-around;
   background-color: #0c0d18;
-  position: fixed;
+  position: sticky;
+  top: 0;
   width: 100%;
   min-height: 12vh;
 }
@@ -300,7 +309,7 @@ nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-  background-image: url("../../img/logo.png");
+  background-image: url("../img/logo.png");
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -387,6 +396,7 @@ footer .smoke {
   left: 50%;
   bottom: 0;
   width: 100%;
+  height: 80%;
   transform: translateX(-50%);
 }
 
@@ -407,7 +417,7 @@ input[type=number] {
   justify-content: center;
   align-items: center;
   align-items: start;
-  margin-top: 40px;
+  padding-top: 15vh;
 }
 
 .product .img {
@@ -460,6 +470,8 @@ input[type=number] {
   margin-left: 0;
   margin-right: 0;
   width: 80%;
+  border: 1px solid #AD6E4A;
+  background-color: #AD6E4A;
 }
 
 .product .detail .h3 {
@@ -492,7 +504,7 @@ input[type=number] {
 }
 
 .product .detail .quantity .button_large {
-  max-width: 100%;
+  width: 100%;
   padding: 8px 0;
 }
 

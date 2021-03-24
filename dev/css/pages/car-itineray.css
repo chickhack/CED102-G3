@@ -53,8 +53,7 @@ body {
   max-width: 150px;
   height: auto;
   max-height: 100px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .btn-date {
@@ -101,17 +100,12 @@ body {
 }
 
 .row {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .row .col-8 .row .col-12 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   padding: 2% 1%;
   border-radius: 5px;
 }

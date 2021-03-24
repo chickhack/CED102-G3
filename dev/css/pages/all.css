@@ -79,19 +79,27 @@ body {
 }
 
 h1, .h1 {
-  font-size: 42px;
-}
-
-h2, .h2 {
   font-size: 32px;
 }
 
+h2, .h2 {
+  font-size: 24px;
+}
+
 h3, .h3 {
-  font-size: 20px;
+  font-size: 18px;
+}
+
+h4, .h4 {
+  font-size: 16px;
 }
 
 p, .p {
   font-size: 14px;
+}
+
+little, .little {
+  font-size: 12px;
 }
 
 .line_high {
@@ -291,7 +299,8 @@ nav {
   align-items: center;
   justify-content: space-around;
   background-color: #0c0d18;
-  position: fixed;
+  position: sticky;
+  top: 0;
   width: 100%;
   min-height: 12vh;
 }
@@ -300,7 +309,7 @@ nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-  background-image: url("../../img/logo.png");
+  background-image: url("../img/logo.png");
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -387,187 +396,7 @@ footer .smoke {
   left: 50%;
   bottom: 0;
   width: 100%;
+  height: 80%;
   transform: translateX(-50%);
 }
-<<<<<<< HEAD
-
-body {
-  font-family: "Haettenschweiler","Microsoft JhengHei", sans-serif;
-  color: #C9ADA7;
-  background-color: #0c0d18;
-  font-size: 14px;
-}
-
-canvas {
-  width: 500px;
-  height: 500px;
-}
-
-.frame {
-  border: 1px solid #AD6E4A;
-}
-
-.title {
-  display: flex;
-  justify-content: center;
-  padding-top: 100px;
-  font-size: 42px;
-}
-
-ul.tab-title {
-  padding-top: 50px;
-  display: flex;
-  justify-content: center;
-}
-
-ul.tab-title li {
-  padding: 10px 40px;
-}
-
-ul.tab-title li a {
-  text-decoration: none;
-  color: #C9ADA7;
-}
-
-ul.tab-title li.selected {
-  border-bottom: 4px solid #AD6E4A;
-}
-
-.tab-inner {
-  border-top: 1px solid #AD6E4A;
-  display: flex;
-}
-
-.tab-inner .intro {
-  display: flex;
-  flex-direction: column;
-  margin-top: 50px;
-  text-align: left;
-}
-
-.tab-inner .intro p {
-  line-height: 2rem;
-  margin-top: 20px;
-  max-width: 400px;
-}
-
-.tab-inner .data {
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 50px;
-}
-
-.tab-inner .data .grav {
-  padding: 20px;
-  border: 1px solid #AD6E4A;
-}
-
-.tab-inner .data .day {
-  padding: 20px;
-  border: 1px solid #AD6E4A;
-}
-
-.tab-inner .data .temp {
-  padding: 20px;
-  border: 1px solid #AD6E4A;
-}
-
-.tab-inner .data span {
-  font-size: 48px;
-}
-
-.tab-inner .data span.sub {
-  font-size: 24px;
-}
-
-.tab-inner .data p {
-  font-size: 16px;
-}
-
-.tab-active {
-  display: block;
-  margin-top: 100px;
-}
-
-.tab-active .cover_rd {
-  display: block;
-  height: 170px;
-  width: 170px;
-  border-radius: 50%;
-  overflow: hidden;
-  background-image: url(../../dev/img/planet/crater.jpg);
-  background-position: top;
-  position: relative;
-  transform: translate(-112%, -220%);
-}
-
-.tab-active .outline {
-  border: 1px dashed white;
-  height: 190px;
-  width: 190px;
-  border-radius: 50%;
-  position: relative;
-  transform: translate(-100%, -100%);
-}
-
-.tab-active .geoopt {
-  position: absolute;
-  display: flex;
-  column-gap: 30px;
-  right: 0px;
-  top: 700px;
-}
-
-.tab-active .geoopt .cover_sq {
-  height: 150px;
-  width: 150px;
-  overflow: hidden;
-}
-
-.tab-active .geoopt .cover_sq span.geo2 {
-  background-image: url(../../dev/img/planet/crater_1.jpg);
-  background-size: 130%;
-  background-position: center;
-}
-
-.tab-active .geoopt .cover_sq span.geo3 {
-  background-image: url(../../dev/img/planet/crater_2.png);
-  background-position: top;
-}
-
-.content {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.content .imgs {
-  margin-top: 150px;
-  display: block;
-}
-
-.content .imgs .img1 {
-  transform: translate(10%);
-}
-
-.content .imgs .img2 {
-  transform: translateX(-10%);
-}
-
-.content .imgs .img3 {
-  transform: translate(-70%, -350px);
-}
-
-.content .desc {
-  display: flex;
-  align-items: center;
-}
-
-.content .desc p {
-  line-height: 1.5rem;
-  text-align: justify;
-  max-width: 500px;
-}
-/*# sourceMappingURL=planet.css.map */
-=======
 /*# sourceMappingURL=all.css.map */
->>>>>>> dev
