@@ -15,10 +15,12 @@ body{
 
 // 字的大小
 $fontScale: (
-    "h1": 42px,
-    "h2": 32px,
-    "h3": 20px,
-    "p" : 14px
+    "h1": 32px,
+    "h2": 24px,
+    "h3": 18px,
+    "h4": 16px,
+    "p" : 14px,
+    "little": 12px
 );
 
 @each $f,$s in $fontScale{
@@ -119,4 +121,9 @@ $breakpoint_each: (
 
 .icon{
     max-width: 20px;
+}
+
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
 }

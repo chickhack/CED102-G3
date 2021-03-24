@@ -79,19 +79,27 @@ body {
 }
 
 h1, .h1 {
-  font-size: 42px;
-}
-
-h2, .h2 {
   font-size: 32px;
 }
 
+h2, .h2 {
+  font-size: 24px;
+}
+
 h3, .h3 {
-  font-size: 20px;
+  font-size: 18px;
+}
+
+h4, .h4 {
+  font-size: 16px;
 }
 
 p, .p {
   font-size: 14px;
+}
+
+little, .little {
+  font-size: 12px;
 }
 
 .line_high {
@@ -285,12 +293,25 @@ p, .p {
   max-width: 20px;
 }
 
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-top: 15vh;
+}
+
 nav {
   display: flex;
   justify-content: center;
   align-items: center;
   justify-content: space-around;
   background-color: #0c0d18;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+  position: -webkit-sticky;
+=======
+>>>>>>> kai
+>>>>>>> 207fcd1e44351eec63eaaaa2987e1e8204ee7e60
   position: sticky;
   top: 0;
   width: 100%;
@@ -389,7 +410,16 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
+<<<<<<< HEAD
   transform: translateX(-50%);
+=======
+<<<<<<< HEAD
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+=======
+  transform: translateX(-50%);
+>>>>>>> kai
+>>>>>>> 207fcd1e44351eec63eaaaa2987e1e8204ee7e60
 }
 
 body {
