@@ -29,6 +29,7 @@ body {
 .titi {
   background-color: #0c0d18;
   line-height: 80px;
+  font-size: 18px;
 }
 
 .textRight {
@@ -62,19 +63,23 @@ body {
   width: 96%;
 }
 
+.text-va {
+  vertical-align: text-top;
+}
+
 .textcolor {
   color: #fff;
   font-size: 16px;
 }
 
 .h4 {
-  font-size: 24px;
+  font-size: 18px;
   color: #fff;
   margin: 0;
 }
 
 .h5 {
-  font-size: 24px;
+  font-size: 18px;
   color: #fff;
   margin: 0;
   width: 100%;
@@ -84,7 +89,7 @@ body {
 .h6 {
   font-weight: 900;
   color: #C9ADA7;
-  font-size: 24px;
+  font-size: 18px;
   width: 100%;
   margin: 0;
 }
@@ -92,7 +97,7 @@ body {
 .h7 {
   color: #ad6e4a;
   line-height: 30px;
-  font-size: 24px;
+  font-size: 18px;
   width: 100%;
   margin: 0;
 }
@@ -163,7 +168,7 @@ body {
 
 .button_large-1 {
   width: 150px;
-  font-size: 24px;
+  font-size: 18px;
   color: #fff;
   background-color: #ad6e4a;
   padding: 15px;
@@ -172,7 +177,7 @@ body {
 }
 
 form {
-  padding: 120px 0 500px 0;
+  padding: 15vh 0 0 0;
   height: 100%;
 }
 
@@ -195,7 +200,7 @@ form .orderinfo .container .row .col-7 .btn-openmenu {
   outline: none;
   border: none;
   color: #fff;
-  font-size: 24px;
+  font-size: 18px;
 }
 
 form .orderinfo .container .row .col-7 .btn-openmenu::before {
@@ -282,9 +287,15 @@ form .ltineraryinfo .container .row .col-7 .row .col-11 .textinfo .textinfo-1 p 
 }
 
 form .ltineraryinfo .container .row .col-7 .row .col-11 .textinfo .textinfo-1 p img {
+<<<<<<< HEAD
   max-width: 20px;
+=======
+  max-width: 16px;
+  height: 16px;
+>>>>>>> chickhack
   object-fit: cover;
   vertical-align: middle;
+  padding-bottom: 4px;
 }
 
 form .addPay .container .row {
@@ -379,7 +390,7 @@ form .paymethod .row .col-7 .btn-paymethod {
   outline: none;
   border: none;
   color: #fff;
-  font-size: 24px;
+  font-size: 18px;
 }
 
 form .paymethod .row .col-7 .btn-paymethod::before {
@@ -413,7 +424,8 @@ form .orderDetails .row .col-7 .orderDetails-automanu .col-11 .orderDetails-auto
 }
 
 form .orderDetails .row .col-7 .orderDetails-automanu .col-11 .orderDetails-automanu-textdiv .icon {
-  vertical-align: middle;
+  width: 16px;
+  height: 16px;
 }
 
 form .orderDetails .row .col-7 .btn-orderDetails {
@@ -423,7 +435,7 @@ form .orderDetails .row .col-7 .btn-orderDetails {
   outline: none;
   border: none;
   color: #fff;
-  font-size: 24px;
+  font-size: 18px;
 }
 
 form .orderDetails .row .col-7 .btn-orderDetails::before {

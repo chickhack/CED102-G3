@@ -294,7 +294,10 @@ little, .little {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
 <<<<<<< HEAD
 .container {
   max-width: 1440px;
@@ -304,7 +307,12 @@ little, .little {
 
 =======
 >>>>>>> kai
+<<<<<<< HEAD
 >>>>>>> 207fcd1e44351eec63eaaaa2987e1e8204ee7e60
+=======
+=======
+>>>>>>> chickhack
+>>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
 nav {
   display: flex;
   justify-content: center;
@@ -312,12 +320,20 @@ nav {
   justify-content: space-around;
   background-color: #0c0d18;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
 <<<<<<< HEAD
   position: -webkit-sticky;
 =======
 >>>>>>> kai
+<<<<<<< HEAD
 >>>>>>> 207fcd1e44351eec63eaaaa2987e1e8204ee7e60
+=======
+=======
+>>>>>>> chickhack
+>>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
   position: sticky;
   top: 0;
   width: 100%;
@@ -417,15 +433,24 @@ footer .smoke {
   width: 100%;
   height: 80%;
 <<<<<<< HEAD
+<<<<<<< HEAD
   transform: translateX(-50%);
 =======
+=======
+>>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
 <<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 =======
   transform: translateX(-50%);
 >>>>>>> kai
+<<<<<<< HEAD
 >>>>>>> 207fcd1e44351eec63eaaaa2987e1e8204ee7e60
+=======
+=======
+  transform: translateX(-50%);
+>>>>>>> chickhack
+>>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
 }
 
 body {
@@ -446,9 +471,12 @@ canvas {
 
 .title {
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: flex;
   justify-content: center;
 =======
+=======
+>>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
 <<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
@@ -460,7 +488,14 @@ canvas {
   display: flex;
   justify-content: center;
 >>>>>>> kai
+<<<<<<< HEAD
 >>>>>>> 207fcd1e44351eec63eaaaa2987e1e8204ee7e60
+=======
+=======
+  display: flex;
+  justify-content: center;
+>>>>>>> chickhack
+>>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
   padding-top: 100px;
   font-size: 42px;
 }
@@ -468,9 +503,12 @@ canvas {
 ul.tab-title {
   padding-top: 50px;
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: flex;
   justify-content: center;
 =======
+=======
+>>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
 <<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
@@ -482,7 +520,14 @@ ul.tab-title {
   display: flex;
   justify-content: center;
 >>>>>>> kai
+<<<<<<< HEAD
 >>>>>>> 207fcd1e44351eec63eaaaa2987e1e8204ee7e60
+=======
+=======
+  display: flex;
+  justify-content: center;
+>>>>>>> chickhack
+>>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
 }
 
 ul.tab-title li {
@@ -501,21 +546,32 @@ ul.tab-title li.selected {
 .tab-inner {
   border-top: 1px solid #AD6E4A;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
 <<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
 =======
 >>>>>>> kai
+<<<<<<< HEAD
 >>>>>>> 207fcd1e44351eec63eaaaa2987e1e8204ee7e60
+=======
+=======
+>>>>>>> chickhack
+>>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
   display: flex;
 }
 
 .tab-inner .intro {
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: flex;
   flex-direction: column;
 =======
+=======
+>>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
 <<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
@@ -528,7 +584,14 @@ ul.tab-title li.selected {
   display: flex;
   flex-direction: column;
 >>>>>>> kai
+<<<<<<< HEAD
 >>>>>>> 207fcd1e44351eec63eaaaa2987e1e8204ee7e60
+=======
+=======
+  display: flex;
+  flex-direction: column;
+>>>>>>> chickhack
+>>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
   margin-top: 50px;
   text-align: left;
 }
@@ -541,9 +604,12 @@ ul.tab-title li.selected {
 
 .tab-inner .data {
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: flex;
   justify-content: flex-end;
 =======
+=======
+>>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
 <<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
@@ -555,7 +621,14 @@ ul.tab-title li.selected {
   display: flex;
   justify-content: flex-end;
 >>>>>>> kai
+<<<<<<< HEAD
 >>>>>>> 207fcd1e44351eec63eaaaa2987e1e8204ee7e60
+=======
+=======
+  display: flex;
+  justify-content: flex-end;
+>>>>>>> chickhack
+>>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
   margin-top: 50px;
 }
 
@@ -632,15 +705,24 @@ ul.tab-title li.selected {
   background-position: top;
   position: relative;
 <<<<<<< HEAD
+<<<<<<< HEAD
   transform: translate(-112%, -220%);
 =======
+=======
+>>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
 <<<<<<< HEAD
   -webkit-transform: translate(-112%, -220%);
           transform: translate(-112%, -220%);
 =======
   transform: translate(-112%, -220%);
 >>>>>>> kai
+<<<<<<< HEAD
 >>>>>>> 207fcd1e44351eec63eaaaa2987e1e8204ee7e60
+=======
+=======
+  transform: translate(-112%, -220%);
+>>>>>>> chickhack
+>>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
 }
 
 .tab-active .outline {
@@ -650,23 +732,35 @@ ul.tab-title li.selected {
   border-radius: 50%;
   position: relative;
 <<<<<<< HEAD
+<<<<<<< HEAD
   transform: translate(-100%, -100%);
 =======
+=======
+>>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
 <<<<<<< HEAD
   -webkit-transform: translate(-100%, -100%);
           transform: translate(-100%, -100%);
 =======
   transform: translate(-100%, -100%);
 >>>>>>> kai
+<<<<<<< HEAD
 >>>>>>> 207fcd1e44351eec63eaaaa2987e1e8204ee7e60
+=======
+=======
+  transform: translate(-100%, -100%);
+>>>>>>> chickhack
+>>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
 }
 
 .tab-active .geoopt {
   position: absolute;
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: flex;
   column-gap: 30px;
 =======
+=======
+>>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
 <<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
@@ -677,7 +771,14 @@ ul.tab-title li.selected {
   display: flex;
   column-gap: 30px;
 >>>>>>> kai
+<<<<<<< HEAD
 >>>>>>> 207fcd1e44351eec63eaaaa2987e1e8204ee7e60
+=======
+=======
+  display: flex;
+  column-gap: 30px;
+>>>>>>> chickhack
+>>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
   right: 0px;
   top: 700px;
 }
@@ -701,9 +802,12 @@ ul.tab-title li.selected {
 
 .content {
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: flex;
   flex-wrap: wrap;
 =======
+=======
+>>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
 <<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
@@ -714,7 +818,14 @@ ul.tab-title li.selected {
   display: flex;
   flex-wrap: wrap;
 >>>>>>> kai
+<<<<<<< HEAD
 >>>>>>> 207fcd1e44351eec63eaaaa2987e1e8204ee7e60
+=======
+=======
+  display: flex;
+  flex-wrap: wrap;
+>>>>>>> chickhack
+>>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
 }
 
 .content .imgs {
@@ -724,7 +835,10 @@ ul.tab-title li.selected {
 
 .content .imgs .img1 {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
 <<<<<<< HEAD
   -webkit-transform: translate(10%);
           transform: translate(10%);
@@ -748,7 +862,12 @@ ul.tab-title li.selected {
       -ms-flex-align: center;
           align-items: center;
 =======
+<<<<<<< HEAD
 >>>>>>> 207fcd1e44351eec63eaaaa2987e1e8204ee7e60
+=======
+=======
+>>>>>>> chickhack
+>>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
   transform: translate(10%);
 }
 
@@ -764,9 +883,15 @@ ul.tab-title li.selected {
   display: flex;
   align-items: center;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> kai
 >>>>>>> 207fcd1e44351eec63eaaaa2987e1e8204ee7e60
+=======
+>>>>>>> kai
+=======
+>>>>>>> chickhack
+>>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
 }
 
 .content .desc p {

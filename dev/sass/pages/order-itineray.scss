@@ -29,6 +29,7 @@ body{
 .titi{
     background-color: #0c0d18;
     line-height: 80px;
+    font-size: 18px;
 }
 //文字靠右對齊
 .textRight{
@@ -63,6 +64,10 @@ body{
     width: 96%;
     // margin: 0 auto;
 }
+// 文字對齊
+.text-va{
+    vertical-align:text-top;
+}
 // 文字顏色
 .textcolor{
     color: #fff;
@@ -70,12 +75,12 @@ body{
 }
 // 內文標題
 .h4{
-    font-size: 24px;
+    font-size: 18px;
     color: #fff;
     margin: 0;
 }
 .h5{
-    font-size: 24px;
+    font-size: 18px;
     color: #fff;
     margin: 0;
     width: 100%;
@@ -85,7 +90,7 @@ body{
 .h6{
     font-weight: 900;
     color: #C9ADA7;
-    font-size: 24px;
+    font-size: 18px;
     width: 100%;
     margin: 0;
 }
@@ -93,7 +98,7 @@ body{
     // font-weight: 700;
     color: #ad6e4a;
     line-height: 30px;
-    font-size: 24px;
+    font-size: 18px;
     width: 100%;
     margin: 0;
 }
@@ -160,7 +165,7 @@ body{
 //付款按鈕
 .button_large-1{
     width: 150px;
-    font-size: 24px;
+    font-size: 18px;
     color: #fff;
     background-color: #ad6e4a;
     padding: 15px;
@@ -168,7 +173,7 @@ body{
     border: 1px solid #AD6E4A;
 }
 form{
-    padding: 120px 0 500px 0;
+    padding: 15vh 0 0 0;
     height:100%;
     // margin-bottom: 200px;
     .orderinfo{
@@ -189,7 +194,7 @@ form{
                                 outline: none;
                                 border:none;
                                 color: #fff;
-                                font-size: 24px;
+                                font-size: 18px;
                                 
                             }
                             .btn-openmenu::before{
@@ -286,9 +291,11 @@ form{
                                             color: #fff;
                                             
                                             img{
-                                                max-width: 20px;
+                                                max-width: 16px;
+                                                height: 16px;
                                                 object-fit: cover;
-                                                vertical-align: middle;
+                                                vertical-align:middle;
+                                                padding-bottom: 4px;
                                             }
                                         }
                                     }
@@ -418,7 +425,7 @@ form{
                     outline: none;
                     border:none;
                     color: #fff;
-                    font-size: 24px;
+                    font-size: 18px;
                 }
                 .btn-paymethod::before{
                     content:url(../../img/chevron-down.svg);   
@@ -450,7 +457,9 @@ form{
                                 width: 100%;
                             }
                             .icon{
-                                vertical-align: middle;
+                                width: 16px;
+                                height: 16px;
+                                // vertical-align: middle;
                             }
                         }
                     }
@@ -463,7 +472,7 @@ form{
                     outline: none;
                     border:none;
                     color: #fff;
-                    font-size: 24px;
+                    font-size: 18px;
                 }
                 .btn-orderDetails::before{
                     content:url(../../img/chevron-down.svg);   
