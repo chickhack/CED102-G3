@@ -3,21 +3,28 @@
 section.cart{
     max-width: 948px;
     margin: 0 auto;
-    border: 1px solid #fff;
+    // border: 1px solid #fff;
     padding-top: 15vh;
     .item{
         @include flex_middle();
+        justify-content: space-between;
+        width: 100%;
+        // border: 1px solid #fff;
         .img{
             max-width: 50px;
-            border: 1px solid #fff;
+            // border: 1px solid #fff;
             text-align: center;
             padding: 16px;
         }
         .integral{
             @include flex_middle();
+            justify-content: space-between;
             .icon{
                 max-width: 15px;
             }
+        }
+        .trashcan{
+            cursor: pointer;
         }
     }
 }
