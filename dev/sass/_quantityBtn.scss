@@ -1,0 +1,23 @@
+.quantity{
+    label{
+        display: block;
+    }
+    .as{
+        color: $gold;
+        input[type=number]{
+            max-width: 50px;
+            background-color: transparent;
+            outline: none;
+            border: none;
+            text-align: center;
+            color: $gold;
+        }
+        span{
+            border: 1px solid $gold;
+            outline: none;
+            background-color: transparent;
+            padding: 4px 8px;
+            cursor: pointer;
+        }
+    }
+}
