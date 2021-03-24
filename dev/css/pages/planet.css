@@ -80,19 +80,27 @@ body {
 }
 
 h1, .h1 {
-  font-size: 42px;
-}
-
-h2, .h2 {
   font-size: 32px;
 }
 
+h2, .h2 {
+  font-size: 24px;
+}
+
 h3, .h3 {
-  font-size: 20px;
+  font-size: 18px;
+}
+
+h4, .h4 {
+  font-size: 16px;
 }
 
 p, .p {
   font-size: 14px;
+}
+
+little, .little {
+  font-size: 12px;
 }
 
 .line_high {
@@ -284,6 +292,12 @@ p, .p {
 
 .icon {
   max-width: 20px;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-top: 15vh;
 }
 
 nav {
@@ -531,11 +545,22 @@ ul.tab-title li.selected {
   font-size: 48px;
 }
 
-.tab-inner .data span.sub {
+.tab-inner .data span.data-high {
+  vertical-align: top;
   font-size: 24px;
 }
 
+.tab-inner .data span.data-mid {
+  font-size: 24px;
+}
+
+.tab-inner .data span.data-low {
+  font-size: 24px;
+  font-stretch: narrower;
+}
+
 .tab-inner .data p {
+  margin-top: 5px;
   font-size: 16px;
 }
 
@@ -633,7 +658,7 @@ ul.tab-title li.selected {
 }
 
 .content .desc p {
-  line-height: 1.5rem;
+  line-height: 2rem;
   text-align: justify;
   max-width: 500px;
 }
