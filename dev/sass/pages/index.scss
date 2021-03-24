@@ -14,14 +14,13 @@ body{
 }
 .frame{
     border: 1px solid $gold;
+    margin: 0 auto;
 }
 .banner{
-    
     .slogan {
         display: flex;
         justify-content: center;
         margin-top: 10%;
-
         p{
             font-size: 100px;
             color: white;
