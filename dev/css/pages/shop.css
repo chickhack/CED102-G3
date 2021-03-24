@@ -291,7 +291,8 @@ nav {
   align-items: center;
   justify-content: space-around;
   background-color: #0c0d18;
-  position: fixed;
+  position: sticky;
+  top: 0;
   width: 100%;
   min-height: 12vh;
 }
@@ -300,7 +301,7 @@ nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-  background-image: url("../../img/logo.png");
+  background-image: url("../img/logo.png");
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -387,6 +388,7 @@ footer .smoke {
   left: 50%;
   bottom: 0;
   width: 100%;
+  height: 80%;
   transform: translateX(-50%);
 }
 
@@ -413,8 +415,7 @@ section.shop .shopAll {
 
 section.shop .shopAll .aside {
   width: 20%;
-  position: sticky;
-  top: 100px;
+  top: 15vh;
   left: 0;
   margin-top: 88px;
 }

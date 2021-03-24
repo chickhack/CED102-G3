@@ -5,29 +5,11 @@ body {
 }
 
 .grid {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
-<<<<<<< HEAD
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-=======
+  flex-wrap: wrap;
   justify-content: center;
->>>>>>> dev
-  padding-top: 5%;
-=======
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
+  align-items: start;
   padding-top: 6%;
->>>>>>> d57137fb4a3839170bdcbb9c72e58adc577c9b82
 }
 
 .grid-item {
@@ -42,8 +24,6 @@ body {
 }
 
 .action-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
   bottom: 48px;
@@ -68,8 +48,6 @@ body {
 }
 
 .article {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-bottom: 20px;
   width: 230px;
@@ -90,8 +68,6 @@ body {
 }
 
 .article_2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 

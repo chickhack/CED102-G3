@@ -56,8 +56,7 @@ img {
 *,
 *:before,
 *:after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
   margin: 0;
   padding: 0;
 }
@@ -73,9 +72,10 @@ input[type=button], input[type=submit], input[type=file], button {
 }
 
 body {
-  font-family: "Haettenschweiler","Microsoft JhengHei", sans-serif;
+  font-family: "Microsoft JhengHei", sans-serif;
   color: #C9ADA7;
   font-size: 14px;
+  background-color: #0c0d18;
 }
 
 h1, .h1 {
@@ -103,7 +103,7 @@ p, .p {
 }
 
 @font-face {
-  font-family: "Microsoft Yahei", "Haettenschweiler", sans-serif;
+  font-family: "Microsoft JhengHei";
   src: local("./fonts/msjh.ttc"), local("./fonts/msjhbd.ttc"), local("./fonts/HATTEN.TTF");
 }
 
@@ -286,19 +286,13 @@ p, .p {
 }
 
 nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
   background-color: #0c0d18;
-  position: fixed;
+  position: sticky;
+  top: 0;
   width: 100%;
   min-height: 12vh;
 }
@@ -307,7 +301,7 @@ nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-  background-image: url("../../img/logo.png");
+  background-image: url("../img/logo.png");
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -316,18 +310,10 @@ nav .logo h1 a {
 }
 
 nav .nav-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-end;
   width: 60%;
 }
 
@@ -336,17 +322,10 @@ nav .nav-links a {
 }
 
 nav .nav-icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
   width: 12%;
 }
 
@@ -378,28 +357,19 @@ footer .links .logo {
   position: relative;
   left: 50%;
   bottom: 50px;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 footer .links .footer-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
   width: 55%;
   position: relative;
   left: 50%;
   bottom: 30px;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 footer .links .footer-links a {
@@ -410,8 +380,7 @@ footer .footer_moon {
   position: relative;
   left: 50%;
   max-width: 550px;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 footer .smoke {
@@ -419,8 +388,8 @@ footer .smoke {
   left: 50%;
   bottom: 0;
   width: 100%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  height: 80%;
+  transform: translateX(-50%);
 }
 
 body {
@@ -429,12 +398,8 @@ body {
 
 .wellcome {
   padding: 80px 80px 0px 80px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   /* justify-content:center; */
 }
 
