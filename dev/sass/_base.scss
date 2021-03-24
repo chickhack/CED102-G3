@@ -6,7 +6,7 @@ $white : #ffffff;
 $gray : #cccaca;
 
 body{
-    font-family:"Microsoft JhengHei", sans-serif; //"Haettenschweiler",
+    font-family:"Microsoft JhengHei", "sans-serif"; //"Haettenschweiler",
     color: $pink;
     font-size: 14px;
     background-color: $darkblue;
@@ -43,11 +43,11 @@ $lineHeight: (
 
 // 字型
 @font-face{
-    font-family: "Microsoft JhengHei";
+    font-family: "Microsoft JhengHei",  "Nasalization";
     src: local("./fonts/msjh.ttc"),
          local("./fonts/msjhbd.ttc"),
-         local("./fonts/HATTEN.TTF")
-         
+         local("./fonts/HATTEN.TTF"),
+         local("./fonts/Nasa.ttf")
 }
 
 //間距
