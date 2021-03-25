@@ -296,17 +296,21 @@ little, .little {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
 <<<<<<< HEAD
 =======
 >>>>>>> kai
+=======
+>>>>>>> chickhack
 .container {
   max-width: 1440px;
   margin: 0 auto;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> kai
@@ -318,12 +322,15 @@ little, .little {
 >>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
 =======
 >>>>>>> kai
+=======
+>>>>>>> chickhack
 nav {
   display: flex;
   justify-content: center;
   align-items: center;
   justify-content: space-around;
   background-color: #0c0d18;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -342,6 +349,8 @@ nav {
 >>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
 =======
 >>>>>>> kai
+=======
+>>>>>>> chickhack
   position: sticky;
   top: 0;
   width: 100%;
@@ -444,6 +453,7 @@ footer .smoke {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   transform: translateX(-50%);
 =======
 =======
@@ -464,6 +474,9 @@ footer .smoke {
 =======
   transform: translateX(-50%);
 >>>>>>> kai
+=======
+  transform: translateX(-50%);
+>>>>>>> chickhack
 }
 
 body {
@@ -486,6 +499,7 @@ canvas {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: flex;
   justify-content: center;
 =======
@@ -514,6 +528,10 @@ canvas {
   display: flex;
   justify-content: center;
 >>>>>>> kai
+=======
+  display: flex;
+  justify-content: center;
+>>>>>>> chickhack
   padding-top: 100px;
   font-size: 42px;
 }
@@ -523,6 +541,7 @@ ul.tab-title {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: flex;
   justify-content: center;
 =======
@@ -551,6 +570,10 @@ ul.tab-title {
   display: flex;
   justify-content: center;
 >>>>>>> kai
+=======
+  display: flex;
+  justify-content: center;
+>>>>>>> chickhack
 }
 
 ul.tab-title li {
@@ -571,6 +594,7 @@ ul.tab-title li.selected {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
@@ -587,10 +611,13 @@ ul.tab-title li.selected {
 >>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
 =======
 >>>>>>> kai
+=======
+>>>>>>> chickhack
   display: flex;
 }
 
 .tab-inner .intro {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -623,6 +650,10 @@ ul.tab-title li.selected {
   display: flex;
   flex-direction: column;
 >>>>>>> kai
+=======
+  display: flex;
+  flex-direction: column;
+>>>>>>> chickhack
   margin-top: 50px;
   text-align: left;
 }
@@ -634,6 +665,7 @@ ul.tab-title li.selected {
 }
 
 .tab-inner .data {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -665,6 +697,10 @@ ul.tab-title li.selected {
   display: flex;
   justify-content: flex-end;
 >>>>>>> kai
+=======
+  display: flex;
+  justify-content: flex-end;
+>>>>>>> chickhack
   margin-top: 50px;
 }
 
@@ -700,6 +736,7 @@ ul.tab-title li.selected {
 
 .tab-inner .data span.data-low {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> kai
 >>>>>>> 207fcd1e44351eec63eaaaa2987e1e8204ee7e60
@@ -719,6 +756,8 @@ ul.tab-title li.selected {
 .tab-inner .data span.data-low {
 =======
 >>>>>>> kai
+=======
+>>>>>>> chickhack
   font-size: 24px;
   font-stretch: narrower;
 }
@@ -745,6 +784,7 @@ ul.tab-title li.selected {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   transform: translate(-112%, -220%);
 =======
 =======
@@ -765,6 +805,9 @@ ul.tab-title li.selected {
 =======
   transform: translate(-112%, -220%);
 >>>>>>> kai
+=======
+  transform: translate(-112%, -220%);
+>>>>>>> chickhack
 }
 
 .tab-active .outline {
@@ -773,6 +816,7 @@ ul.tab-title li.selected {
   width: 190px;
   border-radius: 50%;
   position: relative;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -796,10 +840,14 @@ ul.tab-title li.selected {
 =======
   transform: translate(-100%, -100%);
 >>>>>>> kai
+=======
+  transform: translate(-100%, -100%);
+>>>>>>> chickhack
 }
 
 .tab-active .geoopt {
   position: absolute;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -830,6 +878,10 @@ ul.tab-title li.selected {
   display: flex;
   column-gap: 30px;
 >>>>>>> kai
+=======
+  display: flex;
+  column-gap: 30px;
+>>>>>>> chickhack
   right: 0px;
   top: 700px;
 }
@@ -852,6 +904,7 @@ ul.tab-title li.selected {
 }
 
 .content {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -882,6 +935,10 @@ ul.tab-title li.selected {
   display: flex;
   flex-wrap: wrap;
 >>>>>>> kai
+=======
+  display: flex;
+  flex-wrap: wrap;
+>>>>>>> chickhack
 }
 
 .content .imgs {
@@ -890,6 +947,7 @@ ul.tab-title li.selected {
 }
 
 .content .imgs .img1 {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -927,6 +985,8 @@ ul.tab-title li.selected {
 >>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
 =======
 >>>>>>> kai
+=======
+>>>>>>> chickhack
   transform: translate(10%);
 }
 
@@ -944,6 +1004,7 @@ ul.tab-title li.selected {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> kai
 >>>>>>> 207fcd1e44351eec63eaaaa2987e1e8204ee7e60
@@ -954,6 +1015,8 @@ ul.tab-title li.selected {
 >>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
 =======
 >>>>>>> kai
+=======
+>>>>>>> chickhack
 }
 
 .content .desc p {

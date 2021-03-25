@@ -1,8 +1,11 @@
+
 // 排行榜表頭顏色與文字
 .le-color{
     background-color: #16193b;
     font-size: 18px;
     color: #fff;
+    border-radius: 5px;
+    margin-bottom: 10px;
 }
 //排行榜背景色
 .ba-color{
@@ -14,9 +17,63 @@
     color: #c9ada7;
     font-size: 16px;
 }
-//
-.text-{
+//別人排名文字顏色與背色
+.text-color-1{
+    background-color: #292b41;
+    font-size: 16px;
+    color: #fff;
+}
+//排行榜縮圖
+.leve{
+    width: 60px;
+    height: 60px;
+}
+.leve-1{
+    width: 55px;
+    height: 55px;
+}
+.icon-2{
+    width: 60px;
+    object-fit:cover;
+    height: 60px;
+    border-radius: 40px;
+}
+.icon-3{
+    width: 55px;
+    height: 55px;
+    object-fit: cover;
+    border-radius: 40px;
+}
+
+//col-2內部對齊
+.text-00{
+    display: flex;
+    // align-content: center;
+    align-items: center;
     justify-content: center;
+    // text-align: center;
+}
+.text-01{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+//排行榜內的高度
+.line-he-65{
+    line-height: 65px;
+    height: 65px;
+}
+.line-he-85{
+    line-height: 85px;
+}
+.line-he-75{
+    line-height: 75px;
+}
+// 分隔線
+.bra-line{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    
 }
 .container{
     .row{

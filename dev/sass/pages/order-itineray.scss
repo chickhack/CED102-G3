@@ -28,12 +28,16 @@ body{
 //標題顏色
 .titi{
     background-color: #0c0d18;
-    line-height: 80px;
+    line-height: 50px;
     font-size: 18px;
 }
 //文字靠右對齊
 .textRight{
     text-align: right;
+}
+//文字置中
+.text-cn{
+    padding-left: 3%;
 }
 // 文字間距
 .textHeight-1{
@@ -158,7 +162,7 @@ body{
     height: 25px;
     color: #fff;
     font-size: 16px;
-    
+    width: 30%;
     letter-spacing: 2px;
     border-radius: 5px;
 }
@@ -173,7 +177,7 @@ body{
     border: 1px solid #AD6E4A;
 }
 form{
-    padding: 15vh 0 0 0;
+    padding: 0 0 0 0;
     height:100%;
     // margin-bottom: 200px;
     .orderinfo{
@@ -236,7 +240,7 @@ form{
                                     
                                     input{
                                         color: #fff;
-                                        width: 90%;
+                                        width: 89%;
                                         background-color: #3a3a3c;
                                         border: 1px solid #ad6e4a;
                                         border-radius: 5px;
