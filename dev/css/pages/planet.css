@@ -56,7 +56,8 @@ img {
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
   margin: 0;
   padding: 0;
 }
@@ -98,7 +99,7 @@ p, .p {
   font-size: 14px;
 }
 
-little, .little {
+small, .small {
   font-size: 12px;
 }
 
@@ -294,6 +295,8 @@ little, .little {
 }
 
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -308,11 +311,14 @@ little, .little {
 >>>>>>> chickhack
 =======
 >>>>>>> kai
+>>>>>>> bf8cc00b61f012adc328fdd45e114ac24a2069f7
 .container {
   max-width: 1440px;
   margin: 0 auto;
 }
 
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -330,12 +336,23 @@ little, .little {
 >>>>>>> chickhack
 =======
 >>>>>>> kai
+>>>>>>> bf8cc00b61f012adc328fdd45e114ac24a2069f7
 nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   background-color: #0c0d18;
+<<<<<<< HEAD
+  position: -webkit-sticky;
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -360,6 +377,7 @@ nav {
 >>>>>>> chickhack
 =======
 >>>>>>> kai
+>>>>>>> bf8cc00b61f012adc328fdd45e114ac24a2069f7
   position: sticky;
   top: 0;
   width: 100%;
@@ -371,7 +389,7 @@ nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-  background-image: url("../../img/logo.png");
+  background-image: url("../img/logo.png");
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -380,10 +398,18 @@ nav .logo h1 a {
 }
 
 nav .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   width: 60%;
 }
 
@@ -392,10 +418,17 @@ nav .nav-links a {
 }
 
 nav .nav-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 12%;
 }
 
@@ -427,19 +460,28 @@ footer .links .logo {
   position: relative;
   left: 50%;
   bottom: 50px;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 footer .links .footer-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 55%;
   position: relative;
   left: 50%;
   bottom: 30px;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 footer .links .footer-links a {
@@ -450,7 +492,8 @@ footer .footer_moon {
   position: relative;
   left: 50%;
   max-width: 550px;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 footer .smoke {
@@ -459,6 +502,10 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
+<<<<<<< HEAD
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -489,6 +536,7 @@ footer .smoke {
 >>>>>>> chickhack
 =======
   transform: translateX(-50%);
+>>>>>>> bf8cc00b61f012adc328fdd45e114ac24a2069f7
 }
 
 .quantity label {
@@ -514,7 +562,10 @@ footer .smoke {
   background-color: transparent;
   padding: 4px 8px;
   cursor: pointer;
+<<<<<<< HEAD
+=======
 >>>>>>> kai
+>>>>>>> bf8cc00b61f012adc328fdd45e114ac24a2069f7
 }
 
 body {
@@ -535,6 +586,8 @@ canvas {
 
 .title {
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -545,12 +598,15 @@ canvas {
 =======
 >>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
 <<<<<<< HEAD
+>>>>>>> bf8cc00b61f012adc328fdd45e114ac24a2069f7
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+<<<<<<< HEAD
+=======
 =======
   display: flex;
   justify-content: center;
@@ -575,6 +631,7 @@ canvas {
   display: flex;
   justify-content: center;
 >>>>>>> kai
+>>>>>>> bf8cc00b61f012adc328fdd45e114ac24a2069f7
   padding-top: 100px;
   font-size: 42px;
 }
@@ -582,6 +639,8 @@ canvas {
 ul.tab-title {
   padding-top: 50px;
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -592,12 +651,15 @@ ul.tab-title {
 =======
 >>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
 <<<<<<< HEAD
+>>>>>>> bf8cc00b61f012adc328fdd45e114ac24a2069f7
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+<<<<<<< HEAD
+=======
 =======
   display: flex;
   justify-content: center;
@@ -622,6 +684,7 @@ ul.tab-title {
   display: flex;
   justify-content: center;
 >>>>>>> kai
+>>>>>>> bf8cc00b61f012adc328fdd45e114ac24a2069f7
 }
 
 ul.tab-title li {
@@ -640,6 +703,10 @@ ul.tab-title li.selected {
 .tab-inner {
   border-top: 1px solid #AD6E4A;
 <<<<<<< HEAD
+  display: -webkit-box;
+  display: -ms-flexbox;
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -664,10 +731,13 @@ ul.tab-title li.selected {
 >>>>>>> chickhack
 =======
 >>>>>>> kai
+>>>>>>> bf8cc00b61f012adc328fdd45e114ac24a2069f7
   display: flex;
 }
 
 .tab-inner .intro {
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -679,6 +749,7 @@ ul.tab-title li.selected {
 =======
 >>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
 <<<<<<< HEAD
+>>>>>>> bf8cc00b61f012adc328fdd45e114ac24a2069f7
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -686,6 +757,8 @@ ul.tab-title li.selected {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+<<<<<<< HEAD
+=======
 =======
   display: flex;
   flex-direction: column;
@@ -710,6 +783,7 @@ ul.tab-title li.selected {
   display: flex;
   flex-direction: column;
 >>>>>>> kai
+>>>>>>> bf8cc00b61f012adc328fdd45e114ac24a2069f7
   margin-top: 50px;
   text-align: left;
 }
@@ -722,6 +796,8 @@ ul.tab-title li.selected {
 
 .tab-inner .data {
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -732,12 +808,15 @@ ul.tab-title li.selected {
 =======
 >>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
 <<<<<<< HEAD
+>>>>>>> bf8cc00b61f012adc328fdd45e114ac24a2069f7
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+<<<<<<< HEAD
+=======
 =======
   display: flex;
   justify-content: flex-end;
@@ -762,6 +841,7 @@ ul.tab-title li.selected {
   display: flex;
   justify-content: flex-end;
 >>>>>>> kai
+>>>>>>> bf8cc00b61f012adc328fdd45e114ac24a2069f7
   margin-top: 50px;
 }
 
@@ -795,6 +875,8 @@ ul.tab-title li.selected {
 
 .tab-inner .data span.data-low {
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -820,6 +902,7 @@ ul.tab-title li.selected {
 >>>>>>> chickhack
 =======
 >>>>>>> kai
+>>>>>>> bf8cc00b61f012adc328fdd45e114ac24a2069f7
   font-size: 24px;
   font-stretch: narrower;
 }
@@ -843,6 +926,10 @@ ul.tab-title li.selected {
   background-image: url(../../dev/img/planet/crater.jpg);
   background-position: top;
   position: relative;
+<<<<<<< HEAD
+  -webkit-transform: translate(-112%, -220%);
+          transform: translate(-112%, -220%);
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -874,6 +961,7 @@ ul.tab-title li.selected {
 =======
   transform: translate(-112%, -220%);
 >>>>>>> kai
+>>>>>>> bf8cc00b61f012adc328fdd45e114ac24a2069f7
 }
 
 .tab-active .outline {
@@ -882,6 +970,10 @@ ul.tab-title li.selected {
   width: 190px;
   border-radius: 50%;
   position: relative;
+<<<<<<< HEAD
+  -webkit-transform: translate(-100%, -100%);
+          transform: translate(-100%, -100%);
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -913,10 +1005,13 @@ ul.tab-title li.selected {
 =======
   transform: translate(-100%, -100%);
 >>>>>>> kai
+>>>>>>> bf8cc00b61f012adc328fdd45e114ac24a2069f7
 }
 
 .tab-active .geoopt {
   position: absolute;
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -928,11 +1023,14 @@ ul.tab-title li.selected {
 =======
 >>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
 <<<<<<< HEAD
+>>>>>>> bf8cc00b61f012adc328fdd45e114ac24a2069f7
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-column-gap: 30px;
           column-gap: 30px;
+<<<<<<< HEAD
+=======
 =======
   display: flex;
   column-gap: 30px;
@@ -957,6 +1055,7 @@ ul.tab-title li.selected {
   display: flex;
   column-gap: 30px;
 >>>>>>> kai
+>>>>>>> bf8cc00b61f012adc328fdd45e114ac24a2069f7
   right: 0px;
   top: 700px;
 }
@@ -980,6 +1079,8 @@ ul.tab-title li.selected {
 
 .content {
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -990,11 +1091,14 @@ ul.tab-title li.selected {
 =======
 >>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
 <<<<<<< HEAD
+>>>>>>> bf8cc00b61f012adc328fdd45e114ac24a2069f7
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+<<<<<<< HEAD
+=======
 =======
   display: flex;
   flex-wrap: wrap;
@@ -1019,6 +1123,7 @@ ul.tab-title li.selected {
   display: flex;
   flex-wrap: wrap;
 >>>>>>> kai
+>>>>>>> bf8cc00b61f012adc328fdd45e114ac24a2069f7
 }
 
 .content .imgs {
@@ -1028,6 +1133,8 @@ ul.tab-title li.selected {
 
 .content .imgs .img1 {
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1036,6 +1143,7 @@ ul.tab-title li.selected {
 =======
 >>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
 <<<<<<< HEAD
+>>>>>>> bf8cc00b61f012adc328fdd45e114ac24a2069f7
   -webkit-transform: translate(10%);
           transform: translate(10%);
 }
@@ -1057,6 +1165,8 @@ ul.tab-title li.selected {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+<<<<<<< HEAD
+=======
 =======
 <<<<<<< HEAD
 >>>>>>> 207fcd1e44351eec63eaaaa2987e1e8204ee7e60
@@ -1103,6 +1213,7 @@ ul.tab-title li.selected {
 >>>>>>> chickhack
 =======
 >>>>>>> kai
+>>>>>>> bf8cc00b61f012adc328fdd45e114ac24a2069f7
 }
 
 .content .desc p {

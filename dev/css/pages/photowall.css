@@ -5,7 +5,11 @@ body {
 }
 
 .grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -15,6 +19,7 @@ body {
 =======
 >>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
 <<<<<<< HEAD
+>>>>>>> bf8cc00b61f012adc328fdd45e114ac24a2069f7
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: center;
@@ -25,6 +30,8 @@ body {
           align-items: start;
   padding-top: 5%;
   font-size: 12px;
+<<<<<<< HEAD
+=======
 =======
 <<<<<<< HEAD
 >>>>>>> 207fcd1e44351eec63eaaaa2987e1e8204ee7e60
@@ -65,6 +72,7 @@ body {
 >>>>>>> chickhack
 =======
 >>>>>>> kai
+>>>>>>> bf8cc00b61f012adc328fdd45e114ac24a2069f7
 }
 
 .grid-item {
@@ -79,6 +87,8 @@ body {
 }
 
 .action-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   bottom: 48px;
   background-color: black;
@@ -104,6 +114,8 @@ body {
 }
 
 .article {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 250px;
 }
@@ -129,6 +141,8 @@ body {
 }
 
 .article_2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-top: 10px;
 }
@@ -148,6 +162,7 @@ body {
 
 .col-md-1 {
   display: inline-block;
+  position: -webkit-sticky;
   position: sticky;
   left: 1300px;
   bottom: 120px;
