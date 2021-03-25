@@ -112,8 +112,13 @@ small, .small {
 }
 
 @font-face {
+<<<<<<< HEAD
+  font-family: "Microsoft JhengHei",  "Nasalization", "adobe-std-b";
+  src: local("./fonts/msjh.ttc"), local("./fonts/msjhbd.ttc"), local("./fonts/HATTEN.TTF"), local("./fonts/Nasa.ttf"), local("./fonts/adobe-std-b.otf");
+=======
   font-family: "Microsoft JhengHei",  "Nasalization";
   src: local("./fonts/msjh.ttc"), local("./fonts/msjhbd.ttc"), local("./fonts/HATTEN.TTF"), local("./fonts/Nasa.ttf");
+>>>>>>> dev
 }
 
 .padding_left_1 {
@@ -313,6 +318,9 @@ nav {
       justify-content: space-around;
   background-color: #0c0d18;
 <<<<<<< HEAD
+  position: -webkit-sticky;
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
   position: -webkit-sticky;
 =======
@@ -343,6 +351,7 @@ nav {
 >>>>>>> bf8cc00b61f012adc328fdd45e114ac24a2069f7
 =======
 >>>>>>> kai
+>>>>>>> dev
   position: sticky;
   top: 0;
   width: 100%;
@@ -354,7 +363,7 @@ nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-  background-image: url("../img/logo.png");
+  background-image: url("../../img/logo.png");
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -468,6 +477,8 @@ footer .smoke {
   width: 100%;
   height: 80%;
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -481,6 +492,7 @@ footer .smoke {
 >>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
 <<<<<<< HEAD
 >>>>>>> bf8cc00b61f012adc328fdd45e114ac24a2069f7
+>>>>>>> dev
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
@@ -506,6 +518,20 @@ div.bk {
   opacity: 0.6;
 }
 
+<<<<<<< HEAD
+div.bk2 {
+  width: 1300px;
+  height: 1300px;
+  position: absolute;
+  left: 59px;
+  top: 730px;
+  opacity: 0.03;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+=======
+>>>>>>> dev
 div.bk3 {
   width: 300px;
   height: 300px;
@@ -526,6 +552,9 @@ div.bk3 {
 }
 
 .first {
+<<<<<<< HEAD
+  padding-left: 100px;
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
   display: -webkit-box;
@@ -576,6 +605,7 @@ div.bk3 {
 .first_right {
   width: 20%;
   position: relative;
+>>>>>>> dev
 }
 
 img {
@@ -609,8 +639,14 @@ h2.title {
   position: relative;
 }
 
+<<<<<<< HEAD
+.hottrip {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+=======
 .first .first_right .hottrip {
 >>>>>>> bf8cc00b61f012adc328fdd45e114ac24a2069f7
+>>>>>>> dev
   display: inline-flex;
   overflow: hidden;
   max-width: 800px;
@@ -654,9 +690,12 @@ h2.title {
 .tag {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
+<<<<<<< HEAD
+=======
 =======
 .first .first_right .hottrip div.planet_top div.word .tag {
 >>>>>>> bf8cc00b61f012adc328fdd45e114ac24a2069f7
+>>>>>>> dev
   display: inline-flex;
   border: 1px solid #C9ADA7;
   border-radius: 5px;
@@ -684,12 +723,19 @@ h2.title {
 }
 
 <<<<<<< HEAD
+=======
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> dev
 .tripselect {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+<<<<<<< HEAD
+  width: 260px;
+=======
   width: 280px;
+>>>>>>> dev
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -699,6 +745,8 @@ h2.title {
   position: relative;
   bottom: 4px;
   color: #AD6E4A;
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -722,6 +770,7 @@ h2.title {
   top: 2px;
   padding-right: 4px;
 >>>>>>> bf8cc00b61f012adc328fdd45e114ac24a2069f7
+>>>>>>> dev
 }
 
 .first .first_right .tripselect {
@@ -736,6 +785,9 @@ h2.title {
   z-index: 2;
 }
 
+<<<<<<< HEAD
+.stepall {
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -756,6 +808,7 @@ h2.title {
 =======
 >>>>>>> kai
 .stepsection {
+>>>>>>> dev
   text-align: center;
   background-color: rgba(25, 25, 25, 0.3);
   padding: 48px;
@@ -793,6 +846,24 @@ h2.title {
   padding: 32px;
 }
 
+<<<<<<< HEAD
+.step1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+img.step_icon {
+  width: 50px;
+}
+
+img.num {
+  width: 25px;
+  height: 25px;
+}
+
+.alltrip {
+=======
 .stepsection .stepall .step {
   position: relative;
   margin: 0 50px 0 50px;
@@ -832,6 +903,7 @@ h2.title {
 <<<<<<< HEAD
 .step_content {
   color: #AD6E4A;
+>>>>>>> dev
   font-weight: bold;
 }
 
@@ -848,6 +920,8 @@ h2.title {
   margin: 0 auto;
 }
 
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -875,8 +949,13 @@ h2.title {
 =======
 >>>>>>> kai
 =======
+>>>>>>> dev
 .tripcard_all {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
+=======
 >>>>>>> chickhack
 =======
 =======
@@ -890,6 +969,7 @@ h2.title {
 >>>>>>> bf8cc00b61f012adc328fdd45e114ac24a2069f7
 =======
 >>>>>>> kai
+>>>>>>> dev
 }
 
 .second .tripcard_all .tripcard {
@@ -914,9 +994,12 @@ h2.title {
 .tag2 {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
+<<<<<<< HEAD
+=======
 =======
 .second .tripcard_all .tripcard .tag {
 >>>>>>> bf8cc00b61f012adc328fdd45e114ac24a2069f7
+>>>>>>> dev
   display: inline-flex;
   border: 1px solid #C9ADA7;
   border-radius: 5px;

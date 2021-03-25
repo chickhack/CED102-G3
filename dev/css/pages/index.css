@@ -112,8 +112,13 @@ small, .small {
 }
 
 @font-face {
+<<<<<<< HEAD
+  font-family: "Microsoft JhengHei",  "Nasalization", "adobe-std-b";
+  src: local("./fonts/msjh.ttc"), local("./fonts/msjhbd.ttc"), local("./fonts/HATTEN.TTF"), local("./fonts/Nasa.ttf"), local("./fonts/adobe-std-b.otf");
+=======
   font-family: "Microsoft JhengHei",  "Nasalization";
   src: local("./fonts/msjh.ttc"), local("./fonts/msjhbd.ttc"), local("./fonts/HATTEN.TTF"), local("./fonts/Nasa.ttf");
+>>>>>>> dev
 }
 
 .padding_left_1 {
@@ -439,6 +444,8 @@ footer .smoke {
   height: 80%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+<<<<<<< HEAD
+=======
 }
 
 .quantity label {
@@ -489,6 +496,7 @@ footer .smoke {
   background-color: transparent;
   padding: 4px 8px;
   cursor: pointer;
+>>>>>>> dev
 }
 
 nav {

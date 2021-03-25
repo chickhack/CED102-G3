@@ -16,42 +16,209 @@
 <style>
   @import "../reset";
 
-  body{
+  body {
     background-color: #0c0d18;
   }
 
+  /* 歡迎會員 字體大小、字型位置 */
   .wellcome {
-    padding: 80px 80px 0px 80px;
-    display:flex;
-    align-items:center;
-    /* justify-content:center; */
+    padding: 15vh 250px 0px 250px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
   }
+
   .spacedinfo {
-    font-size: 20px;
-    font-family: "Haettenschweiler", "Microsoft JhengHei", sans-serif;
     line-height: 30px;
-    letter-spacing: 2px;
   }
+
+  p {
+    float: left;
+  }
+
+  .account_hi,
+  .account_logo {
+    font-size: 20px;
+  }
+
+  .account_hi,
+  .account_acnum {
+    font-family: "Microsoft JhengHei";
+  }
+
+  .account_logo,
+  .account_numlogo {
+    font-family: "Nasalization";
+    letter-spacing: 5px;
+  }
+
+  .account_num {
+    font-family: "adobe-std-b";
+    letter-spacing: 3px;
+  }
+
+  .account_numlogo,
+  .account_acnum,
+  .account_num {
+    font-size: 14px;
+    color: #ffff;
+  }
+
   img.account_levimg {
     max-width: 55px;
-    padding-left: 10px;
+    padding-left: 20px;
   }
 
-  .account{
+  /* 會員卡片 */
+  .account_card {
     border: 1px solid #AD6E4A;
     background-color: #292b41;
-    margin: 25px 80px 0px 80px;
-  }
-  .account_card{
-    padding: 20px;
-  }
-
-  .your_lev{
-    font-size: 20px;
-    font-family: "Haettenschweiler", "Microsoft JhengHei", sans-serif;
+    margin: 30px 250px 0px 250px;
+    padding: 30px;
+    border-radius: 10px;
   }
 
-  footer{
+  /* 會員卡片內容 */
+  .account_now {
+    /* border: 1px solid red; */
+  }
+
+  .your_lev {
+    /* border: 1px solid red; */
+  }
+
+  /* 目前累積等級、星球、景點、宇宙幣 */
+  img.littleline {
+    max-width: 50%;
+  }
+
+  .lev_name,
+  .account_total,
+  .account_money {
+    font-family: "Microsoft JhengHei";
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+
+  .account_total,
+  .account_money {
+    color: #ffffff;
+  }
+
+  .accnum {
+    font-family: "Nasalization";
+  }
+
+  .accmoney {
+    font-family: "adobe-std-b";
+    letter-spacing: 2px;
+  }
+
+  /*  12個月內累積 */
+  .lev_acc {
+    font-family: "Microsoft JhengHei";
+    letter-spacing: 2px;
+    margin-top: 30px;
+    margin-left: 75px;
+    margin-bottom: 20px;
+    /* border: 1px solid red; */
+  }
+
+  img.nowlev,
+  img.nextlev {
+    max-width: 50%;
+  }
+
+  .account_rocket {
+    max-width: 5%;
+  }
+
+  .next_rocket {
+    margin-left: -50px;
+    margin-top: 60px;
+  }
+
+  .your_acc {
+    display: flex;
+  }
+
+  .now_lev {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: left; */
+  }
+
+  .next_lev {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: right; */
+  }
+
+  p.nextacc,
+  p.nowacc {
+    float: left;
+    letter-spacing: 1px;
+    line-height: 20px;
+  }
+
+  /* 會員menu */
+  .account_nav {
+    margin: 50px 200px 0px 200px;
+  }
+
+  .account_nav a {
+    color: #C9ADA7;
+  }
+
+  .account_nav a:hover {
+    color: #AD6E4A;
+    border-bottom: 2px solid #AD6E4A;
+  }
+
+  .account_line {
+    margin: 0px 200px 0px 200px;
+    /* border: 0.5px solid #AD6E4A; */
+    color: #AD6E4A;
+  }
+
+  /* 會員資料 */
+  .info {
+    margin-top: 1px;
+    padding: 30px 280px 10px 280px;
+    height: auto;
+    background-color: #3a3a3c;
+    opacity: 0.6;
+    display: flex;
+  }
+  .infoimg{
+    max-width: 100px;
+  }
+  .info_form{
+    padding: 30px 50px 30px 50px;
+  }
+  .form-group, label{
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .infobtn {
+
+  }
+  .infobtn {
+    margin: 30px;
+    color: #ffff;
+    border: 1px solid #AD6E4A;
+    background: none;
+  }
+  .infobtn:hover {
+    color: #ffff;
+    border: 1px solid #AD6E4A;
+    background: #AD6E4A;
+  }
+
+  /* footer */
+  footer {
     padding-top: 100px;
   }
 </style>
@@ -62,41 +229,129 @@
   </header>
 
   <div class="wellcome">
-    <div>
-      <h2 class="spacedinfo"><span class="account_name">嗨，spaced!</span><br>
-                             <span class="account_num">spaced會員編號100918156</span>
-      </h2>
+    <div class="spacedinfo">
+      <p class="account_hi">嗨，</p>
+      <p class="account_logo">SPACED!</p><br>
+      <p class="account_numlogo">SPACED</p>
+      <p class="account_acnum">會員編號：</p>
+      <p class="account_num">100918156</p>
     </div>
     <img class="account_levimg" src="../dev/img/account/lev1.png" alt="lev">
   </div>
 
-  <div class="account">
-    <div class="account_card">
-      <div class="lev_info">
-        <h2 class="your_lev">
-          <span class="lev_name">冒險者</span>
-          <span class="account_total">累積旅行3顆星球、5個景點</span>
-          <span class="account_money">目前持有999,999宇宙幣</span>
-        </h2>
-      </div>
-      <div class="lev_acc">
-        <h2><span>12個月內累積</span></h2>
-      </div>
-      <div class="lev">
-        <div class=nowlev_img>
-          <h2 class="nowlev"><img class="nowlev" src="../dev/img/account/lev1.png" alt="lev"><br>
-            <span class="nowacc">80,000積分</span><br>
-          </h2>
+  <div class="account_card">
+    <div class="account_now">
+      <div class="your_lev">
+        <div class="container_card your_nowlev">
+          <div class="row align-items-center">
+            <div class="col col-md-auto lev_name">冒險者</div>
+            <div class="col-md-auto"><img class="littleline" src="../dev/img/icon/littleline.png" alt=""></div>
+            <div class="col account_total">累積旅行
+              <span class="accnum">3</span>顆星球、
+              <span class="accnum">5</span>個景點
+            </div>
+            <div class="col col-md-auto account_money">目前持有
+              <span class="accmoney"> 1,099,999 </span>宇宙幣
+            </div>
+          </div>
         </div>
-        <img class="account_rocket" src="../dev/img/account/rocket4.png" alt="rocket">
-        <div class=nextlev_img>
-          <h2 class="nextlev"><img class="nextlev" src="../dev/img/account/lev2.png" alt="lev"><br>
-            <span class="nextacc">目前尚需80,000積分<br>才能升級至初星者</span>
-          </h2>
+      </div>
+
+      <div class="lev_acc">
+        <little><span>12個月內累積</span></little>
+      </div>
+
+      <div class="container_">
+        <div class="your_acc">
+          <div class="now_lev align-items-center">
+            <img class="nowlev" src="../dev/img/icon/初星者.png" alt="lev"><br>
+            <p class="nowacc">80,000積分</p>
+          </div>
+          <div class="next_rocket"><img class="account_rocket" src="../dev/img/icon/rocket4.png" alt="rocket"></div>
+          <div class="next_lev align-items-center">
+            <img class="nextlev" src="../dev/img/icon/天星者.png" alt="lev"><br>
+            <p class="nextacc">目前尚需80,000積分</p>
+            <p class="nextacc">才能升級至初星者</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
+
+  <ul class="account_nav nav nav-justified" id="pills-tab" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" href="#info">會員資料</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">行程管理</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">互動牆管理</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">商城訂單</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">收藏管理</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">轉換積分</a>
+    </li>
+  </ul>
+  <hr class="account_line">
+
+  <div class="info">
+
+    <div class="info_img">
+      <img class="infoimg" src="../dev/img/icon/會員頭貼.png" alt=""><br>
+    </div>
+  
+    <div class="info_form">
+      <form>
+  
+        <div class="form-group">
+          <label for="exampleInputEmail1">暱稱</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+          <small id="emailHelp" class="form-text text-muted"></small>
+        </div>
+  
+        <div class="form-group">
+          <label for="exampleInputPassword1">姓名</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">姓氏</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">性別</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">生日</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">手機</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">地址</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="">
+        </div>
+  
+        <!-- <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div> -->
+  
+        <button type="submit" class="btn btn-primary infobtn">編輯個人資料</button>
+  
+      </form>
+    </div>
+
+  </div>
+
 
   <footer>
     @@include('./layout/footer.html')
@@ -112,6 +367,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
     integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
     crossorigin="anonymous"></script>
+
 </body>
 
 </html>

@@ -112,8 +112,13 @@ small, .small {
 }
 
 @font-face {
+<<<<<<< HEAD
+  font-family: "Microsoft JhengHei",  "Nasalization", "adobe-std-b";
+  src: local("./fonts/msjh.ttc"), local("./fonts/msjhbd.ttc"), local("./fonts/HATTEN.TTF"), local("./fonts/Nasa.ttf"), local("./fonts/adobe-std-b.otf");
+=======
   font-family: "Microsoft JhengHei",  "Nasalization";
   src: local("./fonts/msjh.ttc"), local("./fonts/msjhbd.ttc"), local("./fonts/HATTEN.TTF"), local("./fonts/Nasa.ttf");
+>>>>>>> dev
 }
 
 .padding_left_1 {
@@ -316,6 +321,9 @@ nav {
   position: -webkit-sticky;
 =======
 <<<<<<< HEAD
+  position: -webkit-sticky;
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -340,6 +348,7 @@ nav {
 =======
 >>>>>>> kai
 >>>>>>> bf8cc00b61f012adc328fdd45e114ac24a2069f7
+>>>>>>> dev
   position: sticky;
   top: 0;
   width: 100%;
@@ -351,7 +360,7 @@ nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-  background-image: url("../img/logo.png");
+  background-image: url("../../img/logo.png");
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -467,6 +476,10 @@ footer .smoke {
 <<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+=======
+<<<<<<< HEAD
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .quantity label {
@@ -544,6 +557,7 @@ footer .smoke {
   background-color: transparent;
   padding: 4px 8px;
   cursor: pointer;
+>>>>>>> dev
 }
 
 section.shop {

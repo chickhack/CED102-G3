@@ -60,8 +60,13 @@ img {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
 =======
+<<<<<<< HEAD
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+=======
   box-sizing: inherit;
 >>>>>>> bf8cc00b61f012adc328fdd45e114ac24a2069f7
+>>>>>>> dev
   margin: 0;
   padding: 0;
 }
@@ -104,10 +109,14 @@ p, .p {
 }
 
 <<<<<<< HEAD
+little, .little {
+=======
+<<<<<<< HEAD
 small, .small {
 =======
 little, .little {
 >>>>>>> bf8cc00b61f012adc328fdd45e114ac24a2069f7
+>>>>>>> dev
   font-size: 12px;
 }
 
@@ -120,8 +129,13 @@ little, .little {
 }
 
 @font-face {
+<<<<<<< HEAD
+  font-family: "Microsoft JhengHei",  "Nasalization", "adobe-std-b";
+  src: local("./fonts/msjh.ttc"), local("./fonts/msjhbd.ttc"), local("./fonts/HATTEN.TTF"), local("./fonts/Nasa.ttf"), local("./fonts/adobe-std-b.otf");
+=======
   font-family: "Microsoft JhengHei",  "Nasalization";
   src: local("./fonts/msjh.ttc"), local("./fonts/msjhbd.ttc"), local("./fonts/HATTEN.TTF"), local("./fonts/Nasa.ttf");
+>>>>>>> dev
 }
 
 .padding_left_1 {
@@ -309,6 +323,9 @@ little, .little {
 
 nav {
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> dev
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -322,6 +339,8 @@ nav {
       justify-content: space-around;
   background-color: #0c0d18;
   position: -webkit-sticky;
+<<<<<<< HEAD
+=======
 =======
   display: flex;
   justify-content: center;
@@ -329,6 +348,7 @@ nav {
   justify-content: space-around;
   background-color: #0c0d18;
 >>>>>>> bf8cc00b61f012adc328fdd45e114ac24a2069f7
+>>>>>>> dev
   position: sticky;
   top: 0;
   width: 100%;
@@ -341,10 +361,14 @@ nav .logo h1 a {
   white-space: nowrap;
   overflow: hidden;
 <<<<<<< HEAD
+  background-image: url("../../img/logo.png");
+=======
+<<<<<<< HEAD
   background-image: url("../img/logo.png");
 =======
   background-image: url("../../img/logo.png");
 >>>>>>> bf8cc00b61f012adc328fdd45e114ac24a2069f7
+>>>>>>> dev
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -354,6 +378,9 @@ nav .logo h1 a {
 
 nav .nav-links {
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> dev
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -366,12 +393,15 @@ nav .nav-links {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+<<<<<<< HEAD
+=======
 =======
   display: flex;
   justify-content: center;
   align-items: center;
   justify-content: flex-end;
 >>>>>>> bf8cc00b61f012adc328fdd45e114ac24a2069f7
+>>>>>>> dev
   width: 60%;
 }
 
@@ -381,6 +411,9 @@ nav .nav-links a {
 
 nav .nav-icons {
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> dev
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -392,12 +425,15 @@ nav .nav-icons {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+<<<<<<< HEAD
+=======
 =======
   display: flex;
   justify-content: center;
   align-items: center;
   justify-content: space-around;
 >>>>>>> bf8cc00b61f012adc328fdd45e114ac24a2069f7
+>>>>>>> dev
   width: 12%;
 }
 
@@ -430,6 +466,9 @@ footer .links .logo {
   left: 50%;
   bottom: 50px;
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> dev
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
@@ -446,6 +485,8 @@ footer .links .footer-links {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+<<<<<<< HEAD
+=======
 =======
   transform: translateX(-50%);
 }
@@ -456,6 +497,7 @@ footer .links .footer-links {
   align-items: center;
   justify-content: space-around;
 >>>>>>> bf8cc00b61f012adc328fdd45e114ac24a2069f7
+>>>>>>> dev
   width: 55%;
   position: relative;
   left: 50%;
@@ -464,8 +506,13 @@ footer .links .footer-links {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 =======
+<<<<<<< HEAD
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+=======
   transform: translateX(-50%);
 >>>>>>> bf8cc00b61f012adc328fdd45e114ac24a2069f7
+>>>>>>> dev
 }
 
 footer .links .footer-links a {
@@ -480,8 +527,13 @@ footer .footer_moon {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 =======
+<<<<<<< HEAD
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+=======
   transform: translateX(-50%);
 >>>>>>> bf8cc00b61f012adc328fdd45e114ac24a2069f7
+>>>>>>> dev
 }
 
 footer .smoke {
@@ -490,6 +542,10 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
+<<<<<<< HEAD
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+=======
 <<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -521,11 +577,17 @@ footer .smoke {
   background-color: transparent;
   padding: 4px 8px;
   cursor: pointer;
+>>>>>>> dev
 }
 
 section.cart {
   max-width: 948px;
   margin: 0 auto;
+<<<<<<< HEAD
+  border: 1px solid #fff;
+  padding-top: 15vh;
+}
+=======
 <<<<<<< HEAD
   padding-top: 5vh;
 }
@@ -687,4 +749,5 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
+>>>>>>> dev
 /*# sourceMappingURL=shop_cart.css.map */
