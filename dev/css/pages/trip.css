@@ -56,8 +56,7 @@ img {
 *,
 *:before,
 *:after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
   margin: 0;
   padding: 0;
 }
@@ -99,7 +98,7 @@ p, .p {
   font-size: 14px;
 }
 
-small, .small {
+little, .little {
   font-size: 12px;
 }
 
@@ -300,19 +299,11 @@ small, .small {
 }
 
 nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
   background-color: #0c0d18;
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   width: 100%;
@@ -324,7 +315,7 @@ nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-  background-image: url("../img/logo.png");
+  background-image: url("../../img/logo.png");
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -333,18 +324,10 @@ nav .logo h1 a {
 }
 
 nav .nav-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-end;
   width: 60%;
 }
 
@@ -353,17 +336,10 @@ nav .nav-links a {
 }
 
 nav .nav-icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
   width: 12%;
 }
 
@@ -395,28 +371,19 @@ footer .links .logo {
   position: relative;
   left: 50%;
   bottom: 50px;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 footer .links .footer-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
   width: 55%;
   position: relative;
   left: 50%;
   bottom: 30px;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 footer .links .footer-links a {
@@ -427,8 +394,7 @@ footer .footer_moon {
   position: relative;
   left: 50%;
   max-width: 550px;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 footer .smoke {
@@ -437,57 +403,218 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
-.quantity label {
-  display: block;
+.container {
+  margin: 0 auto;
 }
 
-.quantity .as {
+.trippic {
+  width: 700px;
+}
+
+.parent_container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.parent_container .trip_content_all {
+  width: 53%;
+  margin: 0 auto;
+  display: inline-block;
+  vertical-align: top;
+  padding: 20px;
+}
+
+.parent_container .trip_content_all .trip_title {
+  display: inline-flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.parent_container .trip_content_all .trip_title .number {
+  background-color: #AD6E4A;
+  padding: 8px;
+}
+
+.parent_container .trip_content_all .trip_title .bookmark {
+  width: 25px;
+  position: relative;
+  top: 6px;
+  text-align: end;
+}
+
+.parent_container .trip_content_all .tab_list_block {
+  list-style: none;
+}
+
+.parent_container .trip_content_all .tab_list_block li {
+  display: inline-block;
+}
+
+.parent_container .trip_content_all .tab_list_block li a {
+  text-decoration: none;
   color: #AD6E4A;
+  font-weight: bold;
+  padding-bottom: 16px;
 }
 
-.quantity .as input[type=number] {
-  max-width: 50px;
-  background-color: transparent;
-  outline: none;
-  border: none;
-  text-align: center;
-  color: #AD6E4A;
+.parent_container .trip_content_all .-on {
+  border-bottom: 4px solid #AD6E4A;
 }
 
-.quantity .as span {
+.parent_container .tab_contents {
+  border-top: 1px solid #AD6E4A;
+}
+
+.parent_container .book {
+  width: 35%;
   border: 1px solid #AD6E4A;
-  outline: none;
-  background-color: transparent;
-  padding: 4px 8px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 20px;
+}
+
+.parent_container .comment {
+  width: 53%;
+  padding: 20px;
+}
+
+.parent_container .comment .score {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.parent_container .comment .score .number {
+  background-color: #AD6E4A;
+  padding: 8px;
+}
+
+.parent_container .comment .score .stars {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parent_container .comment .score .stars .star {
+  margin-left: 4px;
+}
+
+.parent_container .comment .score .stars .icon {
+  width: 15px;
+}
+
+.parent_container .comment .score .more {
+  position: absolute;
+  right: 0;
+  text-decoration: underline;
   cursor: pointer;
 }
 
-.quantity label {
-  display: block;
+.parent_container .comment .messages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #AD6E4A;
+  padding: 16px 0;
+  position: relative;
 }
 
-.quantity .as {
-  color: #AD6E4A;
-}
-
-.quantity .as input[type=number] {
+.parent_container .comment .messages img {
   max-width: 50px;
-  background-color: transparent;
-  outline: none;
-  border: none;
-  text-align: center;
-  color: #AD6E4A;
+  top: 50px;
 }
 
-.quantity .as span {
-  border: 1px solid #AD6E4A;
-  outline: none;
-  background-color: transparent;
-  padding: 4px 8px;
+.parent_container .comment .messages .name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: start;
+}
+
+.parent_container .comment .messages .name hr {
+  height: 10px;
+  background-color: #C9ADA7;
+  border: 1px solid #C9ADA7;
+  margin: 0 8px;
+}
+
+.parent_container .comment .messages .more {
+  position: absolute;
+  right: 0;
+  bottom: 16px;
+  color: #ffffff;
+  text-decoration: underline;
   cursor: pointer;
 }
-/*# sourceMappingURL=all.css.map */
+
+.parent_container .recommend {
+  margin: 0 auto;
+}
+
+.parent_container .recommend h3 {
+  text-align: center;
+}
+
+.parent_container .recommend .tripcard_all {
+  display: inline-flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.parent_container .recommend .tripcard_all .tripcard {
+  width: 250px;
+  background-color: #191919;
+  padding: 15px;
+  border-radius: 5px;
+  position: relative;
+  margin: 0 24px 0 24px;
+}
+
+.parent_container .recommend .tripcard_all .tripcard .spot_pic {
+  width: 250px;
+}
+
+.parent_container .recommend .tripcard_all .tripcard .hot2 {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.parent_container .recommend .tripcard_all .tripcard .tag {
+  display: inline-flex;
+  border: 1px solid #C9ADA7;
+  border-radius: 5px;
+  padding: 8px;
+  line-height: 5px;
+  margin: 3px;
+}
+
+.parent_container .recommend .tripcard_all .tripcard .price2 {
+  color: #AD6E4A;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.parent_container .recommend .tripcard_all .tripcard .addin2 {
+  background-color: #AD6E4A;
+  color: #ffffff;
+  border-radius: 15px;
+  width: 110px;
+  line-height: 26px;
+  text-align: center;
+  position: absolute;
+  right: 15px;
+  bottom: 20px;
+}
+
+.parent_container .recommend .tripcard_all .tripcard .addin2 img.plus {
+  width: 15px;
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  padding-right: 4px;
+}
+/*# sourceMappingURL=trip.css.map */
