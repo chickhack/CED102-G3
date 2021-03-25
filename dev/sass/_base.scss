@@ -43,11 +43,12 @@ $lineHeight: (
 
 // 字型
 @font-face{
-    font-family: "Microsoft JhengHei",  "Nasalization";
+    font-family: "Microsoft JhengHei",  "Nasalization", "adobe-std-b";
     src: local("./fonts/msjh.ttc"),
          local("./fonts/msjhbd.ttc"),
          local("./fonts/HATTEN.TTF"),
-         local("./fonts/Nasa.ttf")
+         local("./fonts/Nasa.ttf"),
+         local("./fonts/adobe-std-b.otf")
 }
 
 //間距

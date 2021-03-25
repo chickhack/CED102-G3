@@ -16,42 +16,141 @@
 <style>
   @import "../reset";
 
-  body{
+  body {
     background-color: #0c0d18;
   }
 
+  /* 歡迎會員 字體大小、字型位置 */
   .wellcome {
-    padding: 80px 80px 0px 80px;
-    display:flex;
-    align-items:center;
-    /* justify-content:center; */
+    padding: 15vh 220px 0px 220px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
   }
+
   .spacedinfo {
-    font-size: 20px;
-    font-family: "Haettenschweiler", "Microsoft JhengHei", sans-serif;
     line-height: 30px;
-    letter-spacing: 2px;
   }
+
+  p {
+    float: left;
+  }
+
+  .account_hi,
+  .account_logo {
+    font-size: 20px;
+  }
+
+  .account_hi,
+  .account_acnum {
+    font-family: "Microsoft JhengHei";
+  }
+
+  .account_logo,
+  .account_numlogo {
+    font-family: "Nasalization";
+    letter-spacing: 5px;
+  }
+
+  .account_num {
+    font-family: "adobe-std-b";
+    letter-spacing: 3px;
+  }
+
+  .account_numlogo,
+  .account_acnum,
+  .account_num {
+    font-size: 14px;
+    color: #ffff;
+  }
+
   img.account_levimg {
     max-width: 55px;
-    padding-left: 10px;
+    padding-left: 20px;
   }
 
-  .account{
+  /* 會員卡片 */
+  .account_card {
     border: 1px solid #AD6E4A;
     background-color: #292b41;
-    margin: 25px 80px 0px 80px;
-  }
-  .account_card{
-    padding: 20px;
-  }
-
-  .your_lev{
-    font-size: 20px;
-    font-family: "Haettenschweiler", "Microsoft JhengHei", sans-serif;
+    margin: 30px 200px 0px 200px;
+    padding: 30px;
+    border-radius: 10px;
   }
 
-  footer{
+  /* 會員卡片內容 */
+  .account_now {
+    border: 1px solid red;
+  }
+
+  .your_lev {
+    border: 1px solid red;
+  }
+
+  /* 目前累積等級、星球、景點、宇宙幣 */
+  img.littleline {
+    max-width: 50%;
+  }
+
+  .lev_name,
+  .account_total,
+  .account_money {
+    font-family: "Microsoft JhengHei";
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+
+  .account_total,
+  .account_money {
+    color: #ffffff;
+  }
+
+  .accnum {
+    font-family: "Nasalization";
+  }
+
+  .accmoney {
+    font-family: "adobe-std-b";
+    letter-spacing: 2px;
+  }
+
+  /*  12個月內累積 */
+  .lev_acc {
+    font-family: "Microsoft JhengHei";
+    letter-spacing: 2px;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    border: 1px solid red;
+  }
+
+  img.nowlev,
+  img.nextlev {
+    max-width: 50%;
+  }
+
+  .account_rocket {
+    max-width: 8%;
+  }
+
+  .your_acc {
+    display: flex;
+  }
+
+/* 會員menu */
+  .btn_account{
+    color: #C9ADA7;
+    border-color: #AD6E4A;
+  }
+  .btn-group{
+    margin: 100px 200px 200px 200px;
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between;
+  }
+  
+  /* footer */
+  footer {
     padding-top: 100px;
   }
 </style>
@@ -62,41 +161,67 @@
   </header>
 
   <div class="wellcome">
-    <div>
-      <h2 class="spacedinfo"><span class="account_name">嗨，spaced!</span><br>
-                             <span class="account_num">spaced會員編號100918156</span>
-      </h2>
+    <div class="spacedinfo">
+      <p class="account_hi">嗨，</p>
+      <p class="account_logo">SPACED!</p><br>
+      <p class="account_numlogo">SPACED</p>
+      <p class="account_acnum">會員編號：</p>
+      <p class="account_num">100918156</p>
     </div>
     <img class="account_levimg" src="../dev/img/account/lev1.png" alt="lev">
   </div>
 
-  <div class="account">
-    <div class="account_card">
-      <div class="lev_info">
-        <h2 class="your_lev">
-          <span class="lev_name">冒險者</span>
-          <span class="account_total">累積旅行3顆星球、5個景點</span>
-          <span class="account_money">目前持有999,999宇宙幣</span>
-        </h2>
+  <div class="account_card">
+    <div class="account_now">
+
+      <div class="your_lev">
+        <div class="container_card your_nowlev">
+          <div class="row align-items-center">
+            <div class="col col-md-auto lev_name">冒險者</div>
+            <div class="col-md-auto"><img class="littleline" src="../dev/img/icon/littleline.png" alt=""></div>
+            <div class="col account_total">累積旅行
+              <span class="accnum">3</span>顆星球、
+              <span class="accnum">5</span>個景點
+            </div>
+            <div class="col col-md-auto account_money">目前持有
+              <span class="accmoney"> 1,099,999 </span>宇宙幣
+            </div>
+          </div>
+        </div>
       </div>
+
       <div class="lev_acc">
-        <h2><span>12個月內累積</span></h2>
+        <little><span>12個月內累積</span></little>
       </div>
-      <div class="lev">
-        <div class=nowlev_img>
-          <h2 class="nowlev"><img class="nowlev" src="../dev/img/account/lev1.png" alt="lev"><br>
-            <span class="nowacc">80,000積分</span><br>
-          </h2>
-        </div>
-        <img class="account_rocket" src="../dev/img/account/rocket4.png" alt="rocket">
-        <div class=nextlev_img>
-          <h2 class="nextlev"><img class="nextlev" src="../dev/img/account/lev2.png" alt="lev"><br>
-            <span class="nextacc">目前尚需80,000積分<br>才能升級至初星者</span>
-          </h2>
+
+      <div class="container_">
+        <div class="your_acc">
+          <div>
+            <div class="now_lev"><img class="nowlev" src="../dev/img/icon/初星者.png" alt="lev"></div>
+            <div class="nowacc"><span>80,000積分</span></div>
+          </div>
+          <div class="next_rocket"><img class="account_rocket" src="../dev/img/icon/rocket4.png" alt="rocket"></div>
+          <div>
+            <div class="nex_lev"><img class="nextlev" src="../dev/img/icon/天星者.png" alt="lev"></div>
+            <div class="nextacc"><span>目前尚需80,000積分<br>才能升級至初星者</spa< /div>
+            </div>
+          </div>
         </div>
       </div>
+
+
     </div>
   </div>
+
+  <div class="btn-group" role="group" aria-label="Basic example">
+    <button type="button" class="btn btn-secondary btn_account">會員資料</button>
+    <button type="button" class="btn btn-secondary btn_account">行程管理</button>
+    <button type="button" class="btn btn-secondary btn_account">互動牆管理</button>
+    <button type="button" class="btn btn-secondary btn_account">商城訂單</button>
+    <button type="button" class="btn btn-secondary btn_account">收藏管理</button>
+    <button type="button" class="btn btn-secondary btn_account">轉換積分</button>
+  </div>
+
 
   <footer>
     @@include('./layout/footer.html')
@@ -112,6 +237,8 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
     integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
     crossorigin="anonymous"></script>
+
+
 </body>
 
 </html>

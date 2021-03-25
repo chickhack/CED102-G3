@@ -56,7 +56,8 @@ img {
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
   margin: 0;
   padding: 0;
 }
@@ -72,7 +73,7 @@ input[type=button], input[type=submit], input[type=file], button {
 }
 
 body {
-  font-family: "Microsoft JhengHei", sans-serif;
+  font-family: "Microsoft JhengHei", "sans-serif";
   color: #C9ADA7;
   font-size: 14px;
   background-color: #0c0d18;
@@ -111,8 +112,8 @@ little, .little {
 }
 
 @font-face {
-  font-family: "Microsoft JhengHei";
-  src: local("./fonts/msjh.ttc"), local("./fonts/msjhbd.ttc"), local("./fonts/HATTEN.TTF");
+  font-family: "Microsoft JhengHei",  "Nasalization", "adobe-std-b";
+  src: local("./fonts/msjh.ttc"), local("./fonts/msjhbd.ttc"), local("./fonts/HATTEN.TTF"), local("./fonts/Nasa.ttf"), local("./fonts/adobe-std-b.otf");
 }
 
 .padding_left_1 {
@@ -293,23 +294,37 @@ little, .little {
   max-width: 20px;
 }
 
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   background-color: #0c0d18;
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   width: 100%;
   min-height: 12vh;
+  z-index: 9999;
 }
 
 nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-  background-image: url("../img/logo.png");
+  background-image: url("../../img/logo.png");
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -318,10 +333,18 @@ nav .logo h1 a {
 }
 
 nav .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   width: 60%;
 }
 
@@ -330,10 +353,17 @@ nav .nav-links a {
 }
 
 nav .nav-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 12%;
 }
 
@@ -365,19 +395,28 @@ footer .links .logo {
   position: relative;
   left: 50%;
   bottom: 50px;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 footer .links .footer-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 55%;
   position: relative;
   left: 50%;
   bottom: 30px;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 footer .links .footer-links a {
@@ -388,7 +427,8 @@ footer .footer_moon {
   position: relative;
   left: 50%;
   max-width: 550px;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 footer .smoke {
@@ -397,6 +437,7 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 /*# sourceMappingURL=all.css.map */

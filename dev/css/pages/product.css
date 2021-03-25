@@ -73,7 +73,7 @@ input[type=button], input[type=submit], input[type=file], button {
 }
 
 body {
-  font-family: "Microsoft JhengHei", sans-serif;
+  font-family: "Microsoft JhengHei", "sans-serif";
   color: #C9ADA7;
   font-size: 14px;
   background-color: #0c0d18;
@@ -112,8 +112,8 @@ little, .little {
 }
 
 @font-face {
-  font-family: "Microsoft JhengHei";
-  src: local("./fonts/msjh.ttc"), local("./fonts/msjhbd.ttc"), local("./fonts/HATTEN.TTF");
+  font-family: "Microsoft JhengHei",  "Nasalization", "adobe-std-b";
+  src: local("./fonts/msjh.ttc"), local("./fonts/msjhbd.ttc"), local("./fonts/HATTEN.TTF"), local("./fonts/Nasa.ttf"), local("./fonts/adobe-std-b.otf");
 }
 
 .padding_left_1 {
@@ -297,7 +297,6 @@ little, .little {
 .container {
   max-width: 1440px;
   margin: 0 auto;
-  padding-top: 15vh;
 }
 
 nav {
@@ -313,32 +312,19 @@ nav {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   background-color: #0c0d18;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
-<<<<<<< HEAD
   position: -webkit-sticky;
-=======
->>>>>>> kai
-<<<<<<< HEAD
->>>>>>> 207fcd1e44351eec63eaaaa2987e1e8204ee7e60
-=======
-=======
->>>>>>> chickhack
->>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
   position: sticky;
   top: 0;
   width: 100%;
   min-height: 12vh;
+  z-index: 9999;
 }
 
 nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-  background-image: url("../img/logo.png");
+  background-image: url("../../img/logo.png");
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -451,23 +437,8 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
-<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-=======
-<<<<<<< HEAD
->>>>>>> 207fcd1e44351eec63eaaaa2987e1e8204ee7e60
-=======
-=======
->>>>>>> chickhack
->>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
-  transform: translateX(-50%);
->>>>>>> kai
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -486,7 +457,6 @@ input[type=number] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -496,21 +466,6 @@ input[type=number] {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
-=======
-  justify-content: center;
-  align-items: center;
-  align-items: start;
-  padding-top: 15vh;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> kai
->>>>>>> 207fcd1e44351eec63eaaaa2987e1e8204ee7e60
-=======
->>>>>>> kai
-=======
->>>>>>> chickhack
->>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
 }
 
 .product .img {
@@ -624,10 +579,57 @@ input[type=number] {
   text-align: center;
 }
 
-.comment {
-  border: 1px solid white;
+.recommend {
+  text-align: center;
   width: 53%;
   margin: 0 auto;
+}
+
+.recommend ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.recommend ul li {
+  width: 30%;
+}
+
+.recommend ul li .spotImg {
+  position: relative;
+}
+
+.recommend ul li .spotImg p {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 0;
+  background-color: #AD6E4A;
+  color: #ffffff;
+  padding: 8px 40px;
+}
+
+.recommend ul li .spotInfo {
+  color: #C9ADA7;
+}
+
+.recommend ul li .spotInfo h3 {
+  font-weight: 700;
+}
+
+.comment {
+  width: 53%;
+  margin: 80px auto;
 }
 
 .comment .score {
@@ -668,6 +670,56 @@ input[type=number] {
 .comment .score .more {
   position: absolute;
   right: 0;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.comment .messages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #AD6E4A;
+  padding: 16px 0;
+  position: relative;
+}
+
+.comment .messages img {
+  max-width: 64px;
+}
+
+.comment .messages .name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.comment .messages .name hr {
+  height: 10px;
+  background-color: #C9ADA7;
+  border: 1px solid #C9ADA7;
+  margin: 0 8px;
+}
+
+.comment .messages .more {
+  position: absolute;
+  right: 0;
+  bottom: 16px;
+  color: #ffffff;
   text-decoration: underline;
   cursor: pointer;
 }
