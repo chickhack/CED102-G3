@@ -20,7 +20,7 @@ $fontScale: (
     "h3": 18px,
     "h4": 16px,
     "p" : 14px,
-    "little": 12px
+    "small": 12px
 );
 
 @each $f,$s in $fontScale{
