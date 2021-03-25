@@ -3,13 +3,6 @@
 @import "../header";
 @import "../footer";
 
-body {
-    font-family: "Microsoft JhengHei", sans-serif;
-    color: $pink;
-    background-color: $darkblue;
-    font-size: 14px;
-}
-
 div.bk {
     width: 450px;
     // border:1px solid red;
@@ -39,241 +32,216 @@ div.bk3 {
     opacity: 0.2;
 }
 
-
-
 // <!-- ----------first -->
 .first {
     display: flex;
+    img {
+        display: block;
+    }
+    .first_left {
+        padding-left: 100px;
+        width: 35%;
+        display: flex;
+
+        h2.title {
+            display: inline-block;
+            position: relative;
+            vertical-align: top;
+            top: 15vh;
+            letter-spacing: 10px;
+            span.h3 {
+                font-weight: 500;
+                letter-spacing: 10px;
+            }
+        }
+    }
+    .first_right {
+        width: 20%;
+        position: relative;
+        .hottrip {
+            display: inline-flex;
+            overflow: hidden;
+            max-width: 800px;
+            div.planet_top {
+                position: relative;
+                padding-top: 90px;
+                text-align: center;
+                width: 55%;
+                img.planet {
+                    height: 160px;
+                    position: absolute;
+                    top: 15px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+                img.planet_a1 {
+                    max-width: 280px;
+                }
+                div.word {
+                    position: absolute;
+                    top: 190px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    text-align: center;
+                    margin: 0 auto;
+                    .hot {
+                        color: $gold;
+                    }
+                    .tag {
+                        display: inline-flex;
+                        border: 1px solid $pink;
+                        border-radius: 5px;
+                        padding: 8px;
+                        line-height: 5px;
+                        margin: 3px;
+                    }
+                    .price {
+                        color: $gold;
+                        font-weight: bold;
+                        letter-spacing: 2px;
+                        margin-bottom: 8px;
+                    }
+                    .addin {
+                        background-color: $gold;
+                        color: $white;
+                        border-radius: 15px;
+                        width: 110px;
+                        margin: 0 auto;
+                        line-height: 26px;
+                        text-align: center;
+                        img.plus {
+                            width: 15px;
+                            display: inline-block;
+                            position: relative;
+                            top: 2px;
+                            padding-right: 4px;
+                        }
+
+                    }
+
+                }
+            }
+        }
+        // <!-- ----------slider -->
+        .tripselect {
+            display: inline-flex;
+            width: 280px;
+            justify-content: space-between;
+
+            .icon {
+                width: 25px;
+                cursor: pointer;
+                z-index: 2;
+            }
+            .select {
+                position: relative;
+                bottom: 4px;
+                color: $gold;
+            }
+        }
+    }
 }
-
-.first_left {
-    padding-left: 100px;
-    width: 35%;
-    display: flex;
-}
-
-.first_right {
-    width: 20%;
-    position: relative;
-}
-
-img {
-    display: block;
-}
-
-h2.title {
-    display: inline-block;
-    position: relative;
-    vertical-align: top;
-    top: 100px;
-    letter-spacing: 10px;
-    // font-size: 32px;
-}
-
-span.h3 {
-    font-weight: 500;
-    letter-spacing: 10px;
-}
-
-
-.hottrip {
-    display: inline-flex;
-    overflow: hidden;
-    max-width: 800px;
-}
-
-div.planet_top {
-    position: relative;
-    padding-top: 90px;
-    text-align: center;
-    width: 55%;
-}
-
-img.planet {
-    height: 160px;
-    position: absolute;
-    top: 15px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-img.planet_a1 {
-    max-width: 280px;
-}
-
-div.word {
-    position: absolute;
-    top: 190px;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    margin: 0 auto;
-}
-
-.hot {
-    color: $gold;
-}
-
-.tag {
-    display: inline-flex;
-    border: 1px solid $pink;
-    border-radius: 10px;
-    padding: 8px;
-    line-height: 5px;
-}
-
-.price {
-    color: $gold;
-    font-weight: bold;
-    letter-spacing: 2px;
-    margin-bottom: 8px;
-
-}
-
-img.plus {
-    width: 15px;
-    display: inline-block;
-    position: relative;
-    top: 2px;
-    padding-right: 4px;
-}
-
-.addin {
-    background-color: $gold;
-    color: $white;
-    border-radius: 15px;
-    width: 110px;
-    margin: 0 auto;
-    line-height: 26px;
-    text-align: center;
-
-}
-
-// <!-- ----------slider -->
-
-.tripselect {
-    display: inline-flex;
-    width: 280px;
-    justify-content: space-between;
-}
-
-.select {
-    position: relative;
-    bottom: 4px;
-    color: $gold;
-
-}
-
-.icon {
-    width: 25px;
-    cursor: pointer;
-    z-index: 2;
-}
-
 
 // <!-- ---------流程區 -->
 .stepsection {
     text-align: center;
     background-color: rgba($color: #191919, $alpha: 0.3);
     padding: 48px;
+    .stepall {
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        padding: 32px;
+        .step {
+            position: relative;
+            margin: 0 50px 0 50px;
+            img.step_icon {
+                width: 50px;
+                padding: 20px;
+                margin: 0 auto;
+            }
+            img.step_icon4 {
+                width: 85px;
+                padding: 20px;
+                margin: 0 auto;
+            }
+            .step_content {
+                color: $gold;
+                font-weight: bold;
+                img.num {
+                    width: 23px;
+                    display: inline-block;
+                    position: relative;
+                    top: 5px;
+                    padding-right: 8px;
+                }
+            }
+        }   
+    }
 }
-
-.stepall {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-evenly;
-    padding: 32px;
-}
-
-.step {
-    position: relative;
-}
-
-img.step_icon {
-    width: 50px;
-    padding: 20px;
-    margin: 0 auto;
-}
-
-img.step_icon4 {
-    width: 85px;
-    padding: 20px;
-    margin: 0 auto;
-}
-
-img.num {
-    width: 23px;
-    display: inline-block;
-    position: relative;
-    top: 5px;
-    padding-right: 8px;
-}
-
-.step_content {
-    color: $gold;
-    font-weight: bold;
-}
-
 
 // <!-- ---------second -->
-.second{
+.second {
     margin-bottom: 100px;
+    .alltrip {
+        text-align: center;
+        margin: 0 auto;
+    }
+    .tripcard_all {
+        display: inline-flex;
+        justify-content: center;
+        width: 100%;
+        .tripcard {
+            // border: 1px solid white;
+            width: 250px;
+            background-color: #191919;
+            padding: 15px;
+            border-radius: 5px;
+            position: relative;
+            margin:0 32px 0 32px;
+            .spot_pic {
+                width: 250px;
+            }
+            .hot2 {
+                font-weight: bold;
+                margin-bottom: 15px;
+            }
+            .tag {
+                display: inline-flex;
+                border: 1px solid $pink;
+                border-radius: 5px;
+                padding: 8px;
+                line-height: 5px;
+                margin: 3px;
+            }
+            .price2 {
+                color: $gold;
+                font-weight: bold;
+                letter-spacing: 2px;
+            }
+            .addin2 {
+                background-color: $gold;
+                color: $white;
+                border-radius: 15px;
+                width: 110px;
+                line-height: 26px;
+                text-align: center;
+                position: absolute;
+                right: 15px;
+                bottom: 20px;
+                img.plus {
+                    width: 15px;
+                    display: inline-block;
+                    position: relative;
+                    top: 2px;
+                    padding-right: 4px;
+                }
+            }
+        }
+    }
 }
 
-.alltrip {
-    text-align: center;
-    margin: 0 auto;
-}
-
-.tripcard_all {
-    display: inline-flex;
-    justify-content: center;
-    width: 100%;
-}
-
-.tripcard {
-    // border: 1px solid white;
-    width: 250px;
-    background-color: #191919;
-    padding: 15px;
-    border-radius: 5px;
-    position: relative;
-}
-
-.spot_pic {
-    width: 250px;
-}
 
 
-.hot2 {
-    font-weight: bold;
-    margin-bottom: 15px;
-}
-
-.tag2 {
-    display: inline-flex;
-    border: 1px solid $gray;
-    border-radius: 10px;
-    padding: 8px;
-    line-height: 5px;
-    color: $gray;
-}
-
-.price2 {
-    color: $gold;
-    font-weight: bold;
-    letter-spacing: 2px;
-}
 
 
-.addin2 {
-    background-color: $gold;
-    color: $white;
-    border-radius: 15px;
-    width: 110px;
-    line-height: 26px;
-    text-align: center;
-    position: absolute;
-    right: 15px;
-    bottom: 20px;
-}
