@@ -60,17 +60,18 @@ ul.tab-title{
     }
     .data{
         display: flex;
-        justify-content: flex-end;
+        font-family: Haettenschweiler, sans-serif;
         .grav{
-            padding: 20px;
+            min-width: 130px;
+            min-height: 130px;
             border: 1px solid $gold;
         }
         .day{
-            padding: 20px;
+            min-width: 130px;
             border: 1px solid $gold;
         }
         .temp{
-            padding: 20px;
+            min-width: 130px;
             border: 1px solid $gold;
         }
         span{
