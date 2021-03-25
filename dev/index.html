@@ -12,12 +12,17 @@
       integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
       crossorigin="anonymous"
     />
-    <!-- <link rel="stylesheet" href="../css/planet.css"></link> -->
-    <link rel="stylesheet" href="./css/all.css" />
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./css/pages/planet.css"></link>
+    <link rel="stylesheet" href="./css/pages/alltrip.css"></link>
     <link rel="stylesheet" href="./css/pages/index.css"></link>
+    
     <!-- canvas -->
   </head>
   <body>
+    <div class="banner_bg jumbotron-fluid">
     <header>@@include('./layout/header.html')</header>
       <div class="col-11 frame">
         <div class="banner">
@@ -28,12 +33,161 @@
             <img src="./img/icon/scroll.gif" style="width: 50px" />
           </div>
         </div>
-        <div class="intro">
-          <h2>打造星球的專屬行程</h2>
-          <h4>累積景點積分，獲得更多宇宙幣，讓你無限暢遊在宇宙中</h4>
+<!-- 訂購流程 -->
+        <div class="stepsection margin_top_10">
+          <h2>打造專屬的星球行程</h2>
+          <h3 class="margin_top_3">累積景點積分，獲得更多宇宙幣，讓你無限暢遊宇宙</h3>
+          <div class="stepall">
+              <div class="step margin_left_5">
+                  <img src="./img/icon/search-location.png" class="step_icon" alt="icon">
+                  <div class="step_content h4"><img src="./img/icon/one.png" class="num" alt="num">尋找景點</div>
+              </div>
+
+              <div class="step margin_left_5">
+                  <img src="./img/icon/travel.png" class="step_icon" alt="icon">
+                  <div class="step_content h4"><img src="./img/icon/two.png" class="num" alt="num">加入我的行程</div>
+              </div>
+
+              <div class="step margin_left_5">
+                  <img src="./img/icon/coins.png" class="step_icon" alt="icon">
+                  <div class="step_content h4"><img src="./img/icon/three.png" class="num" alt="num">結帳，獲得積分</div>
+              </div>
+
+              <div class="step margin_left_5">
+                  <img src="./img/icon/4change.png" class="step_icon4" alt="icon">
+                  <div class="step_content h4"><img src="./img/icon/four.png" class="num" alt="num">累積積分，兌換宇宙幣</div>
+              </div>
+          </div>
         </div>
-      </div>
+<!-- 精選景點 -->
+        <div class="hottrip margin_top_7">
+          <div v-for="item in top" class="planet_top margin_left_3">
+              <img :src="item.planet" class="planet" alt="planet">
+              <img :src="item.spot" class="planet_a1" alt="planettrip">
+              <div class="word line_low ">
+                  <h3 class="hot">{{item.title}}</h3>
+                  <h3>{{item.name}}</h3>
+                  <!-- <img :src="item.star" class="star margin_top_1" alt="star"> -->
+                  <little class="tag margin_top_3">{{item.grade}}</little>
+                  <little class="tag">{{item.scores}}積分</little>
+                  <h4 class="price">${{item.price}}</h4>
+                  <div class="addin little"><img class="plus" src="./img/icon/plus.png" alt="">加入我的行程</div>
+              </div>
+          </div>
+        </div>
+<!-- 星球百科 -->
+        <div class="container">
+          <ul class="tab-title col-12">
+            <li class="selected"><a href="#tab01">火星</a></li>
+            <li><a href="#tab02">月球</a></li>
+            <li><a href="#tab03">土星</a></li>
+            <li><a href="#tab04">木星</a></li>
+            <li><a href="#tab04">木星</a></li>
+            <li><a href="#tab04">木星</a></li>
+            <li><a href="#tab04">木星</a></li>
+          </ul>
+          <div class="saparator col-10"></div>
+          <div id="tab01" class="col-12 tab-inner">
+              <div class="tab_intro margin_top_6">
+                <h2>火星</h2>
+                <h3 class="margin_top_4">
+                  火星大氣以二氧化碳為主，既稀薄又寒冷，其表面特徵讓人聯想起月球上的撞擊坑，以及地球上的山谷、沙漠和極地冰蓋。
+                </h3>
+                <div class="data margin_top_8">
+                  <div class="grav">
+                    <span>38</span>
+                    <span class="data-mid">％</span>
+                    <p>重力</p>
+                  </div>
+                  <div class="day">
+                    <span>24</span>
+                    <span class="data-low">HR</span>
+                    <p>一天</p>
+                  </div>
+                  <div class="temp">
+                    <span class="data-mid">-</span>
+                    <span>60</span>
+                    <span class="data-high">F</span>
+                    <p>溫度</p>
+                  </div>
+                </div>
+                <div class="button button_min">更多關於火星</div>
+              </div>
+              <div class="tab-active col-6 margin_top_5">
+                <img
+                  src="./img/planet/mars.png"
+                  style="max-width: 500px"
+                  class="geoplanet"
+                />
+              </div>
+          </div>
+        </div>
+
+<!-- 商城 -->
+        <div class="home_shop">
+          <mdb-view hover src="https://mdbootstrap.com/img/Photos/Horizontal/People/6-col/img%20(7).jpg" alt="">
+            <mdb-mask flex-center overlay="gold-slight" text="Super light overlay" />
+          </mdb-view>
+        </div>
+<!-- 框框 -->
+      </div> 
+
       <footer>@@include('./layout/footer.html')</footer>
     </div>
+
+
+
+
+
+    <!-- 星球tab -->
+    <script>
+      $(function(){
+        var $li = $('ul.tab-title li');
+            $($li.eq(0).addClass('selected').find('a').attr('href')).siblings('.tab-inner').hide();
+
+            $li.click(function(){
+              $($(this).find('a').attr('href')).show().siblings('.tab-inner').hide();
+              $(this).addClass('selected').siblings('.selected').removeClass('selected');
+            });
+      });
+    </script>
+    <!-- 星球 -->
+    <script>
+      let vm = new Vue({
+          el: "#app",
+          data: {
+              top: [{
+                  planet: "./img/trip/jupiter.png",
+                  spot: "./img/trip/trip_jupiter/jupiter_top_a_ps.png",
+                  title: "熱門星球",
+                  name: "木星 | 冰層探索一日遊",
+                  star: "./img/icon/star.png",
+                  grade: "初階",
+                  scores: "3000",
+                  price: 5000,
+
+              }, {
+                  planet: "./img/trip/mars.png",
+                  spot: "./img/trip/trip_mars/mars_top_a1_ps.jpg.png",
+                  title: "進階景點",
+                  name: "火星 | 攀登太陽系第一高山",
+                  star: "./img/icon/star.png",
+                  grade: "高階",
+                  scores: "5000",
+                  price: 5000,
+
+              }, {
+                  planet: "./img/trip/moon.png",
+                  spot: "./img/trip/trip_moon/moon_top_a1_ps.png",
+                  title: "新景點",
+                  name: "月球 | 太空體驗一日遊",
+                  star: "./img/icon/star.png",
+                  grade: "初階",
+                  scores: "3000",
+                  price: 5000,
+              }],
+          }
+      });
+    </script>
   </body>
 </html>

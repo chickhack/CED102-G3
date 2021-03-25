@@ -3,10 +3,31 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 
+#icon-gg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-bottom: 1.5%;
+}
+
+.icon-g {
+  max-width: 30px;
+  max-height: 30px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .car-top {
   min-height: 50vh;
   height: 100%;
-  padding-top: 15vh;
 }
 
 body {
@@ -55,7 +76,8 @@ body {
   max-width: 150px;
   height: auto;
   max-height: 100px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .btn-date {
@@ -104,12 +126,17 @@ body {
 }
 
 .row {
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .row .col-8 .row .col-12 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   padding: 2% 1%;
   border-radius: 5px;
 }

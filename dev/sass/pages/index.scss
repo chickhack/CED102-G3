@@ -5,12 +5,12 @@ nav{
     background-color: transparent;
 }
 
-body{
-    background: -webkit-linear-gradient(bottom, $darkblue 5%, transparent 75%), url('../../img/home/mainBannerBg.jpg') no-repeat bottom
+.banner_bg{
+    background: -webkit-linear-gradient(bottom, $darkblue 5%, transparent 95%), url('../../img/home/mainBannerBg.jpg') no-repeat
     ;
-    height: 100vh;
     background-size: 100%;
     background-position: top;
+    height: 100vh;
 }
 .frame{
     border: 1px solid $gold;
@@ -20,12 +20,12 @@ body{
     .slogan {
         display: flex;
         justify-content: center;
-        margin-top: 10%;
+        margin-top: 20vh;
         p{
-            font-size: 100px;
+            font-size: 7rem;
             color: white;
             font-family: "Haettenschweiler", sans-serif;
-            letter-spacing:-2px;
+            letter-spacing:6px;
         }
     }
     .scroll{
@@ -35,7 +35,48 @@ body{
             margin-top: 20%;
         }
     }
-    
+}
+.home_intro{
+    margin-top: 15vh;
+    display: flex;
+    flex-direction: column;
+    h2{
+        text-align: center;
+    }
+    h4{
+        text-align: center;
+    }
 }
 
 
+
+
+//=========星球百科
+ul.tab-title {
+    a{
+        font-size: 1rem;
+    }
+}
+.tab-inner{
+    justify-content: center;
+    display: flex;
+    .tab_intro{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        h3 {
+            line-height: 2rem;
+            max-width: 400px;
+        }
+    }
+    .data{
+        justify-content: flex-start;
+        p{
+            text-align: center;
+        }
+    }
+.tab-active{
+    display: flex;
+    justify-content: center;
+    }
+}
