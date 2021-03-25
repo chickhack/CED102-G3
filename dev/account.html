@@ -22,7 +22,7 @@
 
   /* 歡迎會員 字體大小、字型位置 */
   .wellcome {
-    padding: 15vh 220px 0px 220px;
+    padding: 15vh 250px 0px 250px;
     display: flex;
     align-items: center;
     justify-content: left;
@@ -73,18 +73,18 @@
   .account_card {
     border: 1px solid #AD6E4A;
     background-color: #292b41;
-    margin: 30px 200px 0px 200px;
+    margin: 30px 250px 0px 250px;
     padding: 30px;
     border-radius: 10px;
   }
 
   /* 會員卡片內容 */
   .account_now {
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
 
   .your_lev {
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
 
   /* 目前累積等級、星球、景點、宇宙幣 */
@@ -119,9 +119,9 @@
     font-family: "Microsoft JhengHei";
     letter-spacing: 2px;
     margin-top: 30px;
-    margin-left: 10px;
+    margin-left: 75px;
     margin-bottom: 20px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
 
   img.nowlev,
@@ -130,25 +130,93 @@
   }
 
   .account_rocket {
-    max-width: 8%;
+    max-width: 5%;
+  }
+
+  .next_rocket {
+    margin-left: -50px;
+    margin-top: 60px;
   }
 
   .your_acc {
     display: flex;
   }
 
-/* 會員menu */
-  .btn_account{
-    color: #C9ADA7;
-    border-color: #AD6E4A;
-  }
-  .btn-group{
-    margin: 100px 200px 200px 200px;
+  .now_lev {
     display: flex;
-    align-content: space-between;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: left; */
   }
-  
+
+  .next_lev {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: right; */
+  }
+
+  p.nextacc,
+  p.nowacc {
+    float: left;
+    letter-spacing: 1px;
+    line-height: 20px;
+  }
+
+  /* 會員menu */
+  .account_nav {
+    margin: 50px 200px 0px 200px;
+  }
+
+  .account_nav a {
+    color: #C9ADA7;
+  }
+
+  .account_nav a:hover {
+    color: #AD6E4A;
+    border-bottom: 2px solid #AD6E4A;
+  }
+
+  .account_line {
+    margin: 0px 200px 0px 200px;
+    /* border: 0.5px solid #AD6E4A; */
+    color: #AD6E4A;
+  }
+
+  /* 會員資料 */
+  .info {
+    margin-top: 1px;
+    padding: 30px 280px 10px 280px;
+    height: auto;
+    background-color: #3a3a3c;
+    opacity: 0.6;
+    display: flex;
+  }
+  .infoimg{
+    max-width: 100px;
+  }
+  .info_form{
+    padding: 30px 50px 30px 50px;
+  }
+  .form-group, label{
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .infobtn {
+
+  }
+  .infobtn {
+    margin: 30px;
+    color: #ffff;
+    border: 1px solid #AD6E4A;
+    background: none;
+  }
+  .infobtn:hover {
+    color: #ffff;
+    border: 1px solid #AD6E4A;
+    background: #AD6E4A;
+  }
+
   /* footer */
   footer {
     padding-top: 100px;
@@ -173,7 +241,6 @@
 
   <div class="account_card">
     <div class="account_now">
-
       <div class="your_lev">
         <div class="container_card your_nowlev">
           <div class="row align-items-center">
@@ -196,30 +263,93 @@
 
       <div class="container_">
         <div class="your_acc">
-          <div>
-            <div class="now_lev"><img class="nowlev" src="../dev/img/icon/初星者.png" alt="lev"></div>
-            <div class="nowacc"><span>80,000積分</span></div>
+          <div class="now_lev align-items-center">
+            <img class="nowlev" src="../dev/img/icon/初星者.png" alt="lev"><br>
+            <p class="nowacc">80,000積分</p>
           </div>
           <div class="next_rocket"><img class="account_rocket" src="../dev/img/icon/rocket4.png" alt="rocket"></div>
-          <div>
-            <div class="nex_lev"><img class="nextlev" src="../dev/img/icon/天星者.png" alt="lev"></div>
-            <div class="nextacc"><span>目前尚需80,000積分<br>才能升級至初星者</spa< /div>
-            </div>
+          <div class="next_lev align-items-center">
+            <img class="nextlev" src="../dev/img/icon/天星者.png" alt="lev"><br>
+            <p class="nextacc">目前尚需80,000積分</p>
+            <p class="nextacc">才能升級至初星者</p>
           </div>
         </div>
       </div>
-
-
     </div>
   </div>
 
-  <div class="btn-group" role="group" aria-label="Basic example">
-    <button type="button" class="btn btn-secondary btn_account">會員資料</button>
-    <button type="button" class="btn btn-secondary btn_account">行程管理</button>
-    <button type="button" class="btn btn-secondary btn_account">互動牆管理</button>
-    <button type="button" class="btn btn-secondary btn_account">商城訂單</button>
-    <button type="button" class="btn btn-secondary btn_account">收藏管理</button>
-    <button type="button" class="btn btn-secondary btn_account">轉換積分</button>
+  <ul class="account_nav nav nav-justified" id="pills-tab" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" href="#info">會員資料</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">行程管理</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">互動牆管理</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">商城訂單</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">收藏管理</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">轉換積分</a>
+    </li>
+  </ul>
+  <hr class="account_line">
+
+  <div class="info">
+
+    <div class="info_img">
+      <img class="infoimg" src="../dev/img/icon/會員頭貼.png" alt=""><br>
+    </div>
+  
+    <div class="info_form">
+      <form>
+  
+        <div class="form-group">
+          <label for="exampleInputEmail1">暱稱</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+          <small id="emailHelp" class="form-text text-muted"></small>
+        </div>
+  
+        <div class="form-group">
+          <label for="exampleInputPassword1">姓名</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">姓氏</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">性別</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">生日</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">手機</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">地址</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="">
+        </div>
+  
+        <!-- <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div> -->
+  
+        <button type="submit" class="btn btn-primary infobtn">編輯個人資料</button>
+  
+      </form>
+    </div>
+
   </div>
 
 
@@ -237,7 +367,6 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
     integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
     crossorigin="anonymous"></script>
-
 
 </body>
 
