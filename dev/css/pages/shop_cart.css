@@ -406,263 +406,75 @@ footer .smoke {
   transform: translateX(-50%);
 }
 
-div.bk {
-  width: 450px;
-  position: absolute;
-  left: 450px;
-  top: 90px;
-  opacity: 0.6;
-}
-
-div.bk3 {
-  width: 300px;
-  height: 300px;
-  position: absolute;
-  left: -120px;
-  top: 400px;
-  opacity: 0.3;
-}
-
-.border {
-  border: 1px solid #AD6E4A;
-  margin: 0px auto;
-  width: 90%;
-  height: 100%;
-  top: 80px;
-  position: absolute;
-  opacity: 0.2;
-}
-
-.first {
-  display: flex;
-}
-
-.first img {
+.quantity label {
   display: block;
 }
 
-.first .first_left {
-  padding-left: 100px;
-  width: 35%;
-  display: flex;
-}
-
-.first .first_left h2.title {
-  display: inline-block;
-  position: relative;
-  vertical-align: top;
-  top: 15vh;
-  letter-spacing: 10px;
-}
-
-.first .first_left h2.title span.h3 {
-  font-weight: 500;
-  letter-spacing: 10px;
-}
-
-.first .first_right {
-  width: 20%;
-  position: relative;
-}
-
-.first .first_right .hottrip {
-  display: inline-flex;
-  overflow: hidden;
-  max-width: 800px;
-}
-
-.first .first_right .hottrip div.planet_top {
-  position: relative;
-  padding-top: 90px;
-  text-align: center;
-  width: 55%;
-}
-
-.first .first_right .hottrip div.planet_top img.planet {
-  height: 160px;
-  position: absolute;
-  top: 15px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.first .first_right .hottrip div.planet_top img.planet_a1 {
-  max-width: 280px;
-}
-
-.first .first_right .hottrip div.planet_top div.word {
-  position: absolute;
-  top: 190px;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  margin: 0 auto;
-}
-
-.first .first_right .hottrip div.planet_top div.word .hot {
+.quantity .as {
   color: #AD6E4A;
 }
 
-.first .first_right .hottrip div.planet_top div.word .tag {
-  display: inline-flex;
-  border: 1px solid #C9ADA7;
-  border-radius: 5px;
-  padding: 8px;
-  line-height: 5px;
-  margin: 3px;
-}
-
-.first .first_right .hottrip div.planet_top div.word .price {
-  color: #AD6E4A;
-  font-weight: bold;
-  letter-spacing: 2px;
-  margin-bottom: 8px;
-}
-
-.first .first_right .hottrip div.planet_top div.word .addin {
-  background-color: #AD6E4A;
-  color: #ffffff;
-  border-radius: 15px;
-  width: 110px;
-  margin: 0 auto;
-  line-height: 26px;
+.quantity .as input[type=number] {
+  max-width: 50px;
+  background-color: transparent;
+  outline: none;
+  border: none;
   text-align: center;
+  color: #AD6E4A;
 }
 
-.first .first_right .hottrip div.planet_top div.word .addin img.plus {
-  width: 15px;
-  display: inline-block;
-  position: relative;
-  top: 2px;
-  padding-right: 4px;
-}
-
-.first .first_right .tripselect {
-  display: inline-flex;
-  width: 280px;
-  justify-content: space-between;
-}
-
-.first .first_right .tripselect .icon {
-  width: 25px;
+.quantity .as span {
+  border: 1px solid #AD6E4A;
+  outline: none;
+  background-color: transparent;
+  padding: 4px 8px;
   cursor: pointer;
-  z-index: 2;
 }
 
-.first .first_right .tripselect .select {
-  position: relative;
-  bottom: 4px;
-  color: #AD6E4A;
+section.cart {
+  max-width: 948px;
+  margin: 0 auto;
+  padding-top: 15vh;
 }
 
-.stepsection {
-  text-align: center;
-  background-color: rgba(25, 25, 25, 0.3);
-  padding: 48px;
-}
-
-.stepsection .stepall {
+section.cart .item {
   display: flex;
-  align-items: baseline;
   justify-content: center;
-  padding: 32px;
-}
-
-.stepsection .stepall .step {
-  position: relative;
-  margin: 0 50px 0 50px;
-}
-
-.stepsection .stepall .step img.step_icon {
-  width: 50px;
-  padding: 20px;
-  margin: 0 auto;
-}
-
-.stepsection .stepall .step img.step_icon4 {
-  width: 85px;
-  padding: 20px;
-  margin: 0 auto;
-}
-
-.stepsection .stepall .step .step_content {
-  color: #AD6E4A;
-  font-weight: bold;
-}
-
-.stepsection .stepall .step .step_content img.num {
-  width: 23px;
-  display: inline-block;
-  position: relative;
-  top: 5px;
-  padding-right: 8px;
-}
-
-.second {
-  margin-bottom: 100px;
-}
-
-.second .alltrip {
-  text-align: center;
-  margin: 0 auto;
-}
-
-.second .tripcard_all {
-  display: inline-flex;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
 }
 
-.second .tripcard_all .tripcard {
-  width: 250px;
-  background-color: #191919;
-  padding: 15px;
-  border-radius: 5px;
-  position: relative;
-  margin: 0 32px 0 32px;
-}
-
-.second .tripcard_all .tripcard .spot_pic {
-  width: 250px;
-}
-
-.second .tripcard_all .tripcard .hot2 {
-  font-weight: bold;
-  margin-bottom: 15px;
-}
-
-.second .tripcard_all .tripcard .tag {
-  display: inline-flex;
-  border: 1px solid #C9ADA7;
-  border-radius: 5px;
-  padding: 8px;
-  line-height: 5px;
-  margin: 3px;
-}
-
-.second .tripcard_all .tripcard .price2 {
-  color: #AD6E4A;
-  font-weight: bold;
-  letter-spacing: 2px;
-}
-
-.second .tripcard_all .tripcard .addin2 {
-  background-color: #AD6E4A;
-  color: #ffffff;
-  border-radius: 15px;
-  width: 110px;
-  line-height: 26px;
+section.cart .item .img {
+  max-width: 50px;
   text-align: center;
-  position: absolute;
-  right: 15px;
-  bottom: 20px;
+  padding: 16px;
 }
 
-.second .tripcard_all .tripcard .addin2 img.plus {
-  width: 15px;
-  display: inline-block;
-  position: relative;
-  top: 2px;
-  padding-right: 4px;
+section.cart .item .integral {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
 }
-/*# sourceMappingURL=alltrip.css.map */
+
+section.cart .item .integral .icon {
+  max-width: 15px;
+}
+
+section.cart .item .trashcan {
+  cursor: pointer;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+/*# sourceMappingURL=shop_cart.css.map */

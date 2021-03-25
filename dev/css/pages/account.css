@@ -72,7 +72,7 @@ input[type=button], input[type=submit], input[type=file], button {
 }
 
 body {
-  font-family: "Microsoft JhengHei", sans-serif;
+  font-family: "Microsoft JhengHei", "sans-serif";
   color: #C9ADA7;
   font-size: 14px;
   background-color: #0c0d18;
@@ -111,8 +111,8 @@ little, .little {
 }
 
 @font-face {
-  font-family: "Microsoft JhengHei";
-  src: local("./fonts/msjh.ttc"), local("./fonts/msjhbd.ttc"), local("./fonts/HATTEN.TTF");
+  font-family: "Microsoft JhengHei",  "Nasalization";
+  src: local("./fonts/msjh.ttc"), local("./fonts/msjhbd.ttc"), local("./fonts/HATTEN.TTF"), local("./fonts/Nasa.ttf");
 }
 
 .padding_left_1 {
@@ -304,24 +304,6 @@ nav {
   align-items: center;
   justify-content: space-around;
   background-color: #0c0d18;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
-<<<<<<< HEAD
-  position: -webkit-sticky;
-=======
->>>>>>> kai
-<<<<<<< HEAD
->>>>>>> 207fcd1e44351eec63eaaaa2987e1e8204ee7e60
-=======
-=======
->>>>>>> chickhack
->>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
-=======
->>>>>>> kai
   position: sticky;
   top: 0;
   width: 100%;
@@ -421,29 +403,7 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
   transform: translateX(-50%);
-=======
-=======
->>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
-<<<<<<< HEAD
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-=======
-  transform: translateX(-50%);
->>>>>>> kai
-<<<<<<< HEAD
->>>>>>> 207fcd1e44351eec63eaaaa2987e1e8204ee7e60
-=======
-=======
-  transform: translateX(-50%);
->>>>>>> chickhack
->>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
-=======
-  transform: translateX(-50%);
->>>>>>> kai
 }
 
 body {
