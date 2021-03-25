@@ -11,24 +11,26 @@
     <div class="container">
         @@include("./layout/header.html")
         <section class="cart">
-            <h3 class="h2">我的商品</h3>
-            <ul>
-                <li class="item">
-                    <div class="img">
-                        <img src="./img/shop/shoes.png" alt="">
-                    </div>
-                    <div>
-                        <p class="h3">宇宙平衡鞋</p>
-                        <div class="integral margin_top_1">
-                            <img src="./img/s.png" alt="" class="icon">
-                            <p>+3000積分</p>
+            <form action="">
+                <h3 class="h2">我的商品</h3>
+                <ul>
+                    <li class="item margin_top_5">
+                        <div class="img">
+                            <img src="./img/shop/shoes.png" alt="">
                         </div>
-                    </div>
-                    <p class="h1">$ 5000</p>
-                    @@include("./layout/quantityBtn.html")
-                    <img src="./img/icon/trashcan.png" class="icon trashcan">
-                </li>
-            </ul>
+                        <div>
+                            <p class="h3">宇宙平衡鞋</p>
+                            <div class="integral margin_top_1">
+                                <img src="./img/s.png" alt="" class="icon">
+                                <p>+3000積分</p>
+                            </div>
+                        </div>
+                        <p class="h2">$ 5000</p>
+                        @@include("./layout/quantityBtn.html")
+                        <img src="./img/icon/trashcan.png" class="icon trashcan">
+                    </li>
+                </ul>
+            </form>
         </section>
     </div>
     <script src="./js/addMinus.js"></script>
