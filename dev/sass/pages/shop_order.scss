@@ -1,0 +1,138 @@
+@import "../all.scss";
+
+section.orderDetail{
+    max-width: 948px;
+    // border: 1px solid #fff;
+    margin: 0 auto;
+    padding-top: 5vh;
+    .order{
+        width: 95%;
+        // border: 1px solid $pink;
+        margin: 0 auto;
+        li{
+            font-weight: 900;
+            background-color: #292B41;
+            @include flex_middle();
+            justify-content: space-between;
+            padding: 8px 16px;
+            .imgWord{
+                width: 45%;
+                @include flex_middle();
+                justify-content: space-around;
+                .prod{
+                    max-width: 80px;
+                    background-color: $white;
+                    padding: 8px;
+                }
+                .integral{
+                    @include flex_middle();
+                }
+            }
+            .quantity{
+                width: 45%;
+                @include flex_middle();
+                justify-content: space-around;
+            }
+        }
+    }
+    .detail{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        padding: 16px 6% 16px 0;
+        background-color: #292B41;
+        .total,.integral{
+            @include flex_middle();
+            justify-content: space-around;
+            width: 40%;
+            p:nth-child(2){
+                font-weight: 900;
+                color: $gold;
+            }
+            >.count{
+                @include flex_middle;
+            }
+        }
+        small{
+            margin-right: 6%;
+        }
+    }
+}
+
+section.orderer{
+    max-width: 948px;
+    margin: 0 auto;
+    form{
+        width: 95%;
+        margin: 32px auto;
+        background-color: #292B41;
+        padding-bottom: 80px;
+        height: 0;
+        overflow: hidden;
+        transition: all 1s;
+    }
+    h2{
+        padding: 16px 0;
+        // border: 1px solid #fff;
+        cursor: pointer;
+        position: relative;
+        left: 6%;
+        // background-color: #fff;
+        &::before{
+            content: "";
+            width: 1px;
+            height: 30%;
+            background-color: $white;
+            position: absolute;
+            left: -30px;
+            transform: rotate(45deg) translateY(-60%);
+            top: 50%;
+        }
+        &::after{
+            content: "";
+            width: 1px;
+            height: 30%;
+            background-color: $white;
+            left: -27px;
+            position: absolute;
+            transform: rotate(-45deg) translateY(-60%);
+            top: 50%;
+        }
+    }
+    .info{
+        @include flex_middle();
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 50%;
+        // border: 1px solid #fff;
+        margin-left: 6%;
+        .input_group{
+            width: 45%;
+            margin-top: 16px;
+        }
+        .long{
+            width: 100%;
+        }
+        label{
+            display: block;
+        }
+        input[type="text"]{
+            color: $white;
+            background-color: transparent;
+            outline: none;
+            // border: none;
+            border: 1px solid $gold;
+            padding: 5px 10px;
+            width: 100%;
+            transition: all .3s;
+            &:focus{
+                background-color: $gold;
+            }
+        }
+    }
+    .retract{
+        height: 300px;
+        max-height: 300px;
+    }
+}

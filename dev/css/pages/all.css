@@ -99,7 +99,7 @@ p, .p {
   font-size: 14px;
 }
 
-little, .little {
+small, .small {
   font-size: 12px;
 }
 
@@ -112,8 +112,13 @@ little, .little {
 }
 
 @font-face {
+<<<<<<< HEAD
   font-family: "Microsoft JhengHei",  "Nasalization", "adobe-std-b";
   src: local("./fonts/msjh.ttc"), local("./fonts/msjhbd.ttc"), local("./fonts/HATTEN.TTF"), local("./fonts/Nasa.ttf"), local("./fonts/adobe-std-b.otf");
+=======
+  font-family: "Microsoft JhengHei",  "Nasalization";
+  src: local("./fonts/msjh.ttc"), local("./fonts/msjhbd.ttc"), local("./fonts/HATTEN.TTF"), local("./fonts/Nasa.ttf");
+>>>>>>> dev
 }
 
 .padding_left_1 {
@@ -439,5 +444,58 @@ footer .smoke {
   height: 80%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+<<<<<<< HEAD
+=======
+}
+
+.quantity label {
+  display: block;
+}
+
+.quantity .as {
+  color: #AD6E4A;
+}
+
+.quantity .as input[type=number] {
+  max-width: 50px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  text-align: center;
+  color: #AD6E4A;
+}
+
+.quantity .as span {
+  border: 1px solid #AD6E4A;
+  outline: none;
+  background-color: transparent;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+.quantity label {
+  display: block;
+}
+
+.quantity .as {
+  color: #AD6E4A;
+}
+
+.quantity .as input[type=number] {
+  max-width: 50px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  text-align: center;
+  color: #AD6E4A;
+}
+
+.quantity .as span {
+  border: 1px solid #AD6E4A;
+  outline: none;
+  background-color: transparent;
+  padding: 4px 8px;
+  cursor: pointer;
+>>>>>>> dev
 }
 /*# sourceMappingURL=all.css.map */

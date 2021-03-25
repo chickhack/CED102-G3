@@ -14,89 +14,131 @@
     <header>
         @@include('./layout/header.html')
     </header>
-    <!-- <div class="border padding_left_9"></div> -->
-    <div class="bk">
-        <img src="../dev/img/trip/bk.png">
-    </div>
-    <div class="bk3">
-        <img src="../dev/img/trip/bk3-01.png">
-    </div>
-    <!-- ----------first -->
-    <div class="first ">
-        <h2 class="title line_high h1"><span class="h3">預訂後即刻出發，最短一日行程</span><br>讓你親眼見證宇宙<br> 改變你的內在世界</h2>
-        <div class="hottrip" id="app">
-            <div v-for="item in top" class="planet_top padding_left_3">
-                <img :src="item.planet" class="planet" alt="planet">
-                <img :src="item.spot" class="planet_a1" alt="planettrip">
-                <div class="word line_low ">
-                    <h3 class="hot">{{item.title}}</h3>
-                    <h3>{{item.name}}</h3>
-                    <!-- <img :src="item.star" class="star margin_top_1" alt="star"> -->
-                    <little class="tag margin_top_3">{{item.grade}}</little>
-                    <little class="tag ">{{item.scores}}積分</little>
-                    <h4 class="price">${{item.price}}</h4>
-                    <div class="addin little"><img class="plus" src="./img/icon/plus.png" alt="">加入我的行程</div>
+    <container id="app">
+        <div class="bk">
+            <img src="../dev/img/trip/bk.png">
+        </div>
+        <div class="bk3">
+            <img src="../dev/img/trip/bk3-01.png">
+        </div>
+        <!-- ----------first -->
+        <div class="first">
+            <div class="first_left ">
+                <h2 class="title line_high h1"><span class="h3">預訂後即刻出發，最短一日行程</span><br>讓你親眼見證宇宙<br> 改變你的內在世界</h2>
+            </div>
+            <div class="first_right">
+                <div class="hottrip margin_top_7">
+                    <div v-for="item in top" class="planet_top margin_left_3">
+                        <img :src="item.planet" class="planet" alt="planet">
+                        <img :src="item.spot" class="planet_a1" alt="planettrip">
+                        <div class="word line_low ">
+                            <h3 class="hot">{{item.title}}</h3>
+                            <h3>{{item.name}}</h3>
+                            <!-- <img :src="item.star" class="star margin_top_1" alt="star"> -->
+                            <small class="tag margin_top_3">{{item.grade}}</small>
+                            <small class="tag">{{item.scores}}積分</small>
+                            <h4 class="price">${{item.price}}</h4>
+                            <div class="addin small"><img class="plus" src="./img/icon/plus.png" alt="">加入我的行程</div>
+                        </div>
+                    </div>
                 </div>
-            </div>
 
-            <!-- ----------slider -->
-            <div class="tripselect">
-                <img class="icon" src="../dev/img/icon/left.png" alt="">
-                <div class="h4 padding_top_1 select">精選星球景點</div>
-                <img src="../dev/img/icon/right.png" alt="" class="icon">
-            </div>
-
-        </div>
-
-
-    </div>
-
-
-    <!-- ---------流程區 -->
-    <div class="stepall">
-        <h2>打造專屬的星球行程</h2>
-        <h3 class="padding_top_3">累積景點積分，獲得更多宇宙幣，讓你無限暢遊宇宙</h3>
-        <div class="step">
-            <div class="step1">
-                <img src="./img/icon/search-location.png" class="step_icon" alt="icon">
-                <img src="./img/icon/one.png" class="num" alt="num">
-                <h3>尋找景點</h3>
-            </div>
-        </div>
-        </div>
-
-    </div>
-    <!-- ---------second -->
-    <div class="second">
-        <!-- <div class="bk2">
-            <img src="../dev/img/trip/bk2.png">
-        </div> -->
-        <h2 class="alltrip">星球景點總覽</h2>
-        <h3 class="padding_top_3 alltrip ">火星景點</h3>
-        <div class="tripcard_all">
-            <div class="tripcard padding_top_3">
-                <img src="./img/trip/trip_mars/mars_c1_pss.jpg" alt="" class="spot_pic">
-                <div class="content line_low">
-                    <h4 class="hot2 padding_top_1">木星 | 冰層探索一日遊</h4>
-                    <little class="tag2">初階</little>
-                    <little class="tag2">3000積分</little>
-                    <h4 class="price2">$5000</h4>
-                    <div class="addin2 little"><img class="plus" src="./img/icon/plus.png" alt="">加入我的行程</div>
+                <!-- ----------slider -->
+                <div class="tripselect margin_left_3 margin_top_5">
+                    <img class="icon" src="../dev/img/icon/left.png" alt="">
+                    <div class="h4 padding_top_1 select">精選星球景點</div>
+                    <img src="../dev/img/icon/right.png" alt="" class="icon">
                 </div>
             </div>
         </div>
 
+        <!-- ---------流程區 -->
+        <div class="stepsection margin_top_10">
+            <h2>打造專屬的星球行程</h2>
+            <h3 class="margin_top_3">累積景點積分，獲得更多宇宙幣，讓你無限暢遊宇宙</h3>
+            <div class="stepall">
+
+                <div class="step margin_left_5">
+                    <img src="./img/icon/search-location.png" class="step_icon" alt="icon">
+                    <div class="step_content h4"><img src="./img/icon/one.png" class="num" alt="num">尋找景點</div>
+                </div>
+
+                <div class="step margin_left_5">
+                    <img src="./img/icon/travel.png" class="step_icon" alt="icon">
+                    <div class="step_content h4"><img src="./img/icon/two.png" class="num" alt="num">加入我的行程</div>
+                </div>
+
+                <div class="step margin_left_5">
+                    <img src="./img/icon/coins.png" class="step_icon" alt="icon">
+                    <div class="step_content h4"><img src="./img/icon/three.png" class="num" alt="num">結帳，獲得積分</div>
+                </div>
+
+                <div class="step margin_left_5">
+                    <img src="./img/icon/4change.png" class="step_icon4" alt="icon">
+                    <div class="step_content h4"><img src="./img/icon/four.png" class="num" alt="num">累積積分，兌換宇宙幣</div>
+                </div>
 
 
 
-    </div>
+            </div>
+        </div>
+
+        <!-- ---------second -->
+
+        <div class="second margin_top_10">
+            <h2 class="alltrip">星球景點總覽</h2>
+            <h3 class="padding_top_3 alltrip ">月球景點</h3>
+            <div class="tripcard_all  margin_top_5">
+                <div v-for="item in second" class="tripcard">
+                    <img :src="item.spot" class="spot_pic" alt="spot_pic">
+                    <div class="content line_low">
+                        <h4 class="hot2 margin_top_1">{{item.title}}</h4>
+                        <small class="tag">{{item.grade}}</small>
+                        <small class="tag">{{item.scores}}積分</small>
+                        <h4 class="price2 margin_top_1">${{item.price}}</h4>
+                        <div class="addin2 small"><img class="plus" src="./img/icon/plus.png" alt="">加入我的行程</div>
+                    </div>
+                </div>
+
+            </div>
+
+            <h3 class="padding_top_5 alltrip ">火星景點</h3>
+            <div class="tripcard_all  margin_top_5">
+
+                <div v-for="item in second" class="tripcard">
+                    <img :src="item.spot" class="spot_pic" alt="spot_pic">
+                    <div class="content line_low">
+                        <h4 class="hot2 margin_top_1">{{item.title}}</h4>
+                        <small class="tag">{{item.grade}}</small>
+                        <small class="tag">{{item.scores}}積分</small>
+                        <h4 class="price2 margin_top_1">${{item.price}}</h4>
+                        <div class="addin2 small"><img class="plus" src="./img/icon/plus.png" alt="">加入我的行程</div>
+                    </div>
+                </div>
+
+            </div>
+
+            <h3 class="padding_top_5 alltrip ">木星景點</h3>
+            <div class="tripcard_all  margin_top_5">
+
+                <div v-for="item in second" class="tripcard">
+                    <img :src="item.spot" class="spot_pic" alt="spot_pic">
+                    <div class="content line_low">
+                        <h4 class="hot2 margin_top_1">{{item.title}}</h4>
+                        <small class="tag">{{item.grade}}</small>
+                        <small class="tag">{{item.scores}}積分</small>
+                        <h4 class="price2 margin_top_1">${{item.price}}</h4>
+                        <div class="addin2 small"><img class="plus" src="./img/icon/plus.png" alt="">加入我的行程</div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </container>
     <footer>
         @@include('./layout/footer.html')
     </footer>
-
-
-
-
 
 
 
@@ -136,32 +178,32 @@
                     grade: "初階",
                     scores: "3000",
                     price: 5000,
+                },
+                ],
+                second: [{
+                    spot: "./img/trip/trip_mars/mars_c1_ps.png",
+                    title: "月球 | 太空體驗一日遊",
+                    grade: "初階",
+                    scores: "5000",
+                    price: 5000,
+                },{
+                    spot: "./img/trip/trip_mars/mars_c1_ps.png",
+                    title: "月球 | 熱氣球一日遊",
+                    grade: "初階",
+                    scores: "5000",
+                    price: 5000,
+                },{
+                    spot: "./img/trip/trip_mars/mars_c1_ps.png",
+                    title: "月球 | 宇宙雨林秘境一日遊",
+                    grade: "高階",
+                    scores: "5000",
+                    price: 5000,
                 },]
-            }
+            },
+
+
         });
 
-        let vm2 = new Vue({
-            el: "#app2",
-            data: {
-                step: [{
-                    icon: "./img/icon/search-location.png",
-                    num: "./img/icon/one.png",
-                    stepContent: "尋找景點",
-                }, {
-                    icon: "./img/icon/travel.png",
-                    num: "./img/icon/two.png",
-                    stepContent: "加入我的行程",
-                }, {
-                    picon: "./img/icon/coins.png",
-                    num: "./img/icon/three.png",
-                    stepContent: "結帳，獲得積分",
-                }, , {
-                    icon: "./img/icon/4change.png",
-                    num: "./img/icon/four.png",
-                    stepContent: "累積積分，兌換宇宙幣",
-                },]
-            }
-        });
     </script>
 
 </body>

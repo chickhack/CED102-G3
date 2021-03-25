@@ -3,10 +3,31 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 
+#icon-gg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-bottom: 1.5%;
+}
+
+.icon-g {
+  max-width: 30px;
+  max-height: 30px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .car-top {
   min-height: 50vh;
   height: 100%;
-  padding-top: 15vh;
 }
 
 body {
