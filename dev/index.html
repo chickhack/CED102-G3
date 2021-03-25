@@ -12,12 +12,16 @@
       integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
       crossorigin="anonymous"
     />
-    <!-- <link rel="stylesheet" href="../css/planet.css"></link> -->
-    <link rel="stylesheet" href="./css/all.css" />
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./css/pages/planet.css"></link>
     <link rel="stylesheet" href="./css/pages/index.css"></link>
+    
     <!-- canvas -->
   </head>
   <body>
+    <div class="banner_bg jumbotron-fluid">
     <header>@@include('./layout/header.html')</header>
       <div class="col-11 frame">
         <div class="banner">
@@ -28,12 +32,176 @@
             <img src="./img/icon/scroll.gif" style="width: 50px" />
           </div>
         </div>
-        <div class="intro">
+        <div class="home_intro">
           <h2>打造星球的專屬行程</h2>
-          <h4>累積景點積分，獲得更多宇宙幣，讓你無限暢遊在宇宙中</h4>
+          <h4 class="margin_top_3">累積景點積分，獲得更多宇宙幣，讓你無限暢遊在宇宙中</h4>
         </div>
+<!-- 訂購流程 -->
+<!-- 精選行程 -->
+<!-- 星球百科 -->
+        <div class="container">
+          <ul class="tab-title col-12">
+            <li class="selected"><a href="#tab01">火星</a></li>
+            <li><a href="#tab02">月球</a></li>
+            <li><a href="#tab03">土星</a></li>
+            <li><a href="#tab04">木星</a></li>
+            <li><a href="#tab04">木星</a></li>
+            <li><a href="#tab04">木星</a></li>
+            <li><a href="#tab04">木星</a></li>
+          </ul>
+          <div class="saparator col-10"></div>
+          <div id="tab01" class="col-12 tab-inner">
+            <div class="tab_intro margin_top_6">
+              <h2>火星</h2>
+              <h3 class="margin_top_4">
+                火星大氣以二氧化碳為主，既稀薄又寒冷，其表面特徵讓人聯想起月球上的撞擊坑，以及地球上的山谷、沙漠和極地冰蓋。
+              </h3>
+              <div class="data margin_top_8">
+                <div class="grav">
+                  <span>38</span>
+                  <span class="data-mid">％</span>
+                  <p>重力</p>
+                </div>
+                <div class="day">
+                  <span>24</span>
+                  <span class="data-low">HR</span>
+                  <p>一天</p>
+                </div>
+                <div class="temp">
+                  <span class="data-mid">-</span>
+                  <span>60</span>
+                  <span class="data-high">F</span>
+                  <p>溫度</p>
+                </div>
+              </div>
+            </div>
+            <div class="tab-active col-6 margin_top_5">
+              <img
+                src="./img/planet/mars.png"
+                style="max-width: 500px"
+                class="geoplanet"
+              />
+            </div>
+          </div>
+          <div id="tab02" class="col-12 tab-inner">
+            <div class="tab_intro margin_top_6">
+              <h2>火星</h2>
+              <h3 class="margin_top_4">
+                火星大氣以二氧化碳為主，既稀薄又寒冷，其表面特徵讓人聯想起月球上的撞擊坑，以及地球上的山谷、沙漠和極地冰蓋。
+              </h3>
+              <div class="data margin_top_8">
+                <div class="grav">
+                  <span>38</span>
+                  <span class="data-mid">％</span>
+                  <p>重力</p>
+                </div>
+                <div class="day">
+                  <span>24</span>
+                  <span class="data-low">HR</span>
+                  <p>一天</p>
+                </div>
+                <div class="temp">
+                  <span class="data-mid">-</span>
+                  <span>60</span>
+                  <span class="data-high">F</span>
+                  <p>溫度</p>
+                </div>
+              </div>
+            </div>
+            <div class="tab-active col-6 margin_top_5">
+              <img
+                src="./img/planet/mars.png"
+                style="max-width: 500px"
+                class="geoplanet"
+              />
+            </div>
+          </div>
+          <div id="tab03" class="col-12 tab-inner">
+            <div class="tab_intro margin_top_6">
+              <h2>火星</h2>
+              <h3 class="margin_top_4">
+                火星大氣以二氧化碳為主，既稀薄又寒冷，其表面特徵讓人聯想起月球上的撞擊坑，以及地球上的山谷、沙漠和極地冰蓋。
+              </h3>
+              <div class="data margin_top_8">
+                <div class="grav">
+                  <span>38</span>
+                  <span class="data-mid">％</span>
+                  <p>重力</p>
+                </div>
+                <div class="day">
+                  <span>24</span>
+                  <span class="data-low">HR</span>
+                  <p>一天</p>
+                </div>
+                <div class="temp">
+                  <span class="data-mid">-</span>
+                  <span>60</span>
+                  <span class="data-high">F</span>
+                  <p>溫度</p>
+                </div>
+              </div>
+            </div>
+            <div class="tab-active col-6 margin_top_5">
+              <img
+                src="./img/planet/mars.png"
+                style="max-width: 500px"
+                class="geoplanet"
+              />
+            </div>
+          </div>
+          <div id="tab04" class="col-12 tab-inner">
+            <div class="tab_intro margin_top_6">
+              <h2>火星</h2>
+              <h3 class="margin_top_4">
+                火星大氣以二氧化碳為主，既稀薄又寒冷，其表面特徵讓人聯想起月球上的撞擊坑，以及地球上的山谷、沙漠和極地冰蓋。
+              </h3>
+              <div class="data margin_top_8">
+                <div class="grav">
+                  <span>38</span>
+                  <span class="data-mid">％</span>
+                  <p>重力</p>
+                </div>
+                <div class="day">
+                  <span>24</span>
+                  <span class="data-low">HR</span>
+                  <p>一天</p>
+                </div>
+                <div class="temp">
+                  <span class="data-mid">-</span>
+                  <span>60</span>
+                  <span class="data-high">F</span>
+                  <p>溫度</p>
+                </div>
+              </div>
+            </div>
+            <div class="tab-active col-6 margin_top_5">
+              <img
+                src="./img/planet/mars.png"
+                style="max-width: 500px"
+                class="geoplanet"
+              />
+            </div>
+          </div>
+          </div>
       </div>
       <footer>@@include('./layout/footer.html')</footer>
     </div>
+
+
+
+
+
+    <!-- 星球tab -->
+    <script>
+      $(function(){
+        var $li = $('ul.tab-title li');
+            $($li.eq(0).addClass('selected').find('a').attr('href')).siblings('.tab-inner').hide();
+
+            $li.click(function(){
+              $($(this).find('a').attr('href')).show().siblings('.tab-inner').hide();
+              $(this).addClass('selected').siblings('.selected').removeClass('selected');
+            });
+      });
+    </script>
   </body>
 </html>
