@@ -6,29 +6,11 @@ body {
 
 .grid {
   display: flex;
-<<<<<<< HEAD
-<<<<<<< HEAD
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
-  padding-top: 5%;
-  font-size: 12px;
-=======
-=======
->>>>>>> chickhack
   flex-wrap: wrap;
   justify-content: center;
   align-items: start;
-  padding-top: 6%;
-<<<<<<< HEAD
->>>>>>> kai
-=======
->>>>>>> chickhack
+  padding-top: 5%;
+  font-size: 12px;
 }
 
 .grid-item {
@@ -112,7 +94,6 @@ body {
 
 .col-md-1 {
   display: inline-block;
-  position: -webkit-sticky;
   position: sticky;
   left: 1300px;
   bottom: 120px;

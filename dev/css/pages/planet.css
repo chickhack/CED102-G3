@@ -293,35 +293,22 @@ little, .little {
   max-width: 20px;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 .container {
   max-width: 1440px;
   margin: 0 auto;
-  padding-top: 15vh;
 }
 
-=======
->>>>>>> kai
-=======
->>>>>>> chickhack
 nav {
   display: flex;
   justify-content: center;
   align-items: center;
   justify-content: space-around;
   background-color: #0c0d18;
-<<<<<<< HEAD
-<<<<<<< HEAD
-  position: -webkit-sticky;
-=======
->>>>>>> kai
-=======
->>>>>>> chickhack
   position: sticky;
   top: 0;
   width: 100%;
   min-height: 12vh;
+  z-index: 9999;
 }
 
 nav .logo h1 a {
@@ -416,16 +403,7 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
-<<<<<<< HEAD
-<<<<<<< HEAD
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-=======
   transform: translateX(-50%);
->>>>>>> kai
-=======
-  transform: translateX(-50%);
->>>>>>> chickhack
 }
 
 body {
@@ -445,44 +423,16 @@ canvas {
 }
 
 .title {
-<<<<<<< HEAD
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-=======
   display: flex;
   justify-content: center;
->>>>>>> kai
-=======
-  display: flex;
-  justify-content: center;
->>>>>>> chickhack
   padding-top: 100px;
   font-size: 42px;
 }
 
 ul.tab-title {
   padding-top: 50px;
-<<<<<<< HEAD
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-=======
   display: flex;
   justify-content: center;
->>>>>>> kai
-=======
-  display: flex;
-  justify-content: center;
->>>>>>> chickhack
 }
 
 ul.tab-title li {
@@ -500,35 +450,12 @@ ul.tab-title li.selected {
 
 .tab-inner {
   border-top: 1px solid #AD6E4A;
-<<<<<<< HEAD
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-=======
->>>>>>> kai
-=======
->>>>>>> chickhack
   display: flex;
 }
 
 .tab-inner .intro {
-<<<<<<< HEAD
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-=======
   display: flex;
   flex-direction: column;
->>>>>>> kai
-=======
-  display: flex;
-  flex-direction: column;
->>>>>>> chickhack
   margin-top: 50px;
   text-align: left;
 }
@@ -540,22 +467,8 @@ ul.tab-title li.selected {
 }
 
 .tab-inner .data {
-<<<<<<< HEAD
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-=======
   display: flex;
   justify-content: flex-end;
->>>>>>> kai
-=======
-  display: flex;
-  justify-content: flex-end;
->>>>>>> chickhack
   margin-top: 50px;
 }
 
@@ -584,15 +497,7 @@ ul.tab-title li.selected {
 }
 
 .tab-inner .data span.data-mid {
-<<<<<<< HEAD
   font-size: 24px;
-}
-
-.tab-inner .data span.data-low {
-=======
->>>>>>> kai
-  font-size: 24px;
-  font-stretch: narrower;
 }
 
 .tab-inner .data span.data-low {
@@ -619,16 +524,7 @@ ul.tab-title li.selected {
   background-image: url(../../dev/img/planet/crater.jpg);
   background-position: top;
   position: relative;
-<<<<<<< HEAD
-<<<<<<< HEAD
-  -webkit-transform: translate(-112%, -220%);
-          transform: translate(-112%, -220%);
-=======
   transform: translate(-112%, -220%);
->>>>>>> kai
-=======
-  transform: translate(-112%, -220%);
->>>>>>> chickhack
 }
 
 .tab-active .outline {
@@ -637,35 +533,13 @@ ul.tab-title li.selected {
   width: 190px;
   border-radius: 50%;
   position: relative;
-<<<<<<< HEAD
-<<<<<<< HEAD
-  -webkit-transform: translate(-100%, -100%);
-          transform: translate(-100%, -100%);
-=======
   transform: translate(-100%, -100%);
->>>>>>> kai
-=======
-  transform: translate(-100%, -100%);
->>>>>>> chickhack
 }
 
 .tab-active .geoopt {
   position: absolute;
-<<<<<<< HEAD
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-column-gap: 30px;
-          column-gap: 30px;
-=======
   display: flex;
   column-gap: 30px;
->>>>>>> kai
-=======
-  display: flex;
-  column-gap: 30px;
->>>>>>> chickhack
   right: 0px;
   top: 700px;
 }
@@ -688,21 +562,8 @@ ul.tab-title li.selected {
 }
 
 .content {
-<<<<<<< HEAD
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-=======
   display: flex;
   flex-wrap: wrap;
->>>>>>> kai
-=======
-  display: flex;
-  flex-wrap: wrap;
->>>>>>> chickhack
 }
 
 .content .imgs {
@@ -711,32 +572,6 @@ ul.tab-title li.selected {
 }
 
 .content .imgs .img1 {
-<<<<<<< HEAD
-<<<<<<< HEAD
-  -webkit-transform: translate(10%);
-          transform: translate(10%);
-}
-
-.content .imgs .img2 {
-  -webkit-transform: translateX(-10%);
-          transform: translateX(-10%);
-}
-
-.content .imgs .img3 {
-  -webkit-transform: translate(-70%, -350px);
-          transform: translate(-70%, -350px);
-}
-
-.content .desc {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-=======
-=======
->>>>>>> chickhack
   transform: translate(10%);
 }
 
@@ -751,10 +586,6 @@ ul.tab-title li.selected {
 .content .desc {
   display: flex;
   align-items: center;
-<<<<<<< HEAD
->>>>>>> kai
-=======
->>>>>>> chickhack
 }
 
 .content .desc p {

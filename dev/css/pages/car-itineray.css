@@ -3,10 +3,23 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 
+#icon-gg {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: flex-end;
+  padding-bottom: 1.5%;
+}
+
+.icon-g {
+  max-width: 30px;
+  max-height: 30px;
+  object-fit: cover;
+}
+
 .car-top {
   min-height: 50vh;
   height: 100%;
-  padding-top: 15vh;
 }
 
 body {
