@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/pages/shop_order.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.12/vue.js'></script>
+    <title>星球商城</title>
+</head>
+<body>
+    <div class="container">
+        @@include("./layout/header.html")
+        <section class="orderDetail">
+            <div class="order" id="app">
+                <h3 class="h2">商品購買明細</h3>
+                <ul class="margin_top_3">
+                    <li v-for="product in products" class="margin_top_3">
+                        <div class="imgWord">
+                            <img :src="product.src" class="prod">
+                            <div class="name margin_left_4">
+                                <p class="h3">{{product.name}}</p>
+                                <div class="integral margin_top_2">
+                                    <img src="./img/s.png" class="icon">
+                                    <p>+{{product.integral}}積分</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quantity">
+                            <p>數量 1</p>
+                            <div class="price">
+                                <p>總金額</p>
+                                <p class="margin_top_2 h3">${{product.price}}</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <h3 class="h2 margin_top_4">訂單明細</h3>
+                <div class="detail margin_top_2">
+                    <div class="total">
+                        <p class="h3">支付金額</p>
+                        <p class="h3">$ {{totalPrice}}</p>
+                    </div>
+                    <div class="integral margin_top_2">
+                        <p>可累積積分</p>
+                        <div class="count">
+                            <img src="./img/s.png" class="icon">
+                            <p>+{{totalIntegral}}</p>
+                        </div>
+                    </div>
+                    <small class="margin_top_1">累積後目前有50000積分</small>
+                </div>
+            </div>
+        </section>
+        <section class="orderer">
+            <form class="orderer_form">
+                <h2 class="margin_top_2 orderer_click">訂購人資訊</h2>
+                <div class="icon"></div>
+                <div class="info margin_top_4">
+                    <div class="input_group">
+                        <label for="fName">名字</label>
+                        <input type="text" class="margin_top_1" name="fName" id="fName">
+                    </div>
+                    <div class="input_group">
+                        <label for="lName">姓氏</label>
+                        <input type="text" class="margin_top_1" name="lName" id="lName">
+                    </div>
+                    <div class="input_group">
+                        <label for="mobile">手機</label>
+                        <input type="text" class="margin_top_1" name="mobile" id="mobile">
+                    </div>
+                    <div class="input_group">
+                        <label for="identity">身分證字號</label>
+                        <input type="text" class="margin_top_1" name="identity" id="identity">
+                    </div>
+                    <div class="input_group long">
+                        <label for="email">電子信箱</label>
+                        <input type="text" class="margin_top_1" name="email" id="email">
+                    </div>
+                </div>
+            </form>
+        </section>
+    </div>
+    <script src="./js/retract.js"></script>
+    <script>
+        let vm = new Vue({
+            el: "#app",
+            data:{
+                products: [{
+                    src: "./img/shop/shoes.png",
+                    name: "宇宙平衡鞋",
+                    integral: 3000,
+                    price: 5000,
+                },{
+                    src: "./img/shop/cloth.png",
+                    name: "宇宙衣",
+                    integral: 3000,
+                    price: 5000,
+                },{
+                    src: "./img/shop/helmet.png",
+                    name: "太空帽",
+                    integral: 3000,
+                    price: 5000,
+                },{
+                    src: "./img/shop/shoes.png",
+                    name: "宇宙平衡鞋",
+                    integral: 3000,
+                    price: 5000,
+                }],
+                totalPrice: 20000,
+                totalIntegral: 12000
+            }
+        })
+    </script>
+</body>
+</html>

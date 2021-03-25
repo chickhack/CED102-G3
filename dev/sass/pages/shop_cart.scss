@@ -4,12 +4,16 @@ section.cart{
     max-width: 948px;
     margin: 0 auto;
     // border: 1px solid #fff;
-    padding-top: 15vh;
+    padding-top: 5vh;
+    form{
+        width: 95%;
+        // border: 1px solid #fff;
+        margin: 0 auto;
+    }
     .item{
         @include flex_middle();
-        align-items: center;
         justify-content: space-around;
-        width: 90%;
+        flex-wrap: wrap;
         background-color: #292B41;
         padding: 8px 16px;
         // border: 1px solid #fff;
@@ -20,9 +24,16 @@ section.cart{
             padding: 16px;
             background-color: $white;
         }
+        .pdname{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            width: 15%;
+        }
         .integral{
-            @include flex_middle();
-            justify-content: space-between;
+            *{
+                display: inline-block;
+            }
             .icon{
                 max-width: 15px;
             }
@@ -31,6 +42,36 @@ section.cart{
             cursor: pointer;
         }
     }
+    .checkout{
+        width: 100%;
+        background-color: #292B41;
+        position: relative;
+        @include flex_middle();
+        justify-content: flex-end;
+        padding: 16px 0;
+        letter-spacing: 3px;
+        .totalPrice{
+            @include flex_middle();
+            justify-content: flex-end;
+            .h2{
+                color: $gold;
+                font-weight: 900;
+            }
+        }
+        .totalIntegral{
+            @include flex_middle();
+            justify-content: flex-end;
+        }
+        .button_min{
+            background-color: $gold;
+            padding: 8px;
+            margin-right: 7%;
+            color: $white;
+        }
+    }
+}
+footer{
+    margin-top: 80px;
 }
 
 /* Chrome, Safari, Edge, Opera */

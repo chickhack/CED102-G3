@@ -2,6 +2,8 @@
   background-color: #16193b;
   font-size: 18px;
   color: #fff;
+  border-radius: 5px;
+  margin-bottom: 10px;
 }
 
 .ba-color {
@@ -14,8 +16,63 @@
   font-size: 16px;
 }
 
-.text- {
+.text-color-1 {
+  background-color: #292b41;
+  font-size: 16px;
+  color: #fff;
+}
+
+.leve {
+  width: 60px;
+  height: 60px;
+}
+
+.leve-1 {
+  width: 55px;
+  height: 55px;
+}
+
+.icon-2 {
+  width: 60px;
+  object-fit: cover;
+  height: 60px;
+  border-radius: 40px;
+}
+
+.icon-3 {
+  width: 55px;
+  height: 55px;
+  object-fit: cover;
+  border-radius: 40px;
+}
+
+.text-00 {
+  display: flex;
+  align-items: center;
   justify-content: center;
+}
+
+.text-01 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.line-he-65 {
+  line-height: 65px;
+  height: 65px;
+}
+
+.line-he-85 {
+  line-height: 85px;
+}
+
+.line-he-75 {
+  line-height: 75px;
+}
+
+.bra-line {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .container .row .col-10 {

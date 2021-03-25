@@ -72,7 +72,7 @@ input[type=button], input[type=submit], input[type=file], button {
 }
 
 body {
-  font-family: "Microsoft JhengHei", sans-serif;
+  font-family: "Microsoft JhengHei", "sans-serif";
   color: #C9ADA7;
   font-size: 14px;
   background-color: #0c0d18;
@@ -111,8 +111,8 @@ little, .little {
 }
 
 @font-face {
-  font-family: "Microsoft JhengHei";
-  src: local("./fonts/msjh.ttc"), local("./fonts/msjhbd.ttc"), local("./fonts/HATTEN.TTF");
+  font-family: "Microsoft JhengHei",  "Nasalization";
+  src: local("./fonts/msjh.ttc"), local("./fonts/msjhbd.ttc"), local("./fonts/HATTEN.TTF"), local("./fonts/Nasa.ttf");
 }
 
 .padding_left_1 {
@@ -307,6 +307,8 @@ nav {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
@@ -320,6 +322,10 @@ nav {
 =======
 >>>>>>> chickhack
 >>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
+=======
+>>>>>>> kai
+=======
+>>>>>>> chickhack
 =======
 >>>>>>> kai
   position: sticky;
@@ -424,6 +430,8 @@ footer .smoke {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
   transform: translateX(-50%);
 =======
 =======
@@ -441,6 +449,12 @@ footer .smoke {
   transform: translateX(-50%);
 >>>>>>> chickhack
 >>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
+=======
+  transform: translateX(-50%);
+>>>>>>> kai
+=======
+  transform: translateX(-50%);
+>>>>>>> chickhack
 =======
   transform: translateX(-50%);
 >>>>>>> kai

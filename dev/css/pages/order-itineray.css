@@ -28,12 +28,16 @@ body {
 
 .titi {
   background-color: #0c0d18;
-  line-height: 80px;
+  line-height: 50px;
   font-size: 18px;
 }
 
 .textRight {
   text-align: right;
+}
+
+.text-cn {
+  padding-left: 3%;
 }
 
 .textHeight-1 {
@@ -162,6 +166,7 @@ body {
   height: 25px;
   color: #fff;
   font-size: 16px;
+  width: 30%;
   letter-spacing: 2px;
   border-radius: 5px;
 }
@@ -177,7 +182,7 @@ body {
 }
 
 form {
-  padding: 15vh 0 0 0;
+  padding: 0 0 0 0;
   height: 100%;
 }
 
@@ -237,7 +242,7 @@ form .orderinfo .container .row .col-7 .row .col-11 {
 
 form .orderinfo .container .row .col-7 .row .col-11 input {
   color: #fff;
-  width: 90%;
+  width: 89%;
   background-color: #3a3a3c;
   border: 1px solid #ad6e4a;
   border-radius: 5px;
@@ -287,12 +292,8 @@ form .ltineraryinfo .container .row .col-7 .row .col-11 .textinfo .textinfo-1 p 
 }
 
 form .ltineraryinfo .container .row .col-7 .row .col-11 .textinfo .textinfo-1 p img {
-<<<<<<< HEAD
-  max-width: 20px;
-=======
   max-width: 16px;
   height: 16px;
->>>>>>> chickhack
   object-fit: cover;
   vertical-align: middle;
   padding-bottom: 4px;

@@ -5,34 +5,79 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/pages/shop_cart.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.12/vue.js'></script>
     <title>星球商城</title>
 </head>
 <body>
     <div class="container">
         @@include("./layout/header.html")
-        <section class="cart">
+        <section class="cart" id="app">
             <form action="">
                 <h3 class="h2">我的商品</h3>
-                <ul>
-                    <li class="item margin_top_5">
+                <ul v-for="product in products">
+                    <li class="item margin_top_3">
                         <div class="img">
-                            <img src="./img/shop/shoes.png" alt="">
+                            <img :src="product.src" alt="">
                         </div>
-                        <div>
-                            <p class="h3">宇宙平衡鞋</p>
+                        <div class="pdname">
+                            <p class="h3">{{product.name}}</p>
                             <div class="integral margin_top_1">
                                 <img src="./img/s.png" alt="" class="icon">
-                                <p>+3000積分</p>
+                                <p>{{product.integral}}</p>
                             </div>
                         </div>
-                        <p class="h2">$ 5000</p>
+                        <p class="h2">${{product.price}}</p>
                         @@include("./layout/quantityBtn.html")
                         <img src="./img/icon/trashcan.png" class="icon trashcan">
                     </li>
                 </ul>
+                <div class="checkout margin_top_8">
+                    <div class="total">
+                        <div class="totalPrice">
+                            <p>商品合計</p>
+                            <p class="h2 margin_left_1">${{totalPrice}}</p>
+                        </div>
+                        <div class="totalIntegral margin_top_1">
+                            <small>可累計積分</small>
+                            <img src="./img/s.png" class="icon margin_left_1">
+                            <small>+6000</small>
+                        </div>
+                    </div>
+                    <a class="button_min margin_left_3" href="order.html">前往結帳</a>
+                </div>
             </form>
         </section>
+        @@include("./layout/footer.html")
     </div>
-    <script src="./js/addMinus.js"></script>
+    <script>
+        let vm = new Vue({
+            el: "#app",
+            data:{
+                products: [{
+                    src: "./img/shop/shoes.png",
+                    name: "宇宙平衡鞋",
+                    integral: 3000,
+                    price: 5000,
+                },{
+                    src: "./img/shop/cloth.png",
+                    name: "宇宙衣",
+                    integral: 3000,
+                    price: 5000,
+                },{
+                    src: "./img/shop/helmet.png",
+                    name: "太空帽",
+                    integral: 3000,
+                    price: 5000,
+                },{
+                    src: "./img/shop/shoes.png",
+                    name: "宇宙平衡鞋",
+                    integral: 3000,
+                    price: 5000,
+                }],
+                totalPrice: 20000,
+                totalIntegral: 12000
+            }
+        })
+    </script>
 </body>
 </html>

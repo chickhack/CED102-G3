@@ -72,7 +72,7 @@ input[type=button], input[type=submit], input[type=file], button {
 }
 
 body {
-  font-family: "Microsoft JhengHei", sans-serif;
+  font-family: "Microsoft JhengHei", "sans-serif";
   color: #C9ADA7;
   font-size: 14px;
   background-color: #0c0d18;
@@ -111,8 +111,8 @@ little, .little {
 }
 
 @font-face {
-  font-family: "Microsoft JhengHei";
-  src: local("./fonts/msjh.ttc"), local("./fonts/msjhbd.ttc"), local("./fonts/HATTEN.TTF");
+  font-family: "Microsoft JhengHei",  "Nasalization";
+  src: local("./fonts/msjh.ttc"), local("./fonts/msjhbd.ttc"), local("./fonts/HATTEN.TTF"), local("./fonts/Nasa.ttf");
 }
 
 .padding_left_1 {
@@ -296,10 +296,16 @@ little, .little {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
 <<<<<<< HEAD
+=======
+>>>>>>> kai
+=======
+>>>>>>> chickhack
 =======
 >>>>>>> kai
 .container {
@@ -307,6 +313,8 @@ little, .little {
   margin: 0 auto;
 }
 
+<<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> kai
@@ -318,12 +326,18 @@ little, .little {
 >>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
 =======
 >>>>>>> kai
+=======
+>>>>>>> chickhack
+=======
+>>>>>>> kai
 nav {
   display: flex;
   justify-content: center;
   align-items: center;
   justify-content: space-around;
   background-color: #0c0d18;
+<<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -340,6 +354,10 @@ nav {
 =======
 >>>>>>> chickhack
 >>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
+=======
+>>>>>>> kai
+=======
+>>>>>>> chickhack
 =======
 >>>>>>> kai
   position: sticky;
@@ -444,6 +462,8 @@ footer .smoke {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
   transform: translateX(-50%);
 =======
 =======
@@ -463,6 +483,37 @@ footer .smoke {
 >>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
 =======
   transform: translateX(-50%);
+>>>>>>> kai
+=======
+  transform: translateX(-50%);
+>>>>>>> chickhack
+=======
+  transform: translateX(-50%);
+}
+
+.quantity label {
+  display: block;
+}
+
+.quantity .as {
+  color: #AD6E4A;
+}
+
+.quantity .as input[type=number] {
+  max-width: 50px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  text-align: center;
+  color: #AD6E4A;
+}
+
+.quantity .as span {
+  border: 1px solid #AD6E4A;
+  outline: none;
+  background-color: transparent;
+  padding: 4px 8px;
+  cursor: pointer;
 >>>>>>> kai
 }
 
@@ -486,6 +537,8 @@ canvas {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
   display: flex;
   justify-content: center;
 =======
@@ -510,6 +563,14 @@ canvas {
   justify-content: center;
 >>>>>>> chickhack
 >>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
+=======
+  display: flex;
+  justify-content: center;
+>>>>>>> kai
+=======
+  display: flex;
+  justify-content: center;
+>>>>>>> chickhack
 =======
   display: flex;
   justify-content: center;
@@ -523,6 +584,8 @@ ul.tab-title {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
   display: flex;
   justify-content: center;
 =======
@@ -547,6 +610,14 @@ ul.tab-title {
   justify-content: center;
 >>>>>>> chickhack
 >>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
+=======
+  display: flex;
+  justify-content: center;
+>>>>>>> kai
+=======
+  display: flex;
+  justify-content: center;
+>>>>>>> chickhack
 =======
   display: flex;
   justify-content: center;
@@ -571,6 +642,8 @@ ul.tab-title li.selected {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
@@ -587,10 +660,16 @@ ul.tab-title li.selected {
 >>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
 =======
 >>>>>>> kai
+=======
+>>>>>>> chickhack
+=======
+>>>>>>> kai
   display: flex;
 }
 
 .tab-inner .intro {
+<<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -623,6 +702,14 @@ ul.tab-title li.selected {
   display: flex;
   flex-direction: column;
 >>>>>>> kai
+=======
+  display: flex;
+  flex-direction: column;
+>>>>>>> chickhack
+=======
+  display: flex;
+  flex-direction: column;
+>>>>>>> kai
   margin-top: 50px;
   text-align: left;
 }
@@ -634,6 +721,8 @@ ul.tab-title li.selected {
 }
 
 .tab-inner .data {
+<<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -665,6 +754,14 @@ ul.tab-title li.selected {
   display: flex;
   justify-content: flex-end;
 >>>>>>> kai
+=======
+  display: flex;
+  justify-content: flex-end;
+>>>>>>> chickhack
+=======
+  display: flex;
+  justify-content: flex-end;
+>>>>>>> kai
   margin-top: 50px;
 }
 
@@ -689,8 +786,6 @@ ul.tab-title li.selected {
 
 .tab-inner .data span.data-high {
   vertical-align: top;
-<<<<<<< HEAD
-=======
   font-size: 24px;
 }
 
@@ -699,6 +794,8 @@ ul.tab-title li.selected {
 }
 
 .tab-inner .data span.data-low {
+<<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> kai
@@ -717,6 +814,10 @@ ul.tab-title li.selected {
 }
 
 .tab-inner .data span.data-low {
+=======
+>>>>>>> kai
+=======
+>>>>>>> chickhack
 =======
 >>>>>>> kai
   font-size: 24px;
@@ -745,6 +846,8 @@ ul.tab-title li.selected {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
   transform: translate(-112%, -220%);
 =======
 =======
@@ -765,6 +868,12 @@ ul.tab-title li.selected {
 =======
   transform: translate(-112%, -220%);
 >>>>>>> kai
+=======
+  transform: translate(-112%, -220%);
+>>>>>>> chickhack
+=======
+  transform: translate(-112%, -220%);
+>>>>>>> kai
 }
 
 .tab-active .outline {
@@ -773,6 +882,8 @@ ul.tab-title li.selected {
   width: 190px;
   border-radius: 50%;
   position: relative;
+<<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -796,10 +907,18 @@ ul.tab-title li.selected {
 =======
   transform: translate(-100%, -100%);
 >>>>>>> kai
+=======
+  transform: translate(-100%, -100%);
+>>>>>>> chickhack
+=======
+  transform: translate(-100%, -100%);
+>>>>>>> kai
 }
 
 .tab-active .geoopt {
   position: absolute;
+<<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -830,6 +949,14 @@ ul.tab-title li.selected {
   display: flex;
   column-gap: 30px;
 >>>>>>> kai
+=======
+  display: flex;
+  column-gap: 30px;
+>>>>>>> chickhack
+=======
+  display: flex;
+  column-gap: 30px;
+>>>>>>> kai
   right: 0px;
   top: 700px;
 }
@@ -852,6 +979,8 @@ ul.tab-title li.selected {
 }
 
 .content {
+<<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -882,6 +1011,14 @@ ul.tab-title li.selected {
   display: flex;
   flex-wrap: wrap;
 >>>>>>> kai
+=======
+  display: flex;
+  flex-wrap: wrap;
+>>>>>>> chickhack
+=======
+  display: flex;
+  flex-wrap: wrap;
+>>>>>>> kai
 }
 
 .content .imgs {
@@ -890,6 +1027,8 @@ ul.tab-title li.selected {
 }
 
 .content .imgs .img1 {
+<<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -927,6 +1066,10 @@ ul.tab-title li.selected {
 >>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
 =======
 >>>>>>> kai
+=======
+>>>>>>> chickhack
+=======
+>>>>>>> kai
   transform: translate(10%);
 }
 
@@ -944,6 +1087,8 @@ ul.tab-title li.selected {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> kai
 >>>>>>> 207fcd1e44351eec63eaaaa2987e1e8204ee7e60
@@ -952,6 +1097,10 @@ ul.tab-title li.selected {
 =======
 >>>>>>> chickhack
 >>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
+=======
+>>>>>>> kai
+=======
+>>>>>>> chickhack
 =======
 >>>>>>> kai
 }
