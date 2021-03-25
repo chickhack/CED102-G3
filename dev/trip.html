@@ -7,7 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/pages/trip.css">
     <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.12/vue.js'></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous"></script>
+    <!-- Slider-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- addminus -->
+    <script src="./js/addMinus.js"></script>
     <title>火星 | 攀登太陽系第一高山</title>
 </head>
 
@@ -16,12 +25,26 @@
         @@include('./layout/header.html')
     </header>
     <container>
-        <img class="trippic" src="./img/trip/trip_mars/mars_a1_pss.jpg" alt="">
-        <img class="trippic" src="./img/trip/trip_mars/mars_a2_pss.jpg" alt="">
-        <!-- <img class="trippic" src="./img/trip/trip_mars/mars_a3_ps.jpg" alt=""> -->
+        <!-- Slider main container -->
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img class="trippic" src="./img/trip/trip_mars/mars_a2_pss.jpg" alt="">
+                </div>
+                <div class="swiper-slide"><img class="trippic" src="./img/trip/trip_mars/mars_a1_pss.jpg" alt="">
+                </div>
+                <div class="swiper-slide"><img class="trippic" src="./img/trip/trip_mars/mars_a3_ps.jpg" alt="">
+                </div>
+                <div class="swiper-slide"><img class="trippic" src="./img/trip/trip_mars/mars_a3_ps.jpg" alt="">
+                </div>
+                <div class="swiper-slide"><img class="trippic" src="./img/trip/trip_mars/mars_a3_ps.jpg" alt="">
+                </div>
+            </div>
+        </div>
         <div class="parent_container" id="app">
             <main class="trip_content_all">
-                <div class="h3 trip_title margin_top_2">火星 | 攀登太陽系第一高山
+                <div class="h2 trip_title margin_top_2">火星 | 攀登太陽系第一高山
                     <div class="h3 number margin_left_2">{{number}}</div>
                     <img class="bookmark margin_left_2" src="./img/icon/bookmark-outline.png" alt="">
                 </div>
@@ -37,6 +60,9 @@
                     <div class="tab_contents">
 
                         <div class="margin_top_2 line_low tab tab1 -on">
+                            <small class="tag ">初階景點</small>
+                            <small class="tag">3000積分</small>
+                            <br>
                             火星 | 攀登太陽系第一高山為為三日行程。<br>
                             此次旅程將帶您前往不只是火星最高，更是太陽系最高的火山——位於火星西半球、高度21171公尺的奧林帕斯山，一探站在最高峰所望去的景色。
                             嚮導會與您在塔爾西斯太空站會合，並一同前往奧林帕斯山東北方的一號基地營。<br>
@@ -45,16 +71,27 @@
                             <br>奧林帕斯山的火山口非常巨大，直徑約有八十公里，您可選擇使用噴射背包（需先提供有效駕駛證照）從空中一覽壯闊景色。
                         </div>
 
-                        <div class="line_low tab tab2">
-                            【費用包含】
-                            500萬責任險、導航設備、基本睡袋、健行三餐(主食1份及熱飲)、每日無限量熱水、登山嚮導挑夫（2人配1挑夫總計約25公斤）、領隊/當地登山嚮導/挑夫/司機/導遊小費、塔爾西斯太空站至一號基地營來回接駁船、奧林帕斯山登山證、登山地圖等。
-<br>
-                            【團費不含】
+                        <div class="margin_top_2 line_low tab tab2">
+                            <span class="g">【交通時間】</span>從地球出發到火星需要三天的時間。<br>
+                            <span class="g">【積分】</span>此為高階景點，可獲得1600積分。<br>
+                            <span class="g">【費用包含】</span><br>
+                            -500萬責任險<br>
+                            -導航設備<br>
+                            -基本睡袋<br>
+                            -健行三餐(主食1份及熱飲)<br>
+                            -每日無限量熱水<br>
+                            -登山嚮導挑夫（2人配1挑夫總計約25公斤<br>
+                            -領隊/當地登山嚮導/挑夫/司機/導遊小費<br>
+                            -塔爾西斯太空站至一號基地營來回接駁船<br>
+                            -奧林帕斯山登山證、登山地圖等。
+                            <br>
+                            <span class="g">【團費不含】</span><br>
                             往返塔爾西斯太空站交通、個人急難救助及醫療險（必備，spaceaway可提供相關資料）、額外飲料、營地洗澡費用、上網及充電費用、個人登山裝備。
                         </div>
 
-                        <div class="line_low tab tab3">
-                            由於該星球溫差大（27°C至-111°C），請備妥保暖、可活動之機能服裝。因此為登山行程，請斟酌考量身體因素，如有心血管疾病、曾有高山症等，請在報名前與我們討論。
+                        <div class="margin_top_2 line_low tab tab3">
+                            由於該星球溫差大（27°C至-111°C），請備妥保暖、可活動之機能服裝。<br>
+                            因此為登山行程，請斟酌考量身體因素，如有心血管疾病、曾有高山症等，請在報名前與我們討論。<br>
                             噴射背包為選擇性行程，如您有興趣，請報名時一併提供有效駕駛證照。
                             <br>
                             考慮安全因素，未滿15歲請勿參加本行程。
@@ -63,24 +100,28 @@
                     </div>
                 </div>
             </main>
-            <aside class="book margin_left_6 line_low margin_top_8">
-                <h4>訂購景點</h4>
-                <h4>火星 | 攀登太陽系第一高山</h4>
-                <p>Space away會在預訂成功後的1個工作日內確認，並將使用憑證發送至您的電子郵箱，如在註明的時限內還沒收到郵件，請查看垃圾郵件箱或與我們聯絡。
-                <h4>飛行時間與積分</h4>
-                <p>從地球出發到月球需要一天的時間。
-                    此行程等級為初階，可獲得1000積分。</p>
-                </p>
-                <div>
-                    <label for="date-1" class="p-text-3 w-100">日期</label>
-                    <input type="date" id="date-1" class="btn-date data-down">
-                </div>
-                <div>
-                    <p class="p-text-3">數量</p>
-                    <button class="btn-pull minus">－</button>
-                    <input type="number" value="1" class="btn-nu" min="0">
-                    <button class="btn-pull add">＋</button>
-                </div>
+            <aside class="book margin_left_6 line_low margin_top_5">
+                <small class="price_dis">最優價格保證</h4>
+                    <h3 class="price">$2000</h3>
+                    <p class="margin_top_1 small">SPACED會在預訂成功後的1個工作日內確認，並將使用憑證發送至您的電子郵箱，如在註明的時限內還沒收到郵件，請查看垃圾郵件箱或與我們聯絡。
+                    </p>
+                    <hr class="margin_top_2">
+                    <div class="select">
+                        <div class="date margin_top_2">
+                            <label for="date-1" class="h4 date_text">選擇日期</label><br>
+                            <input type="date" id="date-1" class="btn-date data-down">
+                        </div>
+                        <div class="amount margin_top_2">
+                            <p class="h4 date_text">數量</p>
+                            <button class="btn-pull minus">－</button>
+                            <input type="number" value="1" class="btn-nu p" min="0">
+                            <button class="btn-pull add">＋</button>
+                        </div>
+                    </div>
+                    <div class="btn  margin_top_3">
+                        <div class="addin small"><img class="plus" src="./img/icon/plus.png" alt="">加入我的行程</div>
+                        <div class="h4 buy margin_left_3">前往訂購</div>
+                    </div>
             </aside>
             <div class="comment margin_top_10">
                 <h3>旅客評論</h3>
@@ -113,17 +154,17 @@
                     </li>
                 </ul>
             </div>
-            <div class="recommend margin_top_10">
-                <h3 class="padding_top_5 alltrip ">其他推薦景點</h3>
-                <div class="tripcard_all  margin_top_3">
+            <div class="recommend">
+                <h3 class="margin_top_10 alltrip ">其他推薦景點</h3>
+                <div class="tripcard_all  margin_top_5">
 
                     <div v-for="item in second" class="tripcard">
                         <img :src="item.spot" class="spot_pic" alt="spot_pic">
                         <div class="content line_low">
                             <h4 class="hot2 margin_top_1">{{item.title}}</h4>
-                            <little class="tag">{{item.grade}}</little>
+                            <little class="tag ">{{item.grade}}</little>
                             <little class="tag">{{item.scores}}積分</little>
-                            <h4 class="price2">${{item.price}}</h4>
+                            <h4 class="price2 margin_top_1">${{item.price}}</h4>
                             <div class="addin2 little"><img class="plus" src="./img/icon/plus.png" alt="">加入我的行程</div>
                         </div>
                     </div>
@@ -150,12 +191,12 @@
                         date: "21.03.11",
                         content: "我和先生都喜歡玩水，第一次接觸SUP，雖然我不太會游泳，但全程教練們都在一旁讓人感覺很安心，除了專業又幽默的教學外😊"
                     }, {
-                        src: "./img/icon/donn-round.png",
+                        src: "./img/icon/ann.png",
                         name: "Doris",
                         date: "21.03.11",
                         content: "我和先生都喜歡玩水，第一次接觸SUP，雖然我不太會游泳，但全程教練們都在一旁讓人感覺很安心，除了專業又幽默的教學外😊"
                     }, {
-                        src: "./img/icon/donn-round.png",
+                        src: "./img/icon/tony.png",
                         name: "Doris",
                         date: "21.03.11",
                         content: "我和先生都喜歡玩水，第一次接觸SUP，雖然我不太會游泳，但全程教練們都在一旁讓人感覺很安心，除了專業又幽默的教學外😊"
@@ -199,7 +240,41 @@
         })
 
 
+        $(function () {
+            $("a.tab").on("click", function (e) {
+                e.preventDefault();
 
+                /* 將頁籤列表移除所有 -on，再將指定的加上 -on */
+                $(this).closest("ul").find("a.tab").removeClass("-on");
+                $(this).addClass("-on");
+
+                /* 找到對應的頁籤內容，加上 -on 來顯示 */
+                $("div.tab").removeClass("-on");
+                $("div.tab." + $(this).attr("data-target")).addClass("-on");
+            });
+        });
+
+
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 2.2,
+            direction: getDirection(),
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            on: {
+                resize: function () {
+                    swiper.changeDirection(getDirection());
+                }
+            }
+        });
+
+        function getDirection() {
+            var windowWidth = window.innerWidth;
+            var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
+
+            return direction;
+        }
     </script>
 
 </body>

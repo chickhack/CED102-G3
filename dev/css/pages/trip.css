@@ -98,7 +98,7 @@ p, .p {
   font-size: 14px;
 }
 
-little, .little {
+small, .small {
   font-size: 12px;
 }
 
@@ -315,7 +315,7 @@ nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-  background-image: url("../../img/logo.png");
+  background-image: url("../img/logo.png");
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -410,8 +410,12 @@ footer .smoke {
   margin: 0 auto;
 }
 
+.swiper-wrapper {
+  margin: 0 auto;
+}
+
 .trippic {
-  width: 700px;
+  width: 750px;
 }
 
 .parent_container {
@@ -420,7 +424,7 @@ footer .smoke {
 }
 
 .parent_container .trip_content_all {
-  width: 53%;
+  width: 50%;
   margin: 0 auto;
   display: inline-block;
   vertical-align: top;
@@ -432,6 +436,7 @@ footer .smoke {
   align-items: baseline;
   justify-content: flex-start;
   width: 100%;
+  font-weight: bold;
 }
 
 .parent_container .trip_content_all .trip_title .number {
@@ -446,6 +451,14 @@ footer .smoke {
   text-align: end;
 }
 
+.parent_container .trip_content_all div.tab_container div.tab_contents div.tab {
+  display: none;
+}
+
+.parent_container .trip_content_all div.tab_container div.tab_contents div.tab.-on {
+  display: block;
+}
+
 .parent_container .trip_content_all .tab_list_block {
   list-style: none;
 }
@@ -458,27 +471,160 @@ footer .smoke {
   text-decoration: none;
   color: #AD6E4A;
   font-weight: bold;
-  padding-bottom: 16px;
+  padding-bottom: 12px;
 }
 
-.parent_container .trip_content_all .-on {
+.parent_container .trip_content_all a.-on {
   border-bottom: 4px solid #AD6E4A;
+  width: 70px;
+  text-align: center;
 }
 
 .parent_container .tab_contents {
   border-top: 1px solid #AD6E4A;
+  letter-spacing: 1.5px;
+}
+
+.parent_container .tab_contents .tag {
+  display: inline-flex;
+  border: 1px solid #C9ADA7;
+  border-radius: 5px;
+  padding: 8px;
+  line-height: 5px;
+  margin: 3px;
+  color: #cccaca;
+}
+
+.parent_container .tab_contents .g {
+  color: #AD6E4A;
 }
 
 .parent_container .book {
-  width: 35%;
-  border: 1px solid #AD6E4A;
+  width: 30%;
   display: inline-block;
   vertical-align: top;
+  border: 1px solid #AD6E4A;
   padding: 20px;
+  position: sticky;
+  top: 20px;
+  left: 0;
+  z-index: 2;
+  background-color: #0c0d18;
+}
+
+.parent_container .book .price_dis {
+  color: #cccaca;
+}
+
+.parent_container .book .price {
+  color: #AD6E4A;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-family: "Nasalization";
+}
+
+.parent_container .book hr {
+  border: 0;
+  height: 0.5px;
+  background: #AD6E4A;
+  opacity: 0.5;
+}
+
+.parent_container .book .select {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.parent_container .book .select .date .date_text {
+  color: #AD6E4A;
+  font-weight: bold;
+}
+
+.parent_container .book .select .date .btn-date {
+  letter-spacing: 2px;
+  padding: 0 5px;
+  border: 1px solid #AD6E4A;
+  color: #AD6E4A;
+  background-color: #0c0d18;
+  height: 25px;
+  text-align: center;
+  width: 180px;
+}
+
+.parent_container .book .select .date ::-webkit-calendar-picker-indicator {
+  color: #AD6E4A;
+  background-image: url(../../img/date-chevron-down.svg);
+  width: 15px;
+  height: 25px;
+  position: relative;
+  top: 5px;
+}
+
+.parent_container .book .select .amount {
+  margin-right: 15px;
+}
+
+.parent_container .book .select .amount .date_text {
+  color: #AD6E4A;
+  font-weight: bold;
+}
+
+.parent_container .book .select .amount .btn-pull {
+  color: #AD6E4A;
+  background-color: #0c0d18;
+  font-size: 14px;
+  border: 1px solid #AD6E4A;
+  width: 25px;
+  height: 25px;
+  line-height: 0px;
+  padding-bottom: 1px;
+}
+
+.parent_container .book .select .amount .btn-nu {
+  color: #AD6E4A;
+  background-color: #0c0d18;
+  border: 0px solid #AD6E4A;
+  width: 30px;
+  height: 30px;
+  line-height: 0px;
+  text-align: center;
+  outline: none;
+  padding-left: 12px;
+}
+
+.parent_container .book .btn {
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+  margin-right: 15px;
+}
+
+.parent_container .book .btn .addin {
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  border-radius: 15px;
+  width: 110px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.parent_container .book .btn .addin img.plus {
+  width: 15px;
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  padding-right: 4px;
+}
+
+.parent_container .book .btn .buy {
+  background-color: #AD6E4A;
+  color: #ffffff;
+  padding: 0 8px 0 8px;
 }
 
 .parent_container .comment {
-  width: 53%;
+  width: 50%;
   padding: 20px;
 }
 
@@ -553,6 +699,7 @@ footer .smoke {
 
 .parent_container .recommend {
   margin: 0 auto;
+  padding-bottom: 80px;
 }
 
 .parent_container .recommend h3 {
@@ -607,7 +754,7 @@ footer .smoke {
   text-align: center;
   position: absolute;
   right: 15px;
-  bottom: 20px;
+  bottom: 16px;
 }
 
 .parent_container .recommend .tripcard_all .tripcard .addin2 img.plus {
