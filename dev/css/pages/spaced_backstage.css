@@ -1,0 +1,184 @@
+.wi-2 {
+  width: 2%;
+}
+
+.wi-5 {
+  width: 5%;
+}
+
+.wi-10 {
+  width: 10%;
+}
+
+.wi-15 {
+  width: 15%;
+}
+
+.wi-20 {
+  width: 20%;
+}
+
+.top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #292b41;
+  height: 12vh;
+}
+
+.div-list-btn {
+  background-color: #1d1e2e;
+  width: 85%;
+  height: 50px;
+  font-size: 18px;
+  color: #c9ada7;
+  border: none;
+  outline: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 20px;
+}
+
+.div-list-btn::after {
+  content: url(../../img/date-chevron-down.svg);
+  width: 30px;
+}
+
+.div-list-btn-s {
+  background-color: #242536;
+  width: 100%;
+  height: 50px;
+  font-size: 18px;
+  color: #c9ada7;
+  border: none;
+  outline: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.div-list-btn-a {
+  background-color: #1d1e2e;
+  width: 85%;
+  height: 50px;
+  font-size: 18px;
+  color: #c9ada7;
+  border: none;
+  outline: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 20px;
+}
+
+.btn-updata {
+  background-color: #ad6e4a;
+  color: #fff;
+  width: 80px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+}
+
+.text-1 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.text-2 {
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+}
+
+.div-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 650px;
+}
+
+.div-menu .div-list {
+  background-color: #1d1e2e;
+  width: 250px;
+}
+
+.div-menu .div-right {
+  background-color: #35375a;
+  width: 100%;
+}
+
+.div-menu .div-right .div-right-span-fro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.div-menu .div-right .div-right-span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.div-menu .div-right .div-right-span .span-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fff;
+  height: 25px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+  padding-left: 8px;
+}
+
+.div-menu .div-right .div-right-span .span-1 img {
+  width: 20px;
+  height: 20px;
+}
+
+.div-menu .div-right .div-right-span .span-1 .search1 {
+  border: none;
+  outline: none;
+  height: 25px;
+  border-radius: 5px;
+  color: black;
+  padding-left: 5px;
+}
+/*# sourceMappingURL=spaced_backstage.css.map */
