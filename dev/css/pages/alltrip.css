@@ -612,7 +612,8 @@ div.bk3 {
 
 .second .tripcard_all {
   display: inline-flex;
-  justify-content: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   width: 100%;
 }
 
