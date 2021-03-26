@@ -149,8 +149,7 @@ body {
   max-width: 100px;
   height: 100%;
   max-height: 50px;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 
 .imgsr {
@@ -158,8 +157,7 @@ body {
   max-width: 150px;
   height: auto;
   max-height: 150px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 #paymethod-coin-nu {
@@ -189,11 +187,8 @@ form {
 }
 
 form .orderinfo .container .row {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  justify-content: center;
+  align-content: center;
 }
 
 form .orderinfo .container .row .col-7 {
@@ -222,14 +217,9 @@ form .orderinfo .container .row .col-7 .btn-openmenu::before {
 }
 
 form .orderinfo .container .row .col-7 .row .col-5 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   color: #fff;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 form .orderinfo .container .row .col-7 .row .col-5 input {
@@ -244,15 +234,9 @@ form .orderinfo .container .row .col-7 .row .col-5 input {
 
 form .orderinfo .container .row .col-7 .row .col-11 {
   margin: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: start;
-      align-content: flex-start;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-content: flex-start;
+  flex-direction: column;
   color: white;
 }
 
@@ -266,11 +250,8 @@ form .orderinfo .container .row .col-7 .row .col-11 input {
 }
 
 form .ltineraryinfo .container .row {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  justify-content: center;
+  align-content: center;
 }
 
 form .ltineraryinfo .container .row .col-7 .row {
@@ -280,11 +261,8 @@ form .ltineraryinfo .container .row .col-7 .row {
 }
 
 form .ltineraryinfo .container .row .col-7 .row .col-11 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
   padding: 5% 0;
 }
 
@@ -293,8 +271,7 @@ form .ltineraryinfo .container .row .col-7 .row .col-11 img {
   max-width: 150px;
   height: auto;
   max-height: 90px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 form .ltineraryinfo .container .row .col-7 .row .col-11 .textinfo {
@@ -302,12 +279,8 @@ form .ltineraryinfo .container .row .col-7 .row .col-11 .textinfo {
 }
 
 form .ltineraryinfo .container .row .col-7 .row .col-11 .textinfo .textinfo-1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  align-items: baseline;
   width: 100%;
   height: 100%;
 }
@@ -321,16 +294,13 @@ form .ltineraryinfo .container .row .col-7 .row .col-11 .textinfo .textinfo-1 p 
 form .ltineraryinfo .container .row .col-7 .row .col-11 .textinfo .textinfo-1 p img {
   max-width: 16px;
   height: 16px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   vertical-align: middle;
   padding-bottom: 4px;
 }
 
 form .addPay .container .row {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 form .addPay .container .row .col-7 {
@@ -356,22 +326,14 @@ form .addPay .container .row .col-7 .btn-addPay::before {
 }
 
 form .addPay .container .row .col-7 .automena .row .col-11 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 form .addPay .container .row .col-7 .automena .row .col-11 .traffic-div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-line-pack: start;
-      align-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  align-content: flex-start;
+  align-items: center;
   background-color: #ad6e4a;
   width: 100%;
   border-radius: 5px;
@@ -382,18 +344,12 @@ form .addPay .container .row .col-7 .automena .row .col-11 .traffic-div {
 
 form .addPay .container .row .col-7 .automena .row .col-11 .traffic-div .coin {
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  align-items: flex-end;
 }
 
 form .paymethod .row {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 form .paymethod .row .col-7 .paymethod-automanu .row .col-11 .paymethod-automanu-car-automanu {
@@ -420,12 +376,8 @@ form .paymethod .row .col-7 .paymethod-automanu .row .col-5 input.paymethod-coin
 }
 
 form .paymethod .row .col-7 .paymethod-automanu .row .col-4 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 form .paymethod .row .col-7 .paymethod-automanu .row .col-4 .intput-nu {
@@ -451,23 +403,15 @@ form .paymethod .row .col-7 .btn-paymethod::before {
 }
 
 form .orderDetails .row {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 form .orderDetails .row .allpay-div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 form .orderDetails .row .col-7 .orderDetails-automanu .col-11 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -476,8 +420,6 @@ form .orderDetails .row .col-7 .orderDetails-automanu .col-11 .orderDetails-auto
 }
 
 form .orderDetails .row .col-7 .orderDetails-automanu .col-11 .orderDetails-automanu-textdiv .textbox {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
 }
