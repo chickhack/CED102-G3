@@ -36,10 +36,11 @@ form.post {
   display: block;
 }
 
-.post_text input.texts {
+.post_text textarea.texts {
   outline: none;
   width: 938px;
   height: 200px;
+  resize: none;
 }
 
 div.post form.post div.post_text label.post {

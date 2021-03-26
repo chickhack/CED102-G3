@@ -77,6 +77,7 @@ body {
   color: #C9ADA7;
   font-size: 14px;
   background-color: #0c0d18;
+  overflow-x: hidden;
 }
 
 h1, .h1 {
@@ -439,31 +440,6 @@ footer .smoke {
   height: 80%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-}
-
-.quantity label {
-  display: block;
-}
-
-.quantity .as {
-  color: #AD6E4A;
-}
-
-.quantity .as input[type=number] {
-  max-width: 50px;
-  background-color: transparent;
-  outline: none;
-  border: none;
-  text-align: center;
-  color: #AD6E4A;
-}
-
-.quantity .as span {
-  border: 1px solid #AD6E4A;
-  outline: none;
-  background-color: transparent;
-  padding: 4px 8px;
-  cursor: pointer;
 }
 
 .quantity label {

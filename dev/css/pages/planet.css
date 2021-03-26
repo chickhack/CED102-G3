@@ -77,6 +77,7 @@ body {
   color: #C9ADA7;
   font-size: 14px;
   background-color: #0c0d18;
+  overflow-x: hidden;
 }
 
 h1, .h1 {
@@ -294,49 +295,11 @@ small, .small {
   max-width: 20px;
 }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
-<<<<<<< HEAD
-=======
->>>>>>> kai
-=======
->>>>>>> chickhack
-=======
->>>>>>> kai
->>>>>>> bf8cc00b61f012adc328fdd45e114ac24a2069f7
 .container {
   max-width: 1440px;
   margin: 0 auto;
 }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> kai
-<<<<<<< HEAD
->>>>>>> 207fcd1e44351eec63eaaaa2987e1e8204ee7e60
-=======
-=======
->>>>>>> chickhack
->>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
-=======
->>>>>>> kai
-=======
->>>>>>> chickhack
-=======
->>>>>>> kai
->>>>>>> bf8cc00b61f012adc328fdd45e114ac24a2069f7
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -350,34 +313,7 @@ nav {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   background-color: #0c0d18;
-<<<<<<< HEAD
   position: -webkit-sticky;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
-<<<<<<< HEAD
-  position: -webkit-sticky;
-=======
->>>>>>> kai
-<<<<<<< HEAD
->>>>>>> 207fcd1e44351eec63eaaaa2987e1e8204ee7e60
-=======
-=======
->>>>>>> chickhack
->>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
-=======
->>>>>>> kai
-=======
->>>>>>> chickhack
-=======
->>>>>>> kai
->>>>>>> bf8cc00b61f012adc328fdd45e114ac24a2069f7
   position: sticky;
   top: 0;
   width: 100%;
@@ -502,41 +438,8 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
-<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  transform: translateX(-50%);
-=======
-=======
->>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
-<<<<<<< HEAD
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-=======
-  transform: translateX(-50%);
->>>>>>> kai
-<<<<<<< HEAD
->>>>>>> 207fcd1e44351eec63eaaaa2987e1e8204ee7e60
-=======
-=======
-  transform: translateX(-50%);
->>>>>>> chickhack
->>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
-=======
-  transform: translateX(-50%);
->>>>>>> kai
-=======
-  transform: translateX(-50%);
->>>>>>> chickhack
-=======
-  transform: translateX(-50%);
->>>>>>> bf8cc00b61f012adc328fdd45e114ac24a2069f7
 }
 
 .quantity label {
@@ -562,10 +465,6 @@ footer .smoke {
   background-color: transparent;
   padding: 4px 8px;
   cursor: pointer;
-<<<<<<< HEAD
-=======
->>>>>>> kai
->>>>>>> bf8cc00b61f012adc328fdd45e114ac24a2069f7
 }
 
 body {
@@ -585,106 +484,24 @@ canvas {
 }
 
 .title {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  display: flex;
-  justify-content: center;
-=======
-=======
->>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
-<<<<<<< HEAD
->>>>>>> bf8cc00b61f012adc328fdd45e114ac24a2069f7
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-<<<<<<< HEAD
-=======
-=======
-  display: flex;
-  justify-content: center;
->>>>>>> kai
-<<<<<<< HEAD
->>>>>>> 207fcd1e44351eec63eaaaa2987e1e8204ee7e60
-=======
-=======
-  display: flex;
-  justify-content: center;
->>>>>>> chickhack
->>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
-=======
-  display: flex;
-  justify-content: center;
->>>>>>> kai
-=======
-  display: flex;
-  justify-content: center;
->>>>>>> chickhack
-=======
-  display: flex;
-  justify-content: center;
->>>>>>> kai
->>>>>>> bf8cc00b61f012adc328fdd45e114ac24a2069f7
   padding-top: 100px;
   font-size: 42px;
 }
 
 ul.tab-title {
   padding-top: 50px;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  display: flex;
-  justify-content: center;
-=======
-=======
->>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
-<<<<<<< HEAD
->>>>>>> bf8cc00b61f012adc328fdd45e114ac24a2069f7
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-<<<<<<< HEAD
-=======
-=======
-  display: flex;
-  justify-content: center;
->>>>>>> kai
-<<<<<<< HEAD
->>>>>>> 207fcd1e44351eec63eaaaa2987e1e8204ee7e60
-=======
-=======
-  display: flex;
-  justify-content: center;
->>>>>>> chickhack
->>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
-=======
-  display: flex;
-  justify-content: center;
->>>>>>> kai
-=======
-  display: flex;
-  justify-content: center;
->>>>>>> chickhack
-=======
-  display: flex;
-  justify-content: center;
->>>>>>> kai
->>>>>>> bf8cc00b61f012adc328fdd45e114ac24a2069f7
 }
 
 ul.tab-title li {
@@ -700,56 +517,20 @@ ul.tab-title li.selected {
   border-bottom: 4px solid #AD6E4A;
 }
 
+.saparator {
+  margin: 0 auto;
+  height: 1px;
+  width: 80%;
+  border-top: solid 1px #AD6E4A;
+}
+
 .tab-inner {
-  border-top: 1px solid #AD6E4A;
-<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-=======
->>>>>>> kai
-<<<<<<< HEAD
->>>>>>> 207fcd1e44351eec63eaaaa2987e1e8204ee7e60
-=======
-=======
->>>>>>> chickhack
->>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
-=======
->>>>>>> kai
-=======
->>>>>>> chickhack
-=======
->>>>>>> kai
->>>>>>> bf8cc00b61f012adc328fdd45e114ac24a2069f7
   display: flex;
 }
 
 .tab-inner .intro {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  display: flex;
-  flex-direction: column;
-=======
-=======
->>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
-<<<<<<< HEAD
->>>>>>> bf8cc00b61f012adc328fdd45e114ac24a2069f7
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -757,33 +538,6 @@ ul.tab-title li.selected {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-<<<<<<< HEAD
-=======
-=======
-  display: flex;
-  flex-direction: column;
->>>>>>> kai
-<<<<<<< HEAD
->>>>>>> 207fcd1e44351eec63eaaaa2987e1e8204ee7e60
-=======
-=======
-  display: flex;
-  flex-direction: column;
->>>>>>> chickhack
->>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
-=======
-  display: flex;
-  flex-direction: column;
->>>>>>> kai
-=======
-  display: flex;
-  flex-direction: column;
->>>>>>> chickhack
-=======
-  display: flex;
-  flex-direction: column;
->>>>>>> kai
->>>>>>> bf8cc00b61f012adc328fdd45e114ac24a2069f7
   margin-top: 50px;
   text-align: left;
 }
@@ -795,68 +549,25 @@ ul.tab-title li.selected {
 }
 
 .tab-inner .data {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  display: flex;
-  justify-content: flex-end;
-=======
-=======
->>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
-<<<<<<< HEAD
->>>>>>> bf8cc00b61f012adc328fdd45e114ac24a2069f7
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-<<<<<<< HEAD
-=======
-=======
-  display: flex;
-  justify-content: flex-end;
->>>>>>> kai
-<<<<<<< HEAD
->>>>>>> 207fcd1e44351eec63eaaaa2987e1e8204ee7e60
-=======
-=======
-  display: flex;
-  justify-content: flex-end;
->>>>>>> chickhack
->>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
-=======
-  display: flex;
-  justify-content: flex-end;
->>>>>>> kai
-=======
-  display: flex;
-  justify-content: flex-end;
->>>>>>> chickhack
-=======
-  display: flex;
-  justify-content: flex-end;
->>>>>>> kai
->>>>>>> bf8cc00b61f012adc328fdd45e114ac24a2069f7
-  margin-top: 50px;
+  font-family: Haettenschweiler, sans-serif;
 }
 
 .tab-inner .data .grav {
-  padding: 20px;
+  min-width: 130px;
+  min-height: 130px;
   border: 1px solid #AD6E4A;
 }
 
 .tab-inner .data .day {
-  padding: 20px;
+  min-width: 130px;
   border: 1px solid #AD6E4A;
 }
 
 .tab-inner .data .temp {
-  padding: 20px;
+  min-width: 130px;
   border: 1px solid #AD6E4A;
 }
 
@@ -874,35 +585,6 @@ ul.tab-title li.selected {
 }
 
 .tab-inner .data span.data-low {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> kai
->>>>>>> 207fcd1e44351eec63eaaaa2987e1e8204ee7e60
-  font-size: 24px;
-  font-stretch: narrower;
-}
-
-.tab-inner .data span.data-low {
-  font-size: 24px;
-  font-stretch: narrower;
-}
-
-.tab-inner .data span.data-mid {
-  font-size: 24px;
-}
-
-.tab-inner .data span.data-low {
-=======
->>>>>>> kai
-=======
->>>>>>> chickhack
-=======
->>>>>>> kai
->>>>>>> bf8cc00b61f012adc328fdd45e114ac24a2069f7
   font-size: 24px;
   font-stretch: narrower;
 }
@@ -914,7 +596,6 @@ ul.tab-title li.selected {
 
 .tab-active {
   display: block;
-  margin-top: 100px;
 }
 
 .tab-active .cover_rd {
@@ -926,42 +607,8 @@ ul.tab-title li.selected {
   background-image: url(../../dev/img/planet/crater.jpg);
   background-position: top;
   position: relative;
-<<<<<<< HEAD
   -webkit-transform: translate(-112%, -220%);
           transform: translate(-112%, -220%);
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  transform: translate(-112%, -220%);
-=======
-=======
->>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
-<<<<<<< HEAD
-  -webkit-transform: translate(-112%, -220%);
-          transform: translate(-112%, -220%);
-=======
-  transform: translate(-112%, -220%);
->>>>>>> kai
-<<<<<<< HEAD
->>>>>>> 207fcd1e44351eec63eaaaa2987e1e8204ee7e60
-=======
-=======
-  transform: translate(-112%, -220%);
->>>>>>> chickhack
->>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
-=======
-  transform: translate(-112%, -220%);
->>>>>>> kai
-=======
-  transform: translate(-112%, -220%);
->>>>>>> chickhack
-=======
-  transform: translate(-112%, -220%);
->>>>>>> kai
->>>>>>> bf8cc00b61f012adc328fdd45e114ac24a2069f7
 }
 
 .tab-active .outline {
@@ -970,92 +617,17 @@ ul.tab-title li.selected {
   width: 190px;
   border-radius: 50%;
   position: relative;
-<<<<<<< HEAD
   -webkit-transform: translate(-100%, -100%);
           transform: translate(-100%, -100%);
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  transform: translate(-100%, -100%);
-=======
-=======
->>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
-<<<<<<< HEAD
-  -webkit-transform: translate(-100%, -100%);
-          transform: translate(-100%, -100%);
-=======
-  transform: translate(-100%, -100%);
->>>>>>> kai
-<<<<<<< HEAD
->>>>>>> 207fcd1e44351eec63eaaaa2987e1e8204ee7e60
-=======
-=======
-  transform: translate(-100%, -100%);
->>>>>>> chickhack
->>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
-=======
-  transform: translate(-100%, -100%);
->>>>>>> kai
-=======
-  transform: translate(-100%, -100%);
->>>>>>> chickhack
-=======
-  transform: translate(-100%, -100%);
->>>>>>> kai
->>>>>>> bf8cc00b61f012adc328fdd45e114ac24a2069f7
 }
 
 .tab-active .geoopt {
   position: absolute;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  display: flex;
-  column-gap: 30px;
-=======
-=======
->>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
-<<<<<<< HEAD
->>>>>>> bf8cc00b61f012adc328fdd45e114ac24a2069f7
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-column-gap: 30px;
           column-gap: 30px;
-<<<<<<< HEAD
-=======
-=======
-  display: flex;
-  column-gap: 30px;
->>>>>>> kai
-<<<<<<< HEAD
->>>>>>> 207fcd1e44351eec63eaaaa2987e1e8204ee7e60
-=======
-=======
-  display: flex;
-  column-gap: 30px;
->>>>>>> chickhack
->>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
-=======
-  display: flex;
-  column-gap: 30px;
->>>>>>> kai
-=======
-  display: flex;
-  column-gap: 30px;
->>>>>>> chickhack
-=======
-  display: flex;
-  column-gap: 30px;
->>>>>>> kai
->>>>>>> bf8cc00b61f012adc328fdd45e114ac24a2069f7
   right: 0px;
   top: 700px;
 }
@@ -1078,52 +650,11 @@ ul.tab-title li.selected {
 }
 
 .content {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  display: flex;
-  flex-wrap: wrap;
-=======
-=======
->>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
-<<<<<<< HEAD
->>>>>>> bf8cc00b61f012adc328fdd45e114ac24a2069f7
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-<<<<<<< HEAD
-=======
-=======
-  display: flex;
-  flex-wrap: wrap;
->>>>>>> kai
-<<<<<<< HEAD
->>>>>>> 207fcd1e44351eec63eaaaa2987e1e8204ee7e60
-=======
-=======
-  display: flex;
-  flex-wrap: wrap;
->>>>>>> chickhack
->>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
-=======
-  display: flex;
-  flex-wrap: wrap;
->>>>>>> kai
-=======
-  display: flex;
-  flex-wrap: wrap;
->>>>>>> chickhack
-=======
-  display: flex;
-  flex-wrap: wrap;
->>>>>>> kai
->>>>>>> bf8cc00b61f012adc328fdd45e114ac24a2069f7
 }
 
 .content .imgs {
@@ -1132,18 +663,6 @@ ul.tab-title li.selected {
 }
 
 .content .imgs .img1 {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
-<<<<<<< HEAD
->>>>>>> bf8cc00b61f012adc328fdd45e114ac24a2069f7
   -webkit-transform: translate(10%);
           transform: translate(10%);
 }
@@ -1165,55 +684,6 @@ ul.tab-title li.selected {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> 207fcd1e44351eec63eaaaa2987e1e8204ee7e60
-=======
-=======
->>>>>>> chickhack
->>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
-=======
->>>>>>> kai
-=======
->>>>>>> chickhack
-=======
->>>>>>> kai
-  transform: translate(10%);
-}
-
-.content .imgs .img2 {
-  transform: translateX(-10%);
-}
-
-.content .imgs .img3 {
-  transform: translate(-70%, -350px);
-}
-
-.content .desc {
-  display: flex;
-  align-items: center;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> kai
->>>>>>> 207fcd1e44351eec63eaaaa2987e1e8204ee7e60
-=======
->>>>>>> kai
-=======
->>>>>>> chickhack
->>>>>>> 7b346f229696e078fc3d82172a4412f26eb46f20
-=======
->>>>>>> kai
-=======
->>>>>>> chickhack
-=======
->>>>>>> kai
->>>>>>> bf8cc00b61f012adc328fdd45e114ac24a2069f7
 }
 
 .content .desc p {

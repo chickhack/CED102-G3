@@ -77,6 +77,7 @@ body {
   color: #C9ADA7;
   font-size: 14px;
   background-color: #0c0d18;
+  overflow-x: hidden;
 }
 
 h1, .h1 {
@@ -603,41 +604,46 @@ section.orderer {
 }
 
 section.orderer form {
+  position: relative;
+  padding-bottom: 80px;
+}
+
+section.orderer .orderer_form, section.orderer .recipient, section.orderer .payment {
   width: 95%;
   margin: 32px auto;
   background-color: #292B41;
   padding-bottom: 80px;
-  height: 0;
+  max-height: 0;
   overflow: hidden;
   -webkit-transition: all 1s;
   transition: all 1s;
 }
 
-section.orderer h2 {
+section.orderer .orderer_click, section.orderer .recipient_click, section.orderer .payment_click {
   padding: 16px 0;
   cursor: pointer;
   position: relative;
   left: 6%;
 }
 
-section.orderer h2::before {
+section.orderer .orderer_click::before, section.orderer .recipient_click::before, section.orderer .payment_click::before {
   content: "";
   width: 1px;
   height: 30%;
   background-color: #ffffff;
   position: absolute;
-  left: -30px;
+  left: -3.1%;
   -webkit-transform: rotate(45deg) translateY(-60%);
           transform: rotate(45deg) translateY(-60%);
   top: 50%;
 }
 
-section.orderer h2::after {
+section.orderer .orderer_click::after, section.orderer .recipient_click::after, section.orderer .payment_click::after {
   content: "";
   width: 1px;
   height: 30%;
   background-color: #ffffff;
-  left: -27px;
+  left: -3%;
   position: absolute;
   -webkit-transform: rotate(-45deg) translateY(-60%);
           transform: rotate(-45deg) translateY(-60%);
@@ -659,7 +665,7 @@ section.orderer .info {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 50%;
+  width: 80%;
   margin-left: 6%;
 }
 
@@ -676,7 +682,7 @@ section.orderer .info label {
   display: block;
 }
 
-section.orderer .info input[type="text"] {
+section.orderer .info input {
   color: #ffffff;
   background-color: transparent;
   outline: none;
@@ -687,12 +693,160 @@ section.orderer .info input[type="text"] {
   transition: all .3s;
 }
 
-section.orderer .info input[type="text"]:focus {
+section.orderer .info input:focus {
   background-color: #AD6E4A;
 }
 
 section.orderer .retract {
-  height: 300px;
-  max-height: 300px;
+  max-height: 400px;
+}
+
+section.orderer .payTitle {
+  width: 95%;
+  margin: 0 auto;
+}
+
+section.orderer .input_check {
+  width: 50%;
+  display: inline-block;
+}
+
+section.orderer .input_check .icon {
+  display: inline-block;
+  width: 14px;
+}
+
+section.orderer .input_check .check-custom {
+  opacity: 0;
+  position: absolute;
+}
+
+section.orderer .input_check .check-custom, section.orderer .input_check .check-custom-label {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 5px;
+  cursor: pointer;
+  position: relative;
+}
+
+section.orderer .input_check .check-custom::before, section.orderer .input_check .check-custom-label::before {
+  content: '';
+  background: transparent;
+  border: 2px solid #AD6E4A;
+  display: inline-block;
+  vertical-align: middle;
+  width: 5px;
+  height: 5px;
+  padding: 2px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+section.orderer .input_check .check-custom + .check-custom-label:before {
+  border-radius: 50%;
+}
+
+section.orderer .input_check .check-custom:checked + .check-custom-label:before {
+  background: #AD6E4A;
+  -webkit-box-shadow: inset 0px 0px 0px 4px #AD6E4A;
+          box-shadow: inset 0px 0px 0px 4px #AD6E4A;
+}
+
+section.orderer .input_check .check-custom:focus + .check-custom-label {
+  outline: none;
+  /* focus style */
+}
+
+section.orderer .input_check p {
+  display: inline-block;
+}
+
+section.orderer .input_check p > span {
+  letter-spacing: 3px;
+  font-weight: 900;
+}
+
+section.orderer .discount_group {
+  display: inline-block;
+}
+
+section.orderer .discount_group label, section.orderer .discount_group input {
+  display: inline-block;
+}
+
+section.orderer .discount_group input {
+  width: 30%;
+}
+
+section.orderer .credit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section.orderer .credit .input_check {
+  width: 100%;
+}
+
+section.orderer .credit span {
+  margin: 0 4px;
+}
+
+section.orderer .credit .credit_number, section.orderer .credit .date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  width: 100%;
+  margin-left: 56px;
+}
+
+section.orderer .credit .credit_number div, section.orderer .credit .date div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+section.orderer .credit .credit_number div input, section.orderer .credit .date div input {
+  width: 15%;
+}
+
+section.orderer .credit .credit_number .terms, section.orderer .credit .date .terms {
+  width: 30%;
+}
+
+section.orderer .button_min {
+  background-color: #AD6E4A;
+  color: #ffffff;
+  position: absolute;
+  right: 5%;
+  bottom: 0;
 }
 /*# sourceMappingURL=shop_order.css.map */
