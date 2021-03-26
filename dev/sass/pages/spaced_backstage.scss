@@ -125,16 +125,21 @@
                 img{
                     width: 20px;
                     height: 20px;
+                    padding-right: 5px;
                 }
                 .search1{
                     border: none;
                     outline: none;
+                    width: 0px;
                     height: 25px;
                     border-radius: 5px;
                     color: black;
-                    padding-left: 5px;
+                    transition:all 0.7s;
                 }
-
+                #search1:focus{
+                    width: 200px;
+                   
+                }
              }
         }
         

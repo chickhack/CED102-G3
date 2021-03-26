@@ -26,11 +26,11 @@
 //排行榜縮圖
 .leve{
     width: 60px;
-    height: 60px;
+    // height: 60px;
 }
 .leve-1{
-    width: 55px;
-    height: 55px;
+    width: 50px;
+    // height: 55px;
 }
 .icon-2{
     width: 60px;
@@ -39,8 +39,8 @@
     border-radius: 40px;
 }
 .icon-3{
-    width: 55px;
-    height: 55px;
+    width: 50px;
+    height: 50px;
     object-fit: cover;
     border-radius: 40px;
 }
@@ -61,19 +61,23 @@
 }
 //排行榜內的高度
 .line-he-65{
-    line-height: 65px;
-    height: 65px;
+    // line-height: 65px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    // height: 65px;
 }
 .line-he-85{
     line-height: 85px;
 }
 .line-he-75{
-    line-height: 75px;
+    // line-height: 75px;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 // 分隔線
 .bra-line{
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-    
+    border-bottom: 1px solid rgba(255, 255, 255, 0.089);
+    width: 80%;
 }
 .container{
     .row{

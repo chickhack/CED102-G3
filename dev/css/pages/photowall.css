@@ -10,8 +10,28 @@ body {
 }
 
 .grid {
+<<<<<<< HEAD
   margin: auto;
   max-width: 1440px;
+=======
+  display: flex;
+<<<<<<< HEAD
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+=======
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: start;
+>>>>>>> 3c6831b0fb2aa80e85492fb0021468eacba79fbc
+  padding-top: 5%;
+  font-size: 12px;
+>>>>>>> dev
 }
 
 .grid-item {
@@ -34,8 +54,6 @@ body {
 }
 
 .action-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   bottom: 48px;
   background-color: black;
@@ -61,8 +79,6 @@ body {
 }
 
 .article {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 250px;
 }
@@ -88,8 +104,6 @@ body {
 }
 
 .article_2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-top: 10px;
 }
@@ -109,8 +123,12 @@ body {
 
 .col-md-1 {
   display: inline-block;
+<<<<<<< HEAD
   position: fixed;
   display: none;
+=======
+  position: sticky;
+>>>>>>> dev
   left: 1300px;
   bottom: 120px;
 }

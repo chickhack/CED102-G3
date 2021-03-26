@@ -4,25 +4,17 @@ input::-webkit-inner-spin-button {
 }
 
 #icon-gg {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  justify-content: center;
+  align-content: center;
+  align-items: flex-end;
   padding-bottom: 1.5%;
 }
 
 .icon-g {
   max-width: 30px;
   max-height: 30px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .car-top {
@@ -62,6 +54,7 @@ body {
   color: #fff;
   letter-spacing: 2px;
   font-weight: 500;
+  line-height: 20px;
 }
 
 .p-text-3 {
@@ -76,8 +69,7 @@ body {
   max-width: 150px;
   height: auto;
   max-height: 100px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .btn-date {
@@ -126,17 +118,12 @@ body {
 }
 
 .row {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .row .col-8 .row .col-12 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   padding: 2% 1%;
   border-radius: 5px;
 }
