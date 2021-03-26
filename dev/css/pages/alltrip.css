@@ -660,7 +660,7 @@ div.bk3 {
           justify-content: center;
 =======
   display: inline-flex;
-  justify-content: flex-start;
+  justify-content: center;
   flex-wrap: wrap;
 >>>>>>> 3c6831b0fb2aa80e85492fb0021468eacba79fbc
   width: 100%;
@@ -725,5 +725,18 @@ div.bk3 {
   position: relative;
   top: 2px;
   padding-right: 4px;
+}
+
+.second .tripcard_all .tripcard .trip_bookmark {
+  padding: 8px;
+  position: absolute;
+  right: 10px;
+  top: 220px;
+  width: 25px;
+  height: 25px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
 }
 /*# sourceMappingURL=alltrip.css.map */
