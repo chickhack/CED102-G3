@@ -406,12 +406,18 @@ footer .smoke {
   transform: translateX(-50%);
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
 .container {
   margin: 0 auto;
 }
 
-.swiper-wrapper {
+.swiper-container {
   margin: 0 auto;
+  width: 1120px;
 }
 
 .trippic {
@@ -425,7 +431,6 @@ footer .smoke {
 
 .parent_container .trip_content_all {
   width: 50%;
-  margin: 0 auto;
   display: inline-block;
   vertical-align: top;
   padding: 20px;
@@ -507,7 +512,6 @@ footer .smoke {
   padding: 20px;
   position: sticky;
   top: 20px;
-  left: 0;
   z-index: 2;
   background-color: #0c0d18;
 }
@@ -591,6 +595,7 @@ footer .smoke {
   text-align: center;
   outline: none;
   padding-left: 12px;
+  padding-right: 12px;
 }
 
 .parent_container .book .btn {
@@ -743,6 +748,11 @@ footer .smoke {
   color: #AD6E4A;
   font-weight: bold;
   letter-spacing: 2px;
+  font-family: "Nasalization";
+  padding-left: 5px;
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
 }
 
 .parent_container .recommend .tripcard_all .tripcard .addin2 {
@@ -752,9 +762,6 @@ footer .smoke {
   width: 110px;
   line-height: 26px;
   text-align: center;
-  position: absolute;
-  right: 15px;
-  bottom: 16px;
 }
 
 .parent_container .recommend .tripcard_all .tripcard .addin2 img.plus {

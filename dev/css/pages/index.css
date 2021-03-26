@@ -56,8 +56,7 @@ img {
 *,
 *:before,
 *:after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
   margin: 0;
   padding: 0;
 }
@@ -300,19 +299,11 @@ small, .small {
 }
 
 nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
   background-color: #0c0d18;
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   width: 100%;
@@ -333,18 +324,10 @@ nav .logo h1 a {
 }
 
 nav .nav-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-end;
   width: 60%;
 }
 
@@ -353,17 +336,10 @@ nav .nav-links a {
 }
 
 nav .nav-icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
   width: 12%;
 }
 
@@ -395,28 +371,19 @@ footer .links .logo {
   position: relative;
   left: 50%;
   bottom: 50px;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 footer .links .footer-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
   width: 55%;
   position: relative;
   left: 50%;
   bottom: 30px;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 footer .links .footer-links a {
@@ -427,8 +394,7 @@ footer .footer_moon {
   position: relative;
   left: 50%;
   max-width: 550px;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 footer .smoke {
@@ -437,33 +403,7 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-
-.quantity label {
-  display: block;
-}
-
-.quantity .as {
-  color: #AD6E4A;
-}
-
-.quantity .as input[type=number] {
-  max-width: 50px;
-  background-color: transparent;
-  outline: none;
-  border: none;
-  text-align: center;
-  color: #AD6E4A;
-}
-
-.quantity .as span {
-  border: 1px solid #AD6E4A;
-  outline: none;
-  background-color: transparent;
-  padding: 4px 8px;
-  cursor: pointer;
+  transform: translateX(-50%);
 }
 
 .quantity label {
@@ -495,11 +435,11 @@ nav {
   background-color: transparent;
 }
 
-body {
-  background: -webkit-linear-gradient(bottom, #0c0d18 5%, transparent 75%), url("../../img/home/mainBannerBg.jpg") no-repeat bottom;
-  height: 100vh;
+.banner_bg {
+  background: -webkit-linear-gradient(bottom, #0c0d18 5%, transparent 95%), url("../../img/home/mainBannerBg.jpg") no-repeat;
   background-size: 100%;
   background-position: top;
+  height: 100vh;
 }
 
 .frame {
@@ -508,32 +448,71 @@ body {
 }
 
 .banner .slogan {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 10%;
+  justify-content: center;
+  margin-top: 20vh;
 }
 
 .banner .slogan p {
-  font-size: 100px;
+  font-size: 7rem;
   color: white;
   font-family: "Haettenschweiler", sans-serif;
-  letter-spacing: -2px;
+  letter-spacing: 6px;
 }
 
 .banner .scroll {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .banner .scroll img {
   margin-top: 20%;
+}
+
+.home_intro {
+  margin-top: 15vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.home_intro h2 {
+  text-align: center;
+}
+
+.home_intro h4 {
+  text-align: center;
+}
+
+ul.tab-title a {
+  font-size: 1rem;
+}
+
+.tab-inner {
+  justify-content: center;
+  display: flex;
+}
+
+.tab-inner .tab_intro {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.tab-inner .tab_intro h3 {
+  line-height: 2rem;
+  max-width: 400px;
+}
+
+.tab-inner .data {
+  justify-content: flex-start;
+}
+
+.tab-inner .data p {
+  text-align: center;
+}
+
+.tab-inner .tab-active {
+  display: flex;
+  justify-content: center;
 }
 /*# sourceMappingURL=index.css.map */

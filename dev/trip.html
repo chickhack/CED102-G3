@@ -16,7 +16,7 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- addminus -->
-    <script src="./js/addMinus.js"></script>
+
     <title>火星 | 攀登太陽系第一高山</title>
 </head>
 
@@ -43,7 +43,7 @@
             </div>
         </div>
         <div class="parent_container" id="app">
-            <main class="trip_content_all">
+            <main class="trip_content_all margin_left_3">
                 <div class="h2 trip_title margin_top_2">火星 | 攀登太陽系第一高山
                     <div class="h3 number margin_left_2">{{number}}</div>
                     <img class="bookmark margin_left_2" src="./img/icon/bookmark-outline.png" alt="">
@@ -63,8 +63,8 @@
                             <small class="tag ">初階景點</small>
                             <small class="tag">3000積分</small>
                             <br>
-                            火星 | 攀登太陽系第一高山為為三日行程。<br>
-                            此次旅程將帶您前往不只是火星最高，更是太陽系最高的火山——位於火星西半球、高度21171公尺的奧林帕斯山，一探站在最高峰所望去的景色。
+                            攀登太陽系第一高山為為三日行程。<br>
+                            此次旅程將帶您前往不只是火星最高，更是太陽系最高的火山——位於火星西半球、高度21171公尺的奧林帕斯山，一探站在最高峰所望去的景色。<br>
                             嚮導會與您在塔爾西斯太空站會合，並一同前往奧林帕斯山東北方的一號基地營。<br>
                             從此基地營到山頂的直線距離約是200公里，坡度平均為五度，路面平坦，約可以在兩天內完成。<br>
                             走在我們精心設計的路線上，您會見到兩百萬年前的熔岩流，也可親眼觀察直徑達十公里的隕石坑。
@@ -100,7 +100,7 @@
                     </div>
                 </div>
             </main>
-            <aside class="book margin_left_6 line_low margin_top_5">
+            <aside class="book margin_left_10 line_low margin_top_5">
                 <small class="price_dis">最優價格保證</h4>
                     <h3 class="price">$2000</h3>
                     <p class="margin_top_1 small">SPACED會在預訂成功後的1個工作日內確認，並將使用憑證發送至您的電子郵箱，如在註明的時限內還沒收到郵件，請查看垃圾郵件箱或與我們聯絡。
@@ -113,9 +113,9 @@
                         </div>
                         <div class="amount margin_top_2">
                             <p class="h4 date_text">數量</p>
-                            <button class="btn-pull minus">－</button>
-                            <input type="number" value="1" class="btn-nu p" min="0">
-                            <button class="btn-pull add">＋</button>
+                            <button class="minus btn-pull" id="minus">－</button>
+                            <input type="number" value="1" id="num" class="btn-nu p" min="0">
+                            <button class="add btn-pull" id="add">＋</button>
                         </div>
                     </div>
                     <div class="btn  margin_top_3">
@@ -123,7 +123,7 @@
                         <div class="h4 buy margin_left_3">前往訂購</div>
                     </div>
             </aside>
-            <div class="comment margin_top_10">
+            <div class="comment margin_top_10 margin_left_3">
                 <h3>旅客評論</h3>
                 <div class="score margin_top_1">
                     <p class="h3 number">{{number}}</p>
@@ -162,10 +162,11 @@
                         <img :src="item.spot" class="spot_pic" alt="spot_pic">
                         <div class="content line_low">
                             <h4 class="hot2 margin_top_1">{{item.title}}</h4>
-                            <little class="tag ">{{item.grade}}</little>
-                            <little class="tag">{{item.scores}}積分</little>
+                            <small class="tag ">{{item.grade}}</small>
+                            <small class="tag">{{item.scores}}積分</small>
                             <h4 class="price2 margin_top_1">${{item.price}}</h4>
-                            <div class="addin2 little"><img class="plus" src="./img/icon/plus.png" alt="">加入我的行程</div>
+                            <div class="addin2 samll  margin_top_2"><img class="plus" src="./img/icon/plus.png"
+                                    alt="">加入我的行程</div>
                         </div>
                     </div>
 
@@ -177,8 +178,8 @@
         @@include('./layout/footer.html')
     </footer>
 
-
     <script>
+
         let vm = new Vue({
             el: "#app",
             data: {
@@ -276,6 +277,21 @@
             return direction;
         }
     </script>
+    <script>
+        $('#add').click(function () {
+            let nu = $('#num').val();
+            $('#num').val(++nu);
+        });
+        $('#minus').click(function () {
+            let nu = $('#num').val();
+            if (nu == 0) {
+                return;
+            } else {
+                $('#num').val(--nu);
+            }
+        });
+    </script>
+
 
 </body>
 
