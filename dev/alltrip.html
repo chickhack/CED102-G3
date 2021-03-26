@@ -86,32 +86,10 @@
         <!-- ---------second -->
         <div class="second margin_top_10">
             <h2 class="alltrip">星球景點總覽</h2>
-            <div v-for="item in second" class="tripcardall">
-                <h3 class="padding_top_3 alltrip ">{{item.planet}}景點</h3>
+            <div class="tripcardall">
+                <h3 v-for="item in second" class="padding_top_3 alltrip ">{{item.planet}}景點</h3>
                 <div class="tripcard_all  margin_top_5">
-                    <div class="tripcard">
-                        <img :src="item.spot" class="spot_pic" alt="spot_pic">
-                        <div class="content line_low">
-                            <h4 class="hot2 margin_top_1">{{item.title}}</h4>
-                            <small class="tag">{{item.grade}}</small>
-                            <small class="tag">{{item.scores}}積分</small>
-                            <h3 class="price2 margin_top_2">${{item.price}}</h3>
-                            <div class="addin2 small margin_top_2"><img class="plus" src="./img/icon/plus.png"
-                                    alt="">加入我的行程</div>
-                        </div>
-                    </div>
-                    <div class="tripcard">
-                        <img :src="item.spot" class="spot_pic" alt="spot_pic">
-                        <div class="content line_low">
-                            <h4 class="hot2 margin_top_1">{{item.title}}</h4>
-                            <small class="tag">{{item.grade}}</small>
-                            <small class="tag">{{item.scores}}積分</small>
-                            <h3 class="price2 margin_top_2">${{item.price}}</h3>
-                            <div class="addin2 small margin_top_2"><img class="plus" src="./img/icon/plus.png"
-                                    alt="">加入我的行程</div>
-                        </div>
-                    </div>
-                    <div class="tripcard">
+                    <div v-for="item in spot" class="tripcard">
                         <img :src="item.spot" class="spot_pic" alt="spot_pic">
                         <div class="content line_low">
                             <h4 class="hot2 margin_top_1">{{item.title}}</h4>
@@ -168,26 +146,40 @@
                 ],
                 second: [{
                     planet: "月球",
+                }, {
+                    planet: "火星",
+
+                }, {
+                    planet: "木星",
+
+                },
+                ],
+                spot: [{
                     spot: "./img/trip/trip_mars/mars_c1_ps.png",
                     title: "月球 | 太空體驗一日遊",
                     grade: "初階",
                     scores: "5000",
-                    price: 5000,
+                    price: 1000,
                 }, {
-                    planet: "火星",
                     spot: "./img/trip/trip_mars/mars_c1_ps.png",
                     title: "月球 | 熱氣球一日遊",
                     grade: "初階",
                     scores: "5000",
-                    price: 5000,
+                    price: 2000,
                 }, {
-                    planet: "木星",
                     spot: "./img/trip/trip_mars/mars_c1_ps.png",
                     title: "月球 | 宇宙雨林秘境一日遊",
                     grade: "高階",
                     scores: "5000",
-                    price: 5000,
-                },]
+                    price: 3000,
+                },{
+                    spot: "./img/trip/trip_mars/mars_c1_ps.png",
+                    title: "月球 | 宇宙雨林秘境一日遊",
+                    grade: "高階",
+                    scores: "5000",
+                    price: 4000,
+                },
+                ],
             },
 
 
