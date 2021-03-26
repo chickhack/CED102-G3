@@ -24,12 +24,10 @@
 
 .leve {
   width: 60px;
-  height: 60px;
 }
 
 .leve-1 {
-  width: 55px;
-  height: 55px;
+  width: 50px;
 }
 
 .icon-2 {
@@ -40,8 +38,8 @@
 }
 
 .icon-3 {
-  width: 55px;
-  height: 55px;
+  width: 50px;
+  height: 50px;
   object-fit: cover;
   border-radius: 40px;
 }
@@ -59,8 +57,8 @@
 }
 
 .line-he-65 {
-  line-height: 65px;
-  height: 65px;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 .line-he-85 {
@@ -68,11 +66,13 @@
 }
 
 .line-he-75 {
-  line-height: 75px;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 .bra-line {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.089);
+  width: 80%;
 }
 
 .container .row .col-10 {
