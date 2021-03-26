@@ -313,7 +313,10 @@ nav {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   background-color: #0c0d18;
+<<<<<<< HEAD
   position: -webkit-sticky;
+=======
+>>>>>>> chickhack
   position: sticky;
   top: 0;
   width: 100%;
@@ -438,8 +441,12 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
+<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+=======
+  transform: translateX(-50%);
+>>>>>>> chickhack
 }
 
 .quantity label {
@@ -484,24 +491,34 @@ canvas {
 }
 
 .title {
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+=======
+  display: flex;
+  justify-content: center;
+>>>>>>> chickhack
   padding-top: 100px;
   font-size: 42px;
 }
 
 ul.tab-title {
   padding-top: 50px;
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+=======
+  display: flex;
+  justify-content: center;
+>>>>>>> chickhack
 }
 
 ul.tab-title li {
@@ -525,12 +542,17 @@ ul.tab-title li.selected {
 }
 
 .tab-inner {
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
+=======
+  border-top: 1px solid #AD6E4A;
+>>>>>>> chickhack
   display: flex;
 }
 
 .tab-inner .intro {
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -538,6 +560,10 @@ ul.tab-title li.selected {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+=======
+  display: flex;
+  flex-direction: column;
+>>>>>>> chickhack
   margin-top: 50px;
   text-align: left;
 }
@@ -549,10 +575,16 @@ ul.tab-title li.selected {
 }
 
 .tab-inner .data {
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   font-family: Haettenschweiler, sans-serif;
+=======
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 50px;
+>>>>>>> chickhack
 }
 
 .tab-inner .data .grav {
@@ -607,8 +639,12 @@ ul.tab-title li.selected {
   background-image: url(../../dev/img/planet/crater.jpg);
   background-position: top;
   position: relative;
+<<<<<<< HEAD
   -webkit-transform: translate(-112%, -220%);
           transform: translate(-112%, -220%);
+=======
+  transform: translate(-112%, -220%);
+>>>>>>> chickhack
 }
 
 .tab-active .outline {
@@ -617,17 +653,26 @@ ul.tab-title li.selected {
   width: 190px;
   border-radius: 50%;
   position: relative;
+<<<<<<< HEAD
   -webkit-transform: translate(-100%, -100%);
           transform: translate(-100%, -100%);
+=======
+  transform: translate(-100%, -100%);
+>>>>>>> chickhack
 }
 
 .tab-active .geoopt {
   position: absolute;
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-column-gap: 30px;
           column-gap: 30px;
+=======
+  display: flex;
+  column-gap: 30px;
+>>>>>>> chickhack
   right: 0px;
   top: 700px;
 }
@@ -650,11 +695,16 @@ ul.tab-title li.selected {
 }
 
 .content {
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+=======
+  display: flex;
+  flex-wrap: wrap;
+>>>>>>> chickhack
 }
 
 .content .imgs {
@@ -663,6 +713,7 @@ ul.tab-title li.selected {
 }
 
 .content .imgs .img1 {
+<<<<<<< HEAD
   -webkit-transform: translate(10%);
           transform: translate(10%);
 }
@@ -684,6 +735,22 @@ ul.tab-title li.selected {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+=======
+  transform: translate(10%);
+}
+
+.content .imgs .img2 {
+  transform: translateX(-10%);
+}
+
+.content .imgs .img3 {
+  transform: translate(-70%, -350px);
+}
+
+.content .desc {
+  display: flex;
+  align-items: center;
+>>>>>>> chickhack
 }
 
 .content .desc p {

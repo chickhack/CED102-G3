@@ -56,8 +56,12 @@ img {
 *,
 *:before,
 *:after {
+<<<<<<< HEAD
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
+=======
+  box-sizing: inherit;
+>>>>>>> chickhack
   margin: 0;
   padding: 0;
 }
@@ -77,7 +81,10 @@ body {
   color: #C9ADA7;
   font-size: 14px;
   background-color: #0c0d18;
+<<<<<<< HEAD
   overflow-x: hidden;
+=======
+>>>>>>> chickhack
 }
 
 h1, .h1 {
@@ -301,6 +308,7 @@ small, .small {
 }
 
 nav {
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -314,6 +322,13 @@ nav {
       justify-content: space-around;
   background-color: #0c0d18;
   position: -webkit-sticky;
+=======
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #0c0d18;
+>>>>>>> chickhack
   position: sticky;
   top: 0;
   width: 100%;
@@ -334,6 +349,7 @@ nav .logo h1 a {
 }
 
 nav .nav-links {
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -346,6 +362,12 @@ nav .nav-links {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+=======
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-end;
+>>>>>>> chickhack
   width: 60%;
 }
 
@@ -354,6 +376,7 @@ nav .nav-links a {
 }
 
 nav .nav-icons {
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -365,6 +388,12 @@ nav .nav-icons {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+=======
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+>>>>>>> chickhack
   width: 12%;
 }
 
@@ -396,6 +425,7 @@ footer .links .logo {
   position: relative;
   left: 50%;
   bottom: 50px;
+<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
@@ -412,12 +442,26 @@ footer .links .footer-links {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+=======
+  transform: translateX(-50%);
+}
+
+footer .links .footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+>>>>>>> chickhack
   width: 55%;
   position: relative;
   left: 50%;
   bottom: 30px;
+<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+=======
+  transform: translateX(-50%);
+>>>>>>> chickhack
 }
 
 footer .links .footer-links a {
@@ -428,8 +472,12 @@ footer .footer_moon {
   position: relative;
   left: 50%;
   max-width: 550px;
+<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+=======
+  transform: translateX(-50%);
+>>>>>>> chickhack
 }
 
 footer .smoke {
@@ -438,8 +486,12 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
+<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+=======
+  transform: translateX(-50%);
+>>>>>>> chickhack
 }
 
 .quantity label {
@@ -479,6 +531,7 @@ section.cart form {
 }
 
 section.cart .item {
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -492,6 +545,13 @@ section.cart .item {
       justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+=======
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+>>>>>>> chickhack
   background-color: #292B41;
   padding: 8px 16px;
 }
@@ -504,6 +564,7 @@ section.cart .item .img {
 }
 
 section.cart .item .pdname {
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -514,6 +575,11 @@ section.cart .item .pdname {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
+=======
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+>>>>>>> chickhack
   width: 15%;
 }
 
@@ -533,6 +599,7 @@ section.cart .checkout {
   width: 100%;
   background-color: #292B41;
   position: relative;
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -545,11 +612,18 @@ section.cart .checkout {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+=======
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-end;
+>>>>>>> chickhack
   padding: 16px 0;
   letter-spacing: 3px;
 }
 
 section.cart .checkout .totalPrice {
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -562,6 +636,12 @@ section.cart .checkout .totalPrice {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+=======
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-end;
+>>>>>>> chickhack
 }
 
 section.cart .checkout .totalPrice .h2 {
@@ -570,6 +650,7 @@ section.cart .checkout .totalPrice .h2 {
 }
 
 section.cart .checkout .totalIntegral {
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -582,6 +663,12 @@ section.cart .checkout .totalIntegral {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+=======
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-end;
+>>>>>>> chickhack
 }
 
 section.cart .checkout .button_min {

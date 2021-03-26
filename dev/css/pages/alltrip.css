@@ -313,7 +313,10 @@ nav {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   background-color: #0c0d18;
+<<<<<<< HEAD
   position: -webkit-sticky;
+=======
+>>>>>>> chickhack
   position: sticky;
   top: 0;
   width: 100%;
@@ -438,8 +441,19 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
+<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+=======
+  transform: translateX(-50%);
+}
+
+body {
+  font-family: "Microsoft JhengHei", sans-serif;
+  color: #C9ADA7;
+  background-color: #0c0d18;
+  font-size: 14px;
+>>>>>>> chickhack
 }
 
 div.bk {
@@ -470,6 +484,7 @@ div.bk3 {
 }
 
 .first {
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -477,6 +492,9 @@ div.bk3 {
 
 .first img {
   display: block;
+=======
+  display: flex;
+>>>>>>> chickhack
 }
 
 .first .first_left {
@@ -487,7 +505,20 @@ div.bk3 {
   display: flex;
 }
 
+<<<<<<< HEAD
 .first .first_left h2.title {
+=======
+.first_right {
+  width: 20%;
+  position: relative;
+}
+
+img {
+  display: block;
+}
+
+h2.title {
+>>>>>>> chickhack
   display: inline-block;
   position: relative;
   vertical-align: top;
@@ -576,6 +607,7 @@ div.bk3 {
   text-align: center;
 }
 
+<<<<<<< HEAD
 .first .first_right .hottrip div.planet_top div.word .addin img.plus {
   width: 15px;
   display: inline-block;
@@ -592,6 +624,18 @@ div.bk3 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+=======
+.tripselect {
+  display: inline-flex;
+  width: 280px;
+  justify-content: space-between;
+}
+
+.select {
+  position: relative;
+  bottom: 4px;
+  color: #AD6E4A;
+>>>>>>> chickhack
 }
 
 .first .first_right .tripselect .icon {
@@ -600,21 +644,28 @@ div.bk3 {
   z-index: 2;
 }
 
+<<<<<<< HEAD
 .first .first_right .tripselect .select {
   position: relative;
   bottom: 4px;
   color: #AD6E4A;
 }
 
+=======
+>>>>>>> chickhack
 .stepsection {
   text-align: center;
   background-color: rgba(25, 25, 25, 0.3);
   padding: 48px;
 }
 
+<<<<<<< HEAD
 .stepsection .stepall {
   display: -webkit-box;
   display: -ms-flexbox;
+=======
+.stepall {
+>>>>>>> chickhack
   display: flex;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
@@ -625,9 +676,14 @@ div.bk3 {
   padding: 32px;
 }
 
+<<<<<<< HEAD
 .stepsection .stepall .step {
   position: relative;
   margin: 0 50px 0 50px;
+=======
+.step {
+  position: relative;
+>>>>>>> chickhack
 }
 
 .stepsection .stepall .step img.step_icon {
@@ -655,6 +711,14 @@ div.bk3 {
   padding-right: 8px;
 }
 
+<<<<<<< HEAD
+=======
+.step_content {
+  color: #AD6E4A;
+  font-weight: bold;
+}
+
+>>>>>>> chickhack
 .second {
   margin-bottom: 100px;
 }
@@ -664,6 +728,7 @@ div.bk3 {
   margin: 0 auto;
 }
 
+<<<<<<< HEAD
 .second .tripcard_all {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -671,6 +736,11 @@ div.bk3 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+=======
+.tripcard_all {
+  display: inline-flex;
+  justify-content: center;
+>>>>>>> chickhack
   width: 100%;
 }
 
