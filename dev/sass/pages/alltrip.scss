@@ -191,11 +191,12 @@ div.bk3 {
     }
     .tripcard_all {
         display: inline-flex;
-        justify-content: center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
         width: 100%;
         .tripcard {
             // border: 1px solid white;
-            width: 250px;
+            width:250px;
             background-color: #191919;
             padding: 15px;
             border-radius: 5px;
