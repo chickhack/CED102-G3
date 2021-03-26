@@ -56,8 +56,7 @@ img {
 *,
 *:before,
 *:after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
   margin: 0;
   padding: 0;
 }
@@ -301,22 +300,11 @@ small, .small {
 }
 
 nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
   background-color: #0c0d18;
-<<<<<<< HEAD
-  position: -webkit-sticky;
-=======
->>>>>>> chickhack
   position: sticky;
   top: 0;
   width: 100%;
@@ -337,18 +325,10 @@ nav .logo h1 a {
 }
 
 nav .nav-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-end;
   width: 60%;
 }
 
@@ -357,17 +337,10 @@ nav .nav-links a {
 }
 
 nav .nav-icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
   width: 12%;
 }
 
@@ -399,28 +372,19 @@ footer .links .logo {
   position: relative;
   left: 50%;
   bottom: 50px;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 footer .links .footer-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
   width: 55%;
   position: relative;
   left: 50%;
   bottom: 30px;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 footer .links .footer-links a {
@@ -431,8 +395,7 @@ footer .footer_moon {
   position: relative;
   left: 50%;
   max-width: 550px;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 footer .smoke {
@@ -441,19 +404,7 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
-<<<<<<< HEAD
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-=======
   transform: translateX(-50%);
-}
-
-body {
-  font-family: "Microsoft JhengHei", sans-serif;
-  color: #C9ADA7;
-  background-color: #0c0d18;
-  font-size: 14px;
->>>>>>> chickhack
 }
 
 div.bk {
@@ -484,41 +435,20 @@ div.bk3 {
 }
 
 .first {
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .first img {
   display: block;
-=======
-  display: flex;
->>>>>>> chickhack
 }
 
 .first .first_left {
   padding-left: 100px;
   width: 35%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
-<<<<<<< HEAD
 .first .first_left h2.title {
-=======
-.first_right {
-  width: 20%;
-  position: relative;
-}
-
-img {
-  display: block;
-}
-
-h2.title {
->>>>>>> chickhack
   display: inline-block;
   position: relative;
   vertical-align: top;
@@ -537,8 +467,6 @@ h2.title {
 }
 
 .first .first_right .hottrip {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   overflow: hidden;
   max-width: 800px;
@@ -556,8 +484,7 @@ h2.title {
   position: absolute;
   top: 15px;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 .first .first_right .hottrip div.planet_top img.planet_a1 {
@@ -568,8 +495,7 @@ h2.title {
   position: absolute;
   top: 190px;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   text-align: center;
   margin: 0 auto;
 }
@@ -579,8 +505,6 @@ h2.title {
 }
 
 .first .first_right .hottrip div.planet_top div.word .tag {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   border: 1px solid #C9ADA7;
   border-radius: 5px;
@@ -607,7 +531,6 @@ h2.title {
   text-align: center;
 }
 
-<<<<<<< HEAD
 .first .first_right .hottrip div.planet_top div.word .addin img.plus {
   width: 15px;
   display: inline-block;
@@ -617,25 +540,9 @@ h2.title {
 }
 
 .first .first_right .tripselect {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  width: 280px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-=======
-.tripselect {
   display: inline-flex;
   width: 280px;
   justify-content: space-between;
-}
-
-.select {
-  position: relative;
-  bottom: 4px;
-  color: #AD6E4A;
->>>>>>> chickhack
 }
 
 .first .first_right .tripselect .icon {
@@ -644,46 +551,28 @@ h2.title {
   z-index: 2;
 }
 
-<<<<<<< HEAD
 .first .first_right .tripselect .select {
   position: relative;
   bottom: 4px;
   color: #AD6E4A;
 }
 
-=======
->>>>>>> chickhack
 .stepsection {
   text-align: center;
   background-color: rgba(25, 25, 25, 0.3);
   padding: 48px;
 }
 
-<<<<<<< HEAD
 .stepsection .stepall {
-  display: -webkit-box;
-  display: -ms-flexbox;
-=======
-.stepall {
->>>>>>> chickhack
   display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: baseline;
+  justify-content: center;
   padding: 32px;
 }
 
-<<<<<<< HEAD
 .stepsection .stepall .step {
   position: relative;
   margin: 0 50px 0 50px;
-=======
-.step {
-  position: relative;
->>>>>>> chickhack
 }
 
 .stepsection .stepall .step img.step_icon {
@@ -711,14 +600,6 @@ h2.title {
   padding-right: 8px;
 }
 
-<<<<<<< HEAD
-=======
-.step_content {
-  color: #AD6E4A;
-  font-weight: bold;
-}
-
->>>>>>> chickhack
 .second {
   margin-bottom: 100px;
 }
@@ -728,19 +609,9 @@ h2.title {
   margin: 0 auto;
 }
 
-<<<<<<< HEAD
 .second .tripcard_all {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-=======
-.tripcard_all {
   display: inline-flex;
   justify-content: center;
->>>>>>> chickhack
   width: 100%;
 }
 
@@ -763,8 +634,6 @@ h2.title {
 }
 
 .second .tripcard_all .tripcard .tag {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   border: 1px solid #C9ADA7;
   border-radius: 5px;

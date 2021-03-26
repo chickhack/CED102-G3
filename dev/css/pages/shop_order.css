@@ -56,12 +56,7 @@ img {
 *,
 *:before,
 *:after {
-<<<<<<< HEAD
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
-=======
   box-sizing: inherit;
->>>>>>> chickhack
   margin: 0;
   padding: 0;
 }
@@ -81,10 +76,7 @@ body {
   color: #C9ADA7;
   font-size: 14px;
   background-color: #0c0d18;
-<<<<<<< HEAD
   overflow-x: hidden;
-=======
->>>>>>> chickhack
 }
 
 h1, .h1 {
@@ -308,27 +300,11 @@ small, .small {
 }
 
 nav {
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  background-color: #0c0d18;
-  position: -webkit-sticky;
-=======
   display: flex;
   justify-content: center;
   align-items: center;
   justify-content: space-around;
   background-color: #0c0d18;
->>>>>>> chickhack
   position: sticky;
   top: 0;
   width: 100%;
@@ -349,25 +325,10 @@ nav .logo h1 a {
 }
 
 nav .nav-links {
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-=======
   display: flex;
   justify-content: center;
   align-items: center;
   justify-content: flex-end;
->>>>>>> chickhack
   width: 60%;
 }
 
@@ -376,24 +337,10 @@ nav .nav-links a {
 }
 
 nav .nav-icons {
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-=======
   display: flex;
   justify-content: center;
   align-items: center;
   justify-content: space-around;
->>>>>>> chickhack
   width: 12%;
 }
 
@@ -425,24 +372,6 @@ footer .links .logo {
   position: relative;
   left: 50%;
   bottom: 50px;
-<<<<<<< HEAD
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-
-footer .links .footer-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-=======
   transform: translateX(-50%);
 }
 
@@ -451,17 +380,11 @@ footer .links .footer-links {
   justify-content: center;
   align-items: center;
   justify-content: space-around;
->>>>>>> chickhack
   width: 55%;
   position: relative;
   left: 50%;
   bottom: 30px;
-<<<<<<< HEAD
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-=======
   transform: translateX(-50%);
->>>>>>> chickhack
 }
 
 footer .links .footer-links a {
@@ -472,12 +395,7 @@ footer .footer_moon {
   position: relative;
   left: 50%;
   max-width: 550px;
-<<<<<<< HEAD
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-=======
   transform: translateX(-50%);
->>>>>>> chickhack
 }
 
 footer .smoke {
@@ -486,12 +404,7 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
-<<<<<<< HEAD
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-=======
   transform: translateX(-50%);
->>>>>>> chickhack
 }
 
 .quantity label {
@@ -533,48 +446,19 @@ section.orderDetail .order {
 section.orderDetail .order li {
   font-weight: 900;
   background-color: #292B41;
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-=======
   display: flex;
   justify-content: center;
   align-items: center;
   justify-content: space-between;
->>>>>>> chickhack
   padding: 8px 16px;
 }
 
 section.orderDetail .order li .imgWord {
   width: 45%;
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-=======
   display: flex;
   justify-content: center;
   align-items: center;
   justify-content: space-around;
->>>>>>> chickhack
 }
 
 section.orderDetail .order li .imgWord .prod {
@@ -584,54 +468,13 @@ section.orderDetail .order li .imgWord .prod {
 }
 
 section.orderDetail .order li .imgWord .integral {
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-=======
   display: flex;
   justify-content: center;
   align-items: center;
->>>>>>> chickhack
 }
 
 section.orderDetail .order li .quantity {
   width: 45%;
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-section.orderDetail .detail {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-=======
   display: flex;
   justify-content: center;
   align-items: center;
@@ -643,30 +486,15 @@ section.orderDetail .detail {
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
->>>>>>> chickhack
   padding: 16px 6% 16px 0;
   background-color: #292B41;
 }
 
 section.orderDetail .detail .total, section.orderDetail .detail .integral {
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-=======
   display: flex;
   justify-content: center;
   align-items: center;
   justify-content: space-around;
->>>>>>> chickhack
   width: 40%;
 }
 
@@ -676,21 +504,9 @@ section.orderDetail .detail .total p:nth-child(2), section.orderDetail .detail .
 }
 
 section.orderDetail .detail .total > .count, section.orderDetail .detail .integral > .count {
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-=======
   display: flex;
   justify-content: center;
   align-items: center;
->>>>>>> chickhack
 }
 
 section.orderDetail .detail small {
@@ -703,108 +519,56 @@ section.orderer {
 }
 
 section.orderer form {
-<<<<<<< HEAD
   position: relative;
   padding-bottom: 80px;
 }
 
 section.orderer .orderer_form, section.orderer .recipient, section.orderer .payment {
-=======
->>>>>>> chickhack
   width: 95%;
   margin: 32px auto;
   background-color: #292B41;
   padding-bottom: 80px;
-<<<<<<< HEAD
   max-height: 0;
   overflow: hidden;
-  -webkit-transition: all 1s;
   transition: all 1s;
 }
 
 section.orderer .orderer_click, section.orderer .recipient_click, section.orderer .payment_click {
-=======
-  height: 0;
-  overflow: hidden;
-  transition: all 1s;
-}
-
-section.orderer h2 {
->>>>>>> chickhack
   padding: 16px 0;
   cursor: pointer;
   position: relative;
   left: 6%;
 }
 
-<<<<<<< HEAD
 section.orderer .orderer_click::before, section.orderer .recipient_click::before, section.orderer .payment_click::before {
-=======
-section.orderer h2::before {
->>>>>>> chickhack
   content: "";
   width: 1px;
   height: 30%;
   background-color: #ffffff;
   position: absolute;
-<<<<<<< HEAD
   left: -3.1%;
-  -webkit-transform: rotate(45deg) translateY(-60%);
-          transform: rotate(45deg) translateY(-60%);
-  top: 50%;
-}
-
-section.orderer .orderer_click::after, section.orderer .recipient_click::after, section.orderer .payment_click::after {
-=======
-  left: -30px;
   transform: rotate(45deg) translateY(-60%);
   top: 50%;
 }
 
-section.orderer h2::after {
->>>>>>> chickhack
+section.orderer .orderer_click::after, section.orderer .recipient_click::after, section.orderer .payment_click::after {
   content: "";
   width: 1px;
   height: 30%;
   background-color: #ffffff;
-<<<<<<< HEAD
   left: -3%;
   position: absolute;
-  -webkit-transform: rotate(-45deg) translateY(-60%);
-          transform: rotate(-45deg) translateY(-60%);
-=======
-  left: -27px;
-  position: absolute;
   transform: rotate(-45deg) translateY(-60%);
->>>>>>> chickhack
   top: 50%;
 }
 
 section.orderer .info {
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 80%;
-=======
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 50%;
->>>>>>> chickhack
+  width: 80%;
   margin-left: 6%;
 }
 
@@ -821,34 +585,21 @@ section.orderer .info label {
   display: block;
 }
 
-<<<<<<< HEAD
 section.orderer .info input {
-=======
-section.orderer .info input[type="text"] {
->>>>>>> chickhack
   color: #ffffff;
   background-color: transparent;
   outline: none;
   border: 1px solid #AD6E4A;
   padding: 5px 10px;
   width: 100%;
-<<<<<<< HEAD
-  -webkit-transition: all .3s;
   transition: all .3s;
 }
 
 section.orderer .info input:focus {
-=======
-  transition: all .3s;
-}
-
-section.orderer .info input[type="text"]:focus {
->>>>>>> chickhack
   background-color: #AD6E4A;
 }
 
 section.orderer .retract {
-<<<<<<< HEAD
   max-height: 400px;
 }
 
@@ -899,8 +650,7 @@ section.orderer .input_check .check-custom + .check-custom-label:before {
 
 section.orderer .input_check .check-custom:checked + .check-custom-label:before {
   background: #AD6E4A;
-  -webkit-box-shadow: inset 0px 0px 0px 4px #AD6E4A;
-          box-shadow: inset 0px 0px 0px 4px #AD6E4A;
+  box-shadow: inset 0px 0px 0px 4px #AD6E4A;
 }
 
 section.orderer .input_check .check-custom:focus + .check-custom-label {
@@ -930,19 +680,10 @@ section.orderer .discount_group input {
 }
 
 section.orderer .credit {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 section.orderer .credit .input_check {
@@ -954,35 +695,19 @@ section.orderer .credit span {
 }
 
 section.orderer .credit .credit_number, section.orderer .credit .date {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  justify-content: center;
+  align-items: center;
+  justify-content: start;
   width: 100%;
   margin-left: 56px;
 }
 
 section.orderer .credit .credit_number div, section.orderer .credit .date div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  justify-content: center;
+  align-items: center;
+  justify-content: start;
 }
 
 section.orderer .credit .credit_number div input, section.orderer .credit .date div input {
@@ -999,9 +724,5 @@ section.orderer .button_min {
   position: absolute;
   right: 5%;
   bottom: 0;
-=======
-  height: 300px;
-  max-height: 300px;
->>>>>>> chickhack
 }
 /*# sourceMappingURL=shop_order.css.map */
