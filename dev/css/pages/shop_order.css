@@ -56,12 +56,8 @@ img {
 *,
 *:before,
 *:after {
-<<<<<<< HEAD
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
-=======
-  box-sizing: inherit;
->>>>>>> dev
   margin: 0;
   padding: 0;
 }
@@ -305,7 +301,6 @@ small, .small {
 }
 
 nav {
-<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -319,13 +314,6 @@ nav {
       justify-content: space-around;
   background-color: #0c0d18;
   position: -webkit-sticky;
-=======
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
-  background-color: #0c0d18;
->>>>>>> dev
   position: sticky;
   top: 0;
   width: 100%;
@@ -337,7 +325,7 @@ nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-  background-image: url("../img/logo.png");
+  background-image: url("../../img/logo.png");
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -346,7 +334,6 @@ nav .logo h1 a {
 }
 
 nav .nav-links {
-<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -359,12 +346,6 @@ nav .nav-links {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-=======
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: flex-end;
->>>>>>> dev
   width: 60%;
 }
 
@@ -373,7 +354,6 @@ nav .nav-links a {
 }
 
 nav .nav-icons {
-<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -385,12 +365,6 @@ nav .nav-icons {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-=======
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
->>>>>>> dev
   width: 12%;
 }
 
@@ -422,7 +396,6 @@ footer .links .logo {
   position: relative;
   left: 50%;
   bottom: 50px;
-<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
@@ -439,26 +412,12 @@ footer .links .footer-links {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-=======
-  transform: translateX(-50%);
-}
-
-footer .links .footer-links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
->>>>>>> dev
   width: 55%;
   position: relative;
   left: 50%;
   bottom: 30px;
-<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-=======
-  transform: translateX(-50%);
->>>>>>> dev
 }
 
 footer .links .footer-links a {
@@ -469,12 +428,8 @@ footer .footer_moon {
   position: relative;
   left: 50%;
   max-width: 550px;
-<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-=======
-  transform: translateX(-50%);
->>>>>>> dev
 }
 
 footer .smoke {
@@ -483,12 +438,8 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
-<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-=======
-  transform: translateX(-50%);
->>>>>>> dev
 }
 
 .quantity label {
@@ -530,7 +481,6 @@ section.orderDetail .order {
 section.orderDetail .order li {
   font-weight: 900;
   background-color: #292B41;
-<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -543,18 +493,11 @@ section.orderDetail .order li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-=======
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-between;
->>>>>>> dev
   padding: 8px 16px;
 }
 
 section.orderDetail .order li .imgWord {
   width: 45%;
-<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -566,12 +509,6 @@ section.orderDetail .order li .imgWord {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-=======
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
->>>>>>> dev
 }
 
 section.orderDetail .order li .imgWord .prod {
@@ -581,7 +518,6 @@ section.orderDetail .order li .imgWord .prod {
 }
 
 section.orderDetail .order li .imgWord .integral {
-<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -591,16 +527,10 @@ section.orderDetail .order li .imgWord .integral {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-=======
-  display: flex;
-  justify-content: center;
-  align-items: center;
->>>>>>> dev
 }
 
 section.orderDetail .order li .quantity {
   width: 45%;
-<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -628,25 +558,11 @@ section.orderDetail .detail {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-=======
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
-}
-
-section.orderDetail .detail {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
->>>>>>> dev
   padding: 16px 6% 16px 0;
   background-color: #292B41;
 }
 
 section.orderDetail .detail .total, section.orderDetail .detail .integral {
-<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -658,12 +574,6 @@ section.orderDetail .detail .total, section.orderDetail .detail .integral {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-=======
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
->>>>>>> dev
   width: 40%;
 }
 
@@ -673,7 +583,6 @@ section.orderDetail .detail .total p:nth-child(2), section.orderDetail .detail .
 }
 
 section.orderDetail .detail .total > .count, section.orderDetail .detail .integral > .count {
-<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -683,11 +592,6 @@ section.orderDetail .detail .total > .count, section.orderDetail .detail .integr
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-=======
-  display: flex;
-  justify-content: center;
-  align-items: center;
->>>>>>> dev
 }
 
 section.orderDetail .detail small {
@@ -711,6 +615,7 @@ section.orderer .orderer_form, section.orderer .recipient, section.orderer .paym
   padding-bottom: 80px;
   max-height: 0;
   overflow: hidden;
+  -webkit-transition: all 1s;
   transition: all 1s;
 }
 
@@ -727,18 +632,9 @@ section.orderer .orderer_click::before, section.orderer .recipient_click::before
   height: 30%;
   background-color: #ffffff;
   position: absolute;
-<<<<<<< HEAD
   left: -3.1%;
   -webkit-transform: rotate(45deg) translateY(-60%);
           transform: rotate(45deg) translateY(-60%);
-=======
-<<<<<<< HEAD
-  left: -3.1%;
-=======
-  left: -30px;
->>>>>>> kai
-  transform: rotate(45deg) translateY(-60%);
->>>>>>> dev
   top: 50%;
 }
 
@@ -749,17 +645,12 @@ section.orderer .orderer_click::after, section.orderer .recipient_click::after, 
   background-color: #ffffff;
   left: -3%;
   position: absolute;
-<<<<<<< HEAD
   -webkit-transform: rotate(-45deg) translateY(-60%);
           transform: rotate(-45deg) translateY(-60%);
-=======
-  transform: rotate(-45deg) translateY(-60%);
->>>>>>> dev
   top: 50%;
 }
 
 section.orderer .info {
-<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -775,18 +666,6 @@ section.orderer .info {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 80%;
-=======
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: space-between;
-<<<<<<< HEAD
-  width: 80%;
-=======
-  width: 50%;
->>>>>>> kai
->>>>>>> dev
   margin-left: 6%;
 }
 
@@ -810,10 +689,7 @@ section.orderer .info input {
   border: 1px solid #AD6E4A;
   padding: 5px 10px;
   width: 100%;
-<<<<<<< HEAD
   -webkit-transition: all .3s;
-=======
->>>>>>> dev
   transition: all .3s;
 }
 
@@ -872,7 +748,8 @@ section.orderer .input_check .check-custom + .check-custom-label:before {
 
 section.orderer .input_check .check-custom:checked + .check-custom-label:before {
   background: #AD6E4A;
-  box-shadow: inset 0px 0px 0px 4px #AD6E4A;
+  -webkit-box-shadow: inset 0px 0px 0px 4px #AD6E4A;
+          box-shadow: inset 0px 0px 0px 4px #AD6E4A;
 }
 
 section.orderer .input_check .check-custom:focus + .check-custom-label {
@@ -902,10 +779,19 @@ section.orderer .discount_group input {
 }
 
 section.orderer .credit {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 section.orderer .credit .input_check {
@@ -917,19 +803,35 @@ section.orderer .credit span {
 }
 
 section.orderer .credit .credit_number, section.orderer .credit .date {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   width: 100%;
   margin-left: 56px;
 }
 
 section.orderer .credit .credit_number div, section.orderer .credit .date div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
 }
 
 section.orderer .credit .credit_number div input, section.orderer .credit .date div input {

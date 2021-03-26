@@ -181,6 +181,7 @@
   height: 25px;
   border-radius: 5px;
   color: black;
+  -webkit-transition: all 0.7s;
   transition: all 0.7s;
 }
 

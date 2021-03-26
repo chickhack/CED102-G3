@@ -56,17 +56,8 @@ img {
 *,
 *:before,
 *:after {
-<<<<<<< HEAD
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
-=======
-<<<<<<< HEAD
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
-=======
-  box-sizing: inherit;
->>>>>>> 3c6831b0fb2aa80e85492fb0021468eacba79fbc
->>>>>>> dev
   margin: 0;
   padding: 0;
 }
@@ -310,10 +301,6 @@ small, .small {
 }
 
 nav {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> dev
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -327,16 +314,6 @@ nav {
       justify-content: space-around;
   background-color: #0c0d18;
   position: -webkit-sticky;
-<<<<<<< HEAD
-=======
-=======
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
-  background-color: #0c0d18;
->>>>>>> 3c6831b0fb2aa80e85492fb0021468eacba79fbc
->>>>>>> dev
   position: sticky;
   top: 0;
   width: 100%;
@@ -348,7 +325,7 @@ nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-  background-image: url("../img/logo.png");
+  background-image: url("../../img/logo.png");
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -357,10 +334,6 @@ nav .logo h1 a {
 }
 
 nav .nav-links {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> dev
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -373,15 +346,6 @@ nav .nav-links {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-<<<<<<< HEAD
-=======
-=======
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: flex-end;
->>>>>>> 3c6831b0fb2aa80e85492fb0021468eacba79fbc
->>>>>>> dev
   width: 60%;
 }
 
@@ -390,10 +354,6 @@ nav .nav-links a {
 }
 
 nav .nav-icons {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> dev
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -405,15 +365,6 @@ nav .nav-icons {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-<<<<<<< HEAD
-=======
-=======
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
->>>>>>> 3c6831b0fb2aa80e85492fb0021468eacba79fbc
->>>>>>> dev
   width: 12%;
 }
 
@@ -445,10 +396,6 @@ footer .links .logo {
   position: relative;
   left: 50%;
   bottom: 50px;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> dev
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
@@ -465,34 +412,12 @@ footer .links .footer-links {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-<<<<<<< HEAD
-=======
-=======
-  transform: translateX(-50%);
-}
-
-footer .links .footer-links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
->>>>>>> 3c6831b0fb2aa80e85492fb0021468eacba79fbc
->>>>>>> dev
   width: 55%;
   position: relative;
   left: 50%;
   bottom: 30px;
-<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-=======
-<<<<<<< HEAD
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-=======
-  transform: translateX(-50%);
->>>>>>> 3c6831b0fb2aa80e85492fb0021468eacba79fbc
->>>>>>> dev
 }
 
 footer .links .footer-links a {
@@ -503,17 +428,8 @@ footer .footer_moon {
   position: relative;
   left: 50%;
   max-width: 550px;
-<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-=======
-<<<<<<< HEAD
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-=======
-  transform: translateX(-50%);
->>>>>>> 3c6831b0fb2aa80e85492fb0021468eacba79fbc
->>>>>>> dev
 }
 
 footer .smoke {
@@ -522,17 +438,8 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
-<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-=======
-<<<<<<< HEAD
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-=======
-  transform: translateX(-50%);
->>>>>>> 3c6831b0fb2aa80e85492fb0021468eacba79fbc
->>>>>>> dev
 }
 
 .quantity label {
@@ -572,10 +479,6 @@ section.cart form {
 }
 
 section.cart .item {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> dev
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -589,16 +492,6 @@ section.cart .item {
       justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-<<<<<<< HEAD
-=======
-=======
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
-  flex-wrap: wrap;
->>>>>>> 3c6831b0fb2aa80e85492fb0021468eacba79fbc
->>>>>>> dev
   background-color: #292B41;
   padding: 8px 16px;
 }
@@ -611,7 +504,6 @@ section.cart .item .img {
 }
 
 section.cart .item .pdname {
-<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -622,11 +514,6 @@ section.cart .item .pdname {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
-=======
-  display: flex;
-  flex-direction: column;
-  align-items: start;
->>>>>>> dev
   width: 15%;
 }
 
@@ -646,7 +533,6 @@ section.cart .checkout {
   width: 100%;
   background-color: #292B41;
   position: relative;
-<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -659,18 +545,11 @@ section.cart .checkout {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-=======
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: flex-end;
->>>>>>> dev
   padding: 16px 0;
   letter-spacing: 3px;
 }
 
 section.cart .checkout .totalPrice {
-<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -683,12 +562,6 @@ section.cart .checkout .totalPrice {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-=======
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: flex-end;
->>>>>>> dev
 }
 
 section.cart .checkout .totalPrice .h2 {
@@ -697,7 +570,6 @@ section.cart .checkout .totalPrice .h2 {
 }
 
 section.cart .checkout .totalIntegral {
-<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -710,12 +582,6 @@ section.cart .checkout .totalIntegral {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-=======
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: flex-end;
->>>>>>> dev
 }
 
 section.cart .checkout .button_min {
