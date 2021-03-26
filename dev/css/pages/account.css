@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -112,8 +113,8 @@ small, .small {
 }
 
 @font-face {
-  font-family: "Microsoft JhengHei",  "Nasalization";
-  src: local("./fonts/msjh.ttc"), local("./fonts/msjhbd.ttc"), local("./fonts/HATTEN.TTF"), local("./fonts/Nasa.ttf");
+  font-family: "Microsoft JhengHei",  "Nasalization", "adobe-std-b";
+  src: local("./fonts/msjh.ttc"), local("./fonts/msjhbd.ttc"), local("./fonts/HATTEN.TTF"), local("./fonts/Nasa.ttf"), local("./fonts/adobe-std-b.otf");
 }
 
 .padding_left_1 {
@@ -305,6 +306,10 @@ nav {
   align-items: center;
   justify-content: space-around;
   background-color: #0c0d18;
+<<<<<<< HEAD
+  position: -webkit-sticky;
+=======
+>>>>>>> 3c6831b0fb2aa80e85492fb0021468eacba79fbc
   position: sticky;
   top: 0;
   width: 100%;
@@ -404,47 +409,268 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
+<<<<<<< HEAD
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.quantity label {
+  display: block;
+}
+
+.quantity .as {
+  color: #AD6E4A;
+}
+
+.quantity .as input[type=number] {
+  max-width: 50px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  text-align: center;
+  color: #AD6E4A;
+}
+
+.quantity .as span {
+  border: 1px solid #AD6E4A;
+  outline: none;
+  background-color: transparent;
+  padding: 4px 8px;
+  cursor: pointer;
+=======
   transform: translateX(-50%);
+>>>>>>> 3c6831b0fb2aa80e85492fb0021468eacba79fbc
 }
 
 body {
   background-color: #0c0d18;
 }
 
+<<<<<<< HEAD
+/* 歡迎會員 字體大小、字型位置 */
+.welcome {
+  padding: 15vh 250px 0px 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+=======
 .wellcome {
   padding: 80px 80px 0px 80px;
   display: flex;
   align-items: center;
   /* justify-content:center; */
+>>>>>>> 3c6831b0fb2aa80e85492fb0021468eacba79fbc
 }
 
 .spacedinfo {
-  font-size: 20px;
-  font-family: "Haettenschweiler", "Microsoft JhengHei", sans-serif;
   line-height: 30px;
-  letter-spacing: 2px;
+}
+
+p {
+  float: left;
+}
+
+.account_hi, .account_logo {
+  font-size: 20px;
+}
+
+.account_hi, .account_acnum {
+  font-family: "Microsoft JhengHei";
+}
+
+.account_logo, .account_numlogo {
+  font-family: "Nasalization";
+  letter-spacing: 5px;
+}
+
+.account_num {
+  font-family: "adobe-std-b";
+  letter-spacing: 3px;
+}
+
+.account_numlogo, .account_acnum, .account_num {
+  font-size: 14px;
+  color: #ffff;
 }
 
 img.account_levimg {
   max-width: 55px;
-  padding-left: 10px;
+  padding-left: 20px;
 }
 
-.account {
+/* 會員卡片 */
+.account_card {
   border: 1px solid #AD6E4A;
   background-color: #292b41;
-  margin: 25px 80px 0px 80px;
+  margin: 30px 250px 0px 250px;
+  padding: 30px;
+  border-radius: 10px;
 }
 
-.account_card {
-  padding: 20px;
+/* 會員卡片內容 */
+.account_now {
+  /* border: 1px solid red; */
 }
 
 .your_lev {
-  font-size: 20px;
-  font-family: "Haettenschweiler", "Microsoft JhengHei", sans-serif;
+  /* border: 1px solid red; */
 }
 
+/* 目前累積等級、星球、景點、宇宙幣 */
+img.littleline {
+  max-width: 50%;
+}
+
+.lev_name, .account_total, .account_money {
+  font-family: "Microsoft JhengHei";
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.account_total, .account_money {
+  color: #ffffff;
+}
+
+.accnum {
+  font-family: "Nasalization";
+}
+
+.accmoney {
+  font-family: "adobe-std-b";
+  letter-spacing: 2px;
+}
+
+/*  12個月內累積 */
+.lev_acc {
+  font-family: "Microsoft JhengHei";
+  letter-spacing: 2px;
+  margin-top: 30px;
+  margin-left: 75px;
+  margin-bottom: 20px;
+  /* border: 1px solid red; */
+}
+
+img.nowlev, img.nextlev {
+  max-width: 50%;
+}
+
+.account_rocket {
+  max-width: 5%;
+}
+
+.next_rocket {
+  margin-left: -50px;
+  margin-top: 60px;
+}
+
+.your_acc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.now_lev {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* justify-content: left; */
+}
+
+.next_lev {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* justify-content: right; */
+}
+
+p.nextacc, p.nowacc {
+  float: left;
+  letter-spacing: 1px;
+  line-height: 20px;
+  font-family: "Microsoft JhengHei";
+  font-size: 14px;
+}
+
+/* 會員menu */
+.account_nav {
+  margin: 50px 200px 0px 200px;
+}
+
+.account_nav a {
+  color: #C9ADA7;
+}
+
+.account_nav a:hover {
+  color: #AD6E4A;
+  border-bottom: 2px solid #AD6E4A;
+}
+
+.account_line {
+  margin: 0px 200px 0px 200px;
+  /* border: 0.5px solid #AD6E4A; */
+  color: #AD6E4A;
+}
+
+/* 會員資料 */
+.info {
+  margin-top: 1px;
+  padding: 30px 280px 10px 280px;
+  height: auto;
+  background-color: #3a3a3c;
+  opacity: 0.6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.infoimg {
+  max-width: 100px;
+}
+
+.info_form {
+  padding: 30px 50px 30px 50px;
+}
+
+.form-group,
+label {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.infobtn {
+  margin: 30px;
+  color: #ffff;
+  border: 1px solid #AD6E4A;
+  background: none;
+}
+
+.infobtn:hover {
+  color: #ffff;
+  border: 1px solid #AD6E4A;
+  background: #AD6E4A;
+}
+
+/* footer */
 footer {
   padding-top: 100px;
 }
