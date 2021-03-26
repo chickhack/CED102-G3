@@ -112,13 +112,8 @@ small, .small {
 }
 
 @font-face {
-<<<<<<< HEAD
   font-family: "Microsoft JhengHei",  "Nasalization", "adobe-std-b";
   src: local("./fonts/msjh.ttc"), local("./fonts/msjhbd.ttc"), local("./fonts/HATTEN.TTF"), local("./fonts/Nasa.ttf"), local("./fonts/adobe-std-b.otf");
-=======
-  font-family: "Microsoft JhengHei",  "Nasalization";
-  src: local("./fonts/msjh.ttc"), local("./fonts/msjhbd.ttc"), local("./fonts/HATTEN.TTF"), local("./fonts/Nasa.ttf");
->>>>>>> dev
 }
 
 .padding_left_1 {
@@ -444,8 +439,6 @@ footer .smoke {
   height: 80%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-<<<<<<< HEAD
-=======
 }
 
 .quantity label {
@@ -471,43 +464,17 @@ footer .smoke {
   background-color: transparent;
   padding: 4px 8px;
   cursor: pointer;
-}
-
-.quantity label {
-  display: block;
-}
-
-.quantity .as {
-  color: #AD6E4A;
-}
-
-.quantity .as input[type=number] {
-  max-width: 50px;
-  background-color: transparent;
-  outline: none;
-  border: none;
-  text-align: center;
-  color: #AD6E4A;
-}
-
-.quantity .as span {
-  border: 1px solid #AD6E4A;
-  outline: none;
-  background-color: transparent;
-  padding: 4px 8px;
-  cursor: pointer;
->>>>>>> dev
 }
 
 nav {
   background-color: transparent;
 }
 
-body {
-  background: -webkit-linear-gradient(bottom, #0c0d18 5%, transparent 75%), url("../../img/home/mainBannerBg.jpg") no-repeat bottom;
-  height: 100vh;
+.banner_bg {
+  background: -webkit-linear-gradient(bottom, #0c0d18 5%, transparent 95%), url("../../img/home/mainBannerBg.jpg") no-repeat;
   background-size: 100%;
   background-position: top;
+  height: 100vh;
 }
 
 .frame {
@@ -522,14 +489,14 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 10%;
+  margin-top: 20vh;
 }
 
 .banner .slogan p {
-  font-size: 100px;
+  font-size: 7rem;
   color: white;
   font-family: "Haettenschweiler", sans-serif;
-  letter-spacing: -2px;
+  letter-spacing: 6px;
 }
 
 .banner .scroll {
@@ -543,5 +510,72 @@ body {
 
 .banner .scroll img {
   margin-top: 20%;
+}
+
+.home_intro {
+  margin-top: 15vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.home_intro h2 {
+  text-align: center;
+}
+
+.home_intro h4 {
+  text-align: center;
+}
+
+ul.tab-title a {
+  font-size: 1rem;
+}
+
+.tab-inner {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tab-inner .tab_intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+}
+
+.tab-inner .tab_intro h3 {
+  line-height: 2rem;
+  max-width: 400px;
+}
+
+.tab-inner .data {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.tab-inner .data p {
+  text-align: center;
+}
+
+.tab-inner .tab-active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=index.css.map */

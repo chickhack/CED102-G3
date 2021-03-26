@@ -8,219 +8,13 @@
   <!-- 引用的css -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/all.css">
+  <!-- <link rel="stylesheet" href="./css/all.css"> -->
   <link rel="stylesheet" href="./css/pages/account.css">
   <title>會員</title>
 </head>
 
 <style>
-  @import "../reset";
 
-  body {
-    background-color: #0c0d18;
-  }
-
-  /* 歡迎會員 字體大小、字型位置 */
-  .wellcome {
-    padding: 15vh 250px 0px 250px;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-  }
-
-  .spacedinfo {
-    line-height: 30px;
-  }
-
-  p {
-    float: left;
-  }
-
-  .account_hi,
-  .account_logo {
-    font-size: 20px;
-  }
-
-  .account_hi,
-  .account_acnum {
-    font-family: "Microsoft JhengHei";
-  }
-
-  .account_logo,
-  .account_numlogo {
-    font-family: "Nasalization";
-    letter-spacing: 5px;
-  }
-
-  .account_num {
-    font-family: "adobe-std-b";
-    letter-spacing: 3px;
-  }
-
-  .account_numlogo,
-  .account_acnum,
-  .account_num {
-    font-size: 14px;
-    color: #ffff;
-  }
-
-  img.account_levimg {
-    max-width: 55px;
-    padding-left: 20px;
-  }
-
-  /* 會員卡片 */
-  .account_card {
-    border: 1px solid #AD6E4A;
-    background-color: #292b41;
-    margin: 30px 250px 0px 250px;
-    padding: 30px;
-    border-radius: 10px;
-  }
-
-  /* 會員卡片內容 */
-  .account_now {
-    /* border: 1px solid red; */
-  }
-
-  .your_lev {
-    /* border: 1px solid red; */
-  }
-
-  /* 目前累積等級、星球、景點、宇宙幣 */
-  img.littleline {
-    max-width: 50%;
-  }
-
-  .lev_name,
-  .account_total,
-  .account_money {
-    font-family: "Microsoft JhengHei";
-    font-size: 14px;
-    letter-spacing: 1px;
-  }
-
-  .account_total,
-  .account_money {
-    color: #ffffff;
-  }
-
-  .accnum {
-    font-family: "Nasalization";
-  }
-
-  .accmoney {
-    font-family: "adobe-std-b";
-    letter-spacing: 2px;
-  }
-
-  /*  12個月內累積 */
-  .lev_acc {
-    font-family: "Microsoft JhengHei";
-    letter-spacing: 2px;
-    margin-top: 30px;
-    margin-left: 75px;
-    margin-bottom: 20px;
-    /* border: 1px solid red; */
-  }
-
-  img.nowlev,
-  img.nextlev {
-    max-width: 50%;
-  }
-
-  .account_rocket {
-    max-width: 5%;
-  }
-
-  .next_rocket {
-    margin-left: -50px;
-    margin-top: 60px;
-  }
-
-  .your_acc {
-    display: flex;
-  }
-
-  .now_lev {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* justify-content: left; */
-  }
-
-  .next_lev {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* justify-content: right; */
-  }
-
-  p.nextacc,
-  p.nowacc {
-    float: left;
-    letter-spacing: 1px;
-    line-height: 20px;
-  }
-
-  /* 會員menu */
-  .account_nav {
-    margin: 50px 200px 0px 200px;
-  }
-
-  .account_nav a {
-    color: #C9ADA7;
-  }
-
-  .account_nav a:hover {
-    color: #AD6E4A;
-    border-bottom: 2px solid #AD6E4A;
-  }
-
-  .account_line {
-    margin: 0px 200px 0px 200px;
-    /* border: 0.5px solid #AD6E4A; */
-    color: #AD6E4A;
-  }
-
-  /* 會員資料 */
-  .info {
-    margin-top: 1px;
-    padding: 30px 280px 10px 280px;
-    height: auto;
-    background-color: #3a3a3c;
-    opacity: 0.6;
-    display: flex;
-  }
-  .infoimg{
-    max-width: 100px;
-  }
-  .info_form{
-    padding: 30px 50px 30px 50px;
-  }
-  .form-group, label{
-    margin-top: 5px;
-    margin-bottom: 5px;
-  }
-  .infobtn {
-
-  }
-  .infobtn {
-    margin: 30px;
-    color: #ffff;
-    border: 1px solid #AD6E4A;
-    background: none;
-  }
-  .infobtn:hover {
-    color: #ffff;
-    border: 1px solid #AD6E4A;
-    background: #AD6E4A;
-  }
-
-  /* footer */
-  footer {
-    padding-top: 100px;
-  }
 </style>
 
 <body>
@@ -228,7 +22,7 @@
     @@include('./layout/header.html')
   </header>
 
-  <div class="wellcome">
+  <div class="welcome">
     <div class="spacedinfo">
       <p class="account_hi">嗨，</p>
       <p class="account_logo">SPACED!</p><br>
@@ -247,8 +41,8 @@
             <div class="col col-md-auto lev_name">冒險者</div>
             <div class="col-md-auto"><img class="littleline" src="../dev/img/icon/littleline.png" alt=""></div>
             <div class="col account_total">累積旅行
-              <span class="accnum">3</span>顆星球、
-              <span class="accnum">5</span>個景點
+              <span class="accnum">3 </span>顆星球、
+              <span class="accnum">5 </span>個景點
             </div>
             <div class="col col-md-auto account_money">目前持有
               <span class="accmoney"> 1,099,999 </span>宇宙幣
@@ -270,7 +64,7 @@
           <div class="next_rocket"><img class="account_rocket" src="../dev/img/icon/rocket4.png" alt="rocket"></div>
           <div class="next_lev align-items-center">
             <img class="nextlev" src="../dev/img/icon/天星者.png" alt="lev"><br>
-            <p class="nextacc">目前尚需80,000積分</p>
+            <p class="nextacc">目前尚需 80,000 積分</p>
             <p class="nextacc">才能升級至初星者</p>
           </div>
         </div>
@@ -299,6 +93,7 @@
     </li>
   </ul>
   <hr class="account_line">
+
 
   <div class="info">
 
