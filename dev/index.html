@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="./css/pages/planet.css"></link>
     <link rel="stylesheet" href="./css/pages/alltrip.css"></link>
     <link rel="stylesheet" href="./css/pages/index.css"></link>
-    
+
     <!-- canvas -->
   </head>
   <body>
@@ -60,21 +60,21 @@
           </div>
         </div>
 <!-- 精選景點 -->
-        <div class="hottrip margin_top_7">
+        <!-- <div class="hottrip margin_top_7">
           <div v-for="item in top" class="planet_top margin_left_3">
               <img :src="item.planet" class="planet" alt="planet">
               <img :src="item.spot" class="planet_a1" alt="planettrip">
               <div class="word line_low ">
                   <h3 class="hot">{{item.title}}</h3>
-                  <h3>{{item.name}}</h3>
+                  <h3>{{item.name}}</h3> -->
                   <!-- <img :src="item.star" class="star margin_top_1" alt="star"> -->
-                  <little class="tag margin_top_3">{{item.grade}}</little>
+                  <!-- <little class="tag margin_top_3">{{item.grade}}</little>
                   <little class="tag">{{item.scores}}積分</little>
                   <h4 class="price">${{item.price}}</h4>
                   <div class="addin little"><img class="plus" src="./img/icon/plus.png" alt="">加入我的行程</div>
               </div>
           </div>
-        </div>
+        </div> -->
 <!-- 星球百科 -->
         <div class="container">
           <ul class="tab-title col-12">
@@ -86,7 +86,7 @@
             <li><a href="#tab04">木星</a></li>
             <li><a href="#tab04">木星</a></li>
           </ul>
-          <div class="saparator col-10"></div>
+          <div class="separator col-10"></div>
           <div id="tab01" class="col-12 tab-inner">
               <div class="tab_intro margin_top_6">
                 <h2>火星</h2>
@@ -124,11 +124,88 @@
         </div>
 
 <!-- 商城 -->
-        <div class="home_shop">
-          <mdb-view hover src="https://mdbootstrap.com/img/Photos/Horizontal/People/6-col/img%20(7).jpg" alt="">
-            <mdb-mask flex-center overlay="gold-slight" text="Super light overlay" />
-          </mdb-view>
-        </div>
+      <div class="container">
+        <div class="home_shop margin_top_10">
+          <h2>星球商城</h2>
+          <div class="shopItem margin_top_10">
+            <!-- 第一個商品 -->
+            <div class="item1 col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <div class="hovereffect">
+                <img class="img-responsive" src="img/home/shop_1.jpeg" alt="">
+                <div class="overlay">
+                  <h2><a href="#">商品內容</a></h2> 
+                </div>
+              </div>
+            </div>
+            <!-- 第二個商品 -->
+            <div class="item2 col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <div class="hovereffect">
+                <img class="img-responsive " src="img/home/shop_2.jpeg" alt="">
+                <div class="overlay">
+                  <h2><a href="#">商品內容</a></h2> 
+                </div>
+              </div>
+            </div>
+            <!-- 第三個商品 -->
+            <div class="item3 col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <div class="hovereffect">
+                <img class="img-responsive" src="img/home/shop_5.jpeg" style="width:450px;" alt="">
+                <div class="overlay">
+                  <h2><a href="#">商品內容</a></h2> 
+                </div>
+              </div>
+            </div>
+            <!-- 第四個商品 -->
+            <div class="item4 col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <div class="hovereffect">
+                <img class="img-responsive" src="img/home/shop_6.jpeg" alt="">
+                <div class="overlay">
+                  <h2><a href="#">商品內容</a></h2> 
+                </div>
+              </div>
+            </div>
+            <!-- 第五個商品 -->
+            <div class="item5 col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <div class="hovereffect">
+                <img class="img-responsive" src="img/home/shop_4.jpeg" alt="">
+                <div class="overlay">
+                  <h2><a href="#">商品內容</a></h2> 
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="button button_min">去逛逛</div>
+        </div>   
+
+<!-- 會員待遇 -->
+          <div class="flow_member margin_top_10 ">
+            <h2 align="center">歡迎加入太空世界</h2>
+            <h3 class="margin_top_3" align="center">加入會員，享受禮遇，與所有玩家同遊宇宙</h3>
+              <div class="flowall margin_top_8">
+                <div class="flow margin_left_5">
+                    <img src="./img/icon/ribbon.png" class="step_icon" alt="icon">
+                    <h4 class="flowTitle margin_top_2">會員分級</h4>
+                    <div class="separator margin_top_2"></div>
+                    <h4 class="margin_top_2">累積積分 會員升級<br>享受更多特殊禮遇</h4>
+                </div>
+
+                <div class="flow margin_left_5">
+                    <img src="./img/icon/ranking.png" class="step_icon" alt="icon">
+                    <h4 class="flowTitle margin_top_2">積分排行</h4>
+                    <div class="separator margin_top_2"></div>
+                    <h4 class="margin_top_2">每月排行 挑戰排行</h4>
+                </div>
+
+                <div class="flow margin_left_5">
+                    <img src="./img/icon/post.png" class="step_icon" alt="icon">
+                    <h4 class="flowTitle margin_top_2">太空互動</h4>
+                    <div class="separator margin_top_2"></div>
+                    <h4 class="margin_top_2">玩家分享 互相交流<br>看看別人怎麼玩</h4>
+                </div>
+              </div>
+              <div class="button button_min margin_top_10" >加入會員</div>
+          </div>
+      </div>
 <!-- 框框 -->
       </div> 
 
@@ -151,43 +228,6 @@
             });
       });
     </script>
-    <!-- 星球 -->
-    <script>
-      let vm = new Vue({
-          el: "#app",
-          data: {
-              top: [{
-                  planet: "./img/trip/jupiter.png",
-                  spot: "./img/trip/trip_jupiter/jupiter_top_a_ps.png",
-                  title: "熱門星球",
-                  name: "木星 | 冰層探索一日遊",
-                  star: "./img/icon/star.png",
-                  grade: "初階",
-                  scores: "3000",
-                  price: 5000,
 
-              }, {
-                  planet: "./img/trip/mars.png",
-                  spot: "./img/trip/trip_mars/mars_top_a1_ps.jpg.png",
-                  title: "進階景點",
-                  name: "火星 | 攀登太陽系第一高山",
-                  star: "./img/icon/star.png",
-                  grade: "高階",
-                  scores: "5000",
-                  price: 5000,
-
-              }, {
-                  planet: "./img/trip/moon.png",
-                  spot: "./img/trip/trip_moon/moon_top_a1_ps.png",
-                  title: "新景點",
-                  name: "月球 | 太空體驗一日遊",
-                  star: "./img/icon/star.png",
-                  grade: "初階",
-                  scores: "3000",
-                  price: 5000,
-              }],
-          }
-      });
-    </script>
   </body>
 </html>
