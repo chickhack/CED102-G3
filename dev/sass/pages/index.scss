@@ -83,6 +83,85 @@ ul.tab-title {
     justify-content: center;
     }
 }
+//============互動牆
+.gallery{
+    .box{
+        display: flex;
+    }
+
+    .topleft{
+        // background-color: green;
+        display: flex;
+        flex-direction: row;
+        max-height: 500px;
+        align-items: flex-end;
+        .A{
+            // border: 1px solid white;
+            background-image: url('../../img/home/首頁-互動牆壁2.jpg');
+            height: 310px;
+            background-size: 120%;
+        }
+        .B{
+            // border: 1px solid white;
+            background-image: url('../../img/home/首頁-互動牆壁9.jpg');
+            background-repeat: no-repeat;
+            height: 450px;
+            background-position: center;
+            background-size: 400%;
+        }
+    }
+    .topright{
+        // background-color: orange;
+        display: flex;
+        flex-direction: column;
+        .topSct{
+            display: flex;
+            justify-content: space-around;
+        }
+        button.btn{
+            background-color: transparent;
+            color: $gold;
+            border: 1px solid $gold;
+        }
+        .galleryIntro{
+            display: flex;
+            justify-content: center;
+            h5{
+                max-width: 500px;
+                line-height: 2rem;
+            }
+        }
+    }
+    .bottomleft{
+        display: flex;
+        flex-direction: row;
+        max-height: 500px;
+        .D{
+            // border: 1px solid white;
+            background-image: url('../../img/home/首頁-互動牆壁2.jpg');
+            height: 310px;
+            background-size: 120%;;
+        }
+        .E{
+            // border: 1px solid white;
+            background-image: url('../../img/home/mars2.jpg');
+            background-repeat: no-repeat;
+            height: 450px;
+            background-position: right;
+            background-size: 300%;
+
+        }
+    }
+    .bottomright{
+        .F{
+            background-image: url('../../img/home/首頁-互動牆壁8.jpg');
+            background-repeat: no-repeat;
+            height: 310px;
+            background-position: center;
+            background-size: 100%;
+        }
+    }
+}
 
 
 //============商城圖片
