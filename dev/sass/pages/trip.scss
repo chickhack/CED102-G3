@@ -38,7 +38,7 @@ input::-webkit-inner-spin-button {
             justify-content: flex-start;
             width: 100%;
             font-weight: bold;
-
+            position: relative;
             .number {
                 background-color: $gold;
                 padding: 8px;
@@ -46,8 +46,9 @@ input::-webkit-inner-spin-button {
 
             .bookmark {
                 width: 25px;
-                position: relative;
-                top: 6px;
+                position: absolute;
+                top: 5px;
+                right: 6px;
                 text-align: end;
             }
         }
@@ -101,7 +102,6 @@ input::-webkit-inner-spin-button {
         }
     }
 
-
     .book {
         width: 30%;
         display: inline-block;
@@ -112,6 +112,10 @@ input::-webkit-inner-spin-button {
         top: 20px;
         z-index: 2;
         background-color: $darkblue;
+
+        h3 {
+            font-weight: bold;
+        }
 
         .price_dis {
             color: $gray;
@@ -204,6 +208,15 @@ input::-webkit-inner-spin-button {
                 }
 
             }
+        }
+
+        .total {
+            color: $gold;
+            text-align: right;
+            padding-right: 16px;
+            font-weight: bold;
+            font-family: "Nasalization";
+            letter-spacing: 2px;
         }
 
         .btn {
