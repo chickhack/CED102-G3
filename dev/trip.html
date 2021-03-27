@@ -43,10 +43,11 @@
             </div>
         </div>
         <div class="parent_container" >
+            <div class="up_container">
             <main class="trip_content_all margin_left_3">
                 <div class="h2 trip_title margin_top_2">火星 | 攀登太陽系第一高山
                     <div class="h3 number margin_left_2">{{number}}</div>
-                    <img class="bookmark margin_left_2" src="./img/icon/bookmark-outline.png" alt="">
+                    <img class="bookmark" src="./img/icon/bookmark-outline.png" alt="">
                 </div>
                 <div class="tab_container">
                     <div class="tab_list_block margin_top_3">
@@ -100,15 +101,16 @@
                     </div>
                 </div>
             </main>
-            <aside class="book margin_left_10 line_low margin_top_5">
+            <div class="book margin_left_10 line_low margin_top_5">
+                <h3>火星 | 攀登太陽系第一高山</h3>
                 <small class="price_dis">最優價格保證</h4>
-                    <h3 class="price">$2000</h3>
+                    <h3 class="price">$2000 / 人</h3>
                     <p class="margin_top_1 small">SPACED會在預訂成功後的1個工作日內確認，並將使用憑證發送至您的電子郵箱，如在註明的時限內還沒收到郵件，請查看垃圾郵件箱或與我們聯絡。
                     </p>
                     <hr class="margin_top_2">
                     <div class="select">
                         <div class="date margin_top_2">
-                            <label for="date-1" class="h4 date_text">選擇日期</label><br>
+                            <label for="date-1" class="h4 date_text">選擇出發日期</label><br>
                             <input type="date" id="date-1" class="btn-date data-down">
                         </div>
                         <div class="amount margin_top_2">
@@ -118,11 +120,13 @@
                             <button class="add btn-pull" id="add">＋</button>
                         </div>
                     </div>
-                    <div class="btn  margin_top_3">
+                    <div class="total margin_top_2 h3">總計$2000</div>
+                    <div class="btn  margin_top_2">
                         <div class="addin small"><img class="plus" src="./img/icon/plus.png" alt="">加入我的行程</div>
                         <div class="h4 buy margin_left_3">前往訂購</div>
                     </div>
-            </aside>
+
+            </div>
             <div class="comment margin_top_10 margin_left_3">
                 <h3>旅客評論</h3>
                 <div class="score margin_top_1">
@@ -154,6 +158,7 @@
                     </li>
                 </ul>
             </div>
+        </div>
             <div class="recommend">
                 <h3 class="margin_top_10 alltrip ">其他推薦景點</h3>
                 <div class="tripcard_all  margin_top_5">
@@ -179,7 +184,7 @@
     </footer>
 
     <script>
-
+// ----vue
         let vm = new Vue({
             el: "#app",
             data: {
@@ -221,13 +226,7 @@
                     grade: "高階",
                     scores: "5000",
                     price: 5000,
-                }, {
-                    spot: "./img/trip/trip_mars/mars_c1_ps.png",
-                    title: "月球 | 宇宙雨林秘境一日遊",
-                    grade: "高階",
-                    scores: "5000",
-                    price: 5000,
-                },],
+                }, ],
                 computed: {
                     subContent() {
                         if (this.content.length > 20) {
@@ -240,7 +239,7 @@
             },
         })
 
-
+// ----頁籤
         $(function () {
             $("a.tab").on("click", function (e) {
                 e.preventDefault();
@@ -256,7 +255,9 @@
         });
 
 
+// ----輪播
         var swiper = new Swiper('.swiper-container', {
+            autoplay : 500,
             slidesPerView: 2.2,
             direction: getDirection(),
             navigation: {
@@ -277,6 +278,7 @@
             return direction;
         }
     </script>
+<!-- ----加減 -->
     <script>
         $('#add').click(function () {
             let nu = $('#num').val();
