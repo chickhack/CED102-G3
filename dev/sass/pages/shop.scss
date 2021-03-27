@@ -5,8 +5,29 @@ section.shop{
     margin: 0 40px;
     text-align: center;
     color: $white;
-    h3{
-        font-weight: 300;
+    @include respond(mobile){
+        margin: 0;
+    }
+    .banner{
+        margin: 0 auto;
+        background-image: url("../../img/shop/banner.jpg");
+        background-repeat: no-repeat;
+        width: 100%;    
+        padding-top: 20%;
+        position: relative;
+        @include respond(mobile){
+            padding-top: 50%;
+        }
+        h4{
+            @include absolute_middle();
+            top: 40%;
+            @include respond(mobile){
+                font-size: .8rem;
+                width: 80%;
+                top: 50%;
+                margin: 0;
+            }
+        }
     }
     .btn{
         cursor: pointer;
@@ -14,16 +35,27 @@ section.shop{
     .shopAll{
         @include flex_middle();
         align-items: start;
+        flex-wrap: wrap;
         .aside{
-            width: 20%;
-            // position: sticky;
-            top: 15vh;
+            width: 30%;
+            // max-width: 250px;
+            position: sticky;
+            top: 18vh;
             left: 0;
-            margin-top: 88px;
+            margin-top: 40px;
+            @include respond(pad){
+                width: 35%;
+            }
+            @include respond(mobile){
+                top: 0;
+                width: 80%;
+                position: relative;
+            }
             // border: 1px solid #fff;
-            li{
+            p{
                 border: 1px solid $pink;
-                padding: 16px 0;
+                // max-width: 400px;
+                padding: 20px 0;
                 background-color: #292B41;
                 border: none;
                 background-image: url("../../img/shop/arrow-right.png");
@@ -31,30 +63,64 @@ section.shop{
                 background-position: right 20px center;
                 background-size: 10px;
             }
+            .choose{
+                max-height: 0;
+                // display: none;
+                overflow: hidden;
+                transition: all .5s linear;
+                li{
+                    padding: 16px 0;
+                    transition: all .3s;
+                    text-align: center;
+                    width: 100%;
+                    background-color: $gold;
+                    &:hover{
+                        background-color: lighten($gold, 10%);
+                    }
+                }
+            }
+            .chooseShow{
+                max-height: 400px;
+                transition: all 1.5s linear;
+            }
         }
         .main{
-            width: 68%;
-            // border: 1px solid $pink;
-            .chooseBtn{
-                display: flex;
-                justify-content: space-around;
-                .btn{
-                    border: 1px solid $gold;
-                    padding: 16px 0;
-                    width: 150px;
-                }
+            width: 70%;
+            @include respond(pad){
+                width: 60%;
+            }
+            @include respond(mobile){
+                width: 80%;
             }
             .productAll{
                 letter-spacing: 5px;
-                margin-bottom: 100px;
+                @include respond(pad){
+                    margin-left: 24px;
+                }
+                @include respond(mobile){
+                    margin-left: 0px;
+                }
                 ul{
                     display: flex;
                     justify-content: space-between;
                     align-items: start;
                     flex-wrap: wrap;
+                    @include respond(pad){
+                        align-items: center;
+                        justify-content: space-between;
+                    }
+                    @include respond(mobile){
+                        justify-content: center;
+                    }
                     // border: 1px solid $pink;
                     li{
                         width: 30%;
+                        @include respond(pad){
+                            width: 45%;
+                        }
+                        @include respond(mobile){
+                            width: 100%;
+                        }
                         // border: 1px solid #fff;
                         a{
                             padding: 10px 0 10px 0;
@@ -83,4 +149,5 @@ section.shop{
         }
     }
 }
+
 

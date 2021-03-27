@@ -12,26 +12,25 @@
     <div class="container">
         @@include('./layout/header.html')
         <section class="shop">
-            <h4 class="margin_top_5">在這裡可滿足你上外太空的一切需求 !</h3>
-            <div class="shopAll margin_top_5">
-                <div class="aside">
-                    <ul>
-                        <li class="btn">裝備</li>
-                        <li class="btn">甜點</li>
-                        <li class="btn">紀念品</li>
-                        <li class="btn">交通工具</li>
-                        <li class="btn">其他</li>
-                    </ul>
-                </div>
-                <div class="main">
-                    <ul class="chooseBtn margin_left_5">
-                        <li class="btn margin_left_1">新品</li>
-                        <li class="btn margin_left_1">熱門</li>
-                        <li class="btn margin_left_1">紀念品</li>
-                        <li class="btn margin_left_1">交通工具</li>
-                        <li class="btn margin_left_1">其他</li>
-                    </ul>
-                    <div id="app">
+            <div class="banner">
+                 <h4 class="margin_top_5">在這裡可滿足你上外太空的一切需求 !</h4>
+            </div>
+            <div id="app">
+                <div class="shopAll">
+                    <div class="aside">
+                        <ul>
+                            <li class="btn" v-for="i in categories">
+                                <p @click="upDown">{{i.cate}}</p>
+                                <div class="choose">
+                                    <ul>
+                                        <li>選項一</li>
+                                        <li>選項二</li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="main">
                         <div class="productAll margin_left_5">
                             <ul>
                                 <li v-for="item in products" class="margin_top_5">
@@ -59,6 +58,33 @@
         let vm = new Vue({
             el: "#app",
             data: {
+                categories:[{
+                    cate: "裝備",
+                    options: {
+                        one: "選項一",
+                        two: "選項二"
+                    }},{
+                    cate: "甜點",
+                    options: {
+                        one: "選項一",
+                        two: "選項二"
+                    }},{
+                    cate: "紀念品",
+                    options: {
+                        one: "選項一",
+                        two: "選項二"
+                    }},{
+                    cate: "交通工具",
+                    options: {
+                        one: "選項一",
+                        two: "選項二"
+                    }},{
+                    cate: "其他",
+                    options: {
+                        one: "選項一",
+                        two: "選項二"
+                    }
+                }],
                 products: [{
                     img: "./img/shop/shoes.png",
                     name: "宇宙平衡鞋",
@@ -104,8 +130,28 @@
                     name: "太空衣",
                     price: 10000,
                     cart: "./img/shop/cart.png",
-                },]
-            }
+                },{
+                    img: "./img/shop/shoes.png",
+                    name: "宇宙平衡鞋",
+                    price: 5000,
+                    cart: "./img/shop/cart.png",
+                },{
+                    img: "./img/shop/shoes.png",
+                    name: "宇宙平衡鞋",
+                    price: 5000,
+                    cart: "./img/shop/cart.png",
+                },{
+                    img: "./img/shop/cloth.png",
+                    name: "太空衣",
+                    price: 10000,
+                    cart: "./img/shop/cart.png",
+                }]
+            },
+            methods: {
+                upDown(e){
+                    e.target.nextElementSibling.classList.toggle("chooseShow");
+                }
+            },
         })
     </script>
 </body>
