@@ -56,7 +56,8 @@ img {
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
   margin: 0;
   padding: 0;
 }
@@ -300,15 +301,19 @@ small, .small {
 }
 
 nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   background-color: #0c0d18;
-<<<<<<< HEAD
   position: -webkit-sticky;
-=======
->>>>>>> 3c6831b0fb2aa80e85492fb0021468eacba79fbc
   position: sticky;
   top: 0;
   width: 100%;
@@ -320,7 +325,7 @@ nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-  background-image: url("../img/logo.png");
+  background-image: url("../../img/logo.png");
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -329,10 +334,18 @@ nav .logo h1 a {
 }
 
 nav .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   width: 60%;
 }
 
@@ -341,10 +354,17 @@ nav .nav-links a {
 }
 
 nav .nav-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 12%;
 }
 
@@ -376,19 +396,28 @@ footer .links .logo {
   position: relative;
   left: 50%;
   bottom: 50px;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 footer .links .footer-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 55%;
   position: relative;
   left: 50%;
   bottom: 30px;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 footer .links .footer-links a {
@@ -399,7 +428,8 @@ footer .footer_moon {
   position: relative;
   left: 50%;
   max-width: 550px;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 footer .smoke {
@@ -408,12 +438,8 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
-<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-=======
-  transform: translateX(-50%);
->>>>>>> 3c6831b0fb2aa80e85492fb0021468eacba79fbc
 }
 
 div.bk {
@@ -444,11 +470,8 @@ div.bk3 {
 }
 
 .first {
-<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
-=======
->>>>>>> 3c6831b0fb2aa80e85492fb0021468eacba79fbc
   display: flex;
 }
 
@@ -459,6 +482,8 @@ div.bk3 {
 .first .first_left {
   padding-left: 100px;
   width: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -481,11 +506,8 @@ div.bk3 {
 }
 
 .first .first_right .hottrip {
-<<<<<<< HEAD
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
-=======
->>>>>>> 3c6831b0fb2aa80e85492fb0021468eacba79fbc
   display: inline-flex;
   overflow: hidden;
   max-width: 800px;
@@ -503,7 +525,8 @@ div.bk3 {
   position: absolute;
   top: 15px;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .first .first_right .hottrip div.planet_top img.planet_a1 {
@@ -514,7 +537,8 @@ div.bk3 {
   position: absolute;
   top: 190px;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   text-align: center;
   margin: 0 auto;
 }
@@ -524,11 +548,8 @@ div.bk3 {
 }
 
 .first .first_right .hottrip div.planet_top div.word .tag {
-<<<<<<< HEAD
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
-=======
->>>>>>> 3c6831b0fb2aa80e85492fb0021468eacba79fbc
   display: inline-flex;
   border: 1px solid #C9ADA7;
   border-radius: 5px;
@@ -593,7 +614,6 @@ div.bk3 {
 }
 
 .stepsection .stepall {
-<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -603,11 +623,6 @@ div.bk3 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-=======
-  display: flex;
-  align-items: baseline;
-  justify-content: center;
->>>>>>> 3c6831b0fb2aa80e85492fb0021468eacba79fbc
   padding: 32px;
 }
 
@@ -651,18 +666,14 @@ div.bk3 {
 }
 
 .second .tripcard_all {
-<<<<<<< HEAD
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-=======
-  display: inline-flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
->>>>>>> 3c6831b0fb2aa80e85492fb0021468eacba79fbc
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 100%;
 }
 
@@ -685,11 +696,8 @@ div.bk3 {
 }
 
 .second .tripcard_all .tripcard .tag {
-<<<<<<< HEAD
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
-=======
->>>>>>> 3c6831b0fb2aa80e85492fb0021468eacba79fbc
   display: inline-flex;
   border: 1px solid #C9ADA7;
   border-radius: 5px;

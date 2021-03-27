@@ -3,15 +3,16 @@
 }
 body{
   color: white;
+  
 }
 div.post{
   margin-top: 50px;
 }
 form.post{
   width: 1000px;
-  border: 1px solid #AD6E4A;
   margin: 0 auto;
   padding: 30px;
+  background-color: #292B41;
 }
 .post form.post label.teaching{
   // color: white;
@@ -33,6 +34,7 @@ form.post{
   width: 938px;
   height: 200px;
   resize: none;
+  padding: 10px;
 }
 div.post form.post div.post_text label.post{
   margin-bottom: 10px;

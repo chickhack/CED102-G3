@@ -4,19 +4,26 @@ body{
   background-color: #0c0d18;
 }
 
-.grid{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: start;
-  padding-top: 5%;
-  font-size: 12px;
+*{
+  box-sizing: border-box;
 }
+
+.grid{
+  margin: auto;
+  max-width: 1440px;
+}
+
 .grid-item{
   margin: 10px;
   border: 1px solid #AD6E4A;
-  width: 250px;
+  width: calc(20% - 20px);
   border-radius: 5px;
+  padding: 0;
+  margin-bottom: 30px;
+}
+.grid .grid-item img{
+  width: 100%;
+  object-fit: cover;
 }
 .grid .grid-item:nth-child(n+11){
   display: none;
@@ -83,14 +90,15 @@ body{
 
 .col-md-1 {
   display: inline-block;
-  position: sticky;
+  position: fixed;
   left: 1300px;
-  bottom: 120px;
+  bottom: 80px;
   
 }
 .col-md-1 .button_2 .post_button{
   background-color: transparent;
   border: none;
+  
 }
 footer.padding_top_5{
   padding-top: 10px;

@@ -1,5 +1,6 @@
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -12,9 +13,9 @@ div.post {
 
 form.post {
   width: 1000px;
-  border: 1px solid #AD6E4A;
   margin: 0 auto;
   padding: 30px;
+  background-color: #292B41;
 }
 
 .post form.post label.teaching {
@@ -40,6 +41,7 @@ form.post {
   width: 938px;
   height: 200px;
   resize: none;
+  padding: 10px;
 }
 
 div.post form.post div.post_text label.post {
