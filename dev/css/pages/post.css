@@ -5,6 +5,7 @@
 
 body {
   color: white;
+  font-size: 16px;
 }
 
 div.post {
@@ -18,9 +19,22 @@ form.post {
   background-color: #292B41;
 }
 
+form.post .select_trip {
+  margin-bottom: 30px;
+  border: none;
+  outline: none;
+}
+
+form.post .select_trip select {
+  border: none;
+  outline: none;
+  padding: 5px;
+}
+
 .post form.post label.teaching {
   display: block;
   margin-bottom: 10px;
+  font-size: 16px;
 }
 
 .post form.post .upload_img button {
@@ -46,6 +60,7 @@ form.post {
 
 div.post form.post div.post_text label.post {
   margin-bottom: 10px;
+  font-size: 16px;
 }
 
 .post_text {
@@ -64,6 +79,6 @@ button.click_post {
   color: white;
   border: none;
   outline: none;
-  font-size: 12px;
+  font-size: 14px;
 }
 /*# sourceMappingURL=post.css.map */
