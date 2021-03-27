@@ -12,6 +12,9 @@
       integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
       crossorigin="anonymous"
     />
+    <!-- Vue.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.12/vue.js"></script>
+
     <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/all.css" />
@@ -21,113 +24,28 @@
   </head>
   <body>
     <header>@@include('./layout/header.html')</header>
-      <div class="col-12" id="tab" align="center">
-        <div class="col-11 frame">
-          <div class="title">星星世界</div>
-          <ul class="tab-title">
-            <li class="selected"><a href="#tab01">火星</a></li>
-            <li><a href="#tab02">月球</a></li>
-            <li><a href="#tab03">土星</a></li>
-            <li><a href="tab04">木星</a></li>
-            <li><a href="tab04">木星</a></li>
-            <li><a href="tab04">木星</a></li>
-            <li><a href="tab04">木星</a></li>
-          </ul>
-          <div class="saparator"></div>
-          <div id="tab01" class="col-10 tab-inner">
-            <div class="intro col-6">
-              <h3>火星</h3>
-              <p>
-                火星大氣以二氧化碳為主，既稀薄又寒冷，其表面特徵讓人聯想起月球上的撞擊坑，以及地球上的山谷、沙漠和極地冰蓋。
-              </p>
-            </div>
-            <div class="data col-6">
-              <div class="grav">
-                <span>38</span>
-                <span class="data-mid">％</span>
-                <p>重力</h4>
-              </div>
-              <div class="day">
-                <span>24</span>
-                <span class="data-low">HR</span>
-                <p>一天</h4>
-              </div>
-              <div class="temp">
-                <span class="data-mid">-</span>
-                <span>60</span>
-                <span class="data-high">F</span>
-                <p>溫度</h4>
-              </div>
-            </div>
-          </div>
-          <div id="tab02" class="col-10 tab-inner">
-            <div class="intro col-6">
-              <h3>月球</h3>
-              <p>
-                火星大氣以二氧化碳為主，既稀薄又寒冷，其表面特徵讓人聯想起月球上的撞擊坑，以及地球上的山谷、沙漠和極地冰蓋。
-              </p>
-            </div>
-            <div class="data col-6">
-              <div class="grav">
-                <span>38</span>
-                <span class="data-mid">％</span>
-                <h4>重力</h4>
-              </div>
-              <div class="day">
-                <span>24</span>
-                <span class="data-low">HR</span>
-                <h4>一天</h4>
-              </div>
-              <div class="temp">
-                <span class="data-mid">-</span>
-                <span>60</span>
-                <span class="data-high">F</span>
-                <h4>溫度</g4>
-              </div>
-            </div>
-          </div>
-          <div id="tab03" class="col-10 tab-inner">
-            <div class="intro col-6">
-              <h3>土星</h3>
-              <p>
-                火星大氣以二氧化碳為主，既稀薄又寒冷，其表面特徵讓人聯想起月球上的撞擊坑，以及地球上的山谷、沙漠和極地冰蓋。
-              </p>
-            </div>
-            <div class="data col-6">
-              <div class="grav">
-                <span>38</span>
-                <span class="data-mid">％</span>
-                <h4>重力</h4>
-              </div>
-              <div class="day">
-                <span>24</span>
-                <span class="data-low">HR</span>
-                <h4>一天</h4>
-              </div>
-              <div class="temp">
-                <span class="data-mid">-</span>
-                <span>60</span>
-                <span class="data-high">F</span>
-                <h4>溫度</h4>
-              </div>
-            </div>
-          </div>
-          <div id="tab04" class="col-10 tab-inner">
-            <div class="intro col-6">
-              <p>
-                coming soon
-              </p>
-            </div>
-          </div>
-          <div class="tab-active col-12">
-            <img
-              src="./img/planet/mars.png"
-              style="max-width: 500px"
-              class="geoplanet"
-            />
-          </div>
-          <div class="content">
-            <div class="col-6 imgs">
+    <div class="col-11 frame">
+    <div class="container col-" id="app">
+      <h2 align="center" class="margin_top_10">星星世界</h2>
+      <!-- jQuery -->
+      <div class="tabList margin_top_3 col-12 ">
+        <button class="button_min active" @click="content='mars'">火星</button>
+        <button class="button_min" @click="content='moon'">月球</button>
+        <button class="button_min" @click="content='saturn'">土星</button>
+        <button class="button_min" @click="content='saturn'">土星</button>
+        <button class="button_min" @click="content='saturn'">土星</button>
+        <button class="button_min" @click="content='saturn'">土星</button>
+        <button class="button_min" @click="content='saturn'">土星</button>
+      
+      </div>
+      <div class="separator col-10"></div>
+
+      <component :is="content" class="col-lg-12 col-sm-12"></component>
+      
+          
+
+          <div class="planet_content ">
+            <div class="col-lg-6 imgs margin_top_9 col-sm-12">
               <img
                 src="./img/planet/mars_2.jpg"
                 alt="Mars pic"
@@ -150,7 +68,7 @@
                 class="img3"
               />
             </div>
-            <div class="col-5 desc">
+            <div class="desc col-lg-5 col-sm-10">
               <p>
                 火星屬於地質行星，火星算是人類探勘最多的行星了，地表上沙丘、礫石遍布，泥土中充滿鐵礦物質而氧化後生鏽從而讓表面上看起來呈現是紅色的樣子，火星上有太陽系裡最高的火山比地球珠穆朗瑪峰高出了三倍。
                 有個名為 Valles
@@ -159,21 +77,24 @@
               </p>
             </div>
           </div>
+        <!-- 框框 -->
+        </div>
       </div>
-    </div>
     <footer>@@include('./layout/footer.html')</footer>
     
 
     <script>
       $(function(){
-        var $li = $('ul.tab-title li');
-            $($li.eq(0).addClass('selected').find('a').attr('href')).siblings('.tab-inner').hide();
+        var $button = $('div.tabList button');
+            $($button.eq(0).addClass('active').find('button').siblings('.tab-inner').hide());
 
-            $li.click(function(){
+            $button.click(function(){
               $($(this).find('a').attr('href')).show().siblings('.tab-inner').hide();
-              $(this).addClass('selected').siblings('.selected').removeClass('selected');
+              $(this).addClass('active').siblings('.active').removeClass('active');
             });
       });
     </script>
+    <!-- 星球tab Vue-->
+    <script src="./js/planet_data.js"></script>
   </body>
 </html>

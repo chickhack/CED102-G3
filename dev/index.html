@@ -15,7 +15,8 @@
     <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
     <script src="./js/tabSwitch.js"></script>
-
+    <!-- Vue.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.12/vue.js"></script>
     <!-- CSS -->
     <link rel="stylesheet" href="./css/pages/planet.css"></link>
     <link rel="stylesheet" href="./css/pages/alltrip.css"></link>
@@ -32,7 +33,7 @@
             <p>EXPLORE THE GALAXY</p>
           </div>
           <div class="scroll">
-            <img src="./img/icon/scroll.gif" style="width: 50px" />
+            <img src="./img/icon/" style="width: 50px" />
           </div>
         </div>
 <!-- 訂購流程 -->
@@ -61,71 +62,25 @@
               </div>
           </div>
         </div>
-<!-- 精選景點 -->
-        <!-- <div class="hottrip margin_top_7">
-          <div v-for="item in top" class="planet_top margin_left_3">
-              <img :src="item.planet" class="planet" alt="planet">
-              <img :src="item.spot" class="planet_a1" alt="planettrip">
-              <div class="word line_low ">
-                  <h3 class="hot">{{item.title}}</h3>
-                  <h3>{{item.name}}</h3> -->
-                  <!-- <img :src="item.star" class="star margin_top_1" alt="star"> -->
-                  <!-- <little class="tag margin_top_3">{{item.grade}}</little>
-                  <little class="tag">{{item.scores}}積分</little>
-                  <h4 class="price">${{item.price}}</h4>
-                  <div class="addin little"><img class="plus" src="./img/icon/plus.png" alt="">加入我的行程</div>
-              </div>
-          </div>
-        </div> -->
+
 <!-- 星球百科 -->
-        <div class="container">
-          <ul class="tab-title col-12">
-            <li class="selected"><a href="#tab01">火星</a></li>
-            <li><a href="#tab02">月球</a></li>
-            <li><a href="#tab03">土星</a></li>
-            <li><a href="#tab04">木星</a></li>
-            <li><a href="#tab04">木星</a></li>
-            <li><a href="#tab04">木星</a></li>
-            <li><a href="#tab04">木星</a></li>
-          </ul>
-          <div class="separator col-10"></div>
-          <div id="tab01" class="col-12 tab-inner">
-              <div class="tab_intro margin_top_6">
-                <h2>火星</h2>
-                <h3 class="margin_top_4">
-                  火星大氣以二氧化碳為主，既稀薄又寒冷，其表面特徵讓人聯想起月球上的撞擊坑，以及地球上的山谷、沙漠和極地冰蓋。
-                </h3>
-                <div class="data margin_top_8">
-                  <div class="grav">
-                    <span>38</span>
-                    <span class="data-mid">％</span>
-                    <p>重力</p>
-                  </div>
-                  <div class="day">
-                    <span>24</span>
-                    <span class="data-low">HR</span>
-                    <p>一天</p>
-                  </div>
-                  <div class="temp">
-                    <span class="data-mid">-</span>
-                    <span>60</span>
-                    <span class="data-high">F</span>
-                    <p>溫度</p>
-                  </div>
-                </div>
-                <div class="button button_min">更多關於火星</div>
-              </div>
-              <div class="tab-active col-6 margin_top_5">
-                <img
-                  src="./img/planet/mars.png"
-                  style="max-width: 500px"
-                  class="geoplanet"
-                />
-              </div>
+        <div class="container" id="app">
+          <h2 align="center" class="margin_top_10">星星世界</h2>
+          <!-- jQuery -->
+          <div class="tabList margin_top_3 col-12">
+            <button class="button_min selected" @click="content='mars'">火星</button>
+            <button class="button_min" @click="content='moon'">月球</button>
+            <button class="button_min" @click="content='saturn'">土星</button>
+            <button class="button_min" @click="content='saturn'">土星</button>
+            <button class="button_min" @click="content='saturn'">土星</button>
+            <button class="button_min" @click="content='saturn'">土星</button>
           </div>
+          <div class="separator col-10"></div>
+    
+          <component :is="content"></component>
         </div>
 <!-- 互動牆 -->
-        <div class="gallery">
+        <div class="gallery margin_top_10">
           <!-- 上 -->
           <div class="box top col-12">
             <div class="topleft col-5">
@@ -253,10 +208,10 @@
 
 
 
-    <!-- 星球tab -->
+    <!-- 星球tab jQuery -->
     <script>
       $(function(){
-        var $li = $('ul.tab-title li');
+        var $li = $('div.tabList li');
             $($li.eq(0).addClass('selected').find('a').attr('href')).siblings('.tab-inner').hide();
 
             $li.click(function(){
@@ -265,6 +220,9 @@
             });
       });
     </script>
+    <!-- 星球tab Vue-->
+    <script src="./js/planet_data.js"></script>
 
+ 
   </body>
 </html>

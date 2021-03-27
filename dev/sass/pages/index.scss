@@ -1,10 +1,11 @@
 @import "../all.scss";
 
-// header設定
+//=========header設定
 nav{
     background-color: transparent;
 }
 
+//背景圖片
 .banner_bg{
     background: -webkit-linear-gradient(bottom, $darkblue 5%, transparent 95%), url('../../img/home/mainBannerBg.jpg') no-repeat
     ;
@@ -12,8 +13,11 @@ nav{
     background-position: top;
     height: 100vh;
 }
+
+//整頁邊框
+
 .frame{
-    border: 1px solid $gold;
+    border: 1px solid #ad6e4a57;
     margin: 0 auto;
 }
 .banner{
@@ -25,7 +29,7 @@ nav{
             font-size: 7rem;
             color: white;
             font-family: "Haettenschweiler", sans-serif;
-            letter-spacing:6px;
+            letter-spacing:15px;
         }
     }
     .scroll{
@@ -48,6 +52,8 @@ nav{
     }
 }
 
+
+
 //=========流程
 .stepsection{
     background-color: transparent;
@@ -55,9 +61,20 @@ nav{
 
 
 //=========星球百科
+
 ul.tab-title {
     a{
         font-size: 1rem;
+    }
+}
+.tabList{
+    display: flex;
+    justify-content: center;
+    button{
+        border: none;
+        background-color: transparent;
+        color: $gold;
+        
     }
 }
 .tab-inner{
@@ -83,7 +100,11 @@ ul.tab-title {
     justify-content: center;
     }
 }
-//============互動牆
+
+
+
+
+//=========互動牆
 .gallery{
     .box{
         display: flex;
@@ -164,7 +185,7 @@ ul.tab-title {
 }
 
 
-//============商城圖片
+//=========商城圖片
 .home_shop{
     display: flex;
     flex-direction: column;
@@ -302,7 +323,7 @@ ul.tab-title {
 
 
 
-//============會員待遇
+//=========會員待遇
 .flow_member{
     display: flex;
     justify-content: center;
