@@ -24,6 +24,7 @@ body{
 .grid .grid-item img{
   width: 100%;
   object-fit: cover;
+  border-radius: 5px;
 }
 .grid .grid-item:nth-child(n+11){
   display: none;
@@ -38,12 +39,34 @@ body{
 .heart,.share,.message{
   padding: 10px;
 }
+.grid .action-box img{
+  max-width: 25px;
+}
 .action-box .button{
   background-color: transparent;
   border-width: 0px;
   outline: none;
   padding: 10px;
-  margin-left: 40px;
+  margin-left: 81px;
+}
+.member_photo{
+  margin-right: 9px;
+  padding:15px;
+}
+.member_photo img{
+  max-width: 50px;
+}
+.name{
+  line-height: 78px;
+  color: #fff;
+  margin-right: 24px;
+}
+.post_time{
+  line-height: 78px;
+  color: white;
+  padding: 0 15px;
+  margin-left: 11px;
+  letter-spacing: 2px;
 }
 .article_all{
   position: relative;
@@ -51,23 +74,14 @@ body{
 }
 .article{
   display: flex;
-  width: 250px;
-}
-.name{
-  line-height: 51px;
-  color: #fff;
-}
-.member_photo{
-  margin-right: 15px;
-  padding: 10px;
 }
 .article .member_photo img,.article_2 .member_photo img{
   border-radius: 50%;
 }
 .text{
-  padding: 0 15px;
+  padding:0 15px;
   color:#fff;
-  line-height: 18px;
+  line-height: 32px;
 
 }
 .article_2{
