@@ -1,33 +1,58 @@
 @import "../all.scss";
 
+body{
+    object-fit: cover;
+    user-select: none;
+}
+.container{
+    @include respond(mobile){
+        margin: 0 30px;
+    }
+}
 .product{
     @include flex_middle();
     align-items: start;
-    .img{
-        max-width: 500px;
-        // border: 1px solid white;
-        text-align: center;
+    flex-wrap: wrap;
+    padding-top: 15vh;
+    // margin: 0 40px;
+    .imgs{
         @include flex_middle();
-        flex-direction: column;
-        .bigImg{
-            width: 90%;
-            height: 250px;
-            background-color: $white;
-        }
-        .smallImg{
+        justify-content: flex-end;
+        max-width: 948px;
+        // border: 1px solid #fff;
+        .img{
+            max-width: 400px;
+            // border: 1px solid white;
+            text-align: center;
             @include flex_middle();
-            justify-content: space-around;
-            width: 90%;
-            .imgDetail{
-                max-width: 100px;
+            flex-direction: column;
+
+            @include respond(mobile){
+                max-width: 948px;
+            }
+
+            .bigImg{
+                width: 100%;
+                max-height: 450px;
                 background-color: $white;
-                cursor: pointer;
-                margin: 0 4px;
-                padding: 4px;
-                img{
-                    width: 60px;
-                    height: 56px;
-                    object-fit: cover;
+                @include respond(mobile){
+                    max-height: 400px;
+                }
+            }
+            .smallImg{
+                @include flex_middle();
+                justify-content: start;
+                width: 100%;
+                .imgDetail{
+                    max-width: 80px;
+                    max-height: 60px;
+                    background-color: $white;
+                    cursor: pointer;
+                    margin-right: 16px;
+                    padding: 4px;
+                    img{
+                        width: 100%;
+                    }
                 }
             }
         }
@@ -36,15 +61,29 @@
         width: 30%;
         // border: 1px solid $white;
         text-align: left;
+        @include respond(mobile){
+            width: 100%;
+            margin: 60px 30px;
+        }
         strong{
             font-weight: 700;
+        }
+        p{
+            width: 100%;
+            @include respond(mobile){
+                width: 100%;
+            }
         }
         hr{
             margin-left: 0;
             margin-right: 0;
-            width: 80%;
-            border: 1px solid $gold;
+            width: 100%;
+            height: 1px;
+            border: none;
             background-color: $gold;
+            @include respond(mobile){
+                width: 100%;
+            }
         }
         .h3{
             letter-spacing: 3px;
@@ -73,7 +112,20 @@
             }
             .button_large{
                 width: 100%;
-                padding: 8px 0;
+                cursor:pointer;
+                padding: 15px 0;
+                &.buy{
+                    background-color: $gold;
+                    color: $white;
+                    font-weight: 900;
+                    transition: all .3s;
+                    &:hover{
+                        background-color: lighten($gold, 10%);
+                    }
+                }
+                @include respond(mobile){
+                    width: 100%;
+                }
             }
         }
     }
@@ -84,19 +136,36 @@
     max-width: 300px;
     margin: 80px auto;
     text-align: center;
+    @include respond(mobile){
+        margin: 0 auto;
+        margin-bottom: 80px;
+    }
 }
 
 .recommend{
     text-align: center;
-    width: 53%;
+    max-width: 948px;
     margin: 0 auto;
     ul{
         @include flex_middle();
         justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 32px 30px;
         li{
             width: 30%;
+            @include respond(mobile){
+                width: 100%;
+                margin-top: 40px;
+            }
             .spotImg{
                 position: relative;
+                img{
+                    width: 100%;
+                    height: 300px;
+                    @include respond(mobile){
+                        height: 100%;
+                    }
+                }
                 p{
                     position: absolute;
                     left: 50%;
@@ -118,8 +187,9 @@
 }
 
 .comment{
-    width: 53%;
+    max-width: 948px;
     margin: 80px auto;
+    padding: 0 30px;
     .score{
         display: flex;
         align-items: center;
@@ -163,12 +233,10 @@
             }
         }
         .more{
-            position: absolute;
-            right: 0;
-            bottom: 16px;
             color: $white;
             text-decoration: underline;
-            cursor: pointer;
+            position: relative;
+            float: right;
         }
     }
 }

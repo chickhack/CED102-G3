@@ -13,20 +13,22 @@
     @@include('./layout/header.html')
     <section class="container">
         <div class="product">
-            <div class="img">
-                <img src="./img/shop/shoes.png" alt="" class="bigImg">
-                <div class="smallImg margin_top_2">
-                    <div class="imgDetail img1">
-                        <img src="./img/shop/shoesDetail-1.png" alt="">
-                    </div>
-                    <div class="imgDetail img2">
-                        <img src="./img/shop/shoesDetail-2.png" alt="">
-                    </div>
-                    <div class="imgDetail img3">
-                        <img src="./img/shop/shoesDetail-3.png" alt="">
-                    </div>
-                    <div class="imgDetail img4">
-                        <img src="./img/shop/shoes.png" alt="">
+            <div class="imgs">
+                <div class="img">
+                    <img src="./img/shop/shoes.jpg" alt="" class="bigImg">
+                    <div class="smallImg margin_top_2">
+                        <div class="imgDetail img1">
+                            <img src="./img/shop/shoesD1.jpg" alt="">
+                        </div>
+                        <div class="imgDetail img2">
+                            <img src="./img/shop/shoesD2.jpg" alt="">
+                        </div>
+                        <div class="imgDetail img3">
+                            <img src="./img/shop/shoesD3.jpg" alt="">
+                        </div>
+                        <div class="imgDetail img4">
+                            <img src="./img/shop/shoes.jpg" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -34,21 +36,18 @@
                 <p>裝備</p>
                 <h3 class="margin_top_1">宇宙平衡鞋</h3>
                 <hr class="margin_top_1">
-                <p class="margin_top_1 line_low">穿上這雙鞋，協助你在無重力的宇宙暢行無阻!
-                    <br>
-                    獨家專利打造，讓你的旅程加倍舒適~
-                </p>
+                <p class="margin_top_1 line_low">穿上這雙鞋，協助你在無重力的宇宙暢行無阻!獨家專利打造，讓你的旅程加倍舒適~</p>
                 <p class="margin_top_2"><strong>價格</strong></p>
                 <p class="h3 margin_top_1">$5000</p>
-                <div class="quantity margin_top_2">
+                <div class="quantity margin_top_3">
                     <label for="quantity">數量</label>
                     <div class="as margin_top_2">
                         <span class="minus">&minus;</span>
                         <input type="number" name="quantity" id="quantity" value="1" min="1">
                         <span class="add">&plus;</span>
                     </div>
-                    <p class="button_large margin_top_2">加入購物車</p>
-                    <p class="button_large margin_top_2">立即購買</p>
+                    <p class="button_large margin_top_4">加入購物車</p>
+                    <p class="button_large margin_top_2 buy">立即購買</p>
                 </div>
             </form>
         </div>
@@ -95,12 +94,13 @@
                             <div class="name">
                                 <p>{{comment.name}}</p>
                                 <hr>
-                                <p>{comment.date}</p>
+                                <p>{{comment.date}}</p>
                             </div>
                             <div class="message margin_top_1 line_low">
-                                <p>{{comment.content}}</p>
+                                <p>{{comment.content}}</p>                            
+                                <p class="more">瀏覽更多</p>
                             </div>
-                            <p class="more">瀏覽更多</p>
+
                         </div>
                     </li>
                 </ul>

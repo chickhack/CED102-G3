@@ -11,6 +11,11 @@ body{
     font-size: 14px;
     background-color: $darkblue;
     overflow-x: hidden;
+    //防止使用者連擊反藍
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -o-user-select:none;
+    user-select:none;
 }
 
 
@@ -120,12 +125,13 @@ $breakpoint_each: (
         }
     }
 }
-
+//icon大小
 .icon{
     max-width: 20px;
 }
-
+//固定寬1440px
 .container{
     max-width: 1440px;
     margin: 0 auto;
 }
+
