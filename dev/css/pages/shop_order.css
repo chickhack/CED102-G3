@@ -316,7 +316,7 @@ nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-  background-image: url("../img/logo.png");
+  background-image: url("../../img/logo.png");
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -546,11 +546,7 @@ section.orderer .orderer_click::before, section.orderer .recipient_click::before
   height: 30%;
   background-color: #ffffff;
   position: absolute;
-<<<<<<< HEAD
   left: -3.1%;
-=======
-  left: -30px;
->>>>>>> kai
   transform: rotate(45deg) translateY(-60%);
   top: 50%;
 }
@@ -572,11 +568,7 @@ section.orderer .info {
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
-<<<<<<< HEAD
   width: 80%;
-=======
-  width: 50%;
->>>>>>> kai
   margin-left: 6%;
 }
 

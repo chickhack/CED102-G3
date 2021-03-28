@@ -305,10 +305,6 @@ nav {
   align-items: center;
   justify-content: space-around;
   background-color: #0c0d18;
-<<<<<<< HEAD
-  position: -webkit-sticky;
-=======
->>>>>>> 3c6831b0fb2aa80e85492fb0021468eacba79fbc
   position: sticky;
   top: 0;
   width: 100%;
@@ -320,7 +316,7 @@ nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-  background-image: url("../img/logo.png");
+  background-image: url("../../img/logo.png");
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -408,20 +404,25 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
-<<<<<<< HEAD
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-=======
   transform: translateX(-50%);
->>>>>>> 3c6831b0fb2aa80e85492fb0021468eacba79fbc
 }
 
 div.bk {
-  width: 450px;
+  background-image: url(../../img/trip/bk.png);
+  height: 550px;
+  width: 550px;
+  background-size: 75%;
+  background-repeat: no-repeat;
   position: absolute;
   left: 450px;
-  top: 90px;
+  top: 35px;
   opacity: 0.6;
+}
+
+@media all and (max-width: 768px) {
+  div.bk {
+    display: none;
+  }
 }
 
 div.bk3 {
@@ -444,12 +445,17 @@ div.bk3 {
 }
 
 .first {
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-=======
->>>>>>> 3c6831b0fb2aa80e85492fb0021468eacba79fbc
   display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media all and (max-width: 1200px) {
+  .first {
+    flex-direction: column;
+    justify-content: center;
+    width: 95%;
+  }
 }
 
 .first img {
@@ -457,9 +463,17 @@ div.bk3 {
 }
 
 .first .first_left {
-  padding-left: 100px;
+  padding-left: 40px;
   width: 35%;
   display: flex;
+}
+
+@media all and (max-width: 1200px) {
+  .first .first_left {
+    padding-left: 0px;
+    margin: 0 auto;
+    width: 400px;
+  }
 }
 
 .first .first_left h2.title {
@@ -476,29 +490,40 @@ div.bk3 {
 }
 
 .first .first_right {
-  width: 20%;
+  width: 50%;
   position: relative;
 }
 
-.first .first_right .hottrip {
-<<<<<<< HEAD
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-=======
->>>>>>> 3c6831b0fb2aa80e85492fb0021468eacba79fbc
-  display: inline-flex;
-  overflow: hidden;
-  max-width: 800px;
+@media all and (max-width: 1200px) {
+  .first .first_right {
+    overflow: hidden;
+    width: 95%;
+  }
 }
 
-.first .first_right .hottrip div.planet_top {
+.first .first_right .hottrip {
+  display: inline-flex;
+  overflow: hidden;
+  padding-top: 96px;
+}
+
+.first .first_right div.planet_top {
   position: relative;
   padding-top: 90px;
   text-align: center;
   width: 55%;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
-.first .first_right .hottrip div.planet_top img.planet {
+@media all and (max-width: 1200px) {
+  .first .first_right div.planet_top {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
+.first .first_right div.planet_top img.planet {
   height: 160px;
   position: absolute;
   top: 15px;
@@ -506,11 +531,11 @@ div.bk3 {
   transform: translateX(-50%);
 }
 
-.first .first_right .hottrip div.planet_top img.planet_a1 {
+.first .first_right div.planet_top img.planet_a1 {
   max-width: 280px;
 }
 
-.first .first_right .hottrip div.planet_top div.word {
+.first .first_right div.planet_top div.word {
   position: absolute;
   top: 190px;
   left: 50%;
@@ -519,16 +544,11 @@ div.bk3 {
   margin: 0 auto;
 }
 
-.first .first_right .hottrip div.planet_top div.word .hot {
+.first .first_right div.planet_top div.word .hot {
   color: #AD6E4A;
 }
 
-.first .first_right .hottrip div.planet_top div.word .tag {
-<<<<<<< HEAD
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-=======
->>>>>>> 3c6831b0fb2aa80e85492fb0021468eacba79fbc
+.first .first_right div.planet_top div.word .tag {
   display: inline-flex;
   border: 1px solid #C9ADA7;
   border-radius: 5px;
@@ -538,7 +558,7 @@ div.bk3 {
   color: #cccaca;
 }
 
-.first .first_right .hottrip div.planet_top div.word .price {
+.first .first_right div.planet_top div.word .price {
   color: #AD6E4A;
   font-weight: bold;
   letter-spacing: 2px;
@@ -546,7 +566,7 @@ div.bk3 {
   font-family: "Nasalization";
 }
 
-.first .first_right .hottrip div.planet_top div.word .addin {
+.first .first_right div.planet_top div.word .addin {
   background-color: #AD6E4A;
   color: #ffffff;
   border-radius: 15px;
@@ -556,7 +576,7 @@ div.bk3 {
   text-align: center;
 }
 
-.first .first_right .hottrip div.planet_top div.word .addin img.plus {
+.first .first_right div.planet_top div.word .addin img.plus {
   width: 15px;
   display: inline-block;
   position: relative;
@@ -564,23 +584,19 @@ div.bk3 {
   padding-right: 4px;
 }
 
-.first .first_right .tripselect {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
+.first .tripselect {
   display: inline-flex;
   width: 280px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
-.first .first_right .tripselect .icon {
+.first .tripselect .icon2 {
   width: 25px;
   cursor: pointer;
   z-index: 2;
 }
 
-.first .first_right .tripselect .select {
+.first .tripselect .select {
   position: relative;
   bottom: 4px;
   color: #AD6E4A;
@@ -593,27 +609,30 @@ div.bk3 {
 }
 
 .stepsection .stepall {
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-=======
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
   align-items: baseline;
-  justify-content: center;
->>>>>>> 3c6831b0fb2aa80e85492fb0021468eacba79fbc
+  justify-content: space-between;
   padding: 32px;
+}
+
+@media all and (max-width: 767px) {
+  .stepsection .stepall {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .stepsection .stepall .step {
   position: relative;
-  margin: 0 50px 0 50px;
+}
+
+@media all and (max-width: 767px) {
+  .stepsection .stepall .step {
+    margin-left: 0;
+    padding-top: 24px;
+  }
 }
 
 .stepsection .stepall .step img.step_icon {
@@ -631,6 +650,7 @@ div.bk3 {
 .stepsection .stepall .step .step_content {
   color: #AD6E4A;
   font-weight: bold;
+  width: 100%;
 }
 
 .stepsection .stepall .step .step_content img.num {
@@ -651,18 +671,9 @@ div.bk3 {
 }
 
 .second .tripcard_all {
-<<<<<<< HEAD
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-=======
   display: inline-flex;
   justify-content: center;
   flex-wrap: wrap;
->>>>>>> 3c6831b0fb2aa80e85492fb0021468eacba79fbc
   width: 100%;
 }
 
@@ -672,7 +683,20 @@ div.bk3 {
   padding: 15px;
   border-radius: 5px;
   position: relative;
-  margin: 0 32px 0 32px;
+  margin: 0 16px 0 16px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .second .tripcard_all .tripcard {
+    margin: 16px;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .second .tripcard_all .tripcard {
+    flex-direction: column;
+    margin: 16px 0 16px 0;
+  }
 }
 
 .second .tripcard_all .tripcard .spot_pic {
@@ -685,11 +709,6 @@ div.bk3 {
 }
 
 .second .tripcard_all .tripcard .tag {
-<<<<<<< HEAD
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-=======
->>>>>>> 3c6831b0fb2aa80e85492fb0021468eacba79fbc
   display: inline-flex;
   border: 1px solid #C9ADA7;
   border-radius: 5px;
