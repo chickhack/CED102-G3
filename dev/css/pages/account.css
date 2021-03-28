@@ -314,7 +314,10 @@ nav {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   background-color: #0c0d18;
+<<<<<<< HEAD
   position: -webkit-sticky;
+=======
+>>>>>>> chickhack
   position: sticky;
   top: 0;
   width: 100%;
@@ -439,8 +442,12 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
+<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+=======
+  transform: translateX(-50%);
+>>>>>>> chickhack
 }
 
 .quantity label {
@@ -475,6 +482,7 @@ body {
 /* 歡迎會員 字體大小、字型位置 */
 .welcome {
   padding: 15vh 250px 0px 250px;
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -484,6 +492,11 @@ body {
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
+=======
+  display: flex;
+  align-items: center;
+  justify-content: left;
+>>>>>>> chickhack
 }
 
 .spacedinfo {
@@ -588,36 +601,20 @@ img.nowlev, img.nextlev {
 }
 
 .your_acc {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .now_lev {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   /* justify-content: left; */
 }
 
 .next_lev {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   /* justify-content: right; */
 }
 
@@ -656,8 +653,6 @@ p.nextacc, p.nowacc {
   height: auto;
   background-color: #3a3a3c;
   opacity: 0.6;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 

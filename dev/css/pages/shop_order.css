@@ -633,8 +633,12 @@ section.orderer .orderer_click::before, section.orderer .recipient_click::before
   background-color: #ffffff;
   position: absolute;
   left: -3.1%;
+<<<<<<< HEAD
   -webkit-transform: rotate(45deg) translateY(-60%);
           transform: rotate(45deg) translateY(-60%);
+=======
+  transform: rotate(45deg) translateY(-60%);
+>>>>>>> chickhack
   top: 50%;
 }
 
@@ -654,6 +658,7 @@ section.orderer .info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -665,6 +670,12 @@ section.orderer .info {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+=======
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+>>>>>>> chickhack
   width: 80%;
   margin-left: 6%;
 }

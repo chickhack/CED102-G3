@@ -10,8 +10,17 @@ body {
 }
 
 .grid {
+<<<<<<< HEAD
   margin: auto;
   max-width: 1440px;
+=======
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: start;
+  padding-top: 5%;
+  font-size: 12px;
+>>>>>>> chickhack
 }
 
 .grid-item {
