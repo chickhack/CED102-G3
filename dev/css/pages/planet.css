@@ -467,20 +467,9 @@ footer .smoke {
   cursor: pointer;
 }
 
-body {
-  font-family: "Haettenschweiler","Microsoft JhengHei", sans-serif;
-  color: #C9ADA7;
-  background-color: #0c0d18;
-  font-size: 14px;
-}
-
-canvas {
-  width: 500px;
-  height: 500px;
-}
-
 .frame {
   border: 1px solid #AD6E4A;
+  margin: 0 auto;
 }
 
 .title {
@@ -490,30 +479,28 @@ canvas {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 100px;
   font-size: 42px;
 }
 
-ul.tab-title {
-  padding-top: 50px;
+div.tabList {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-column-gap: 1%;
+          column-gap: 1%;
 }
 
-ul.tab-title li {
-  padding: 10px 40px;
+div.tabList button {
+  border: none;
+  background-color: transparent;
+  color: #AD6E4A;
+  font-size: 16px;
 }
 
-ul.tab-title li a {
-  text-decoration: none;
-  color: #C9ADA7;
-}
-
-ul.tab-title li.selected {
+div.tabList button.active {
   border-bottom: 4px solid #AD6E4A;
 }
 
@@ -530,7 +517,7 @@ ul.tab-title li.selected {
   display: flex;
 }
 
-.tab-inner .intro {
+.tab-inner .taball {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -538,17 +525,24 @@ ul.tab-title li.selected {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 50px;
   text-align: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.tab-inner .intro p {
+.tab-inner .taball .tab_left {
+  max-width: 400px;
+}
+
+.tab-inner .taball p {
   line-height: 2rem;
   margin-top: 20px;
   max-width: 400px;
 }
 
 .tab-inner .data {
+  border: 1px solid #AD6E4A;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -556,26 +550,65 @@ ul.tab-title li.selected {
 }
 
 .tab-inner .data .grav {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   min-width: 130px;
   min-height: 130px;
-  border: 1px solid #AD6E4A;
+  border-right: 1px solid #AD6E4A;
 }
 
 .tab-inner .data .day {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   min-width: 130px;
-  border: 1px solid #AD6E4A;
+  border-right: 1px solid #AD6E4A;
 }
 
 .tab-inner .data .temp {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   min-width: 130px;
-  border: 1px solid #AD6E4A;
 }
 
-.tab-inner .data span {
+.tab-inner .data span.var {
   font-size: 48px;
+  letter-spacing: 3px;
 }
 
-.tab-inner .data span.data-high {
+.tab-inner .data span.data-top {
   vertical-align: top;
   font-size: 24px;
 }
@@ -594,62 +627,14 @@ ul.tab-title li.selected {
   font-size: 16px;
 }
 
-.tab-active {
-  display: block;
+.tab-inner button {
+  background-color: transparent;
+  color: #AD6E4A;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
 }
 
-.tab-active .cover_rd {
-  display: block;
-  height: 170px;
-  width: 170px;
-  border-radius: 50%;
-  overflow: hidden;
-  background-image: url(../../dev/img/planet/crater.jpg);
-  background-position: top;
-  position: relative;
-  -webkit-transform: translate(-112%, -220%);
-          transform: translate(-112%, -220%);
-}
-
-.tab-active .outline {
-  border: 1px dashed white;
-  height: 190px;
-  width: 190px;
-  border-radius: 50%;
-  position: relative;
-  -webkit-transform: translate(-100%, -100%);
-          transform: translate(-100%, -100%);
-}
-
-.tab-active .geoopt {
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-column-gap: 30px;
-          column-gap: 30px;
-  right: 0px;
-  top: 700px;
-}
-
-.tab-active .geoopt .cover_sq {
-  height: 150px;
-  width: 150px;
-  overflow: hidden;
-}
-
-.tab-active .geoopt .cover_sq span.geo2 {
-  background-image: url(../../img/planet/crater_1.jpg);
-  background-size: 130%;
-  background-position: center;
-}
-
-.tab-active .geoopt .cover_sq span.geo3 {
-  background-image: url(../../img/planet/crater_2.png);
-  background-position: top;
-}
-
-.content {
+.planet_content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -657,27 +642,26 @@ ul.tab-title li.selected {
       flex-wrap: wrap;
 }
 
-.content .imgs {
-  margin-top: 150px;
+.planet_content .imgs {
   display: block;
 }
 
-.content .imgs .img1 {
-  -webkit-transform: translate(10%);
-          transform: translate(10%);
+.planet_content .imgs .img1 {
+  -webkit-transform: translate(40%);
+          transform: translate(40%);
 }
 
-.content .imgs .img2 {
-  -webkit-transform: translateX(-10%);
-          transform: translateX(-10%);
+.planet_content .imgs .img2 {
+  -webkit-transform: translateX(30%);
+          transform: translateX(30%);
 }
 
-.content .imgs .img3 {
-  -webkit-transform: translate(-70%, -350px);
-          transform: translate(-70%, -350px);
+.planet_content .imgs .img3 {
+  -webkit-transform: translate(20%, -350px);
+          transform: translate(20%, -350px);
 }
 
-.content .desc {
+.planet_content .desc {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -686,7 +670,7 @@ ul.tab-title li.selected {
           align-items: center;
 }
 
-.content .desc p {
+.planet_content .desc p {
   line-height: 2rem;
   text-align: justify;
   max-width: 500px;

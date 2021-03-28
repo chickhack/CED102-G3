@@ -480,7 +480,7 @@ nav {
 }
 
 .frame {
-  border: 1px solid #AD6E4A;
+  border: 1px solid #ad6e4a57;
   margin: 0 auto;
 }
 
@@ -498,7 +498,7 @@ nav {
   font-size: 7rem;
   color: white;
   font-family: "Haettenschweiler", sans-serif;
-  letter-spacing: 6px;
+  letter-spacing: 15px;
 }
 
 .banner .scroll {
@@ -539,6 +539,21 @@ nav {
 
 ul.tab-title a {
   font-size: 1rem;
+}
+
+.tabList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tabList button {
+  border: none;
+  background-color: transparent;
+  color: #AD6E4A;
 }
 
 .tab-inner {

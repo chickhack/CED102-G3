@@ -9,17 +9,15 @@ body{
 }
 
 .grid{
-  margin: auto;
-  max-width: 1440px;
+  padding-top: 5%;
 }
 
 .grid-item{
   margin: 10px;
   border: 1px solid #AD6E4A;
-  width: calc(20% - 20px);
   border-radius: 5px;
-  padding: 0;
-  margin-bottom: 30px;
+  width: 250px;
+
 }
 .grid .grid-item img{
   width: 100%;
@@ -31,7 +29,7 @@ body{
 }
 .action-box{
   display:flex;
-  bottom: 48px;
+  bottom: 45px;
   background-color:black;
   opacity: 0.5;
   position: relative;
@@ -59,7 +57,7 @@ body{
 .name{
   line-height: 78px;
   color: #fff;
-  margin-right: 24px;
+  margin-right: 10px;
 }
 .post_time{
   line-height: 78px;
