@@ -493,6 +493,31 @@ footer .smoke {
   cursor: pointer;
 }
 
+.quantity label {
+  display: block;
+}
+
+.quantity .as {
+  color: #AD6E4A;
+}
+
+.quantity .as input[type=number] {
+  max-width: 50px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  text-align: center;
+  color: #AD6E4A;
+}
+
+.quantity .as span {
+  border: 1px solid #AD6E4A;
+  outline: none;
+  background-color: transparent;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
 nav {
   background-color: transparent;
 }
@@ -513,13 +538,11 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-=======
   justify-content: center;
+<<<<<<< HEAD
 >>>>>>> chickhack
+=======
+>>>>>>> kai
   margin-top: 20vh;
 }
 
@@ -545,18 +568,12 @@ nav {
 
 .home_intro {
   margin-top: 15vh;
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-=======
   display: flex;
   flex-direction: column;
+<<<<<<< HEAD
 >>>>>>> chickhack
+=======
+>>>>>>> kai
 }
 
 .home_intro h2 {
@@ -576,31 +593,21 @@ ul.tab-title a {
 }
 
 .tab-inner {
-<<<<<<< HEAD
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-=======
   justify-content: center;
+<<<<<<< HEAD
 >>>>>>> chickhack
+=======
+>>>>>>> kai
   display: flex;
 }
 
 .tab-inner .tab_intro {
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-=======
   display: flex;
   flex-direction: column;
+<<<<<<< HEAD
 >>>>>>> chickhack
+=======
+>>>>>>> kai
   text-align: left;
 }
 
@@ -610,13 +617,11 @@ ul.tab-title a {
 }
 
 .tab-inner .data {
-<<<<<<< HEAD
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-=======
   justify-content: flex-start;
+<<<<<<< HEAD
 >>>>>>> chickhack
+=======
+>>>>>>> kai
 }
 
 .tab-inner .data p {
@@ -624,10 +629,8 @@ ul.tab-title a {
 }
 
 .tab-inner .tab-active {
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -638,15 +641,21 @@ ul.tab-title a {
   display: -ms-flexbox;
 =======
   display: flex;
+=======
+>>>>>>> kai
   justify-content: center;
 }
 
 .gallery .box {
+<<<<<<< HEAD
 >>>>>>> chickhack
+=======
+>>>>>>> kai
   display: flex;
 }
 
 .gallery .topleft {
+<<<<<<< HEAD
 <<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
@@ -660,11 +669,16 @@ ul.tab-title a {
       -ms-flex-align: end;
           align-items: flex-end;
 =======
+=======
+>>>>>>> kai
   display: flex;
   flex-direction: row;
   max-height: 500px;
   align-items: flex-end;
+<<<<<<< HEAD
 >>>>>>> chickhack
+=======
+>>>>>>> kai
 }
 
 .gallery .topleft .A {
@@ -683,6 +697,7 @@ ul.tab-title a {
 
 .gallery .topright {
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -699,6 +714,8 @@ ul.tab-title a {
   -ms-flex-pack: distribute;
       justify-content: space-around;
 =======
+=======
+>>>>>>> kai
   display: flex;
   flex-direction: column;
 }
@@ -706,7 +723,10 @@ ul.tab-title a {
 .gallery .topright .topSct {
   display: flex;
   justify-content: space-around;
+<<<<<<< HEAD
 >>>>>>> chickhack
+=======
+>>>>>>> kai
 }
 
 .gallery .topright button.btn {
@@ -716,6 +736,7 @@ ul.tab-title a {
 }
 
 .gallery .topright .galleryIntro {
+<<<<<<< HEAD
 <<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
@@ -727,6 +748,10 @@ ul.tab-title a {
   display: flex;
   justify-content: center;
 >>>>>>> chickhack
+=======
+  display: flex;
+  justify-content: center;
+>>>>>>> kai
 }
 
 .gallery .topright .galleryIntro h5 {
@@ -735,6 +760,7 @@ ul.tab-title a {
 }
 
 .gallery .bottomleft {
+<<<<<<< HEAD
 <<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
@@ -747,6 +773,10 @@ ul.tab-title a {
   display: flex;
   flex-direction: row;
 >>>>>>> chickhack
+=======
+  display: flex;
+  flex-direction: row;
+>>>>>>> kai
   max-height: 500px;
 }
 
@@ -774,6 +804,7 @@ ul.tab-title a {
 
 .home_shop {
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -781,6 +812,10 @@ ul.tab-title a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+=======
+  display: flex;
+  flex-direction: column;
+>>>>>>> kai
 }
 
 .home_shop .button_min {
@@ -813,6 +848,7 @@ ul.tab-title a {
   overflow: hidden;
   top: 0;
   left: 0;
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -822,12 +858,18 @@ ul.tab-title a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+=======
+  display: flex;
+  justify-content: center;
+  align-items: center;
+>>>>>>> kai
 }
 
 .home_shop .shopItem .hovereffect img {
   display: block;
   position: relative;
   max-width: none;
+<<<<<<< HEAD
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
@@ -835,18 +877,28 @@ ul.tab-title a {
   -webkit-transform: translate3d(-10px, 0, 0);
   transform: translate3d(-10px, 0, 0);
   -webkit-backface-visibility: hidden;
+=======
+  transition: opacity 0.35s, transform 0.35s;
+  transform: translate3d(-10px, 0, 0);
+>>>>>>> kai
   backface-visibility: hidden;
 }
 
 .home_shop .shopItem .hovereffect:hover img {
   opacity: 0.4;
   filter: alpha(opacity=40);
+<<<<<<< HEAD
   -webkit-transform: translate3d(0, 0, 0);
+=======
+>>>>>>> kai
   transform: translate3d(0, 0, 0);
 }
 
 .home_shop .shopItem .hovereffect:hover h2:after {
+<<<<<<< HEAD
   -webkit-transform: translate3d(0, 0, 0);
+=======
+>>>>>>> kai
   transform: translate3d(0, 0, 0);
 }
 
@@ -854,18 +906,25 @@ ul.tab-title a {
   color: #FFF;
   opacity: 0;
   filter: alpha(opacity=0);
+<<<<<<< HEAD
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
   transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
   -webkit-transform: translate3d(100%, 0, 0);
+=======
+  transition: opacity 0.35s, transform 0.35s;
+>>>>>>> kai
   transform: translate3d(100%, 0, 0);
 }
 
 .home_shop .shopItem .hovereffect:hover a, .home_shop .shopItem .hovereffect:hover h2 {
   opacity: 1;
   filter: alpha(opacity=100);
+<<<<<<< HEAD
   -webkit-transform: translate3d(0, 0, 0);
+=======
+>>>>>>> kai
   transform: translate3d(0, 0, 0);
 }
 
@@ -885,8 +944,12 @@ ul.tab-title a {
 
 .home_shop .shopItem .item2 .hovereffect {
   z-index: 1;
+<<<<<<< HEAD
   -webkit-transform: translate(110%, -20%);
           transform: translate(110%, -20%);
+=======
+  transform: translate(110%, -20%);
+>>>>>>> kai
   max-height: 450px;
   max-width: 220px;
 }
@@ -896,16 +959,24 @@ ul.tab-title a {
 }
 
 .home_shop .shopItem .item3 .hovereffect {
+<<<<<<< HEAD
   -webkit-transform: translate(150%, -100%);
           transform: translate(150%, -100%);
+=======
+  transform: translate(150%, -100%);
+>>>>>>> kai
   max-height: 270px;
   max-width: 275px;
 }
 
 .home_shop .shopItem .item4 .hovereffect {
   z-index: 1;
+<<<<<<< HEAD
   -webkit-transform: translate(255%, -260%);
           transform: translate(255%, -260%);
+=======
+  transform: translate(255%, -260%);
+>>>>>>> kai
   max-height: 270px;
   max-width: 280px;
 }
@@ -915,8 +986,12 @@ ul.tab-title a {
 }
 
 .home_shop .shopItem .item5 .hovereffect {
+<<<<<<< HEAD
   -webkit-transform: translate(260%, -310%);
           transform: translate(260%, -310%);
+=======
+  transform: translate(260%, -310%);
+>>>>>>> kai
   max-height: 296px;
   max-width: 300px;
 }
@@ -926,6 +1001,7 @@ ul.tab-title a {
 }
 
 .flow_member {
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -958,6 +1034,8 @@ ul.tab-title a {
       -ms-flex-direction: column;
           flex-direction: column;
 =======
+=======
+>>>>>>> kai
   display: flex;
   flex-direction: column;
 }
@@ -994,6 +1072,7 @@ ul.tab-title a {
   left: 0;
   display: flex;
   justify-content: center;
+<<<<<<< HEAD
   align-items: center;
 }
 
@@ -1085,6 +1164,8 @@ ul.tab-title a {
 .flow_member {
   display: flex;
   justify-content: center;
+=======
+>>>>>>> kai
   flex-direction: column;
 }
 
@@ -1097,7 +1178,10 @@ ul.tab-title a {
 .flow_member .flowall .flow {
   display: flex;
   flex-direction: column;
+<<<<<<< HEAD
 >>>>>>> chickhack
+=======
+>>>>>>> kai
   text-align: center;
 }
 

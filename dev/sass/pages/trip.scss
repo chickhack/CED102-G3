@@ -14,24 +14,31 @@ input::-webkit-inner-spin-button {
 
 .swiper-container {
     margin: 0 auto;
-    width: 1120px;
+    max-width: 1120px;
+    @media all and (max-width: 1200px){
+        width: 95%;
+    }
+    .trippic {
+        width: 750px; 
+        
+    }  
 }
-
-.trippic {
-    width: 750px;
-}
-
 
 .parent_container {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
-
+    .up_container{
+        margin: 0 auto;
+        width: 100%;
     .trip_content_all {
         width: 50%;
         display: inline-block;
         vertical-align: top;
         padding: 20px;
-
+        @media all and (max-width: 767px) {
+            width: 90%;
+            margin: 0 auto;
+        }
         .trip_title {
             display: inline-flex;
             align-items: baseline;
@@ -39,6 +46,9 @@ input::-webkit-inner-spin-button {
             width: 100%;
             font-weight: bold;
             position: relative;
+            @media all and (max-width: 768px) {
+                font-size:16px;
+            }
             .number {
                 background-color: $gold;
                 padding: 8px;
@@ -76,32 +86,32 @@ input::-webkit-inner-spin-button {
             }
         }
 
+        .tab_contents {
+            border-top: 1px solid $gold;
+            letter-spacing: 1.5px;
+    
+            .tag {
+                display: inline-flex;
+                border: 1px solid $pink;
+                border-radius: 5px;
+                padding: 8px;
+                line-height: 5px;
+                margin: 3px;
+                color: $gray;
+            }
+    
+            .g {
+                color: $gold;
+            }
+        }
+
         a.-on {
             border-bottom: 4px solid $gold;
             width: 70px;
             text-align: center;
         }
+
     }
-
-    .tab_contents {
-        border-top: 1px solid $gold;
-        letter-spacing: 1.5px;
-
-        .tag {
-            display: inline-flex;
-            border: 1px solid $pink;
-            border-radius: 5px;
-            padding: 8px;
-            line-height: 5px;
-            margin: 3px;
-            color: $gray;
-        }
-
-        .g {
-            color: $gold;
-        }
-    }
-
     .book {
         width: 30%;
         display: inline-block;
@@ -112,9 +122,24 @@ input::-webkit-inner-spin-button {
         top: 20px;
         z-index: 2;
         background-color: $darkblue;
-
+        @media screen and (min-width: 768px)  and (max-width:1200px){
+            margin-left: 16px;
+        } 
+        @media screen and (min-width: 577px) and (max-width: 767px) {
+            width: 360px;
+            position: relative;
+            margin: 0 auto;
+        }
+        @media all and (max-width:576px){
+            width: 90%;
+            position: relative;
+            margin: 8px;
+        } 
         h3 {
             font-weight: bold;
+            @media all and (max-width: 768px) {
+                font-size:16px;
+            }
         }
 
         .price_dis {
@@ -139,7 +164,9 @@ input::-webkit-inner-spin-button {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-
+            @media all and (max-width:1200px){
+                flex-direction: column;
+            } 
             .date {
 
 
@@ -175,6 +202,9 @@ input::-webkit-inner-spin-button {
 
             .amount {
                 margin-right: 15px;
+                @media all and (max-width:1200px){
+                    margin-top: 6px;
+                } 
 
                 .date_text {
                     color: $gold;
@@ -253,11 +283,18 @@ input::-webkit-inner-spin-button {
 
         }
     }
-
     .comment {
         width: 50%;
         padding: 20px;
-
+        @media screen and (min-width: 576px) and (max-width: 767px) {
+            width: 365px;
+        }
+        @media all and (max-width:576px){
+            width: 90%;
+            position: relative;
+            margin: 0 auto;
+            padding-top: 80px;
+        } 
         .score {
             display: flex;
             align-items: center;
@@ -318,10 +355,13 @@ input::-webkit-inner-spin-button {
                 color: $white;
                 text-decoration: underline;
                 cursor: pointer;
+                @media all and (max-width: 767px) {
+                    bottom: 10px;
+                }
             }
         }
     }
-
+}
     .recommend {
         margin: 0 auto;
         padding-bottom: 80px;
@@ -334,6 +374,10 @@ input::-webkit-inner-spin-button {
             display: inline-flex;
             justify-content: center;
             width: 100%;
+            @media all and (max-width: 767px) {
+                flex-direction: column;
+                align-items: center;
+            }
 
             .tripcard {
                 // border: 1px solid white;
@@ -342,8 +386,11 @@ input::-webkit-inner-spin-button {
                 padding: 15px;
                 border-radius: 5px;
                 position: relative;
-                margin: 0 24px 0 24px;
-
+                margin: 0 16px 0 16px;
+                @media all and (max-width: 767px) {
+                    flex-direction: column;
+                    margin:16px 0 16px 0;
+                }
                 .spot_pic {
                     width: 250px;
                 }
@@ -393,5 +440,4 @@ input::-webkit-inner-spin-button {
             }
         }
     }
-
 }

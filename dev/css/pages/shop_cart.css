@@ -56,12 +56,11 @@ img {
 *,
 *:before,
 *:after {
-<<<<<<< HEAD
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
-=======
   box-sizing: inherit;
+<<<<<<< HEAD
 >>>>>>> chickhack
+=======
+>>>>>>> kai
   margin: 0;
   padding: 0;
 }
@@ -305,27 +304,15 @@ small, .small {
 }
 
 nav {
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  background-color: #0c0d18;
-  position: -webkit-sticky;
-=======
   display: flex;
   justify-content: center;
   align-items: center;
   justify-content: space-around;
   background-color: #0c0d18;
+<<<<<<< HEAD
 >>>>>>> chickhack
+=======
+>>>>>>> kai
   position: sticky;
   top: 0;
   width: 100%;
@@ -346,25 +333,14 @@ nav .logo h1 a {
 }
 
 nav .nav-links {
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-=======
   display: flex;
   justify-content: center;
   align-items: center;
   justify-content: flex-end;
+<<<<<<< HEAD
 >>>>>>> chickhack
+=======
+>>>>>>> kai
   width: 60%;
 }
 
@@ -373,24 +349,14 @@ nav .nav-links a {
 }
 
 nav .nav-icons {
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-=======
   display: flex;
   justify-content: center;
   align-items: center;
   justify-content: space-around;
+<<<<<<< HEAD
 >>>>>>> chickhack
+=======
+>>>>>>> kai
   width: 12%;
 }
 
@@ -422,24 +388,6 @@ footer .links .logo {
   position: relative;
   left: 50%;
   bottom: 50px;
-<<<<<<< HEAD
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-
-footer .links .footer-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-=======
   transform: translateX(-50%);
 }
 
@@ -448,17 +396,19 @@ footer .links .footer-links {
   justify-content: center;
   align-items: center;
   justify-content: space-around;
+<<<<<<< HEAD
 >>>>>>> chickhack
+=======
+>>>>>>> kai
   width: 55%;
   position: relative;
   left: 50%;
   bottom: 30px;
-<<<<<<< HEAD
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-=======
   transform: translateX(-50%);
+<<<<<<< HEAD
 >>>>>>> chickhack
+=======
+>>>>>>> kai
 }
 
 footer .links .footer-links a {
@@ -469,12 +419,11 @@ footer .footer_moon {
   position: relative;
   left: 50%;
   max-width: 550px;
-<<<<<<< HEAD
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-=======
   transform: translateX(-50%);
+<<<<<<< HEAD
 >>>>>>> chickhack
+=======
+>>>>>>> kai
 }
 
 footer .smoke {
@@ -483,12 +432,11 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
-<<<<<<< HEAD
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-=======
   transform: translateX(-50%);
+<<<<<<< HEAD
 >>>>>>> chickhack
+=======
+>>>>>>> kai
 }
 
 .quantity label {
@@ -528,27 +476,15 @@ section.cart form {
 }
 
 section.cart .item {
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-=======
   display: flex;
   justify-content: center;
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
+<<<<<<< HEAD
 >>>>>>> chickhack
+=======
+>>>>>>> kai
   background-color: #292B41;
   padding: 8px 16px;
 }

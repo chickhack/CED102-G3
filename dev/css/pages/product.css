@@ -314,9 +314,12 @@ nav {
       justify-content: space-around;
   background-color: #0c0d18;
 <<<<<<< HEAD
+<<<<<<< HEAD
   position: -webkit-sticky;
 =======
 >>>>>>> chickhack
+=======
+>>>>>>> kai
   position: sticky;
   top: 0;
   width: 100%;
@@ -441,12 +444,11 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
-<<<<<<< HEAD
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-=======
   transform: translateX(-50%);
+<<<<<<< HEAD
 >>>>>>> chickhack
+=======
+>>>>>>> kai
 }
 
 .quantity label {
@@ -478,21 +480,13 @@ footer .smoke {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
-=======
   justify-content: center;
   align-items: center;
   align-items: start;
+<<<<<<< HEAD
 >>>>>>> chickhack
+=======
+>>>>>>> kai
 }
 
 .product .img {

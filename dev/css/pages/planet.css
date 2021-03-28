@@ -314,9 +314,12 @@ nav {
       justify-content: space-around;
   background-color: #0c0d18;
 <<<<<<< HEAD
+<<<<<<< HEAD
   position: -webkit-sticky;
 =======
 >>>>>>> chickhack
+=======
+>>>>>>> kai
   position: sticky;
   top: 0;
   width: 100%;
@@ -441,12 +444,11 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
-<<<<<<< HEAD
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-=======
   transform: translateX(-50%);
+<<<<<<< HEAD
 >>>>>>> chickhack
+=======
+>>>>>>> kai
 }
 
 .quantity label {
@@ -491,34 +493,24 @@ canvas {
 }
 
 .title {
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-=======
   display: flex;
   justify-content: center;
+<<<<<<< HEAD
 >>>>>>> chickhack
+=======
+>>>>>>> kai
   padding-top: 100px;
   font-size: 42px;
 }
 
 ul.tab-title {
   padding-top: 50px;
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-=======
   display: flex;
   justify-content: center;
+<<<<<<< HEAD
 >>>>>>> chickhack
+=======
+>>>>>>> kai
 }
 
 ul.tab-title li {
@@ -543,26 +535,23 @@ ul.tab-title li.selected {
 
 .tab-inner {
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
 =======
 >>>>>>> chickhack
+=======
+>>>>>>> kai
   display: flex;
 }
 
 .tab-inner .intro {
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-=======
   display: flex;
   flex-direction: column;
+<<<<<<< HEAD
 >>>>>>> chickhack
+=======
+>>>>>>> kai
   margin-top: 50px;
   text-align: left;
 }
@@ -575,10 +564,13 @@ ul.tab-title li.selected {
 
 .tab-inner .data {
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
 =======
 >>>>>>> chickhack
+=======
+>>>>>>> kai
   display: flex;
   font-family: Haettenschweiler, sans-serif;
 }
@@ -635,12 +627,11 @@ ul.tab-title li.selected {
   background-image: url(../../dev/img/planet/crater.jpg);
   background-position: top;
   position: relative;
-<<<<<<< HEAD
-  -webkit-transform: translate(-112%, -220%);
-          transform: translate(-112%, -220%);
-=======
   transform: translate(-112%, -220%);
+<<<<<<< HEAD
 >>>>>>> chickhack
+=======
+>>>>>>> kai
 }
 
 .tab-active .outline {
@@ -649,26 +640,21 @@ ul.tab-title li.selected {
   width: 190px;
   border-radius: 50%;
   position: relative;
-<<<<<<< HEAD
-  -webkit-transform: translate(-100%, -100%);
-          transform: translate(-100%, -100%);
-=======
   transform: translate(-100%, -100%);
+<<<<<<< HEAD
 >>>>>>> chickhack
+=======
+>>>>>>> kai
 }
 
 .tab-active .geoopt {
   position: absolute;
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-column-gap: 30px;
-          column-gap: 30px;
-=======
   display: flex;
   column-gap: 30px;
+<<<<<<< HEAD
 >>>>>>> chickhack
+=======
+>>>>>>> kai
   right: 0px;
   top: 700px;
 }
@@ -691,16 +677,12 @@ ul.tab-title li.selected {
 }
 
 .content {
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-=======
   display: flex;
   flex-wrap: wrap;
+<<<<<<< HEAD
 >>>>>>> chickhack
+=======
+>>>>>>> kai
 }
 
 .content .imgs {
@@ -709,29 +691,6 @@ ul.tab-title li.selected {
 }
 
 .content .imgs .img1 {
-<<<<<<< HEAD
-  -webkit-transform: translate(10%);
-          transform: translate(10%);
-}
-
-.content .imgs .img2 {
-  -webkit-transform: translateX(-10%);
-          transform: translateX(-10%);
-}
-
-.content .imgs .img3 {
-  -webkit-transform: translate(-70%, -350px);
-          transform: translate(-70%, -350px);
-}
-
-.content .desc {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-=======
   transform: translate(10%);
 }
 
@@ -746,7 +705,10 @@ ul.tab-title li.selected {
 .content .desc {
   display: flex;
   align-items: center;
+<<<<<<< HEAD
 >>>>>>> chickhack
+=======
+>>>>>>> kai
 }
 
 .content .desc p {

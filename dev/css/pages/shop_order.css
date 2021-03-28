@@ -634,9 +634,12 @@ section.orderer .orderer_click::before, section.orderer .recipient_click::before
   position: absolute;
   left: -3.1%;
 <<<<<<< HEAD
+<<<<<<< HEAD
   -webkit-transform: rotate(45deg) translateY(-60%);
           transform: rotate(45deg) translateY(-60%);
 =======
+=======
+>>>>>>> kai
   transform: rotate(45deg) translateY(-60%);
 >>>>>>> chickhack
   top: 50%;
@@ -675,7 +678,10 @@ section.orderer .info {
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
+<<<<<<< HEAD
 >>>>>>> chickhack
+=======
+>>>>>>> kai
   width: 80%;
   margin-left: 6%;
 }

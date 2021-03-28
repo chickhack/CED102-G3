@@ -315,9 +315,12 @@ nav {
       justify-content: space-around;
   background-color: #0c0d18;
 <<<<<<< HEAD
+<<<<<<< HEAD
   position: -webkit-sticky;
 =======
 >>>>>>> chickhack
+=======
+>>>>>>> kai
   position: sticky;
   top: 0;
   width: 100%;
@@ -443,11 +446,15 @@ footer .smoke {
   width: 100%;
   height: 80%;
 <<<<<<< HEAD
+<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 =======
   transform: translateX(-50%);
 >>>>>>> chickhack
+=======
+  transform: translateX(-50%);
+>>>>>>> kai
 }
 
 .quantity label {
@@ -483,6 +490,7 @@ body {
 .welcome {
   padding: 15vh 250px 0px 250px;
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -497,6 +505,11 @@ body {
   align-items: center;
   justify-content: left;
 >>>>>>> chickhack
+=======
+  display: flex;
+  align-items: center;
+  justify-content: left;
+>>>>>>> kai
 }
 
 .spacedinfo {
