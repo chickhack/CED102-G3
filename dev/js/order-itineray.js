@@ -23,3 +23,8 @@ $('.btn-orderDetails').click(function(){
 $('#paymethod-automanu-car').click(function(){
     $('#car-auto').slideToggle();
 });
+$('#btn-paymethod').click(function(){
+    $('.paymethod-automanu').slideToggle();
+    $('#btn-paymethod').toggleClass("svgRight");
+    
+});
