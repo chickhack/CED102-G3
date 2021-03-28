@@ -305,10 +305,6 @@ nav {
   align-items: center;
   justify-content: space-around;
   background-color: #0c0d18;
-<<<<<<< HEAD
-  position: -webkit-sticky;
-=======
->>>>>>> 3c6831b0fb2aa80e85492fb0021468eacba79fbc
   position: sticky;
   top: 0;
   width: 100%;
@@ -320,7 +316,7 @@ nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-  background-image: url("../img/logo.png");
+  background-image: url("../../img/logo.png");
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -408,12 +404,7 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
-<<<<<<< HEAD
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-=======
   transform: translateX(-50%);
->>>>>>> 3c6831b0fb2aa80e85492fb0021468eacba79fbc
 }
 
 .quantity label {
@@ -443,21 +434,9 @@ footer .smoke {
 
 .product {
   display: flex;
-<<<<<<< HEAD
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
-=======
   justify-content: center;
   align-items: center;
   align-items: start;
->>>>>>> 3c6831b0fb2aa80e85492fb0021468eacba79fbc
 }
 
 .product .img {
