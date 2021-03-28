@@ -6,30 +6,44 @@ section.orderDetail{
     margin: 0 auto;
     padding-top: 5vh;
     .order{
-        width: 95%;
+        margin: 0 30px;
         // border: 1px solid $pink;
-        margin: 0 auto;
         li{
             font-weight: 900;
             background-color: #292B41;
             @include flex_middle();
             justify-content: space-between;
-            padding: 8px 16px;
+            padding: 8px 0;
             .imgWord{
-                width: 45%;
+                width: 100%;
                 @include flex_middle();
                 justify-content: space-around;
+                flex-wrap: wrap;
                 .prod{
-                    max-width: 80px;
-                    background-color: $white;
-                    padding: 8px;
+                    width: 10%;
+                    @include respond(mobile){
+                        width: 15%;
+                        margin-left: 8px;
+                    }
+                }
+                .imgRight{
+                    @include flex_middle();
+                    justify-content: space-between;
+                    width: 60%;
+                    @include respond(mobile){
+                        width: 75%;
+                        justify-content: space-around;
+                    }
                 }
                 .integral{
                     @include flex_middle();
+                    .icon{
+                        max-width:10px;
+                    }
                 }
             }
             .quantity{
-                width: 45%;
+                width: 80%;
                 @include flex_middle();
                 justify-content: space-around;
             }
@@ -42,10 +56,16 @@ section.orderDetail{
         align-items: flex-end;
         padding: 16px 6% 16px 0;
         background-color: #292B41;
+        @include respond(mobile){
+            justify-content: center;
+        }
         .total,.integral{
             @include flex_middle();
             justify-content: space-around;
             width: 40%;
+            @include respond(mobile){
+                width: 100%;
+            }
             p:nth-child(2){
                 font-weight: 900;
                 color: $gold;
@@ -63,45 +83,28 @@ section.orderDetail{
 section.orderer{
     max-width: 948px;
     margin: 0 auto;
+    padding-bottom: 40px;
+    position: relative;
     form{
         position: relative;
-        padding-bottom: 80px;
     }
     .orderer_form,.recipient,.payment{
-        width: 95%;
-        margin: 32px auto;
+        margin: 32px 30px;
         background-color: #292B41;
-        padding-bottom: 80px;
+        padding-bottom: 60px;
         max-height: 0;
         overflow: hidden;
         transition: all 1s;
     }
-    .orderer_click,.recipient_click,.payment_click{
-        padding: 16px 0;
-        // border: 1px solid #fff;
+    .arrow{
+        display: flex;
+        align-items: center;
+        padding: 20px 0;
+        margin: 0 8px;
         cursor: pointer;
-        position: relative;
-        left: 6%;
-        // background-color: #fff;
-        &::before{
-            content: "";
-            width: 1px;
-            height: 30%;
-            background-color: $white;
-            position: absolute;
-            left: -3.1%;
-            transform: rotate(45deg) translateY(-60%);
-            top: 50%;
-        }
-        &::after{
-            content: "";
-            width: 1px;
-            height: 30%;
-            background-color: $white;
-            left: -3%;
-            position: absolute;
-            transform: rotate(-45deg) translateY(-60%);
-            top: 50%;
+        img{
+            transition: all .5s;
+            transform: rotate(-90deg);
         }
     }
     .info{
@@ -114,6 +117,9 @@ section.orderer{
         .input_group{
             width: 45%;
             margin-top: 16px;
+            @include respond(mobile){
+                width: 100%;
+            }
         }
         .long{
             width: 100%;
@@ -137,103 +143,76 @@ section.orderer{
     }
     .retract{
         max-height: 400px;
+        @include respond(mobile){
+            max-height: 600px;
+        }
+        img{
+            transform: rotate(0deg);
+        }
     }
     .payTitle{
-        // border: 1px solid #fff;
-        width: 95%;
-        margin: 0 auto;
+        margin: 0 30px;
     }
-    .input_check{
-        width: 50%;
-        display: inline-block;
-        // border: 1px solid #fff;
-        .icon{
-            display: inline-block;
-            width: 14px;
+    .group{
+        @include flex_middle();
+        flex-wrap: wrap;
+    }
+    .checkbox_group{
+        @include flex_middle();
+        flex-wrap: wrap;
+        @include respond(mobile){
+            justify-content: start;
+            width: 100%;
+            margin: 8px 0;
         }
-        .check-custom{
+        &.long{
+            justify-content: start;
+            width: 50%;
+        }
+        input{
+            width: 70%;
+        }
+        .checkbox_custom{
             opacity: 0;
             position: absolute;
+            width: 20px;
         }
-        .check-custom, .check-custom-label {
+        .checkbox_custom,.checkbox_custom_label{
             display: inline-block;
             vertical-align: middle;
             margin: 5px;
-            cursor: pointer;    
+            cursor: pointer;
+        }
+        .checkbox_custom_label{
             position: relative;
-            &::before{
-                content: '';
-                background: transparent;
-                border: 2px solid $gold;
-                display: inline-block;
-                vertical-align: middle;
-                width: 5px;
-                height: 5px;
-                padding: 2px;
-                margin-right: 10px;
-                text-align: center;
-            }
+            font-weight: 900;
         }
-        .check-custom + .check-custom-label:before {
+        .checkbox_custom + .checkbox_custom_label:before{
+            content: '';
+            background: transparent;
+            border: 1px solid $gold;
+            display: inline-block;
+            vertical-align: middle;
+            width: 10px;
+            height: 10px;
             border-radius: 50%;
+            padding: 2px;
+            margin-right: 10px;
+            text-align: center;
         }
-        .check-custom:checked + .check-custom-label:before {
+        .checkbox_custom:checked + .checkbox_custom_label:before {
+            content: "";
             background: $gold;
-            box-shadow: inset 0px 0px 0px 4px $gold;
         }
-        .check-custom:focus + .check-custom-label {
-            outline: none; /* focus style */
-        }
-        p{
-            display: inline-block;
-            >span{
-                letter-spacing: 3px;
-                font-weight: 900;
-            }
-        }
-    }
-    .discount_group{
-        display: inline-block;
-        // border: 1px solid #fff;
-        label,input{
-            display: inline-block;
-        }
-        input{
-            width: 30%;
-        }
-    }
-    .credit{
-        @include flex_middle();
-        flex-direction: column;
-        .input_check{
-            width: 100%;
-            // border: 1px solid #fff;
-        }
-        span{
-            margin: 0 4px;
-        }
-        .credit_number,.date{
-            @include flex_middle();
-            justify-content: start;
-            width: 100%;
-            margin-left: 56px;
-            div{
-                @include flex_middle();
-                justify-content: start;
-                input{
-                    width: 15%;
-                }
-            }
-            .terms{
-                width: 30%;
-            }
+        .checkbox_custom:focus + .checkbox_custom-label{
+            outline: 1px solid #ddd;
         }
     }
     .button_min{
         background-color: $gold;
         color: $white;
         position: absolute;
-        right: 5%;
+        right: 30px;
         bottom: 0;
     }
 }
