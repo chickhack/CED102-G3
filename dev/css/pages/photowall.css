@@ -5,22 +5,12 @@ body {
 }
 
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .grid {
-<<<<<<< HEAD
   margin: auto;
   max-width: 1440px;
-=======
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: start;
-  padding-top: 5%;
-  font-size: 12px;
->>>>>>> chickhack
 }
 
 .grid-item {
@@ -34,8 +24,7 @@ body {
 
 .grid .grid-item img {
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 5px;
 }
 
@@ -44,8 +33,6 @@ body {
 }
 
 .action-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   bottom: 48px;
   background-color: black;
@@ -98,8 +85,6 @@ body {
 }
 
 .article {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -114,8 +99,6 @@ body {
 }
 
 .article_2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-top: 10px;
 }
