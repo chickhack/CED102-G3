@@ -14,28 +14,32 @@
         <section class="cart" id="app">
             <form action="">
                 <h3 class="h2">我的商品</h3>
-                <ul v-for="product in products">
-                    <li class="item margin_top_3">
+                <ul>
+                    <li class="item margin_top_3" v-for="product in products">
                         <div class="img">
                             <img :src="product.src" alt="">
                         </div>
-                        <div class="pdname">
-                            <p class="h3">{{product.name}}</p>
-                            <div class="integral margin_top_1">
-                                <img src="./img/s.png" alt="" class="icon">
-                                <p>{{product.integral}}</p>
+                        <div class="info">
+                            <div class="pdname">
+                                <p>{{product.name}}</p>
+                                <div class="integral">
+                                    <div class="points">
+                                        <img src="./img/s.png" alt="" class="icon">
+                                        <p>{{product.integral}}</p>
+                                    </div>
+                                    @@include("./layout/quantityBtn.html")
+                                </div>
                             </div>
+                            <p class="h3">${{product.price}}</p>
+                            <img src="./img/icon/trashcan.png" class="icon trashcan">
                         </div>
-                        <p class="h2">${{product.price}}</p>
-                        @@include("./layout/quantityBtn.html")
-                        <img src="./img/icon/trashcan.png" class="icon trashcan">
                     </li>
                 </ul>
                 <div class="checkout margin_top_8">
                     <div class="total">
                         <div class="totalPrice">
                             <p>商品合計</p>
-                            <p class="h2 margin_left_1">${{totalPrice}}</p>
+                            <p class="margin_left_1">${{totalPrice}}</p>
                         </div>
                         <div class="totalIntegral margin_top_1">
                             <small>可累計積分</small>
