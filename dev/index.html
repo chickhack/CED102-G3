@@ -33,7 +33,7 @@
             <p>EXPLORE THE GALAXY</p>
           </div>
           <div class="scroll">
-            <img src="./img/icon/" style="width: 50px" />
+            <img src="./img/icon/scroll.gif" style="width: 50px" />
           </div>
         </div>
 <!-- 訂購流程 -->
@@ -80,25 +80,29 @@
           <component :is="content"></component>
         </div>
 <!-- 互動牆 -->
-        <div class="gallery margin_top_10">
+        <div class="gallery margin_top_8" id="gallery">
           <!-- 上 -->
           <div class="box top col-12">
             <div class="topleft col-5">
-              <div class="col-6 A"></div>
-              <div class="col-6 B"></div>
+              <div class="col-6 A">
+                <img :src="image1">
+              </div>
+              <div class="col-6 B">
+                <img :src="image2">
+              </div>
             </div>
             <div class="box topright col-7 margin_top_10">
               <div class="topSct col-12">
                 <h2>太空互動</h2>
                 <div class="btn-group" role="group">
-                  <button type="button" class="btn btn-secondary"><</button>
-                  <button type="button" class="btn btn-secondary">></button>
+                  <button type="button" @click="changeGallery()" class="btn btn-secondary"><</button>
+                  <button type="button" @click="changeGalleryBack()" class="btn btn-secondary">></button>
                 </div>
               </div>
               <div class="separator margin_top_2"></div>
               <div class="galleryIntro">
                 <h5 class="margin_top_10" >
-                  "去自由行的話需要自己安排行程，若毫無頭緒，不知道應該前往哪些景點、或是行程應該怎樣安排的話，不妨看看部落客的遊記，拿點靈感！小編整理了以下的人氣旅遊部落客清單，想安排一趟難忘旅遊行程的話，千萬不要錯過以下旅遊部落客推薦！"
+                  {{content1}}
                 </h5>
               </div>
             </div>
@@ -106,17 +110,23 @@
           <!-- 下 -->
           <div class="box bottom">
             <div class="box bottomleft col-5">
-              <div class="col-6 D"></div>
-              <div class="col-6 E"></div>
+              <div class="col-6 D">
+                <img :src="image3">
+              </div>
+              <div class="col-6 E">
+                <img :src="image4">
+              </div>
             </div>
             <div class="box bottomright col-7">
-              <div class="col-12 F"></div>
+              <div class="col-12 F">
+                <img :src="image5">
+              </div>
             </div>
           </div>
         </div>
   
 <!-- 商城 -->
-      <div class="container">
+      <div class="container" >
         <div class="home_shop margin_top_10">
           <h2>星球商城</h2>
           <div class="shopItem margin_top_10">
@@ -166,36 +176,36 @@
               </div>
             </div>
           </div>
-          <div class="button button_min">去逛逛</div>
+          <button class="button button_min">去逛逛</button>
         </div>   
 
 <!-- 會員待遇 -->
           <div class="flow_member margin_top_10 ">
             <h2 align="center">歡迎加入太空世界</h2>
             <h3 class="margin_top_3" align="center">加入會員，享受禮遇，與所有玩家同遊宇宙</h3>
-              <div class="flowall margin_top_8">
-                <div class="flow margin_left_5">
+              <div class="flowall margin_top_8" align="center">
+                <div class="flow">
                     <img src="./img/icon/ribbon.png" class="step_icon" alt="icon">
                     <h4 class="flowTitle margin_top_2">會員分級</h4>
                     <div class="separator margin_top_2"></div>
                     <h4 class="margin_top_2">累積積分 會員升級<br>享受更多特殊禮遇</h4>
                 </div>
 
-                <div class="flow margin_left_5">
+                <div class="flow ">
                     <img src="./img/icon/ranking.png" class="step_icon" alt="icon">
                     <h4 class="flowTitle margin_top_2">積分排行</h4>
                     <div class="separator margin_top_2"></div>
                     <h4 class="margin_top_2">每月排行 挑戰排行</h4>
                 </div>
 
-                <div class="flow margin_left_5">
+                <div class="flow ">
                     <img src="./img/icon/post.png" class="step_icon" alt="icon">
                     <h4 class="flowTitle margin_top_2">太空互動</h4>
                     <div class="separator margin_top_2"></div>
                     <h4 class="margin_top_2">玩家分享 互相交流<br>看看別人怎麼玩</h4>
                 </div>
               </div>
-              <div class="button button_min margin_top_10" >加入會員</div>
+              <button class="button button_min margin_top_10" >加入會員</button>
           </div>
       </div>
 <!-- 框框 -->
@@ -208,21 +218,20 @@
 
 
 
-    <!-- 星球tab jQuery -->
+    <!-- 星球頁籤轉移 -->
     <script>
       $(function(){
-        var $li = $('div.tabList li');
-            $($li.eq(0).addClass('selected').find('a').attr('href')).siblings('.tab-inner').hide();
+        var $button = $('div.tabList button');
+            $($button.eq(0).addClass('active').find('button').siblings('.tab-inner').hide());
 
-            $li.click(function(){
+            $button.click(function(){
               $($(this).find('a').attr('href')).show().siblings('.tab-inner').hide();
-              $(this).addClass('selected').siblings('.selected').removeClass('selected');
+              $(this).addClass('active').siblings('.active').removeClass('active');
             });
       });
     </script>
     <!-- 星球tab Vue-->
     <script src="./js/planet_data.js"></script>
-
- 
+    <script src="./js/gallery.js"></script>
   </body>
 </html>

@@ -6,36 +6,42 @@ section.cart{
     // border: 1px solid #fff;
     padding-top: 5vh;
     form{
-        width: 95%;
         // border: 1px solid #fff;
-        margin: 0 auto;
+        margin: 0 30px;
     }
     .item{
         @include flex_middle();
-        justify-content: space-around;
-        flex-wrap: wrap;
+        justify-content: center;
+        // flex-wrap: wrap;
         background-color: #292B41;
-        padding: 8px 16px;
-        // border: 1px solid #fff;
+        padding: 16px 0;
         .img{
-            max-width: 50px;
-            // border: 1px solid #fff;
-            text-align: center;
-            padding: 16px;
-            background-color: $white;
-        }
-        .pdname{
-            display: flex;
-            flex-direction: column;
-            align-items: start;
-            width: 15%;
-        }
-        .integral{
-            *{
-                display: inline-block;
+            width: 10%;
+            @include respond(mobile){
+                width: 20%;
             }
-            .icon{
-                max-width: 15px;
+        }
+        .info{
+            width: 65%;
+            margin-left: 10px;
+            @include flex_middle();
+            justify-content: space-around;
+            .points{
+                @include flex_middle();
+                justify-content: start;
+                margin: 8px 0;
+            }
+            .quantity{
+                .as{
+                    @include respond(mobile){
+                        *{
+                            padding: 2px 4px;
+                        }
+                        input[type="number"]{
+                            width: 10px;
+                        }
+                    }
+                }
             }
         }
         .trashcan{
@@ -50,6 +56,9 @@ section.cart{
         justify-content: flex-end;
         padding: 16px 0;
         letter-spacing: 3px;
+        @include respond(mobile){
+            flex-direction: column;
+        }
         .totalPrice{
             @include flex_middle();
             justify-content: flex-end;
@@ -67,6 +76,10 @@ section.cart{
             padding: 8px;
             margin-right: 7%;
             color: $white;
+            @include respond(mobile){
+                margin-top: 16px;
+                width: 80%;
+            }
         }
     }
 }

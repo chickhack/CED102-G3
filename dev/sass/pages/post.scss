@@ -9,7 +9,7 @@ div.post{
   margin-top: 50px;
 }
 form.post{
-  width: 1000px;
+  width: 100%;
   margin: 0 auto;
   padding: 30px;
   background-color: #292B41;
@@ -42,7 +42,7 @@ form.post .select_trip select{
 }
 .post_text textarea.texts{
   outline: none;
-  width: 938px;
+  width: 100%;
   height: 200px;
   resize: none;
   padding: 10px;

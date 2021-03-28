@@ -8,16 +8,8 @@ minus.addEventListener("click", function(){
 
 add.addEventListener("click", function(){
     number.stepUp(1);
+<<<<<<< HEAD
 })
-
-const minus2 = document.querySelector("#minus");
-const number2 = document.querySelector("#num");
-const add2 = document.querySelector("#add");
-
-minus2.addEventListener("click", function(){
-    number.stepDown(1);
+=======
 })
-
-add2.addEventListener("click", function(){
-    number.stepUp(1);
-})
+>>>>>>> kai

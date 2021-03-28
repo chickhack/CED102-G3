@@ -20,6 +20,15 @@ nav{
     border: 1px solid #ad6e4a57;
     margin: 0 auto;
 }
+
+
+//按鈕
+button{
+    background-color: transparent;
+    color: $gold;
+}
+
+
 .banner{
     .slogan {
         display: flex;
@@ -118,13 +127,13 @@ ul.tab-title {
         align-items: flex-end;
         .A{
             // border: 1px solid white;
-            background-image: url('../../img/home/首頁-互動牆壁2.jpg');
+            // background-image: url('../../img/home/首頁-互動牆壁2.jpg');
             height: 310px;
             background-size: 120%;
         }
         .B{
             // border: 1px solid white;
-            background-image: url('../../img/home/首頁-互動牆壁9.jpg');
+            // background-image: url('../../img/home/首頁-互動牆壁9.jpg');
             background-repeat: no-repeat;
             height: 450px;
             background-position: center;
@@ -159,13 +168,13 @@ ul.tab-title {
         max-height: 500px;
         .D{
             // border: 1px solid white;
-            background-image: url('../../img/home/首頁-互動牆壁2.jpg');
+            // background-image: url('../../img/home/首頁-互動牆壁2.jpg');
             height: 310px;
             background-size: 120%;;
         }
         .E{
             // border: 1px solid white;
-            background-image: url('../../img/home/mars2.jpg');
+            // background-image: url('../../img/home/mars2.jpg');
             background-repeat: no-repeat;
             height: 450px;
             background-position: right;
@@ -175,7 +184,7 @@ ul.tab-title {
     }
     .bottomright{
         .F{
-            background-image: url('../../img/home/首頁-互動牆壁8.jpg');
+            // background-image: url('../../img/home/首頁-互動牆壁8.jpg');
             background-repeat: no-repeat;
             height: 310px;
             background-position: center;
@@ -206,7 +215,7 @@ ul.tab-title {
             position: relative;
             text-align: center;
             cursor: default;
-            background: #42b078;
+            background: #4e7192;
           }
           
           .hovereffect .overlay {
@@ -358,5 +367,9 @@ ul.tab-title {
             }
 
         }
+    }
+    button{
+        align-self: center;
+        margin-bottom: 70px;
     }
 }

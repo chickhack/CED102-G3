@@ -1,4 +1,3 @@
-@charset "UTF-8";
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -79,6 +78,11 @@ body {
   font-size: 14px;
   background-color: #0c0d18;
   overflow-x: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -ms-user-select: none;
+      user-select: none;
 }
 
 h1, .h1 {
@@ -468,6 +472,18 @@ footer .smoke {
   cursor: pointer;
 }
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 nav {
   background-color: transparent;
 }
@@ -482,6 +498,11 @@ nav {
 .frame {
   border: 1px solid #ad6e4a57;
   margin: 0 auto;
+}
+
+button {
+  background-color: transparent;
+  color: #AD6E4A;
 }
 
 .banner .slogan {
@@ -621,13 +642,11 @@ ul.tab-title a {
 }
 
 .gallery .topleft .A {
-  background-image: url("../../img/home/首頁-互動牆壁2.jpg");
   height: 310px;
   background-size: 120%;
 }
 
 .gallery .topleft .B {
-  background-image: url("../../img/home/首頁-互動牆壁9.jpg");
   background-repeat: no-repeat;
   height: 450px;
   background-position: center;
@@ -684,13 +703,11 @@ ul.tab-title a {
 }
 
 .gallery .bottomleft .D {
-  background-image: url("../../img/home/首頁-互動牆壁2.jpg");
   height: 310px;
   background-size: 120%;
 }
 
 .gallery .bottomleft .E {
-  background-image: url("../../img/home/mars2.jpg");
   background-repeat: no-repeat;
   height: 450px;
   background-position: right;
@@ -698,7 +715,6 @@ ul.tab-title a {
 }
 
 .gallery .bottomright .F {
-  background-image: url("../../img/home/首頁-互動牆壁8.jpg");
   background-repeat: no-repeat;
   height: 310px;
   background-position: center;
@@ -735,7 +751,7 @@ ul.tab-title a {
   position: relative;
   text-align: center;
   cursor: default;
-  background: #42b078;
+  background: #4e7192;
 }
 
 .home_shop .shopItem .hovereffect .overlay {
@@ -912,5 +928,12 @@ ul.tab-title a {
   color: #C9ADA7;
   justify-items: center;
   line-height: 1.5rem;
+}
+
+.flow_member button {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-bottom: 70px;
 }
 /*# sourceMappingURL=index.css.map */
