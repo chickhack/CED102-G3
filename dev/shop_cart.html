@@ -27,7 +27,13 @@
                                         <img src="./img/s.png" alt="" class="icon">
                                         <p>{{product.integral}}</p>
                                     </div>
-                                    @@include("./layout/quantityBtn.html")
+                                    <div class="quantity">
+                                        <div class="as margin_top_2">
+                                            <span class="minus" @click="subQuantity">&minus;</span>
+                                            <input type="number" name="quantity" id="quantity" v-model.number="verifiedQuantity" :min="button.min" :max="button.max">
+                                            <span class="add" @click="addQuantity">&plus;</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <p class="h3">${{product.price}}</p>
@@ -47,7 +53,7 @@
                             <small>+6000</small>
                         </div>
                     </div>
-                    <a class="button_min margin_left_3" href="order.html">前往結帳</a>
+                    <a class="button_min margin_left_3" href="shop_order.html">前往結帳</a>
                 </div>
             </form>
         </section>
@@ -79,7 +85,34 @@
                     price: 5000,
                 }],
                 totalPrice: 20000,
-                totalIntegral: 12000
+                totalIntegral: 12000,
+                button: {
+                    min: 1,
+                    max: 99,
+                    quantity: 1,
+                }
+            },
+            computed:{
+                verifiedQuantity: {
+                    get(){
+                        return this.button.quantity;
+                    },
+                    set(value){
+                        if(!value || typeof value === "string"){
+                            return;
+                        }else if(value >= this.button.min || value <= this.button.max){
+                            this.button.quantity = value;
+                        }
+                    }
+                }
+            },
+            methods: {
+                addQuantity(){
+                    this.verifiedQuantity++;
+                },
+                subQuantity(){
+                    this.verifiedQuantity--;
+                }
             }
         })
     </script>
