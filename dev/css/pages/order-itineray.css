@@ -18,6 +18,10 @@ body {
   height: 20px;
 }
 
+.bi {
+  fill: #ad6e4a;
+}
+
 .checkbox-1 {
   border: 1px solid #ad6e4a;
 }
@@ -169,8 +173,7 @@ body {
   max-width: 100px;
   height: 100%;
   max-height: 50px;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 
 .imgsr {
@@ -178,8 +181,7 @@ body {
   max-width: 150px;
   height: auto;
   max-height: 150px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 #paymethod-coin-nu {
@@ -189,7 +191,6 @@ body {
   font-size: 16px;
   width: 30%;
   letter-spacing: 2px;
-  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
@@ -232,17 +233,55 @@ body {
   height: 25px;
 }
 
+.checkbox_custom {
+  opacity: 0;
+  position: absolute;
+  width: 20px;
+}
+
+.checkbox_custom, .checkbox_custom_label {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.checkbox_custom_label {
+  position: relative;
+  font-weight: 900;
+}
+
+.checkbox_custom + .checkbox_custom_label:before {
+  content: '';
+  background: transparent;
+  border: 1px solid #ad6e4a;
+  display: inline-block;
+  vertical-align: middle;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  padding: 2px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.checkbox_custom:checked + .checkbox_custom_label:before {
+  content: "";
+  background: #ad6e4a;
+}
+
+.checkbox_custom:focus + .checkbox_custom-label {
+  outline: 1px solid #ddd;
+}
+
 form {
   padding: 0 0 0 0;
   height: 100%;
 }
 
 form .orderinfo .row {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  justify-content: center;
+  align-content: center;
 }
 
 form .orderinfo .row .col-10 {
@@ -251,27 +290,13 @@ form .orderinfo .row .col-10 {
   padding-bottom: 10px;
 }
 
-<<<<<<< HEAD
-form .orderinfo .row .col-7 .row {
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-form .orderinfo .row .col-7 .row .col-7 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-=======
 form .orderinfo .row .col-10 .row {
   justify-content: space-around;
 }
 
 form .orderinfo .row .col-10 .row .col-7 {
->>>>>>> chickhack
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 form .orderinfo .row .col-10 .row .col-7 input {
@@ -281,7 +306,6 @@ form .orderinfo .row .col-10 .row .col-7 input {
   background-color: #292B41;
   border: 1px solid #ad6e4a;
   padding: 5px 10px;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -292,15 +316,9 @@ form .orderinfo .row .col-10 .row .col-7 input:focus {
 
 form .orderinfo .row .col-10 .row .col-11 {
   margin: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: start;
-      align-content: flex-start;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-content: flex-start;
+  flex-direction: column;
 }
 
 form .orderinfo .row .col-10 .row .col-11 input {
@@ -312,21 +330,15 @@ form .orderinfo .row .col-10 .row .col-11 input {
 }
 
 form .ltineraryinfo .row {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 form .ltineraryinfo .row .col-10 .row {
   margin-bottom: 32px;
   background-color: #292B41;
   border-radius: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 form .ltineraryinfo .row .col-10 .row .col-3 {
@@ -334,28 +346,14 @@ form .ltineraryinfo .row .col-10 .row .col-3 {
   padding-bottom: 16px;
 }
 
-<<<<<<< HEAD
-form .ltineraryinfo .row .col-7 .row .col-11 img {
-  max-width: 200px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-form .ltineraryinfo .row .col-7 .row .col-11 .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-=======
 form .ltineraryinfo .row .col-10 .row .col-3 img {
   max-width: 150px;
   object-fit: cover;
 }
 
 form .ltineraryinfo .row .col-10 .row .col-7 .row {
->>>>>>> chickhack
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   height: 100%;
   width: 100%;
 }
@@ -364,26 +362,11 @@ form .ltineraryinfo .row .col-10 .row .col-7 .row .col-11 {
   align-items: flex-end;
 }
 
-<<<<<<< HEAD
-form .ltineraryinfo .row .col-7 .row .col-11 .row .text-div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 8px 0;
-=======
 form .ltineraryinfo .row .col-10 .row .col-7 .row .text-div {
   display: flex;
   justify-content: center;
   flex-direction: column;
   padding: 0px 0;
->>>>>>> chickhack
 }
 
 form .ltineraryinfo .row .col-10 .row .col-7 .row .text-div img {
@@ -392,22 +375,39 @@ form .ltineraryinfo .row .col-10 .row .col-7 .row .text-div img {
 }
 
 form .addPay .row {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 form .addPay .row .col-10 {
   border-radius: 5px;
 }
 
-<<<<<<< HEAD
-form .addPay .row .col-7 .automena .row .col-11 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-=======
+form .addPay .row .col-10 .automena .row .col-10 {
+  display: flex;
+}
+
+form .addPay .row .col-10 .automena .row .col-10 .sss {
+  background-color: #191919;
+  margin-bottom: 3%;
+  width: 100%;
+  padding: 10px 10px;
+  cursor: pointer;
+}
+
+form .addPay .row .col-10 .automena .row .col-10 .sss img {
+  width: 100px;
+  object-fit: cover;
+}
+
+form .addPay .row .col-10 .automena .row .col-10 .sssb:focus .sss {
+  background-color: #fff;
+}
+
+form .addPay .row .col-10 .automena .row .col-10 input {
+  display: none;
+}
+
 form .addPay .row .col-10 .automena .row .col-11 {
->>>>>>> chickhack
   display: flex;
 }
 
@@ -415,42 +415,8 @@ form .addPay .row .col-10 .automena .row .col-11 input {
   display: none;
 }
 
-form .addPay .row .col-10 .automena .row .col-11 .checkbox-fu::before {
-  content: '';
-  background: transparent;
-  border: 2px solid #ad6e4a;
-  display: inline-block;
-  vertical-align: middle;
-  width: 5px;
-  height: 5px;
-  padding: 2px;
-  margin-right: 10px;
-  text-align: center;
-  border-radius: 10px;
-}
-
-form .addPay .row .col-10 .automena .row .col-11 .checkbox-fu:checked {
-  background: #ad6e4a;
-  -webkit-box-shadow: inset 0px 0px 0px 4px #ad6e4a;
-          box-shadow: inset 0px 0px 0px 4px #ad6e4a;
-}
-
-form .addPay .row .col-10 .automena .row .col-11 .checkbox-fu::after {
-  content: "";
-  width: 1px;
-  height: 30%;
-  background-color: #ad6e4a;
-  left: -3%;
-  position: absolute;
-  -webkit-transform: rotate(-45deg) translateY(-60%);
-          transform: rotate(-45deg) translateY(-60%);
-  top: 50%;
-}
-
 form .paymethod .row {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 form .paymethod .row .col-10 .paymethod-automanu .row #paymethod-coin, form .paymethod .row .col-10 .paymethod-automanu .row #paymethod-automanu-car {
@@ -471,28 +437,13 @@ form .paymethod .row .col-10 .paymethod-automanu .row .check::before {
   border-radius: 10px;
 }
 
-<<<<<<< HEAD
-form .paymethod .row .col-7 .paymethod-automanu .row .col-11 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-=======
 form .paymethod .row .col-10 .paymethod-automanu .row .col-11 {
->>>>>>> chickhack
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
-<<<<<<< HEAD
-form .paymethod .row .col-7 .paymethod-automanu .row .col-12 .paymethod-automanu-car-automanu .row {
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-=======
 form .paymethod .row .col-10 .paymethod-automanu .row .col-12 .paymethod-automanu-car-automanu .row {
   justify-content: space-evenly;
->>>>>>> chickhack
 }
 
 form .paymethod .row .col-10 .paymethod-automanu .row .col-12 .paymethod-automanu-car-automanu .row input {
@@ -502,7 +453,6 @@ form .paymethod .row .col-10 .paymethod-automanu .row .col-12 .paymethod-automan
   border: 1px solid #AD6E4A;
   border-radius: 5px;
   padding: 5px 10px;
-  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
@@ -521,17 +471,9 @@ form .paymethod .row .col-10 .paymethod-automanu .row .col-5 input.paymethod-coi
   line-height: 0px;
 }
 
-<<<<<<< HEAD
-form .paymethod .row .col-7 .paymethod-automanu .row .col-4 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-=======
 form .paymethod .row .col-10 .paymethod-automanu .row .col-4 {
->>>>>>> chickhack
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 form .paymethod .row .col-10 .paymethod-automanu .row .col-4 .intput-nu {
@@ -539,52 +481,14 @@ form .paymethod .row .col-10 .paymethod-automanu .row .col-4 .intput-nu {
 }
 
 form .orderDetails .row {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 form .orderDetails .row .allpay-div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
 }
 
-<<<<<<< HEAD
-form .orderDetails .row .col-7 .orderDetails-automanu .col-11 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-form .orderDetails .row .col-7 .orderDetails-automanu .col-11 .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  width: 100%;
-}
-
-form .orderDetails .row .col-7 .orderDetails-automanu .col-11 .row .text-div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  padding: 8px 0;
-=======
 form .orderDetails .row .col-10 .orderDetails-automanu .col-3 {
   padding-top: 16px;
   padding-bottom: 16px;
@@ -597,7 +501,6 @@ form .orderDetails .row .col-10 .orderDetails-automanu .col-3 img {
 
 form .orderDetails .row .col-10 .orderDetails-automanu .col-11 .payadd {
   width: 100%;
->>>>>>> chickhack
 }
 
 form .orderDetails .row .col-10 .orderDetails-automanu .col-11 .payadd .orderDetails-automanu-textdiv {
@@ -613,13 +516,7 @@ form .orderDetails .row .col-10 .orderDetails-automanu .col-11 .orderDetails-aut
   width: 100%;
 }
 
-<<<<<<< HEAD
-form .orderDetails .row .col-7 .orderDetails-automanu .col-11 .payadd .orderDetails-automanu-textdiv .textbox {
-  display: -webkit-box;
-  display: -ms-flexbox;
-=======
 form .orderDetails .row .col-10 .orderDetails-automanu .col-11 .orderDetails-automanu-textdiv .textbox {
->>>>>>> chickhack
   display: flex;
   width: 100%;
 }
@@ -628,13 +525,7 @@ form .orderDetails .row .col-10 .orderDetails-automanu .col-7 {
   display: flex;
 }
 
-<<<<<<< HEAD
-form .orderDetails .row .col-7 .orderDetails-automanu .col-11 .orderDetails-automanu-textdiv .textbox {
-  display: -webkit-box;
-  display: -ms-flexbox;
-=======
 form .orderDetails .row .col-10 .orderDetails-automanu .col-7 .row {
->>>>>>> chickhack
   display: flex;
   justify-content: space-around;
   width: 100%;
