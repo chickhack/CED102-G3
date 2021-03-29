@@ -18,9 +18,10 @@ section.shop{
         @include respond(mobile){
             padding-top: 50%;
         }
-        h4{
+        h2{
             @include absolute_middle();
-            top: 40%;
+            top: 35%;
+            letter-spacing:2px;
             @include respond(mobile){
                 font-size: .8rem;
                 width: 80%;

@@ -79,6 +79,7 @@ body {
   background-color: #0c0d18;
   overflow-x: hidden;
 <<<<<<< HEAD
+<<<<<<< HEAD
   -o-user-select: none;
   user-select: none;
 =======
@@ -88,6 +89,10 @@ body {
   -ms-user-select: none;
       user-select: none;
 >>>>>>> denis
+=======
+  -o-user-select: none;
+  user-select: none;
+>>>>>>> chickhack
 }
 
 h1, .h1 {
@@ -324,9 +329,12 @@ nav {
       justify-content: space-around;
   background-color: #0c0d18;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   position: -webkit-sticky;
 >>>>>>> denis
+=======
+>>>>>>> chickhack
   position: sticky;
   top: 0;
   width: 100%;
@@ -452,11 +460,15 @@ footer .smoke {
   width: 100%;
   height: 80%;
 <<<<<<< HEAD
+<<<<<<< HEAD
   transform: translateX(-50%);
 =======
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 >>>>>>> denis
+=======
+  transform: translateX(-50%);
+>>>>>>> chickhack
 }
 
 .quantity label {
@@ -498,6 +510,7 @@ input[type=number] {
 
 body {
 <<<<<<< HEAD
+<<<<<<< HEAD
   object-fit: cover;
   user-select: none;
 =======
@@ -508,6 +521,10 @@ body {
       -ms-user-select: none;
           user-select: none;
 >>>>>>> denis
+=======
+  object-fit: cover;
+  user-select: none;
+>>>>>>> chickhack
 }
 
 @media all and (max-width: 768px) {
@@ -525,6 +542,7 @@ body {
   align-items: center;
   align-items: start;
   flex-wrap: wrap;
+<<<<<<< HEAD
 =======
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -538,11 +556,26 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 >>>>>>> denis
+=======
+>>>>>>> chickhack
   padding-top: 15vh;
 }
 
 .product .imgs {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-end;
+  max-width: 948px;
+}
+
+.product .imgs .img {
+  max-width: 400px;
+  text-align: center;
+>>>>>>> chickhack
   display: flex;
   justify-content: center;
   align-items: center;
@@ -589,14 +622,20 @@ body {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> chickhack
 @media all and (max-width: 768px) {
   .product .imgs .img {
     max-width: 948px;
   }
 }
 
+<<<<<<< HEAD
 =======
 >>>>>>> denis
+=======
+>>>>>>> chickhack
 .product .imgs .img .bigImg {
   width: 100%;
   max-height: 450px;
@@ -611,10 +650,14 @@ body {
 
 .product .imgs .img .smallImg {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> chickhack
   display: flex;
   justify-content: center;
   align-items: center;
   justify-content: start;
+<<<<<<< HEAD
 =======
   display: -webkit-box;
   display: -ms-flexbox;
@@ -629,6 +672,8 @@ body {
       -ms-flex-pack: start;
           justify-content: start;
 >>>>>>> denis
+=======
+>>>>>>> chickhack
   width: 100%;
 }
 
@@ -726,9 +771,12 @@ body {
   color: #ffffff;
   font-weight: 900;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   -webkit-transition: all .3s;
 >>>>>>> denis
+=======
+>>>>>>> chickhack
   transition: all .3s;
 }
 
@@ -770,6 +818,7 @@ body {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+<<<<<<< HEAD
 =======
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -783,6 +832,8 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 >>>>>>> denis
+=======
+>>>>>>> chickhack
   margin: 32px 30px;
 }
 

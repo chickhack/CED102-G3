@@ -79,6 +79,7 @@ body {
   background-color: #0c0d18;
   overflow-x: hidden;
 <<<<<<< HEAD
+<<<<<<< HEAD
   -o-user-select: none;
   user-select: none;
 =======
@@ -88,6 +89,10 @@ body {
   -ms-user-select: none;
       user-select: none;
 >>>>>>> denis
+=======
+  -o-user-select: none;
+  user-select: none;
+>>>>>>> chickhack
 }
 
 h1, .h1 {
@@ -324,9 +329,12 @@ nav {
       justify-content: space-around;
   background-color: #0c0d18;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   position: -webkit-sticky;
 >>>>>>> denis
+=======
+>>>>>>> chickhack
   position: sticky;
   top: 0;
   width: 100%;
@@ -452,11 +460,15 @@ footer .smoke {
   width: 100%;
   height: 80%;
 <<<<<<< HEAD
+<<<<<<< HEAD
   transform: translateX(-50%);
 =======
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 >>>>>>> denis
+=======
+  transform: translateX(-50%);
+>>>>>>> chickhack
 }
 
 .quantity label {
@@ -506,11 +518,15 @@ input[type=number] {
   display: -ms-flexbox;
   display: flex;
 <<<<<<< HEAD
+<<<<<<< HEAD
   justify-content: center;
 =======
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+=======
+  justify-content: center;
+>>>>>>> chickhack
   font-size: 42px;
 >>>>>>> denis
 }
@@ -522,6 +538,7 @@ div.tabList {
 <<<<<<< HEAD
   justify-content: center;
   column-gap: 1%;
+<<<<<<< HEAD
 =======
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -529,6 +546,8 @@ div.tabList {
   -webkit-column-gap: 1%;
           column-gap: 1%;
 >>>>>>> denis
+=======
+>>>>>>> chickhack
 }
 
 div.tabList button {
@@ -551,10 +570,13 @@ div.tabList button.active {
 
 .tab-inner {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   display: -webkit-box;
   display: -ms-flexbox;
 >>>>>>> denis
+=======
+>>>>>>> chickhack
   display: flex;
 }
 
@@ -564,12 +586,15 @@ div.tabList button.active {
   display: flex;
 <<<<<<< HEAD
   flex-direction: column;
+<<<<<<< HEAD
 =======
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 >>>>>>> denis
+=======
+>>>>>>> chickhack
   text-align: left;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -587,6 +612,7 @@ div.tabList button.active {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .tab-inner .taball .data {
   border: 1px solid #AD6E4A;
 =======
@@ -595,6 +621,10 @@ div.tabList button.active {
   display: -webkit-box;
   display: -ms-flexbox;
 >>>>>>> denis
+=======
+.tab-inner .data {
+  border: 1px solid #AD6E4A;
+>>>>>>> chickhack
   display: flex;
   font-family: Haettenschweiler, sans-serif;
 }
@@ -697,8 +727,11 @@ div.tabList button.active {
 
 .tab-inner button {
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: none;
 =======
+=======
+>>>>>>> chickhack
   background-color: transparent;
   color: #AD6E4A;
   -webkit-transform: translateX(-100%);
@@ -712,6 +745,7 @@ div.tabList button.active {
   display: flex;
 <<<<<<< HEAD
   flex-wrap: wrap;
+<<<<<<< HEAD
 }
 
 .planet_content .carousel {
@@ -720,6 +754,8 @@ div.tabList button.active {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 >>>>>>> denis
+=======
+>>>>>>> chickhack
 }
 
 .planet_content .imgs {
@@ -729,10 +765,13 @@ div.tabList button.active {
 .planet_content .imgs .img1 {
 <<<<<<< HEAD
   transform: translate(40%);
+<<<<<<< HEAD
 =======
   -webkit-transform: translate(40%);
           transform: translate(40%);
 >>>>>>> denis
+=======
+>>>>>>> chickhack
 }
 
 .planet_content .imgs .img2 {
@@ -750,12 +789,16 @@ div.tabList button.active {
   display: -ms-flexbox;
   display: flex;
 <<<<<<< HEAD
+<<<<<<< HEAD
   align-items: center;
 =======
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 >>>>>>> denis
+=======
+  align-items: center;
+>>>>>>> chickhack
 }
 
 .planet_content .desc p {

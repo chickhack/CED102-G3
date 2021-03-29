@@ -79,6 +79,7 @@ body {
   background-color: #0c0d18;
   overflow-x: hidden;
 <<<<<<< HEAD
+<<<<<<< HEAD
   -o-user-select: none;
   user-select: none;
 =======
@@ -88,6 +89,10 @@ body {
   -ms-user-select: none;
       user-select: none;
 >>>>>>> denis
+=======
+  -o-user-select: none;
+  user-select: none;
+>>>>>>> chickhack
 }
 
 h1, .h1 {
@@ -324,9 +329,12 @@ nav {
       justify-content: space-around;
   background-color: #0c0d18;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   position: -webkit-sticky;
 >>>>>>> denis
+=======
+>>>>>>> chickhack
   position: sticky;
   top: 0;
   width: 100%;
@@ -452,6 +460,7 @@ footer .smoke {
   width: 100%;
   height: 80%;
 <<<<<<< HEAD
+<<<<<<< HEAD
   transform: translateX(-50%);
 }
 
@@ -494,6 +503,9 @@ input[type=number] {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 >>>>>>> denis
+=======
+  transform: translateX(-50%);
+>>>>>>> chickhack
 }
 
 div.bk {
@@ -535,10 +547,13 @@ div.bk3 {
 
 .first {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   display: -webkit-box;
   display: -ms-flexbox;
 >>>>>>> denis
+=======
+>>>>>>> chickhack
   display: flex;
   max-width: 1200px;
   margin: 0 auto;
@@ -605,11 +620,14 @@ div.bk3 {
 
 .first .first_right .hottrip {
 <<<<<<< HEAD
+<<<<<<< HEAD
   top: 15vh;
 =======
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
 >>>>>>> denis
+=======
+>>>>>>> chickhack
   display: inline-flex;
   padding-top: 96px;
 }
@@ -663,10 +681,13 @@ div.bk3 {
 
 .first .first_right div.planet_top div.word .tag {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
 >>>>>>> denis
+=======
+>>>>>>> chickhack
   display: inline-flex;
   border: 1px solid #C9ADA7;
   border-radius: 5px;
@@ -703,6 +724,7 @@ div.bk3 {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .first .first_right div.planet_top div.word .addin:hover {
   background-color: #bf896b;
 }
@@ -713,6 +735,9 @@ div.bk3 {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
 >>>>>>> denis
+=======
+.first .tripselect {
+>>>>>>> chickhack
   display: inline-flex;
   width: 280px;
   -webkit-box-pack: justify;
@@ -740,11 +765,16 @@ div.bk3 {
 
 .stepsection .stepall {
 <<<<<<< HEAD
+<<<<<<< HEAD
   max-width: 1000px;
+=======
+  max-width: 1200px;
+>>>>>>> chickhack
   margin: 0 auto;
   display: flex;
   align-items: baseline;
   justify-content: space-between;
+<<<<<<< HEAD
 =======
   max-width: 1200px;
   margin: 0 auto;
@@ -758,6 +788,8 @@ div.bk3 {
       -ms-flex-pack: justify;
           justify-content: space-between;
 >>>>>>> denis
+=======
+>>>>>>> chickhack
   padding: 32px;
 }
 
@@ -821,6 +853,7 @@ div.bk3 {
 
 .second .tripcard_all {
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: inline-flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -834,6 +867,11 @@ div.bk3 {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 >>>>>>> denis
+=======
+  display: inline-flex;
+  justify-content: center;
+  flex-wrap: wrap;
+>>>>>>> chickhack
   width: 100%;
 }
 
@@ -878,10 +916,13 @@ div.bk3 {
 
 .second .tripcard_all .tripcard .tag {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
 >>>>>>> denis
+=======
+>>>>>>> chickhack
   display: inline-flex;
   border: 1px solid #C9ADA7;
   border-radius: 5px;

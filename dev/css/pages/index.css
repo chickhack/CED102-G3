@@ -79,6 +79,7 @@ body {
   background-color: #0c0d18;
   overflow-x: hidden;
 <<<<<<< HEAD
+<<<<<<< HEAD
   -o-user-select: none;
   user-select: none;
 =======
@@ -88,6 +89,10 @@ body {
   -ms-user-select: none;
       user-select: none;
 >>>>>>> denis
+=======
+  -o-user-select: none;
+  user-select: none;
+>>>>>>> chickhack
 }
 
 h1, .h1 {
@@ -515,12 +520,16 @@ button {
   display: -ms-flexbox;
   display: flex;
 <<<<<<< HEAD
+<<<<<<< HEAD
   justify-content: center;
 =======
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 >>>>>>> denis
+=======
+  justify-content: center;
+>>>>>>> chickhack
   margin-top: 20vh;
 }
 
@@ -550,6 +559,7 @@ button {
   display: -ms-flexbox;
   display: flex;
 <<<<<<< HEAD
+<<<<<<< HEAD
   flex-direction: column;
 =======
   -webkit-box-orient: vertical;
@@ -557,6 +567,9 @@ button {
       -ms-flex-direction: column;
           flex-direction: column;
 >>>>>>> denis
+=======
+  flex-direction: column;
+>>>>>>> chickhack
 }
 
 .home_intro h2 {
@@ -606,11 +619,15 @@ ul.tab-title a {
 }
 
 .tab-inner {
+<<<<<<< HEAD
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   display: -webkit-box;
   display: -ms-flexbox;
+=======
+  justify-content: center;
+>>>>>>> chickhack
   display: flex;
 }
 
@@ -618,11 +635,15 @@ ul.tab-title a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 >>>>>>> denis
+=======
+  flex-direction: column;
+>>>>>>> chickhack
   text-align: left;
   align-items: center;
 }
@@ -639,6 +660,7 @@ ul.tab-title a {
 
 .tab-inner .data {
 <<<<<<< HEAD
+<<<<<<< HEAD
   border: 1px solid #AD6E4A;
   display: flex;
   font-family: Haettenschweiler, sans-serif;
@@ -647,6 +669,9 @@ ul.tab-title a {
       -ms-flex-pack: start;
           justify-content: flex-start;
 >>>>>>> denis
+=======
+  justify-content: flex-start;
+>>>>>>> chickhack
 }
 
 .tab-inner .data .grav {
@@ -659,6 +684,7 @@ ul.tab-title a {
   border-right: 1px solid #AD6E4A;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 .tab-inner .data .day {
   justify-content: center;
@@ -722,15 +748,27 @@ ul.tab-title a {
   display: -webkit-box;
   display: -ms-flexbox;
 >>>>>>> denis
+=======
+.tab-inner .tab-active {
+  display: flex;
+  justify-content: center;
+}
+
+.gallery .box {
+>>>>>>> chickhack
   display: flex;
 }
 
 .gallery .topleft {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> chickhack
   display: flex;
   flex-direction: row;
   max-height: 500px;
   align-items: flex-end;
+<<<<<<< HEAD
 =======
   display: -webkit-box;
   display: -ms-flexbox;
@@ -744,6 +782,8 @@ ul.tab-title a {
       -ms-flex-align: end;
           align-items: flex-end;
 >>>>>>> denis
+=======
+>>>>>>> chickhack
 }
 
 .gallery .topleft .A {
@@ -760,6 +800,9 @@ ul.tab-title a {
 
 .gallery .topright {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> chickhack
   display: flex;
   flex-direction: column;
 }
@@ -767,6 +810,7 @@ ul.tab-title a {
 .gallery .topright .topSct {
   display: flex;
   justify-content: space-around;
+<<<<<<< HEAD
 =======
   display: -webkit-box;
   display: -ms-flexbox;
@@ -784,6 +828,8 @@ ul.tab-title a {
   -ms-flex-pack: distribute;
       justify-content: space-around;
 >>>>>>> denis
+=======
+>>>>>>> chickhack
 }
 
 .gallery .topright button.btn {
@@ -793,6 +839,7 @@ ul.tab-title a {
 }
 
 .gallery .topright .galleryIntro {
+<<<<<<< HEAD
 <<<<<<< HEAD
   display: flex;
   justify-content: center;
@@ -804,6 +851,10 @@ ul.tab-title a {
       -ms-flex-pack: center;
           justify-content: center;
 >>>>>>> denis
+=======
+  display: flex;
+  justify-content: center;
+>>>>>>> chickhack
 }
 
 .gallery .topright .galleryIntro h5 {
@@ -812,6 +863,7 @@ ul.tab-title a {
 }
 
 .gallery .bottomleft {
+<<<<<<< HEAD
 <<<<<<< HEAD
   display: flex;
   flex-direction: row;
@@ -824,6 +876,10 @@ ul.tab-title a {
       -ms-flex-direction: row;
           flex-direction: row;
 >>>>>>> denis
+=======
+  display: flex;
+  flex-direction: row;
+>>>>>>> chickhack
   max-height: 500px;
 }
 
@@ -848,6 +904,7 @@ ul.tab-title a {
 
 .home_shop {
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: flex;
   flex-direction: column;
 =======
@@ -859,6 +916,10 @@ ul.tab-title a {
       -ms-flex-direction: column;
           flex-direction: column;
 >>>>>>> denis
+=======
+  display: flex;
+  flex-direction: column;
+>>>>>>> chickhack
 }
 
 .home_shop .button_min {
@@ -892,6 +953,7 @@ ul.tab-title a {
   top: 0;
   left: 0;
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: flex;
   justify-content: center;
   align-items: center;
@@ -906,12 +968,18 @@ ul.tab-title a {
       -ms-flex-align: center;
           align-items: center;
 >>>>>>> denis
+=======
+  display: flex;
+  justify-content: center;
+  align-items: center;
+>>>>>>> chickhack
 }
 
 .home_shop .shopItem .hovereffect img {
   display: block;
   position: relative;
   max-width: none;
+<<<<<<< HEAD
 <<<<<<< HEAD
   transition: opacity 0.35s, transform 0.35s;
   transform: translate3d(-10px, 0, 0);
@@ -924,6 +992,10 @@ ul.tab-title a {
   transform: translate3d(-10px, 0, 0);
   -webkit-backface-visibility: hidden;
 >>>>>>> denis
+=======
+  transition: opacity 0.35s, transform 0.35s;
+  transform: translate3d(-10px, 0, 0);
+>>>>>>> chickhack
   backface-visibility: hidden;
 }
 
@@ -931,17 +1003,23 @@ ul.tab-title a {
   opacity: 0.4;
   filter: alpha(opacity=40);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   -webkit-transform: translate3d(0, 0, 0);
 >>>>>>> denis
+=======
+>>>>>>> chickhack
   transform: translate3d(0, 0, 0);
 }
 
 .home_shop .shopItem .hovereffect:hover h2:after {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   -webkit-transform: translate3d(0, 0, 0);
 >>>>>>> denis
+=======
+>>>>>>> chickhack
   transform: translate3d(0, 0, 0);
 }
 
@@ -949,6 +1027,7 @@ ul.tab-title a {
   color: #FFF;
   opacity: 0;
   filter: alpha(opacity=0);
+<<<<<<< HEAD
 <<<<<<< HEAD
   transition: opacity 0.35s, transform 0.35s;
 =======
@@ -958,6 +1037,9 @@ ul.tab-title a {
   transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
   -webkit-transform: translate3d(100%, 0, 0);
 >>>>>>> denis
+=======
+  transition: opacity 0.35s, transform 0.35s;
+>>>>>>> chickhack
   transform: translate3d(100%, 0, 0);
 }
 
@@ -965,9 +1047,12 @@ ul.tab-title a {
   opacity: 1;
   filter: alpha(opacity=100);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   -webkit-transform: translate3d(0, 0, 0);
 >>>>>>> denis
+=======
+>>>>>>> chickhack
   transform: translate3d(0, 0, 0);
 }
 
@@ -988,11 +1073,15 @@ ul.tab-title a {
 .home_shop .shopItem .item2 .hovereffect {
   z-index: 1;
 <<<<<<< HEAD
+<<<<<<< HEAD
   transform: translate(110%, -20%);
 =======
   -webkit-transform: translate(110%, -20%);
           transform: translate(110%, -20%);
 >>>>>>> denis
+=======
+  transform: translate(110%, -20%);
+>>>>>>> chickhack
   max-height: 450px;
   max-width: 220px;
 }
@@ -1003,11 +1092,15 @@ ul.tab-title a {
 
 .home_shop .shopItem .item3 .hovereffect {
 <<<<<<< HEAD
+<<<<<<< HEAD
   transform: translate(150%, -100%);
 =======
   -webkit-transform: translate(150%, -100%);
           transform: translate(150%, -100%);
 >>>>>>> denis
+=======
+  transform: translate(150%, -100%);
+>>>>>>> chickhack
   max-height: 270px;
   max-width: 275px;
 }
@@ -1015,11 +1108,15 @@ ul.tab-title a {
 .home_shop .shopItem .item4 .hovereffect {
   z-index: 1;
 <<<<<<< HEAD
+<<<<<<< HEAD
   transform: translate(255%, -260%);
 =======
   -webkit-transform: translate(255%, -260%);
           transform: translate(255%, -260%);
 >>>>>>> denis
+=======
+  transform: translate(255%, -260%);
+>>>>>>> chickhack
   max-height: 270px;
   max-width: 280px;
 }
@@ -1030,11 +1127,15 @@ ul.tab-title a {
 
 .home_shop .shopItem .item5 .hovereffect {
 <<<<<<< HEAD
+<<<<<<< HEAD
   transform: translate(260%, -310%);
 =======
   -webkit-transform: translate(260%, -310%);
           transform: translate(260%, -310%);
 >>>>>>> denis
+=======
+  transform: translate(260%, -310%);
+>>>>>>> chickhack
   max-height: 296px;
   max-width: 300px;
 }
@@ -1045,6 +1146,9 @@ ul.tab-title a {
 
 .flow_member {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> chickhack
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -1059,6 +1163,7 @@ ul.tab-title a {
 .flow_member .flowall .flow {
   display: flex;
   flex-direction: column;
+<<<<<<< HEAD
 =======
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1092,6 +1197,8 @@ ul.tab-title a {
       -ms-flex-direction: column;
           flex-direction: column;
 >>>>>>> denis
+=======
+>>>>>>> chickhack
   text-align: center;
 }
 

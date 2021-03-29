@@ -2,7 +2,7 @@
 // 排行榜表頭顏色與文字
 .le-color{
     background-color: #16193b;
-    font-size: 18px;
+    font-size: 16px;
     color: #fff;
     border-radius: 5px;
     margin-bottom: 10px;
@@ -15,12 +15,12 @@
 .text-color{
     background-color: #1d1e2e;
     color: #c9ada7;
-    font-size: 16px;
+    font-size: 14px;
 }
 //別人排名文字顏色與背色
 .text-color-1{
     background-color: #292b41;
-    font-size: 16px;
+    font-size: 14px;
     color: #fff;
 }
 //排行榜縮圖
@@ -79,12 +79,39 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.089);
     width: 80%;
 }
+.banner{
+    margin: 0 auto;
+    // background-image: url(../../img/home/其他/station_moon.jpg);
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    width: 100%;
+    // padding-top: 20%;
+    // padding-bottom: 30%;
+    position: relative;
+    img{
+        width: 100%;
+        
+        object-fit: cover;
+    }
+    h4{
+    position: absolute;
+    left: 50%;
+    // top: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    }
+}
 .container{
     .row{
         .col-10{
             display: flex;
-            .col-2{
-                text-align: center;
+            .row{
+                width: 100%;
+                .col-4{
+                    text-align: center;
+                    padding-left: 0px;
+                    padding-right: 0px;
+                }
             }
         }
     }

@@ -79,6 +79,7 @@ body {
   background-color: #0c0d18;
   overflow-x: hidden;
 <<<<<<< HEAD
+<<<<<<< HEAD
   -o-user-select: none;
   user-select: none;
 =======
@@ -88,6 +89,10 @@ body {
   -ms-user-select: none;
       user-select: none;
 >>>>>>> denis
+=======
+  -o-user-select: none;
+  user-select: none;
+>>>>>>> chickhack
 }
 
 h1, .h1 {
@@ -742,6 +747,7 @@ section.orderer .arrow {
   cursor: pointer;
 }
 
+<<<<<<< HEAD
 section.orderer .arrow img {
 <<<<<<< HEAD
   transition: all .5s;
@@ -752,6 +758,28 @@ section.orderer .arrow img {
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
 >>>>>>> denis
+=======
+section.orderer .orderer_click::before, section.orderer .recipient_click::before, section.orderer .payment_click::before {
+  content: "";
+  width: 1px;
+  height: 30%;
+  background-color: #ffffff;
+  position: absolute;
+  left: -3.1%;
+  transform: rotate(45deg) translateY(-60%);
+  top: 50%;
+}
+
+section.orderer .orderer_click::after, section.orderer .recipient_click::after, section.orderer .payment_click::after {
+  content: "";
+  width: 1px;
+  height: 30%;
+  background-color: #ffffff;
+  left: -3%;
+  position: absolute;
+  transform: rotate(-45deg) translateY(-60%);
+  top: 50%;
+>>>>>>> chickhack
 }
 
 section.orderer .info {
@@ -763,6 +791,7 @@ section.orderer .info {
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
+<<<<<<< HEAD
 =======
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -776,6 +805,8 @@ section.orderer .info {
       -ms-flex-pack: justify;
           justify-content: space-between;
 >>>>>>> denis
+=======
+>>>>>>> chickhack
   width: 80%;
   margin-left: 6%;
 }

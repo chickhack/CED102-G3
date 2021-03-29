@@ -152,6 +152,10 @@ body {
   padding-bottom: 5%;
 }
 
+.padding_bottom-20 {
+  padding-bottom: 20px;
+}
+
 .padding_bottom-80 {
   padding-bottom: 80px;
 }
@@ -196,7 +200,7 @@ body {
 
 .button_large-1 {
   width: 100px;
-  font-size: 14px;
+  font-size: 12px;
   color: #fff;
   background-color: #ad6e4a;
   padding: 15px;
@@ -241,12 +245,13 @@ form .orderinfo .row {
       align-content: center;
 }
 
-form .orderinfo .row .col-7 {
+form .orderinfo .row .col-10 {
   background-color: #292B41;
   border-radius: 5px;
   padding-bottom: 10px;
 }
 
+<<<<<<< HEAD
 form .orderinfo .row .col-7 .row {
   -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -255,6 +260,13 @@ form .orderinfo .row .col-7 .row {
 form .orderinfo .row .col-7 .row .col-7 {
   display: -webkit-box;
   display: -ms-flexbox;
+=======
+form .orderinfo .row .col-10 .row {
+  justify-content: space-around;
+}
+
+form .orderinfo .row .col-10 .row .col-7 {
+>>>>>>> chickhack
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -262,7 +274,7 @@ form .orderinfo .row .col-7 .row .col-7 {
           flex-direction: column;
 }
 
-form .orderinfo .row .col-7 .row .col-7 input {
+form .orderinfo .row .col-10 .row .col-7 input {
   font-size: 16px;
   color: #fff;
   width: 100%;
@@ -273,12 +285,12 @@ form .orderinfo .row .col-7 .row .col-7 input {
   transition: all 0.3s;
 }
 
-form .orderinfo .row .col-7 .row .col-7 input:focus {
+form .orderinfo .row .col-10 .row .col-7 input:focus {
   background-color: #ad6e4a;
   outline: none;
 }
 
-form .orderinfo .row .col-7 .row .col-11 {
+form .orderinfo .row .col-10 .row .col-11 {
   margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -291,7 +303,7 @@ form .orderinfo .row .col-7 .row .col-11 {
           flex-direction: column;
 }
 
-form .orderinfo .row .col-7 .row .col-11 input {
+form .orderinfo .row .col-10 .row .col-11 input {
   color: #fff;
   width: 100%;
   background-color: #292B41;
@@ -305,7 +317,7 @@ form .ltineraryinfo .row {
           justify-content: center;
 }
 
-form .ltineraryinfo .row .col-7 .row {
+form .ltineraryinfo .row .col-10 .row {
   margin-bottom: 32px;
   background-color: #292B41;
   border-radius: 5px;
@@ -317,11 +329,12 @@ form .ltineraryinfo .row .col-7 .row {
           justify-content: center;
 }
 
-form .ltineraryinfo .row .col-7 .row .col-11 {
+form .ltineraryinfo .row .col-10 .row .col-3 {
   padding-top: 16px;
   padding-bottom: 16px;
 }
 
+<<<<<<< HEAD
 form .ltineraryinfo .row .col-7 .row .col-11 img {
   max-width: 200px;
   -o-object-fit: cover;
@@ -331,14 +344,27 @@ form .ltineraryinfo .row .col-7 .row .col-11 img {
 form .ltineraryinfo .row .col-7 .row .col-11 .row {
   display: -webkit-box;
   display: -ms-flexbox;
+=======
+form .ltineraryinfo .row .col-10 .row .col-3 img {
+  max-width: 150px;
+  object-fit: cover;
+}
+
+form .ltineraryinfo .row .col-10 .row .col-7 .row {
+>>>>>>> chickhack
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 100%;
-  width: 99%;
+  width: 100%;
 }
 
+form .ltineraryinfo .row .col-10 .row .col-7 .row .col-11 {
+  align-items: flex-end;
+}
+
+<<<<<<< HEAD
 form .ltineraryinfo .row .col-7 .row .col-11 .row .text-div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -351,9 +377,16 @@ form .ltineraryinfo .row .col-7 .row .col-11 .row .text-div {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 8px 0;
+=======
+form .ltineraryinfo .row .col-10 .row .col-7 .row .text-div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0px 0;
+>>>>>>> chickhack
 }
 
-form .ltineraryinfo .row .col-7 .row .col-11 .row .text-div img {
+form .ltineraryinfo .row .col-10 .row .col-7 .row .text-div img {
   width: 25px;
   height: 25px;
 }
@@ -364,21 +397,25 @@ form .addPay .row {
           justify-content: center;
 }
 
-form .addPay .row .col-7 {
+form .addPay .row .col-10 {
   border-radius: 5px;
 }
 
+<<<<<<< HEAD
 form .addPay .row .col-7 .automena .row .col-11 {
   display: -webkit-box;
   display: -ms-flexbox;
+=======
+form .addPay .row .col-10 .automena .row .col-11 {
+>>>>>>> chickhack
   display: flex;
 }
 
-form .addPay .row .col-7 .automena .row .col-11 input {
+form .addPay .row .col-10 .automena .row .col-11 input {
   display: none;
 }
 
-form .addPay .row .col-7 .automena .row .col-11 .checkbox-fu::before {
+form .addPay .row .col-10 .automena .row .col-11 .checkbox-fu::before {
   content: '';
   background: transparent;
   border: 2px solid #ad6e4a;
@@ -392,13 +429,13 @@ form .addPay .row .col-7 .automena .row .col-11 .checkbox-fu::before {
   border-radius: 10px;
 }
 
-form .addPay .row .col-7 .automena .row .col-11 .checkbox-fu:checked {
+form .addPay .row .col-10 .automena .row .col-11 .checkbox-fu:checked {
   background: #ad6e4a;
   -webkit-box-shadow: inset 0px 0px 0px 4px #ad6e4a;
           box-shadow: inset 0px 0px 0px 4px #ad6e4a;
 }
 
-form .addPay .row .col-7 .automena .row .col-11 .checkbox-fu::after {
+form .addPay .row .col-10 .automena .row .col-11 .checkbox-fu::after {
   content: "";
   width: 1px;
   height: 30%;
@@ -416,11 +453,11 @@ form .paymethod .row {
           justify-content: center;
 }
 
-form .paymethod .row .col-7 .paymethod-automanu .row #paymethod-coin, form .paymethod .row .col-7 .paymethod-automanu .row #paymethod-automanu-car {
+form .paymethod .row .col-10 .paymethod-automanu .row #paymethod-coin, form .paymethod .row .col-10 .paymethod-automanu .row #paymethod-automanu-car {
   display: none;
 }
 
-form .paymethod .row .col-7 .paymethod-automanu .row .check::before {
+form .paymethod .row .col-10 .paymethod-automanu .row .check::before {
   content: '';
   background: transparent;
   border: 2px solid #ad6e4a;
@@ -434,22 +471,31 @@ form .paymethod .row .col-7 .paymethod-automanu .row .check::before {
   border-radius: 10px;
 }
 
+<<<<<<< HEAD
 form .paymethod .row .col-7 .paymethod-automanu .row .col-11 {
   display: -webkit-box;
   display: -ms-flexbox;
+=======
+form .paymethod .row .col-10 .paymethod-automanu .row .col-11 {
+>>>>>>> chickhack
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
+<<<<<<< HEAD
 form .paymethod .row .col-7 .paymethod-automanu .row .col-12 .paymethod-automanu-car-automanu .row {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+=======
+form .paymethod .row .col-10 .paymethod-automanu .row .col-12 .paymethod-automanu-car-automanu .row {
+  justify-content: space-evenly;
+>>>>>>> chickhack
 }
 
-form .paymethod .row .col-7 .paymethod-automanu .row .col-12 .paymethod-automanu-car-automanu .row input {
+form .paymethod .row .col-10 .paymethod-automanu .row .col-12 .paymethod-automanu-car-automanu .row input {
   width: 100%;
   font-size: 16px;
   background-color: #292B41;
@@ -460,12 +506,12 @@ form .paymethod .row .col-7 .paymethod-automanu .row .col-12 .paymethod-automanu
   transition: all 0.5s;
 }
 
-form .paymethod .row .col-7 .paymethod-automanu .row .col-12 .paymethod-automanu-car-automanu .row input:focus {
+form .paymethod .row .col-10 .paymethod-automanu .row .col-12 .paymethod-automanu-car-automanu .row input:focus {
   background-color: #ad6e4a;
   outline: none;
 }
 
-form .paymethod .row .col-7 .paymethod-automanu .row .col-5 input.paymethod-coin-btn {
+form .paymethod .row .col-10 .paymethod-automanu .row .col-5 input.paymethod-coin-btn {
   width: 50px;
   height: 20px;
   outline: none;
@@ -475,16 +521,20 @@ form .paymethod .row .col-7 .paymethod-automanu .row .col-5 input.paymethod-coin
   line-height: 0px;
 }
 
+<<<<<<< HEAD
 form .paymethod .row .col-7 .paymethod-automanu .row .col-4 {
   display: -webkit-box;
   display: -ms-flexbox;
+=======
+form .paymethod .row .col-10 .paymethod-automanu .row .col-4 {
+>>>>>>> chickhack
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-form .paymethod .row .col-7 .paymethod-automanu .row .col-4 .intput-nu {
+form .paymethod .row .col-10 .paymethod-automanu .row .col-4 .intput-nu {
   background-color: #292B41;
 }
 
@@ -503,6 +553,7 @@ form .orderDetails .row .allpay-div {
           justify-content: flex-end;
 }
 
+<<<<<<< HEAD
 form .orderDetails .row .col-7 .orderDetails-automanu .col-11 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -533,40 +584,76 @@ form .orderDetails .row .col-7 .orderDetails-automanu .col-11 .row .text-div {
       -ms-flex-align: end;
           align-items: flex-end;
   padding: 8px 0;
+=======
+form .orderDetails .row .col-10 .orderDetails-automanu .col-3 {
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
-form .orderDetails .row .col-7 .orderDetails-automanu .col-11 .row .text-div img {
+form .orderDetails .row .col-10 .orderDetails-automanu .col-3 img {
+  max-width: 150px;
+  object-fit: cover;
+}
+
+form .orderDetails .row .col-10 .orderDetails-automanu .col-11 .payadd {
+  width: 100%;
+>>>>>>> chickhack
+}
+
+form .orderDetails .row .col-10 .orderDetails-automanu .col-11 .payadd .orderDetails-automanu-textdiv {
+  width: 100%;
+}
+
+form .orderDetails .row .col-10 .orderDetails-automanu .col-11 .payadd .orderDetails-automanu-textdiv .textbox {
+  display: flex;
+  width: 100%;
+}
+
+form .orderDetails .row .col-10 .orderDetails-automanu .col-11 .orderDetails-automanu-textdiv {
+  width: 100%;
+}
+
+<<<<<<< HEAD
+form .orderDetails .row .col-7 .orderDetails-automanu .col-11 .payadd .orderDetails-automanu-textdiv .textbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+=======
+form .orderDetails .row .col-10 .orderDetails-automanu .col-11 .orderDetails-automanu-textdiv .textbox {
+>>>>>>> chickhack
+  display: flex;
+  width: 100%;
+}
+
+form .orderDetails .row .col-10 .orderDetails-automanu .col-7 {
+  display: flex;
+}
+
+<<<<<<< HEAD
+form .orderDetails .row .col-7 .orderDetails-automanu .col-11 .orderDetails-automanu-textdiv .textbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+=======
+form .orderDetails .row .col-10 .orderDetails-automanu .col-7 .row {
+>>>>>>> chickhack
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+form .orderDetails .row .col-10 .orderDetails-automanu .col-7 .row .text-div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 8px 0;
+}
+
+form .orderDetails .row .col-10 .orderDetails-automanu .col-7 .row .text-div img {
   width: 25px;
   height: 25px;
 }
 
-form .orderDetails .row .col-7 .orderDetails-automanu .col-11 .payadd {
-  width: 100%;
-}
-
-form .orderDetails .row .col-7 .orderDetails-automanu .col-11 .payadd .orderDetails-automanu-textdiv {
-  width: 100%;
-}
-
-form .orderDetails .row .col-7 .orderDetails-automanu .col-11 .payadd .orderDetails-automanu-textdiv .textbox {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-}
-
-form .orderDetails .row .col-7 .orderDetails-automanu .col-11 .orderDetails-automanu-textdiv {
-  width: 100%;
-}
-
-form .orderDetails .row .col-7 .orderDetails-automanu .col-11 .orderDetails-automanu-textdiv .textbox {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-}
-
-form .orderDetails .row .col-7 .btn-orderDetails {
+form .orderDetails .row .col-10 .btn-orderDetails {
   width: 100%;
   text-align: left;
   background-color: #292B41;
@@ -576,7 +663,7 @@ form .orderDetails .row .col-7 .btn-orderDetails {
   font-size: 18px;
 }
 
-form .orderDetails .row .col-7 .btn-orderDetails::before {
+form .orderDetails .row .col-10 .btn-orderDetails::before {
   content: url(../../img/chevron-down.svg);
   display: inline-block;
   width: 20px;
