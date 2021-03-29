@@ -78,6 +78,7 @@ body {
   background-color: #0c0d18;
   overflow-x: hidden;
 <<<<<<< HEAD
+<<<<<<< HEAD
   -webkit-user-select: none;
   -moz-user-select: none;
   -o-user-select: none;
@@ -87,6 +88,10 @@ body {
   -o-user-select: none;
   user-select: none;
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+  -o-user-select: none;
+  user-select: none;
+>>>>>>> chickhack
 }
 
 h1, .h1 {
@@ -321,6 +326,7 @@ body {
 nav {
   display: flex;
 <<<<<<< HEAD
+<<<<<<< HEAD
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -332,6 +338,11 @@ nav {
   align-items: center;
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
   justify-content: center;
+=======
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+>>>>>>> chickhack
   background-color: #0c0d18;
   position: sticky;
   top: 0;
@@ -344,7 +355,11 @@ nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
+<<<<<<< HEAD
   background-image: url("../../img/icon/header/logo.png");
+=======
+  background-image: url("../img/logo.png");
+>>>>>>> chickhack
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -355,6 +370,7 @@ nav .logo h1 a {
 
 nav .nav-links {
   display: flex;
+<<<<<<< HEAD
 <<<<<<< HEAD
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -371,6 +387,12 @@ nav .nav-links {
   justify-content: flex-end;
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
   width: 75%;
+=======
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-end;
+  width: 60%;
+>>>>>>> chickhack
 }
 
 nav .nav-links a {
@@ -580,7 +602,11 @@ footer .links .footer-links a {
 footer .footer_moon {
   position: relative;
   left: 50%;
+<<<<<<< HEAD
   max-width: 40%;
+=======
+  max-width: 550px;
+>>>>>>> chickhack
   transform: translateX(-50%);
 }
 
@@ -591,6 +617,7 @@ footer .smoke {
   width: 100%;
   height: 80%;
   transform: translateX(-50%);
+<<<<<<< HEAD
 }
 
 @media (max-width: 768px) {
@@ -603,6 +630,8 @@ footer .smoke {
   footer .footer_moon {
     min-width: 250px;
   }
+=======
+>>>>>>> chickhack
 }
 
 input::-webkit-outer-spin-button,
@@ -655,10 +684,13 @@ input::-webkit-inner-spin-button {
 
 .parent_container .up_container .trip_content_all .trip_title {
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
 =======
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+>>>>>>> chickhack
   display: inline-flex;
   align-items: baseline;
   justify-content: flex-start;
@@ -716,10 +748,13 @@ input::-webkit-inner-spin-button {
 
 .parent_container .up_container .trip_content_all .tab_contents .tag {
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
 =======
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+>>>>>>> chickhack
   display: inline-flex;
   border: 1px solid #C9ADA7;
   border-radius: 5px;
@@ -803,10 +838,13 @@ input::-webkit-inner-spin-button {
 
 .parent_container .up_container .book .select {
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
 =======
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+>>>>>>> chickhack
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -893,10 +931,13 @@ input::-webkit-inner-spin-button {
 
 .parent_container .up_container .book .btn {
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
 =======
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+>>>>>>> chickhack
   display: flex;
   justify-content: flex-end;
   align-items: baseline;
@@ -967,10 +1008,13 @@ input::-webkit-inner-spin-button {
 
 .parent_container .up_container .comment .score {
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
 =======
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+>>>>>>> chickhack
   display: flex;
   align-items: center;
   position: relative;
@@ -983,10 +1027,13 @@ input::-webkit-inner-spin-button {
 
 .parent_container .up_container .comment .score .stars {
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
 =======
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+>>>>>>> chickhack
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1009,10 +1056,13 @@ input::-webkit-inner-spin-button {
 
 .parent_container .up_container .comment .messages {
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
 =======
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+>>>>>>> chickhack
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1028,10 +1078,13 @@ input::-webkit-inner-spin-button {
 
 .parent_container .up_container .comment .messages .name {
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
 =======
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+>>>>>>> chickhack
   display: flex;
   justify-content: center;
   align-items: center;

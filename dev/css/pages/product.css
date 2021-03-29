@@ -78,6 +78,7 @@ body {
   background-color: #0c0d18;
   overflow-x: hidden;
 <<<<<<< HEAD
+<<<<<<< HEAD
   -webkit-user-select: none;
   -moz-user-select: none;
   -o-user-select: none;
@@ -87,6 +88,10 @@ body {
   -o-user-select: none;
   user-select: none;
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+  -o-user-select: none;
+  user-select: none;
+>>>>>>> chickhack
 }
 
 h1, .h1 {
@@ -321,6 +326,7 @@ body {
 nav {
   display: flex;
 <<<<<<< HEAD
+<<<<<<< HEAD
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -336,6 +342,12 @@ nav {
   justify-content: center;
   background-color: #0c0d18;
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #0c0d18;
+>>>>>>> chickhack
   position: sticky;
   top: 0;
   width: 100%;
@@ -347,7 +359,11 @@ nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
+<<<<<<< HEAD
   background-image: url("../../img/icon/header/logo.png");
+=======
+  background-image: url("../img/logo.png");
+>>>>>>> chickhack
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -358,6 +374,7 @@ nav .logo h1 a {
 
 nav .nav-links {
   display: flex;
+<<<<<<< HEAD
 <<<<<<< HEAD
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -374,6 +391,12 @@ nav .nav-links {
   justify-content: flex-end;
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
   width: 75%;
+=======
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-end;
+  width: 60%;
+>>>>>>> chickhack
 }
 
 nav .nav-links a {
@@ -583,7 +606,11 @@ footer .links .footer-links a {
 footer .footer_moon {
   position: relative;
   left: 50%;
+<<<<<<< HEAD
   max-width: 40%;
+=======
+  max-width: 550px;
+>>>>>>> chickhack
   transform: translateX(-50%);
 }
 
@@ -593,6 +620,7 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
+<<<<<<< HEAD
 <<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -611,6 +639,9 @@ footer .smoke {
     min-width: 250px;
   }
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+  transform: translateX(-50%);
+>>>>>>> chickhack
 }
 
 .quantity label {
@@ -652,6 +683,7 @@ input[type=number] {
 
 body {
 <<<<<<< HEAD
+<<<<<<< HEAD
   -o-object-fit: cover;
      object-fit: cover;
   -webkit-user-select: none;
@@ -662,6 +694,10 @@ body {
   object-fit: cover;
   user-select: none;
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+  object-fit: cover;
+  user-select: none;
+>>>>>>> chickhack
 }
 
 @media all and (max-width: 768px) {
@@ -672,6 +708,7 @@ body {
 
 .product {
   display: flex;
+<<<<<<< HEAD
 <<<<<<< HEAD
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -685,15 +722,21 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 =======
+=======
+>>>>>>> chickhack
   justify-content: center;
   align-items: center;
   align-items: start;
   flex-wrap: wrap;
+<<<<<<< HEAD
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+>>>>>>> chickhack
   padding-top: 15vh;
 }
 
 .product .imgs {
+<<<<<<< HEAD
 <<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
@@ -708,10 +751,13 @@ body {
       -ms-flex-pack: end;
           justify-content: flex-end;
 =======
+=======
+>>>>>>> chickhack
   display: flex;
   justify-content: center;
   align-items: center;
   justify-content: flex-end;
+<<<<<<< HEAD
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
   max-width: 948px;
 }
@@ -741,6 +787,20 @@ body {
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
 }
 
+=======
+  max-width: 948px;
+}
+
+.product .imgs .img {
+  max-width: 400px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+>>>>>>> chickhack
 @media all and (max-width: 768px) {
   .product .imgs .img {
     max-width: 948px;
@@ -761,6 +821,7 @@ body {
 
 .product .imgs .img .smallImg {
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -774,11 +835,16 @@ body {
       -ms-flex-pack: start;
           justify-content: start;
 =======
+=======
+>>>>>>> chickhack
   display: flex;
   justify-content: center;
   align-items: center;
   justify-content: start;
+<<<<<<< HEAD
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+>>>>>>> chickhack
   width: 100%;
 }
 
@@ -876,9 +942,12 @@ body {
   color: #ffffff;
   font-weight: 900;
 <<<<<<< HEAD
+<<<<<<< HEAD
   -webkit-transition: all .3s;
 =======
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+>>>>>>> chickhack
   transition: all .3s;
 }
 
@@ -912,9 +981,8 @@ body {
 
 <<<<<<< HEAD
 .recommend ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -926,6 +994,12 @@ body {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+=======
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+>>>>>>> chickhack
   margin: 32px 30px;
 }
 
@@ -995,11 +1069,17 @@ body {
   font-family: "Nasalization";
   padding-left: 5px;
   position: absolute;
+<<<<<<< HEAD
   right: 20px;
   bottom: 10px;
 }
 
 .recommend .tripcard_all .tripcard .addin2 {
+=======
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+>>>>>>> chickhack
   background-color: #AD6E4A;
   color: #ffffff;
   border-radius: 15px;

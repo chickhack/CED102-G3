@@ -78,6 +78,7 @@ body {
   background-color: #0c0d18;
   overflow-x: hidden;
 <<<<<<< HEAD
+<<<<<<< HEAD
   -webkit-user-select: none;
   -moz-user-select: none;
   -o-user-select: none;
@@ -87,6 +88,10 @@ body {
   -o-user-select: none;
   user-select: none;
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+  -o-user-select: none;
+  user-select: none;
+>>>>>>> chickhack
 }
 
 h1, .h1 {
@@ -321,6 +326,7 @@ body {
 nav {
   display: flex;
 <<<<<<< HEAD
+<<<<<<< HEAD
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -332,6 +338,11 @@ nav {
   align-items: center;
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
   justify-content: center;
+=======
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+>>>>>>> chickhack
   background-color: #0c0d18;
   position: sticky;
   top: 0;
@@ -344,7 +355,11 @@ nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
+<<<<<<< HEAD
   background-image: url("../../img/icon/header/logo.png");
+=======
+  background-image: url("../img/logo.png");
+>>>>>>> chickhack
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -355,6 +370,7 @@ nav .logo h1 a {
 
 nav .nav-links {
   display: flex;
+<<<<<<< HEAD
 <<<<<<< HEAD
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -371,6 +387,12 @@ nav .nav-links {
   justify-content: flex-end;
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
   width: 75%;
+=======
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-end;
+  width: 60%;
+>>>>>>> chickhack
 }
 
 nav .nav-links a {
@@ -580,7 +602,11 @@ footer .links .footer-links a {
 footer .footer_moon {
   position: relative;
   left: 50%;
+<<<<<<< HEAD
   max-width: 40%;
+=======
+  max-width: 550px;
+>>>>>>> chickhack
   transform: translateX(-50%);
 }
 
@@ -591,6 +617,7 @@ footer .smoke {
   width: 100%;
   height: 80%;
   transform: translateX(-50%);
+<<<<<<< HEAD
 }
 
 @media (max-width: 768px) {
@@ -603,6 +630,8 @@ footer .smoke {
   footer .footer_moon {
     min-width: 250px;
   }
+=======
+>>>>>>> chickhack
 }
 
 .quantity label {
@@ -672,12 +701,16 @@ button {
 .banner .slogan {
   display: flex;
 <<<<<<< HEAD
+<<<<<<< HEAD
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 =======
   justify-content: center;
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+  justify-content: center;
+>>>>>>> chickhack
   margin-top: 20vh;
 }
 
@@ -701,6 +734,7 @@ button {
   margin-top: 15vh;
   display: flex;
 <<<<<<< HEAD
+<<<<<<< HEAD
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -708,6 +742,9 @@ button {
 =======
   flex-direction: column;
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+  flex-direction: column;
+>>>>>>> chickhack
 }
 
 .home_intro h2 {
@@ -730,15 +767,19 @@ button {
 
 .tab-inner {
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
 =======
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+>>>>>>> chickhack
   display: flex;
 }
 
 .tab-inner .taball {
   display: flex;
+<<<<<<< HEAD
 <<<<<<< HEAD
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -747,6 +788,9 @@ button {
 =======
   flex-direction: column;
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+  flex-direction: column;
+>>>>>>> chickhack
   text-align: left;
   align-items: center;
 }
@@ -827,14 +871,18 @@ button {
 
 .gallery .box {
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
 =======
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+>>>>>>> chickhack
   display: flex;
 }
 
 .gallery .topleft {
+<<<<<<< HEAD
 <<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
@@ -848,11 +896,16 @@ button {
       -ms-flex-align: end;
           align-items: flex-end;
 =======
+=======
+>>>>>>> chickhack
   display: flex;
   flex-direction: row;
   max-height: 500px;
   align-items: flex-end;
+<<<<<<< HEAD
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+>>>>>>> chickhack
 }
 
 .gallery .topleft .A {
@@ -868,6 +921,7 @@ button {
 }
 
 .gallery .topright {
+<<<<<<< HEAD
 <<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
@@ -885,6 +939,8 @@ button {
   -ms-flex-pack: distribute;
       justify-content: space-around;
 =======
+=======
+>>>>>>> chickhack
   display: flex;
   flex-direction: column;
 }
@@ -892,7 +948,10 @@ button {
 .gallery .topright .topSct {
   display: flex;
   justify-content: space-around;
+<<<<<<< HEAD
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+>>>>>>> chickhack
 }
 
 .gallery .topright button.btn {
@@ -902,6 +961,7 @@ button {
 }
 
 .gallery .topright .galleryIntro {
+<<<<<<< HEAD
 <<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
@@ -913,6 +973,10 @@ button {
   display: flex;
   justify-content: center;
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+  display: flex;
+  justify-content: center;
+>>>>>>> chickhack
 }
 
 .gallery .topright .galleryIntro h5 {
@@ -921,6 +985,7 @@ button {
 }
 
 .gallery .bottomleft {
+<<<<<<< HEAD
 <<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
@@ -933,6 +998,10 @@ button {
   display: flex;
   flex-direction: row;
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+  display: flex;
+  flex-direction: row;
+>>>>>>> chickhack
   max-height: 500px;
 }
 
@@ -957,6 +1026,7 @@ button {
 
 .home_shop {
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -968,6 +1038,10 @@ button {
   display: flex;
   flex-direction: column;
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+  display: flex;
+  flex-direction: column;
+>>>>>>> chickhack
 }
 
 .home_shop .button_min {
@@ -1001,6 +1075,7 @@ button {
   top: 0;
   left: 0;
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1015,12 +1090,18 @@ button {
   justify-content: center;
   align-items: center;
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+  display: flex;
+  justify-content: center;
+  align-items: center;
+>>>>>>> chickhack
 }
 
 .home_shop .shopItem .hovereffect img {
   display: block;
   position: relative;
   max-width: none;
+<<<<<<< HEAD
 <<<<<<< HEAD
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, -webkit-transform 0.35s;
@@ -1032,6 +1113,10 @@ button {
   -webkit-backface-visibility: hidden;
 =======
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+  transition: opacity 0.35s, transform 0.35s;
+  transform: translate3d(-10px, 0, 0);
+>>>>>>> chickhack
   backface-visibility: hidden;
 }
 
@@ -1039,17 +1124,23 @@ button {
   opacity: 0.4;
   filter: alpha(opacity=40);
 <<<<<<< HEAD
+<<<<<<< HEAD
   -webkit-transform: translate3d(0, 0, 0);
 =======
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+>>>>>>> chickhack
   transform: translate3d(0, 0, 0);
 }
 
 .home_shop .shopItem .hovereffect:hover h2:after {
 <<<<<<< HEAD
+<<<<<<< HEAD
   -webkit-transform: translate3d(0, 0, 0);
 =======
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+>>>>>>> chickhack
   transform: translate3d(0, 0, 0);
 }
 
@@ -1057,6 +1148,7 @@ button {
   color: #FFF;
   opacity: 0;
   filter: alpha(opacity=0);
+<<<<<<< HEAD
 <<<<<<< HEAD
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, -webkit-transform 0.35s;
@@ -1066,6 +1158,9 @@ button {
 =======
   transition: opacity 0.35s, transform 0.35s;
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+  transition: opacity 0.35s, transform 0.35s;
+>>>>>>> chickhack
   transform: translate3d(100%, 0, 0);
 }
 
@@ -1073,9 +1168,12 @@ button {
   opacity: 1;
   filter: alpha(opacity=100);
 <<<<<<< HEAD
+<<<<<<< HEAD
   -webkit-transform: translate3d(0, 0, 0);
 =======
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+>>>>>>> chickhack
   transform: translate3d(0, 0, 0);
 }
 
@@ -1096,11 +1194,15 @@ button {
 .home_shop .shopItem .item2 .hovereffect {
   z-index: 1;
 <<<<<<< HEAD
+<<<<<<< HEAD
   -webkit-transform: translate(110%, -20%);
           transform: translate(110%, -20%);
 =======
   transform: translate(110%, -20%);
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+  transform: translate(110%, -20%);
+>>>>>>> chickhack
   max-height: 450px;
   max-width: 220px;
 }
@@ -1111,11 +1213,15 @@ button {
 
 .home_shop .shopItem .item3 .hovereffect {
 <<<<<<< HEAD
+<<<<<<< HEAD
   -webkit-transform: translate(150%, -100%);
           transform: translate(150%, -100%);
 =======
   transform: translate(150%, -100%);
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+  transform: translate(150%, -100%);
+>>>>>>> chickhack
   max-height: 270px;
   max-width: 275px;
 }
@@ -1123,11 +1229,15 @@ button {
 .home_shop .shopItem .item4 .hovereffect {
   z-index: 1;
 <<<<<<< HEAD
+<<<<<<< HEAD
   -webkit-transform: translate(255%, -260%);
           transform: translate(255%, -260%);
 =======
   transform: translate(255%, -260%);
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+  transform: translate(255%, -260%);
+>>>>>>> chickhack
   max-height: 270px;
   max-width: 280px;
 }
@@ -1138,11 +1248,15 @@ button {
 
 .home_shop .shopItem .item5 .hovereffect {
 <<<<<<< HEAD
+<<<<<<< HEAD
   -webkit-transform: translate(260%, -310%);
           transform: translate(260%, -310%);
 =======
   transform: translate(260%, -310%);
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+  transform: translate(260%, -310%);
+>>>>>>> chickhack
   max-height: 296px;
   max-width: 300px;
 }
@@ -1152,6 +1266,7 @@ button {
 }
 
 .flow_member {
+<<<<<<< HEAD
 <<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1185,6 +1300,8 @@ button {
       -ms-flex-direction: column;
           flex-direction: column;
 =======
+=======
+>>>>>>> chickhack
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -1199,7 +1316,10 @@ button {
 .flow_member .flowall .flow {
   display: flex;
   flex-direction: column;
+<<<<<<< HEAD
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+>>>>>>> chickhack
   text-align: center;
 }
 

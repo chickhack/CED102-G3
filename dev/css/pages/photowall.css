@@ -16,6 +16,7 @@ body {
   padding-top: 5%;
   display: flex;
 <<<<<<< HEAD
+<<<<<<< HEAD
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: center;
@@ -29,6 +30,11 @@ body {
   justify-content: center;
   align-items: start;
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: start;
+>>>>>>> chickhack
 }
 
 .grid-item {
@@ -42,6 +48,10 @@ body {
 .grid .grid-item img {
   width: 100%;
   object-fit: cover;
+<<<<<<< HEAD
+=======
+  border-radius: 5px;
+>>>>>>> chickhack
 }
 
 .grid .grid-item:nth-child(n+11) {

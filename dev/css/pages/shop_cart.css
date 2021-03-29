@@ -57,11 +57,15 @@ img {
 *:before,
 *:after {
 <<<<<<< HEAD
+<<<<<<< HEAD
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
 =======
   box-sizing: inherit;
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+  box-sizing: inherit;
+>>>>>>> chickhack
   margin: 0;
   padding: 0;
 }
@@ -83,6 +87,7 @@ body {
   background-color: #0c0d18;
   overflow-x: hidden;
 <<<<<<< HEAD
+<<<<<<< HEAD
   -webkit-user-select: none;
   -moz-user-select: none;
   -o-user-select: none;
@@ -92,6 +97,10 @@ body {
   -o-user-select: none;
   user-select: none;
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+  -o-user-select: none;
+  user-select: none;
+>>>>>>> chickhack
 }
 
 h1, .h1 {
@@ -326,6 +335,7 @@ body {
 nav {
   display: flex;
 <<<<<<< HEAD
+<<<<<<< HEAD
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -341,6 +351,12 @@ nav {
   justify-content: center;
   background-color: #0c0d18;
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #0c0d18;
+>>>>>>> chickhack
   position: sticky;
   top: 0;
   width: 100%;
@@ -352,7 +368,11 @@ nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
+<<<<<<< HEAD
   background-image: url("../../img/icon/header/logo.png");
+=======
+  background-image: url("../img/logo.png");
+>>>>>>> chickhack
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -363,6 +383,7 @@ nav .logo h1 a {
 
 nav .nav-links {
   display: flex;
+<<<<<<< HEAD
 <<<<<<< HEAD
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -379,6 +400,12 @@ nav .nav-links {
   justify-content: flex-end;
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
   width: 75%;
+=======
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-end;
+  width: 60%;
+>>>>>>> chickhack
 }
 
 nav .nav-links a {
@@ -389,6 +416,7 @@ nav .nav-links a {
 
 nav .nav-icons {
   display: flex;
+<<<<<<< HEAD
 <<<<<<< HEAD
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -403,6 +431,11 @@ nav .nav-icons {
   align-items: center;
   justify-content: space-around;
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+>>>>>>> chickhack
   width: 12%;
   margin-left: 50px;
 }
@@ -583,6 +616,7 @@ footer .links .logo {
 footer .links .footer-links {
   display: flex;
 <<<<<<< HEAD
+<<<<<<< HEAD
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -596,16 +630,25 @@ footer .links .footer-links {
   align-items: center;
   justify-content: space-around;
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+>>>>>>> chickhack
   width: 55%;
   position: relative;
   left: 50%;
   bottom: 30px;
+<<<<<<< HEAD
 <<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 =======
   transform: translateX(-50%);
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+  transform: translateX(-50%);
+>>>>>>> chickhack
 }
 
 footer .links .footer-links a {
@@ -616,6 +659,7 @@ footer .footer_moon {
   position: relative;
   left: 50%;
 <<<<<<< HEAD
+<<<<<<< HEAD
   max-width: 550px;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -623,6 +667,10 @@ footer .footer_moon {
   max-width: 40%;
   transform: translateX(-50%);
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+  max-width: 550px;
+  transform: translateX(-50%);
+>>>>>>> chickhack
 }
 
 footer .smoke {
@@ -631,6 +679,7 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
+<<<<<<< HEAD
 <<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -649,6 +698,9 @@ footer .smoke {
     min-width: 250px;
   }
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+  transform: translateX(-50%);
+>>>>>>> chickhack
 }
 
 .quantity label {
@@ -702,10 +754,15 @@ section.cart .item {
   display: flex;
   justify-content: center;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   align-items: center;
   justify-content: center;
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+  align-items: center;
+  justify-content: center;
+>>>>>>> chickhack
   background-color: #292B41;
   padding: 16px 0;
 }
@@ -723,6 +780,7 @@ section.cart .item .img {
 section.cart .item .info {
   width: 65%;
   margin-left: 10px;
+<<<<<<< HEAD
 <<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
@@ -751,6 +809,8 @@ section.cart .item .info .points {
       -ms-flex-pack: start;
           justify-content: start;
 =======
+=======
+>>>>>>> chickhack
   display: flex;
   justify-content: center;
   align-items: center;
@@ -762,7 +822,10 @@ section.cart .item .info .points {
   justify-content: center;
   align-items: center;
   justify-content: start;
+<<<<<<< HEAD
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+>>>>>>> chickhack
   margin: 8px 0;
 }
 
@@ -794,6 +857,7 @@ section.cart .checkout {
 @media all and (max-width: 768px) {
   section.cart .checkout {
 <<<<<<< HEAD
+<<<<<<< HEAD
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -801,6 +865,9 @@ section.cart .checkout {
 =======
     flex-direction: column;
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+    flex-direction: column;
+>>>>>>> chickhack
   }
 }
 

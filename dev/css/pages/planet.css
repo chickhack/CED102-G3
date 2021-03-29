@@ -78,6 +78,7 @@ body {
   background-color: #0c0d18;
   overflow-x: hidden;
 <<<<<<< HEAD
+<<<<<<< HEAD
   -webkit-user-select: none;
   -moz-user-select: none;
   -o-user-select: none;
@@ -87,6 +88,10 @@ body {
   -o-user-select: none;
   user-select: none;
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+  -o-user-select: none;
+  user-select: none;
+>>>>>>> chickhack
 }
 
 h1, .h1 {
@@ -321,6 +326,7 @@ body {
 nav {
   display: flex;
 <<<<<<< HEAD
+<<<<<<< HEAD
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -336,6 +342,12 @@ nav {
   justify-content: center;
   background-color: #0c0d18;
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #0c0d18;
+>>>>>>> chickhack
   position: sticky;
   top: 0;
   width: 100%;
@@ -347,7 +359,11 @@ nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
+<<<<<<< HEAD
   background-image: url("../../img/icon/header/logo.png");
+=======
+  background-image: url("../img/logo.png");
+>>>>>>> chickhack
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -358,6 +374,7 @@ nav .logo h1 a {
 
 nav .nav-links {
   display: flex;
+<<<<<<< HEAD
 <<<<<<< HEAD
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -374,6 +391,12 @@ nav .nav-links {
   justify-content: flex-end;
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
   width: 75%;
+=======
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-end;
+  width: 60%;
+>>>>>>> chickhack
 }
 
 nav .nav-links a {
@@ -583,7 +606,11 @@ footer .links .footer-links a {
 footer .footer_moon {
   position: relative;
   left: 50%;
+<<<<<<< HEAD
   max-width: 40%;
+=======
+  max-width: 550px;
+>>>>>>> chickhack
   transform: translateX(-50%);
 }
 
@@ -593,6 +620,7 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
+<<<<<<< HEAD
 <<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -611,6 +639,9 @@ footer .smoke {
     min-width: 250px;
   }
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+  transform: translateX(-50%);
+>>>>>>> chickhack
 }
 
 .quantity label {
@@ -658,16 +689,21 @@ input[type=number] {
 .title {
   display: flex;
 <<<<<<< HEAD
+<<<<<<< HEAD
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 =======
   justify-content: center;
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+  justify-content: center;
+>>>>>>> chickhack
 }
 
 div.tabList {
   display: flex;
+<<<<<<< HEAD
 <<<<<<< HEAD
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -678,6 +714,10 @@ div.tabList {
   justify-content: center;
   column-gap: 1%;
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+  justify-content: center;
+  column-gap: 1%;
+>>>>>>> chickhack
 }
 
 div.tabList button {
@@ -700,15 +740,19 @@ div.tabList button.active {
 
 .tab-inner {
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
 =======
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+>>>>>>> chickhack
   display: flex;
 }
 
 .tab-inner .taball {
   display: flex;
+<<<<<<< HEAD
 <<<<<<< HEAD
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -717,6 +761,9 @@ div.tabList button.active {
 =======
   flex-direction: column;
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+  flex-direction: column;
+>>>>>>> chickhack
   text-align: left;
   align-items: center;
 }
@@ -734,10 +781,13 @@ div.tabList button.active {
 .tab-inner .taball .data {
   border: 1px solid #AD6E4A;
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
 =======
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+>>>>>>> chickhack
   display: flex;
   font-family: Haettenschweiler, sans-serif;
 }
@@ -800,11 +850,15 @@ div.tabList button.active {
 .planet_content {
   display: flex;
 <<<<<<< HEAD
+<<<<<<< HEAD
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 =======
   flex-wrap: wrap;
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+  flex-wrap: wrap;
+>>>>>>> chickhack
 }
 
 .planet_content .carousel {
@@ -817,11 +871,15 @@ div.tabList button.active {
 
 .planet_content .imgs .img1 {
 <<<<<<< HEAD
+<<<<<<< HEAD
   -webkit-transform: translate(40%);
           transform: translate(40%);
 =======
   transform: translate(40%);
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+  transform: translate(40%);
+>>>>>>> chickhack
 }
 
 .planet_content .imgs .img2 {
@@ -835,12 +893,16 @@ div.tabList button.active {
 .planet_content .desc {
   display: flex;
 <<<<<<< HEAD
+<<<<<<< HEAD
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 =======
   align-items: center;
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+  align-items: center;
+>>>>>>> chickhack
 }
 
 .planet_content .desc p {

@@ -79,6 +79,7 @@ body {
   background-color: #0c0d18;
   overflow-x: hidden;
 <<<<<<< HEAD
+<<<<<<< HEAD
   -webkit-user-select: none;
   -moz-user-select: none;
   -o-user-select: none;
@@ -88,6 +89,10 @@ body {
   -o-user-select: none;
   user-select: none;
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+  -o-user-select: none;
+  user-select: none;
+>>>>>>> chickhack
 }
 
 h1, .h1 {
@@ -322,6 +327,7 @@ body {
 nav {
   display: flex;
 <<<<<<< HEAD
+<<<<<<< HEAD
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -337,6 +343,12 @@ nav {
   justify-content: center;
   background-color: #0c0d18;
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #0c0d18;
+>>>>>>> chickhack
   position: sticky;
   top: 0;
   width: 100%;
@@ -348,7 +360,11 @@ nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
+<<<<<<< HEAD
   background-image: url("../../img/icon/header/logo.png");
+=======
+  background-image: url("../img/logo.png");
+>>>>>>> chickhack
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -359,6 +375,7 @@ nav .logo h1 a {
 
 nav .nav-links {
   display: flex;
+<<<<<<< HEAD
 <<<<<<< HEAD
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -375,6 +392,12 @@ nav .nav-links {
   justify-content: flex-end;
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
   width: 75%;
+=======
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-end;
+  width: 60%;
+>>>>>>> chickhack
 }
 
 nav .nav-links a {
@@ -584,7 +607,11 @@ footer .links .footer-links a {
 footer .footer_moon {
   position: relative;
   left: 50%;
+<<<<<<< HEAD
   max-width: 40%;
+=======
+  max-width: 550px;
+>>>>>>> chickhack
   transform: translateX(-50%);
 }
 
@@ -594,6 +621,7 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
+<<<<<<< HEAD
 <<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -612,6 +640,9 @@ footer .smoke {
     min-width: 250px;
   }
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+  transform: translateX(-50%);
+>>>>>>> chickhack
 }
 
 .quantity label {
@@ -659,6 +690,7 @@ body {
 .welcome {
   padding: 15vh 250px 0px 250px;
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -673,6 +705,11 @@ body {
   align-items: center;
   justify-content: left;
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+  display: flex;
+  align-items: center;
+  justify-content: left;
+>>>>>>> chickhack
 }
 
 .spacedinfo {

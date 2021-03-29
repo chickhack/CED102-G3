@@ -78,6 +78,7 @@ body {
   background-color: #0c0d18;
   overflow-x: hidden;
 <<<<<<< HEAD
+<<<<<<< HEAD
   -webkit-user-select: none;
   -moz-user-select: none;
   -o-user-select: none;
@@ -87,6 +88,10 @@ body {
   -o-user-select: none;
   user-select: none;
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+  -o-user-select: none;
+  user-select: none;
+>>>>>>> chickhack
 }
 
 h1, .h1 {
@@ -321,6 +326,7 @@ body {
 nav {
   display: flex;
 <<<<<<< HEAD
+<<<<<<< HEAD
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -336,6 +342,12 @@ nav {
   justify-content: center;
   background-color: #0c0d18;
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #0c0d18;
+>>>>>>> chickhack
   position: sticky;
   top: 0;
   width: 100%;
@@ -347,7 +359,11 @@ nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
+<<<<<<< HEAD
   background-image: url("../../img/icon/header/logo.png");
+=======
+  background-image: url("../img/logo.png");
+>>>>>>> chickhack
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -358,6 +374,7 @@ nav .logo h1 a {
 
 nav .nav-links {
   display: flex;
+<<<<<<< HEAD
 <<<<<<< HEAD
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -374,6 +391,12 @@ nav .nav-links {
   justify-content: flex-end;
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
   width: 75%;
+=======
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-end;
+  width: 60%;
+>>>>>>> chickhack
 }
 
 nav .nav-links a {
@@ -583,7 +606,11 @@ footer .links .footer-links a {
 footer .footer_moon {
   position: relative;
   left: 50%;
+<<<<<<< HEAD
   max-width: 40%;
+=======
+  max-width: 550px;
+>>>>>>> chickhack
   transform: translateX(-50%);
 }
 
@@ -594,9 +621,12 @@ footer .smoke {
   width: 100%;
   height: 80%;
 <<<<<<< HEAD
+<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 =======
+=======
+>>>>>>> chickhack
   transform: translateX(-50%);
 }
 
@@ -689,10 +719,13 @@ div.bk3 {
 
 .first {
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
 =======
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+>>>>>>> chickhack
   display: flex;
   max-width: 1200px;
   margin: 0 auto;
@@ -752,10 +785,13 @@ div.bk3 {
 .first .first_right .hottrip {
   top: 15vh;
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
 =======
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+>>>>>>> chickhack
   display: inline-flex;
   padding-top: 96px;
 }
@@ -807,10 +843,13 @@ div.bk3 {
 
 .first .first_right div.planet_top div.word .tag {
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
 =======
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+>>>>>>> chickhack
   display: inline-flex;
   border: 1px solid #C9ADA7;
   border-radius: 5px;
@@ -852,10 +891,13 @@ div.bk3 {
 
 .first .tripselect {
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
 =======
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+>>>>>>> chickhack
   display: inline-flex;
   width: 280px;
   justify-content: space-between;
@@ -883,6 +925,7 @@ div.bk3 {
   max-width: 1000px;
   margin: 0 auto;
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -897,6 +940,11 @@ div.bk3 {
   align-items: baseline;
   justify-content: space-between;
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+>>>>>>> chickhack
   padding: 32px;
 }
 
@@ -955,6 +1003,7 @@ div.bk3 {
 
 .second .tripcard_all {
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -968,6 +1017,11 @@ div.bk3 {
   justify-content: center;
   flex-wrap: wrap;
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+  display: inline-flex;
+  justify-content: center;
+  flex-wrap: wrap;
+>>>>>>> chickhack
   width: 100%;
 }
 
@@ -1009,10 +1063,13 @@ div.bk3 {
 
 .second .tripcard_all .tripcard .tag {
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
 =======
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+>>>>>>> chickhack
   display: inline-flex;
   border: 1px solid #C9ADA7;
   border-radius: 5px;
