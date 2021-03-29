@@ -307,19 +307,6 @@ nav {
   align-items: center;
   justify-content: space-around;
   background-color: #0c0d18;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  position: -webkit-sticky;
-=======
->>>>>>> chickhack
-=======
->>>>>>> kai
-=======
->>>>>>> chickhack
-=======
->>>>>>> kai
   position: sticky;
   top: 0;
   width: 100%;
@@ -420,16 +407,6 @@ footer .smoke {
   width: 100%;
   height: 80%;
   transform: translateX(-50%);
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> chickhack
-=======
->>>>>>> kai
-=======
->>>>>>> chickhack
-=======
->>>>>>> kai
 }
 
 div.bk {
@@ -470,20 +447,6 @@ div.bk3 {
 }
 
 .first {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-=======
->>>>>>> chickhack
-=======
->>>>>>> kai
-=======
->>>>>>> chickhack
-=======
->>>>>>> kai
   display: flex;
   max-width: 1200px;
   margin: 0 auto;
@@ -541,21 +504,7 @@ div.bk3 {
 }
 
 .first .first_right .hottrip {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-=======
->>>>>>> chickhack
-=======
->>>>>>> kai
-=======
->>>>>>> chickhack
-=======
   top: 15vh;
->>>>>>> kai
   display: inline-flex;
   padding-top: 96px;
 }
@@ -605,23 +554,7 @@ div.bk3 {
   color: #AD6E4A;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-.first .first_right .hottrip div.planet_top div.word .tag {
-<<<<<<< HEAD
-<<<<<<< HEAD
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-=======
->>>>>>> chickhack
-=======
 .first .first_right div.planet_top div.word .tag {
->>>>>>> kai
-=======
->>>>>>> chickhack
-=======
-.first .first_right div.planet_top div.word .tag {
->>>>>>> kai
   display: inline-flex;
   border: 1px solid #C9ADA7;
   border-radius: 5px;
@@ -686,30 +619,11 @@ div.bk3 {
 }
 
 .stepsection .stepall {
-<<<<<<< HEAD
-<<<<<<< HEAD
-  max-width: 1200px;
-=======
   max-width: 1000px;
->>>>>>> kai
   margin: 0 auto;
-=======
->>>>>>> chickhack
   display: flex;
   align-items: baseline;
-<<<<<<< HEAD
-<<<<<<< HEAD
-  justify-content: center;
-<<<<<<< HEAD
->>>>>>> chickhack
-=======
   justify-content: space-between;
->>>>>>> kai
-=======
->>>>>>> chickhack
-=======
-  justify-content: space-between;
->>>>>>> kai
   padding: 32px;
 }
 
@@ -767,29 +681,9 @@ div.bk3 {
 }
 
 .second .tripcard_all {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-=======
->>>>>>> kai
   display: inline-flex;
   justify-content: center;
   flex-wrap: wrap;
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> chickhack
-=======
->>>>>>> kai
-=======
-  display: inline-flex;
-  justify-content: center;
-  flex-wrap: wrap;
->>>>>>> chickhack
-=======
->>>>>>> kai
   width: 100%;
 }
 
@@ -819,6 +713,10 @@ div.bk3 {
   width: 250px;
 }
 
+.second .tripcard_all .tripcard .spot_pic:hover {
+  transform: perspective(0.5px) translateX(-1.5px) translateY(-1.5px);
+}
+
 .second .tripcard_all .tripcard .hot2 {
   font-weight: bold;
   margin-bottom: 15px;
@@ -826,20 +724,6 @@ div.bk3 {
 }
 
 .second .tripcard_all .tripcard .tag {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-=======
->>>>>>> chickhack
-=======
->>>>>>> kai
-=======
->>>>>>> chickhack
-=======
->>>>>>> kai
   display: inline-flex;
   border: 1px solid #C9ADA7;
   border-radius: 5px;
@@ -892,5 +776,9 @@ div.bk3 {
   display: flex;
   justify-content: center;
   cursor: pointer;
+}
+
+.second .tripcard_all .tripcard > img :hover {
+  transform: perspective(0.5px) translateX(-1.5px) translateY(-1.5px);
 }
 /*# sourceMappingURL=alltrip.css.map */

@@ -14,7 +14,6 @@ div.bk {
     left: 450px;
     top: 100px;
     opacity: 0.6;
-
     @media all and (max-width:768px) {
         display: none;
     }
@@ -41,7 +40,6 @@ div.bk3 {
     opacity: 0.2;
 }
 
-a:link {}
 
 // <!-- ----------first -->
 .first {
@@ -127,6 +125,10 @@ a:link {}
             img.planet_a1 {
                 max-width: 280px;
             }
+            // img.planet_a1:hover {
+            //     transform: perspective(0.5px) translateX(-1.5px) translateY(-1.5px);
+
+            // }
 
             div.word {
                 position: absolute;
@@ -297,6 +299,9 @@ a:link {}
             .spot_pic {
                 width: 250px;
             }
+            .spot_pic:hover {
+                transform: perspective(0.5px) translateX(-1.5px) translateY(-1.5px);
+            }
 
             .hot2 {
                 font-weight: bold;
@@ -361,9 +366,10 @@ a:link {}
             }
         }
 
-        .tripcard :hover {
-            box-shadow: 0 8px 8px 5px rgba(255, 255, 255, 0.8);
-            transform: perspective(2px) translateX(-1.5px) translateY(-1.5px);
+        .tripcard>img :hover {
+            // box-shadow: 0 8px 8px 5px rgba(255, 255, 255, 0.8);
+            transform: perspective(0.5px) translateX(-1.5px) translateY(-1.5px);
         }
 
+    }
     }
