@@ -5,26 +5,41 @@ body {
 }
 
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .grid {
+<<<<<<< HEAD
   margin: auto;
   max-width: 1440px;
+=======
+  padding-top: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+>>>>>>> denis
 }
 
 .grid-item {
   margin: 10px;
-  border: 1px solid #AD6E4A;
-  width: calc(20% - 20px);
+  border: 1px solid #ad6e4a69;
   border-radius: 5px;
-  padding: 0;
-  margin-bottom: 30px;
+  width: 250px;
 }
 
 .grid .grid-item img {
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 5px;
 }
 
@@ -33,8 +48,10 @@ body {
 }
 
 .action-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  bottom: 48px;
+  bottom: 45px;
   background-color: black;
   opacity: 0.5;
   position: relative;
@@ -68,7 +85,7 @@ body {
 .name {
   line-height: 78px;
   color: #fff;
-  margin-right: 24px;
+  margin-right: 10px;
 }
 
 .post_time {
@@ -85,6 +102,8 @@ body {
 }
 
 .article {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -99,6 +118,8 @@ body {
 }
 
 .article_2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-top: 10px;
 }
@@ -108,8 +129,8 @@ body {
 }
 
 .button button {
-  color: white;
-  border: 1px solid #AD6E4A;
+  color: #AD6E4A;
+  border: 1px solid #ad6e4afb;
   padding: 15px;
   margin: 30px 0;
   background-color: transparent;
@@ -123,7 +144,7 @@ body {
   bottom: 80px;
 }
 
-.col-md-1 .button_2 .post_button {
+.col-md-1 .button_2 a button.button_min {
   background-color: transparent;
   border: none;
 }

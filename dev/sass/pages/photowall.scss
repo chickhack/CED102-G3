@@ -9,17 +9,19 @@ body{
 }
 
 .grid{
-  margin: auto;
-  max-width: 1440px;
+  padding-top: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: start;
 }
 
 .grid-item{
   margin: 10px;
-  border: 1px solid #AD6E4A;
-  width: calc(20% - 20px);
+  border: 1px solid #ad6e4a69;
   border-radius: 5px;
-  padding: 0;
-  margin-bottom: 30px;
+  width: 250px;
+
 }
 .grid .grid-item img{
   width: 100%;
@@ -31,7 +33,7 @@ body{
 }
 .action-box{
   display:flex;
-  bottom: 48px;
+  bottom: 45px;
   background-color:black;
   opacity: 0.5;
   position: relative;
@@ -59,7 +61,7 @@ body{
 .name{
   line-height: 78px;
   color: #fff;
-  margin-right: 24px;
+  margin-right: 10px;
 }
 .post_time{
   line-height: 78px;
@@ -94,8 +96,8 @@ body{
 }
 
 .button button{
-  color: white;
-  border: 1px solid #AD6E4A;
+  color:#AD6E4A;
+  border: 1px solid #ad6e4afb;
   padding: 15px;
   margin: 30px 0;
   background-color: transparent;
@@ -109,10 +111,10 @@ body{
   bottom: 80px;
   
 }
-.col-md-1 .button_2 .post_button{
+.col-md-1 .button_2 a button.button_min{
   background-color: transparent;
   border: none;
-  
+
 }
 footer.padding_top_5{
   padding-top: 10px;

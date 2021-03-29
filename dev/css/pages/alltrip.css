@@ -56,7 +56,8 @@ img {
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
   margin: 0;
   padding: 0;
 }
@@ -77,8 +78,16 @@ body {
   font-size: 14px;
   background-color: #0c0d18;
   overflow-x: hidden;
+<<<<<<< HEAD
   -o-user-select: none;
   user-select: none;
+=======
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -ms-user-select: none;
+      user-select: none;
+>>>>>>> denis
 }
 
 h1, .h1 {
@@ -302,11 +311,22 @@ small, .small {
 }
 
 nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   background-color: #0c0d18;
+<<<<<<< HEAD
+=======
+  position: -webkit-sticky;
+>>>>>>> denis
   position: sticky;
   top: 0;
   width: 100%;
@@ -327,10 +347,18 @@ nav .logo h1 a {
 }
 
 nav .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   width: 60%;
 }
 
@@ -339,10 +367,17 @@ nav .nav-links a {
 }
 
 nav .nav-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 12%;
 }
 
@@ -374,19 +409,28 @@ footer .links .logo {
   position: relative;
   left: 50%;
   bottom: 50px;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 footer .links .footer-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 55%;
   position: relative;
   left: 50%;
   bottom: 30px;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 footer .links .footer-links a {
@@ -397,7 +441,8 @@ footer .footer_moon {
   position: relative;
   left: 50%;
   max-width: 550px;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 footer .smoke {
@@ -406,6 +451,7 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
+<<<<<<< HEAD
   transform: translateX(-50%);
 }
 
@@ -444,6 +490,10 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
+=======
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+>>>>>>> denis
 }
 
 div.bk {
@@ -484,6 +534,11 @@ div.bk3 {
 }
 
 .first {
+<<<<<<< HEAD
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> denis
   display: flex;
   max-width: 1200px;
   margin: 0 auto;
@@ -491,8 +546,13 @@ div.bk3 {
 
 @media all and (max-width: 1200px) {
   .first {
-    flex-direction: column;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 95%;
   }
 }
@@ -504,6 +564,8 @@ div.bk3 {
 .first .first_left {
   padding-left: 40px;
   width: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -531,6 +593,7 @@ div.bk3 {
 .first .first_right {
   width: 50%;
   position: relative;
+  overflow: hidden;
 }
 
 @media all and (max-width: 1200px) {
@@ -541,7 +604,12 @@ div.bk3 {
 }
 
 .first .first_right .hottrip {
+<<<<<<< HEAD
   top: 15vh;
+=======
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+>>>>>>> denis
   display: inline-flex;
   padding-top: 96px;
 }
@@ -571,7 +639,8 @@ div.bk3 {
   position: absolute;
   top: 15px;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .first .first_right div.planet_top img.planet_a1 {
@@ -582,7 +651,8 @@ div.bk3 {
   position: absolute;
   top: 190px;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   text-align: center;
   margin: 0 auto;
 }
@@ -592,6 +662,11 @@ div.bk3 {
 }
 
 .first .first_right div.planet_top div.word .tag {
+<<<<<<< HEAD
+=======
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+>>>>>>> denis
   display: inline-flex;
   border: 1px solid #C9ADA7;
   border-radius: 5px;
@@ -627,14 +702,22 @@ div.bk3 {
   padding-right: 4px;
 }
 
+<<<<<<< HEAD
 .first .first_right div.planet_top div.word .addin:hover {
   background-color: #bf896b;
 }
 
 .first .tripselect {
+=======
+.first .tripselect {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+>>>>>>> denis
   display: inline-flex;
   width: 280px;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .first .tripselect .icon2 {
@@ -656,18 +739,37 @@ div.bk3 {
 }
 
 .stepsection .stepall {
+<<<<<<< HEAD
   max-width: 1000px;
   margin: 0 auto;
   display: flex;
   align-items: baseline;
   justify-content: space-between;
+=======
+  max-width: 1200px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+>>>>>>> denis
   padding: 32px;
 }
 
 @media all and (max-width: 767px) {
   .stepsection .stepall {
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -718,9 +820,20 @@ div.bk3 {
 }
 
 .second .tripcard_all {
+<<<<<<< HEAD
   display: inline-flex;
   justify-content: center;
   flex-wrap: wrap;
+=======
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+>>>>>>> denis
   width: 100%;
 }
 
@@ -741,7 +854,10 @@ div.bk3 {
 
 @media all and (max-width: 767px) {
   .second .tripcard_all .tripcard {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin: 16px 0 16px 0;
   }
 }
@@ -761,6 +877,11 @@ div.bk3 {
 }
 
 .second .tripcard_all .tripcard .tag {
+<<<<<<< HEAD
+=======
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+>>>>>>> denis
   display: inline-flex;
   border: 1px solid #C9ADA7;
   border-radius: 5px;
@@ -809,9 +930,15 @@ div.bk3 {
   top: 220px;
   width: 25px;
   height: 25px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   cursor: pointer;
 }
 

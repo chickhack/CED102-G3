@@ -56,7 +56,8 @@ img {
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
   margin: 0;
   padding: 0;
 }
@@ -77,8 +78,16 @@ body {
   font-size: 14px;
   background-color: #0c0d18;
   overflow-x: hidden;
+<<<<<<< HEAD
   -o-user-select: none;
   user-select: none;
+=======
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -ms-user-select: none;
+      user-select: none;
+>>>>>>> denis
 }
 
 h1, .h1 {
@@ -302,11 +311,22 @@ small, .small {
 }
 
 nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   background-color: #0c0d18;
+<<<<<<< HEAD
+=======
+  position: -webkit-sticky;
+>>>>>>> denis
   position: sticky;
   top: 0;
   width: 100%;
@@ -327,10 +347,18 @@ nav .logo h1 a {
 }
 
 nav .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   width: 60%;
 }
 
@@ -339,10 +367,17 @@ nav .nav-links a {
 }
 
 nav .nav-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 12%;
 }
 
@@ -374,19 +409,28 @@ footer .links .logo {
   position: relative;
   left: 50%;
   bottom: 50px;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 footer .links .footer-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 55%;
   position: relative;
   left: 50%;
   bottom: 30px;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 footer .links .footer-links a {
@@ -397,7 +441,8 @@ footer .footer_moon {
   position: relative;
   left: 50%;
   max-width: 550px;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 footer .smoke {
@@ -406,7 +451,12 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
+<<<<<<< HEAD
   transform: translateX(-50%);
+=======
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+>>>>>>> denis
 }
 
 .quantity label {
@@ -452,14 +502,33 @@ input[type=number] {
 }
 
 .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
   justify-content: center;
+=======
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 42px;
+>>>>>>> denis
 }
 
 div.tabList {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
   justify-content: center;
   column-gap: 1%;
+=======
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 1%;
+          column-gap: 1%;
+>>>>>>> denis
 }
 
 div.tabList button {
@@ -481,14 +550,30 @@ div.tabList button.active {
 }
 
 .tab-inner {
+<<<<<<< HEAD
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> denis
   display: flex;
 }
 
 .tab-inner .taball {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
   flex-direction: column;
+=======
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+>>>>>>> denis
   text-align: left;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .tab-inner .taball .tab_left {
@@ -501,36 +586,88 @@ div.tabList button.active {
   max-width: 400px;
 }
 
+<<<<<<< HEAD
 .tab-inner .taball .data {
   border: 1px solid #AD6E4A;
+=======
+.tab-inner .data {
+  border: 1px solid #AD6E4A;
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> denis
   display: flex;
   font-family: Haettenschweiler, sans-serif;
 }
 
+<<<<<<< HEAD
 .tab-inner .taball .data .grav {
   justify-content: center;
   align-items: center;
+=======
+.tab-inner .data .grav {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> denis
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   min-width: 130px;
   min-height: 130px;
   border-right: 1px solid #AD6E4A;
 }
 
+<<<<<<< HEAD
 .tab-inner .taball .data .day {
   justify-content: center;
   align-items: center;
+=======
+.tab-inner .data .day {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> denis
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   min-width: 130px;
   border-right: 1px solid #AD6E4A;
 }
 
+<<<<<<< HEAD
 .tab-inner .taball .data .temp {
   justify-content: center;
   align-items: center;
+=======
+.tab-inner .data .temp {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> denis
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   min-width: 130px;
 }
 
@@ -559,16 +696,30 @@ div.tabList button.active {
 }
 
 .tab-inner button {
+<<<<<<< HEAD
   display: none;
+=======
+  background-color: transparent;
+  color: #AD6E4A;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+>>>>>>> denis
 }
 
 .planet_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
   flex-wrap: wrap;
 }
 
 .planet_content .carousel {
   display: none;
+=======
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+>>>>>>> denis
 }
 
 .planet_content .imgs {
@@ -576,20 +727,35 @@ div.tabList button.active {
 }
 
 .planet_content .imgs .img1 {
+<<<<<<< HEAD
   transform: translate(40%);
+=======
+  -webkit-transform: translate(40%);
+          transform: translate(40%);
+>>>>>>> denis
 }
 
 .planet_content .imgs .img2 {
-  transform: translateX(30%);
+  -webkit-transform: translateX(30%);
+          transform: translateX(30%);
 }
 
 .planet_content .imgs .img3 {
-  transform: translate(20%, -350px);
+  -webkit-transform: translate(20%, -350px);
+          transform: translate(20%, -350px);
 }
 
 .planet_content .desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
   align-items: center;
+=======
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+>>>>>>> denis
 }
 
 .planet_content .desc p {
