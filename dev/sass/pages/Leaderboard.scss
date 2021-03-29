@@ -81,11 +81,18 @@
 }
 .banner{
     margin: 0 auto;
-    background-image: url(../../img/trip/others/ivan-diaz-dmhv60RLmlw-unsplash.jpg);
-    background-repeat: no-repeat;
+    // background-image: url(../../img/home/其他/station_moon.jpg);
+    // background-repeat: no-repeat;
+    // background-size: cover;
     width: 100%;
-    padding-top: 20%;
+    // padding-top: 20%;
+    // padding-bottom: 30%;
     position: relative;
+    img{
+        width: 100%;
+        
+        object-fit: cover;
+    }
     h4{
     position: absolute;
     left: 50%;
