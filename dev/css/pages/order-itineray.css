@@ -297,11 +297,6 @@ form .orderinfo .row .col-10 {
 }
 
 form .orderinfo .row .col-10 .row {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> denis
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
@@ -309,20 +304,6 @@ form .orderinfo .row .col-10 .row {
 form .orderinfo .row .col-10 .row .col-7 {
   display: -webkit-box;
   display: -ms-flexbox;
-<<<<<<< HEAD
-=======
-=======
->>>>>>> chickhack
-  justify-content: space-around;
-}
-
-form .orderinfo .row .col-10 .row .col-7 {
-<<<<<<< HEAD
->>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
-=======
->>>>>>> chickhack
-=======
->>>>>>> denis
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -392,11 +373,6 @@ form .ltineraryinfo .row .col-10 .row .col-3 {
 
 form .ltineraryinfo .row .col-10 .row .col-3 img {
   max-width: 150px;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> denis
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -404,20 +380,6 @@ form .ltineraryinfo .row .col-10 .row .col-3 img {
 form .ltineraryinfo .row .col-10 .row .col-7 .row {
   display: -webkit-box;
   display: -ms-flexbox;
-<<<<<<< HEAD
-=======
-=======
->>>>>>> chickhack
-  object-fit: cover;
-}
-
-form .ltineraryinfo .row .col-10 .row .col-7 .row {
-<<<<<<< HEAD
->>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
-=======
->>>>>>> chickhack
-=======
->>>>>>> denis
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -433,11 +395,6 @@ form .ltineraryinfo .row .col-10 .row .col-7 .row .col-11 {
 }
 
 form .ltineraryinfo .row .col-10 .row .col-7 .row .text-div {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> denis
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -448,16 +405,6 @@ form .ltineraryinfo .row .col-10 .row .col-7 .row .text-div {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-<<<<<<< HEAD
-=======
-=======
->>>>>>> chickhack
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
->>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
-=======
->>>>>>> denis
   padding: 0px 0;
 }
 
@@ -476,18 +423,9 @@ form .addPay .row .col-10 {
   border-radius: 5px;
 }
 
-<<<<<<< HEAD
-form .addPay .row .col-10 .automena .row .col-11 {
+form .addPay .row .col-10 .automena .row .col-10 {
   display: -webkit-box;
   display: -ms-flexbox;
-<<<<<<< HEAD
-=======
->>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
-=======
-form .addPay .row .col-10 .automena .row .col-10 {
->>>>>>> chickhack
-=======
->>>>>>> denis
   display: flex;
 }
 
@@ -501,27 +439,10 @@ form .addPay .row .col-10 .automena .row .col-10 .sss {
 
 form .addPay .row .col-10 .automena .row .col-10 .sss img {
   width: 100px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-<<<<<<< HEAD
-form .addPay .row .col-10 .automena .row .col-11 .checkbox-fu:checked {
-  background: #ad6e4a;
-  -webkit-box-shadow: inset 0px 0px 0px 4px #ad6e4a;
-          box-shadow: inset 0px 0px 0px 4px #ad6e4a;
-}
-
-form .addPay .row .col-10 .automena .row .col-11 .checkbox-fu::after {
-  content: "";
-  width: 1px;
-  height: 30%;
-  background-color: #ad6e4a;
-  left: -3%;
-  position: absolute;
-  -webkit-transform: rotate(-45deg) translateY(-60%);
-          transform: rotate(-45deg) translateY(-60%);
-  top: 50%;
-=======
 form .addPay .row .col-10 .automena .row .col-10 .sssb:focus .sss {
   background-color: #fff;
 }
@@ -531,12 +452,13 @@ form .addPay .row .col-10 .automena .row .col-10 input {
 }
 
 form .addPay .row .col-10 .automena .row .col-11 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 form .addPay .row .col-10 .automena .row .col-11 input {
   display: none;
->>>>>>> chickhack
 }
 
 form .paymethod .row {
@@ -564,19 +486,8 @@ form .paymethod .row .col-10 .paymethod-automanu .row .check::before {
 }
 
 form .paymethod .row .col-10 .paymethod-automanu .row .col-11 {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
-=======
->>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
-=======
->>>>>>> chickhack
-=======
-  display: -webkit-box;
-  display: -ms-flexbox;
->>>>>>> denis
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -584,23 +495,9 @@ form .paymethod .row .col-10 .paymethod-automanu .row .col-11 {
 }
 
 form .paymethod .row .col-10 .paymethod-automanu .row .col-12 .paymethod-automanu-car-automanu .row {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-=======
-  justify-content: space-evenly;
->>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
-=======
-  justify-content: space-evenly;
->>>>>>> chickhack
-=======
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
->>>>>>> denis
 }
 
 form .paymethod .row .col-10 .paymethod-automanu .row .col-12 .paymethod-automanu-car-automanu .row input {
@@ -630,19 +527,8 @@ form .paymethod .row .col-10 .paymethod-automanu .row .col-5 input.paymethod-coi
 }
 
 form .paymethod .row .col-10 .paymethod-automanu .row .col-4 {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
-=======
->>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
-=======
->>>>>>> chickhack
-=======
-  display: -webkit-box;
-  display: -ms-flexbox;
->>>>>>> denis
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -660,28 +546,12 @@ form .orderDetails .row {
 }
 
 form .orderDetails .row .allpay-div {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> denis
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-<<<<<<< HEAD
-=======
-  display: flex;
-  justify-content: flex-end;
->>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
-=======
-  display: flex;
-  justify-content: flex-end;
->>>>>>> chickhack
-=======
->>>>>>> denis
 }
 
 form .orderDetails .row .col-10 .orderDetails-automanu .col-3 {
@@ -715,19 +585,8 @@ form .orderDetails .row .col-10 .orderDetails-automanu .col-11 .orderDetails-aut
 }
 
 form .orderDetails .row .col-10 .orderDetails-automanu .col-11 .orderDetails-automanu-textdiv .textbox {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
-=======
->>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
-=======
->>>>>>> chickhack
-=======
-  display: -webkit-box;
-  display: -ms-flexbox;
->>>>>>> denis
   display: flex;
   width: 100%;
 }
@@ -739,19 +598,8 @@ form .orderDetails .row .col-10 .orderDetails-automanu .col-7 {
 }
 
 form .orderDetails .row .col-10 .orderDetails-automanu .col-7 .row {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
-=======
->>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
-=======
->>>>>>> chickhack
-=======
-  display: -webkit-box;
-  display: -ms-flexbox;
->>>>>>> denis
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
