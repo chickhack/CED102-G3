@@ -78,32 +78,8 @@ body {
   font-size: 14px;
   background-color: #0c0d18;
   overflow-x: hidden;
-<<<<<<< HEAD
   -o-user-select: none;
   user-select: none;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  -o-user-select: none;
-  user-select: none;
-=======
-=======
->>>>>>> denis
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -o-user-select: none;
-  -ms-user-select: none;
-      user-select: none;
-<<<<<<< HEAD
->>>>>>> denis
-=======
-  -o-user-select: none;
-  user-select: none;
->>>>>>> chickhack
-=======
->>>>>>> denis
->>>>>>> 2c9880b2ec61e05445d35039c54a72771639c64a
 }
 
 h1, .h1 {
@@ -324,28 +300,19 @@ small, .small {
 .container {
   max-width: 1440px;
   margin: 0 auto;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   background-color: #0c0d18;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-  position: -webkit-sticky;
->>>>>>> denis
-=======
->>>>>>> chickhack
-=======
-  position: -webkit-sticky;
->>>>>>> denis
->>>>>>> 2c9880b2ec61e05445d35039c54a72771639c64a
   position: sticky;
   top: 0;
   width: 100%;
@@ -357,12 +324,13 @@ nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-  background-image: url("../../img/header/logo.png");
+  background-image: url("../../img/icon/header/logo.png");
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
-  width: 200px;
+  max-width: 200px;
   height: 30px;
+  margin: 0 8px;
 }
 
 nav .nav-links {
@@ -370,11 +338,13 @@ nav .nav-links {
   justify-content: center;
   align-items: center;
   justify-content: flex-end;
-  width: 60%;
+  width: 75%;
 }
 
 nav .nav-links a {
+  width: 100%;
   color: #ffffff;
+  padding: 8px;
 }
 
 nav .nav-icons {
@@ -383,10 +353,12 @@ nav .nav-icons {
   align-items: center;
   justify-content: space-around;
   width: 12%;
+  margin-left: 50px;
 }
 
 nav .burger {
   display: none;
+  cursor: pointer;
 }
 
 nav .burger div {
@@ -394,6 +366,78 @@ nav .burger div {
   height: 2px;
   background-color: #ffffff;
   margin: 5px;
+}
+
+@media (max-width: 992px) {
+  nav {
+    justify-content: space-around;
+  }
+  nav .nav-links {
+    position: absolute;
+    transform: translateX(100%);
+    height: 92vh;
+    top: 12vh;
+    background-color: #AD6E4A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    transition: all 1s ease-in;
+  }
+  nav .nav-links li {
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+    opacity: 0;
+  }
+  nav .nav-links li a {
+    display: block;
+    padding: 24px 0;
+  }
+  nav .nav-icons {
+    width: 100%;
+    justify-content: flex-end;
+  }
+  nav .nav-icons .icon {
+    margin: 0 30px 0 15px;
+    max-width: 25px;
+  }
+  nav .burger {
+    display: block;
+  }
+  nav .nav-active {
+    transform: translateX(0%);
+  }
+}
+
+@media (max-width: 768px) {
+  nav .logo {
+    margin: 0 8px;
+  }
+  nav .nav-links {
+    width: 100%;
+  }
+  nav .nav-icons {
+    width: 50%;
+    margin-left: 16px;
+    justify-content: space-around;
+  }
+  nav .nav-icons .icon {
+    margin: 0;
+  }
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }
 
 footer {
@@ -435,7 +479,7 @@ footer .links .footer-links a {
 footer .footer_moon {
   position: relative;
   left: 50%;
-  max-width: 550px;
+  max-width: 40%;
   transform: translateX(-50%);
 }
 
@@ -445,25 +489,19 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
-<<<<<<< HEAD
   transform: translateX(-50%);
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  transform: translateX(-50%);
-=======
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
->>>>>>> denis
-=======
-  transform: translateX(-50%);
->>>>>>> chickhack
-=======
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
->>>>>>> denis
->>>>>>> 2c9880b2ec61e05445d35039c54a72771639c64a
+}
+
+@media (max-width: 768px) {
+  footer .links .logo {
+    bottom: 0;
+  }
+  footer .links .footer-links {
+    display: none;
+  }
+  footer .footer_moon {
+    min-width: 250px;
+  }
 }
 
 .quantity label {
@@ -510,39 +548,9 @@ body {
 /* 歡迎會員 字體大小、字型位置 */
 .welcome {
   padding: 15vh 250px 0px 250px;
-<<<<<<< HEAD
   display: flex;
   align-items: center;
   justify-content: left;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  display: flex;
-  align-items: center;
-  justify-content: left;
-=======
-=======
->>>>>>> denis
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
-<<<<<<< HEAD
->>>>>>> denis
-=======
-  display: flex;
-  align-items: center;
-  justify-content: left;
->>>>>>> chickhack
-=======
->>>>>>> denis
->>>>>>> 2c9880b2ec61e05445d35039c54a72771639c64a
 }
 
 .spacedinfo {
