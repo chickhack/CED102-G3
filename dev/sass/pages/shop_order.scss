@@ -207,6 +207,35 @@ section.orderer{
         .checkbox_custom:focus + .checkbox_custom-label{
             outline: 1px solid #ddd;
         }
+        #discount{
+            width: 30%;
+            @include respond(mobile){
+                width: 70%;
+            }
+        }
+    }
+    .credit_icon{
+        font-size: 2rem;
+        // border: 1px solid #fff;
+        min-width: 200px;
+        svg{
+            fill: none;
+            opacity: 0.5;
+            background-color: transparent;
+            &.use{
+                opacity: 1;
+                color: $gold;
+                transform: scale(1.2);
+                // box-shadow: 0px 0px 19px -1px rgba(255,255,255,1);
+            }
+        }
+        input{
+            width: 100%;
+            margin-bottom: 16px;
+            @include respond(mobile){
+                width: 75%;
+            }
+        }
     }
     .button_min{
         background-color: $gold;

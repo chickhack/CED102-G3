@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/pages/shop_order.css">
     <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.12/vue.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cleave.js/1.6.0/cleave.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cleave.js/1.1.1/addons/cleave-phone.tw.js"></script>
     <title>星球商城</title>
 </head>
 <body>
@@ -71,11 +74,11 @@
                         </div>
                         <div class="input_group">
                             <label for="omobile">手機</label>
-                            <input type="tel" class="margin_top_1" name="omobile" id="omobile">
+                            <input type="tel" class="margin_top_1" name="omobile" id="omobile" maxlength="10">
                         </div>
                         <div class="input_group">
                             <label for="oidentity">身分證字號</label>
-                            <input type="text" class="margin_top_1" name="oidentity" id="oidentity">
+                            <input type="text" class="margin_top_1" name="oidentity" id="oidentity" maxlength="10">
                         </div>
                         <div class="input_group long">
                             <label for="oemail">電子信箱</label>
@@ -100,15 +103,15 @@
                     </div>
                     <div class="input_group">
                         <label for="mobile">手機</label>
-                        <input type="tel" class="margin_top_1" name="mobile" id="mobile">
+                        <input type="tel" class="margin_top_1" name="mobile" id="mobile" maxlength="10">
                     </div>
                     <div class="input_group">
                         <label for="identity">身分證字號</label>
-                        <input type="text" class="margin_top_1" name="identity" id="identity">
+                        <input type="text" class="margin_top_1" name="identity" id="identity" maxlength="10">
                     </div>
                     <div class="input_group long">
                         <label for="email">電子信箱</label>
-                        <input type="email" class="margin_top_1" name="email" id="email">
+                        <input type="email" class="margin_top_1" name="email" id="email" max-length="30">
                     </div>
                     <div class="input_group long">
                         <label for="address">收件地址</label>
@@ -133,55 +136,22 @@
                         </div>
                         <div class="checkbox_group margin_left_2">
                             <label for="discount">折抵</label>
-                            <input type="number" name="discount" id="discount" class="margin_left_1">
+                            <input type="text" name="discount" id="discount" class="margin_left_1">
                         </div>
                     </div>
-                    <div class="checkbox_group long">
+                    <div class="checkbox_group long margin_top_2">
                         <input type="checkbox" name="credit" id="credit" class="checkbox_custom">
                         <label for="credit" class="checkbox_custom_label">信用卡</label>
-                    </div>
-                    <!-- <div class="group">
-                        <div class="input_check">
-                            <input type="checkbox" name="currency" id="dollars" class="check-custom" value="dollars">
-                            <label for="dollars" class="check-custom-label">宇宙幣</label>
-                            <p class="margin_left_1">尚餘<span class="margin_left_1">500000</span></p>
-                            <img src="./img/dollar_(1).png" class="icon">
-                        </div>
-                        <div class="discount_group">
-                            <label for="discount">折抵</label>
-                            <input type="number" name="discount" id="discount" class="margin_left_1">
+                        <div class="credit_icon margin_left_4">
+                            <input type="text" class="credit">
+                            <i class="fab fa-cc-amex"></i>
+                            <i class="fab fa-cc-jcb"></i>
+                            <i class="fab fa-cc-visa"></i>
+                            <i class="fab fa-cc-diners-club"></i>
+                            <i class="fab fa-cc-mastercard"></i>
+                            <i class="fab fa-cc-discover"></i>
                         </div>
                     </div>
-                    <div class="credit margin_top_2">
-                        <div class="input_check">
-                            <input type="checkbox" name="currency" id="credit" class="check-custom" value="credit">
-                            <label for="credit" class="check-custom-label">信用卡</label>
-                        </div>
-                        <div class="credit_number">
-                            <div>
-                                <label for="credit_num">信用卡號</label>
-                                <input type="text" name="credit_num" id="credit_num" class="margin_left_2">
-                                <span>-</span>
-                                <input type="text">
-                                <span>-</span>
-                                <input type="text">
-                                <span>-</span>
-                                <input type="text">
-                            </div>
-                        </div>
-                        <div class="date margin_top_2">
-                            <div class="terms">
-                                <label for="term">有效期限</label>
-                                <input type="text" id="term" name="term" class="margin_left_2">
-                                <span>-</span>
-                                <input type="text">
-                            </div>
-                            <div>
-                                <label for="last">末三碼</label>
-                                <input type="text" id="last" name="last" class="margin_left_2">
-                            </div>
-                        </div>
-                    </div> -->
                 </div>
             </form>
             <input type="submit" value="確認付款" class="button_min">
@@ -189,6 +159,7 @@
         @@include("./layout/footer.html")
     </div>
     <script src="./js/retract.js"></script>
+    <script src="./js/input_format.js"></script>
     <script>
         let vm = new Vue({
             el: "#app",

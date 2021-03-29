@@ -8,8 +8,4 @@ minus.addEventListener("click", function(){
 
 add.addEventListener("click", function(){
     number.stepUp(1);
-<<<<<<< HEAD
 })
-=======
-})
->>>>>>> kai
