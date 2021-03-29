@@ -297,9 +297,8 @@ small, .small {
 }
 
 .container {
-  max-width: 1440px;
   margin: 0 auto;
-  overflow-x: hidden;
+  padding-top: 15vh;
 }
 
 body {
@@ -312,7 +311,7 @@ nav {
   align-items: center;
   justify-content: center;
   background-color: #0c0d18;
-  position: sticky;
+  position: fixed;
   top: 0;
   width: 100%;
   min-height: 12vh;
@@ -373,7 +372,7 @@ nav .burger div {
   }
   nav .nav-links {
     position: absolute;
-    transform: translateX(100%);
+    right: -100%;
     height: 92vh;
     top: 12vh;
     background-color: #AD6E4A;
@@ -401,13 +400,12 @@ nav .burger div {
   }
   nav .nav-icons .icon {
     margin: 0 30px 0 15px;
-    max-width: 25px;
   }
   nav .burger {
     display: block;
   }
   nav .nav-active {
-    transform: translateX(0%);
+    right: 0%;
   }
 }
 

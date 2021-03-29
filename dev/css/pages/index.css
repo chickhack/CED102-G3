@@ -297,9 +297,8 @@ small, .small {
 }
 
 .container {
-  max-width: 1440px;
   margin: 0 auto;
-  overflow-x: hidden;
+  padding-top: 15vh;
 }
 
 body {
@@ -312,7 +311,7 @@ nav {
   align-items: center;
   justify-content: center;
   background-color: #0c0d18;
-  position: sticky;
+  position: fixed;
   top: 0;
   width: 100%;
   min-height: 12vh;
@@ -373,7 +372,7 @@ nav .burger div {
   }
   nav .nav-links {
     position: absolute;
-    transform: translateX(100%);
+    right: -100%;
     height: 92vh;
     top: 12vh;
     background-color: #AD6E4A;
@@ -401,13 +400,12 @@ nav .burger div {
   }
   nav .nav-icons .icon {
     margin: 0 30px 0 15px;
-    max-width: 25px;
   }
   nav .burger {
     display: block;
   }
   nav .nav-active {
-    transform: translateX(0%);
+    right: 0%;
   }
 }
 
@@ -611,6 +609,98 @@ button {
   .stepsection {
     flex-direction: column;
   }
+}
+
+.hottrip {
+  top: 15vh;
+  display: flex;
+  padding-top: 96px;
+  margin: 0 auto;
+}
+
+div.planet_top {
+  position: relative;
+  padding-top: 90px;
+  text-align: center;
+  width: 45%;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+@media all and (max-width: 1200px) {
+  div.planet_top {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
+div.planet_top h4 {
+  color: #C9ADA7;
+}
+
+div.planet_top img.planet {
+  height: 160px;
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+div.planet_top img.planet_a1 {
+  max-width: 280px;
+}
+
+div.planet_top div.word {
+  position: absolute;
+  top: 190px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  margin: 0 auto;
+}
+
+div.planet_top div.word .hot {
+  color: #AD6E4A;
+}
+
+div.planet_top div.word .tag {
+  display: inline-flex;
+  border: 1px solid #C9ADA7;
+  border-radius: 5px;
+  padding: 8px;
+  line-height: 5px;
+  margin: 3px;
+  color: #cccaca;
+}
+
+div.planet_top div.word .price {
+  color: #AD6E4A;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+  font-family: "Nasalization";
+}
+
+div.planet_top div.word .addin {
+  background-color: #AD6E4A;
+  color: #ffffff;
+  border-radius: 15px;
+  width: 110px;
+  margin: 0 auto;
+  line-height: 26px;
+  text-align: center;
+}
+
+div.planet_top div.word .addin img.plus {
+  width: 15px;
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  padding-right: 4px;
+}
+
+div.planet_top div.word .addin:hover {
+  background-color: #bf896b;
 }
 
 .tab-inner {
