@@ -322,7 +322,11 @@ nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
+<<<<<<< HEAD
   background-image: url("../../img/logo.png");
+=======
+  background-image: url("../../img/icon/header/logo.png");
+>>>>>>> kai
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -639,6 +643,13 @@ body {
   }
 }
 
+.product .detail .price {
+  font-family: "Nasalization";
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #AD6E4A;
+}
+
 .product .detail hr {
   margin-left: 0;
   margin-right: 0;
@@ -813,7 +824,7 @@ body {
 }
 
 .comment {
-  max-width: 948px;
+  max-width: 900px;
   margin: 80px auto;
   padding: 0 30px;
 }
@@ -860,7 +871,7 @@ body {
 }
 
 .comment .messages img {
-  max-width: 64px;
+  max-width: 50px;
 }
 
 .comment .messages .name {
