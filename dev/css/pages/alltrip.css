@@ -56,8 +56,7 @@ img {
 *,
 *:before,
 *:after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
   margin: 0;
   padding: 0;
 }
@@ -78,11 +77,16 @@ body {
   font-size: 14px;
   background-color: #0c0d18;
   overflow-x: hidden;
+<<<<<<< HEAD
   -webkit-user-select: none;
   -moz-user-select: none;
   -o-user-select: none;
   -ms-user-select: none;
       user-select: none;
+=======
+  -o-user-select: none;
+  user-select: none;
+>>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
 }
 
 h1, .h1 {
@@ -310,15 +314,18 @@ body {
 }
 
 nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+=======
+  justify-content: center;
+  align-items: center;
+>>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
   justify-content: center;
   background-color: #0c0d18;
   position: fixed;
@@ -332,7 +339,15 @@ nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
+<<<<<<< HEAD
   background-image: url("../../img/icon/header/logo.png");
+=======
+<<<<<<< HEAD
+  background-image: url("../../img/logo.png");
+=======
+  background-image: url("../../img/icon/header/logo.png");
+>>>>>>> kai
+>>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -342,9 +357,8 @@ nav .logo h1 a {
 }
 
 nav .nav-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -354,6 +368,11 @@ nav .nav-links {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+=======
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-end;
+>>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
   width: 75%;
 }
 
@@ -364,17 +383,10 @@ nav .nav-links a {
 }
 
 nav .nav-icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
   width: 12%;
   margin-left: 50px;
 }
@@ -393,8 +405,7 @@ nav .burger div {
 
 @media (max-width: 992px) {
   nav {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
   }
   nav .nav-links {
     position: absolute;
@@ -402,22 +413,12 @@ nav .burger div {
     height: 92vh;
     top: 12vh;
     background-color: #AD6E4A;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     justify-content: center;
     width: 30%;
-    -webkit-transition: all 1s ease-in;
     transition: all 1s ease-in;
   }
   nav .nav-links li {
@@ -432,9 +433,7 @@ nav .burger div {
   }
   nav .nav-icons {
     width: 100%;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    justify-content: flex-end;
   }
   nav .nav-icons .icon {
     margin: 0 30px 0 15px;
@@ -457,37 +456,21 @@ nav .burger div {
   nav .nav-icons {
     width: 50%;
     margin-left: 16px;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
   }
   nav .nav-icons .icon {
     margin: 0;
   }
 }
 
-@-webkit-keyframes navLinkFade {
-  from {
-    opacity: 0;
-    -webkit-transform: translateX(50px);
-            transform: translateX(50px);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-  }
-}
-
 @keyframes navLinkFade {
   from {
     opacity: 0;
-    -webkit-transform: translateX(50px);
-            transform: translateX(50px);
+    transform: translateX(50px);
   }
   to {
     opacity: 1;
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
+    transform: translateX(0px);
   }
 }
 
@@ -508,28 +491,19 @@ footer .links .logo {
   position: relative;
   left: 50%;
   bottom: 50px;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 footer .links .footer-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
   width: 55%;
   position: relative;
   left: 50%;
   bottom: 30px;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 footer .links .footer-links a {
@@ -540,8 +514,12 @@ footer .footer_moon {
   position: relative;
   left: 50%;
   max-width: 40%;
+<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+=======
+  transform: translateX(-50%);
+>>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
 }
 
 footer .smoke {
@@ -550,8 +528,12 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
+<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+=======
+  transform: translateX(-50%);
+>>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
 }
 
 @media (max-width: 768px) {
@@ -641,8 +623,11 @@ div.bk3 {
 }
 
 .first {
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
+=======
+>>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
   display: flex;
   max-width: 1200px;
   margin: 0 auto;
@@ -650,13 +635,8 @@ div.bk3 {
 
 @media all and (max-width: 1200px) {
   .first {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-direction: column;
+    justify-content: center;
     width: 95%;
   }
 }
@@ -668,8 +648,6 @@ div.bk3 {
 .first .first_left {
   padding-left: 40px;
   width: 35%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -708,8 +686,11 @@ div.bk3 {
 
 .first .first_right .hottrip {
   top: 15vh;
+<<<<<<< HEAD
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
+=======
+>>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
   display: inline-flex;
   padding-top: 96px;
 }
@@ -739,8 +720,7 @@ div.bk3 {
   position: absolute;
   top: 15px;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 .first .first_right div.planet_top img.planet_a1 {
@@ -751,8 +731,7 @@ div.bk3 {
   position: absolute;
   top: 190px;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   text-align: center;
   margin: 0 auto;
 }
@@ -762,8 +741,11 @@ div.bk3 {
 }
 
 .first .first_right div.planet_top div.word .tag {
+<<<<<<< HEAD
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
+=======
+>>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
   display: inline-flex;
   border: 1px solid #C9ADA7;
   border-radius: 5px;
@@ -804,13 +786,14 @@ div.bk3 {
 }
 
 .first .tripselect {
+<<<<<<< HEAD
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
+=======
+>>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
   display: inline-flex;
   width: 280px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .first .tripselect .icon2 {
@@ -834,6 +817,7 @@ div.bk3 {
 .stepsection .stepall {
   max-width: 1000px;
   margin: 0 auto;
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -843,18 +827,18 @@ div.bk3 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+=======
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+>>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
   padding: 32px;
 }
 
 @media all and (max-width: 767px) {
   .stepsection .stepall {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -905,6 +889,7 @@ div.bk3 {
 }
 
 .second .tripcard_all {
+<<<<<<< HEAD
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -913,6 +898,11 @@ div.bk3 {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+=======
+  display: inline-flex;
+  justify-content: center;
+  flex-wrap: wrap;
+>>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
   width: 100%;
 }
 
@@ -933,10 +923,7 @@ div.bk3 {
 
 @media all and (max-width: 767px) {
   .second .tripcard_all .tripcard {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     margin: 16px 0 16px 0;
   }
 }
@@ -946,8 +933,7 @@ div.bk3 {
 }
 
 .second .tripcard_all .tripcard .spot_pic:hover {
-  -webkit-transform: perspective(0.5px) translateX(-1.5px) translateY(-1.5px);
-          transform: perspective(0.5px) translateX(-1.5px) translateY(-1.5px);
+  transform: perspective(0.5px) translateX(-1.5px) translateY(-1.5px);
 }
 
 .second .tripcard_all .tripcard .hot2 {
@@ -957,8 +943,11 @@ div.bk3 {
 }
 
 .second .tripcard_all .tripcard .tag {
+<<<<<<< HEAD
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
+=======
+>>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
   display: inline-flex;
   border: 1px solid #C9ADA7;
   border-radius: 5px;
@@ -1007,15 +996,9 @@ div.bk3 {
   top: 220px;
   width: 25px;
   height: 25px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  align-items: center;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   cursor: pointer;
 }
 /*# sourceMappingURL=alltrip.css.map */
