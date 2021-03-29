@@ -438,6 +438,9 @@ input::-webkit-inner-spin-button {
                 .spot_pic {
                     width: 250px;
                 }
+                .spot_pic:hover {
+                    transform: perspective(0.5px) translateX(-1.5px) translateY(-1.5px);
+                }
 
                 .hot2 {
                     font-weight: bold;
@@ -480,6 +483,9 @@ input::-webkit-inner-spin-button {
                         top: 2px;
                         padding-right: 4px;
                     }
+                }
+                .addin2:hover {
+                    background-color: lighten($gold, 10%);
                 }
             }
         }

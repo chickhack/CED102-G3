@@ -56,8 +56,7 @@ img {
 *,
 *:before,
 *:after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
   margin: 0;
   padding: 0;
 }
@@ -79,20 +78,31 @@ body {
   background-color: #0c0d18;
   overflow-x: hidden;
 <<<<<<< HEAD
+  -o-user-select: none;
+  user-select: none;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD
   -o-user-select: none;
   user-select: none;
 =======
+=======
+>>>>>>> denis
   -webkit-user-select: none;
   -moz-user-select: none;
   -o-user-select: none;
   -ms-user-select: none;
       user-select: none;
+<<<<<<< HEAD
 >>>>>>> denis
 =======
   -o-user-select: none;
   user-select: none;
 >>>>>>> chickhack
+=======
+>>>>>>> denis
+>>>>>>> 2c9880b2ec61e05445d35039c54a72771639c64a
 }
 
 h1, .h1 {
@@ -316,19 +326,11 @@ small, .small {
 }
 
 nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
   background-color: #0c0d18;
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   width: 100%;
@@ -340,7 +342,7 @@ nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-  background-image: url("../../img/logo.png");
+  background-image: url("../../img/header/logo.png");
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -349,18 +351,10 @@ nav .logo h1 a {
 }
 
 nav .nav-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-end;
   width: 60%;
 }
 
@@ -369,17 +363,10 @@ nav .nav-links a {
 }
 
 nav .nav-icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
   width: 12%;
 }
 
@@ -411,28 +398,19 @@ footer .links .logo {
   position: relative;
   left: 50%;
   bottom: 50px;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 footer .links .footer-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
   width: 55%;
   position: relative;
   left: 50%;
   bottom: 30px;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 footer .links .footer-links a {
@@ -443,8 +421,7 @@ footer .footer_moon {
   position: relative;
   left: 50%;
   max-width: 550px;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 footer .smoke {
@@ -453,8 +430,7 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 .quantity label {
@@ -516,9 +492,11 @@ button {
 }
 
 .banner .slogan {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
+  justify-content: center;
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   justify-content: center;
@@ -530,6 +508,12 @@ button {
 =======
   justify-content: center;
 >>>>>>> chickhack
+=======
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+>>>>>>> denis
+>>>>>>> 2c9880b2ec61e05445d35039c54a72771639c64a
   margin-top: 20vh;
 }
 
@@ -541,12 +525,8 @@ button {
 }
 
 .banner .scroll {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .banner .scroll img {
@@ -555,21 +535,29 @@ button {
 
 .home_intro {
   margin-top: 15vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
+  flex-direction: column;
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   flex-direction: column;
 =======
+=======
+>>>>>>> denis
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+<<<<<<< HEAD
 >>>>>>> denis
 =======
   flex-direction: column;
 >>>>>>> chickhack
+=======
+>>>>>>> denis
+>>>>>>> 2c9880b2ec61e05445d35039c54a72771639c64a
 }
 
 .home_intro h2 {
@@ -584,20 +572,25 @@ button {
   background-color: transparent;
 }
 
-<<<<<<< HEAD
 @media all and (max-width: 768px) {
   .stepsection {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
 .tab-inner {
+<<<<<<< HEAD
   display: flex;
 }
 
 .tab-inner .taball {
   display: flex;
   flex-direction: column;
+<<<<<<< HEAD
+=======
 =======
 ul.tab-title a {
   font-size: 1rem;
@@ -623,6 +616,8 @@ ul.tab-title a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+=======
+>>>>>>> denis
   display: -webkit-box;
   display: -ms-flexbox;
 =======
@@ -631,7 +626,7 @@ ul.tab-title a {
   display: flex;
 }
 
-.tab-inner .tab_intro {
+.tab-inner .taball {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -640,12 +635,18 @@ ul.tab-title a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+<<<<<<< HEAD
 >>>>>>> denis
 =======
   flex-direction: column;
 >>>>>>> chickhack
+=======
+>>>>>>> denis
+>>>>>>> 2c9880b2ec61e05445d35039c54a72771639c64a
   text-align: left;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .tab-inner .taball .tab_left {
@@ -660,10 +661,21 @@ ul.tab-title a {
 
 .tab-inner .data {
 <<<<<<< HEAD
+=======
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> denis
+>>>>>>> 2c9880b2ec61e05445d35039c54a72771639c64a
   border: 1px solid #AD6E4A;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   font-family: Haettenschweiler, sans-serif;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
 =======
   -webkit-box-pack: start;
       -ms-flex-pack: start;
@@ -672,34 +684,70 @@ ul.tab-title a {
 =======
   justify-content: flex-start;
 >>>>>>> chickhack
+=======
+>>>>>>> denis
+>>>>>>> 2c9880b2ec61e05445d35039c54a72771639c64a
 }
 
 .tab-inner .data .grav {
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   min-width: 130px;
   min-height: 130px;
   border-right: 1px solid #AD6E4A;
 }
 
 <<<<<<< HEAD
+=======
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> denis
+>>>>>>> 2c9880b2ec61e05445d35039c54a72771639c64a
 .tab-inner .data .day {
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   min-width: 130px;
   border-right: 1px solid #AD6E4A;
 }
 
 .tab-inner .data .temp {
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   min-width: 130px;
 }
 
@@ -730,15 +778,17 @@ ul.tab-title a {
 .tab-inner button {
   background-color: transparent;
   color: #AD6E4A;
-  transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
 }
 
 .gallery .box {
+<<<<<<< HEAD
 =======
-.tab-inner .tab-active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -756,20 +806,24 @@ ul.tab-title a {
 
 .gallery .box {
 >>>>>>> chickhack
+>>>>>>> 2c9880b2ec61e05445d35039c54a72771639c64a
   display: flex;
 }
 
 .gallery .topleft {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> chickhack
   display: flex;
   flex-direction: row;
   max-height: 500px;
   align-items: flex-end;
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
+=======
+}
+
+.gallery .topleft {
+>>>>>>> denis
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -781,9 +835,13 @@ ul.tab-title a {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+<<<<<<< HEAD
 >>>>>>> denis
 =======
 >>>>>>> chickhack
+=======
+>>>>>>> denis
+>>>>>>> 2c9880b2ec61e05445d35039c54a72771639c64a
 }
 
 .gallery .topleft .A {
@@ -800,9 +858,13 @@ ul.tab-title a {
 
 .gallery .topright {
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> chickhack
+>>>>>>> 2c9880b2ec61e05445d35039c54a72771639c64a
   display: flex;
   flex-direction: column;
 }
@@ -812,6 +874,10 @@ ul.tab-title a {
   justify-content: space-around;
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> denis
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -827,9 +893,13 @@ ul.tab-title a {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+<<<<<<< HEAD
 >>>>>>> denis
 =======
 >>>>>>> chickhack
+=======
+>>>>>>> denis
+>>>>>>> 2c9880b2ec61e05445d35039c54a72771639c64a
 }
 
 .gallery .topright button.btn {
@@ -840,21 +910,32 @@ ul.tab-title a {
 
 .gallery .topright .galleryIntro {
 <<<<<<< HEAD
+  display: flex;
+  justify-content: center;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD
   display: flex;
   justify-content: center;
 =======
+=======
+>>>>>>> denis
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+<<<<<<< HEAD
 >>>>>>> denis
 =======
   display: flex;
   justify-content: center;
 >>>>>>> chickhack
+=======
+>>>>>>> denis
+>>>>>>> 2c9880b2ec61e05445d35039c54a72771639c64a
 }
 
 .gallery .topright .galleryIntro h5 {
@@ -864,10 +945,17 @@ ul.tab-title a {
 
 .gallery .bottomleft {
 <<<<<<< HEAD
+  display: flex;
+  flex-direction: row;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD
   display: flex;
   flex-direction: row;
 =======
+=======
+>>>>>>> denis
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -875,11 +963,15 @@ ul.tab-title a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+<<<<<<< HEAD
 >>>>>>> denis
 =======
   display: flex;
   flex-direction: row;
 >>>>>>> chickhack
+=======
+>>>>>>> denis
+>>>>>>> 2c9880b2ec61e05445d35039c54a72771639c64a
   max-height: 500px;
 }
 
@@ -904,10 +996,17 @@ ul.tab-title a {
 
 .home_shop {
 <<<<<<< HEAD
+  display: flex;
+  flex-direction: column;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD
   display: flex;
   flex-direction: column;
 =======
+=======
+>>>>>>> denis
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -915,11 +1014,15 @@ ul.tab-title a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+<<<<<<< HEAD
 >>>>>>> denis
 =======
   display: flex;
   flex-direction: column;
 >>>>>>> chickhack
+=======
+>>>>>>> denis
+>>>>>>> 2c9880b2ec61e05445d35039c54a72771639c64a
 }
 
 .home_shop .button_min {
@@ -953,11 +1056,19 @@ ul.tab-title a {
   top: 0;
   left: 0;
 <<<<<<< HEAD
+  display: flex;
+  justify-content: center;
+  align-items: center;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD
   display: flex;
   justify-content: center;
   align-items: center;
 =======
+=======
+>>>>>>> denis
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -967,12 +1078,16 @@ ul.tab-title a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+<<<<<<< HEAD
 >>>>>>> denis
 =======
   display: flex;
   justify-content: center;
   align-items: center;
 >>>>>>> chickhack
+=======
+>>>>>>> denis
+>>>>>>> 2c9880b2ec61e05445d35039c54a72771639c64a
 }
 
 .home_shop .shopItem .hovereffect img {
@@ -980,10 +1095,17 @@ ul.tab-title a {
   position: relative;
   max-width: none;
 <<<<<<< HEAD
+  transition: opacity 0.35s, transform 0.35s;
+  transform: translate3d(-10px, 0, 0);
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD
   transition: opacity 0.35s, transform 0.35s;
   transform: translate3d(-10px, 0, 0);
 =======
+=======
+>>>>>>> denis
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
@@ -991,11 +1113,15 @@ ul.tab-title a {
   -webkit-transform: translate3d(-10px, 0, 0);
   transform: translate3d(-10px, 0, 0);
   -webkit-backface-visibility: hidden;
+<<<<<<< HEAD
 >>>>>>> denis
 =======
   transition: opacity 0.35s, transform 0.35s;
   transform: translate3d(-10px, 0, 0);
 >>>>>>> chickhack
+=======
+>>>>>>> denis
+>>>>>>> 2c9880b2ec61e05445d35039c54a72771639c64a
   backface-visibility: hidden;
 }
 
@@ -1003,23 +1129,37 @@ ul.tab-title a {
   opacity: 0.4;
   filter: alpha(opacity=40);
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
   -webkit-transform: translate3d(0, 0, 0);
 >>>>>>> denis
 =======
 >>>>>>> chickhack
+=======
+  -webkit-transform: translate3d(0, 0, 0);
+>>>>>>> denis
+>>>>>>> 2c9880b2ec61e05445d35039c54a72771639c64a
   transform: translate3d(0, 0, 0);
 }
 
 .home_shop .shopItem .hovereffect:hover h2:after {
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
   -webkit-transform: translate3d(0, 0, 0);
 >>>>>>> denis
 =======
 >>>>>>> chickhack
+=======
+  -webkit-transform: translate3d(0, 0, 0);
+>>>>>>> denis
+>>>>>>> 2c9880b2ec61e05445d35039c54a72771639c64a
   transform: translate3d(0, 0, 0);
 }
 
@@ -1028,18 +1168,28 @@ ul.tab-title a {
   opacity: 0;
   filter: alpha(opacity=0);
 <<<<<<< HEAD
+  transition: opacity 0.35s, transform 0.35s;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD
   transition: opacity 0.35s, transform 0.35s;
 =======
+=======
+>>>>>>> denis
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
   transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
   -webkit-transform: translate3d(100%, 0, 0);
+<<<<<<< HEAD
 >>>>>>> denis
 =======
   transition: opacity 0.35s, transform 0.35s;
 >>>>>>> chickhack
+=======
+>>>>>>> denis
+>>>>>>> 2c9880b2ec61e05445d35039c54a72771639c64a
   transform: translate3d(100%, 0, 0);
 }
 
@@ -1047,12 +1197,19 @@ ul.tab-title a {
   opacity: 1;
   filter: alpha(opacity=100);
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
   -webkit-transform: translate3d(0, 0, 0);
 >>>>>>> denis
 =======
 >>>>>>> chickhack
+=======
+  -webkit-transform: translate3d(0, 0, 0);
+>>>>>>> denis
+>>>>>>> 2c9880b2ec61e05445d35039c54a72771639c64a
   transform: translate3d(0, 0, 0);
 }
 
@@ -1073,6 +1230,10 @@ ul.tab-title a {
 .home_shop .shopItem .item2 .hovereffect {
   z-index: 1;
 <<<<<<< HEAD
+  transform: translate(110%, -20%);
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD
   transform: translate(110%, -20%);
 =======
@@ -1082,6 +1243,11 @@ ul.tab-title a {
 =======
   transform: translate(110%, -20%);
 >>>>>>> chickhack
+=======
+  -webkit-transform: translate(110%, -20%);
+          transform: translate(110%, -20%);
+>>>>>>> denis
+>>>>>>> 2c9880b2ec61e05445d35039c54a72771639c64a
   max-height: 450px;
   max-width: 220px;
 }
@@ -1092,6 +1258,10 @@ ul.tab-title a {
 
 .home_shop .shopItem .item3 .hovereffect {
 <<<<<<< HEAD
+  transform: translate(150%, -100%);
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD
   transform: translate(150%, -100%);
 =======
@@ -1101,12 +1271,21 @@ ul.tab-title a {
 =======
   transform: translate(150%, -100%);
 >>>>>>> chickhack
+=======
+  -webkit-transform: translate(150%, -100%);
+          transform: translate(150%, -100%);
+>>>>>>> denis
+>>>>>>> 2c9880b2ec61e05445d35039c54a72771639c64a
   max-height: 270px;
   max-width: 275px;
 }
 
 .home_shop .shopItem .item4 .hovereffect {
   z-index: 1;
+<<<<<<< HEAD
+  transform: translate(255%, -260%);
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   transform: translate(255%, -260%);
@@ -1117,6 +1296,11 @@ ul.tab-title a {
 =======
   transform: translate(255%, -260%);
 >>>>>>> chickhack
+=======
+  -webkit-transform: translate(255%, -260%);
+          transform: translate(255%, -260%);
+>>>>>>> denis
+>>>>>>> 2c9880b2ec61e05445d35039c54a72771639c64a
   max-height: 270px;
   max-width: 280px;
 }
@@ -1127,6 +1311,10 @@ ul.tab-title a {
 
 .home_shop .shopItem .item5 .hovereffect {
 <<<<<<< HEAD
+  transform: translate(260%, -310%);
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD
   transform: translate(260%, -310%);
 =======
@@ -1136,6 +1324,11 @@ ul.tab-title a {
 =======
   transform: translate(260%, -310%);
 >>>>>>> chickhack
+=======
+  -webkit-transform: translate(260%, -310%);
+          transform: translate(260%, -310%);
+>>>>>>> denis
+>>>>>>> 2c9880b2ec61e05445d35039c54a72771639c64a
   max-height: 296px;
   max-width: 300px;
 }
@@ -1146,9 +1339,13 @@ ul.tab-title a {
 
 .flow_member {
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> chickhack
+>>>>>>> 2c9880b2ec61e05445d35039c54a72771639c64a
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -1165,6 +1362,10 @@ ul.tab-title a {
   flex-direction: column;
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> denis
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1196,9 +1397,13 @@ ul.tab-title a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+<<<<<<< HEAD
 >>>>>>> denis
 =======
 >>>>>>> chickhack
+=======
+>>>>>>> denis
+>>>>>>> 2c9880b2ec61e05445d35039c54a72771639c64a
   text-align: center;
 }
 
@@ -1225,9 +1430,7 @@ ul.tab-title a {
 }
 
 .flow_member button {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
   margin-bottom: 70px;
 }
 /*# sourceMappingURL=index.css.map */

@@ -1,100 +1,119 @@
 @import "../all.scss";
 
-body{
+body {
     object-fit: cover;
     user-select: none;
 }
-.container{
-    @include respond(mobile){
+
+.container {
+    @include respond(mobile) {
         margin: 0 30px;
     }
 }
-.product{
+
+.product {
     @include flex_middle();
     align-items: start;
     flex-wrap: wrap;
     padding-top: 15vh;
+
     // margin: 0 40px;
-    .imgs{
+    .imgs {
         @include flex_middle();
         justify-content: flex-end;
         max-width: 948px;
+
         // border: 1px solid #fff;
-        .img{
+        .img {
             max-width: 400px;
             // border: 1px solid white;
             text-align: center;
             @include flex_middle();
             flex-direction: column;
 
-            @include respond(mobile){
+            @include respond(mobile) {
                 max-width: 948px;
             }
 
-            .bigImg{
+            .bigImg {
                 width: 100%;
                 max-height: 450px;
                 background-color: $white;
-                @include respond(mobile){
+
+                @include respond(mobile) {
                     max-height: 400px;
                 }
             }
-            .smallImg{
+
+            .smallImg {
                 @include flex_middle();
                 justify-content: start;
                 width: 100%;
-                .imgDetail{
+
+                .imgDetail {
                     max-width: 80px;
                     max-height: 60px;
                     background-color: $white;
                     cursor: pointer;
                     margin-right: 16px;
                     padding: 4px;
-                    img{
+
+                    img {
                         width: 100%;
                     }
                 }
             }
         }
     }
-    .detail{
+
+    .detail {
         width: 30%;
         // border: 1px solid $white;
         text-align: left;
-        @include respond(mobile){
+
+        @include respond(mobile) {
             width: 100%;
             margin: 60px 30px;
         }
-        strong{
+
+        strong {
             font-weight: 700;
         }
-        p{
+
+        p {
             width: 100%;
-            @include respond(mobile){
+
+            @include respond(mobile) {
                 width: 100%;
             }
         }
-        hr{
+
+        hr {
             margin-left: 0;
             margin-right: 0;
             width: 100%;
             height: 1px;
             border: none;
             background-color: $gold;
-            @include respond(mobile){
+
+            @include respond(mobile) {
                 width: 100%;
             }
         }
-        .h3{
+
+        .h3 {
             letter-spacing: 3px;
         }
-        .quantity{
-            label{
+
+        .quantity {
+            label {
                 display: block;
             }
-            .as{
+
+            .as {
                 color: $gold;
-                input[type=number]{
+
+                input[type=number] {
                     max-width: 50px;
                     background-color: transparent;
                     outline: none;
@@ -102,7 +121,8 @@ body{
                     text-align: center;
                     color: $gold;
                 }
-                span{
+
+                span {
                     border: 1px solid $gold;
                     outline: none;
                     background-color: transparent;
@@ -110,20 +130,24 @@ body{
                     cursor: pointer;
                 }
             }
-            .button_large{
+
+            .button_large {
                 width: 100%;
-                cursor:pointer;
+                cursor: pointer;
                 padding: 15px 0;
-                &.buy{
+
+                &.buy {
                     background-color: $gold;
                     color: $white;
                     font-weight: 900;
                     transition: all .3s;
-                    &:hover{
+
+                    &:hover {
                         background-color: lighten($gold, 10%);
                     }
                 }
-                @include respond(mobile){
+
+                @include respond(mobile) {
                     width: 100%;
                 }
             }
@@ -131,108 +155,167 @@ body{
     }
 }
 
-.describe{
+.describe {
     // border: 1px solid white;
     max-width: 300px;
     margin: 80px auto;
     text-align: center;
-    @include respond(mobile){
+
+    @include respond(mobile) {
         margin: 0 auto;
         margin-bottom: 80px;
     }
 }
 
-.recommend{
-    text-align: center;
-    max-width: 948px;
+.recommend {
     margin: 0 auto;
-    ul{
-        @include flex_middle();
-        justify-content: space-between;
-        flex-wrap: wrap;
-        margin: 32px 30px;
-        li{
-            width: 30%;
-            @include respond(mobile){
-                width: 100%;
-                margin-top: 40px;
+    padding-bottom: 80px;
+
+    h3 {
+        text-align: center;
+    }
+
+    .tripcard_all {
+        display: inline-flex;
+        justify-content: center;
+        width: 100%;
+
+        @media all and (max-width: 767px) {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .tripcard {
+            // border: 1px solid white;
+            width: 250px;
+            background-color: #191919;
+            padding: 15px;
+            border-radius: 5px;
+            position: relative;
+            margin: 0 16px 0 16px;
+
+            @media all and (max-width: 767px) {
+                flex-direction: column;
+                margin: 16px 0 16px 0;
             }
-            .spotImg{
-                position: relative;
-                img{
-                    width: 100%;
-                    height: 300px;
-                    @include respond(mobile){
-                        height: 100%;
-                    }
-                }
-                p{
-                    position: absolute;
-                    left: 50%;
-                    transform: translateX(-50%);
-                    bottom: 0;
-                    background-color: $gold;
-                    color: $white;
-                    padding: 8px 40px;
+
+            .spot_pic {
+                width: 250px;
+            }
+
+            .spot_pic:hover {
+                transform: perspective(0.5px) translateX(-1.5px) translateY(-1.5px);
+            }
+
+            .hot2 {
+                font-weight: bold;
+                margin-bottom: 15px;
+            }
+
+            .tag {
+                display: inline-flex;
+                border: 1px solid $pink;
+                border-radius: 5px;
+                padding: 8px;
+                line-height: 5px;
+                margin: 3px;
+            }
+
+            .price2 {
+                color: $gold;
+                font-weight: bold;
+                letter-spacing: 2px;
+                font-family: "Nasalization";
+                padding-left: 5px;
+                position: absolute;
+                right: 20px;
+                bottom: 10px;
+
+            }
+
+            .addin2 {
+                background-color: $gold;
+                color: $white;
+                border-radius: 15px;
+                width: 110px;
+                line-height: 26px;
+                text-align: center;
+                font-size: 12px;
+
+                img.plus {
+                    width: 15px;
+                    display: inline-block;
+                    position: relative;
+                    top: 2px;
+                    padding-right: 4px;
                 }
             }
-            .spotInfo{
-                color: $pink;
-                h3{
-                    font-weight: 700;
-                }
+
+            .addin2:hover {
+                background-color: lighten($gold, 10%);
             }
         }
     }
 }
 
-.comment{
+.comment {
     max-width: 948px;
     margin: 80px auto;
     padding: 0 30px;
-    .score{
+
+    .score {
         display: flex;
         align-items: center;
         position: relative;
-        .number{
+
+        .number {
             background-color: $gold;
             padding: 8px;
         }
-        .stars{
+
+        .stars {
             @include flex_middle();
-            .star{
+
+            .star {
                 margin-left: 4px;
             }
-            .icon{
+
+            .icon {
                 width: 15px;
             }
         }
-        .more{
+
+        .more {
             position: absolute;
             right: 0;
             text-decoration: underline;
             cursor: pointer;
         }
     }
-    .messages{
+
+    .messages {
         @include flex_middle();
         border-bottom: 1px solid $gold;
         padding: 16px 0;
         position: relative;
-        img{
-            max-width:64px;
+
+        img {
+            max-width: 64px;
         }
-        .name{
+
+        .name {
             @include flex_middle();
             justify-content: start;
-            hr{
+
+            hr {
                 height: 10px;
                 background-color: $pink;
                 border: 1px solid $pink;
                 margin: 0 8px;
             }
         }
-        .more{
+
+        .more {
             color: $white;
             text-decoration: underline;
             position: relative;

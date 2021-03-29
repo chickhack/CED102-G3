@@ -56,8 +56,7 @@ img {
 *,
 *:before,
 *:after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
   margin: 0;
   padding: 0;
 }
@@ -79,20 +78,31 @@ body {
   background-color: #0c0d18;
   overflow-x: hidden;
 <<<<<<< HEAD
+  -o-user-select: none;
+  user-select: none;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD
   -o-user-select: none;
   user-select: none;
 =======
+=======
+>>>>>>> denis
   -webkit-user-select: none;
   -moz-user-select: none;
   -o-user-select: none;
   -ms-user-select: none;
       user-select: none;
+<<<<<<< HEAD
 >>>>>>> denis
 =======
   -o-user-select: none;
   user-select: none;
 >>>>>>> chickhack
+=======
+>>>>>>> denis
+>>>>>>> 2c9880b2ec61e05445d35039c54a72771639c64a
 }
 
 h1, .h1 {
@@ -316,18 +326,14 @@ small, .small {
 }
 
 nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
   background-color: #0c0d18;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -335,6 +341,10 @@ nav {
 >>>>>>> denis
 =======
 >>>>>>> chickhack
+=======
+  position: -webkit-sticky;
+>>>>>>> denis
+>>>>>>> 2c9880b2ec61e05445d35039c54a72771639c64a
   position: sticky;
   top: 0;
   width: 100%;
@@ -346,7 +356,7 @@ nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-  background-image: url("../../img/logo.png");
+  background-image: url("../../img/header/logo.png");
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -355,18 +365,10 @@ nav .logo h1 a {
 }
 
 nav .nav-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-end;
   width: 60%;
 }
 
@@ -375,17 +377,10 @@ nav .nav-links a {
 }
 
 nav .nav-icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
   width: 12%;
 }
 
@@ -417,28 +412,19 @@ footer .links .logo {
   position: relative;
   left: 50%;
   bottom: 50px;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 footer .links .footer-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
   width: 55%;
   position: relative;
   left: 50%;
   bottom: 30px;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 footer .links .footer-links a {
@@ -449,8 +435,7 @@ footer .footer_moon {
   position: relative;
   left: 50%;
   max-width: 550px;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 footer .smoke {
@@ -459,6 +444,10 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
+<<<<<<< HEAD
+  transform: translateX(-50%);
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   transform: translateX(-50%);
@@ -469,6 +458,11 @@ footer .smoke {
 =======
   transform: translateX(-50%);
 >>>>>>> chickhack
+=======
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+>>>>>>> denis
+>>>>>>> 2c9880b2ec61e05445d35039c54a72771639c64a
 }
 
 .quantity label {
@@ -510,21 +504,32 @@ input[type=number] {
 
 body {
 <<<<<<< HEAD
+  object-fit: cover;
+  user-select: none;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD
   object-fit: cover;
   user-select: none;
 =======
+=======
+>>>>>>> denis
   -o-object-fit: cover;
      object-fit: cover;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+<<<<<<< HEAD
 >>>>>>> denis
 =======
   object-fit: cover;
   user-select: none;
 >>>>>>> chickhack
+=======
+>>>>>>> denis
+>>>>>>> 2c9880b2ec61e05445d35039c54a72771639c64a
 }
 
 @media all and (max-width: 768px) {
@@ -534,16 +539,22 @@ body {
 }
 
 .product {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 2c9880b2ec61e05445d35039c54a72771639c64a
   justify-content: center;
   align-items: center;
   align-items: start;
   flex-wrap: wrap;
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> denis
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -555,16 +566,24 @@ body {
           align-items: start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+<<<<<<< HEAD
 >>>>>>> denis
 =======
 >>>>>>> chickhack
+=======
+>>>>>>> denis
+>>>>>>> 2c9880b2ec61e05445d35039c54a72771639c64a
   padding-top: 15vh;
 }
 
 .product .imgs {
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
+>>>>>>> 2c9880b2ec61e05445d35039c54a72771639c64a
   display: flex;
   justify-content: center;
   align-items: center;
@@ -575,12 +594,18 @@ body {
 .product .imgs .img {
   max-width: 400px;
   text-align: center;
->>>>>>> chickhack
   display: flex;
   justify-content: center;
   align-items: center;
+<<<<<<< HEAD
+  flex-direction: column;
+}
+
+=======
   justify-content: flex-end;
 =======
+=======
+>>>>>>> denis
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -593,7 +618,6 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
->>>>>>> denis
   max-width: 948px;
 }
 
@@ -623,8 +647,10 @@ body {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> chickhack
+>>>>>>> 2c9880b2ec61e05445d35039c54a72771639c64a
 @media all and (max-width: 768px) {
   .product .imgs .img {
     max-width: 948px;
@@ -633,9 +659,14 @@ body {
 
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
 >>>>>>> denis
 =======
 >>>>>>> chickhack
+=======
+>>>>>>> denis
+>>>>>>> 2c9880b2ec61e05445d35039c54a72771639c64a
 .product .imgs .img .bigImg {
   width: 100%;
   max-height: 450px;
@@ -650,15 +681,23 @@ body {
 
 .product .imgs .img .smallImg {
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> chickhack
+>>>>>>> 2c9880b2ec61e05445d35039c54a72771639c64a
   display: flex;
   justify-content: center;
   align-items: center;
   justify-content: start;
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> denis
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -671,9 +710,13 @@ body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
+<<<<<<< HEAD
 >>>>>>> denis
 =======
 >>>>>>> chickhack
+=======
+>>>>>>> denis
+>>>>>>> 2c9880b2ec61e05445d35039c54a72771639c64a
   width: 100%;
 }
 
@@ -771,12 +814,19 @@ body {
   color: #ffffff;
   font-weight: 900;
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
   -webkit-transition: all .3s;
 >>>>>>> denis
 =======
 >>>>>>> chickhack
+=======
+  -webkit-transition: all .3s;
+>>>>>>> denis
+>>>>>>> 2c9880b2ec61e05445d35039c54a72771639c64a
   transition: all .3s;
 }
 
@@ -804,15 +854,25 @@ body {
 }
 
 .recommend {
-  text-align: center;
-  max-width: 948px;
   margin: 0 auto;
+  padding-bottom: 80px;
 }
 
+<<<<<<< HEAD
+.recommend h3 {
+  text-align: center;
+}
+
+.recommend .tripcard_all {
+  display: inline-flex;
+  justify-content: center;
+  width: 100%;
+=======
 .recommend ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
 <<<<<<< HEAD
   justify-content: center;
   align-items: center;
@@ -820,6 +880,8 @@ body {
   flex-wrap: wrap;
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> denis
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -831,55 +893,96 @@ body {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+<<<<<<< HEAD
 >>>>>>> denis
 =======
 >>>>>>> chickhack
+=======
+>>>>>>> denis
   margin: 32px 30px;
 }
 
 .recommend ul li {
   width: 30%;
+>>>>>>> 2c9880b2ec61e05445d35039c54a72771639c64a
 }
 
-@media all and (max-width: 768px) {
-  .recommend ul li {
-    width: 100%;
-    margin-top: 40px;
+@media all and (max-width: 767px) {
+  .recommend .tripcard_all {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
-.recommend ul li .spotImg {
+.recommend .tripcard_all .tripcard {
+  width: 250px;
+  background-color: #191919;
+  padding: 15px;
+  border-radius: 5px;
   position: relative;
+  margin: 0 16px 0 16px;
 }
 
-.recommend ul li .spotImg img {
-  width: 100%;
-  height: 300px;
-}
-
-@media all and (max-width: 768px) {
-  .recommend ul li .spotImg img {
-    height: 100%;
+@media all and (max-width: 767px) {
+  .recommend .tripcard_all .tripcard {
+    flex-direction: column;
+    margin: 16px 0 16px 0;
   }
 }
 
-.recommend ul li .spotImg p {
+.recommend .tripcard_all .tripcard .spot_pic {
+  width: 250px;
+}
+
+.recommend .tripcard_all .tripcard .spot_pic:hover {
+  transform: perspective(0.5px) translateX(-1.5px) translateY(-1.5px);
+}
+
+.recommend .tripcard_all .tripcard .hot2 {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.recommend .tripcard_all .tripcard .tag {
+  display: inline-flex;
+  border: 1px solid #C9ADA7;
+  border-radius: 5px;
+  padding: 8px;
+  line-height: 5px;
+  margin: 3px;
+}
+
+.recommend .tripcard_all .tripcard .price2 {
+  color: #AD6E4A;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-family: "Nasalization";
+  padding-left: 5px;
   position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  bottom: 0;
+  right: 20px;
+  bottom: 10px;
+}
+
+.recommend .tripcard_all .tripcard .addin2 {
   background-color: #AD6E4A;
   color: #ffffff;
-  padding: 8px 40px;
+  border-radius: 15px;
+  width: 110px;
+  line-height: 26px;
+  text-align: center;
+  font-size: 12px;
 }
 
-.recommend ul li .spotInfo {
-  color: #C9ADA7;
+.recommend .tripcard_all .tripcard .addin2 img.plus {
+  width: 15px;
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  padding-right: 4px;
 }
 
-.recommend ul li .spotInfo h3 {
-  font-weight: 700;
+.recommend .tripcard_all .tripcard .addin2:hover {
+  background-color: #bf896b;
 }
 
 .comment {
@@ -889,12 +992,8 @@ body {
 }
 
 .comment .score {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   position: relative;
 }
 
@@ -904,15 +1003,9 @@ body {
 }
 
 .comment .score .stars {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .comment .score .stars .star {
@@ -931,15 +1024,9 @@ body {
 }
 
 .comment .messages {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   border-bottom: 1px solid #AD6E4A;
   padding: 16px 0;
   position: relative;
@@ -950,18 +1037,10 @@ body {
 }
 
 .comment .messages .name {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  justify-content: center;
+  align-items: center;
+  justify-content: start;
 }
 
 .comment .messages .name hr {
