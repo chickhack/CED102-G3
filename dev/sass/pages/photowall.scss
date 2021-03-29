@@ -21,12 +21,12 @@ body{
   border: 1px solid #ad6e4a36;
   border-radius: 5px;
   width: 250px;
+  overflow: hidden;
 
 }
 .grid .grid-item img{
   width: 100%;
   object-fit: cover;
-  border-radius: 5px;
 }
 .grid .grid-item:nth-child(n+11){
   display: none;

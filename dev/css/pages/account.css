@@ -78,8 +78,32 @@ body {
   font-size: 14px;
   background-color: #0c0d18;
   overflow-x: hidden;
+<<<<<<< HEAD
   -o-user-select: none;
   user-select: none;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+  -o-user-select: none;
+  user-select: none;
+=======
+=======
+>>>>>>> denis
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -ms-user-select: none;
+      user-select: none;
+<<<<<<< HEAD
+>>>>>>> denis
+=======
+  -o-user-select: none;
+  user-select: none;
+>>>>>>> chickhack
+=======
+>>>>>>> denis
+>>>>>>> 2c9880b2ec61e05445d35039c54a72771639c64a
 }
 
 h1, .h1 {
@@ -308,6 +332,20 @@ nav {
   align-items: center;
   justify-content: space-around;
   background-color: #0c0d18;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  position: -webkit-sticky;
+>>>>>>> denis
+=======
+>>>>>>> chickhack
+=======
+  position: -webkit-sticky;
+>>>>>>> denis
+>>>>>>> 2c9880b2ec61e05445d35039c54a72771639c64a
   position: sticky;
   top: 0;
   width: 100%;
@@ -407,7 +445,25 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
+<<<<<<< HEAD
   transform: translateX(-50%);
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+  transform: translateX(-50%);
+=======
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+>>>>>>> denis
+=======
+  transform: translateX(-50%);
+>>>>>>> chickhack
+=======
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+>>>>>>> denis
+>>>>>>> 2c9880b2ec61e05445d35039c54a72771639c64a
 }
 
 .quantity label {
@@ -454,9 +510,39 @@ body {
 /* 歡迎會員 字體大小、字型位置 */
 .welcome {
   padding: 15vh 250px 0px 250px;
+<<<<<<< HEAD
   display: flex;
   align-items: center;
   justify-content: left;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+  display: flex;
+  align-items: center;
+  justify-content: left;
+=======
+=======
+>>>>>>> denis
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+<<<<<<< HEAD
+>>>>>>> denis
+=======
+  display: flex;
+  align-items: center;
+  justify-content: left;
+>>>>>>> chickhack
+=======
+>>>>>>> denis
+>>>>>>> 2c9880b2ec61e05445d35039c54a72771639c64a
 }
 
 .spacedinfo {

@@ -77,8 +77,32 @@ body {
   font-size: 14px;
   background-color: #0c0d18;
   overflow-x: hidden;
+<<<<<<< HEAD
   -o-user-select: none;
   user-select: none;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+  -o-user-select: none;
+  user-select: none;
+=======
+=======
+>>>>>>> denis
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -ms-user-select: none;
+      user-select: none;
+<<<<<<< HEAD
+>>>>>>> denis
+=======
+  -o-user-select: none;
+  user-select: none;
+>>>>>>> chickhack
+=======
+>>>>>>> denis
+>>>>>>> 2c9880b2ec61e05445d35039c54a72771639c64a
 }
 
 h1, .h1 {
@@ -307,6 +331,20 @@ nav {
   align-items: center;
   justify-content: space-around;
   background-color: #0c0d18;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  position: -webkit-sticky;
+>>>>>>> denis
+=======
+>>>>>>> chickhack
+=======
+  position: -webkit-sticky;
+>>>>>>> denis
+>>>>>>> 2c9880b2ec61e05445d35039c54a72771639c64a
   position: sticky;
   top: 0;
   width: 100%;
@@ -406,7 +444,25 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
+<<<<<<< HEAD
   transform: translateX(-50%);
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+  transform: translateX(-50%);
+=======
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+>>>>>>> denis
+=======
+  transform: translateX(-50%);
+>>>>>>> chickhack
+=======
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+>>>>>>> denis
+>>>>>>> 2c9880b2ec61e05445d35039c54a72771639c64a
 }
 
 .quantity label {
@@ -453,13 +509,56 @@ input[type=number] {
 
 .title {
   display: flex;
+<<<<<<< HEAD
   justify-content: center;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+  justify-content: center;
+=======
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+=======
+  justify-content: center;
+>>>>>>> chickhack
+  font-size: 42px;
+>>>>>>> denis
+=======
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+>>>>>>> denis
+>>>>>>> 2c9880b2ec61e05445d35039c54a72771639c64a
 }
 
 div.tabList {
   display: flex;
+<<<<<<< HEAD
   justify-content: center;
   column-gap: 1%;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+  justify-content: center;
+  column-gap: 1%;
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> denis
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 1%;
+          column-gap: 1%;
+<<<<<<< HEAD
+>>>>>>> denis
+=======
+>>>>>>> chickhack
+=======
+>>>>>>> denis
+>>>>>>> 2c9880b2ec61e05445d35039c54a72771639c64a
 }
 
 div.tabList button {
@@ -481,12 +580,48 @@ div.tabList button.active {
 }
 
 .tab-inner {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> denis
+=======
+>>>>>>> chickhack
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> denis
+>>>>>>> 2c9880b2ec61e05445d35039c54a72771639c64a
   display: flex;
 }
 
 .tab-inner .taball {
   display: flex;
+<<<<<<< HEAD
   flex-direction: column;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+  flex-direction: column;
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> denis
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+<<<<<<< HEAD
+>>>>>>> denis
+=======
+>>>>>>> chickhack
+=======
+>>>>>>> denis
+>>>>>>> 2c9880b2ec61e05445d35039c54a72771639c64a
   text-align: left;
   align-items: center;
 }
@@ -501,15 +636,46 @@ div.tabList button.active {
   max-width: 400px;
 }
 
+<<<<<<< HEAD
 .tab-inner .taball .data {
   border: 1px solid #AD6E4A;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> denis
+.tab-inner .taball .data {
+  border: 1px solid #AD6E4A;
+  display: -webkit-box;
+  display: -ms-flexbox;
+<<<<<<< HEAD
+>>>>>>> denis
+=======
+.tab-inner .data {
+  border: 1px solid #AD6E4A;
+>>>>>>> chickhack
+=======
+>>>>>>> denis
+>>>>>>> 2c9880b2ec61e05445d35039c54a72771639c64a
   display: flex;
   font-family: Haettenschweiler, sans-serif;
 }
 
 .tab-inner .taball .data .grav {
+<<<<<<< HEAD
   justify-content: center;
   align-items: center;
+=======
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> 2c9880b2ec61e05445d35039c54a72771639c64a
   display: flex;
   flex-direction: column;
   min-width: 130px;
@@ -518,8 +684,19 @@ div.tabList button.active {
 }
 
 .tab-inner .taball .data .day {
+<<<<<<< HEAD
   justify-content: center;
   align-items: center;
+=======
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> 2c9880b2ec61e05445d35039c54a72771639c64a
   display: flex;
   flex-direction: column;
   min-width: 130px;
@@ -527,8 +704,19 @@ div.tabList button.active {
 }
 
 .tab-inner .taball .data .temp {
+<<<<<<< HEAD
   justify-content: center;
   align-items: center;
+=======
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> 2c9880b2ec61e05445d35039c54a72771639c64a
   display: flex;
   flex-direction: column;
   min-width: 130px;
@@ -559,16 +747,57 @@ div.tabList button.active {
 }
 
 .tab-inner button {
+<<<<<<< HEAD
   display: none;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+  display: none;
+=======
+=======
+>>>>>>> chickhack
+  background-color: transparent;
+  color: #AD6E4A;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+>>>>>>> denis
+=======
+  display: none;
+>>>>>>> denis
+>>>>>>> 2c9880b2ec61e05445d35039c54a72771639c64a
 }
 
 .planet_content {
   display: flex;
+<<<<<<< HEAD
   flex-wrap: wrap;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+  flex-wrap: wrap;
+<<<<<<< HEAD
+=======
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+>>>>>>> denis
+>>>>>>> 2c9880b2ec61e05445d35039c54a72771639c64a
 }
 
 .planet_content .carousel {
   display: none;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+>>>>>>> denis
+=======
+>>>>>>> chickhack
+=======
+>>>>>>> denis
+>>>>>>> 2c9880b2ec61e05445d35039c54a72771639c64a
 }
 
 .planet_content .imgs {
@@ -576,7 +805,24 @@ div.tabList button.active {
 }
 
 .planet_content .imgs .img1 {
+<<<<<<< HEAD
   transform: translate(40%);
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+  transform: translate(40%);
+<<<<<<< HEAD
+=======
+  -webkit-transform: translate(40%);
+          transform: translate(40%);
+>>>>>>> denis
+=======
+>>>>>>> chickhack
+=======
+  -webkit-transform: translate(40%);
+          transform: translate(40%);
+>>>>>>> denis
+>>>>>>> 2c9880b2ec61e05445d35039c54a72771639c64a
 }
 
 .planet_content .imgs .img2 {
@@ -589,7 +835,27 @@ div.tabList button.active {
 
 .planet_content .desc {
   display: flex;
+<<<<<<< HEAD
   align-items: center;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+  align-items: center;
+=======
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+>>>>>>> denis
+=======
+  align-items: center;
+>>>>>>> chickhack
+=======
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+>>>>>>> denis
+>>>>>>> 2c9880b2ec61e05445d35039c54a72771639c64a
 }
 
 .planet_content .desc p {
@@ -600,21 +866,39 @@ div.tabList button.active {
 
 @media only screen and (max-width: 1200px) {
   .tab-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .tab-inner .tab-active {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .tab-inner .tab-active img {
     width: 70vw;
   }
   .planet_content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .planet_content .imgs {
     display: none;

@@ -19,7 +19,11 @@ body {
 =======
 >>>>>>> a6bfa18616ff64e830f827227dff2561f3e2563f
 =======
+<<<<<<< HEAD
 >>>>>>> kai
+=======
+>>>>>>> denis
+>>>>>>> 2c9880b2ec61e05445d35039c54a72771639c64a
   padding-top: 5%;
   display: flex;
 <<<<<<< HEAD
@@ -32,6 +36,7 @@ body {
       -ms-flex-align: start;
           align-items: start;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> denis
 =======
@@ -40,10 +45,14 @@ body {
 >>>>>>> chickhack
 >>>>>>> a6bfa18616ff64e830f827227dff2561f3e2563f
 =======
+<<<<<<< HEAD
   flex-wrap: wrap;
   justify-content: center;
   align-items: start;
 >>>>>>> kai
+=======
+>>>>>>> denis
+>>>>>>> 2c9880b2ec61e05445d35039c54a72771639c64a
 }
 
 .grid-item {
@@ -51,12 +60,18 @@ body {
   border: 1px solid #ad6e4a36;
   border-radius: 5px;
   width: 250px;
+  overflow: hidden;
 }
 
 .grid .grid-item img {
   width: 100%;
+<<<<<<< HEAD
   object-fit: cover;
   border-radius: 5px;
+=======
+  -o-object-fit: cover;
+     object-fit: cover;
+>>>>>>> 2c9880b2ec61e05445d35039c54a72771639c64a
 }
 
 .grid .grid-item:nth-child(n+11) {
