@@ -1,3 +1,7 @@
+.container {
+  width: auto;
+}
+
 .le-color {
   background-color: #16193b;
   font-size: 16px;
@@ -23,37 +27,69 @@
 }
 
 .leve {
-  width: 60px;
+  width: 40px;
 }
 
 .leve-1 {
-  width: 50px;
+  width: 40px;
 }
 
 .icon-2 {
+<<<<<<< HEAD
   width: 60px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 60px;
+=======
+  width: 50px;
+  object-fit: cover;
+  height: 50px;
+>>>>>>> chickhack
   border-radius: 40px;
 }
 
 .icon-3 {
+<<<<<<< HEAD
+<<<<<<< HEAD
+  width: 55px;
+  height: 55px;
+=======
+=======
+>>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
   width: 50px;
   height: 50px;
+>>>>>>> 528db558604e5ab1390a0ef5b25d30e723a35a4d
+  -o-object-fit: cover;
+     object-fit: cover;
+=======
+  width: 40px;
+  height: 40px;
   object-fit: cover;
+>>>>>>> chickhack
   border-radius: 40px;
 }
 
 .text-00 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .text-01 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .line-he-65 {
@@ -77,23 +113,36 @@
 
 .banner {
   margin: 0 auto;
-  width: 100%;
+  background-image: url(../../img/home/others/station_moon.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 87%;
+  padding-top: 20%;
   position: relative;
 }
 
 .banner img {
   width: 100%;
+<<<<<<< HEAD
+  -o-object-fit: cover;
+     object-fit: cover;
+=======
+  height: 200px;
   object-fit: cover;
+>>>>>>> chickhack
 }
 
 .banner h4 {
   position: absolute;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   top: 50%;
 }
 
 .container .row .col-10 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -101,9 +150,23 @@
   width: 100%;
 }
 
+.container .row .col-10 .row .col-10 {
+  display: flex;
+}
+
 .container .row .col-10 .row .col-4 {
   text-align: center;
   padding-left: 0px;
   padding-right: 0px;
+}
+
+@media (max-width: 768px) {
+  .del {
+    display: none;
+  }
+  .banner {
+    width: 100%;
+    padding-top: 50%;
+  }
 }
 /*# sourceMappingURL=Leaderboard.css.map */

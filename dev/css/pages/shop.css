@@ -77,8 +77,27 @@ body {
   font-size: 14px;
   background-color: #0c0d18;
   overflow-x: hidden;
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> denis
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -ms-user-select: none;
+      user-select: none;
+<<<<<<< HEAD
+=======
   -o-user-select: none;
   user-select: none;
+>>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+  -o-user-select: none;
+  user-select: none;
+>>>>>>> chickhack
+=======
+>>>>>>> denis
 }
 
 h1, .h1 {
@@ -307,11 +326,46 @@ body {
 
 nav {
   display: flex;
+<<<<<<< HEAD
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+<<<<<<< HEAD
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #0c0d18;
+  position: -webkit-sticky;
+=======
   justify-content: center;
+  background-color: #0c0d18;
+<<<<<<< HEAD
+  position: -webkit-sticky;
+=======
   align-items: center;
   justify-content: center;
   background-color: #0c0d18;
+<<<<<<< HEAD
   position: fixed;
+=======
+>>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+<<<<<<< HEAD
+>>>>>>> 528db558604e5ab1390a0ef5b25d30e723a35a4d
+=======
+=======
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #0c0d18;
+>>>>>>> chickhack
+>>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
+  position: sticky;
+=======
+  position: fixed;
+>>>>>>> denis
+>>>>>>> 9ffa00097b9eaf6c3ebf12f6c6df52b1ffe067a0
   top: 0;
   width: 100%;
   min-height: 12vh;
@@ -322,7 +376,11 @@ nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
+<<<<<<< HEAD
   background-image: url("../../img/icon/header/logo.png");
+=======
+  background-image: url("../img/logo.png");
+>>>>>>> chickhack
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -333,10 +391,45 @@ nav .logo h1 a {
 
 nav .nav-links {
   display: flex;
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 528db558604e5ab1390a0ef5b25d30e723a35a4d
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> denis
+>>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+<<<<<<< HEAD
+<<<<<<< HEAD
+  width: 60%;
+=======
+=======
+  width: 75%;
+>>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
+=======
   justify-content: center;
   align-items: center;
   justify-content: flex-end;
+<<<<<<< HEAD
+>>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
   width: 75%;
+>>>>>>> 528db558604e5ab1390a0ef5b25d30e723a35a4d
+=======
+  width: 60%;
+>>>>>>> chickhack
+>>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
 }
 
 nav .nav-links a {
@@ -368,7 +461,8 @@ nav .burger div {
 
 @media (max-width: 992px) {
   nav {
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   nav .nav-links {
     position: absolute;
@@ -376,12 +470,22 @@ nav .burger div {
     height: 92vh;
     top: 12vh;
     background-color: #AD6E4A;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     justify-content: center;
     width: 30%;
+    -webkit-transition: all 1s ease-in;
     transition: all 1s ease-in;
   }
   nav .nav-links li {
@@ -396,7 +500,9 @@ nav .burger div {
   }
   nav .nav-icons {
     width: 100%;
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
   nav .nav-icons .icon {
     margin: 0 30px 0 15px;
@@ -419,21 +525,37 @@ nav .burger div {
   nav .nav-icons {
     width: 50%;
     margin-left: 16px;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   nav .nav-icons .icon {
     margin: 0;
   }
 }
 
-@keyframes navLinkFade {
+@-webkit-keyframes navLinkFade {
   from {
     opacity: 0;
-    transform: translateX(50px);
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
   }
   to {
     opacity: 1;
-    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
   }
 }
 
@@ -476,8 +598,30 @@ footer .links .footer-links a {
 footer .footer_moon {
   position: relative;
   left: 50%;
+<<<<<<< HEAD
+<<<<<<< HEAD
+  max-width: 550px;
+<<<<<<< HEAD
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+<<<<<<< HEAD
+=======
+=======
   max-width: 40%;
   transform: translateX(-50%);
+>>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+<<<<<<< HEAD
+>>>>>>> 528db558604e5ab1390a0ef5b25d30e723a35a4d
+=======
+=======
+  transform: translateX(-50%);
+>>>>>>> chickhack
+=======
+  max-width: 40%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+>>>>>>> denis
+>>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
 }
 
 footer .smoke {
@@ -486,7 +630,22 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
+<<<<<<< HEAD
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+<<<<<<< HEAD
+=======
+=======
   transform: translateX(-50%);
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> denis
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+>>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
 }
 
 @media (max-width: 768px) {
@@ -499,6 +658,17 @@ footer .smoke {
   footer .footer_moon {
     min-width: 250px;
   }
+<<<<<<< HEAD
+>>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+<<<<<<< HEAD
+>>>>>>> 528db558604e5ab1390a0ef5b25d30e723a35a4d
+=======
+=======
+  transform: translateX(-50%);
+>>>>>>> chickhack
+=======
+>>>>>>> denis
+>>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
 }
 
 .quantity label {
@@ -570,9 +740,15 @@ section.shop .banner h2 {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
+<<<<<<< HEAD
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   top: 35%;
   letter-spacing: 2px;
+=======
+  transform: translate(-50%, -50%);
+  top: 40%;
+>>>>>>> chickhack
 }
 
 @media all and (max-width: 768px) {
@@ -590,10 +766,27 @@ section.shop .btn {
 
 section.shop .shopAll {
   display: flex;
+<<<<<<< HEAD
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+<<<<<<< HEAD
+=======
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+>>>>>>> 528db558604e5ab1390a0ef5b25d30e723a35a4d
+=======
   justify-content: center;
   align-items: center;
   align-items: start;
   flex-wrap: wrap;
+>>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
 }
 
 section.shop .shopAll .aside {
@@ -656,10 +849,19 @@ section.shop .shopAll .main {
   width: 70%;
 }
 
+<<<<<<< HEAD
+section.shop .shopAll .main .chooseBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+=======
 @media all and (max-width: 992px) {
   section.shop .shopAll .main {
     width: 60%;
   }
+>>>>>>> 528db558604e5ab1390a0ef5b25d30e723a35a4d
 }
 
 @media all and (max-width: 768px) {
@@ -686,9 +888,22 @@ section.shop .shopAll .main .productAll {
 
 section.shop .shopAll .main .productAll ul {
   display: flex;
+<<<<<<< HEAD
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+<<<<<<< HEAD
+=======
+=======
   justify-content: space-between;
   align-items: start;
   flex-wrap: wrap;
+>>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
 }
 
 @media all and (max-width: 992px) {
@@ -702,6 +917,7 @@ section.shop .shopAll .main .productAll ul {
   section.shop .shopAll .main .productAll ul {
     justify-content: center;
   }
+>>>>>>> 528db558604e5ab1390a0ef5b25d30e723a35a4d
 }
 
 section.shop .shopAll .main .productAll ul li {

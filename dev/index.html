@@ -25,10 +25,9 @@
     <!-- canvas -->
   </head>
   <body>
-    <!-- <div class="container"> -->
-    <div class="banner_bg jumbotron-fluid">
+    <div class="container" id="app">
+
     <header>@@include('./layout/header.html')</header>
-      <div class="col-11 frame">
         <div class="banner">
           <div class="slogan">
             <p>EXPLORE THE GALAXY</p>
@@ -68,7 +67,7 @@
 <!-- 精選行程 -->
 
       
-<div class="first_right swiper-container" id="app">
+<div class="first_right swiper-container" >
   <div class="hottrip wiper-wrapper col-10">
       <div v-for="item in top" class="planet_top swiper-slide">
           <a href="trip.html">
@@ -108,7 +107,7 @@
 <!-- 互動牆 -->
         <div class="gallery margin_top_8" id="gallery">
           <!-- 上 -->
-          <div class="box top col-12">
+          <div class="gallery_box top col-12">
             <div class="topleft col-5">
               <div class="col-6 A">
                 <img :src="image1">
@@ -161,7 +160,7 @@
               <div class="hovereffect">
                 <img class="img-responsive" src="img/home/shop_1.jpeg" alt="">
                 <div class="overlay">
-                  <h2><a href="#">商品內容</a></h2> 
+                  <h2><a href="#">{{商品內容}}</a></h2> 
                 </div>
               </div>
             </div>
@@ -233,13 +232,12 @@
               </div>
               <button class="button button_min margin_top_10" >加入會員</button>
           </div>
-      </div>
 <!-- 框框 -->
       </div> 
 
       <footer>@@include('./layout/footer.html')</footer>
     </div>
-  <!-- </div> -->
+  </div>
 
 
 
