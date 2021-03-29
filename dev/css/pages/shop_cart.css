@@ -58,6 +58,7 @@ img {
 *:after {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   box-sizing: inherit;
 =======
   -webkit-box-sizing: inherit;
@@ -66,6 +67,10 @@ img {
 =======
   box-sizing: inherit;
 >>>>>>> chickhack
+=======
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+>>>>>>> denis
   margin: 0;
   padding: 0;
 }
@@ -88,19 +93,25 @@ body {
   overflow-x: hidden;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   -o-user-select: none;
   user-select: none;
 =======
+=======
+>>>>>>> denis
   -webkit-user-select: none;
   -moz-user-select: none;
   -o-user-select: none;
   -ms-user-select: none;
       user-select: none;
+<<<<<<< HEAD
 >>>>>>> denis
 =======
   -o-user-select: none;
   user-select: none;
 >>>>>>> chickhack
+=======
+>>>>>>> denis
 }
 
 h1, .h1 {
@@ -338,11 +349,15 @@ nav {
   background-color: #0c0d18;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   position: -webkit-sticky;
 >>>>>>> denis
 =======
 >>>>>>> chickhack
+=======
+  position: -webkit-sticky;
+>>>>>>> denis
   position: sticky;
   top: 0;
   width: 100%;
@@ -367,11 +382,14 @@ nav .nav-links {
   display: -ms-flexbox;
   display: flex;
 <<<<<<< HEAD
+<<<<<<< HEAD
   justify-content: center;
   align-items: center;
   justify-content: flex-end;
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> denis
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -381,9 +399,12 @@ nav .nav-links {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+<<<<<<< HEAD
 >>>>>>> denis
 =======
 >>>>>>> chickhack
+=======
+>>>>>>> denis
   width: 60%;
 }
 
@@ -396,11 +417,14 @@ nav .nav-icons {
   display: -ms-flexbox;
   display: flex;
 <<<<<<< HEAD
+<<<<<<< HEAD
   justify-content: center;
   align-items: center;
   justify-content: space-around;
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> denis
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -409,9 +433,12 @@ nav .nav-icons {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+<<<<<<< HEAD
 >>>>>>> denis
 =======
 >>>>>>> chickhack
+=======
+>>>>>>> denis
   width: 12%;
 }
 
@@ -452,11 +479,14 @@ footer .links .footer-links {
   display: -ms-flexbox;
   display: flex;
 <<<<<<< HEAD
+<<<<<<< HEAD
   justify-content: center;
   align-items: center;
   justify-content: space-around;
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> denis
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -465,13 +495,17 @@ footer .links .footer-links {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+<<<<<<< HEAD
 >>>>>>> denis
 =======
 >>>>>>> chickhack
+=======
+>>>>>>> denis
   width: 55%;
   position: relative;
   left: 50%;
   bottom: 30px;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   transform: translateX(-50%);
@@ -482,6 +516,10 @@ footer .links .footer-links {
 =======
   transform: translateX(-50%);
 >>>>>>> chickhack
+=======
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+>>>>>>> denis
 }
 
 footer .links .footer-links a {
@@ -494,6 +532,7 @@ footer .footer_moon {
   max-width: 550px;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   transform: translateX(-50%);
 =======
   -webkit-transform: translateX(-50%);
@@ -502,6 +541,10 @@ footer .footer_moon {
 =======
   transform: translateX(-50%);
 >>>>>>> chickhack
+=======
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+>>>>>>> denis
 }
 
 footer .smoke {
@@ -512,6 +555,7 @@ footer .smoke {
   height: 80%;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   transform: translateX(-50%);
 =======
   -webkit-transform: translateX(-50%);
@@ -520,6 +564,10 @@ footer .smoke {
 =======
   transform: translateX(-50%);
 >>>>>>> chickhack
+=======
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+>>>>>>> denis
 }
 
 .quantity label {
@@ -582,6 +630,7 @@ section.cart .item {
   justify-content: center;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   align-items: center;
   justify-content: center;
 =======
@@ -590,12 +639,15 @@ section.cart .item {
   align-items: center;
   justify-content: center;
 >>>>>>> chickhack
+=======
+>>>>>>> denis
   background-color: #292B41;
   padding: 16px 0;
 }
 
 section.cart .item .img {
   width: 10%;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 }
@@ -635,6 +687,8 @@ section.cart .item .info .points {
 
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> denis
 }
 
 @media all and (max-width: 768px) {
@@ -675,9 +729,12 @@ section.cart .item .info .points {
   margin: 8px 0;
 }
 
+<<<<<<< HEAD
 >>>>>>> denis
 =======
 >>>>>>> chickhack
+=======
+>>>>>>> denis
 @media all and (max-width: 768px) {
   section.cart .item .info .quantity .as * {
     padding: 2px 4px;
@@ -715,16 +772,22 @@ section.cart .checkout {
   section.cart .checkout {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     flex-direction: column;
 =======
+=======
+>>>>>>> denis
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+<<<<<<< HEAD
 >>>>>>> denis
 =======
     flex-direction: column;
 >>>>>>> chickhack
+=======
+>>>>>>> denis
   }
 }
 

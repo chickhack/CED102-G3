@@ -81,19 +81,25 @@ body {
   overflow-x: hidden;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   -o-user-select: none;
   user-select: none;
 =======
+=======
+>>>>>>> denis
   -webkit-user-select: none;
   -moz-user-select: none;
   -o-user-select: none;
   -ms-user-select: none;
       user-select: none;
+<<<<<<< HEAD
 >>>>>>> denis
 =======
   -o-user-select: none;
   user-select: none;
 >>>>>>> chickhack
+=======
+>>>>>>> denis
 }
 
 h1, .h1 {
@@ -331,11 +337,15 @@ nav {
   background-color: #0c0d18;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   position: -webkit-sticky;
 >>>>>>> denis
 =======
 >>>>>>> chickhack
+=======
+  position: -webkit-sticky;
+>>>>>>> denis
   position: sticky;
   top: 0;
   width: 100%;
@@ -462,6 +472,7 @@ footer .smoke {
   height: 80%;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   transform: translateX(-50%);
 =======
   -webkit-transform: translateX(-50%);
@@ -470,6 +481,10 @@ footer .smoke {
 =======
   transform: translateX(-50%);
 >>>>>>> chickhack
+=======
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+>>>>>>> denis
 }
 
 .quantity label {
@@ -518,10 +533,13 @@ body {
   padding: 15vh 250px 0px 250px;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: flex;
   align-items: center;
   justify-content: left;
 =======
+=======
+>>>>>>> denis
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -531,12 +549,15 @@ body {
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
+<<<<<<< HEAD
 >>>>>>> denis
 =======
   display: flex;
   align-items: center;
   justify-content: left;
 >>>>>>> chickhack
+=======
+>>>>>>> denis
 }
 
 .spacedinfo {

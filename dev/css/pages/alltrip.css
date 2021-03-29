@@ -80,19 +80,25 @@ body {
   overflow-x: hidden;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   -o-user-select: none;
   user-select: none;
 =======
+=======
+>>>>>>> denis
   -webkit-user-select: none;
   -moz-user-select: none;
   -o-user-select: none;
   -ms-user-select: none;
       user-select: none;
+<<<<<<< HEAD
 >>>>>>> denis
 =======
   -o-user-select: none;
   user-select: none;
 >>>>>>> chickhack
+=======
+>>>>>>> denis
 }
 
 h1, .h1 {
@@ -330,11 +336,15 @@ nav {
   background-color: #0c0d18;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   position: -webkit-sticky;
 >>>>>>> denis
 =======
 >>>>>>> chickhack
+=======
+  position: -webkit-sticky;
+>>>>>>> denis
   position: sticky;
   top: 0;
   width: 100%;
@@ -461,7 +471,12 @@ footer .smoke {
   height: 80%;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   transform: translateX(-50%);
+=======
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+>>>>>>> denis
 }
 
 .quantity label {
@@ -499,6 +514,7 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
+<<<<<<< HEAD
 =======
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -506,6 +522,8 @@ input[type=number] {
 =======
   transform: translateX(-50%);
 >>>>>>> chickhack
+=======
+>>>>>>> denis
 }
 
 div.bk {
@@ -548,12 +566,17 @@ div.bk3 {
 .first {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   display: -webkit-box;
   display: -ms-flexbox;
 >>>>>>> denis
 =======
 >>>>>>> chickhack
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> denis
   display: flex;
   max-width: 1200px;
   margin: 0 auto;
@@ -608,7 +631,6 @@ div.bk3 {
 .first .first_right {
   width: 50%;
   position: relative;
-  overflow: hidden;
 }
 
 @media all and (max-width: 1200px) {
@@ -621,13 +643,18 @@ div.bk3 {
 .first .first_right .hottrip {
 <<<<<<< HEAD
 <<<<<<< HEAD
-  top: 15vh;
+<<<<<<< HEAD
 =======
+>>>>>>> denis
+  top: 15vh;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
+<<<<<<< HEAD
 >>>>>>> denis
 =======
 >>>>>>> chickhack
+=======
+>>>>>>> denis
   display: inline-flex;
   padding-top: 96px;
 }
@@ -682,12 +709,17 @@ div.bk3 {
 .first .first_right div.planet_top div.word .tag {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
 >>>>>>> denis
 =======
 >>>>>>> chickhack
+=======
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+>>>>>>> denis
   display: inline-flex;
   border: 1px solid #C9ADA7;
   border-radius: 5px;
@@ -725,19 +757,23 @@ div.bk3 {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> denis
 .first .first_right div.planet_top div.word .addin:hover {
   background-color: #bf896b;
 }
 
 .first .tripselect {
-=======
-.first .tripselect {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
+<<<<<<< HEAD
 >>>>>>> denis
 =======
 .first .tripselect {
 >>>>>>> chickhack
+=======
+>>>>>>> denis
   display: inline-flex;
   width: 280px;
   -webkit-box-pack: justify;
@@ -766,11 +802,15 @@ div.bk3 {
 .stepsection .stepall {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> denis
   max-width: 1000px;
 =======
   max-width: 1200px;
 >>>>>>> chickhack
   margin: 0 auto;
+<<<<<<< HEAD
   display: flex;
   align-items: baseline;
   justify-content: space-between;
@@ -778,6 +818,8 @@ div.bk3 {
 =======
   max-width: 1200px;
   margin: 0 auto;
+=======
+>>>>>>> denis
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -787,9 +829,12 @@ div.bk3 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+<<<<<<< HEAD
 >>>>>>> denis
 =======
 >>>>>>> chickhack
+=======
+>>>>>>> denis
   padding: 32px;
 }
 
@@ -854,10 +899,13 @@ div.bk3 {
 .second .tripcard_all {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: inline-flex;
   justify-content: center;
   flex-wrap: wrap;
 =======
+=======
+>>>>>>> denis
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -866,12 +914,15 @@ div.bk3 {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+<<<<<<< HEAD
 >>>>>>> denis
 =======
   display: inline-flex;
   justify-content: center;
   flex-wrap: wrap;
 >>>>>>> chickhack
+=======
+>>>>>>> denis
   width: 100%;
 }
 
@@ -905,7 +956,8 @@ div.bk3 {
 }
 
 .second .tripcard_all .tripcard .spot_pic:hover {
-  transform: perspective(0.5px) translateX(-1.5px) translateY(-1.5px);
+  -webkit-transform: perspective(0.5px) translateX(-1.5px) translateY(-1.5px);
+          transform: perspective(0.5px) translateX(-1.5px) translateY(-1.5px);
 }
 
 .second .tripcard_all .tripcard .hot2 {
@@ -917,12 +969,17 @@ div.bk3 {
 .second .tripcard_all .tripcard .tag {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
 >>>>>>> denis
 =======
 >>>>>>> chickhack
+=======
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+>>>>>>> denis
   display: inline-flex;
   border: 1px solid #C9ADA7;
   border-radius: 5px;
@@ -984,6 +1041,7 @@ div.bk3 {
 }
 
 .second .tripcard_all .tripcard > img :hover {
-  transform: perspective(0.5px) translateX(-1.5px) translateY(-1.5px);
+  -webkit-transform: perspective(0.5px) translateX(-1.5px) translateY(-1.5px);
+          transform: perspective(0.5px) translateX(-1.5px) translateY(-1.5px);
 }
 /*# sourceMappingURL=alltrip.css.map */
