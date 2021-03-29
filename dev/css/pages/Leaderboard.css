@@ -102,19 +102,15 @@
   top: 50%;
 }
 
-.container .row .col-10 {
-  display: flex;
-}
-
-.container .row .col-10 .row {
+.container-fluid .row .col-10 .row {
   width: 100%;
 }
 
-.container .row .col-10 .row .col-10 {
+.container-fluid .row .col-10 .row .col-10 {
   display: flex;
 }
 
-.container .row .col-10 .row .col-4 {
+.container-fluid .row .col-10 .row .col-4 {
   text-align: center;
   padding-left: 0px;
   padding-right: 0px;

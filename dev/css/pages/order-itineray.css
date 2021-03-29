@@ -396,13 +396,6 @@ form .addPay .row .col-10 .automena .row .col-10 .sss img {
   object-fit: cover;
 }
 
-<<<<<<< HEAD
-form .addPay .row .col-10 .automena .row .col-10 .sssb:focus .sss {
-  background-color: #fff;
-}
-
-=======
->>>>>>> chickhack
 form .addPay .row .col-10 .automena .row .col-10 input {
   display: none;
 }
@@ -421,20 +414,6 @@ form .paymethod .row {
 
 form .paymethod .row .col-10 .paymethod-automanu .row #paymethod-coin, form .paymethod .row .col-10 .paymethod-automanu .row #paymethod-automanu-car {
   display: none;
-}
-
-form .paymethod .row .col-10 .paymethod-automanu .row .check::before {
-  content: '';
-  background: transparent;
-  border: 2px solid #ad6e4a;
-  display: inline-block;
-  vertical-align: middle;
-  width: 5px;
-  height: 5px;
-  padding: 2px;
-  margin-right: 10px;
-  text-align: center;
-  border-radius: 10px;
 }
 
 form .paymethod .row .col-10 .paymethod-automanu .row .col-11 {

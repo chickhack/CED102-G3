@@ -520,19 +520,19 @@ form{
                             display: none;
                         }
 
-                        .check::before{
-                            content: '';
-                            background: transparent;
-                            border: 2px solid #ad6e4a;
-                            display: inline-block;
-                            vertical-align: middle;
-                            width: 5px;
-                            height: 5px;
-                            padding: 2px;
-                            margin-right: 10px;
-                            text-align: center;
-                            border-radius: 10px;
-                        }
+                        // .check::before{
+                        //     content: '';
+                        //     background: transparent;
+                        //     border: 2px solid #ad6e4a;
+                        //     display: inline-block;
+                        //     vertical-align: middle;
+                        //     width: 5px;
+                        //     height: 5px;
+                        //     padding: 2px;
+                        //     margin-right: 10px;
+                        //     text-align: center;
+                        //     border-radius: 10px;
+                        // }
                         .col-11{
                             display: flex;
                             align-items: center;
