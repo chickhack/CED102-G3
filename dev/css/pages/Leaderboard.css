@@ -35,61 +35,29 @@
 }
 
 .icon-2 {
-<<<<<<< HEAD
-  width: 60px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: 60px;
-=======
   width: 50px;
   object-fit: cover;
   height: 50px;
->>>>>>> chickhack
   border-radius: 40px;
 }
 
 .icon-3 {
-<<<<<<< HEAD
-<<<<<<< HEAD
-  width: 55px;
-  height: 55px;
-=======
-=======
->>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
-  width: 50px;
-  height: 50px;
->>>>>>> 528db558604e5ab1390a0ef5b25d30e723a35a4d
-  -o-object-fit: cover;
-     object-fit: cover;
-=======
   width: 40px;
   height: 40px;
   object-fit: cover;
->>>>>>> chickhack
   border-radius: 40px;
 }
 
 .text-00 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .text-01 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .line-he-65 {
@@ -123,26 +91,18 @@
 
 .banner img {
   width: 100%;
-<<<<<<< HEAD
-  -o-object-fit: cover;
-     object-fit: cover;
-=======
   height: 200px;
   object-fit: cover;
->>>>>>> chickhack
 }
 
 .banner h4 {
   position: absolute;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   top: 50%;
 }
 
 .container .row .col-10 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
