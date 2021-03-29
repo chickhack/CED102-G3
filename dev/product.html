@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/all.css">
     <link rel="stylesheet" href="./css/pages/product.css">
+    <link rel="stylesheet" href="./css/pages/trip.css"></link>
     <title>星球商城</title>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.12/vue.js'></script>
 </head>
@@ -57,21 +58,22 @@
         </p>
         <div id="app">
             <div class="recommend">
-                <h3>建議搭配行程</h3>
-                <ul class="margin_top_3">
-                    <li v-for="spot in spots">
-                        <a href="#">
-                            <div class="spotImg">
-                                <img :src="spot.src" alt="">
-                                <p>{{spot.price}}</p>
-                            </div>
-                            <div class="spotInfo margin_top_2">
-                                <h3>火星|宇宙雨林秘境</h3>
-                                <p class="margin_top_2">初階</p>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
+                <h3 class="margin_top_10 alltrip ">建議搭配景點</h3>
+                <div class="tripcard_all  margin_top_5">
+
+                    <div v-for="item in second" class="tripcard">
+                        <img :src="item.spot" class="spot_pic" alt="spot_pic">
+                        <div class="content line_low">
+                            <h4 class="hot2 margin_top_1">{{item.title}}</h4>
+                            <small class="tag ">{{item.grade}}</small>
+                            <small class="tag">{{item.scores}}積分</small>
+                            <h4 class="price2 margin_top_1">${{item.price}}</h4>
+                            <div class="addin2 samll  margin_top_2"><img class="plus" src="./img/icon/plus.png"
+                                    alt="">加入我的行程</div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
             <div class="comment">
                 <h3>買家評論</h3>
@@ -116,24 +118,25 @@
             data:{
                 number: 4.8,
                 totalStar: 5,
-                spots:[
-                    {
-                        src: "./img/trip/trip_mars/mars_a1_ps.jpg.png",
-                        price: 2000,
-                        title: "火星|宇宙雨林秘境",
-                        class: "初階"
-                    },{
-                        src: "./img/trip/trip_mars/mars_b2_ps.jpg",
-                        price: 2000,
-                        title: "火星|宇宙雨林秘境",
-                        class: "初階"
-                    },{
-                        src: "./img/trip/trip_mars/mars_c1_ps.jpg",
-                        price: 2000,
-                        title: "火星|宇宙雨林秘境",
-                        class: "初階"
-                    },
-                ],
+                second: [{
+                    spot: "./img/trip/trip_jupiter/jupiter_a1_ps2.jpg",
+                    title: "月球 | 太空體驗一日遊",
+                    grade: "初階",
+                    scores: "5000",
+                    price: 1000,
+                }, {
+                    spot: "./img/trip/trip_jupiter/jupiter_b1_ps2.jpg",
+                    title: "月球 | 熱氣球一日遊",
+                    grade: "初階",
+                    scores: "5000",
+                    price: 2000,
+                }, {
+                    spot: "./img/trip/trip_jupiter/jupiter_c4_ps2.jpg",
+                    title: "月球 | 熱氣球一日遊",
+                    grade: "初階",
+                    scores: "5000",
+                    price: 3000,
+                },],
                 comments: [
                     {
                         src: "./img/shop/user.png",
