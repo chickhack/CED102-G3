@@ -251,22 +251,14 @@ form .orderinfo .row .col-10 {
   padding-bottom: 10px;
 }
 
-<<<<<<< HEAD
-form .orderinfo .row .col-7 .row {
+form .orderinfo .row .col-10 .row {
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
 
-form .orderinfo .row .col-7 .row .col-7 {
+form .orderinfo .row .col-10 .row .col-7 {
   display: -webkit-box;
   display: -ms-flexbox;
-=======
-form .orderinfo .row .col-10 .row {
-  justify-content: space-around;
-}
-
-form .orderinfo .row .col-10 .row .col-7 {
->>>>>>> chickhack
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -334,24 +326,15 @@ form .ltineraryinfo .row .col-10 .row .col-3 {
   padding-bottom: 16px;
 }
 
-<<<<<<< HEAD
-form .ltineraryinfo .row .col-7 .row .col-11 img {
-  max-width: 200px;
+form .ltineraryinfo .row .col-10 .row .col-3 img {
+  max-width: 150px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-form .ltineraryinfo .row .col-7 .row .col-11 .row {
+form .ltineraryinfo .row .col-10 .row .col-7 .row {
   display: -webkit-box;
   display: -ms-flexbox;
-=======
-form .ltineraryinfo .row .col-10 .row .col-3 img {
-  max-width: 150px;
-  object-fit: cover;
-}
-
-form .ltineraryinfo .row .col-10 .row .col-7 .row {
->>>>>>> chickhack
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -361,11 +344,12 @@ form .ltineraryinfo .row .col-10 .row .col-7 .row {
 }
 
 form .ltineraryinfo .row .col-10 .row .col-7 .row .col-11 {
-  align-items: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
-<<<<<<< HEAD
-form .ltineraryinfo .row .col-7 .row .col-11 .row .text-div {
+form .ltineraryinfo .row .col-10 .row .col-7 .row .text-div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -376,14 +360,7 @@ form .ltineraryinfo .row .col-7 .row .col-11 .row .text-div {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 8px 0;
-=======
-form .ltineraryinfo .row .col-10 .row .col-7 .row .text-div {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
   padding: 0px 0;
->>>>>>> chickhack
 }
 
 form .ltineraryinfo .row .col-10 .row .col-7 .row .text-div img {
@@ -401,13 +378,9 @@ form .addPay .row .col-10 {
   border-radius: 5px;
 }
 
-<<<<<<< HEAD
-form .addPay .row .col-7 .automena .row .col-11 {
+form .addPay .row .col-10 .automena .row .col-11 {
   display: -webkit-box;
   display: -ms-flexbox;
-=======
-form .addPay .row .col-10 .automena .row .col-11 {
->>>>>>> chickhack
   display: flex;
 }
 
@@ -471,28 +444,19 @@ form .paymethod .row .col-10 .paymethod-automanu .row .check::before {
   border-radius: 10px;
 }
 
-<<<<<<< HEAD
-form .paymethod .row .col-7 .paymethod-automanu .row .col-11 {
+form .paymethod .row .col-10 .paymethod-automanu .row .col-11 {
   display: -webkit-box;
   display: -ms-flexbox;
-=======
-form .paymethod .row .col-10 .paymethod-automanu .row .col-11 {
->>>>>>> chickhack
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-<<<<<<< HEAD
-form .paymethod .row .col-7 .paymethod-automanu .row .col-12 .paymethod-automanu-car-automanu .row {
+form .paymethod .row .col-10 .paymethod-automanu .row .col-12 .paymethod-automanu-car-automanu .row {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-=======
-form .paymethod .row .col-10 .paymethod-automanu .row .col-12 .paymethod-automanu-car-automanu .row {
-  justify-content: space-evenly;
->>>>>>> chickhack
 }
 
 form .paymethod .row .col-10 .paymethod-automanu .row .col-12 .paymethod-automanu-car-automanu .row input {
@@ -521,13 +485,9 @@ form .paymethod .row .col-10 .paymethod-automanu .row .col-5 input.paymethod-coi
   line-height: 0px;
 }
 
-<<<<<<< HEAD
-form .paymethod .row .col-7 .paymethod-automanu .row .col-4 {
+form .paymethod .row .col-10 .paymethod-automanu .row .col-4 {
   display: -webkit-box;
   display: -ms-flexbox;
-=======
-form .paymethod .row .col-10 .paymethod-automanu .row .col-4 {
->>>>>>> chickhack
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -553,14 +513,50 @@ form .orderDetails .row .allpay-div {
           justify-content: flex-end;
 }
 
-<<<<<<< HEAD
-form .orderDetails .row .col-7 .orderDetails-automanu .col-11 {
+form .orderDetails .row .col-10 .orderDetails-automanu .col-3 {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+form .orderDetails .row .col-10 .orderDetails-automanu .col-3 img {
+  max-width: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+form .orderDetails .row .col-10 .orderDetails-automanu .col-11 .payadd {
+  width: 100%;
+}
+
+form .orderDetails .row .col-10 .orderDetails-automanu .col-11 .payadd .orderDetails-automanu-textdiv {
+  width: 100%;
+}
+
+form .orderDetails .row .col-10 .orderDetails-automanu .col-11 .payadd .orderDetails-automanu-textdiv .textbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+form .orderDetails .row .col-10 .orderDetails-automanu .col-11 .orderDetails-automanu-textdiv {
+  width: 100%;
+}
+
+form .orderDetails .row .col-10 .orderDetails-automanu .col-11 .orderDetails-automanu-textdiv .textbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+form .orderDetails .row .col-10 .orderDetails-automanu .col-7 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-form .orderDetails .row .col-7 .orderDetails-automanu .col-11 .row {
+form .orderDetails .row .col-10 .orderDetails-automanu .col-7 .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -569,7 +565,7 @@ form .orderDetails .row .col-7 .orderDetails-automanu .col-11 .row {
   width: 100%;
 }
 
-form .orderDetails .row .col-7 .orderDetails-automanu .col-11 .row .text-div {
+form .orderDetails .row .col-10 .orderDetails-automanu .col-7 .row .text-div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -583,68 +579,6 @@ form .orderDetails .row .col-7 .orderDetails-automanu .col-11 .row .text-div {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  padding: 8px 0;
-=======
-form .orderDetails .row .col-10 .orderDetails-automanu .col-3 {
-  padding-top: 16px;
-  padding-bottom: 16px;
-}
-
-form .orderDetails .row .col-10 .orderDetails-automanu .col-3 img {
-  max-width: 150px;
-  object-fit: cover;
-}
-
-form .orderDetails .row .col-10 .orderDetails-automanu .col-11 .payadd {
-  width: 100%;
->>>>>>> chickhack
-}
-
-form .orderDetails .row .col-10 .orderDetails-automanu .col-11 .payadd .orderDetails-automanu-textdiv {
-  width: 100%;
-}
-
-form .orderDetails .row .col-10 .orderDetails-automanu .col-11 .payadd .orderDetails-automanu-textdiv .textbox {
-  display: flex;
-  width: 100%;
-}
-
-form .orderDetails .row .col-10 .orderDetails-automanu .col-11 .orderDetails-automanu-textdiv {
-  width: 100%;
-}
-
-<<<<<<< HEAD
-form .orderDetails .row .col-7 .orderDetails-automanu .col-11 .payadd .orderDetails-automanu-textdiv .textbox {
-  display: -webkit-box;
-  display: -ms-flexbox;
-=======
-form .orderDetails .row .col-10 .orderDetails-automanu .col-11 .orderDetails-automanu-textdiv .textbox {
->>>>>>> chickhack
-  display: flex;
-  width: 100%;
-}
-
-form .orderDetails .row .col-10 .orderDetails-automanu .col-7 {
-  display: flex;
-}
-
-<<<<<<< HEAD
-form .orderDetails .row .col-7 .orderDetails-automanu .col-11 .orderDetails-automanu-textdiv .textbox {
-  display: -webkit-box;
-  display: -ms-flexbox;
-=======
-form .orderDetails .row .col-10 .orderDetails-automanu .col-7 .row {
->>>>>>> chickhack
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-}
-
-form .orderDetails .row .col-10 .orderDetails-automanu .col-7 .row .text-div {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: flex-end;
   padding: 8px 0;
 }
 

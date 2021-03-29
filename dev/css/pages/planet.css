@@ -78,27 +78,11 @@ body {
   font-size: 14px;
   background-color: #0c0d18;
   overflow-x: hidden;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  -o-user-select: none;
-  user-select: none;
-=======
-=======
->>>>>>> denis
   -webkit-user-select: none;
   -moz-user-select: none;
   -o-user-select: none;
   -ms-user-select: none;
       user-select: none;
-<<<<<<< HEAD
->>>>>>> denis
-=======
-  -o-user-select: none;
-  user-select: none;
->>>>>>> chickhack
-=======
->>>>>>> denis
 }
 
 h1, .h1 {
@@ -321,6 +305,10 @@ small, .small {
   margin: 0 auto;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -331,20 +319,9 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: center;
   background-color: #0c0d18;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
   position: -webkit-sticky;
->>>>>>> denis
-=======
->>>>>>> chickhack
-=======
-  position: -webkit-sticky;
->>>>>>> denis
   position: sticky;
   top: 0;
   width: 100%;
@@ -356,12 +333,13 @@ nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-  background-image: url("../../img/logo.png");
+  background-image: url("../../img/icon/header/logo.png");
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
-  width: 200px;
+  max-width: 200px;
   height: 30px;
+  margin: 0 8px;
 }
 
 nav .nav-links {
@@ -377,11 +355,13 @@ nav .nav-links {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  width: 60%;
+  width: 75%;
 }
 
 nav .nav-links a {
+  width: 100%;
   color: #ffffff;
+  padding: 8px;
 }
 
 nav .nav-icons {
@@ -397,10 +377,12 @@ nav .nav-icons {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 12%;
+  margin-left: 50px;
 }
 
 nav .burger {
   display: none;
+  cursor: pointer;
 }
 
 nav .burger div {
@@ -408,6 +390,107 @@ nav .burger div {
   height: 2px;
   background-color: #ffffff;
   margin: 5px;
+}
+
+@media (max-width: 992px) {
+  nav {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  nav .nav-links {
+    position: absolute;
+    right: -100%;
+    height: 92vh;
+    top: 12vh;
+    background-color: #AD6E4A;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    -webkit-transition: all 1s ease-in;
+    transition: all 1s ease-in;
+  }
+  nav .nav-links li {
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+    opacity: 0;
+  }
+  nav .nav-links li a {
+    display: block;
+    padding: 24px 0;
+  }
+  nav .nav-icons {
+    width: 100%;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  nav .nav-icons .icon {
+    margin: 0 30px 0 15px;
+    max-width: 25px;
+  }
+  nav .burger {
+    display: block;
+  }
+  nav .nav-active {
+    right: 0%;
+  }
+}
+
+@media (max-width: 768px) {
+  nav .logo {
+    margin: 0 8px;
+  }
+  nav .nav-links {
+    width: 100%;
+  }
+  nav .nav-icons {
+    width: 50%;
+    margin-left: 16px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  nav .nav-icons .icon {
+    margin: 0;
+  }
+}
+
+@-webkit-keyframes navLinkFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
 }
 
 footer {
@@ -469,21 +552,8 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  transform: translateX(-50%);
-=======
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
->>>>>>> denis
-=======
-  transform: translateX(-50%);
->>>>>>> chickhack
-=======
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
->>>>>>> denis
 }
 
 .quantity label {
@@ -532,49 +602,20 @@ input[type=number] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  justify-content: center;
-=======
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-=======
-  justify-content: center;
->>>>>>> chickhack
-  font-size: 42px;
->>>>>>> denis
-=======
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
->>>>>>> denis
 }
 
 div.tabList {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
-<<<<<<< HEAD
-  justify-content: center;
-  column-gap: 1%;
-<<<<<<< HEAD
-=======
-=======
->>>>>>> denis
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-column-gap: 1%;
           column-gap: 1%;
-<<<<<<< HEAD
->>>>>>> denis
-=======
->>>>>>> chickhack
-=======
->>>>>>> denis
 }
 
 div.tabList button {
@@ -596,19 +637,8 @@ div.tabList button.active {
 }
 
 .tab-inner {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
   display: -webkit-box;
   display: -ms-flexbox;
->>>>>>> denis
-=======
->>>>>>> chickhack
-=======
-  display: -webkit-box;
-  display: -ms-flexbox;
->>>>>>> denis
   display: flex;
 }
 
@@ -616,23 +646,10 @@ div.tabList button.active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
-<<<<<<< HEAD
-  flex-direction: column;
-<<<<<<< HEAD
-=======
-=======
->>>>>>> denis
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-<<<<<<< HEAD
->>>>>>> denis
-=======
->>>>>>> chickhack
-=======
->>>>>>> denis
   text-align: left;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -649,23 +666,10 @@ div.tabList button.active {
   max-width: 400px;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> denis
 .tab-inner .taball .data {
   border: 1px solid #AD6E4A;
   display: -webkit-box;
   display: -ms-flexbox;
-<<<<<<< HEAD
->>>>>>> denis
-=======
-.tab-inner .data {
-  border: 1px solid #AD6E4A;
->>>>>>> chickhack
-=======
->>>>>>> denis
   display: flex;
   font-family: Haettenschweiler, sans-serif;
 }
@@ -749,48 +753,19 @@ div.tabList button.active {
 }
 
 .tab-inner button {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
   display: none;
-=======
-=======
->>>>>>> chickhack
-  background-color: transparent;
-  color: #AD6E4A;
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
->>>>>>> denis
-=======
-  display: none;
->>>>>>> denis
 }
 
 .planet_content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
-<<<<<<< HEAD
-  flex-wrap: wrap;
-<<<<<<< HEAD
-=======
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
->>>>>>> denis
 }
 
 .planet_content .carousel {
   display: none;
-<<<<<<< HEAD
-=======
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
->>>>>>> denis
-=======
->>>>>>> chickhack
-=======
->>>>>>> denis
 }
 
 .planet_content .imgs {
@@ -798,20 +773,8 @@ div.tabList button.active {
 }
 
 .planet_content .imgs .img1 {
-<<<<<<< HEAD
-<<<<<<< HEAD
-  transform: translate(40%);
-<<<<<<< HEAD
-=======
   -webkit-transform: translate(40%);
           transform: translate(40%);
->>>>>>> denis
-=======
->>>>>>> chickhack
-=======
-  -webkit-transform: translate(40%);
-          transform: translate(40%);
->>>>>>> denis
 }
 
 .planet_content .imgs .img2 {
@@ -828,23 +791,9 @@ div.tabList button.active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  align-items: center;
-=======
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
->>>>>>> denis
-=======
-  align-items: center;
->>>>>>> chickhack
-=======
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
->>>>>>> denis
 }
 
 .planet_content .desc p {

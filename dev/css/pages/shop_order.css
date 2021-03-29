@@ -78,27 +78,11 @@ body {
   font-size: 14px;
   background-color: #0c0d18;
   overflow-x: hidden;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  -o-user-select: none;
-  user-select: none;
-=======
-=======
->>>>>>> denis
   -webkit-user-select: none;
   -moz-user-select: none;
   -o-user-select: none;
   -ms-user-select: none;
       user-select: none;
-<<<<<<< HEAD
->>>>>>> denis
-=======
-  -o-user-select: none;
-  user-select: none;
->>>>>>> chickhack
-=======
->>>>>>> denis
 }
 
 h1, .h1 {
@@ -321,6 +305,10 @@ small, .small {
   margin: 0 auto;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -331,8 +319,7 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: center;
   background-color: #0c0d18;
   position: -webkit-sticky;
   position: sticky;
@@ -346,12 +333,13 @@ nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-  background-image: url("../../img/logo.png");
+  background-image: url("../../img/icon/header/logo.png");
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
-  width: 200px;
+  max-width: 200px;
   height: 30px;
+  margin: 0 8px;
 }
 
 nav .nav-links {
@@ -367,11 +355,13 @@ nav .nav-links {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  width: 60%;
+  width: 75%;
 }
 
 nav .nav-links a {
+  width: 100%;
   color: #ffffff;
+  padding: 8px;
 }
 
 nav .nav-icons {
@@ -387,10 +377,12 @@ nav .nav-icons {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 12%;
+  margin-left: 50px;
 }
 
 nav .burger {
   display: none;
+  cursor: pointer;
 }
 
 nav .burger div {
@@ -398,6 +390,107 @@ nav .burger div {
   height: 2px;
   background-color: #ffffff;
   margin: 5px;
+}
+
+@media (max-width: 992px) {
+  nav {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  nav .nav-links {
+    position: absolute;
+    right: -100%;
+    height: 92vh;
+    top: 12vh;
+    background-color: #AD6E4A;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    -webkit-transition: all 1s ease-in;
+    transition: all 1s ease-in;
+  }
+  nav .nav-links li {
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+    opacity: 0;
+  }
+  nav .nav-links li a {
+    display: block;
+    padding: 24px 0;
+  }
+  nav .nav-icons {
+    width: 100%;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  nav .nav-icons .icon {
+    margin: 0 30px 0 15px;
+    max-width: 25px;
+  }
+  nav .burger {
+    display: block;
+  }
+  nav .nav-active {
+    right: 0%;
+  }
+}
+
+@media (max-width: 768px) {
+  nav .logo {
+    margin: 0 8px;
+  }
+  nav .nav-links {
+    width: 100%;
+  }
+  nav .nav-icons {
+    width: 50%;
+    margin-left: 16px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  nav .nav-icons .icon {
+    margin: 0;
+  }
+}
+
+@-webkit-keyframes navLinkFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
 }
 
 footer {
@@ -712,54 +805,17 @@ section.orderer .arrow {
   cursor: pointer;
 }
 
-<<<<<<< HEAD
 section.orderer .arrow img {
   -webkit-transition: all .5s;
   transition: all .5s;
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
-<<<<<<< HEAD
->>>>>>> denis
-=======
-section.orderer .orderer_click::before, section.orderer .recipient_click::before, section.orderer .payment_click::before {
-  content: "";
-  width: 1px;
-  height: 30%;
-  background-color: #ffffff;
-  position: absolute;
-  left: -3.1%;
-  transform: rotate(45deg) translateY(-60%);
-  top: 50%;
-}
-
-section.orderer .orderer_click::after, section.orderer .recipient_click::after, section.orderer .payment_click::after {
-  content: "";
-  width: 1px;
-  height: 30%;
-  background-color: #ffffff;
-  left: -3%;
-  position: absolute;
-  transform: rotate(-45deg) translateY(-60%);
-  top: 50%;
->>>>>>> chickhack
-=======
->>>>>>> denis
 }
 
 section.orderer .info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
-<<<<<<< HEAD
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: space-between;
-<<<<<<< HEAD
-=======
-=======
->>>>>>> denis
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -771,12 +827,6 @@ section.orderer .info {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-<<<<<<< HEAD
->>>>>>> denis
-=======
->>>>>>> chickhack
-=======
->>>>>>> denis
   width: 80%;
   margin-left: 6%;
 }
@@ -922,6 +972,45 @@ section.orderer .checkbox_group .checkbox_custom:checked + .checkbox_custom_labe
 
 section.orderer .checkbox_group .checkbox_custom:focus + .checkbox_custom-label {
   outline: 1px solid #ddd;
+}
+
+section.orderer .checkbox_group #discount {
+  width: 30%;
+}
+
+@media all and (max-width: 768px) {
+  section.orderer .checkbox_group #discount {
+    width: 70%;
+  }
+}
+
+section.orderer .credit_icon {
+  font-size: 2rem;
+  min-width: 200px;
+}
+
+section.orderer .credit_icon svg {
+  fill: none;
+  opacity: 0.5;
+  background-color: transparent;
+}
+
+section.orderer .credit_icon svg.use {
+  opacity: 1;
+  color: #AD6E4A;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+section.orderer .credit_icon input {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+@media all and (max-width: 768px) {
+  section.orderer .credit_icon input {
+    width: 75%;
+  }
 }
 
 section.orderer .button_min {

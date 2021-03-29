@@ -78,27 +78,11 @@ body {
   font-size: 14px;
   background-color: #0c0d18;
   overflow-x: hidden;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  -o-user-select: none;
-  user-select: none;
-=======
-=======
->>>>>>> denis
   -webkit-user-select: none;
   -moz-user-select: none;
   -o-user-select: none;
   -ms-user-select: none;
       user-select: none;
-<<<<<<< HEAD
->>>>>>> denis
-=======
-  -o-user-select: none;
-  user-select: none;
->>>>>>> chickhack
-=======
->>>>>>> denis
 }
 
 h1, .h1 {
@@ -321,6 +305,10 @@ small, .small {
   margin: 0 auto;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -331,8 +319,7 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: center;
   background-color: #0c0d18;
   position: -webkit-sticky;
   position: sticky;
@@ -346,12 +333,13 @@ nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-  background-image: url("../../img/logo.png");
+  background-image: url("../../img/icon/header/logo.png");
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
-  width: 200px;
+  max-width: 200px;
   height: 30px;
+  margin: 0 8px;
 }
 
 nav .nav-links {
@@ -367,11 +355,13 @@ nav .nav-links {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  width: 60%;
+  width: 75%;
 }
 
 nav .nav-links a {
+  width: 100%;
   color: #ffffff;
+  padding: 8px;
 }
 
 nav .nav-icons {
@@ -387,10 +377,12 @@ nav .nav-icons {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 12%;
+  margin-left: 50px;
 }
 
 nav .burger {
   display: none;
+  cursor: pointer;
 }
 
 nav .burger div {
@@ -398,6 +390,107 @@ nav .burger div {
   height: 2px;
   background-color: #ffffff;
   margin: 5px;
+}
+
+@media (max-width: 992px) {
+  nav {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  nav .nav-links {
+    position: absolute;
+    right: -100%;
+    height: 92vh;
+    top: 12vh;
+    background-color: #AD6E4A;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    -webkit-transition: all 1s ease-in;
+    transition: all 1s ease-in;
+  }
+  nav .nav-links li {
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+    opacity: 0;
+  }
+  nav .nav-links li a {
+    display: block;
+    padding: 24px 0;
+  }
+  nav .nav-icons {
+    width: 100%;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  nav .nav-icons .icon {
+    margin: 0 30px 0 15px;
+    max-width: 25px;
+  }
+  nav .burger {
+    display: block;
+  }
+  nav .nav-active {
+    right: 0%;
+  }
+}
+
+@media (max-width: 768px) {
+  nav .logo {
+    margin: 0 8px;
+  }
+  nav .nav-links {
+    width: 100%;
+  }
+  nav .nav-icons {
+    width: 50%;
+    margin-left: 16px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  nav .nav-icons .icon {
+    margin: 0;
+  }
+}
+
+@-webkit-keyframes navLinkFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
 }
 
 footer {
@@ -511,6 +604,12 @@ nav {
   height: 100vh;
 }
 
+@media only screen and (max-width: 1200px) {
+  .banner_bg {
+    height: 100vh;
+  }
+}
+
 .frame {
   border: 1px solid #ad6e4a57;
   margin: 0 auto;
@@ -525,23 +624,9 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  justify-content: center;
-=======
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
->>>>>>> denis
-=======
-  justify-content: center;
->>>>>>> chickhack
-=======
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
->>>>>>> denis
   margin-top: 20vh;
 }
 
@@ -570,24 +655,10 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  flex-direction: column;
-=======
-=======
->>>>>>> denis
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-<<<<<<< HEAD
->>>>>>> denis
-=======
-  flex-direction: column;
->>>>>>> chickhack
-=======
->>>>>>> denis
 }
 
 .home_intro h2 {
@@ -612,45 +683,8 @@ button {
 }
 
 .tab-inner {
-<<<<<<< HEAD
-  display: flex;
-}
-
-.tab-inner .taball {
-  display: flex;
-  flex-direction: column;
-=======
-ul.tab-title a {
-  font-size: 1rem;
-}
-
-.tabList {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.tabList button {
-  border: none;
-  background-color: transparent;
-  color: #AD6E4A;
-}
-
-.tab-inner {
-<<<<<<< HEAD
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-=======
->>>>>>> denis
-  display: -webkit-box;
-  display: -ms-flexbox;
-=======
-  justify-content: center;
->>>>>>> chickhack
   display: flex;
 }
 
@@ -658,18 +692,10 @@ ul.tab-title a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-<<<<<<< HEAD
->>>>>>> denis
-=======
-  flex-direction: column;
->>>>>>> chickhack
-=======
->>>>>>> denis
   text-align: left;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -687,27 +713,11 @@ ul.tab-title a {
 }
 
 .tab-inner .data {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> denis
   border: 1px solid #AD6E4A;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   font-family: Haettenschweiler, sans-serif;
-<<<<<<< HEAD
-=======
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
->>>>>>> denis
-=======
-  justify-content: flex-start;
->>>>>>> chickhack
-=======
->>>>>>> denis
 }
 
 .tab-inner .data .grav {
@@ -729,11 +739,6 @@ ul.tab-title a {
   border-right: 1px solid #AD6E4A;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> denis
 .tab-inner .data .day {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -794,6 +799,7 @@ ul.tab-title a {
 }
 
 .tab-inner button {
+  display: block;
   background-color: transparent;
   color: #AD6E4A;
   -webkit-transform: translateX(-100%);
@@ -804,43 +810,9 @@ ul.tab-title a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.gallery .box {
-  display: -webkit-box;
-  display: -ms-flexbox;
->>>>>>> denis
-=======
-.tab-inner .tab-active {
-  display: flex;
-  justify-content: center;
-}
-
-.gallery .box {
->>>>>>> chickhack
-  display: flex;
 }
 
 .gallery .topleft {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> chickhack
-  display: flex;
-  flex-direction: row;
-  max-height: 500px;
-  align-items: flex-end;
-<<<<<<< HEAD
-=======
-=======
-}
-
-.gallery .topleft {
->>>>>>> denis
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -852,12 +824,6 @@ ul.tab-title a {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-<<<<<<< HEAD
->>>>>>> denis
-=======
->>>>>>> chickhack
-=======
->>>>>>> denis
 }
 
 .gallery .topleft .A {
@@ -873,22 +839,6 @@ ul.tab-title a {
 }
 
 .gallery .topright {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> chickhack
-  display: flex;
-  flex-direction: column;
-}
-
-.gallery .topright .topSct {
-  display: flex;
-  justify-content: space-around;
-<<<<<<< HEAD
-=======
-=======
->>>>>>> denis
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -904,12 +854,6 @@ ul.tab-title a {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-<<<<<<< HEAD
->>>>>>> denis
-=======
->>>>>>> chickhack
-=======
->>>>>>> denis
 }
 
 .gallery .topright button.btn {
@@ -919,28 +863,12 @@ ul.tab-title a {
 }
 
 .gallery .topright .galleryIntro {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  display: flex;
-  justify-content: center;
-=======
-=======
->>>>>>> denis
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-<<<<<<< HEAD
->>>>>>> denis
-=======
-  display: flex;
-  justify-content: center;
->>>>>>> chickhack
-=======
->>>>>>> denis
 }
 
 .gallery .topright .galleryIntro h5 {
@@ -949,14 +877,6 @@ ul.tab-title a {
 }
 
 .gallery .bottomleft {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  display: flex;
-  flex-direction: row;
-=======
-=======
->>>>>>> denis
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -964,14 +884,6 @@ ul.tab-title a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-<<<<<<< HEAD
->>>>>>> denis
-=======
-  display: flex;
-  flex-direction: row;
->>>>>>> chickhack
-=======
->>>>>>> denis
   max-height: 500px;
 }
 
@@ -995,14 +907,6 @@ ul.tab-title a {
 }
 
 .home_shop {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  display: flex;
-  flex-direction: column;
-=======
-=======
->>>>>>> denis
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1010,14 +914,6 @@ ul.tab-title a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-<<<<<<< HEAD
->>>>>>> denis
-=======
-  display: flex;
-  flex-direction: column;
->>>>>>> chickhack
-=======
->>>>>>> denis
 }
 
 .home_shop .button_min {
@@ -1050,15 +946,6 @@ ul.tab-title a {
   overflow: hidden;
   top: 0;
   left: 0;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  display: flex;
-  justify-content: center;
-  align-items: center;
-=======
-=======
->>>>>>> denis
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1068,29 +955,12 @@ ul.tab-title a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-<<<<<<< HEAD
->>>>>>> denis
-=======
-  display: flex;
-  justify-content: center;
-  align-items: center;
->>>>>>> chickhack
-=======
->>>>>>> denis
 }
 
 .home_shop .shopItem .hovereffect img {
   display: block;
   position: relative;
   max-width: none;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  transition: opacity 0.35s, transform 0.35s;
-  transform: translate3d(-10px, 0, 0);
-=======
-=======
->>>>>>> denis
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
@@ -1098,46 +968,18 @@ ul.tab-title a {
   -webkit-transform: translate3d(-10px, 0, 0);
   transform: translate3d(-10px, 0, 0);
   -webkit-backface-visibility: hidden;
-<<<<<<< HEAD
->>>>>>> denis
-=======
-  transition: opacity 0.35s, transform 0.35s;
-  transform: translate3d(-10px, 0, 0);
->>>>>>> chickhack
-=======
->>>>>>> denis
   backface-visibility: hidden;
 }
 
 .home_shop .shopItem .hovereffect:hover img {
   opacity: 0.4;
   filter: alpha(opacity=40);
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
   -webkit-transform: translate3d(0, 0, 0);
->>>>>>> denis
-=======
->>>>>>> chickhack
-=======
-  -webkit-transform: translate3d(0, 0, 0);
->>>>>>> denis
   transform: translate3d(0, 0, 0);
 }
 
 .home_shop .shopItem .hovereffect:hover h2:after {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
   -webkit-transform: translate3d(0, 0, 0);
->>>>>>> denis
-=======
->>>>>>> chickhack
-=======
-  -webkit-transform: translate3d(0, 0, 0);
->>>>>>> denis
   transform: translate3d(0, 0, 0);
 }
 
@@ -1145,42 +987,18 @@ ul.tab-title a {
   color: #FFF;
   opacity: 0;
   filter: alpha(opacity=0);
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  transition: opacity 0.35s, transform 0.35s;
-=======
-=======
->>>>>>> denis
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
   transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
   -webkit-transform: translate3d(100%, 0, 0);
-<<<<<<< HEAD
->>>>>>> denis
-=======
-  transition: opacity 0.35s, transform 0.35s;
->>>>>>> chickhack
-=======
->>>>>>> denis
   transform: translate3d(100%, 0, 0);
 }
 
 .home_shop .shopItem .hovereffect:hover a, .home_shop .shopItem .hovereffect:hover h2 {
   opacity: 1;
   filter: alpha(opacity=100);
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
   -webkit-transform: translate3d(0, 0, 0);
->>>>>>> denis
-=======
->>>>>>> chickhack
-=======
-  -webkit-transform: translate3d(0, 0, 0);
->>>>>>> denis
   transform: translate3d(0, 0, 0);
 }
 
@@ -1200,21 +1018,8 @@ ul.tab-title a {
 
 .home_shop .shopItem .item2 .hovereffect {
   z-index: 1;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  transform: translate(110%, -20%);
-=======
   -webkit-transform: translate(110%, -20%);
           transform: translate(110%, -20%);
->>>>>>> denis
-=======
-  transform: translate(110%, -20%);
->>>>>>> chickhack
-=======
-  -webkit-transform: translate(110%, -20%);
-          transform: translate(110%, -20%);
->>>>>>> denis
   max-height: 450px;
   max-width: 220px;
 }
@@ -1224,42 +1029,16 @@ ul.tab-title a {
 }
 
 .home_shop .shopItem .item3 .hovereffect {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  transform: translate(150%, -100%);
-=======
   -webkit-transform: translate(150%, -100%);
           transform: translate(150%, -100%);
->>>>>>> denis
-=======
-  transform: translate(150%, -100%);
->>>>>>> chickhack
-=======
-  -webkit-transform: translate(150%, -100%);
-          transform: translate(150%, -100%);
->>>>>>> denis
   max-height: 270px;
   max-width: 275px;
 }
 
 .home_shop .shopItem .item4 .hovereffect {
   z-index: 1;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  transform: translate(255%, -260%);
-=======
   -webkit-transform: translate(255%, -260%);
           transform: translate(255%, -260%);
->>>>>>> denis
-=======
-  transform: translate(255%, -260%);
->>>>>>> chickhack
-=======
-  -webkit-transform: translate(255%, -260%);
-          transform: translate(255%, -260%);
->>>>>>> denis
   max-height: 270px;
   max-width: 280px;
 }
@@ -1269,21 +1048,8 @@ ul.tab-title a {
 }
 
 .home_shop .shopItem .item5 .hovereffect {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  transform: translate(260%, -310%);
-=======
   -webkit-transform: translate(260%, -310%);
           transform: translate(260%, -310%);
->>>>>>> denis
-=======
-  transform: translate(260%, -310%);
->>>>>>> chickhack
-=======
-  -webkit-transform: translate(260%, -310%);
-          transform: translate(260%, -310%);
->>>>>>> denis
   max-height: 296px;
   max-width: 300px;
 }
@@ -1293,29 +1059,6 @@ ul.tab-title a {
 }
 
 .flow_member {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> chickhack
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.flow_member .flowall {
-  display: flex;
-  justify-content: center;
-  column-gap: 10%;
-}
-
-.flow_member .flowall .flow {
-  display: flex;
-  flex-direction: column;
-<<<<<<< HEAD
-=======
-=======
->>>>>>> denis
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1347,12 +1090,6 @@ ul.tab-title a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-<<<<<<< HEAD
->>>>>>> denis
-=======
->>>>>>> chickhack
-=======
->>>>>>> denis
   text-align: center;
 }
 

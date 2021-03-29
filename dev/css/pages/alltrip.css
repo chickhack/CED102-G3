@@ -78,27 +78,11 @@ body {
   font-size: 14px;
   background-color: #0c0d18;
   overflow-x: hidden;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  -o-user-select: none;
-  user-select: none;
-=======
-=======
->>>>>>> denis
   -webkit-user-select: none;
   -moz-user-select: none;
   -o-user-select: none;
   -ms-user-select: none;
       user-select: none;
-<<<<<<< HEAD
->>>>>>> denis
-=======
-  -o-user-select: none;
-  user-select: none;
->>>>>>> chickhack
-=======
->>>>>>> denis
 }
 
 h1, .h1 {
@@ -321,6 +305,10 @@ small, .small {
   margin: 0 auto;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -331,20 +319,9 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: center;
   background-color: #0c0d18;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
   position: -webkit-sticky;
->>>>>>> denis
-=======
->>>>>>> chickhack
-=======
-  position: -webkit-sticky;
->>>>>>> denis
   position: sticky;
   top: 0;
   width: 100%;
@@ -356,12 +333,13 @@ nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-  background-image: url("../../img/logo.png");
+  background-image: url("../../img/icon/header/logo.png");
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
-  width: 200px;
+  max-width: 200px;
   height: 30px;
+  margin: 0 8px;
 }
 
 nav .nav-links {
@@ -377,11 +355,13 @@ nav .nav-links {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  width: 60%;
+  width: 75%;
 }
 
 nav .nav-links a {
+  width: 100%;
   color: #ffffff;
+  padding: 8px;
 }
 
 nav .nav-icons {
@@ -397,10 +377,12 @@ nav .nav-icons {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 12%;
+  margin-left: 50px;
 }
 
 nav .burger {
   display: none;
+  cursor: pointer;
 }
 
 nav .burger div {
@@ -408,6 +390,107 @@ nav .burger div {
   height: 2px;
   background-color: #ffffff;
   margin: 5px;
+}
+
+@media (max-width: 992px) {
+  nav {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  nav .nav-links {
+    position: absolute;
+    right: -100%;
+    height: 92vh;
+    top: 12vh;
+    background-color: #AD6E4A;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    -webkit-transition: all 1s ease-in;
+    transition: all 1s ease-in;
+  }
+  nav .nav-links li {
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+    opacity: 0;
+  }
+  nav .nav-links li a {
+    display: block;
+    padding: 24px 0;
+  }
+  nav .nav-icons {
+    width: 100%;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  nav .nav-icons .icon {
+    margin: 0 30px 0 15px;
+    max-width: 25px;
+  }
+  nav .burger {
+    display: block;
+  }
+  nav .nav-active {
+    right: 0%;
+  }
+}
+
+@media (max-width: 768px) {
+  nav .logo {
+    margin: 0 8px;
+  }
+  nav .nav-links {
+    width: 100%;
+  }
+  nav .nav-icons {
+    width: 50%;
+    margin-left: 16px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  nav .nav-icons .icon {
+    margin: 0;
+  }
+}
+
+@-webkit-keyframes navLinkFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
 }
 
 footer {
@@ -469,14 +552,8 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  transform: translateX(-50%);
-=======
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
->>>>>>> denis
 }
 
 .quantity label {
@@ -514,16 +591,6 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
-<<<<<<< HEAD
-=======
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
->>>>>>> denis
-=======
-  transform: translateX(-50%);
->>>>>>> chickhack
-=======
->>>>>>> denis
 }
 
 div.bk {
@@ -564,19 +631,8 @@ div.bk3 {
 }
 
 .first {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
   display: -webkit-box;
   display: -ms-flexbox;
->>>>>>> denis
-=======
->>>>>>> chickhack
-=======
-  display: -webkit-box;
-  display: -ms-flexbox;
->>>>>>> denis
   display: flex;
   max-width: 1200px;
   margin: 0 auto;
@@ -641,20 +697,9 @@ div.bk3 {
 }
 
 .first .first_right .hottrip {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> denis
   top: 15vh;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
-<<<<<<< HEAD
->>>>>>> denis
-=======
->>>>>>> chickhack
-=======
->>>>>>> denis
   display: inline-flex;
   padding-top: 96px;
 }
@@ -707,19 +752,8 @@ div.bk3 {
 }
 
 .first .first_right div.planet_top div.word .tag {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
->>>>>>> denis
-=======
->>>>>>> chickhack
-=======
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
->>>>>>> denis
   display: inline-flex;
   border: 1px solid #C9ADA7;
   border-radius: 5px;
@@ -755,11 +789,6 @@ div.bk3 {
   padding-right: 4px;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> denis
 .first .first_right div.planet_top div.word .addin:hover {
   background-color: #bf896b;
 }
@@ -767,13 +796,6 @@ div.bk3 {
 .first .tripselect {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
-<<<<<<< HEAD
->>>>>>> denis
-=======
-.first .tripselect {
->>>>>>> chickhack
-=======
->>>>>>> denis
   display: inline-flex;
   width: 280px;
   -webkit-box-pack: justify;
@@ -800,26 +822,8 @@ div.bk3 {
 }
 
 .stepsection .stepall {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> denis
   max-width: 1000px;
-=======
-  max-width: 1200px;
->>>>>>> chickhack
   margin: 0 auto;
-<<<<<<< HEAD
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-<<<<<<< HEAD
-=======
-  max-width: 1200px;
-  margin: 0 auto;
-=======
->>>>>>> denis
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -829,12 +833,6 @@ div.bk3 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-<<<<<<< HEAD
->>>>>>> denis
-=======
->>>>>>> chickhack
-=======
->>>>>>> denis
   padding: 32px;
 }
 
@@ -897,15 +895,6 @@ div.bk3 {
 }
 
 .second .tripcard_all {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  display: inline-flex;
-  justify-content: center;
-  flex-wrap: wrap;
-=======
-=======
->>>>>>> denis
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -914,15 +903,6 @@ div.bk3 {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-<<<<<<< HEAD
->>>>>>> denis
-=======
-  display: inline-flex;
-  justify-content: center;
-  flex-wrap: wrap;
->>>>>>> chickhack
-=======
->>>>>>> denis
   width: 100%;
 }
 
@@ -967,19 +947,8 @@ div.bk3 {
 }
 
 .second .tripcard_all .tripcard .tag {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
->>>>>>> denis
-=======
->>>>>>> chickhack
-=======
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
->>>>>>> denis
   display: inline-flex;
   border: 1px solid #C9ADA7;
   border-radius: 5px;
