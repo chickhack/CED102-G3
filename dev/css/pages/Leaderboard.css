@@ -77,11 +77,13 @@
 
 .banner {
   margin: 0 auto;
-  background-image: url(../../img/trip/others/ivan-diaz-dmhv60RLmlw-unsplash.jpg);
-  background-repeat: no-repeat;
   width: 100%;
-  padding-top: 20%;
   position: relative;
+}
+
+.banner img {
+  width: 100%;
+  object-fit: cover;
 }
 
 .banner h4 {
