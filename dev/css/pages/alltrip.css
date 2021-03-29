@@ -78,27 +78,11 @@ body {
   font-size: 14px;
   background-color: #0c0d18;
   overflow-x: hidden;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> denis
   -webkit-user-select: none;
   -moz-user-select: none;
   -o-user-select: none;
   -ms-user-select: none;
       user-select: none;
-<<<<<<< HEAD
-=======
-  -o-user-select: none;
-  user-select: none;
->>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
-=======
-  -o-user-select: none;
-  user-select: none;
->>>>>>> chickhack
-=======
->>>>>>> denis
 }
 
 h1, .h1 {
@@ -329,11 +313,6 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> denis
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -342,24 +321,7 @@ nav {
           align-items: center;
   justify-content: center;
   background-color: #0c0d18;
-<<<<<<< HEAD
-  position: -webkit-sticky;
-=======
-  justify-content: center;
-  align-items: center;
-  justify-content: center;
-  background-color: #0c0d18;
->>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
-=======
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
-  background-color: #0c0d18;
->>>>>>> chickhack
-  position: sticky;
-=======
   position: fixed;
->>>>>>> denis
   top: 0;
   width: 100%;
   min-height: 12vh;
@@ -370,11 +332,7 @@ nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-<<<<<<< HEAD
   background-image: url("../../img/icon/header/logo.png");
-=======
-  background-image: url("../img/logo.png");
->>>>>>> chickhack
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -387,11 +345,6 @@ nav .nav-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> denis
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -402,12 +355,6 @@ nav .nav-links {
       -ms-flex-pack: end;
           justify-content: flex-end;
   width: 75%;
-=======
-  justify-content: center;
-  align-items: center;
-  justify-content: flex-end;
-  width: 60%;
->>>>>>> chickhack
 }
 
 nav .nav-links a {
@@ -592,17 +539,9 @@ footer .links .footer-links a {
 footer .footer_moon {
   position: relative;
   left: 50%;
-<<<<<<< HEAD
   max-width: 40%;
-<<<<<<< HEAD
-=======
-  max-width: 550px;
->>>>>>> chickhack
-  transform: translateX(-50%);
-=======
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
->>>>>>> denis
 }
 
 footer .smoke {
@@ -611,19 +550,8 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-=======
-=======
->>>>>>> chickhack
-  transform: translateX(-50%);
-=======
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
->>>>>>> denis
 }
 
 @media (max-width: 768px) {
@@ -713,19 +641,8 @@ div.bk3 {
 }
 
 .first {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
-=======
->>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
-=======
->>>>>>> chickhack
-=======
-  display: -webkit-box;
-  display: -ms-flexbox;
->>>>>>> denis
   display: flex;
   max-width: 1200px;
   margin: 0 auto;
@@ -791,19 +708,8 @@ div.bk3 {
 
 .first .first_right .hottrip {
   top: 15vh;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
-=======
->>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
-=======
->>>>>>> chickhack
-=======
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
->>>>>>> denis
   display: inline-flex;
   padding-top: 96px;
 }
@@ -856,19 +762,8 @@ div.bk3 {
 }
 
 .first .first_right div.planet_top div.word .tag {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
-=======
->>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
-=======
->>>>>>> chickhack
-=======
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
->>>>>>> denis
   display: inline-flex;
   border: 1px solid #C9ADA7;
   border-radius: 5px;
@@ -909,19 +804,8 @@ div.bk3 {
 }
 
 .first .tripselect {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
-=======
->>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
-=======
->>>>>>> chickhack
-=======
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
->>>>>>> denis
   display: inline-flex;
   width: 280px;
   -webkit-box-pack: justify;
@@ -950,11 +834,6 @@ div.bk3 {
 .stepsection .stepall {
   max-width: 1000px;
   margin: 0 auto;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> denis
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -964,19 +843,6 @@ div.bk3 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-<<<<<<< HEAD
-=======
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
->>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
-=======
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
->>>>>>> chickhack
-=======
->>>>>>> denis
   padding: 32px;
 }
 
@@ -1039,11 +905,6 @@ div.bk3 {
 }
 
 .second .tripcard_all {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> denis
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -1052,19 +913,6 @@ div.bk3 {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-<<<<<<< HEAD
-=======
-  display: inline-flex;
-  justify-content: center;
-  flex-wrap: wrap;
->>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
-=======
-  display: inline-flex;
-  justify-content: center;
-  flex-wrap: wrap;
->>>>>>> chickhack
-=======
->>>>>>> denis
   width: 100%;
 }
 
@@ -1109,19 +957,8 @@ div.bk3 {
 }
 
 .second .tripcard_all .tripcard .tag {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
-=======
->>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
-=======
->>>>>>> chickhack
-=======
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
->>>>>>> denis
   display: inline-flex;
   border: 1px solid #C9ADA7;
   border-radius: 5px;

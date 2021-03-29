@@ -79,27 +79,11 @@ body {
   font-size: 14px;
   background-color: #0c0d18;
   overflow-x: hidden;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> denis
   -webkit-user-select: none;
   -moz-user-select: none;
   -o-user-select: none;
   -ms-user-select: none;
       user-select: none;
-<<<<<<< HEAD
-=======
-  -o-user-select: none;
-  user-select: none;
->>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
-=======
-  -o-user-select: none;
-  user-select: none;
->>>>>>> chickhack
-=======
->>>>>>> denis
 }
 
 h1, .h1 {
@@ -330,11 +314,6 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> denis
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -343,24 +322,7 @@ nav {
           align-items: center;
   justify-content: center;
   background-color: #0c0d18;
-<<<<<<< HEAD
-  position: -webkit-sticky;
-=======
-  justify-content: center;
-  align-items: center;
-  justify-content: center;
-  background-color: #0c0d18;
->>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
-=======
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
-  background-color: #0c0d18;
->>>>>>> chickhack
-  position: sticky;
-=======
   position: fixed;
->>>>>>> denis
   top: 0;
   width: 100%;
   min-height: 12vh;
@@ -371,11 +333,7 @@ nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-<<<<<<< HEAD
   background-image: url("../../img/icon/header/logo.png");
-=======
-  background-image: url("../img/logo.png");
->>>>>>> chickhack
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -388,11 +346,6 @@ nav .nav-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> denis
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -403,12 +356,6 @@ nav .nav-links {
       -ms-flex-pack: end;
           justify-content: flex-end;
   width: 75%;
-=======
-  justify-content: center;
-  align-items: center;
-  justify-content: flex-end;
-  width: 60%;
->>>>>>> chickhack
 }
 
 nav .nav-links a {
@@ -593,17 +540,9 @@ footer .links .footer-links a {
 footer .footer_moon {
   position: relative;
   left: 50%;
-<<<<<<< HEAD
   max-width: 40%;
-<<<<<<< HEAD
-=======
-  max-width: 550px;
->>>>>>> chickhack
-  transform: translateX(-50%);
-=======
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
->>>>>>> denis
 }
 
 footer .smoke {
@@ -612,11 +551,6 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> denis
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
@@ -631,13 +565,6 @@ footer .smoke {
   footer .footer_moon {
     min-width: 250px;
   }
-<<<<<<< HEAD
->>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
-=======
-  transform: translateX(-50%);
->>>>>>> chickhack
-=======
->>>>>>> denis
 }
 
 .quantity label {
@@ -684,11 +611,6 @@ body {
 /* 歡迎會員 字體大小、字型位置 */
 .welcome {
   padding: 15vh 250px 0px 250px;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> denis
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -698,19 +620,6 @@ body {
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
-<<<<<<< HEAD
-=======
-  display: flex;
-  align-items: center;
-  justify-content: left;
->>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
-=======
-  display: flex;
-  align-items: center;
-  justify-content: left;
->>>>>>> chickhack
-=======
->>>>>>> denis
 }
 
 .spacedinfo {

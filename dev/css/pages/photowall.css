@@ -42,7 +42,7 @@ body {
      object-fit: cover;
 }
 
-.grid .grid-item:nth-child(n+9) {
+.grid .grid-item:nth-child(n+11) {
   display: none;
 }
 
@@ -50,10 +50,14 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  bottom: 45px;
+  bottom: 44px;
   background-color: black;
   opacity: 0.5;
   position: relative;
+}
+
+.action-box .heart img, .action-box .message img {
+  padding-top: 2px;
 }
 
 .heart, .share, .message {
@@ -73,7 +77,6 @@ body {
 }
 
 .article_all .article .member_photo {
-  margin-right: 9px;
   padding: 15px;
 }
 
@@ -85,6 +88,7 @@ body {
   line-height: 78px;
   color: #fff;
   margin-right: 10px;
+  font-weight: 900;
 }
 
 .post_time {
@@ -175,6 +179,9 @@ button.turnoff_lightbox {
 
 button.turnoff_lightbox img {
   width: 40px;
+  position: absolute;
+  top: 5px;
+  right: 10px;
 }
 
 .img-switch {
@@ -228,8 +235,9 @@ button.turnoff_lightbox img {
 
 .member_info .name {
   color: white;
-  margin: 0 24px;
+  margin: 0 15px;
   line-height: 49px;
+  font-weight: 900;
 }
 
 .member_info a button {
@@ -259,21 +267,24 @@ button.turnoff_lightbox img {
 
 .movement img.collection {
   margin-right: 20px;
-  max-width: 25px;
+  max-width: 23px;
+  padding-top: 10px;
 }
 
 .movement img.sharing {
-  margin-right: 68%;
+  margin-right: 73%;
   max-width: 25px;
 }
 
 .movement img.more {
   max-width: 25px;
+  opacity: .5;
 }
 
 .message_1 .name, .message_2 .name, .message_3 .name {
-  margin: 0 24px;
+  margin: 0 15px;
   line-height: 49px;
+  font-weight: 900;
 }
 
 .message_text .message_title {
@@ -312,7 +323,7 @@ form.post_message input {
 }
 
 .message_1 .message_1_more img, .message_2 .message_2_more img, .message_3 .message_3_more img {
-  margin-left: 50px;
+  margin-left: 70px;
   max-width: 25px;
   opacity: .5;
 }
