@@ -79,16 +79,11 @@ body {
   font-size: 14px;
   background-color: #0c0d18;
   overflow-x: hidden;
-<<<<<<< HEAD
-  -o-user-select: none;
-  user-select: none;
-=======
   -webkit-user-select: none;
   -moz-user-select: none;
   -o-user-select: none;
   -ms-user-select: none;
       user-select: none;
->>>>>>> denis
 }
 
 h1, .h1 {
@@ -324,10 +319,7 @@ nav {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   background-color: #0c0d18;
-<<<<<<< HEAD
-=======
   position: -webkit-sticky;
->>>>>>> denis
   position: sticky;
   top: 0;
   width: 100%;
@@ -452,12 +444,8 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
-<<<<<<< HEAD
-  transform: translateX(-50%);
-=======
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
->>>>>>> denis
 }
 
 .quantity label {
@@ -504,11 +492,6 @@ body {
 /* 歡迎會員 字體大小、字型位置 */
 .welcome {
   padding: 15vh 250px 0px 250px;
-<<<<<<< HEAD
-  display: flex;
-  align-items: center;
-  justify-content: left;
-=======
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -518,7 +501,6 @@ body {
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
->>>>>>> denis
 }
 
 .spacedinfo {

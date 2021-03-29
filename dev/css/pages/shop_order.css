@@ -78,16 +78,11 @@ body {
   font-size: 14px;
   background-color: #0c0d18;
   overflow-x: hidden;
-<<<<<<< HEAD
-  -o-user-select: none;
-  user-select: none;
-=======
   -webkit-user-select: none;
   -moz-user-select: none;
   -o-user-select: none;
   -ms-user-select: none;
       user-select: none;
->>>>>>> denis
 }
 
 h1, .h1 {
@@ -505,11 +500,6 @@ section.orderDetail .order li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
-  justify-content: center;
-  align-items: center;
-  justify-content: space-between;
-=======
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -519,19 +509,11 @@ section.orderDetail .order li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
->>>>>>> denis
   padding: 8px 0;
 }
 
 section.orderDetail .order li .imgWord {
   width: 100%;
-<<<<<<< HEAD
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
-  flex-wrap: wrap;
-=======
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -545,7 +527,6 @@ section.orderDetail .order li .imgWord {
       justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
->>>>>>> denis
 }
 
 section.orderDetail .order li .imgWord .prod {
@@ -560,12 +541,6 @@ section.orderDetail .order li .imgWord .prod {
 }
 
 section.orderDetail .order li .imgWord .imgRight {
-<<<<<<< HEAD
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-between;
-=======
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -578,19 +553,14 @@ section.orderDetail .order li .imgWord .imgRight {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
->>>>>>> denis
   width: 60%;
 }
 
 @media all and (max-width: 768px) {
   section.orderDetail .order li .imgWord .imgRight {
     width: 75%;
-<<<<<<< HEAD
-    justify-content: space-around;
-=======
     -ms-flex-pack: distribute;
         justify-content: space-around;
->>>>>>> denis
   }
 }
 
@@ -610,17 +580,10 @@ section.orderDetail .order li .imgWord .integral .icon {
   max-width: 10px;
 }
 
-section.orderDetail .order li .imgWord .integral .icon {
-  max-width: 10px;
-}
-
 section.orderDetail .order li .quantity {
   width: 80%;
-<<<<<<< HEAD
-=======
   display: -webkit-box;
   display: -ms-flexbox;
->>>>>>> denis
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -652,13 +615,9 @@ section.orderDetail .detail {
 
 @media all and (max-width: 768px) {
   section.orderDetail .detail {
-<<<<<<< HEAD
-    justify-content: center;
-=======
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
->>>>>>> denis
   }
 }
 
@@ -726,44 +685,28 @@ section.orderer .orderer_form, section.orderer .recipient, section.orderer .paym
 }
 
 section.orderer .arrow {
-<<<<<<< HEAD
-  display: flex;
-  align-items: center;
-=======
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
->>>>>>> denis
   padding: 20px 0;
   margin: 0 8px;
   cursor: pointer;
 }
 
 section.orderer .arrow img {
-<<<<<<< HEAD
-  transition: all .5s;
-  transform: rotate(-90deg);
-=======
   -webkit-transition: all .5s;
   transition: all .5s;
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
->>>>>>> denis
 }
 
 section.orderer .info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: space-between;
-=======
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -775,7 +718,6 @@ section.orderer .info {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
->>>>>>> denis
   width: 80%;
   margin-left: 6%;
 }
@@ -825,37 +767,12 @@ section.orderer .retract {
 }
 
 section.orderer .retract img {
-<<<<<<< HEAD
-  transform: rotate(0deg);
-=======
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
->>>>>>> denis
 }
 
 section.orderer .payTitle {
   margin: 0 30px;
-<<<<<<< HEAD
-}
-
-section.orderer .group {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-section.orderer .checkbox_group {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-@media all and (max-width: 768px) {
-  section.orderer .checkbox_group {
-    justify-content: start;
-=======
 }
 
 section.orderer .group {
@@ -891,20 +808,15 @@ section.orderer .checkbox_group {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
->>>>>>> denis
     width: 100%;
     margin: 8px 0;
   }
 }
 
 section.orderer .checkbox_group.long {
-<<<<<<< HEAD
-  justify-content: start;
-=======
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
->>>>>>> denis
   width: 50%;
 }
 

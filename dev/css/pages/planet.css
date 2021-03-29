@@ -78,16 +78,11 @@ body {
   font-size: 14px;
   background-color: #0c0d18;
   overflow-x: hidden;
-<<<<<<< HEAD
-  -o-user-select: none;
-  user-select: none;
-=======
   -webkit-user-select: none;
   -moz-user-select: none;
   -o-user-select: none;
   -ms-user-select: none;
       user-select: none;
->>>>>>> denis
 }
 
 h1, .h1 {
@@ -323,10 +318,7 @@ nav {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   background-color: #0c0d18;
-<<<<<<< HEAD
-=======
   position: -webkit-sticky;
->>>>>>> denis
   position: sticky;
   top: 0;
   width: 100%;
@@ -451,12 +443,8 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
-<<<<<<< HEAD
-  transform: translateX(-50%);
-=======
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
->>>>>>> denis
 }
 
 .quantity label {
@@ -505,30 +493,20 @@ input[type=number] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
-  justify-content: center;
-=======
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 42px;
->>>>>>> denis
 }
 
 div.tabList {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
-  justify-content: center;
-  column-gap: 1%;
-=======
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-column-gap: 1%;
           column-gap: 1%;
->>>>>>> denis
 }
 
 div.tabList button {
@@ -550,11 +528,8 @@ div.tabList button.active {
 }
 
 .tab-inner {
-<<<<<<< HEAD
-=======
   display: -webkit-box;
   display: -ms-flexbox;
->>>>>>> denis
   display: flex;
 }
 
@@ -562,14 +537,10 @@ div.tabList button.active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
-  flex-direction: column;
-=======
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
->>>>>>> denis
   text-align: left;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -586,25 +557,15 @@ div.tabList button.active {
   max-width: 400px;
 }
 
-<<<<<<< HEAD
 .tab-inner .taball .data {
-  border: 1px solid #AD6E4A;
-=======
-.tab-inner .data {
   border: 1px solid #AD6E4A;
   display: -webkit-box;
   display: -ms-flexbox;
->>>>>>> denis
   display: flex;
   font-family: Haettenschweiler, sans-serif;
 }
 
-<<<<<<< HEAD
 .tab-inner .taball .data .grav {
-  justify-content: center;
-  align-items: center;
-=======
-.tab-inner .data .grav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -613,7 +574,6 @@ div.tabList button.active {
           align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
->>>>>>> denis
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -624,12 +584,7 @@ div.tabList button.active {
   border-right: 1px solid #AD6E4A;
 }
 
-<<<<<<< HEAD
 .tab-inner .taball .data .day {
-  justify-content: center;
-  align-items: center;
-=======
-.tab-inner .data .day {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -638,7 +593,6 @@ div.tabList button.active {
           align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
->>>>>>> denis
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -648,12 +602,7 @@ div.tabList button.active {
   border-right: 1px solid #AD6E4A;
 }
 
-<<<<<<< HEAD
 .tab-inner .taball .data .temp {
-  justify-content: center;
-  align-items: center;
-=======
-.tab-inner .data .temp {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -662,7 +611,6 @@ div.tabList button.active {
           align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
->>>>>>> denis
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -696,30 +644,19 @@ div.tabList button.active {
 }
 
 .tab-inner button {
-<<<<<<< HEAD
   display: none;
-=======
-  background-color: transparent;
-  color: #AD6E4A;
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
->>>>>>> denis
 }
 
 .planet_content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .planet_content .carousel {
   display: none;
-=======
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
->>>>>>> denis
 }
 
 .planet_content .imgs {
@@ -727,12 +664,8 @@ div.tabList button.active {
 }
 
 .planet_content .imgs .img1 {
-<<<<<<< HEAD
-  transform: translate(40%);
-=======
   -webkit-transform: translate(40%);
           transform: translate(40%);
->>>>>>> denis
 }
 
 .planet_content .imgs .img2 {
@@ -749,13 +682,9 @@ div.tabList button.active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
-  align-items: center;
-=======
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
->>>>>>> denis
 }
 
 .planet_content .desc p {
@@ -766,21 +695,39 @@ div.tabList button.active {
 
 @media only screen and (max-width: 1200px) {
   .tab-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .tab-inner .tab-active {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .tab-inner .tab-active img {
     width: 70vw;
   }
   .planet_content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .planet_content .imgs {
     display: none;
