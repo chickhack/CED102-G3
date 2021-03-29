@@ -299,6 +299,7 @@ small, .small {
 .container {
   max-width: 1440px;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 body {
@@ -372,7 +373,7 @@ nav .burger div {
   }
   nav .nav-links {
     position: absolute;
-    right: -100%;
+    transform: translateX(100%);
     height: 92vh;
     top: 12vh;
     background-color: #AD6E4A;
@@ -406,7 +407,7 @@ nav .burger div {
     display: block;
   }
   nav .nav-active {
-    right: 0%;
+    transform: translateX(0%);
   }
 }
 
@@ -477,7 +478,7 @@ footer .links .footer-links a {
 footer .footer_moon {
   position: relative;
   left: 50%;
-  max-width: 550px;
+  max-width: 40%;
   transform: translateX(-50%);
 }
 
@@ -488,6 +489,18 @@ footer .smoke {
   width: 100%;
   height: 80%;
   transform: translateX(-50%);
+}
+
+@media (max-width: 768px) {
+  footer .links .logo {
+    bottom: 0;
+  }
+  footer .links .footer-links {
+    display: none;
+  }
+  footer .footer_moon {
+    min-width: 250px;
+  }
 }
 
 .quantity label {
