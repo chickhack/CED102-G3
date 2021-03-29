@@ -57,8 +57,7 @@ img {
 *,
 *:before,
 *:after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
   margin: 0;
   padding: 0;
 }
@@ -79,27 +78,8 @@ body {
   font-size: 14px;
   background-color: #0c0d18;
   overflow-x: hidden;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> denis
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -o-user-select: none;
-  -ms-user-select: none;
-      user-select: none;
-<<<<<<< HEAD
-=======
   -o-user-select: none;
   user-select: none;
->>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
-=======
-  -o-user-select: none;
-  user-select: none;
->>>>>>> chickhack
-=======
->>>>>>> denis
 }
 
 h1, .h1 {
@@ -327,60 +307,12 @@ body {
 }
 
 nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 528db558604e5ab1390a0ef5b25d30e723a35a4d
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> denis
->>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-<<<<<<< HEAD
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  background-color: #0c0d18;
-  position: -webkit-sticky;
-=======
-  justify-content: center;
-  background-color: #0c0d18;
-<<<<<<< HEAD
-  position: -webkit-sticky;
-=======
   justify-content: center;
   align-items: center;
   justify-content: center;
   background-color: #0c0d18;
-<<<<<<< HEAD
   position: fixed;
-=======
->>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
-<<<<<<< HEAD
->>>>>>> 528db558604e5ab1390a0ef5b25d30e723a35a4d
-=======
-=======
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
-  background-color: #0c0d18;
->>>>>>> chickhack
->>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
-  position: sticky;
-=======
-  position: fixed;
->>>>>>> denis
->>>>>>> 9ffa00097b9eaf6c3ebf12f6c6df52b1ffe067a0
   top: 0;
   width: 100%;
   min-height: 12vh;
@@ -391,11 +323,7 @@ nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-<<<<<<< HEAD
-  background-image: url("../../img/icon/header/logo.png");
-=======
-  background-image: url("../img/logo.png");
->>>>>>> chickhack
+  background-image: url("../../img/logo.png");
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -405,48 +333,11 @@ nav .logo h1 a {
 }
 
 nav .nav-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 528db558604e5ab1390a0ef5b25d30e723a35a4d
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> denis
->>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-<<<<<<< HEAD
-<<<<<<< HEAD
-  width: 60%;
-=======
-=======
-  width: 75%;
->>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
-=======
   justify-content: center;
   align-items: center;
   justify-content: flex-end;
-<<<<<<< HEAD
->>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
   width: 75%;
->>>>>>> 528db558604e5ab1390a0ef5b25d30e723a35a4d
-=======
-  width: 60%;
->>>>>>> chickhack
->>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
 }
 
 nav .nav-links a {
@@ -456,17 +347,10 @@ nav .nav-links a {
 }
 
 nav .nav-icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
   width: 12%;
   margin-left: 50px;
 }
@@ -485,8 +369,7 @@ nav .burger div {
 
 @media (max-width: 992px) {
   nav {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
   }
   nav .nav-links {
     position: absolute;
@@ -494,22 +377,12 @@ nav .burger div {
     height: 92vh;
     top: 12vh;
     background-color: #AD6E4A;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     justify-content: center;
     width: 30%;
-    -webkit-transition: all 1s ease-in;
     transition: all 1s ease-in;
   }
   nav .nav-links li {
@@ -524,9 +397,7 @@ nav .burger div {
   }
   nav .nav-icons {
     width: 100%;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    justify-content: flex-end;
   }
   nav .nav-icons .icon {
     margin: 0 30px 0 15px;
@@ -549,37 +420,21 @@ nav .burger div {
   nav .nav-icons {
     width: 50%;
     margin-left: 16px;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
   }
   nav .nav-icons .icon {
     margin: 0;
   }
 }
 
-@-webkit-keyframes navLinkFade {
-  from {
-    opacity: 0;
-    -webkit-transform: translateX(50px);
-            transform: translateX(50px);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-  }
-}
-
 @keyframes navLinkFade {
   from {
     opacity: 0;
-    -webkit-transform: translateX(50px);
-            transform: translateX(50px);
+    transform: translateX(50px);
   }
   to {
     opacity: 1;
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
+    transform: translateX(0px);
   }
 }
 
@@ -600,28 +455,19 @@ footer .links .logo {
   position: relative;
   left: 50%;
   bottom: 50px;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 footer .links .footer-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
   width: 55%;
   position: relative;
   left: 50%;
   bottom: 30px;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 footer .links .footer-links a {
@@ -631,28 +477,8 @@ footer .links .footer-links a {
 footer .footer_moon {
   position: relative;
   left: 50%;
-<<<<<<< HEAD
-<<<<<<< HEAD
-  max-width: 550px;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-=======
-=======
->>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
   max-width: 40%;
-<<<<<<< HEAD
-=======
-  max-width: 550px;
->>>>>>> chickhack
   transform: translateX(-50%);
-<<<<<<< HEAD
->>>>>>> 528db558604e5ab1390a0ef5b25d30e723a35a4d
-=======
-=======
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
->>>>>>> denis
->>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
 }
 
 footer .smoke {
@@ -661,16 +487,7 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> denis
->>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 @media (max-width: 768px) {
@@ -683,13 +500,6 @@ footer .smoke {
   footer .footer_moon {
     min-width: 250px;
   }
-<<<<<<< HEAD
->>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
-=======
-  transform: translateX(-50%);
->>>>>>> chickhack
-=======
->>>>>>> denis
 }
 
 .quantity label {
@@ -715,8 +525,6 @@ footer .smoke {
   background-color: transparent;
   padding: 4px 8px;
   cursor: pointer;
-<<<<<<< HEAD
-=======
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -729,7 +537,6 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
->>>>>>> 528db558604e5ab1390a0ef5b25d30e723a35a4d
 }
 
 body {
@@ -739,41 +546,9 @@ body {
 /* 歡迎會員 字體大小、字型位置 */
 .welcome {
   padding: 15vh 250px 0px 250px;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> denis
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
-=======
   display: flex;
   align-items: center;
   justify-content: left;
->>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
-<<<<<<< HEAD
->>>>>>> 528db558604e5ab1390a0ef5b25d30e723a35a4d
-=======
-=======
-  display: flex;
-  align-items: center;
-  justify-content: left;
->>>>>>> chickhack
-=======
->>>>>>> denis
->>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
 }
 
 .spacedinfo {
@@ -878,36 +653,20 @@ img.nowlev, img.nextlev {
 }
 
 .your_acc {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .now_lev {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   /* justify-content: left; */
 }
 
 .next_lev {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   /* justify-content: right; */
 }
 
@@ -944,17 +703,9 @@ p.nextacc, p.nowacc {
   padding: 30px 80px 0px 80px;
   border-radius: 10px;
   height: auto;
-<<<<<<< HEAD
   font-family: "Microsoft JhengHei";
   font-size: 12px;
   color: #C9ADA7;
-=======
-  background-color: #3a3a3c;
-  opacity: 0.6;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
->>>>>>> 528db558604e5ab1390a0ef5b25d30e723a35a4d
 }
 
 .infoimg {
@@ -974,14 +725,20 @@ p.nextacc, p.nowacc {
   margin-bottom: 5px;
 }
 
-.form-control {
+input.form-control {
   width: 85%;
   height: 20px;
   border: 0.5px solid rgba(173, 110, 74, 0.6);
-  background: none;
+  background-color: none;
   color: #ffffff;
   font-family: "Microsoft JhengHei";
   font-size: 14px;
+}
+
+.form-control:focus {
+  border-color: #cccaca;
+  outline: none;
+  box-shadow: none;
 }
 
 .form-control-plaintext {
@@ -1001,8 +758,7 @@ p.nextacc, p.nowacc {
 input.form-control-plaintext:focus {
   border-color: #cccaca;
   outline: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 .info_editbtn {
@@ -1054,15 +810,9 @@ button:hover {
 }
 
 #app .input {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   border-radius: 3px;
   margin: 10px 0;
   background-color: #ECA;
@@ -1095,8 +845,6 @@ button:hover {
 }
 
 .tabs {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -1132,15 +880,9 @@ button:hover {
 
 .main .content .item .item-content,
 .main .content .item .item-edit {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .main .content .item .item-edit input {
@@ -1153,14 +895,8 @@ button:hover {
   background-color: #ECA;
   border-radius: 0 0 5px 5px;
   padding: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 /*# sourceMappingURL=account.css.map */
