@@ -13,6 +13,7 @@ nav{
     background-position: top;
     height: 100vh;
 }
+
 @media only screen and ( max-width:1200px) {
     .banner_bg{
         height: 100vh;
@@ -182,6 +183,11 @@ button{
 
 //=========星球百科
 
+@media all and (max-width:1200px) {
+    .separator{
+        width: 90%;
+    }
+}
 .tab-inner{
     // border-top: 1px solid $gold;
     display: flex;
@@ -264,7 +270,7 @@ button{
 
 //=========互動牆
 .gallery{
-    .box{
+    .gallery_box{
         display: flex;
     }
 
@@ -342,6 +348,11 @@ button{
     }
 }
 
+@media all and (max-width:1200px) {
+   .box{
+       
+   }
+}
 
 //=========商城圖片
 .home_shop{
