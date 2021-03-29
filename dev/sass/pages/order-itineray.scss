@@ -16,9 +16,7 @@ body{
     height: 20px;
     
 }
-.bi{
-    fill: #ad6e4a;
-}
+
 //chbox
 .checkbox-1{
     border: 1px solid #ad6e4a;
@@ -225,6 +223,7 @@ body{
     width: 25px;
     height: 25px;
 }
+//假確認按鈕樣式
 .checkbox_custom{
     opacity: 0;
     position: absolute;
@@ -260,6 +259,7 @@ body{
 .checkbox_custom:focus + .checkbox_custom-label{
     outline: 1px solid #ddd;
 }
+//主內容
 form{
     padding: 0 0 0 0;
     height:100%;
@@ -426,24 +426,18 @@ form{
                             .col-10{
                                 display: flex;
                                 .sss{
+                                    display: flex;
                                     background-color: #191919;
                                     margin-bottom: 3%;
                                     width: 100%;
-                                    padding: 10px 10px;
+                                    padding: 15px 10px;
                                     cursor: pointer;
                                     img{
                                         width: 100px;
                                         object-fit: cover;
                                     }
                                 }
-                                .sssb:focus{
-                                    .sss{
-                                        background-color: #fff;
-                                    }
-                                }
-                                // label:focus{
-                                //     background-color: white;
-                                // }
+                                
                                 input{
                                     display: none;
                                 }

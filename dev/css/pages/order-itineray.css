@@ -18,10 +18,6 @@ body {
   height: 20px;
 }
 
-.bi {
-  fill: #ad6e4a;
-}
-
 .checkbox-1 {
   border: 1px solid #ad6e4a;
 }
@@ -387,10 +383,11 @@ form .addPay .row .col-10 .automena .row .col-10 {
 }
 
 form .addPay .row .col-10 .automena .row .col-10 .sss {
+  display: flex;
   background-color: #191919;
   margin-bottom: 3%;
   width: 100%;
-  padding: 10px 10px;
+  padding: 15px 10px;
   cursor: pointer;
 }
 
@@ -399,10 +396,13 @@ form .addPay .row .col-10 .automena .row .col-10 .sss img {
   object-fit: cover;
 }
 
+<<<<<<< HEAD
 form .addPay .row .col-10 .automena .row .col-10 .sssb:focus .sss {
   background-color: #fff;
 }
 
+=======
+>>>>>>> chickhack
 form .addPay .row .col-10 .automena .row .col-10 input {
   display: none;
 }
