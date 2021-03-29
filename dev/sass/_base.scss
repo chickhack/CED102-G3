@@ -131,8 +131,9 @@ $breakpoint_each: (
 }
 //固定寬1440px
 .container{
-    max-width: 1440px;
+    // max-width: 1440px;
     margin: 0 auto;
-    overflow-x: hidden;
+    // overflow-x: hidden;
+    padding-top: 15vh;
 }
 
