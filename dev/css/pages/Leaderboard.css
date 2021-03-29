@@ -1,6 +1,6 @@
 .le-color {
   background-color: #16193b;
-  font-size: 18px;
+  font-size: 16px;
   color: #fff;
   border-radius: 5px;
   margin-bottom: 10px;
@@ -13,23 +13,21 @@
 .text-color {
   background-color: #1d1e2e;
   color: #c9ada7;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .text-color-1 {
   background-color: #292b41;
-  font-size: 16px;
+  font-size: 14px;
   color: #fff;
 }
 
 .leve {
   width: 60px;
-  height: 60px;
 }
 
 .leve-1 {
-  width: 55px;
-  height: 55px;
+  width: 50px;
 }
 
 .icon-2 {
@@ -41,8 +39,13 @@
 }
 
 .icon-3 {
+<<<<<<< HEAD
   width: 55px;
   height: 55px;
+=======
+  width: 50px;
+  height: 50px;
+>>>>>>> 528db558604e5ab1390a0ef5b25d30e723a35a4d
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 40px;
@@ -72,8 +75,8 @@
 }
 
 .line-he-65 {
-  line-height: 65px;
-  height: 65px;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 .line-he-85 {
@@ -81,11 +84,33 @@
 }
 
 .line-he-75 {
-  line-height: 75px;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 .bra-line {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.089);
+  width: 80%;
+}
+
+.banner {
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+}
+
+.banner img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.banner h4 {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 50%;
 }
 
 .container .row .col-10 {
@@ -94,7 +119,13 @@
   display: flex;
 }
 
-.container .row .col-10 .col-2 {
+.container .row .col-10 .row {
+  width: 100%;
+}
+
+.container .row .col-10 .row .col-4 {
   text-align: center;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 /*# sourceMappingURL=Leaderboard.css.map */

@@ -15,7 +15,8 @@
     <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
     <script src="./js/tabSwitch.js"></script>
-
+    <!-- Vue.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.12/vue.js"></script>
     <!-- CSS -->
     <link rel="stylesheet" href="./css/pages/planet.css"></link>
     <link rel="stylesheet" href="./css/pages/alltrip.css"></link>
@@ -24,6 +25,7 @@
     <!-- canvas -->
   </head>
   <body>
+    <!-- <div class="container"> -->
     <div class="banner_bg jumbotron-fluid">
     <header>@@include('./layout/header.html')</header>
       <div class="col-11 frame">
@@ -35,10 +37,12 @@
             <img src="./img/icon/scroll.gif" style="width: 50px" />
           </div>
         </div>
+       
+
 <!-- 訂購流程 -->
         <div class="stepsection margin_top_10">
           <h2>打造專屬的星球行程</h2>
-          <h3 class="margin_top_3">累積景點積分，獲得更多宇宙幣，讓你無限暢遊宇宙</h3>
+          <h3 class="margin_top_3 line_low">累積景點積分，獲得更多宇宙幣，讓你無限暢遊宇宙</h3>
           <div class="stepall">
               <div class="step margin_left_5">
                   <img src="./img/icon/search-location.png" class="step_icon" alt="icon">
@@ -61,89 +65,70 @@
               </div>
           </div>
         </div>
-<!-- 精選景點 -->
-        <!-- <div class="hottrip margin_top_7">
-          <div v-for="item in top" class="planet_top margin_left_3">
+<!-- 精選行程 -->
+
+      
+<div class="first_right swiper-container" id="app">
+  <div class="hottrip wiper-wrapper col-10">
+      <div v-for="item in top" class="planet_top swiper-slide">
+          <a href="trip.html">
               <img :src="item.planet" class="planet" alt="planet">
               <img :src="item.spot" class="planet_a1" alt="planettrip">
               <div class="word line_low ">
                   <h3 class="hot">{{item.title}}</h3>
-                  <h3>{{item.name}}</h3> -->
-                  <!-- <img :src="item.star" class="star margin_top_1" alt="star"> -->
-                  <!-- <little class="tag margin_top_3">{{item.grade}}</little>
-                  <little class="tag">{{item.scores}}積分</little>
-                  <h4 class="price">${{item.price}}</h4>
-                  <div class="addin little"><img class="plus" src="./img/icon/plus.png" alt="">加入我的行程</div>
+                  <h4>{{item.name}}</h3>
+                      <!-- <img :src="item.star" class="star margin_top_1" alt="star"> -->
+                      <small class="tag margin_top_3">{{item.grade}}</small>
+                      <small class="tag">{{item.scores}}積分</small>
+                      <h4 class="price">${{item.price}}</h4>
+                      <div class="addin small"><img class="plus" src="./img/icon/plus.png" alt="">加入我的行程
+                      </div>
               </div>
-          </div>
-        </div> -->
+          </a>
+      </div>
+  </div>
+</div>
 <!-- 星球百科 -->
-        <div class="container">
-          <ul class="tab-title col-12">
-            <li class="selected"><a href="#tab01">火星</a></li>
-            <li><a href="#tab02">月球</a></li>
-            <li><a href="#tab03">土星</a></li>
-            <li><a href="#tab04">木星</a></li>
-            <li><a href="#tab04">木星</a></li>
-            <li><a href="#tab04">木星</a></li>
-            <li><a href="#tab04">木星</a></li>
-          </ul>
-          <div class="separator col-10"></div>
-          <div id="tab01" class="col-12 tab-inner">
-              <div class="tab_intro margin_top_6">
-                <h2>火星</h2>
-                <h3 class="margin_top_4">
-                  火星大氣以二氧化碳為主，既稀薄又寒冷，其表面特徵讓人聯想起月球上的撞擊坑，以及地球上的山谷、沙漠和極地冰蓋。
-                </h3>
-                <div class="data margin_top_8">
-                  <div class="grav">
-                    <span>38</span>
-                    <span class="data-mid">％</span>
-                    <p>重力</p>
-                  </div>
-                  <div class="day">
-                    <span>24</span>
-                    <span class="data-low">HR</span>
-                    <p>一天</p>
-                  </div>
-                  <div class="temp">
-                    <span class="data-mid">-</span>
-                    <span>60</span>
-                    <span class="data-high">F</span>
-                    <p>溫度</p>
-                  </div>
-                </div>
-                <div class="button button_min">更多關於火星</div>
-              </div>
-              <div class="tab-active col-6 margin_top_5">
-                <img
-                  src="./img/planet/mars.png"
-                  style="max-width: 500px"
-                  class="geoplanet"
-                />
-              </div>
+        <div class="planet_box" id="planetData">
+          <h2 align="center" class="margin_top_10">星星世界</h2>
+          <!-- jQuery -->
+          <div class="tabList margin_top_3 col-12">
+            <button class="button_min selected" @click="content='mars'">火星</button>
+            <button class="button_min" @click="content='moon'">月球</button>
+            <button class="button_min" @click="content='saturn'">土星</button>
+            <button class="button_min" @click="content='saturn'">土星</button>
+            <button class="button_min" @click="content='saturn'">土星</button>
+            <button class="button_min" @click="content='saturn'">土星</button>
           </div>
+          <div class="separator col-10"></div>
+    
+          <component :is="content"></component>
+          <script type="module" src="./js/mars.js"></script>
         </div>
 <!-- 互動牆 -->
-        <div class="gallery">
+        <div class="gallery margin_top_8" id="gallery">
           <!-- 上 -->
           <div class="box top col-12">
             <div class="topleft col-5">
-              <div class="col-6 A"></div>
-              <div class="col-6 B"></div>
+              <div class="col-6 A">
+                <img :src="image1">
+              </div>
+              <div class="col-6 B">
+                <img :src="image2">
+              </div>
             </div>
             <div class="box topright col-7 margin_top_10">
               <div class="topSct col-12">
                 <h2>太空互動</h2>
                 <div class="btn-group" role="group">
-                  <button type="button" class="btn btn-secondary"><</button>
-                  <button type="button" class="btn btn-secondary">></button>
+                  <button type="button" @click="changeGallery()" class="btn btn-secondary"><</button>
+                  <button type="button" @click="changeGalleryBack()" class="btn btn-secondary">></button>
                 </div>
               </div>
               <div class="separator margin_top_2"></div>
               <div class="galleryIntro">
                 <h5 class="margin_top_10" >
-                  "去自由行的話需要自己安排行程，若毫無頭緒，不知道應該前往哪些景點、或是行程應該怎樣安排的話，不妨看看部落客的遊記，拿點靈感！小編整理了以下的人氣旅遊部落客清單，想安排一趟難忘旅遊行程的話，千萬不要錯過以下旅遊部落客推薦！"
+                  {{content1}}
                 </h5>
               </div>
             </div>
@@ -151,17 +136,23 @@
           <!-- 下 -->
           <div class="box bottom">
             <div class="box bottomleft col-5">
-              <div class="col-6 D"></div>
-              <div class="col-6 E"></div>
+              <div class="col-6 D">
+                <img :src="image3">
+              </div>
+              <div class="col-6 E">
+                <img :src="image4">
+              </div>
             </div>
             <div class="box bottomright col-7">
-              <div class="col-12 F"></div>
+              <div class="col-12 F">
+                <img :src="image5">
+              </div>
             </div>
           </div>
         </div>
   
 <!-- 商城 -->
-      <div class="container">
+      <div class="shop_box" >
         <div class="home_shop margin_top_10">
           <h2>星球商城</h2>
           <div class="shopItem margin_top_10">
@@ -211,36 +202,36 @@
               </div>
             </div>
           </div>
-          <div class="button button_min">去逛逛</div>
+          <button class="button button_min">去逛逛</button>
         </div>   
 
 <!-- 會員待遇 -->
           <div class="flow_member margin_top_10 ">
             <h2 align="center">歡迎加入太空世界</h2>
             <h3 class="margin_top_3" align="center">加入會員，享受禮遇，與所有玩家同遊宇宙</h3>
-              <div class="flowall margin_top_8">
-                <div class="flow margin_left_5">
+              <div class="flowall margin_top_8" align="center">
+                <div class="flow">
                     <img src="./img/icon/ribbon.png" class="step_icon" alt="icon">
                     <h4 class="flowTitle margin_top_2">會員分級</h4>
                     <div class="separator margin_top_2"></div>
                     <h4 class="margin_top_2">累積積分 會員升級<br>享受更多特殊禮遇</h4>
                 </div>
 
-                <div class="flow margin_left_5">
+                <div class="flow ">
                     <img src="./img/icon/ranking.png" class="step_icon" alt="icon">
                     <h4 class="flowTitle margin_top_2">積分排行</h4>
                     <div class="separator margin_top_2"></div>
                     <h4 class="margin_top_2">每月排行 挑戰排行</h4>
                 </div>
 
-                <div class="flow margin_left_5">
+                <div class="flow ">
                     <img src="./img/icon/post.png" class="step_icon" alt="icon">
                     <h4 class="flowTitle margin_top_2">太空互動</h4>
                     <div class="separator margin_top_2"></div>
                     <h4 class="margin_top_2">玩家分享 互相交流<br>看看別人怎麼玩</h4>
                 </div>
               </div>
-              <div class="button button_min margin_top_10" >加入會員</div>
+              <button class="button button_min margin_top_10" >加入會員</button>
           </div>
       </div>
 <!-- 框框 -->
@@ -248,23 +239,71 @@
 
       <footer>@@include('./layout/footer.html')</footer>
     </div>
+  <!-- </div> -->
 
 
 
 
 
-    <!-- 星球tab -->
+    <!-- 星球頁籤轉移 -->
     <script>
       $(function(){
-        var $li = $('ul.tab-title li');
-            $($li.eq(0).addClass('selected').find('a').attr('href')).siblings('.tab-inner').hide();
+        var $button = $('div.tabList button');
+            $($button.eq(0).addClass('active').find('button').siblings('.tab-inner').hide());
 
-            $li.click(function(){
+            $button.click(function(){
               $($(this).find('a').attr('href')).show().siblings('.tab-inner').hide();
-              $(this).addClass('selected').siblings('.selected').removeClass('selected');
+              $(this).addClass('active').siblings('.active').removeClass('active');
             });
       });
     </script>
+    <!-- 星球tab Vue-->
+    <script src="./js/planet_data.js"></script>
+    <script src="./js/gallery.js"></script>
+<<<<<<< HEAD
 
+=======
+    <!-- 精選行程Vue -->
+        <!-- vue -->
+        <script>
+          let vm = new Vue({
+              el: "#app",
+              data: {
+                  top: [{
+                      planet: "./img/trip/jupiter.png",
+                      spot: "./img/trip/trip_jupiter/jupiter_top_a_ps.png",
+                      title: "熱門星球",
+                      name: "木星 | 冰層探索一日遊",
+                      star: "./img/icon/star.png",
+                      grade: "初階",
+                      scores: "3000",
+                      price: 5000,
+  
+                  }, {
+                      planet: "./img/trip/mars.png",
+                      spot: "./img/trip/trip_mars/mars_top_a1_ps.jpg.png",
+                      title: "進階景點",
+                      name: "火星 | 攀登太陽系第一高山",
+                      star: "./img/icon/star.png",
+                      grade: "高階",
+                      scores: "5000",
+                      price: 5000,
+  
+                  }, {
+                      planet: "./img/trip/moon.png",
+                      spot: "./img/trip/trip_moon/moon_top_a1_ps.png",
+                      title: "新景點",
+                      name: "月球 | 太空體驗一日遊",
+                      star: "./img/icon/star.png",
+                      grade: "初階",
+                      scores: "3000",
+                      price: 5000,
+                  },
+                  ],
+                  
+              },
+          });
+      </script>
+>>>>>>> Yi
   </body>
 </html>

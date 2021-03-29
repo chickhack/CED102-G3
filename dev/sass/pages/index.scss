@@ -1,10 +1,11 @@
 @import "../all.scss";
 
-// header設定
+//=========header設定
 nav{
     background-color: transparent;
 }
 
+//背景圖片
 .banner_bg{
     background: -webkit-linear-gradient(bottom, $darkblue 5%, transparent 95%), url('../../img/home/mainBannerBg.jpg') no-repeat
     ;
@@ -12,10 +13,26 @@ nav{
     background-position: top;
     height: 100vh;
 }
+@media only screen and ( max-width:1200px) {
+    .banner_bg{
+        height: 100vh;
+    }
+}
+//整頁邊框
+
 .frame{
-    border: 1px solid $gold;
+    border: 1px solid #ad6e4a57;
     margin: 0 auto;
 }
+
+
+//按鈕
+button{
+    background-color: transparent;
+    color: $gold;
+}
+
+
 .banner{
     .slogan {
         display: flex;
@@ -25,7 +42,7 @@ nav{
             font-size: 7rem;
             color: white;
             font-family: "Haettenschweiler", sans-serif;
-            letter-spacing:6px;
+            letter-spacing:15px;
         }
     }
     .scroll{
@@ -48,42 +65,204 @@ nav{
     }
 }
 
+
+
 //=========流程
 .stepsection{
     background-color: transparent;
+    @include respond(mobile){
+        flex-direction: column;
+    }
 }
+
+
+
+
+
+//=========精選行程
+
+    .hottrip {
+        top: 15vh;
+        display: flex;
+        padding-top: 96px;
+        margin: 0 auto;
+    }
+
+    div.planet_top {
+        position: relative;
+        padding-top: 90px;
+        text-align: center;
+        width: 45%;
+        padding-left: 16px;
+        padding-right: 16px;
+
+        @media all and (max-width:1200px) {
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+
+        h4 {
+            color: $pink;
+        }
+
+        img.planet {
+            height: 160px;
+            position: absolute;
+            top: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        img.planet_a1 {
+            max-width: 280px;
+        }
+        // img.planet_a1:hover {
+        //     transform: perspective(0.5px) translateX(-1.5px) translateY(-1.5px);
+
+        // }
+
+        div.word {
+            position: absolute;
+            top: 190px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            margin: 0 auto;
+
+            .hot {
+                color: $gold;
+            }
+
+            .tag {
+                display: inline-flex;
+                border: 1px solid $pink;
+                border-radius: 5px;
+                padding: 8px;
+                line-height: 5px;
+                margin: 3px;
+                color: $gray;
+            }
+
+            .price {
+                color: $gold;
+                font-weight: bold;
+                letter-spacing: 2px;
+                margin-bottom: 8px;
+                font-family: "Nasalization";
+            }
+
+            .addin {
+                background-color: $gold;
+                color: $white;
+                border-radius: 15px;
+                width: 110px;
+                margin: 0 auto;
+                line-height: 26px;
+                text-align: center;
+
+                img.plus {
+                    width: 15px;
+                    display: inline-block;
+                    position: relative;
+                    top: 2px;
+                    padding-right: 4px;
+                }
+
+            }
+
+            .addin:hover {
+                background-color: lighten($gold, 10%);
+            }
+
+        }
+    }
+
+
 
 
 //=========星球百科
-ul.tab-title {
-    a{
-        font-size: 1rem;
-    }
-}
+
 .tab-inner{
-    justify-content: center;
+    // border-top: 1px solid $gold;
     display: flex;
-    .tab_intro{
+    .taball{
         display: flex;
         flex-direction: column;
         text-align: left;
-        h3 {
+        align-items: center;
+        .tab_left{
+            max-width: 400px;
+        }
+        p {
             line-height: 2rem;
+            margin-top: 20px;
             max-width: 400px;
         }
     }
     .data{
-        justify-content: flex-start;
-        p{
-            text-align: center;
+        border: 1px solid $gold;
+        display: flex;
+        font-family: Haettenschweiler, sans-serif;
+        .grav{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            min-width: 130px;
+            min-height: 130px;
+            border-right: 1px solid $gold;
         }
+        .day{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            min-width: 130px;
+            border-right: 1px solid $gold;
+
+        }
+        .temp{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            min-width: 130px;
+        }
+        
+        span.var{
+            font-size: 48px;
+            letter-spacing: 3px;
+        }
+        span.data-top{
+            vertical-align:top;
+            font-size: 24px;
+        }
+        span.data-mid{
+            font-size: 24px;
+        }
+        span.data-low{
+            font-size: 24px;
+            font-stretch: narrower;
+        }
+        p{
+            margin-top: 5px;
+            font-size: 16px;
+        }
+
     }
-.tab-active{
-    display: flex;
-    justify-content: center;
+    button{
+        display: block;
+        background-color: transparent;
+        color: $gold;
+        transform: translateX(-100%);
+
     }
 }
-//============互動牆
+
+
+
+
+//=========互動牆
 .gallery{
     .box{
         display: flex;
@@ -97,13 +276,13 @@ ul.tab-title {
         align-items: flex-end;
         .A{
             // border: 1px solid white;
-            background-image: url('../../img/home/首頁-互動牆壁2.jpg');
+            // background-image: url('../../img/home/首頁-互動牆壁2.jpg');
             height: 310px;
             background-size: 120%;
         }
         .B{
             // border: 1px solid white;
-            background-image: url('../../img/home/首頁-互動牆壁9.jpg');
+            // background-image: url('../../img/home/首頁-互動牆壁9.jpg');
             background-repeat: no-repeat;
             height: 450px;
             background-position: center;
@@ -138,13 +317,13 @@ ul.tab-title {
         max-height: 500px;
         .D{
             // border: 1px solid white;
-            background-image: url('../../img/home/首頁-互動牆壁2.jpg');
+            // background-image: url('../../img/home/首頁-互動牆壁2.jpg');
             height: 310px;
             background-size: 120%;;
         }
         .E{
             // border: 1px solid white;
-            background-image: url('../../img/home/mars2.jpg');
+            // background-image: url('../../img/home/mars2.jpg');
             background-repeat: no-repeat;
             height: 450px;
             background-position: right;
@@ -154,7 +333,7 @@ ul.tab-title {
     }
     .bottomright{
         .F{
-            background-image: url('../../img/home/首頁-互動牆壁8.jpg');
+            // background-image: url('../../img/home/首頁-互動牆壁8.jpg');
             background-repeat: no-repeat;
             height: 310px;
             background-position: center;
@@ -164,7 +343,7 @@ ul.tab-title {
 }
 
 
-//============商城圖片
+//=========商城圖片
 .home_shop{
     display: flex;
     flex-direction: column;
@@ -185,7 +364,7 @@ ul.tab-title {
             position: relative;
             text-align: center;
             cursor: default;
-            background: #42b078;
+            background: #4e7192;
           }
           
           .hovereffect .overlay {
@@ -302,7 +481,7 @@ ul.tab-title {
 
 
 
-//============會員待遇
+//=========會員待遇
 .flow_member{
     display: flex;
     justify-content: center;
@@ -338,4 +517,11 @@ ul.tab-title {
 
         }
     }
+    button{
+        align-self: center;
+        margin-bottom: 70px;
+    }
 }
+
+
+

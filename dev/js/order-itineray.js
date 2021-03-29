@@ -5,9 +5,9 @@ $('#btn-opmenu').click(function(){
     //自動判斷添加class替換before內容
     $('#btn-opmenu').toggleClass("svgRight");
 });
-$('.btn-addPay').click(function(){
+$('#addPay-btn').click(function(){
     $('.automena').slideToggle();
-    $('.btn-addPay').toggleClass("svgRight");
+    $('#addPay-btn').toggleClass("svgRight");
     
 });
 $('.btn-paymethod').click(function(){
@@ -15,11 +15,16 @@ $('.btn-paymethod').click(function(){
     $('.btn-paymethod').toggleClass("svgRight");
     
 });
-$('.btn-orderDetails').click(function(){
+$('#btn-orderDetails').click(function(){
     $('#orderDetails-automanu').slideToggle();
-    $('.btn-orderDetails').toggleClass("svgRight");
+    $('#btn-orderDetails').toggleClass("svgRight");
     
 });
 $('#paymethod-automanu-car').click(function(){
     $('#car-auto').slideToggle();
+});
+$('#btn-paymethod').click(function(){
+    $('.paymethod-automanu').slideToggle();
+    $('#btn-paymethod').toggleClass("svgRight");
+    
 });

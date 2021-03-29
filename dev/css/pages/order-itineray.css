@@ -18,16 +18,19 @@ body {
   height: 20px;
 }
 
+.checkbox-1 {
+  border: 1px solid #ad6e4a;
+}
+
 .width-50 {
   width: 50%;
 }
 
 .backco {
-  background-color: #0c0d18;
+  background-color: #292B41;
 }
 
 .titi {
-  background-color: #0c0d18;
   line-height: 50px;
   font-size: 18px;
 }
@@ -49,7 +52,7 @@ body {
 }
 
 .backcol {
-  background-color: #3a3a3e;
+  background-color: #292B41;
 }
 
 .divider {
@@ -72,19 +75,24 @@ body {
 }
 
 .textcolor {
-  color: #fff;
+  color: #C9ADA7;
+  font-size: 16px;
+}
+
+.textcolor-1 {
+  color: #ad6e4a;
   font-size: 16px;
 }
 
 .h4 {
   font-size: 18px;
-  color: #fff;
+  color: #C9ADA7;
   margin: 0;
 }
 
 .h5 {
   font-size: 18px;
-  color: #fff;
+  color: #C9ADA7;
   margin: 0;
   width: 100%;
   max-width: 150px;
@@ -144,6 +152,18 @@ body {
   padding-bottom: 5%;
 }
 
+.padding_bottom-20 {
+  padding-bottom: 20px;
+}
+
+.padding_bottom-80 {
+  padding-bottom: 80px;
+}
+
+.margin-bottom-20 {
+  margin-bottom: 20px;
+}
+
 .imgs {
   width: 100%;
   max-width: 100px;
@@ -163,19 +183,23 @@ body {
 }
 
 #paymethod-coin-nu {
-  background-color: #3a3a3e;
+  background-color: #292B41;
   border: 1px solid #AD6E4A;
-  height: 25px;
   color: #fff;
   font-size: 16px;
   width: 30%;
   letter-spacing: 2px;
-  border-radius: 5px;
+  transition: all 0.5s;
+}
+
+#paymethod-coin-nu:focus {
+  background-color: #ad6e4a;
+  outline: none;
 }
 
 .button_large-1 {
-  width: 150px;
-  font-size: 18px;
+  width: 100px;
+  font-size: 12px;
   color: #fff;
   background-color: #ad6e4a;
   padding: 15px;
@@ -183,44 +207,69 @@ body {
   border: 1px solid #AD6E4A;
 }
 
+.btn-allAuto {
+  width: 100%;
+  text-align: justify;
+  background-color: #292B41;
+  outline: none;
+  border: none;
+  color: #C9ADA7;
+  font-size: 18px;
+  padding: 30px 0;
+}
+
+.btn-allAuto::before {
+  content: url(../../img/chevron-down.svg);
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  padding-right: 8px;
+}
+
+.icon-1 {
+  width: 25px;
+  height: 25px;
+}
+
 form {
   padding: 0 0 0 0;
   height: 100%;
 }
 
+<<<<<<< HEAD
 form .orderinfo .container .row {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
+=======
+form .orderinfo .row {
+  justify-content: center;
+  align-content: center;
+>>>>>>> 528db558604e5ab1390a0ef5b25d30e723a35a4d
 }
 
-form .orderinfo .container .row .col-7 {
-  background-color: #3a3a3c;
+form .orderinfo .row .col-10 {
+  background-color: #292B41;
   border-radius: 5px;
   padding-bottom: 10px;
 }
 
-form .orderinfo .container .row .col-7 .btn-openmenu {
-  width: 100%;
-  text-align: left;
-  background-color: #3a3a3c;
-  border-radius: 5px;
-  outline: none;
-  border: none;
-  color: #fff;
-  font-size: 18px;
+form .orderinfo .row .col-10 .row {
+<<<<<<< HEAD
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-form .orderinfo .container .row .col-7 .btn-openmenu::before {
-  content: url(../../img/chevron-down.svg);
-  padding-right: 8px;
-  display: inline-block;
-  width: 20px;
-  height: 20px;
+form .orderinfo .row .col-10 .row .col-7 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+=======
+  justify-content: space-around;
 }
 
+<<<<<<< HEAD
 form .orderinfo .container .row .col-7 .row .col-5 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -230,23 +279,35 @@ form .orderinfo .container .row .col-7 .row .col-5 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+=======
+form .orderinfo .row .col-10 .row .col-7 {
+>>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+  display: flex;
+  flex-direction: column;
+>>>>>>> 528db558604e5ab1390a0ef5b25d30e723a35a4d
 }
 
-form .orderinfo .container .row .col-7 .row .col-5 input {
+form .orderinfo .row .col-10 .row .col-7 input {
   font-size: 16px;
   color: #fff;
-  width: 80%;
-  background-color: #3a3a3c;
+  width: 100%;
+  background-color: #292B41;
   border: 1px solid #ad6e4a;
-  border-radius: 5px;
-  height: 40px;
+  padding: 5px 10px;
+  transition: all 0.3s;
 }
 
-form .orderinfo .container .row .col-7 .row .col-11 {
+form .orderinfo .row .col-10 .row .col-7 input:focus {
+  background-color: #ad6e4a;
+  outline: none;
+}
+
+form .orderinfo .row .col-10 .row .col-11 {
   margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
   -ms-flex-line-pack: start;
       align-content: flex-start;
   -webkit-box-orient: vertical;
@@ -254,31 +315,42 @@ form .orderinfo .container .row .col-7 .row .col-11 {
       -ms-flex-direction: column;
           flex-direction: column;
   color: white;
+=======
+  align-content: flex-start;
+  flex-direction: column;
+>>>>>>> 528db558604e5ab1390a0ef5b25d30e723a35a4d
 }
 
-form .orderinfo .container .row .col-7 .row .col-11 input {
+form .orderinfo .row .col-10 .row .col-11 input {
   color: #fff;
-  width: 89%;
-  background-color: #3a3a3c;
+  width: 100%;
+  background-color: #292B41;
   border: 1px solid #ad6e4a;
-  border-radius: 5px;
-  height: 40px;
+  padding: 5px 10px;
 }
 
+<<<<<<< HEAD
 form .ltineraryinfo .container .row {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
+=======
+form .ltineraryinfo .row {
+  justify-content: center;
+>>>>>>> 528db558604e5ab1390a0ef5b25d30e723a35a4d
 }
 
-form .ltineraryinfo .container .row .col-7 .row {
-  margin-bottom: 50px;
-  background-color: #3a3a3c;
+form .ltineraryinfo .row .col-10 .row {
+  margin-bottom: 32px;
+  background-color: #292B41;
   border-radius: 5px;
+  display: flex;
+  justify-content: center;
 }
 
+<<<<<<< HEAD
 form .ltineraryinfo .container .row .col-7 .row .col-11 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -286,21 +358,33 @@ form .ltineraryinfo .container .row .col-7 .row .col-11 {
   -ms-flex-line-pack: center;
       align-content: center;
   padding: 5% 0;
+=======
+form .ltineraryinfo .row .col-10 .row .col-3 {
+  padding-top: 16px;
+  padding-bottom: 16px;
+>>>>>>> 528db558604e5ab1390a0ef5b25d30e723a35a4d
 }
 
-form .ltineraryinfo .container .row .col-7 .row .col-11 img {
-  width: 100%;
+form .ltineraryinfo .row .col-10 .row .col-3 img {
   max-width: 150px;
+<<<<<<< HEAD
   height: auto;
   max-height: 90px;
+=======
+<<<<<<< HEAD
+>>>>>>> 528db558604e5ab1390a0ef5b25d30e723a35a4d
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-form .ltineraryinfo .container .row .col-7 .row .col-11 .textinfo {
-  width: 100%;
+form .ltineraryinfo .row .col-10 .row .col-7 .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+=======
+  object-fit: cover;
 }
 
+<<<<<<< HEAD
 form .ltineraryinfo .container .row .col-7 .row .col-11 .textinfo .textinfo-1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -309,15 +393,23 @@ form .ltineraryinfo .container .row .col-7 .row .col-11 .textinfo .textinfo-1 {
       -ms-flex-align: baseline;
           align-items: baseline;
   width: 100%;
+=======
+form .ltineraryinfo .row .col-10 .row .col-7 .row {
+>>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+  display: flex;
+  justify-content: space-between;
+>>>>>>> 528db558604e5ab1390a0ef5b25d30e723a35a4d
   height: 100%;
+  width: 100%;
 }
 
-form .ltineraryinfo .container .row .col-7 .row .col-11 .textinfo .textinfo-1 p {
-  font-size: 16px;
-  max-height: 50px;
-  color: #fff;
+form .ltineraryinfo .row .col-10 .row .col-7 .row .col-11 {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
+<<<<<<< HEAD
 form .ltineraryinfo .container .row .col-7 .row .col-11 .textinfo .textinfo-1 p img {
   max-width: 16px;
   height: 16px;
@@ -331,30 +423,55 @@ form .addPay .container .row {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+=======
+form .ltineraryinfo .row .col-10 .row .col-7 .row .text-div {
+<<<<<<< HEAD
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+=======
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+>>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+  padding: 0px 0;
 }
 
-form .addPay .container .row .col-7 {
+form .ltineraryinfo .row .col-10 .row .col-7 .row .text-div img {
+  width: 25px;
+  height: 25px;
+}
+
+form .addPay .row {
+  justify-content: center;
+>>>>>>> 528db558604e5ab1390a0ef5b25d30e723a35a4d
+}
+
+form .addPay .row .col-10 {
   border-radius: 5px;
 }
 
-form .addPay .container .row .col-7 .btn-addPay {
-  width: 100%;
-  text-align: left;
-  background-color: #3a3a3c;
-  outline: none;
-  border: none;
-  color: #fff;
-  font-size: 24px;
+form .addPay .row .col-10 .automena .row .col-11 {
+<<<<<<< HEAD
+  display: -webkit-box;
+  display: -ms-flexbox;
+=======
+>>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+  display: flex;
 }
 
-form .addPay .container .row .col-7 .btn-addPay::before {
-  content: url(../../img/chevron-down.svg);
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  padding-right: 8px;
+form .addPay .row .col-10 .automena .row .col-11 input {
+  display: none;
 }
 
+<<<<<<< HEAD
 form .addPay .container .row .col-7 .automena .row .col-11 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -388,6 +505,36 @@ form .addPay .container .row .col-7 .automena .row .col-11 .traffic-div .coin {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+=======
+form .addPay .row .col-10 .automena .row .col-11 .checkbox-fu::before {
+  content: '';
+  background: transparent;
+  border: 2px solid #ad6e4a;
+  display: inline-block;
+  vertical-align: middle;
+  width: 5px;
+  height: 5px;
+  padding: 2px;
+  margin-right: 10px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+form .addPay .row .col-10 .automena .row .col-11 .checkbox-fu:checked {
+  background: #ad6e4a;
+  box-shadow: inset 0px 0px 0px 4px #ad6e4a;
+}
+
+form .addPay .row .col-10 .automena .row .col-11 .checkbox-fu::after {
+  content: "";
+  width: 1px;
+  height: 30%;
+  background-color: #ad6e4a;
+  left: -3%;
+  position: absolute;
+  transform: rotate(-45deg) translateY(-60%);
+  top: 50%;
+>>>>>>> 528db558604e5ab1390a0ef5b25d30e723a35a4d
 }
 
 form .paymethod .row {
@@ -396,20 +543,60 @@ form .paymethod .row {
           justify-content: center;
 }
 
-form .paymethod .row .col-7 .paymethod-automanu .row .col-11 .paymethod-automanu-car-automanu {
+form .paymethod .row .col-10 .paymethod-automanu .row #paymethod-coin, form .paymethod .row .col-10 .paymethod-automanu .row #paymethod-automanu-car {
   display: none;
 }
 
-form .paymethod .row .col-7 .paymethod-automanu .row .col-11 .paymethod-automanu-car-automanu input {
-  width: 100%;
-  font-size: 16px;
-  height: 30px;
-  background-color: #3a3a3e;
-  border: 1px solid #AD6E4A;
-  border-radius: 5px;
+form .paymethod .row .col-10 .paymethod-automanu .row .check::before {
+  content: '';
+  background: transparent;
+  border: 2px solid #ad6e4a;
+  display: inline-block;
+  vertical-align: middle;
+  width: 5px;
+  height: 5px;
+  padding: 2px;
+  margin-right: 10px;
+  text-align: center;
+  border-radius: 10px;
 }
 
-form .paymethod .row .col-7 .paymethod-automanu .row .col-5 input.paymethod-coin-btn {
+form .paymethod .row .col-10 .paymethod-automanu .row .col-11 {
+<<<<<<< HEAD
+  display: -webkit-box;
+  display: -ms-flexbox;
+=======
+>>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+  display: flex;
+  align-items: center;
+}
+
+form .paymethod .row .col-10 .paymethod-automanu .row .col-12 .paymethod-automanu-car-automanu .row {
+<<<<<<< HEAD
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+=======
+  justify-content: space-evenly;
+>>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+}
+
+form .paymethod .row .col-10 .paymethod-automanu .row .col-12 .paymethod-automanu-car-automanu .row input {
+  width: 100%;
+  font-size: 16px;
+  background-color: #292B41;
+  border: 1px solid #AD6E4A;
+  border-radius: 5px;
+  padding: 5px 10px;
+  transition: all 0.5s;
+}
+
+form .paymethod .row .col-10 .paymethod-automanu .row .col-12 .paymethod-automanu-car-automanu .row input:focus {
+  background-color: #ad6e4a;
+  outline: none;
+}
+
+form .paymethod .row .col-10 .paymethod-automanu .row .col-5 input.paymethod-coin-btn {
   width: 50px;
   height: 20px;
   outline: none;
@@ -419,35 +606,26 @@ form .paymethod .row .col-7 .paymethod-automanu .row .col-5 input.paymethod-coin
   line-height: 0px;
 }
 
+<<<<<<< HEAD
 form .paymethod .row .col-7 .paymethod-automanu .row .col-4 {
   display: -webkit-box;
   display: -ms-flexbox;
+=======
+form .paymethod .row .col-10 .paymethod-automanu .row .col-4 {
+<<<<<<< HEAD
+  display: -webkit-box;
+  display: -ms-flexbox;
+=======
+>>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+>>>>>>> 528db558604e5ab1390a0ef5b25d30e723a35a4d
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-form .paymethod .row .col-7 .paymethod-automanu .row .col-4 .intput-nu {
-  background-color: #3a3a3e;
-}
-
-form .paymethod .row .col-7 .btn-paymethod {
-  width: 100%;
-  text-align: justify;
-  background-color: #3a3a3c;
-  outline: none;
-  border: none;
-  color: #fff;
-  font-size: 18px;
-}
-
-form .paymethod .row .col-7 .btn-paymethod::before {
-  content: url(../../img/chevron-down.svg);
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  padding-right: 8px;
+form .paymethod .row .col-10 .paymethod-automanu .row .col-4 .intput-nu {
+  background-color: #292B41;
 }
 
 form .orderDetails .row {
@@ -457,6 +635,7 @@ form .orderDetails .row {
 }
 
 form .orderDetails .row .allpay-div {
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -466,38 +645,116 @@ form .orderDetails .row .allpay-div {
 }
 
 form .orderDetails .row .col-7 .orderDetails-automanu .col-11 {
+=======
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+=======
+  display: flex;
+  justify-content: flex-end;
+>>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
 }
 
-form .orderDetails .row .col-7 .orderDetails-automanu .col-11 .orderDetails-automanu-textdiv {
+form .orderDetails .row .col-10 .orderDetails-automanu .col-3 {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+form .orderDetails .row .col-10 .orderDetails-automanu .col-3 img {
+  max-width: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+form .orderDetails .row .col-10 .orderDetails-automanu .col-11 .payadd {
   width: 100%;
 }
 
+form .orderDetails .row .col-10 .orderDetails-automanu .col-11 .payadd .orderDetails-automanu-textdiv {
+  width: 100%;
+}
+
+form .orderDetails .row .col-10 .orderDetails-automanu .col-11 .payadd .orderDetails-automanu-textdiv .textbox {
+>>>>>>> 528db558604e5ab1390a0ef5b25d30e723a35a4d
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+form .orderDetails .row .col-10 .orderDetails-automanu .col-11 .orderDetails-automanu-textdiv {
+  width: 100%;
+}
+
+form .orderDetails .row .col-10 .orderDetails-automanu .col-11 .orderDetails-automanu-textdiv .textbox {
+<<<<<<< HEAD
+  display: -webkit-box;
+  display: -ms-flexbox;
+=======
+>>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+  display: flex;
+  width: 100%;
+}
+
+<<<<<<< HEAD
 form .orderDetails .row .col-7 .orderDetails-automanu .col-11 .orderDetails-automanu-textdiv .textbox {
+=======
+form .orderDetails .row .col-10 .orderDetails-automanu .col-7 {
+>>>>>>> 528db558604e5ab1390a0ef5b25d30e723a35a4d
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+form .orderDetails .row .col-10 .orderDetails-automanu .col-7 .row {
+<<<<<<< HEAD
+  display: -webkit-box;
+  display: -ms-flexbox;
+=======
+>>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 100%;
 }
 
-form .orderDetails .row .col-7 .orderDetails-automanu .col-11 .orderDetails-automanu-textdiv .icon {
-  width: 16px;
-  height: 16px;
+form .orderDetails .row .col-10 .orderDetails-automanu .col-7 .row .text-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 8px 0;
 }
 
-form .orderDetails .row .col-7 .btn-orderDetails {
+form .orderDetails .row .col-10 .orderDetails-automanu .col-7 .row .text-div img {
+  width: 25px;
+  height: 25px;
+}
+
+form .orderDetails .row .col-10 .btn-orderDetails {
   width: 100%;
   text-align: left;
-  background-color: #3a3a3c;
+  background-color: #292B41;
   outline: none;
   border: none;
   color: #fff;
   font-size: 18px;
 }
 
-form .orderDetails .row .col-7 .btn-orderDetails::before {
+form .orderDetails .row .col-10 .btn-orderDetails::before {
   content: url(../../img/chevron-down.svg);
   display: inline-block;
   width: 20px;

@@ -12,6 +12,13 @@
       integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
       crossorigin="anonymous"
     />
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Vue.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.12/vue.js"></script>
+
     <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/all.css" />
@@ -20,114 +27,32 @@
     <style></style>
   </head>
   <body>
+    <div class="container">
     <header>@@include('./layout/header.html')</header>
-      <div class="col-12" id="tab" align="center">
-        <div class="col-11 frame">
-          <div class="title">星星世界</div>
-          <ul class="tab-title">
-            <li class="selected"><a href="#tab01">火星</a></li>
-            <li><a href="#tab02">月球</a></li>
-            <li><a href="#tab03">土星</a></li>
-            <li><a href="tab04">木星</a></li>
-            <li><a href="tab04">木星</a></li>
-            <li><a href="tab04">木星</a></li>
-            <li><a href="tab04">木星</a></li>
-          </ul>
-          <div class="saparator"></div>
-          <div id="tab01" class="col-10 tab-inner">
-            <div class="intro col-6">
-              <h3>火星</h3>
-              <p>
-                火星大氣以二氧化碳為主，既稀薄又寒冷，其表面特徵讓人聯想起月球上的撞擊坑，以及地球上的山谷、沙漠和極地冰蓋。
-              </p>
-            </div>
-            <div class="data col-6">
-              <div class="grav">
-                <span>38</span>
-                <span class="data-mid">％</span>
-                <p>重力</h4>
-              </div>
-              <div class="day">
-                <span>24</span>
-                <span class="data-low">HR</span>
-                <p>一天</h4>
-              </div>
-              <div class="temp">
-                <span class="data-mid">-</span>
-                <span>60</span>
-                <span class="data-high">F</span>
-                <p>溫度</h4>
-              </div>
-            </div>
-          </div>
-          <div id="tab02" class="col-10 tab-inner">
-            <div class="intro col-6">
-              <h3>月球</h3>
-              <p>
-                火星大氣以二氧化碳為主，既稀薄又寒冷，其表面特徵讓人聯想起月球上的撞擊坑，以及地球上的山谷、沙漠和極地冰蓋。
-              </p>
-            </div>
-            <div class="data col-6">
-              <div class="grav">
-                <span>38</span>
-                <span class="data-mid">％</span>
-                <h4>重力</h4>
-              </div>
-              <div class="day">
-                <span>24</span>
-                <span class="data-low">HR</span>
-                <h4>一天</h4>
-              </div>
-              <div class="temp">
-                <span class="data-mid">-</span>
-                <span>60</span>
-                <span class="data-high">F</span>
-                <h4>溫度</g4>
-              </div>
-            </div>
-          </div>
-          <div id="tab03" class="col-10 tab-inner">
-            <div class="intro col-6">
-              <h3>土星</h3>
-              <p>
-                火星大氣以二氧化碳為主，既稀薄又寒冷，其表面特徵讓人聯想起月球上的撞擊坑，以及地球上的山谷、沙漠和極地冰蓋。
-              </p>
-            </div>
-            <div class="data col-6">
-              <div class="grav">
-                <span>38</span>
-                <span class="data-mid">％</span>
-                <h4>重力</h4>
-              </div>
-              <div class="day">
-                <span>24</span>
-                <span class="data-low">HR</span>
-                <h4>一天</h4>
-              </div>
-              <div class="temp">
-                <span class="data-mid">-</span>
-                <span>60</span>
-                <span class="data-high">F</span>
-                <h4>溫度</h4>
-              </div>
-            </div>
-          </div>
-          <div id="tab04" class="col-10 tab-inner">
-            <div class="intro col-6">
-              <p>
-                coming soon
-              </p>
-            </div>
-          </div>
-          <div class="tab-active col-12">
-            <img
-              src="./img/planet/mars.png"
-              style="max-width: 500px"
-              class="geoplanet"
-            />
-          </div>
-          <div class="content">
-            <div class="col-6 imgs">
+    <div class="col-11 frame">
+    <div class="container col-" id="app">
+      <div class="title">
+        <h2 align="center" class="margin_top_10">星星世界</h2>
+      </div>
+      <!-- jQuery -->
+      <div class="tabList margin_top_3 col-LG-12 ">
+        <button class="button_min active" @click="content='mars'">火星</button>
+        <button class="button_min" @click="content='moon'">月球</button>
+        <button class="button_min" @click="content='saturn'">土星</button>
+        <button class="button_min" @click="content='saturn'">土星</button>
+        <button class="button_min" @click="content='saturn'">土星</button>
+        <button class="button_min" @click="content='saturn'">土星</button>
+        <button class="button_min" @click="content='saturn'">土星</button>
+      
+      </div>
+      <div class="separator col-10"></div>
+
+      <component :is="content" class="col-lg-12 col-sm-12"></component>
+      
+          
+
+          <div class="planet_content ">
+            <div class="imgs col-lg-6  margin_top_9 hidden-md">
               <img
                 src="./img/planet/mars_2.jpg"
                 alt="Mars pic"
@@ -150,7 +75,28 @@
                 class="img3"
               />
             </div>
-            <div class="col-5 desc">
+            <!-- RWD Carousel -->
+            <div id="carouselExampleControls" class="carousel slide margin_top_6" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./img/planet/mars_1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./img/planet/mars_2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./img/planet/mars_3.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              </a>
+            </div>
+
+            <div class="desc col-lg-5 margin_top_10">
               <p>
                 火星屬於地質行星，火星算是人類探勘最多的行星了，地表上沙丘、礫石遍布，泥土中充滿鐵礦物質而氧化後生鏽從而讓表面上看起來呈現是紅色的樣子，火星上有太陽系裡最高的火山比地球珠穆朗瑪峰高出了三倍。
                 有個名為 Valles
@@ -159,21 +105,25 @@
               </p>
             </div>
           </div>
+        <!-- 框框 -->
+        </div>
       </div>
-    </div>
     <footer>@@include('./layout/footer.html')</footer>
-    
-
+  </div>
+    <!-- 星球頁籤轉移 -->
     <script>
       $(function(){
-        var $li = $('ul.tab-title li');
-            $($li.eq(0).addClass('selected').find('a').attr('href')).siblings('.tab-inner').hide();
+        var $button = $('div.tabList button');
+            $($button.eq(0).addClass('active').find('button').siblings('.tab-inner').hide());
 
-            $li.click(function(){
+            $button.click(function(){
               $($(this).find('a').attr('href')).show().siblings('.tab-inner').hide();
-              $(this).addClass('selected').siblings('.selected').removeClass('selected');
+              $(this).addClass('active').siblings('.active').removeClass('active');
             });
       });
     </script>
+    <!-- 星球tab Vue-->
+    <script src="./js/planet_data.js"></script>
+
   </body>
 </html>
