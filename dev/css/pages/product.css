@@ -56,7 +56,8 @@ img {
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
   margin: 0;
   padding: 0;
 }
@@ -77,6 +78,21 @@ body {
   font-size: 14px;
   background-color: #0c0d18;
   overflow-x: hidden;
+<<<<<<< HEAD
+<<<<<<< HEAD
+  -o-user-select: none;
+  user-select: none;
+=======
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -ms-user-select: none;
+      user-select: none;
+>>>>>>> denis
+=======
+  -o-user-select: none;
+  user-select: none;
+>>>>>>> chickhack
 }
 
 h1, .h1 {
@@ -300,19 +316,23 @@ small, .small {
 }
 
 nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   background-color: #0c0d18;
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
+=======
   position: -webkit-sticky;
-=======
->>>>>>> chickhack
-=======
->>>>>>> kai
+>>>>>>> denis
 =======
 >>>>>>> chickhack
   position: sticky;
@@ -335,10 +355,18 @@ nav .logo h1 a {
 }
 
 nav .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   width: 60%;
 }
 
@@ -347,10 +375,17 @@ nav .nav-links a {
 }
 
 nav .nav-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 12%;
 }
 
@@ -382,19 +417,28 @@ footer .links .logo {
   position: relative;
   left: 50%;
   bottom: 50px;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 footer .links .footer-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 55%;
   position: relative;
   left: 50%;
   bottom: 30px;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 footer .links .footer-links a {
@@ -405,7 +449,8 @@ footer .footer_moon {
   position: relative;
   left: 50%;
   max-width: 550px;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 footer .smoke {
@@ -414,13 +459,15 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
+<<<<<<< HEAD
+<<<<<<< HEAD
   transform: translateX(-50%);
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> chickhack
 =======
->>>>>>> kai
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+>>>>>>> denis
 =======
+  transform: translateX(-50%);
 >>>>>>> chickhack
 }
 
@@ -449,55 +496,198 @@ footer .smoke {
   cursor: pointer;
 }
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+body {
+<<<<<<< HEAD
+<<<<<<< HEAD
+  object-fit: cover;
+  user-select: none;
+=======
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+>>>>>>> denis
+=======
+  object-fit: cover;
+  user-select: none;
+>>>>>>> chickhack
+}
+
+@media all and (max-width: 768px) {
+  .container {
+    margin: 0 30px;
+  }
+}
+
 .product {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
   justify-content: center;
   align-items: center;
   align-items: start;
+  flex-wrap: wrap;
 <<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> chickhack
 =======
->>>>>>> kai
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+>>>>>>> denis
 =======
 >>>>>>> chickhack
+  padding-top: 15vh;
 }
 
-.product .img {
-  max-width: 500px;
-  text-align: center;
+.product .imgs {
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  justify-content: flex-end;
+  max-width: 948px;
 }
 
-.product .img .bigImg {
-  width: 90%;
-  height: 250px;
+.product .imgs .img {
+  max-width: 400px;
+  text-align: center;
+>>>>>>> chickhack
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-end;
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+>>>>>>> denis
+  max-width: 948px;
+}
+
+.product .imgs .img {
+  max-width: 400px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media all and (max-width: 768px) {
+  .product .imgs .img {
+    max-width: 948px;
+  }
+}
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> chickhack
+@media all and (max-width: 768px) {
+  .product .imgs .img {
+    max-width: 948px;
+  }
+}
+
+<<<<<<< HEAD
+=======
+>>>>>>> denis
+=======
+>>>>>>> chickhack
+.product .imgs .img .bigImg {
+  width: 100%;
+  max-height: 450px;
   background-color: #ffffff;
 }
 
-.product .img .smallImg {
+@media all and (max-width: 768px) {
+  .product .imgs .img .bigImg {
+    max-height: 400px;
+  }
+}
+
+.product .imgs .img .smallImg {
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> chickhack
   display: flex;
   justify-content: center;
   align-items: center;
-  justify-content: space-around;
-  width: 90%;
+  justify-content: start;
+<<<<<<< HEAD
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+>>>>>>> denis
+=======
+>>>>>>> chickhack
+  width: 100%;
 }
 
-.product .img .smallImg .imgDetail {
-  max-width: 100px;
+.product .imgs .img .smallImg .imgDetail {
+  max-width: 80px;
+  max-height: 60px;
   background-color: #ffffff;
   cursor: pointer;
-  margin: 0 4px;
+  margin-right: 16px;
   padding: 4px;
 }
 
-.product .img .smallImg .imgDetail img {
-  width: 60px;
-  height: 56px;
-  object-fit: cover;
+.product .imgs .img .smallImg .imgDetail img {
+  width: 100%;
 }
 
 .product .detail {
@@ -505,16 +695,40 @@ footer .smoke {
   text-align: left;
 }
 
+@media all and (max-width: 768px) {
+  .product .detail {
+    width: 100%;
+    margin: 60px 30px;
+  }
+}
+
 .product .detail strong {
   font-weight: 700;
+}
+
+.product .detail p {
+  width: 100%;
+}
+
+@media all and (max-width: 768px) {
+  .product .detail p {
+    width: 100%;
+  }
 }
 
 .product .detail hr {
   margin-left: 0;
   margin-right: 0;
-  width: 80%;
-  border: 1px solid #AD6E4A;
+  width: 100%;
+  height: 1px;
+  border: none;
   background-color: #AD6E4A;
+}
+
+@media all and (max-width: 768px) {
+  .product .detail hr {
+    width: 100%;
+  }
 }
 
 .product .detail .h3 {
@@ -548,7 +762,32 @@ footer .smoke {
 
 .product .detail .quantity .button_large {
   width: 100%;
-  padding: 8px 0;
+  cursor: pointer;
+  padding: 15px 0;
+}
+
+.product .detail .quantity .button_large.buy {
+  background-color: #AD6E4A;
+  color: #ffffff;
+  font-weight: 900;
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  -webkit-transition: all .3s;
+>>>>>>> denis
+=======
+>>>>>>> chickhack
+  transition: all .3s;
+}
+
+.product .detail .quantity .button_large.buy:hover {
+  background-color: #bf896b;
+}
+
+@media all and (max-width: 768px) {
+  .product .detail .quantity .button_large {
+    width: 100%;
+  }
 }
 
 .describe {
@@ -557,31 +796,78 @@ footer .smoke {
   text-align: center;
 }
 
+@media all and (max-width: 768px) {
+  .describe {
+    margin: 0 auto;
+    margin-bottom: 80px;
+  }
+}
+
 .recommend {
   text-align: center;
-  width: 53%;
+  max-width: 948px;
   margin: 0 auto;
 }
 
 .recommend ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
   justify-content: center;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+<<<<<<< HEAD
+=======
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+>>>>>>> denis
+=======
+>>>>>>> chickhack
+  margin: 32px 30px;
 }
 
 .recommend ul li {
   width: 30%;
 }
 
+@media all and (max-width: 768px) {
+  .recommend ul li {
+    width: 100%;
+    margin-top: 40px;
+  }
+}
+
 .recommend ul li .spotImg {
   position: relative;
+}
+
+.recommend ul li .spotImg img {
+  width: 100%;
+  height: 300px;
+}
+
+@media all and (max-width: 768px) {
+  .recommend ul li .spotImg img {
+    height: 100%;
+  }
 }
 
 .recommend ul li .spotImg p {
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   bottom: 0;
   background-color: #AD6E4A;
   color: #ffffff;
@@ -597,13 +883,18 @@ footer .smoke {
 }
 
 .comment {
-  width: 53%;
+  max-width: 948px;
   margin: 80px auto;
+  padding: 0 30px;
 }
 
 .comment .score {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
 }
 
@@ -613,9 +904,15 @@ footer .smoke {
 }
 
 .comment .score .stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .comment .score .stars .star {
@@ -634,9 +931,15 @@ footer .smoke {
 }
 
 .comment .messages {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-bottom: 1px solid #AD6E4A;
   padding: 16px 0;
   position: relative;
@@ -647,10 +950,18 @@ footer .smoke {
 }
 
 .comment .messages .name {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
 }
 
 .comment .messages .name hr {
@@ -661,11 +972,9 @@ footer .smoke {
 }
 
 .comment .messages .more {
-  position: absolute;
-  right: 0;
-  bottom: 16px;
   color: #ffffff;
   text-decoration: underline;
-  cursor: pointer;
+  position: relative;
+  float: right;
 }
 /*# sourceMappingURL=product.css.map */

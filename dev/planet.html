@@ -12,6 +12,10 @@
       integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
       crossorigin="anonymous"
     />
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <!-- Vue.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.12/vue.js"></script>
 
@@ -26,9 +30,11 @@
     <header>@@include('./layout/header.html')</header>
     <div class="col-11 frame">
     <div class="container col-" id="app">
-      <h2 align="center" class="margin_top_10">星星世界</h2>
+      <div class="title">
+        <h2 align="center" class="margin_top_10">星星世界</h2>
+      </div>
       <!-- jQuery -->
-      <div class="tabList margin_top_3 col-12 ">
+      <div class="tabList margin_top_3 col-LG-12 ">
         <button class="button_min active" @click="content='mars'">火星</button>
         <button class="button_min" @click="content='moon'">月球</button>
         <button class="button_min" @click="content='saturn'">土星</button>
@@ -45,7 +51,7 @@
           
 
           <div class="planet_content ">
-            <div class="col-lg-6 imgs margin_top_9 col-sm-12">
+            <div class="imgs col-lg-6  margin_top_9 hidden-md">
               <img
                 src="./img/planet/mars_2.jpg"
                 alt="Mars pic"
@@ -68,7 +74,28 @@
                 class="img3"
               />
             </div>
-            <div class="desc col-lg-5 col-sm-10">
+            <!-- RWD Carousel -->
+            <div id="carouselExampleControls" class="carousel slide margin_top_6" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./img/planet/mars_1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./img/planet/mars_2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./img/planet/mars_3.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              </a>
+            </div>
+
+            <div class="desc col-lg-5 margin_top_10">
               <p>
                 火星屬於地質行星，火星算是人類探勘最多的行星了，地表上沙丘、礫石遍布，泥土中充滿鐵礦物質而氧化後生鏽從而讓表面上看起來呈現是紅色的樣子，火星上有太陽系裡最高的火山比地球珠穆朗瑪峰高出了三倍。
                 有個名為 Valles
@@ -96,5 +123,6 @@
     </script>
     <!-- 星球tab Vue-->
     <script src="./js/planet_data.js"></script>
+
   </body>
 </html>

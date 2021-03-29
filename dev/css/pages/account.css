@@ -57,7 +57,8 @@ img {
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
   margin: 0;
   padding: 0;
 }
@@ -78,6 +79,21 @@ body {
   font-size: 14px;
   background-color: #0c0d18;
   overflow-x: hidden;
+<<<<<<< HEAD
+<<<<<<< HEAD
+  -o-user-select: none;
+  user-select: none;
+=======
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -ms-user-select: none;
+      user-select: none;
+>>>>>>> denis
+=======
+  -o-user-select: none;
+  user-select: none;
+>>>>>>> chickhack
 }
 
 h1, .h1 {
@@ -301,19 +317,23 @@ small, .small {
 }
 
 nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   background-color: #0c0d18;
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
+=======
   position: -webkit-sticky;
-=======
->>>>>>> chickhack
-=======
->>>>>>> kai
+>>>>>>> denis
 =======
 >>>>>>> chickhack
   position: sticky;
@@ -336,10 +356,18 @@ nav .logo h1 a {
 }
 
 nav .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   width: 60%;
 }
 
@@ -348,10 +376,17 @@ nav .nav-links a {
 }
 
 nav .nav-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 12%;
 }
 
@@ -383,19 +418,28 @@ footer .links .logo {
   position: relative;
   left: 50%;
   bottom: 50px;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 footer .links .footer-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 55%;
   position: relative;
   left: 50%;
   bottom: 30px;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 footer .links .footer-links a {
@@ -406,7 +450,8 @@ footer .footer_moon {
   position: relative;
   left: 50%;
   max-width: 550px;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 footer .smoke {
@@ -417,15 +462,11 @@ footer .smoke {
   height: 80%;
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
+  transform: translateX(-50%);
+=======
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-=======
-  transform: translateX(-50%);
->>>>>>> chickhack
-=======
-  transform: translateX(-50%);
->>>>>>> kai
+>>>>>>> denis
 =======
   transform: translateX(-50%);
 >>>>>>> chickhack
@@ -456,6 +497,18 @@ footer .smoke {
   cursor: pointer;
 }
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 body {
   background-color: #0c0d18;
 }
@@ -465,7 +518,10 @@ body {
   padding: 15vh 250px 0px 250px;
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
+  display: flex;
+  align-items: center;
+  justify-content: left;
+=======
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -475,16 +531,7 @@ body {
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
-=======
-  display: flex;
-  align-items: center;
-  justify-content: left;
->>>>>>> chickhack
-=======
-  display: flex;
-  align-items: center;
-  justify-content: left;
->>>>>>> kai
+>>>>>>> denis
 =======
   display: flex;
   align-items: center;
@@ -594,20 +641,36 @@ img.nowlev, img.nextlev {
 }
 
 .your_acc {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .now_lev {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   /* justify-content: left; */
 }
 
 .next_lev {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   /* justify-content: right; */
 }
 
@@ -646,6 +709,8 @@ p.nextacc, p.nowacc {
   height: auto;
   background-color: #3a3a3c;
   opacity: 0.6;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 

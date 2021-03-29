@@ -1,26 +1,23 @@
-@import "../reset";
-@import "../base";
-@import "../header";
-@import "../footer";
+@import "../all.scss";
 
 div.bk {
     background-image: url(../../img/trip/bk.png);
-    height:550px ;
+    height: 550px;
     width: 550px;
     background-size: 75%;
     background-repeat: no-repeat;
     // border:1px solid red;
     position: absolute;
     left: 450px;
-    top: 35px;
+    top: 100px;
     opacity: 0.6;
-    @media all and (max-width:768px){
-        display:none;
-     }
+    @media all and (max-width:768px) {
+        display: none;
+    }
 }
 
 div.bk3 {
-    
+
     width: 300px;
     height: 300px;
     // border:1px solid red;
@@ -40,181 +37,217 @@ div.bk3 {
     opacity: 0.2;
 }
 
+
 // <!-- ----------first -->
 .first {
     display: flex;
     max-width: 1200px;
     margin: 0 auto;
-    @media all and (max-width:1200px){
-       flex-direction: column;
-       justify-content: center;
-       width: 95%;
+
+    @media all and (max-width:1200px) {
+        flex-direction: column;
+        justify-content: center;
+        width: 95%;
     }
+
     img {
         display: block;
     }
+
     .first_left {
         padding-left: 40px;
         width: 35%;
         display: flex;
-        @media all and (max-width:1200px){
+
+        @media all and (max-width:1200px) {
             padding-left: 8px;
             margin: 0 auto;
-            width:400px;
-         }
+            width: 400px;
+        }
+
         h2.title {
             display: inline-block;
             position: relative;
             vertical-align: top;
             top: 15vh;
             letter-spacing: 10px;
+
             span.h3 {
                 font-weight: 500;
                 letter-spacing: 10px;
             }
         }
     }
+
     .first_right {
         width: 50%;
         position: relative;
-        overflow: hidden;
-        @media all and (max-width:1200px){
-            
+
+        @media all and (max-width:1200px) {
             overflow: hidden;
             width: 95%;
-          }
-        .hottrip {
-            display: inline-flex;
-            overflow: hidden;
-            padding-top: 96px;
-            } 
-            div.planet_top {
-                position: relative;
-                padding-top: 90px;
-                text-align: center;
-                width: 55%;
-                padding-left: 16px;
-                padding-right: 16px;
-                @media all and (max-width:1200px){
-                    padding-left: 8px;
-                    padding-right: 8px;
-                  }
-                
-
-                img.planet {
-                    height: 160px;
-                    position: absolute;
-                    top: 15px;
-                    left: 50%;
-                    transform: translateX(-50%);
-                }
-                img.planet_a1 {
-                    max-width: 280px;
-                }
-                div.word {
-                    position: absolute;
-                    top: 190px;
-                    left: 50%;
-                    transform: translateX(-50%);
-                    text-align: center;
-                    margin: 0 auto;
-                    .hot {
-                        color: $gold;
-                    }
-                    .tag {
-                        display: inline-flex;
-                        border: 1px solid $pink;
-                        border-radius: 5px;
-                        padding: 8px;
-                        line-height: 5px;
-                        margin: 3px;
-                        color: $gray;
-                    }
-                    .price {
-                        color: $gold;
-                        font-weight: bold;
-                        letter-spacing: 2px;
-                        margin-bottom: 8px;
-                        font-family: "Nasalization";
-                    }
-                    .addin {
-                        background-color: $gold;
-                        color: $white;
-                        border-radius: 15px;
-                        width: 110px;
-                        margin: 0 auto;
-                        line-height: 26px;
-                        text-align: center;
-                        img.plus {
-                            width: 15px;
-                            display: inline-block;
-                            position: relative;
-                            top: 2px;
-                            padding-right: 4px;
-                        }
-
-                    }
-                    
-
-                }
-            }
         }
-        // <!-- ----------slider -->
-        .tripselect {
-            display: inline-flex;
-            width: 280px;
-            justify-content: space-between;
 
-            .icon2 {
-                width: 25px;
-                cursor: pointer;
-                z-index: 2;
+        .hottrip {
+            top: 15vh;
+            display: inline-flex;
+            padding-top: 96px;
+        }
+
+        div.planet_top {
+            position: relative;
+            padding-top: 90px;
+            text-align: center;
+            width: 55%;
+            padding-left: 16px;
+            padding-right: 16px;
+
+            @media all and (max-width:1200px) {
+                padding-left: 8px;
+                padding-right: 8px;
             }
-            .select {
-                position: relative;
-                bottom: 4px;
-                color: $gold;
+
+            h4 {
+                color: $pink;
+            }
+
+            img.planet {
+                height: 160px;
+                position: absolute;
+                top: 15px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            img.planet_a1 {
+                max-width: 280px;
+            }
+            // img.planet_a1:hover {
+            //     transform: perspective(0.5px) translateX(-1.5px) translateY(-1.5px);
+
+            // }
+
+            div.word {
+                position: absolute;
+                top: 190px;
+                left: 50%;
+                transform: translateX(-50%);
+                text-align: center;
+                margin: 0 auto;
+
+                .hot {
+                    color: $gold;
+                }
+
+                .tag {
+                    display: inline-flex;
+                    border: 1px solid $pink;
+                    border-radius: 5px;
+                    padding: 8px;
+                    line-height: 5px;
+                    margin: 3px;
+                    color: $gray;
+                }
+
+                .price {
+                    color: $gold;
+                    font-weight: bold;
+                    letter-spacing: 2px;
+                    margin-bottom: 8px;
+                    font-family: "Nasalization";
+                }
+
+                .addin {
+                    background-color: $gold;
+                    color: $white;
+                    border-radius: 15px;
+                    width: 110px;
+                    margin: 0 auto;
+                    line-height: 26px;
+                    text-align: center;
+
+                    img.plus {
+                        width: 15px;
+                        display: inline-block;
+                        position: relative;
+                        top: 2px;
+                        padding-right: 4px;
+                    }
+
+                }
+
+                .addin:hover {
+                    background-color: lighten($gold, 10%);
+                }
+
             }
         }
     }
+
+    // <!-- ----------slider -->
+    .tripselect {
+        display: inline-flex;
+        width: 280px;
+        justify-content: space-between;
+
+        .icon2 {
+            width: 25px;
+            cursor: pointer;
+            z-index: 2;
+        }
+
+        .select {
+            position: relative;
+            bottom: 4px;
+            color: $gold;
+        }
+    }
+}
 
 // <!-- ---------流程區 -->
 .stepsection {
     text-align: center;
     background-color: rgba($color: #191919, $alpha: 0.3);
     padding: 48px;
+
     .stepall {
-        max-width:1200px;
+        max-width: 1000px;
         margin: 0 auto;
         display: flex;
         align-items: baseline;
         justify-content: space-between;
         padding: 32px;
+
         @media all and (max-width: 767px) {
             flex-direction: column;
-            align-items:center;
+            align-items: center;
         }
+
         .step {
             position: relative;
+
             @media all and (max-width: 767px) {
                 margin-left: 0;
                 padding-top: 24px;
             }
-            
+
             img.step_icon {
                 width: 50px;
                 padding: 20px;
                 margin: 0 auto;
             }
+
             img.step_icon4 {
                 width: 85px;
                 padding: 20px;
                 margin: 0 auto;
             }
+
             .step_content {
                 color: $gold;
                 font-weight: bold;
                 width: 100%;
+
                 img.num {
                     width: 23px;
                     display: inline-block;
@@ -223,44 +256,56 @@ div.bk3 {
                     padding-right: 8px;
                 }
             }
-        }   
+        }
     }
 }
 
 // <!-- ---------second -->
 .second {
     margin-bottom: 100px;
+
     .alltrip {
         text-align: center;
         margin: 0 auto;
     }
+
     .tripcard_all {
         display: inline-flex;
         justify-content: center;
         flex-wrap: wrap;
         width: 100%;
+
         .tripcard {
             // border: 1px solid white;
-            width:250px;
+            width: 250px;
             background-color: #191919;
             padding: 15px;
             border-radius: 5px;
             position: relative;
-            margin:0 16px 0 16px;
-            @media screen and (min-width: 768px)  and (max-width: 992px) {
-                margin:16px;
+            margin: 0 16px 0 16px;
+
+            @media screen and (min-width: 768px) and (max-width: 992px) {
+                margin: 16px;
             }
+
             @media all and (max-width: 767px) {
                 flex-direction: column;
-                margin:16px 0 16px 0;
+                margin: 16px 0 16px 0;
             }
+
             .spot_pic {
                 width: 250px;
             }
+            .spot_pic:hover {
+                transform: perspective(0.5px) translateX(-1.5px) translateY(-1.5px);
+            }
+
             .hot2 {
                 font-weight: bold;
                 margin-bottom: 15px;
+                color: $pink;
             }
+
             .tag {
                 display: inline-flex;
                 border: 1px solid $pink;
@@ -270,6 +315,7 @@ div.bk3 {
                 margin: 3px;
                 color: $gray;
             }
+
             .price2 {
                 color: $gold;
                 font-weight: bold;
@@ -279,8 +325,9 @@ div.bk3 {
                 position: absolute;
                 right: 20px;
                 bottom: 10px;
-    
+
             }
+
             .addin2 {
                 background-color: $gold;
                 color: $white;
@@ -288,6 +335,7 @@ div.bk3 {
                 width: 110px;
                 line-height: 26px;
                 text-align: center;
+
                 img.plus {
                     width: 15px;
                     display: inline-block;
@@ -296,7 +344,12 @@ div.bk3 {
                     padding-right: 4px;
                 }
             }
-            .trip_bookmark{
+
+            .addin2:hover {
+                background-color: lighten($gold, 10%);
+            }
+
+            .trip_bookmark {
                 padding: 8px;
                 position: absolute;
                 right: 10px;
@@ -309,10 +362,11 @@ div.bk3 {
                 cursor: pointer;
             }
         }
+
+        .tripcard>img :hover {
+            // box-shadow: 0 8px 8px 5px rgba(255, 255, 255, 0.8);
+            transform: perspective(0.5px) translateX(-1.5px) translateY(-1.5px);
+        }
+
     }
-}
-
-
-
-
-
+    }

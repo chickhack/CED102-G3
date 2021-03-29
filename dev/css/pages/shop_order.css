@@ -56,7 +56,8 @@ img {
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
   margin: 0;
   padding: 0;
 }
@@ -77,6 +78,21 @@ body {
   font-size: 14px;
   background-color: #0c0d18;
   overflow-x: hidden;
+<<<<<<< HEAD
+<<<<<<< HEAD
+  -o-user-select: none;
+  user-select: none;
+=======
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -ms-user-select: none;
+      user-select: none;
+>>>>>>> denis
+=======
+  -o-user-select: none;
+  user-select: none;
+>>>>>>> chickhack
 }
 
 h1, .h1 {
@@ -300,11 +316,19 @@ small, .small {
 }
 
 nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   background-color: #0c0d18;
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   width: 100%;
@@ -325,10 +349,18 @@ nav .logo h1 a {
 }
 
 nav .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   width: 60%;
 }
 
@@ -337,10 +369,17 @@ nav .nav-links a {
 }
 
 nav .nav-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 12%;
 }
 
@@ -372,19 +411,28 @@ footer .links .logo {
   position: relative;
   left: 50%;
   bottom: 50px;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 footer .links .footer-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 55%;
   position: relative;
   left: 50%;
   bottom: 30px;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 footer .links .footer-links a {
@@ -395,7 +443,8 @@ footer .footer_moon {
   position: relative;
   left: 50%;
   max-width: 550px;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 footer .smoke {
@@ -404,7 +453,8 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .quantity label {
@@ -432,6 +482,18 @@ footer .smoke {
   cursor: pointer;
 }
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 section.orderDetail {
   max-width: 948px;
   margin: 0 auto;
@@ -439,63 +501,191 @@ section.orderDetail {
 }
 
 section.orderDetail .order {
-  width: 95%;
-  margin: 0 auto;
+  margin: 0 30px;
 }
 
 section.orderDetail .order li {
   font-weight: 900;
   background-color: #292B41;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+<<<<<<< HEAD
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+=======
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+>>>>>>> denis
+  padding: 8px 0;
+}
+
+section.orderDetail .order li .imgWord {
+  width: 100%;
+<<<<<<< HEAD
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+>>>>>>> denis
+}
+
+section.orderDetail .order li .imgWord .prod {
+  width: 10%;
+}
+
+@media all and (max-width: 768px) {
+  section.orderDetail .order li .imgWord .prod {
+    width: 15%;
+    margin-left: 8px;
+  }
+}
+
+section.orderDetail .order li .imgWord .imgRight {
+<<<<<<< HEAD
   display: flex;
   justify-content: center;
   align-items: center;
   justify-content: space-between;
-  padding: 8px 16px;
-}
-
-section.orderDetail .order li .imgWord {
-  width: 45%;
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+>>>>>>> denis
+  width: 60%;
 }
 
-section.orderDetail .order li .imgWord .prod {
-  max-width: 80px;
-  background-color: #ffffff;
-  padding: 8px;
+@media all and (max-width: 768px) {
+  section.orderDetail .order li .imgWord .imgRight {
+    width: 75%;
+<<<<<<< HEAD
+    justify-content: space-around;
+=======
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+>>>>>>> denis
+  }
 }
 
 section.orderDetail .order li .imgWord .integral {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.orderDetail .order li .imgWord .integral .icon {
+  max-width: 10px;
+}
+
+section.orderDetail .order li .imgWord .integral .icon {
+  max-width: 10px;
 }
 
 section.orderDetail .order li .quantity {
-  width: 45%;
+  width: 80%;
+<<<<<<< HEAD
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> denis
   display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 section.orderDetail .detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   padding: 16px 6% 16px 0;
   background-color: #292B41;
 }
 
+@media all and (max-width: 768px) {
+  section.orderDetail .detail {
+<<<<<<< HEAD
+    justify-content: center;
+=======
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+>>>>>>> denis
+  }
+}
+
 section.orderDetail .detail .total, section.orderDetail .detail .integral {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 40%;
+}
+
+@media all and (max-width: 768px) {
+  section.orderDetail .detail .total, section.orderDetail .detail .integral {
+    width: 100%;
+  }
 }
 
 section.orderDetail .detail .total p:nth-child(2), section.orderDetail .detail .integral p:nth-child(2) {
@@ -504,9 +694,15 @@ section.orderDetail .detail .total p:nth-child(2), section.orderDetail .detail .
 }
 
 section.orderDetail .detail .total > .count, section.orderDetail .detail .integral > .count {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 section.orderDetail .detail small {
@@ -516,30 +712,53 @@ section.orderDetail .detail small {
 section.orderer {
   max-width: 948px;
   margin: 0 auto;
+  padding-bottom: 40px;
+  position: relative;
 }
 
 section.orderer form {
   position: relative;
-  padding-bottom: 80px;
 }
 
 section.orderer .orderer_form, section.orderer .recipient, section.orderer .payment {
-  width: 95%;
-  margin: 32px auto;
+  margin: 32px 30px;
   background-color: #292B41;
-  padding-bottom: 80px;
+  padding-bottom: 60px;
   max-height: 0;
   overflow: hidden;
+  -webkit-transition: all 1s;
   transition: all 1s;
 }
 
-section.orderer .orderer_click, section.orderer .recipient_click, section.orderer .payment_click {
-  padding: 16px 0;
+section.orderer .arrow {
+<<<<<<< HEAD
+  display: flex;
+  align-items: center;
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+>>>>>>> denis
+  padding: 20px 0;
+  margin: 0 8px;
   cursor: pointer;
-  position: relative;
-  left: 6%;
 }
 
+<<<<<<< HEAD
+section.orderer .arrow img {
+<<<<<<< HEAD
+  transition: all .5s;
+  transform: rotate(-90deg);
+=======
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+>>>>>>> denis
+=======
 section.orderer .orderer_click::before, section.orderer .recipient_click::before, section.orderer .payment_click::before {
   content: "";
   width: 1px;
@@ -547,16 +766,6 @@ section.orderer .orderer_click::before, section.orderer .recipient_click::before
   background-color: #ffffff;
   position: absolute;
   left: -3.1%;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  -webkit-transform: rotate(45deg) translateY(-60%);
-          transform: rotate(45deg) translateY(-60%);
-=======
-=======
->>>>>>> kai
-=======
->>>>>>> chickhack
   transform: rotate(45deg) translateY(-60%);
   top: 50%;
 }
@@ -570,19 +779,32 @@ section.orderer .orderer_click::after, section.orderer .recipient_click::after, 
   position: absolute;
   transform: rotate(-45deg) translateY(-60%);
   top: 50%;
+>>>>>>> chickhack
 }
 
 section.orderer .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
 <<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> chickhack
 =======
->>>>>>> kai
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+>>>>>>> denis
 =======
 >>>>>>> chickhack
   width: 80%;
@@ -592,6 +814,12 @@ section.orderer .info {
 section.orderer .info .input_group {
   width: 45%;
   margin-top: 16px;
+}
+
+@media all and (max-width: 768px) {
+  section.orderer .info .input_group {
+    width: 100%;
+  }
 }
 
 section.orderer .info .long {
@@ -609,6 +837,7 @@ section.orderer .info input {
   border: 1px solid #AD6E4A;
   padding: 5px 10px;
   width: 100%;
+  -webkit-transition: all .3s;
   transition: all .3s;
 }
 
@@ -620,126 +849,146 @@ section.orderer .retract {
   max-height: 400px;
 }
 
+@media all and (max-width: 768px) {
+  section.orderer .retract {
+    max-height: 600px;
+  }
+}
+
+section.orderer .retract img {
+<<<<<<< HEAD
+  transform: rotate(0deg);
+=======
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+>>>>>>> denis
+}
+
 section.orderer .payTitle {
-  width: 95%;
-  margin: 0 auto;
+  margin: 0 30px;
+<<<<<<< HEAD
 }
 
-section.orderer .input_check {
+section.orderer .group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+section.orderer .checkbox_group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@media all and (max-width: 768px) {
+  section.orderer .checkbox_group {
+    justify-content: start;
+=======
+}
+
+section.orderer .group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section.orderer .checkbox_group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media all and (max-width: 768px) {
+  section.orderer .checkbox_group {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+>>>>>>> denis
+    width: 100%;
+    margin: 8px 0;
+  }
+}
+
+section.orderer .checkbox_group.long {
+<<<<<<< HEAD
+  justify-content: start;
+=======
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+>>>>>>> denis
   width: 50%;
-  display: inline-block;
 }
 
-section.orderer .input_check .icon {
-  display: inline-block;
-  width: 14px;
+section.orderer .checkbox_group input {
+  width: 70%;
 }
 
-section.orderer .input_check .check-custom {
+section.orderer .checkbox_group .checkbox_custom {
   opacity: 0;
   position: absolute;
+  width: 20px;
 }
 
-section.orderer .input_check .check-custom, section.orderer .input_check .check-custom-label {
+section.orderer .checkbox_group .checkbox_custom, section.orderer .checkbox_group .checkbox_custom_label {
   display: inline-block;
   vertical-align: middle;
   margin: 5px;
   cursor: pointer;
-  position: relative;
 }
 
-section.orderer .input_check .check-custom::before, section.orderer .input_check .check-custom-label::before {
+section.orderer .checkbox_group .checkbox_custom_label {
+  position: relative;
+  font-weight: 900;
+}
+
+section.orderer .checkbox_group .checkbox_custom + .checkbox_custom_label:before {
   content: '';
   background: transparent;
-  border: 2px solid #AD6E4A;
+  border: 1px solid #AD6E4A;
   display: inline-block;
   vertical-align: middle;
-  width: 5px;
-  height: 5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
   padding: 2px;
   margin-right: 10px;
   text-align: center;
 }
 
-section.orderer .input_check .check-custom + .check-custom-label:before {
-  border-radius: 50%;
-}
-
-section.orderer .input_check .check-custom:checked + .check-custom-label:before {
+section.orderer .checkbox_group .checkbox_custom:checked + .checkbox_custom_label:before {
+  content: "";
   background: #AD6E4A;
-  box-shadow: inset 0px 0px 0px 4px #AD6E4A;
 }
 
-section.orderer .input_check .check-custom:focus + .check-custom-label {
-  outline: none;
-  /* focus style */
-}
-
-section.orderer .input_check p {
-  display: inline-block;
-}
-
-section.orderer .input_check p > span {
-  letter-spacing: 3px;
-  font-weight: 900;
-}
-
-section.orderer .discount_group {
-  display: inline-block;
-}
-
-section.orderer .discount_group label, section.orderer .discount_group input {
-  display: inline-block;
-}
-
-section.orderer .discount_group input {
-  width: 30%;
-}
-
-section.orderer .credit {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-section.orderer .credit .input_check {
-  width: 100%;
-}
-
-section.orderer .credit span {
-  margin: 0 4px;
-}
-
-section.orderer .credit .credit_number, section.orderer .credit .date {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: start;
-  width: 100%;
-  margin-left: 56px;
-}
-
-section.orderer .credit .credit_number div, section.orderer .credit .date div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: start;
-}
-
-section.orderer .credit .credit_number div input, section.orderer .credit .date div input {
-  width: 15%;
-}
-
-section.orderer .credit .credit_number .terms, section.orderer .credit .date .terms {
-  width: 30%;
+section.orderer .checkbox_group .checkbox_custom:focus + .checkbox_custom-label {
+  outline: 1px solid #ddd;
 }
 
 section.orderer .button_min {
   background-color: #AD6E4A;
   color: #ffffff;
   position: absolute;
-  right: 5%;
+  right: 30px;
   bottom: 0;
 }
 /*# sourceMappingURL=shop_order.css.map */
