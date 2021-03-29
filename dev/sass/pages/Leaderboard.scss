@@ -79,6 +79,21 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.089);
     width: 80%;
 }
+.banner{
+    margin: 0 auto;
+    background-image: url(../../img/trip/others/ivan-diaz-dmhv60RLmlw-unsplash.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    padding-top: 20%;
+    position: relative;
+    h4{
+    position: absolute;
+    left: 50%;
+    // top: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    }
+}
 .container{
     .row{
         .col-10{
