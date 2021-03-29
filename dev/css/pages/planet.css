@@ -77,6 +77,8 @@ body {
   font-size: 14px;
   background-color: #0c0d18;
   overflow-x: hidden;
+  -o-user-select: none;
+  user-select: none;
 }
 
 h1, .h1 {
@@ -308,6 +310,7 @@ nav {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   position: -webkit-sticky;
 =======
 >>>>>>> chickhack
@@ -315,6 +318,8 @@ nav {
 >>>>>>> kai
 =======
 >>>>>>> chickhack
+=======
+>>>>>>> kai
   position: sticky;
   top: 0;
   width: 100%;
@@ -417,11 +422,14 @@ footer .smoke {
   transform: translateX(-50%);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> chickhack
 =======
 >>>>>>> kai
 =======
 >>>>>>> chickhack
+=======
+>>>>>>> kai
 }
 
 .quantity label {
@@ -449,6 +457,21 @@ footer .smoke {
   cursor: pointer;
 }
 
+<<<<<<< HEAD
+=======
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+>>>>>>> kai
 .frame {
   border: 1px solid #AD6E4A;
   margin: 0 auto;
@@ -459,17 +482,20 @@ footer .smoke {
   justify-content: center;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> chickhack
 =======
 >>>>>>> kai
   padding-top: 100px;
+=======
+>>>>>>> kai
   font-size: 42px;
 }
 
-ul.tab-title {
-  padding-top: 50px;
+div.tabList {
   display: flex;
   justify-content: center;
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> chickhack
 =======
@@ -489,6 +515,11 @@ div.tabList {
 >>>>>>> chickhack
 }
 
+=======
+  column-gap: 1%;
+}
+
+>>>>>>> kai
 div.tabList button {
   border: none;
   background-color: transparent;
@@ -511,18 +542,22 @@ div.tabList button.active {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
 =======
 >>>>>>> chickhack
 =======
 >>>>>>> kai
+=======
+>>>>>>> kai
   display: flex;
 }
 
-.tab-inner .intro {
+.tab-inner .taball {
   display: flex;
   flex-direction: column;
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> chickhack
 =======
@@ -536,6 +571,8 @@ div.tabList button.active {
   display: flex;
   flex-direction: column;
 >>>>>>> chickhack
+=======
+>>>>>>> kai
   text-align: left;
   align-items: center;
 }
@@ -554,6 +591,7 @@ div.tabList button.active {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
 =======
@@ -563,6 +601,9 @@ div.tabList button.active {
 =======
   border: 1px solid #AD6E4A;
 >>>>>>> chickhack
+=======
+  border: 1px solid #AD6E4A;
+>>>>>>> kai
   display: flex;
   font-family: Haettenschweiler, sans-serif;
 }
@@ -618,6 +659,7 @@ div.tabList button.active {
   font-size: 16px;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 .tab-active {
   display: block;
@@ -679,11 +721,18 @@ div.tabList button.active {
 .tab-active .geoopt .cover_sq span.geo3 {
   background-image: url(../../img/planet/crater_2.png);
   background-position: top;
+=======
+.tab-inner button {
+  background-color: transparent;
+  color: #AD6E4A;
+  transform: translateX(-100%);
+>>>>>>> kai
 }
 
-.content {
+.planet_content {
   display: flex;
   flex-wrap: wrap;
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> chickhack
 =======
@@ -701,10 +750,15 @@ div.tabList button.active {
 >>>>>>> chickhack
 }
 
+=======
+}
+
+>>>>>>> kai
 .planet_content .imgs {
   display: block;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 .content .imgs .img1 {
   transform: translate(10%);
@@ -712,6 +766,10 @@ div.tabList button.active {
 .planet_content .imgs .img1 {
   transform: translate(40%);
 >>>>>>> chickhack
+=======
+.planet_content .imgs .img1 {
+  transform: translate(40%);
+>>>>>>> kai
 }
 
 .planet_content .imgs .img2 {
@@ -727,11 +785,14 @@ div.tabList button.active {
   align-items: center;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> chickhack
 =======
 >>>>>>> kai
 =======
 >>>>>>> chickhack
+=======
+>>>>>>> kai
 }
 
 .planet_content .desc p {

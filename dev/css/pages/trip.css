@@ -77,6 +77,8 @@ body {
   font-size: 14px;
   background-color: #0c0d18;
   overflow-x: hidden;
+  -o-user-select: none;
+  user-select: none;
 }
 
 h1, .h1 {
@@ -448,9 +450,6 @@ input::-webkit-inner-spin-button {
   padding: 20px;
 }
 
-<<<<<<< HEAD
-.parent_container .trip_content_all .trip_title {
-=======
 @media all and (max-width: 767px) {
   .parent_container .up_container .trip_content_all {
     width: 90%;
@@ -459,7 +458,6 @@ input::-webkit-inner-spin-button {
 }
 
 .parent_container .up_container .trip_content_all .trip_title {
->>>>>>> kai
   display: inline-flex;
   align-items: baseline;
   justify-content: flex-start;
@@ -515,11 +513,7 @@ input::-webkit-inner-spin-button {
   letter-spacing: 1.5px;
 }
 
-<<<<<<< HEAD
-.parent_container .tab_contents .tag {
-=======
 .parent_container .up_container .trip_content_all .tab_contents .tag {
->>>>>>> kai
   display: inline-flex;
   border: 1px solid #C9ADA7;
   border-radius: 5px;
@@ -601,11 +595,7 @@ input::-webkit-inner-spin-button {
   opacity: 0.5;
 }
 
-<<<<<<< HEAD
-.parent_container .book .select {
-=======
 .parent_container .up_container .book .select {
->>>>>>> kai
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -690,11 +680,7 @@ input::-webkit-inner-spin-button {
   letter-spacing: 2px;
 }
 
-<<<<<<< HEAD
-.parent_container .book .btn {
-=======
 .parent_container .up_container .book .btn {
->>>>>>> kai
   display: flex;
   justify-content: flex-end;
   align-items: baseline;
@@ -710,6 +696,11 @@ input::-webkit-inner-spin-button {
   text-align: center;
 }
 
+.parent_container .up_container .book .btn .addin a {
+  color: #ffffff;
+  display: inline-block;
+}
+
 .parent_container .up_container .book .btn .addin img.plus {
   width: 15px;
   display: inline-block;
@@ -718,10 +709,24 @@ input::-webkit-inner-spin-button {
   padding-right: 4px;
 }
 
-.parent_container .up_container .book .btn .buy {
+.parent_container .up_container .book .btn .addin:hover {
+  border: 1px solid #cccaca;
+  color: #cccaca;
+}
+
+.parent_container .up_container .book .btn .button_min {
   background-color: #AD6E4A;
   color: #ffffff;
   padding: 0 8px 0 8px;
+}
+
+.parent_container .up_container .book .btn .button_min a {
+  color: #ffffff;
+  display: inline-block;
+}
+
+.parent_container .up_container .book .btn .button_min:hover {
+  background-color: #bf896b;
 }
 
 .parent_container .up_container .comment {
@@ -729,9 +734,6 @@ input::-webkit-inner-spin-button {
   padding: 20px;
 }
 
-<<<<<<< HEAD
-.parent_container .comment .score {
-=======
 @media screen and (min-width: 576px) and (max-width: 767px) {
   .parent_container .up_container .comment {
     width: 365px;
@@ -748,7 +750,6 @@ input::-webkit-inner-spin-button {
 }
 
 .parent_container .up_container .comment .score {
->>>>>>> kai
   display: flex;
   align-items: center;
   position: relative;
@@ -759,11 +760,7 @@ input::-webkit-inner-spin-button {
   padding: 8px;
 }
 
-<<<<<<< HEAD
-.parent_container .comment .score .stars {
-=======
 .parent_container .up_container .comment .score .stars {
->>>>>>> kai
   display: flex;
   justify-content: center;
   align-items: center;
@@ -784,11 +781,7 @@ input::-webkit-inner-spin-button {
   cursor: pointer;
 }
 
-<<<<<<< HEAD
-.parent_container .comment .messages {
-=======
 .parent_container .up_container .comment .messages {
->>>>>>> kai
   display: flex;
   justify-content: center;
   align-items: center;
@@ -802,22 +795,14 @@ input::-webkit-inner-spin-button {
   top: 50px;
 }
 
-<<<<<<< HEAD
-.parent_container .comment .messages .name {
-=======
 .parent_container .up_container .comment .messages .name {
->>>>>>> kai
   display: flex;
   justify-content: center;
   align-items: center;
   justify-content: start;
 }
 
-<<<<<<< HEAD
-.parent_container .comment .messages .name hr {
-=======
 .parent_container .up_container .comment .messages .name hr {
->>>>>>> kai
   height: 10px;
   background-color: #C9ADA7;
   border: 1px solid #C9ADA7;

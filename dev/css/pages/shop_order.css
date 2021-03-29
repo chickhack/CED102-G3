@@ -77,6 +77,8 @@ body {
   font-size: 14px;
   background-color: #0c0d18;
   overflow-x: hidden;
+  -o-user-select: none;
+  user-select: none;
 }
 
 h1, .h1 {
@@ -432,6 +434,18 @@ footer .smoke {
   cursor: pointer;
 }
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 section.orderDetail {
   max-width: 948px;
   margin: 0 auto;
@@ -550,6 +564,7 @@ section.orderer .orderer_click::before, section.orderer .recipient_click::before
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   -webkit-transform: rotate(45deg) translateY(-60%);
           transform: rotate(45deg) translateY(-60%);
 =======
@@ -557,6 +572,8 @@ section.orderer .orderer_click::before, section.orderer .recipient_click::before
 >>>>>>> kai
 =======
 >>>>>>> chickhack
+=======
+>>>>>>> kai
   transform: rotate(45deg) translateY(-60%);
   top: 50%;
 }
@@ -580,11 +597,14 @@ section.orderer .info {
   justify-content: space-between;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> chickhack
 =======
 >>>>>>> kai
 =======
 >>>>>>> chickhack
+=======
+>>>>>>> kai
   width: 80%;
   margin-left: 6%;
 }
