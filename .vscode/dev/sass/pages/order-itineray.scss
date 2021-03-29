@@ -1,0 +1,680 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+input[type="number"]{
+    -moz-appearance: textfield;
+}
+body{
+    background-color: #0c0d18;
+    font-family: "Microsoft JhengHei";
+}
+//svg箭頭
+.svgRight::before{
+    content: url(../../img/chevron-compact-right.svg)!important;
+    width: 20px;
+    height: 20px;
+    
+}
+
+//chbox
+.checkbox-1{
+    border: 1px solid #ad6e4a;
+}
+//寬
+.width-50{
+    width: 50%;
+}
+//背景色
+.backco{
+    // background-color: #0c0d18;
+    background-color: #292B41;
+
+}
+//標題顏色
+.titi{
+    // background-color: #292B41;
+    line-height: 50px;
+    font-size: 18px;
+}
+//文字靠右對齊
+.textRight{
+    text-align: right;
+}
+//文字置中
+.text-cn{
+    padding-left: 3%;
+}
+// 文字間距
+.textHeight-1{
+    line-height: 10px;
+}
+.textHeight-2{
+    line-height: 20px;
+}
+// 表單背景色
+.backcol{
+    // background-color: #3a3a3e;
+    background-color: #292B41;
+}
+//分隔線
+.divider{
+    padding-top: 1%;
+    // padding-bottom: 1%;           
+    border-bottom: 1px solid;
+    border-color:  #ad6e4a;
+    width: 90%;
+    margin: 0 auto;
+}
+//內文分隔線
+.divider-1{
+    padding-top: 1%;
+    // padding-bottom: 1%;           
+    border-bottom: 1px solid;
+    border-color:  #ad6e4a;
+    width: 96%;
+    // margin: 0 auto;
+}
+// 文字對齊
+.text-va{
+    vertical-align:text-top;
+}
+// 文字顏色
+.textcolor{
+    color: #C9ADA7;
+    font-size: 16px;
+}
+.textcolor-1{
+    color: #ad6e4a;
+    font-size: 16px;
+}
+// 內文標題
+.h4{
+    font-size: 18px;
+    color: #C9ADA7;
+    margin: 0;
+}
+.h5{
+    font-size: 18px;
+    color: #C9ADA7;
+    margin: 0;
+    width: 100%;
+    max-width: 150px;
+}
+//總價文字
+.h6{
+    font-weight: 900;
+    color: #C9ADA7;
+    font-size: 18px;
+    width: 100%;
+    margin: 0;
+}
+.h7{
+    // font-weight: 700;
+    color: #ad6e4a;
+    line-height: 30px;
+    font-size: 18px;
+    width: 100%;
+    margin: 0;
+}
+.h8{
+    line-height:30px ;
+    color: #C9ADA7;
+    font-size: 16px;
+    width: 100%;
+    margin: 0;
+}
+.h9{
+    color: #ad6e4a;
+    font-size: 16px;
+    line-height: 30px;
+}
+// 文字的間距
+.letter-spacing-1{
+    letter-spacing: 1px;
+}
+.letter-spacing-2{
+    letter-spacing: 2px;
+    
+}
+.padding_right-1{
+    padding-right: 8px;
+}
+.padding_right-2{
+    padding-right: 16px;
+}
+.padding_right-3{
+    padding-right: 24px;
+}
+.padding_bottom-1{
+    padding-bottom: 5%;
+}
+.padding_bottom-20{
+    padding-bottom: 20px;
+}
+.padding_bottom-80{
+    padding-bottom: 80px;
+}
+.margin-bottom-20{
+    margin-bottom: 20px;
+}
+// 交通工具用縮圖
+.imgs{
+    width: 100%;
+    max-width: 100px;
+    height: 100%;
+    max-height: 50px;
+    object-fit: contain;
+}
+//padding上下
+
+//行程用縮圖
+.imgsr{
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    max-height: 150px;
+    object-fit: cover;
+}
+#paymethod-coin-nu{
+    background-color: #292B41;
+    border: 1px solid #AD6E4A;
+    // height: 25px;
+    color: #fff;
+    font-size: 16px;
+    width: 30%;
+    letter-spacing: 2px;
+    transition: all 0.5s;
+    // border-radius: 5px;
+}
+#paymethod-coin-nu:focus{
+    background-color: #ad6e4a;
+    outline: none;
+}
+//付款按鈕
+.button_large-1{
+    width: 100px;
+    font-size: 12px;
+    color: #fff;
+    background-color: #ad6e4a;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #AD6E4A;
+}
+//全部縮放btn的樣式
+.btn-allAuto{
+    width: 100%;
+    text-align: justify;
+    background-color: #292B41;
+    outline: none;
+    border:none;
+    color: #C9ADA7;
+    font-size: 18px;
+    padding: 30px 0;
+}
+.btn-allAuto::before{
+    content:url(../../img/chevron-down.svg);   
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    padding-right: 8px;
+}
+.icon-1{
+    width: 25px;
+    height: 25px;
+}
+//假確認按鈕樣式
+.checkbox_custom{
+    opacity: 0;
+    position: absolute;
+    width: 20px;
+}
+.checkbox_custom,.checkbox_custom_label{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 5px;
+    cursor: pointer;
+}
+.checkbox_custom_label{
+    position: relative;
+    font-weight: 900;
+}
+.checkbox_custom + .checkbox_custom_label:before{
+    content: '';
+    background: transparent;
+    border: 1px solid #ad6e4a;
+    display: inline-block;
+    vertical-align: middle;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    padding: 2px;
+    margin-right: 10px;
+    text-align: center;
+}
+.checkbox_custom:checked + .checkbox_custom_label:before {
+    content: "";
+    background: #ad6e4a;
+}
+.checkbox_custom:focus + .checkbox_custom-label{
+    outline: 1px solid #ddd;
+}
+//主內容
+form{
+    padding: 0 0 0 0;
+    height:100%;
+    // margin-bottom: 200px;
+    .orderinfo{
+        
+            .row{
+                    justify-content: center;
+                    align-content: center;     
+                    .col-10{
+                        background-color: #292B41;
+                        border-radius: 5px;
+                        padding-bottom: 10px;
+                            
+                            
+                            .row{
+                                justify-content: space-around;
+                                
+                                .col-7{
+                                    
+        
+                                    display: flex;
+                                    // color: #fff;
+                                    flex-direction: column;
+                                   
+                                    input{
+                                        font-size: 16px;
+                                        color: #fff;
+                                        width: 100%;
+                                        background-color: #292B41;
+                                        border: 1px solid #ad6e4a;
+                                        // border-radius: 5px;
+                                        // height: 40px;
+                                        padding: 5px 10px;
+                                        transition: all 0.3s;
+                                        &:focus{
+                                            background-color: #ad6e4a;
+                                            outline: none;
+                                        }
+                                    }
+                                }
+                                .col-11{
+                                    // padding-left: 0px;
+                                    margin: 0;
+                                    display: flex;
+                                    align-content:flex-start; 
+                                    flex-direction: column;
+                                    // color: #C9ADA7;
+                                    // padding-left: 6%;
+                                    
+                                    input{
+                                        color: #fff;
+                                        width: 100%;
+                                        background-color: #292B41;
+                                        border: 1px solid #ad6e4a;
+                                        // border-radius: 5px;
+                                        // height: 40px;
+                                        padding: 5px 10px;
+                                    }
+                                }
+                            }
+                    
+                     }
+             }
+                
+        
+    }
+    .ltineraryinfo{
+        
+
+            .row{
+                justify-content: center;
+                // align-content: center;
+                .col-10{
+                    // line-height: 50px;
+                    .row{
+                        margin-bottom: 32px;
+                        background-color:#292B41;
+                        border-radius: 5px;
+                        display: flex;
+                        justify-content:center;
+                        // align-content: center;
+                        .col-3{
+                            padding-top: 16px;
+                            padding-bottom: 16px;
+                            img{
+                                max-width: 150px;
+                                // max-height: 200px;
+                                object-fit: cover;
+                            }
+                        }
+                        .col-7{
+                            .row{
+                                display: flex;
+                                justify-content: space-between;
+                                height: 100%;
+                                width: 100%;
+                                .col-11{
+                                    align-items: flex-end;
+                                }
+                                .text-div{
+                                    display: flex;
+                                    justify-content: center;
+                                    flex-direction: column;
+                                    // align-content: center;
+                                    // height: 100%;
+                                    padding:0px 0;
+                                    img{
+                                        width: 25px;
+                                        height: 25px;
+                                    }
+                                }        
+                            }
+                        }    
+                                // img{
+                                //     width: 100%;
+                                //     max-width: 200px;
+                                //     height: auto;
+                                //     max-height: 150px;
+                                //     object-fit: cover;
+                                // }
+                                // .textinfo{
+                                //     width: 100%;
+                                //     .textinfo-1{
+                                        
+                                //         display: flex;
+                                //         // justify-content: center;
+                                //         // align-content: center;
+                                //         align-items: baseline;
+                                //         width: 100%;
+                                //         height: 100%;
+                                //         p{
+                                //             font-size: 16px;
+                                //             max-height: 50px;
+                                //             color: #fff;
+                                            
+                                //             img{
+                                //                 max-width: 16px;
+                                //                 height: 16px;
+                                //                 object-fit: cover;
+                                //                 vertical-align:middle;
+                                //                 padding-bottom: 4px;
+                                //             }
+                                //         }
+                                //     }
+                                // }
+                           
+                        
+                    }
+                }
+            }
+        
+    }
+    .addPay{
+        
+            .row{
+                justify-content: center;
+                .col-10{
+                   
+                    border-radius: 5px;
+                    
+                    .automena{
+                        .row{
+                            .col-10{
+                                display: flex;
+                                .sss{
+                                    display: flex;
+                                    background-color: #191919;
+                                    margin-bottom: 3%;
+                                    width: 100%;
+                                    padding: 15px 10px;
+                                    cursor: pointer;
+                                    img{
+                                        width: 100px;
+                                        object-fit: cover;
+                                    }
+                                }
+                                
+                                input{
+                                    display: none;
+                                }
+                            }
+                            .col-11{
+                                display: flex;
+                                input{
+                                    display: none;
+                                }
+                                
+                                // .checkbox-fu::before{
+                                   
+                                //         content: '';
+                                //         background: transparent;
+                                //         border: 2px solid #ad6e4a;
+                                //         display: inline-block;
+                                //         vertical-align: middle;
+                                //         width: 5px;
+                                //         height: 5px;
+                                //         padding: 2px;
+                                //         margin-right: 10px;
+                                //         text-align: center;
+                                //         border-radius: 10px;
+                                // }
+                                // .checkbox-fu:checked{
+                                //     background: #ad6e4a;
+                                //     box-shadow: inset 0px 0px 0px 4px #ad6e4a;
+
+                                // }
+                                // .checkbox-fu::after{
+                                //     content: "";
+                                //     width: 1px;
+                                //     height: 30%;
+                                //     background-color: #ad6e4a;
+                                //     left: -3%;
+                                //     position: absolute;
+                                //     transform: rotate(-45deg) translateY(-60%);
+                                //     top: 50%;
+                                // }
+                                
+
+                                    // .traffic-div{
+                                    //     display: flex;
+                                    //     justify-content: space-around;
+                                    //     align-content: flex-start;
+                                    //     align-items: center;
+                                    //     background-color: #ad6e4a;
+                                    //     width: 100%;
+                                    //     border-radius: 5px;
+                                    //     height: 100%;
+                                    //     margin: 0 10px 0px 10px;
+                                    //     padding: 1% 0;
+                                    //     .coin{
+                                    //         height: 100%;
+                                    //         // width: 50%;
+                                    //         display: flex;
+                                    //         align-items: flex-end;
+                                    //     }
+                                
+                                    // }
+                            }
+                        }
+                    }
+                }
+            }
+    
+    }
+    .paymethod{
+        .row{
+            justify-content: center;
+            
+            .col-10{
+                .paymethod-automanu{
+                    // display: none;
+                    // align-items: center;
+                    // align-content: center;
+                    // vertical-align: middle;
+                    .row{
+                        #paymethod-coin,#paymethod-automanu-car{
+                            display: none;
+                        }
+
+                        // .check::before{
+                        //     content: '';
+                        //     background: transparent;
+                        //     border: 2px solid #ad6e4a;
+                        //     display: inline-block;
+                        //     vertical-align: middle;
+                        //     width: 5px;
+                        //     height: 5px;
+                        //     padding: 2px;
+                        //     margin-right: 10px;
+                        //     text-align: center;
+                        //     border-radius: 10px;
+                        // }
+                        .col-11{
+                            display: flex;
+                            align-items: center;
+                        }
+                        .col-12{
+
+                            .paymethod-automanu-car-automanu{
+                                // display: none;
+                                .row{
+                                    justify-content: space-evenly;
+                                    input{
+                                        width: 100%;
+                                        font-size: 16px;
+                                        background-color: #292B41;
+                                        border:1px solid #AD6E4A;
+                                        border-radius: 5px;
+                                        padding: 5px 10px;
+                                        transition: all 0.5s;
+                                        &:focus{
+                                            background-color: #ad6e4a;
+                                            outline: none;
+                                        }
+                                    }
+                                    
+
+                                    
+                                }
+                            }
+                        }
+                        .col-5{
+                            input.paymethod-coin-btn{
+                                width: 50px;
+                                height: 20px;
+                                outline: none;
+                                border-color:  #ad6e4a;
+                                background-color: #ad6e4a;
+                                color: #fff;
+                                line-height: 0px;
+                            }
+                        }
+                        .col-4{
+                            display: flex;
+                            align-items: center;
+                            
+                            .intput-nu{
+                                background-color:#292B41;
+                            }
+                            
+                           
+                        }
+
+
+                    }
+                        
+                    
+                }
+               
+                
+
+            }
+        }
+    }
+    .orderDetails{
+        .row{
+            justify-content: center;
+            .allpay-div{
+                display: flex;
+                justify-content:flex-end
+            }
+            .col-10{
+                .orderDetails-automanu{
+                    .col-3{
+                        padding-top: 16px;
+                        padding-bottom: 16px;
+                        img{
+                            max-width: 150px;
+                            // max-height: 200px;
+                            object-fit: cover;
+                        }
+                    }
+                    .col-11{
+                        .payadd{
+                            width: 100%;
+                            .orderDetails-automanu-textdiv{
+                                width: 100%;
+                                .textbox{
+                                    display: flex;
+                                    width: 100%;
+                                }
+                                
+                            }
+                        }
+                        .orderDetails-automanu-textdiv{
+                            width: 100%;
+                            .textbox{
+                                display: flex;
+                                width: 100%;
+                            }
+                           
+                        }
+                    }
+                    .col-7{
+                        display: flex;
+                        .row{
+                            display: flex;
+                            justify-content: space-around;
+                            width: 100%;
+                            .text-div{
+                                display: flex;
+                                justify-content: center;
+                                flex-direction: column;
+                                align-items: flex-end;
+                                padding:8px 0;
+                                img{
+                                    width: 25px;
+                                    height: 25px;
+                                }
+                            }        
+                        }
+                        
+                    }
+                }
+                .btn-orderDetails{
+                    // margin-left: 20px;
+                    width: 100%;
+                    text-align: left;
+                    background-color: #292B41;
+                    outline: none;
+                    border:none;
+                    color: #fff;
+                    font-size: 18px;
+                }
+                .btn-orderDetails::before{
+                    content:url(../../img/chevron-down.svg);   
+                    display: inline-block;
+                    width: 20px;
+                    height: 20px;
+                    padding-right: 8px;
+                }
+            }
+        }
+    }
+}
+
+
