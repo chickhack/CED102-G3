@@ -17,6 +17,11 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
     <!-- tweenmax cdn -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+    <!-- jquery cdn-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous"></script>
+
     <!-- alltrip css -->
     <link rel="stylesheet" href="./css/pages/alltrip.css">
 </head>
@@ -37,20 +42,23 @@
             <div class="first_left">
                 <h2 class="title line_high h1 "><span class="h3">預訂後即刻出發，最短一日行程</span><br>讓你親眼見證宇宙<br> 改變你的內在世界</h2>
             </div>
-            <div class="first_right ">
-                <div class="hottrip padding_top_5">
-                    <div v-for="item in top" class="planet_top">
-                        <img :src="item.planet" class="planet" alt="planet">
-                        <img :src="item.spot" class="planet_a1" alt="planettrip">
-                        <div class="word line_low ">
-                            <h3 class="hot">{{item.title}}</h3>
-                            <h4>{{item.name}}</h3>
-                                <!-- <img :src="item.star" class="star margin_top_1" alt="star"> -->
-                                <small class="tag margin_top_3">{{item.grade}}</small>
-                                <small class="tag">{{item.scores}}積分</small>
-                                <h4 class="price">${{item.price}}</h4>
-                                <div class="addin small"><img class="plus" src="./img/icon/plus.png" alt="">加入我的行程</div>
-                        </div>
+            <div class="first_right swiper-container">
+                <div class="hottrip wiper-wrapper">
+                    <div v-for="item in top" class="planet_top swiper-slide">
+                        <a href="trip.html">
+                            <img :src="item.planet" class="planet" alt="planet">
+                            <img :src="item.spot" class="planet_a1" alt="planettrip">
+                            <div class="word line_low ">
+                                <h3 class="hot">{{item.title}}</h3>
+                                <h4>{{item.name}}</h3>
+                                    <!-- <img :src="item.star" class="star margin_top_1" alt="star"> -->
+                                    <small class="tag margin_top_3">{{item.grade}}</small>
+                                    <small class="tag">{{item.scores}}積分</small>
+                                    <h4 class="price">${{item.price}}</h4>
+                                    <div class="addin small"><img class="plus" src="./img/icon/plus.png" alt="">加入我的行程
+                                    </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
 
@@ -99,19 +107,55 @@
         <div class="second margin_top_10">
             <h2 class="alltrip">星球景點總覽</h2>
             <div class="tripcardall">
-                <h3 v-for="item in second" class="padding_top_3 alltrip ">{{item.planet}}景點</h3>
+                <h3 class="padding_top_3 alltrip ">月球景點</h3>
                 <div class="tripcard_all  margin_top_5">
-                    <div v-for="item in spot" class="tripcard ">
-                        <img :src="item.spot" class="spot_pic" alt="spot_pic">
-                        <div class="content line_low">
-                            <h4 class="hot2 margin_top_1">{{item.title}}</h4>
-                            <small class="tag">{{item.grade}}</small>
-                            <small class="tag">{{item.scores}}積分</small>
-                            <h3 class="price2 margin_top_2">${{item.price}}</h3>
-                            <div class="addin2 small margin_top_2"><img class="plus" src="./img/icon/plus.png"
-                                    alt="">加入我的行程</div>
-                            <img class="trip_bookmark" src="./img/icon/bookmark-outline.png" alt="">
-                        </div>
+                    <div v-for="item in spot1" class="tripcard ">
+                        <a href="trip.html">
+                            <img :src="item.spot" class="spot_pic" alt="spot_pic">
+                            <div class="content line_low">
+                                <h4 class="hot2 margin_top_1">{{item.title}}</h4>
+                                <small class="tag">{{item.grade}}</small>
+                                <small class="tag">{{item.scores}}積分</small>
+                                <h3 class="price2 margin_top_2">${{item.price}}</h3>
+                                <div class="addin2 small margin_top_2"><img class="plus" src="./img/icon/plus.png"
+                                        alt="">加入我的行程</div>
+                                <img class="trip_bookmark" src="./img/icon/bookmark-outline.png" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <h3 class="padding_top_3 alltrip ">火星景點</h3>
+                <div class="tripcard_all  margin_top_5">
+                    <div v-for="item in spot2" class="tripcard ">
+                        <a href="trip.html">
+                            <img :src="item.spot" class="spot_pic" alt="spot_pic">
+                            <div class="content line_low">
+                                <h4 class="hot2 margin_top_1">{{item.title}}</h4>
+                                <small class="tag">{{item.grade}}</small>
+                                <small class="tag">{{item.scores}}積分</small>
+                                <h3 class="price2 margin_top_2">${{item.price}}</h3>
+                                <div class="addin2 small margin_top_2"><img class="plus" src="./img/icon/plus.png"
+                                        alt="">加入我的行程</div>
+                                <img class="trip_bookmark" src="./img/icon/bookmark-outline.png" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <h3 class="padding_top_3 alltrip ">木星景點</h3>
+                <div class="tripcard_all  margin_top_5">
+                    <div v-for="item in spot3" class="tripcard ">
+                        <a href="trip.html">
+                            <img :src="item.spot" class="spot_pic" alt="spot_pic">
+                            <div class="content line_low">
+                                <h4 class="hot2 margin_top_1">{{item.title}}</h4>
+                                <small class="tag">{{item.grade}}</small>
+                                <small class="tag">{{item.scores}}積分</small>
+                                <h3 class="price2 margin_top_2">${{item.price}}</h3>
+                                <div class="addin2 small margin_top_2"><img class="plus" src="./img/icon/plus.png"
+                                        alt="">加入我的行程</div>
+                                <img class="trip_bookmark" src="./img/icon/bookmark-outline.png" alt="">
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -168,31 +212,61 @@
 
                 },
                 ],
-                second: [{
-                    planet: "月球",
-                }, {
-                    planet: "火星",
-
-                }, {
-                    planet: "木星",
-
-                },
-                ],
-                spot: [{
-                    spot: "./img/trip/trip_mars/mars_c1_ps.png",
+                spot1: [{
+                    spot: "./img/trip/trip_moon/moon_a1_ps2.jpg",
                     title: "月球 | 太空體驗一日遊",
                     grade: "初階",
                     scores: "5000",
                     price: 1000,
                 }, {
-                    spot: "./img/trip/trip_mars/mars_c1_ps.png",
+                    spot: "./img/trip/trip_moon/moon_b1_ps2.jpg",
                     title: "月球 | 熱氣球一日遊",
                     grade: "初階",
                     scores: "5000",
                     price: 2000,
                 }, {
-                    spot: "./img/trip/trip_mars/mars_c1_ps.png",
+                    spot: "./img/trip/trip_moon/moon_c1_ps2.jpg",
                     title: "月球 | 熱氣球一日遊",
+                    grade: "初階",
+                    scores: "5000",
+                    price: 3000,
+                },
+                ],
+                spot2: [{
+                    spot: "./img/trip/trip_mars/mars_a1_ps2.jpg",
+                    title: "火星 | 太空體驗一日遊",
+                    grade: "初階",
+                    scores: "5000",
+                    price: 1000,
+                }, {
+                    spot: "./img/trip/trip_mars/mars_b2_ps2.jpg",
+                    title: "火星 | 熱氣球一日遊",
+                    grade: "初階",
+                    scores: "5000",
+                    price: 2000,
+                }, {
+                    spot: "./img/trip/trip_mars/mars_c1_ps.png",
+                    title: "火星 | 熱氣球一日遊",
+                    grade: "初階",
+                    scores: "5000",
+                    price: 3000,
+                },
+                ],
+                spot3: [{
+                    spot: "./img/trip/trip_jupiter/jupiter_a1_ps2.jpg",
+                    title: "木星 | 太空體驗一日遊",
+                    grade: "初階",
+                    scores: "5000",
+                    price: 1000,
+                }, {
+                    spot: "./img/trip/trip_jupiter/jupiter_b1_ps2.jpg",
+                    title: "木星 | 熱氣球一日遊",
+                    grade: "初階",
+                    scores: "5000",
+                    price: 2000,
+                }, {
+                    spot: "./img/trip/trip_jupiter/jupiter_c4_ps2.jpg",
+                    title: "木星 | 熱氣球一日遊",
                     grade: "初階",
                     scores: "5000",
                     price: 3000,
