@@ -79,6 +79,7 @@ body {
   background-color: #0c0d18;
   overflow-x: hidden;
 <<<<<<< HEAD
+<<<<<<< HEAD
   -o-user-select: none;
   user-select: none;
 =======
@@ -88,6 +89,10 @@ body {
   -ms-user-select: none;
       user-select: none;
 >>>>>>> denis
+=======
+  -o-user-select: none;
+  user-select: none;
+>>>>>>> chickhack
 }
 
 h1, .h1 {
@@ -324,9 +329,12 @@ nav {
       justify-content: space-around;
   background-color: #0c0d18;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   position: -webkit-sticky;
 >>>>>>> denis
+=======
+>>>>>>> chickhack
   position: sticky;
   top: 0;
   width: 100%;
@@ -452,11 +460,15 @@ footer .smoke {
   width: 100%;
   height: 80%;
 <<<<<<< HEAD
+<<<<<<< HEAD
   transform: translateX(-50%);
 =======
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 >>>>>>> denis
+=======
+  transform: translateX(-50%);
+>>>>>>> chickhack
 }
 
 .quantity label {

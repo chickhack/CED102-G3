@@ -57,11 +57,15 @@ img {
 *:before,
 *:after {
 <<<<<<< HEAD
+<<<<<<< HEAD
   box-sizing: inherit;
 =======
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
 >>>>>>> denis
+=======
+  box-sizing: inherit;
+>>>>>>> chickhack
   margin: 0;
   padding: 0;
 }
@@ -83,6 +87,7 @@ body {
   background-color: #0c0d18;
   overflow-x: hidden;
 <<<<<<< HEAD
+<<<<<<< HEAD
   -o-user-select: none;
   user-select: none;
 =======
@@ -92,6 +97,10 @@ body {
   -ms-user-select: none;
       user-select: none;
 >>>>>>> denis
+=======
+  -o-user-select: none;
+  user-select: none;
+>>>>>>> chickhack
 }
 
 h1, .h1 {
@@ -328,9 +337,12 @@ nav {
       justify-content: space-around;
   background-color: #0c0d18;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   position: -webkit-sticky;
 >>>>>>> denis
+=======
+>>>>>>> chickhack
   position: sticky;
   top: 0;
   width: 100%;
@@ -358,6 +370,7 @@ nav .nav-links {
   justify-content: center;
   align-items: center;
   justify-content: flex-end;
+<<<<<<< HEAD
 =======
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -369,6 +382,8 @@ nav .nav-links {
       -ms-flex-pack: end;
           justify-content: flex-end;
 >>>>>>> denis
+=======
+>>>>>>> chickhack
   width: 60%;
 }
 
@@ -384,6 +399,7 @@ nav .nav-icons {
   justify-content: center;
   align-items: center;
   justify-content: space-around;
+<<<<<<< HEAD
 =======
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -394,6 +410,8 @@ nav .nav-icons {
   -ms-flex-pack: distribute;
       justify-content: space-around;
 >>>>>>> denis
+=======
+>>>>>>> chickhack
   width: 12%;
 }
 
@@ -437,6 +455,7 @@ footer .links .footer-links {
   justify-content: center;
   align-items: center;
   justify-content: space-around;
+<<<<<<< HEAD
 =======
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -447,16 +466,22 @@ footer .links .footer-links {
   -ms-flex-pack: distribute;
       justify-content: space-around;
 >>>>>>> denis
+=======
+>>>>>>> chickhack
   width: 55%;
   position: relative;
   left: 50%;
   bottom: 30px;
+<<<<<<< HEAD
 <<<<<<< HEAD
   transform: translateX(-50%);
 =======
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 >>>>>>> denis
+=======
+  transform: translateX(-50%);
+>>>>>>> chickhack
 }
 
 footer .links .footer-links a {
@@ -468,11 +493,15 @@ footer .footer_moon {
   left: 50%;
   max-width: 550px;
 <<<<<<< HEAD
+<<<<<<< HEAD
   transform: translateX(-50%);
 =======
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 >>>>>>> denis
+=======
+  transform: translateX(-50%);
+>>>>>>> chickhack
 }
 
 footer .smoke {
@@ -482,11 +511,15 @@ footer .smoke {
   width: 100%;
   height: 80%;
 <<<<<<< HEAD
+<<<<<<< HEAD
   transform: translateX(-50%);
 =======
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 >>>>>>> denis
+=======
+  transform: translateX(-50%);
+>>>>>>> chickhack
 }
 
 .quantity label {
@@ -548,16 +581,22 @@ section.cart .item {
           align-items: center;
   justify-content: center;
 <<<<<<< HEAD
+<<<<<<< HEAD
   align-items: center;
   justify-content: center;
 =======
 >>>>>>> denis
+=======
+  align-items: center;
+  justify-content: center;
+>>>>>>> chickhack
   background-color: #292B41;
   padding: 16px 0;
 }
 
 section.cart .item .img {
   width: 10%;
+<<<<<<< HEAD
 <<<<<<< HEAD
 }
 
@@ -567,6 +606,16 @@ section.cart .item .img {
   }
 }
 
+=======
+}
+
+@media all and (max-width: 768px) {
+  section.cart .item .img {
+    width: 20%;
+  }
+}
+
+>>>>>>> chickhack
 section.cart .item .info {
   width: 65%;
   margin-left: 10px;
@@ -584,6 +633,7 @@ section.cart .item .info .points {
   margin: 8px 0;
 }
 
+<<<<<<< HEAD
 =======
 }
 
@@ -626,6 +676,8 @@ section.cart .item .info .points {
 }
 
 >>>>>>> denis
+=======
+>>>>>>> chickhack
 @media all and (max-width: 768px) {
   section.cart .item .info .quantity .as * {
     padding: 2px 4px;
@@ -662,6 +714,7 @@ section.cart .checkout {
 @media all and (max-width: 768px) {
   section.cart .checkout {
 <<<<<<< HEAD
+<<<<<<< HEAD
     flex-direction: column;
 =======
     -webkit-box-orient: vertical;
@@ -669,6 +722,9 @@ section.cart .checkout {
         -ms-flex-direction: column;
             flex-direction: column;
 >>>>>>> denis
+=======
+    flex-direction: column;
+>>>>>>> chickhack
   }
 }
 

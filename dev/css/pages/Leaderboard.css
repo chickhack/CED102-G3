@@ -1,6 +1,6 @@
 .le-color {
   background-color: #16193b;
-  font-size: 18px;
+  font-size: 16px;
   color: #fff;
   border-radius: 5px;
   margin-bottom: 10px;
@@ -13,12 +13,12 @@
 .text-color {
   background-color: #1d1e2e;
   color: #c9ada7;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .text-color-1 {
   background-color: #292b41;
-  font-size: 16px;
+  font-size: 14px;
   color: #fff;
 }
 
@@ -94,7 +94,13 @@
   display: flex;
 }
 
-.container .row .col-10 .col-2 {
+.container .row .col-10 .row {
+  width: 100%;
+}
+
+.container .row .col-10 .row .col-4 {
   text-align: center;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 /*# sourceMappingURL=Leaderboard.css.map */
