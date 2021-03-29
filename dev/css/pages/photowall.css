@@ -10,10 +10,6 @@ body {
 }
 
 .grid {
-<<<<<<< HEAD
-  margin: auto;
-  max-width: 1440px;
-=======
   padding-top: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -26,12 +22,11 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
->>>>>>> denis
 }
 
 .grid-item {
   margin: 10px;
-  border: 1px solid #ad6e4a69;
+  border: 1px solid #ad6e4a36;
   border-radius: 5px;
   width: 250px;
 }
