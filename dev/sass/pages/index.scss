@@ -66,47 +66,87 @@ button{
 //=========流程
 .stepsection{
     background-color: transparent;
+    @include respond(mobile){
+        flex-direction: column;
+    }
 }
 
 
 //=========星球百科
 
-ul.tab-title {
-    a{
-        font-size: 1rem;
-    }
-}
-.tabList{
-    display: flex;
-    justify-content: center;
-    button{
-        border: none;
-        background-color: transparent;
-        color: $gold;
-        
-    }
-}
 .tab-inner{
-    justify-content: center;
+    // border-top: 1px solid $gold;
     display: flex;
-    .tab_intro{
+    .taball{
         display: flex;
         flex-direction: column;
         text-align: left;
-        h3 {
+        align-items: center;
+        .tab_left{
+            max-width: 400px;
+        }
+        p {
             line-height: 2rem;
+            margin-top: 20px;
             max-width: 400px;
         }
     }
     .data{
-        justify-content: flex-start;
-        p{
-            text-align: center;
+        border: 1px solid $gold;
+        display: flex;
+        font-family: Haettenschweiler, sans-serif;
+        .grav{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            min-width: 130px;
+            min-height: 130px;
+            border-right: 1px solid $gold;
         }
+        .day{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            min-width: 130px;
+            border-right: 1px solid $gold;
+
+        }
+        .temp{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            min-width: 130px;
+        }
+        
+        span.var{
+            font-size: 48px;
+            letter-spacing: 3px;
+        }
+        span.data-top{
+            vertical-align:top;
+            font-size: 24px;
+        }
+        span.data-mid{
+            font-size: 24px;
+        }
+        span.data-low{
+            font-size: 24px;
+            font-stretch: narrower;
+        }
+        p{
+            margin-top: 5px;
+            font-size: 16px;
+        }
+
     }
-.tab-active{
-    display: flex;
-    justify-content: center;
+    button{
+        background-color: transparent;
+        color: $gold;
+        transform: translateX(-100%);
+
     }
 }
 
