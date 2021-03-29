@@ -138,7 +138,7 @@ Vue.component("Mars", {
   });
 
   new Vue({
-    el: "#app",
+    el: "#planetData",
     data: {
       content: "mars",
       isActie: true,

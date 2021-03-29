@@ -76,6 +76,110 @@ button{
 }
 
 
+
+
+
+//=========精選行程
+
+    .hottrip {
+        top: 15vh;
+        display: flex;
+        padding-top: 96px;
+        margin: 0 auto;
+    }
+
+    div.planet_top {
+        position: relative;
+        padding-top: 90px;
+        text-align: center;
+        width: 45%;
+        padding-left: 16px;
+        padding-right: 16px;
+
+        @media all and (max-width:1200px) {
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+
+        h4 {
+            color: $pink;
+        }
+
+        img.planet {
+            height: 160px;
+            position: absolute;
+            top: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        img.planet_a1 {
+            max-width: 280px;
+        }
+        // img.planet_a1:hover {
+        //     transform: perspective(0.5px) translateX(-1.5px) translateY(-1.5px);
+
+        // }
+
+        div.word {
+            position: absolute;
+            top: 190px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            margin: 0 auto;
+
+            .hot {
+                color: $gold;
+            }
+
+            .tag {
+                display: inline-flex;
+                border: 1px solid $pink;
+                border-radius: 5px;
+                padding: 8px;
+                line-height: 5px;
+                margin: 3px;
+                color: $gray;
+            }
+
+            .price {
+                color: $gold;
+                font-weight: bold;
+                letter-spacing: 2px;
+                margin-bottom: 8px;
+                font-family: "Nasalization";
+            }
+
+            .addin {
+                background-color: $gold;
+                color: $white;
+                border-radius: 15px;
+                width: 110px;
+                margin: 0 auto;
+                line-height: 26px;
+                text-align: center;
+
+                img.plus {
+                    width: 15px;
+                    display: inline-block;
+                    position: relative;
+                    top: 2px;
+                    padding-right: 4px;
+                }
+
+            }
+
+            .addin:hover {
+                background-color: lighten($gold, 10%);
+            }
+
+        }
+    }
+
+
+
+
 //=========星球百科
 
 .tab-inner{
