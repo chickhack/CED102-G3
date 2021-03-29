@@ -230,11 +230,7 @@ form {
   height: 100%;
 }
 
-<<<<<<< HEAD
 form .orderinfo .row {
-=======
-form .orderinfo .container .row {
->>>>>>> kai
   justify-content: center;
   align-content: center;
 }
@@ -249,14 +245,8 @@ form .orderinfo .row .col-7 .row {
   justify-content: space-around;
 }
 
-<<<<<<< HEAD
 form .orderinfo .row .col-7 .row .col-7 {
   display: flex;
-=======
-form .orderinfo .container .row .col-7 .row .col-5 {
-  display: flex;
-  color: #fff;
->>>>>>> kai
   flex-direction: column;
 }
 
@@ -280,10 +270,6 @@ form .orderinfo .row .col-7 .row .col-11 {
   display: flex;
   align-content: flex-start;
   flex-direction: column;
-<<<<<<< HEAD
-=======
-  color: white;
->>>>>>> kai
 }
 
 form .orderinfo .row .col-7 .row .col-11 input {
@@ -294,21 +280,14 @@ form .orderinfo .row .col-7 .row .col-11 input {
   padding: 5px 10px;
 }
 
-<<<<<<< HEAD
 form .ltineraryinfo .row {
   justify-content: center;
-=======
-form .ltineraryinfo .container .row {
-  justify-content: center;
-  align-content: center;
->>>>>>> kai
 }
 
 form .ltineraryinfo .row .col-7 .row {
   margin-bottom: 32px;
   background-color: #292B41;
   border-radius: 5px;
-<<<<<<< HEAD
   display: flex;
   justify-content: center;
 }
@@ -316,22 +295,6 @@ form .ltineraryinfo .row .col-7 .row {
 form .ltineraryinfo .row .col-7 .row .col-11 {
   padding-top: 16px;
   padding-bottom: 16px;
-=======
-}
-
-form .ltineraryinfo .container .row .col-7 .row .col-11 {
-  display: flex;
-  align-content: center;
-  padding: 5% 0;
-}
-
-form .ltineraryinfo .container .row .col-7 .row .col-11 img {
-  width: 100%;
-  max-width: 150px;
-  height: auto;
-  max-height: 90px;
-  object-fit: cover;
->>>>>>> kai
 }
 
 form .ltineraryinfo .row .col-7 .row .col-11 img {
@@ -339,16 +302,9 @@ form .ltineraryinfo .row .col-7 .row .col-11 img {
   object-fit: cover;
 }
 
-<<<<<<< HEAD
 form .ltineraryinfo .row .col-7 .row .col-11 .row {
   display: flex;
   justify-content: space-between;
-=======
-form .ltineraryinfo .container .row .col-7 .row .col-11 .textinfo .textinfo-1 {
-  display: flex;
-  align-items: baseline;
-  width: 100%;
->>>>>>> kai
   height: 100%;
   width: 99%;
 }
@@ -360,24 +316,12 @@ form .ltineraryinfo .row .col-7 .row .col-11 .row .text-div {
   padding: 8px 0;
 }
 
-<<<<<<< HEAD
 form .ltineraryinfo .row .col-7 .row .col-11 .row .text-div img {
   width: 25px;
   height: 25px;
 }
 
 form .addPay .row {
-=======
-form .ltineraryinfo .container .row .col-7 .row .col-11 .textinfo .textinfo-1 p img {
-  max-width: 16px;
-  height: 16px;
-  object-fit: cover;
-  vertical-align: middle;
-  padding-bottom: 4px;
-}
-
-form .addPay .container .row {
->>>>>>> kai
   justify-content: center;
 }
 
@@ -393,7 +337,6 @@ form .addPay .row .col-7 .automena .row .col-11 input {
   display: none;
 }
 
-<<<<<<< HEAD
 form .addPay .row .col-7 .automena .row .col-11 .checkbox-fu::before {
   content: '';
   background: transparent;
@@ -422,29 +365,6 @@ form .addPay .row .col-7 .automena .row .col-11 .checkbox-fu::after {
   position: absolute;
   transform: rotate(-45deg) translateY(-60%);
   top: 50%;
-=======
-form .addPay .container .row .col-7 .automena .row .col-11 {
-  display: flex;
-}
-
-form .addPay .container .row .col-7 .automena .row .col-11 .traffic-div {
-  display: flex;
-  justify-content: space-around;
-  align-content: flex-start;
-  align-items: center;
-  background-color: #ad6e4a;
-  width: 100%;
-  border-radius: 5px;
-  height: 100%;
-  margin: 0 10px 0px 10px;
-  padding: 1% 0;
-}
-
-form .addPay .container .row .col-7 .automena .row .col-11 .traffic-div .coin {
-  height: 100%;
-  display: flex;
-  align-items: flex-end;
->>>>>>> kai
 }
 
 form .paymethod .row {
@@ -521,7 +441,6 @@ form .orderDetails .row .allpay-div {
   justify-content: flex-end;
 }
 
-<<<<<<< HEAD
 form .orderDetails .row .col-7 .orderDetails-automanu .col-11 {
   display: flex;
 }
@@ -533,18 +452,6 @@ form .orderDetails .row .col-7 .orderDetails-automanu .col-11 .row {
 }
 
 form .orderDetails .row .col-7 .orderDetails-automanu .col-11 .row .text-div {
-=======
-form .orderDetails .row {
-  justify-content: center;
-}
-
-form .orderDetails .row .allpay-div {
-  display: flex;
-  justify-content: flex-end;
-}
-
-form .orderDetails .row .col-7 .orderDetails-automanu .col-11 {
->>>>>>> kai
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -561,15 +468,11 @@ form .orderDetails .row .col-7 .orderDetails-automanu .col-11 .payadd {
   width: 100%;
 }
 
-<<<<<<< HEAD
 form .orderDetails .row .col-7 .orderDetails-automanu .col-11 .payadd .orderDetails-automanu-textdiv {
   width: 100%;
 }
 
 form .orderDetails .row .col-7 .orderDetails-automanu .col-11 .payadd .orderDetails-automanu-textdiv .textbox {
-=======
-form .orderDetails .row .col-7 .orderDetails-automanu .col-11 .orderDetails-automanu-textdiv .textbox {
->>>>>>> kai
   display: flex;
   width: 100%;
 }

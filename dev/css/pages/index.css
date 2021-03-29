@@ -470,16 +470,6 @@ button {
 .banner .slogan {
   display: flex;
   justify-content: center;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> chickhack
-=======
->>>>>>> kai
-=======
->>>>>>> chickhack
-=======
->>>>>>> kai
   margin-top: 20vh;
 }
 
@@ -503,16 +493,6 @@ button {
   margin-top: 15vh;
   display: flex;
   flex-direction: column;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> chickhack
-=======
->>>>>>> kai
-=======
->>>>>>> chickhack
-=======
->>>>>>> kai
 }
 
 .home_intro h2 {
@@ -527,150 +507,105 @@ button {
   background-color: transparent;
 }
 
-ul.tab-title a {
-  font-size: 1rem;
-}
-
-.tabList {
-  display: flex;
-  justify-content: center;
-}
-
-.tabList button {
-  border: none;
-  background-color: transparent;
-  color: #AD6E4A;
+@media all and (max-width: 768px) {
+  .stepsection {
+    flex-direction: column;
+  }
 }
 
 .tab-inner {
-  justify-content: center;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> chickhack
-=======
->>>>>>> kai
-=======
->>>>>>> chickhack
-=======
->>>>>>> kai
   display: flex;
 }
 
-.tab-inner .tab_intro {
+.tab-inner .taball {
   display: flex;
   flex-direction: column;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> chickhack
-=======
->>>>>>> kai
-=======
->>>>>>> chickhack
-=======
->>>>>>> kai
   text-align: left;
+  align-items: center;
 }
 
-.tab-inner .tab_intro h3 {
+.tab-inner .taball .tab_left {
+  max-width: 400px;
+}
+
+.tab-inner .taball p {
   line-height: 2rem;
+  margin-top: 20px;
   max-width: 400px;
 }
 
 .tab-inner .data {
-  justify-content: flex-start;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> chickhack
-=======
->>>>>>> kai
-=======
->>>>>>> chickhack
-=======
->>>>>>> kai
+  border: 1px solid #AD6E4A;
+  display: flex;
+  font-family: Haettenschweiler, sans-serif;
+}
+
+.tab-inner .data .grav {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  min-width: 130px;
+  min-height: 130px;
+  border-right: 1px solid #AD6E4A;
+}
+
+.tab-inner .data .day {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  min-width: 130px;
+  border-right: 1px solid #AD6E4A;
+}
+
+.tab-inner .data .temp {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  min-width: 130px;
+}
+
+.tab-inner .data span.var {
+  font-size: 48px;
+  letter-spacing: 3px;
+}
+
+.tab-inner .data span.data-top {
+  vertical-align: top;
+  font-size: 24px;
+}
+
+.tab-inner .data span.data-mid {
+  font-size: 24px;
+}
+
+.tab-inner .data span.data-low {
+  font-size: 24px;
+  font-stretch: narrower;
 }
 
 .tab-inner .data p {
-  text-align: center;
+  margin-top: 5px;
+  font-size: 16px;
 }
 
-.tab-inner .tab-active {
-<<<<<<< HEAD
-  display: flex;
-<<<<<<< HEAD
-<<<<<<< HEAD
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.tab-inner button {
+  background-color: transparent;
+  color: #AD6E4A;
+  transform: translateX(-100%);
 }
 
 .gallery .box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-=======
-=======
->>>>>>> chickhack
-  display: flex;
-=======
->>>>>>> kai
-=======
->>>>>>> kai
-  justify-content: center;
-}
-
-.gallery .box {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> chickhack
-=======
->>>>>>> kai
-=======
->>>>>>> chickhack
-=======
->>>>>>> kai
   display: flex;
 }
 
 .gallery .topleft {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  max-height: 500px;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-=======
-=======
->>>>>>> kai
-=======
->>>>>>> chickhack
-=======
->>>>>>> kai
   display: flex;
   flex-direction: row;
   max-height: 500px;
   align-items: flex-end;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> chickhack
-=======
->>>>>>> kai
-=======
->>>>>>> chickhack
-=======
->>>>>>> kai
 }
 
 .gallery .topleft .A {
@@ -686,32 +621,6 @@ ul.tab-title a {
 }
 
 .gallery .topright {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.gallery .topright .topSct {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-=======
-=======
->>>>>>> kai
-=======
->>>>>>> chickhack
-=======
->>>>>>> kai
   display: flex;
   flex-direction: column;
 }
@@ -719,16 +628,6 @@ ul.tab-title a {
 .gallery .topright .topSct {
   display: flex;
   justify-content: space-around;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> chickhack
-=======
->>>>>>> kai
-=======
->>>>>>> chickhack
-=======
->>>>>>> kai
 }
 
 .gallery .topright button.btn {
@@ -738,32 +637,8 @@ ul.tab-title a {
 }
 
 .gallery .topright .galleryIntro {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-=======
   display: flex;
   justify-content: center;
->>>>>>> chickhack
-=======
-  display: flex;
-  justify-content: center;
->>>>>>> kai
-=======
-  display: flex;
-  justify-content: center;
->>>>>>> chickhack
-=======
-  display: flex;
-  justify-content: center;
->>>>>>> kai
 }
 
 .gallery .topright .galleryIntro h5 {
@@ -772,33 +647,8 @@ ul.tab-title a {
 }
 
 .gallery .bottomleft {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-=======
   display: flex;
   flex-direction: row;
->>>>>>> chickhack
-=======
-  display: flex;
-  flex-direction: row;
->>>>>>> kai
-=======
-  display: flex;
-  flex-direction: row;
->>>>>>> chickhack
-=======
-  display: flex;
-  flex-direction: row;
->>>>>>> kai
   max-height: 500px;
 }
 
@@ -822,20 +672,6 @@ ul.tab-title a {
 }
 
 .home_shop {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-=======
-=======
->>>>>>> kai
   display: flex;
   flex-direction: column;
 }
@@ -961,80 +797,6 @@ ul.tab-title a {
 }
 
 .flow_member {
-<<<<<<< HEAD
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.flow_member .flowall {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-column-gap: 10%;
-          column-gap: 10%;
-}
-
-.flow_member .flowall .flow {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-=======
-=======
->>>>>>> kai
-=======
->>>>>>> chickhack
-  display: flex;
-  flex-direction: column;
-}
-
-.home_shop .button_min {
-  margin: 0 auto;
-}
-
-.home_shop h2 {
-  margin: 0 auto;
-}
-
-.home_shop .shopItem {
-  max-height: 650px;
-}
-
-.home_shop .shopItem .hovereffect {
-  width: 100%;
-  height: 100%;
-  float: left;
-  overflow: hidden;
-  position: relative;
-  text-align: center;
-  cursor: default;
-  background: #4e7192;
-}
-
-.home_shop .shopItem .hovereffect .overlay {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  overflow: hidden;
-  top: 0;
-  left: 0;
-=======
->>>>>>> kai
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -1049,16 +811,6 @@ ul.tab-title a {
 .flow_member .flowall .flow {
   display: flex;
   flex-direction: column;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> chickhack
-=======
->>>>>>> kai
-=======
->>>>>>> chickhack
-=======
->>>>>>> kai
   text-align: center;
 }
 

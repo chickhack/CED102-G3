@@ -57,16 +57,6 @@ img {
 *:before,
 *:after {
   box-sizing: inherit;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> chickhack
-=======
->>>>>>> kai
-=======
->>>>>>> chickhack
-=======
->>>>>>> kai
   margin: 0;
   padding: 0;
 }
@@ -317,16 +307,6 @@ nav {
   align-items: center;
   justify-content: space-around;
   background-color: #0c0d18;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> chickhack
-=======
->>>>>>> kai
-=======
->>>>>>> chickhack
-=======
->>>>>>> kai
   position: sticky;
   top: 0;
   width: 100%;
@@ -351,16 +331,6 @@ nav .nav-links {
   justify-content: center;
   align-items: center;
   justify-content: flex-end;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> chickhack
-=======
->>>>>>> kai
-=======
->>>>>>> chickhack
-=======
->>>>>>> kai
   width: 60%;
 }
 
@@ -373,16 +343,6 @@ nav .nav-icons {
   justify-content: center;
   align-items: center;
   justify-content: space-around;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> chickhack
-=======
->>>>>>> kai
-=======
->>>>>>> chickhack
-=======
->>>>>>> kai
   width: 12%;
 }
 
@@ -422,31 +382,11 @@ footer .links .footer-links {
   justify-content: center;
   align-items: center;
   justify-content: space-around;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> chickhack
-=======
->>>>>>> kai
-=======
->>>>>>> chickhack
-=======
->>>>>>> kai
   width: 55%;
   position: relative;
   left: 50%;
   bottom: 30px;
   transform: translateX(-50%);
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> chickhack
-=======
->>>>>>> kai
-=======
->>>>>>> chickhack
-=======
->>>>>>> kai
 }
 
 footer .links .footer-links a {
@@ -458,16 +398,6 @@ footer .footer_moon {
   left: 50%;
   max-width: 550px;
   transform: translateX(-50%);
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> chickhack
-=======
->>>>>>> kai
-=======
->>>>>>> chickhack
-=======
->>>>>>> kai
 }
 
 footer .smoke {
@@ -477,16 +407,6 @@ footer .smoke {
   width: 100%;
   height: 80%;
   transform: translateX(-50%);
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> chickhack
-=======
->>>>>>> kai
-=======
->>>>>>> chickhack
-=======
->>>>>>> kai
 }
 
 .quantity label {
@@ -540,19 +460,7 @@ section.cart .item {
   display: flex;
   justify-content: center;
   align-items: center;
-<<<<<<< HEAD
-  justify-content: space-around;
-  flex-wrap: wrap;
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> chickhack
-=======
->>>>>>> kai
-=======
->>>>>>> chickhack
-=======
   justify-content: center;
->>>>>>> kai
   background-color: #292B41;
   padding: 16px 0;
 }
@@ -567,13 +475,6 @@ section.cart .item .img {
   }
 }
 
-<<<<<<< HEAD
-section.cart .item .pdname {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  width: 15%;
-=======
 section.cart .item .info {
   width: 65%;
   margin-left: 10px;
@@ -581,7 +482,6 @@ section.cart .item .info {
   justify-content: center;
   align-items: center;
   justify-content: space-around;
->>>>>>> kai
 }
 
 section.cart .item .info .points {
