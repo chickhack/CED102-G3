@@ -173,7 +173,8 @@ body {
   max-width: 100px;
   height: 100%;
   max-height: 50px;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .imgsr {
@@ -181,7 +182,8 @@ body {
   max-width: 150px;
   height: auto;
   max-height: 150px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 #paymethod-coin-nu {
@@ -191,6 +193,7 @@ body {
   font-size: 16px;
   width: 30%;
   letter-spacing: 2px;
+  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
@@ -280,8 +283,11 @@ form {
 }
 
 form .orderinfo .row {
-  justify-content: center;
-  align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 form .orderinfo .row .col-10 {
@@ -293,6 +299,9 @@ form .orderinfo .row .col-10 {
 form .orderinfo .row .col-10 .row {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> denis
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
@@ -300,6 +309,7 @@ form .orderinfo .row .col-10 .row {
 form .orderinfo .row .col-10 .row .col-7 {
   display: -webkit-box;
   display: -ms-flexbox;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> chickhack
@@ -311,8 +321,13 @@ form .orderinfo .row .col-10 .row .col-7 {
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
 =======
 >>>>>>> chickhack
+=======
+>>>>>>> denis
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 form .orderinfo .row .col-10 .row .col-7 input {
@@ -322,6 +337,7 @@ form .orderinfo .row .col-10 .row .col-7 input {
   background-color: #292B41;
   border: 1px solid #ad6e4a;
   padding: 5px 10px;
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -332,9 +348,15 @@ form .orderinfo .row .col-10 .row .col-7 input:focus {
 
 form .orderinfo .row .col-10 .row .col-11 {
   margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-content: flex-start;
-  flex-direction: column;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 form .orderinfo .row .col-10 .row .col-11 input {
@@ -346,15 +368,21 @@ form .orderinfo .row .col-10 .row .col-11 input {
 }
 
 form .ltineraryinfo .row {
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 form .ltineraryinfo .row .col-10 .row {
   margin-bottom: 32px;
   background-color: #292B41;
   border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 form .ltineraryinfo .row .col-10 .row .col-3 {
@@ -366,6 +394,9 @@ form .ltineraryinfo .row .col-10 .row .col-3 img {
   max-width: 150px;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> denis
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -373,6 +404,7 @@ form .ltineraryinfo .row .col-10 .row .col-3 img {
 form .ltineraryinfo .row .col-10 .row .col-7 .row {
   display: -webkit-box;
   display: -ms-flexbox;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> chickhack
@@ -384,8 +416,12 @@ form .ltineraryinfo .row .col-10 .row .col-7 .row {
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
 =======
 >>>>>>> chickhack
+=======
+>>>>>>> denis
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   height: 100%;
   width: 100%;
 }
@@ -399,6 +435,9 @@ form .ltineraryinfo .row .col-10 .row .col-7 .row .col-11 {
 form .ltineraryinfo .row .col-10 .row .col-7 .row .text-div {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> denis
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -409,6 +448,7 @@ form .ltineraryinfo .row .col-10 .row .col-7 .row .text-div {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> chickhack
@@ -416,6 +456,8 @@ form .ltineraryinfo .row .col-10 .row .col-7 .row .text-div {
   justify-content: center;
   flex-direction: column;
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+>>>>>>> denis
   padding: 0px 0;
 }
 
@@ -425,7 +467,9 @@ form .ltineraryinfo .row .col-10 .row .col-7 .row .text-div img {
 }
 
 form .addPay .row {
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 form .addPay .row .col-10 {
@@ -434,14 +478,16 @@ form .addPay .row .col-10 {
 
 <<<<<<< HEAD
 form .addPay .row .col-10 .automena .row .col-11 {
-<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
+<<<<<<< HEAD
 =======
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
 =======
 form .addPay .row .col-10 .automena .row .col-10 {
 >>>>>>> chickhack
+=======
+>>>>>>> denis
   display: flex;
 }
 
@@ -461,7 +507,8 @@ form .addPay .row .col-10 .automena .row .col-10 .sss img {
 <<<<<<< HEAD
 form .addPay .row .col-10 .automena .row .col-11 .checkbox-fu:checked {
   background: #ad6e4a;
-  box-shadow: inset 0px 0px 0px 4px #ad6e4a;
+  -webkit-box-shadow: inset 0px 0px 0px 4px #ad6e4a;
+          box-shadow: inset 0px 0px 0px 4px #ad6e4a;
 }
 
 form .addPay .row .col-10 .automena .row .col-11 .checkbox-fu::after {
@@ -471,7 +518,8 @@ form .addPay .row .col-10 .automena .row .col-11 .checkbox-fu::after {
   background-color: #ad6e4a;
   left: -3%;
   position: absolute;
-  transform: rotate(-45deg) translateY(-60%);
+  -webkit-transform: rotate(-45deg) translateY(-60%);
+          transform: rotate(-45deg) translateY(-60%);
   top: 50%;
 =======
 form .addPay .row .col-10 .automena .row .col-10 .sssb:focus .sss {
@@ -492,7 +540,9 @@ form .addPay .row .col-10 .automena .row .col-11 input {
 }
 
 form .paymethod .row {
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 form .paymethod .row .col-10 .paymethod-automanu .row #paymethod-coin, form .paymethod .row .col-10 .paymethod-automanu .row #paymethod-automanu-car {
@@ -516,17 +566,25 @@ form .paymethod .row .col-10 .paymethod-automanu .row .check::before {
 form .paymethod .row .col-10 .paymethod-automanu .row .col-11 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
 =======
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
 =======
 >>>>>>> chickhack
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> denis
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 form .paymethod .row .col-10 .paymethod-automanu .row .col-12 .paymethod-automanu-car-automanu .row {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   -webkit-box-pack: space-evenly;
@@ -538,6 +596,11 @@ form .paymethod .row .col-10 .paymethod-automanu .row .col-12 .paymethod-automan
 =======
   justify-content: space-evenly;
 >>>>>>> chickhack
+=======
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+>>>>>>> denis
 }
 
 form .paymethod .row .col-10 .paymethod-automanu .row .col-12 .paymethod-automanu-car-automanu .row input {
@@ -547,6 +610,7 @@ form .paymethod .row .col-10 .paymethod-automanu .row .col-12 .paymethod-automan
   border: 1px solid #AD6E4A;
   border-radius: 5px;
   padding: 5px 10px;
+  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
@@ -568,14 +632,21 @@ form .paymethod .row .col-10 .paymethod-automanu .row .col-5 input.paymethod-coi
 form .paymethod .row .col-10 .paymethod-automanu .row .col-4 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
 =======
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
 =======
 >>>>>>> chickhack
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> denis
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 form .paymethod .row .col-10 .paymethod-automanu .row .col-4 .intput-nu {
@@ -583,18 +654,24 @@ form .paymethod .row .col-10 .paymethod-automanu .row .col-4 .intput-nu {
 }
 
 form .orderDetails .row {
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 form .orderDetails .row .allpay-div {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> denis
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+<<<<<<< HEAD
 =======
   display: flex;
   justify-content: flex-end;
@@ -603,6 +680,8 @@ form .orderDetails .row .allpay-div {
   display: flex;
   justify-content: flex-end;
 >>>>>>> chickhack
+=======
+>>>>>>> denis
 }
 
 form .orderDetails .row .col-10 .orderDetails-automanu .col-3 {
@@ -638,12 +717,17 @@ form .orderDetails .row .col-10 .orderDetails-automanu .col-11 .orderDetails-aut
 form .orderDetails .row .col-10 .orderDetails-automanu .col-11 .orderDetails-automanu-textdiv .textbox {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
 =======
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
 =======
 >>>>>>> chickhack
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> denis
   display: flex;
   width: 100%;
 }
@@ -657,12 +741,17 @@ form .orderDetails .row .col-10 .orderDetails-automanu .col-7 {
 form .orderDetails .row .col-10 .orderDetails-automanu .col-7 .row {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
 =======
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
 =======
 >>>>>>> chickhack
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> denis
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;

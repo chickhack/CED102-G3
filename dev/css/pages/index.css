@@ -56,7 +56,8 @@ img {
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
   margin: 0;
   padding: 0;
 }
@@ -79,11 +80,15 @@ body {
   overflow-x: hidden;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> denis
   -webkit-user-select: none;
   -moz-user-select: none;
   -o-user-select: none;
   -ms-user-select: none;
       user-select: none;
+<<<<<<< HEAD
 =======
   -o-user-select: none;
   user-select: none;
@@ -92,6 +97,8 @@ body {
   -o-user-select: none;
   user-select: none;
 >>>>>>> chickhack
+=======
+>>>>>>> denis
 }
 
 h1, .h1 {
@@ -310,13 +317,8 @@ small, .small {
 }
 
 .container {
-  max-width: 1440px;
   margin: 0 auto;
-  overflow-x: hidden;
-}
-
-body {
-  overflow-x: hidden;
+  padding-top: 15vh;
 }
 
 body {
@@ -324,19 +326,20 @@ body {
 }
 
 nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> denis
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-=======
-  justify-content: center;
-  align-items: center;
->>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
   justify-content: center;
 =======
   justify-content: center;
@@ -344,7 +347,7 @@ nav {
   justify-content: space-around;
 >>>>>>> chickhack
   background-color: #0c0d18;
-  position: sticky;
+  position: fixed;
   top: 0;
   width: 100%;
   min-height: 12vh;
@@ -369,9 +372,14 @@ nav .logo h1 a {
 }
 
 nav .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> denis
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -381,11 +389,6 @@ nav .nav-links {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-=======
-  justify-content: center;
-  align-items: center;
-  justify-content: flex-end;
->>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
   width: 75%;
 =======
   justify-content: center;
@@ -402,10 +405,17 @@ nav .nav-links a {
 }
 
 nav .nav-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 12%;
   margin-left: 50px;
 }
@@ -424,7 +434,6 @@ nav .burger div {
 
 @media (max-width: 992px) {
   nav {
-<<<<<<< HEAD
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
@@ -450,22 +459,6 @@ nav .burger div {
     justify-content: center;
     width: 30%;
     -webkit-transition: all 1s ease-in;
-=======
-    justify-content: space-around;
-  }
-  nav .nav-links {
-    position: absolute;
-    transform: translateX(100%);
-    height: 92vh;
-    top: 12vh;
-    background-color: #AD6E4A;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    width: 30%;
->>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
     transition: all 1s ease-in;
   }
   nav .nav-links li {
@@ -480,27 +473,18 @@ nav .burger div {
   }
   nav .nav-icons {
     width: 100%;
-<<<<<<< HEAD
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-=======
-    justify-content: flex-end;
->>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
   }
   nav .nav-icons .icon {
     margin: 0 30px 0 15px;
-    max-width: 25px;
   }
   nav .burger {
     display: block;
   }
   nav .nav-active {
-<<<<<<< HEAD
     right: 0%;
-=======
-    transform: translateX(0%);
->>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
   }
 }
 
@@ -514,19 +498,14 @@ nav .burger div {
   nav .nav-icons {
     width: 50%;
     margin-left: 16px;
-<<<<<<< HEAD
     -ms-flex-pack: distribute;
         justify-content: space-around;
-=======
-    justify-content: space-around;
->>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
   }
   nav .nav-icons .icon {
     margin: 0;
   }
 }
 
-<<<<<<< HEAD
 @-webkit-keyframes navLinkFade {
   from {
     opacity: 0;
@@ -550,16 +529,6 @@ nav .burger div {
     opacity: 1;
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
-=======
-@keyframes navLinkFade {
-  from {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0px);
->>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
   }
 }
 
@@ -580,19 +549,28 @@ footer .links .logo {
   position: relative;
   left: 50%;
   bottom: 50px;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 footer .links .footer-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 55%;
   position: relative;
   left: 50%;
   bottom: 30px;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 footer .links .footer-links a {
@@ -604,10 +582,15 @@ footer .footer_moon {
   left: 50%;
 <<<<<<< HEAD
   max-width: 40%;
+<<<<<<< HEAD
 =======
   max-width: 550px;
 >>>>>>> chickhack
   transform: translateX(-50%);
+=======
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+>>>>>>> denis
 }
 
 footer .smoke {
@@ -616,8 +599,13 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
+<<<<<<< HEAD
   transform: translateX(-50%);
 <<<<<<< HEAD
+=======
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+>>>>>>> denis
 }
 
 @media (max-width: 768px) {
@@ -699,7 +687,10 @@ button {
 }
 
 .banner .slogan {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   -webkit-box-pack: center;
@@ -711,6 +702,11 @@ button {
 =======
   justify-content: center;
 >>>>>>> chickhack
+=======
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+>>>>>>> denis
   margin-top: 20vh;
 }
 
@@ -722,8 +718,12 @@ button {
 }
 
 .banner .scroll {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .banner .scroll img {
@@ -732,19 +732,27 @@ button {
 
 .home_intro {
   margin-top: 15vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> denis
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+<<<<<<< HEAD
 =======
   flex-direction: column;
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
 =======
   flex-direction: column;
 >>>>>>> chickhack
+=======
+>>>>>>> denis
 }
 
 .home_intro h2 {
@@ -761,11 +769,113 @@ button {
 
 @media all and (max-width: 768px) {
   .stepsection {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
+.hottrip {
+  top: 15vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 96px;
+  margin: 0 auto;
+}
+
+div.planet_top {
+  position: relative;
+  padding-top: 90px;
+  text-align: center;
+  width: 45%;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+@media all and (max-width: 1200px) {
+  div.planet_top {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
+div.planet_top h4 {
+  color: #C9ADA7;
+}
+
+div.planet_top img.planet {
+  height: 160px;
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+div.planet_top img.planet_a1 {
+  max-width: 280px;
+}
+
+div.planet_top div.word {
+  position: absolute;
+  top: 190px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  text-align: center;
+  margin: 0 auto;
+}
+
+div.planet_top div.word .hot {
+  color: #AD6E4A;
+}
+
+div.planet_top div.word .tag {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border: 1px solid #C9ADA7;
+  border-radius: 5px;
+  padding: 8px;
+  line-height: 5px;
+  margin: 3px;
+  color: #cccaca;
+}
+
+div.planet_top div.word .price {
+  color: #AD6E4A;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+  font-family: "Nasalization";
+}
+
+div.planet_top div.word .addin {
+  background-color: #AD6E4A;
+  color: #ffffff;
+  border-radius: 15px;
+  width: 110px;
+  margin: 0 auto;
+  line-height: 26px;
+  text-align: center;
+}
+
+div.planet_top div.word .addin img.plus {
+  width: 15px;
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  padding-right: 4px;
+}
+
+div.planet_top div.word .addin:hover {
+  background-color: #bf896b;
+}
+
 .tab-inner {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   display: -webkit-box;
@@ -774,25 +884,39 @@ button {
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
 =======
 >>>>>>> chickhack
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> denis
   display: flex;
 }
 
 .tab-inner .taball {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> denis
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+<<<<<<< HEAD
 =======
   flex-direction: column;
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
 =======
   flex-direction: column;
 >>>>>>> chickhack
+=======
+>>>>>>> denis
   text-align: left;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .tab-inner .taball .tab_left {
@@ -807,34 +931,63 @@ button {
 
 .tab-inner .data {
   border: 1px solid #AD6E4A;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   font-family: Haettenschweiler, sans-serif;
 }
 
 .tab-inner .data .grav {
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   min-width: 130px;
   min-height: 130px;
   border-right: 1px solid #AD6E4A;
 }
 
 .tab-inner .data .day {
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   min-width: 130px;
   border-right: 1px solid #AD6E4A;
 }
 
 .tab-inner .data .temp {
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   min-width: 130px;
 }
 
@@ -866,10 +1019,12 @@ button {
   display: block;
   background-color: transparent;
   color: #AD6E4A;
-  transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
 }
 
 .gallery .box {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   display: -webkit-box;
@@ -878,12 +1033,19 @@ button {
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
 =======
 >>>>>>> chickhack
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> denis
   display: flex;
 }
 
 .gallery .topleft {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> denis
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -895,6 +1057,7 @@ button {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> chickhack
@@ -906,6 +1069,8 @@ button {
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
 =======
 >>>>>>> chickhack
+=======
+>>>>>>> denis
 }
 
 .gallery .topleft .A {
@@ -923,6 +1088,9 @@ button {
 .gallery .topright {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> denis
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -938,6 +1106,7 @@ button {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> chickhack
@@ -952,6 +1121,8 @@ button {
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
 =======
 >>>>>>> chickhack
+=======
+>>>>>>> denis
 }
 
 .gallery .topright button.btn {
@@ -963,12 +1134,16 @@ button {
 .gallery .topright .galleryIntro {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> denis
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+<<<<<<< HEAD
 =======
   display: flex;
   justify-content: center;
@@ -977,6 +1152,8 @@ button {
   display: flex;
   justify-content: center;
 >>>>>>> chickhack
+=======
+>>>>>>> denis
 }
 
 .gallery .topright .galleryIntro h5 {
@@ -987,6 +1164,9 @@ button {
 .gallery .bottomleft {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> denis
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -994,6 +1174,7 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+<<<<<<< HEAD
 =======
   display: flex;
   flex-direction: row;
@@ -1002,6 +1183,8 @@ button {
   display: flex;
   flex-direction: row;
 >>>>>>> chickhack
+=======
+>>>>>>> denis
   max-height: 500px;
 }
 
@@ -1027,6 +1210,9 @@ button {
 .home_shop {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> denis
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1034,6 +1220,7 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+<<<<<<< HEAD
 =======
   display: flex;
   flex-direction: column;
@@ -1042,6 +1229,8 @@ button {
   display: flex;
   flex-direction: column;
 >>>>>>> chickhack
+=======
+>>>>>>> denis
 }
 
 .home_shop .button_min {
@@ -1076,6 +1265,9 @@ button {
   left: 0;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> denis
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1085,6 +1277,7 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+<<<<<<< HEAD
 =======
   display: flex;
   justify-content: center;
@@ -1095,6 +1288,8 @@ button {
   justify-content: center;
   align-items: center;
 >>>>>>> chickhack
+=======
+>>>>>>> denis
 }
 
 .home_shop .shopItem .hovereffect img {
@@ -1103,20 +1298,25 @@ button {
   max-width: none;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> denis
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, -webkit-transform 0.35s;
-=======
->>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
   transition: opacity 0.35s, transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
+  -webkit-transform: translate3d(-10px, 0, 0);
   transform: translate3d(-10px, 0, 0);
-<<<<<<< HEAD
   -webkit-backface-visibility: hidden;
+<<<<<<< HEAD
 =======
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
 =======
   transition: opacity 0.35s, transform 0.35s;
   transform: translate3d(-10px, 0, 0);
 >>>>>>> chickhack
+=======
+>>>>>>> denis
   backface-visibility: hidden;
 }
 
@@ -1125,22 +1325,30 @@ button {
   filter: alpha(opacity=40);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   -webkit-transform: translate3d(0, 0, 0);
 =======
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
 =======
 >>>>>>> chickhack
+=======
+  -webkit-transform: translate3d(0, 0, 0);
+>>>>>>> denis
   transform: translate3d(0, 0, 0);
 }
 
 .home_shop .shopItem .hovereffect:hover h2:after {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   -webkit-transform: translate3d(0, 0, 0);
 =======
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
 =======
 >>>>>>> chickhack
+=======
+  -webkit-transform: translate3d(0, 0, 0);
+>>>>>>> denis
   transform: translate3d(0, 0, 0);
 }
 
@@ -1150,17 +1358,23 @@ button {
   filter: alpha(opacity=0);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> denis
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
   transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
   -webkit-transform: translate3d(100%, 0, 0);
+<<<<<<< HEAD
 =======
   transition: opacity 0.35s, transform 0.35s;
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
 =======
   transition: opacity 0.35s, transform 0.35s;
 >>>>>>> chickhack
+=======
+>>>>>>> denis
   transform: translate3d(100%, 0, 0);
 }
 
@@ -1169,11 +1383,15 @@ button {
   filter: alpha(opacity=100);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   -webkit-transform: translate3d(0, 0, 0);
 =======
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
 =======
 >>>>>>> chickhack
+=======
+  -webkit-transform: translate3d(0, 0, 0);
+>>>>>>> denis
   transform: translate3d(0, 0, 0);
 }
 
@@ -1195,6 +1413,7 @@ button {
   z-index: 1;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   -webkit-transform: translate(110%, -20%);
           transform: translate(110%, -20%);
 =======
@@ -1203,6 +1422,10 @@ button {
 =======
   transform: translate(110%, -20%);
 >>>>>>> chickhack
+=======
+  -webkit-transform: translate(110%, -20%);
+          transform: translate(110%, -20%);
+>>>>>>> denis
   max-height: 450px;
   max-width: 220px;
 }
@@ -1214,6 +1437,7 @@ button {
 .home_shop .shopItem .item3 .hovereffect {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   -webkit-transform: translate(150%, -100%);
           transform: translate(150%, -100%);
 =======
@@ -1222,12 +1446,17 @@ button {
 =======
   transform: translate(150%, -100%);
 >>>>>>> chickhack
+=======
+  -webkit-transform: translate(150%, -100%);
+          transform: translate(150%, -100%);
+>>>>>>> denis
   max-height: 270px;
   max-width: 275px;
 }
 
 .home_shop .shopItem .item4 .hovereffect {
   z-index: 1;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   -webkit-transform: translate(255%, -260%);
@@ -1238,6 +1467,10 @@ button {
 =======
   transform: translate(255%, -260%);
 >>>>>>> chickhack
+=======
+  -webkit-transform: translate(255%, -260%);
+          transform: translate(255%, -260%);
+>>>>>>> denis
   max-height: 270px;
   max-width: 280px;
 }
@@ -1249,6 +1482,7 @@ button {
 .home_shop .shopItem .item5 .hovereffect {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   -webkit-transform: translate(260%, -310%);
           transform: translate(260%, -310%);
 =======
@@ -1257,6 +1491,10 @@ button {
 =======
   transform: translate(260%, -310%);
 >>>>>>> chickhack
+=======
+  -webkit-transform: translate(260%, -310%);
+          transform: translate(260%, -310%);
+>>>>>>> denis
   max-height: 296px;
   max-width: 300px;
 }
@@ -1268,6 +1506,9 @@ button {
 .flow_member {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> denis
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1299,6 +1540,7 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> chickhack
@@ -1320,6 +1562,8 @@ button {
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
 =======
 >>>>>>> chickhack
+=======
+>>>>>>> denis
   text-align: center;
 }
 
@@ -1346,7 +1590,9 @@ button {
 }
 
 .flow_member button {
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   margin-bottom: 70px;
 }
 /*# sourceMappingURL=index.css.map */

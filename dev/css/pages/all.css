@@ -56,7 +56,8 @@ img {
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
   margin: 0;
   padding: 0;
 }
@@ -77,8 +78,11 @@ body {
   font-size: 14px;
   background-color: #0c0d18;
   overflow-x: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
   -o-user-select: none;
-  user-select: none;
+  -ms-user-select: none;
+      user-select: none;
 }
 
 h1, .h1 {
@@ -297,13 +301,8 @@ small, .small {
 }
 
 .container {
-  max-width: 1440px;
   margin: 0 auto;
-  overflow-x: hidden;
-}
-
-body {
-  overflow-x: hidden;
+  padding-top: 15vh;
 }
 
 body {
@@ -311,19 +310,20 @@ body {
 }
 
 nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> denis
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-=======
-  justify-content: center;
-  align-items: center;
->>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
   justify-content: center;
 =======
   justify-content: center;
@@ -331,7 +331,7 @@ nav {
   justify-content: space-around;
 >>>>>>> chickhack
   background-color: #0c0d18;
-  position: sticky;
+  position: fixed;
   top: 0;
   width: 100%;
   min-height: 12vh;
@@ -356,9 +356,14 @@ nav .logo h1 a {
 }
 
 nav .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> denis
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -368,11 +373,6 @@ nav .nav-links {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-=======
-  justify-content: center;
-  align-items: center;
-  justify-content: flex-end;
->>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
   width: 75%;
 =======
   justify-content: center;
@@ -389,10 +389,17 @@ nav .nav-links a {
 }
 
 nav .nav-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 12%;
   margin-left: 50px;
 }
@@ -411,7 +418,6 @@ nav .burger div {
 
 @media (max-width: 992px) {
   nav {
-<<<<<<< HEAD
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
@@ -437,22 +443,6 @@ nav .burger div {
     justify-content: center;
     width: 30%;
     -webkit-transition: all 1s ease-in;
-=======
-    justify-content: space-around;
-  }
-  nav .nav-links {
-    position: absolute;
-    transform: translateX(100%);
-    height: 92vh;
-    top: 12vh;
-    background-color: #AD6E4A;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    width: 30%;
->>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
     transition: all 1s ease-in;
   }
   nav .nav-links li {
@@ -467,27 +457,18 @@ nav .burger div {
   }
   nav .nav-icons {
     width: 100%;
-<<<<<<< HEAD
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-=======
-    justify-content: flex-end;
->>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
   }
   nav .nav-icons .icon {
     margin: 0 30px 0 15px;
-    max-width: 25px;
   }
   nav .burger {
     display: block;
   }
   nav .nav-active {
-<<<<<<< HEAD
     right: 0%;
-=======
-    transform: translateX(0%);
->>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
   }
 }
 
@@ -501,19 +482,14 @@ nav .burger div {
   nav .nav-icons {
     width: 50%;
     margin-left: 16px;
-<<<<<<< HEAD
     -ms-flex-pack: distribute;
         justify-content: space-around;
-=======
-    justify-content: space-around;
->>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
   }
   nav .nav-icons .icon {
     margin: 0;
   }
 }
 
-<<<<<<< HEAD
 @-webkit-keyframes navLinkFade {
   from {
     opacity: 0;
@@ -537,16 +513,6 @@ nav .burger div {
     opacity: 1;
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
-=======
-@keyframes navLinkFade {
-  from {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0px);
->>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
   }
 }
 
@@ -567,19 +533,28 @@ footer .links .logo {
   position: relative;
   left: 50%;
   bottom: 50px;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 footer .links .footer-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 55%;
   position: relative;
   left: 50%;
   bottom: 30px;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 footer .links .footer-links a {
@@ -591,10 +566,15 @@ footer .footer_moon {
   left: 50%;
 <<<<<<< HEAD
   max-width: 40%;
+<<<<<<< HEAD
 =======
   max-width: 550px;
 >>>>>>> chickhack
   transform: translateX(-50%);
+=======
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+>>>>>>> denis
 }
 
 footer .smoke {
@@ -603,8 +583,13 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
+<<<<<<< HEAD
   transform: translateX(-50%);
 <<<<<<< HEAD
+=======
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+>>>>>>> denis
 }
 
 @media (max-width: 768px) {
