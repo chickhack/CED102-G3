@@ -15,26 +15,9 @@ body {
 .grid {
   padding-top: 5%;
   display: flex;
-<<<<<<< HEAD
-<<<<<<< HEAD
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
-=======
   flex-wrap: wrap;
   justify-content: center;
   align-items: start;
->>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
-=======
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: start;
->>>>>>> chickhack
 }
 
 .grid-item {
@@ -48,10 +31,6 @@ body {
 .grid .grid-item img {
   width: 100%;
   object-fit: cover;
-<<<<<<< HEAD
-=======
-  border-radius: 5px;
->>>>>>> chickhack
 }
 
 .grid .grid-item:nth-child(n+11) {
@@ -167,9 +146,7 @@ footer.padding_top_5 {
 }
 
 .row {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 button.turnoff_lightbox {
@@ -225,8 +202,6 @@ button.turnoff_lightbox img {
 }
 
 .member_info {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 15px 15px 0 15px;
 }
@@ -287,8 +262,6 @@ button.turnoff_lightbox img {
 }
 
 .message_1, .message_2, .message_3 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 0 15px 0 15px;
   margin-bottom: 15px;
