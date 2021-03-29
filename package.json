@@ -13,7 +13,8 @@
     "dev": "npm install",
     "renew": "gulp u",
     "watch": "gulp w",
-    "browser": "gulp browser"
+    "browser": "gulp browser",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
@@ -39,6 +40,8 @@
     "node-sass": "^5.0.0"
   },
   "dependencies": {
-    "bootstrap-icons": "^1.4.0"
+    "bootstrap-icons": "^1.4.0",
+    "express": "^4.17.1",
+    "three": "^0.119.1"
   }
 }

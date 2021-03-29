@@ -13,7 +13,11 @@ nav{
     background-position: top;
     height: 100vh;
 }
-
+@media only screen and ( max-width:1200px) {
+    .banner_bg{
+        height: 100vh;
+    }
+}
 //整頁邊框
 
 .frame{
@@ -143,6 +147,7 @@ button{
 
     }
     button{
+        display: block;
         background-color: transparent;
         color: $gold;
         transform: translateX(-100%);
