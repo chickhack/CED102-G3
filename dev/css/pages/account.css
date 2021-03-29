@@ -78,6 +78,8 @@ body {
   font-size: 14px;
   background-color: #0c0d18;
   overflow-x: hidden;
+  -o-user-select: none;
+  user-select: none;
 }
 
 h1, .h1 {
@@ -306,16 +308,6 @@ nav {
   align-items: center;
   justify-content: space-around;
   background-color: #0c0d18;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  position: -webkit-sticky;
-=======
->>>>>>> chickhack
-=======
->>>>>>> kai
-=======
->>>>>>> chickhack
   position: sticky;
   top: 0;
   width: 100%;
@@ -415,20 +407,7 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-=======
   transform: translateX(-50%);
->>>>>>> chickhack
-=======
-  transform: translateX(-50%);
->>>>>>> kai
-=======
-  transform: translateX(-50%);
->>>>>>> chickhack
 }
 
 .quantity label {
@@ -456,6 +435,18 @@ footer .smoke {
   cursor: pointer;
 }
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 body {
   background-color: #0c0d18;
 }
@@ -463,33 +454,9 @@ body {
 /* 歡迎會員 字體大小、字型位置 */
 .welcome {
   padding: 15vh 250px 0px 250px;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
-=======
   display: flex;
   align-items: center;
   justify-content: left;
->>>>>>> chickhack
-=======
-  display: flex;
-  align-items: center;
-  justify-content: left;
->>>>>>> kai
-=======
-  display: flex;
-  align-items: center;
-  justify-content: left;
->>>>>>> chickhack
 }
 
 .spacedinfo {

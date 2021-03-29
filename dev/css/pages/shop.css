@@ -77,6 +77,8 @@ body {
   font-size: 14px;
   background-color: #0c0d18;
   overflow-x: hidden;
+  -o-user-select: none;
+  user-select: none;
 }
 
 h1, .h1 {
@@ -305,16 +307,6 @@ nav {
   align-items: center;
   justify-content: space-around;
   background-color: #0c0d18;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  position: -webkit-sticky;
-=======
->>>>>>> chickhack
-=======
->>>>>>> kai
-=======
->>>>>>> chickhack
   position: sticky;
   top: 0;
   width: 100%;
@@ -415,13 +407,6 @@ footer .smoke {
   width: 100%;
   height: 80%;
   transform: translateX(-50%);
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> chickhack
-=======
->>>>>>> kai
-=======
->>>>>>> chickhack
 }
 
 .quantity label {
@@ -447,6 +432,18 @@ footer .smoke {
   background-color: transparent;
   padding: 4px 8px;
   cursor: pointer;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 section.shop {
