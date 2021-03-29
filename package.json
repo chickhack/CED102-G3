@@ -13,8 +13,7 @@
     "dev": "npm install",
     "renew": "gulp u",
     "watch": "gulp w",
-    "browser": "gulp browser",
-    "start": "node app.js"
+    "browser": "gulp browser"
   },
   "repository": {
     "type": "git",

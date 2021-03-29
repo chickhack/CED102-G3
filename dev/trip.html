@@ -21,10 +21,11 @@
 </head>
 
 <body>
-    <header>
-        @@include('./layout/header.html')
-    </header>
-    <container id="app">
+    
+        <header>
+            @@include('./layout/header.html')
+        </header>
+        <div id="app" >
         <!-- Slider main container -->
         <div class="swiper-container">
             <!-- Additional required wrapper -->
@@ -129,7 +130,8 @@
                         </div>
                         <div class="total margin_top_2 h3">總計$2000</div>
                         <div class="btn  margin_top_2">
-                            <div class="addin small"><img class="plus" src="./img/icon/plus.png" alt=""><a href="./car-itineray.html">加入我的行程</a></div>
+                            <div class="addin small"><img class="plus" src="./img/icon/plus.png" alt=""><a
+                                    href="./car-itineray.html">加入我的行程</a></div>
                             <div class="button_min p buy margin_left_3"><a href="./order-itineray.html">前往訂購</a></div>
                         </div>
 
@@ -185,10 +187,13 @@
                 </div>
             </div>
         </div>
-    </container>
-    <footer>
-        @@include('./layout/footer.html')
-    </footer>
+    </div>
+        <footer>
+            @@include('./layout/footer.html')
+        </footer>
+    
+
+
 
     <script>
         // ----vue
