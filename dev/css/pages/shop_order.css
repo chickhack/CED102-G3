@@ -79,15 +79,26 @@ body {
   background-color: #0c0d18;
   overflow-x: hidden;
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> denis
   -webkit-user-select: none;
   -moz-user-select: none;
   -o-user-select: none;
   -ms-user-select: none;
       user-select: none;
+<<<<<<< HEAD
 =======
   -o-user-select: none;
   user-select: none;
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+  -o-user-select: none;
+  user-select: none;
+>>>>>>> chickhack
+=======
+>>>>>>> denis
 }
 
 h1, .h1 {
@@ -306,13 +317,8 @@ small, .small {
 }
 
 .container {
-  max-width: 1440px;
   margin: 0 auto;
-  overflow-x: hidden;
-}
-
-body {
-  overflow-x: hidden;
+  padding-top: 15vh;
 }
 
 body {
@@ -324,15 +330,23 @@ nav {
   display: -ms-flexbox;
   display: flex;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 528db558604e5ab1390a0ef5b25d30e723a35a4d
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> denis
+>>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+<<<<<<< HEAD
 <<<<<<< HEAD
   -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -346,6 +360,16 @@ nav {
   background-color: #0c0d18;
   position: -webkit-sticky;
   position: sticky;
+=======
+  justify-content: center;
+=======
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+>>>>>>> chickhack
+  background-color: #0c0d18;
+  position: fixed;
+>>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
   top: 0;
   width: 100%;
   min-height: 12vh;
@@ -356,7 +380,11 @@ nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
+<<<<<<< HEAD
   background-image: url("../../img/icon/header/logo.png");
+=======
+  background-image: url("../img/logo.png");
+>>>>>>> chickhack
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -370,9 +398,16 @@ nav .nav-links {
   display: -ms-flexbox;
   display: flex;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 528db558604e5ab1390a0ef5b25d30e723a35a4d
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> denis
+>>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -383,15 +418,24 @@ nav .nav-links {
       -ms-flex-pack: end;
           justify-content: flex-end;
 <<<<<<< HEAD
+<<<<<<< HEAD
   width: 60%;
 =======
+=======
+  width: 75%;
+>>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
 =======
   justify-content: center;
   align-items: center;
   justify-content: flex-end;
+<<<<<<< HEAD
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
   width: 75%;
 >>>>>>> 528db558604e5ab1390a0ef5b25d30e723a35a4d
+=======
+  width: 60%;
+>>>>>>> chickhack
+>>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
 }
 
 nav .nav-links a {
@@ -430,7 +474,6 @@ nav .burger div {
 
 @media (max-width: 992px) {
   nav {
-<<<<<<< HEAD
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
@@ -456,22 +499,6 @@ nav .burger div {
     justify-content: center;
     width: 30%;
     -webkit-transition: all 1s ease-in;
-=======
-    justify-content: space-around;
-  }
-  nav .nav-links {
-    position: absolute;
-    transform: translateX(100%);
-    height: 92vh;
-    top: 12vh;
-    background-color: #AD6E4A;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    width: 30%;
->>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
     transition: all 1s ease-in;
   }
   nav .nav-links li {
@@ -486,27 +513,18 @@ nav .burger div {
   }
   nav .nav-icons {
     width: 100%;
-<<<<<<< HEAD
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-=======
-    justify-content: flex-end;
->>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
   }
   nav .nav-icons .icon {
     margin: 0 30px 0 15px;
-    max-width: 25px;
   }
   nav .burger {
     display: block;
   }
   nav .nav-active {
-<<<<<<< HEAD
     right: 0%;
-=======
-    transform: translateX(0%);
->>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
   }
 }
 
@@ -520,19 +538,14 @@ nav .burger div {
   nav .nav-icons {
     width: 50%;
     margin-left: 16px;
-<<<<<<< HEAD
     -ms-flex-pack: distribute;
         justify-content: space-around;
-=======
-    justify-content: space-around;
->>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
   }
   nav .nav-icons .icon {
     margin: 0;
   }
 }
 
-<<<<<<< HEAD
 @-webkit-keyframes navLinkFade {
   from {
     opacity: 0;
@@ -556,16 +569,6 @@ nav .burger div {
     opacity: 1;
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
-=======
-@keyframes navLinkFade {
-  from {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0px);
->>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
   }
 }
 
@@ -618,13 +621,27 @@ footer .footer_moon {
   position: relative;
   left: 50%;
 <<<<<<< HEAD
+<<<<<<< HEAD
   max-width: 550px;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 =======
+=======
+>>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
   max-width: 40%;
+<<<<<<< HEAD
+=======
+  max-width: 550px;
+>>>>>>> chickhack
   transform: translateX(-50%);
+<<<<<<< HEAD
 >>>>>>> 528db558604e5ab1390a0ef5b25d30e723a35a4d
+=======
+=======
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+>>>>>>> denis
+>>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
 }
 
 footer .smoke {
@@ -633,8 +650,18 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
+<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+=======
+<<<<<<< HEAD
+  transform: translateX(-50%);
+<<<<<<< HEAD
+=======
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+>>>>>>> denis
+>>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
 }
 
 @media (max-width: 768px) {
@@ -647,6 +674,8 @@ footer .smoke {
   footer .footer_moon {
     min-width: 250px;
   }
+=======
+>>>>>>> chickhack
 }
 
 .quantity label {
@@ -687,7 +716,6 @@ input[type=number] {
 }
 
 section.orderDetail {
-  max-width: 948px;
   margin: 0 auto;
   padding-top: 5vh;
 }
@@ -703,6 +731,9 @@ section.orderDetail .order li {
   display: -ms-flexbox;
   display: flex;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -712,6 +743,7 @@ section.orderDetail .order li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+<<<<<<< HEAD
   padding: 8px 16px;
 }
 
@@ -732,17 +764,34 @@ section.orderDetail .order li .imgWord {
   justify-content: center;
   align-items: center;
   justify-content: space-between;
+=======
+>>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
   padding: 8px 0;
 }
 
 section.orderDetail .order li .imgWord {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
   justify-content: center;
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
 >>>>>>> 528db558604e5ab1390a0ef5b25d30e723a35a4d
+=======
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+>>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
 }
 
 section.orderDetail .order li .imgWord .prod {
@@ -757,17 +806,26 @@ section.orderDetail .order li .imgWord .prod {
 }
 
 section.orderDetail .order li .imgWord .imgRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 60%;
 }
 
 @media all and (max-width: 768px) {
   section.orderDetail .order li .imgWord .imgRight {
     width: 75%;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
@@ -794,7 +852,12 @@ section.orderDetail .order li .quantity {
   display: -ms-flexbox;
 =======
   width: 80%;
+<<<<<<< HEAD
 >>>>>>> 528db558604e5ab1390a0ef5b25d30e723a35a4d
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -826,7 +889,9 @@ section.orderDetail .detail {
 
 @media all and (max-width: 768px) {
   section.orderDetail .detail {
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -873,7 +938,6 @@ section.orderDetail .detail small {
 }
 
 section.orderer {
-  max-width: 948px;
   margin: 0 auto;
   padding-bottom: 40px;
   position: relative;
@@ -894,8 +958,12 @@ section.orderer .orderer_form, section.orderer .recipient, section.orderer .paym
 }
 
 section.orderer .arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 20px 0;
   margin: 0 8px;
   cursor: pointer;
@@ -926,14 +994,27 @@ section.orderer .orderer_click::after, section.orderer .recipient_click::after, 
   top: 50%;
 =======
 section.orderer .arrow img {
+  -webkit-transition: all .5s;
   transition: all .5s;
+<<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
 =======
   transform: rotate(-90deg);
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+<<<<<<< HEAD
 >>>>>>> 528db558604e5ab1390a0ef5b25d30e723a35a4d
+=======
+=======
+  transform: rotate(-90deg);
+>>>>>>> chickhack
+=======
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+>>>>>>> denis
+>>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
 }
 
 section.orderer .info {
@@ -941,9 +1022,16 @@ section.orderer .info {
   display: -ms-flexbox;
   display: flex;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 528db558604e5ab1390a0ef5b25d30e723a35a4d
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> denis
+>>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -956,14 +1044,27 @@ section.orderer .info {
       -ms-flex-pack: justify;
           justify-content: space-between;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
+>>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
+=======
+=======
+>>>>>>> chickhack
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
+<<<<<<< HEAD
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+<<<<<<< HEAD
 >>>>>>> 528db558604e5ab1390a0ef5b25d30e723a35a4d
+=======
+=======
+>>>>>>> chickhack
+=======
+>>>>>>> denis
+>>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
   width: 80%;
   margin-left: 6%;
 }
@@ -1013,7 +1114,8 @@ section.orderer .retract {
 }
 
 section.orderer .retract img {
-  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
 }
 
 section.orderer .payTitle {
@@ -1021,29 +1123,47 @@ section.orderer .payTitle {
 }
 
 section.orderer .group {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 section.orderer .checkbox_group {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 @media all and (max-width: 768px) {
   section.orderer .checkbox_group {
-    justify-content: start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
     width: 100%;
     margin: 8px 0;
   }
 }
 
 section.orderer .checkbox_group.long {
-  justify-content: start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   width: 50%;
 }
 
@@ -1180,12 +1300,24 @@ section.orderer .credit_icon svg.use {
   opacity: 1;
   color: #AD6E4A;
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 =======
   transform: scale(1.2);
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+<<<<<<< HEAD
 >>>>>>> 528db558604e5ab1390a0ef5b25d30e723a35a4d
+=======
+=======
+  transform: scale(1.2);
+>>>>>>> chickhack
+=======
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+>>>>>>> denis
+>>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
 }
 
 section.orderer .credit_icon input {

@@ -79,15 +79,26 @@ body {
   background-color: #0c0d18;
   overflow-x: hidden;
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> denis
   -webkit-user-select: none;
   -moz-user-select: none;
   -o-user-select: none;
   -ms-user-select: none;
       user-select: none;
+<<<<<<< HEAD
 =======
   -o-user-select: none;
   user-select: none;
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+  -o-user-select: none;
+  user-select: none;
+>>>>>>> chickhack
+=======
+>>>>>>> denis
 }
 
 h1, .h1 {
@@ -306,13 +317,8 @@ small, .small {
 }
 
 .container {
-  max-width: 1440px;
   margin: 0 auto;
-  overflow-x: hidden;
-}
-
-body {
-  overflow-x: hidden;
+  padding-top: 15vh;
 }
 
 body {
@@ -324,9 +330,16 @@ nav {
   display: -ms-flexbox;
   display: flex;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 528db558604e5ab1390a0ef5b25d30e723a35a4d
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> denis
+>>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -341,6 +354,7 @@ nav {
 =======
   justify-content: center;
   background-color: #0c0d18;
+<<<<<<< HEAD
   position: -webkit-sticky;
 =======
   justify-content: center;
@@ -348,8 +362,20 @@ nav {
   justify-content: center;
   background-color: #0c0d18;
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+<<<<<<< HEAD
 >>>>>>> 528db558604e5ab1390a0ef5b25d30e723a35a4d
+=======
+=======
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #0c0d18;
+>>>>>>> chickhack
+>>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
   position: sticky;
+=======
+  position: fixed;
+>>>>>>> denis
   top: 0;
   width: 100%;
   min-height: 12vh;
@@ -360,7 +386,11 @@ nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
+<<<<<<< HEAD
   background-image: url("../../img/icon/header/logo.png");
+=======
+  background-image: url("../img/logo.png");
+>>>>>>> chickhack
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -374,9 +404,16 @@ nav .nav-links {
   display: -ms-flexbox;
   display: flex;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 528db558604e5ab1390a0ef5b25d30e723a35a4d
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> denis
+>>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -387,15 +424,24 @@ nav .nav-links {
       -ms-flex-pack: end;
           justify-content: flex-end;
 <<<<<<< HEAD
+<<<<<<< HEAD
   width: 60%;
 =======
+=======
+  width: 75%;
+>>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
 =======
   justify-content: center;
   align-items: center;
   justify-content: flex-end;
+<<<<<<< HEAD
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
   width: 75%;
 >>>>>>> 528db558604e5ab1390a0ef5b25d30e723a35a4d
+=======
+  width: 60%;
+>>>>>>> chickhack
+>>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
 }
 
 nav .nav-links a {
@@ -434,7 +480,6 @@ nav .burger div {
 
 @media (max-width: 992px) {
   nav {
-<<<<<<< HEAD
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
@@ -460,22 +505,6 @@ nav .burger div {
     justify-content: center;
     width: 30%;
     -webkit-transition: all 1s ease-in;
-=======
-    justify-content: space-around;
-  }
-  nav .nav-links {
-    position: absolute;
-    transform: translateX(100%);
-    height: 92vh;
-    top: 12vh;
-    background-color: #AD6E4A;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    width: 30%;
->>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
     transition: all 1s ease-in;
   }
   nav .nav-links li {
@@ -490,27 +519,18 @@ nav .burger div {
   }
   nav .nav-icons {
     width: 100%;
-<<<<<<< HEAD
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-=======
-    justify-content: flex-end;
->>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
   }
   nav .nav-icons .icon {
     margin: 0 30px 0 15px;
-    max-width: 25px;
   }
   nav .burger {
     display: block;
   }
   nav .nav-active {
-<<<<<<< HEAD
     right: 0%;
-=======
-    transform: translateX(0%);
->>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
   }
 }
 
@@ -524,19 +544,14 @@ nav .burger div {
   nav .nav-icons {
     width: 50%;
     margin-left: 16px;
-<<<<<<< HEAD
     -ms-flex-pack: distribute;
         justify-content: space-around;
-=======
-    justify-content: space-around;
->>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
   }
   nav .nav-icons .icon {
     margin: 0;
   }
 }
 
-<<<<<<< HEAD
 @-webkit-keyframes navLinkFade {
   from {
     opacity: 0;
@@ -560,16 +575,6 @@ nav .burger div {
     opacity: 1;
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
-=======
-@keyframes navLinkFade {
-  from {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0px);
->>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
   }
 }
 
@@ -622,13 +627,27 @@ footer .footer_moon {
   position: relative;
   left: 50%;
 <<<<<<< HEAD
+<<<<<<< HEAD
   max-width: 550px;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 =======
+=======
+>>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
   max-width: 40%;
+<<<<<<< HEAD
+=======
+  max-width: 550px;
+>>>>>>> chickhack
   transform: translateX(-50%);
+<<<<<<< HEAD
 >>>>>>> 528db558604e5ab1390a0ef5b25d30e723a35a4d
+=======
+=======
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+>>>>>>> denis
+>>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
 }
 
 footer .smoke {
@@ -637,12 +656,22 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
+<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 <<<<<<< HEAD
 =======
 =======
   transform: translateX(-50%);
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> denis
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+>>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
 }
 
 @media (max-width: 768px) {
@@ -655,8 +684,17 @@ footer .smoke {
   footer .footer_moon {
     min-width: 250px;
   }
+<<<<<<< HEAD
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+<<<<<<< HEAD
 >>>>>>> 528db558604e5ab1390a0ef5b25d30e723a35a4d
+=======
+=======
+  transform: translateX(-50%);
+>>>>>>> chickhack
+=======
+>>>>>>> denis
+>>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
 }
 
 .quantity label {
@@ -698,16 +736,27 @@ input[type=number] {
 
 body {
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> denis
   -o-object-fit: cover;
      object-fit: cover;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+<<<<<<< HEAD
 =======
   object-fit: cover;
   user-select: none;
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+  object-fit: cover;
+  user-select: none;
+>>>>>>> chickhack
+=======
+>>>>>>> denis
 }
 
 @media all and (max-width: 768px) {
@@ -720,6 +769,14 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> denis
+>>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -733,18 +790,30 @@ body {
 =======
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> chickhack
   justify-content: center;
   align-items: center;
   align-items: start;
   flex-wrap: wrap;
+<<<<<<< HEAD
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+>>>>>>> chickhack
   padding-top: 15vh;
 >>>>>>> 528db558604e5ab1390a0ef5b25d30e723a35a4d
 }
 
 .product .imgs {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+}
+
+.product .imgs {
+>>>>>>> denis
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -757,18 +826,41 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> chickhack
   display: flex;
   justify-content: center;
   align-items: center;
   justify-content: flex-end;
+<<<<<<< HEAD
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+>>>>>>> denis
   max-width: 948px;
 }
 
 .product .imgs .img {
   max-width: 400px;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
@@ -784,29 +876,26 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
 =======
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 =======
+  max-width: 948px;
+}
+
+.product .imgs .img {
+  max-width: 400px;
+  text-align: center;
+>>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+<<<<<<< HEAD
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
 >>>>>>> 528db558604e5ab1390a0ef5b25d30e723a35a4d
+=======
+>>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
 }
 
+>>>>>>> chickhack
 @media all and (max-width: 768px) {
   .product .imgs .img {
     max-width: 948px;
@@ -842,6 +931,10 @@ body {
 
 .product .imgs .img .smallImg {
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> denis
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -854,12 +947,20 @@ body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> chickhack
   display: flex;
   justify-content: center;
   align-items: center;
   justify-content: start;
+<<<<<<< HEAD
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+>>>>>>> chickhack
+=======
+>>>>>>> denis
   width: 100%;
 >>>>>>> 528db558604e5ab1390a0ef5b25d30e723a35a4d
 }
@@ -966,9 +1067,16 @@ body {
   color: #ffffff;
   font-weight: 900;
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
   -webkit-transition: all .3s;
 =======
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+>>>>>>> chickhack
+=======
+  -webkit-transition: all .3s;
+>>>>>>> denis
   transition: all .3s;
 }
 
@@ -1001,10 +1109,10 @@ body {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .recommend ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1018,6 +1126,12 @@ body {
 =======
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+=======
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+>>>>>>> chickhack
   margin: 32px 30px;
 >>>>>>> 528db558604e5ab1390a0ef5b25d30e723a35a4d
 }
@@ -1025,21 +1139,31 @@ body {
 .recommend ul li {
   width: 30%;
 =======
+=======
+>>>>>>> denis
 .recommend h3 {
   text-align: center;
 }
 
 .recommend .tripcard_all {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
->>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
 }
 
 @media all and (max-width: 767px) {
   .recommend .tripcard_all {
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -1054,7 +1178,10 @@ body {
 
 @media all and (max-width: 767px) {
   .recommend .tripcard_all .tripcard {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin: 16px 0 16px 0;
   }
 }
@@ -1064,7 +1191,8 @@ body {
 }
 
 .recommend .tripcard_all .tripcard .spot_pic:hover {
-  transform: perspective(0.5px) translateX(-1.5px) translateY(-1.5px);
+  -webkit-transform: perspective(0.5px) translateX(-1.5px) translateY(-1.5px);
+          transform: perspective(0.5px) translateX(-1.5px) translateY(-1.5px);
 }
 
 .recommend .tripcard_all .tripcard .hot2 {
@@ -1073,6 +1201,8 @@ body {
 }
 
 .recommend .tripcard_all .tripcard .tag {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
   border: 1px solid #C9ADA7;
   border-radius: 5px;
@@ -1089,17 +1219,28 @@ body {
   padding-left: 5px;
   position: absolute;
 <<<<<<< HEAD
+<<<<<<< HEAD
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   bottom: 0;
 =======
+=======
+>>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
   right: 20px;
   bottom: 10px;
 }
 
 .recommend .tripcard_all .tripcard .addin2 {
+<<<<<<< HEAD
 >>>>>>> 528db558604e5ab1390a0ef5b25d30e723a35a4d
+=======
+=======
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+>>>>>>> chickhack
+>>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
   background-color: #AD6E4A;
   color: #ffffff;
   border-radius: 15px;

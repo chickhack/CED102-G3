@@ -79,15 +79,26 @@ body {
   background-color: #0c0d18;
   overflow-x: hidden;
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> denis
   -webkit-user-select: none;
   -moz-user-select: none;
   -o-user-select: none;
   -ms-user-select: none;
       user-select: none;
+<<<<<<< HEAD
 =======
   -o-user-select: none;
   user-select: none;
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+  -o-user-select: none;
+  user-select: none;
+>>>>>>> chickhack
+=======
+>>>>>>> denis
 }
 
 h1, .h1 {
@@ -306,13 +317,8 @@ small, .small {
 }
 
 .container {
-  max-width: 1440px;
   margin: 0 auto;
-  overflow-x: hidden;
-}
-
-body {
-  overflow-x: hidden;
+  padding-top: 15vh;
 }
 
 body {
@@ -324,9 +330,16 @@ nav {
   display: -ms-flexbox;
   display: flex;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 528db558604e5ab1390a0ef5b25d30e723a35a4d
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> denis
+>>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -341,6 +354,7 @@ nav {
 =======
   justify-content: center;
   background-color: #0c0d18;
+<<<<<<< HEAD
   position: -webkit-sticky;
 =======
   justify-content: center;
@@ -348,8 +362,20 @@ nav {
   justify-content: center;
   background-color: #0c0d18;
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+<<<<<<< HEAD
 >>>>>>> 528db558604e5ab1390a0ef5b25d30e723a35a4d
+=======
+=======
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #0c0d18;
+>>>>>>> chickhack
+>>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
   position: sticky;
+=======
+  position: fixed;
+>>>>>>> denis
   top: 0;
   width: 100%;
   min-height: 12vh;
@@ -360,7 +386,11 @@ nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
+<<<<<<< HEAD
   background-image: url("../../img/icon/header/logo.png");
+=======
+  background-image: url("../img/logo.png");
+>>>>>>> chickhack
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -374,9 +404,16 @@ nav .nav-links {
   display: -ms-flexbox;
   display: flex;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 528db558604e5ab1390a0ef5b25d30e723a35a4d
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> denis
+>>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -387,15 +424,24 @@ nav .nav-links {
       -ms-flex-pack: end;
           justify-content: flex-end;
 <<<<<<< HEAD
+<<<<<<< HEAD
   width: 60%;
 =======
+=======
+  width: 75%;
+>>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
 =======
   justify-content: center;
   align-items: center;
   justify-content: flex-end;
+<<<<<<< HEAD
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
   width: 75%;
 >>>>>>> 528db558604e5ab1390a0ef5b25d30e723a35a4d
+=======
+  width: 60%;
+>>>>>>> chickhack
+>>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
 }
 
 nav .nav-links a {
@@ -434,7 +480,6 @@ nav .burger div {
 
 @media (max-width: 992px) {
   nav {
-<<<<<<< HEAD
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
@@ -460,22 +505,6 @@ nav .burger div {
     justify-content: center;
     width: 30%;
     -webkit-transition: all 1s ease-in;
-=======
-    justify-content: space-around;
-  }
-  nav .nav-links {
-    position: absolute;
-    transform: translateX(100%);
-    height: 92vh;
-    top: 12vh;
-    background-color: #AD6E4A;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    width: 30%;
->>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
     transition: all 1s ease-in;
   }
   nav .nav-links li {
@@ -490,27 +519,18 @@ nav .burger div {
   }
   nav .nav-icons {
     width: 100%;
-<<<<<<< HEAD
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-=======
-    justify-content: flex-end;
->>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
   }
   nav .nav-icons .icon {
     margin: 0 30px 0 15px;
-    max-width: 25px;
   }
   nav .burger {
     display: block;
   }
   nav .nav-active {
-<<<<<<< HEAD
     right: 0%;
-=======
-    transform: translateX(0%);
->>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
   }
 }
 
@@ -524,19 +544,14 @@ nav .burger div {
   nav .nav-icons {
     width: 50%;
     margin-left: 16px;
-<<<<<<< HEAD
     -ms-flex-pack: distribute;
         justify-content: space-around;
-=======
-    justify-content: space-around;
->>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
   }
   nav .nav-icons .icon {
     margin: 0;
   }
 }
 
-<<<<<<< HEAD
 @-webkit-keyframes navLinkFade {
   from {
     opacity: 0;
@@ -560,16 +575,6 @@ nav .burger div {
     opacity: 1;
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
-=======
-@keyframes navLinkFade {
-  from {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0px);
->>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
   }
 }
 
@@ -622,13 +627,27 @@ footer .footer_moon {
   position: relative;
   left: 50%;
 <<<<<<< HEAD
+<<<<<<< HEAD
   max-width: 550px;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 =======
+=======
+>>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
   max-width: 40%;
+<<<<<<< HEAD
+=======
+  max-width: 550px;
+>>>>>>> chickhack
   transform: translateX(-50%);
+<<<<<<< HEAD
 >>>>>>> 528db558604e5ab1390a0ef5b25d30e723a35a4d
+=======
+=======
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+>>>>>>> denis
+>>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
 }
 
 footer .smoke {
@@ -637,12 +656,22 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
+<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 <<<<<<< HEAD
 =======
 =======
   transform: translateX(-50%);
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> denis
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+>>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
 }
 
 @media (max-width: 768px) {
@@ -655,8 +684,17 @@ footer .smoke {
   footer .footer_moon {
     min-width: 250px;
   }
+<<<<<<< HEAD
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+<<<<<<< HEAD
 >>>>>>> 528db558604e5ab1390a0ef5b25d30e723a35a4d
+=======
+=======
+  transform: translateX(-50%);
+>>>>>>> chickhack
+=======
+>>>>>>> denis
+>>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
 }
 
 .quantity label {
@@ -703,11 +741,18 @@ input[type=number] {
 
 .title {
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
 =======
 >>>>>>> 528db558604e5ab1390a0ef5b25d30e723a35a4d
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
   display: flex;
+<<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -725,12 +770,29 @@ ul.tab-title {
 =======
   justify-content: center;
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+  justify-content: center;
+>>>>>>> chickhack
+=======
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+>>>>>>> denis
 }
 
 div.tabList {
+<<<<<<< HEAD
 >>>>>>> 528db558604e5ab1390a0ef5b25d30e723a35a4d
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
   display: flex;
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> denis
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -742,11 +804,21 @@ ul.tab-title li {
 =======
   -webkit-column-gap: 1%;
           column-gap: 1%;
+<<<<<<< HEAD
 =======
   justify-content: center;
   column-gap: 1%;
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+<<<<<<< HEAD
 >>>>>>> 528db558604e5ab1390a0ef5b25d30e723a35a4d
+=======
+=======
+  justify-content: center;
+  column-gap: 1%;
+>>>>>>> chickhack
+=======
+>>>>>>> denis
+>>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
 }
 
 div.tabList button {
@@ -771,26 +843,47 @@ div.tabList button.active {
   display: -webkit-box;
   display: -ms-flexbox;
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: flex;
 }
 
 .tab-inner .intro {
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
   display: -webkit-box;
   display: -ms-flexbox;
 =======
 =======
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+>>>>>>> chickhack
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> denis
   display: flex;
 }
 
 .tab-inner .taball {
+<<<<<<< HEAD
 >>>>>>> 528db558604e5ab1390a0ef5b25d30e723a35a4d
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
   display: flex;
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> denis
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+<<<<<<< HEAD
 <<<<<<< HEAD
   margin-top: 50px;
 =======
@@ -798,8 +891,20 @@ div.tabList button.active {
   flex-direction: column;
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
 >>>>>>> 528db558604e5ab1390a0ef5b25d30e723a35a4d
+=======
+=======
+  flex-direction: column;
+>>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+  flex-direction: column;
+>>>>>>> chickhack
+=======
+>>>>>>> denis
+>>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
   text-align: left;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .tab-inner .taball .tab_left {
@@ -820,39 +925,77 @@ div.tabList button.active {
 .tab-inner .taball .data {
   border: 1px solid #AD6E4A;
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
 =======
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+<<<<<<< HEAD
 >>>>>>> 528db558604e5ab1390a0ef5b25d30e723a35a4d
+=======
+=======
+>>>>>>> chickhack
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> denis
+>>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
   display: flex;
   font-family: Haettenschweiler, sans-serif;
 }
 
 .tab-inner .taball .data .grav {
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   min-width: 130px;
   min-height: 130px;
   border-right: 1px solid #AD6E4A;
 }
 
 .tab-inner .taball .data .day {
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   min-width: 130px;
   border-right: 1px solid #AD6E4A;
 }
 
 .tab-inner .taball .data .temp {
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   min-width: 130px;
 }
 
@@ -948,13 +1091,24 @@ div.tabList button.active {
 }
 
 .planet_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 =======
   flex-wrap: wrap;
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+=======
+  flex-wrap: wrap;
+>>>>>>> chickhack
+=======
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+>>>>>>> denis
 }
 
 .planet_content .carousel {
@@ -973,24 +1127,42 @@ div.tabList button.active {
 =======
 .planet_content .imgs .img1 {
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
   -webkit-transform: translate(40%);
           transform: translate(40%);
 =======
   transform: translate(40%);
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+<<<<<<< HEAD
 >>>>>>> 528db558604e5ab1390a0ef5b25d30e723a35a4d
+=======
+=======
+  transform: translate(40%);
+>>>>>>> chickhack
+=======
+  -webkit-transform: translate(40%);
+          transform: translate(40%);
+>>>>>>> denis
+>>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
 }
 
 .planet_content .imgs .img2 {
-  transform: translateX(30%);
+  -webkit-transform: translateX(30%);
+          transform: translateX(30%);
 }
 
 .planet_content .imgs .img3 {
-  transform: translate(20%, -350px);
+  -webkit-transform: translate(20%, -350px);
+          transform: translate(20%, -350px);
 }
 
 .planet_content .desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1000,7 +1172,18 @@ div.tabList button.active {
 =======
   align-items: center;
 >>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+<<<<<<< HEAD
 >>>>>>> 528db558604e5ab1390a0ef5b25d30e723a35a4d
+=======
+=======
+  align-items: center;
+>>>>>>> chickhack
+=======
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+>>>>>>> denis
+>>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
 }
 
 .planet_content .desc p {
@@ -1011,21 +1194,39 @@ div.tabList button.active {
 
 @media only screen and (max-width: 1200px) {
   .tab-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .tab-inner .tab-active {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .tab-inner .tab-active img {
     width: 70vw;
   }
   .planet_content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .planet_content .imgs {
     display: none;
