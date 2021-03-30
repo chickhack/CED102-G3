@@ -332,7 +332,10 @@ nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-  background-image: url("../img/logo.png");
+  background-image: url("../../img/icon/header/logo.png");
+  background-image: url("../../img/logo.png");
+  background-image: url("../../img/icon/header/logo.png");
+  background-image: url("../../img/icon/header/logo.png");
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -676,9 +679,10 @@ input[type=number] {
 
 .icon-2 {
   width: 50px;
-<<<<<<< HEAD
   -o-object-fit: cover;
      object-fit: cover;
+<<<<<<< HEAD
+=======
 =======
 <<<<<<< HEAD
   -o-object-fit: cover;
@@ -691,6 +695,7 @@ input[type=number] {
 =======
 >>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
 >>>>>>> 10e10f8ebb29ccc2882d121bf3efb9b9e001100b
+>>>>>>> 0f160973f4b2bd5854ed4fa7625e61db6af80356
   height: 50px;
   border-radius: 40px;
 }
@@ -698,9 +703,10 @@ input[type=number] {
 .icon-3 {
   width: 40px;
   height: 40px;
-<<<<<<< HEAD
   -o-object-fit: cover;
      object-fit: cover;
+<<<<<<< HEAD
+=======
 =======
 <<<<<<< HEAD
   -o-object-fit: cover;
@@ -713,19 +719,31 @@ input[type=number] {
 =======
 >>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
 >>>>>>> 10e10f8ebb29ccc2882d121bf3efb9b9e001100b
+>>>>>>> 0f160973f4b2bd5854ed4fa7625e61db6af80356
   border-radius: 40px;
 }
 
 .text-00 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .text-01 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .line-he-65 {
@@ -749,9 +767,10 @@ input[type=number] {
 
 .banner {
   margin: 0 auto;
-  background-image: url(../../img/home/others/station_moon.jpg);
+  background-image: url(../../img/home/others/clavius-landing.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center  center;
   width: 87%;
   padding-top: 20%;
   position: relative;
@@ -760,9 +779,10 @@ input[type=number] {
 .banner img {
   width: 100%;
   height: 200px;
-<<<<<<< HEAD
   -o-object-fit: cover;
      object-fit: cover;
+<<<<<<< HEAD
+=======
 =======
 <<<<<<< HEAD
   -o-object-fit: cover;
@@ -770,17 +790,24 @@ input[type=number] {
 =======
   object-fit: cover;
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
 >>>>>>> 5badf5bb2eed3e9ef55ccab2f7d645bfd9e24c24
 =======
 >>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
 >>>>>>> 10e10f8ebb29ccc2882d121bf3efb9b9e001100b
+>>>>>>> 0f160973f4b2bd5854ed4fa7625e61db6af80356
+=======
+  position: relative;
+  top: 100px;
+>>>>>>> kai
 }
 
 .banner h2 {
   position: absolute;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   top: 50%;
 }
 
@@ -789,9 +816,10 @@ input[type=number] {
 }
 
 .container-fluid .row .col-10 .row .col-10 {
-<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 =======
 =======
@@ -802,6 +830,7 @@ input[type=number] {
 =======
 >>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
 >>>>>>> 10e10f8ebb29ccc2882d121bf3efb9b9e001100b
+>>>>>>> 0f160973f4b2bd5854ed4fa7625e61db6af80356
   display: flex;
 }
 
