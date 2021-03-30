@@ -9,15 +9,19 @@ body {
 }
 
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .grid {
   padding-top: 5%;
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+=======
+  display: flex;
+<<<<<<< HEAD
+>>>>>>> 5badf5bb2eed3e9ef55ccab2f7d645bfd9e24c24
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: center;
@@ -26,6 +30,14 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
+<<<<<<< HEAD
+=======
+=======
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: start;
+>>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
+>>>>>>> 5badf5bb2eed3e9ef55ccab2f7d645bfd9e24c24
 }
 
 .grid-item {
@@ -38,8 +50,17 @@ body {
 
 .grid .grid-item img {
   width: 100%;
+<<<<<<< HEAD
   -o-object-fit: cover;
      object-fit: cover;
+=======
+<<<<<<< HEAD
+  -o-object-fit: cover;
+     object-fit: cover;
+=======
+  object-fit: cover;
+>>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
+>>>>>>> 5badf5bb2eed3e9ef55ccab2f7d645bfd9e24c24
 }
 
 .grid .grid-item:nth-child(n+11) {
@@ -47,13 +68,15 @@ body {
 }
 
 .action-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  bottom: 45px;
+  bottom: 44px;
   background-color: black;
   opacity: 0.5;
   position: relative;
+}
+
+.action-box .heart img, .action-box .message img {
+  padding-top: 2px;
 }
 
 .heart, .share, .message {
@@ -73,7 +96,6 @@ body {
 }
 
 .article_all .article .member_photo {
-  margin-right: 9px;
   padding: 15px;
 }
 
@@ -85,6 +107,7 @@ body {
   line-height: 78px;
   color: #fff;
   margin-right: 10px;
+  font-weight: 900;
 }
 
 .post_time {
@@ -101,8 +124,6 @@ body {
 }
 
 .article {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -117,8 +138,6 @@ body {
 }
 
 .article_2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-top: 10px;
 }
@@ -162,9 +181,7 @@ footer.padding_top_5 {
 }
 
 .row {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 button.turnoff_lightbox {
@@ -175,6 +192,9 @@ button.turnoff_lightbox {
 
 button.turnoff_lightbox img {
   width: 40px;
+  position: absolute;
+  top: 5px;
+  right: 10px;
 }
 
 .img-switch {
@@ -220,16 +240,15 @@ button.turnoff_lightbox img {
 }
 
 .member_info {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 15px 15px 0 15px;
 }
 
 .member_info .name {
   color: white;
-  margin: 0 24px;
+  margin: 0 15px;
   line-height: 49px;
+  font-weight: 900;
 }
 
 .member_info a button {
@@ -259,21 +278,24 @@ button.turnoff_lightbox img {
 
 .movement img.collection {
   margin-right: 20px;
-  max-width: 25px;
+  max-width: 23px;
+  padding-top: 10px;
 }
 
 .movement img.sharing {
-  margin-right: 68%;
+  margin-right: 73%;
   max-width: 25px;
 }
 
 .movement img.more {
   max-width: 25px;
+  opacity: .5;
 }
 
 .message_1 .name, .message_2 .name, .message_3 .name {
-  margin: 0 24px;
+  margin: 0 15px;
   line-height: 49px;
+  font-weight: 900;
 }
 
 .message_text .message_title {
@@ -282,8 +304,6 @@ button.turnoff_lightbox img {
 }
 
 .message_1, .message_2, .message_3 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 0 15px 0 15px;
   margin-bottom: 15px;
@@ -312,7 +332,7 @@ form.post_message input {
 }
 
 .message_1 .message_1_more img, .message_2 .message_2_more img, .message_3 .message_3_more img {
-  margin-left: 50px;
+  margin-left: 70px;
   max-width: 25px;
   opacity: .5;
 }

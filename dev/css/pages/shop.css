@@ -56,7 +56,8 @@ img {
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
   margin: 0;
   padding: 0;
 }
@@ -78,26 +79,15 @@ body {
   background-color: #0c0d18;
   overflow-x: hidden;
 <<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> denis
   -webkit-user-select: none;
   -moz-user-select: none;
   -o-user-select: none;
   -ms-user-select: none;
       user-select: none;
-<<<<<<< HEAD
 =======
   -o-user-select: none;
   user-select: none;
->>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
-=======
-  -o-user-select: none;
-  user-select: none;
->>>>>>> chickhack
-=======
->>>>>>> denis
+>>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
 }
 
 h1, .h1 {
@@ -325,6 +315,8 @@ body {
 }
 
 nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 <<<<<<< HEAD
   -webkit-box-pack: center;
@@ -333,35 +325,14 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-<<<<<<< HEAD
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  background-color: #0c0d18;
-  position: -webkit-sticky;
-=======
   justify-content: center;
-  background-color: #0c0d18;
-<<<<<<< HEAD
-  position: -webkit-sticky;
-=======
-  align-items: center;
-  justify-content: center;
-  background-color: #0c0d18;
->>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
-<<<<<<< HEAD
->>>>>>> 528db558604e5ab1390a0ef5b25d30e723a35a4d
-=======
 =======
   justify-content: center;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+>>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
   background-color: #0c0d18;
->>>>>>> chickhack
->>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
-  position: sticky;
-=======
   position: fixed;
->>>>>>> denis
   top: 0;
   width: 100%;
   min-height: 12vh;
@@ -373,10 +344,18 @@ nav .logo h1 a {
   white-space: nowrap;
   overflow: hidden;
 <<<<<<< HEAD
+<<<<<<< HEAD
   background-image: url("../../img/icon/header/logo.png");
 =======
-  background-image: url("../img/logo.png");
->>>>>>> chickhack
+<<<<<<< HEAD
+  background-image: url("../../img/logo.png");
+=======
+  background-image: url("../../img/icon/header/logo.png");
+>>>>>>> kai
+>>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
+=======
+  background-image: url("../../img/icon/header/logo.png");
+>>>>>>> kai
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -386,18 +365,10 @@ nav .logo h1 a {
 }
 
 nav .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 528db558604e5ab1390a0ef5b25d30e723a35a4d
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> denis
->>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -407,25 +378,12 @@ nav .nav-links {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-<<<<<<< HEAD
-<<<<<<< HEAD
-  width: 60%;
-=======
-=======
-  width: 75%;
->>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
 =======
   justify-content: center;
   align-items: center;
   justify-content: flex-end;
-<<<<<<< HEAD
->>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
+>>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
   width: 75%;
->>>>>>> 528db558604e5ab1390a0ef5b25d30e723a35a4d
-=======
-  width: 60%;
->>>>>>> chickhack
->>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
 }
 
 nav .nav-links a {
@@ -435,10 +393,17 @@ nav .nav-links a {
 }
 
 nav .nav-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 12%;
   margin-left: 50px;
 }
@@ -457,8 +422,7 @@ nav .burger div {
 
 @media (max-width: 992px) {
   nav {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
   }
   nav .nav-links {
     position: absolute;
@@ -466,22 +430,12 @@ nav .burger div {
     height: 92vh;
     top: 12vh;
     background-color: #AD6E4A;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     justify-content: center;
     width: 30%;
-    -webkit-transition: all 1s ease-in;
     transition: all 1s ease-in;
   }
   nav .nav-links li {
@@ -496,9 +450,7 @@ nav .burger div {
   }
   nav .nav-icons {
     width: 100%;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    justify-content: flex-end;
   }
   nav .nav-icons .icon {
     margin: 0 30px 0 15px;
@@ -521,37 +473,21 @@ nav .burger div {
   nav .nav-icons {
     width: 50%;
     margin-left: 16px;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
   }
   nav .nav-icons .icon {
     margin: 0;
   }
 }
 
-@-webkit-keyframes navLinkFade {
-  from {
-    opacity: 0;
-    -webkit-transform: translateX(50px);
-            transform: translateX(50px);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-  }
-}
-
 @keyframes navLinkFade {
   from {
     opacity: 0;
-    -webkit-transform: translateX(50px);
-            transform: translateX(50px);
+    transform: translateX(50px);
   }
   to {
     opacity: 1;
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
+    transform: translateX(0px);
   }
 }
 
@@ -572,19 +508,28 @@ footer .links .logo {
   position: relative;
   left: 50%;
   bottom: 50px;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 footer .links .footer-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 55%;
   position: relative;
   left: 50%;
   bottom: 30px;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 footer .links .footer-links a {
@@ -594,30 +539,13 @@ footer .links .footer-links a {
 footer .footer_moon {
   position: relative;
   left: 50%;
-<<<<<<< HEAD
-<<<<<<< HEAD
-  max-width: 550px;
+  max-width: 40%;
 <<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-<<<<<<< HEAD
-=======
-=======
-  max-width: 40%;
-  transform: translateX(-50%);
->>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
-<<<<<<< HEAD
->>>>>>> 528db558604e5ab1390a0ef5b25d30e723a35a4d
-=======
 =======
   transform: translateX(-50%);
->>>>>>> chickhack
-=======
-  max-width: 40%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
->>>>>>> denis
->>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
+>>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
 }
 
 footer .smoke {
@@ -629,19 +557,9 @@ footer .smoke {
 <<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-<<<<<<< HEAD
-=======
 =======
   transform: translateX(-50%);
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> denis
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
->>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
+>>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
 }
 
 @media (max-width: 768px) {
@@ -654,17 +572,6 @@ footer .smoke {
   footer .footer_moon {
     min-width: 250px;
   }
-<<<<<<< HEAD
->>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
-<<<<<<< HEAD
->>>>>>> 528db558604e5ab1390a0ef5b25d30e723a35a4d
-=======
-=======
-  transform: translateX(-50%);
->>>>>>> chickhack
-=======
->>>>>>> denis
->>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
 }
 
 .quantity label {
@@ -739,12 +646,11 @@ section.shop .banner h2 {
 <<<<<<< HEAD
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  top: 35%;
-  letter-spacing: 2px;
 =======
   transform: translate(-50%, -50%);
-  top: 40%;
->>>>>>> chickhack
+>>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
+  top: 35%;
+  letter-spacing: 2px;
 }
 
 @media all and (max-width: 768px) {
@@ -761,8 +667,9 @@ section.shop .btn {
 }
 
 section.shop .shopAll {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -772,21 +679,13 @@ section.shop .shopAll {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
-<<<<<<< HEAD
-=======
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
->>>>>>> 528db558604e5ab1390a0ef5b25d30e723a35a4d
-=======
-  justify-content: center;
-  align-items: center;
-  align-items: start;
-  flex-wrap: wrap;
->>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
 }
 
 section.shop .shopAll .aside {
   width: 30%;
+  position: -webkit-sticky;
   position: sticky;
   top: 18vh;
   left: 0;
@@ -821,11 +720,13 @@ section.shop .shopAll .aside p {
 section.shop .shopAll .aside .choose {
   max-height: 0;
   overflow: hidden;
+  -webkit-transition: all .5s linear;
   transition: all .5s linear;
 }
 
 section.shop .shopAll .aside .choose li {
   padding: 16px 0;
+  -webkit-transition: all .3s;
   transition: all .3s;
   text-align: center;
   width: 100%;
@@ -838,6 +739,7 @@ section.shop .shopAll .aside .choose li:hover {
 
 section.shop .shopAll .aside .chooseShow {
   max-height: 400px;
+  -webkit-transition: all 1.5s linear;
   transition: all 1.5s linear;
 }
 
@@ -845,19 +747,10 @@ section.shop .shopAll .main {
   width: 70%;
 }
 
-<<<<<<< HEAD
-section.shop .shopAll .main .chooseBtn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-=======
 @media all and (max-width: 992px) {
   section.shop .shopAll .main {
     width: 60%;
   }
->>>>>>> 528db558604e5ab1390a0ef5b25d30e723a35a4d
 }
 
 @media all and (max-width: 768px) {
@@ -883,8 +776,9 @@ section.shop .shopAll .main .productAll {
 }
 
 section.shop .shopAll .main .productAll ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -893,27 +787,25 @@ section.shop .shopAll .main .productAll ul {
           align-items: start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-<<<<<<< HEAD
-=======
-=======
-  justify-content: space-between;
-  align-items: start;
-  flex-wrap: wrap;
->>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
 }
 
 @media all and (max-width: 992px) {
   section.shop .shopAll .main .productAll ul {
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
 @media all and (max-width: 768px) {
   section.shop .shopAll .main .productAll ul {
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
->>>>>>> 528db558604e5ab1390a0ef5b25d30e723a35a4d
 }
 
 section.shop .shopAll .main .productAll ul li {
@@ -934,11 +826,27 @@ section.shop .shopAll .main .productAll ul li {
 
 section.shop .shopAll .main .productAll ul li a {
   padding: 10px 0 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #ffffff;
+=======
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.9);
+>>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
   color: black;
 }
 
@@ -949,14 +857,27 @@ section.shop .shopAll .main .productAll ul li a img {
 section.shop .shopAll .main .productAll ul li a .item {
   text-align: left;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   padding-top: 20px;
 }
 
 section.shop .shopAll .main .productAll ul li a .item .info {
   padding: 16px 0;
+}
+
+section.shop .shopAll .main .productAll ul li a .item .info .price {
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-family: "Nasalization";
 }
 /*# sourceMappingURL=shop.css.map */
