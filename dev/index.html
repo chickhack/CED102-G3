@@ -121,19 +121,19 @@
           <script type="module" src="./js/mars.js"></script>
         </div>
 <!-- 互動牆 -->
-        <div class="gallery margin_top_3" id="gallery">
+        <div class="gallery" id="gallery">
           <!-- 上 -->
           <div class="gallery_box top col-12">
             <div class="topleft col-5">
-              <div class="col-6 A">
+              <div class="col-lg-6 col-md-12 col-sm-12 A">
                 <img src="./img/home/mars1.jpg" height="100%">
               </div>
               <div class="col-6 B">
                 <img src="./img/home/mars2.jpg" class="img-responsive">
               </div>
             </div>
-            <div class="box topright margin_top_4 col-lg-7 col-md-12">
-              <div class="topSct col-12">
+            <div class="box topright margin_top_4 col-7 ">
+              <div class="topSct col-md-12 col-sm-12">
                 <h2>太空互動</h2>
                 <div class="btn-group" role="group">
                   <button type="button" @click="changeGallery()" class="btn btn-secondary"><</button>
@@ -171,7 +171,7 @@
         </div>
   
 <!-- 商城 -->
-      <div class="shop_box margin_top_10" >
+      <div class="shop_box" >
         <div class="home_shop">
           <h2>星球商城</h2>
           <div class="shopItem margin_top_10">
@@ -268,7 +268,7 @@
         </div>
       </div>
 <!-- 會員待遇 -->
-          <div class="flow_member margin_top_10 ">
+          <div class="flow_member">
             <h2 align="center">歡迎加入太空世界</h2>
             <h3 class="margin_top_3" align="center">加入會員，享受禮遇，與所有玩家同遊宇宙</h3>
               <div class="flowall margin_top_8" align="center">
@@ -369,7 +369,7 @@
         var controller = new ScrollMagic.Controller();
         new ScrollMagic.Scene({
         triggerElement : '#trigger01',
-        duration: '550%'
+        duration: '620%'
     }).on('enter', function(){
         console.log('enter 進入');
         $('#nav').css('background-color' , '#0c0d18')
