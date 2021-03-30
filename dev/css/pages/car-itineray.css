@@ -322,7 +322,14 @@ nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
+<<<<<<< HEAD
   background-image: url("../img/icon/header/logo.png");
+=======
+  background-image: url("../../img/icon/header/logo.png");
+  background-image: url("../../img/logo.png");
+  background-image: url("../../img/icon/header/logo.png");
+  background-image: url("../../img/icon/header/logo.png");
+>>>>>>> db9e7942d64fa292e27c36c472ee61cbb53ec989
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -561,10 +568,17 @@ a:hover {
 }
 
 #icon-gg {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   padding-bottom: 1.5%;
 }
 
@@ -578,9 +592,16 @@ a:hover {
 }
 
 .icon-g {
+<<<<<<< HEAD
+  max-width: 30px;
+  max-height: 30px;
+  -o-object-fit: cover;
+     object-fit: cover;
+=======
   max-width: 20px;
   max-height: 20px;
   object-fit: cover;
+>>>>>>> d108359aefc3e65a43f2f258d5b615e128f63572
 }
 
 .car-top {
@@ -637,7 +658,13 @@ body {
 .imgsr {
   max-width: 100px;
   height: auto;
+<<<<<<< HEAD
+  max-height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+=======
   object-fit: cover;
+>>>>>>> d108359aefc3e65a43f2f258d5b615e128f63572
 }
 
 .btn-date {
@@ -699,9 +726,19 @@ body {
 }
 
 .row {
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
+<<<<<<< HEAD
+.row .col-8 .row .col-12 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+=======
 .row .allcoin {
   padding-top: 16px;
   padding-bottom: 16px;
@@ -716,6 +753,7 @@ body {
 
 .row .col-11 .row {
   display: flex;
+<<<<<<< HEAD
 }
 
 .row .col-11 .row .datacol {
@@ -750,6 +788,12 @@ body {
   .coin-right .btn-coin {
     width: 80%;
   }
+=======
+<<<<<<< HEAD
+  justify-content: space-around;
+>>>>>>> d108359aefc3e65a43f2f258d5b615e128f63572
+  padding: 2% 1%;
+>>>>>>> db9e7942d64fa292e27c36c472ee61cbb53ec989
 }
 
 .checkout {
