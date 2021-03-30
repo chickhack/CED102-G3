@@ -148,12 +148,10 @@ p.nextacc, p.nowacc {
 .account_nav a {
   color: #C9ADA7;
 }
-.account_nav a:focus {
-  color: #AD6E4A;
-  // background: none;
-  // border: none;
-  border-bottom: 3px solid #AD6E4A;
-}
+// .account_nav a:focus {
+//   color: #AD6E4A;
+//   border-bottom: 3px solid #AD6E4A;
+// }
 .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover, .nav-tabs .nav-link.active{
   color: #AD6E4A;
   background: none;
