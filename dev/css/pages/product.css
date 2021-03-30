@@ -280,14 +280,14 @@ small, .small {
 
 .button_large {
   width: 150px;
-  padding: 15px;
+  padding: 8px 0;
   text-align: center;
   border: 1px solid #AD6E4A;
 }
 
 .button_min {
   width: 100px;
-  padding: 15px;
+  padding: 8px 0;
   text-align: center;
   border: 1px solid #AD6E4A;
 }
@@ -559,6 +559,12 @@ body {
   user-select: none;
 }
 
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding-bottom: 0px;
+}
+
 @media all and (max-width: 768px) {
   .container {
     margin: 0 30px;
@@ -598,7 +604,7 @@ body {
 
 .product .imgs .img .bigImg {
   width: 100%;
-  max-height: 450px;
+  max-height: 266px;
   background-color: #ffffff;
 }
 
@@ -709,7 +715,7 @@ body {
 .product .detail .quantity .button_large {
   width: 100%;
   cursor: pointer;
-  padding: 15px 0;
+  padding: 8px 0;
 }
 
 .product .detail .quantity .button_large.buy {
@@ -771,6 +777,7 @@ body {
   border-radius: 5px;
   position: relative;
   margin: 0 16px 0 16px;
+  color: #ffffff;
 }
 
 @media all and (max-width: 767px) {
@@ -837,8 +844,13 @@ body {
 
 .comment {
   max-width: 900px;
-  margin: 80px auto;
-  padding: 0 30px;
+  margin: 0 80px;
+}
+
+@media all and (max-width: 768px) {
+  .comment {
+    margin: 0 30px;
+  }
 }
 
 .comment .score {

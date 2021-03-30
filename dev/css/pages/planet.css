@@ -280,14 +280,14 @@ small, .small {
 
 .button_large {
   width: 150px;
-  padding: 15px;
+  padding: 8px 0;
   text-align: center;
   border: 1px solid #AD6E4A;
 }
 
 .button_min {
   width: 100px;
-  padding: 15px;
+  padding: 8px 0;
   text-align: center;
   border: 1px solid #AD6E4A;
 }
@@ -554,9 +554,8 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
-.frame {
-  border: 1px solid #AD6E4A;
-  margin: 0 auto;
+.container-fluid {
+  padding: 0;
 }
 
 .title {

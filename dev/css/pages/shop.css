@@ -280,14 +280,14 @@ small, .small {
 
 .button_large {
   width: 150px;
-  padding: 15px;
+  padding: 8px 0;
   text-align: center;
   border: 1px solid #AD6E4A;
 }
 
 .button_min {
   width: 100px;
-  padding: 15px;
+  padding: 8px 0;
   text-align: center;
   border: 1px solid #AD6E4A;
 }
@@ -555,7 +555,8 @@ input[type=number] {
 }
 
 section.shop {
-  margin: 0 40px;
+  margin: 0 auto;
+  max-width: 1100px;
   text-align: center;
   color: #ffffff;
 }
@@ -766,7 +767,10 @@ section.shop .shopAll .main .productAll ul li a .item .info {
 
 section.shop .shopAll .main .productAll ul li a .item .info .price {
   font-weight: bold;
-  letter-spacing: 2px;
   font-family: "Nasalization";
+}
+
+section.shop .shopAll .main .productAll ul li a .item img {
+  padding-top: 15px;
 }
 /*# sourceMappingURL=shop.css.map */

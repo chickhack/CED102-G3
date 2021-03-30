@@ -280,14 +280,14 @@ small, .small {
 
 .button_large {
   width: 150px;
-  padding: 15px;
+  padding: 8px 0;
   text-align: center;
   border: 1px solid #AD6E4A;
 }
 
 .button_min {
   width: 100px;
-  padding: 15px;
+  padding: 8px 0;
   text-align: center;
   border: 1px solid #AD6E4A;
 }
@@ -555,7 +555,7 @@ input[type=number] {
 }
 
 section.cart {
-  max-width: 948px;
+  max-width: 900px;
   margin: 0 auto;
   padding-top: 5vh;
 }
@@ -662,10 +662,6 @@ section.cart .checkout .button_min {
     margin-top: 16px;
     width: 80%;
   }
-}
-
-footer {
-  margin-top: 80px;
 }
 
 /* Chrome, Safari, Edge, Opera */

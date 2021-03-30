@@ -280,14 +280,14 @@ small, .small {
 
 .button_large {
   width: 150px;
-  padding: 15px;
+  padding: 8px 0;
   text-align: center;
   border: 1px solid #AD6E4A;
 }
 
 .button_min {
   width: 100px;
-  padding: 15px;
+  padding: 8px 0;
   text-align: center;
   border: 1px solid #AD6E4A;
 }
@@ -636,14 +636,8 @@ body {
   letter-spacing: 2px;
   padding: 0 5px;
   border: 1px solid #ad6e4a;
-<<<<<<< HEAD
-  color: #ad6e4a;
-  background-color: #292B41;
-  height: 30px;
-=======
   color: #C9ADA7;
   background-color: #292B41;
->>>>>>> chickhack
   text-align: center;
 }
 
@@ -662,10 +656,6 @@ body {
 .btn-pull {
   color: #ad6e4a;
   background-color: #292B41;
-<<<<<<< HEAD
-  font-size: 24px;
-=======
->>>>>>> chickhack
   border: 1px solid #ad6e4a;
   height: 15px;
   line-height: 0px;
@@ -675,10 +665,6 @@ body {
 .btn-nu {
   color: #ad6e4a;
   background-color: #292B41;
-<<<<<<< HEAD
-  font-size: 24px;
-=======
->>>>>>> chickhack
   border: 0px solid #ad6e4a;
   max-width: 50px;
   line-height: 0px;
@@ -720,9 +706,40 @@ body {
 
 .row .col-11 .row {
   display: flex;
-<<<<<<< HEAD
-  justify-content: space-around;
-  padding: 2% 1%;
+}
+
+.row .col-11 .row .datacol {
+  padding: 16px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.row .col-11 .row .allcol {
+  padding: 16px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .allcoin {
+    flex-direction: column;
+  }
+  .coin-left {
+    text-align: center;
+  }
+  .coin-right {
+    width: 100%;
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+  }
+  .coin-right .btn-coin {
+    width: 80%;
+  }
 }
 
 .checkout {
@@ -772,40 +789,6 @@ body {
 @media all and (max-width: 768px) {
   .checkout .button_min {
     margin-top: 16px;
-=======
-}
-
-.row .col-11 .row .datacol {
-  padding: 16px 0px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.row .col-11 .row .allcol {
-  padding: 16px 0px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-@media (max-width: 768px) {
-  .allcoin {
-    flex-direction: column;
-  }
-  .coin-left {
-    text-align: center;
-  }
-  .coin-right {
-    width: 100%;
-    margin-top: 16px;
-    display: flex;
-    justify-content: center;
-  }
-  .coin-right .btn-coin {
->>>>>>> chickhack
     width: 80%;
   }
 }

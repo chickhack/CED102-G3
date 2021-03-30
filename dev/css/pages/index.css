@@ -280,14 +280,14 @@ small, .small {
 
 .button_large {
   width: 150px;
-  padding: 15px;
+  padding: 8px 0;
   text-align: center;
   border: 1px solid #AD6E4A;
 }
 
 .button_min {
   width: 100px;
-  padding: 15px;
+  padding: 8px 0;
   text-align: center;
   border: 1px solid #AD6E4A;
 }
@@ -554,8 +554,12 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
+.container-fluid {
+  padding: 0;
+}
+
 nav {
-  background-color: transparent;
+  background-color: #0c0d18;
 }
 
 .video-bg {
@@ -582,7 +586,7 @@ button {
 .banner {
   position: absolute;
   top: 40%;
-  left: 15%;
+  left: 17%;
 }
 
 .banner .slogan {
@@ -604,6 +608,18 @@ button {
 
 .banner .scroll img {
   margin-top: 20%;
+}
+
+@media only screen and (max-width: 1200px) {
+  .banner {
+    top: 25%;
+  }
+  .banner p {
+    font-size: 3rem;
+  }
+  .scroll img {
+    margin-top: 5%;
+  }
 }
 
 .home_intro {
