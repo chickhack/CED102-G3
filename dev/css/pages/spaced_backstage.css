@@ -131,7 +131,8 @@
 
 .imgs {
   max-width: 150px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .div-menu {
@@ -151,13 +152,9 @@
   width: 100%;
 }
 
-<<<<<<< HEAD
-.div-menu .div-right .div-right-span-fro {
+.div-menu .div-right .div-right-span-for {
   display: -webkit-box;
   display: -ms-flexbox;
-=======
-.div-menu .div-right .div-right-span-for {
->>>>>>> d108359aefc3e65a43f2f258d5b615e128f63572
   display: flex;
 }
 

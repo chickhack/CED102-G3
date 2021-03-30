@@ -1,3 +1,7 @@
+@import "../reset";
+@import "../base";
+@import "../header";
+@import "../footer";
 *{
   box-sizing: border-box;
 }
@@ -6,13 +10,17 @@ body{
   font-size: 16px;
 }
 .container_fluid{
-  padding-top: 5%;
+  padding:0;
+  margin-top: 15vh;
 }
-div.post{
-  margin-top: 50px;
+// div.post{
+//   margin-top: 50px;
+// }
+.col-12{
+  margin-top: 2%;
 }
 form.post{
-  width: 100%;
+  width: 90%;
   margin: 0 auto;
   padding: 30px;
   background-color: #292B41;

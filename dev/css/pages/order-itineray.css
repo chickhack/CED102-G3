@@ -293,12 +293,6 @@ form .orderinfo .row .col-10 {
 }
 
 form .orderinfo .row .col-10 .row {
-<<<<<<< HEAD
-  justify-content: space-around;
-}
-
-form .orderinfo .row .col-10 .row .col-7 {
-=======
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
@@ -306,7 +300,6 @@ form .orderinfo .row .col-10 .row .col-7 {
 form .orderinfo .row .col-10 .row .col-7 {
   display: -webkit-box;
   display: -ms-flexbox;
->>>>>>> denis
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -376,12 +369,6 @@ form .ltineraryinfo .row .col-10 .row .col-3 {
 
 form .ltineraryinfo .row .col-10 .row .col-3 img {
   max-width: 150px;
-<<<<<<< HEAD
-  object-fit: cover;
-}
-
-form .ltineraryinfo .row .col-10 .row .col-7 .row {
-=======
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -389,7 +376,6 @@ form .ltineraryinfo .row .col-10 .row .col-7 .row {
 form .ltineraryinfo .row .col-10 .row .col-7 .row {
   display: -webkit-box;
   display: -ms-flexbox;
->>>>>>> denis
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -405,11 +391,6 @@ form .ltineraryinfo .row .col-10 .row .col-7 .row .col-11 {
 }
 
 form .ltineraryinfo .row .col-10 .row .col-7 .row .text-div {
-<<<<<<< HEAD
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-=======
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -420,7 +401,6 @@ form .ltineraryinfo .row .col-10 .row .col-7 .row .text-div {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
->>>>>>> denis
   padding: 0px 0;
 }
 
@@ -440,11 +420,8 @@ form .addPay .row .col-10 {
 }
 
 form .addPay .row .col-10 .automena .row .col-10 {
-<<<<<<< HEAD
-=======
   display: -webkit-box;
   display: -ms-flexbox;
->>>>>>> denis
   display: flex;
 }
 
@@ -461,12 +438,8 @@ form .addPay .row .col-10 .automena .row .col-10 .sss {
 
 form .addPay .row .col-10 .automena .row .col-10 .sss img {
   width: 100px;
-<<<<<<< HEAD
-  object-fit: cover;
-=======
   -o-object-fit: cover;
      object-fit: cover;
->>>>>>> denis
 }
 
 form .addPay .row .col-10 .automena .row .col-10 input {
@@ -474,6 +447,8 @@ form .addPay .row .col-10 .automena .row .col-10 input {
 }
 
 form .addPay .row .col-10 .automena .row .col-11 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -492,11 +467,8 @@ form .paymethod .row .col-10 .paymethod-automanu .row #paymethod-coin, form .pay
 }
 
 form .paymethod .row .col-10 .paymethod-automanu .row .col-11 {
-<<<<<<< HEAD
-=======
   display: -webkit-box;
   display: -ms-flexbox;
->>>>>>> denis
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -504,13 +476,9 @@ form .paymethod .row .col-10 .paymethod-automanu .row .col-11 {
 }
 
 form .paymethod .row .col-10 .paymethod-automanu .row .col-12 .paymethod-automanu-car-automanu .row {
-<<<<<<< HEAD
-  justify-content: space-evenly;
-=======
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
->>>>>>> denis
 }
 
 form .paymethod .row .col-10 .paymethod-automanu .row .col-12 .paymethod-automanu-car-automanu .row input {
@@ -540,11 +508,8 @@ form .paymethod .row .col-10 .paymethod-automanu .row .col-5 input.paymethod-coi
 }
 
 form .paymethod .row .col-10 .paymethod-automanu .row .col-4 {
-<<<<<<< HEAD
-=======
   display: -webkit-box;
   display: -ms-flexbox;
->>>>>>> denis
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -562,17 +527,12 @@ form .orderDetails .row {
 }
 
 form .orderDetails .row .allpay-div {
-<<<<<<< HEAD
-  display: flex;
-  justify-content: flex-end;
-=======
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
->>>>>>> denis
 }
 
 form .orderDetails .row .col-10 .orderDetails-automanu .col-3 {
@@ -606,11 +566,8 @@ form .orderDetails .row .col-10 .orderDetails-automanu .col-11 .orderDetails-aut
 }
 
 form .orderDetails .row .col-10 .orderDetails-automanu .col-11 .orderDetails-automanu-textdiv .textbox {
-<<<<<<< HEAD
-=======
   display: -webkit-box;
   display: -ms-flexbox;
->>>>>>> denis
   display: flex;
   width: 100%;
 }
@@ -622,11 +579,8 @@ form .orderDetails .row .col-10 .orderDetails-automanu .col-7 {
 }
 
 form .orderDetails .row .col-10 .orderDetails-automanu .col-7 .row {
-<<<<<<< HEAD
-=======
   display: -webkit-box;
   display: -ms-flexbox;
->>>>>>> denis
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;

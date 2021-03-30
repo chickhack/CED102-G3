@@ -56,7 +56,8 @@ img {
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
   margin: 0;
   padding: 0;
 }
@@ -77,16 +78,11 @@ body {
   font-size: 14px;
   background-color: #0c0d18;
   overflow-x: hidden;
-<<<<<<< HEAD
   -webkit-user-select: none;
   -moz-user-select: none;
   -o-user-select: none;
   -ms-user-select: none;
       user-select: none;
-=======
-  -o-user-select: none;
-  user-select: none;
->>>>>>> 3669f853016e9d33f1f2a0c73a08d01c16be8b7f
 }
 
 h1, .h1 {
@@ -288,14 +284,14 @@ small, .small {
 
 .button_large {
   width: 150px;
-  padding: 15px;
+  padding: 8px 0;
   text-align: center;
   border: 1px solid #AD6E4A;
 }
 
 .button_min {
   width: 100px;
-  padding: 15px;
+  padding: 8px 0;
   text-align: center;
   border: 1px solid #AD6E4A;
 }
@@ -314,18 +310,15 @@ body {
 }
 
 nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-=======
-  justify-content: center;
-  align-items: center;
->>>>>>> 3669f853016e9d33f1f2a0c73a08d01c16be8b7f
   justify-content: center;
   background-color: #0c0d18;
   position: fixed;
@@ -339,29 +332,10 @@ nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> denis
-  background-image: url("../../img/icon/header/logo.png");
-  background-image: url("../../img/logo.png");
-  background-image: url("../../img/icon/header/logo.png");
-<<<<<<< HEAD
->>>>>>> kai
->>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
-=======
-  background-image: url("../../img/icon/header/logo.png");
->>>>>>> kai
-=======
->>>>>>> denis
-=======
   background-image: url("../../img/icon/header/logo.png");
   background-image: url("../../img/logo.png");
   background-image: url("../../img/icon/header/logo.png");
   background-image: url("../../img/icon/header/logo.png");
->>>>>>> 3669f853016e9d33f1f2a0c73a08d01c16be8b7f
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -371,8 +345,9 @@ nav .logo h1 a {
 }
 
 nav .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -382,11 +357,6 @@ nav .nav-links {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-=======
-  justify-content: center;
-  align-items: center;
-  justify-content: flex-end;
->>>>>>> 3669f853016e9d33f1f2a0c73a08d01c16be8b7f
   width: 75%;
 }
 
@@ -397,10 +367,17 @@ nav .nav-links a {
 }
 
 nav .nav-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 12%;
   margin-left: 50px;
 }
@@ -416,6 +393,7 @@ nav .burger div {
   height: 2px;
   background-color: #ffffff;
   margin: 5px;
+  -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
 
@@ -433,23 +411,15 @@ nav .burger div {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-<<<<<<< HEAD
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    justify-content: center;
-=======
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
->>>>>>> 3669f853016e9d33f1f2a0c73a08d01c16be8b7f
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 30%;
     -webkit-transition: all 1s ease-in;
     transition: all 1s ease-in;
@@ -491,12 +461,9 @@ nav .burger div {
   nav .nav-icons {
     width: 50%;
     margin-left: 16px;
-<<<<<<< HEAD
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-=======
-    justify-content: space-between;
->>>>>>> 3669f853016e9d33f1f2a0c73a08d01c16be8b7f
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   nav .nav-icons .icon {
     margin: 0;
@@ -530,7 +497,8 @@ nav .burger div {
 }
 
 .toggle .line1 {
-  transform: rotate(45deg) translate(4px, 6px);
+  -webkit-transform: rotate(45deg) translate(4px, 6px);
+          transform: rotate(45deg) translate(4px, 6px);
 }
 
 .toggle .line2 {
@@ -538,7 +506,8 @@ nav .burger div {
 }
 
 .toggle .line3 {
-  transform: rotate(-45deg) translate(3px, -6px);
+  -webkit-transform: rotate(-45deg) translate(3px, -6px);
+          transform: rotate(-45deg) translate(3px, -6px);
 }
 
 footer {
@@ -558,19 +527,28 @@ footer .links .logo {
   position: relative;
   left: 50%;
   bottom: 50px;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 footer .links .footer-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 55%;
   position: relative;
   left: 50%;
   bottom: 30px;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 footer .links .footer-links a {
@@ -581,12 +559,8 @@ footer .footer_moon {
   position: relative;
   left: 50%;
   max-width: 40%;
-<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-=======
-  transform: translateX(-50%);
->>>>>>> 3669f853016e9d33f1f2a0c73a08d01c16be8b7f
 }
 
 footer .smoke {
@@ -595,12 +569,8 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
-<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-=======
-  transform: translateX(-50%);
->>>>>>> 3669f853016e9d33f1f2a0c73a08d01c16be8b7f
 }
 
 @media (max-width: 768px) {
@@ -653,7 +623,8 @@ input[type=number] {
 }
 
 section.shop {
-  margin: 0 40px;
+  margin: 0 auto;
+  max-width: 1100px;
   text-align: center;
   color: #ffffff;
 }
@@ -684,12 +655,8 @@ section.shop .banner h2 {
   position: absolute;
   left: 50%;
   top: 50%;
-<<<<<<< HEAD
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-=======
-  transform: translate(-50%, -50%);
->>>>>>> 3669f853016e9d33f1f2a0c73a08d01c16be8b7f
   top: 35%;
   letter-spacing: 2px;
 }
@@ -708,15 +675,25 @@ section.shop .btn {
 }
 
 section.shop .shopAll {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  align-items: start;
-  flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 section.shop .shopAll .aside {
   width: 30%;
+  position: -webkit-sticky;
   position: sticky;
   top: 18vh;
   left: 0;
@@ -751,11 +728,13 @@ section.shop .shopAll .aside p {
 section.shop .shopAll .aside .choose {
   max-height: 0;
   overflow: hidden;
+  -webkit-transition: all .5s linear;
   transition: all .5s linear;
 }
 
 section.shop .shopAll .aside .choose li {
   padding: 16px 0;
+  -webkit-transition: all .3s;
   transition: all .3s;
   text-align: center;
   width: 100%;
@@ -768,6 +747,7 @@ section.shop .shopAll .aside .choose li:hover {
 
 section.shop .shopAll .aside .chooseShow {
   max-height: 400px;
+  -webkit-transition: all 1.5s linear;
   transition: all 1.5s linear;
 }
 
@@ -804,22 +784,35 @@ section.shop .shopAll .main .productAll {
 }
 
 section.shop .shopAll .main .productAll ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: start;
-  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 @media all and (max-width: 992px) {
   section.shop .shopAll .main .productAll ul {
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
 @media all and (max-width: 768px) {
   section.shop .shopAll .main .productAll ul {
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -841,8 +834,9 @@ section.shop .shopAll .main .productAll ul li {
 
 section.shop .shopAll .main .productAll ul li a {
   padding: 10px 0 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -853,11 +847,6 @@ section.shop .shopAll .main .productAll ul li a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-=======
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
->>>>>>> 3669f853016e9d33f1f2a0c73a08d01c16be8b7f
   background-color: rgba(255, 255, 255, 0.9);
   color: black;
 }
@@ -869,10 +858,17 @@ section.shop .shopAll .main .productAll ul li a img {
 section.shop .shopAll .main .productAll ul li a .item {
   text-align: left;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   padding-top: 20px;
 }
 
@@ -882,7 +878,10 @@ section.shop .shopAll .main .productAll ul li a .item .info {
 
 section.shop .shopAll .main .productAll ul li a .item .info .price {
   font-weight: bold;
-  letter-spacing: 2px;
   font-family: "Nasalization";
+}
+
+section.shop .shopAll .main .productAll ul li a .item img {
+  padding-top: 15px;
 }
 /*# sourceMappingURL=shop.css.map */

@@ -56,12 +56,8 @@ img {
 *,
 *:before,
 *:after {
-<<<<<<< HEAD
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
-=======
-  box-sizing: inherit;
->>>>>>> 3669f853016e9d33f1f2a0c73a08d01c16be8b7f
   margin: 0;
   padding: 0;
 }
@@ -82,16 +78,11 @@ body {
   font-size: 14px;
   background-color: #0c0d18;
   overflow-x: hidden;
-<<<<<<< HEAD
   -webkit-user-select: none;
   -moz-user-select: none;
   -o-user-select: none;
   -ms-user-select: none;
       user-select: none;
-=======
-  -o-user-select: none;
-  user-select: none;
->>>>>>> 3669f853016e9d33f1f2a0c73a08d01c16be8b7f
 }
 
 h1, .h1 {
@@ -293,14 +284,14 @@ small, .small {
 
 .button_large {
   width: 150px;
-  padding: 15px;
+  padding: 8px 0;
   text-align: center;
   border: 1px solid #AD6E4A;
 }
 
 .button_min {
   width: 100px;
-  padding: 15px;
+  padding: 8px 0;
   text-align: center;
   border: 1px solid #AD6E4A;
 }
@@ -322,17 +313,12 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-=======
-  justify-content: center;
-  align-items: center;
->>>>>>> 3669f853016e9d33f1f2a0c73a08d01c16be8b7f
   justify-content: center;
   background-color: #0c0d18;
   position: fixed;
@@ -346,29 +332,10 @@ nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> denis
-  background-image: url("../../img/icon/header/logo.png");
-  background-image: url("../../img/logo.png");
-  background-image: url("../../img/icon/header/logo.png");
-<<<<<<< HEAD
->>>>>>> kai
->>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
-=======
-  background-image: url("../../img/icon/header/logo.png");
->>>>>>> kai
-=======
->>>>>>> denis
-=======
   background-image: url("../../img/icon/header/logo.png");
   background-image: url("../../img/logo.png");
   background-image: url("../../img/icon/header/logo.png");
   background-image: url("../../img/icon/header/logo.png");
->>>>>>> 3669f853016e9d33f1f2a0c73a08d01c16be8b7f
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -381,7 +348,6 @@ nav .nav-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -391,11 +357,6 @@ nav .nav-links {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-=======
-  justify-content: center;
-  align-items: center;
-  justify-content: flex-end;
->>>>>>> 3669f853016e9d33f1f2a0c73a08d01c16be8b7f
   width: 75%;
 }
 
@@ -409,7 +370,6 @@ nav .nav-icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -418,11 +378,6 @@ nav .nav-icons {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-=======
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
->>>>>>> 3669f853016e9d33f1f2a0c73a08d01c16be8b7f
   width: 12%;
   margin-left: 50px;
 }
@@ -438,6 +393,7 @@ nav .burger div {
   height: 2px;
   background-color: #ffffff;
   margin: 5px;
+  -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
 
@@ -455,23 +411,15 @@ nav .burger div {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-<<<<<<< HEAD
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    justify-content: center;
-=======
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
->>>>>>> 3669f853016e9d33f1f2a0c73a08d01c16be8b7f
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 30%;
     -webkit-transition: all 1s ease-in;
     transition: all 1s ease-in;
@@ -513,12 +461,9 @@ nav .burger div {
   nav .nav-icons {
     width: 50%;
     margin-left: 16px;
-<<<<<<< HEAD
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-=======
-    justify-content: space-between;
->>>>>>> 3669f853016e9d33f1f2a0c73a08d01c16be8b7f
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   nav .nav-icons .icon {
     margin: 0;
@@ -552,7 +497,8 @@ nav .burger div {
 }
 
 .toggle .line1 {
-  transform: rotate(45deg) translate(4px, 6px);
+  -webkit-transform: rotate(45deg) translate(4px, 6px);
+          transform: rotate(45deg) translate(4px, 6px);
 }
 
 .toggle .line2 {
@@ -560,7 +506,8 @@ nav .burger div {
 }
 
 .toggle .line3 {
-  transform: rotate(-45deg) translate(3px, -6px);
+  -webkit-transform: rotate(-45deg) translate(3px, -6px);
+          transform: rotate(-45deg) translate(3px, -6px);
 }
 
 footer {
@@ -588,7 +535,6 @@ footer .links .footer-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -597,21 +543,12 @@ footer .links .footer-links {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-=======
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
->>>>>>> 3669f853016e9d33f1f2a0c73a08d01c16be8b7f
   width: 55%;
   position: relative;
   left: 50%;
   bottom: 30px;
-<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-=======
-  transform: translateX(-50%);
->>>>>>> 3669f853016e9d33f1f2a0c73a08d01c16be8b7f
 }
 
 footer .links .footer-links a {
@@ -622,12 +559,8 @@ footer .footer_moon {
   position: relative;
   left: 50%;
   max-width: 40%;
-<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-=======
-  transform: translateX(-50%);
->>>>>>> 3669f853016e9d33f1f2a0c73a08d01c16be8b7f
 }
 
 footer .smoke {
@@ -636,12 +569,8 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
-<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-=======
-  transform: translateX(-50%);
->>>>>>> 3669f853016e9d33f1f2a0c73a08d01c16be8b7f
 }
 
 @media (max-width: 768px) {
@@ -694,7 +623,7 @@ input[type=number] {
 }
 
 section.cart {
-  max-width: 948px;
+  max-width: 900px;
   margin: 0 auto;
   padding-top: 5vh;
 }
@@ -707,17 +636,12 @@ section.cart .item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-=======
-  justify-content: center;
-  align-items: center;
->>>>>>> 3669f853016e9d33f1f2a0c73a08d01c16be8b7f
   justify-content: center;
   background-color: #292B41;
   padding: 16px 0;
@@ -736,7 +660,6 @@ section.cart .item .img {
 section.cart .item .info {
   width: 65%;
   margin-left: 10px;
-<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -763,19 +686,6 @@ section.cart .item .info .points {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
-=======
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
-}
-
-section.cart .item .info .points {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: start;
->>>>>>> 3669f853016e9d33f1f2a0c73a08d01c16be8b7f
   margin: 8px 0;
 }
 
@@ -814,14 +724,10 @@ section.cart .checkout {
 
 @media all and (max-width: 768px) {
   section.cart .checkout {
-<<<<<<< HEAD
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-=======
-    flex-direction: column;
->>>>>>> 3669f853016e9d33f1f2a0c73a08d01c16be8b7f
   }
 }
 
@@ -872,10 +778,6 @@ section.cart .checkout .button_min {
     margin-top: 16px;
     width: 80%;
   }
-}
-
-footer {
-  margin-top: 80px;
 }
 
 /* Chrome, Safari, Edge, Opera */

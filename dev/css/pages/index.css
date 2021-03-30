@@ -78,16 +78,11 @@ body {
   font-size: 14px;
   background-color: #0c0d18;
   overflow-x: hidden;
-<<<<<<< HEAD
   -webkit-user-select: none;
   -moz-user-select: none;
   -o-user-select: none;
   -ms-user-select: none;
       user-select: none;
-=======
-  -o-user-select: none;
-  user-select: none;
->>>>>>> 3669f853016e9d33f1f2a0c73a08d01c16be8b7f
 }
 
 h1, .h1 {
@@ -289,14 +284,14 @@ small, .small {
 
 .button_large {
   width: 150px;
-  padding: 15px;
+  padding: 8px 0;
   text-align: center;
   border: 1px solid #AD6E4A;
 }
 
 .button_min {
   width: 100px;
-  padding: 15px;
+  padding: 8px 0;
   text-align: center;
   border: 1px solid #AD6E4A;
 }
@@ -318,17 +313,12 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-=======
-  justify-content: center;
-  align-items: center;
->>>>>>> 3669f853016e9d33f1f2a0c73a08d01c16be8b7f
   justify-content: center;
   background-color: #0c0d18;
   position: fixed;
@@ -342,29 +332,10 @@ nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> denis
-  background-image: url("../../img/icon/header/logo.png");
-  background-image: url("../../img/logo.png");
-  background-image: url("../../img/icon/header/logo.png");
-<<<<<<< HEAD
->>>>>>> kai
->>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
-=======
-  background-image: url("../../img/icon/header/logo.png");
->>>>>>> kai
-=======
->>>>>>> denis
-=======
   background-image: url("../../img/icon/header/logo.png");
   background-image: url("../../img/logo.png");
   background-image: url("../../img/icon/header/logo.png");
   background-image: url("../../img/icon/header/logo.png");
->>>>>>> 3669f853016e9d33f1f2a0c73a08d01c16be8b7f
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -377,7 +348,6 @@ nav .nav-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -387,11 +357,6 @@ nav .nav-links {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-=======
-  justify-content: center;
-  align-items: center;
-  justify-content: flex-end;
->>>>>>> 3669f853016e9d33f1f2a0c73a08d01c16be8b7f
   width: 75%;
 }
 
@@ -428,6 +393,7 @@ nav .burger div {
   height: 2px;
   background-color: #ffffff;
   margin: 5px;
+  -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
 
@@ -445,23 +411,15 @@ nav .burger div {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-<<<<<<< HEAD
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    justify-content: center;
-=======
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
->>>>>>> 3669f853016e9d33f1f2a0c73a08d01c16be8b7f
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 30%;
     -webkit-transition: all 1s ease-in;
     transition: all 1s ease-in;
@@ -503,12 +461,9 @@ nav .burger div {
   nav .nav-icons {
     width: 50%;
     margin-left: 16px;
-<<<<<<< HEAD
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-=======
-    justify-content: space-between;
->>>>>>> 3669f853016e9d33f1f2a0c73a08d01c16be8b7f
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   nav .nav-icons .icon {
     margin: 0;
@@ -542,7 +497,8 @@ nav .burger div {
 }
 
 .toggle .line1 {
-  transform: rotate(45deg) translate(4px, 6px);
+  -webkit-transform: rotate(45deg) translate(4px, 6px);
+          transform: rotate(45deg) translate(4px, 6px);
 }
 
 .toggle .line2 {
@@ -550,7 +506,8 @@ nav .burger div {
 }
 
 .toggle .line3 {
-  transform: rotate(-45deg) translate(3px, -6px);
+  -webkit-transform: rotate(-45deg) translate(3px, -6px);
+          transform: rotate(-45deg) translate(3px, -6px);
 }
 
 footer {
@@ -602,12 +559,8 @@ footer .footer_moon {
   position: relative;
   left: 50%;
   max-width: 40%;
-<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-=======
-  transform: translateX(-50%);
->>>>>>> 3669f853016e9d33f1f2a0c73a08d01c16be8b7f
 }
 
 footer .smoke {
@@ -616,12 +569,8 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
-<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-=======
-  transform: translateX(-50%);
->>>>>>> 3669f853016e9d33f1f2a0c73a08d01c16be8b7f
 }
 
 @media (max-width: 768px) {
@@ -673,8 +622,12 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
+.container-fluid {
+  padding: 0;
+}
+
 nav {
-  background-color: transparent;
+  background-color: #0c0d18;
 }
 
 .video-bg {
@@ -701,21 +654,16 @@ button {
 .banner {
   position: absolute;
   top: 40%;
-  left: 15%;
+  left: 17%;
 }
 
 .banner .slogan {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 20vh;
-=======
-  justify-content: center;
->>>>>>> 3669f853016e9d33f1f2a0c73a08d01c16be8b7f
 }
 
 .banner .slogan p {
@@ -738,19 +686,27 @@ button {
   margin-top: 20%;
 }
 
+@media only screen and (max-width: 1200px) {
+  .banner {
+    top: 25%;
+  }
+  .banner p {
+    font-size: 3rem;
+  }
+  .scroll img {
+    margin-top: 5%;
+  }
+}
+
 .home_intro {
   margin-top: 15vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-=======
-  flex-direction: column;
->>>>>>> 3669f853016e9d33f1f2a0c73a08d01c16be8b7f
 }
 
 .home_intro h2 {
@@ -879,11 +835,8 @@ div.planet_top div.word .addin:hover {
 }
 
 .tab-inner {
-<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
-=======
->>>>>>> 3669f853016e9d33f1f2a0c73a08d01c16be8b7f
   display: flex;
 }
 
@@ -891,14 +844,10 @@ div.planet_top div.word .addin:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-=======
-  flex-direction: column;
->>>>>>> 3669f853016e9d33f1f2a0c73a08d01c16be8b7f
   text-align: left;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1010,16 +959,12 @@ div.planet_top div.word .addin:hover {
 }
 
 .gallery .gallery_box {
-<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
-=======
->>>>>>> 3669f853016e9d33f1f2a0c73a08d01c16be8b7f
   display: flex;
 }
 
 .gallery .topleft {
-<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1031,12 +976,6 @@ div.planet_top div.word .addin:hover {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-=======
-  display: flex;
-  flex-direction: row;
-  max-height: 500px;
-  align-items: flex-end;
->>>>>>> 3669f853016e9d33f1f2a0c73a08d01c16be8b7f
 }
 
 .gallery .topleft .A {
@@ -1053,7 +992,10 @@ div.planet_top div.word .addin:hover {
   overflow: hidden;
 }
 
-<<<<<<< HEAD
+.gallery .topleft .B img {
+  height: 450px;
+}
+
 .gallery .topright {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1070,20 +1012,6 @@ div.planet_top div.word .addin:hover {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-=======
-.gallery .topleft .B img {
-  height: 450px;
-}
-
-.gallery .topright {
-  display: flex;
-  flex-direction: column;
-}
-
-.gallery .topright .topSct {
-  display: flex;
-  justify-content: space-around;
->>>>>>> 3669f853016e9d33f1f2a0c73a08d01c16be8b7f
 }
 
 .gallery .topright button.btn {
@@ -1093,17 +1021,12 @@ div.planet_top div.word .addin:hover {
 }
 
 .gallery .topright .galleryIntro {
-<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-=======
-  display: flex;
-  justify-content: center;
->>>>>>> 3669f853016e9d33f1f2a0c73a08d01c16be8b7f
 }
 
 .gallery .topright .galleryIntro h5 {
@@ -1111,8 +1034,7 @@ div.planet_top div.word .addin:hover {
   line-height: 2rem;
 }
 
-<<<<<<< HEAD
-.gallery .bottomleft {
+.gallery .bottom {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1120,16 +1042,16 @@ div.planet_top div.word .addin:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-=======
-.gallery .bottom {
-  display: flex;
-  flex-direction: row;
 }
 
 .gallery .bottom .bottomleft {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
->>>>>>> 3669f853016e9d33f1f2a0c73a08d01c16be8b7f
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   max-height: 500px;
 }
 
@@ -1160,7 +1082,6 @@ div.planet_top div.word .addin:hover {
 }
 
 .home_shop {
-<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1168,10 +1089,6 @@ div.planet_top div.word .addin:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-=======
-  display: flex;
-  flex-direction: column;
->>>>>>> 3669f853016e9d33f1f2a0c73a08d01c16be8b7f
 }
 
 .home_shop .button_min {
@@ -1204,7 +1121,6 @@ div.planet_top div.word .addin:hover {
   overflow: hidden;
   top: 0;
   left: 0;
-<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1214,46 +1130,31 @@ div.planet_top div.word .addin:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-=======
-  display: flex;
-  justify-content: center;
-  align-items: center;
->>>>>>> 3669f853016e9d33f1f2a0c73a08d01c16be8b7f
 }
 
 .home_shop .shopItem .hovereffect img {
   display: block;
   position: relative;
   max-width: none;
-<<<<<<< HEAD
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, -webkit-transform 0.35s;
-=======
->>>>>>> 3669f853016e9d33f1f2a0c73a08d01c16be8b7f
   transition: opacity 0.35s, transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
+  -webkit-transform: translate3d(-10px, 0, 0);
   transform: translate3d(-10px, 0, 0);
-<<<<<<< HEAD
   -webkit-backface-visibility: hidden;
-=======
->>>>>>> 3669f853016e9d33f1f2a0c73a08d01c16be8b7f
   backface-visibility: hidden;
 }
 
 .home_shop .shopItem .hovereffect:hover img {
   opacity: 0.4;
   filter: alpha(opacity=40);
-<<<<<<< HEAD
   -webkit-transform: translate3d(0, 0, 0);
-=======
->>>>>>> 3669f853016e9d33f1f2a0c73a08d01c16be8b7f
   transform: translate3d(0, 0, 0);
 }
 
 .home_shop .shopItem .hovereffect:hover h2:after {
-<<<<<<< HEAD
   -webkit-transform: translate3d(0, 0, 0);
-=======
->>>>>>> 3669f853016e9d33f1f2a0c73a08d01c16be8b7f
   transform: translate3d(0, 0, 0);
 }
 
@@ -1261,25 +1162,18 @@ div.planet_top div.word .addin:hover {
   color: #FFF;
   opacity: 0;
   filter: alpha(opacity=0);
-<<<<<<< HEAD
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
   transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
   -webkit-transform: translate3d(100%, 0, 0);
-=======
-  transition: opacity 0.35s, transform 0.35s;
->>>>>>> 3669f853016e9d33f1f2a0c73a08d01c16be8b7f
   transform: translate3d(100%, 0, 0);
 }
 
 .home_shop .shopItem .hovereffect:hover a, .home_shop .shopItem .hovereffect:hover h2 {
   opacity: 1;
   filter: alpha(opacity=100);
-<<<<<<< HEAD
   -webkit-transform: translate3d(0, 0, 0);
-=======
->>>>>>> 3669f853016e9d33f1f2a0c73a08d01c16be8b7f
   transform: translate3d(0, 0, 0);
 }
 
@@ -1299,12 +1193,8 @@ div.planet_top div.word .addin:hover {
 
 .home_shop .shopItem .item2 .hovereffect {
   z-index: 1;
-<<<<<<< HEAD
   -webkit-transform: translate(110%, -20%);
           transform: translate(110%, -20%);
-=======
-  transform: translate(110%, -20%);
->>>>>>> 3669f853016e9d33f1f2a0c73a08d01c16be8b7f
   max-height: 450px;
   max-width: 220px;
 }
@@ -1314,24 +1204,16 @@ div.planet_top div.word .addin:hover {
 }
 
 .home_shop .shopItem .item3 .hovereffect {
-<<<<<<< HEAD
   -webkit-transform: translate(150%, -100%);
           transform: translate(150%, -100%);
-=======
-  transform: translate(150%, -100%);
->>>>>>> 3669f853016e9d33f1f2a0c73a08d01c16be8b7f
   max-height: 270px;
   max-width: 275px;
 }
 
 .home_shop .shopItem .item4 .hovereffect {
   z-index: 1;
-<<<<<<< HEAD
   -webkit-transform: translate(255%, -260%);
           transform: translate(255%, -260%);
-=======
-  transform: translate(255%, -260%);
->>>>>>> 3669f853016e9d33f1f2a0c73a08d01c16be8b7f
   max-height: 270px;
   max-width: 280px;
 }
@@ -1341,12 +1223,8 @@ div.planet_top div.word .addin:hover {
 }
 
 .home_shop .shopItem .item5 .hovereffect {
-<<<<<<< HEAD
   -webkit-transform: translate(260%, -310%);
           transform: translate(260%, -310%);
-=======
-  transform: translate(260%, -310%);
->>>>>>> 3669f853016e9d33f1f2a0c73a08d01c16be8b7f
   max-height: 296px;
   max-width: 300px;
 }
@@ -1355,22 +1233,8 @@ div.planet_top div.word .addin:hover {
   max-width: 310px;
 }
 
-<<<<<<< HEAD
-.flow_member {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-=======
 .home_shop .shop_carousel {
   display: none;
->>>>>>> 3669f853016e9d33f1f2a0c73a08d01c16be8b7f
 }
 
 @media all and (max-width: 1200px) {
@@ -1378,8 +1242,12 @@ div.planet_top div.word .addin:hover {
     display: none;
   }
   .home_shop .shopRWD {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .home_shop .shopRWD .shop_carousel {
     display: block;
@@ -1392,7 +1260,30 @@ div.planet_top div.word .addin:hover {
   }
 }
 
-<<<<<<< HEAD
+.flow_member {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flow_member .flowall {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 10%;
+          column-gap: 10%;
+}
+
 .flow_member .flowall .flow {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1401,23 +1292,6 @@ div.planet_top div.word .addin:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-=======
-.flow_member {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.flow_member .flowall {
-  display: flex;
-  justify-content: center;
-  column-gap: 10%;
-}
-
-.flow_member .flowall .flow {
-  display: flex;
-  flex-direction: column;
->>>>>>> 3669f853016e9d33f1f2a0c73a08d01c16be8b7f
   text-align: center;
 }
 
@@ -1443,17 +1317,16 @@ div.planet_top div.word .addin:hover {
   line-height: 1.5rem;
 }
 
-<<<<<<< HEAD
-.flow_member button {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-=======
 .flow_member .memberbtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
->>>>>>> 3669f853016e9d33f1f2a0c73a08d01c16be8b7f
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 70px;
 }
 /*# sourceMappingURL=index.css.map */

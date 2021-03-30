@@ -13,13 +13,13 @@ body{
 }
 .container_fluid{
   padding: 0;
+  margin-top: 15vh;
 }
 *{
   box-sizing: border-box;
 }
 
 .grid{
-  padding-top: 5%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -86,7 +86,7 @@ body{
   line-height: 78px;
   color: white;
   padding: 0 15px;
-  margin-left: 11px;
+  margin-left: 35px;
   letter-spacing: 2px;
 }
 .article_all{
@@ -135,11 +135,9 @@ body{
   background-color: transparent;
   border: none;
 }
-.col-md-1 .button_2{
-  opacity: 0;
-}
+
 .col-md-1 .button_2:hover{
-  opacity: 1;
+  transform: translateY(-5px);
 }
 
 footer.padding_top_5{
@@ -153,6 +151,7 @@ footer.padding_top_5{
   background-color: #292B41;
   display: none;
   position: absolute;
+  z-index: 2;
 }
 .row{
   justify-content: center;
@@ -243,7 +242,7 @@ button.turnoff_lightbox img{
   max-width: 25px;
 }
 .movement img.more{
-  max-width: 25px;
+  max-width: 22px;
   opacity: .5;
 }
 .message_1 .name,.message_2 .name,.message_3 .name{
@@ -281,7 +280,7 @@ border: 1px solid white;
 }
 .message_1 .message_1_more img, .message_2 .message_2_more img,.message_3 .message_3_more img{
 margin-left: 70px;
-max-width: 25px;
+max-width: 22px;
 opacity: .5;
 }
 form.post_message{
