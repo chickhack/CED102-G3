@@ -313,12 +313,17 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+=======
+  justify-content: center;
+  align-items: center;
+>>>>>>> d108359aefc3e65a43f2f258d5b615e128f63572
   justify-content: center;
   background-color: #0c0d18;
   position: fixed;

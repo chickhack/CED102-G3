@@ -34,6 +34,12 @@
   height: 12vh;
 }
 
+.text-top {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 900;
+}
+
 .div-list-btn {
   background-color: #1d1e2e;
   width: 85%;
@@ -123,6 +129,11 @@
   text-align: center;
 }
 
+.imgs {
+  max-width: 150px;
+  object-fit: cover;
+}
+
 .div-menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -140,9 +151,13 @@
   width: 100%;
 }
 
+<<<<<<< HEAD
 .div-menu .div-right .div-right-span-fro {
   display: -webkit-box;
   display: -ms-flexbox;
+=======
+.div-menu .div-right .div-right-span-for {
+>>>>>>> d108359aefc3e65a43f2f258d5b615e128f63572
   display: flex;
 }
 
