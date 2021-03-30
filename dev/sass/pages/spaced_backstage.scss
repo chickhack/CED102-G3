@@ -24,6 +24,12 @@
     height: 12vh;
     
 }
+//nav文字
+.text-top{
+    color: #fff;
+    font-size: 28px;
+    font-weight: 900;
+}
 //左邊開關按鈕樣式
 .div-list-btn{
     background-color: #1d1e2e;
@@ -96,6 +102,10 @@
     
     text-align: center;
 }
+.imgs{
+    max-width: 150px;
+    object-fit: cover;
+}
 
 .div-menu{
     display: flex;
@@ -108,7 +118,7 @@
     .div-right{
         background-color: #35375a;
         width: 100%;
-        .div-right-span-fro{
+        .div-right-span-for{
             display: flex;
         }
         .div-right-span{

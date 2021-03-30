@@ -27,6 +27,12 @@
   height: 12vh;
 }
 
+.text-top {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 900;
+}
+
 .div-list-btn {
   background-color: #1d1e2e;
   width: 85%;
@@ -97,6 +103,11 @@
   text-align: center;
 }
 
+.imgs {
+  max-width: 150px;
+  object-fit: cover;
+}
+
 .div-menu {
   display: flex;
   min-height: 650px;
@@ -112,7 +123,7 @@
   width: 100%;
 }
 
-.div-menu .div-right .div-right-span-fro {
+.div-menu .div-right .div-right-span-for {
   display: flex;
 }
 
