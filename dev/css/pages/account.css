@@ -787,6 +787,7 @@ p.nextacc, p.nowacc {
 /* 會員menu */
 .account_nav {
   margin: 50px 250px 0px 250px;
+  border-bottom: none;
 }
 
 .account_nav a {
@@ -795,12 +796,19 @@ p.nextacc, p.nowacc {
 
 .account_nav a:hover {
   color: #AD6E4A;
-  border-bottom: 2px solid #AD6E4A;
+  border-color: 2px solid #AD6E4A;
 }
 
 .account_line {
   margin: 0px 250px 0px 250px;
   background-color: #AD6E4A;
+}
+
+.account_nav {
+  color: #AD6E4A;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #AD6E4A;
 }
 
 /* 會員資料 */
@@ -883,148 +891,11 @@ input.form-control-plaintext:focus {
 .info_editbtn:hover {
   color: #ffff;
   border: 1px solid #AD6E4A;
-  background: #AD6E4A;
+  border-color: #AD6E4a;
 }
 
 /* footer */
 footer {
   padding-top: 100px;
-}
-
-input, button {
-  border: 0;
-  margin: 0;
-  padding: 0;
-  outline: none;
-  background-color: transparent;
-}
-
-button {
-  cursor: pointer;
-  padding: 5px;
-  background-color: #753;
-  color: #ECA;
-  border-radius: 3px;
-}
-
-button:hover {
-  background-color: #ECA;
-  color: #753;
-}
-
-#app {
-  padding: 20px;
-  width: 300px;
-}
-
-#app .input {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-radius: 3px;
-  margin: 10px 0;
-  background-color: #ECA;
-}
-
-#app .input input {
-  padding: 5px;
-}
-
-#app .input button {
-  padding: 5px;
-  background-color: #ECA;
-  color: #753;
-  font-weight: bold;
-  border-radius: 0 3px 3px 0;
-}
-
-#app .input button:hover {
-  background-color: #753;
-  color: #ECA;
-}
-
-#app .input button:active {
-  background-color: #ECA;
-  color: #753;
-}
-
-.line-through {
-  text-decoration: line-through;
-}
-
-.tabs {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.tabs li {
-  cursor: pointer;
-  border: 2px solid transparent;
-  border-radius: 5px 5px 0 0;
-  padding: 5px;
-  background-color: #ECA;
-  color: #753;
-  margin-right: 4px;
-  font-weight: bold;
-}
-
-.tabs li:hover,
-.tabs li.active {
-  background-color: #753;
-  color: #ECA;
-}
-
-.main .content {
-  border-radius: 0 5px 0 0;
-  padding: 5px;
-  background-color: #ECA;
-}
-
-.main .content .item {
-  padding: 5px;
-  background-color: #FED;
-  margin: 5px 0;
-  border-radius: 5px;
-}
-
-.main .content .item .item-content,
-.main .content .item .item-edit {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.main .content .item .item-edit input {
-  background-color: #FFF;
-  border-radius: 5px;
-  padding: 5px;
-}
-
-.bottom {
-  background-color: #ECA;
-  border-radius: 0 0 5px 5px;
-  padding: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 /*# sourceMappingURL=account.css.map */

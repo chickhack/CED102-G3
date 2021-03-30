@@ -80,3 +80,6 @@ button.button_min{
   outline: none;
   font-size: 14px;
 }
+button.button_min:hover{
+  background-color: lighten($gold, 10%);
+}

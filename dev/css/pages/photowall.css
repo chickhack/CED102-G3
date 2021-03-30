@@ -605,6 +605,19 @@ body {
           box-sizing: border-box;
 }
 
+.top_photo {
+  max-width: 1100px;
+  text-align: center;
+  margin: auto;
+}
+
+.top_photo img {
+  height: 240px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .grid {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -617,47 +630,9 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
-<<<<<<< HEAD
-=======
-=======
-  padding-top: 5%;
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-=======
-  display: flex;
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 5badf5bb2eed3e9ef55ccab2f7d645bfd9e24c24
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
-<<<<<<< HEAD
-=======
-=======
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: start;
-<<<<<<< HEAD
->>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
->>>>>>> 5badf5bb2eed3e9ef55ccab2f7d645bfd9e24c24
-=======
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: start;
->>>>>>> 3dad026ace0b41a32fd8a158fb1c574e21ce5fa3
-=======
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> 0f160973f4b2bd5854ed4fa7625e61db6af80356
   max-width: 1100px;
   margin: 0 auto;
->>>>>>> 10e10f8ebb29ccc2882d121bf3efb9b9e001100b
+  margin-top: 40px;
 }
 
 .grid-item {
@@ -671,34 +646,8 @@ body {
 
 .grid .grid-item img {
   width: 100%;
-<<<<<<< HEAD
   -o-object-fit: cover;
      object-fit: cover;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  -o-object-fit: cover;
-     object-fit: cover;
-=======
-<<<<<<< HEAD
-  -o-object-fit: cover;
-     object-fit: cover;
-=======
-  object-fit: cover;
->>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
->>>>>>> 5badf5bb2eed3e9ef55ccab2f7d645bfd9e24c24
-=======
-  object-fit: cover;
->>>>>>> 3dad026ace0b41a32fd8a158fb1c574e21ce5fa3
-=======
-  -o-object-fit: cover;
-     object-fit: cover;
-=======
-  object-fit: cover;
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> 10e10f8ebb29ccc2882d121bf3efb9b9e001100b
->>>>>>> 0f160973f4b2bd5854ed4fa7625e61db6af80356
 }
 
 .grid .grid-item:nth-child(n+9) {
@@ -745,14 +694,14 @@ body {
 }
 
 .article_all .article .name {
-  line-height: 78px;
+  line-height: 60px;
   color: #fff;
   margin-right: 10px;
   font-weight: 900;
 }
 
 .post_time {
-  line-height: 78px;
+  line-height: 60px;
   color: white;
   padding: 0 15px;
   margin-left: 35px;
@@ -791,12 +740,16 @@ body {
 }
 
 .button button {
-  color: #AD6E4A;
+  color: white;
   border: 1px solid #ad6e4afb;
   padding: 15px;
   margin: 30px 0 80px 0;
   background-color: transparent;
   outline: none;
+}
+
+.button button:hover {
+  background: #ad6e4a;
 }
 
 .col-md-1 {
@@ -909,6 +862,10 @@ button.turnoff_lightbox img {
 .member_info a button {
   margin-top: 15px;
   padding: 5px;
+}
+
+.member_info a button:hover {
+  background-color: #bf896b;
 }
 
 .post_text {
