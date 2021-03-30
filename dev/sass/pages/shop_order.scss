@@ -1,12 +1,15 @@
 @import "../all.scss";
 
 section.orderDetail{
-    // max-width: 948px;
+    max-width: 900px;
     // border: 1px solid #fff;
     margin: 0 auto;
     padding-top: 5vh;
     .order{
-        margin: 0 30px;
+        margin: 0 80px;
+        @include respond(mobile){
+            margin: 0 30px;
+        }
         // border: 1px solid $pink;
         li{
             font-weight: 900;
@@ -20,7 +23,7 @@ section.orderDetail{
                 justify-content: space-around;
                 flex-wrap: wrap;
                 .prod{
-                    width: 10%;
+                    width: 8%;
                     @include respond(mobile){
                         width: 15%;
                         margin-left: 8px;
@@ -49,52 +52,32 @@ section.orderDetail{
             }
         }
     }
-    .detail{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-end;
-        padding: 16px 6% 16px 0;
-        background-color: #292B41;
-        @include respond(mobile){
-            justify-content: center;
-        }
-        .total,.integral{
-            @include flex_middle();
-            justify-content: space-around;
-            width: 40%;
-            @include respond(mobile){
-                width: 100%;
-            }
-            p:nth-child(2){
-                font-weight: 900;
-                color: $gold;
-            }
-            >.count{
-                @include flex_middle;
-            }
-        }
-        small{
-            margin-right: 6%;
-        }
-    }
 }
 
 section.orderer{
-    // max-width: 948px;
+    max-width: 900px;
     margin: 0 auto;
     padding-bottom: 40px;
     position: relative;
+    h3{
+        margin: 0 80px;
+        @include respond(mobile){
+            margin: 0 30px;
+        }
+    }
     form{
         position: relative;
     }
     .orderer_form,.recipient,.payment{
-        margin: 32px 30px;
+        margin: 32px 80px;
         background-color: #292B41;
         padding-bottom: 60px;
         max-height: 0;
         overflow: hidden;
         transition: all 1s;
+        @include respond(mobile){
+            margin: 32px 30px;
+        }
     }
     .arrow{
         display: flex;
@@ -151,11 +134,16 @@ section.orderer{
         }
     }
     .payTitle{
-        margin: 0 30px;
+        margin: 0 80px;
+        @include respond(mobile){
+            margin: 0 30px;
+        }
     }
     .group{
         @include flex_middle();
         flex-wrap: wrap;
+        width: 100%;
+        justify-content: start;
     }
     .checkbox_group{
         @include flex_middle();
@@ -210,7 +198,7 @@ section.orderer{
         #discount{
             width: 30%;
             @include respond(mobile){
-                width: 70%;
+                width: 40%;
             }
         }
     }
@@ -230,7 +218,7 @@ section.orderer{
             }
         }
         input{
-            width: 100%;
+            width: 90%;
             margin-bottom: 16px;
             @include respond(mobile){
                 width: 75%;
@@ -241,7 +229,41 @@ section.orderer{
         background-color: $gold;
         color: $white;
         position: absolute;
-        right: 30px;
+        right: 80px;
         bottom: 0;
+        @include respond(mobile){
+            right: 30px;
+        }
+    }
+    .detail{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        padding: 16px 0;
+        margin: 32px 80px;
+        background-color: #292B41;
+        @include respond(mobile){
+            justify-content: center;
+            margin: 32px 30px;
+        }
+        .total,.integral{
+            @include flex_middle();
+            justify-content: space-around;
+            width: 40%;
+            @include respond(mobile){
+                width: 100%;
+            }
+            p:nth-child(2){
+                font-weight: 900;
+                color: $gold;
+            }
+            >.count{
+                @include flex_middle;
+            }
+        }
+        small{
+            margin-right: 6%;
+        }
     }
 }

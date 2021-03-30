@@ -543,6 +543,10 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 
+a:hover {
+  color: #fff;
+}
+
 #icon-gg {
   display: flex;
   justify-content: center;
@@ -552,8 +556,8 @@ input::-webkit-inner-spin-button {
 }
 
 .icon-g {
-  max-width: 30px;
-  max-height: 30px;
+  max-width: 20px;
+  max-height: 20px;
   object-fit: cover;
 }
 
@@ -582,43 +586,48 @@ body {
 }
 
 .p-text-1 {
-  font-weight: 700;
-  font-size: 18px;
-  color: #fff;
+  font-weight: 900;
+  font-size: 16px;
+  color: #C9ADA7;
   margin: 0px;
   letter-spacing: 1px;
 }
 
 .p-text-2 {
   font-size: 16px;
-  color: #fff;
+  color: #C9ADA7;
   letter-spacing: 2px;
   font-weight: 500;
   line-height: 20px;
 }
 
 .p-text-3 {
-  font-size: 16px;
-  color: #ad6e4a;
+  font-size: 14px;
+  color: #C9ADA7;
   letter-spacing: 1px;
   font-weight: 700;
 }
 
 .imgsr {
-  width: 100%;
-  max-width: 150px;
+  max-width: 100px;
   height: auto;
-  max-height: 100px;
   object-fit: cover;
 }
 
 .btn-date {
+  outline: none;
+  max-width: 125px;
   letter-spacing: 2px;
   padding: 0 5px;
   border: 1px solid #ad6e4a;
+<<<<<<< HEAD
   color: #ad6e4a;
   background-color: #292B41;
   height: 30px;
+=======
+  color: #C9ADA7;
+  background-color: #292B41;
+>>>>>>> chickhack
   text-align: center;
 }
 
@@ -637,32 +646,65 @@ body {
 .btn-pull {
   color: #ad6e4a;
   background-color: #292B41;
+<<<<<<< HEAD
   font-size: 24px;
+=======
+>>>>>>> chickhack
   border: 1px solid #ad6e4a;
-  width: 30px;
-  height: 30px;
+  height: 15px;
   line-height: 0px;
-  padding-bottom: 1px;
+  padding: 4px 8px;
 }
 
 .btn-nu {
   color: #ad6e4a;
   background-color: #292B41;
+<<<<<<< HEAD
   font-size: 24px;
+=======
+>>>>>>> chickhack
   border: 0px solid #ad6e4a;
-  width: 40px;
-  height: 30px;
+  max-width: 50px;
   line-height: 0px;
   text-align: center;
   outline: none;
+}
+
+.letter-1 {
+  letter-spacing: 2px;
+}
+
+.btn-coin {
+  background-color: #ad6e4a;
+  color: #fff;
+}
+
+.coin-left {
+  text-align: end;
+  width: 70%;
+  padding-right: 3%;
+}
+
+.coin-right {
+  text-align: center;
+  width: 10%;
 }
 
 .row {
   justify-content: center;
 }
 
-.row .col-8 .row .col-12 {
+.row .allcoin {
+  padding-top: 16px;
+  padding-bottom: 16px;
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row .col-11 .row {
+  display: flex;
+<<<<<<< HEAD
   justify-content: space-around;
   padding: 2% 1%;
 }
@@ -714,6 +756,40 @@ body {
 @media all and (max-width: 768px) {
   .checkout .button_min {
     margin-top: 16px;
+=======
+}
+
+.row .col-11 .row .datacol {
+  padding: 16px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.row .col-11 .row .allcol {
+  padding: 16px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .allcoin {
+    flex-direction: column;
+  }
+  .coin-left {
+    text-align: center;
+  }
+  .coin-right {
+    width: 100%;
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+  }
+  .coin-right .btn-coin {
+>>>>>>> chickhack
     width: 80%;
   }
 }
