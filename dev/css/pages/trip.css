@@ -77,16 +77,8 @@ body {
   font-size: 14px;
   background-color: #0c0d18;
   overflow-x: hidden;
-<<<<<<< HEAD
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -o-user-select: none;
-  -ms-user-select: none;
-      user-select: none;
-=======
   -o-user-select: none;
   user-select: none;
->>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
 }
 
 h1, .h1 {
@@ -315,17 +307,8 @@ body {
 
 nav {
   display: flex;
-<<<<<<< HEAD
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-=======
   justify-content: center;
   align-items: center;
->>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
   justify-content: center;
   background-color: #0c0d18;
   position: fixed;
@@ -339,19 +322,10 @@ nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-<<<<<<< HEAD
-<<<<<<< HEAD
   background-image: url("../../img/icon/header/logo.png");
-=======
-<<<<<<< HEAD
   background-image: url("../../img/logo.png");
-=======
   background-image: url("../../img/icon/header/logo.png");
->>>>>>> kai
->>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
-=======
   background-image: url("../../img/icon/header/logo.png");
->>>>>>> kai
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -362,21 +336,9 @@ nav .logo h1 a {
 
 nav .nav-links {
   display: flex;
-<<<<<<< HEAD
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-=======
   justify-content: center;
   align-items: center;
   justify-content: flex-end;
->>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
   width: 75%;
 }
 
@@ -398,6 +360,7 @@ nav .nav-icons {
 nav .burger {
   display: none;
   cursor: pointer;
+  margin-left: 8px;
 }
 
 nav .burger div {
@@ -405,6 +368,7 @@ nav .burger div {
   height: 2px;
   background-color: #ffffff;
   margin: 5px;
+  transition: all .3s ease;
 }
 
 @media (max-width: 992px) {
@@ -418,10 +382,9 @@ nav .burger div {
     top: 12vh;
     background-color: #AD6E4A;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
     width: 30%;
     transition: all 1s ease-in;
   }
@@ -460,7 +423,7 @@ nav .burger div {
   nav .nav-icons {
     width: 50%;
     margin-left: 16px;
-    justify-content: space-around;
+    justify-content: space-between;
   }
   nav .nav-icons .icon {
     margin: 0;
@@ -476,6 +439,18 @@ nav .burger div {
     opacity: 1;
     transform: translateX(0px);
   }
+}
+
+.toggle .line1 {
+  transform: rotate(45deg) translate(4px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(-45deg) translate(3px, -6px);
 }
 
 footer {
@@ -518,12 +493,7 @@ footer .footer_moon {
   position: relative;
   left: 50%;
   max-width: 40%;
-<<<<<<< HEAD
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-=======
   transform: translateX(-50%);
->>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
 }
 
 footer .smoke {
@@ -532,12 +502,7 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
-<<<<<<< HEAD
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-=======
   transform: translateX(-50%);
->>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
 }
 
 @media (max-width: 768px) {
@@ -564,7 +529,7 @@ input::-webkit-inner-spin-button {
 
 .swiper-container {
   margin: 0 auto;
-  max-width: 1120px;
+  max-width: 1100px;
 }
 
 @media all and (max-width: 1200px) {
@@ -602,11 +567,6 @@ input::-webkit-inner-spin-button {
 }
 
 .parent_container .up_container .trip_content_all .trip_title {
-<<<<<<< HEAD
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-=======
->>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
   display: inline-flex;
   align-items: baseline;
   justify-content: flex-start;
@@ -663,11 +623,6 @@ input::-webkit-inner-spin-button {
 }
 
 .parent_container .up_container .trip_content_all .tab_contents .tag {
-<<<<<<< HEAD
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-=======
->>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
   display: inline-flex;
   border: 1px solid #C9ADA7;
   border-radius: 5px;
@@ -694,7 +649,7 @@ input::-webkit-inner-spin-button {
   border: 1px solid #AD6E4A;
   padding: 20px;
   position: sticky;
-  top: 20px;
+  top: 96px;
   z-index: 2;
   background-color: #0c0d18;
 }
@@ -750,11 +705,6 @@ input::-webkit-inner-spin-button {
 }
 
 .parent_container .up_container .book .select {
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-=======
->>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -840,11 +790,6 @@ input::-webkit-inner-spin-button {
 }
 
 .parent_container .up_container .book .btn {
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-=======
->>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
   display: flex;
   justify-content: flex-end;
   align-items: baseline;
@@ -914,11 +859,6 @@ input::-webkit-inner-spin-button {
 }
 
 .parent_container .up_container .comment .score {
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-=======
->>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
   display: flex;
   align-items: center;
   position: relative;
@@ -930,11 +870,6 @@ input::-webkit-inner-spin-button {
 }
 
 .parent_container .up_container .comment .score .stars {
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-=======
->>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
   display: flex;
   justify-content: center;
   align-items: center;
@@ -956,11 +891,6 @@ input::-webkit-inner-spin-button {
 }
 
 .parent_container .up_container .comment .messages {
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-=======
->>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
   display: flex;
   justify-content: center;
   align-items: center;
@@ -975,11 +905,6 @@ input::-webkit-inner-spin-button {
 }
 
 .parent_container .up_container .comment .messages .name {
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-=======
->>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
   display: flex;
   justify-content: center;
   align-items: center;

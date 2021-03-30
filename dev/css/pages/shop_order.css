@@ -77,16 +77,8 @@ body {
   font-size: 14px;
   background-color: #0c0d18;
   overflow-x: hidden;
-<<<<<<< HEAD
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -o-user-select: none;
-  -ms-user-select: none;
-      user-select: none;
-=======
   -o-user-select: none;
   user-select: none;
->>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
 }
 
 h1, .h1 {
@@ -315,17 +307,8 @@ body {
 
 nav {
   display: flex;
-<<<<<<< HEAD
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-=======
   justify-content: center;
   align-items: center;
->>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
   justify-content: center;
   background-color: #0c0d18;
   position: fixed;
@@ -339,19 +322,10 @@ nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-<<<<<<< HEAD
-<<<<<<< HEAD
   background-image: url("../../img/icon/header/logo.png");
-=======
-<<<<<<< HEAD
   background-image: url("../../img/logo.png");
-=======
   background-image: url("../../img/icon/header/logo.png");
->>>>>>> kai
->>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
-=======
   background-image: url("../../img/icon/header/logo.png");
->>>>>>> kai
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -362,21 +336,9 @@ nav .logo h1 a {
 
 nav .nav-links {
   display: flex;
-<<<<<<< HEAD
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-=======
   justify-content: center;
   align-items: center;
   justify-content: flex-end;
->>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
   width: 75%;
 }
 
@@ -398,6 +360,7 @@ nav .nav-icons {
 nav .burger {
   display: none;
   cursor: pointer;
+  margin-left: 8px;
 }
 
 nav .burger div {
@@ -405,6 +368,7 @@ nav .burger div {
   height: 2px;
   background-color: #ffffff;
   margin: 5px;
+  transition: all .3s ease;
 }
 
 @media (max-width: 992px) {
@@ -418,10 +382,9 @@ nav .burger div {
     top: 12vh;
     background-color: #AD6E4A;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
     width: 30%;
     transition: all 1s ease-in;
   }
@@ -460,7 +423,7 @@ nav .burger div {
   nav .nav-icons {
     width: 50%;
     margin-left: 16px;
-    justify-content: space-around;
+    justify-content: space-between;
   }
   nav .nav-icons .icon {
     margin: 0;
@@ -476,6 +439,18 @@ nav .burger div {
     opacity: 1;
     transform: translateX(0px);
   }
+}
+
+.toggle .line1 {
+  transform: rotate(45deg) translate(4px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(-45deg) translate(3px, -6px);
 }
 
 footer {
@@ -518,12 +493,7 @@ footer .footer_moon {
   position: relative;
   left: 50%;
   max-width: 40%;
-<<<<<<< HEAD
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-=======
   transform: translateX(-50%);
->>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
 }
 
 footer .smoke {
@@ -532,12 +502,7 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
-<<<<<<< HEAD
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-=======
   transform: translateX(-50%);
->>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
 }
 
 @media (max-width: 768px) {
@@ -590,12 +555,19 @@ input[type=number] {
 }
 
 section.orderDetail {
+  max-width: 900px;
   margin: 0 auto;
   padding-top: 5vh;
 }
 
 section.orderDetail .order {
-  margin: 0 30px;
+  margin: 0 80px;
+}
+
+@media all and (max-width: 768px) {
+  section.orderDetail .order {
+    margin: 0 30px;
+  }
 }
 
 section.orderDetail .order li {
@@ -618,7 +590,7 @@ section.orderDetail .order li .imgWord {
 }
 
 section.orderDetail .order li .imgWord .prod {
-  width: 10%;
+  width: 8%;
 }
 
 @media all and (max-width: 768px) {
@@ -661,54 +633,21 @@ section.orderDetail .order li .quantity {
   justify-content: space-around;
 }
 
-section.orderDetail .detail {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
-  padding: 16px 6% 16px 0;
-  background-color: #292B41;
-}
-
-@media all and (max-width: 768px) {
-  section.orderDetail .detail {
-    justify-content: center;
-  }
-}
-
-section.orderDetail .detail .total, section.orderDetail .detail .integral {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
-  width: 40%;
-}
-
-@media all and (max-width: 768px) {
-  section.orderDetail .detail .total, section.orderDetail .detail .integral {
-    width: 100%;
-  }
-}
-
-section.orderDetail .detail .total p:nth-child(2), section.orderDetail .detail .integral p:nth-child(2) {
-  font-weight: 900;
-  color: #AD6E4A;
-}
-
-section.orderDetail .detail .total > .count, section.orderDetail .detail .integral > .count {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-section.orderDetail .detail small {
-  margin-right: 6%;
-}
-
 section.orderer {
+  max-width: 900px;
   margin: 0 auto;
   padding-bottom: 40px;
   position: relative;
+}
+
+section.orderer h3 {
+  margin: 0 80px;
+}
+
+@media all and (max-width: 768px) {
+  section.orderer h3 {
+    margin: 0 30px;
+  }
 }
 
 section.orderer form {
@@ -716,12 +655,18 @@ section.orderer form {
 }
 
 section.orderer .orderer_form, section.orderer .recipient, section.orderer .payment {
-  margin: 32px 30px;
+  margin: 32px 80px;
   background-color: #292B41;
   padding-bottom: 60px;
   max-height: 0;
   overflow: hidden;
   transition: all 1s;
+}
+
+@media all and (max-width: 768px) {
+  section.orderer .orderer_form, section.orderer .recipient, section.orderer .payment {
+    margin: 32px 30px;
+  }
 }
 
 section.orderer .arrow {
@@ -734,34 +679,15 @@ section.orderer .arrow {
 
 section.orderer .arrow img {
   transition: all .5s;
-<<<<<<< HEAD
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
-=======
   transform: rotate(-90deg);
->>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
 }
 
 section.orderer .info {
   display: flex;
-<<<<<<< HEAD
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-=======
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
->>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
   width: 80%;
   margin-left: 6%;
 }
@@ -814,7 +740,13 @@ section.orderer .retract img {
 }
 
 section.orderer .payTitle {
-  margin: 0 30px;
+  margin: 0 80px;
+}
+
+@media all and (max-width: 768px) {
+  section.orderer .payTitle {
+    margin: 0 30px;
+  }
 }
 
 section.orderer .group {
@@ -822,6 +754,8 @@ section.orderer .group {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  width: 100%;
+  justify-content: start;
 }
 
 section.orderer .checkbox_group {
@@ -895,7 +829,7 @@ section.orderer .checkbox_group #discount {
 
 @media all and (max-width: 768px) {
   section.orderer .checkbox_group #discount {
-    width: 70%;
+    width: 40%;
   }
 }
 
@@ -913,16 +847,11 @@ section.orderer .credit_icon svg {
 section.orderer .credit_icon svg.use {
   opacity: 1;
   color: #AD6E4A;
-<<<<<<< HEAD
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-=======
   transform: scale(1.2);
->>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
 }
 
 section.orderer .credit_icon input {
-  width: 100%;
+  width: 90%;
   margin-bottom: 16px;
 }
 
@@ -936,7 +865,59 @@ section.orderer .button_min {
   background-color: #AD6E4A;
   color: #ffffff;
   position: absolute;
-  right: 30px;
+  right: 80px;
   bottom: 0;
+}
+
+@media all and (max-width: 768px) {
+  section.orderer .button_min {
+    right: 30px;
+  }
+}
+
+section.orderer .detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 16px 0;
+  margin: 32px 80px;
+  background-color: #292B41;
+}
+
+@media all and (max-width: 768px) {
+  section.orderer .detail {
+    justify-content: center;
+    margin: 32px 30px;
+  }
+}
+
+section.orderer .detail .total, section.orderer .detail .integral {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  width: 40%;
+}
+
+@media all and (max-width: 768px) {
+  section.orderer .detail .total, section.orderer .detail .integral {
+    width: 100%;
+  }
+}
+
+section.orderer .detail .total p:nth-child(2), section.orderer .detail .integral p:nth-child(2) {
+  font-weight: 900;
+  color: #AD6E4A;
+}
+
+section.orderer .detail .total > .count, section.orderer .detail .integral > .count {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.orderer .detail small {
+  margin-right: 6%;
 }
 /*# sourceMappingURL=shop_order.css.map */
