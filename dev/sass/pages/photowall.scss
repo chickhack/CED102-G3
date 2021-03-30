@@ -116,13 +116,21 @@ body{
   position: fixed;
   left: 1300px;
   bottom: 80px;
+  z-index: 1;
   
 }
 .col-md-1 .button_2 a button.button_min{
   background-color: transparent;
   border: none;
-
 }
+.col-md-1 .button_2{
+  // display: none;
+}
+.col-md-1 .button_2:hover{
+  // 
+  display: block;
+}
+
 footer.padding_top_5{
   padding-top: 10px;
 }
