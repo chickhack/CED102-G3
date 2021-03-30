@@ -3,6 +3,9 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button{
     -webkit-appearance: none;
 }
+.margin-bottom-2{
+    margin-bottom: 20px;
+}
 .padding-bottom-1{
     padding-bottom: 8px;
 }
@@ -20,7 +23,7 @@ a:hover{
 }
 .container-fluid{
     max-width: 900px;
-    padding: 0;
+    padding-top: 15vh;
 }
 .row{
     margin: 0px;
@@ -72,7 +75,8 @@ body{
     font-size: 16px;
     color: #C9ADA7;
     letter-spacing: 2px;
-    font-weight: 500;
+    // font-weight: 500;
+    
     line-height: 20px;
 }
 .p-text-3{
@@ -92,7 +96,7 @@ body{
 //日期按鈕
 .btn-date{
     outline: none;
-    max-width: 125px;
+    // max-width: 130px;
     letter-spacing: 2px;
     padding: 0 5px;
     border: 1px solid #ad6e4a;
@@ -173,6 +177,7 @@ body{
         padding-right: 0px;
         .row{
             display: flex;
+            justify-content: space-around;
             .datacol{
                 padding: 16px 0px;
                 display: flex;
@@ -186,8 +191,9 @@ body{
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
+                text-align: left;
                 // align-content: center;
-                align-items: center;
+                // align-items: flex-start;
                 // justify-content: space-around;
                 // padding: 2% 1%;
                 // border-radius: 5px;
