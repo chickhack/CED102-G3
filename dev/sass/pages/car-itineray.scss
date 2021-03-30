@@ -2,6 +2,9 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button{
     -webkit-appearance: none;
 }
+a:hover{
+    color: #fff;
+}
 #icon-gg{
     display: flex;
     justify-content: center;
@@ -11,8 +14,8 @@ input::-webkit-inner-spin-button{
 }
 //垃圾桶
 .icon-g{
-    max-width: 30px;
-    max-height: 30px;
+    max-width: 20px;
+    max-height: 20px;
     object-fit: cover;
 }
 .car-top{
@@ -32,7 +35,7 @@ body{
 }
 // 表單背景色
 .backcol{
-    background-color: #3a3a3e;
+    background-color: #292B41;
 }
 // 標題文字
 .text-1{
@@ -42,42 +45,45 @@ body{
 }
 // 內文標提
 .p-text-1{
-    font-weight: 700;
-    font-size: 18px;
-    color: #fff;
+    font-weight: 900;
+    font-size: 16px;
+    color: #C9ADA7;
     margin: 0px;
     letter-spacing: 1px;
 }
 //內文文字
 .p-text-2{
     font-size: 16px;
-    color: #fff;
+    color: #C9ADA7;
     letter-spacing: 2px;
     font-weight: 500;
     line-height: 20px;
 }
 .p-text-3{
-    font-size: 16px;
-    color: #ad6e4a;
+    font-size: 14px;
+    color: #C9ADA7;
     letter-spacing: 1px;
     font-weight: 700;
 }
 //行程用縮圖
 .imgsr{
-    width: 100%;
-    max-width: 150px;
+    // width: 100%;
+    max-width: 100px;
     height: auto;
-    max-height: 100px;
+    // max-height: 100px;
     object-fit: cover;
 }
 //日期按鈕
 .btn-date{
+    outline: none;
+    max-width: 125px;
     letter-spacing: 2px;
     padding: 0 5px;
     border: 1px solid #ad6e4a;
-    color: #ad6e4a;
-    background-color: #3a3a3e;
-    height: 30px;
+    // color: #ad6e4a;
+    color: #C9ADA7;
+    background-color: #292B41;
+    // height: 25px;
     text-align: center;
 }
 // 向下箭頭
@@ -103,38 +109,103 @@ body{
 //加減按鈕
 .btn-pull{
     color:#ad6e4a;
-    background-color: #3a3a3e;
-    font-size: 24px;
+    background-color: #292B41;
+    // font-size: 24px;
     border: 1px solid #ad6e4a;
-    width: 30px;
-    height: 30px;
+    // width: 8px;
+    height: 15px;
     line-height: 0px;
-    padding-bottom: 1px; 
+    padding:4px 8px 
 }
 // 數量的按鈕
 .btn-nu{
     color:#ad6e4a;
-    background-color: #3a3a3e;
-    font-size: 24px;
+    background-color: #292B41;
+   
     border: 0px solid #ad6e4a;
-    width: 40px;
-    height: 30px;
+    max-width: 50px;
+    
     line-height: 0px;
     text-align: center; 
     outline: none;
 }
-
+// 文字間格
+.letter-1{
+    letter-spacing: 2px;
+}
+//結帳按鈕樣式
+.btn-coin{
+    background-color: #ad6e4a;
+    color: #fff;
+}
+.coin-left{
+    text-align: end;
+    width: 70%;
+    padding-right: 3%;
+    
+}
+.coin-right{
+    text-align: center;
+    // text-align: end;
+    // margin-right: 24px;
+    width: 10%;
+}
 .row{
     justify-content: center;
-    .col-8{
+    .allcoin{
+            // padding: 16px 0px;
+            padding-top: 16px;
+            padding-bottom: 16px;
+            display: flex;
+            
+            justify-content: center;
+            // align-content: center;
+            align-items: center;
+            
+    }
+    .col-11{
         .row{
-            .col-12{
+            display: flex;
+            .datacol{
+                padding: 16px 0px;
                 display: flex;
-                justify-content: space-around;
-                padding: 2% 1%;
-                border-radius: 5px;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
                 
             }
+            .allcol{
+                padding: 16px 0px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                // align-content: center;
+                align-items: center;
+                // justify-content: space-around;
+                // padding: 2% 1%;
+                // border-radius: 5px;
+                
+            }
+        }
+    }
+}
+@media (max-width:768px){
+    .allcoin{
+        flex-direction: column;
+    }
+    .coin-left{
+        text-align: center;
+    }
+    
+    .coin-right{
+        width: 100%;
+        margin-top: 16px;
+        display: flex;
+        justify-content: center;
+        // align-items: flex-end;
+        .btn-coin{
+            width: 80%;
+            
         }
     }
 }
