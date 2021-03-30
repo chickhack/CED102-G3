@@ -284,14 +284,14 @@ small, .small {
 
 .button_large {
   width: 150px;
-  padding: 15px;
+  padding: 8px 0;
   text-align: center;
   border: 1px solid #AD6E4A;
 }
 
 .button_min {
   width: 100px;
-  padding: 15px;
+  padding: 8px 0;
   text-align: center;
   border: 1px solid #AD6E4A;
 }
@@ -332,10 +332,14 @@ nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
+<<<<<<< HEAD
   background-image: url("../../img/icon/header/logo.png");
   background-image: url("../../img/logo.png");
   background-image: url("../../img/icon/header/logo.png");
   background-image: url("../../img/icon/header/logo.png");
+=======
+  background-image: url("../img/logo.png");
+>>>>>>> dev
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -681,6 +685,21 @@ input[type=number] {
   width: 50px;
   -o-object-fit: cover;
      object-fit: cover;
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+  -o-object-fit: cover;
+     object-fit: cover;
+=======
+  object-fit: cover;
+<<<<<<< HEAD
+>>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
+>>>>>>> 5badf5bb2eed3e9ef55ccab2f7d645bfd9e24c24
+=======
+>>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
+>>>>>>> 10e10f8ebb29ccc2882d121bf3efb9b9e001100b
+>>>>>>> dev
   height: 50px;
   border-radius: 40px;
 }
@@ -690,6 +709,21 @@ input[type=number] {
   height: 40px;
   -o-object-fit: cover;
      object-fit: cover;
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+  -o-object-fit: cover;
+     object-fit: cover;
+=======
+  object-fit: cover;
+<<<<<<< HEAD
+>>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
+>>>>>>> 5badf5bb2eed3e9ef55ccab2f7d645bfd9e24c24
+=======
+>>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
+>>>>>>> 10e10f8ebb29ccc2882d121bf3efb9b9e001100b
+>>>>>>> dev
   border-radius: 40px;
 }
 
@@ -750,9 +784,20 @@ input[type=number] {
   height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
+<<<<<<< HEAD
+=======
+=======
+  object-fit: cover;
+<<<<<<< HEAD
+>>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
+>>>>>>> 5badf5bb2eed3e9ef55ccab2f7d645bfd9e24c24
+=======
+>>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
+>>>>>>> 10e10f8ebb29ccc2882d121bf3efb9b9e001100b
+>>>>>>> dev
 }
 
-.banner h4 {
+.banner h2 {
   position: absolute;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -765,8 +810,24 @@ input[type=number] {
 }
 
 .container-fluid .row .col-10 .row .col-10 {
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
+=======
+<<<<<<< HEAD
+  display: -webkit-box;
+  display: -ms-flexbox;
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+.container-fluid .row .col-10 .row .col-10 {
+>>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
+>>>>>>> 5badf5bb2eed3e9ef55ccab2f7d645bfd9e24c24
+=======
+>>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
+>>>>>>> 10e10f8ebb29ccc2882d121bf3efb9b9e001100b
+>>>>>>> dev
   display: flex;
 }
 

@@ -83,6 +83,13 @@ body {
   -o-user-select: none;
   -ms-user-select: none;
       user-select: none;
+<<<<<<< HEAD
+=======
+=======
+  -o-user-select: none;
+  user-select: none;
+>>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
+>>>>>>> dev
 }
 
 h1, .h1 {
@@ -284,14 +291,14 @@ small, .small {
 
 .button_large {
   width: 150px;
-  padding: 15px;
+  padding: 8px 0;
   text-align: center;
   border: 1px solid #AD6E4A;
 }
 
 .button_min {
   width: 100px;
-  padding: 15px;
+  padding: 8px 0;
   text-align: center;
   border: 1px solid #AD6E4A;
 }
@@ -319,6 +326,13 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+<<<<<<< HEAD
+=======
+=======
+  justify-content: center;
+  align-items: center;
+>>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
+>>>>>>> dev
   justify-content: center;
   background-color: #0c0d18;
   position: fixed;
@@ -332,10 +346,20 @@ nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> dev
   background-image: url("../../img/icon/header/logo.png");
   background-image: url("../../img/logo.png");
   background-image: url("../../img/icon/header/logo.png");
   background-image: url("../../img/icon/header/logo.png");
+<<<<<<< HEAD
+=======
+=======
+  background-image: url("../img/logo.png");
+>>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
+>>>>>>> dev
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -357,6 +381,14 @@ nav .nav-links {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+<<<<<<< HEAD
+=======
+=======
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-end;
+>>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
+>>>>>>> dev
   width: 75%;
 }
 
@@ -411,6 +443,10 @@ nav .burger div {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> dev
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -420,6 +456,14 @@ nav .burger div {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+<<<<<<< HEAD
+=======
+=======
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+>>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
+>>>>>>> dev
     width: 30%;
     -webkit-transition: all 1s ease-in;
     transition: all 1s ease-in;
@@ -461,9 +505,19 @@ nav .burger div {
   nav .nav-icons {
     width: 50%;
     margin-left: 16px;
+<<<<<<< HEAD
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+=======
+<<<<<<< HEAD
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+=======
+    justify-content: space-between;
+>>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
+>>>>>>> dev
   }
   nav .nav-icons .icon {
     margin: 0;
@@ -561,6 +615,12 @@ footer .footer_moon {
   max-width: 40%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+<<<<<<< HEAD
+=======
+=======
+  transform: translateX(-50%);
+>>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
+>>>>>>> dev
 }
 
 footer .smoke {
@@ -571,6 +631,12 @@ footer .smoke {
   height: 80%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+<<<<<<< HEAD
+=======
+=======
+  transform: translateX(-50%);
+>>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
+>>>>>>> dev
 }
 
 @media (max-width: 768px) {
@@ -623,7 +689,8 @@ input[type=number] {
 }
 
 section.shop {
-  margin: 0 40px;
+  margin: 0 auto;
+  max-width: 1100px;
   text-align: center;
   color: #ffffff;
 }
@@ -656,6 +723,12 @@ section.shop .banner h2 {
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+<<<<<<< HEAD
+=======
+=======
+  transform: translate(-50%, -50%);
+>>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
+>>>>>>> dev
   top: 35%;
   letter-spacing: 2px;
 }
@@ -846,6 +919,14 @@ section.shop .shopAll .main .productAll ul li a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+<<<<<<< HEAD
+=======
+=======
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+>>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
+>>>>>>> dev
   background-color: rgba(255, 255, 255, 0.9);
   color: black;
 }
@@ -877,7 +958,10 @@ section.shop .shopAll .main .productAll ul li a .item .info {
 
 section.shop .shopAll .main .productAll ul li a .item .info .price {
   font-weight: bold;
-  letter-spacing: 2px;
   font-family: "Nasalization";
+}
+
+section.shop .shopAll .main .productAll ul li a .item img {
+  padding-top: 15px;
 }
 /*# sourceMappingURL=shop.css.map */

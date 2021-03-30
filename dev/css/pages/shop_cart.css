@@ -58,6 +58,12 @@ img {
 *:after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
+<<<<<<< HEAD
+=======
+=======
+  box-sizing: inherit;
+>>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
+>>>>>>> dev
   margin: 0;
   padding: 0;
 }
@@ -83,6 +89,13 @@ body {
   -o-user-select: none;
   -ms-user-select: none;
       user-select: none;
+<<<<<<< HEAD
+=======
+=======
+  -o-user-select: none;
+  user-select: none;
+>>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
+>>>>>>> dev
 }
 
 h1, .h1 {
@@ -284,14 +297,14 @@ small, .small {
 
 .button_large {
   width: 150px;
-  padding: 15px;
+  padding: 8px 0;
   text-align: center;
   border: 1px solid #AD6E4A;
 }
 
 .button_min {
   width: 100px;
-  padding: 15px;
+  padding: 8px 0;
   text-align: center;
   border: 1px solid #AD6E4A;
 }
@@ -319,6 +332,13 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+<<<<<<< HEAD
+=======
+=======
+  justify-content: center;
+  align-items: center;
+>>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
+>>>>>>> dev
   justify-content: center;
   background-color: #0c0d18;
   position: fixed;
@@ -332,10 +352,20 @@ nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> dev
   background-image: url("../../img/icon/header/logo.png");
   background-image: url("../../img/logo.png");
   background-image: url("../../img/icon/header/logo.png");
   background-image: url("../../img/icon/header/logo.png");
+<<<<<<< HEAD
+=======
+=======
+  background-image: url("../img/logo.png");
+>>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
+>>>>>>> dev
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -357,6 +387,14 @@ nav .nav-links {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+<<<<<<< HEAD
+=======
+=======
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-end;
+>>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
+>>>>>>> dev
   width: 75%;
 }
 
@@ -378,6 +416,14 @@ nav .nav-icons {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+<<<<<<< HEAD
+=======
+=======
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+>>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
+>>>>>>> dev
   width: 12%;
   margin-left: 50px;
 }
@@ -411,6 +457,10 @@ nav .burger div {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> dev
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -420,6 +470,14 @@ nav .burger div {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+<<<<<<< HEAD
+=======
+=======
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+>>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
+>>>>>>> dev
     width: 30%;
     -webkit-transition: all 1s ease-in;
     transition: all 1s ease-in;
@@ -461,9 +519,19 @@ nav .burger div {
   nav .nav-icons {
     width: 50%;
     margin-left: 16px;
+<<<<<<< HEAD
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+=======
+<<<<<<< HEAD
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+=======
+    justify-content: space-between;
+>>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
+>>>>>>> dev
   }
   nav .nav-icons .icon {
     margin: 0;
@@ -543,12 +611,26 @@ footer .links .footer-links {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+<<<<<<< HEAD
+=======
+=======
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+>>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
+>>>>>>> dev
   width: 55%;
   position: relative;
   left: 50%;
   bottom: 30px;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+<<<<<<< HEAD
+=======
+=======
+  transform: translateX(-50%);
+>>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
+>>>>>>> dev
 }
 
 footer .links .footer-links a {
@@ -561,6 +643,12 @@ footer .footer_moon {
   max-width: 40%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+<<<<<<< HEAD
+=======
+=======
+  transform: translateX(-50%);
+>>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
+>>>>>>> dev
 }
 
 footer .smoke {
@@ -571,6 +659,12 @@ footer .smoke {
   height: 80%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+<<<<<<< HEAD
+=======
+=======
+  transform: translateX(-50%);
+>>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
+>>>>>>> dev
 }
 
 @media (max-width: 768px) {
@@ -623,7 +717,7 @@ input[type=number] {
 }
 
 section.cart {
-  max-width: 948px;
+  max-width: 900px;
   margin: 0 auto;
   padding-top: 5vh;
 }
@@ -642,6 +736,13 @@ section.cart .item {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+<<<<<<< HEAD
+=======
+=======
+  justify-content: center;
+  align-items: center;
+>>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
+>>>>>>> dev
   justify-content: center;
   background-color: #292B41;
   padding: 16px 0;
@@ -686,6 +787,22 @@ section.cart .item .info .points {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
+<<<<<<< HEAD
+=======
+=======
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+
+section.cart .item .info .points {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: start;
+>>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
+>>>>>>> dev
   margin: 8px 0;
 }
 
@@ -728,6 +845,12 @@ section.cart .checkout {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+<<<<<<< HEAD
+=======
+=======
+    flex-direction: column;
+>>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
+>>>>>>> dev
   }
 }
 
@@ -778,10 +901,6 @@ section.cart .checkout .button_min {
     margin-top: 16px;
     width: 80%;
   }
-}
-
-footer {
-  margin-top: 80px;
 }
 
 /* Chrome, Safari, Edge, Opera */

@@ -1,7 +1,7 @@
 @import "../all.scss";
 
 section.cart{
-    max-width: 948px;
+    max-width: 900px;
     margin: 0 auto;
     // border: 1px solid #fff;
     padding-top: 5vh;
@@ -83,10 +83,6 @@ section.cart{
         }
     }
 }
-footer{
-    margin-top: 80px;
-}
-
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {

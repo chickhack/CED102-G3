@@ -6,6 +6,9 @@ body {
 }
 
 .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding-bottom: 0px;
     @include respond(mobile) {
         margin: 0 30px;
     }
@@ -36,7 +39,7 @@ body {
 
             .bigImg {
                 width: 100%;
-                max-height: 450px;
+                max-height: 266px;
                 background-color: $white;
 
                 @include respond(mobile) {
@@ -140,7 +143,7 @@ body {
             .button_large {
                 width: 100%;
                 cursor: pointer;
-                padding: 15px 0;
+                padding: 8px 0;
 
                 &.buy {
                     background-color: $gold;
@@ -199,7 +202,7 @@ body {
             border-radius: 5px;
             position: relative;
             margin: 0 16px 0 16px;
-
+            color: $white;
             @media all and (max-width: 767px) {
                 flex-direction: column;
                 margin: 16px 0 16px 0;
@@ -266,9 +269,10 @@ body {
 
 .comment {
     max-width: 900px;
-    margin: 80px auto;
-    padding: 0 30px;
-
+    margin: 0 80px;
+    @include respond(mobile){
+        margin:0 30px;
+    }
     .score {
         display: flex;
         align-items: center;

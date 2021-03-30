@@ -3,8 +3,13 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button{
     -webkit-appearance: none;
 }
+.padding-bottom-1{
+    padding-bottom: 8px;
+}
+
 a:hover{
     color: #fff;
+    background-color: lighten(#ad6e4a,10%);
 }
 #icon-gg{
     display: flex;
@@ -13,8 +18,13 @@ a:hover{
     align-items:flex-end;
     padding-bottom: 1.5%;
 }
-
-
+.container-fluid{
+    max-width: 900px;
+    padding: 0;
+}
+.row{
+    margin: 0px;
+}
 //垃圾桶
 .icon-g{
     max-width: 20px;
@@ -29,6 +39,9 @@ a:hover{
 body{
     background-color: #0c0d18;
     
+}
+.w-100{
+    width: 100%;
 }
 //圖片對齊
 .vvvvv{
@@ -92,19 +105,9 @@ body{
     color: #C9ADA7;
     background-color: #292B41;
     // height: 25px;
->>>>>>> chickhack
+>>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
     text-align: center;
 }
-// 向下箭頭
-.bi{
-    fill: #ad6e4a;
-}
-// .data-down::after{
-//     content: url(../img/date-chevron-down.svg);
-//     width: 20px;
-//     height: 20px;
-//     // z-index: -1;
-// }
 //input-icon日期替換
 ::-webkit-calendar-picker-indicator { 
 
@@ -123,7 +126,7 @@ body{
     font-size: 24px;
 =======
     // font-size: 24px;
->>>>>>> chickhack
+>>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
     border: 1px solid #ad6e4a;
     // width: 8px;
     height: 15px;
@@ -138,7 +141,7 @@ body{
     font-size: 24px;
 =======
    
->>>>>>> chickhack
+>>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
     border: 0px solid #ad6e4a;
     max-width: 50px;
     
@@ -181,6 +184,8 @@ body{
             
     }
     .col-11{
+        padding-left: 0px;
+        padding-right: 0px;
         .row{
             display: flex;
             .datacol{
@@ -194,7 +199,7 @@ body{
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
->>>>>>> chickhack
+>>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
                 
             }
             .allcol{
