@@ -13,8 +13,13 @@ a:hover{
     align-items:flex-end;
     padding-bottom: 1.5%;
 }
-
-
+.container-fluid{
+    max-width: 900px;
+    padding: 0;
+}
+.row{
+    margin: 0px;
+}
 //垃圾桶
 .icon-g{
     max-width: 20px;
@@ -29,6 +34,9 @@ a:hover{
 body{
     background-color: #0c0d18;
     
+}
+.w-100{
+    width: 100%;
 }
 //圖片對齊
 .vvvvv{
@@ -83,28 +91,12 @@ body{
     letter-spacing: 2px;
     padding: 0 5px;
     border: 1px solid #ad6e4a;
-<<<<<<< HEAD
-    color: #ad6e4a;
-    background-color: #292B41;
-    height: 30px;
-=======
     // color: #ad6e4a;
     color: #C9ADA7;
     background-color: #292B41;
     // height: 25px;
->>>>>>> chickhack
     text-align: center;
 }
-// 向下箭頭
-.bi{
-    fill: #ad6e4a;
-}
-// .data-down::after{
-//     content: url(../img/date-chevron-down.svg);
-//     width: 20px;
-//     height: 20px;
-//     // z-index: -1;
-// }
 //input-icon日期替換
 ::-webkit-calendar-picker-indicator { 
 
@@ -119,11 +111,7 @@ body{
 .btn-pull{
     color:#ad6e4a;
     background-color: #292B41;
-<<<<<<< HEAD
-    font-size: 24px;
-=======
     // font-size: 24px;
->>>>>>> chickhack
     border: 1px solid #ad6e4a;
     // width: 8px;
     height: 15px;
@@ -134,11 +122,7 @@ body{
 .btn-nu{
     color:#ad6e4a;
     background-color: #292B41;
-<<<<<<< HEAD
-    font-size: 24px;
-=======
    
->>>>>>> chickhack
     border: 0px solid #ad6e4a;
     max-width: 50px;
     
@@ -181,20 +165,15 @@ body{
             
     }
     .col-11{
+        padding: 0px;
         .row{
             display: flex;
             .datacol{
                 padding: 16px 0px;
                 display: flex;
-<<<<<<< HEAD
-                justify-content: space-around;
-                padding: 2% 1%;
-                // border-radius: 5px;
-=======
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
->>>>>>> chickhack
                 
             }
             .allcol{
