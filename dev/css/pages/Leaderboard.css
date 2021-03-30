@@ -767,9 +767,10 @@ input[type=number] {
 
 .banner {
   margin: 0 auto;
-  background-image: url(../../img/home/others/station_moon.jpg);
+  background-image: url(../../img/home/others/clavius-landing.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center  center;
   width: 87%;
   padding-top: 20%;
   position: relative;
@@ -789,12 +790,17 @@ input[type=number] {
 =======
   object-fit: cover;
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
 >>>>>>> 5badf5bb2eed3e9ef55ccab2f7d645bfd9e24c24
 =======
 >>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
 >>>>>>> 10e10f8ebb29ccc2882d121bf3efb9b9e001100b
 >>>>>>> 0f160973f4b2bd5854ed4fa7625e61db6af80356
+=======
+  position: relative;
+  top: 100px;
+>>>>>>> kai
 }
 
 .banner h2 {
