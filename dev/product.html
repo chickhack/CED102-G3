@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/all.css">
-    <link rel="stylesheet" href="./css/pages/product.css">
     <link rel="stylesheet" href="./css/pages/trip.css"></link>
+    <link rel="stylesheet" href="./css/pages/product.css">
     <title>星球商城</title>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.12/vue.js'></script>
 </head>
@@ -61,7 +61,7 @@
                 <h3 class="margin_top_10 alltrip ">建議搭配景點</h3>
                 <div class="tripcard_all  margin_top_5">
 
-                    <div v-for="item in second" class="tripcard">
+                    <a href="trip.html" v-for="item in second" class="tripcard">
                         <img :src="item.spot" class="spot_pic" alt="spot_pic">
                         <div class="content line_low">
                             <h4 class="hot2 margin_top_1">{{item.title}}</h4>
@@ -71,7 +71,7 @@
                             <div class="addin2 samll  margin_top_2"><img class="plus" src="./img/icon/plus.png"
                                     alt="">加入我的行程</div>
                         </div>
-                    </div>
+                    </a>
 
                 </div>
             </div>
