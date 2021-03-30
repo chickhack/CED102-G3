@@ -617,8 +617,47 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
+<<<<<<< HEAD
+=======
+=======
+  padding-top: 5%;
+<<<<<<< HEAD
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+=======
+  display: flex;
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 5badf5bb2eed3e9ef55ccab2f7d645bfd9e24c24
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+<<<<<<< HEAD
+=======
+=======
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: start;
+<<<<<<< HEAD
+>>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
+>>>>>>> 5badf5bb2eed3e9ef55ccab2f7d645bfd9e24c24
+=======
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: start;
+>>>>>>> 3dad026ace0b41a32fd8a158fb1c574e21ce5fa3
+=======
+>>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
+>>>>>>> 0f160973f4b2bd5854ed4fa7625e61db6af80356
   max-width: 1100px;
   margin: 0 auto;
+>>>>>>> 10e10f8ebb29ccc2882d121bf3efb9b9e001100b
 }
 
 .grid-item {
@@ -632,8 +671,34 @@ body {
 
 .grid .grid-item img {
   width: 100%;
+<<<<<<< HEAD
   -o-object-fit: cover;
      object-fit: cover;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+  -o-object-fit: cover;
+     object-fit: cover;
+=======
+<<<<<<< HEAD
+  -o-object-fit: cover;
+     object-fit: cover;
+=======
+  object-fit: cover;
+>>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
+>>>>>>> 5badf5bb2eed3e9ef55ccab2f7d645bfd9e24c24
+=======
+  object-fit: cover;
+>>>>>>> 3dad026ace0b41a32fd8a158fb1c574e21ce5fa3
+=======
+  -o-object-fit: cover;
+     object-fit: cover;
+=======
+  object-fit: cover;
+>>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
+>>>>>>> 10e10f8ebb29ccc2882d121bf3efb9b9e001100b
+>>>>>>> 0f160973f4b2bd5854ed4fa7625e61db6af80356
 }
 
 .grid .grid-item:nth-child(n+9) {
