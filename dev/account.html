@@ -89,34 +89,17 @@
   <div class="account_tab">
     <div id="account_tab" class="account_tabs">
       <ul class="nav nav-tabs nav-justified account_nav">
-<<<<<<< HEAD
-        <li class="nav-item"><a class="nav-link actived" href="#" :class="{'active': link=='a'}"
-            @click.prevent=" link='a'">會員資料</a></li>
-        <li class="nav-item"><a class="nav-link" href="#" :class="{'active': link=='b' }"
-            @click.prevent="link='b'">行程管理</a></li>
-        <li class="nav-item"><a class="nav-link btn-hover" href="#" :class="{'active': link=='c' }"
-            @click.prevent="link='c'">互動牆管理</a></li>
-        <li class="nav-item"><a class="nav-link" href="#" :class="{'active': link=='d' }"
-            @click.prevent="link='d'">商城訂單</a></li>
-        <li class="nav-item"><a class="nav-link" href="#" :class="{'active': link=='e' }"
-            @click.prevent="link='e'">收藏管理</a></li>
-        <li class="nav-item"><a class="nav-link" href="#" :class="{'active': link=='f' }"
-            @click.prevent="link='f'">轉換積分</a></li>
-=======
         <li class="nav-item"><a class="nav-link active" href="#" :class="{'active': link=='a'}" @click.prevent=" link='a'">會員資料</a></li>
-        <li class="nav-item"><a class="nav-link" href="#" :class="{'active': link=='b' }" @click.prevent="link='b'">行程管理</a></li>
+        <li class="nasv-item"><a class="nav-link" href="#" :class="{'active': link=='b' }" @click.prevent="link='b'">行程管理</a></li>
         <li class="nav-item"><a class="nav-link" href="#" :class="{'active': link=='c' }" @click.prevent="link='c'">互動牆管理</a></li>
         <li class="nav-item"><a class="nav-link" href="#" :class="{'active': link=='d' }" @click.prevent="link='d'">商城訂單</a></li>
         <li class="nav-item"><a class="nav-link" href="#" :class="{'active': link=='e' }" @click.prevent="link='e'">收藏管理</a></li>
         <li class="nav-item"><a class="nav-link" href="#" :class="{'active': link=='f' }" @click.prevent="link='f'">轉換積分</a></li>
->>>>>>> dev
       </ul>
 
       <hr class="account_line">
 
       <div class="content">
-        <!-- 記得要用 邏輯運算子 === 來判斷是否相同  -->
-        <!-- ＝是賦予值 -->
         <div v-if="link ==='a'">
           <div id="info_form" class="row info_form">
             <div class="col-md-auto align-self-start  info_img">
