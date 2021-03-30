@@ -198,6 +198,26 @@ small, .small {
   padding-top: 80px;
 }
 
+.padding_top_11 {
+  padding-top: 88px;
+}
+
+.padding_top_12 {
+  padding-top: 96px;
+}
+
+.padding_top_13 {
+  padding-top: 104px;
+}
+
+.padding_top_14 {
+  padding-top: 112px;
+}
+
+.padding_top_15 {
+  padding-top: 120px;
+}
+
 .margin_left_1 {
   margin-left: 8px;
 }
@@ -278,6 +298,26 @@ small, .small {
   margin-top: 80px;
 }
 
+.margin_top_11 {
+  margin-top: 88px;
+}
+
+.margin_top_12 {
+  margin-top: 96px;
+}
+
+.margin_top_13 {
+  margin-top: 104px;
+}
+
+.margin_top_14 {
+  margin-top: 112px;
+}
+
+.margin_top_15 {
+  margin-top: 120px;
+}
+
 .button_large {
   width: 150px;
   padding: 8px 0;
@@ -322,9 +362,6 @@ nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-  background-image: url("../../img/icon/header/logo.png");
-  background-image: url("../../img/logo.png");
-  background-image: url("../../img/icon/header/logo.png");
   background-image: url("../../img/icon/header/logo.png");
   background-position: center center;
   background-size: contain;
@@ -517,16 +554,58 @@ footer .smoke {
   }
 }
 
+<<<<<<< HEAD
 * {
+<<<<<<< HEAD
   box-sizing: border-box;
+=======
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+=======
+.quantity label {
+  display: block;
+>>>>>>> denis
+>>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
 }
 
-body {
-  color: white;
-  font-size: 16px;
+.quantity .as {
+  color: #AD6E4A;
 }
 
-.container_fluid {
+.quantity .as input[type=number] {
+  max-width: 50px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  text-align: center;
+  color: #AD6E4A;
+}
+
+.quantity .as span {
+  border: 1px solid #AD6E4A;
+  outline: none;
+  background-color: transparent;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.container {
+  position: relative;
+}
+
+.container-fluid {
   padding: 0;
   margin-top: 15vh;
 }
@@ -606,5 +685,9 @@ button.button_min {
   border: none;
   outline: none;
   font-size: 14px;
+}
+
+button.button_min:hover {
+  background-color: #bf896b;
 }
 /*# sourceMappingURL=post.css.map */

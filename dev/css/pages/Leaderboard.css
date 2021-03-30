@@ -198,6 +198,26 @@ small, .small {
   padding-top: 80px;
 }
 
+.padding_top_11 {
+  padding-top: 88px;
+}
+
+.padding_top_12 {
+  padding-top: 96px;
+}
+
+.padding_top_13 {
+  padding-top: 104px;
+}
+
+.padding_top_14 {
+  padding-top: 112px;
+}
+
+.padding_top_15 {
+  padding-top: 120px;
+}
+
 .margin_left_1 {
   margin-left: 8px;
 }
@@ -278,6 +298,26 @@ small, .small {
   margin-top: 80px;
 }
 
+.margin_top_11 {
+  margin-top: 88px;
+}
+
+.margin_top_12 {
+  margin-top: 96px;
+}
+
+.margin_top_13 {
+  margin-top: 104px;
+}
+
+.margin_top_14 {
+  margin-top: 112px;
+}
+
+.margin_top_15 {
+  margin-top: 120px;
+}
+
 .button_large {
   width: 150px;
   padding: 8px 0;
@@ -322,10 +362,18 @@ nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
+<<<<<<< HEAD
+<<<<<<< HEAD
   background-image: url("../../img/icon/header/logo.png");
   background-image: url("../../img/logo.png");
   background-image: url("../../img/icon/header/logo.png");
   background-image: url("../../img/icon/header/logo.png");
+=======
+  background-image: url("../img/logo.png");
+>>>>>>> dev
+=======
+  background-image: url("../../img/icon/header/logo.png");
+>>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -611,7 +659,36 @@ input[type=number] {
 
 .icon-2 {
   width: 50px;
+<<<<<<< HEAD
   object-fit: cover;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+  -o-object-fit: cover;
+     object-fit: cover;
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+  -o-object-fit: cover;
+     object-fit: cover;
+=======
+  object-fit: cover;
+<<<<<<< HEAD
+>>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
+>>>>>>> 5badf5bb2eed3e9ef55ccab2f7d645bfd9e24c24
+=======
+>>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
+>>>>>>> 10e10f8ebb29ccc2882d121bf3efb9b9e001100b
+>>>>>>> dev
+=======
+  object-fit: cover;
+>>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
+=======
+  -o-object-fit: cover;
+     object-fit: cover;
+>>>>>>> denis
+>>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
   height: 50px;
   border-radius: 40px;
 }
@@ -619,7 +696,36 @@ input[type=number] {
 .icon-3 {
   width: 40px;
   height: 40px;
+<<<<<<< HEAD
   object-fit: cover;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+  -o-object-fit: cover;
+     object-fit: cover;
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+  -o-object-fit: cover;
+     object-fit: cover;
+=======
+  object-fit: cover;
+<<<<<<< HEAD
+>>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
+>>>>>>> 5badf5bb2eed3e9ef55ccab2f7d645bfd9e24c24
+=======
+>>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
+>>>>>>> 10e10f8ebb29ccc2882d121bf3efb9b9e001100b
+>>>>>>> dev
+=======
+  object-fit: cover;
+>>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
+=======
+  -o-object-fit: cover;
+     object-fit: cover;
+>>>>>>> denis
+>>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
   border-radius: 40px;
 }
 
@@ -668,9 +774,36 @@ input[type=number] {
 .banner img {
   width: 100%;
   height: 200px;
+<<<<<<< HEAD
   object-fit: cover;
   position: relative;
   top: 100px;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+  -o-object-fit: cover;
+     object-fit: cover;
+<<<<<<< HEAD
+=======
+=======
+  object-fit: cover;
+<<<<<<< HEAD
+>>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
+>>>>>>> 5badf5bb2eed3e9ef55ccab2f7d645bfd9e24c24
+=======
+>>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
+>>>>>>> 10e10f8ebb29ccc2882d121bf3efb9b9e001100b
+>>>>>>> dev
+=======
+  object-fit: cover;
+=======
+  -o-object-fit: cover;
+     object-fit: cover;
+>>>>>>> denis
+  position: relative;
+  top: 100px;
+>>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
+>>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
 }
 
 .banner h2 {
@@ -680,11 +813,46 @@ input[type=number] {
   top: 50%;
 }
 
+.container-fluid {
+  padding-top: 15vh;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 .container-fluid .row .col-10 .row {
   width: 100%;
 }
 
 .container-fluid .row .col-10 .row .col-10 {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+  display: -webkit-box;
+  display: -ms-flexbox;
+=======
+<<<<<<< HEAD
+  display: -webkit-box;
+  display: -ms-flexbox;
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+.container-fluid .row .col-10 .row .col-10 {
+>>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
+>>>>>>> 5badf5bb2eed3e9ef55ccab2f7d645bfd9e24c24
+=======
+>>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
+>>>>>>> 10e10f8ebb29ccc2882d121bf3efb9b9e001100b
+>>>>>>> dev
+=======
+>>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> denis
+>>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
   display: flex;
 }
 

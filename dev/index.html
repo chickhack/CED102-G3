@@ -106,34 +106,72 @@
 <!-- 星球百科 -->
         <div class="planet_box" id="planetData">
           <h2 align="center" class="margin_top_10">星星世界</h2>
-          <!-- jQuery -->
-          <div class="tabList margin_top_3 col-12">
-            <button class="button_min selected" @click="content='mars'">火星</button>
-            <button class="button_min" @click="content='moon'">月球</button>
-            <button class="button_min" @click="content='saturn'">土星</button>
-            <button class="button_min" @click="content='saturn'">土星</button>
-            <button class="button_min" @click="content='saturn'">土星</button>
-            <button class="button_min" @click="content='saturn'">土星</button>
-          </div>
-          <div class="separator col-10"></div>
+          <div id="planet">
+            <div class="tabList margin_top_3 col-LG-12 ">
+              <button class="button_min" v-for="planet in planets" v-on:click="state.clickedPlanet = planet">{{planet.name}}</button>
+      
+            </div>
+            <div class="separator col-10"></div>
+          <!-- <component :is="content" class="col-lg-12 col-sm-12"> -->
     
-          <component :is="content"></component>
-          <script type="module" src="./js/mars.js"></script>
+            <div class="col-12 tab-inner" v-if="this.state.clickedPlanet !== null">
+              <div class="taball margin_top_10 col-lg-6 col-md-12">
+                <div class="tab_left">
+                  <h2>{{state.clickedPlanet.name}}</h2>
+                  <h3 class="margin_top_4">
+                    {{state.clickedPlanet.content}}
+                  </h3>
+                </div>
+                <div class="data margin_top_8">
+                  <div class="grav">
+                    <div class="dataTop">
+                      <span class="var">{{state.clickedPlanet.g}}</span>
+                      <span class="data-mid">％</span>
+                    </div>
+                    <p>重力</p>
+                  </div>
+                  <div class="day">
+                  <div class="dataTop">
+                    <span class="var">{{state.clickedPlanet.h}}</span>
+                    <span class="data-low">HR</span>
+                  </div>
+                    <p>一天</p>
+                  </div>
+                  <div class="temp">
+                  <div class="dataTop">
+                    <span class="data-mid">-</span>
+                    <span class="var">{{state.clickedPlanet.t}}</span>
+                    <span class="data-top">F</span>
+                  </div>
+                    <p>溫度</p>
+                  </div>
+                </div>
+                <button class="button_min">更多關於{{state.clickedPlanet.name}}</button>
+              </div>
+              <div class="tab-active margin_top_5 col-lg-6 col-md-4">
+                <img
+                  :src="state.clickedPlanet.image"
+                  style="max-width: 500px"
+                  class="geoplanet"
+                />
+              </div>
+          </div>
+        </div>
         </div>
 <!-- 互動牆 -->
-        <div class="gallery margin_top_3" id="gallery">
+        <div class="gallery" id="gallery">
           <!-- 上 -->
           <div class="gallery_box top col-12">
             <div class="topleft col-5">
-              <div class="col-6 A">
+              <div class="col-lg-6 col-md-12 col-sm-12 A">
                 <img src="./img/home/mars1.jpg" height="100%">
               </div>
               <div class="col-6 B">
                 <img src="./img/home/mars2.jpg" class="img-responsive">
               </div>
             </div>
-            <div class="box topright margin_top_4 col-lg-7 col-md-12">
-              <div class="topSct col-12">
+            <div class="box topright margin_top_4 col-7 ">
+              <div class="topSct col-md-12 col-sm-12">
                 <h2>太空互動</h2>
                 <div class="btn-group" role="group">
                   <button type="button" @click="changeGallery()" class="btn btn-secondary"><</button>
@@ -171,7 +209,7 @@
         </div>
   
 <!-- 商城 -->
-      <div class="shop_box margin_top_10" >
+      <div class="shop_box" >
         <div class="home_shop">
           <h2>星球商城</h2>
           <div class="shopItem margin_top_10">
@@ -268,7 +306,7 @@
         </div>
       </div>
 <!-- 會員待遇 -->
-          <div class="flow_member margin_top_10 ">
+          <div class="flow_member">
             <h2 align="center">歡迎加入太空世界</h2>
             <h3 class="margin_top_3" align="center">加入會員，享受禮遇，與所有玩家同遊宇宙</h3>
               <div class="flowall margin_top_8" align="center">
@@ -366,18 +404,73 @@
       </script>
       <!-- scrollMagic -->
       <script>
-        var controller = new ScrollMagic.Controller();
-        new ScrollMagic.Scene({
-        triggerElement : '#trigger01',
-        duration: '550%'
-    }).on('enter', function(){
-        console.log('enter 進入');
-        $('#nav').css('background-color' , '#0c0d18')
-    }).on('leave', function(){
-        console.log('leave 離開');
-        $('#nav').css('background-color' , '#5f5f5f3a')
-    })
-    .addIndicators().addTo(controller);
+            var controller = new ScrollMagic.Controller();
+            new ScrollMagic.Scene({
+            triggerElement : '#trigger01',
+            duration: '620%'
+        }).on('enter', function(){
+            console.log('enter 進入');
+            $('#nav').css('background-color' , '#0c0d18')
+        }).on('leave', function(){
+            console.log('leave 離開');
+            $('#nav').css('background-color' , '#5f5f5f3a')
+        })
+        .addIndicators().addTo(controller);
+      </script>
+      <!-- 星球百科Vue -->
+      <script>
+        new Vue({
+          el: "#planet",
+          data: {
+            state: {
+            clickedPlanet: null
+            },
+            planets: [{
+              name: "火星",
+              content: "月球大氣以二氧化碳為主，既稀薄又寒冷，其表面特徵讓人聯想起月球上的撞擊坑，以及地球上的山谷、沙漠和極地冰蓋。",
+              g: "38",
+              h:"24",
+              t:"60",
+              image: "./img/planet/mars.png",
+            },{
+              name: "月球",
+              content: "月球大氣以二氧化碳為主，既稀薄又寒冷，其表面特徵讓人聯想起月球上的撞擊坑，以及地球上的山谷、沙漠和極地冰蓋。",
+              g: "20",
+              h:"22",
+              t:"30",
+              image: "./img/planet/moon.png",
+            },{
+              
+              name: "木星",
+              content: "木星大氣以二氧化碳為主，既稀薄又寒冷，其表面特徵讓人聯想起月球上的撞擊坑，以及地球上的山谷、沙漠和極地冰蓋。",
+              g: "15",
+              h:"50",
+              t:"150",
+              image: "./img/planet/jupiter.png",
+            },{
+              name: "木星",
+              content: "木星大氣以二氧化碳為主，既稀薄又寒冷，其表面特徵讓人聯想起月球上的撞擊坑，以及地球上的山谷、沙漠和極地冰蓋。",
+              g: "15",
+              h:"50",
+              t:"150",
+              image: "./img/planet/jupiter.png",
+            },{
+              name: "木星",
+              content: "木星大氣以二氧化碳為主，既稀薄又寒冷，其表面特徵讓人聯想起月球上的撞擊坑，以及地球上的山谷、沙漠和極地冰蓋。",
+              g: "15",
+              h:"50",
+              t:"150",
+              image: "./img/planet/jupiter.png",
+            },{
+              name: "木星",
+              content: "木星大氣以二氧化碳為主，既稀薄又寒冷，其表面特徵讓人聯想起月球上的撞擊坑，以及地球上的山谷、沙漠和極地冰蓋。",
+              g: "15",
+              h:"50",
+              t:"150",
+              image: "./img/planet/jupiter.png",
+            }]
+          },
+        });
       </script>
   </body>
 </html>

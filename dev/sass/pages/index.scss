@@ -319,6 +319,9 @@ button{
     .topright{
         display: flex;
         flex-direction: column;
+        .separator{
+            width: 60%;
+        }
         .topSct{
             display: flex;
             justify-content: space-around;
@@ -378,14 +381,40 @@ button{
     }
 }
 
-@media all and (max-width:1200px) {
+@media all and (max-width:997px) {
     .topleft{
         .B{
             display: none;
         }
     }
+    .topright{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .separator{
+            width: 80%;
+        }
+        .galleryIntro{
+            max-width: 460px;
+        }
+    }
     .bottom{
-        display: none;
+        .bottomleft{
+            .D{
+                display: none;
+            }
+            .E{
+                display: none;
+            }
+        }
+        .bottomright{
+            .F{
+                display: none;
+            }
+            .G{
+                display: none;
+            }
+        }
     }
 
 }
@@ -597,4 +626,11 @@ button{
 }
 
 
+
+
+
+//=========間距
+.flow_member, .shop_box, .gallery, .planet_box{
+    margin-top: 30vh;
+}
 
