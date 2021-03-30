@@ -1,3 +1,5 @@
+const { mapSources } = require("gulp-sourcemaps");
+
 Vue.component("Mars", {
     template: `
         <div id="tab01" class="col-12 tab-inner">
@@ -138,9 +140,19 @@ Vue.component("Mars", {
   });
 
   new Vue({
-    el: "#planetData",
+    el: "#tab",
     data: {
-      content: "mars",
-      isActie: true,
+      // content: "mars",
+      // isActie: true,
+      planet: [{
+        name: "mars",
+        content: "月球大氣以二氧化碳為主，既稀薄又寒冷，其表面特徵讓人聯想起月球上的撞擊坑，以及地球上的山谷、沙漠和極地冰蓋。",
+        g: "38",
+        h:"24",
+        t:"60"
+      },{
+
+      }]
     },
   });
+
