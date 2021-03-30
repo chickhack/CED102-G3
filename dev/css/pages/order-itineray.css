@@ -7,6 +7,12 @@ input[type="number"] {
   -moz-appearance: textfield;
 }
 
+.container-fluid {
+  padding-top: 15vh;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 body {
   background-color: #0c0d18;
   font-family: "Microsoft JhengHei";
@@ -148,8 +154,16 @@ body {
   padding-right: 24px;
 }
 
+.padding_right-5 {
+  padding-right: 48px;
+}
+
 .padding_bottom-1 {
   padding-bottom: 5%;
+}
+
+.padding_bottom-2 {
+  padding-bottom: 16px;
 }
 
 .padding_bottom-20 {
@@ -162,6 +176,10 @@ body {
 
 .margin-bottom-20 {
   margin-bottom: 20px;
+}
+
+.margin-left-12 {
+  margin-left: 88px;
 }
 
 .imgs {
@@ -206,6 +224,12 @@ body {
   padding: 15px;
   text-align: center;
   border: 1px solid #AD6E4A;
+  transition: all 0.5s;
+}
+
+.button_large-1:hover {
+  color: #fff;
+  background-color: #bf896b;
 }
 
 .btn-allAuto {
@@ -247,7 +271,6 @@ body {
 
 .checkbox_custom_label {
   position: relative;
-  font-weight: 900;
 }
 
 .checkbox_custom + .checkbox_custom_label:before {
@@ -280,30 +303,24 @@ form {
 
 form .orderinfo .row {
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 0f160973f4b2bd5854ed4fa7625e61db6af80356
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
-<<<<<<< HEAD
-=======
 =======
   justify-content: center;
   align-content: center;
->>>>>>> 5badf5bb2eed3e9ef55ccab2f7d645bfd9e24c24
->>>>>>> 0f160973f4b2bd5854ed4fa7625e61db6af80356
+>>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
 }
 
 form .orderinfo .row .col-10 {
   background-color: #292B41;
-  border-radius: 5px;
   padding-bottom: 10px;
 }
 
 form .orderinfo .row .col-10 .row {
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -314,7 +331,7 @@ form .orderinfo .row .col-10 .row {
 >>>>>>> 5badf5bb2eed3e9ef55ccab2f7d645bfd9e24c24
 =======
 >>>>>>> 10e10f8ebb29ccc2882d121bf3efb9b9e001100b
->>>>>>> 0f160973f4b2bd5854ed4fa7625e61db6af80356
+>>>>>>> dev
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
@@ -323,19 +340,17 @@ form .orderinfo .row .col-10 .row .col-7 {
   display: -webkit-box;
   display: -ms-flexbox;
 <<<<<<< HEAD
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+>>>>>>> dev
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+<<<<<<< HEAD
+=======
 =======
 =======
 =======
@@ -343,15 +358,19 @@ form .orderinfo .row .col-10 .row .col-7 {
 =======
 =======
 >>>>>>> 10e10f8ebb29ccc2882d121bf3efb9b9e001100b
+=======
+>>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
   justify-content: space-around;
 }
 
 form .orderinfo .row .col-10 .row .col-7 {
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
   display: flex;
   flex-direction: column;
+<<<<<<< HEAD
 >>>>>>> 5badf5bb2eed3e9ef55ccab2f7d645bfd9e24c24
->>>>>>> 0f160973f4b2bd5854ed4fa7625e61db6af80356
+>>>>>>> dev
+=======
+>>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
 }
 
 form .orderinfo .row .col-10 .row .col-7 input {
@@ -376,22 +395,16 @@ form .orderinfo .row .col-10 .row .col-11 {
   display: -ms-flexbox;
   display: flex;
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 0f160973f4b2bd5854ed4fa7625e61db6af80356
   -ms-flex-line-pack: start;
       align-content: flex-start;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-<<<<<<< HEAD
-=======
 =======
   align-content: flex-start;
   flex-direction: column;
->>>>>>> 5badf5bb2eed3e9ef55ccab2f7d645bfd9e24c24
->>>>>>> 0f160973f4b2bd5854ed4fa7625e61db6af80356
+>>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
 }
 
 form .orderinfo .row .col-10 .row .col-11 input {
@@ -408,22 +421,19 @@ form .ltineraryinfo .row {
       -ms-flex-pack: center;
           justify-content: center;
 =======
-<<<<<<< HEAD
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-=======
   justify-content: center;
->>>>>>> 5badf5bb2eed3e9ef55ccab2f7d645bfd9e24c24
->>>>>>> 0f160973f4b2bd5854ed4fa7625e61db6af80356
+>>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
 }
 
 form .ltineraryinfo .row .col-10 .row {
   margin-bottom: 32px;
   background-color: #292B41;
+<<<<<<< HEAD
   border-radius: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
+=======
+>>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -438,6 +448,7 @@ form .ltineraryinfo .row .col-10 .row .col-3 {
 form .ltineraryinfo .row .col-10 .row .col-3 img {
   max-width: 150px;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -447,7 +458,7 @@ form .ltineraryinfo .row .col-10 .row .col-3 img {
 >>>>>>> 5badf5bb2eed3e9ef55ccab2f7d645bfd9e24c24
 =======
 >>>>>>> 10e10f8ebb29ccc2882d121bf3efb9b9e001100b
->>>>>>> 0f160973f4b2bd5854ed4fa7625e61db6af80356
+>>>>>>> dev
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -456,17 +467,16 @@ form .ltineraryinfo .row .col-10 .row .col-7 .row {
   display: -webkit-box;
   display: -ms-flexbox;
 <<<<<<< HEAD
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+>>>>>>> dev
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+<<<<<<< HEAD
+=======
 =======
 =======
 =======
@@ -474,15 +484,19 @@ form .ltineraryinfo .row .col-10 .row .col-7 .row {
 =======
 =======
 >>>>>>> 10e10f8ebb29ccc2882d121bf3efb9b9e001100b
+=======
+>>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
   object-fit: cover;
 }
 
 form .ltineraryinfo .row .col-10 .row .col-7 .row {
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
   display: flex;
   justify-content: space-between;
+<<<<<<< HEAD
 >>>>>>> 5badf5bb2eed3e9ef55ccab2f7d645bfd9e24c24
->>>>>>> 0f160973f4b2bd5854ed4fa7625e61db6af80356
+>>>>>>> dev
+=======
+>>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
   height: 100%;
   width: 100%;
 }
@@ -495,15 +509,11 @@ form .ltineraryinfo .row .col-10 .row .col-7 .row .col-11 {
 }
 
 form .ltineraryinfo .row .col-10 .row .col-7 .row .text-div {
-=======
 <<<<<<< HEAD
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-}
-
-form .ltineraryinfo .row .col-10 .row .col-7 .row .text-div {
 =======
+=======
+=======
+>>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
   align-items: flex-end;
 }
 
@@ -511,10 +521,11 @@ form .ltineraryinfo .row .col-10 .row .col-7 .row .text-div {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 5badf5bb2eed3e9ef55ccab2f7d645bfd9e24c24
 =======
 >>>>>>> 10e10f8ebb29ccc2882d121bf3efb9b9e001100b
->>>>>>> 0f160973f4b2bd5854ed4fa7625e61db6af80356
+>>>>>>> dev
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -547,7 +558,12 @@ form .ltineraryinfo .row .col-10 .row .col-7 .row .text-div {
 =======
 >>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
 >>>>>>> 10e10f8ebb29ccc2882d121bf3efb9b9e001100b
->>>>>>> 0f160973f4b2bd5854ed4fa7625e61db6af80356
+>>>>>>> dev
+=======
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+>>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
   padding: 0px 0;
 }
 
@@ -561,15 +577,6 @@ form .addPay .row {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-=======
-<<<<<<< HEAD
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-=======
-  justify-content: center;
->>>>>>> 5badf5bb2eed3e9ef55ccab2f7d645bfd9e24c24
->>>>>>> 0f160973f4b2bd5854ed4fa7625e61db6af80356
 }
 
 form .addPay .row .col-10 {
@@ -601,7 +608,13 @@ form .addPay .row .col-10 .automena .row .col-10 {
 =======
 >>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
 >>>>>>> 10e10f8ebb29ccc2882d121bf3efb9b9e001100b
->>>>>>> 0f160973f4b2bd5854ed4fa7625e61db6af80356
+>>>>>>> dev
+=======
+  justify-content: center;
+}
+
+form .addPay .row .col-10 .automena .row .col-10 {
+>>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
   display: flex;
 }
 
@@ -619,8 +632,7 @@ form .addPay .row .col-10 .automena .row .col-10 .sss {
 form .addPay .row .col-10 .automena .row .col-10 .sss img {
   width: 100px;
 <<<<<<< HEAD
-  -o-object-fit: cover;
-     object-fit: cover;
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -628,10 +640,13 @@ form .addPay .row .col-10 .automena .row .col-10 .sss img {
 =======
 <<<<<<< HEAD
 >>>>>>> 5badf5bb2eed3e9ef55ccab2f7d645bfd9e24c24
+>>>>>>> dev
   -o-object-fit: cover;
      object-fit: cover;
 }
 
+<<<<<<< HEAD
+=======
 form .addPay .row .col-10 .automena .row .col-10 .sssb:focus .sss {
   background-color: #fff;
 =======
@@ -642,18 +657,17 @@ form .addPay .row .col-10 .automena .row .col-10 .sssb:focus .sss {
      object-fit: cover;
 =======
 >>>>>>> 10e10f8ebb29ccc2882d121bf3efb9b9e001100b
+=======
+>>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
   object-fit: cover;
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> 0f160973f4b2bd5854ed4fa7625e61db6af80356
 }
 
+>>>>>>> dev
 form .addPay .row .col-10 .automena .row .col-10 input {
   display: none;
 }
 
 form .addPay .row .col-10 .automena .row .col-11 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -673,6 +687,7 @@ form .paymethod .row .col-10 .paymethod-automanu .row #paymethod-coin, form .pay
 
 form .paymethod .row .col-10 .paymethod-automanu .row .col-11 {
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
 =======
@@ -696,7 +711,9 @@ form .paymethod .row .col-10 .paymethod-automanu .row .col-11 {
 =======
 >>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
 >>>>>>> 10e10f8ebb29ccc2882d121bf3efb9b9e001100b
->>>>>>> 0f160973f4b2bd5854ed4fa7625e61db6af80356
+>>>>>>> dev
+=======
+>>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -705,6 +722,7 @@ form .paymethod .row .col-10 .paymethod-automanu .row .col-11 {
 
 form .paymethod .row .col-10 .paymethod-automanu .row .col-12 .paymethod-automanu-car-automanu .row {
 <<<<<<< HEAD
+<<<<<<< HEAD
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -733,7 +751,10 @@ form .paymethod .row .col-10 .paymethod-automanu .row .col-12 .paymethod-automan
 =======
 >>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
 >>>>>>> 10e10f8ebb29ccc2882d121bf3efb9b9e001100b
->>>>>>> 0f160973f4b2bd5854ed4fa7625e61db6af80356
+>>>>>>> dev
+=======
+  justify-content: space-evenly;
+>>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
 }
 
 form .paymethod .row .col-10 .paymethod-automanu .row .col-12 .paymethod-automanu-car-automanu .row input {
@@ -741,7 +762,6 @@ form .paymethod .row .col-10 .paymethod-automanu .row .col-12 .paymethod-automan
   font-size: 16px;
   background-color: #292B41;
   border: 1px solid #AD6E4A;
-  border-radius: 5px;
   padding: 5px 10px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -764,6 +784,7 @@ form .paymethod .row .col-10 .paymethod-automanu .row .col-5 input.paymethod-coi
 
 form .paymethod .row .col-10 .paymethod-automanu .row .col-4 {
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
 =======
@@ -787,7 +808,9 @@ form .paymethod .row .col-10 .paymethod-automanu .row .col-4 {
 =======
 >>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
 >>>>>>> 10e10f8ebb29ccc2882d121bf3efb9b9e001100b
->>>>>>> 0f160973f4b2bd5854ed4fa7625e61db6af80356
+>>>>>>> dev
+=======
+>>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -806,6 +829,7 @@ form .orderDetails .row {
 
 form .orderDetails .row .allpay-div {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -815,7 +839,7 @@ form .orderDetails .row .allpay-div {
 >>>>>>> 5badf5bb2eed3e9ef55ccab2f7d645bfd9e24c24
 =======
 >>>>>>> 10e10f8ebb29ccc2882d121bf3efb9b9e001100b
->>>>>>> 0f160973f4b2bd5854ed4fa7625e61db6af80356
+>>>>>>> dev
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -842,7 +866,11 @@ form .orderDetails .row .allpay-div {
   justify-content: flex-end;
 >>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
 >>>>>>> 10e10f8ebb29ccc2882d121bf3efb9b9e001100b
->>>>>>> 0f160973f4b2bd5854ed4fa7625e61db6af80356
+>>>>>>> dev
+=======
+  display: flex;
+  justify-content: flex-end;
+>>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
 }
 
 form .orderDetails .row .col-10 .orderDetails-automanu .col-3 {
@@ -869,12 +897,7 @@ form .orderDetails .row .col-10 .orderDetails-automanu .col-11 .payadd .orderDet
   display: -webkit-box;
   display: -ms-flexbox;
 =======
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-=======
->>>>>>> 5badf5bb2eed3e9ef55ccab2f7d645bfd9e24c24
->>>>>>> 0f160973f4b2bd5854ed4fa7625e61db6af80356
+>>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
   display: flex;
   width: 100%;
 }
@@ -885,6 +908,7 @@ form .orderDetails .row .col-10 .orderDetails-automanu .col-11 .orderDetails-aut
 
 form .orderDetails .row .col-10 .orderDetails-automanu .col-11 .orderDetails-automanu-textdiv .textbox {
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
 =======
@@ -908,7 +932,9 @@ form .orderDetails .row .col-10 .orderDetails-automanu .col-11 .orderDetails-aut
 =======
 >>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
 >>>>>>> 10e10f8ebb29ccc2882d121bf3efb9b9e001100b
->>>>>>> 0f160973f4b2bd5854ed4fa7625e61db6af80356
+>>>>>>> dev
+=======
+>>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
   display: flex;
   width: 100%;
 }
@@ -918,16 +944,12 @@ form .orderDetails .row .col-10 .orderDetails-automanu .col-7 {
   display: -webkit-box;
   display: -ms-flexbox;
 =======
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-=======
->>>>>>> 5badf5bb2eed3e9ef55ccab2f7d645bfd9e24c24
->>>>>>> 0f160973f4b2bd5854ed4fa7625e61db6af80356
+>>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
   display: flex;
 }
 
 form .orderDetails .row .col-10 .orderDetails-automanu .col-7 .row {
+<<<<<<< HEAD
 <<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
@@ -952,7 +974,9 @@ form .orderDetails .row .col-10 .orderDetails-automanu .col-7 .row {
 =======
 >>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
 >>>>>>> 10e10f8ebb29ccc2882d121bf3efb9b9e001100b
->>>>>>> 0f160973f4b2bd5854ed4fa7625e61db6af80356
+>>>>>>> dev
+=======
+>>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -997,5 +1021,11 @@ form .orderDetails .row .col-10 .btn-orderDetails::before {
   width: 20px;
   height: 20px;
   padding-right: 8px;
+}
+
+@media (max-width: 1200px) {
+  #fl-traffic {
+    margin-left: 24px;
+  }
 }
 /*# sourceMappingURL=order-itineray.css.map */

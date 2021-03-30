@@ -5,6 +5,11 @@ input::-webkit-inner-spin-button{
 input[type="number"]{
     -moz-appearance: textfield;
 }
+.container-fluid{
+    padding-top: 15vh;
+    padding-left: 0px;
+    padding-right: 0px;
+}
 body{
     background-color: #0c0d18;
     font-family: "Microsoft JhengHei";
@@ -146,8 +151,14 @@ body{
 .padding_right-3{
     padding-right: 24px;
 }
+.padding_right-5{
+    padding-right: 48px;
+}
 .padding_bottom-1{
     padding-bottom: 5%;
+}
+.padding_bottom-2{
+    padding-bottom: 16px;
 }
 .padding_bottom-20{
     padding-bottom: 20px;
@@ -157,6 +168,9 @@ body{
 }
 .margin-bottom-20{
     margin-bottom: 20px;
+}
+.margin-left-12{
+    margin-left: 88px;
 }
 // 交通工具用縮圖
 .imgs{
@@ -200,6 +214,11 @@ body{
     padding: 15px;
     text-align: center;
     border: 1px solid #AD6E4A;
+    transition: all 0.5s;
+}
+.button_large-1:hover{
+    color: #fff;
+    background-color: lighten(#ad6e4a,10%);
 }
 //全部縮放btn的樣式
 .btn-allAuto{
@@ -237,7 +256,8 @@ body{
 }
 .checkbox_custom_label{
     position: relative;
-    font-weight: 900;
+    // font-weight: 900;
+
 }
 .checkbox_custom + .checkbox_custom_label:before{
     content: '';
@@ -259,6 +279,9 @@ body{
 .checkbox_custom:focus + .checkbox_custom-label{
     outline: 1px solid #ddd;
 }
+#row-traffic{
+    // justify-content: start;
+}
 //主內容
 form{
     padding: 0 0 0 0;
@@ -271,7 +294,7 @@ form{
                     align-content: center;     
                     .col-10{
                         background-color: #292B41;
-                        border-radius: 5px;
+                        // border-radius: 5px;
                         padding-bottom: 10px;
                             
                             
@@ -338,7 +361,7 @@ form{
                     .row{
                         margin-bottom: 32px;
                         background-color:#292B41;
-                        border-radius: 5px;
+                        // border-radius: 5px;
                         display: flex;
                         justify-content:center;
                         // align-content: center;
@@ -419,7 +442,7 @@ form{
                 justify-content: center;
                 .col-10{
                    
-                    border-radius: 5px;
+                    // border-radius: 5px;
                     
                     .automena{
                         .row{
@@ -548,7 +571,7 @@ form{
                                         font-size: 16px;
                                         background-color: #292B41;
                                         border:1px solid #AD6E4A;
-                                        border-radius: 5px;
+                                        // border-radius: 5px;
                                         padding: 5px 10px;
                                         transition: all 0.5s;
                                         &:focus{
@@ -677,4 +700,8 @@ form{
     }
 }
 
-
+@media(max-width:1200px){
+    #fl-traffic{
+        margin-left: 24px;
+    }
+}
