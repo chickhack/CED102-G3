@@ -562,12 +562,6 @@ body {
   padding-bottom: 0px;
 }
 
-.container {
-  max-width: 900px;
-  margin: 0 auto;
-  padding-bottom: 0px;
-}
-
 @media all and (max-width: 768px) {
   .container {
     margin: 0 30px;

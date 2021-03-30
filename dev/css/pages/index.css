@@ -596,6 +596,7 @@ button {
   color: white;
   font-family: "Haettenschweiler", sans-serif;
   letter-spacing: 15px;
+  opacity: 0.8;
 }
 
 .banner .scroll {
@@ -733,6 +734,7 @@ div.planet_top div.word .addin img.plus {
 
 div.planet_top div.word .addin:hover {
   background-color: #bf896b;
+  color: #5f5f5f3a;
 }
 
 @media all and (max-width: 1200px) {
