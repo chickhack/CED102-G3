@@ -69,9 +69,9 @@ $lineHeight: (
 }
 
 @include push(10, left, padding);
-@include push(10, top, padding);
+@include push(15, top, padding);
 @include push(10, left, margin);
-@include push(10, top, margin);
+@include push(15, top, margin);
 
 //margin 左右置中
 @mixin mx-auto(){
@@ -136,4 +136,3 @@ $breakpoint_each: (
     // overflow-x: hidden;
     padding-top: 15vh;
 }
-
