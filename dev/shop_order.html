@@ -18,9 +18,9 @@
             <div class="order" id="app">
                 <h3>商品購買明細</h3>
                 <ul class="margin_top_3">
-                    <li v-for="product in products" class="margin_top_3">
+                    <li v-for="product in products" class="margin_top_5">
                         <div class="imgWord">
-                            <img :src="product.src" class="prod">
+                            <a href="product.html" class="prod"><img :src="product.src"></a>
                             <div class="imgRight">
                                 <div class="name">
                                     <p>{{product.name}}</p>
@@ -38,25 +38,10 @@
                         </div>
                     </li>
                 </ul>
-                <h3 class="margin_top_4">訂單明細</h3>
-                <div class="detail margin_top_2">
-                    <div class="total">
-                        <p class="h3">支付金額</p>
-                        <p class="h3">$ {{totalPrice}}</p>
-                    </div>
-                    <div class="integral margin_top_2">
-                        <p>可累積積分</p>
-                        <div class="count">
-                            <img src="./img/s.png" class="icon">
-                            <p>+{{totalIntegral}}</p>
-                        </div>
-                    </div>
-                    <small class="margin_top_1">累積後目前有50000積分</small>
-                </div>
             </div>
         </section>
         <section class="orderer">
-            <form action="">
+            <form action="product.html" method="GET" id="form1">
                 <div class="orderer_form">
                     <div class="arrow">
                         <img src="./img/date-chevron-down.svg" alt="">
@@ -78,7 +63,7 @@
                         </div>
                         <div class="input_group">
                             <label for="oidentity">身分證字號</label>
-                            <input type="text" class="margin_top_1" name="oidentity" id="oidentity" maxlength="10">
+                            <input type="text" class="margin_top_1 identity" name="oidentity" id="oidentity" maxlength="10">
                         </div>
                         <div class="input_group long">
                             <label for="oemail">電子信箱</label>
@@ -87,7 +72,7 @@
                     </div>
                 </div>
             </form>
-            <form class="recipient">
+            <form action="shop.html" class="recipient" method="GET" id="form2">
                 <div class="arrow">
                     <img src="./img/date-chevron-down.svg" alt="">
                     <h3 class="margin_left_1 recipient_click">收件人資訊</h3>
@@ -107,7 +92,7 @@
                     </div>
                     <div class="input_group">
                         <label for="identity">身分證字號</label>
-                        <input type="text" class="margin_top_1" name="identity" id="identity" maxlength="10">
+                        <input type="text" class="margin_top_1 identity" name="identity" id="identity" maxlength="10">
                     </div>
                     <div class="input_group long">
                         <label for="email">電子信箱</label>
@@ -120,7 +105,7 @@
                 </div>
             </form>
             <h3 class="payTitle">付款方式</h3>
-            <form class="payment">
+            <form action="shop.html" class="payment" method="GET" id="form3">
                 <div class="arrow">
                     <img src="./img/date-chevron-down.svg" alt="">
                     <h3 class="margin_left_1 orderer_click">請選擇付款方式</h3>
@@ -154,12 +139,28 @@
                     </div>
                 </div>
             </form>
+            <h3 class="margin_top_4">訂單明細</h3>
+            <div class="detail margin_top_2">
+                <div class="total">
+                    <p class="h3">支付金額</p>
+                    <p class="h3">$ 20000</p>
+                </div>
+                <div class="integral margin_top_2">
+                    <p>可累積積分</p>
+                    <div class="count">
+                        <img src="./img/s.png" class="icon">
+                        <p>+12000</p>
+                    </div>
+                </div>
+                <small class="margin_top_1">累積後目前有50000積分</small>
+            </div>
             <input type="submit" value="確認付款" class="button_min">
         </section>
         @@include("./layout/footer.html")
     </div>
     <script src="./js/retract.js"></script>
     <script src="./js/input_format.js"></script>
+    <script src="./js/check.js"></script>
     <script>
         let vm = new Vue({
             el: "#app",
@@ -185,8 +186,6 @@
                     integral: 3000,
                     price: 5000,
                 }],
-                totalPrice: 20000,
-                totalIntegral: 12000
             }
         })
     </script>
