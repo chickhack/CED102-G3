@@ -9,20 +9,15 @@ body {
 }
 
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .grid {
   padding-top: 5%;
-<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-=======
-  display: flex;
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 5badf5bb2eed3e9ef55ccab2f7d645bfd9e24c24
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: center;
@@ -31,19 +26,6 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
-<<<<<<< HEAD
-=======
-=======
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: start;
->>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
->>>>>>> 5badf5bb2eed3e9ef55ccab2f7d645bfd9e24c24
-=======
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: start;
->>>>>>> 3dad026ace0b41a32fd8a158fb1c574e21ce5fa3
 }
 
 .grid-item {
@@ -56,21 +38,8 @@ body {
 
 .grid .grid-item img {
   width: 100%;
-<<<<<<< HEAD
-<<<<<<< HEAD
   -o-object-fit: cover;
      object-fit: cover;
-=======
-<<<<<<< HEAD
-  -o-object-fit: cover;
-     object-fit: cover;
-=======
-  object-fit: cover;
->>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
->>>>>>> 5badf5bb2eed3e9ef55ccab2f7d645bfd9e24c24
-=======
-  object-fit: cover;
->>>>>>> 3dad026ace0b41a32fd8a158fb1c574e21ce5fa3
 }
 
 .grid .grid-item:nth-child(n+11) {
@@ -78,6 +47,8 @@ body {
 }
 
 .action-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   bottom: 44px;
   background-color: black;
@@ -134,6 +105,8 @@ body {
 }
 
 .article {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -148,6 +121,8 @@ body {
 }
 
 .article_2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-top: 10px;
 }
@@ -191,7 +166,9 @@ footer.padding_top_5 {
 }
 
 .row {
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 button.turnoff_lightbox {
@@ -250,6 +227,8 @@ button.turnoff_lightbox img {
 }
 
 .member_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 15px 15px 0 15px;
 }
@@ -314,6 +293,8 @@ button.turnoff_lightbox img {
 }
 
 .message_1, .message_2, .message_3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 0 15px 0 15px;
   margin-bottom: 15px;
