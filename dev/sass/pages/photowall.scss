@@ -39,7 +39,7 @@ body{
 }
 
 .grid-item{
-  margin: 10px;
+  margin: 12.5px;
   border: 1px solid #ad6e4a36;
   border-radius: 5px;
   width: 250px;
@@ -165,6 +165,7 @@ footer.padding_top_5{
   display: none;
   position: absolute;
   z-index: 2;
+  top: 100px;
 }
 .row{
   justify-content: center;
@@ -225,8 +226,7 @@ button.turnoff_lightbox img{
   font-weight: 900;
 }
 .member_info a button{
-  margin-top: 15px;
-  padding: 5px;
+  margin-top: 10px;
 }
 .member_info a button:hover{
   background-color: lighten($gold, 10%);
