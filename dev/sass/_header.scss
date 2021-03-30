@@ -49,12 +49,14 @@ nav{
     .burger{
         display: none;
         cursor: pointer;
+        margin-left: 8px;
     }
     .burger div{
         width: 25px;
         height: 2px;
         background-color: $white;
         margin: 5px;
+        transition: all .3s ease;
     }
 }
 
@@ -67,9 +69,10 @@ nav{
             height: 92vh;
             top: 12vh;
             background-color: $gold;
-            @include flex_middle();
+            display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: space-around;
+            align-items: center;
             width: 30%;
             transition: all 1s ease-in;
             li{
@@ -113,7 +116,7 @@ nav{
         .nav-icons{
             width: 50%;
             margin-left: 16px;
-            justify-content: space-around;
+            justify-content: space-between;
             .icon{
                 margin: 0;
             }
@@ -130,6 +133,16 @@ nav{
         opacity: 1;
         transform: translateX(0px);
     }
+}
+
+.toggle .line1{
+        transform: rotate(45deg) translate(4px, 6px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(-45deg) translate(3px, -6px);
 }
 
 // @media (max-width: 768px){
