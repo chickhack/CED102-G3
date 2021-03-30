@@ -79,6 +79,7 @@ body {
   background-color: #0c0d18;
   overflow-x: hidden;
 <<<<<<< HEAD
+<<<<<<< HEAD
   -webkit-user-select: none;
   -moz-user-select: none;
   -o-user-select: none;
@@ -95,6 +96,13 @@ body {
   -o-user-select: none;
   user-select: none;
 >>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
+=======
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -ms-user-select: none;
+      user-select: none;
+>>>>>>> denis
 }
 
 h1, .h1 {
@@ -366,12 +374,16 @@ nav {
   display: -ms-flexbox;
   display: flex;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> denis
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -383,6 +395,8 @@ nav {
   justify-content: center;
   align-items: center;
 >>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
+=======
+>>>>>>> denis
   justify-content: center;
   background-color: #0c0d18;
   position: fixed;
@@ -427,6 +441,9 @@ nav .nav-links {
   display: -ms-flexbox;
   display: flex;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> denis
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -436,6 +453,7 @@ nav .nav-links {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -449,6 +467,8 @@ nav .nav-links {
   align-items: center;
   justify-content: flex-end;
 >>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
+=======
+>>>>>>> denis
   width: 75%;
 }
 
@@ -485,6 +505,7 @@ nav .burger div {
   height: 2px;
   background-color: #ffffff;
   margin: 5px;
+  -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
 
@@ -504,9 +525,12 @@ nav .burger div {
     display: flex;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> dev
+=======
+>>>>>>> denis
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -516,6 +540,7 @@ nav .burger div {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -529,6 +554,8 @@ nav .burger div {
     justify-content: space-around;
     align-items: center;
 >>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
+=======
+>>>>>>> denis
     width: 30%;
     -webkit-transition: all 1s ease-in;
     transition: all 1s ease-in;
@@ -572,6 +599,7 @@ nav .burger div {
     margin-left: 16px;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -587,6 +615,11 @@ nav .burger div {
 =======
     justify-content: space-between;
 >>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
+=======
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+>>>>>>> denis
   }
   nav .nav-icons .icon {
     margin: 0;
@@ -620,7 +653,8 @@ nav .burger div {
 }
 
 .toggle .line1 {
-  transform: rotate(45deg) translate(4px, 6px);
+  -webkit-transform: rotate(45deg) translate(4px, 6px);
+          transform: rotate(45deg) translate(4px, 6px);
 }
 
 .toggle .line2 {
@@ -628,7 +662,8 @@ nav .burger div {
 }
 
 .toggle .line3 {
-  transform: rotate(-45deg) translate(3px, -6px);
+  -webkit-transform: rotate(-45deg) translate(3px, -6px);
+          transform: rotate(-45deg) translate(3px, -6px);
 }
 
 footer {
@@ -681,6 +716,7 @@ footer .footer_moon {
   left: 50%;
   max-width: 40%;
 <<<<<<< HEAD
+<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 <<<<<<< HEAD
@@ -692,6 +728,10 @@ footer .footer_moon {
 =======
   transform: translateX(-50%);
 >>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
+=======
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+>>>>>>> denis
 }
 
 footer .smoke {
@@ -701,6 +741,7 @@ footer .smoke {
   width: 100%;
   height: 80%;
 <<<<<<< HEAD
+<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 <<<<<<< HEAD
@@ -712,6 +753,10 @@ footer .smoke {
 =======
   transform: translateX(-50%);
 >>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
+=======
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+>>>>>>> denis
 }
 
 @media (max-width: 768px) {
@@ -807,6 +852,7 @@ button {
   display: -ms-flexbox;
   display: flex;
 <<<<<<< HEAD
+<<<<<<< HEAD
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -819,6 +865,11 @@ button {
 =======
   justify-content: center;
 >>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
+=======
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+>>>>>>> denis
 }
 
 .banner .slogan p {
@@ -860,10 +911,14 @@ button {
   display: -ms-flexbox;
   display: flex;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> denis
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -873,6 +928,8 @@ button {
 =======
   flex-direction: column;
 >>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
+=======
+>>>>>>> denis
 }
 
 .home_intro h2 {
@@ -1003,6 +1060,7 @@ div.planet_top div.word .addin:hover {
 
 .tab-inner {
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
 <<<<<<< HEAD
@@ -1012,6 +1070,10 @@ div.planet_top div.word .addin:hover {
 >>>>>>> dev
 =======
 >>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> denis
   display: flex;
 }
 
@@ -1020,10 +1082,14 @@ div.planet_top div.word .addin:hover {
   display: -ms-flexbox;
   display: flex;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> denis
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -1033,6 +1099,8 @@ div.planet_top div.word .addin:hover {
 =======
   flex-direction: column;
 >>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
+=======
+>>>>>>> denis
   text-align: left;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1145,6 +1213,7 @@ div.planet_top div.word .addin:hover {
 
 .gallery .gallery_box {
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
 <<<<<<< HEAD
@@ -1154,10 +1223,15 @@ div.planet_top div.word .addin:hover {
 >>>>>>> dev
 =======
 >>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> denis
   display: flex;
 }
 
 .gallery .topleft {
+<<<<<<< HEAD
 <<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1175,15 +1249,28 @@ div.planet_top div.word .addin:hover {
 =======
 =======
 >>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> denis
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   max-height: 300px;
+<<<<<<< HEAD
   align-items: flex-end;
 <<<<<<< HEAD
 >>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
 >>>>>>> dev
 =======
 >>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
+=======
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+>>>>>>> denis
 }
 
 .gallery .topleft .A {
@@ -1206,12 +1293,20 @@ div.planet_top div.word .addin:hover {
 
 .gallery .topright {
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
 =======
 >>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> denis
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 <<<<<<< HEAD
@@ -1233,13 +1328,20 @@ div.planet_top div.word .addin:hover {
 }
 
 .gallery .topright .topSct {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
   justify-content: space-around;
 <<<<<<< HEAD
 >>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
 >>>>>>> dev
 =======
 >>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
+=======
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+>>>>>>> denis
 }
 
 .gallery .topright button.btn {
@@ -1249,6 +1351,7 @@ div.planet_top div.word .addin:hover {
 }
 
 .gallery .topright .galleryIntro {
+<<<<<<< HEAD
 <<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1267,6 +1370,14 @@ div.planet_top div.word .addin:hover {
   display: flex;
   justify-content: center;
 >>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+>>>>>>> denis
 }
 
 .gallery .topright .galleryIntro h5 {
@@ -1275,6 +1386,7 @@ div.planet_top div.word .addin:hover {
 }
 
 .gallery .bottom {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -1298,17 +1410,32 @@ div.planet_top div.word .addin:hover {
 <<<<<<< HEAD
 =======
   flex-direction: row;
-}
-
-.gallery .bottom .bottomleft {
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> dev
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+>>>>>>> denis
+}
+
+.gallery .bottom .bottomleft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> dev
+=======
+>>>>>>> denis
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -1332,6 +1459,8 @@ div.planet_top div.word .addin:hover {
 =======
 =======
   flex-direction: row;
+=======
+>>>>>>> denis
   max-height: 300px;
 }
 
@@ -1354,6 +1483,8 @@ div.planet_top div.word .addin:hover {
 }
 
 .gallery .bottom .bottomright {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -1372,9 +1503,16 @@ div.planet_top div.word .addin:hover {
     display: none;
   }
   .topright {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .topright .separator {
     width: 80%;
@@ -1398,6 +1536,7 @@ div.planet_top div.word .addin:hover {
 
 .home_shop {
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1416,6 +1555,15 @@ div.planet_top div.word .addin:hover {
   display: flex;
   flex-direction: column;
 >>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+>>>>>>> denis
 }
 
 .home_shop .button_min {
@@ -1449,6 +1597,7 @@ div.planet_top div.word .addin:hover {
   top: 0;
   left: 0;
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1471,6 +1620,17 @@ div.planet_top div.word .addin:hover {
   justify-content: center;
   align-items: center;
 >>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+>>>>>>> denis
 }
 
 .home_shop .shopItem .hovereffect img {
@@ -1478,14 +1638,22 @@ div.planet_top div.word .addin:hover {
   position: relative;
   max-width: none;
 <<<<<<< HEAD
+<<<<<<< HEAD
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, -webkit-transform 0.35s;
 =======
 >>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
 =======
 >>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
+=======
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, -webkit-transform 0.35s;
+>>>>>>> denis
   transition: opacity 0.35s, transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
+  -webkit-transform: translate3d(-10px, 0, 0);
   transform: translate3d(-10px, 0, 0);
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   -webkit-backface-visibility: hidden;
@@ -1496,6 +1664,9 @@ div.planet_top div.word .addin:hover {
 >>>>>>> dev
 =======
 >>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
+=======
+  -webkit-backface-visibility: hidden;
+>>>>>>> denis
   backface-visibility: hidden;
 }
 
@@ -1503,6 +1674,7 @@ div.planet_top div.word .addin:hover {
   opacity: 0.4;
   filter: alpha(opacity=40);
 <<<<<<< HEAD
+<<<<<<< HEAD
   -webkit-transform: translate3d(0, 0, 0);
 <<<<<<< HEAD
 =======
@@ -1511,11 +1683,15 @@ div.planet_top div.word .addin:hover {
 >>>>>>> dev
 =======
 >>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
+=======
+  -webkit-transform: translate3d(0, 0, 0);
+>>>>>>> denis
   transform: translate3d(0, 0, 0);
 }
 
 .home_shop .shopItem .hovereffect:hover h2:after {
 <<<<<<< HEAD
+<<<<<<< HEAD
   -webkit-transform: translate3d(0, 0, 0);
 <<<<<<< HEAD
 =======
@@ -1524,6 +1700,9 @@ div.planet_top div.word .addin:hover {
 >>>>>>> dev
 =======
 >>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
+=======
+  -webkit-transform: translate3d(0, 0, 0);
+>>>>>>> denis
   transform: translate3d(0, 0, 0);
 }
 
@@ -1531,6 +1710,7 @@ div.planet_top div.word .addin:hover {
   color: #FFF;
   opacity: 0;
   filter: alpha(opacity=0);
+<<<<<<< HEAD
 <<<<<<< HEAD
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, -webkit-transform 0.35s;
@@ -1546,12 +1726,20 @@ div.planet_top div.word .addin:hover {
 =======
   transition: opacity 0.35s, transform 0.35s;
 >>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
+=======
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
+  -webkit-transform: translate3d(100%, 0, 0);
+>>>>>>> denis
   transform: translate3d(100%, 0, 0);
 }
 
 .home_shop .shopItem .hovereffect:hover a, .home_shop .shopItem .hovereffect:hover h2 {
   opacity: 1;
   filter: alpha(opacity=100);
+<<<<<<< HEAD
 <<<<<<< HEAD
   -webkit-transform: translate3d(0, 0, 0);
 <<<<<<< HEAD
@@ -1561,6 +1749,9 @@ div.planet_top div.word .addin:hover {
 >>>>>>> dev
 =======
 >>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
+=======
+  -webkit-transform: translate3d(0, 0, 0);
+>>>>>>> denis
   transform: translate3d(0, 0, 0);
 }
 
@@ -1581,6 +1772,7 @@ div.planet_top div.word .addin:hover {
 .home_shop .shopItem .item2 .hovereffect {
   z-index: 1;
 <<<<<<< HEAD
+<<<<<<< HEAD
   -webkit-transform: translate(110%, -20%);
           transform: translate(110%, -20%);
 <<<<<<< HEAD
@@ -1592,6 +1784,10 @@ div.planet_top div.word .addin:hover {
 =======
   transform: translate(110%, -20%);
 >>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
+=======
+  -webkit-transform: translate(110%, -20%);
+          transform: translate(110%, -20%);
+>>>>>>> denis
   max-height: 450px;
   max-width: 220px;
 }
@@ -1601,6 +1797,7 @@ div.planet_top div.word .addin:hover {
 }
 
 .home_shop .shopItem .item3 .hovereffect {
+<<<<<<< HEAD
 <<<<<<< HEAD
   -webkit-transform: translate(150%, -100%);
           transform: translate(150%, -100%);
@@ -1613,12 +1810,17 @@ div.planet_top div.word .addin:hover {
 =======
   transform: translate(150%, -100%);
 >>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
+=======
+  -webkit-transform: translate(150%, -100%);
+          transform: translate(150%, -100%);
+>>>>>>> denis
   max-height: 270px;
   max-width: 275px;
 }
 
 .home_shop .shopItem .item4 .hovereffect {
   z-index: 1;
+<<<<<<< HEAD
 <<<<<<< HEAD
   -webkit-transform: translate(255%, -260%);
           transform: translate(255%, -260%);
@@ -1631,6 +1833,10 @@ div.planet_top div.word .addin:hover {
 =======
   transform: translate(255%, -260%);
 >>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
+=======
+  -webkit-transform: translate(255%, -260%);
+          transform: translate(255%, -260%);
+>>>>>>> denis
   max-height: 270px;
   max-width: 280px;
 }
@@ -1640,6 +1846,7 @@ div.planet_top div.word .addin:hover {
 }
 
 .home_shop .shopItem .item5 .hovereffect {
+<<<<<<< HEAD
 <<<<<<< HEAD
   -webkit-transform: translate(260%, -310%);
           transform: translate(260%, -310%);
@@ -1652,6 +1859,10 @@ div.planet_top div.word .addin:hover {
 =======
   transform: translate(260%, -310%);
 >>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
+=======
+  -webkit-transform: translate(260%, -310%);
+          transform: translate(260%, -310%);
+>>>>>>> denis
   max-height: 296px;
   max-width: 300px;
 }
@@ -1669,8 +1880,12 @@ div.planet_top div.word .addin:hover {
     display: none;
   }
   .home_shop .shopRWD {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .home_shop .shopRWD .shop_carousel {
     display: block;
@@ -1685,6 +1900,7 @@ div.planet_top div.word .addin:hover {
 
 .flow_member {
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1698,25 +1914,45 @@ div.planet_top div.word .addin:hover {
 =======
 =======
 >>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> denis
   display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.flow_member .flowall {
-  display: flex;
-  justify-content: center;
-  column-gap: 10%;
-}
-
-.flow_member .flowall .flow {
-  display: flex;
-<<<<<<< HEAD
-<<<<<<< HEAD
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.flow_member .flowall {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 10%;
+          column-gap: 10%;
+}
+
+.flow_member .flowall .flow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> denis
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -1726,6 +1962,8 @@ div.planet_top div.word .addin:hover {
 =======
   flex-direction: column;
 >>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
+=======
+>>>>>>> denis
   text-align: center;
 }
 
@@ -1752,18 +1990,24 @@ div.planet_top div.word .addin:hover {
 }
 
 .flow_member .memberbtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> dev
+=======
+>>>>>>> denis
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -1775,6 +2019,8 @@ div.planet_top div.word .addin:hover {
   justify-content: center;
   align-items: center;
 >>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
+=======
+>>>>>>> denis
   margin-bottom: 70px;
 }
 

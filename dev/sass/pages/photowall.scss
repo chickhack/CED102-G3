@@ -1,24 +1,24 @@
-@import "../reset";
-@import "../base";
-@import "../header";
-@import "../footer";
-body{
-  font-family: "Haettenschweiler","Microsoft JhengHei", sans-serif;
-  color: #C9ADA7;
-  background-color: #0c0d18;
-}
-
+@import "../all.scss";
 .container{
   position: relative;
 }
-.container_fluid{
+.container-fluid{
   padding: 0;
   margin-top: 15vh;
 }
 *{
   box-sizing: border-box;
 }
-
+.top_photo{
+  max-width: 1100px;
+  text-align: center;
+  margin: auto;
+}
+.top_photo img{
+  height: 240px;
+  width: 100%;
+  object-fit: cover;
+}
 .grid{
   display: flex;
   flex-wrap: wrap;
@@ -26,10 +26,11 @@ body{
   align-items: start;
   max-width: 1100px;
   margin: 0 auto;
+  margin-top:40px;
 }
 
 .grid-item{
-  margin: 10px;
+  margin: 12.5px;
   border: 1px solid #ad6e4a36;
   border-radius: 5px;
   width: 250px;
@@ -77,16 +78,16 @@ body{
   max-width: 35px;
 }
 .article_all .article .name{
-  line-height: 78px;
+  line-height: 60px;
   color: #fff;
   margin-right: 10px;
   font-weight: 900;
 }
 .post_time{
-  line-height: 78px;
+  line-height: 60px;
   color: white;
   padding: 0 15px;
-  margin-left: 35px;
+  // margin-left: 35px;
   letter-spacing: 2px;
 }
 .article_all{
@@ -116,12 +117,15 @@ body{
 }
 
 .button button{
-  color:#AD6E4A;
+  color:white;
   border: 1px solid #ad6e4afb;
   padding: 15px;
   margin: 30px 0 80px 0;
   background-color: transparent;
   outline: none;
+}
+.button button:hover{
+  background:#ad6e4a;;
 }
 
 .col-md-1 {
@@ -152,6 +156,7 @@ footer.padding_top_5{
   display: none;
   position: absolute;
   z-index: 2;
+  top: 100px;
 }
 .row{
   justify-content: center;
@@ -212,8 +217,10 @@ button.turnoff_lightbox img{
   font-weight: 900;
 }
 .member_info a button{
-  margin-top: 15px;
-  padding: 5px;
+  margin-top: 10px;
+}
+.member_info a button:hover{
+  background-color: lighten($gold, 10%);
 }
 .post_text{
   color: white;

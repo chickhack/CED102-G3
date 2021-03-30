@@ -79,6 +79,7 @@ body {
   background-color: #0c0d18;
   overflow-x: hidden;
 <<<<<<< HEAD
+<<<<<<< HEAD
   -webkit-user-select: none;
   -moz-user-select: none;
   -o-user-select: none;
@@ -95,6 +96,13 @@ body {
   -o-user-select: none;
   user-select: none;
 >>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
+=======
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -ms-user-select: none;
+      user-select: none;
+>>>>>>> denis
 }
 
 h1, .h1 {
@@ -366,12 +374,16 @@ nav {
   display: -ms-flexbox;
   display: flex;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> denis
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -383,6 +395,8 @@ nav {
   justify-content: center;
   align-items: center;
 >>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
+=======
+>>>>>>> denis
   justify-content: center;
   background-color: #0c0d18;
   position: fixed;
@@ -427,6 +441,9 @@ nav .nav-links {
   display: -ms-flexbox;
   display: flex;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> denis
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -436,6 +453,7 @@ nav .nav-links {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -449,6 +467,8 @@ nav .nav-links {
   align-items: center;
   justify-content: flex-end;
 >>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
+=======
+>>>>>>> denis
   width: 75%;
 }
 
@@ -485,6 +505,7 @@ nav .burger div {
   height: 2px;
   background-color: #ffffff;
   margin: 5px;
+  -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
 
@@ -504,9 +525,12 @@ nav .burger div {
     display: flex;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> dev
+=======
+>>>>>>> denis
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -516,6 +540,7 @@ nav .burger div {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -529,6 +554,8 @@ nav .burger div {
     justify-content: space-around;
     align-items: center;
 >>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
+=======
+>>>>>>> denis
     width: 30%;
     -webkit-transition: all 1s ease-in;
     transition: all 1s ease-in;
@@ -572,6 +599,7 @@ nav .burger div {
     margin-left: 16px;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -587,6 +615,11 @@ nav .burger div {
 =======
     justify-content: space-between;
 >>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
+=======
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+>>>>>>> denis
   }
   nav .nav-icons .icon {
     margin: 0;
@@ -620,7 +653,8 @@ nav .burger div {
 }
 
 .toggle .line1 {
-  transform: rotate(45deg) translate(4px, 6px);
+  -webkit-transform: rotate(45deg) translate(4px, 6px);
+          transform: rotate(45deg) translate(4px, 6px);
 }
 
 .toggle .line2 {
@@ -628,7 +662,8 @@ nav .burger div {
 }
 
 .toggle .line3 {
-  transform: rotate(-45deg) translate(3px, -6px);
+  -webkit-transform: rotate(-45deg) translate(3px, -6px);
+          transform: rotate(-45deg) translate(3px, -6px);
 }
 
 footer {
@@ -681,6 +716,7 @@ footer .footer_moon {
   left: 50%;
   max-width: 40%;
 <<<<<<< HEAD
+<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 <<<<<<< HEAD
@@ -692,6 +728,10 @@ footer .footer_moon {
 =======
   transform: translateX(-50%);
 >>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
+=======
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+>>>>>>> denis
 }
 
 footer .smoke {
@@ -701,6 +741,7 @@ footer .smoke {
   width: 100%;
   height: 80%;
 <<<<<<< HEAD
+<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 <<<<<<< HEAD
@@ -712,6 +753,10 @@ footer .smoke {
 =======
   transform: translateX(-50%);
 >>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
+=======
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+>>>>>>> denis
 }
 
 @media (max-width: 768px) {
@@ -777,6 +822,7 @@ input::-webkit-inner-spin-button {
 
 .parent_container .up_container .trip_content_all .trip_title {
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
 <<<<<<< HEAD
@@ -786,6 +832,10 @@ input::-webkit-inner-spin-button {
 >>>>>>> dev
 =======
 >>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
+=======
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+>>>>>>> denis
   display: inline-flex;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
@@ -847,6 +897,7 @@ input::-webkit-inner-spin-button {
 
 .parent_container .up_container .trip_content_all .tab_contents .tag {
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
 <<<<<<< HEAD
@@ -856,6 +907,10 @@ input::-webkit-inner-spin-button {
 >>>>>>> dev
 =======
 >>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
+=======
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+>>>>>>> denis
   display: inline-flex;
   border: 1px solid #C9ADA7;
   border-radius: 5px;
@@ -940,6 +995,7 @@ input::-webkit-inner-spin-button {
 
 .parent_container .up_container .book .select {
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
 <<<<<<< HEAD
@@ -949,6 +1005,10 @@ input::-webkit-inner-spin-button {
 >>>>>>> dev
 =======
 >>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> denis
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -1043,6 +1103,7 @@ input::-webkit-inner-spin-button {
 
 .parent_container .up_container .book .btn {
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
 <<<<<<< HEAD
@@ -1052,6 +1113,10 @@ input::-webkit-inner-spin-button {
 >>>>>>> dev
 =======
 >>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> denis
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
@@ -1126,6 +1191,7 @@ input::-webkit-inner-spin-button {
 
 .parent_container .up_container .comment .score {
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
 <<<<<<< HEAD
@@ -1135,6 +1201,10 @@ input::-webkit-inner-spin-button {
 >>>>>>> dev
 =======
 >>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> denis
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1149,6 +1219,7 @@ input::-webkit-inner-spin-button {
 
 .parent_container .up_container .comment .score .stars {
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
 <<<<<<< HEAD
@@ -1158,6 +1229,10 @@ input::-webkit-inner-spin-button {
 >>>>>>> dev
 =======
 >>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> denis
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -1184,6 +1259,7 @@ input::-webkit-inner-spin-button {
 
 .parent_container .up_container .comment .messages {
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
 <<<<<<< HEAD
@@ -1193,6 +1269,10 @@ input::-webkit-inner-spin-button {
 >>>>>>> dev
 =======
 >>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> denis
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -1212,6 +1292,7 @@ input::-webkit-inner-spin-button {
 
 .parent_container .up_container .comment .messages .name {
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
 <<<<<<< HEAD
@@ -1221,6 +1302,10 @@ input::-webkit-inner-spin-button {
 >>>>>>> dev
 =======
 >>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> denis
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
