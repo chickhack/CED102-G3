@@ -78,11 +78,16 @@ body {
   font-size: 14px;
   background-color: #0c0d18;
   overflow-x: hidden;
+<<<<<<< HEAD
   -webkit-user-select: none;
   -moz-user-select: none;
   -o-user-select: none;
   -ms-user-select: none;
       user-select: none;
+=======
+  -o-user-select: none;
+  user-select: none;
+>>>>>>> 3669f853016e9d33f1f2a0c73a08d01c16be8b7f
 }
 
 h1, .h1 {
@@ -313,12 +318,17 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+=======
+  justify-content: center;
+  align-items: center;
+>>>>>>> 3669f853016e9d33f1f2a0c73a08d01c16be8b7f
   justify-content: center;
   background-color: #0c0d18;
   position: fixed;
@@ -335,6 +345,7 @@ nav .logo h1 a {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> denis
   background-image: url("../../img/icon/header/logo.png");
@@ -348,6 +359,12 @@ nav .logo h1 a {
 >>>>>>> kai
 =======
 >>>>>>> denis
+=======
+  background-image: url("../../img/icon/header/logo.png");
+  background-image: url("../../img/logo.png");
+  background-image: url("../../img/icon/header/logo.png");
+  background-image: url("../../img/icon/header/logo.png");
+>>>>>>> 3669f853016e9d33f1f2a0c73a08d01c16be8b7f
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -360,6 +377,7 @@ nav .nav-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -369,6 +387,11 @@ nav .nav-links {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+=======
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-end;
+>>>>>>> 3669f853016e9d33f1f2a0c73a08d01c16be8b7f
   width: 75%;
 }
 
@@ -397,6 +420,7 @@ nav .nav-icons {
 nav .burger {
   display: none;
   cursor: pointer;
+  margin-left: 8px;
 }
 
 nav .burger div {
@@ -404,6 +428,7 @@ nav .burger div {
   height: 2px;
   background-color: #ffffff;
   margin: 5px;
+  transition: all .3s ease;
 }
 
 @media (max-width: 992px) {
@@ -420,6 +445,7 @@ nav .burger div {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+<<<<<<< HEAD
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -431,6 +457,11 @@ nav .burger div {
         -ms-flex-direction: column;
             flex-direction: column;
     justify-content: center;
+=======
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+>>>>>>> 3669f853016e9d33f1f2a0c73a08d01c16be8b7f
     width: 30%;
     -webkit-transition: all 1s ease-in;
     transition: all 1s ease-in;
@@ -472,8 +503,12 @@ nav .burger div {
   nav .nav-icons {
     width: 50%;
     margin-left: 16px;
+<<<<<<< HEAD
     -ms-flex-pack: distribute;
         justify-content: space-around;
+=======
+    justify-content: space-between;
+>>>>>>> 3669f853016e9d33f1f2a0c73a08d01c16be8b7f
   }
   nav .nav-icons .icon {
     margin: 0;
@@ -504,6 +539,18 @@ nav .burger div {
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
   }
+}
+
+.toggle .line1 {
+  transform: rotate(45deg) translate(4px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(-45deg) translate(3px, -6px);
 }
 
 footer {
@@ -555,8 +602,12 @@ footer .footer_moon {
   position: relative;
   left: 50%;
   max-width: 40%;
+<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+=======
+  transform: translateX(-50%);
+>>>>>>> 3669f853016e9d33f1f2a0c73a08d01c16be8b7f
 }
 
 footer .smoke {
@@ -565,8 +616,12 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
+<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+=======
+  transform: translateX(-50%);
+>>>>>>> 3669f853016e9d33f1f2a0c73a08d01c16be8b7f
 }
 
 @media (max-width: 768px) {
@@ -619,12 +674,17 @@ input[type=number] {
 }
 
 body {
+<<<<<<< HEAD
   -o-object-fit: cover;
      object-fit: cover;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+=======
+  object-fit: cover;
+  user-select: none;
+>>>>>>> 3669f853016e9d33f1f2a0c73a08d01c16be8b7f
 }
 
 @media all and (max-width: 768px) {
@@ -637,6 +697,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -663,12 +724,26 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+=======
+  justify-content: center;
+  align-items: center;
+  align-items: start;
+  flex-wrap: wrap;
+}
+
+.product .imgs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-end;
+>>>>>>> 3669f853016e9d33f1f2a0c73a08d01c16be8b7f
   max-width: 948px;
 }
 
 .product .imgs .img {
   max-width: 400px;
   text-align: center;
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -682,6 +757,12 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+=======
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+>>>>>>> 3669f853016e9d33f1f2a0c73a08d01c16be8b7f
 }
 
 @media all and (max-width: 768px) {
@@ -703,6 +784,7 @@ body {
 }
 
 .product .imgs .img .smallImg {
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -715,6 +797,12 @@ body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
+=======
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: start;
+>>>>>>> 3669f853016e9d33f1f2a0c73a08d01c16be8b7f
   width: 100%;
 }
 
@@ -818,7 +906,10 @@ body {
   background-color: #AD6E4A;
   color: #ffffff;
   font-weight: 900;
+<<<<<<< HEAD
   -webkit-transition: all .3s;
+=======
+>>>>>>> 3669f853016e9d33f1f2a0c73a08d01c16be8b7f
   transition: all .3s;
 }
 
