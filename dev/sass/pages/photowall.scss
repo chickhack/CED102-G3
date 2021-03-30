@@ -4,6 +4,10 @@ body{
   background-color: #0c0d18;
 }
 
+.container{
+  position: relative;
+}
+
 *{
   box-sizing: border-box;
 }
@@ -33,10 +37,13 @@ body{
 }
 .action-box{
   display:flex;
-  bottom: 45px;
+  bottom: 44px;
   background-color:black;
   opacity: 0.5;
   position: relative;
+}
+.action-box .heart img,.action-box .message img{
+  padding-top:2px;
 }
 .heart,.share,.message{
   padding: 10px;
@@ -51,17 +58,17 @@ body{
   padding: 10px;
   margin-left: 81px;
 }
-.member_photo{
-  margin-right: 9px;
+.article_all .article .member_photo{
   padding:15px;
 }
 .member_photo img{
   max-width: 50px;
 }
-.name{
+.article_all .article .name{
   line-height: 78px;
   color: #fff;
   margin-right: 10px;
+  font-weight: 900;
 }
 .post_time{
   line-height: 78px;
@@ -118,4 +125,145 @@ body{
 }
 footer.padding_top_5{
   padding-top: 10px;
+}
+// =======燈箱區=======
+.light-box-container{
+  text-align: center;
+  margin-top: 20px;
+  position: absolute;
+  background-color: #292B41;
+  display: none;
+  position: absolute;
+}
+.row{
+  justify-content: center;
+}
+button.turnoff_lightbox{
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+button.turnoff_lightbox img{
+  width: 40px;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+.img-switch{
+  display: inline-block;
+  width: 600px;
+}
+.img-switch img{
+  width: 100%;
+}
+#SMALL{
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  margin-top: 30px;
+}
+#SMALL img{
+  margin: 0 10px;
+  cursor: pointer;
+  width:100px;
+  height: 100px;
+  padding-bottom: 18px;
+}
+.member_info img{
+  border-radius: 50%;
+  max-width: 50px;
+}
+.words{
+  display: inline-block;
+  width: 500px;
+}
+.post_article{
+  border: 1px solid #AD6E4A;
+}
+.message_text{
+  color: white;
+}
+.member_info{
+  display: flex;
+  padding: 15px 15px 0 15px;
+}
+.member_info .name{
+  color: white;
+  margin:0 15px;
+  line-height: 49px;
+  font-weight: 900;
+}
+.member_info a button{
+  margin-top: 15px;
+  padding: 5px;
+}
+.post_text{
+  color: white;
+  line-height: 32px;
+  padding:15px;
+  text-align: left;
+}
+.member_info button{
+  background-color:#AD6E4A;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 5%;
+  cursor: pointer;
+}
+.movement{
+  margin-top: 10px;
+}
+.movement img.collection{
+  margin-right: 20px;
+  max-width: 23px;
+  padding-top: 10px;
+}
+.movement img.sharing{
+  margin-right: 73%;
+  max-width: 25px;
+}
+.movement img.more{
+  max-width: 25px;
+  opacity: .5;
+}
+.message_1 .name,.message_2 .name,.message_3 .name{
+  margin: 0 15px;
+  line-height: 49px;
+  font-weight: 900;
+}
+.message_text .message_title{
+  text-align: left;
+  margin: 20px;
+}
+.message_1,.message_2,.message_3{
+  display: flex;
+  padding: 0 15px 0 15px;
+  margin-bottom: 15px;
+}
+.message_1 .member_photo img,.message_2 .member_photo img,.message_3 .member_photo img{
+  border-radius: 50%;
+  max-width: 50px;
+}
+.message_1 .message_1_text,.message_2 .message_2_text,.message_3 .message_3_text{
+  line-height: 49px;
+}
+.message_1 .message_1_more,.message_2 .message_2_more,.message_3 .message_3_more{
+  line-height: 49px;
+}
+form.post_message input{
+background-color:#292B41;
+outline: none;
+width: 100%;
+padding: 3px;
+caret-color: white;
+border: 1px solid white;
+}
+.message_1 .message_1_more img, .message_2 .message_2_more img,.message_3 .message_3_more img{
+margin-left: 70px;
+max-width: 25px;
+opacity: .5;
+}
+form.post_message{
+  margin-bottom: 30px;
 }

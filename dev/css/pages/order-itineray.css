@@ -229,6 +229,47 @@ body {
   height: 25px;
 }
 
+.checkbox_custom {
+  opacity: 0;
+  position: absolute;
+  width: 20px;
+}
+
+.checkbox_custom, .checkbox_custom_label {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.checkbox_custom_label {
+  position: relative;
+  font-weight: 900;
+}
+
+.checkbox_custom + .checkbox_custom_label:before {
+  content: '';
+  background: transparent;
+  border: 1px solid #ad6e4a;
+  display: inline-block;
+  vertical-align: middle;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  padding: 2px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.checkbox_custom:checked + .checkbox_custom_label:before {
+  content: "";
+  background: #ad6e4a;
+}
+
+.checkbox_custom:focus + .checkbox_custom-label {
+  outline: 1px solid #ddd;
+}
+
 form {
   padding: 0 0 0 0;
   height: 100%;
@@ -246,10 +287,20 @@ form .orderinfo .row .col-10 {
 }
 
 form .orderinfo .row .col-10 .row {
+<<<<<<< HEAD
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+form .orderinfo .row .col-10 .row .col-7 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+=======
   justify-content: space-around;
 }
 
 form .orderinfo .row .col-10 .row .col-7 {
+>>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
   display: flex;
   flex-direction: column;
 }
@@ -303,10 +354,20 @@ form .ltineraryinfo .row .col-10 .row .col-3 {
 
 form .ltineraryinfo .row .col-10 .row .col-3 img {
   max-width: 150px;
+<<<<<<< HEAD
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+form .ltineraryinfo .row .col-10 .row .col-7 .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+=======
   object-fit: cover;
 }
 
 form .ltineraryinfo .row .col-10 .row .col-7 .row {
+>>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
   display: flex;
   justify-content: space-between;
   height: 100%;
@@ -318,9 +379,22 @@ form .ltineraryinfo .row .col-10 .row .col-7 .row .col-11 {
 }
 
 form .ltineraryinfo .row .col-10 .row .col-7 .row .text-div {
+<<<<<<< HEAD
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+=======
   display: flex;
   justify-content: center;
   flex-direction: column;
+>>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
   padding: 0px 0;
 }
 
@@ -337,42 +411,50 @@ form .addPay .row .col-10 {
   border-radius: 5px;
 }
 
+form .addPay .row .col-10 .automena .row .col-10 {
+<<<<<<< HEAD
+  display: -webkit-box;
+  display: -ms-flexbox;
+=======
+>>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
+  display: flex;
+}
+
+form .addPay .row .col-10 .automena .row .col-10 .sss {
+  display: flex;
+  background-color: #191919;
+  margin-bottom: 3%;
+  width: 100%;
+  padding: 15px 10px;
+  cursor: pointer;
+}
+
+form .addPay .row .col-10 .automena .row .col-10 .sss img {
+  width: 100px;
+<<<<<<< HEAD
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+form .addPay .row .col-10 .automena .row .col-10 .sssb:focus .sss {
+  background-color: #fff;
+=======
+  object-fit: cover;
+>>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
+}
+
+form .addPay .row .col-10 .automena .row .col-10 input {
+  display: none;
+}
+
 form .addPay .row .col-10 .automena .row .col-11 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 form .addPay .row .col-10 .automena .row .col-11 input {
   display: none;
-}
-
-form .addPay .row .col-10 .automena .row .col-11 .checkbox-fu::before {
-  content: '';
-  background: transparent;
-  border: 2px solid #ad6e4a;
-  display: inline-block;
-  vertical-align: middle;
-  width: 5px;
-  height: 5px;
-  padding: 2px;
-  margin-right: 10px;
-  text-align: center;
-  border-radius: 10px;
-}
-
-form .addPay .row .col-10 .automena .row .col-11 .checkbox-fu:checked {
-  background: #ad6e4a;
-  box-shadow: inset 0px 0px 0px 4px #ad6e4a;
-}
-
-form .addPay .row .col-10 .automena .row .col-11 .checkbox-fu::after {
-  content: "";
-  width: 1px;
-  height: 30%;
-  background-color: #ad6e4a;
-  left: -3%;
-  position: absolute;
-  transform: rotate(-45deg) translateY(-60%);
-  top: 50%;
 }
 
 form .paymethod .row {
@@ -383,27 +465,24 @@ form .paymethod .row .col-10 .paymethod-automanu .row #paymethod-coin, form .pay
   display: none;
 }
 
-form .paymethod .row .col-10 .paymethod-automanu .row .check::before {
-  content: '';
-  background: transparent;
-  border: 2px solid #ad6e4a;
-  display: inline-block;
-  vertical-align: middle;
-  width: 5px;
-  height: 5px;
-  padding: 2px;
-  margin-right: 10px;
-  text-align: center;
-  border-radius: 10px;
-}
-
 form .paymethod .row .col-10 .paymethod-automanu .row .col-11 {
+<<<<<<< HEAD
+  display: -webkit-box;
+  display: -ms-flexbox;
+=======
+>>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
   display: flex;
   align-items: center;
 }
 
 form .paymethod .row .col-10 .paymethod-automanu .row .col-12 .paymethod-automanu-car-automanu .row {
+<<<<<<< HEAD
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+=======
   justify-content: space-evenly;
+>>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
 }
 
 form .paymethod .row .col-10 .paymethod-automanu .row .col-12 .paymethod-automanu-car-automanu .row input {
@@ -432,6 +511,11 @@ form .paymethod .row .col-10 .paymethod-automanu .row .col-5 input.paymethod-coi
 }
 
 form .paymethod .row .col-10 .paymethod-automanu .row .col-4 {
+<<<<<<< HEAD
+  display: -webkit-box;
+  display: -ms-flexbox;
+=======
+>>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
   display: flex;
   align-items: center;
 }
@@ -445,8 +529,17 @@ form .orderDetails .row {
 }
 
 form .orderDetails .row .allpay-div {
+<<<<<<< HEAD
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+=======
   display: flex;
   justify-content: flex-end;
+>>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
 }
 
 form .orderDetails .row .col-10 .orderDetails-automanu .col-3 {
@@ -477,6 +570,11 @@ form .orderDetails .row .col-10 .orderDetails-automanu .col-11 .orderDetails-aut
 }
 
 form .orderDetails .row .col-10 .orderDetails-automanu .col-11 .orderDetails-automanu-textdiv .textbox {
+<<<<<<< HEAD
+  display: -webkit-box;
+  display: -ms-flexbox;
+=======
+>>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
   display: flex;
   width: 100%;
 }
@@ -486,6 +584,11 @@ form .orderDetails .row .col-10 .orderDetails-automanu .col-7 {
 }
 
 form .orderDetails .row .col-10 .orderDetails-automanu .col-7 .row {
+<<<<<<< HEAD
+  display: -webkit-box;
+  display: -ms-flexbox;
+=======
+>>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
   display: flex;
   justify-content: space-around;
   width: 100%;

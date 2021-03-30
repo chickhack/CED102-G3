@@ -1,3 +1,4 @@
+@import "../all.scss";
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button{
     -webkit-appearance: none;
@@ -9,6 +10,8 @@ input::-webkit-inner-spin-button{
     align-items:flex-end;
     padding-bottom: 1.5%;
 }
+
+
 //垃圾桶
 .icon-g{
     max-width: 30px;
@@ -32,7 +35,7 @@ body{
 }
 // 表單背景色
 .backcol{
-    background-color: #3a3a3e;
+    background-color: #292B41;
 }
 // 標題文字
 .text-1{
@@ -76,7 +79,7 @@ body{
     padding: 0 5px;
     border: 1px solid #ad6e4a;
     color: #ad6e4a;
-    background-color: #3a3a3e;
+    background-color: #292B41;
     height: 30px;
     text-align: center;
 }
@@ -103,7 +106,7 @@ body{
 //加減按鈕
 .btn-pull{
     color:#ad6e4a;
-    background-color: #3a3a3e;
+    background-color: #292B41;
     font-size: 24px;
     border: 1px solid #ad6e4a;
     width: 30px;
@@ -114,7 +117,7 @@ body{
 // 數量的按鈕
 .btn-nu{
     color:#ad6e4a;
-    background-color: #3a3a3e;
+    background-color: #292B41;
     font-size: 24px;
     border: 0px solid #ad6e4a;
     width: 40px;
@@ -132,9 +135,44 @@ body{
                 display: flex;
                 justify-content: space-around;
                 padding: 2% 1%;
-                border-radius: 5px;
+                // border-radius: 5px;
                 
             }
+        }
+    }
+}
+
+.checkout{
+    width: 100%;
+    background-color: #292B41;
+    position: relative;
+    @include flex_middle();
+    justify-content: flex-end;
+    padding: 16px 0;
+    letter-spacing: 3px;
+    @include respond(mobile){
+        flex-direction: column;
+    }
+    .totalPrice{
+        @include flex_middle();
+        justify-content: flex-end;
+        .h2{
+            color: $gold;
+            font-weight: 900;
+        }
+    }
+    .totalIntegral{
+        @include flex_middle();
+        justify-content: flex-end;
+    }
+    .button_min{
+        background-color: $gold;
+        padding: 8px;
+        margin-right: 7%;
+        color: $white;
+        @include respond(mobile){
+            margin-top: 16px;
+            width: 80%;
         }
     }
 }

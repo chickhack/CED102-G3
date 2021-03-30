@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的行程</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/pages/car-itineray.css">
+</head>
+<body>
+    <header>
+        @@include('./layout/header.html')
+    </header>
+
+<div class="car-top" >
+    <div class="container">
+        <div class="row">
+            <div class="col-8">
+                <p class="text-1 line_high">我的行程</p>
+                <div class="row">
+                    <div class="col-12 backcol  line_high ">
+                        <img src="./img/trip/trip_jupiter/jupiter_a_ps.png" alt="" class="imgsr">
+                        <div>
+                            <p class="p-text-1">火星｜宇宙雨林秘境</p>
+                            <p class="p-text-2"><img src="./img/icon/bonus.png" alt="" class="vvvvv">＋3000積分 <p class="p-text-2"><img src="./img/icon/coins.png" alt="" class="vvvvv">＋2000</p></p>
+                        </div>
+                        <div>
+                            <label for="date-1" class="p-text-3 w-100">日期</label>
+                            <input type="date" id="date-1" class="btn-date data-down">
+                        </div>
+                        <div>
+                            <p class="p-text-3">數量</p>
+                            <button class="btn-pull minus">－</button>
+                            <input type="number" value="1" class="btn-nu" min="0">
+                            <button class="btn-pull add">＋</button>
+                        </div>
+                        <div id="icon-gg">
+                            <img src="./img/icon/rubbish-bin-delete-button.png" alt="" class="icon-g">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-12 checkout margin_top_8">
+                        <div class="total">
+                            <div class="totalPrice">
+                                <p>商品合計</p>
+                                <p class="margin_left_1">${{totalPrice}}</p>
+                            </div>
+                            <div class="totalIntegral margin_top_1">
+                                <small>可累計積分</small>
+                                <img src="./img/s.png" class="icon margin_left_1">
+                                <small>+6000</small>
+                            </div>
+                        </div>
+                        <a class="button_min margin_left_3" href="shop_order.html">前往結帳</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<footer>
+    @@include('./layout/footer.html')
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+<script src="./js/addMinus.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.12/vue.js'></script>
+
+<script>
+var app1 = new Vue({
+
+})
+
+</script>
+</body>
+</html>

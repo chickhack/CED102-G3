@@ -16,6 +16,7 @@ body{
     height: 20px;
     
 }
+
 //chbox
 .checkbox-1{
     border: 1px solid #ad6e4a;
@@ -222,6 +223,43 @@ body{
     width: 25px;
     height: 25px;
 }
+//假確認按鈕樣式
+.checkbox_custom{
+    opacity: 0;
+    position: absolute;
+    width: 20px;
+}
+.checkbox_custom,.checkbox_custom_label{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 5px;
+    cursor: pointer;
+}
+.checkbox_custom_label{
+    position: relative;
+    font-weight: 900;
+}
+.checkbox_custom + .checkbox_custom_label:before{
+    content: '';
+    background: transparent;
+    border: 1px solid #ad6e4a;
+    display: inline-block;
+    vertical-align: middle;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    padding: 2px;
+    margin-right: 10px;
+    text-align: center;
+}
+.checkbox_custom:checked + .checkbox_custom_label:before {
+    content: "";
+    background: #ad6e4a;
+}
+.checkbox_custom:focus + .checkbox_custom-label{
+    outline: 1px solid #ddd;
+}
+//主內容
 form{
     padding: 0 0 0 0;
     height:100%;
@@ -385,40 +423,60 @@ form{
                     
                     .automena{
                         .row{
+                            .col-10{
+                                display: flex;
+                                .sss{
+                                    display: flex;
+                                    background-color: #191919;
+                                    margin-bottom: 3%;
+                                    width: 100%;
+                                    padding: 15px 10px;
+                                    cursor: pointer;
+                                    img{
+                                        width: 100px;
+                                        object-fit: cover;
+                                    }
+                                }
+                                
+                                input{
+                                    display: none;
+                                }
+                            }
                             .col-11{
                                 display: flex;
                                 input{
                                     display: none;
                                 }
-                                .checkbox-fu::before{
+                                
+                                // .checkbox-fu::before{
                                    
-                                        content: '';
-                                        background: transparent;
-                                        border: 2px solid #ad6e4a;
-                                        display: inline-block;
-                                        vertical-align: middle;
-                                        width: 5px;
-                                        height: 5px;
-                                        padding: 2px;
-                                        margin-right: 10px;
-                                        text-align: center;
-                                        border-radius: 10px;
-                                }
-                                .checkbox-fu:checked{
-                                    background: #ad6e4a;
-                                    box-shadow: inset 0px 0px 0px 4px #ad6e4a;
+                                //         content: '';
+                                //         background: transparent;
+                                //         border: 2px solid #ad6e4a;
+                                //         display: inline-block;
+                                //         vertical-align: middle;
+                                //         width: 5px;
+                                //         height: 5px;
+                                //         padding: 2px;
+                                //         margin-right: 10px;
+                                //         text-align: center;
+                                //         border-radius: 10px;
+                                // }
+                                // .checkbox-fu:checked{
+                                //     background: #ad6e4a;
+                                //     box-shadow: inset 0px 0px 0px 4px #ad6e4a;
 
-                                }
-                                .checkbox-fu::after{
-                                    content: "";
-                                    width: 1px;
-                                    height: 30%;
-                                    background-color: #ad6e4a;
-                                    left: -3%;
-                                    position: absolute;
-                                    transform: rotate(-45deg) translateY(-60%);
-                                    top: 50%;
-                                }
+                                // }
+                                // .checkbox-fu::after{
+                                //     content: "";
+                                //     width: 1px;
+                                //     height: 30%;
+                                //     background-color: #ad6e4a;
+                                //     left: -3%;
+                                //     position: absolute;
+                                //     transform: rotate(-45deg) translateY(-60%);
+                                //     top: 50%;
+                                // }
                                 
 
                                     // .traffic-div{
@@ -462,19 +520,19 @@ form{
                             display: none;
                         }
 
-                        .check::before{
-                            content: '';
-                            background: transparent;
-                            border: 2px solid #ad6e4a;
-                            display: inline-block;
-                            vertical-align: middle;
-                            width: 5px;
-                            height: 5px;
-                            padding: 2px;
-                            margin-right: 10px;
-                            text-align: center;
-                            border-radius: 10px;
-                        }
+                        // .check::before{
+                        //     content: '';
+                        //     background: transparent;
+                        //     border: 2px solid #ad6e4a;
+                        //     display: inline-block;
+                        //     vertical-align: middle;
+                        //     width: 5px;
+                        //     height: 5px;
+                        //     padding: 2px;
+                        //     margin-right: 10px;
+                        //     text-align: center;
+                        //     border-radius: 10px;
+                        // }
                         .col-11{
                             display: flex;
                             align-items: center;

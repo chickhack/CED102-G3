@@ -11,33 +11,10 @@
     <link rel="stylesheet" href="./css/pages/order-itineray.css">
 </head>
 <body>
-    <nav>
-    <div class="logo">
-        <h1><a href="index.html">SPACED</a></h1>
-    </div>
-    <ul class="nav-links">
-        <li class="margin_left_5"><a href="">太空互動</a></li>
-        <li class="margin_left_5"><a href="">玩家排行</a></li>
-        <li class="margin_left_5"><a href="">星星世界</a></li>
-        <li class="margin_left_5"><a href="">星球景點</a></li>
-        <li class="margin_left_5"><a href="">星球商城</a></li>
-        <!-- <li><a href=""><img src="./images/ticket.png" alt="" class="icon"></a></li>
-        <li><a href=""><img src="./images/shopping-cart_(1).png" alt="" class="icon"></a></li>
-        <li><a href=""><img src="./images/round-account-button-with-user-inside_(1).png" alt="" class="icon"></a></li> -->
-    </ul>
-    <ul class="nav-icons">
-        <li><a href=""><img src="./img/ticket.png" alt="" class="icon"></a></li>
-        <li><a href=""><img src="./img/shopping-cart_(1).png" alt="" class="icon"></a></li>
-        <li><a href=""><img src="./img/round-account-button-with-user-inside_(1).png" alt="" class="icon"></a></li>
-    </ul>
-    <div class="burger">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-    </div>
-</nav>
+    <div class="container-fluid">
+        @@include('./layout/header.html')
+    
     <form action="" >
-        <div class="container">
             <div class="orderinfo">
                 
                     <div class="row">
@@ -84,8 +61,8 @@
                                         <div class="col-7 col-xxl-8 col-xl-8 col-lg-7 col-md-7 col-sm-7 textinfo ">
                                             <div class="row">
 
-                                                <div class="text-div col-11 col-xxl-4 col-xl-5 col-lg-4">
-                                                    <p class=" h4 letter-spacing-2">火星<span class=" text-va">∣</span>宇宙雨林秘境</p>
+                                                <div class="text-div col-11 col-xxl-5 col-xl-6 col-lg-6">
+                                                    <p class=" h4 letter-spacing-2 padding_top_2">火星<span class=" text-va">∣</span>宇宙雨林秘境</p>
                                                     <p class="line_low">2021-3-12</p>
 
                                                 </div>
@@ -94,7 +71,7 @@
                                                     <p>數量2</p>
 
                                                 </div>
-                                                <div class="text-div col-11 col-xxl-4 col-xl-4 col-lg-4">
+                                                <div class="text-div col-11 col-xxl-3 col-xl-3 col-lg-3">
                                                     <p class="line_low">總金額$6000 </p>
                                                     <P>積分800<img class="" src="./img/icon/coins.png" alt=""></P>
                                                 </div>
@@ -105,13 +82,13 @@
                             <div class="row padding_bottom-20">
                                 <div class="col-3 col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3">
 
-                                    <img src="./img/trip/trip_moon/moon_c1_ps.jpg" alt="">
+                                    <img src="./img/trip/trip_mars/mars_b2_ps.jpg" alt="">
                                 </div>
                                 <div class="col-7 col-xxl-8 col-xl-8 col-lg-7 col-md-7 col-sm-7 textinfo ">
                                     <div class="row">
 
-                                        <div class="text-div col-11 col-xxl-5 col-xl-5 col-lg-5">
-                                            <p class=" h4 letter-spacing-2">火星<span class=" text-va">∣</span>反射谷及山羊峽谷探險一日遊</p>
+                                        <div class="text-div col-11 col-xxl-5 col-xl-6 col-lg-6">
+                                            <p class=" h4 letter-spacing-2 padding_top_2">火星<span class=" text-va">∣</span>反射谷及山羊峽谷探險一日遊</p>
                                             <p class="line_low">2021-3-15</p>
 
                                         </div>
@@ -120,7 +97,7 @@
                                             <p>數量1</p>
 
                                         </div>
-                                        <div class="text-div col-11 col-xxl-4 col-xl-4 col-lg-4">
+                                        <div class="text-div col-11 col-xxl-3 col-xl-3 col-lg-3">
                                             <p class="line_low">總金額$3000 </p>
                                             <P>積分800<img class="" src="./img/icon/coins.png" alt=""></P>
                                         </div>
@@ -173,20 +150,42 @@
                                     <!-- <div class="divider"></div> -->
                                     <div class="row">
                                         <div class="col-11 align-items-center padding_left_5 line_high">
-                                            <input type="checkbox" id="guide-yes" value="是" name="guide" class="">
-                                            <label for="guide-yes" class="line_high textcolor letter-spacing-1 checkbox-fu">加購嚮導（＋3000）</label>
+                                            <input type="checkbox" id="guide-yes" value="是" name="guide" class="checkbox_custom">
+                                            <label for="guide-yes" class="line_high textcolor letter-spacing-1 checkbox_custom_label">加購嚮導（＋3000）</label>
                                             <!-- <label for="guide-yes" class="textcolor padding_left_1 padding_right-1">是</label>
                                             <input type="radio" id="guide-no" value="否" name="guide" class="padding_left_3">
                                             <label for="guide-no" class="textcolor padding_left_1">否</label> -->
                                         
                                         </div>
                                     </div>
-                                    <!-- <div class="divider"></div> -->
                                     <div class="row">
-                                        <div class="col-11 textcolor padding_left_5 line_low">
-                                            <!-- <p>升級交通工具</p> -->
-                                            <input type="checkbox" id="traffic-1">
-                                            <label for="traffic-1" class="checkbox-fu">升級交通工具至急速太空梭(+2000)可以加速1.5倍</label>
+                                        <div class="col-10 textcolor line_low">選擇交通工具</div>
+                                    </div>
+                                    <div class="row">
+                                        
+                                        <div class="col-10 col-xxl-4 col-xl-5  col-md-7 textcolor  line_low">
+                                            <input type="checkbox" id="traffic-0" value="基本" class="checkbox_custom" name="traffic">
+                                            <label for="traffic-0" class="sss checkbox_custom_label">
+                                                <img src="./img/trip/others/ships-astero.png" alt="">
+                                               <div>
+                                                   <p>基本交通工具</p>
+                                                   <p>太空梭將以預計的時間到達</p>
+
+                                               </div>
+                                            </label>
+                                        </div>
+                                        <div class="col-10 col-xxl-4 col-xl-5 col-md-7 textcolor  line_low">
+                                                
+                                            <input type="checkbox" id="traffic-1" value="升級" class="checkbox_custom" name="traffic">
+                                            <label for="traffic-1" class="sss checkbox_custom_label">
+                                                <img src="./img/trip/others/ships-rifter.png" alt="">
+                                                <div>
+                                                    <p>升級交通工具(+2000)</p>
+                                                    <p>急速太空梭節省1.5倍的時間</p>
+                                                </div>
+                                                
+                                            </label>
+
                                         </div>
                                     </div>
                                     <!-- <div class="row">
@@ -238,8 +237,8 @@
                                 <!-- <div class="divider"></div> -->
                                 <div class="row justify-content-start padding_left_5">
                                     <div class="col-10 col-xxl-4 col-lg-5 col-md-6 col-sm-10">
-                                        <input type="checkbox" class="checkbox-1" id="paymethod-coin" name="paymethod-coin" value="宇宙幣">
-                                        <label for="paymethod-coin" class="check line_high textcolor letter-spacing-2 padding_left_1">宇宙幣尚餘50000 <img src="./img/icon/coins.png" alt="" class="icon"></label>
+                                        <input type="checkbox" class="checkbox-1 checkbox_custom" id="paymethod-coin" name="paymethod-coin" value="宇宙幣">
+                                        <label for="paymethod-coin" class="check line_high textcolor checkbox_custom_label letter-spacing-2 padding_left_1">宇宙幣尚餘50000 </label>
                                     </div>
                                     <div class="col-11 col-xxl-4 col-lg-5 col-md-8 col-sm-11 ">
                                         <label for="paymethod-coin-nu" class="textcolor" >折抵:</label>
@@ -250,8 +249,8 @@
                                 <!-- <div class="divider"></div> -->
                                 <div class="row justify-content-start padding_left_5">
                                     <div class="col-12 col-xxl-11" id="">
-                                        <input type="checkbox" id="paymethod-automanu-car">
-                                        <label for="paymethod-automanu-car" class="check textcolor padding_left_1 padding_bottom-1 margin_top_3">信用卡</label>
+                                        <input type="checkbox" id="paymethod-automanu-car" class="checkbox_custom">
+                                        <label for="paymethod-automanu-car" class="check textcolor padding_left_1 padding_bottom-1 margin_top_3 checkbox_custom_label">信用卡</label>
                                         <div class="paymethod-automanu-car-automanu padding_bottom-1 " id="car-auto">
                                             <!-- <div class="divider"></div> -->
                                             <div class="row ">
@@ -295,7 +294,7 @@
                                         <div class="col-7 col-xxl-8 col-xl-8 col-lg-7 col-md-7 col-sm-7 textinfo padding_left_3">
                                             <div class="row">
 
-                                                <div class="text-div col-11 col-xxl-4 col-xl-4 col-lg-4 ">
+                                                <div class="text-div col-11 col-xxl-5 col-xl-6 col-lg-6 ">
                                                     <p class=" h4 letter-spacing-2 padding_top_2">火星<span class=" text-va">∣</span>宇宙雨林秘境</p>
                                                     <p class="line_low">2021-3-12</p>
 
@@ -305,15 +304,39 @@
                                                     <p>數量2</p>
 
                                                 </div>
-                                                <div class="text-div col-11 col-xxl-4 col-xl-4 col-lg-4">
-                                                    <p class="line_low">總金額$4000 </p>
-                                                    <P>積分3000<img class="" src="./img/icon/coins.png" alt=""></P>
+                                                <div class="text-div col-11 col-xxl-3 col-xl-3 col-lg-3">
+                                                    <p class="line_low">總金額$6000 </p>
+                                                    <P>積分800<img class="" src="./img/icon/coins.png" alt=""></P>
                                                 </div>
                                             </div>    
                                             
                                         
                                         </div>
-                                   
+                                        <div class="col-3 col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3 ">
+
+                                            <img src="./img/trip/trip_mars/mars_b2_ps.jpg" alt="">
+                                        </div>
+                                        <div class="col-7 col-xxl-8 col-xl-8 col-lg-7 col-md-7 col-sm-7 textinfo padding_left_3">
+                                            <div class="row">
+
+                                                <div class="text-div col-11 col-xxl-5 col-xl-6 col-lg-6 ">
+                                                    <p class=" h4 letter-spacing-2 padding_top_2">火星<span class=" text-va">∣</span>反射谷及山羊峽谷探險一日遊</p>
+                                                    <p class="line_low">2021-3-15</p>
+
+                                                </div>
+                                                <div class="text-div col-11 col-xxl-2 col-xl-2 col-lg-2">
+                                                    
+                                                    <p>數量1</p>
+
+                                                </div>
+                                                <div class="text-div col-11 col-xxl-3 col-xl-3 col-lg-3">
+                                                    <p class="line_low">總金額$3000 </p>
+                                                    <P>積分800<img class="" src="./img/icon/coins.png" alt=""></P>
+                                                </div>
+                                            </div>    
+                                            
+                                        
+                                        </div>
                                     <!-- <div class="col-11 padding_left_5 padding_top_5">
                                         <img src="./img/trip/trip_mars/mars_a3_ps.jpg" class="imgsr" alt="">
                                         <div class="orderDetails-automanu-textdiv padding_left_3 ">
@@ -331,7 +354,7 @@
                                         </div>
                                     </div> -->
                                     
-                                    <div class="col-11 padding_left_5 padding_top_5">
+                                    <!-- <div class="col-11 padding_left_5 padding_top_5">
                                         <img src="./img/trip/trip_mars/mars_a3_ps.jpg" class="imgsr" alt="">
                                         <div class="orderDetails-automanu-textdiv padding_left_3 ">
                                             <p class="h4">火星｜宇宙雨林秘境</p>
@@ -343,10 +366,10 @@
                                             
                                             <div class="textbox">
                                                 <p class="textcolor letter-spacing-2 line_high width-50">總金額</p>
-                                                <p class="textcolor letter-spacing-2 width-50 line_high textRight padding_right-3">$6000</p>
+                                                <p class="textcolor letter-spacing-2 width-50 line_high textRight padding_right-3">$800</p>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> -->
                                    
                                     <div class="col-11 padding_left_5 padding_top_5">
                                         <div class="payadd">
@@ -375,7 +398,7 @@
                                             <div class="textbox">
                                                 <p class="textcolor letter-spacing-2 line_high width-50">支付金額</p>
                                                 
-                                                <p class="textcolor-1 letter-spacing-2 width-50 line_high textRight padding_right-3">$5000</p>
+                                                <p class="textcolor-1 letter-spacing-2 width-50 line_high textRight padding_right-3">$14000</p>
                                             </div>
                                         </div>
                                     </div>
@@ -388,7 +411,7 @@
                                         <div class="orderDetails-automanu-textdiv padding_left_3">
                                             <div class="textbox">
                                                 
-                                                <p class="h9 letter-spacing-2   textRight w-100 padding_right-3"><img src="./img/icon/bonus.png" alt="" class="icon-1"> ＋5000</p>
+                                                <p class="h9 letter-spacing-2   textRight w-100 padding_right-3"><img src="./img/icon/coins.png" alt="" class="icon-1"> ＋1600</p>
                                             </div>
                                             <div class="textbox">
                                                 <p class="h8 letter-spacing-2   textRight w-100 padding_right-3">累積後目前有5000積分</p>
@@ -406,23 +429,10 @@
                     </div>
                 
             </div>
-        </div>
-    </form>
-    <footer class="padding_top_5">
-    <div class="links">
-        <div class="logo"><img src="./img/logo.png" alt=""></div>
-        <ul class="footer-links margin_top_2">
-            <li><a href="">太空互動</a></li>
-            <li><a href="">玩家排行</a></li>
-            <li><a href="">星星世界</a></li>
-            <li><a href="">星球景點</a></li>
-            <li><a href="">星球商城</a></li>
-        </ul>
+        </form>
+        @@include('./layout/footer.html')
     </div>
-    <img src="./img/footer_moon.png" alt="" class="footer_moon">
-    <img src="./img/smoke.png" alt="" class="smoke" >
-</footer>
-
+        
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

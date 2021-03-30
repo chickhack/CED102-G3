@@ -78,31 +78,15 @@ body {
   background-color: #0c0d18;
   overflow-x: hidden;
 <<<<<<< HEAD
-  -o-user-select: none;
-  user-select: none;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  -o-user-select: none;
-  user-select: none;
-=======
-=======
->>>>>>> denis
   -webkit-user-select: none;
   -moz-user-select: none;
   -o-user-select: none;
   -ms-user-select: none;
       user-select: none;
-<<<<<<< HEAD
->>>>>>> denis
 =======
   -o-user-select: none;
   user-select: none;
->>>>>>> chickhack
-=======
->>>>>>> denis
->>>>>>> 2c9880b2ec61e05445d35039c54a72771639c64a
+>>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
 }
 
 h1, .h1 {
@@ -321,17 +305,30 @@ small, .small {
 }
 
 .container {
-  max-width: 1440px;
   margin: 0 auto;
+  padding-top: 15vh;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 nav {
   display: flex;
+<<<<<<< HEAD
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+=======
   justify-content: center;
   align-items: center;
-  justify-content: space-around;
+>>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
+  justify-content: center;
   background-color: #0c0d18;
-  position: sticky;
+  position: fixed;
   top: 0;
   width: 100%;
   min-height: 12vh;
@@ -342,24 +339,51 @@ nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-  background-image: url("../../img/header/logo.png");
+<<<<<<< HEAD
+<<<<<<< HEAD
+  background-image: url("../../img/icon/header/logo.png");
+=======
+<<<<<<< HEAD
+  background-image: url("../../img/logo.png");
+=======
+  background-image: url("../../img/icon/header/logo.png");
+>>>>>>> kai
+>>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
+=======
+  background-image: url("../../img/icon/header/logo.png");
+>>>>>>> kai
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
-  width: 200px;
+  max-width: 200px;
   height: 30px;
+  margin: 0 8px;
 }
 
 nav .nav-links {
   display: flex;
+<<<<<<< HEAD
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+=======
   justify-content: center;
   align-items: center;
   justify-content: flex-end;
-  width: 60%;
+>>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
+  width: 75%;
 }
 
 nav .nav-links a {
+  width: 100%;
   color: #ffffff;
+  padding: 8px;
 }
 
 nav .nav-icons {
@@ -368,10 +392,12 @@ nav .nav-icons {
   align-items: center;
   justify-content: space-around;
   width: 12%;
+  margin-left: 50px;
 }
 
 nav .burger {
   display: none;
+  cursor: pointer;
 }
 
 nav .burger div {
@@ -379,6 +405,77 @@ nav .burger div {
   height: 2px;
   background-color: #ffffff;
   margin: 5px;
+}
+
+@media (max-width: 992px) {
+  nav {
+    justify-content: space-around;
+  }
+  nav .nav-links {
+    position: absolute;
+    right: -100%;
+    height: 92vh;
+    top: 12vh;
+    background-color: #AD6E4A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    transition: all 1s ease-in;
+  }
+  nav .nav-links li {
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+    opacity: 0;
+  }
+  nav .nav-links li a {
+    display: block;
+    padding: 24px 0;
+  }
+  nav .nav-icons {
+    width: 100%;
+    justify-content: flex-end;
+  }
+  nav .nav-icons .icon {
+    margin: 0 30px 0 15px;
+  }
+  nav .burger {
+    display: block;
+  }
+  nav .nav-active {
+    right: 0%;
+  }
+}
+
+@media (max-width: 768px) {
+  nav .logo {
+    margin: 0 8px;
+  }
+  nav .nav-links {
+    width: 100%;
+  }
+  nav .nav-icons {
+    width: 50%;
+    margin-left: 16px;
+    justify-content: space-around;
+  }
+  nav .nav-icons .icon {
+    margin: 0;
+  }
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }
 
 footer {
@@ -420,8 +517,13 @@ footer .links .footer-links a {
 footer .footer_moon {
   position: relative;
   left: 50%;
-  max-width: 550px;
+  max-width: 40%;
+<<<<<<< HEAD
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+=======
   transform: translateX(-50%);
+>>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
 }
 
 footer .smoke {
@@ -430,7 +532,24 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
+<<<<<<< HEAD
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+=======
   transform: translateX(-50%);
+>>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
+}
+
+@media (max-width: 768px) {
+  footer .links .logo {
+    bottom: 0;
+  }
+  footer .links .footer-links {
+    display: none;
+  }
+  footer .footer_moon {
+    min-width: 250px;
+  }
 }
 
 input::-webkit-outer-spin-button,
@@ -440,6 +559,7 @@ input::-webkit-inner-spin-button {
 
 .container {
   margin: 0 auto;
+  padding-bottom: 80px;
 }
 
 .swiper-container {
@@ -483,21 +603,10 @@ input::-webkit-inner-spin-button {
 
 .parent_container .up_container .trip_content_all .trip_title {
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
->>>>>>> denis
 =======
->>>>>>> chickhack
-=======
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
->>>>>>> denis
->>>>>>> 2c9880b2ec61e05445d35039c54a72771639c64a
+>>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
   display: inline-flex;
   align-items: baseline;
   justify-content: flex-start;
@@ -555,21 +664,10 @@ input::-webkit-inner-spin-button {
 
 .parent_container .up_container .trip_content_all .tab_contents .tag {
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
->>>>>>> denis
 =======
->>>>>>> chickhack
-=======
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
->>>>>>> denis
->>>>>>> 2c9880b2ec61e05445d35039c54a72771639c64a
+>>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
   display: inline-flex;
   border: 1px solid #C9ADA7;
   border-radius: 5px;
@@ -653,21 +751,10 @@ input::-webkit-inner-spin-button {
 
 .parent_container .up_container .book .select {
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
   display: -webkit-box;
   display: -ms-flexbox;
->>>>>>> denis
 =======
->>>>>>> chickhack
-=======
-  display: -webkit-box;
-  display: -ms-flexbox;
->>>>>>> denis
->>>>>>> 2c9880b2ec61e05445d35039c54a72771639c64a
+>>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -754,21 +841,10 @@ input::-webkit-inner-spin-button {
 
 .parent_container .up_container .book .btn {
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
   display: -webkit-box;
   display: -ms-flexbox;
->>>>>>> denis
 =======
->>>>>>> chickhack
-=======
-  display: -webkit-box;
-  display: -ms-flexbox;
->>>>>>> denis
->>>>>>> 2c9880b2ec61e05445d35039c54a72771639c64a
+>>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
   display: flex;
   justify-content: flex-end;
   align-items: baseline;
@@ -839,21 +915,10 @@ input::-webkit-inner-spin-button {
 
 .parent_container .up_container .comment .score {
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
   display: -webkit-box;
   display: -ms-flexbox;
->>>>>>> denis
 =======
->>>>>>> chickhack
-=======
-  display: -webkit-box;
-  display: -ms-flexbox;
->>>>>>> denis
->>>>>>> 2c9880b2ec61e05445d35039c54a72771639c64a
+>>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
   display: flex;
   align-items: center;
   position: relative;
@@ -866,21 +931,10 @@ input::-webkit-inner-spin-button {
 
 .parent_container .up_container .comment .score .stars {
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
   display: -webkit-box;
   display: -ms-flexbox;
->>>>>>> denis
 =======
->>>>>>> chickhack
-=======
-  display: -webkit-box;
-  display: -ms-flexbox;
->>>>>>> denis
->>>>>>> 2c9880b2ec61e05445d35039c54a72771639c64a
+>>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
   display: flex;
   justify-content: center;
   align-items: center;
@@ -903,21 +957,10 @@ input::-webkit-inner-spin-button {
 
 .parent_container .up_container .comment .messages {
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
   display: -webkit-box;
   display: -ms-flexbox;
->>>>>>> denis
 =======
->>>>>>> chickhack
-=======
-  display: -webkit-box;
-  display: -ms-flexbox;
->>>>>>> denis
->>>>>>> 2c9880b2ec61e05445d35039c54a72771639c64a
+>>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
   display: flex;
   justify-content: center;
   align-items: center;
@@ -933,21 +976,10 @@ input::-webkit-inner-spin-button {
 
 .parent_container .up_container .comment .messages .name {
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
   display: -webkit-box;
   display: -ms-flexbox;
->>>>>>> denis
 =======
->>>>>>> chickhack
-=======
-  display: -webkit-box;
-  display: -ms-flexbox;
->>>>>>> denis
->>>>>>> 2c9880b2ec61e05445d35039c54a72771639c64a
+>>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
   display: flex;
   justify-content: center;
   align-items: center;

@@ -1,0 +1,139 @@
+//顏色
+$darkblue: #0c0d18;
+$gold : #AD6E4A;
+$pink : #C9ADA7;
+$white : #ffffff;
+$gray : #cccaca;
+
+body{
+    font-family:"Microsoft JhengHei", "sans-serif"; //"Haettenschweiler",
+    color: $pink;
+    font-size: 14px;
+    background-color: $darkblue;
+    overflow-x: hidden;
+    //防止使用者連擊反藍
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -o-user-select:none;
+    user-select:none;
+}
+
+
+// 字的大小
+$fontScale: (
+    "h1": 32px,
+    "h2": 24px,
+    "h3": 18px,
+    "h4": 16px,
+    "p" : 14px,
+    "small": 12px
+);
+
+@each $f,$s in $fontScale{
+    #{$f},.#{$f}{
+        font-size: $s;
+    }
+};
+
+// 字行距
+$lineHeight: (
+    "high": 50px,
+    "low" : 32px,
+);
+
+@each $k, $v in $lineHeight{
+    .line_#{$k}{
+        line-height: $v;
+    }
+}
+
+// 字型
+@font-face{
+    font-family: "Microsoft JhengHei",  "Nasalization", "adobe-std-b";
+    src: local("./fonts/msjh.ttc"),
+         local("./fonts/msjhbd.ttc"),
+         local("./fonts/HATTEN.TTF"),
+         local("./fonts/Nasa.ttf"),
+         local("./fonts/adobe-std-b.otf")
+}
+
+//間距
+//(以8的倍數 8,16,24,....80)
+//在html加上class (padding/margin)_(top/left)_1,2,3,4)
+@mixin push($num,$dis,$name) {
+    @for $i from 1 through $num {
+        .#{$name}_#{$dis}_#{$i}{
+            #{$name}-#{$dis}: $i * 8px;
+        }
+    }
+}
+
+@include push(10, left, padding);
+@include push(10, top, padding);
+@include push(10, left, margin);
+@include push(10, top, margin);
+
+//margin 左右置中
+@mixin mx-auto(){
+    margin: 0 auto;
+}
+
+//position absolute置中
+@mixin absolute_middle() {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+//display:flex 置中 (寫在父元素)
+@mixin flex_middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+//按鈕
+// (button_min width:100px)
+// (button_large width:150px)
+$buttonWidth:(
+    "large": 150,
+    "min": 100
+);
+
+@each $s,$v in $buttonWidth{
+    .button_#{$s}{
+        width: $v * 1px;
+        padding: 15px;
+        text-align: center;
+        border: 1px solid $gold;
+    }
+}
+
+//rwd
+$breakpoint_each: (
+    "mobile": 768px,
+    "pad": 992px,
+    "desktop": 1200px
+);
+@mixin respond($rwd,$style:all){
+    @each $break, $val in $breakpoint_each{
+        @if $rwd == $break{
+            @media #{$style} and (max-width: $val){
+                @content;
+            }
+        }
+    }
+}
+//icon大小
+.icon{
+    max-width: 20px;
+}
+//固定寬1440px
+.container{
+    // max-width: 1440px;
+    margin: 0 auto;
+    // overflow-x: hidden;
+    padding-top: 15vh;
+}
+

@@ -21,11 +21,11 @@
 </head>
 
 <body>
-    <div id="app" class="container">
+    
         <header>
             @@include('./layout/header.html')
         </header>
-
+        <div id="app" >
         <!-- Slider main container -->
         <div class="swiper-container">
             <!-- Additional required wrapper -->
@@ -170,7 +170,7 @@
             </div>
             <div class="recommend">
                 <h3 class="margin_top_10 alltrip ">其他推薦景點</h3>
-                <div class="tripcard_all  margin_top_5">
+                <div class="tripcard_all  margin_top_6">
 
                     <div v-for="item in second" class="tripcard">
                         <img :src="item.spot" class="spot_pic" alt="spot_pic">
@@ -187,11 +187,11 @@
                 </div>
             </div>
         </div>
-
+    </div>
         <footer>
             @@include('./layout/footer.html')
         </footer>
-    </div>
+    
 
 
 
@@ -238,7 +238,13 @@
                     grade: "初階",
                     scores: "5000",
                     price: 3000,
-                },],
+                },{
+                    spot: "./img/trip/trip_jupiter/jupiter_a1_ps2.jpg",
+                    title: "月球 | 太空體驗一日遊",
+                    grade: "初階",
+                    scores: "5000",
+                    price: 1000,
+                }, ],
                 computed: {
                     subContent() {
                         if (this.content.length > 20) {

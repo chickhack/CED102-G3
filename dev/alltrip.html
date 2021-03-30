@@ -28,12 +28,12 @@
 
 <body>
 
-    <div id="app" class="container">
+    <div id="app">
         <header>
             @@include('./layout/header.html')
         </header>
         <!-- ----------first -->
-        <div class="first ">
+        <div class="first padding_top_5">
             <div class="bk">
             </div>
             <div class="bk3">
@@ -42,7 +42,7 @@
             <div class="first_left">
                 <h2 class="title line_high h1 "><span class="h3">預訂後即刻出發，最短一日行程</span><br>讓你親眼見證宇宙<br> 改變你的內在世界</h2>
             </div>
-            <div class="first_right swiper-container">
+            <div class="first_right swiper-container padding_top_4">
                 <div class="hottrip wiper-wrapper">
                     <div v-for="item in top" class="planet_top swiper-slide">
                         <a href="trip.html">
@@ -107,7 +107,7 @@
         <div class="second margin_top_10">
             <h2 class="alltrip">星球景點總覽</h2>
             <div class="tripcardall">
-                <h3 class="padding_top_3 alltrip ">月球景點</h3>
+                <h3 class="padding_top_5 alltrip ">月球景點</h3>
                 <div class="tripcard_all  margin_top_5">
                     <div v-for="item in spot1" class="tripcard ">
                         <a href="trip.html">
@@ -124,7 +124,7 @@
                         </a>
                     </div>
                 </div>
-                <h3 class="padding_top_3 alltrip ">火星景點</h3>
+                <h3 class="padding_top_5 alltrip ">火星景點</h3>
                 <div class="tripcard_all  margin_top_5">
                     <div v-for="item in spot2" class="tripcard ">
                         <a href="trip.html">
@@ -141,7 +141,7 @@
                         </a>
                     </div>
                 </div>
-                <h3 class="padding_top_3 alltrip ">木星景點</h3>
+                <h3 class="padding_top_5 alltrip ">木星景點</h3>
                 <div class="tripcard_all  margin_top_5">
                     <div v-for="item in spot3" class="tripcard ">
                         <a href="trip.html">

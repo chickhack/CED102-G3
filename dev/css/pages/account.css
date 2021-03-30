@@ -79,31 +79,15 @@ body {
   background-color: #0c0d18;
   overflow-x: hidden;
 <<<<<<< HEAD
-  -o-user-select: none;
-  user-select: none;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  -o-user-select: none;
-  user-select: none;
-=======
-=======
->>>>>>> denis
   -webkit-user-select: none;
   -moz-user-select: none;
   -o-user-select: none;
   -ms-user-select: none;
       user-select: none;
-<<<<<<< HEAD
->>>>>>> denis
 =======
   -o-user-select: none;
   user-select: none;
->>>>>>> chickhack
-=======
->>>>>>> denis
->>>>>>> 2c9880b2ec61e05445d35039c54a72771639c64a
+>>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
 }
 
 h1, .h1 {
@@ -322,31 +306,30 @@ small, .small {
 }
 
 .container {
-  max-width: 1440px;
   margin: 0 auto;
+  padding-top: 15vh;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 nav {
   display: flex;
+<<<<<<< HEAD
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+=======
   justify-content: center;
   align-items: center;
-  justify-content: space-around;
+>>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
+  justify-content: center;
   background-color: #0c0d18;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-  position: -webkit-sticky;
->>>>>>> denis
-=======
->>>>>>> chickhack
-=======
-  position: -webkit-sticky;
->>>>>>> denis
->>>>>>> 2c9880b2ec61e05445d35039c54a72771639c64a
-  position: sticky;
+  position: fixed;
   top: 0;
   width: 100%;
   min-height: 12vh;
@@ -357,24 +340,51 @@ nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-  background-image: url("../../img/header/logo.png");
+<<<<<<< HEAD
+<<<<<<< HEAD
+  background-image: url("../../img/icon/header/logo.png");
+=======
+<<<<<<< HEAD
+  background-image: url("../../img/logo.png");
+=======
+  background-image: url("../../img/icon/header/logo.png");
+>>>>>>> kai
+>>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
+=======
+  background-image: url("../../img/icon/header/logo.png");
+>>>>>>> kai
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
-  width: 200px;
+  max-width: 200px;
   height: 30px;
+  margin: 0 8px;
 }
 
 nav .nav-links {
   display: flex;
+<<<<<<< HEAD
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+=======
   justify-content: center;
   align-items: center;
   justify-content: flex-end;
-  width: 60%;
+>>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
+  width: 75%;
 }
 
 nav .nav-links a {
+  width: 100%;
   color: #ffffff;
+  padding: 8px;
 }
 
 nav .nav-icons {
@@ -383,10 +393,12 @@ nav .nav-icons {
   align-items: center;
   justify-content: space-around;
   width: 12%;
+  margin-left: 50px;
 }
 
 nav .burger {
   display: none;
+  cursor: pointer;
 }
 
 nav .burger div {
@@ -394,6 +406,77 @@ nav .burger div {
   height: 2px;
   background-color: #ffffff;
   margin: 5px;
+}
+
+@media (max-width: 992px) {
+  nav {
+    justify-content: space-around;
+  }
+  nav .nav-links {
+    position: absolute;
+    right: -100%;
+    height: 92vh;
+    top: 12vh;
+    background-color: #AD6E4A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    transition: all 1s ease-in;
+  }
+  nav .nav-links li {
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+    opacity: 0;
+  }
+  nav .nav-links li a {
+    display: block;
+    padding: 24px 0;
+  }
+  nav .nav-icons {
+    width: 100%;
+    justify-content: flex-end;
+  }
+  nav .nav-icons .icon {
+    margin: 0 30px 0 15px;
+  }
+  nav .burger {
+    display: block;
+  }
+  nav .nav-active {
+    right: 0%;
+  }
+}
+
+@media (max-width: 768px) {
+  nav .logo {
+    margin: 0 8px;
+  }
+  nav .nav-links {
+    width: 100%;
+  }
+  nav .nav-icons {
+    width: 50%;
+    margin-left: 16px;
+    justify-content: space-around;
+  }
+  nav .nav-icons .icon {
+    margin: 0;
+  }
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }
 
 footer {
@@ -435,8 +518,13 @@ footer .links .footer-links a {
 footer .footer_moon {
   position: relative;
   left: 50%;
-  max-width: 550px;
+  max-width: 40%;
+<<<<<<< HEAD
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+=======
   transform: translateX(-50%);
+>>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
 }
 
 footer .smoke {
@@ -446,24 +534,23 @@ footer .smoke {
   width: 100%;
   height: 80%;
 <<<<<<< HEAD
-  transform: translateX(-50%);
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  transform: translateX(-50%);
-=======
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
->>>>>>> denis
 =======
   transform: translateX(-50%);
->>>>>>> chickhack
-=======
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
->>>>>>> denis
->>>>>>> 2c9880b2ec61e05445d35039c54a72771639c64a
+>>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
+}
+
+@media (max-width: 768px) {
+  footer .links .logo {
+    bottom: 0;
+  }
+  footer .links .footer-links {
+    display: none;
+  }
+  footer .footer_moon {
+    min-width: 250px;
+  }
 }
 
 .quantity label {
@@ -511,19 +598,6 @@ body {
 .welcome {
   padding: 15vh 250px 0px 250px;
 <<<<<<< HEAD
-  display: flex;
-  align-items: center;
-  justify-content: left;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  display: flex;
-  align-items: center;
-  justify-content: left;
-=======
-=======
->>>>>>> denis
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -533,16 +607,11 @@ body {
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
-<<<<<<< HEAD
->>>>>>> denis
 =======
   display: flex;
   align-items: center;
   justify-content: left;
->>>>>>> chickhack
-=======
->>>>>>> denis
->>>>>>> 2c9880b2ec61e05445d35039c54a72771639c64a
+>>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
 }
 
 .spacedinfo {
@@ -674,7 +743,7 @@ p.nextacc, p.nowacc {
 
 /* 會員menu */
 .account_nav {
-  margin: 50px 200px 0px 200px;
+  margin: 50px 250px 0px 250px;
 }
 
 .account_nav a {
@@ -687,43 +756,86 @@ p.nextacc, p.nowacc {
 }
 
 .account_line {
-  margin: 0px 200px 0px 200px;
-  /* border: 0.5px solid #AD6E4A; */
-  color: #AD6E4A;
+  margin: 0px 250px 0px 250px;
+  background-color: #AD6E4A;
 }
 
 /* 會員資料 */
-.info {
-  margin-top: 1px;
-  padding: 30px 280px 10px 280px;
+.info_form {
+  margin: 0px 200px 0px 200px;
+  padding: 30px 80px 0px 80px;
+  border-radius: 10px;
   height: auto;
-  background-color: #3a3a3c;
-  opacity: 0.6;
-  display: flex;
+  font-family: "Microsoft JhengHei";
+  font-size: 12px;
+  color: #C9ADA7;
 }
 
 .infoimg {
   max-width: 100px;
 }
 
-.info_form {
-  padding: 30px 50px 30px 50px;
+.info_img {
+  margin: 5px 20px 0px 0px;
 }
 
-.form-group,
-label {
-  margin-top: 5px;
+.info_left, .info_right, .info_edit {
+  margin: 25px 10px 0px 10px;
+}
+
+.form-group, label {
+  margin-top: 10px;
   margin-bottom: 5px;
 }
 
-.infobtn {
-  margin: 30px;
+input.form-control {
+  width: 85%;
+  height: 20px;
+  border: 0.5px solid rgba(173, 110, 74, 0.6);
+  background-color: none;
+  color: #ffffff;
+  font-family: "Microsoft JhengHei";
+  font-size: 14px;
+}
+
+.form-control:focus {
+  border-color: #cccaca;
+  outline: none;
+  box-shadow: none;
+}
+
+.form-control-plaintext {
+  width: 85%;
+  height: 20px;
+  border: 0.5px solid rgba(173, 110, 74, 0.6);
+  background: none;
+  color: #ffffff;
+  font-family: "Microsoft JhengHei";
+  font-size: 14px;
+  padding: .375rem .75rem;
+  font-weight: 400;
+  line-height: 1.5;
+  border-radius: .25rem;
+}
+
+input.form-control-plaintext:focus {
+  border-color: #cccaca;
+  outline: none;
+  box-shadow: none;
+}
+
+.info_editbtn {
+  font-family: "Microsoft JhengHei";
+  font-size: 14px;
   color: #ffff;
   border: 1px solid #AD6E4A;
   background: none;
+  border-radius: 0px;
+  width: 80%;
+  margin-left: 50px;
 }
 
-.infobtn:hover {
+.info_editbtn:hover {
   color: #ffff;
   border: 1px solid #AD6E4A;
   background: #AD6E4A;
@@ -732,5 +844,122 @@ label {
 /* footer */
 footer {
   padding-top: 100px;
+}
+
+input, button {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  background-color: transparent;
+}
+
+button {
+  cursor: pointer;
+  padding: 5px;
+  background-color: #753;
+  color: #ECA;
+  border-radius: 3px;
+}
+
+button:hover {
+  background-color: #ECA;
+  color: #753;
+}
+
+#app {
+  padding: 20px;
+  width: 300px;
+}
+
+#app .input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 3px;
+  margin: 10px 0;
+  background-color: #ECA;
+}
+
+#app .input input {
+  padding: 5px;
+}
+
+#app .input button {
+  padding: 5px;
+  background-color: #ECA;
+  color: #753;
+  font-weight: bold;
+  border-radius: 0 3px 3px 0;
+}
+
+#app .input button:hover {
+  background-color: #753;
+  color: #ECA;
+}
+
+#app .input button:active {
+  background-color: #ECA;
+  color: #753;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+.tabs {
+  display: flex;
+}
+
+.tabs li {
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 5px 5px 0 0;
+  padding: 5px;
+  background-color: #ECA;
+  color: #753;
+  margin-right: 4px;
+  font-weight: bold;
+}
+
+.tabs li:hover,
+.tabs li.active {
+  background-color: #753;
+  color: #ECA;
+}
+
+.main .content {
+  border-radius: 0 5px 0 0;
+  padding: 5px;
+  background-color: #ECA;
+}
+
+.main .content .item {
+  padding: 5px;
+  background-color: #FED;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+.main .content .item .item-content,
+.main .content .item .item-edit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main .content .item .item-edit input {
+  background-color: #FFF;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.bottom {
+  background-color: #ECA;
+  border-radius: 0 0 5px 5px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 /*# sourceMappingURL=account.css.map */
