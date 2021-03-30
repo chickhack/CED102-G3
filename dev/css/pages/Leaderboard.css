@@ -280,14 +280,14 @@ small, .small {
 
 .button_large {
   width: 150px;
-  padding: 15px;
+  padding: 8px 0;
   text-align: center;
   border: 1px solid #AD6E4A;
 }
 
 .button_min {
   width: 100px;
-  padding: 15px;
+  padding: 8px 0;
   text-align: center;
   border: 1px solid #AD6E4A;
 }
@@ -322,14 +322,7 @@ nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-<<<<<<< HEAD
-  background-image: url("../img/icon/header/logo.png");
-=======
-  background-image: url("../../img/icon/header/logo.png");
-  background-image: url("../../img/logo.png");
-  background-image: url("../../img/icon/header/logo.png");
-  background-image: url("../../img/icon/header/logo.png");
->>>>>>> db9e7942d64fa292e27c36c472ee61cbb53ec989
+  background-image: url("../img/logo.png");
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -616,10 +609,6 @@ input[type=number] {
 .icon-2 {
   width: 50px;
   object-fit: cover;
-<<<<<<< HEAD
-=======
->>>>>>> 3669f853016e9d33f1f2a0c73a08d01c16be8b7f
->>>>>>> db9e7942d64fa292e27c36c472ee61cbb53ec989
   height: 50px;
   border-radius: 40px;
 }
@@ -628,34 +617,19 @@ input[type=number] {
   width: 40px;
   height: 40px;
   object-fit: cover;
-<<<<<<< HEAD
-=======
->>>>>>> 3669f853016e9d33f1f2a0c73a08d01c16be8b7f
->>>>>>> db9e7942d64fa292e27c36c472ee61cbb53ec989
   border-radius: 40px;
 }
 
 .text-00 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .text-01 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .line-he-65 {
@@ -691,17 +665,12 @@ input[type=number] {
   width: 100%;
   height: 200px;
   object-fit: cover;
-<<<<<<< HEAD
-=======
->>>>>>> 3669f853016e9d33f1f2a0c73a08d01c16be8b7f
->>>>>>> db9e7942d64fa292e27c36c472ee61cbb53ec989
 }
 
 .banner h2 {
   position: absolute;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   top: 50%;
 }
 
@@ -710,14 +679,6 @@ input[type=number] {
 }
 
 .container-fluid .row .col-10 .row .col-10 {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-=======
->>>>>>> 3669f853016e9d33f1f2a0c73a08d01c16be8b7f
->>>>>>> db9e7942d64fa292e27c36c472ee61cbb53ec989
   display: flex;
 }
 
