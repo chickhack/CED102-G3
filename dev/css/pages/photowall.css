@@ -14,24 +14,10 @@ body {
 }
 
 .grid {
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-=======
   padding-top: 5%;
-<<<<<<< HEAD
->>>>>>> 528db558604e5ab1390a0ef5b25d30e723a35a4d
-  display: flex;
-=======
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> denis
->>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: center;
@@ -40,29 +26,6 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
-<<<<<<< HEAD
-<<<<<<< HEAD
-  padding-top: 5%;
-  font-size: 12px;
-=======
-=======
->>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
-=======
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: start;
->>>>>>> 4f14f6ff559305f7fcb5391237c01d763e2135d6
-<<<<<<< HEAD
->>>>>>> 528db558604e5ab1390a0ef5b25d30e723a35a4d
-=======
-=======
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: start;
->>>>>>> chickhack
-=======
->>>>>>> denis
->>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
 }
 
 .grid-item {
@@ -75,16 +38,8 @@ body {
 
 .grid .grid-item img {
   width: 100%;
-<<<<<<< HEAD
-  object-fit: cover;
-<<<<<<< HEAD
-=======
-  border-radius: 5px;
->>>>>>> chickhack
-=======
   -o-object-fit: cover;
      object-fit: cover;
->>>>>>> denis
 }
 
 .grid .grid-item:nth-child(n+11) {
@@ -122,16 +77,8 @@ body {
   padding: 15px;
 }
 
-<<<<<<< HEAD
-.article {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 250px;
-=======
 .member_photo img {
   max-width: 50px;
->>>>>>> 528db558604e5ab1390a0ef5b25d30e723a35a4d
 }
 
 .article_all .article .name {
@@ -191,12 +138,7 @@ body {
 
 .col-md-1 {
   display: inline-block;
-<<<<<<< HEAD
-  position: -webkit-sticky;
-  position: sticky;
-=======
   position: fixed;
->>>>>>> 528db558604e5ab1390a0ef5b25d30e723a35a4d
   left: 1300px;
   bottom: 80px;
 }

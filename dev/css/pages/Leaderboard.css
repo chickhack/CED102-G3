@@ -35,37 +35,18 @@
 }
 
 .icon-2 {
-<<<<<<< HEAD
-  width: 60px;
+  width: 50px;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 60px;
-=======
-  width: 50px;
-  object-fit: cover;
   height: 50px;
->>>>>>> chickhack
   border-radius: 40px;
 }
 
 .icon-3 {
-<<<<<<< HEAD
-<<<<<<< HEAD
-  width: 55px;
-  height: 55px;
-=======
-=======
->>>>>>> 740a6c631b1f7ce3e6fd42883eed007d7a3f1c71
-  width: 50px;
-  height: 50px;
->>>>>>> 528db558604e5ab1390a0ef5b25d30e723a35a4d
-  -o-object-fit: cover;
-     object-fit: cover;
-=======
   width: 40px;
   height: 40px;
-  object-fit: cover;
->>>>>>> chickhack
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 40px;
 }
 
@@ -123,13 +104,9 @@
 
 .banner img {
   width: 100%;
-<<<<<<< HEAD
+  height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
-=======
-  height: 200px;
-  object-fit: cover;
->>>>>>> chickhack
 }
 
 .banner h4 {
@@ -151,6 +128,8 @@
 }
 
 .container .row .col-10 .row .col-10 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
