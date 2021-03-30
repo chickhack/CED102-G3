@@ -653,9 +653,10 @@ input[type=number] {
 
 .banner {
   margin: 0 auto;
-  background-image: url(../../img/home/others/station_moon.jpg);
+  background-image: url(../../img/home/others/clavius-landing.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center  center;
   width: 87%;
   padding-top: 20%;
   position: relative;
@@ -665,6 +666,8 @@ input[type=number] {
   width: 100%;
   height: 200px;
   object-fit: cover;
+  position: relative;
+  top: 100px;
 }
 
 .banner h2 {
