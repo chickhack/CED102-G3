@@ -2,8 +2,8 @@ new Vue({
     el: '#gallery',
       
       data: { 
-          image1 :"../img/home/mars1.jpg",
-          image2 :'../img/home/mars2.jpg',
+          image1 :"/",
+          image2 :'/img/home/mars2.jpg',
           image3 :"../img/home/首頁-互動牆壁2.jpg",
           image4 :"../img/home/首頁-互動牆壁8.jpg",
           image5 :"../img/home/首頁-互動牆壁9.jpg",
@@ -12,8 +12,6 @@ new Vue({
           image8 :"../img/photowall/big/mars_b3.jpg",
           image9 :"../img/photowall/big/mars_b4.jpg",
           image10 :"../img/photowall/big/mars_b1.jpg",
-          content1 : "12345",
-          content2 : "67890"
         },
       
        methods:{

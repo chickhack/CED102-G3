@@ -5,15 +5,11 @@ nav{
     background-color: transparent;
 }
 
-//背景圖片
-.banner_bg{
-    background: -webkit-linear-gradient(bottom, $darkblue 5%, transparent 95%), url('../../img/home/mainBannerBg.jpg') no-repeat
-    ;
-    background-size: 100%;
-    background-position: top;
+//背景影片
+.video-bg{
     height: 100vh;
+    overflow: hidden;
 }
-
 @media only screen and ( max-width:1200px) {
     .banner_bg{
         height: 100vh;
@@ -35,10 +31,12 @@ button{
 
 
 .banner{
+    position: absolute;
+    top: 40%;
+    left: 15%;
     .slogan {
         display: flex;
         justify-content: center;
-        margin-top: 20vh;
         p{
             font-size: 7rem;
             color: white;
@@ -284,16 +282,21 @@ button{
             // border: 1px solid white;
             // background-image: url('../../img/home/首頁-互動牆壁2.jpg');
             height: 310px;
-            background-size: 120%;
+            overflow: hidden;
+            img{
+                height: 100%;
+            }
         }
         .B{
             // border: 1px solid white;
             // background-image: url('../../img/home/首頁-互動牆壁9.jpg');
-            background-repeat: no-repeat;
             height: 450px;
-            background-position: center;
-            background-size: 400%;
+            overflow: hidden;
+            img{
+                height: 450px;
+            }
         }
+        
     }
     .topright{
         // background-color: orange;
@@ -317,33 +320,45 @@ button{
             }
         }
     }
-    .bottomleft{
+    .bottom{
         display: flex;
         flex-direction: row;
-        max-height: 500px;
-        .D{
-            // border: 1px solid white;
-            // background-image: url('../../img/home/首頁-互動牆壁2.jpg');
-            height: 310px;
-            background-size: 120%;;
+        .bottomleft{
+            display: flex;
+            flex-direction: row;
+            max-height: 500px;
+            .D{
+                // border: 1px solid white;
+                // background-image: url('../../img/home/首頁-互動牆壁2.jpg');
+                height: 310px;
+                background-size: 120%;;
+                overflow: hidden;
+                img{
+                    height: 100%;
+                }
+            }
+            .E{
+                // border: 1px solid white;
+                // background-image: url('../../img/home/mars2.jpg');
+                background-repeat: no-repeat;
+                height: 450px;
+                background-position: right;
+                overflow: hidden;
+                img{
+                    height: 50%;
+                }
+    
+    
+            }
         }
-        .E{
-            // border: 1px solid white;
-            // background-image: url('../../img/home/mars2.jpg');
-            background-repeat: no-repeat;
-            height: 450px;
-            background-position: right;
-            background-size: 300%;
+        .bottomright{
+            .F{
+                // border: 1px solid white;
+                // background-image: url('../../img/home/首頁-互動牆壁8.jpg');
+                height: 310px;
+                overflow: hidden;
 
-        }
-    }
-    .bottomright{
-        .F{
-            // background-image: url('../../img/home/首頁-互動牆壁8.jpg');
-            background-repeat: no-repeat;
-            height: 310px;
-            background-position: center;
-            background-size: 100%;
+            }
         }
     }
 }
@@ -482,10 +497,31 @@ button{
         }
 
     }
-    
+    .shop_carousel{display: none;}
 
+
+    @media all and (max-width:1200px) {
+        .shopItem{
+            display: none;
+        }
+        .shopRWD{
+            display: flex;
+            justify-content: center;
+            .shop_carousel{
+                display: block;
+                background-color: $darkblue;
+                // .carousel-inner{
+                    border: 1px solid white;
+                    width: 60%;
+
+                // }
+            }
+        }
+        .button_min{
+            margin-top: 24px;
+        }
+    }
 }
-
 
 
 //=========會員待遇
@@ -524,8 +560,10 @@ button{
 
         }
     }
-    button{
-        align-self: center;
+    .memberbtn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         margin-bottom: 70px;
     }
 }

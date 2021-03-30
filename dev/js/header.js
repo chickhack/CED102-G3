@@ -13,6 +13,10 @@ const navSlide = () => {
                 link.style.animation = `navLinkFade .5s ease forwards ${index / 5 + 0.8}s`;
             }
         })
+
+        //burger animation
+        burger.classList.toggle("toggle");
+        console.log("hihihi");
     })
 }
 

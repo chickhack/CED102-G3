@@ -21,6 +21,7 @@ body {
 =======
   display: flex;
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 5badf5bb2eed3e9ef55ccab2f7d645bfd9e24c24
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -38,6 +39,11 @@ body {
   align-items: start;
 >>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
 >>>>>>> 5badf5bb2eed3e9ef55ccab2f7d645bfd9e24c24
+=======
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: start;
+>>>>>>> 3dad026ace0b41a32fd8a158fb1c574e21ce5fa3
 }
 
 .grid-item {
@@ -51,6 +57,7 @@ body {
 .grid .grid-item img {
   width: 100%;
 <<<<<<< HEAD
+<<<<<<< HEAD
   -o-object-fit: cover;
      object-fit: cover;
 =======
@@ -61,6 +68,9 @@ body {
   object-fit: cover;
 >>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
 >>>>>>> 5badf5bb2eed3e9ef55ccab2f7d645bfd9e24c24
+=======
+  object-fit: cover;
+>>>>>>> 3dad026ace0b41a32fd8a158fb1c574e21ce5fa3
 }
 
 .grid .grid-item:nth-child(n+11) {
