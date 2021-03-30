@@ -199,6 +199,26 @@ small, .small {
   padding-top: 80px;
 }
 
+.padding_top_11 {
+  padding-top: 88px;
+}
+
+.padding_top_12 {
+  padding-top: 96px;
+}
+
+.padding_top_13 {
+  padding-top: 104px;
+}
+
+.padding_top_14 {
+  padding-top: 112px;
+}
+
+.padding_top_15 {
+  padding-top: 120px;
+}
+
 .margin_left_1 {
   margin-left: 8px;
 }
@@ -279,6 +299,26 @@ small, .small {
   margin-top: 80px;
 }
 
+.margin_top_11 {
+  margin-top: 88px;
+}
+
+.margin_top_12 {
+  margin-top: 96px;
+}
+
+.margin_top_13 {
+  margin-top: 104px;
+}
+
+.margin_top_14 {
+  margin-top: 112px;
+}
+
+.margin_top_15 {
+  margin-top: 120px;
+}
+
 .button_large {
   width: 150px;
   padding: 8px 0;
@@ -323,9 +363,6 @@ nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-  background-image: url("../../img/icon/header/logo.png");
-  background-image: url("../../img/logo.png");
-  background-image: url("../../img/icon/header/logo.png");
   background-image: url("../../img/icon/header/logo.png");
   background-position: center center;
   background-size: contain;
