@@ -297,35 +297,31 @@ button{
     }
 
     .topleft{
-        // background-color: green;
         display: flex;
         flex-direction: row;
-        max-height: 500px;
+        max-height: 300px;
         align-items: flex-end;
         .A{
-            // border: 1px solid white;
-            // background-image: url('../../img/home/首頁-互動牆壁2.jpg');
-            height: 310px;
+            height: 300px;
             overflow: hidden;
             img{
                 height: 100%;
             }
         }
         .B{
-            // border: 1px solid white;
-            // background-image: url('../../img/home/首頁-互動牆壁9.jpg');
-            height: 450px;
+            height: 300px;
             overflow: hidden;
             img{
-                height: 450px;
+                height: 300px;
             }
         }
-        
     }
     .topright{
-        // background-color: orange;
         display: flex;
         flex-direction: column;
+        .separator{
+            width: 60%;
+        }
         .topSct{
             display: flex;
             justify-content: space-around;
@@ -350,24 +346,15 @@ button{
         .bottomleft{
             display: flex;
             flex-direction: row;
-            max-height: 500px;
+            max-height: 300px;
             .D{
-                // border: 1px solid white;
-                // background-image: url('../../img/home/首頁-互動牆壁2.jpg');
-                height: 310px;
-                background-size: 120%;;
-                overflow: hidden;
+                height: 300px;
                 img{
                     height: 100%;
                 }
             }
             .E{
-                // border: 1px solid white;
-                // background-image: url('../../img/home/mars2.jpg');
-                background-repeat: no-repeat;
-                height: 450px;
-                background-position: right;
-                overflow: hidden;
+                height: 300px;
                 img{
                     height: 50%;
                 }
@@ -376,16 +363,62 @@ button{
             }
         }
         .bottomright{
+            display: flex;
+
             .F{
                 // border: 1px solid white;
                 // background-image: url('../../img/home/首頁-互動牆壁8.jpg');
-                height: 310px;
+                height: 300px;
+                overflow: hidden;
+
+            }
+            .G{
+                height: 300px;
                 overflow: hidden;
 
             }
         }
     }
 }
+
+@media all and (max-width:997px) {
+    .topleft{
+        .B{
+            display: none;
+        }
+    }
+    .topright{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .separator{
+            width: 80%;
+        }
+        .galleryIntro{
+            max-width: 460px;
+        }
+    }
+    .bottom{
+        .bottomleft{
+            .D{
+                display: none;
+            }
+            .E{
+                display: none;
+            }
+        }
+        .bottomright{
+            .F{
+                display: none;
+            }
+            .G{
+                display: none;
+            }
+        }
+    }
+
+}
+
 
 
 
@@ -521,7 +554,7 @@ button{
         }
 
     }
-    .shop_carousel{display: none;}
+    .shopRWD{display: none;}
 
 
     @media all and (max-width:1200px) {
@@ -593,4 +626,11 @@ button{
 }
 
 
+
+
+
+//=========間距
+.flow_member, .shop_box, .gallery, .planet_box{
+    margin-top: 30vh;
+}
 

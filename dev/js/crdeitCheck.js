@@ -15,7 +15,8 @@ let checkCard = () => {
             numArr.forEach((num,i) => {
                 if(i % 2 === 0){
                     if(num * 2 > 10){
-                        total += (num * 2) - 9
+                        total += (num * 2) - 9; 
+                        console.log(num);
                     }else{
                         total += parseInt(num);
                     }

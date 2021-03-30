@@ -100,18 +100,20 @@
 }
 .banner{
     margin: 0 auto;
-    background-image: url(../../img/home/others/station_moon.jpg);
+    background-image: url(../../img/home/others/clavius-landing.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center  center;
     width: 87%;
-    padding-top: 20%;
+    padding-top:20%;
     // padding-bottom: 30%;
     position: relative;
     img{
         width: 100%;
         height: 200px;
-        
         object-fit: cover;
+        position: relative;
+        top: 100px;
     }
     h2{
     position: absolute;
@@ -122,6 +124,9 @@
     }
 }
 .container-fluid{
+    padding-top: 15vh;
+    padding-left: 0px;
+    padding-right: 0px;
     .row{
         .col-10{
             // display: flex;

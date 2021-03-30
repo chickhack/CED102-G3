@@ -56,6 +56,7 @@ img {
 *,
 *:before,
 *:after {
+<<<<<<< HEAD
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
 <<<<<<< HEAD
@@ -64,6 +65,9 @@ img {
   box-sizing: inherit;
 >>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
 >>>>>>> dev
+=======
+  box-sizing: inherit;
+>>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
   margin: 0;
   padding: 0;
 }
@@ -84,6 +88,7 @@ body {
   font-size: 14px;
   background-color: #0c0d18;
   overflow-x: hidden;
+<<<<<<< HEAD
   -webkit-user-select: none;
   -moz-user-select: none;
   -o-user-select: none;
@@ -96,6 +101,10 @@ body {
   user-select: none;
 >>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
 >>>>>>> dev
+=======
+  -o-user-select: none;
+  user-select: none;
+>>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
 }
 
 h1, .h1 {
@@ -215,6 +224,26 @@ small, .small {
   padding-top: 80px;
 }
 
+.padding_top_11 {
+  padding-top: 88px;
+}
+
+.padding_top_12 {
+  padding-top: 96px;
+}
+
+.padding_top_13 {
+  padding-top: 104px;
+}
+
+.padding_top_14 {
+  padding-top: 112px;
+}
+
+.padding_top_15 {
+  padding-top: 120px;
+}
+
 .margin_left_1 {
   margin-left: 8px;
 }
@@ -295,6 +324,26 @@ small, .small {
   margin-top: 80px;
 }
 
+.margin_top_11 {
+  margin-top: 88px;
+}
+
+.margin_top_12 {
+  margin-top: 96px;
+}
+
+.margin_top_13 {
+  margin-top: 104px;
+}
+
+.margin_top_14 {
+  margin-top: 112px;
+}
+
+.margin_top_15 {
+  margin-top: 120px;
+}
+
 .button_large {
   width: 150px;
   padding: 8px 0;
@@ -326,6 +375,7 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -339,6 +389,10 @@ nav {
   align-items: center;
 >>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
 >>>>>>> dev
+=======
+  justify-content: center;
+  align-items: center;
+>>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
   justify-content: center;
   background-color: #0c0d18;
   position: fixed;
@@ -353,6 +407,7 @@ nav .logo h1 a {
   white-space: nowrap;
   overflow: hidden;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> dev
@@ -366,6 +421,9 @@ nav .logo h1 a {
   background-image: url("../img/logo.png");
 >>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
 >>>>>>> dev
+=======
+  background-image: url("../../img/icon/header/logo.png");
+>>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -378,6 +436,7 @@ nav .nav-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -395,6 +454,11 @@ nav .nav-links {
   justify-content: flex-end;
 >>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
 >>>>>>> dev
+=======
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-end;
+>>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
   width: 75%;
 }
 
@@ -408,6 +472,7 @@ nav .nav-icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -424,6 +489,11 @@ nav .nav-icons {
   justify-content: space-around;
 >>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
 >>>>>>> dev
+=======
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+>>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
   width: 12%;
   margin-left: 50px;
 }
@@ -439,7 +509,6 @@ nav .burger div {
   height: 2px;
   background-color: #ffffff;
   margin: 5px;
-  -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
 
@@ -457,6 +526,7 @@ nav .burger div {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -478,6 +548,11 @@ nav .burger div {
     align-items: center;
 >>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
 >>>>>>> dev
+=======
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+>>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
     width: 30%;
     -webkit-transition: all 1s ease-in;
     transition: all 1s ease-in;
@@ -520,6 +595,7 @@ nav .burger div {
     width: 50%;
     margin-left: 16px;
 <<<<<<< HEAD
+<<<<<<< HEAD
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -532,6 +608,9 @@ nav .burger div {
     justify-content: space-between;
 >>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
 >>>>>>> dev
+=======
+    justify-content: space-between;
+>>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
   }
   nav .nav-icons .icon {
     margin: 0;
@@ -565,8 +644,7 @@ nav .burger div {
 }
 
 .toggle .line1 {
-  -webkit-transform: rotate(45deg) translate(4px, 6px);
-          transform: rotate(45deg) translate(4px, 6px);
+  transform: rotate(45deg) translate(4px, 6px);
 }
 
 .toggle .line2 {
@@ -574,8 +652,7 @@ nav .burger div {
 }
 
 .toggle .line3 {
-  -webkit-transform: rotate(-45deg) translate(3px, -6px);
-          transform: rotate(-45deg) translate(3px, -6px);
+  transform: rotate(-45deg) translate(3px, -6px);
 }
 
 footer {
@@ -603,6 +680,7 @@ footer .links .footer-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -619,10 +697,16 @@ footer .links .footer-links {
   justify-content: space-around;
 >>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
 >>>>>>> dev
+=======
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+>>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
   width: 55%;
   position: relative;
   left: 50%;
   bottom: 30px;
+<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 <<<<<<< HEAD
@@ -631,6 +715,9 @@ footer .links .footer-links {
   transform: translateX(-50%);
 >>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
 >>>>>>> dev
+=======
+  transform: translateX(-50%);
+>>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
 }
 
 footer .links .footer-links a {
@@ -641,6 +728,7 @@ footer .footer_moon {
   position: relative;
   left: 50%;
   max-width: 40%;
+<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 <<<<<<< HEAD
@@ -649,6 +737,9 @@ footer .footer_moon {
   transform: translateX(-50%);
 >>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
 >>>>>>> dev
+=======
+  transform: translateX(-50%);
+>>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
 }
 
 footer .smoke {
@@ -657,6 +748,7 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
+<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 <<<<<<< HEAD
@@ -665,6 +757,9 @@ footer .smoke {
   transform: translateX(-50%);
 >>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
 >>>>>>> dev
+=======
+  transform: translateX(-50%);
+>>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
 }
 
 @media (max-width: 768px) {
@@ -730,6 +825,7 @@ section.cart .item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -743,6 +839,10 @@ section.cart .item {
   align-items: center;
 >>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
 >>>>>>> dev
+=======
+  justify-content: center;
+  align-items: center;
+>>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
   justify-content: center;
   background-color: #292B41;
   padding: 16px 0;
@@ -761,6 +861,7 @@ section.cart .item .img {
 section.cart .item .info {
   width: 65%;
   margin-left: 10px;
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -790,6 +891,8 @@ section.cart .item .info .points {
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
   display: flex;
   justify-content: center;
   align-items: center;
@@ -801,8 +904,11 @@ section.cart .item .info .points {
   justify-content: center;
   align-items: center;
   justify-content: start;
+<<<<<<< HEAD
 >>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
 >>>>>>> dev
+=======
+>>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
   margin: 8px 0;
 }
 
@@ -841,6 +947,7 @@ section.cart .checkout {
 
 @media all and (max-width: 768px) {
   section.cart .checkout {
+<<<<<<< HEAD
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -851,6 +958,9 @@ section.cart .checkout {
     flex-direction: column;
 >>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
 >>>>>>> dev
+=======
+    flex-direction: column;
+>>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
   }
 }
 

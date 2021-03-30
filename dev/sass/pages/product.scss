@@ -79,7 +79,7 @@ body {
         }
 
         strong {
-            font-weight: 700;
+            font-weight: 900;
         }
 
         p {
@@ -115,8 +115,9 @@ body {
         }
 
         .quantity {
-            label {
+            >label {
                 display: block;
+                font-weight: 900;
             }
 
             .as {
@@ -141,16 +142,24 @@ body {
             }
 
             .button_large {
-                width: 100%;
+                width: 45%;
+                display: inline-block;
                 cursor: pointer;
                 padding: 8px 0;
+                transition: all .3s ease;
+                &:hover{
+                    color: $white;
+                    background-color: $gold;
+                }
 
                 &.buy {
                     background-color: $gold;
                     color: $white;
                     font-weight: 900;
                     transition: all .3s;
-
+                    @include respond(mobile){
+                        margin-left: 0;
+                    }
                     &:hover {
                         background-color: lighten($gold, 10%);
                     }
@@ -269,7 +278,7 @@ body {
 
 .comment {
     max-width: 900px;
-    margin: 0 80px;
+    margin: 0 16px;
     @include respond(mobile){
         margin:0 30px;
     }
@@ -330,6 +339,7 @@ body {
             text-decoration: underline;
             position: relative;
             float: right;
+            cursor: pointer;
         }
     }
 }

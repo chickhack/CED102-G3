@@ -198,6 +198,26 @@ small, .small {
   padding-top: 80px;
 }
 
+.padding_top_11 {
+  padding-top: 88px;
+}
+
+.padding_top_12 {
+  padding-top: 96px;
+}
+
+.padding_top_13 {
+  padding-top: 104px;
+}
+
+.padding_top_14 {
+  padding-top: 112px;
+}
+
+.padding_top_15 {
+  padding-top: 120px;
+}
+
 .margin_left_1 {
   margin-left: 8px;
 }
@@ -278,6 +298,26 @@ small, .small {
   margin-top: 80px;
 }
 
+.margin_top_11 {
+  margin-top: 88px;
+}
+
+.margin_top_12 {
+  margin-top: 96px;
+}
+
+.margin_top_13 {
+  margin-top: 104px;
+}
+
+.margin_top_14 {
+  margin-top: 112px;
+}
+
+.margin_top_15 {
+  margin-top: 120px;
+}
+
 .button_large {
   width: 150px;
   padding: 8px 0;
@@ -322,14 +362,7 @@ nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-<<<<<<< HEAD
   background-image: url("../../img/icon/header/logo.png");
-  background-image: url("../../img/logo.png");
-  background-image: url("../../img/icon/header/logo.png");
-  background-image: url("../../img/icon/header/logo.png");
-=======
-  background-image: url("../img/logo.png");
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -372,10 +405,6 @@ nav .burger div {
   height: 2px;
   background-color: #ffffff;
   margin: 5px;
-<<<<<<< HEAD
-  -webkit-transition: all .3s ease;
-=======
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
   transition: all .3s ease;
 }
 
@@ -390,21 +419,9 @@ nav .burger div {
     top: 12vh;
     background-color: #AD6E4A;
     display: flex;
-<<<<<<< HEAD
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-=======
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
     width: 30%;
     transition: all 1s ease-in;
   }
@@ -443,13 +460,7 @@ nav .burger div {
   nav .nav-icons {
     width: 50%;
     margin-left: 16px;
-<<<<<<< HEAD
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-=======
     justify-content: space-between;
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
   }
   nav .nav-icons .icon {
     margin: 0;
@@ -477,20 +488,6 @@ nav .burger div {
 
 .toggle .line3 {
   transform: rotate(-45deg) translate(3px, -6px);
-}
-
-.toggle .line1 {
-  -webkit-transform: rotate(45deg) translate(4px, 6px);
-          transform: rotate(45deg) translate(4px, 6px);
-}
-
-.toggle .line2 {
-  opacity: 0;
-}
-
-.toggle .line3 {
-  -webkit-transform: rotate(-45deg) translate(3px, -6px);
-          transform: rotate(-45deg) translate(3px, -6px);
 }
 
 footer {
@@ -579,6 +576,7 @@ body {
 
 .grid {
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -608,23 +606,19 @@ body {
 <<<<<<< HEAD
 =======
 =======
+=======
+  display: flex;
+>>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
   flex-wrap: wrap;
   justify-content: center;
   align-items: start;
-<<<<<<< HEAD
->>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
->>>>>>> 5badf5bb2eed3e9ef55ccab2f7d645bfd9e24c24
-=======
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: start;
->>>>>>> 3dad026ace0b41a32fd8a158fb1c574e21ce5fa3
-=======
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
   max-width: 1100px;
   margin: 0 auto;
+<<<<<<< HEAD
 >>>>>>> 10e10f8ebb29ccc2882d121bf3efb9b9e001100b
 >>>>>>> dev
+=======
+>>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
 }
 
 .grid-item {
@@ -639,6 +633,7 @@ body {
 .grid .grid-item img {
   width: 100%;
 <<<<<<< HEAD
+<<<<<<< HEAD
   -o-object-fit: cover;
      object-fit: cover;
 =======
@@ -666,6 +661,9 @@ body {
 >>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
 >>>>>>> 10e10f8ebb29ccc2882d121bf3efb9b9e001100b
 >>>>>>> dev
+=======
+  object-fit: cover;
+>>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
 }
 
 .grid .grid-item:nth-child(n+9) {
@@ -780,8 +778,7 @@ body {
 }
 
 .col-md-1 .button_2:hover {
-  -webkit-transform: translateY(-5px);
-          transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 footer.padding_top_5 {
