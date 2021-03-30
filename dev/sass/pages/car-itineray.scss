@@ -13,8 +13,13 @@ a:hover{
     align-items:flex-end;
     padding-bottom: 1.5%;
 }
-
-
+.container-fluid{
+    max-width: 900px;
+    padding: 0;
+}
+.row{
+    margin: 0px;
+}
 //垃圾桶
 .icon-g{
     max-width: 20px;
@@ -29,6 +34,9 @@ a:hover{
 body{
     background-color: #0c0d18;
     
+}
+.w-100{
+    width: 100%;
 }
 //圖片對齊
 .vvvvv{
@@ -89,16 +97,6 @@ body{
     // height: 25px;
     text-align: center;
 }
-// 向下箭頭
-.bi{
-    fill: #ad6e4a;
-}
-// .data-down::after{
-//     content: url(../img/date-chevron-down.svg);
-//     width: 20px;
-//     height: 20px;
-//     // z-index: -1;
-// }
 //input-icon日期替換
 ::-webkit-calendar-picker-indicator { 
 
@@ -167,6 +165,7 @@ body{
             
     }
     .col-11{
+        padding: 0px;
         .row{
             display: flex;
             .datacol{

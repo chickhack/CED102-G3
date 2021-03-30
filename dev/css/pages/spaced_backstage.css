@@ -19,10 +19,17 @@
 }
 
 .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
-  align-content: center;
-  align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #292b41;
   height: 12vh;
 }
@@ -41,10 +48,17 @@
   color: #c9ada7;
   border: none;
   outline: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-content: center;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-left: 20px;
 }
 
@@ -61,9 +75,14 @@
   color: #c9ada7;
   border: none;
   outline: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .div-list-btn-a {
@@ -74,10 +93,17 @@
   color: #c9ada7;
   border: none;
   outline: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-content: center;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-left: 20px;
 }
 
@@ -109,6 +135,8 @@
 }
 
 .div-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   min-height: 650px;
 }
@@ -123,20 +151,34 @@
   width: 100%;
 }
 
+<<<<<<< HEAD
+.div-menu .div-right .div-right-span-fro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+=======
 .div-menu .div-right .div-right-span-for {
+>>>>>>> d108359aefc3e65a43f2f258d5b615e128f63572
   display: flex;
 }
 
 .div-menu .div-right .div-right-span {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .div-menu .div-right .div-right-span .span-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background-color: #fff;
   height: 25px;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 5px;
   padding-left: 8px;
 }
@@ -154,6 +196,7 @@
   height: 25px;
   border-radius: 5px;
   color: black;
+  -webkit-transition: all 0.7s;
   transition: all 0.7s;
 }
 
