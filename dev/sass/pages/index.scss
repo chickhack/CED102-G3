@@ -1,9 +1,17 @@
 @import "../all.scss";
 
+.container-fluid{
+    padding: 0;
+
+}
+
+
+
 //=========header設定
 nav{
-    background-color: transparent;
+    background-color: $darkblue;
 }
+
 
 //背景影片
 .video-bg{
@@ -33,7 +41,8 @@ button{
 .banner{
     position: absolute;
     top: 40%;
-    left: 15%;
+    left: 17%;
+
     .slogan {
         display: flex;
         justify-content: center;
@@ -49,6 +58,19 @@ button{
         justify-content: center;
         img{
             margin-top: 20%;
+        }
+    }
+}
+@media only screen and ( max-width:1200px) {
+    .banner{
+        top: 25%;
+        p{
+            font-size: 3rem;
+        }
+    }
+    .scroll{
+        img{
+            margin-top: 5%;
         }
     }
 }
