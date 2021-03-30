@@ -322,6 +322,7 @@ form .orderinfo .row .col-10 {
 form .orderinfo .row .col-10 .row {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -332,6 +333,8 @@ form .orderinfo .row .col-10 .row {
 =======
 >>>>>>> 10e10f8ebb29ccc2882d121bf3efb9b9e001100b
 >>>>>>> dev
+=======
+>>>>>>> Min
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
@@ -339,16 +342,12 @@ form .orderinfo .row .col-10 .row {
 form .orderinfo .row .col-10 .row .col-7 {
   display: -webkit-box;
   display: -ms-flexbox;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> dev
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -371,6 +370,8 @@ form .orderinfo .row .col-10 .row .col-7 {
 >>>>>>> dev
 =======
 >>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
+=======
+>>>>>>> Min
 }
 
 form .orderinfo .row .col-10 .row .col-7 input {
@@ -449,6 +450,7 @@ form .ltineraryinfo .row .col-10 .row .col-3 img {
   max-width: 150px;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -459,6 +461,8 @@ form .ltineraryinfo .row .col-10 .row .col-3 img {
 =======
 >>>>>>> 10e10f8ebb29ccc2882d121bf3efb9b9e001100b
 >>>>>>> dev
+=======
+>>>>>>> Min
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -466,15 +470,11 @@ form .ltineraryinfo .row .col-10 .row .col-3 img {
 form .ltineraryinfo .row .col-10 .row .col-7 .row {
   display: -webkit-box;
   display: -ms-flexbox;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> dev
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -497,6 +497,8 @@ form .ltineraryinfo .row .col-10 .row .col-7 .row {
 >>>>>>> dev
 =======
 >>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
+=======
+>>>>>>> Min
   height: 100%;
   width: 100%;
 }
@@ -509,6 +511,7 @@ form .ltineraryinfo .row .col-10 .row .col-7 .row .col-11 {
 }
 
 form .ltineraryinfo .row .col-10 .row .col-7 .row .text-div {
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -526,6 +529,8 @@ form .ltineraryinfo .row .col-10 .row .col-7 .row .text-div {
 =======
 >>>>>>> 10e10f8ebb29ccc2882d121bf3efb9b9e001100b
 >>>>>>> dev
+=======
+>>>>>>> Min
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -536,6 +541,7 @@ form .ltineraryinfo .row .col-10 .row .col-7 .row .text-div {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -564,6 +570,8 @@ form .ltineraryinfo .row .col-10 .row .col-7 .row .text-div {
   justify-content: center;
   flex-direction: column;
 >>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
+=======
+>>>>>>> Min
   padding: 0px 0;
 }
 
@@ -584,19 +592,9 @@ form .addPay .row .col-10 {
 }
 
 form .addPay .row .col-10 .automena .row .col-10 {
-<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
-=======
 <<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-=======
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
 =======
 >>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
 >>>>>>> 5badf5bb2eed3e9ef55ccab2f7d645bfd9e24c24
@@ -615,6 +613,8 @@ form .addPay .row .col-10 .automena .row .col-10 {
 
 form .addPay .row .col-10 .automena .row .col-10 {
 >>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
+=======
+>>>>>>> Min
   display: flex;
 }
 
@@ -631,6 +631,7 @@ form .addPay .row .col-10 .automena .row .col-10 .sss {
 
 form .addPay .row .col-10 .automena .row .col-10 .sss img {
   width: 100px;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -660,9 +661,12 @@ form .addPay .row .col-10 .automena .row .col-10 .sssb:focus .sss {
 =======
 >>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
   object-fit: cover;
+=======
+  -o-object-fit: cover;
+     object-fit: cover;
+>>>>>>> Min
 }
 
->>>>>>> dev
 form .addPay .row .col-10 .automena .row .col-10 input {
   display: none;
 }
@@ -688,6 +692,7 @@ form .paymethod .row .col-10 .paymethod-automanu .row #paymethod-coin, form .pay
 form .paymethod .row .col-10 .paymethod-automanu .row .col-11 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
 =======
@@ -714,6 +719,10 @@ form .paymethod .row .col-10 .paymethod-automanu .row .col-11 {
 >>>>>>> dev
 =======
 >>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> Min
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -723,6 +732,7 @@ form .paymethod .row .col-10 .paymethod-automanu .row .col-11 {
 form .paymethod .row .col-10 .paymethod-automanu .row .col-12 .paymethod-automanu-car-automanu .row {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -755,6 +765,11 @@ form .paymethod .row .col-10 .paymethod-automanu .row .col-12 .paymethod-automan
 =======
   justify-content: space-evenly;
 >>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
+=======
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+>>>>>>> Min
 }
 
 form .paymethod .row .col-10 .paymethod-automanu .row .col-12 .paymethod-automanu-car-automanu .row input {
@@ -785,6 +800,7 @@ form .paymethod .row .col-10 .paymethod-automanu .row .col-5 input.paymethod-coi
 form .paymethod .row .col-10 .paymethod-automanu .row .col-4 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
 =======
@@ -811,6 +827,10 @@ form .paymethod .row .col-10 .paymethod-automanu .row .col-4 {
 >>>>>>> dev
 =======
 >>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> Min
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -830,6 +850,7 @@ form .orderDetails .row {
 form .orderDetails .row .allpay-div {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -840,12 +861,15 @@ form .orderDetails .row .allpay-div {
 =======
 >>>>>>> 10e10f8ebb29ccc2882d121bf3efb9b9e001100b
 >>>>>>> dev
+=======
+>>>>>>> Min
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -871,6 +895,8 @@ form .orderDetails .row .allpay-div {
   display: flex;
   justify-content: flex-end;
 >>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
+=======
+>>>>>>> Min
 }
 
 form .orderDetails .row .col-10 .orderDetails-automanu .col-3 {
@@ -909,6 +935,7 @@ form .orderDetails .row .col-10 .orderDetails-automanu .col-11 .orderDetails-aut
 form .orderDetails .row .col-10 .orderDetails-automanu .col-11 .orderDetails-automanu-textdiv .textbox {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
 =======
@@ -935,6 +962,10 @@ form .orderDetails .row .col-10 .orderDetails-automanu .col-11 .orderDetails-aut
 >>>>>>> dev
 =======
 >>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> Min
   display: flex;
   width: 100%;
 }
@@ -951,6 +982,7 @@ form .orderDetails .row .col-10 .orderDetails-automanu .col-7 {
 form .orderDetails .row .col-10 .orderDetails-automanu .col-7 .row {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
 =======
@@ -977,6 +1009,10 @@ form .orderDetails .row .col-10 .orderDetails-automanu .col-7 .row {
 >>>>>>> dev
 =======
 >>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> Min
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
