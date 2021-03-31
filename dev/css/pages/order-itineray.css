@@ -94,6 +94,7 @@ body {
   font-size: 18px;
   color: #C9ADA7;
   margin: 0;
+  text-align: end;
 }
 
 .h5 {
@@ -615,6 +616,7 @@ form .ltineraryinfo .row .col-10 .row .col-7 .row .text-div {
   display: flex;
   justify-content: center;
   flex-direction: column;
+<<<<<<< HEAD
 >>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
 =======
   -webkit-box-align: end;
@@ -635,6 +637,9 @@ form .ltineraryinfo .row .col-10 .row .col-7 .row .text-div {
           flex-direction: column;
 >>>>>>> denis
   padding: 0px 0;
+=======
+  padding: 0 0;
+>>>>>>> chickhack
 }
 
 form .ltineraryinfo .row .col-10 .row .col-7 .row .text-div img {
@@ -1120,6 +1125,7 @@ form .orderDetails .row .col-10 .orderDetails-automanu .col-7 .row .text-div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1131,6 +1137,12 @@ form .orderDetails .row .col-10 .orderDetails-automanu .col-7 .row .text-div {
       -ms-flex-align: end;
           align-items: flex-end;
   padding: 8px 0;
+=======
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 0;
+>>>>>>> chickhack
 }
 
 form .orderDetails .row .col-10 .orderDetails-automanu .col-7 .row .text-div img {
