@@ -108,7 +108,7 @@
           <h2 align="center" class="margin_top_10">星星世界</h2>
           <div id="planet">
             <div class="tabList margin_top_3 col-LG-12 ">
-              <button class="button_min" v-for="planet in planets" v-on:click="state.clickedPlanet = planet" :class="state.clickedPlanet = planet">{{planet.name}}</button>
+              <button class="button_min" v-for="planet in planets" v-on:click="state.clickedPlanet = planet">{{planet.name}}</button>
       
             </div>
             <div class="separator col-10"></div>
@@ -146,7 +146,7 @@
                     <p>溫度</p>
                   </div>
                 </div>
-                <button class="button_min">更多關於{{state.clickedPlanet.name}}</button>
+                <a href="planet.html"><button class="button_min">更多關於{{state.clickedPlanet.name}}</button></a>
               </div>
               <div class="tab-active margin_top_5 col-lg-6 col-md-4">
                 <img
@@ -207,7 +207,6 @@
             
           </div>
         </div>
-  
 <!-- 商城 -->
       <div class="shop_box" >
         <div class="home_shop">
@@ -302,7 +301,9 @@
             </a>
           </div>
         </div>   
-        <button class="button button_min margin_top_5">去逛逛</button>
+        <a href="shop.html">
+          <button class="button button_min margin_top_5">去逛逛</button>
+        </a>
         </div>
       </div>
 <!-- 會員待遇 -->
@@ -406,7 +407,7 @@
             var controller = new ScrollMagic.Controller();
             new ScrollMagic.Scene({
             triggerElement : '#trigger01',
-            duration: '550%'
+            duration: '600%'
         }).on('enter', function(){
             console.log('enter 進入');
             $('#nav').css('background-color' , '#0c0d18')
