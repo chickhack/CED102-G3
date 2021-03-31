@@ -345,22 +345,30 @@ div.bk3 {
                 }
             }
 
-            .addin2:hover {
+            .addin2:hover{
                 background-color: lighten($gold, 10%);
             }
 
-            .trip_bookmark {
-                padding: 8px;
-                position: absolute;
-                right: 10px;
-                top: 220px;
+            .trip_bookmark{
+                background-image: url(../../img/icon/bookmark-outline.png);
                 width: 25px;
                 height: 25px;
+                background-size: 25px;
+                background-repeat: no-repeat;
+                padding: 8px;
+                position: absolute;
+                right: 0px;
+                top: 230px;
                 align-items: center;
-                display: flex;
+                display: block;
                 justify-content: center;
                 cursor: pointer;
             }
+
+            .trip_bookmark:hover{
+                background-image: url(../../img/icon/bookmark_hover.png);
+            }
+
         }
 
     }
