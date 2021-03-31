@@ -109,19 +109,14 @@ body{
 }
 //總價文字
 .h6{
-    font-weight: 900;
     color: #C9ADA7;
     font-size: 18px;
-    width: 100%;
-    margin: 0;
+    text-align: center;
 }
 .h7{
-    // font-weight: 700;
-    color: #ad6e4a;
-    line-height: 30px;
-    font-size: 18px;
-    width: 100%;
-    margin: 0;
+    color: #C9ADA7;
+    
+    font-size: 14px;
 }
 .h8{
     line-height:30px ;
@@ -152,8 +147,14 @@ body{
 .padding_right-3{
     padding-right: 24px;
 }
+.padding_right-4{
+    padding-right: 32px;
+}
 .padding_right-5{
     padding-right: 48px;
+}
+.padding_right-6{
+    padding-right: 74px;
 }
 .padding_bottom-1{
     padding-bottom: 5%;
@@ -232,13 +233,13 @@ body{
     font-size: 18px;
     padding: 30px 0;
 }
-.btn-allAuto::before{
-    content:url(../../img/chevron-down.svg);   
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    padding-right: 8px;
-}
+// .btn-allAuto::before{
+//     content:url(../../img/chevron-down.svg);   
+//     display: inline-block;
+//     width: 20px;
+//     height: 20px;
+//     padding-right: 8px;
+// }
 .icon-1{
     width: 25px;
     height: 25px;
@@ -627,56 +628,91 @@ form{
                 justify-content:flex-end
             }
             .col-10{
-                .orderDetails-automanu{
-                    .col-3{
-                        padding-top: 16px;
-                        padding-bottom: 16px;
-                        img{
-                            max-width: 150px;
-                            // max-height: 200px;
-                            object-fit: cover;
-                        }
-                    }
-                    .col-11{
-                        .payadd{
-                            width: 100%;
-                            .orderDetails-automanu-textdiv{
-                                width: 100%;
-                                .textbox{
-                                    display: flex;
-                                    width: 100%;
-                                }
-                                
-                            }
-                        }
-                        .orderDetails-automanu-textdiv{
-                            width: 100%;
-                            .textbox{
-                                display: flex;
-                                width: 100%;
-                            }
-                           
-                        }
-                    }
-                    .col-7{
+                .order-coin{     
+                    .row{
                         display: flex;
-                        .row{
+                        justify-content: space-around;
+                        .order-coin-right{
                             display: flex;
-                            justify-content: space-around;
-                            width: 100%;
-                            .text-div{
-                                display: flex;
-                                justify-content: center;
-                                flex-direction: column;
-                                align-items: flex-end;
-                                padding:0;
-                                img{
-                                    width: 25px;
-                                    height: 25px;
-                                }
-                            }        
+                            justify-content: flex-end;
                         }
+                        .order-coin-list{
+                            display: flex;
+                            justify-content: flex-start;
+                        }
+                        .col-4{
+                            padding: 0px;
+                        }
+                        .col-3{
+                            padding: 0px;
+                        }
+                    }
+                }
+                .orderDetails-automanu{
+                    .row{
+                        display: flex;
+                        justify-content: space-around;
+                        .orderDetails-automanu-list{
+                            display: flex;
+                            justify-content: flex-start;
+                        }
+                        .orderDetails-automanu-right{
+                            display: flex;
+                            flex-direction: column;
+                            align-items:flex-end;
+                        }
+                        .col-4{
+                            padding: 0;
+                        }
+                        .col-3{
+                            padding: 0;
+                        }
+                    }
+                }
+                .orderDetails-automanu-allcoin{
+                    padding-bottom: 16px;
+                    .row{
+                        display: flex;
+                        justify-content: space-around;
+                        .orderDetails-automanu-allcoin-list{
+                            display: flex;
+                            justify-content: flex-start;
+                        }
+                        .orderDetails-automanu-allcoin-right{
+                            display: flex;
+                            flex-direction: column;
+                            align-items:flex-end;
+                        }
+                        .col-4{
+                            padding: 0;
+                        }
+                        .col-3{
+                            padding: 0;
+                        }
+                    }
+                }
+                .allcoinmenu{
+                    padding: 16px 0px;
+                    .row{
+                        display: flex;
+                        justify-content: space-around;
                         
+                        .allcoinmenu-con{
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-end;
+                        }
+                        .allcoinmenu-right{
+                            display: flex;
+                            flex-direction: column;
+                            align-items:flex-end;
+                        }
+                        .col-4{
+                            padding: 0;
+                        }
+                        .col-3{
+                            padding: 0;
+                        }
                     }
                 }
                 .btn-orderDetails{

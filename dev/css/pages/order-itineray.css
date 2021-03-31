@@ -106,19 +106,14 @@ body {
 }
 
 .h6 {
-  font-weight: 900;
   color: #C9ADA7;
   font-size: 18px;
-  width: 100%;
-  margin: 0;
+  text-align: center;
 }
 
 .h7 {
-  color: #ad6e4a;
-  line-height: 30px;
-  font-size: 18px;
-  width: 100%;
-  margin: 0;
+  color: #C9ADA7;
+  font-size: 14px;
 }
 
 .h8 {
@@ -155,8 +150,16 @@ body {
   padding-right: 24px;
 }
 
+.padding_right-4 {
+  padding-right: 32px;
+}
+
 .padding_right-5 {
   padding-right: 48px;
+}
+
+.padding_right-6 {
+  padding-right: 74px;
 }
 
 .padding_bottom-1 {
@@ -239,14 +242,6 @@ body {
   color: #C9ADA7;
   font-size: 18px;
   padding: 30px 0;
-}
-
-.btn-allAuto::before {
-  content: url(../../img/chevron-down.svg);
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  padding-right: 8px;
 }
 
 .icon-1 {
@@ -489,59 +484,108 @@ form .orderDetails .row .allpay-div {
   justify-content: flex-end;
 }
 
-form .orderDetails .row .col-10 .orderDetails-automanu .col-3 {
-  padding-top: 16px;
-  padding-bottom: 16px;
-}
-
-form .orderDetails .row .col-10 .orderDetails-automanu .col-3 img {
-  max-width: 150px;
-  object-fit: cover;
-}
-
-form .orderDetails .row .col-10 .orderDetails-automanu .col-11 .payadd {
-  width: 100%;
-}
-
-form .orderDetails .row .col-10 .orderDetails-automanu .col-11 .payadd .orderDetails-automanu-textdiv {
-  width: 100%;
-}
-
-form .orderDetails .row .col-10 .orderDetails-automanu .col-11 .payadd .orderDetails-automanu-textdiv .textbox {
-  display: flex;
-  width: 100%;
-}
-
-form .orderDetails .row .col-10 .orderDetails-automanu .col-11 .orderDetails-automanu-textdiv {
-  width: 100%;
-}
-
-form .orderDetails .row .col-10 .orderDetails-automanu .col-11 .orderDetails-automanu-textdiv .textbox {
-  display: flex;
-  width: 100%;
-}
-
-form .orderDetails .row .col-10 .orderDetails-automanu .col-7 {
-  display: flex;
-}
-
-form .orderDetails .row .col-10 .orderDetails-automanu .col-7 .row {
+form .orderDetails .row .col-10 .order-coin .row {
   display: flex;
   justify-content: space-around;
-  width: 100%;
 }
 
-form .orderDetails .row .col-10 .orderDetails-automanu .col-7 .row .text-div {
+form .orderDetails .row .col-10 .order-coin .row .order-coin-right {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
+}
+
+form .orderDetails .row .col-10 .order-coin .row .order-coin-list {
+  display: flex;
+  justify-content: flex-start;
+}
+
+form .orderDetails .row .col-10 .order-coin .row .col-4 {
+  padding: 0px;
+}
+
+form .orderDetails .row .col-10 .order-coin .row .col-3 {
+  padding: 0px;
+}
+
+form .orderDetails .row .col-10 .orderDetails-automanu .row {
+  display: flex;
+  justify-content: space-around;
+}
+
+form .orderDetails .row .col-10 .orderDetails-automanu .row .orderDetails-automanu-list {
+  display: flex;
+  justify-content: flex-start;
+}
+
+form .orderDetails .row .col-10 .orderDetails-automanu .row .orderDetails-automanu-right {
+  display: flex;
   flex-direction: column;
   align-items: flex-end;
+}
+
+form .orderDetails .row .col-10 .orderDetails-automanu .row .col-4 {
   padding: 0;
 }
 
-form .orderDetails .row .col-10 .orderDetails-automanu .col-7 .row .text-div img {
-  width: 25px;
-  height: 25px;
+form .orderDetails .row .col-10 .orderDetails-automanu .row .col-3 {
+  padding: 0;
+}
+
+form .orderDetails .row .col-10 .orderDetails-automanu-allcoin {
+  padding-bottom: 16px;
+}
+
+form .orderDetails .row .col-10 .orderDetails-automanu-allcoin .row {
+  display: flex;
+  justify-content: space-around;
+}
+
+form .orderDetails .row .col-10 .orderDetails-automanu-allcoin .row .orderDetails-automanu-allcoin-list {
+  display: flex;
+  justify-content: flex-start;
+}
+
+form .orderDetails .row .col-10 .orderDetails-automanu-allcoin .row .orderDetails-automanu-allcoin-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+form .orderDetails .row .col-10 .orderDetails-automanu-allcoin .row .col-4 {
+  padding: 0;
+}
+
+form .orderDetails .row .col-10 .orderDetails-automanu-allcoin .row .col-3 {
+  padding: 0;
+}
+
+form .orderDetails .row .col-10 .allcoinmenu {
+  padding: 16px 0px;
+}
+
+form .orderDetails .row .col-10 .allcoinmenu .row {
+  display: flex;
+  justify-content: space-around;
+}
+
+form .orderDetails .row .col-10 .allcoinmenu .row .allcoinmenu-con {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+form .orderDetails .row .col-10 .allcoinmenu .row .allcoinmenu-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+form .orderDetails .row .col-10 .allcoinmenu .row .col-4 {
+  padding: 0;
+}
+
+form .orderDetails .row .col-10 .allcoinmenu .row .col-3 {
+  padding: 0;
 }
 
 form .orderDetails .row .col-10 .btn-orderDetails {
