@@ -362,7 +362,7 @@ nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-  background-image: url("../img/icon/header/logo.png");
+  background-image: url("../img/logo.png");
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -601,31 +601,7 @@ input[type=number] {
 }
 
 * {
-<<<<<<< HEAD
-<<<<<<< HEAD
   box-sizing: border-box;
-}
-
-.grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: start;
-  max-width: 1100px;
-  margin: 0 auto;
-=======
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-<<<<<<< HEAD
-}
-
-.grid {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-  box-sizing: border-box;
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
 }
 
 .top_photo {
@@ -648,11 +624,6 @@ input[type=number] {
   max-width: 1100px;
   margin: 0 auto;
   margin-top: 40px;
-<<<<<<< HEAD
->>>>>>> denis
->>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
-=======
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
 }
 
 .grid-item {
@@ -666,51 +637,7 @@ input[type=number] {
 
 .grid .grid-item img {
   width: 100%;
-<<<<<<< HEAD
-<<<<<<< HEAD
   object-fit: cover;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  -o-object-fit: cover;
-     object-fit: cover;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  -o-object-fit: cover;
-     object-fit: cover;
-=======
-<<<<<<< HEAD
-  -o-object-fit: cover;
-     object-fit: cover;
-=======
-  object-fit: cover;
->>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
->>>>>>> 5badf5bb2eed3e9ef55ccab2f7d645bfd9e24c24
-=======
-  object-fit: cover;
->>>>>>> 3dad026ace0b41a32fd8a158fb1c574e21ce5fa3
-=======
-  -o-object-fit: cover;
-     object-fit: cover;
-=======
-  object-fit: cover;
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> 10e10f8ebb29ccc2882d121bf3efb9b9e001100b
->>>>>>> dev
-=======
-  object-fit: cover;
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
-  -o-object-fit: cover;
-     object-fit: cover;
->>>>>>> denis
->>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
-=======
-  object-fit: cover;
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
 }
 
 .grid .grid-item:nth-child(n+9) {

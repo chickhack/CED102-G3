@@ -56,31 +56,7 @@ img {
 *,
 *:before,
 *:after {
-<<<<<<< HEAD
-<<<<<<< HEAD
   box-sizing: inherit;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
-<<<<<<< HEAD
-=======
-=======
-  box-sizing: inherit;
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
-  box-sizing: inherit;
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
->>>>>>> denis
->>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
-=======
-  box-sizing: inherit;
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
   margin: 0;
   padding: 0;
 }
@@ -101,41 +77,8 @@ body {
   font-size: 14px;
   background-color: #0c0d18;
   overflow-x: hidden;
-<<<<<<< HEAD
-<<<<<<< HEAD
   -o-user-select: none;
   user-select: none;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -o-user-select: none;
-  -ms-user-select: none;
-      user-select: none;
-<<<<<<< HEAD
-=======
-=======
-  -o-user-select: none;
-  user-select: none;
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
-  -o-user-select: none;
-  user-select: none;
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -o-user-select: none;
-  -ms-user-select: none;
-      user-select: none;
->>>>>>> denis
->>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
-=======
-  -o-user-select: none;
-  user-select: none;
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
 }
 
 h1, .h1 {
@@ -404,40 +347,8 @@ body {
 
 nav {
   display: flex;
-<<<<<<< HEAD
-<<<<<<< HEAD
   justify-content: center;
   align-items: center;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> denis
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-  justify-content: center;
-  align-items: center;
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
-  justify-content: center;
-  align-items: center;
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
->>>>>>> denis
->>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
-=======
-  justify-content: center;
-  align-items: center;
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
   justify-content: center;
   background-color: #0c0d18;
   position: fixed;
@@ -451,7 +362,7 @@ nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-  background-image: url("../img/icon/header/logo.png");
+  background-image: url("../img/logo.png");
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -462,47 +373,9 @@ nav .logo h1 a {
 
 nav .nav-links {
   display: flex;
-<<<<<<< HEAD
-<<<<<<< HEAD
   justify-content: center;
   align-items: center;
   justify-content: flex-end;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> denis
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-  justify-content: center;
-  align-items: center;
-  justify-content: flex-end;
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
-  justify-content: center;
-  align-items: center;
-  justify-content: flex-end;
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
->>>>>>> denis
->>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
-=======
-  justify-content: center;
-  align-items: center;
-  justify-content: flex-end;
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
   width: 75%;
 }
 
@@ -514,46 +387,9 @@ nav .nav-links a {
 
 nav .nav-icons {
   display: flex;
-<<<<<<< HEAD
-<<<<<<< HEAD
   justify-content: center;
   align-items: center;
   justify-content: space-around;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> denis
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
->>>>>>> denis
->>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
-=======
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
   width: 12%;
   margin-left: 50px;
 }
@@ -583,51 +419,9 @@ nav .burger div {
     top: 12vh;
     background-color: #AD6E4A;
     display: flex;
-<<<<<<< HEAD
-<<<<<<< HEAD
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> dev
-=======
->>>>>>> denis
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
->>>>>>> denis
->>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
-=======
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
     width: 30%;
     transition: all 1s ease-in;
   }
@@ -666,37 +460,7 @@ nav .burger div {
   nav .nav-icons {
     width: 50%;
     margin-left: 16px;
-<<<<<<< HEAD
-<<<<<<< HEAD
     justify-content: space-between;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-=======
-<<<<<<< HEAD
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-=======
-    justify-content: space-between;
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
-    justify-content: space-between;
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
->>>>>>> denis
->>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
-=======
-    justify-content: space-between;
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
   }
   nav .nav-icons .icon {
     margin: 0;
@@ -748,75 +512,14 @@ footer .links .logo {
 
 footer .links .footer-links {
   display: flex;
-<<<<<<< HEAD
-<<<<<<< HEAD
   justify-content: center;
   align-items: center;
   justify-content: space-around;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> denis
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
->>>>>>> denis
->>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
-=======
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
   width: 55%;
   position: relative;
   left: 50%;
   bottom: 30px;
-<<<<<<< HEAD
-<<<<<<< HEAD
   transform: translateX(-50%);
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-<<<<<<< HEAD
-=======
-=======
-  transform: translateX(-50%);
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
-  transform: translateX(-50%);
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
->>>>>>> denis
->>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
-=======
-  transform: translateX(-50%);
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
 }
 
 footer .links .footer-links a {
@@ -827,31 +530,7 @@ footer .footer_moon {
   position: relative;
   left: 50%;
   max-width: 40%;
-<<<<<<< HEAD
-<<<<<<< HEAD
   transform: translateX(-50%);
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-<<<<<<< HEAD
-=======
-=======
-  transform: translateX(-50%);
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
-  transform: translateX(-50%);
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
->>>>>>> denis
->>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
-=======
-  transform: translateX(-50%);
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
 }
 
 footer .smoke {
@@ -860,31 +539,7 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
-<<<<<<< HEAD
-<<<<<<< HEAD
   transform: translateX(-50%);
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-<<<<<<< HEAD
-=======
-=======
-  transform: translateX(-50%);
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
-  transform: translateX(-50%);
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
->>>>>>> denis
->>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
-=======
-  transform: translateX(-50%);
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
 }
 
 @media (max-width: 768px) {
@@ -948,40 +603,8 @@ section.cart form {
 
 section.cart .item {
   display: flex;
-<<<<<<< HEAD
-<<<<<<< HEAD
   justify-content: center;
   align-items: center;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> denis
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-  justify-content: center;
-  align-items: center;
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
-  justify-content: center;
-  align-items: center;
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
->>>>>>> denis
->>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
-=======
-  justify-content: center;
-  align-items: center;
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
   justify-content: center;
   background-color: #292B41;
   padding: 16px 0;
@@ -1000,47 +623,6 @@ section.cart .item .img {
 section.cart .item .info {
   width: 65%;
   margin-left: 10px;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
->>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
-}
-
-section.cart .item .info .points {
-  display: flex;
-<<<<<<< HEAD
-  justify-content: center;
-  align-items: center;
-  justify-content: start;
-=======
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
-  display: -webkit-box;
-  display: -ms-flexbox;
->>>>>>> denis
-=======
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1052,26 +634,6 @@ section.cart .item .info .points {
   justify-content: center;
   align-items: center;
   justify-content: start;
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
->>>>>>> denis
->>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
-=======
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
   margin: 8px 0;
 }
 
@@ -1102,34 +664,7 @@ section.cart .checkout {
 
 @media all and (max-width: 768px) {
   section.cart .checkout {
-<<<<<<< HEAD
-<<<<<<< HEAD
     flex-direction: column;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> denis
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-    flex-direction: column;
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
-    flex-direction: column;
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
->>>>>>> denis
->>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
-=======
-    flex-direction: column;
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
   }
 }
 

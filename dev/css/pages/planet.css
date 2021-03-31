@@ -77,41 +77,8 @@ body {
   font-size: 14px;
   background-color: #0c0d18;
   overflow-x: hidden;
-<<<<<<< HEAD
-<<<<<<< HEAD
   -o-user-select: none;
   user-select: none;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -o-user-select: none;
-  -ms-user-select: none;
-      user-select: none;
-<<<<<<< HEAD
-=======
-=======
-  -o-user-select: none;
-  user-select: none;
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
-  -o-user-select: none;
-  user-select: none;
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -o-user-select: none;
-  -ms-user-select: none;
-      user-select: none;
->>>>>>> denis
->>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
-=======
-  -o-user-select: none;
-  user-select: none;
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
 }
 
 h1, .h1 {
@@ -380,40 +347,8 @@ body {
 
 nav {
   display: flex;
-<<<<<<< HEAD
-<<<<<<< HEAD
   justify-content: center;
   align-items: center;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> denis
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-  justify-content: center;
-  align-items: center;
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
-  justify-content: center;
-  align-items: center;
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
->>>>>>> denis
->>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
-=======
-  justify-content: center;
-  align-items: center;
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
   justify-content: center;
   background-color: #0c0d18;
   position: fixed;
@@ -427,7 +362,7 @@ nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-  background-image: url("../img/icon/header/logo.png");
+  background-image: url("../img/logo.png");
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -438,47 +373,9 @@ nav .logo h1 a {
 
 nav .nav-links {
   display: flex;
-<<<<<<< HEAD
-<<<<<<< HEAD
   justify-content: center;
   align-items: center;
   justify-content: flex-end;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> denis
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-  justify-content: center;
-  align-items: center;
-  justify-content: flex-end;
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
-  justify-content: center;
-  align-items: center;
-  justify-content: flex-end;
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
->>>>>>> denis
->>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
-=======
-  justify-content: center;
-  align-items: center;
-  justify-content: flex-end;
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
   width: 75%;
 }
 
@@ -522,51 +419,9 @@ nav .burger div {
     top: 12vh;
     background-color: #AD6E4A;
     display: flex;
-<<<<<<< HEAD
-<<<<<<< HEAD
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> dev
-=======
->>>>>>> denis
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
->>>>>>> denis
->>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
-=======
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
     width: 30%;
     transition: all 1s ease-in;
   }
@@ -605,37 +460,7 @@ nav .burger div {
   nav .nav-icons {
     width: 50%;
     margin-left: 16px;
-<<<<<<< HEAD
-<<<<<<< HEAD
     justify-content: space-between;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-=======
-<<<<<<< HEAD
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-=======
-    justify-content: space-between;
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
-    justify-content: space-between;
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
->>>>>>> denis
->>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
-=======
-    justify-content: space-between;
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
   }
   nav .nav-icons .icon {
     margin: 0;
@@ -705,31 +530,7 @@ footer .footer_moon {
   position: relative;
   left: 50%;
   max-width: 40%;
-<<<<<<< HEAD
-<<<<<<< HEAD
   transform: translateX(-50%);
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-<<<<<<< HEAD
-=======
-=======
-  transform: translateX(-50%);
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
-  transform: translateX(-50%);
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
->>>>>>> denis
->>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
-=======
-  transform: translateX(-50%);
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
 }
 
 footer .smoke {
@@ -738,31 +539,7 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
-<<<<<<< HEAD
-<<<<<<< HEAD
   transform: translateX(-50%);
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-<<<<<<< HEAD
-=======
-=======
-  transform: translateX(-50%);
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
-  transform: translateX(-50%);
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
->>>>>>> denis
->>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
-=======
-  transform: translateX(-50%);
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
 }
 
 @media (max-width: 768px) {
@@ -820,33 +597,6 @@ input[type=number] {
   text-align: center;
 }
 
-<<<<<<< HEAD
-.title {
-  display: flex;
-<<<<<<< HEAD
-  justify-content: center;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-<<<<<<< HEAD
-=======
-=======
-  justify-content: center;
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
-  justify-content: center;
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
->>>>>>> denis
->>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
-=======
 @media all and (max-width: 768px) {
   .container-fluid {
     margin: 0;
@@ -894,44 +644,12 @@ button:hover {
     top: 50%;
     margin: 0;
   }
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
 }
 
 div.tabList {
   display: flex;
-<<<<<<< HEAD
-<<<<<<< HEAD
   justify-content: center;
   column-gap: 1%;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> denis
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-column-gap: 1%;
-          column-gap: 1%;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-  justify-content: center;
-  column-gap: 1%;
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
-  justify-content: center;
-  column-gap: 1%;
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
->>>>>>> denis
->>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
-=======
-  justify-content: center;
-  column-gap: 1%;
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
 }
 
 div.tabList button {
@@ -953,60 +671,12 @@ div.tabList button.active {
 }
 
 .tab-inner {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
-  display: -webkit-box;
-  display: -ms-flexbox;
->>>>>>> denis
->>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
-=======
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
   display: flex;
 }
 
 .tab-inner .taball {
   display: flex;
-<<<<<<< HEAD
-<<<<<<< HEAD
   flex-direction: column;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> denis
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-  flex-direction: column;
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
-  flex-direction: column;
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
->>>>>>> denis
->>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
-=======
-  flex-direction: column;
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
   text-align: left;
   align-items: center;
 }
@@ -1027,27 +697,6 @@ div.tabList button.active {
 
 .tab-inner .taball .data {
   border: 1px solid #AD6E4A;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
-  display: -webkit-box;
-  display: -ms-flexbox;
->>>>>>> denis
->>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
-=======
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
   display: flex;
   font-family: Haettenschweiler, sans-serif;
 }
@@ -1105,31 +754,7 @@ div.tabList button.active {
 
 .planet_content {
   display: flex;
-<<<<<<< HEAD
-<<<<<<< HEAD
   flex-wrap: wrap;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-<<<<<<< HEAD
-=======
-=======
-  flex-wrap: wrap;
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
-  flex-wrap: wrap;
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
->>>>>>> denis
->>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
-=======
-  flex-wrap: wrap;
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
 }
 
 .planet_content .carousel {
@@ -1141,37 +766,6 @@ div.tabList button.active {
 }
 
 .planet_content .imgs .img1 {
-<<<<<<< HEAD
-<<<<<<< HEAD
-  transform: translate(40%);
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-  -webkit-transform: translate(40%);
-          transform: translate(40%);
-<<<<<<< HEAD
-=======
-=======
-  transform: translate(40%);
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
-  transform: translate(40%);
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
-  -webkit-transform: translate(40%);
-          transform: translate(40%);
->>>>>>> denis
->>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
-}
-
-.planet_content .imgs .img2 {
-  transform: translateX(30%);
-}
-
-.planet_content .imgs .img3 {
-  transform: translate(20%, -350px);
-=======
   transform: translate(20%);
 }
 
@@ -1181,38 +775,11 @@ div.tabList button.active {
 
 .planet_content .imgs .img3 {
   transform: translate(-30%, -350px);
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
 }
 
 .planet_content .desc {
   display: flex;
-<<<<<<< HEAD
-<<<<<<< HEAD
   align-items: center;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-<<<<<<< HEAD
-=======
-=======
-  align-items: center;
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
-  align-items: center;
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
->>>>>>> denis
->>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
-=======
-  align-items: center;
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
 }
 
 .planet_content .desc p {

@@ -77,41 +77,8 @@ body {
   font-size: 14px;
   background-color: #0c0d18;
   overflow-x: hidden;
-<<<<<<< HEAD
-<<<<<<< HEAD
   -o-user-select: none;
   user-select: none;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -o-user-select: none;
-  -ms-user-select: none;
-      user-select: none;
-<<<<<<< HEAD
-=======
-=======
-  -o-user-select: none;
-  user-select: none;
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
-  -o-user-select: none;
-  user-select: none;
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -o-user-select: none;
-  -ms-user-select: none;
-      user-select: none;
->>>>>>> denis
->>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
-=======
-  -o-user-select: none;
-  user-select: none;
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
 }
 
 h1, .h1 {
@@ -380,40 +347,8 @@ body {
 
 nav {
   display: flex;
-<<<<<<< HEAD
-<<<<<<< HEAD
   justify-content: center;
   align-items: center;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> denis
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-  justify-content: center;
-  align-items: center;
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
-  justify-content: center;
-  align-items: center;
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
->>>>>>> denis
->>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
-=======
-  justify-content: center;
-  align-items: center;
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
   justify-content: center;
   background-color: #0c0d18;
   position: fixed;
@@ -427,7 +362,7 @@ nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-  background-image: url("../img/icon/header/logo.png");
+  background-image: url("../img/logo.png");
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -438,47 +373,9 @@ nav .logo h1 a {
 
 nav .nav-links {
   display: flex;
-<<<<<<< HEAD
-<<<<<<< HEAD
   justify-content: center;
   align-items: center;
   justify-content: flex-end;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> denis
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-  justify-content: center;
-  align-items: center;
-  justify-content: flex-end;
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
-  justify-content: center;
-  align-items: center;
-  justify-content: flex-end;
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
->>>>>>> denis
->>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
-=======
-  justify-content: center;
-  align-items: center;
-  justify-content: flex-end;
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
   width: 75%;
 }
 
@@ -522,51 +419,9 @@ nav .burger div {
     top: 12vh;
     background-color: #AD6E4A;
     display: flex;
-<<<<<<< HEAD
-<<<<<<< HEAD
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> dev
-=======
->>>>>>> denis
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
->>>>>>> denis
->>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
-=======
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
     width: 30%;
     transition: all 1s ease-in;
   }
@@ -605,37 +460,7 @@ nav .burger div {
   nav .nav-icons {
     width: 50%;
     margin-left: 16px;
-<<<<<<< HEAD
-<<<<<<< HEAD
     justify-content: space-between;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-=======
-<<<<<<< HEAD
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-=======
-    justify-content: space-between;
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
-    justify-content: space-between;
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
->>>>>>> denis
->>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
-=======
-    justify-content: space-between;
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
   }
   nav .nav-icons .icon {
     margin: 0;
@@ -705,31 +530,7 @@ footer .footer_moon {
   position: relative;
   left: 50%;
   max-width: 40%;
-<<<<<<< HEAD
-<<<<<<< HEAD
   transform: translateX(-50%);
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-<<<<<<< HEAD
-=======
-=======
-  transform: translateX(-50%);
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
-  transform: translateX(-50%);
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
->>>>>>> denis
->>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
-=======
-  transform: translateX(-50%);
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
 }
 
 footer .smoke {
@@ -738,31 +539,7 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
-<<<<<<< HEAD
-<<<<<<< HEAD
   transform: translateX(-50%);
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-<<<<<<< HEAD
-=======
-=======
-  transform: translateX(-50%);
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
-  transform: translateX(-50%);
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
->>>>>>> denis
->>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
-=======
-  transform: translateX(-50%);
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
 }
 
 @media (max-width: 768px) {
@@ -887,71 +664,10 @@ section.orderDetail .order li .imgWord .integral .icon {
 
 section.orderDetail .order li .quantity {
   width: 80%;
-<<<<<<< HEAD
-<<<<<<< HEAD
   display: flex;
   justify-content: center;
   align-items: center;
   justify-content: space-around;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-=======
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-=======
-=======
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
->>>>>>> denis
->>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
-=======
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
 }
 
 section.orderer {
@@ -1000,79 +716,15 @@ section.orderer .arrow {
 
 section.orderer .arrow img {
   transition: all .5s;
-<<<<<<< HEAD
-<<<<<<< HEAD
   transform: rotate(-90deg);
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
-<<<<<<< HEAD
-=======
-=======
-  transform: rotate(-90deg);
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
-  transform: rotate(-90deg);
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
->>>>>>> denis
->>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
-=======
-  transform: rotate(-90deg);
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
 }
 
 section.orderer .info {
   display: flex;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> denis
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
->>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
-=======
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
->>>>>>> denis
->>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
-=======
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
   width: 80%;
   margin-left: 6%;
 }
@@ -1136,62 +788,11 @@ section.orderer .payTitle {
 
 section.orderer .group {
   display: flex;
-<<<<<<< HEAD
-<<<<<<< HEAD
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
   justify-content: start;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> dev
-=======
->>>>>>> denis
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-<<<<<<< HEAD
-  width: 100%;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 100%;
-  justify-content: start;
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
-  width: 100%;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
->>>>>>> denis
->>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
-=======
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
 }
 
 section.orderer .checkbox_group {
@@ -1283,31 +884,7 @@ section.orderer .credit_icon svg {
 section.orderer .credit_icon svg.use {
   opacity: 1;
   color: #AD6E4A;
-<<<<<<< HEAD
-<<<<<<< HEAD
   transform: scale(1.2);
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-<<<<<<< HEAD
-=======
-=======
-  transform: scale(1.2);
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
-  transform: scale(1.2);
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
->>>>>>> denis
->>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
-=======
-  transform: scale(1.2);
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
 }
 
 section.orderer .credit_icon input {

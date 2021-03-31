@@ -77,41 +77,8 @@ body {
   font-size: 14px;
   background-color: #0c0d18;
   overflow-x: hidden;
-<<<<<<< HEAD
-<<<<<<< HEAD
   -o-user-select: none;
   user-select: none;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -o-user-select: none;
-  -ms-user-select: none;
-      user-select: none;
-<<<<<<< HEAD
-=======
-=======
-  -o-user-select: none;
-  user-select: none;
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
-  -o-user-select: none;
-  user-select: none;
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -o-user-select: none;
-  -ms-user-select: none;
-      user-select: none;
->>>>>>> denis
->>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
-=======
-  -o-user-select: none;
-  user-select: none;
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
 }
 
 h1, .h1 {
@@ -380,40 +347,8 @@ body {
 
 nav {
   display: flex;
-<<<<<<< HEAD
-<<<<<<< HEAD
   justify-content: center;
   align-items: center;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> denis
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-  justify-content: center;
-  align-items: center;
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
-  justify-content: center;
-  align-items: center;
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
->>>>>>> denis
->>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
-=======
-  justify-content: center;
-  align-items: center;
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
   justify-content: center;
   background-color: #0c0d18;
   position: fixed;
@@ -427,7 +362,7 @@ nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-  background-image: url("../img/icon/header/logo.png");
+  background-image: url("../img/logo.png");
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -438,47 +373,9 @@ nav .logo h1 a {
 
 nav .nav-links {
   display: flex;
-<<<<<<< HEAD
-<<<<<<< HEAD
   justify-content: center;
   align-items: center;
   justify-content: flex-end;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> denis
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-  justify-content: center;
-  align-items: center;
-  justify-content: flex-end;
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
-  justify-content: center;
-  align-items: center;
-  justify-content: flex-end;
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
->>>>>>> denis
->>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
-=======
-  justify-content: center;
-  align-items: center;
-  justify-content: flex-end;
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
   width: 75%;
 }
 
@@ -522,51 +419,9 @@ nav .burger div {
     top: 12vh;
     background-color: #AD6E4A;
     display: flex;
-<<<<<<< HEAD
-<<<<<<< HEAD
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> dev
-=======
->>>>>>> denis
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
->>>>>>> denis
->>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
-=======
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
     width: 30%;
     transition: all 1s ease-in;
   }
@@ -605,37 +460,7 @@ nav .burger div {
   nav .nav-icons {
     width: 50%;
     margin-left: 16px;
-<<<<<<< HEAD
-<<<<<<< HEAD
     justify-content: space-between;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-=======
-<<<<<<< HEAD
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-=======
-    justify-content: space-between;
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
-    justify-content: space-between;
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
->>>>>>> denis
->>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
-=======
-    justify-content: space-between;
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
   }
   nav .nav-icons .icon {
     margin: 0;
@@ -705,31 +530,7 @@ footer .footer_moon {
   position: relative;
   left: 50%;
   max-width: 40%;
-<<<<<<< HEAD
-<<<<<<< HEAD
   transform: translateX(-50%);
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-<<<<<<< HEAD
-=======
-=======
-  transform: translateX(-50%);
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
-  transform: translateX(-50%);
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
->>>>>>> denis
->>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
-=======
-  transform: translateX(-50%);
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
 }
 
 footer .smoke {
@@ -738,31 +539,7 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
-<<<<<<< HEAD
-<<<<<<< HEAD
   transform: translateX(-50%);
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-<<<<<<< HEAD
-=======
-=======
-  transform: translateX(-50%);
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
-  transform: translateX(-50%);
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
->>>>>>> denis
->>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
-=======
-  transform: translateX(-50%);
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
 }
 
 @media (max-width: 768px) {
@@ -857,33 +634,7 @@ button {
 
 .banner .slogan {
   display: flex;
-<<<<<<< HEAD
-<<<<<<< HEAD
   justify-content: center;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-<<<<<<< HEAD
-=======
-=======
-  justify-content: center;
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
-  justify-content: center;
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
->>>>>>> denis
->>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
-=======
-  justify-content: center;
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
 }
 
 .banner .slogan p {
@@ -918,34 +669,7 @@ button {
 .home_intro {
   margin-top: 15vh;
   display: flex;
-<<<<<<< HEAD
-<<<<<<< HEAD
   flex-direction: column;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> denis
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-  flex-direction: column;
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
-  flex-direction: column;
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
->>>>>>> denis
->>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
-=======
-  flex-direction: column;
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
 }
 
 .home_intro h2 {
@@ -1066,60 +790,12 @@ div.planet_top div.word .addin:hover {
 }
 
 .tab-inner {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
-  display: -webkit-box;
-  display: -ms-flexbox;
->>>>>>> denis
->>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
-=======
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
   display: flex;
 }
 
 .tab-inner .taball {
   display: flex;
-<<<<<<< HEAD
-<<<<<<< HEAD
   flex-direction: column;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> denis
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-  flex-direction: column;
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
-  flex-direction: column;
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
->>>>>>> denis
->>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
-=======
-  flex-direction: column;
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
   text-align: left;
   align-items: center;
 }
@@ -1193,89 +869,18 @@ div.planet_top div.word .addin:hover {
 
 .tab-inner button {
   display: block;
-<<<<<<< HEAD
-  background-color: transparent;
-  color: #AD6E4A;
-=======
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
   transform: translateX(-100%);
 }
 
 .gallery .gallery_box {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
-  display: -webkit-box;
-  display: -ms-flexbox;
->>>>>>> denis
->>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
-=======
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
   display: flex;
 }
 
 .gallery .topleft {
-<<<<<<< HEAD
-<<<<<<< HEAD
   display: flex;
   flex-direction: row;
   max-height: 300px;
   align-items: flex-end;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  max-height: 500px;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
-  display: -webkit-box;
-  display: -ms-flexbox;
->>>>>>> denis
-=======
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
-  display: flex;
-  flex-direction: row;
-  max-height: 300px;
-  align-items: flex-end;
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
->>>>>>> denis
->>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
-=======
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
 }
 
 .gallery .topleft .A {
@@ -1297,22 +902,6 @@ div.planet_top div.word .addin:hover {
 }
 
 .gallery .topright {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-=======
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
-  display: -webkit-box;
-  display: -ms-flexbox;
->>>>>>> denis
->>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
-=======
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
   display: flex;
   flex-direction: column;
 }
@@ -1324,22 +913,6 @@ div.planet_top div.word .addin:hover {
 .gallery .topright .topSct {
   display: flex;
   justify-content: space-around;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-  justify-content: space-around;
-<<<<<<< HEAD
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
->>>>>>> denis
->>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
-=======
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
 }
 
 .gallery .topright button.btn {
@@ -1349,43 +922,8 @@ div.planet_top div.word .addin:hover {
 }
 
 .gallery .topright .galleryIntro {
-<<<<<<< HEAD
-<<<<<<< HEAD
   display: flex;
   justify-content: center;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-<<<<<<< HEAD
-=======
-=======
-  display: flex;
-  justify-content: center;
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
-  display: flex;
-  justify-content: center;
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
->>>>>>> denis
->>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
-=======
-  display: flex;
-  justify-content: center;
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
 }
 
 .gallery .topright .galleryIntro h5 {
@@ -1395,38 +933,6 @@ div.planet_top div.word .addin:hover {
 }
 
 .gallery .bottom {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> dev
-  display: -webkit-box;
-  display: -ms-flexbox;
->>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
-  display: flex;
-  flex-direction: row;
-}
-
-.gallery .bottom .bottomleft {
-<<<<<<< HEAD
-  display: flex;
-  flex-direction: row;
-  max-height: 300px;
-}
-
-.gallery .bottom .bottomleft .D {
-  height: 300px;
-=======
-  display: -webkit-box;
-  display: -ms-flexbox;
-=======
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
   display: flex;
   flex-direction: row;
 }
@@ -1434,31 +940,6 @@ div.planet_top div.word .addin:hover {
 .gallery .bottom .bottomleft {
   display: flex;
   flex-direction: row;
-<<<<<<< HEAD
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-  max-height: 500px;
-}
-
-.gallery .bottom .bottomleft .D {
-  height: 310px;
-  background-size: 120%;
-  overflow: hidden;
-<<<<<<< HEAD
->>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
-}
-
-.gallery .bottom .bottomleft .D img {
-  height: 100%;
-}
-
-=======
-=======
-  flex-direction: row;
-=======
->>>>>>> denis
-=======
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
   max-height: 300px;
 }
 
@@ -1479,34 +960,11 @@ div.planet_top div.word .addin:hover {
 }
 
 .gallery .bottom .bottomright {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-  display: -webkit-box;
-  display: -ms-flexbox;
->>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
-=======
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
   display: flex;
 }
 
 .gallery .bottom .bottomright .F {
   height: 300px;
-<<<<<<< HEAD
-  overflow: hidden;
-}
-
-.gallery .bottom .bottomright .G {
-  height: 300px;
-  overflow: hidden;
-}
-
-@media all and (max-width: 1200px) {
-  .topleft .B {
-    display: none;
-  }
-  .bottom {
-=======
   overflow: hidden;
 }
 
@@ -1540,51 +998,13 @@ div.planet_top div.word .addin:hover {
     display: none;
   }
   .bottom .bottomright .G {
->>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
     display: none;
   }
 }
 
 .home_shop {
-<<<<<<< HEAD
-<<<<<<< HEAD
   display: flex;
   flex-direction: column;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-<<<<<<< HEAD
-=======
-=======
-  display: flex;
-  flex-direction: column;
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
-  display: flex;
-  flex-direction: column;
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
->>>>>>> denis
->>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
-=======
-  display: flex;
-  flex-direction: column;
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
 }
 
 .home_shop .button_min {
@@ -1617,146 +1037,27 @@ div.planet_top div.word .addin:hover {
   overflow: hidden;
   top: 0;
   left: 0;
-<<<<<<< HEAD
-<<<<<<< HEAD
   display: flex;
   justify-content: center;
   align-items: center;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-<<<<<<< HEAD
-=======
-=======
-  display: flex;
-  justify-content: center;
-  align-items: center;
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
-  display: flex;
-  justify-content: center;
-  align-items: center;
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
->>>>>>> denis
->>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
-=======
-  display: flex;
-  justify-content: center;
-  align-items: center;
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
 }
 
 .home_shop .shopItem .hovereffect img {
   display: block;
   position: relative;
   max-width: none;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, -webkit-transform 0.35s;
-=======
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
-=======
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, -webkit-transform 0.35s;
->>>>>>> denis
->>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
   transition: opacity 0.35s, transform 0.35s;
   transform: translate3d(-10px, 0, 0);
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  -webkit-backface-visibility: hidden;
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
-  -webkit-backface-visibility: hidden;
->>>>>>> denis
->>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
-=======
-  transition: opacity 0.35s, transform 0.35s;
-  transform: translate3d(-10px, 0, 0);
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
   backface-visibility: hidden;
 }
 
 .home_shop .shopItem .hovereffect:hover img {
   opacity: 0.4;
   filter: alpha(opacity=40);
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-  -webkit-transform: translate3d(0, 0, 0);
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
-  -webkit-transform: translate3d(0, 0, 0);
->>>>>>> denis
->>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
-=======
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
   transform: translate3d(0, 0, 0);
 }
 
 .home_shop .shopItem .hovereffect:hover h2:after {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-  -webkit-transform: translate3d(0, 0, 0);
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
-  -webkit-transform: translate3d(0, 0, 0);
->>>>>>> denis
->>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
-=======
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
   transform: translate3d(0, 0, 0);
 }
 
@@ -1764,62 +1065,13 @@ div.planet_top div.word .addin:hover {
   color: #FFF;
   opacity: 0;
   filter: alpha(opacity=0);
-<<<<<<< HEAD
-<<<<<<< HEAD
   transition: opacity 0.35s, transform 0.35s;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
-  -webkit-transform: translate3d(100%, 0, 0);
-<<<<<<< HEAD
-=======
-=======
-  transition: opacity 0.35s, transform 0.35s;
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
-  transition: opacity 0.35s, transform 0.35s;
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
-  -webkit-transform: translate3d(100%, 0, 0);
->>>>>>> denis
->>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
-=======
-  transition: opacity 0.35s, transform 0.35s;
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
   transform: translate3d(100%, 0, 0);
 }
 
 .home_shop .shopItem .hovereffect:hover a, .home_shop .shopItem .hovereffect:hover h2 {
   opacity: 1;
   filter: alpha(opacity=100);
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-  -webkit-transform: translate3d(0, 0, 0);
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
-  -webkit-transform: translate3d(0, 0, 0);
->>>>>>> denis
->>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
-=======
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
   transform: translate3d(0, 0, 0);
 }
 
@@ -1840,31 +1092,7 @@ div.planet_top div.word .addin:hover {
 
 .home_shop .shopItem .item2 .hovereffect {
   z-index: 1;
-<<<<<<< HEAD
-<<<<<<< HEAD
   transform: translate(110%, -20%);
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-  -webkit-transform: translate(110%, -20%);
-          transform: translate(110%, -20%);
-<<<<<<< HEAD
-=======
-=======
-  transform: translate(110%, -20%);
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
-  transform: translate(110%, -20%);
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
-  -webkit-transform: translate(110%, -20%);
-          transform: translate(110%, -20%);
->>>>>>> denis
->>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
-=======
-  transform: translate(110%, -20%);
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
   max-height: 450px;
   max-width: 220px;
 }
@@ -1874,62 +1102,14 @@ div.planet_top div.word .addin:hover {
 }
 
 .home_shop .shopItem .item3 .hovereffect {
-<<<<<<< HEAD
-<<<<<<< HEAD
   transform: translate(150%, -100%);
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-  -webkit-transform: translate(150%, -100%);
-          transform: translate(150%, -100%);
-<<<<<<< HEAD
-=======
-=======
-  transform: translate(150%, -100%);
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
-  transform: translate(150%, -100%);
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
-  -webkit-transform: translate(150%, -100%);
-          transform: translate(150%, -100%);
->>>>>>> denis
->>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
-=======
-  transform: translate(150%, -100%);
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
   max-height: 270px;
   max-width: 275px;
 }
 
 .home_shop .shopItem .item4 .hovereffect {
   z-index: 1;
-<<<<<<< HEAD
-<<<<<<< HEAD
   transform: translate(255%, -260%);
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-  -webkit-transform: translate(255%, -260%);
-          transform: translate(255%, -260%);
-<<<<<<< HEAD
-=======
-=======
-  transform: translate(255%, -260%);
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
-  transform: translate(255%, -260%);
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
-  -webkit-transform: translate(255%, -260%);
-          transform: translate(255%, -260%);
->>>>>>> denis
->>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
-=======
-  transform: translate(255%, -260%);
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
   max-height: 270px;
   max-width: 280px;
 }
@@ -1939,31 +1119,7 @@ div.planet_top div.word .addin:hover {
 }
 
 .home_shop .shopItem .item5 .hovereffect {
-<<<<<<< HEAD
-<<<<<<< HEAD
   transform: translate(260%, -310%);
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-  -webkit-transform: translate(260%, -310%);
-          transform: translate(260%, -310%);
-<<<<<<< HEAD
-=======
-=======
-  transform: translate(260%, -310%);
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
-  transform: translate(260%, -310%);
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
-  -webkit-transform: translate(260%, -310%);
-          transform: translate(260%, -310%);
->>>>>>> denis
->>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
-=======
-  transform: translate(260%, -310%);
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
   max-height: 296px;
   max-width: 300px;
 }
@@ -2003,31 +1159,6 @@ div.planet_top div.word .addin:hover {
 }
 
 .flow_member {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-=======
-=======
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
-  display: -webkit-box;
-  display: -ms-flexbox;
->>>>>>> denis
->>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
-=======
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -2041,35 +1172,7 @@ div.planet_top div.word .addin:hover {
 
 .flow_member .flowall .flow {
   display: flex;
-<<<<<<< HEAD
-<<<<<<< HEAD
   flex-direction: column;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> denis
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-  flex-direction: column;
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
-  flex-direction: column;
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
->>>>>>> denis
->>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
-=======
-  flex-direction: column;
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
   text-align: center;
 }
 
@@ -2097,44 +1200,8 @@ div.planet_top div.word .addin:hover {
 
 .flow_member .memberbtn {
   display: flex;
-<<<<<<< HEAD
-<<<<<<< HEAD
   justify-content: center;
   align-items: center;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> dev
-=======
->>>>>>> denis
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-  justify-content: center;
-  align-items: center;
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
-  justify-content: center;
-  align-items: center;
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
->>>>>>> denis
->>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
-=======
-  justify-content: center;
-  align-items: center;
->>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
   margin-bottom: 70px;
 }
 
