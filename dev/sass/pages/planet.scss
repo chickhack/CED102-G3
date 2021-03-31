@@ -3,7 +3,6 @@
 .container-fluid{
     padding: 0;
     margin: 0 auto;
-    text-align: center;
     @include respond(mobile){
         margin: 0;
     }
