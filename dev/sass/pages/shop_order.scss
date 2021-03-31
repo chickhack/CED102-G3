@@ -230,7 +230,6 @@ section.orderer{
         color: $white;
         position: absolute;
         right: 80px;
-        bottom: 0;
         @include respond(mobile){
             right: 30px;
         }
