@@ -94,6 +94,7 @@ body {
   font-size: 18px;
   color: #C9ADA7;
   margin: 0;
+  text-align: end;
 }
 
 .h5 {
@@ -383,7 +384,7 @@ form .ltineraryinfo .row .col-10 .row .col-7 .row .text-div {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 0px 0;
+  padding: 0 0;
 }
 
 form .ltineraryinfo .row .col-10 .row .col-7 .row .text-div img {
@@ -531,7 +532,7 @@ form .orderDetails .row .col-10 .orderDetails-automanu .col-7 .row .text-div {
   justify-content: center;
   flex-direction: column;
   align-items: flex-end;
-  padding: 8px 0;
+  padding: 0;
 }
 
 form .orderDetails .row .col-10 .orderDetails-automanu .col-7 .row .text-div img {
