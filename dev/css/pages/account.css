@@ -79,6 +79,7 @@ body {
   background-color: #0c0d18;
   overflow-x: hidden;
 <<<<<<< HEAD
+<<<<<<< HEAD
   -o-user-select: none;
   user-select: none;
 =======
@@ -108,6 +109,10 @@ body {
       user-select: none;
 >>>>>>> denis
 >>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
+=======
+  -o-user-select: none;
+  user-select: none;
+>>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
 }
 
 h1, .h1 {
@@ -377,6 +382,7 @@ body {
 nav {
   display: flex;
 <<<<<<< HEAD
+<<<<<<< HEAD
   justify-content: center;
   align-items: center;
 =======
@@ -405,6 +411,10 @@ nav {
 =======
 >>>>>>> denis
 >>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
+=======
+  justify-content: center;
+  align-items: center;
+>>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
   justify-content: center;
   background-color: #0c0d18;
   position: fixed;
@@ -418,24 +428,7 @@ nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> dev
-  background-image: url("../../img/icon/header/logo.png");
-  background-image: url("../../img/logo.png");
-  background-image: url("../../img/icon/header/logo.png");
-  background-image: url("../../img/icon/header/logo.png");
-<<<<<<< HEAD
-=======
-=======
-  background-image: url("../img/logo.png");
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
-  background-image: url("../../img/icon/header/logo.png");
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
+  background-image: url("../img/icon/header/logo.png");
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -446,6 +439,7 @@ nav .logo h1 a {
 
 nav .nav-links {
   display: flex;
+<<<<<<< HEAD
 <<<<<<< HEAD
   justify-content: center;
   align-items: center;
@@ -481,6 +475,11 @@ nav .nav-links {
 =======
 >>>>>>> denis
 >>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
+=======
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-end;
+>>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
   width: 75%;
 }
 
@@ -525,6 +524,7 @@ nav .burger div {
     background-color: #AD6E4A;
     display: flex;
 <<<<<<< HEAD
+<<<<<<< HEAD
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
@@ -563,6 +563,11 @@ nav .burger div {
 =======
 >>>>>>> denis
 >>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
+=======
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+>>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
     width: 30%;
     transition: all 1s ease-in;
   }
@@ -602,6 +607,7 @@ nav .burger div {
     width: 50%;
     margin-left: 16px;
 <<<<<<< HEAD
+<<<<<<< HEAD
     justify-content: space-between;
 =======
 <<<<<<< HEAD
@@ -628,6 +634,9 @@ nav .burger div {
             justify-content: space-between;
 >>>>>>> denis
 >>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
+=======
+    justify-content: space-between;
+>>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
   }
   nav .nav-icons .icon {
     margin: 0;
@@ -698,6 +707,7 @@ footer .footer_moon {
   left: 50%;
   max-width: 40%;
 <<<<<<< HEAD
+<<<<<<< HEAD
   transform: translateX(-50%);
 =======
 <<<<<<< HEAD
@@ -718,6 +728,9 @@ footer .footer_moon {
           transform: translateX(-50%);
 >>>>>>> denis
 >>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
+=======
+  transform: translateX(-50%);
+>>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
 }
 
 footer .smoke {
@@ -727,6 +740,7 @@ footer .smoke {
   width: 100%;
   height: 80%;
 <<<<<<< HEAD
+<<<<<<< HEAD
   transform: translateX(-50%);
 =======
 <<<<<<< HEAD
@@ -747,6 +761,9 @@ footer .smoke {
           transform: translateX(-50%);
 >>>>>>> denis
 >>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
+=======
+  transform: translateX(-50%);
+>>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
 }
 
 @media (max-width: 768px) {
@@ -806,6 +823,7 @@ body {
 .welcome {
   padding: 15vh 250px 0px 250px;
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: flex;
   align-items: center;
   justify-content: left;
@@ -846,6 +864,11 @@ body {
           justify-content: left;
 >>>>>>> denis
 >>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
+=======
+  display: flex;
+  align-items: center;
+  justify-content: left;
+>>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
 }
 
 .spacedinfo {
@@ -988,9 +1011,12 @@ p.nextacc, p.nowacc {
 .account_nav a:focus {
   color: #AD6E4A;
 <<<<<<< HEAD
+<<<<<<< HEAD
   border-color: 2px solid #AD6E4A;
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
   border-bottom: 3px solid #AD6E4A;
 }
 
@@ -999,22 +1025,18 @@ p.nextacc, p.nowacc {
   background: none;
   border: none;
   border-bottom: 3px solid #AD6E4A;
+<<<<<<< HEAD
 =======
   border-color: 2px solid #AD6E4A;
 >>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
 >>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
+=======
+>>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
 }
 
 .account_line {
   margin: 0px 250px 0px 250px;
   background-color: #AD6E4A;
-}
-
-.account_nav {
-  color: #AD6E4A;
-  background: none;
-  border: none;
-  border-bottom: 1px solid #AD6E4A;
 }
 
 /* 會員資料 */
@@ -1099,15 +1121,17 @@ input.form-control-plaintext:focus {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* footer */
 footer {
   padding-top: 100px;
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
 .btn-check:focus + .btn, .btn:focus {
   outline: 0;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   color: #ffffff;
   background: #AD6E4A;
 }
@@ -1124,11 +1148,14 @@ footer {
 /* footer */
 footer {
   padding-top: 80px;
+<<<<<<< HEAD
 =======
 /* footer */
 footer {
   padding-top: 100px;
 >>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
 >>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
+=======
+>>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
 }
 /*# sourceMappingURL=account.css.map */

@@ -98,6 +98,7 @@ body{
     font-size: 18px;
     color: #C9ADA7;
     margin: 0;
+    text-align: end;
 }
 .h5{
     font-size: 18px;
@@ -389,7 +390,7 @@ form{
                                     flex-direction: column;
                                     // align-content: center;
                                     // height: 100%;
-                                    padding:0px 0;
+                                    padding:0 0;
                                     img{
                                         width: 25px;
                                         height: 25px;
@@ -563,7 +564,7 @@ form{
                         .col-12{
 
                             .paymethod-automanu-car-automanu{
-                                // display: none;
+                                display: none;
                                 .row{
                                     justify-content: space-evenly;
                                     input{
@@ -668,7 +669,7 @@ form{
                                 justify-content: center;
                                 flex-direction: column;
                                 align-items: flex-end;
-                                padding:8px 0;
+                                padding:0;
                                 img{
                                     width: 25px;
                                     height: 25px;

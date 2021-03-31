@@ -94,6 +94,7 @@ body {
   font-size: 18px;
   color: #C9ADA7;
   margin: 0;
+  text-align: end;
 }
 
 .h5 {
@@ -221,7 +222,6 @@ body {
   padding: 15px;
   text-align: center;
   border: 1px solid #AD6E4A;
-  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
@@ -301,6 +301,7 @@ form {
 
 form .orderinfo .row {
 <<<<<<< HEAD
+<<<<<<< HEAD
   justify-content: center;
   align-content: center;
 =======
@@ -321,6 +322,10 @@ form .orderinfo .row {
 =======
 >>>>>>> denis
 >>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
+=======
+  justify-content: center;
+  align-content: center;
+>>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
 }
 
 form .orderinfo .row .col-10 {
@@ -329,6 +334,7 @@ form .orderinfo .row .col-10 {
 }
 
 form .orderinfo .row .col-10 .row {
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -373,22 +379,23 @@ form .orderinfo .row .col-10 .row .col-7 {
 =======
 >>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
 >>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
-  justify-content: space-around;
 =======
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
->>>>>>> denis
+>>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
+  justify-content: space-around;
 }
 
 form .orderinfo .row .col-10 .row .col-7 {
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
   display: -webkit-box;
   display: -ms-flexbox;
 >>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
+=======
+>>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
   display: flex;
-<<<<<<< HEAD
   flex-direction: column;
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -403,6 +410,8 @@ form .orderinfo .row .col-10 .row .col-7 {
           flex-direction: column;
 >>>>>>> denis
 >>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
+=======
+>>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
 }
 
 form .orderinfo .row .col-10 .row .col-7 input {
@@ -423,6 +432,7 @@ form .orderinfo .row .col-10 .row .col-7 input:focus {
 form .orderinfo .row .col-10 .row .col-11 {
   margin: 0;
   display: flex;
+<<<<<<< HEAD
 <<<<<<< HEAD
   align-content: flex-start;
   flex-direction: column;
@@ -445,6 +455,10 @@ form .orderinfo .row .col-10 .row .col-11 {
 =======
 >>>>>>> denis
 >>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
+=======
+  align-content: flex-start;
+  flex-direction: column;
+>>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
 }
 
 form .orderinfo .row .col-10 .row .col-11 input {
@@ -456,6 +470,7 @@ form .orderinfo .row .col-10 .row .col-11 input {
 }
 
 form .ltineraryinfo .row {
+<<<<<<< HEAD
 <<<<<<< HEAD
   justify-content: center;
 =======
@@ -473,11 +488,15 @@ form .ltineraryinfo .row {
           justify-content: center;
 >>>>>>> denis
 >>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
+=======
+  justify-content: center;
+>>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
 }
 
 form .ltineraryinfo .row .col-10 .row {
   margin-bottom: 32px;
   background-color: #292B41;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   border-radius: 5px;
@@ -492,6 +511,8 @@ form .ltineraryinfo .row .col-10 .row {
   display: -ms-flexbox;
 >>>>>>> denis
 >>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
+=======
+>>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
   display: flex;
   justify-content: center;
 }
@@ -503,6 +524,7 @@ form .ltineraryinfo .row .col-10 .row .col-3 {
 
 form .ltineraryinfo .row .col-10 .row .col-3 img {
   max-width: 150px;
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -546,22 +568,23 @@ form .ltineraryinfo .row .col-10 .row .col-7 .row {
 =======
 >>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
 >>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
-  object-fit: cover;
 =======
-  -o-object-fit: cover;
-     object-fit: cover;
->>>>>>> denis
+>>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
+  object-fit: cover;
 }
 
 form .ltineraryinfo .row .col-10 .row .col-7 .row {
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
   display: -webkit-box;
   display: -ms-flexbox;
 >>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
+=======
+>>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
   display: flex;
-<<<<<<< HEAD
   justify-content: space-between;
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -575,11 +598,14 @@ form .ltineraryinfo .row .col-10 .row .col-7 .row {
           justify-content: space-between;
 >>>>>>> denis
 >>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
+=======
+>>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
   height: 100%;
   width: 100%;
 }
 
 form .ltineraryinfo .row .col-10 .row .col-7 .row .col-11 {
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -596,10 +622,13 @@ form .ltineraryinfo .row .col-10 .row .col-7 .row .text-div {
 =======
 >>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
 >>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
+=======
+>>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
   align-items: flex-end;
 }
 
 form .ltineraryinfo .row .col-10 .row .col-7 .row .text-div {
+<<<<<<< HEAD
 <<<<<<< HEAD
   display: flex;
   justify-content: center;
@@ -671,6 +700,12 @@ form .ltineraryinfo .row .col-10 .row .col-7 .row .text-div {
 >>>>>>> denis
 >>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
   padding: 0px 0;
+=======
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 0;
+>>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
 }
 
 form .ltineraryinfo .row .col-10 .row .col-7 .row .text-div img {
@@ -679,6 +714,7 @@ form .ltineraryinfo .row .col-10 .row .col-7 .row .text-div img {
 }
 
 form .addPay .row {
+<<<<<<< HEAD
 <<<<<<< HEAD
   justify-content: center;
 =======
@@ -723,10 +759,13 @@ form .addPay .row .col-10 .automena .row .col-10 {
 >>>>>>> 10e10f8ebb29ccc2882d121bf3efb9b9e001100b
 >>>>>>> dev
 =======
+=======
+>>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
   justify-content: center;
 }
 
 form .addPay .row .col-10 .automena .row .col-10 {
+<<<<<<< HEAD
 >>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
 =======
   -webkit-box-pack: center;
@@ -739,6 +778,8 @@ form .addPay .row .col-10 .automena .row .col-10 {
   display: -ms-flexbox;
 >>>>>>> denis
 >>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
+=======
+>>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
   display: flex;
 }
 
@@ -753,6 +794,7 @@ form .addPay .row .col-10 .automena .row .col-10 .sss {
 
 form .addPay .row .col-10 .automena .row .col-10 .sss img {
   width: 100px;
+<<<<<<< HEAD
 <<<<<<< HEAD
   object-fit: cover;
 =======
@@ -791,9 +833,11 @@ form .addPay .row .col-10 .automena .row .col-10 .sssb:focus .sss {
      object-fit: cover;
 >>>>>>> denis
 >>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
+=======
+  object-fit: cover;
+>>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
 }
 
->>>>>>> dev
 form .addPay .row .col-10 .automena .row .col-10 input {
   display: none;
 }
@@ -815,6 +859,7 @@ form .paymethod .row .col-10 .paymethod-automanu .row #paymethod-coin, form .pay
 }
 
 form .paymethod .row .col-10 .paymethod-automanu .row .col-11 {
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -900,6 +945,18 @@ form .paymethod .row .col-10 .paymethod-automanu .row .col-12 .paymethod-automan
           justify-content: space-evenly;
 >>>>>>> denis
 >>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
+=======
+  display: flex;
+  align-items: center;
+}
+
+form .paymethod .row .col-10 .paymethod-automanu .row .col-12 .paymethod-automanu-car-automanu {
+  display: none;
+}
+
+form .paymethod .row .col-10 .paymethod-automanu .row .col-12 .paymethod-automanu-car-automanu .row {
+  justify-content: space-evenly;
+>>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
 }
 
 form .paymethod .row .col-10 .paymethod-automanu .row .col-12 .paymethod-automanu-car-automanu .row input {
@@ -928,6 +985,7 @@ form .paymethod .row .col-10 .paymethod-automanu .row .col-5 input.paymethod-coi
 
 form .paymethod .row .col-10 .paymethod-automanu .row .col-4 {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -963,6 +1021,8 @@ form .paymethod .row .col-10 .paymethod-automanu .row .col-4 {
   display: -ms-flexbox;
 >>>>>>> denis
 >>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
+=======
+>>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
   display: flex;
   align-items: center;
 }
@@ -977,6 +1037,7 @@ form .orderDetails .row {
 
 form .orderDetails .row .allpay-div {
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: flex;
   justify-content: flex-end;
 =======
@@ -1033,6 +1094,10 @@ form .orderDetails .row .allpay-div {
           justify-content: flex-end;
 >>>>>>> denis
 >>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
+=======
+  display: flex;
+  justify-content: flex-end;
+>>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
 }
 
 form .orderDetails .row .col-10 .orderDetails-automanu .col-3 {
@@ -1055,6 +1120,7 @@ form .orderDetails .row .col-10 .orderDetails-automanu .col-11 .payadd .orderDet
 
 form .orderDetails .row .col-10 .orderDetails-automanu .col-11 .payadd .orderDetails-automanu-textdiv .textbox {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1067,6 +1133,8 @@ form .orderDetails .row .col-10 .orderDetails-automanu .col-11 .payadd .orderDet
   display: -ms-flexbox;
 >>>>>>> denis
 >>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
+=======
+>>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
   display: flex;
   width: 100%;
 }
@@ -1077,6 +1145,7 @@ form .orderDetails .row .col-10 .orderDetails-automanu .col-11 .orderDetails-aut
 
 form .orderDetails .row .col-10 .orderDetails-automanu .col-11 .orderDetails-automanu-textdiv .textbox {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1112,12 +1181,15 @@ form .orderDetails .row .col-10 .orderDetails-automanu .col-11 .orderDetails-aut
   display: -ms-flexbox;
 >>>>>>> denis
 >>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
+=======
+>>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
   display: flex;
   width: 100%;
 }
 
 form .orderDetails .row .col-10 .orderDetails-automanu .col-7 {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1130,10 +1202,13 @@ form .orderDetails .row .col-10 .orderDetails-automanu .col-7 {
   display: -ms-flexbox;
 >>>>>>> denis
 >>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
+=======
+>>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
   display: flex;
 }
 
 form .orderDetails .row .col-10 .orderDetails-automanu .col-7 .row {
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -1170,6 +1245,8 @@ form .orderDetails .row .col-10 .orderDetails-automanu .col-7 .row {
   display: -ms-flexbox;
 >>>>>>> denis
 >>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
+=======
+>>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
   display: flex;
   justify-content: space-around;
   width: 100%;
@@ -1180,7 +1257,11 @@ form .orderDetails .row .col-10 .orderDetails-automanu .col-7 .row .text-div {
   justify-content: center;
   flex-direction: column;
   align-items: flex-end;
+<<<<<<< HEAD
   padding: 8px 0;
+=======
+  padding: 0;
+>>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
 }
 
 form .orderDetails .row .col-10 .orderDetails-automanu .col-7 .row .text-div img {
