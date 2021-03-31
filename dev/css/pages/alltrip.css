@@ -1060,6 +1060,14 @@ div.bk3 {
   background-image: url(../../img/icon/bookmark-outline.png);
   width: 25px;
   height: 25px;
+<<<<<<< HEAD
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+=======
   background-size: 25px;
   background-repeat: no-repeat;
   padding: 8px;
@@ -1070,6 +1078,7 @@ div.bk3 {
       -ms-flex-align: center;
           align-items: center;
   display: block;
+>>>>>>> e55564da15e7db9f7dbd1fdb4a283f1c57fce384
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;

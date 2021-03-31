@@ -675,15 +675,33 @@ input[type=number] {
 
 .top_photo {
   max-width: 1100px;
-  text-align: center;
-  margin: auto;
+  margin: 0 auto;
+  background-image: url(../../img/home/others/mars_astranaut.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  padding-top: 20%;
+  position: relative;
+  color: #ffffff;
 }
 
+<<<<<<< HEAD
+.top_photo h2.margin_top_5 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 35%;
+  letter-spacing: 2px;
+=======
 .top_photo img {
   height: 240px;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+>>>>>>> e55564da15e7db9f7dbd1fdb4a283f1c57fce384
 }
 
 .grid {
