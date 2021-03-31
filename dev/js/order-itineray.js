@@ -1,10 +1,16 @@
+// js抓到CSS屬性
+var sub1= document.getElementById('orderinfo-automenu');
+var sub =window.getComputedStyle(sub1).display;
+alert(sub);
+
 //控制表單縮放
+// var sub = $('#orderinfo-automenu').css("display");
 $('#btn-opmenu').click(function(){
     //自動縮放
     $('#orderinfo-automenu').slideToggle();
     //自動判斷添加class替換before內容
     $('#btn-opmenu').toggleClass("svgRight");
-    if()
+    
 });
 $('#addPay-btn').click(function(){
     $('.automena').slideToggle();
