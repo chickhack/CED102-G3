@@ -148,12 +148,10 @@ p.nextacc, p.nowacc {
 .account_nav a {
   color: #C9ADA7;
 }
-.account_nav a:focus {
-  color: #AD6E4A;
-  // background: none;
-  // border: none;
-  border-bottom: 3px solid #AD6E4A;
-}
+// .account_nav a:focus {
+//   color: #AD6E4A;
+//   border-bottom: 3px solid #AD6E4A;
+// }
 .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover, .nav-tabs .nav-link.active{
   color: #AD6E4A;
   background: none;
@@ -228,7 +226,7 @@ input.form-control-plaintext:focus{
 }
 
 // 編輯資料按鈕 // 收藏按鈕
-.info_editbtn, .heartbtn {
+.info_editbtn {
   font-family: "Microsoft JhengHei";
   font-size: 12px;
   color: #ffff;
@@ -241,32 +239,53 @@ input.form-control-plaintext:focus{
 .info_editbtn:hover, .heartbtns:hover {
   color: #ffff;
   border: 1px solid #AD6E4A;
-  border-color: #AD6E4a;
-}
-.btn-check:focus + .btn, .btn:focus {
-  outline: 0;
-  box-shadow: none;
-  color: #ffffff;
   background: #AD6E4A;
+}
+// .info_editbtn:focus + .btn, .btn:focus {
+//   outline: 0;
+//   box-shadow: none;
+//   color: #ffffff;
+//   background: #AD6E4A;
+// }
+.info_editbtn:focus+.btn-primary, .heartbtns:focus, .btn-primary:focus {
+  color: #fff;
+  background-color: #AD6E4A;
+  border-color: #AD6E4A;
+  box-shadow: none;
 }
 
 // 收藏按鈕
 .container_heart{
   padding: 30px 800px 0px 270px;
 }
-.heartbtn{
+.heartbtns{
   max-width: 100%;
   margin-left: 10px;
+  font-family: "Microsoft JhengHei";
+  font-size: 12px;
+  color: #ffff;
+  border: 1px solid #AD6E4A;
+  background: none;
+  border-radius: 0px;
 }
+
+
+// 移除點擊時邊框陰影
+.btn-check:focus+.btn, .btn:focus {
+  outline: 0;
+  box-shadow: none;
+}
+// 移除滑鼠移除＆取消點擊時邊框
+.nav-link {
+  transition: none
+}
+
+
+
 
 
 
 /* footer */
 footer {
-  padding-top: 80px;
+  padding-top: 100px;
 }
-
-
-
-
-

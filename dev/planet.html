@@ -23,6 +23,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/all.css" />
     <link rel="stylesheet" href="./css/pages/planet.css"></link>
+    <script src="./node_modules/three/build/three.module.js"></script>
+    <script src="./node_modules/three/examples/jsm/controls/OrbitControls.js"></script>
 
     <style></style>
   </head>
@@ -83,7 +85,7 @@
         </div>
         <div class="planet_content ">
           <div class="imgs col-6  margin_top_10 ">
-            <!-- <img :src="state.clickedPlanet.set"/> -->
+            <img src="./img/planet/set.png"/>
           </div>
             <!-- RWD Carousel -->
             <div id="carouselExampleControls" class="carousel slide margin_top_6" data-ride="carousel">
@@ -107,12 +109,16 @@
             </div>
 
           <div class="desc col-6 margin_top_10">
-            <!-- <p>{{state.clickedPlanet.paragraph}}</p> -->
+            <p>在Space Adventures的安排中，4名乘客將從SpaceX佛州卡納維爾角的基地起飛，而後在地球軌道上繞行，與過往不同的是，這次將不會造訪國際太空站。不過， 這次雙方合作的旅行，高度預計超越過往所有私人太空之旅，乘客將有機會目睹自雙子星計畫後無人見識過的地球樣貌。</p>
           </div>
+
         </div>
-        <!-- <button class="button_min">更多關於{{state.clickedPlanet.name}}</button> -->
+        <div class="planetbtn margin_top_5" align="center">
+          <button class="button_min" >更多關於火星</button>
+        </div>
       </div>
     </div>
+    <script type="module" src="./js/mars.js"></script>
     <footer>@@include('./layout/footer.html')</footer>
   </div>
     <!-- 星球頁籤轉移 -->
@@ -131,7 +137,9 @@
     <script>
       new Vue({
         el: "#planet",
+
         data: {
+          msg: "hi",
           state: {
           clickedPlanet: null
           },
@@ -141,8 +149,9 @@
             g: "38",
             h:"24",
             t:"60",
-            image: "./img/planet/mars_set.png",
-            paragraph:"12345",
+            image: "./img/planet/mars.png",
+            article:"12345",
+            set:"./img/planet/mars_set.png"
           },{
             name: "月球",
             content: "月球大氣以二氧化碳為主，既稀薄又寒冷，其表面特徵讓人聯想起月球上的撞擊坑，以及地球上的山谷、沙漠和極地冰蓋。",
@@ -186,6 +195,11 @@
             paragraph:"12345",
           }]
         },
+        methods:{
+          changeData(){
+            alert();
+          }
+        }
       });
     </script>
   </body>

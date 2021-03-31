@@ -1,476 +1,378 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/pages/index.css">
     <title>SPACED</title>
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
-      crossorigin="anonymous"
-    />
-    <!-- Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        
-    <!-- jQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
-    <script src="./js/tabSwitch.js"></script>
-    <!-- Vue.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.12/vue.js"></script>
-    <!-- CSS -->
-    <link rel="stylesheet" href="./css/pages/planet.css"></link>
-    <link rel="stylesheet" href="./css/pages/alltrip.css"></link>
-    <link rel="stylesheet" href="./css/pages/index.css"></link>
-    <!-- ScrollMagic -->
-      <!-- 導入動畫套件  gsap 2 -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
-      <!-- scrollmagic 主要程式 -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-      <!-- scrollmagic + gsap  -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
-      <!-- scrollmagic 觸發點指標顯示 -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
-  </head>
-  <body>
-    <div class="container-fluid ">
-      <header>@@include('./layout/header.html')</header>
-      <div class="video-bg ">
-        <video playsinline autoplay loop muted="true" style="opacity:1; width: 1600px; " src="https://d1titnu6se1qmv.cloudfront.net/uploads/2019/04/home-vbg.mp4"></video>
-        <div class="video-overy"></div>
-      </div>
-
-        <div class="banner">
-          <div class="slogan">
-            <p>EXPLORE THE GALAXY</p>
-          </div>
-          <!-- <div class="scroll">
-            <img src="./img/icon/scroll.gif" style="width: 50px" />
-          </div> -->
+</head>
+<body>
+    <div class="container">
+        <div class="link">
+            <a href="home.html">前台</a>
+            <a href="spaced_backstage.html">後台</a>
         </div>
-        
-
-<!-- 訂購流程 -->
-        <div class="stepsection margin_top_10">
-          <h2>打造專屬的星球行程</h2>
-          <h3 class="margin_top_3 line_low">累積景點積分，獲得更多宇宙幣，讓你無限暢遊宇宙</h3>
-<div id="trigger01"></div>
-          <div class="stepall">
-              <div class="step margin_left_5">
-                  <img src="./img/icon/search-location.png" class="step_icon" alt="icon">
-                  <div class="step_content h4"><img src="./img/icon/one.png" class="num" alt="num">尋找景點</div>
-              </div>
-
-              <div class="step margin_left_5">
-                  <img src="./img/icon/travel.png" class="step_icon" alt="icon">
-                  <div class="step_content h4"><img src="./img/icon/two.png" class="num" alt="num">加入我的行程</div>
-              </div>
-
-              <div class="step margin_left_5">
-                  <img src="./img/icon/coins.png" class="step_icon" alt="icon">
-                  <div class="step_content h4"><img src="./img/icon/three.png" class="num" alt="num">結帳，獲得積分</div>
-              </div>
-
-              <div class="step margin_left_5">
-                  <img src="./img/icon/4change.png" class="step_icon4" alt="icon">
-                  <div class="step_content h4"><img src="./img/icon/four.png" class="num" alt="num">累積積分，兌換宇宙幣</div>
-              </div>
-          </div>
-        </div>
-        
-<!-- 精選行程 -->   
-        <div class="first_right swiper-container" id="app" >
-          <div class="hottrip wiper-wrapper col-10">
-              <div v-for="item in top" class="planet_top swiper-slide">
-                  <a href="trip.html">
-                      <img :src="item.planet" class="planet" alt="planet">
-                      <img :src="item.spot" class="planet_a1" alt="planettrip">
-                      <div class="word line_low ">
-                          <h3 class="hot">{{item.title}}</h3>
-                          <h4>{{item.name}}</h3>
-                              <!-- <img :src="item.star" class="star margin_top_1" alt="star"> -->
-                              <small class="tag margin_top_3">{{item.grade}}</small>
-                              <small class="tag">{{item.scores}}積分</small>
-                              <h4 class="price">${{item.price}}</h4>
-                              <div class="addin small"><img class="plus" src="./img/icon/plus.png" alt="">加入我的行程
-                              </div>
-                      </div>
-                  </a>
-              </div>
-          </div>
-        </div>
-<!-- 星球百科 -->
-        <div class="planet_box" id="planetData">
-          <h2 align="center" class="margin_top_10">星星世界</h2>
-          <div id="planet">
-            <div class="tabList margin_top_3 col-LG-12 ">
-              <button class="button_min" v-for="planet in planets" v-on:click="state.clickedPlanet = planet">{{planet.name}}</button>
-      
-            </div>
-            <div class="separator col-10"></div>
-          <!-- <component :is="content" class="col-lg-12 col-sm-12"> -->
-    
-            <div class="col-12 tab-inner" v-if="this.state.clickedPlanet !== null">
-              <div class="taball margin_top_10 col-lg-6 col-md-12">
-                <div class="tab_left">
-                  <h2>{{state.clickedPlanet.name}}</h2>
-                  <h3 class="margin_top_4">
-                    {{state.clickedPlanet.content}}
-                  </h3>
-                </div>
-                <div class="data margin_top_8">
-                  <div class="grav">
-                    <div class="dataTop">
-                      <span class="var">{{state.clickedPlanet.g}}</span>
-                      <span class="data-mid">％</span>
+        <div class="monitor">
+            <div class="camera -z">
+                <div class="camera -y">
+                    <div class="camera -x">
+                        <div class="ball">
+                            <div class="line">
+                                <div class="rotate">
+                                    <div class="panel">
+                                        <div class="graphic"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="line">
+                                <div class="rotate">
+                                    <div class="panel">
+                                        <div class="graphic"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="line">
+                                <div class="rotate">
+                                    <div class="panel">
+                                        <div class="graphic"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="line">
+                                <div class="rotate">
+                                    <div class="panel">
+                                        <div class="graphic"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="line">
+                                <div class="rotate">
+                                    <div class="panel">
+                                        <div class="graphic"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="line">
+                                <div class="rotate">
+                                    <div class="panel">
+                                        <div class="graphic"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="line">
+                                <div class="rotate">
+                                    <div class="panel">
+                                        <div class="graphic"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="line">
+                                <div class="rotate">
+                                    <div class="panel">
+                                        <div class="graphic"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="line">
+                                <div class="rotate">
+                                    <div class="panel">
+                                        <div class="graphic"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="line">
+                                <div class="rotate">
+                                    <div class="panel">
+                                        <div class="graphic"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="line">
+                                <div class="rotate">
+                                    <div class="panel">
+                                        <div class="graphic"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="line">
+                                <div class="rotate">
+                                    <div class="panel">
+                                        <div class="graphic"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="line">
+                                <div class="rotate">
+                                    <div class="panel">
+                                        <div class="graphic"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="line">
+                                <div class="rotate">
+                                    <div class="panel">
+                                        <div class="graphic"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="line">
+                                <div class="rotate">
+                                    <div class="panel">
+                                        <div class="graphic"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="line">
+                                <div class="rotate">
+                                    <div class="panel">
+                                        <div class="graphic"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="line">
+                                <div class="rotate">
+                                    <div class="panel">
+                                        <div class="graphic"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="line">
+                                <div class="rotate">
+                                    <div class="panel">
+                                        <div class="graphic"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="line">
+                                <div class="rotate">
+                                    <div class="panel">
+                                        <div class="graphic"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="line">
+                                <div class="rotate">
+                                    <div class="panel">
+                                        <div class="graphic"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="line">
+                                <div class="rotate">
+                                    <div class="panel">
+                                        <div class="graphic"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="line">
+                                <div class="rotate">
+                                    <div class="panel">
+                                        <div class="graphic"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="line">
+                                <div class="rotate">
+                                    <div class="panel">
+                                        <div class="graphic"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="line">
+                                <div class="rotate">
+                                    <div class="panel">
+                                        <div class="graphic"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="line">
+                                <div class="rotate">
+                                    <div class="panel">
+                                        <div class="graphic"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="line">
+                                <div class="rotate">
+                                    <div class="panel">
+                                        <div class="graphic"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="line">
+                                <div class="rotate">
+                                    <div class="panel">
+                                        <div class="graphic"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="line">
+                                <div class="rotate">
+                                    <div class="panel">
+                                        <div class="graphic"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="line">
+                                <div class="rotate">
+                                    <div class="panel">
+                                        <div class="graphic"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="line">
+                                <div class="rotate">
+                                    <div class="panel">
+                                        <div class="graphic"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="line">
+                                <div class="rotate">
+                                    <div class="panel">
+                                        <div class="graphic"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="line">
+                                <div class="rotate">
+                                    <div class="panel">
+                                        <div class="graphic"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="line">
+                                <div class="rotate">
+                                    <div class="panel">
+                                        <div class="graphic"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="line">
+                                <div class="rotate">
+                                    <div class="panel">
+                                        <div class="graphic"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="line">
+                                <div class="rotate">
+                                    <div class="panel">
+                                        <div class="graphic"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="line">
+                                <div class="rotate">
+                                    <div class="panel">
+                                        <div class="graphic"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="line">
+                                <div class="rotate">
+                                    <div class="panel">
+                                        <div class="graphic"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="line">
+                                <div class="rotate">
+                                    <div class="panel">
+                                        <div class="graphic"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="line">
+                                <div class="rotate">
+                                    <div class="panel">
+                                        <div class="graphic"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="line">
+                                <div class="rotate">
+                                    <div class="panel">
+                                        <div class="graphic"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="line">
+                                <div class="rotate">
+                                    <div class="panel">
+                                        <div class="graphic"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="line">
+                                <div class="rotate">
+                                    <div class="panel">
+                                        <div class="graphic"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="line">
+                                <div class="rotate">
+                                    <div class="panel">
+                                        <div class="graphic"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="line">
+                                <div class="rotate">
+                                    <div class="panel">
+                                        <div class="graphic"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="line">
+                                <div class="rotate">
+                                    <div class="panel">
+                                        <div class="graphic"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="line">
+                                <div class="rotate">
+                                    <div class="panel">
+                                        <div class="graphic"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="line">
+                                <div class="rotate">
+                                    <div class="panel">
+                                        <div class="graphic"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="line">
+                                <div class="rotate">
+                                    <div class="panel">
+                                        <div class="graphic"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="line">
+                                <div class="rotate">
+                                    <div class="panel">
+                                        <div class="graphic"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="line">
+                                <div class="rotate">
+                                    <div class="panel">
+                                        <div class="graphic"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <p>重力</p>
-                  </div>
-                  <div class="day">
-                  <div class="dataTop">
-                    <span class="var">{{state.clickedPlanet.h}}</span>
-                    <span class="data-low">HR</span>
-                  </div>
-                    <p>一天</p>
-                  </div>
-                  <div class="temp">
-                  <div class="dataTop">
-                    <span class="data-mid">-</span>
-                    <span class="var">{{state.clickedPlanet.t}}</span>
-                    <span class="data-top">F</span>
-                  </div>
-                    <p>溫度</p>
-                  </div>
                 </div>
-                <button class="button_min">更多關於{{state.clickedPlanet.name}}</button>
-              </div>
-              <div class="tab-active margin_top_5 col-lg-6 col-md-4">
-                <img
-                  :src="state.clickedPlanet.image"
-                  style="max-width: 500px"
-                  class="geoplanet"
-                />
-              </div>
-          </div>
+            </div>
         </div>
-        </div>
-<!-- 互動牆 -->
-        <div class="gallery" id="gallery">
-          <!-- 上 -->
-          <div class="gallery_box top col-12">
-            <div class="topleft col-5">
-              <div class="col-lg-6 col-md-12 col-sm-12 A">
-                <img src="./img/home/mars1.jpg" height="100%">
-              </div>
-              <div class="col-6 B">
-                <img src="./img/home/mars2.jpg" class="img-responsive">
-              </div>
-            </div>
-            <div class="box topright margin_top_4 col-7 ">
-              <div class="topSct col-md-12 col-sm-12">
-                <h2>太空互動</h2>
-                <div class="btn-group" role="group">
-                  <button type="button" @click="changeGallery()" class="btn btn-secondary"><</button>
-                  <button type="button" @click="changeGalleryBack()" class="btn btn-secondary">></button>
-                </div>
-              </div>
-              <div class="separator margin_top_2"></div>
-              <div class="galleryIntro">
-                <h5 class="margin_top_3" >
-                  由美國加州、全球最大太空建築公司（Orbital Assembly Corporation，OAC）宣布，太空旅館預計2025~2026年動工建造，順利的話有望在2027年開幕升空！由24個模組構成，如同巨大般的摩天輪外型，透過旋轉產生1/6地球重力。預計每90分鐘繞行地球一圈、每天繞地球16次。
-                </h5>
-              </div>
-            </div>
-          </div>
-          <!-- 下 -->
-          <div class="box bottom">
-            <div class="box bottomleft col-5">
-              <div class="col-6 D">
-                <img src="./img/home/首頁-互動牆壁2.jpg" class="h-100">
-              </div>
-              <div class="col-6 E">
-                <img src="./img/home/首頁-互動牆壁9.jpg" class="h-100">
-              </div>
-            </div>
-            <div class="box bottomright col-7">
-              <div class="col-6 F">
-                <img  src="./img/home/首頁-互動牆壁2.jpg" class="h-100 w-100">
-              </div>
-              <div class="col-6 G">
-                <img  src="./img/home/others/mars_landscape.jpg" class="h-100 w-100 ">
-              </div>
-            </div>
-            
-          </div>
-        </div>
-  
-<!-- 商城 -->
-      <div class="shop_box" >
-        <div class="home_shop">
-          <h2>星球商城</h2>
-          <div class="shopItem margin_top_10">
-            <!-- 第一個商品 -->
-            <div class="item1 col-lg-3 col-md-4 col-sm-6 col-xs-12">
-              <div class="hovereffect">
-                <img class="img-responsive" src="img/home/shop_1.jpeg" alt="">
-                <div class="overlay">
-                  <h2><a href="#">太空衣</a></h2> 
-                </div>
-              </div>
-            </div>
-            <!-- 第二個商品 -->
-            <div class="item2 col-lg-3 col-md-4 col-sm-6 col-xs-12">
-              <div class="hovereffect">
-                <img class="img-responsive " src="img/home/shop_2.jpeg" alt="">
-                <div class="overlay">
-                  <h2><a href="#">太空衣</a></h2> 
-                </div>
-              </div>
-            </div>
-            <!-- 第三個商品 -->
-            <div class="item3 col-lg-3 col-md-4 col-sm-6 col-xs-12">
-              <div class="hovereffect">
-                <img class="img-responsive" src="img/home/shop_5.jpeg" style="width:450px;" alt="">
-                <div class="overlay">
-                  <h2><a href="#">太空衣</a></h2> 
-                </div>
-              </div>
-            </div>
-            <!-- 第四個商品 -->
-            <div class="item4 col-lg-3 col-md-4 col-sm-6 col-xs-12">
-              <div class="hovereffect">
-                <img class="img-responsive" src="img/home/shop_6.jpeg" alt="">
-                <div class="overlay">
-                  <h2><a href="#">宇宙平衡鞋</a></h2> 
-                </div>
-              </div>
-            </div>
-            <!-- 第五個商品 -->
-            <div class="item5 col-lg-3 col-md-4 col-sm-6 col-xs-12">
-              <div class="hovereffect">
-                <img class="img-responsive" src="img/home/shop_4.jpeg" alt="">
-                <div class="overlay">
-                  <h2><a href="#">太空衣</a></h2> 
-                </div>
-              </div>
-            </div>
-          </div>
-         
-
-          <!-- RWD -->
-          <div class="shopRWD margin_top_10">
-          <div id="carouselExampleCaptions" class="carousel shop_carousel slide col-10" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-              <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="img/home/shop_5.jpeg"  class="d-block" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h2>宇宙平衡鞋</h2>
-                  <p class="margin_top_2">穿上這雙鞋，協助你在無重力的宇宙暢行無阻!獨家專利打造，讓你的旅程加倍舒適~</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="img/home/shop_3.jpeg" class="d-block h-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <!-- <h5>Second slide label</h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="img/home/shop_4.jpeg" height="300px" class="d-block h-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <!-- <h5>Third slide label</h5>
-                  <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p> -->
-                </div>
-              </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-              <span class="sr-only">Next</span>
-              <span class="carousel-control-next-icon" aria-hidden="true" ></span>
-            </a>
-          </div>
-        </div>   
-        <button class="button button_min margin_top_5">去逛逛</button>
-        </div>
-      </div>
-<!-- 會員待遇 -->
-          <div class="flow_member">
-            <h2 align="center">歡迎加入太空世界</h2>
-            <h3 class="margin_top_3" align="center">加入會員，享受禮遇，與所有玩家同遊宇宙</h3>
-              <div class="flowall margin_top_8" align="center">
-                <div class="flow">
-                    <img src="./img/icon/ribbon.png" class="step_icon" alt="icon">
-                    <h4 class="flowTitle margin_top_2">會員分級</h4>
-                    <div class="separator margin_top_2"></div>
-                    <h4 class="margin_top_2">累積積分 會員升級<br>享受更多特殊禮遇</h4>
-                </div>
-
-                <div class="flow ">
-                    <img src="./img/icon/ranking.png" class="step_icon" alt="icon">
-                    <h4 class="flowTitle margin_top_2">積分排行</h4>
-                    <div class="separator margin_top_2"></div>
-                    <h4 class="margin_top_2">每月排行 挑戰排行</h4>
-                </div>
-
-                <div class="flow ">
-                    <img src="./img/icon/post.png" class="step_icon" alt="icon">
-                    <h4 class="flowTitle margin_top_2">太空互動</h4>
-                    <div class="separator margin_top_2"></div>
-                    <h4 class="margin_top_2">玩家分享 互相交流<br>看看別人怎麼玩</h4>
-                </div>
-              </div>
-              <div class="memberbtn">
-                <button class="button button_min margin_top_10" >加入會員</button>
-              </div>
-          </div>
-<!-- 框框 -->
-      </div> 
-
-      <footer>@@include('./layout/footer.html')</footer>
     </div>
-  </div>
-
-
-
-
-
-    <!-- 星球頁籤轉移 -->
-    <script>
-      $(function(){
-        var $button = $('div.tabList button');
-            $($button.eq(0).addClass('active').find('button').siblings('.tab-inner').hide());
-
-            $button.click(function(){
-              $($(this).find('a').attr('href')).show().siblings('.tab-inner').hide();
-              $(this).addClass('active').siblings('.active').removeClass('active');
-            });
-      });
-    </script>
-    <!-- 星球tab Vue-->
-    <script src="./js/planet_data.js"></script>
-    <script src="./js/gallery.js"></script>
-    <!-- 精選景點 vue -->
-        <script>
-          let vm = new Vue({
-              el: "#app",
-              data: {
-                  top: [{
-                      planet: "./img/trip/jupiter.png",
-                      spot: "./img/trip/trip_jupiter/jupiter_top_a_ps.png",
-                      title: "熱門星球",
-                      name: "木星 | 冰層探索一日遊",
-                      star: "./img/icon/star.png",
-                      grade: "初階",
-                      scores: "3000",
-                      price: 5000,
-  
-                  }, {
-                      planet: "./img/trip/mars.png",
-                      spot: "./img/trip/trip_mars/mars_top_a1_ps.jpg.png",
-                      title: "進階景點",
-                      name: "火星 | 攀登太陽系第一高山",
-                      star: "./img/icon/star.png",
-                      grade: "高階",
-                      scores: "5000",
-                      price: 5000,
-  
-                  }, {
-                      planet: "./img/trip/moon.png",
-                      spot: "./img/trip/trip_moon/moon_top_a1_ps.png",
-                      title: "新景點",
-                      name: "月球 | 太空體驗一日遊",
-                      star: "./img/icon/star.png",
-                      grade: "初階",
-                      scores: "3000",
-                      price: 5000,
-                  }, 
-                  ],
-
-
-              },
-          });
-      </script>
-      <!-- scrollMagic -->
-      <script>
-            var controller = new ScrollMagic.Controller();
-            new ScrollMagic.Scene({
-            triggerElement : '#trigger01',
-            duration: '620%'
-        }).on('enter', function(){
-            console.log('enter 進入');
-            $('#nav').css('background-color' , '#0c0d18')
-        }).on('leave', function(){
-            console.log('leave 離開');
-            $('#nav').css('background-color' , '#5f5f5f3a')
-        })
-        .addIndicators().addTo(controller);
-      </script>
-      <!-- 星球百科Vue -->
-      <script>
-        new Vue({
-          el: "#planet",
-          data: {
-            state: {
-            clickedPlanet: null
-            },
-            planets: [{
-              name: "火星",
-              content: "月球大氣以二氧化碳為主，既稀薄又寒冷，其表面特徵讓人聯想起月球上的撞擊坑，以及地球上的山谷、沙漠和極地冰蓋。",
-              g: "38",
-              h:"24",
-              t:"60",
-              image: "./img/planet/mars.png",
-            },{
-              name: "月球",
-              content: "月球大氣以二氧化碳為主，既稀薄又寒冷，其表面特徵讓人聯想起月球上的撞擊坑，以及地球上的山谷、沙漠和極地冰蓋。",
-              g: "20",
-              h:"22",
-              t:"30",
-              image: "./img/planet/moon.png",
-            },{
-              
-              name: "木星",
-              content: "木星大氣以二氧化碳為主，既稀薄又寒冷，其表面特徵讓人聯想起月球上的撞擊坑，以及地球上的山谷、沙漠和極地冰蓋。",
-              g: "15",
-              h:"50",
-              t:"150",
-              image: "./img/planet/jupiter.png",
-            },{
-              name: "木星",
-              content: "木星大氣以二氧化碳為主，既稀薄又寒冷，其表面特徵讓人聯想起月球上的撞擊坑，以及地球上的山谷、沙漠和極地冰蓋。",
-              g: "15",
-              h:"50",
-              t:"150",
-              image: "./img/planet/jupiter.png",
-            },{
-              name: "木星",
-              content: "木星大氣以二氧化碳為主，既稀薄又寒冷，其表面特徵讓人聯想起月球上的撞擊坑，以及地球上的山谷、沙漠和極地冰蓋。",
-              g: "15",
-              h:"50",
-              t:"150",
-              image: "./img/planet/jupiter.png",
-            },{
-              name: "木星",
-              content: "木星大氣以二氧化碳為主，既稀薄又寒冷，其表面特徵讓人聯想起月球上的撞擊坑，以及地球上的山谷、沙漠和極地冰蓋。",
-              g: "15",
-              h:"50",
-              t:"150",
-              image: "./img/planet/jupiter.png",
-            }]
-          },
-        });
-      </script>
-  </body>
+</body>
 </html>

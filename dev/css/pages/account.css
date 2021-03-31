@@ -373,7 +373,7 @@ nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-  background-image: url("../../img/icon/header/logo.png");
+  background-image: url("../../img/logo.png");
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -443,7 +443,7 @@ nav .burger div {
   nav .nav-links {
     position: absolute;
     right: -100%;
-    height: 92vh;
+    height: 88vh;
     top: 12vh;
     background-color: #AD6E4A;
     display: -webkit-box;
@@ -831,11 +831,6 @@ p.nextacc, p.nowacc {
   color: #C9ADA7;
 }
 
-.account_nav a:focus {
-  color: #AD6E4A;
-  border-bottom: 3px solid #AD6E4A;
-}
-
 .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover, .nav-tabs .nav-link.active {
   color: #AD6E4A;
   background: none;
@@ -914,7 +909,7 @@ input.form-control-plaintext:focus {
           box-shadow: none;
 }
 
-.info_editbtn, .heartbtn {
+.info_editbtn {
   font-family: "Microsoft JhengHei";
   font-size: 12px;
   color: #ffff;
@@ -928,28 +923,54 @@ input.form-control-plaintext:focus {
 .info_editbtn:hover, .heartbtns:hover {
   color: #ffff;
   border: 1px solid #AD6E4A;
-  border-color: #AD6E4a;
+  background: #AD6E4A;
 }
 
+<<<<<<< HEAD
 .btn-check:focus + .btn, .btn:focus {
   outline: 0;
   -webkit-box-shadow: none;
           box-shadow: none;
   color: #ffffff;
   background: #AD6E4A;
+=======
+.info_editbtn:focus + .btn-primary, .heartbtns:focus, .btn-primary:focus {
+  color: #fff;
+  background-color: #AD6E4A;
+  border-color: #AD6E4A;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+>>>>>>> e55564da15e7db9f7dbd1fdb4a283f1c57fce384
 }
 
 .container_heart {
   padding: 30px 800px 0px 270px;
 }
 
-.heartbtn {
+.heartbtns {
   max-width: 100%;
   margin-left: 10px;
+  font-family: "Microsoft JhengHei";
+  font-size: 12px;
+  color: #ffff;
+  border: 1px solid #AD6E4A;
+  background: none;
+  border-radius: 0px;
+}
+
+.btn-check:focus + .btn, .btn:focus {
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.nav-link {
+  -webkit-transition: none;
+  transition: none;
 }
 
 /* footer */
 footer {
-  padding-top: 80px;
+  padding-top: 100px;
 }
 /*# sourceMappingURL=account.css.map */

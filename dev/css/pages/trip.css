@@ -372,7 +372,7 @@ nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-  background-image: url("../../img/icon/header/logo.png");
+  background-image: url("../../img/logo.png");
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -442,7 +442,7 @@ nav .burger div {
   nav .nav-links {
     position: absolute;
     right: -100%;
-    height: 92vh;
+    height: 88vh;
     top: 12vh;
     background-color: #AD6E4A;
     display: -webkit-box;
@@ -697,12 +697,24 @@ input::-webkit-inner-spin-button {
   padding: 8px;
 }
 
-.parent_container .up_container .trip_content_all .trip_title .bookmark {
+.parent_container .up_container .trip_content_all .trip_title .trip_bookmark {
+  background-image: url(../../img/icon/bookmark-outline.png);
+  background-size: 25px;
+  background-repeat: no-repeat;
   width: 25px;
+  height: 30px;
+  background-size: 25px;
+  padding: 8px;
+  padding-right: 0;
   position: absolute;
   top: 5px;
-  right: 6px;
+  right: 0px;
   text-align: end;
+  cursor: pointer;
+}
+
+.parent_container .up_container .trip_content_all .trip_title .trip_bookmark:hover {
+  background-image: url(../../img/icon/bookmark_hover.png);
 }
 
 .parent_container .up_container .trip_content_all div.tab_container div.tab_contents div.tab {

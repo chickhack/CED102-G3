@@ -1,646 +1,227 @@
-@import "../all.scss";
+// @import "../all.scss";
 
-.container-fluid{
-    padding: 0;
+// .banner{
+//     width: 100vw;
+//     height: 100vh;
+//     background-image: url("../../img/background.jpg");
+//     @include flex_middle();
+// }
 
-}
+// a{
+//     color: $white;
+//     font-size: 50px;
+//     padding: 20px 40px;
+//     margin: 0 80px;
+//     transition: all .5s;
+//     &:hover{
+//         margin-bottom: 10px;
+//     }
+// }
 
-
-
-//=========header設定
-nav{
-    background-color: $darkblue;
-}
-//=========按鈕設定
-button:hover{
-    color: #ffff;
-    border: 1px solid $gold;
-    background: $gold;
-}
-
-//背景影片
-.video-bg{
+body {
+    background: #171819;
     height: 100vh;
     overflow: hidden;
-}
-@media only screen and ( max-width:1200px) {
-    .banner_bg{
-        height: 100vh;
-    }
-}
-//整頁邊框
-
-.frame{
-    border: 1px solid #ad6e4a57;
-    margin: 0 auto;
-}
-
-
-//按鈕
-button{
-    background-color: transparent;
-    color: $gold;
-}
-
-
-.banner{
-    position: absolute;
-    top: 40%;
-    left: 17%;
-
-    .slogan {
-        display: flex;
-        justify-content: center;
-        p{
-            font-size: 7rem;
-            color: white;
-            font-family: "Haettenschweiler", sans-serif;
-            letter-spacing:15px;
-            opacity: 0.8;
-        }
-    }
-    .scroll{
-        display: flex;
-        justify-content: center;
-        img{
-            margin-top: 20%;
-        }
-    }
-}
-@media only screen and ( max-width:1200px) {
-    .banner{
-        top: 25%;
-        p{
-            font-size: 3rem;
-        }
-    }
-    .scroll{
-        img{
-            margin-top: 5%;
-        }
-    }
-}
-.home_intro{
-    margin-top: 15vh;
-    display: flex;
-    flex-direction: column;
-    h2{
-        text-align: center;
-    }
-    h4{
-        text-align: center;
-    }
-}
-
-
-
-//=========流程
-.stepsection{
-    background-color: transparent;
-    @include respond(mobile){
-        flex-direction: column;
-    }
-}
-
-
-
-
-
-//=========精選行程
-
-    .hottrip {
-        top: 15vh;
-        display: flex;
-        padding-top: 96px;
-        margin: 0 auto;
-    }
-
-    div.planet_top {
-        position: relative;
-        padding-top: 90px;
-        text-align: center;
-        width: 45%;
-        padding-left: 16px;
-        padding-right: 16px;
-
-        @media all and (max-width:1200px) {
-            padding-left: 8px;
-            padding-right: 8px;
-        }
-
-        h4 {
-            color: $pink;
-        }
-
-        img.planet {
-            height: 160px;
-            position: absolute;
-            top: 15px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-
-        img.planet_a1 {
-            max-width: 280px;
-        }
-        // img.planet_a1:hover {
-        //     transform: perspective(0.5px) translateX(-1.5px) translateY(-1.5px);
-
-        // }
-
-        div.word {
-            position: absolute;
-            top: 190px;
-            left: 50%;
-            transform: translateX(-50%);
-            text-align: center;
-            margin: 0 auto;
-
-            .hot {
-                color: $gold;
-            }
-
-            .tag {
-                display: inline-flex;
-                border: 1px solid $pink;
-                border-radius: 5px;
-                padding: 8px;
-                line-height: 5px;
-                margin: 3px;
-                color: $gray;
-            }
-
-            .price {
-                color: $gold;
-                font-weight: bold;
-                letter-spacing: 2px;
-                margin-bottom: 8px;
-                font-family: "Nasalization";
-            }
-
-            .addin {
-                background-color: $gold;
-                color: $white;
-                border-radius: 15px;
-                width: 110px;
-                margin: 0 auto;
-                line-height: 26px;
-                text-align: center;
-
-                img.plus {
-                    width: 15px;
-                    display: inline-block;
-                    position: relative;
-                    top: 2px;
-                    padding-right: 4px;
-                }
-
-            }
-
-            .addin:hover {
-                background-color: lighten($gold, 10%);
-                color: #5f5f5f3a
-            }
-
-        }
-    }
-
-
-
-
-//=========星球百科
-
-@media all and (max-width:1200px) {
-    .separator{
-        width: 90%;
-    }
-}
-.tab-inner{
-    // border-top: 1px solid $gold;
-    display: flex;
-    .taball{
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-        align-items: center;
-        .tab_left{
-            max-width: 400px;
-        }
-        p {
-            line-height: 2rem;
-            margin-top: 20px;
-            max-width: 400px;
-        }
-    }
-    .data{
-        border: 1px solid $gold;
-        display: flex;
-        font-family: Haettenschweiler, sans-serif;
-        .grav{
-            justify-content: center;
-            align-items: center;
-            display: flex;
-            flex-direction: column;
-            min-width: 130px;
-            min-height: 130px;
-            border-right: 1px solid $gold;
-        }
-        .day{
-            justify-content: center;
-            align-items: center;
-            display: flex;
-            flex-direction: column;
-            min-width: 130px;
-            border-right: 1px solid $gold;
-
-        }
-        .temp{
-            justify-content: center;
-            align-items: center;
-            display: flex;
-            flex-direction: column;
-            min-width: 130px;
-        }
-        
-        span.var{
-            font-size: 48px;
-            letter-spacing: 3px;
-        }
-        span.data-top{
-            vertical-align:top;
-            font-size: 24px;
-        }
-        span.data-mid{
-            font-size: 24px;
-        }
-        span.data-low{
-            font-size: 24px;
-            font-stretch: narrower;
-        }
-        p{
-            margin-top: 5px;
-            font-size: 16px;
-        }
-
-    }
-    button{
-        display: block;
-        transform: translateX(-100%);
-    }
-}
-
-
-
-
-//=========互動牆
-.gallery{
-    .gallery_box{
-        display: flex;
-    }
-
-    .topleft{
-        display: flex;
-        flex-direction: row;
-        max-height: 300px;
-        align-items: flex-end;
-        .A{
-            height: 300px;
-            overflow: hidden;
-            img{
-                height: 100%;
-            }
-        }
-        .B{
-            height: 300px;
-            overflow: hidden;
-            img{
-                height: 300px;
-            }
-        }
-    }
-    .topright{
-        display: flex;
-        flex-direction: column;
-        .separator{
-            width: 60%;
-        }
-        .topSct{
-            display: flex;
-            justify-content: space-around;
-        }
-        button.btn{
-            background-color: transparent;
-            color: $gold;
-            border: 1px solid $gold;
-        }
-        .galleryIntro{
-            display: flex;
-            justify-content: center;
-            h5{
-                max-width: 500px;
-                line-height: 2rem;
-                text-align: justify;
-            }
-        }
-    }
-    .bottom{
-        display: flex;
-        flex-direction: row;
-        .bottomleft{
-            display: flex;
-            flex-direction: row;
-            max-height: 300px;
-            .D{
-                height: 300px;
-                img{
-                    height: 100%;
-                }
-            }
-            .E{
-                height: 300px;
-                img{
-                    height: 50%;
-                }
-    
-    
-            }
-        }
-        .bottomright{
-            display: flex;
-
-            .F{
-                // border: 1px solid white;
-                // background-image: url('../../img/home/首頁-互動牆壁8.jpg');
-                height: 300px;
-                overflow: hidden;
-
-            }
-            .G{
-                height: 300px;
-                overflow: hidden;
-
-            }
-        }
-    }
-}
-
-@media all and (max-width:997px) {
-    .topleft{
-        .B{
-            display: none;
-        }
-    }
-    .topright{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        .separator{
-            width: 80%;
-        }
-        .galleryIntro{
-            max-width: 460px;
-        }
-    }
-    .bottom{
-        .bottomleft{
-            .D{
-                display: none;
-            }
-            .E{
-                display: none;
-            }
-        }
-        .bottomright{
-            .F{
-                display: none;
-            }
-            .G{
-                display: none;
-            }
-        }
-    }
-
-}
-
-
-
-
-//=========商城圖片
-.home_shop{
-    display: flex;
-    flex-direction: column;
-    .button_min{
-        margin: 0 auto;
-    }
-    h2{
-        margin: 0 auto;
-    }
-    .shopItem{
-        max-height: 650px;
-        //hover效果
-        .hovereffect {
-            width: 100%;
-            height: 100%;
-            float: left;
-            overflow: hidden;
-            position: relative;
-            text-align: center;
-            cursor: default;
-            background: #4e7192;
-          }
-          
-          .hovereffect .overlay {
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            overflow: hidden;
-            top: 0;
-            left: 0;
-            display: flex;
-            justify-content: center;
-            align-items:center;
-          }
-          
-          .hovereffect img {
-            display: block;
-            position: relative;
-            max-width: none;
-            -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-            transition: opacity 0.35s, transform 0.35s;
-            -webkit-transform: translate3d(-10px,0,0);
-            transform: translate3d(-10px,0,0);
-            -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
-          }
-          
-          .hovereffect:hover img {
-            opacity: 0.4;
-            filter: alpha(opacity=40);
-            -webkit-transform: translate3d(0,0,0);
-            transform: translate3d(0,0,0);
-          }
-                    
-          .hovereffect:hover h2:after {
-            -webkit-transform: translate3d(0,0,0);
-            transform: translate3d(0,0,0);
-          }
-          
-          .hovereffect a, .hovereffect h2 {
-            color: #FFF;
-            opacity: 0;
-            filter: alpha(opacity=0);
-            -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-            transition: opacity 0.35s, transform 0.35s;
-            -webkit-transform: translate3d(100%,0,0);
-            transform: translate3d(100%,0,0);
-          }
-          
-          .hovereffect:hover a, .hovereffect:hover h2 {
-            opacity: 1;
-            filter: alpha(opacity=100);
-            -webkit-transform: translate3d(0,0,0);
-            transform: translate3d(0,0,0);
-          }
-        //調位置
-        .item1{
-            margin: 0 auto;
-            .hovereffect{
-                z-index:1;
-                max-width: 400px;
-                max-height: 250px;
-                transform: translate(-10%,0);
-                img{
-                    max-width: 400px;
-                }
-            }
-        }
-        .item2{
-            .hovereffect{
-                z-index: 1;
-                transform: translate(110%,-20%);
-                max-height: 450px;
-                max-width:220px;
-                img{
-                    max-width:230px;
-                }
-            }
-        }
-        .item3{
-            .hovereffect{
-                transform: translate(150%,-100%);
-                max-height: 270px;
-                max-width: 275px;
-
-            }
-        }
-        .item4{
-            .hovereffect{
-                z-index:1;
-                transform: translate(255%,-260%);
-                max-height: 270px;
-                max-width: 280px;
-                img{
-                    max-width: 290px;
-
-                }
-            }
-        }
-        .item5{
-            .hovereffect{
-                transform: translate(260%,-310%);
-                max-height: 296px;
-                max-width: 300px;
-                img{
-                    max-width: 310px;
-
-                }
-            }
-        }
-
-    }
-    .shopRWD{display: none;}
-
-
-    @media all and (max-width:1200px) {
-        .shopItem{
-            display: none;
-        }
-        .shopRWD{
-            display: flex;
-            justify-content: center;
-            .shop_carousel{
-                display: block;
-                background-color: $darkblue;
-                border: 1px solid white;
-                max-width: 500px;
-                .carousel-item{
-                    background-color: $darkblue;
-
-                    img{
-                        max-height: 400px;
-                        margin: 0 auto;
-                    }
-
-                }
-            }
-        }
-        .button_min{
-            margin-top: 24px;
-        }
-    }
-}
-
-
-//=========會員待遇
-.flow_member{
     display: flex;
     justify-content: center;
-    flex-direction: column;
-
-    .flowall{
-        display: flex;
-        justify-content: center;
-        column-gap: 10%;
-
-        .flow{
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            .flowTitle {
-                color: $gold;   
+    align-items: center;
+    perspective: 400px;
+  }
+  
+  div {
+    transform-style: preserve-3d;
+    position: absolute;
+  }
+  
+  .container {
+    position: relative;
+    display: grid;
+    grid-template-rows: repeat(20, 5vh);
+    grid-template-columns: repeat(20, 5vw);
+    transform-style: preserve-3d;
+    
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 400px;
+      height: 400px;
+      background: rgba(#000, 0.8);
+      border-radius: 100%;
+      transform: translate(-50%, -50%);
+      box-shadow: 0 0 60px 50px rgba(#000, 1) inset;
+    }
+  }
+  .link{
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      a{
+        border: 1px solid #fff;
+        color: white;
+        text-decoration: none;
+        max-width: 200px;
+        font-size: 50px;
+        margin: 20px 50px;
+        transition: all .5s;
+      }
+      a:hover{
+        //   background-color: white;
+          box-shadow:   0 0 28px 9px white inset;
+      }
+  }
+  .monitor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    transform-style: preserve-3d;
+  }
+  
+  .trigger {
+    position: relative;
+    
+    @for $i from 1 through 20 {
+      @for $j from 1 through 20 {
+        $key: ($i - 1) * 20 + $j;
+        
+        &:nth-child(#{$key}) {
+          &:hover ~ .monitor {
+            .camera {
+              &.-x {
+                transform: rotateX(($i - 8) * 8deg - 32);
+              }
+              
+              &.-y {
+                transform: rotateY(($j - 8) * 8deg - 24);
+              }
             }
-            img{
-                max-width: 60px;
-                max-height: 60px;
-                margin: 0 auto;
-            }
-            .separator{
-                height: 1px;
-                width: 100%;
-                border-top: solid 1px $gold;
-            }
-            h4{
-                color: $pink;
-                justify-items: center;
-                line-height: 1.5rem;
-            }
-
+          }
         }
+      }
     }
-    .memberbtn{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 70px;
+  }
+  
+  .camera {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    transition: 500ms;
+    
+    &.-x {
+      transform: rotateX(0deg);
     }
-}
-
-
-
-
-
-//=========間距
-.flow_member, .shop_box, .gallery, .planet_box{
-    margin-top: 30vh;
-}
-
+    
+    &.-y {
+      transform: rotateY(0deg);
+    }
+  }
+  
+  .graphic {
+    top: -5px;
+    left: -15px;
+    width: 30px;
+    height: 10px;
+    clip-path: polygon(
+      0 0,
+      100% 50%,
+      0 100%
+    );
+    background: #fff;
+  }
+  
+  .panel {
+    transform: translateZ(200px);
+  }
+  
+  .line {
+    @for $i from 1 through 50 {
+      &:nth-child(#{$i}) {
+        transform: rotateX(1deg * $i - 20deg);
+        
+        .rotate {
+          animation-delay: random(10000) * -1ms;
+          animation-duration: random(3000) + 5000ms;
+        }
+        
+        .graphic {
+          animation: rotateX random(3000) + 3000ms random(6000) * -1ms linear infinite;
+        }
+      }
+    }
+  }
+  
+  .rotate {
+    animation: rotateY 5000ms linear infinite;
+  }
+  
+  .particle {
+    width: 1px;
+    height: 1px;
+    background: #fff;
+  
+    @for $i from 1 through 300 {
+      &:nth-child(#{$i}) {
+        $range: 2000;
+        $x1: (random($range) + random($range)) / 2;
+        $x2: (random($range) + random($range)) / 2;
+        $y1: (random($range) + random($range)) / 2;
+        $y2: (random($range) + random($range)) / 2;
+        $z1: (random($range) + random($range)) / 2;
+        $z2: (random($range) + random($range)) / 2;
+        
+        transform:
+          translate3d(
+            #{($x1 + $x2) / 2 - $range / 2}px,
+            #{($y1 + $y2) / 2 - $range / 2}px,
+            #{($z1 + $z2) / 2 - $range / 2}px
+          )
+          rotateY(
+            random(360) + 0deg
+          );
+        animation: flash 300ms random(10000) * -1ms infinite alternate;
+      }
+    }
+  }
+  
+  @keyframes rotateY {
+    0% {
+      transform: rotateY(0deg);
+    }
+    
+    100% {
+      transform: rotateY(360deg);
+    }
+  }
+  
+  @keyframes rotateX {
+    0% {
+      transform: rotateX(0deg);
+    }
+    
+    100% {
+      transform: rotateX(360deg);
+    }
+  }
+  
+  @keyframes flash {
+    0% {
+      opacity: 1;
+    }
+    
+    100% {
+      opacity: 0;
+    }
+  }
+  

@@ -18,7 +18,7 @@ nav{
                 white-space: nowrap;
                 // border: 1px solid #fff;
                 overflow: hidden;
-                background-image: url("../../img/icon/header/logo.png");
+                background-image: url("../../img/logo.png");
                 background-position: center center;
                 background-size: contain;   
                 background-repeat: no-repeat;
@@ -67,7 +67,7 @@ nav{
         .nav-links{
             position: absolute;
             right: -100%;
-            height: 92vh;
+            height: 88vh;
             top: 12vh;
             background-color: $gold;
             display: flex;
