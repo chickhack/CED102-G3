@@ -362,18 +362,7 @@ nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-<<<<<<< HEAD
-<<<<<<< HEAD
-  background-image: url("../../img/icon/header/logo.png");
-  background-image: url("../../img/logo.png");
-  background-image: url("../../img/icon/header/logo.png");
-  background-image: url("../../img/icon/header/logo.png");
-=======
-  background-image: url("../img/logo.png");
->>>>>>> dev
-=======
-  background-image: url("../../img/icon/header/logo.png");
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
+  background-image: url("../img/icon/header/logo.png");
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -660,6 +649,7 @@ input[type=number] {
 .icon-2 {
   width: 50px;
 <<<<<<< HEAD
+<<<<<<< HEAD
   object-fit: cover;
 =======
 <<<<<<< HEAD
@@ -689,6 +679,9 @@ input[type=number] {
      object-fit: cover;
 >>>>>>> denis
 >>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
+=======
+  object-fit: cover;
+>>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
   height: 50px;
   border-radius: 40px;
 }
@@ -697,6 +690,7 @@ input[type=number] {
   width: 40px;
   height: 40px;
 <<<<<<< HEAD
+<<<<<<< HEAD
   object-fit: cover;
 =======
 <<<<<<< HEAD
@@ -726,6 +720,9 @@ input[type=number] {
      object-fit: cover;
 >>>>>>> denis
 >>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
+=======
+  object-fit: cover;
+>>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
   border-radius: 40px;
 }
 
@@ -775,6 +772,7 @@ input[type=number] {
   width: 100%;
   height: 200px;
 <<<<<<< HEAD
+<<<<<<< HEAD
   object-fit: cover;
   position: relative;
   top: 100px;
@@ -786,24 +784,16 @@ input[type=number] {
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
   object-fit: cover;
-<<<<<<< HEAD
->>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
->>>>>>> 5badf5bb2eed3e9ef55ccab2f7d645bfd9e24c24
-=======
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> 10e10f8ebb29ccc2882d121bf3efb9b9e001100b
->>>>>>> dev
-=======
-  object-fit: cover;
-=======
-  -o-object-fit: cover;
-     object-fit: cover;
->>>>>>> denis
   position: relative;
   top: 100px;
+<<<<<<< HEAD
 >>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
 >>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
+=======
+>>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
 }
 
 .banner h2 {
@@ -825,6 +815,7 @@ input[type=number] {
 
 .container-fluid .row .col-10 .row .col-10 {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -853,6 +844,8 @@ input[type=number] {
   display: -ms-flexbox;
 >>>>>>> denis
 >>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
+=======
+>>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
   display: flex;
 }
 

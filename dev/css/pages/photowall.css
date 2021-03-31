@@ -362,7 +362,7 @@ nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-  background-image: url("../../img/icon/header/logo.png");
+  background-image: url("../img/icon/header/logo.png");
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -602,6 +602,7 @@ input[type=number] {
 
 * {
 <<<<<<< HEAD
+<<<<<<< HEAD
   box-sizing: border-box;
 }
 
@@ -622,6 +623,9 @@ input[type=number] {
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+  box-sizing: border-box;
+>>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
 }
 
 .top_photo {
@@ -633,61 +637,22 @@ input[type=number] {
 .top_photo img {
   height: 240px;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .grid {
->>>>>>> denis
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
-<<<<<<< HEAD
-=======
-  padding-top: 5%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
-=======
-  display: flex;
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
   flex-wrap: wrap;
   justify-content: center;
   align-items: start;
   max-width: 1100px;
   margin: 0 auto;
-<<<<<<< HEAD
->>>>>>> 10e10f8ebb29ccc2882d121bf3efb9b9e001100b
->>>>>>> dev
-=======
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
-  max-width: 1100px;
-  margin: 0 auto;
   margin-top: 40px;
+<<<<<<< HEAD
 >>>>>>> denis
 >>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
+=======
+>>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
 }
 
 .grid-item {
@@ -701,6 +666,7 @@ input[type=number] {
 
 .grid .grid-item img {
   width: 100%;
+<<<<<<< HEAD
 <<<<<<< HEAD
   object-fit: cover;
 =======
@@ -742,6 +708,9 @@ input[type=number] {
      object-fit: cover;
 >>>>>>> denis
 >>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
+=======
+  object-fit: cover;
+>>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
 }
 
 .grid .grid-item:nth-child(n+9) {

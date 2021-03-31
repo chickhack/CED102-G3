@@ -362,7 +362,7 @@ nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-  background-image: url("../../img/icon/header/logo.png");
+  background-image: url("../img/icon/header/logo.png");
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -555,6 +555,7 @@ footer .smoke {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 * {
 <<<<<<< HEAD
   box-sizing: border-box;
@@ -566,6 +567,10 @@ footer .smoke {
   display: block;
 >>>>>>> denis
 >>>>>>> 605bc0cd0434fd7d14ae0a827408262fffa9924c
+=======
+.quantity label {
+  display: block;
+>>>>>>> b3bf8c00ddab504269341e6c94b69dbb2fab7066
 }
 
 .quantity .as {
@@ -616,6 +621,7 @@ input[type=number] {
 
 .col-12 {
   margin-top: 2%;
+  padding: 0;
 }
 
 form.post {
@@ -623,6 +629,7 @@ form.post {
   margin: 0 auto;
   padding: 30px;
   background-color: #292B41;
+  max-width: 900px;
 }
 
 form.post .select_trip {
@@ -658,7 +665,7 @@ form.post .select_trip select {
 
 .post_text textarea.texts {
   outline: none;
-  width: 100%;
+  width: 90%;
   height: 200px;
   resize: none;
   padding: 10px;
