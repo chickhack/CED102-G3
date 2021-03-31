@@ -948,15 +948,22 @@ div.bk3 {
 }
 
 .second .tripcard_all .tripcard .trip_bookmark {
-  padding: 8px;
-  position: absolute;
-  right: 10px;
-  top: 220px;
+  background-image: url(../../img/icon/bookmark-outline.png);
   width: 25px;
   height: 25px;
+  background-size: 25px;
+  background-repeat: no-repeat;
+  padding: 8px;
+  position: absolute;
+  right: 0px;
+  top: 230px;
   align-items: center;
-  display: flex;
+  display: block;
   justify-content: center;
   cursor: pointer;
+}
+
+.second .tripcard_all .tripcard .trip_bookmark:hover {
+  background-image: url(../../img/icon/bookmark_hover.png);
 }
 /*# sourceMappingURL=alltrip.css.map */
