@@ -38,6 +38,7 @@ section.shop{
         @include flex_middle();
         align-items: start;
         flex-wrap: wrap;
+        margin: 0 30px;
         .aside{
             width: 30%;
             // max-width: 250px;

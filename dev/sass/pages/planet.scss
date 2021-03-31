@@ -2,13 +2,43 @@
 
 .container-fluid{
     padding: 0;
-
+    margin: 0 auto;
+    @include respond(mobile){
+        margin: 0;
+    }
+}
+//=========按鈕設定
+button:hover{
+    color: #ffff;
+    border: 1px solid $gold;
+    background: $gold;
 }
 
-
-.title{
-    display: flex;
-    justify-content: center;
+.planet_banner{
+    max-width: 1100px;
+    margin: 0 auto;
+    background-image: url("../../img/home/mars2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;    
+    padding-top: 20%;
+    position: relative;
+    color: $white;
+    @include respond(mobile){
+        padding-top: 50%;
+    }
+    h2{
+        @include absolute_middle();
+        top: 35%;
+        letter-spacing:2px;
+        @include respond(mobile){
+            font-size: .8rem;
+            width: 80%;
+            top: 50%;
+            margin: 0;
+        }
+    }
 }
 
 div.tabList{
@@ -41,6 +71,9 @@ div.tabList{
         align-items: center;
         .tab_left{
             max-width: 400px;
+            h3{
+                line-height: 2rem;
+            }
         }
         p {
             line-height: 2rem;
@@ -99,10 +132,7 @@ div.tabList{
     
         }
     }
-    button{
-        display:none;
 
-    }
 }
 
 .planet_content{
@@ -114,15 +144,15 @@ div.tabList{
     .imgs{
         display:block;
         .img1{
-            transform: translate(40%);
+            transform: translate(20%);
         }
         .img2{
             
-            transform: translateX(30%);
+            transform: translateX(10%);
         }
         .img3{
             
-            transform: translate(20%, -350px);
+            transform: translate(-30%, -350px);
         }
     }
     .desc{

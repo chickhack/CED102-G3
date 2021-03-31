@@ -41,8 +41,8 @@
             </div>
         </section>
         <section class="orderer">
-            <form action="product.html" method="GET" id="form1">
-                <div class="orderer_form">
+            <form action="product.html" method="GET">
+                <div class="orderer_form retract">
                     <div class="arrow">
                         <img src="./img/date-chevron-down.svg" alt="">
                         <h3 class="margin_left_1 orderer_click">訂購人資訊</h3>
@@ -51,117 +51,117 @@
                     <div class="info">
                         <div class="input_group">
                             <label for="ofName">名字</label>
-                            <input type="text" class="margin_top_1" name="ofName" id="ofName">
+                            <input type="text" class="margin_top_1" name="ofName" id="ofName" required>
                         </div>
                         <div class="input_group">
                             <label for="olName">姓氏</label>
-                            <input type="text" class="margin_top_1" name="olName" id="olName">
+                            <input type="text" class="margin_top_1" name="olName" id="olName" required>
                         </div>
                         <div class="input_group">
                             <label for="omobile">手機</label>
-                            <input type="tel" class="margin_top_1" name="omobile" id="omobile" maxlength="10">
+                            <input type="tel" class="margin_top_1" name="omobile" id="omobile" maxlength="10" required>
                         </div>
                         <div class="input_group">
                             <label for="oidentity">身分證字號</label>
-                            <input type="text" class="margin_top_1 identity" name="oidentity" id="oidentity" maxlength="10">
+                            <input type="text" class="margin_top_1 identity" name="oidentity" id="oidentity" maxlength="10" required>
                         </div>
                         <div class="input_group long">
                             <label for="oemail">電子信箱</label>
-                            <input type="email" class="margin_top_1" name="oemail" id="oemail">
+                            <input type="email" class="margin_top_1" name="oemail" id="oemail" required>
                         </div>
                     </div>
                 </div>
+                <div class="recipient retract">
+                    <div class="arrow">
+                        <img src="./img/date-chevron-down.svg" alt="">
+                        <h3 class="margin_left_1 recipient_click">收件人資訊</h3>
+                    </div>
+                    <div class="info">
+                        <div class="input_group">
+                            <label for="fName">名字</label>
+                            <input type="text" class="margin_top_1" name="fName" id="fName" required>
+                        </div>
+                        <div class="input_group">
+                            <label for="lName">姓氏</label>
+                            <input type="text" class="margin_top_1" name="lName" id="lName" required>
+                        </div>
+                        <div class="input_group">
+                            <label for="mobile">手機</label>
+                            <input type="tel" class="margin_top_1" name="mobile" id="mobile" maxlength="10" required>
+                        </div>
+                        <div class="input_group">
+                            <label for="identity">身分證字號</label>
+                            <input type="text" class="margin_top_1 identity" name="identity" id="identity" maxlength="10" required>
+                        </div>
+                        <div class="input_group long">
+                            <label for="email">電子信箱</label>
+                            <input type="email" class="margin_top_1" name="email" id="email" max-length="30" required>
+                        </div>
+                        <div class="input_group long">
+                            <label for="address">收件地址</label>
+                            <input type="text" class="margin_top_1" name="address" id="address" required>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="payTitle">付款方式</h3>
+                <div class="payment retract">
+                    <div class="arrow">
+                        <img src="./img/date-chevron-down.svg" alt="">
+                        <h3 class="margin_left_1 orderer_click">請選擇付款方式</h3>
+                    </div>
+                    <div class="info margin_top_4">
+                        <div class="group">
+                            <div class="checkbox_group">
+                                <input type="checkbox" name="coins" id="coins" class="checkbox_custom" required>
+                                <label for="coins" class="checkbox_custom_label">宇宙幣</label>
+                                <p>尚餘</p>
+                                <span class="margin_left_1">$50000</span>
+                                <img src="./img/dollar_(1).png" alt="" class="icon margin_left_1">
+                            </div>
+                            <div class="checkbox_group margin_left_2">
+                                <label for="discount">折抵</label>
+                                <input type="text" name="discount" id="discount" class="margin_left_1" required>
+                            </div>
+                        </div>
+                        <div class="checkbox_group long margin_top_2">
+                            <input type="checkbox" name="credit" id="credit" class="checkbox_custom" required>
+                            <label for="credit" class="checkbox_custom_label">信用卡</label>
+                            <div class="credit_icon margin_left_4">
+                                <input type="text" class="credit">
+                                <i class="fab fa-cc-amex"></i>
+                                <i class="fab fa-cc-jcb"></i>
+                                <i class="fab fa-cc-visa"></i>
+                                <i class="fab fa-cc-diners-club"></i>
+                                <i class="fab fa-cc-mastercard"></i>
+                                <i class="fab fa-cc-discover"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="margin_top_4">訂單明細</h3>
+                <div class="detail margin_top_2">
+                    <div class="total">
+                        <p class="h3">支付金額</p>
+                        <p class="h3">$ 20000</p>
+                    </div>
+                    <div class="integral margin_top_2">
+                        <p>可累積積分</p>
+                        <div class="count">
+                            <img src="./img/s.png" class="icon">
+                            <p>+12000</p>
+                        </div>
+                    </div>
+                    <small class="margin_top_1">累積後目前有50000積分</small>
+                </div>
+                <button class="button_min">確認付款</button>
             </form>
-            <form action="shop.html" class="recipient" method="GET" id="form2">
-                <div class="arrow">
-                    <img src="./img/date-chevron-down.svg" alt="">
-                    <h3 class="margin_left_1 recipient_click">收件人資訊</h3>
-                </div>
-                <div class="info">
-                    <div class="input_group">
-                        <label for="fName">名字</label>
-                        <input type="text" class="margin_top_1" name="fName" id="fName">
-                    </div>
-                    <div class="input_group">
-                        <label for="lName">姓氏</label>
-                        <input type="text" class="margin_top_1" name="lName" id="lName">
-                    </div>
-                    <div class="input_group">
-                        <label for="mobile">手機</label>
-                        <input type="tel" class="margin_top_1" name="mobile" id="mobile" maxlength="10">
-                    </div>
-                    <div class="input_group">
-                        <label for="identity">身分證字號</label>
-                        <input type="text" class="margin_top_1 identity" name="identity" id="identity" maxlength="10">
-                    </div>
-                    <div class="input_group long">
-                        <label for="email">電子信箱</label>
-                        <input type="email" class="margin_top_1" name="email" id="email" max-length="30">
-                    </div>
-                    <div class="input_group long">
-                        <label for="address">收件地址</label>
-                        <input type="text" class="margin_top_1" name="address" id="address">
-                    </div>
-                </div>
-            </form>
-            <h3 class="payTitle">付款方式</h3>
-            <form action="shop.html" class="payment" method="GET" id="form3">
-                <div class="arrow">
-                    <img src="./img/date-chevron-down.svg" alt="">
-                    <h3 class="margin_left_1 orderer_click">請選擇付款方式</h3>
-                </div>
-                <div class="info margin_top_4">
-                    <div class="group">
-                        <div class="checkbox_group">
-                            <input type="checkbox" name="coins" id="coins" class="checkbox_custom">
-                            <label for="coins" class="checkbox_custom_label">宇宙幣</label>
-                            <p>尚餘</p>
-                            <span class="margin_left_1">$50000</span>
-                            <img src="./img/dollar_(1).png" alt="" class="icon margin_left_1">
-                        </div>
-                        <div class="checkbox_group margin_left_2">
-                            <label for="discount">折抵</label>
-                            <input type="text" name="discount" id="discount" class="margin_left_1">
-                        </div>
-                    </div>
-                    <div class="checkbox_group long margin_top_2">
-                        <input type="checkbox" name="credit" id="credit" class="checkbox_custom">
-                        <label for="credit" class="checkbox_custom_label">信用卡</label>
-                        <div class="credit_icon margin_left_4">
-                            <input type="text" class="credit">
-                            <i class="fab fa-cc-amex"></i>
-                            <i class="fab fa-cc-jcb"></i>
-                            <i class="fab fa-cc-visa"></i>
-                            <i class="fab fa-cc-diners-club"></i>
-                            <i class="fab fa-cc-mastercard"></i>
-                            <i class="fab fa-cc-discover"></i>
-                        </div>
-                    </div>
-                </div>
-            </form>
-            <h3 class="margin_top_4">訂單明細</h3>
-            <div class="detail margin_top_2">
-                <div class="total">
-                    <p class="h3">支付金額</p>
-                    <p class="h3">$ 20000</p>
-                </div>
-                <div class="integral margin_top_2">
-                    <p>可累積積分</p>
-                    <div class="count">
-                        <img src="./img/s.png" class="icon">
-                        <p>+12000</p>
-                    </div>
-                </div>
-                <small class="margin_top_1">累積後目前有50000積分</small>
-            </div>
-            <input type="submit" value="確認付款" class="button_min">
         </section>
         @@include("./layout/footer.html")
     </div>
     <script src="./js/retract.js"></script>
     <script src="./js/input_format.js"></script>
-    <!-- <script src="./js/check.js"></script> -->
-    <script src="./js/crdeitCheck.js"></script>
+    <script src="./js/check.js"></script>
+    <!-- <script src="./js/crdeitCheck.js"></script> -->
     <script>
         let vm = new Vue({
             el: "#app",

@@ -362,7 +362,7 @@ nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-  background-image: url("../../img/icon/header/logo.png");
+  background-image: url("../img/logo.png");
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -554,17 +554,48 @@ footer .smoke {
   }
 }
 
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+.quantity label {
+  display: block;
 }
 
-body {
-  color: white;
-  font-size: 16px;
+.quantity .as {
+  color: #AD6E4A;
 }
 
-.container_fluid {
+.quantity .as input[type=number] {
+  max-width: 50px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  text-align: center;
+  color: #AD6E4A;
+}
+
+.quantity .as span {
+  border: 1px solid #AD6E4A;
+  outline: none;
+  background-color: transparent;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.container {
+  position: relative;
+}
+
+.container-fluid {
   padding: 0;
   margin-top: 15vh;
 }
@@ -575,6 +606,7 @@ body {
 
 .col-12 {
   margin-top: 2%;
+  padding: 0;
 }
 
 form.post {
@@ -582,6 +614,7 @@ form.post {
   margin: 0 auto;
   padding: 30px;
   background-color: #292B41;
+  max-width: 900px;
 }
 
 form.post .select_trip {
@@ -617,7 +650,7 @@ form.post .select_trip select {
 
 .post_text textarea.texts {
   outline: none;
-  width: 100%;
+  width: 90%;
   height: 200px;
   resize: none;
   padding: 10px;
@@ -644,5 +677,9 @@ button.button_min {
   border: none;
   outline: none;
   font-size: 14px;
+}
+
+button.button_min:hover {
+  background-color: #bf896b;
 }
 /*# sourceMappingURL=post.css.map */

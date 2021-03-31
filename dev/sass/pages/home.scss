@@ -9,9 +9,14 @@
 
 //=========header設定
 nav{
-    background-color: $darkblue;
+    background-color: #5f5f5f3a;
 }
-
+//=========按鈕設定
+button:hover{
+    color: #ffff;
+    border: 1px solid $gold;
+    background: $gold;
+}
 
 //背景影片
 .video-bg{
@@ -213,6 +218,7 @@ button{
 .tab-inner{
     // border-top: 1px solid $gold;
     display: flex;
+    justify-content: center;
     .taball{
         display: flex;
         flex-direction: column;
@@ -280,10 +286,8 @@ button{
     }
     button{
         display: block;
-        background-color: transparent;
-        color: $gold;
         transform: translateX(-100%);
-
+        width: 130px;
     }
 }
 
@@ -337,6 +341,7 @@ button{
             h5{
                 max-width: 500px;
                 line-height: 2rem;
+                text-align: justify;
             }
         }
     }
@@ -505,6 +510,7 @@ button{
                 z-index:1;
                 max-width: 400px;
                 max-height: 250px;
+                transform: translate(-10%,0);
                 img{
                     max-width: 400px;
                 }
@@ -567,11 +573,17 @@ button{
             .shop_carousel{
                 display: block;
                 background-color: $darkblue;
-                // .carousel-inner{
-                    border: 1px solid white;
-                    width: 60%;
+                border: 1px solid white;
+                max-width: 500px;
+                .carousel-item{
+                    background-color: $darkblue;
 
-                // }
+                    img{
+                        max-height: 400px;
+                        margin: 0 auto;
+                    }
+
+                }
             }
         }
         .button_min{
@@ -623,8 +635,15 @@ button{
         align-items: center;
         margin-bottom: 70px;
     }
+    @media all and (max-width:1200px) {
+        .flowall{
+            flex-direction: column;
+            .flow .separator{
+                width: 30%;
+            }
+        }
+    }
 }
-
 
 
 

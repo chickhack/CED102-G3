@@ -362,7 +362,7 @@ nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-  background-image: url("../../img/icon/header/logo.png");
+  background-image: url("../img/logo.png");
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -604,7 +604,7 @@ input::-webkit-inner-spin-button {
   padding-bottom: 8px;
 }
 
-a:hover {
+.btn-coin:hover {
   color: #fff;
   background-color: #bf896b;
 }
