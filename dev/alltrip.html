@@ -27,11 +27,10 @@
 </head>
 
 <body>
-
+    <header>
+        @@include('./layout/header.html')
+    </header>
     <div id="app">
-        <header>
-            @@include('./layout/header.html')
-        </header>
         <!-- ----------first -->
         <div class="first padding_top_5">
             <div class="bk">
@@ -119,7 +118,8 @@
                                 <h3 class="price2 margin_top_2">${{item.price}}</h3>
                                 <div class="addin2 small margin_top_2"><img class="plus" src="./img/icon/plus.png"
                                         alt="">加入我的行程</div>
-                                <img class="trip_bookmark" src="./img/icon/bookmark-outline.png" alt="">
+                                <div class="trip_bookmark"></div>
+                                <!-- <img class="trip_bookmark" src="./img/icon/bookmark-outline.png" alt=""> -->
                             </div>
                         </a>
                     </div>
@@ -136,7 +136,7 @@
                                 <h3 class="price2 margin_top_2">${{item.price}}</h3>
                                 <div class="addin2 small margin_top_2"><img class="plus" src="./img/icon/plus.png"
                                         alt="">加入我的行程</div>
-                                <img class="trip_bookmark" src="./img/icon/bookmark-outline.png" alt="">
+                                <div class="trip_bookmark"></div>
                             </div>
                         </a>
                     </div>
@@ -153,15 +153,18 @@
                                 <h3 class="price2 margin_top_2">${{item.price}}</h3>
                                 <div class="addin2 small margin_top_2"><img class="plus" src="./img/icon/plus.png"
                                         alt="">加入我的行程</div>
-                                <img class="trip_bookmark" src="./img/icon/bookmark-outline.png" alt="">
+                                <div class="trip_bookmark"></div>
                             </div>
                         </a>
                     </div>
                 </div>
             </div>
-        </div>    
-        @@include('./layout/footer.html')
+        </div>
     </div>
+    <footer>
+        @@include('./layout/footer.html')
+    </footer>
+
 
 
 

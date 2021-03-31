@@ -362,7 +362,7 @@ nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-  background-image: url("../../img/icon/header/logo.png");
+  background-image: url("../img/logo.png");
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -601,12 +601,7 @@ input[type=number] {
 }
 
 * {
-<<<<<<< HEAD
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-=======
   box-sizing: border-box;
->>>>>>> chickhack
 }
 
 .top_photo {
@@ -622,24 +617,10 @@ input[type=number] {
 }
 
 .grid {
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
-=======
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: start;
->>>>>>> chickhack
   max-width: 1100px;
   margin: 0 auto;
   margin-top: 40px;
@@ -656,12 +637,7 @@ input[type=number] {
 
 .grid .grid-item img {
   width: 100%;
-<<<<<<< HEAD
-  -o-object-fit: cover;
-     object-fit: cover;
-=======
   object-fit: cover;
->>>>>>> chickhack
 }
 
 .grid .grid-item:nth-child(n+9) {

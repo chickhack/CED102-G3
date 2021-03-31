@@ -78,16 +78,8 @@ body {
   font-size: 14px;
   background-color: #0c0d18;
   overflow-x: hidden;
-<<<<<<< HEAD
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -o-user-select: none;
-  -ms-user-select: none;
-      user-select: none;
-=======
   -o-user-select: none;
   user-select: none;
->>>>>>> chickhack
 }
 
 h1, .h1 {
@@ -356,17 +348,8 @@ body {
 
 nav {
   display: flex;
-<<<<<<< HEAD
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-=======
   justify-content: center;
   align-items: center;
->>>>>>> chickhack
   justify-content: center;
   background-color: #0c0d18;
   position: fixed;
@@ -380,7 +363,11 @@ nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-  background-image: url("../../img/icon/header/logo.png");
+<<<<<<< HEAD
+  background-image: url("../img/icon/header/logo.png");
+=======
+  background-image: url("../img/logo.png");
+>>>>>>> a71648e6af827ed7cb31eb58086ee790bdd3afc6
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -391,21 +378,9 @@ nav .logo h1 a {
 
 nav .nav-links {
   display: flex;
-<<<<<<< HEAD
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-=======
   justify-content: center;
   align-items: center;
   justify-content: flex-end;
->>>>>>> chickhack
   width: 75%;
 }
 
@@ -449,21 +424,9 @@ nav .burger div {
     top: 12vh;
     background-color: #AD6E4A;
     display: flex;
-<<<<<<< HEAD
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-=======
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
->>>>>>> chickhack
     width: 30%;
     transition: all 1s ease-in;
   }
@@ -502,13 +465,7 @@ nav .burger div {
   nav .nav-icons {
     width: 50%;
     margin-left: 16px;
-<<<<<<< HEAD
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-=======
     justify-content: space-between;
->>>>>>> chickhack
   }
   nav .nav-icons .icon {
     margin: 0;
@@ -578,12 +535,7 @@ footer .footer_moon {
   position: relative;
   left: 50%;
   max-width: 40%;
-<<<<<<< HEAD
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-=======
   transform: translateX(-50%);
->>>>>>> chickhack
 }
 
 footer .smoke {
@@ -592,12 +544,7 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
-<<<<<<< HEAD
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-=======
   transform: translateX(-50%);
->>>>>>> chickhack
 }
 
 @media (max-width: 768px) {
@@ -656,21 +603,9 @@ body {
 /* 歡迎會員 字體大小、字型位置 */
 .welcome {
   padding: 15vh 250px 0px 250px;
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
-=======
   display: flex;
   align-items: center;
   justify-content: left;
->>>>>>> chickhack
 }
 
 .spacedinfo {
