@@ -77,16 +77,8 @@ body {
   font-size: 14px;
   background-color: #0c0d18;
   overflow-x: hidden;
-<<<<<<< HEAD
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -o-user-select: none;
-  -ms-user-select: none;
-      user-select: none;
-=======
   -o-user-select: none;
   user-select: none;
->>>>>>> chickhack
 }
 
 h1, .h1 {
@@ -355,17 +347,8 @@ body {
 
 nav {
   display: flex;
-<<<<<<< HEAD
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-=======
   justify-content: center;
   align-items: center;
->>>>>>> chickhack
   justify-content: center;
   background-color: #0c0d18;
   position: fixed;
@@ -379,7 +362,7 @@ nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-  background-image: url("../../img/icon/header/logo.png");
+  background-image: url("../img/icon/header/logo.png");
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -390,21 +373,9 @@ nav .logo h1 a {
 
 nav .nav-links {
   display: flex;
-<<<<<<< HEAD
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-=======
   justify-content: center;
   align-items: center;
   justify-content: flex-end;
->>>>>>> chickhack
   width: 75%;
 }
 
@@ -448,21 +419,9 @@ nav .burger div {
     top: 12vh;
     background-color: #AD6E4A;
     display: flex;
-<<<<<<< HEAD
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-=======
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
->>>>>>> chickhack
     width: 30%;
     transition: all 1s ease-in;
   }
@@ -501,13 +460,7 @@ nav .burger div {
   nav .nav-icons {
     width: 50%;
     margin-left: 16px;
-<<<<<<< HEAD
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-=======
     justify-content: space-between;
->>>>>>> chickhack
   }
   nav .nav-icons .icon {
     margin: 0;
@@ -577,12 +530,7 @@ footer .footer_moon {
   position: relative;
   left: 50%;
   max-width: 40%;
-<<<<<<< HEAD
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-=======
   transform: translateX(-50%);
->>>>>>> chickhack
 }
 
 footer .smoke {
@@ -591,12 +539,7 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
-<<<<<<< HEAD
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-=======
   transform: translateX(-50%);
->>>>>>> chickhack
 }
 
 @media (max-width: 768px) {
@@ -721,24 +664,10 @@ section.orderDetail .order li .imgWord .integral .icon {
 
 section.orderDetail .order li .quantity {
   width: 80%;
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-=======
   display: flex;
   justify-content: center;
   align-items: center;
   justify-content: space-around;
->>>>>>> chickhack
 }
 
 section.orderer {
@@ -787,34 +716,15 @@ section.orderer .arrow {
 
 section.orderer .arrow img {
   transition: all .5s;
-<<<<<<< HEAD
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
-=======
   transform: rotate(-90deg);
->>>>>>> chickhack
 }
 
 section.orderer .info {
   display: flex;
-<<<<<<< HEAD
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-=======
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
->>>>>>> chickhack
   width: 80%;
   margin-left: 6%;
 }
@@ -878,26 +788,11 @@ section.orderer .payTitle {
 
 section.orderer .group {
   display: flex;
-<<<<<<< HEAD
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  width: 100%;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-=======
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
   justify-content: start;
->>>>>>> chickhack
 }
 
 section.orderer .checkbox_group {
@@ -989,12 +884,7 @@ section.orderer .credit_icon svg {
 section.orderer .credit_icon svg.use {
   opacity: 1;
   color: #AD6E4A;
-<<<<<<< HEAD
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-=======
   transform: scale(1.2);
->>>>>>> chickhack
 }
 
 section.orderer .credit_icon input {
@@ -1013,7 +903,6 @@ section.orderer .button_min {
   color: #ffffff;
   position: absolute;
   right: 80px;
-  bottom: 0;
 }
 
 @media all and (max-width: 768px) {

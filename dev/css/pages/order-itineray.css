@@ -300,16 +300,8 @@ form {
 }
 
 form .orderinfo .row {
-<<<<<<< HEAD
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-=======
   justify-content: center;
   align-content: center;
->>>>>>> chickhack
 }
 
 form .orderinfo .row .col-10 {
@@ -318,27 +310,12 @@ form .orderinfo .row .col-10 {
 }
 
 form .orderinfo .row .col-10 .row {
-<<<<<<< HEAD
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-form .orderinfo .row .col-10 .row .col-7 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-=======
   justify-content: space-around;
 }
 
 form .orderinfo .row .col-10 .row .col-7 {
   display: flex;
   flex-direction: column;
->>>>>>> chickhack
 }
 
 form .orderinfo .row .col-10 .row .col-7 input {
@@ -359,17 +336,8 @@ form .orderinfo .row .col-10 .row .col-7 input:focus {
 form .orderinfo .row .col-10 .row .col-11 {
   margin: 0;
   display: flex;
-<<<<<<< HEAD
-  -ms-flex-line-pack: start;
-      align-content: flex-start;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-=======
   align-content: flex-start;
   flex-direction: column;
->>>>>>> chickhack
 }
 
 form .orderinfo .row .col-10 .row .col-11 input {
@@ -381,23 +349,12 @@ form .orderinfo .row .col-10 .row .col-11 input {
 }
 
 form .ltineraryinfo .row {
-<<<<<<< HEAD
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-=======
   justify-content: center;
->>>>>>> chickhack
 }
 
 form .ltineraryinfo .row .col-10 .row {
   margin-bottom: 32px;
   background-color: #292B41;
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-=======
->>>>>>> chickhack
   display: flex;
   justify-content: center;
 }
@@ -409,98 +366,17 @@ form .ltineraryinfo .row .col-10 .row .col-3 {
 
 form .ltineraryinfo .row .col-10 .row .col-3 img {
   max-width: 150px;
-<<<<<<< HEAD
-  -o-object-fit: cover;
-     object-fit: cover;
-=======
   object-fit: cover;
->>>>>>> chickhack
 }
 
 form .ltineraryinfo .row .col-10 .row .col-7 .row {
   display: flex;
-<<<<<<< HEAD
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-=======
   justify-content: space-between;
->>>>>>> chickhack
   height: 100%;
   width: 100%;
 }
 
 form .ltineraryinfo .row .col-10 .row .col-7 .row .col-11 {
-<<<<<<< HEAD
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-}
-
-form .ltineraryinfo .row .col-10 .row .col-7 .row .text-div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
->>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
->>>>>>> 5badf5bb2eed3e9ef55ccab2f7d645bfd9e24c24
-=======
->>>>>>> 10e10f8ebb29ccc2882d121bf3efb9b9e001100b
-=======
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-<<<<<<< HEAD
->>>>>>> 3dad026ace0b41a32fd8a158fb1c574e21ce5fa3
-=======
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> 10e10f8ebb29ccc2882d121bf3efb9b9e001100b
->>>>>>> dev
-=======
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-<<<<<<< HEAD
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-}
-
-form .ltineraryinfo .row .col-10 .row .col-7 .row .text-div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
->>>>>>> denis
-=======
->>>>>>> denis
-  padding: 0px 0;
-=======
-=======
   align-items: flex-end;
 }
 
@@ -508,7 +384,6 @@ form .ltineraryinfo .row .col-10 .row .col-7 .row .text-div {
   display: flex;
   justify-content: center;
   flex-direction: column;
->>>>>>> chickhack
   padding: 0 0;
 }
 
@@ -518,21 +393,10 @@ form .ltineraryinfo .row .col-10 .row .col-7 .row .text-div img {
 }
 
 form .addPay .row {
-<<<<<<< HEAD
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-form .addPay .row .col-10 .automena .row .col-10 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-=======
   justify-content: center;
 }
 
 form .addPay .row .col-10 .automena .row .col-10 {
->>>>>>> chickhack
   display: flex;
 }
 
@@ -547,12 +411,7 @@ form .addPay .row .col-10 .automena .row .col-10 .sss {
 
 form .addPay .row .col-10 .automena .row .col-10 .sss img {
   width: 100px;
-<<<<<<< HEAD
-  -o-object-fit: cover;
-     object-fit: cover;
-=======
   object-fit: cover;
->>>>>>> chickhack
 }
 
 form .addPay .row .col-10 .automena .row .col-10 input {
@@ -576,11 +435,6 @@ form .paymethod .row .col-10 .paymethod-automanu .row #paymethod-coin, form .pay
 }
 
 form .paymethod .row .col-10 .paymethod-automanu .row .col-11 {
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-=======
->>>>>>> chickhack
   display: flex;
   align-items: center;
 }
@@ -590,13 +444,7 @@ form .paymethod .row .col-10 .paymethod-automanu .row .col-12 .paymethod-automan
 }
 
 form .paymethod .row .col-10 .paymethod-automanu .row .col-12 .paymethod-automanu-car-automanu .row {
-<<<<<<< HEAD
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-=======
   justify-content: space-evenly;
->>>>>>> chickhack
 }
 
 form .paymethod .row .col-10 .paymethod-automanu .row .col-12 .paymethod-automanu-car-automanu .row input {
@@ -624,11 +472,6 @@ form .paymethod .row .col-10 .paymethod-automanu .row .col-5 input.paymethod-coi
 }
 
 form .paymethod .row .col-10 .paymethod-automanu .row .col-4 {
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-=======
->>>>>>> chickhack
   display: flex;
   align-items: center;
 }
@@ -642,17 +485,8 @@ form .orderDetails .row {
 }
 
 form .orderDetails .row .allpay-div {
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-=======
   display: flex;
   justify-content: flex-end;
->>>>>>> chickhack
 }
 
 form .orderDetails .row .col-10 .orderDetails-automanu .col-3 {
@@ -674,11 +508,6 @@ form .orderDetails .row .col-10 .orderDetails-automanu .col-11 .payadd .orderDet
 }
 
 form .orderDetails .row .col-10 .orderDetails-automanu .col-11 .payadd .orderDetails-automanu-textdiv .textbox {
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-=======
->>>>>>> chickhack
   display: flex;
   width: 100%;
 }
@@ -688,30 +517,15 @@ form .orderDetails .row .col-10 .orderDetails-automanu .col-11 .orderDetails-aut
 }
 
 form .orderDetails .row .col-10 .orderDetails-automanu .col-11 .orderDetails-automanu-textdiv .textbox {
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-=======
->>>>>>> chickhack
   display: flex;
   width: 100%;
 }
 
 form .orderDetails .row .col-10 .orderDetails-automanu .col-7 {
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-=======
->>>>>>> chickhack
   display: flex;
 }
 
 form .orderDetails .row .col-10 .orderDetails-automanu .col-7 .row {
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-=======
->>>>>>> chickhack
   display: flex;
   justify-content: space-around;
   width: 100%;
