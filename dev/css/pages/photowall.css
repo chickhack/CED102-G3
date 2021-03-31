@@ -671,13 +671,6 @@ input[type=number] {
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-<<<<<<< HEAD
-}
-
-.grid {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 }
 
 .top_photo {
@@ -694,7 +687,6 @@ input[type=number] {
 }
 
 .grid {
->>>>>>> denis
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -706,43 +698,9 @@ input[type=number] {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
-<<<<<<< HEAD
-=======
-  padding-top: 5%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
-=======
-  display: flex;
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: start;
-  max-width: 1100px;
-  margin: 0 auto;
-<<<<<<< HEAD
->>>>>>> 10e10f8ebb29ccc2882d121bf3efb9b9e001100b
->>>>>>> dev
-=======
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
   max-width: 1100px;
   margin: 0 auto;
   margin-top: 40px;
->>>>>>> denis
 }
 
 .grid-item {
@@ -756,43 +714,8 @@ input[type=number] {
 
 .grid .grid-item img {
   width: 100%;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
   -o-object-fit: cover;
      object-fit: cover;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  -o-object-fit: cover;
-     object-fit: cover;
-=======
-<<<<<<< HEAD
-  -o-object-fit: cover;
-     object-fit: cover;
-=======
-  object-fit: cover;
->>>>>>> 853d0fe17bc16fa73b23853e5fe4eeed2b5ce7c9
->>>>>>> 5badf5bb2eed3e9ef55ccab2f7d645bfd9e24c24
-=======
-  object-fit: cover;
->>>>>>> 3dad026ace0b41a32fd8a158fb1c574e21ce5fa3
-=======
-  -o-object-fit: cover;
-     object-fit: cover;
-=======
-  object-fit: cover;
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> 10e10f8ebb29ccc2882d121bf3efb9b9e001100b
->>>>>>> dev
-=======
-  object-fit: cover;
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
-  -o-object-fit: cover;
-     object-fit: cover;
->>>>>>> denis
 }
 
 .grid .grid-item:nth-child(n+9) {

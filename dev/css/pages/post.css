@@ -622,14 +622,8 @@ footer .smoke {
   }
 }
 
-<<<<<<< HEAD
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-=======
 .quantity label {
   display: block;
->>>>>>> denis
 }
 
 .quantity .as {
@@ -680,6 +674,7 @@ input[type=number] {
 
 .col-12 {
   margin-top: 2%;
+  padding: 0;
 }
 
 form.post {
@@ -687,6 +682,7 @@ form.post {
   margin: 0 auto;
   padding: 30px;
   background-color: #292B41;
+  max-width: 900px;
 }
 
 form.post .select_trip {
@@ -722,7 +718,7 @@ form.post .select_trip select {
 
 .post_text textarea.texts {
   outline: none;
-  width: 100%;
+  width: 90%;
   height: 200px;
   resize: none;
   padding: 10px;
