@@ -56,23 +56,8 @@ img {
 *,
 *:before,
 *:after {
-<<<<<<< HEAD
-<<<<<<< HEAD
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
-<<<<<<< HEAD
-=======
-=======
-  box-sizing: inherit;
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
-  box-sizing: inherit;
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
->>>>>>> denis
   margin: 0;
   padding: 0;
 }
@@ -93,31 +78,11 @@ body {
   font-size: 14px;
   background-color: #0c0d18;
   overflow-x: hidden;
-<<<<<<< HEAD
-<<<<<<< HEAD
   -webkit-user-select: none;
   -moz-user-select: none;
   -o-user-select: none;
   -ms-user-select: none;
       user-select: none;
-<<<<<<< HEAD
-=======
-=======
-  -o-user-select: none;
-  user-select: none;
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
-  -o-user-select: none;
-  user-select: none;
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -o-user-select: none;
-  -ms-user-select: none;
-      user-select: none;
->>>>>>> denis
 }
 
 h1, .h1 {
@@ -388,30 +353,12 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> denis
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-  justify-content: center;
-  align-items: center;
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
-  justify-content: center;
-  align-items: center;
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
->>>>>>> denis
   justify-content: center;
   background-color: #0c0d18;
   position: fixed;
@@ -425,24 +372,7 @@ nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> dev
   background-image: url("../../img/icon/header/logo.png");
-  background-image: url("../../img/logo.png");
-  background-image: url("../../img/icon/header/logo.png");
-  background-image: url("../../img/icon/header/logo.png");
-<<<<<<< HEAD
-=======
-=======
-  background-image: url("../img/logo.png");
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
-  background-image: url("../../img/icon/header/logo.png");
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -455,10 +385,6 @@ nav .nav-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> denis
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -468,22 +394,6 @@ nav .nav-links {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-  justify-content: center;
-  align-items: center;
-  justify-content: flex-end;
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
-  justify-content: center;
-  align-items: center;
-  justify-content: flex-end;
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
->>>>>>> denis
   width: 75%;
 }
 
@@ -497,10 +407,6 @@ nav .nav-icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> denis
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -509,22 +415,6 @@ nav .nav-icons {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
->>>>>>> denis
   width: 12%;
   margin-left: 50px;
 }
@@ -558,14 +448,6 @@ nav .burger div {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> dev
-=======
->>>>>>> denis
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -575,22 +457,6 @@ nav .burger div {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
->>>>>>> denis
     width: 30%;
     -webkit-transition: all 1s ease-in;
     transition: all 1s ease-in;
@@ -632,29 +498,9 @@ nav .burger div {
   nav .nav-icons {
     width: 50%;
     margin-left: 16px;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-=======
-<<<<<<< HEAD
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-=======
-    justify-content: space-between;
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
-    justify-content: space-between;
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
->>>>>>> denis
   }
   nav .nav-icons .icon {
     margin: 0;
@@ -726,10 +572,6 @@ footer .links .footer-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> denis
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -738,43 +580,12 @@ footer .links .footer-links {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
->>>>>>> denis
   width: 55%;
   position: relative;
   left: 50%;
   bottom: 30px;
-<<<<<<< HEAD
-<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-<<<<<<< HEAD
-=======
-=======
-  transform: translateX(-50%);
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
-  transform: translateX(-50%);
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
->>>>>>> denis
 }
 
 footer .links .footer-links a {
@@ -785,23 +596,8 @@ footer .footer_moon {
   position: relative;
   left: 50%;
   max-width: 40%;
-<<<<<<< HEAD
-<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-<<<<<<< HEAD
-=======
-=======
-  transform: translateX(-50%);
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
-  transform: translateX(-50%);
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
->>>>>>> denis
 }
 
 footer .smoke {
@@ -810,23 +606,8 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
-<<<<<<< HEAD
-<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-<<<<<<< HEAD
-=======
-=======
-  transform: translateX(-50%);
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
-  transform: translateX(-50%);
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
->>>>>>> denis
 }
 
 @media (max-width: 768px) {
@@ -892,30 +673,12 @@ section.cart .item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> denis
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-  justify-content: center;
-  align-items: center;
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
-  justify-content: center;
-  align-items: center;
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
->>>>>>> denis
   justify-content: center;
   background-color: #292B41;
   padding: 16px 0;
@@ -934,8 +697,6 @@ section.cart .item .img {
 section.cart .item .info {
   width: 65%;
   margin-left: 10px;
-<<<<<<< HEAD
-<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -962,50 +723,6 @@ section.cart .item .info .points {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
-  display: -webkit-box;
-  display: -ms-flexbox;
->>>>>>> denis
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-section.cart .item .info .points {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-<<<<<<< HEAD
-  justify-content: center;
-  align-items: center;
-  justify-content: start;
-<<<<<<< HEAD
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
->>>>>>> denis
   margin: 8px 0;
 }
 
@@ -1044,26 +761,10 @@ section.cart .checkout {
 
 @media all and (max-width: 768px) {
   section.cart .checkout {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> denis
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-    flex-direction: column;
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
-    flex-direction: column;
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
-=======
->>>>>>> denis
   }
 }
 
