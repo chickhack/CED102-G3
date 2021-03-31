@@ -431,7 +431,7 @@ button{
 .home_shop{
     display: flex;
     flex-direction: column;
-    .button_min{
+    a{
         margin: 0 auto;
     }
     h2{
@@ -573,7 +573,6 @@ button{
             .shop_carousel{
                 display: block;
                 background-color: $darkblue;
-                border: 1px solid white;
                 max-width: 500px;
                 .carousel-item{
                     background-color: $darkblue;
