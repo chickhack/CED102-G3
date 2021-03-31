@@ -1,424 +1,317 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
-    />
-    <!--Bootstrap5 JavaScript Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-      crossorigin="anonymous"
-    ></script>
-    <!--Bootstrap5 CSS only -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
-      crossorigin="anonymous"
-    />
-    <!-- Vue.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.12/vue.js"></script>
-    <!-- jQuery -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-      crossorigin="anonymous"
-    ></script>
-    <!-- isotope -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.js"
-      integrity="sha512-E/yP5UiPXb6VelX+dFLuUD+1IZw/Kz7tMncFTYbtoNSCdRZPFoGN3jZ2p27VUxHEkhbPiLuZhZpVEXxk9wAHCQ=="
-      crossorigin="anonymous"
-    ></script>
 
-    <link rel="stylesheet" href="./css/all.css" />
-    <link rel="stylesheet" href="./css/pages/alltrip.css" />
-    <link rel="stylesheet" href="./css/pages/account.css" />
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <!--Bootstrap5 JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"></script>
+  <!--Bootstrap5 CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <!-- Vue.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.12/vue.js"></script>
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous"></script>
+  <!-- isotope -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.js"
+    integrity="sha512-E/yP5UiPXb6VelX+dFLuUD+1IZw/Kz7tMncFTYbtoNSCdRZPFoGN3jZ2p27VUxHEkhbPiLuZhZpVEXxk9wAHCQ=="
+    crossorigin="anonymous"></script>
 
-    <title>會員</title>
-  </head>
 
-  <style></style>
+  <link rel="stylesheet" href="./css/all.css">
+  <link rel="stylesheet" href="./css/pages/alltrip.css">
+  <link rel="stylesheet" href="./css/pages/account.css">
 
-  <body>
-    <header>@@include('./layout/header.html')</header>
+  <title>會員</title>
 
-    <div class="welcome">
-      <div class="spacedinfo">
-        <p class="account_hi">嗨，</p>
-        <p class="account_logo">SPACED!</p>
-        <br />
-        <p class="account_numlogo">SPACED</p>
-        <p class="account_acnum">會員編號：</p>
-        <p class="account_num">100918156</p>
-      </div>
-      <img class="account_levimg" src="./img/account/lev1.png" alt="lev" />
+</head>
+
+<style>
+
+</style>
+
+<body>
+  <header>
+    @@include('./layout/header.html')
+  </header>
+
+  <div class="welcome">
+    <div class="spacedinfo">
+      <p class="account_hi">嗨，</p>
+      <p class="account_logo">SPACED!</p><br>
+      <p class="account_numlogo">SPACED</p>
+      <p class="account_acnum">會員編號：</p>
+      <p class="account_num">100918156</p>
     </div>
+    <img class="account_levimg" src="../dist/img/account/lev1.png" alt="lev">
+  </div>
 
-    <div class="account_card">
-      <div class="account_now">
-        <div class="your_lev">
-          <div class="container_card your_nowlev">
-            <div class="row align-items-center">
-              <div class="col col-md-auto lev_name">冒險者</div>
-              <div class="col-md-auto">
-                <img
-                  class="littleline"
-                  src="./img/icon/littleline.png"
-                  alt=""
-                />
-              </div>
-              <div class="col account_total">
-                累積旅行 <span class="accnum">3 </span>顆星球、
-                <span class="accnum">5 </span>個景點
-              </div>
-              <div class="col col-md-auto account_money">
-                目前持有 <span class="accmoney"> 1,099,999 </span>宇宙幣
-              </div>
+  <div class="account_card">
+    <div class="account_now">
+      <div class="your_lev">
+        <div class="container_card your_nowlev">
+          <div class="row align-items-center">
+            <div class="col col-md-auto lev_name">冒險者</div>
+            <div class="col-md-auto"><img class="littleline" src="../dist/img/icon/littleline.png" alt=""></div>
+            <div class="col account_total">累積旅行
+              <span class="accnum">3 </span>顆星球、
+              <span class="accnum">5 </span>個景點
             </div>
-          </div>
-        </div>
-
-        <div class="lev_acc">
-          <little><span>12個月內累積</span></little>
-        </div>
-
-        <div class="container_">
-          <div class="your_acc">
-            <div class="now_lev align-items-center">
-              <img class="nowlev" src="./img/icon/初星者.png" alt="lev" /><br />
-              <p class="nowacc">80,000積分</p>
-            </div>
-            <div class="next_rocket">
-              <img
-                class="account_rocket"
-                src="./img/icon/rocket4.png"
-                alt="rocket"
-              />
-            </div>
-            <div class="next_lev align-items-center">
-              <img
-                class="nextlev"
-                src="./img/icon/天星者.png"
-                alt="lev"
-              /><br />
-              <p class="nextacc">目前尚需 80,000 積分</p>
-              <p class="nextacc">才能升級至初星者</p>
+            <div class="col col-md-auto account_money">目前持有
+              <span class="accmoney"> 1,099,999 </span>宇宙幣
             </div>
           </div>
         </div>
       </div>
+
+      <div class="lev_acc">
+        <little><span>12個月內累積</span></little>
+      </div>
+
+      <div class="container_">
+        <div class="your_acc">
+          <div class="now_lev align-items-center">
+            <img class="nowlev" src="./img/icon/初星者.png" alt="lev"><br>
+            <p class="nowacc">80,000積分</p>
+          </div>
+          <div class="next_rocket"><img class="account_rocket" src="./img/icon/rocket4.png" alt="rocket"></div>
+          <div class="next_lev align-items-center">
+            <img class="nextlev" src="./img/icon/天星者.png" alt="lev"><br>
+            <p class="nextacc">目前尚需 80,000 積分</p>
+            <p class="nextacc">才能升級至初星者</p>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 
-    <div class="account_tab">
-      <div id="accountapp" class="account_tabs">
-        <ul class="nav nav-tabs nav-justified account_nav">
-          <li class="nav-item">
-            <a
-              class="nav-link"
-              href="#"
-              :class="{'active': link=='a'}"
-              @click.prevent=" link='a'"
-              >會員資料</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link"
-              href="#"
-              :class="{'active': link=='b' }"
-              @click.prevent="link='b'"
-              >行程管理</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link"
-              href="#"
-              :class="{'active': link=='c' }"
-              @click.prevent="link='c'"
-              >互動牆管理</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link"
-              href="#"
-              :class="{'active': link=='d' }"
-              @click.prevent="link='d'"
-              >商城訂單</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link"
-              href="#"
-              :class="{'active': link=='e' }"
-              @click.prevent="link='e'"
-              >收藏管理</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link"
-              href="#"
-              :class="{'active': link=='f' }"
-              @click.prevent="link='f'"
-              >轉換積分</a
-            >
-          </li>
-        </ul>
+  <div class="account_tab">
+    <div id="accountapp" class="account_tabs">
+      <ul class="nav nav-tabs nav-justified account_nav">
+        <li class="nav-item"><a class="nav-link" href="#" :class="{'active': link=='a'}"
+            @click.prevent=" link='a'">會員資料</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" :class="{'active': link=='b' }"
+            @click.prevent="link='b'">行程管理</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" :class="{'active': link=='c' }"
+            @click.prevent="link='c'">互動牆管理</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" :class="{'active': link=='d' }"
+            @click.prevent="link='d'">商城訂單</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" :class="{'active': link=='e' }"
+            @click.prevent="link='e'">收藏管理</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" :class="{'active': link=='f' }"
+            @click.prevent="link='f'">轉換積分</a></li>
+      </ul>
 
-        <hr class="account_line" />
+      <hr class="account_line">
 
-        <div class="content">
-          <div v-if="link ==='a'">
-            <div id="info_form" class="row info_form">
-              <div class="col-md-auto align-self-start info_img">
-                <img
-                  class="infoimg"
-                  src="./img/icon/會員頭貼.png"
-                  alt=""
-                /><br />
+      <div class="content">
+        <div v-if="link ==='a'">
+          <div id="info_form" class="row info_form">
+            <div class="col-md-auto align-self-start  info_img">
+              <img class="infoimg" src="./img/icon/會員頭貼.png" alt=""><br>
+            </div>
+            <div class="col-md-auto align-self-center info_left">
+              <div class="form-group">
+                <label for="exampleInputEmail1">暱稱</label>
+                <div class="edit_text"><input type="text" readonly class="form-control-plaintext" id=""
+                    value="大大大大"></div>
+                <!-- <input type="text" class="form-control" id="exampleInputEmail1" placeholder="大大大大"> -->
+                <small id="emailHelp" class="form-text text-muted"></small>
               </div>
-              <div class="col-md-auto align-self-center info_left">
-                <div class="form-group">
-                  <label for="exampleInputEmail1">暱稱</label>
-                  <div class="edit_text">
-                    <input
-                      type="text"
-                      readonly
-                      class="form-control-plaintext"
-                      id="staticEmail"
-                      value="大大大大"
-                    />
-                  </div>
-                  <!-- <input type="text" class="form-control" id="exampleInputEmail1" placeholder="大大大大"> -->
-                  <small id="emailHelp" class="form-text text-muted"></small>
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputPassword1">姓名</label>
-                  <input
-                    type="text"
-                    readonly
-                    class="form-control-plaintext"
-                    id="staticEmail"
-                    value="大大"
-                  />
-                  <!-- <input type="text" class="form-control" id="exampleInputPassword1" placeholder=""> -->
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputPassword1">性別</label>
-                  <input
-                    type="text"
-                    readonly
-                    class="form-control-plaintext"
-                    id="staticEmail"
-                    value="男"
-                  />
-                  <!-- <input type="text" class="form-control" id="exampleInputPassword1" placeholder=""> -->
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputPassword1">手機</label>
-                  <input
-                    type="text"
-                    readonly
-                    class="form-control-plaintext"
-                    id="staticEmail"
-                    value="0988123456"
-                  />
-                  <!-- <input type="phone" class="form-control" id="exampleInputPassword1" placeholder=""> -->
-                </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">姓名</label>
+                <input type="text" readonly class="form-control-plaintext" id="" value="大大">
+                <!-- <input type="text" class="form-control" id="exampleInputPassword1" placeholder=""> -->
               </div>
-              <div class="col-md-auto align-self-end info_right">
-                <div class="form-group">
-                  <label for="exampleInputPassword1">姓氏</label>
-                  <input
-                    type="text"
-                    readonly
-                    class="form-control-plaintext"
-                    id="staticEmail"
-                    value="陳"
-                  />
-                  <!-- <input type="text" class="form-control" id="exampleInputPassword1" placeholder=""> -->
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputPassword1">生日</label>
-                  <input
-                    type="text"
-                    readonly
-                    class="form-control-plaintext"
-                    id="staticEmail"
-                    value="1991/12/31"
-                  />
-                  <!-- <input type="date" class="form-control" id="exampleInputPassword1" placeholder=""> -->
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputPassword1">地址</label>
-                  <input
-                    type="text"
-                    readonly
-                    class="form-control-plaintext"
-                    id="staticEmail"
-                    value="台北市大同區中正路一段32巷5弄7號"
-                  />
-                  <!-- <input type="text" class="form-control" id="exampleInputPassword1" placeholder=""> -->
-                </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">性別</label>
+                <input type="text" readonly class="form-control-plaintext" id="" value="男">
+                <!-- <input type="text" class="form-control" id="exampleInputPassword1" placeholder=""> -->
               </div>
-              <div class="col-md-auto align-self-start info_edit">
-                <button
-                  type="button"
-                  class="btn btn-primary info_editbtn"
-                  @click="btnclick"
-                >
-                  編輯個人資料
-                </button>
+              <div class="form-group">
+                <label for="exampleInputPassword1">手機</label>
+                <input type="text" readonly class="form-control-plaintext" id="" value="0988123456">
+                <!-- <input type="phone" class="form-control" id="exampleInputPassword1" placeholder=""> -->
               </div>
             </div>
+            <div class="col-md-auto align-self-end info_right">
+              <div class="form-group">
+                <label for="exampleInputPassword1">姓氏</label>
+                <input type="text" readonly class="form-control-plaintext" id="" value="陳">
+                <!-- <input type="text" class="form-control" id="exampleInputPassword1" placeholder=""> -->
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">生日</label>
+                <input type="text" readonly class="form-control-plaintext" id="" value="1991/12/31">
+                <!-- <input type="date" class="form-control" id="exampleInputPassword1" placeholder=""> -->
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">地址</label>
+                <input type="text" readonly class="form-control-plaintext" id="" value="台北市大同區中正路一段32巷5弄7號">
+                <!-- <input type="text" class="form-control" id="exampleInputPassword1" placeholder=""> -->
+              </div>
+            </div>
+            <div class="col-md-auto align-self-start info_edit">
+              <button type="button" class="btn btn-primary info_editbtn" @click="btnclick">編輯個人資料</button>
+            </div>
           </div>
+        </div>
 
-          <div v-else-if="link ==='b'">Ｂ</div>
+        <div v-else-if="link ==='b'">
+          Ｂ
+        </div>
 
-          <div v-else-if="link ==='c'">Ｃ</div>
+        <div v-else-if="link ==='c'">
+          Ｃ
+        </div>
 
-          <div v-else-if="link ==='d'">Ｄ</div>
+        <div v-else-if="link ==='d'">
+          Ｄ
+        </div>
 
-          <div v-else-if="link ==='e'">
-            <div
-              id="accountapp"
-              class="row justify-content-start container_heart heartnav"
-            >
-              <button
-                class="col btn heartbtns"
-                @click="dynamicComponent={template: `<p style='color: purple'>Good</p>`}"
-              >
-                行程
-              </button>
-              <button class="col btn heartbtns" @click="dynamicComponent='bye'">
-                商品
-              </button>
-              <button
-                class="col btn heartbtns"
-                @click="dynamicComponent={template: `<p style='color: purple'>Good</p>`}"
-              >
-                貼文
-              </button>
+        <div v-else-if="link ==='e'">
 
-              <component :is="dynamicComponent">
-                <div v-for="item in second" class="tripcard">
-                  <img :src="item.spot" class="spot_pic" alt="spot_pic" />
-                  <div class="content line_low">
-                    <h4 class="hot2 margin_top_1">{{item.title}}</h4>
-                    <small class="tag">{{item.grade}}</small>
-                    <small class="tag">{{item.scores}}積分</small>
-                    <h4 class="price2 margin_top_1">${{item.price}}</h4>
-                    <div class="addin2 samll margin_top_2">
-                      <img
-                        class="plus"
-                        src="./img/icon/plus.png"
-                        alt=""
-                      />加入我的行程
-                    </div>
+          <div id="accountapp" class="row justify-content-start container_heart heartnav">
+            <button class="col btn heartbtns" @click="dynamicComponent={template: `<p style='color: purple'>Good</p>`}">
+              行程
+            </button>
+            <button class="col btn heartbtns" @click="dynamicComponent='bye'">
+              商品
+            </button>
+            <button class="col btn heartbtns" @click="dynamicComponent={template: `<p style='color: purple'>Good</p>`}">
+              貼文
+            </button>
+
+            <component :is="dynamicComponent">
+
+              <div v-for="item in second" class="tripcard">
+                <img :src="item.spot" class="spot_pic" alt="spot_pic">
+                <div class="content line_low">
+                  <h4 class="hot2 margin_top_1">{{item.title}}</h4>
+                  <small class="tag ">{{item.grade}}</small>
+                  <small class="tag">{{item.scores}}積分</small>
+                  <h4 class="price2 margin_top_1">${{item.price}}</h4>
+                  <div class="addin2 samll  margin_top_2"><img class="plus" src="./img/icon/plus.png" alt="">加入我的行程
                   </div>
                 </div>
-              </component>
-            </div>
+              </div>
+
+            </component>
+
           </div>
 
-          <div v-else-if="link ==='f'">Ｆ</div>
         </div>
+
+        <div v-else-if="link ==='f'">
+          Ｆ
+        </div>
+
       </div>
     </div>
+  </div>
 
-    <footer>@@include('./layout/footer.html')</footer>
+  <footer>
+    @@include('./layout/footer.html')
+  </footer>
 
-    <script>
-      // 會員menu切分頁
-      Vue.component("hello", {
-        template: '<p style="color: blue">Hello</p>',
-        //  `<div v-for="item in second" class="tripcard">
-        //     <img :src="item.spot" class="spot_pic" alt="spot_pic">
-        //     <div class="content line_low">
-        //       <h4 class="hot2 margin_top_1">{{item.title}}</h4>
-        //       <small class="tag ">{{item.grade}}</small>
-        //       <small class="tag">{{item.scores}}積分</small>
-        //       <h4 class="price2 margin_top_1">{{item.price}}</h4>
-        //       <div class="addin2 samll  margin_top_2"><img class="plus" src="./img/icon/plus.png" alt="">加入我的行程
-        //       </div>
-        //     </div>
-        //   </div>`
-      });
-      Vue.component("bye", {
-        template: '<p style="color: red">Bye</p>',
-      });
 
-      var account_tab = new Vue({
-        el: "#accountapp",
-        data: {
-          link: "a",
-          dynamicComponent: "hello",
 
-          second: [
-            {
-              spot: "./img/trip/trip_jupiter/jupiter_a1_ps2.jpg",
-              title: "月球 | 太空體驗一日遊",
-              grade: "初階",
-              scores: "5000",
-              price: 1000,
-            },
-            {
-              spot: "./img/trip/trip_jupiter/jupiter_b1_ps2.jpg",
-              title: "月球 | 熱氣球一日遊",
-              grade: "初階",
-              scores: "5000",
-              price: 2000,
-            },
-            {
-              spot: "./img/trip/trip_jupiter/jupiter_c4_ps2.jpg",
-              title: "月球 | 熱氣球一日遊",
-              grade: "初階",
-              scores: "5000",
-              price: 3000,
-            },
-            {
-              spot: "./img/trip/trip_jupiter/jupiter_a1_ps2.jpg",
-              title: "月球 | 太空體驗一日遊",
-              grade: "初階",
-              scores: "5000",
-              price: 1000,
-            },
-          ],
-        },
-      });
 
-      //  點擊menu變色
-      window.onload = function () {
-        for (var i = 0; i < document.links.length; i++) {
-          var thisLink = document.links[i];
-          thisLink.onclick = function () {
-            for (var i = 0; i < document.links.length; i++) {
-              document.links[i].style = "";
-            }
-            this.style = "color:#AD6E4A; border-bottom: 3px solid #AD6E4A";
-          };
+
+
+  <script>
+    // 會員menu切分頁
+    Vue.component('hello', {
+      template: '<p style="color: blue">Hello</p>'
+            //  `<div v-for="item in second" class="tripcard">
+            //     <img :src="item.spot" class="spot_pic" alt="spot_pic">
+            //     <div class="content line_low">
+            //       <h4 class="hot2 margin_top_1">{{item.title}}</h4>
+            //       <small class="tag ">{{item.grade}}</small>
+            //       <small class="tag">{{item.scores}}積分</small>
+            //       <h4 class="price2 margin_top_1">{{item.price}}</h4>
+            //       <div class="addin2 samll  margin_top_2"><img class="plus" src="./img/icon/plus.png" alt="">加入我的行程
+            //       </div>
+            //     </div>
+            //   </div>`
+    });
+    Vue.component('bye', {
+      template: '<p style="color: red">Bye</p>'
+
+    });
+
+    var account_tab = new Vue({
+      el: "#accountapp",
+      data: {
+        link: "a",
+        dynamicComponent: 'hello',
+
+        second: [{
+          spot: "./img/trip/trip_jupiter/jupiter_a1_ps2.jpg",
+          title: "月球 | 太空體驗一日遊",
+          grade: "初階",
+          scores: "5000",
+          price: 1000,
+        }, {
+          spot: "./img/trip/trip_jupiter/jupiter_b1_ps2.jpg",
+          title: "月球 | 熱氣球一日遊",
+          grade: "初階",
+          scores: "5000",
+          price: 2000,
+        }, {
+          spot: "./img/trip/trip_jupiter/jupiter_c4_ps2.jpg",
+          title: "月球 | 熱氣球一日遊",
+          grade: "初階",
+          scores: "5000",
+          price: 3000,
+        }, {
+          spot: "./img/trip/trip_jupiter/jupiter_a1_ps2.jpg",
+          title: "月球 | 太空體驗一日遊",
+          grade: "初階",
+          scores: "5000",
+          price: 1000,
+        }],
+
+      },
+    });
+
+
+
+
+    //  點擊menu變色
+    window.onload = function () {
+      for (var i = 0; i < document.links.length; i++) {
+        var thisLink = document.links[i];
+        thisLink.onclick = function () {
+          for (var i = 0; i < document.links.length; i++) {
+            document.links[i].style = "";
+          }
+          this.style = "color:#AD6E4A; border-bottom: 3px solid #AD6E4A";
         }
-      };
-    </script>
+      }
+    };
 
-    <!--第1组-->
-    <!-- <input type='text' id='txt1' value='Tsybius2014'></input>
+  </script>
+
+
+
+
+  <!--第1组-->
+  <!-- <input type='text' id='txt1' value='Tsybius2014'></input>
     <button type="button" id='btn1_1'>启用</button>
     <button type="button" id='btn1_2'>禁用</button>
   <hr> -->
-    <!--第2组-->
-    <!-- <input type='text' id='txt2' value='Tsybius2014'></input>
+  <!--第2组-->
+  <!-- <input type='text' id='txt2' value='Tsybius2014'></input>
     <button type="button" id='btn2_1'>启用</button>
     <button type="button" id='btn2_2'>禁用</button> -->
-    <!-- <script>
+  <!-- <script>
     //第1组
     //按钮1_1：启用文本框
     $('#btn1_1').click(function () {
@@ -443,5 +336,9 @@
       $('#txt2').css("background-color", "lavender");
     })
   </script> -->
-  </body>
+
+
+
+</body>
+
 </html>
