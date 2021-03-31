@@ -4,6 +4,7 @@ $('#btn-opmenu').click(function(){
     $('#orderinfo-automenu').slideToggle();
     //自動判斷添加class替換before內容
     $('#btn-opmenu').toggleClass("svgRight");
+    if()
 });
 $('#addPay-btn').click(function(){
     $('.automena').slideToggle();
