@@ -1,8 +1,9 @@
-// js抓到CSS屬性
+// 用js抓到CSS屬性
 var sub1= document.getElementById('orderinfo-automenu');
 var sub =window.getComputedStyle(sub1).display;
 alert(sub);
-
+// 用JQ抓到CSS屬性
+var subjq = $().css()
 //控制表單縮放
 // var sub = $('#orderinfo-automenu').css("display");
 $('#btn-opmenu').click(function(){
