@@ -79,23 +79,11 @@ body {
   font-size: 14px;
   background-color: #0c0d18;
   overflow-x: hidden;
-<<<<<<< HEAD
   -webkit-user-select: none;
   -moz-user-select: none;
   -o-user-select: none;
   -ms-user-select: none;
       user-select: none;
-<<<<<<< HEAD
-=======
-=======
-  -o-user-select: none;
-  user-select: none;
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
-  -o-user-select: none;
-  user-select: none;
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
 }
 
 h1, .h1 {
@@ -366,24 +354,12 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-<<<<<<< HEAD
-=======
-=======
-  justify-content: center;
-  align-items: center;
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
-  justify-content: center;
-  align-items: center;
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
   justify-content: center;
   background-color: #0c0d18;
   position: fixed;
@@ -397,24 +373,7 @@ nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> dev
   background-image: url("../../img/icon/header/logo.png");
-  background-image: url("../../img/logo.png");
-  background-image: url("../../img/icon/header/logo.png");
-  background-image: url("../../img/icon/header/logo.png");
-<<<<<<< HEAD
-=======
-=======
-  background-image: url("../img/logo.png");
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
-  background-image: url("../../img/icon/header/logo.png");
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -427,7 +386,6 @@ nav .nav-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -437,19 +395,6 @@ nav .nav-links {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-<<<<<<< HEAD
-=======
-=======
-  justify-content: center;
-  align-items: center;
-  justify-content: flex-end;
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
-  justify-content: center;
-  align-items: center;
-  justify-content: flex-end;
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
   width: 75%;
 }
 
@@ -486,6 +431,7 @@ nav .burger div {
   height: 2px;
   background-color: #ffffff;
   margin: 5px;
+  -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
 
@@ -503,11 +449,6 @@ nav .burger div {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> dev
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -517,19 +458,6 @@ nav .burger div {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-<<<<<<< HEAD
-=======
-=======
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
     width: 30%;
     -webkit-transition: all 1s ease-in;
     transition: all 1s ease-in;
@@ -571,23 +499,9 @@ nav .burger div {
   nav .nav-icons {
     width: 50%;
     margin-left: 16px;
-<<<<<<< HEAD
-<<<<<<< HEAD
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-=======
-<<<<<<< HEAD
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-=======
-    justify-content: space-between;
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
-    justify-content: space-between;
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
   }
   nav .nav-icons .icon {
     margin: 0;
@@ -621,7 +535,8 @@ nav .burger div {
 }
 
 .toggle .line1 {
-  transform: rotate(45deg) translate(4px, 6px);
+  -webkit-transform: rotate(45deg) translate(4px, 6px);
+          transform: rotate(45deg) translate(4px, 6px);
 }
 
 .toggle .line2 {
@@ -629,7 +544,8 @@ nav .burger div {
 }
 
 .toggle .line3 {
-  transform: rotate(-45deg) translate(3px, -6px);
+  -webkit-transform: rotate(-45deg) translate(3px, -6px);
+          transform: rotate(-45deg) translate(3px, -6px);
 }
 
 footer {
@@ -681,18 +597,8 @@ footer .footer_moon {
   position: relative;
   left: 50%;
   max-width: 40%;
-<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-<<<<<<< HEAD
-=======
-=======
-  transform: translateX(-50%);
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
-  transform: translateX(-50%);
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
 }
 
 footer .smoke {
@@ -701,18 +607,8 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
-<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-<<<<<<< HEAD
-=======
-=======
-  transform: translateX(-50%);
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
-  transform: translateX(-50%);
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
 }
 
 @media (max-width: 768px) {
@@ -771,7 +667,6 @@ body {
 /* 歡迎會員 字體大小、字型位置 */
 .welcome {
   padding: 15vh 250px 0px 250px;
-<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -781,19 +676,6 @@ body {
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
-<<<<<<< HEAD
-=======
-=======
-  display: flex;
-  align-items: center;
-  justify-content: left;
->>>>>>> 2053cb298b07c835b71c215a13f6ae68baa1e751
->>>>>>> dev
-=======
-  display: flex;
-  align-items: center;
-  justify-content: left;
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
 }
 
 .spacedinfo {
@@ -949,32 +831,16 @@ p.nextacc, p.nowacc {
   color: #C9ADA7;
 }
 
-.account_nav a:focus {
-  color: #AD6E4A;
-<<<<<<< HEAD
-  border-bottom: 3px solid #AD6E4A;
-}
-
 .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover, .nav-tabs .nav-link.active {
   color: #AD6E4A;
   background: none;
   border: none;
   border-bottom: 3px solid #AD6E4A;
-=======
-  border-color: 2px solid #AD6E4A;
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
 }
 
 .account_line {
   margin: 0px 250px 0px 250px;
   background-color: #AD6E4A;
-}
-
-.account_nav {
-  color: #AD6E4A;
-  background: none;
-  border: none;
-  border-bottom: 1px solid #AD6E4A;
 }
 
 /* 會員資料 */
@@ -1043,7 +909,7 @@ input.form-control-plaintext:focus {
           box-shadow: none;
 }
 
-.info_editbtn, .heartbtn {
+.info_editbtn {
   font-family: "Microsoft JhengHei";
   font-size: 12px;
   color: #ffff;
@@ -1060,31 +926,42 @@ input.form-control-plaintext:focus {
   background: #AD6E4A;
 }
 
-<<<<<<< HEAD
-.btn-check:focus + .btn, .btn:focus {
-  outline: 0;
+.info_editbtn:focus + .btn-primary, .heartbtns:focus, .btn-primary:focus {
+  color: #fff;
+  background-color: #AD6E4A;
+  border-color: #AD6E4A;
   -webkit-box-shadow: none;
           box-shadow: none;
-  color: #ffffff;
-  background: #AD6E4A;
 }
 
 .container_heart {
   padding: 30px 800px 0px 270px;
 }
 
-.heartbtn {
+.heartbtns {
   max-width: 100%;
   margin-left: 10px;
+  font-family: "Microsoft JhengHei";
+  font-size: 12px;
+  color: #ffff;
+  border: 1px solid #AD6E4A;
+  background: none;
+  border-radius: 0px;
+}
+
+.btn-check:focus + .btn, .btn:focus {
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.nav-link {
+  -webkit-transition: none;
+  transition: none;
 }
 
 /* footer */
 footer {
-  padding-top: 80px;
-=======
-/* footer */
-footer {
   padding-top: 100px;
->>>>>>> 74c3c02faf2b65b257ec0412bbac11ce136e1eed
 }
 /*# sourceMappingURL=account.css.map */
