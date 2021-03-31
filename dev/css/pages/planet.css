@@ -662,10 +662,6 @@ input[type=number] {
 .container-fluid {
   padding: 0;
   margin: 0 auto;
-<<<<<<< HEAD
-  text-align: center;
-=======
->>>>>>> e55564da15e7db9f7dbd1fdb4a283f1c57fce384
 }
 
 @media all and (max-width: 768px) {
@@ -674,14 +670,11 @@ input[type=number] {
   }
 }
 
-<<<<<<< HEAD
-=======
 button {
   background-color: transparent;
   color: white;
 }
 
->>>>>>> e55564da15e7db9f7dbd1fdb4a283f1c57fce384
 button:hover {
   color: #ffff;
   border: 1px solid #AD6E4A;
@@ -696,7 +689,7 @@ button:hover {
   background-size: cover;
   background-position: center;
   width: 100%;
-  padding-top: 20%;
+  padding-top: 15%;
   position: relative;
   color: #ffffff;
 }

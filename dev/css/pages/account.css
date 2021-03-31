@@ -926,21 +926,12 @@ input.form-control-plaintext:focus {
   background: #AD6E4A;
 }
 
-<<<<<<< HEAD
-.btn-check:focus + .btn, .btn:focus {
-  outline: 0;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  color: #ffffff;
-  background: #AD6E4A;
-=======
 .info_editbtn:focus + .btn-primary, .heartbtns:focus, .btn-primary:focus {
   color: #fff;
   background-color: #AD6E4A;
   border-color: #AD6E4A;
   -webkit-box-shadow: none;
           box-shadow: none;
->>>>>>> e55564da15e7db9f7dbd1fdb4a283f1c57fce384
 }
 
 .container_heart {
