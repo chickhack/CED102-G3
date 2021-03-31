@@ -56,8 +56,7 @@ img {
 *,
 *:before,
 *:after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
   margin: 0;
   padding: 0;
 }
@@ -78,11 +77,16 @@ body {
   font-size: 14px;
   background-color: #0c0d18;
   overflow-x: hidden;
+<<<<<<< HEAD
   -webkit-user-select: none;
   -moz-user-select: none;
   -o-user-select: none;
   -ms-user-select: none;
       user-select: none;
+=======
+  -o-user-select: none;
+  user-select: none;
+>>>>>>> chickhack
 }
 
 h1, .h1 {
@@ -350,15 +354,18 @@ body {
 }
 
 nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+=======
+  justify-content: center;
+  align-items: center;
+>>>>>>> chickhack
   justify-content: center;
   background-color: #0c0d18;
   position: fixed;
@@ -382,9 +389,8 @@ nav .logo h1 a {
 }
 
 nav .nav-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -394,6 +400,11 @@ nav .nav-links {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+=======
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-end;
+>>>>>>> chickhack
   width: 75%;
 }
 
@@ -404,17 +415,10 @@ nav .nav-links a {
 }
 
 nav .nav-icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
   width: 12%;
   margin-left: 50px;
 }
@@ -430,14 +434,12 @@ nav .burger div {
   height: 2px;
   background-color: #ffffff;
   margin: 5px;
-  -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
 
 @media (max-width: 992px) {
   nav {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
   }
   nav .nav-links {
     position: absolute;
@@ -445,9 +447,8 @@ nav .burger div {
     height: 92vh;
     top: 12vh;
     background-color: #AD6E4A;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
+<<<<<<< HEAD
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -457,8 +458,12 @@ nav .burger div {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+=======
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+>>>>>>> chickhack
     width: 30%;
-    -webkit-transition: all 1s ease-in;
     transition: all 1s ease-in;
   }
   nav .nav-links li {
@@ -473,9 +478,7 @@ nav .burger div {
   }
   nav .nav-icons {
     width: 100%;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    justify-content: flex-end;
   }
   nav .nav-icons .icon {
     margin: 0 30px 0 15px;
@@ -498,44 +501,32 @@ nav .burger div {
   nav .nav-icons {
     width: 50%;
     margin-left: 16px;
+<<<<<<< HEAD
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+=======
+    justify-content: space-between;
+>>>>>>> chickhack
   }
   nav .nav-icons .icon {
     margin: 0;
   }
 }
 
-@-webkit-keyframes navLinkFade {
-  from {
-    opacity: 0;
-    -webkit-transform: translateX(50px);
-            transform: translateX(50px);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-  }
-}
-
 @keyframes navLinkFade {
   from {
     opacity: 0;
-    -webkit-transform: translateX(50px);
-            transform: translateX(50px);
+    transform: translateX(50px);
   }
   to {
     opacity: 1;
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
+    transform: translateX(0px);
   }
 }
 
 .toggle .line1 {
-  -webkit-transform: rotate(45deg) translate(4px, 6px);
-          transform: rotate(45deg) translate(4px, 6px);
+  transform: rotate(45deg) translate(4px, 6px);
 }
 
 .toggle .line2 {
@@ -543,8 +534,7 @@ nav .burger div {
 }
 
 .toggle .line3 {
-  -webkit-transform: rotate(-45deg) translate(3px, -6px);
-          transform: rotate(-45deg) translate(3px, -6px);
+  transform: rotate(-45deg) translate(3px, -6px);
 }
 
 footer {
@@ -564,28 +554,19 @@ footer .links .logo {
   position: relative;
   left: 50%;
   bottom: 50px;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 footer .links .footer-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
   width: 55%;
   position: relative;
   left: 50%;
   bottom: 30px;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 footer .links .footer-links a {
@@ -596,8 +577,12 @@ footer .footer_moon {
   position: relative;
   left: 50%;
   max-width: 40%;
+<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+=======
+  transform: translateX(-50%);
+>>>>>>> chickhack
 }
 
 footer .smoke {
@@ -606,8 +591,12 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
+<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+=======
+  transform: translateX(-50%);
+>>>>>>> chickhack
 }
 
 @media (max-width: 768px) {
@@ -663,7 +652,10 @@ input[type=number] {
   padding: 0;
   margin: 0 auto;
   text-align: center;
+<<<<<<< HEAD
   color: #ffffff;
+=======
+>>>>>>> chickhack
 }
 
 @media all and (max-width: 768px) {
@@ -672,6 +664,15 @@ input[type=number] {
   }
 }
 
+<<<<<<< HEAD
+=======
+button:hover {
+  color: #ffff;
+  border: 1px solid #AD6E4A;
+  background: #AD6E4A;
+}
+
+>>>>>>> chickhack
 .planet_banner {
   max-width: 1100px;
   margin: 0 auto;
@@ -682,6 +683,10 @@ input[type=number] {
   width: 100%;
   padding-top: 20%;
   position: relative;
+<<<<<<< HEAD
+=======
+  color: #ffffff;
+>>>>>>> chickhack
 }
 
 @media all and (max-width: 768px) {
@@ -694,8 +699,12 @@ input[type=number] {
   position: absolute;
   left: 50%;
   top: 50%;
+<<<<<<< HEAD
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+=======
+  transform: translate(-50%, -50%);
+>>>>>>> chickhack
   top: 35%;
   letter-spacing: 2px;
 }
@@ -710,14 +719,17 @@ input[type=number] {
 }
 
 div.tabList {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-column-gap: 1%;
           column-gap: 1%;
+=======
+  justify-content: center;
+  column-gap: 1%;
+>>>>>>> chickhack
 }
 
 div.tabList button {
@@ -739,27 +751,34 @@ div.tabList button.active {
 }
 
 .tab-inner {
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
+=======
+>>>>>>> chickhack
   display: flex;
 }
 
 .tab-inner .taball {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+=======
+  flex-direction: column;
+>>>>>>> chickhack
   text-align: left;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .tab-inner .taball .tab_left {
   max-width: 400px;
+}
+
+.tab-inner .taball .tab_left h3 {
+  line-height: 2rem;
 }
 
 .tab-inner .taball p {
@@ -770,63 +789,39 @@ div.tabList button.active {
 
 .tab-inner .taball .data {
   border: 1px solid #AD6E4A;
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
+=======
+>>>>>>> chickhack
   display: flex;
   font-family: Haettenschweiler, sans-serif;
 }
 
 .tab-inner .taball .data .grav {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  justify-content: center;
+  align-items: center;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   min-width: 130px;
   min-height: 130px;
   border-right: 1px solid #AD6E4A;
 }
 
 .tab-inner .taball .data .day {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  justify-content: center;
+  align-items: center;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   min-width: 130px;
   border-right: 1px solid #AD6E4A;
 }
 
 .tab-inner .taball .data .temp {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  justify-content: center;
+  align-items: center;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   min-width: 130px;
 }
 
@@ -854,16 +849,14 @@ div.tabList button.active {
   font-size: 16px;
 }
 
-.tab-inner button {
-  display: none;
-}
-
 .planet_content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+=======
+  flex-wrap: wrap;
+>>>>>>> chickhack
 }
 
 .planet_content .carousel {
@@ -875,6 +868,7 @@ div.tabList button.active {
 }
 
 .planet_content .imgs .img1 {
+<<<<<<< HEAD
   -webkit-transform: translate(20%);
           transform: translate(20%);
 }
@@ -887,15 +881,28 @@ div.tabList button.active {
 .planet_content .imgs .img3 {
   -webkit-transform: translate(-30%, -350px);
           transform: translate(-30%, -350px);
+=======
+  transform: translate(20%);
+}
+
+.planet_content .imgs .img2 {
+  transform: translateX(10%);
+}
+
+.planet_content .imgs .img3 {
+  transform: translate(-30%, -350px);
+>>>>>>> chickhack
 }
 
 .planet_content .desc {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+=======
+  align-items: center;
+>>>>>>> chickhack
 }
 
 .planet_content .desc p {
@@ -906,39 +913,21 @@ div.tabList button.active {
 
 @media only screen and (max-width: 1200px) {
   .tab-inner {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
   .tab-inner .tab-active {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   .tab-inner .tab-active img {
     width: 70vw;
   }
   .planet_content {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
   .planet_content .imgs {
     display: none;

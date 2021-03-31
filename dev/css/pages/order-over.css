@@ -1,0 +1,14 @@
+.container-fluid {
+  padding: 15vh 0 0 0;
+}
+
+.container-fluid .row {
+  display: flex;
+  justify-content: center;
+}
+
+.container-fluid .row .col-7 {
+  background-color: #292B41;
+  border: 1px solid #AD6E4A;
+}
+/*# sourceMappingURL=order-over.css.map */
