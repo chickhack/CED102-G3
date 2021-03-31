@@ -148,12 +148,10 @@ p.nextacc, p.nowacc {
 .account_nav a {
   color: #C9ADA7;
 }
-.account_nav a:focus {
-  color: #AD6E4A;
-  // background: none;
-  // border: none;
-  border-bottom: 3px solid #AD6E4A;
-}
+// .account_nav a:focus {
+//   color: #AD6E4A;
+//   border-bottom: 3px solid #AD6E4A;
+// }
 .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover, .nav-tabs .nav-link.active{
   color: #AD6E4A;
   background: none;
@@ -243,11 +241,17 @@ input.form-control-plaintext:focus{
   border: 1px solid #AD6E4A;
   border-color: #AD6E4a;
 }
-.btn-check:focus + .btn, .btn:focus {
+.info_editbtn:focus + .btn, .btn:focus {
   outline: 0;
   box-shadow: none;
   color: #ffffff;
   background: #AD6E4A;
+}
+.info_editbtn:focus+.btn-primary, .btn-primary:focus {
+  color: #fff;
+  background-color: #AD6E4A;
+  border-color: #AD6E4A;
+  box-shadow: none;
 }
 
 // 收藏按鈕
@@ -261,10 +265,15 @@ input.form-control-plaintext:focus{
 
 
 
+
+
+
 /* footer */
 footer {
   padding-top: 80px;
 }
+
+
 
 
 
