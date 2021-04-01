@@ -11,33 +11,33 @@
     <link rel="stylesheet" href="./css/pages/Leaderboard.css">
 </head>
 <body>
-   <div class="container-fluid" >
-      <header>
-         @@include('./layout/header.html')
-     </header>
-    <!-- <div class="container"> -->
+   <header>
+      @@include('./layout/header.html')
+   </header>
+   <div class="container-fluid">
+    
       <div class="banner">
-         <!-- <img src="./img/home/others/station_moon.jpg" alt=""> -->
+       
             <h2 class="title">榮耀至上，一起衝進玩家排行榜!</h2>
       </div>
     <div class="row justify-content-center " id="top-4">
        
         <div class="col-10 le-color line-he-85 margin_top_5" >
-        <!-- <div :class="['col-10', 'le-color' ,'line-he-85'] " > -->
-         <div class="row">
+        
+            <div class="row">
 
-            <div class="col-4 col-xxl-2 col-md-2 ">排行</div>
-            <div class="col-4 col-xxl-2 col-md-2">旅行者</div>
-            <div class="col-4 col-xxl-2 col-md-2 del">等級</div>
-            <div class="col-4 col-xxl-2 col-md-2">累積積分</div>
-            <div class="col-4 col-xxl-2 col-md-2 del">累積景點</div>
-            <div class="col-4 col-xxl-2 col-md-2 del">累積星球</div>
-         </div>
+               <div class="col-4 col-xxl-2 col-md-2 ">排行</div>
+               <div class="col-4 col-xxl-2 col-md-2 ">旅行者</div>
+               <div class="col-4 col-xxl-2 col-md-2 del">等級</div>
+               <div class="col-4 col-xxl-2 col-md-2">累積積分</div>
+               <div class="col-4 col-xxl-2 col-md-2 del">累積景點</div>
+               <div class="col-4 col-xxl-2 col-md-2 del">累積星球</div>
+            </div>
         </div>
-        <div class="col-10 text-color line-he-75" id="top-0">
-           <div class="row">
+        <div class="col-10 text-color line-he-75 hovers" id="top-0">
+           <div class="row ">
 
-              <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-75">{{me.Lead}}</div>
+              <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-75 ">{{me.Lead}}</div>
               <div class="col-4 col-xxl-2 col-md-2 text-01 line-he-75"><img :src="me.mesrc" alt="" class="icon-2">{{me.name}}</div>
               <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-75 del"><img :src="me.src" alt="" class="leve"></div>
               <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-75">{{me.integral}}</div>
@@ -45,7 +45,7 @@
               <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-75 del">{{me.sp}}</div>
            </div>
         </div>
-        <div class="col-10 text-color-1 line-he-65 " id="top-1" >
+        <div class="col-10 text-color-1 line-he-65 hovers" id="top-1" >
                <div class="row justify-content-center"> 
                   <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-65"><img :src="to.topSrc" alt="" class="leve-1"></div>
                   <div class="col-4 col-xxl-2 col-md-2 text-01 line-he-65"><img :src="to.meSrc" alt="" class="icon-3">{{to.name}}</div>
@@ -59,7 +59,7 @@
                      <!-- <div class="bra-line ba-color"></div>      -->
          </div>
 
-        <div class="col-10 text-color-1 line-he-65" id="top-2" >
+        <div class="col-10 text-color-1 line-he-65 hovers" id="top-2" >
            <div class="row">
 
               <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-65"><img :src="to.topSrc" alt="" class="leve-1"></div>
@@ -71,7 +71,7 @@
            </div>
 
          </div>
-         <div class="col-10 text-color-1  line-he-65" id="top-3" >
+         <div class="col-10 text-color-1  line-he-65 hovers" id="top-3" >
             <div class="row">
 
                <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-65"><img :src="to.topSrc" alt="" class="leve-1"></div>
@@ -82,7 +82,7 @@
                <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-65 del">{{to.itin}}</div>
             </div>
          </div>
-         <div class="col-10 text-color-1 line-he-65" v-for="to1 in to">
+         <div class="col-10 text-color-1 line-he-65 hovers" v-for="to1 in to">
             <div class="row">
 
                <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-65">{{to1.leve}}</div>

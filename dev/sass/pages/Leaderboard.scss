@@ -1,5 +1,10 @@
 @import "../all.scss";
 
+.hovers:hover{
+    transform: translate(-15px,-10px);
+    border: 1px solid #292b41;
+    // background-color: #ad6e4a;
+}
 .container{
         margin: 0 auto;
         max-width: 1200px;
@@ -127,18 +132,17 @@
     padding-top: 15vh;
     padding-left: 0px;
     padding-right: 0px;
+    max-width: 1200px;
     .row{
         .col-10{
-            // display: flex;
+            transition: all 0.5s;
             .row{
                 width: 100%;
-                .col-10{
-                    display: flex;
-                }
                 .col-4{
                     text-align: center;
                     padding-left: 0px;
                     padding-right: 0px;
+                   
                 }
             }
         }

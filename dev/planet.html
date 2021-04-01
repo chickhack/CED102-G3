@@ -25,11 +25,23 @@
     <link rel="stylesheet" href="./css/pages/planet.css"></link>
     <script src="./node_modules/three/build/three.module.js"></script>
     <script src="./node_modules/three/examples/jsm/controls/OrbitControls.js"></script>
+    <!-- 動態背景 -->
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->
+    <!-- <script src="http://threejs.org/examples/js/libs/stats.min.js"></script> -->
 
-    <style></style>
   </head>
   <body>
+
+
     <div class="container-fluid">
+      <!-- 動態背景 -->
+      <!-- particles.js container -->
+      <div id="particles-js"></div>
+
+      <!-- stats - count particles -->
+      <!-- <div class="count-particles">
+        <span class="js-count-particles">--</span> particles
+      </div> -->
     <header>@@include('./layout/header.html')</header>
     <div class="container col-" >
       <div class="planet_banner">
@@ -114,7 +126,7 @@
 
         </div>
         <div class="planetbtn margin_top_5" align="center">
-          <button class="button_min" >更多關於火星</button>
+          <!-- <button class="button_min" >更多關於火星</button> -->
         </div>
       </div>
     </div>
@@ -202,5 +214,7 @@
         }
       });
     </script>
+    <!-- 動態背景 -->
+    <script src="./js/background.js"></script>
   </body>
 </html>

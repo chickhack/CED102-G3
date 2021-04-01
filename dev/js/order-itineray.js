@@ -1,8 +1,10 @@
-// js抓到CSS屬性
-var sub1= document.getElementById('orderinfo-automenu');
-var sub =window.getComputedStyle(sub1).display;
-alert(sub);
-
+// 用js抓到CSS屬性
+// var sub1= document.getElementById('orderinfo-automenu');
+// var sub =window.getComputedStyle(sub1).display;
+// alert(sub);
+// 用JQ抓到CSS屬性
+// var subjq = $('#orderinfo-automenu').css("display");
+// alert(subjq);
 //控制表單縮放
 // var sub = $('#orderinfo-automenu').css("display");
 $('#btn-opmenu').click(function(){
@@ -10,7 +12,10 @@ $('#btn-opmenu').click(function(){
     $('#orderinfo-automenu').slideToggle();
     //自動判斷添加class替換before內容
     $('#btn-opmenu').toggleClass("svgRight");
-    
+    // if(subjq == 'block'){
+    //     alert("dddddd");
+    //     $('#submit-btn').attr("disabled",true);
+    // }
 });
 $('#addPay-btn').click(function(){
     $('.automena').slideToggle();

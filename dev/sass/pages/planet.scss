@@ -7,6 +7,53 @@
         margin: 0;
     }
 }
+//=========動態背景
+/* ---- reset ---- */
+body {
+    margin: 0;
+    font: normal 75% Arial, Helvetica, sans-serif;
+  }
+  canvas {
+    display: block;
+  } /* ---- particles.js container ---- */
+  #particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: $darkblue;
+  } /* ---- stats.js ---- */
+//   .count-particles {
+//     background: #000022;
+//     position: absolute;
+//     top: 48px;
+//     left: 0;
+//     width: 80px;
+//     color: #13e8e9;
+//     font-size: 0.8em;
+//     text-align: left;
+//     text-indent: 4px;
+//     line-height: 14px;
+//     padding-bottom: 2px;
+//     font-family: Helvetica, Arial, sans-serif;
+//     font-weight: bold;
+//   }
+//   .js-count-particles {
+//     font-size: 1.1em;
+//   }
+//   #stats,
+//   .count-particles {
+//     -webkit-user-select: none;
+//     margin-top: 5px;
+//     margin-left: 5px;
+//   }
+//   #stats {
+//     border-radius: 3px 3px 0 0;
+//     overflow: hidden;
+//   }
+//   .count-particles {
+//     border-radius: 0 0 3px 3px;
+//   }
+  
 //=========按鈕設定
 button{
     background-color: transparent;
@@ -26,7 +73,7 @@ button:hover{
     background-size: cover;
     background-position: center;
     width: 100%;    
-    padding-top: 20%;
+    padding-top: 15%;
     position: relative;
     color: $white;
     @include respond(mobile){
@@ -162,6 +209,7 @@ div.tabList{
     .desc{
         display:flex;
         align-items: center;
+        justify-content: center;
         p{
             line-height: 2rem;
             text-align: justify;

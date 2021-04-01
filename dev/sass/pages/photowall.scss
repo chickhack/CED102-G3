@@ -9,16 +9,44 @@
 *{
   box-sizing: border-box;
 }
-.top_photo{
+
+.photowall_banner{
   max-width: 1100px;
-  text-align: center;
-  margin: auto;
+  margin: 0 auto;
+  background-image: url("../../img/home/others/mars_astranaut.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;    
+  padding-top: 15%;
+  position: relative;
+  color: $white;
+  @include respond(mobile){
+      padding-top: 50%;
+  }
+  h2{
+      @include absolute_middle();
+      top: 35%;
+      letter-spacing:2px;
+      @include respond(mobile){
+          font-size: .8rem;
+          width: 80%;
+          top: 50%;
+          margin: 0;
+      }
+  }
 }
-.top_photo img{
-  height: 240px;
-  width: 100%;
-  object-fit: cover;
-}
+
+// .top_photo{
+//   max-width: 1100px;
+//   text-align: center;
+//   margin: auto;
+// }
+// .top_photo img{
+//   height: 240px;
+//   width: 100%;
+//   object-fit: cover;
+// }
 .grid{
   display: flex;
   flex-wrap: wrap;
