@@ -18,6 +18,10 @@
   width: 20%;
 }
 
+.margin-bottom-1 {
+  margin-bottom: 20px;
+}
+
 .top {
   display: flex;
   justify-content: flex-start;
@@ -125,6 +129,8 @@
 
 .div-menu .div-right .div-right-span-for {
   display: flex;
+  background-color: #292b419d;
+  padding: 16px 0px;
 }
 
 .div-menu .div-right .div-right-span {

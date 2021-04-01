@@ -14,6 +14,9 @@
 .wi-20{
     width: 20%;
 }
+.margin-bottom-1{
+    margin-bottom: 20px;
+}
 //最頂層樣式
 .top{
     display:flex;
@@ -120,6 +123,8 @@
         width: 100%;
         .div-right-span-for{
             display: flex;
+            background-color: #292b419d;
+            padding: 16px 0px;
         }
         .div-right-span{
             display: flex;

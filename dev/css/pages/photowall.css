@@ -617,7 +617,6 @@ input[type=number] {
   color: #ffffff;
 }
 
-<<<<<<< HEAD
 @media all and (max-width: 768px) {
   .photowall_banner {
     padding-top: 50%;
@@ -628,8 +627,7 @@ input[type=number] {
   position: absolute;
   left: 50%;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   top: 35%;
   letter-spacing: 2px;
 }
@@ -641,12 +639,6 @@ input[type=number] {
     top: 50%;
     margin: 0;
   }
-=======
-.top_photo img {
-  height: 240px;
-  width: 100%;
-  object-fit: cover;
->>>>>>> chickhack
 }
 
 .grid {
