@@ -119,8 +119,8 @@
             <div class="col-md-auto align-self-center info_left">
               <div class="form-group">
                 <label for="exampleInputEmail1">暱稱</label>
-                <div class="edit_text"><input type="text" readonly class="form-control-plaintext" id="" value="大大大大">
-                </div>
+                <div class="edit_text"><input type="text" readonly class="form-control-plaintext" id=""
+                    value="大大大大"></div>
                 <!-- <input type="text" class="form-control" id="exampleInputEmail1" placeholder="大大大大"> -->
                 <small id="emailHelp" class="form-text text-muted"></small>
               </div>
@@ -178,20 +178,38 @@
         <div v-else-if="link ==='e'">
 
           <div id="accountapp" class="row justify-content-start container_heart heartnav">
-            <button class="col btn heartbtns" @click="dynamicComponent={template: `<p style='color: purple'>Good</p>`}">行程</button>
-            <button class="col btn heartbtns" @click="dynamicComponent='bye'">商品</button>
-            <button class="col btn heartbtns" @click="dynamicComponent={template: `<p style='color: purple'>Good</p>`}">貼文</button>
-            <component :is="dynamicComponent"></component>
+            <button class="col btn heartbtns" @click="dynamicComponent={template: `<p style='color: purple'>Good</p>`}">
+              行程
+            </button>
+            <button class="col btn heartbtns" @click="dynamicComponent='bye'">
+              商品
+            </button>
+            <button class="col btn heartbtns" @click="dynamicComponent={template: `<p style='color: purple'>Good</p>`}">
+              貼文
+            </button>
+
+            <component :is="dynamicComponent">
+
+              <div v-for="item in second" class="tripcard">
+                <img :src="item.spot" class="spot_pic" alt="spot_pic">
+                <div class="content line_low">
+                  <h4 class="hot2 margin_top_1">{{item.title}}</h4>
+                  <small class="tag ">{{item.grade}}</small>
+                  <small class="tag">{{item.scores}}積分</small>
+                  <h4 class="price2 margin_top_1">${{item.price}}</h4>
+                  <div class="addin2 samll  margin_top_2"><img class="plus" src="./img/icon/plus.png" alt="">加入我的行程
+                  </div>
+                </div>
+              </div>
+
+            </component>
+
           </div>
 
         </div>
 
         <div v-else-if="link ==='f'">
-          <div><p>累積可用的里程數</p></div>
-          <div><p>目前會員等級</p></div>
-
-
-
+          Ｆ
         </div>
 
       </div>
@@ -210,86 +228,62 @@
   <script>
     // 會員menu切分頁
     Vue.component('hello', {
-      template: '<p style="color: blue">Hello</p>',
-                // `<div v-for="item in second" class="tripcard">
-                //     <img :src="item.spot" class="spot_pic" alt="spot_pic">
-                //     <div class="content line_low">
-                //       <h4 class="hot2 margin_top_1">{{item.title}}</h4>
-                //       <small class="tag ">{{item.grade}}</small>
-                //       <small class="tag">{{item.scores}}積分</small>
-                //       <h4 class="price2 margin_top_1">{{item.price}}</h4>
-                //       <div class="addin2 samll  margin_top_2"><img class="plus" src="./img/icon/plus.png" alt="">加入我的行程
-                //       </div>
-                //     </div>
-                //  </div>`,
-      data() {
-        return {
-          second: [{
-            spot: "./img/trip/trip_jupiter/jupiter_a1_ps2.jpg",
-            title: "月球 | 太空體驗一日遊",
-            grade: "初階",
-            scores: "5000",
-            price: 1000,
-          }, {
-            spot: "./img/trip/trip_jupiter/jupiter_b1_ps2.jpg",
-            title: "月球 | 熱氣球一日遊",
-            grade: "初階",
-            scores: "5000",
-            price: 2000,
-          }, {
-            spot: "./img/trip/trip_jupiter/jupiter_c4_ps2.jpg",
-            title: "月球 | 熱氣球一日遊",
-            grade: "初階",
-            scores: "5000",
-            price: 3000,
-          }, {
-            spot: "./img/trip/trip_jupiter/jupiter_a1_ps2.jpg",
-            title: "月球 | 太空體驗一日遊",
-            grade: "初階",
-            scores: "5000",
-            price: 1000,
-          }],
-        }
-      }
+      template: '<p style="color: blue">Hello</p>'
+            //  `<div v-for="item in second" class="tripcard">
+            //     <img :src="item.spot" class="spot_pic" alt="spot_pic">
+            //     <div class="content line_low">
+            //       <h4 class="hot2 margin_top_1">{{item.title}}</h4>
+            //       <small class="tag ">{{item.grade}}</small>
+            //       <small class="tag">{{item.scores}}積分</small>
+            //       <h4 class="price2 margin_top_1">{{item.price}}</h4>
+            //       <div class="addin2 samll  margin_top_2"><img class="plus" src="./img/icon/plus.png" alt="">加入我的行程
+            //       </div>
+            //     </div>
+            //   </div>`
     });
-
     Vue.component('bye', {
       template: '<p style="color: red">Bye</p>'
 
     });
 
+    
     var account_tab = new Vue({
       el: "#accountapp",
       data: {
         link: "a",
         dynamicComponent: 'hello',
-        // second: [{
-        //   spot: "./img/trip/trip_jupiter/jupiter_a1_ps2.jpg",
-        //   title: "月球 | 太空體驗一日遊",
-        //   grade: "初階",
-        //   scores: "5000",
-        //   price: 1000,
-        // }, {
-        //   spot: "./img/trip/trip_jupiter/jupiter_b1_ps2.jpg",
-        //   title: "月球 | 熱氣球一日遊",
-        //   grade: "初階",
-        //   scores: "5000",
-        //   price: 2000,
-        // }, {
-        //   spot: "./img/trip/trip_jupiter/jupiter_c4_ps2.jpg",
-        //   title: "月球 | 熱氣球一日遊",
-        //   grade: "初階",
-        //   scores: "5000",
-        //   price: 3000,
-        // }, {
-        //   spot: "./img/trip/trip_jupiter/jupiter_a1_ps2.jpg",
-        //   title: "月球 | 太空體驗一日遊",
-        //   grade: "初階",
-        //   scores: "5000",
-        //   price: 1000,
-        // }],
+
+        second: [{
+          spot: "./img/trip/trip_jupiter/jupiter_a1_ps2.jpg",
+          title: "月球 | 太空體驗一日遊",
+          grade: "初階",
+          scores: "5000",
+          price: 1000,
+        }, {
+          spot: "./img/trip/trip_jupiter/jupiter_b1_ps2.jpg",
+          title: "月球 | 熱氣球一日遊",
+          grade: "初階",
+          scores: "5000",
+          price: 2000,
+        }, {
+          spot: "./img/trip/trip_jupiter/jupiter_c4_ps2.jpg",
+          title: "月球 | 熱氣球一日遊",
+          grade: "初階",
+          scores: "5000",
+          price: 3000,
+        }, {
+          spot: "./img/trip/trip_jupiter/jupiter_a1_ps2.jpg",
+          title: "月球 | 太空體驗一日遊",
+          grade: "初階",
+          scores: "5000",
+          price: 1000,
+        }],
+
       },
     });
+
+
+
 
     //  點擊menu變色
     window.onload = function () {
