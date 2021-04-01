@@ -119,8 +119,8 @@
             <div class="col-md-auto align-self-center info_left">
               <div class="form-group">
                 <label for="exampleInputEmail1">暱稱</label>
-                <div class="edit_text"><input type="text" readonly class="form-control-plaintext" id=""
-                    value="大大大大"></div>
+                <div class="edit_text"><input type="text" readonly class="form-control-plaintext" id="" value="大大大大">
+                </div>
                 <!-- <input type="text" class="form-control" id="exampleInputEmail1" placeholder="大大大大"> -->
                 <small id="emailHelp" class="form-text text-muted"></small>
               </div>
@@ -228,18 +228,47 @@
   <script>
     // 會員menu切分頁
     Vue.component('hello', {
-      template: '<p style="color: blue">Hello</p>'
-            //  `<div v-for="item in second" class="tripcard">
-            //     <img :src="item.spot" class="spot_pic" alt="spot_pic">
-            //     <div class="content line_low">
-            //       <h4 class="hot2 margin_top_1">{{item.title}}</h4>
-            //       <small class="tag ">{{item.grade}}</small>
-            //       <small class="tag">{{item.scores}}積分</small>
-            //       <h4 class="price2 margin_top_1">{{item.price}}</h4>
-            //       <div class="addin2 samll  margin_top_2"><img class="plus" src="./img/icon/plus.png" alt="">加入我的行程
-            //       </div>
-            //     </div>
-            //   </div>`
+      template: '<p style="color: blue">Hello</p>',
+      //  `<div v-for="item in second" class="tripcard">
+      //     <img :src="item.spot" class="spot_pic" alt="spot_pic">
+      //     <div class="content line_low">
+      //       <h4 class="hot2 margin_top_1">{{item.title}}</h4>
+      //       <small class="tag ">{{item.grade}}</small>
+      //       <small class="tag">{{item.scores}}積分</small>
+      //       <h4 class="price2 margin_top_1">{{item.price}}</h4>
+      //       <div class="addin2 samll  margin_top_2"><img class="plus" src="./img/icon/plus.png" alt="">加入我的行程
+      //       </div>
+      //     </div>
+      //   </div>`,
+      data() {
+        return {
+          second: [{
+            spot: "./img/trip/trip_jupiter/jupiter_a1_ps2.jpg",
+            title: "月球 | 太空體驗一日遊",
+            grade: "初階",
+            scores: "5000",
+            price: 1000,
+          }, {
+            spot: "./img/trip/trip_jupiter/jupiter_b1_ps2.jpg",
+            title: "月球 | 熱氣球一日遊",
+            grade: "初階",
+            scores: "5000",
+            price: 2000,
+          }, {
+            spot: "./img/trip/trip_jupiter/jupiter_c4_ps2.jpg",
+            title: "月球 | 熱氣球一日遊",
+            grade: "初階",
+            scores: "5000",
+            price: 3000,
+          }, {
+            spot: "./img/trip/trip_jupiter/jupiter_a1_ps2.jpg",
+            title: "月球 | 太空體驗一日遊",
+            grade: "初階",
+            scores: "5000",
+            price: 1000,
+          }],
+        }
+      }
     });
     Vue.component('bye', {
       template: '<p style="color: red">Bye</p>'
@@ -251,7 +280,6 @@
       data: {
         link: "a",
         dynamicComponent: 'hello',
-
         second: [{
           spot: "./img/trip/trip_jupiter/jupiter_a1_ps2.jpg",
           title: "月球 | 太空體驗一日遊",
