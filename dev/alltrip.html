@@ -24,6 +24,8 @@
 
     <!-- alltrip css -->
     <link rel="stylesheet" href="./css/pages/alltrip.css">
+
+    <link rel="stylesheet" href="./vendors/aos/css/aos.css">
 </head>
 
 <body>
@@ -43,7 +45,7 @@
             </div>
             <div class="first_right swiper-container padding_top_4">
                 <div class="hottrip wiper-wrapper">
-                    <div v-for="item in top" class="planet_top swiper-slide">
+                    <div v-for="item in top" class="planet_top swiper-slide" >
                         <a href="trip.html">
                             <img :src="item.planet" class="planet" alt="planet">
                             <img :src="item.spot" class="planet_a1" alt="planettrip">
