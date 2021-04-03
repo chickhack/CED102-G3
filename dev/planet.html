@@ -34,21 +34,16 @@
 
 
     <div class="container-fluid">
-      <!-- 動態背景 -->
-      <!-- particles.js container -->
+      <header>
+        @@include('./layout/header.html')
+    </header>
+    <!-- 動態背景 -->
       <div id="particles-js"></div>
-
-      <!-- stats - count particles -->
-      <!-- <div class="count-particles">
-        <span class="js-count-particles">--</span> particles
-      </div> -->
-    <header>@@include('./layout/header.html')</header>
-    <div class="container col-" >
       <div class="planet_banner">
         <h2 class="margin_top_5">星星世界帶你探索宇宙</h4>
       </div>
-      <!-- jQuery -->
-      <div id="planet">
+      <!-- 星球頁籤 -->
+      <div id="planet" class="container planet_tab">
         <div class="tabList margin_top_3 col-LG-12 ">
           <button class="button_min" v-for="planet in planets" v-on:click="state.clickedPlanet = planet">{{planet.name}}</button>
         </div>
@@ -129,8 +124,8 @@
           <!-- <button class="button_min" >更多關於火星</button> -->
         </div>
       </div>
-    </div>
-    <script type="module" src="./js/mars.js"></script>
+      <!-- 3D星球 -->
+      <!-- <script type="module" src="./js/mars.js"></script> -->
     <footer>@@include('./layout/footer.html')</footer>
   </div>
     <!-- 星球頁籤轉移 -->

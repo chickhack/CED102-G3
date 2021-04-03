@@ -2,57 +2,22 @@
 
 .container-fluid{
     padding: 0;
-    margin: 0 auto;
+    margin-top: 15vh;
     @include respond(mobile){
         margin: 0;
     }
 }
 //=========動態背景
-/* ---- reset ---- */
-body {
-    margin: 0;
-    font: normal 75% Arial, Helvetica, sans-serif;
-  }
   canvas {
     display: block;
   } /* ---- particles.js container ---- */
   #particles-js {
-    position: absolute;
+    z-index: -10;
+    position: fixed;
     width: 100%;
     height: 100%;
     background-color: $darkblue;
-  } /* ---- stats.js ---- */
-//   .count-particles {
-//     background: #000022;
-//     position: absolute;
-//     top: 48px;
-//     left: 0;
-//     width: 80px;
-//     color: #13e8e9;
-//     font-size: 0.8em;
-//     text-align: left;
-//     text-indent: 4px;
-//     line-height: 14px;
-//     padding-bottom: 2px;
-//     font-family: Helvetica, Arial, sans-serif;
-//     font-weight: bold;
-//   }
-//   .js-count-particles {
-//     font-size: 1.1em;
-//   }
-//   #stats,
-//   .count-particles {
-//     -webkit-user-select: none;
-//     margin-top: 5px;
-//     margin-left: 5px;
-//   }
-//   #stats {
-//     border-radius: 3px 3px 0 0;
-//     overflow: hidden;
-//   }
-//   .count-particles {
-//     border-radius: 0 0 3px 3px;
-//   }
+  } 
   
 //=========按鈕設定
 button{
@@ -66,16 +31,16 @@ button:hover{
 }
 
 .planet_banner{
+    color: $white;
     max-width: 1100px;
     margin: 0 auto;
     background-image: url("../../img/home/mars2.jpg");
+    background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
     width: 100%;    
     padding-top: 15%;
     position: relative;
-    color: $white;
     @include respond(mobile){
         padding-top: 50%;
     }
@@ -91,99 +56,104 @@ button:hover{
         }
     }
 }
-
-div.tabList{
-    display: flex;
-    justify-content: center;
-    column-gap: 1%;
-    button{
-        border: none;
-        background-color: transparent;
-        color: $gold;
-        font-size: 16px;
-    }
-    button.active{
-        border-bottom: 4px solid $gold;
-    }
-}
-.separator{
-    margin: 0 auto;
-    height: 1px;
-    width: 80%;
-    border-top: solid 1px $gold;
-}
-.tab-inner{
-    // border-top: 1px solid $gold;
-    display: flex;
-    .taball{
+.planet_tab{
+    div.tabList{
         display: flex;
-        flex-direction: column;
-        text-align: left;
-        align-items: center;
-        .tab_left{
-            max-width: 400px;
-            h3{
-                line-height: 2rem;
-            }
+        justify-content: center;
+        column-gap: 1%;
+        button{
+            border: none;
+            background-color: transparent;
+            color: $gold;
+            font-size: 16px;
         }
-        p {
-            line-height: 2rem;
-            margin-top: 20px;
-            max-width: 400px;
-        }
-        .data{
-            border: 1px solid $gold;
-            display: flex;
-            font-family: Haettenschweiler, sans-serif;
-            .grav{
-                justify-content: center;
-                align-items: center;
-                display: flex;
-                flex-direction: column;
-                min-width: 130px;
-                min-height: 130px;
-                border-right: 1px solid $gold;
-            }
-            .day{
-                justify-content: center;
-                align-items: center;
-                display: flex;
-                flex-direction: column;
-                min-width: 130px;
-                border-right: 1px solid $gold;
-    
-            }
-            .temp{
-                justify-content: center;
-                align-items: center;
-                display: flex;
-                flex-direction: column;
-                min-width: 130px;
-            }
-            
-            span.var{
-                font-size: 48px;
-                letter-spacing: 3px;
-            }
-            span.data-top{
-                vertical-align:top;
-                font-size: 24px;
-            }
-            span.data-mid{
-                font-size: 24px;
-            }
-            span.data-low{
-                font-size: 24px;
-                font-stretch: narrower;
-            }
-            p{
-                margin-top: 5px;
-                font-size: 16px;
-            }
-    
+        button.active{
+            border-bottom: 4px solid $gold;
         }
     }
-
+    .separator{
+        margin: 0 auto;
+        height: 1px;
+        width: 70%;
+        border-top: solid 1px $gold;
+        @include respond(mobile){
+            width: 100%;
+        }
+    
+    }
+    .tab-inner{
+        // border-top: 1px solid $gold;
+        display: flex;
+        .taball{
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            align-items: center;
+            .tab_left{
+                max-width: 400px;
+                h3{
+                    line-height: 2rem;
+                }
+            }
+            p {
+                line-height: 2rem;
+                margin-top: 20px;
+                max-width: 400px;
+            }
+            .data{
+                border: 1px solid $gold;
+                display: flex;
+                font-family: Haettenschweiler, sans-serif;
+                .grav{
+                    justify-content: center;
+                    align-items: center;
+                    display: flex;
+                    flex-direction: column;
+                    min-width: 130px;
+                    min-height: 130px;
+                    border-right: 1px solid $gold;
+                }
+                .day{
+                    justify-content: center;
+                    align-items: center;
+                    display: flex;
+                    flex-direction: column;
+                    min-width: 130px;
+                    border-right: 1px solid $gold;
+        
+                }
+                .temp{
+                    justify-content: center;
+                    align-items: center;
+                    display: flex;
+                    flex-direction: column;
+                    min-width: 130px;
+                }
+                
+                span.var{
+                    font-size: 48px;
+                    letter-spacing: 3px;
+                }
+                span.data-top{
+                    vertical-align:top;
+                    font-size: 24px;
+                }
+                span.data-mid{
+                    font-size: 24px;
+                }
+                span.data-low{
+                    font-size: 24px;
+                    font-stretch: narrower;
+                }
+                p{
+                    margin-top: 5px;
+                    font-size: 16px;
+                }
+        
+            }
+        }
+    
+    }
 }
 
 .planet_content{
