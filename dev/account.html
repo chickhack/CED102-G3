@@ -18,10 +18,13 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
     integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
     crossorigin="anonymous"></script>
-  <!-- isotope -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.js"
-    integrity="sha512-E/yP5UiPXb6VelX+dFLuUD+1IZw/Kz7tMncFTYbtoNSCdRZPFoGN3jZ2p27VUxHEkhbPiLuZhZpVEXxk9wAHCQ=="
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
     crossorigin="anonymous"></script>
+  <!-- isotope -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.js"
+    integrity="sha512-E/yP5UiPXb6VelX+dFLuUD+1IZw/Kz7tMncFTYbtoNSCdRZPFoGN3jZ2p27VUxHEkhbPiLuZhZpVEXxk9wAHCQ=="
+    crossorigin="anonymous"></script> -->
 
 
   <link rel="stylesheet" href="./css/all.css">
@@ -119,8 +122,8 @@
             <div class="col-md-auto align-self-center info_left">
               <div class="form-group">
                 <label for="exampleInputEmail1">暱稱</label>
-                <div class="edit_text"><input type="text" readonly class="form-control-plaintext" id=""
-                    value="大大大大"></div>
+                <div class="edit_text"><input type="text" readonly class="form-control-plaintext" id="" value="大大大大">
+                </div>
                 <!-- <input type="text" class="form-control" id="exampleInputEmail1" placeholder="大大大大"> -->
                 <small id="emailHelp" class="form-text text-muted"></small>
               </div>
@@ -175,37 +178,41 @@
           Ｄ
         </div>
 
-        <div v-else-if="link ==='e'">
+        <div class="heart" v-else-if="link ==='e'">
 
-          <div id="accountapp" class="row justify-content-start container_heart heartnav">
-            <button class="col btn heartbtns" @click="dynamicComponent={template: `<p style='color: purple'>Good</p>`}">
-              行程
-            </button>
-            <button class="col btn heartbtns" @click="dynamicComponent='bye'">
-              商品
-            </button>
-            <button class="col btn heartbtns" @click="dynamicComponent={template: `<p style='color: purple'>Good</p>`}">
-              貼文
-            </button>
+          <!-- <div id="accountapp" class="row justify-content-start container_heart heartnav">
+            <button class="col btn heartbtns" @click="dynamicComponent={template: `<p style='color: purple'>Good</p>`}">行程</button>
+            <button class="col btn heartbtns" @click="dynamicComponent='bye'">商品</button>
+            <button class="col btn heartbtns" @click="dynamicComponent={template: `<p style='color: purple'>Good</p>`}">貼文</button>
+            <component :is="dynamicComponent"></component>
+          </div> -->
 
-            <component :is="dynamicComponent">
+          <div class="tab_container">
+            <div class="tab_list_block">
+              <ul class="tab_list">
+                <li><a href="#" data-target="tab1" class="tab -on">頁籤一</a></li>
+                <li><a href="#" data-target="tab2" class="tab">頁籤二</a></li>
+                <li><a href="#" data-target="tab3" class="tab">頁籤三</a></li>
+              </ul>
+            </div>
 
-              <div v-for="item in second" class="tripcard">
-                <img :src="item.spot" class="spot_pic" alt="spot_pic">
-                <div class="content line_low">
-                  <h4 class="hot2 margin_top_1">{{item.title}}</h4>
-                  <small class="tag ">{{item.grade}}</small>
-                  <small class="tag">{{item.scores}}積分</small>
-                  <h4 class="price2 margin_top_1">${{item.price}}</h4>
-                  <div class="addin2 samll  margin_top_2"><img class="plus" src="./img/icon/plus.png" alt="">加入我的行程
-                  </div>
-                </div>
+            <div class="tab_contents">
+              <div class="tab tab1 -on">
+                頁籤一的內容<br>
+                內容
               </div>
 
-            </component>
+              <div class="tab tab2">
+                頁籤二的內容
+              </div>
+
+              <div class="tab tab3">
+                頁籤三的內容<br>
+                內容
+              </div>
+            </div>
 
           </div>
-
         </div>
 
         <div v-else-if="link ==='f'">
@@ -226,59 +233,35 @@
 
 
   <script>
+    $(function () {
+      $("a.tab").on("click", function (e) {
+        e.preventDefault();
+
+        /* 將頁籤列表移除所有 -on，再將指定的加上 -on */
+        $(this).closest("ul").find("a.tab").removeClass("-on");
+        $(this).addClass("-on");
+
+        /* 找到對應的頁籤內容，加上 -on 來顯示 */
+        $("div.tab").removeClass("-on");
+        $("div.tab." + $(this).attr("data-target")).addClass("-on");
+      });
+    });
+
     // 會員menu切分頁
     Vue.component('hello', {
       template: '<p style="color: blue">Hello</p>'
-            //  `<div v-for="item in second" class="tripcard">
-            //     <img :src="item.spot" class="spot_pic" alt="spot_pic">
-            //     <div class="content line_low">
-            //       <h4 class="hot2 margin_top_1">{{item.title}}</h4>
-            //       <small class="tag ">{{item.grade}}</small>
-            //       <small class="tag">{{item.scores}}積分</small>
-            //       <h4 class="price2 margin_top_1">{{item.price}}</h4>
-            //       <div class="addin2 samll  margin_top_2"><img class="plus" src="./img/icon/plus.png" alt="">加入我的行程
-            //       </div>
-            //     </div>
-            //   </div>`
     });
     Vue.component('bye', {
       template: '<p style="color: red">Bye</p>'
 
     });
 
-    
+
     var account_tab = new Vue({
       el: "#accountapp",
       data: {
         link: "a",
         dynamicComponent: 'hello',
-
-        second: [{
-          spot: "./img/trip/trip_jupiter/jupiter_a1_ps2.jpg",
-          title: "月球 | 太空體驗一日遊",
-          grade: "初階",
-          scores: "5000",
-          price: 1000,
-        }, {
-          spot: "./img/trip/trip_jupiter/jupiter_b1_ps2.jpg",
-          title: "月球 | 熱氣球一日遊",
-          grade: "初階",
-          scores: "5000",
-          price: 2000,
-        }, {
-          spot: "./img/trip/trip_jupiter/jupiter_c4_ps2.jpg",
-          title: "月球 | 熱氣球一日遊",
-          grade: "初階",
-          scores: "5000",
-          price: 3000,
-        }, {
-          spot: "./img/trip/trip_jupiter/jupiter_a1_ps2.jpg",
-          title: "月球 | 太空體驗一日遊",
-          grade: "初階",
-          scores: "5000",
-          price: 1000,
-        }],
-
       },
     });
 
