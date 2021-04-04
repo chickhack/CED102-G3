@@ -1,9 +1,9 @@
-const navSlide = () => {
-    const burger = document.querySelector(".burger");
-    const nav = document.querySelector(".nav-links");
-    const navLinks = document.querySelectorAll(".nav-links li");
+const burger = document.querySelector(".burger");
+const nav = document.querySelector(".nav-links");
+const navLinks = document.querySelectorAll(".nav-links li");
 
-    burger.addEventListener("click",() => {
+const navSlide = () => {
+    burger.addEventListener("click",(e) => {
         nav.classList.toggle("nav-active");
 
         navLinks.forEach((link,index) => {
@@ -16,7 +16,20 @@ const navSlide = () => {
 
         //burger animation
         burger.classList.toggle("toggle");
-        console.log("hihihi");
+    })
+
+    document.addEventListener("click",(e) => {
+        if(!nav.contains(e.target) && !burger.contains(e.target)){
+            nav.classList.remove("nav-active");
+            burger.classList.remove("toggle");
+            navLinks.forEach((link) => {
+                if(link.style.animation){
+                    link.style.animation = "";
+                }
+            })
+            // console.log(e.target);
+            // console.log(!e.target.classList.contains("burger toggle"));
+        }
     })
 }
 
