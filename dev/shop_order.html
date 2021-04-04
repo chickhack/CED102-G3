@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/pages/shop_order.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.12/vue.js'></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/cleave.js/1.6.0/cleave.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/cleave.js/1.1.1/addons/cleave-phone.tw.js"></script>
     <title>星球商城</title>
@@ -62,10 +63,6 @@
                             <input type="tel" class="margin_top_1" name="omobile" id="omobile" maxlength="10" required>
                         </div>
                         <div class="input_group">
-                            <label for="oidentity">身分證字號</label>
-                            <input type="text" class="margin_top_1 identity" name="oidentity" id="oidentity" maxlength="10" required>
-                        </div>
-                        <div class="input_group long">
                             <label for="oemail">電子信箱</label>
                             <input type="email" class="margin_top_1" name="oemail" id="oemail" required>
                         </div>
@@ -90,10 +87,6 @@
                             <input type="tel" class="margin_top_1" name="mobile" id="mobile" maxlength="10" required>
                         </div>
                         <div class="input_group">
-                            <label for="identity">身分證字號</label>
-                            <input type="text" class="margin_top_1 identity" name="identity" id="identity" maxlength="10" required>
-                        </div>
-                        <div class="input_group long">
                             <label for="email">電子信箱</label>
                             <input type="email" class="margin_top_1" name="email" id="email" max-length="30" required>
                         </div>
@@ -134,6 +127,12 @@
                                 <i class="fab fa-cc-diners-club"></i>
                                 <i class="fab fa-cc-mastercard"></i>
                                 <i class="fab fa-cc-discover"></i>
+                            </div>
+                            <div class="credit_check margin_left_4 margin_top_2">
+                                <label for="creditDate" class="creditInput">有效期限</label>
+                                <input type="text" name="creditDate" id="creditDate" placeholder="MM/YY" class="creditInput margin_left_1">
+                                <label for="check" class="creditInput">檢查碼</label>
+                                <input type="text" name="check" id="check" class="short creditInput" maxlength="4">
                             </div>
                         </div>
                     </div>
