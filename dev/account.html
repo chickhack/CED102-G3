@@ -18,14 +18,10 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
     integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
     crossorigin="anonymous"></script>
-  <!-- isotope -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.js"
-    integrity="sha512-E/yP5UiPXb6VelX+dFLuUD+1IZw/Kz7tMncFTYbtoNSCdRZPFoGN3jZ2p27VUxHEkhbPiLuZhZpVEXxk9wAHCQ=="
-    crossorigin="anonymous"></script>
-
 
   <link rel="stylesheet" href="./css/all.css">
-  <link rel="stylesheet" href="./css/pages/alltrip.css">
+  <link rel="stylesheet" href="./css/shop.css">
+  <!-- <link rel="stylesheet" href="./css/pages/alltrip.css"> -->
   <link rel="stylesheet" href="./css/pages/account.css">
 
   <title>會員</title>
@@ -119,8 +115,8 @@
             <div class="col-md-auto align-self-center info_left">
               <div class="form-group">
                 <label for="exampleInputEmail1">暱稱</label>
-                <div class="edit_text"><input type="text" readonly class="form-control-plaintext" id=""
-                    value="大大大大"></div>
+                <div class="edit_text"><input type="text" readonly class="form-control-plaintext" id="" value="大大大大">
+                </div>
                 <!-- <input type="text" class="form-control" id="exampleInputEmail1" placeholder="大大大大"> -->
                 <small id="emailHelp" class="form-text text-muted"></small>
               </div>
@@ -175,36 +171,67 @@
           Ｄ
         </div>
 
-        <div v-else-if="link ==='e'">
+        <div class="heart" v-else-if="link ==='e'">
 
-          <div id="accountapp" class="row justify-content-start container_heart heartnav">
-            <button class="col btn heartbtns" @click="dynamicComponent={template: `<p style='color: purple'>Good</p>`}">
-              行程
-            </button>
-            <button class="col btn heartbtns" @click="dynamicComponent='bye'">
-              商品
-            </button>
-            <button class="col btn heartbtns" @click="dynamicComponent={template: `<p style='color: purple'>Good</p>`}">
-              貼文
-            </button>
+          <div class="heart_tab row justify-content-start container_heart heartnav" id="accountapp">
+            <button class="col btn heartbtns" @click="acitve(1)">行程</button>
+            <button class="col btn heartbtns" @click="acitve(2)">商品</button>
+            <button class="col btn heartbtns" @click="acitve(3)">貼文</button>
 
-            <component :is="dynamicComponent">
-
-              <div v-for="item in second" class="tripcard">
-                <img :src="item.spot" class="spot_pic" alt="spot_pic">
-                <div class="content line_low">
-                  <h4 class="hot2 margin_top_1">{{item.title}}</h4>
-                  <small class="tag ">{{item.grade}}</small>
-                  <small class="tag">{{item.scores}}積分</small>
-                  <h4 class="price2 margin_top_1">${{item.price}}</h4>
-                  <div class="addin2 samll  margin_top_2"><img class="plus" src="./img/icon/plus.png" alt="">加入我的行程
+            <div v-if="step === 1 || active.includes(1)" v-show="step===1">
+              <div class=" heart_tripcard second margin_top_10">
+                <div class=" heart_trip tripcard_all  ">
+                  <div v-for="item in spot1" class="tripcard">
+                    <a href="trip.html">
+                      <img :src="item.spot" class="spot_pic" alt="spot_pic">
+                      <div class="content line_low">
+                        <h4 class="hot2 margin_top_1">{{item.title}}</h4>
+                        <small class="tag">{{item.grade}}</small>
+                        <small class="tag">{{item.scores}}積分</small>
+                        <h3 class="price2 margin_top_2">${{item.price}}</h3>
+                        <div class="addin2 small margin_top_2"><img class="plus" src="./img/icon/plus.png" alt="">加入我的行程
+                        </div>
+                        <div class="trip_bookmark"></div>
+                        <!-- <img class="trip_bookmark" src="./img/icon/bookmark-outline.png" alt=""> -->
+                      </div>
+                    </a>
                   </div>
                 </div>
               </div>
+            </div>
 
-            </component>
+            <div v-if="step === 2 || active.includes(2)" v-show="step===2">內容二
+              <div class="main">
+                <div class="productAll margin_left_5">
+                  <ul>
+                    <li v-for="item in products" class="margin_top_5">
+                      <a href="product.html">
+                        <img :src="item.img" alt="" class="margin_top_2">
+                        <div class="item">
+                          <div class="info">
+                            <p>{{item.name}}</p>
+                            <p class="margin_top_1 price"> ${{item.price}}</p>
+                          </div>
+                          <img :src="item.cart" class="icon">
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+
+            <div v-if="step === 2 || active.includes(2)" v-show="step===3">內容三</div>
 
           </div>
+
+          <!-- <div id="accountapp" class="row justify-content-start container_heart heartnav">
+            <button class="col btn heartbtns" @click="dynamicComponent={template: `<p style='color: purple'>Good</p>`}">行程</button>
+            <button class="col btn heartbtns" @click="dynamicComponent='bye'">商品</button>
+            <button class="col btn heartbtns" @click="dynamicComponent={template: `<p style='color: purple'>Good</p>`}">貼文</button>
+            <component :is="dynamicComponent"></component>
+          </div> -->
 
         </div>
 
@@ -226,63 +253,110 @@
 
 
   <script>
+
     // 會員menu切分頁
-    Vue.component('hello', {
-      template: '<p style="color: blue">Hello</p>'
-            //  `<div v-for="item in second" class="tripcard">
-            //     <img :src="item.spot" class="spot_pic" alt="spot_pic">
-            //     <div class="content line_low">
-            //       <h4 class="hot2 margin_top_1">{{item.title}}</h4>
-            //       <small class="tag ">{{item.grade}}</small>
-            //       <small class="tag">{{item.scores}}積分</small>
-            //       <h4 class="price2 margin_top_1">{{item.price}}</h4>
-            //       <div class="addin2 samll  margin_top_2"><img class="plus" src="./img/icon/plus.png" alt="">加入我的行程
-            //       </div>
-            //     </div>
-            //   </div>`
-    });
-    Vue.component('bye', {
-      template: '<p style="color: red">Bye</p>'
+    // Vue.component('hello', {
+    //   template: '<p style="color: blue">Hello</p>'
+    // });
+    // Vue.component('bye', {
+    //   template: '<p style="color: red">Bye</p>'
+    // });
 
-    });
-
-    
     var account_tab = new Vue({
       el: "#accountapp",
       data: {
         link: "a",
-        dynamicComponent: 'hello',
-
-        second: [{
-          spot: "./img/trip/trip_jupiter/jupiter_a1_ps2.jpg",
+        // dynamicComponent: 'bye',
+        step: null,
+        active: [],
+        spot1: [{
+          spot: "./img/trip/trip_moon/moon_a1_ps2.jpg",
           title: "月球 | 太空體驗一日遊",
           grade: "初階",
           scores: "5000",
           price: 1000,
         }, {
-          spot: "./img/trip/trip_jupiter/jupiter_b1_ps2.jpg",
+          spot: "./img/trip/trip_moon/moon_b1_ps2.jpg",
           title: "月球 | 熱氣球一日遊",
           grade: "初階",
           scores: "5000",
           price: 2000,
         }, {
-          spot: "./img/trip/trip_jupiter/jupiter_c4_ps2.jpg",
+          spot: "./img/trip/trip_moon/moon_c1_ps2.jpg",
           title: "月球 | 熱氣球一日遊",
           grade: "初階",
           scores: "5000",
           price: 3000,
-        }, {
-          spot: "./img/trip/trip_jupiter/jupiter_a1_ps2.jpg",
-          title: "月球 | 太空體驗一日遊",
-          grade: "初階",
-          scores: "5000",
-          price: 1000,
         }],
-
+        products: [{
+          img: "./img/shop/shoes.png",
+          name: "宇宙平衡鞋",
+          price: 5000,
+          cart: "./img/shop/cart.png",
+        }, {
+          img: "./img/shop/cloth.png",
+          name: "太空衣",
+          price: 10000,
+          cart: "./img/shop/cart.png",
+        }, {
+          img: "./img/shop/helmet.png",
+          name: "宇宙帽",
+          price: 8000,
+          cart: "./img/shop/cart.png",
+        }, {
+          img: "./img/shop/helmet.png",
+          name: "宇宙帽",
+          price: 8000,
+          cart: "./img/shop/cart.png",
+        }, {
+          img: "./img/shop/helmet.png",
+          name: "宇宙帽",
+          price: 8000,
+          cart: "./img/shop/cart.png",
+        }, {
+          img: "./img/shop/shoes.png",
+          name: "宇宙平衡鞋",
+          price: 5000,
+          cart: "./img/shop/cart.png",
+        }, {
+          img: "./img/shop/shoes.png",
+          name: "宇宙平衡鞋",
+          price: 5000,
+          cart: "./img/shop/cart.png",
+        }, {
+          img: "./img/shop/cloth.png",
+          name: "太空衣",
+          price: 10000,
+          cart: "./img/shop/cart.png",
+        }, {
+          img: "./img/shop/cloth.png",
+          name: "太空衣",
+          price: 10000,
+          cart: "./img/shop/cart.png",
+        }, {
+          img: "./img/shop/shoes.png",
+          name: "宇宙平衡鞋",
+          price: 5000,
+          cart: "./img/shop/cart.png",
+        }, {
+          img: "./img/shop/shoes.png",
+          name: "宇宙平衡鞋",
+          price: 5000,
+          cart: "./img/shop/cart.png",
+        }, {
+          img: "./img/shop/cloth.png",
+          name: "太空衣",
+          price: 10000,
+          cart: "./img/shop/cart.png",
+        }]
+      },
+      methods: {
+        acitve(index) {
+          this.step = index
+          !this.active.includes(index) && this.active.push(index)
+        }
       },
     });
-
-
 
 
     //  點擊menu變色

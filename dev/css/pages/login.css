@@ -1,4 +1,3 @@
-@charset "UTF-8";
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -797,580 +796,79 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
-body {
-  background-color: #0c0d18;
-}
-
-/* 歡迎會員 字體大小、字型位置 */
-.welcome {
-  padding: 15vh 250px 0px 250px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
-}
-
-.spacedinfo {
-  line-height: 30px;
-}
-
-p {
-  float: left;
-}
-
-.account_hi,
-.account_logo {
-  font-size: 20px;
-}
-
-.account_hi,
-.account_acnum {
-  font-family: "Microsoft JhengHei";
-}
-
-.account_logo,
-.account_numlogo {
-  font-family: "Nasalization";
-  letter-spacing: 5px;
-}
-
-.account_num {
-  font-family: "adobe-std-b";
-  letter-spacing: 3px;
-}
-
-.account_numlogo,
-.account_acnum,
-.account_num {
-  font-size: 14px;
-  color: #ffff;
-}
-
-img.account_levimg {
-  max-width: 55px;
-  padding-left: 20px;
-}
-
-/* 會員卡片 */
-.account_card {
-  border: 1px solid #AD6E4A;
-  background-color: #292b41;
-  margin: 30px 250px 0px 250px;
-  padding: 30px;
-  border-radius: 10px;
-}
-
-/* 會員卡片內容 */
-.account_now {
-  /* border: 1px solid red; */
-}
-
-.your_lev {
-  /* border: 1px solid red; */
-}
-
-/* 目前累積等級、星球、景點、宇宙幣 */
-img.littleline {
-  max-width: 50%;
-}
-
-.lev_name,
-.account_total,
-.account_money {
-  font-family: "Microsoft JhengHei";
-  font-size: 14px;
-  letter-spacing: 1px;
-}
-
-.account_total,
-.account_money {
-  color: #ffffff;
-}
-
-.accnum {
-  font-family: "Nasalization";
-}
-
-.accmoney {
-  font-family: "adobe-std-b";
-  letter-spacing: 2px;
-}
-
-/*  12個月內累積 */
-.lev_acc {
-  font-family: "Microsoft JhengHei";
-  letter-spacing: 2px;
-  margin-top: 30px;
-  margin-left: 75px;
-  margin-bottom: 20px;
-  /* border: 1px solid red; */
-}
-
-img.nowlev,
-img.nextlev {
-  max-width: 50%;
-}
-
-.account_rocket {
-  max-width: 5%;
-}
-
-.next_rocket {
-  margin-left: -50px;
-  margin-top: 60px;
-}
-
-.your_acc {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.now_lev {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  /* justify-content: left; */
-}
-
-.next_lev {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  /* justify-content: right; */
-}
-
-p.nextacc,
-p.nowacc {
-  float: left;
-  letter-spacing: 1px;
-  line-height: 20px;
-  font-family: "Microsoft JhengHei";
-  font-size: 14px;
-}
-
-/* 會員menu */
-.account_nav {
-  margin: 50px 250px 0px 250px;
-  border-bottom: none;
-}
-
-.account_nav a {
-  color: #C9ADA7;
-}
-
-.nav-tabs .nav-link:focus,
-.nav-tabs .nav-link:hover,
-.nav-tabs .nav-link.active {
-  color: #AD6E4A;
-  background: none;
-  border: none;
-  border-bottom: 3px solid #AD6E4A;
-}
-
-.account_line {
-  margin: 0px 250px 0px 250px;
-  background-color: #AD6E4A;
-}
-
-/* 會員資料 */
-.info_form {
-  margin: 0px 200px 0px 200px;
-  padding: 30px 80px 0px 80px;
-  border-radius: 10px;
-  height: auto;
-  font-family: "Microsoft JhengHei";
-  font-size: 12px;
-  color: #C9ADA7;
-}
-
-.infoimg {
-  max-width: 100px;
-}
-
-.info_img {
-  margin: 5px 20px 0px 0px;
-}
-
-.info_left,
-.info_right,
-.info_edit {
-  margin: 25px 10px 0px 10px;
-}
-
-.form-group,
-label {
-  margin-top: 10px;
-  margin-bottom: 5px;
-}
-
-input.form-control {
-  width: 85%;
-  height: 20px;
-  border: 0.5px solid rgba(173, 110, 74, 0.6);
-  background-color: none;
-  color: #ffffff;
-  font-family: "Microsoft JhengHei";
-  font-size: 14px;
-}
-
-.form-control:focus {
-  border-color: #cccaca;
-  outline: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-.form-control-plaintext {
-  width: 85%;
-  height: 20px;
-  border: 0.5px solid rgba(173, 110, 74, 0.6);
-  background: none;
-  color: #ffffff;
-  font-family: "Microsoft JhengHei";
-  font-size: 14px;
-  padding: .375rem .75rem;
-  font-weight: 400;
-  line-height: 1.5;
-  border-radius: .25rem;
-}
-
-input.form-control-plaintext:focus {
-  border-color: #cccaca;
-  outline: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-.info_editbtn {
-  font-family: "Microsoft JhengHei";
-  font-size: 12px;
-  color: #ffff;
-  border: 1px solid #AD6E4A;
-  background: none;
-  border-radius: 0px;
-  width: 80%;
-  margin-left: 50px;
-}
-
-.info_editbtn:hover,
-.heartbtns:hover {
-  color: #ffff;
-  border: 1px solid #AD6E4A;
-  background: #AD6E4A;
-}
-
-.info_editbtn:focus + .btn-primary,
-.heartbtns:focus,
-.btn-primary:focus {
-  color: #fff;
-  background-color: #AD6E4A;
-  border-color: #AD6E4A;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-.container_heart {
-  padding: 30px 800px 0px 270px;
-}
-
-.heartbtns {
-  max-width: 100%;
-  margin-left: 10px;
-  font-family: "Microsoft JhengHei";
-  font-size: 12px;
-  color: #ffff;
-  border: 1px solid #AD6E4A;
-  background: none;
-  border-radius: 0px;
-}
-
-.btn-check:focus + .btn,
-.btn:focus {
-  outline: 0;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-.nav-link {
-  -webkit-transition: none;
-  transition: none;
-}
-
-/* footer */
-footer {
-  padding-top: 100px;
-}
-
-.heart_tripcard {
-  margin-top: 0px;
-}
-
-.heart_trip {
-  margin-top: 20px;
-}
-
-.second {
-  margin-bottom: 100px;
-}
-
-.second .alltrip {
-  text-align: center;
+.main-section {
   margin: 0 auto;
+  margin-top: 130px;
+  padding: 0;
 }
 
-.second .tripcard_all {
-  display: inline-block;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: none;
-      flex-wrap: none;
-  width: 100%;
+.modal-content {
+  background-color: #434e5a;
+  opacity: .8;
+  padding: 0 18px;
+  border-radius: 10px;
 }
 
-.second .tripcard_all .tripcard {
-  width: 250px;
-  background-color: #191919;
-  padding: 15px;
+.user-img img {
+  height: 120px;
+  width: 120px;
+}
+
+.user-img {
+  margin-top: -60px;
+  margin-bottom: 45px;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group input {
+  height: 42px;
   border-radius: 5px;
-  position: relative;
-  margin: 10px 25px 0 0px;
-}
-
-@media screen and (min-width: 768px) and (max-width: 992px) {
-  .second .tripcard_all .tripcard {
-    margin: 16px;
-  }
-}
-
-@media all and (max-width: 767px) {
-  .second .tripcard_all .tripcard {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin: 16px 0 16px 0;
-  }
-}
-
-.second .tripcard_all .tripcard .spot_pic {
-  width: 250px;
-}
-
-.second .tripcard_all .tripcard .spot_pic:hover {
-  -webkit-transform: perspective(0.5px) translateX(-1.5px) translateY(-1.5px);
-          transform: perspective(0.5px) translateX(-1.5px) translateY(-1.5px);
-}
-
-.second .tripcard_all .tripcard .hot2 {
-  font-weight: bold;
-  margin-bottom: 15px;
-  color: #C9ADA7;
-}
-
-.second .tripcard_all .tripcard .tag {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  border: 1px solid #C9ADA7;
-  border-radius: 5px;
-  padding: 8px;
-  line-height: 5px;
-  margin: 3px;
-  color: #cccaca;
-}
-
-.second .tripcard_all .tripcard .price2 {
-  color: #AD6E4A;
-  font-weight: bold;
+  border: 0;
+  font-size: 18px;
   letter-spacing: 2px;
-  font-family: "Nasalization";
-  padding-left: 5px;
+  padding-left: 54px;
+}
+
+.form-group::before {
+  font-family: 'Font Awesome\ 5 Free';
+  content: "\f1fa";
   position: absolute;
-  right: 20px;
-  bottom: 10px;
+  font-size: 22px;
+  left: 28px;
+  padding-top: 4px;
+  color: #555e60;
 }
 
-.second .tripcard_all .tripcard .addin2 {
-  background-color: #AD6E4A;
-  color: #ffffff;
-  border-radius: 15px;
-  width: 110px;
-  line-height: 26px;
-  text-align: center;
+.form-group:last-of-type::before {
+  content: "\f023";
 }
 
-.second .tripcard_all .tripcard .addin2 img.plus {
-  width: 15px;
-  display: inline-block;
-  position: relative;
-  top: 2px;
-  padding-right: 4px;
+.form-input button {
+  width: 40%;
+  margin: 5px 0 25px;
 }
 
-.second .tripcard_all .tripcard .addin2:hover {
-  background-color: #bf896b;
+.btn-success {
+  background-color: #1c6288;
+  font-size: 19px;
+  border-radius: 5px;
+  padding: 7px 14px;
+  border: 1px solid #daf1ff;
 }
 
-.second .tripcard_all .tripcard .trip_bookmark {
-  background-image: url(../../img/icon/bookmark-outline.png);
-  width: 25px;
-  height: 25px;
-  background-size: 25px;
-  background-repeat: no-repeat;
-  padding: 8px;
-  position: absolute;
-  right: 0px;
-  top: 230px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: block;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  cursor: pointer;
+.btn-success:hover {
+  background-color: #13445e;
+  border: 1px solid #daf1ff;
 }
 
-.second .tripcard_all .tripcard .trip_bookmark:hover {
-  background-image: url(../../img/icon/bookmark_hover.png);
+.forgot {
+  padding: 5px 0 25px;
 }
 
-.productAll {
-  letter-spacing: 5px;
+.forgot a {
+  color: #daf1ff;
 }
-
-@media all and (max-width: 992px) {
-  .productAll {
-    margin-left: 24px;
-  }
-}
-
-@media all and (max-width: 768px) {
-  .productAll {
-    margin-left: 0px;
-  }
-}
-
-.productAll ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-@media all and (max-width: 992px) {
-  .productAll ul {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-}
-
-@media all and (max-width: 768px) {
-  .productAll ul {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
-.productAll ul li {
-  width: 30%;
-}
-
-@media all and (max-width: 992px) {
-  .productAll ul li {
-    width: 45%;
-  }
-}
-
-@media all and (max-width: 768px) {
-  .productAll ul li {
-    width: 100%;
-  }
-}
-
-.productAll ul li a {
-  padding: 10px 0 10px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background-color: rgba(255, 255, 255, 0.9);
-  color: black;
-}
-
-.productAll ul li a img {
-  width: 50%;
-}
-
-.productAll ul li a .item {
-  text-align: left;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding-top: 20px;
-}
-
-.productAll ul li a .item .info {
-  padding: 16px 0;
-}
-
-.productAll ul li a .item .info .price {
-  font-weight: bold;
-  font-family: "Nasalization";
-}
-
-.productAll ul li a .item img {
-  padding-top: 15px;
-}
-/*# sourceMappingURL=account.css.map */
+/*# sourceMappingURL=login.css.map */
