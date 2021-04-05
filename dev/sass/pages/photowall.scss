@@ -117,6 +117,7 @@
   padding: 0 15px;
   // margin-left: 35px;
   letter-spacing: 2px;
+  font-size: 12px;//新增
 }
 .article_all{
   position: relative;
@@ -132,6 +133,8 @@
   padding:0 15px 15px 15px;
   color:$white;
   line-height: 32px;
+  font-size: 12px;//新增
+  letter-spacing: 1px;//新增
 
 
 }
@@ -159,7 +162,7 @@
 .col-md-1 {
   display: inline-block;
   position: fixed;
-  left: 1300px;
+  left: 80%;//1300px->80%
   bottom: 80px;
   z-index: 1;
 }
@@ -178,13 +181,14 @@ footer.padding_top_5{
 // =======燈箱區=======
 .light-box-container{
   text-align: center;
-  margin-top: 20px;
+  // margin-top: 20px;
   position: absolute;
   background-color: #292B41;
   display: none;
   position: absolute;
   z-index: 2;
   top: 100px;
+  padding-top: 35px;//新增
 }
 .row{
   justify-content: center;
@@ -195,14 +199,15 @@ button.turnoff_lightbox{
   outline: none;
 }
 button.turnoff_lightbox img{
-  width: 40px;
+  width: 30px; //40->30
   position: absolute;
   top: 5px;
   right: 10px;
 }
 .img-switch{
   display: inline-block;
-  width: 600px;
+  width: 500px;//600px->500px
+  margin: 0 12px 0 12px; //新增
 }
 .img-switch img{
   width: 100%;
@@ -227,6 +232,7 @@ button.turnoff_lightbox img{
 .words{
   display: inline-block;
   width: 500px;
+  margin:0 10px 0 10px;//新增
 }
 .post_article{
   border: 1px solid #AD6E4A;
@@ -236,7 +242,7 @@ button.turnoff_lightbox img{
 }
 .member_info{
   display: flex;
-  padding: 15px 15px 0 15px;
+  padding: 10px 15px 0 15px;//15->10
 }
 .member_info .name{
   color: white;
@@ -253,7 +259,7 @@ button.turnoff_lightbox img{
 .post_text{
   color: white;
   line-height: 32px;
-  padding:15px;
+  padding:10px 15px 10px 15px;//15 
   text-align: left;
 }
 .member_info button{
@@ -282,7 +288,7 @@ button.turnoff_lightbox img{
 }
 .message_1 .name,.message_2 .name,.message_3 .name{
   margin: 0 15px;
-  line-height: 49px;
+  line-height: 40px;//49->40
   font-weight: 900;
 }
 .message_text .message_title{
@@ -292,17 +298,17 @@ button.turnoff_lightbox img{
 .message_1,.message_2,.message_3{
   display: flex;
   padding: 0 15px 0 15px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;//15->10
 }
 .message_1 .member_photo img,.message_2 .member_photo img,.message_3 .member_photo img{
   border-radius: 50%;
-  max-width: 50px;
+  max-width: 40px;//50->40
 }
 .message_1 .message_1_text,.message_2 .message_2_text,.message_3 .message_3_text{
-  line-height: 49px;
+  line-height: 40px;//49->40
 }
 .message_1 .message_1_more,.message_2 .message_2_more,.message_3 .message_3_more{
-  line-height: 52px;
+  line-height: 40px;//52->40
   padding-top: 5px;
 }
 form.post_message input{
