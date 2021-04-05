@@ -287,3 +287,32 @@ section.orderer{
         }
     }
 }
+.modal{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,.3);
+    position: fixed;
+    top: 0;
+    @include flex_middle();
+    display: none;
+    .window{
+        min-width: 250px;
+        width: 30vw;
+        padding: 40px 0;
+        border: 1px solid $gold;
+        @include flex_middle();
+        flex-direction: column;
+        background-color: $darkblue;
+        h3{
+            color: $gold;
+            font-weight: 900;
+        }
+        a{
+            color: $white;
+            transition: all .3s;
+            &:hover{
+                background-color: $gold;
+            }
+        }
+    }
+}
