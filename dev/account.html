@@ -20,7 +20,8 @@
     crossorigin="anonymous"></script>
 
   <link rel="stylesheet" href="./css/all.css">
-  <link rel="stylesheet" href="./css/pages/alltrip.css">
+  <link rel="stylesheet" href="./css/shop.css">
+  <!-- <link rel="stylesheet" href="./css/pages/alltrip.css"> -->
   <link rel="stylesheet" href="./css/pages/account.css">
 
   <title>會員</title>
@@ -178,46 +179,68 @@
             <button class="col btn heartbtns" @click="acitve(3)">貼文</button>
 
             <div v-if="step === 1 || active.includes(1)" v-show="step===1">
-              <div class="second margin_top_10">
-                <div class="tripcard_all  margin_top_5">
-                    <div v-for="item in spot1" class="tripcard ">
-                      <a href="trip.html">
-                        <img :src="item.spot" class="spot_pic" alt="spot_pic">
-                        <div class="content line_low">
-                          <h4 class="hot2 margin_top_1">{{item.title}}</h4>
-                          <small class="tag">{{item.grade}}</small>
-                          <small class="tag">{{item.scores}}積分</small>
-                          <h3 class="price2 margin_top_2">${{item.price}}</h3>
-                          <div class="addin2 small margin_top_2"><img class="plus" src="./img/icon/plus.png" alt="">加入我的行程</div>
-                          <div class="trip_bookmark"></div>
-                          <!-- <img class="trip_bookmark" src="./img/icon/bookmark-outline.png" alt=""> -->
+              <div class=" heart_tripcard second margin_top_10">
+                <div class=" heart_trip tripcard_all  ">
+                  <div v-for="item in spot1" class="tripcard">
+                    <a href="trip.html">
+                      <img :src="item.spot" class="spot_pic" alt="spot_pic">
+                      <div class="content line_low">
+                        <h4 class="hot2 margin_top_1">{{item.title}}</h4>
+                        <small class="tag">{{item.grade}}</small>
+                        <small class="tag">{{item.scores}}積分</small>
+                        <h3 class="price2 margin_top_2">${{item.price}}</h3>
+                        <div class="addin2 small margin_top_2"><img class="plus" src="./img/icon/plus.png" alt="">加入我的行程
                         </div>
-                      </a>
-                    </div>
+                        <div class="trip_bookmark"></div>
+                        <!-- <img class="trip_bookmark" src="./img/icon/bookmark-outline.png" alt=""> -->
+                      </div>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div v-if="step === 2 || active.includes(2)" v-show="step===2">內容二</div>
+            <div v-if="step === 2 || active.includes(2)" v-show="step===2">內容二
+              <div class="main">
+                <div class="productAll margin_left_5">
+                  <ul>
+                    <li v-for="item in products" class="margin_top_5">
+                      <a href="product.html">
+                        <img :src="item.img" alt="" class="margin_top_2">
+                        <div class="item">
+                          <div class="info">
+                            <p>{{item.name}}</p>
+                            <p class="margin_top_1 price"> ${{item.price}}</p>
+                          </div>
+                          <img :src="item.cart" class="icon">
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+
             <div v-if="step === 2 || active.includes(2)" v-show="step===3">內容三</div>
 
-        </div>
+          </div>
 
-        <!-- <div id="accountapp" class="row justify-content-start container_heart heartnav">
+          <!-- <div id="accountapp" class="row justify-content-start container_heart heartnav">
             <button class="col btn heartbtns" @click="dynamicComponent={template: `<p style='color: purple'>Good</p>`}">行程</button>
             <button class="col btn heartbtns" @click="dynamicComponent='bye'">商品</button>
             <button class="col btn heartbtns" @click="dynamicComponent={template: `<p style='color: purple'>Good</p>`}">貼文</button>
             <component :is="dynamicComponent"></component>
           </div> -->
 
-      </div>
+        </div>
 
-      <div v-else-if="link ==='f'">
-        Ｆ
-      </div>
+        <div v-else-if="link ==='f'">
+          Ｆ
+        </div>
 
+      </div>
     </div>
-  </div>
   </div>
 
   <footer>
@@ -264,8 +287,68 @@
           grade: "初階",
           scores: "5000",
           price: 3000,
-        },
-        ],
+        }],
+        products: [{
+          img: "./img/shop/shoes.png",
+          name: "宇宙平衡鞋",
+          price: 5000,
+          cart: "./img/shop/cart.png",
+        }, {
+          img: "./img/shop/cloth.png",
+          name: "太空衣",
+          price: 10000,
+          cart: "./img/shop/cart.png",
+        }, {
+          img: "./img/shop/helmet.png",
+          name: "宇宙帽",
+          price: 8000,
+          cart: "./img/shop/cart.png",
+        }, {
+          img: "./img/shop/helmet.png",
+          name: "宇宙帽",
+          price: 8000,
+          cart: "./img/shop/cart.png",
+        }, {
+          img: "./img/shop/helmet.png",
+          name: "宇宙帽",
+          price: 8000,
+          cart: "./img/shop/cart.png",
+        }, {
+          img: "./img/shop/shoes.png",
+          name: "宇宙平衡鞋",
+          price: 5000,
+          cart: "./img/shop/cart.png",
+        }, {
+          img: "./img/shop/shoes.png",
+          name: "宇宙平衡鞋",
+          price: 5000,
+          cart: "./img/shop/cart.png",
+        }, {
+          img: "./img/shop/cloth.png",
+          name: "太空衣",
+          price: 10000,
+          cart: "./img/shop/cart.png",
+        }, {
+          img: "./img/shop/cloth.png",
+          name: "太空衣",
+          price: 10000,
+          cart: "./img/shop/cart.png",
+        }, {
+          img: "./img/shop/shoes.png",
+          name: "宇宙平衡鞋",
+          price: 5000,
+          cart: "./img/shop/cart.png",
+        }, {
+          img: "./img/shop/shoes.png",
+          name: "宇宙平衡鞋",
+          price: 5000,
+          cart: "./img/shop/cart.png",
+        }, {
+          img: "./img/shop/cloth.png",
+          name: "太空衣",
+          price: 10000,
+          cart: "./img/shop/cart.png",
+        }]
       },
       methods: {
         acitve(index) {
