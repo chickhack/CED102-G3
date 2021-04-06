@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -707,266 +708,187 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-}
-
-.margin-bottom-2 {
-  margin-bottom: 20px;
-}
-
-.padding-bottom-1 {
-  padding-bottom: 8px;
-}
-
-.btn-coin:hover {
-  color: #fff;
-  background-color: #bf896b;
-}
-
-#icon-gg {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: flex-end;
-  padding-bottom: 1.5%;
-}
-
-.container-fluid {
-  max-width: 900px;
-  padding-top: 15vh;
-  padding-right: 0px;
-  padding-left: 0px;
-}
-
-.row {
-  margin: 0px;
-}
-
-.icon-g {
-  max-width: 20px;
-  max-height: 20px;
-  object-fit: cover;
-}
-
-.car-top {
-  min-height: 50vh;
-  height: 100%;
-}
-
-body {
-  background-color: #0c0d18;
-}
-
-.w-100 {
-  width: 100%;
-}
-
-.vvvvv {
-  width: 16px;
-  height: 16px;
-}
-
-.backcol {
-  background-color: #292B41;
-}
-
-.text-1 {
-  font-size: 18px;
-  font-weight: 900;
-  line-height: 80px;
-}
-
-.p-text-1 {
-  font-weight: 900;
-  font-size: 16px;
-  color: #C9ADA7;
-  margin: 0px;
-  letter-spacing: 1px;
-}
-
-.p-text-2 {
-  font-size: 16px;
-  color: #C9ADA7;
-  letter-spacing: 2px;
-  line-height: 20px;
-}
-
-.p-text-3 {
-  font-size: 14px;
-  color: #C9ADA7;
-  letter-spacing: 1px;
-  font-weight: 700;
-}
-
-.imgsr {
-  max-width: 100px;
-  height: auto;
-  object-fit: cover;
-}
-
-.btn-date {
-  outline: none;
-  letter-spacing: 2px;
-  padding: 0 5px;
-  border: 1px solid #ad6e4a;
-  color: #C9ADA7;
-  background-color: #292B41;
+.container {
+  margin: 0 auto;
+  max-width: 1100px;
   text-align: center;
 }
 
-::-webkit-calendar-picker-indicator {
-  color: #ad6e4a;
-  background-image: url(../../img/date-chevron-down.svg);
-  width: 20px;
-  height: 20px;
-  opacity: 1;
-}
-
-.btn-pull {
-  color: #ad6e4a;
-  background-color: #292B41;
-  border: 1px solid #ad6e4a;
-  height: 15px;
-  line-height: 0px;
-  padding: 4px 8px;
-}
-
-.btn-nu {
-  color: #ad6e4a;
-  background-color: #292B41;
-  border: 0px solid #ad6e4a;
-  max-width: 50px;
-  line-height: 0px;
-  text-align: center;
-  outline: none;
-}
-
-.letter-1 {
-  letter-spacing: 2px;
-}
-
-.btn-coin {
-  background-color: #ad6e4a;
-  color: #fff;
-}
-
-.coin-left {
-  text-align: end;
-  width: 70%;
-  padding-right: 3%;
-}
-
-.coin-right {
-  text-align: center;
-  width: 10%;
-}
-
-.row {
-  justify-content: center;
-}
-
-.row .allcoin {
-  padding-top: 16px;
-  padding-bottom: 16px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.row .col-11 {
-  padding-left: 0px;
-  padding-right: 0px;
-}
-
-.row .col-11 .row {
-  display: flex;
-  justify-content: space-around;
-}
-
-.row .col-11 .row .datacol {
-  padding: 16px 0px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.row .col-11 .row .allcol {
-  padding: 16px 0px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: left;
-}
-
-@media (max-width: 768px) {
-  .allcoin {
-    flex-direction: column;
-  }
-  .coin-left {
-    text-align: center;
-  }
-  .coin-right {
-    width: 100%;
-    margin-top: 16px;
-    display: flex;
-    justify-content: center;
-  }
-  .coin-right .btn-coin {
-    width: 80%;
-  }
-}
-
-.checkout {
-  width: 100%;
-  background-color: #292B41;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: flex-end;
-  padding: 16px 0;
-  letter-spacing: 3px;
+.container a {
+  text-decoration: none;
 }
 
 @media all and (max-width: 768px) {
-  .checkout {
-    flex-direction: column;
+  .container {
+    margin: 0;
   }
 }
 
-.checkout .totalPrice {
+.container section.login_container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: flex-end;
 }
 
-.checkout .totalPrice .h2 {
-  color: #AD6E4A;
-  font-weight: 900;
-}
-
-.checkout .totalIntegral {
+.container section.login_container .login_banner {
+  background-color: #353f61;
+  height: 80vh;
+  background-size: 110%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  justify-content: flex-end;
-}
-
-.checkout .button_min {
-  background-color: #AD6E4A;
-  padding: 8px;
-  margin-right: 7%;
+  justify-content: center;
   color: #ffffff;
+  row-gap: 2rem;
+}
+
+.container section.login_container .login_banner h2 {
+  font-family: nasalization, sans-serif;
+}
+
+@media all and (max-width: 992px) {
+  .container section.login_container .login_banner {
+    display: none;
+  }
 }
 
 @media all and (max-width: 768px) {
-  .checkout .button_min {
-    margin-top: 16px;
-    width: 80%;
+  .container section.login_container .login_banner {
+    display: none;
   }
 }
-/*# sourceMappingURL=car-itineray.css.map */
+
+.container section.login_container .return_btn {
+  display: flex;
+  align-self: flex-start;
+  align-items: baseline;
+}
+
+.container section.login_container .return_btn span a {
+  color: #AD6E4A;
+  font-size: 28px;
+  letter-spacing: -6px;
+  font-weight: 800;
+}
+
+.container section.login_container .return_btn h4 a {
+  margin-left: 12px;
+  color: #cccaca;
+}
+
+.container section.login_container .return_btn a:hover {
+  text-decoration: underline;
+}
+
+.container section.login_container .modal-dialog {
+  display: flex;
+  flex-direction: column;
+}
+
+.container section.login_container .modal-dialog .main-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.container section.login_container .modal-dialog .main-section .modal-content {
+  opacity: .8;
+  border-radius: 10px;
+  background-color: transparent;
+  border: none;
+}
+
+.container section.login_container .modal-dialog form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: inherit;
+}
+
+.container section.login_container .modal-dialog form .form-group input {
+  margin: 0 auto;
+  margin-top: 24px;
+  height: 42px;
+  border-radius: 5px;
+  border: 1px solid #AD6E4A;
+  font-size: 18px;
+  padding-left: 14px;
+  padding-top: 14px;
+  width: 90%;
+  background-color: transparent;
+}
+
+.container section.login_container .modal-dialog form .form-group input:focus {
+  padding-left: 28px;
+  transform: scale(1.08);
+  box-shadow: -1px 0px 20px 5px rgba(173, 110, 74, 0.45);
+  -webkit-box-shadow: -1px 0px 20px 5px rgba(173, 110, 74, 0.45);
+  -moz-box-shadow: -1px 0px 20px 5px rgba(173, 110, 74, 0.45);
+  border: none;
+}
+
+.container section.login_container .modal-dialog form .form-group input:hover {
+  animation: pulse .5s 1;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(204, 140, 44, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 7px rgba(204, 140, 44, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(204, 140, 44, 0);
+  }
+}
+
+.container section.login_container .modal-dialog form .form-group::before {
+  content: "電子信箱";
+  position: absolute;
+  font-size: 12px;
+  left: 32px;
+  padding-top: 32px;
+  color: #C9ADA7;
+}
+
+.container section.login_container .modal-dialog form .form-group:nth-last-of-type(2)::before {
+  content: "密碼";
+}
+
+.container section.login_container .modal-dialog form .form-group:last-of-type::before {
+  content: "確認密碼";
+}
+
+.container section.login_container .modal-dialog form button {
+  align-self: center;
+  background-color: transparent;
+  color: #AD6E4A;
+}
+
+.container section.login_container .modal-dialog form button:hover {
+  color: #ffff;
+  border: 1px solid #AD6E4A;
+  background: #AD6E4A;
+}
+
+.container section.login_container .bottom-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container section.login_container .bottom-section .forgot a, .container section.login_container .bottom-section .signup a {
+  color: #cccaca;
+}
+
+.container section.login_container .bottom-section .forgot:hover, .container section.login_container .bottom-section .signup:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+@media all and (max-width: 768px) {
+  .container section.login_container .bottom-section {
+    margin-left: 32px;
+  }
+}
+/*# sourceMappingURL=register.css.map */

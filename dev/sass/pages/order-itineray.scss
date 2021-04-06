@@ -270,14 +270,17 @@ body{
     vertical-align: middle;
     width: 10px;
     height: 10px;
-    border-radius: 50%;
     padding: 2px;
     margin-right: 10px;
     text-align: center;
 }
 .checkbox_custom:checked + .checkbox_custom_label:before {
-    content: "";
+    content: "\f00c";
+    font-family: 'Font Awesome 5 Free';
     background: #ad6e4a;
+    color: #fff;
+    font-weight: 700;
+    font-size: 10px;
 }
 .checkbox_custom:focus + .checkbox_custom-label{
     outline: 1px solid #ddd;
