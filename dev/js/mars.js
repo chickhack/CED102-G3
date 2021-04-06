@@ -1,22 +1,23 @@
-// import * as THREE from './node_modules/three/build/three.module.js';
-// import {OrbitControls} from './node_modules/three/examples/jsm/controls/OrbitControls.js';
+// import * as THREE from '/node_modules/three/build/three.module.js';
+import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.117.1/build/three.module.js';
+import {OrbitControls} from 'https://cdn.skypack.dev/three@0.120.0/examples/jsm/controls/OrbitControls.js';
 
 // *DATA IMPORT
-let data = [];
-let xhttp = new XMLHttpRequest();
-xhttp.onreadystatechange = function(){
-    if (this.readyState == 4 && this.status == 200){
-        let response = JSON.parse(xhttp.responseText);
-        let output = Object.values(response);
-        for (let i = 0; i < output.length; i++){
-            data.push(output[i]);
-        }
-    }
-};
-xhttp.open("GET", "../DATA/Final_data.json", false)
+// let data = [];
+// let xhttp = new XMLHttpRequest();
+// xhttp.onreadystatechange = function(){
+//     if (this.readyState == 4 && this.status == 200){
+//         let response = JSON.parse(xhttp.responseText);
+//         let output = Object.values(response);
+//         for (let i = 0; i < output.length; i++){
+//             data.push(output[i]);
+//         }
+//     }
+// };
+// xhttp.open("GET", "../DATA/Final_data.json", false)
 //if false, data will till pressing button
-xhttp.send();
-console.log(data);
+// xhttp.send();
+// console.log(data);
 
 
 // *THREEJS CODE
@@ -30,7 +31,7 @@ const camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHei
 
 // *CREATE renderer to display the created objects (kind like the ppl who place the different sets on the stage)
 const renderer = new THREE.WebGLRenderer();
-renderer.setSize(window.innerWidth, window.innerHeight);
+renderer.setSize(window.innerWidth/2, window.innerHeight/2);
 document.body.appendChild(renderer.domElement);
 
 // *CREATE controls so that we can interact with the objects/have interactivity
@@ -46,13 +47,13 @@ const controls = new OrbitControls(camera, renderer.domElement);
 
 // *CREATE earth
     // Earthmap is used for the basic texture which has the various continent/countries/etc on it
-let earthMap = new THREE.TextureLoader().load('../IMAGES/8k_mars.jpeg');
+let earthMap = new THREE.TextureLoader().load('../img/3dplanet/8k_mars.jpeg');
 
     // EarthBumpMap is used to give the texture some "depth" so it's more appealing on eyes and data visuals
-// let earthBumpMap = new THREE.TextureLoader().load('../IMAGES/earthbump4k.jpg');
+// let earthBumpMap = new THREE.TextureLoader().load('../img/3dplanet/earthbump4k.jpg');
 
     // EarthSpecMap gives the earth some shininess to the environment, allowing reflectivity off the light
-// let EarthSpecMap = new THREE.TextureLoader().load('../IMAGES/earthspec4k.jpg');
+// let EarthSpecMap = new THREE.TextureLoader().load('../img/3dplanet/earthspec4k.jpg');
 
     // Geometry is what the shape/size of the globe will be
 let earthGeometry = new THREE.SphereGeometry (10, 32, 32);
@@ -76,7 +77,7 @@ scene.add( earth );
 let earthCloudGeo = new THREE.SphereGeometry(10,32,32);
 
 // Add cloud texture
-let earthCloudsTexture = new THREE.TextureLoader().load('../IMAGES/earthhiresclouds4K.jpg')
+let earthCloudsTexture = new THREE.TextureLoader().load('../img/3dplanet/earthhiresclouds4K.jpg')
 
 // Add cloud material
 let earthMaterialClouds = new THREE.MeshLambertMaterial({
@@ -102,12 +103,12 @@ let lights = [];
 function createSkyBox(scene){
     const loader = new THREE.CubeTextureLoader();
     const texture = loader.load([
-        '../IMAGES/space_right.png',
-        '../IMAGES/space_left.png',
-        '../IMAGES/space_top.png',
-        '../IMAGES/space_bot.png',
-        '../IMAGES/space_front.png',
-        '../IMAGES/space_back.png'  
+        '../img/3dplanet/space_right.png',
+        '../img/3dplanet/space_left.png',
+        '../img/3dplanet/space_top.png',
+        '../img/3dplanet/space_bot.png',
+        '../img/3dplanet/space_front.png',
+        '../img/3dplanet/space_back.png'  
     ])
     scene.background = texture;
 }
@@ -132,7 +133,7 @@ function createLights(scene){
 }
 function addSceneObjects(scene) {
     createLights(scene);
-    createSkyBox(scene);
+    // createSkyBox(scene);
 }
     
 // AddSceneObjects adds the items to the scene

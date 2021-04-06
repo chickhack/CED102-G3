@@ -23,26 +23,25 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/all.css" />
     <link rel="stylesheet" href="./css/pages/planet.css"></link>
-    <script src="./node_modules/three/build/three.module.js"></script>
-    <script src="./node_modules/three/examples/jsm/controls/OrbitControls.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/three@0.117.1/build/three.module.js"></script>
+    <script type="module" src="https://cdn.skypack.dev/three@0.120.0/examples/jsm/controls/OrbitControls.js"></script>
     <!-- 動態背景 -->
     <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->
-    <!-- <script src="http://threejs.org/examples/js/libs/stats.min.js"></script> -->
 
   </head>
   <body>
 
 
     <div class="container-fluid">
-      <header>
-        @@include('./layout/header.html')
-    </header>
+    <header>@@include('./layout/header.html')</header>
     <!-- 動態背景 -->
-      <div id="particles-js"></div>
+      <div id="particles-js">
+        <script src="./js/background.js"></script>
+      </div>
       <div class="planet_banner">
         <h2 class="margin_top_5">星星世界帶你探索宇宙</h4>
       </div>
-      <!-- 星球頁籤 -->
+    <!-- 星球頁籤 -->
       <div id="planet" class="container planet_tab">
         <div class="tabList margin_top_3 col-LG-12 ">
           <button class="button_min" v-for="planet in planets" v-on:click="state.clickedPlanet = planet">{{planet.name}}</button>
@@ -83,11 +82,10 @@
             </div>
           </div>
           <div class="tab-active margin_top_5 col-lg-6 col-md-4">
-            <img
-              :src="state.clickedPlanet.image"
-              style="max-width: 500px"
-              class="geoplanet"
-            />
+              <!-- 3D星球 -->
+              <div class="3dplanet">
+                <script type="module" src="./js/mars.js"></script>
+              </div>
           </div>
         </div>
         <div class="planet_content ">
@@ -124,10 +122,9 @@
           <!-- <button class="button_min" >更多關於火星</button> -->
         </div>
       </div>
-      <!-- 3D星球 -->
-      <!-- <script type="module" src="./js/mars.js"></script> -->
+      
     <footer>@@include('./layout/footer.html')</footer>
-  </div>
+    </div>
     <!-- 星球頁籤轉移 -->
     <script>
       $(function(){
@@ -203,13 +200,9 @@
           }]
         },
         methods:{
-          changeData(){
-            alert();
-          }
+
         }
       });
     </script>
-    <!-- 動態背景 -->
-    <script src="./js/background.js"></script>
   </body>
 </html>

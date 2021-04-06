@@ -11,7 +11,7 @@
 
 //=========header設定
 nav{
-    background-color: #5f5f5f3a;
+    background: linear-gradient(180deg, rgba(97, 97, 97, 0.555) 0%, rgba(255,255,255,0) 75%);
 }
 //=========按鈕設定
 button:hover{
@@ -24,6 +24,11 @@ button:hover{
 .video-bg{
     height: 100vh;
     overflow: hidden;
+}
+.video-overlay{
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(109, 13, 13) 75%);
+    position: absolute;
+    height: 100vh;
 }
 @media only screen and ( max-width:1200px) {
     .banner_bg{
@@ -406,7 +411,7 @@ button{
     display: flex;
     align-items: center;
     .topright{
-        border: 1px solid white;
+        // border: 1px solid white;
         display: flex;
         flex-direction: column;
         .separator{
@@ -432,7 +437,7 @@ button{
         }
     }
     #photos {
-        border:1px solid white;
+        // border:1px solid white;
         /* Prevent vertical gaps */
         line-height: 0;
          

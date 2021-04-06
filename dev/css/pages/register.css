@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -423,10 +424,6 @@ nav .burger div {
     justify-content: space-around;
     align-items: center;
     width: 30%;
-<<<<<<< HEAD
-    -webkit-transition: all .5s ease-in;
-=======
->>>>>>> 5746e1b6381c3f57f961138c1a9e2fd432504a5e
     transition: all .5s ease-in;
   }
   nav .nav-links li {
@@ -711,165 +708,187 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
-.hovers:hover {
-  transform: translate(-15px, -10px);
-  border: 1px solid #292b41;
-}
-
 .container {
   margin: 0 auto;
-  max-width: 1200px;
-  padding-bottom: 80px;
+  max-width: 1100px;
+  text-align: center;
 }
 
-@media all and (max-width: 1200px) {
+.container a {
+  text-decoration: none;
+}
+
+@media all and (max-width: 768px) {
   .container {
-    width: 95%;
+    margin: 0;
   }
 }
 
-.title {
-  color: #ffffff;
-  text-align: center;
-  letter-spacing: 2px;
-}
-
-.le-color {
-  background-color: #16193b;
-  font-size: 18px;
-  color: #fff;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  font-weight: bold;
-}
-
-.ba-color {
-  background-color: #292b41;
-}
-
-.text-color {
-  background-color: #1d1e2e;
-  color: #c9ada7;
-  font-size: 16px;
-  font-family: "Nasalization";
-  letter-spacing: 2px;
-}
-
-.text-color-1 {
-  background-color: #292b41;
-  font-size: 16px;
-  color: #fff;
-  font-family: "Nasalization";
-  letter-spacing: 2px;
-}
-
-.leve {
-  width: 40px;
-}
-
-.leve-1 {
-  width: 40px;
-}
-
-.icon-2 {
-  width: 50px;
-  object-fit: cover;
-  height: 50px;
-  border-radius: 40px;
-}
-
-.icon-3 {
-  width: 40px;
-  height: 40px;
-  object-fit: cover;
-  border-radius: 40px;
-}
-
-.text-00 {
+.container section.login_container {
   display: flex;
+}
+
+.container section.login_container .login_banner {
+  background-color: #353f61;
+  height: 80vh;
+  background-size: 110%;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  row-gap: 2rem;
+}
+
+.container section.login_container .login_banner h2 {
+  font-family: nasalization, sans-serif;
+}
+
+@media all and (max-width: 992px) {
+  .container section.login_container .login_banner {
+    display: none;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .container section.login_container .login_banner {
+    display: none;
+  }
+}
+
+.container section.login_container .return_btn {
+  display: flex;
+  align-self: flex-start;
+  align-items: baseline;
+}
+
+.container section.login_container .return_btn span a {
+  color: #AD6E4A;
+  font-size: 28px;
+  letter-spacing: -6px;
+  font-weight: 800;
+}
+
+.container section.login_container .return_btn h4 a {
+  margin-left: 12px;
+  color: #cccaca;
+}
+
+.container section.login_container .return_btn a:hover {
+  text-decoration: underline;
+}
+
+.container section.login_container .modal-dialog {
+  display: flex;
+  flex-direction: column;
+}
+
+.container section.login_container .modal-dialog .main-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.container section.login_container .modal-dialog .main-section .modal-content {
+  opacity: .8;
+  border-radius: 10px;
+  background-color: transparent;
+  border: none;
+}
+
+.container section.login_container .modal-dialog form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: inherit;
+}
+
+.container section.login_container .modal-dialog form .form-group input {
+  margin: 0 auto;
+  margin-top: 24px;
+  height: 42px;
+  border-radius: 5px;
+  border: 1px solid #AD6E4A;
+  font-size: 18px;
+  padding-left: 14px;
+  padding-top: 14px;
+  width: 90%;
+  background-color: transparent;
+}
+
+.container section.login_container .modal-dialog form .form-group input:focus {
+  padding-left: 28px;
+  transform: scale(1.08);
+  box-shadow: -1px 0px 20px 5px rgba(173, 110, 74, 0.45);
+  -webkit-box-shadow: -1px 0px 20px 5px rgba(173, 110, 74, 0.45);
+  -moz-box-shadow: -1px 0px 20px 5px rgba(173, 110, 74, 0.45);
+  border: none;
+}
+
+.container section.login_container .modal-dialog form .form-group input:hover {
+  animation: pulse .5s 1;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(204, 140, 44, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 7px rgba(204, 140, 44, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(204, 140, 44, 0);
+  }
+}
+
+.container section.login_container .modal-dialog form .form-group::before {
+  content: "電子信箱";
+  position: absolute;
+  font-size: 12px;
+  left: 32px;
+  padding-top: 32px;
+  color: #C9ADA7;
+}
+
+.container section.login_container .modal-dialog form .form-group:nth-last-of-type(2)::before {
+  content: "密碼";
+}
+
+.container section.login_container .modal-dialog form .form-group:last-of-type::before {
+  content: "確認密碼";
+}
+
+.container section.login_container .modal-dialog form button {
+  align-self: center;
+  background-color: transparent;
+  color: #AD6E4A;
+}
+
+.container section.login_container .modal-dialog form button:hover {
+  color: #ffff;
+  border: 1px solid #AD6E4A;
+  background: #AD6E4A;
+}
+
+.container section.login_container .bottom-section {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
-.text-01 {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+.container section.login_container .bottom-section .forgot a, .container section.login_container .bottom-section .signup a {
+  color: #cccaca;
 }
 
-.line-he-65 {
-  padding-top: 8px;
-  padding-bottom: 8px;
+.container section.login_container .bottom-section .forgot:hover, .container section.login_container .bottom-section .signup:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
-.line-he-85 {
-  line-height: 85px;
-}
-
-.line-he-75 {
-  padding-top: 8px;
-  padding-bottom: 8px;
-}
-
-.bra-line {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.089);
-  width: 80%;
-}
-
-.banner {
-  margin: 0 auto;
-  background-image: url(../../img/home/others/clavius-landing.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center  center;
-  width: 87%;
-  padding-top: 20%;
-  position: relative;
-}
-
-.banner img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  position: relative;
-  top: 100px;
-}
-
-.banner h2 {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  top: 50%;
-}
-
-.container-fluid {
-  padding-top: 15vh;
-  padding-left: 0px;
-  padding-right: 0px;
-  max-width: 1200px;
-}
-
-.container-fluid .row .col-10 {
-  transition: all 0.5s;
-}
-
-.container-fluid .row .col-10 .row {
-  width: 100%;
-}
-
-.container-fluid .row .col-10 .row .col-4 {
-  text-align: center;
-  padding-left: 0px;
-  padding-right: 0px;
-}
-
-@media (max-width: 768px) {
-  .del {
-    display: none;
-  }
-  .banner {
-    width: 100%;
-    padding-top: 50%;
+@media all and (max-width: 768px) {
+  .container section.login_container .bottom-section {
+    margin-left: 32px;
   }
 }
-/*# sourceMappingURL=Leaderboard.css.map */
+/*# sourceMappingURL=register.css.map */
