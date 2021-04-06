@@ -458,7 +458,14 @@ nav .burger div {
         -ms-flex-align: center;
             align-items: center;
     width: 30%;
+<<<<<<< HEAD
     -webkit-transition: all .5s ease-in;
+=======
+<<<<<<< HEAD
+    -webkit-transition: all .5s ease-in;
+=======
+>>>>>>> 5746e1b6381c3f57f961138c1a9e2fd432504a5e
+>>>>>>> 6c6224bf22e95fb53b1d20d499911440a3f96d05
     transition: all .5s ease-in;
   }
   nav .nav-links li {
@@ -837,6 +844,7 @@ input[type=number] {
           transform: translate(-50%, -50%);
   top: 35%;
   letter-spacing: 2px;
+  text-align: center;
 }
 
 @media all and (max-width: 768px) {
