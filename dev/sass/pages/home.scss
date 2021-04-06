@@ -2,9 +2,11 @@
 
 .container-fluid{
     padding: 0;
-
+    margin: 0;
+    @include respond(mobile){
+        margin: 0;
+    }
 }
-
 
 
 //=========header設定
@@ -215,6 +217,32 @@ button{
         width: 90%;
     }
 }
+.planet_box{
+    .tabList{
+        display: flex;
+        justify-content: center;
+        column-gap: 1%;
+        .button_min{
+            border: none;
+            background-color: transparent;
+            color: $gold;
+            font-size: 16px;
+        }
+        button.active{
+            border-bottom: 4px solid $gold;
+        }
+    }
+    .separator{
+        margin: 0 auto;
+        height: 1px;
+        width: 70%;
+        border-top: solid 1px $gold;
+        @include respond(mobile){
+            width: 100%;
+        }
+    
+    }
+}
 .tab-inner{
     // border-top: 1px solid $gold;
     display: flex;
@@ -284,7 +312,7 @@ button{
         }
 
     }
-    button{
+    .button_min{
         display: block;
         transform: translateX(-100%);
         width: 130px;
@@ -295,32 +323,90 @@ button{
 
 
 //=========互動牆
-.gallery{
-    .gallery_box{
-        display: flex;
-    }
+// .gallery{
+//     .gallery_box{
+//         display: flex;
+//     }
 
-    .topleft{
+//     .topleft{
+//         display: flex;
+//         flex-direction: row;
+//         max-height: 300px;
+//         align-items: flex-end;
+//         .A{
+//             height: 300px;
+//             overflow: hidden;
+//             img{
+//                 height: 100%;
+//             }
+//         }
+//         .B{
+//             height: 300px;
+//             overflow: hidden;
+//             img{
+//                 height: 300px;
+//             }
+//         }
+//     }
+
+//     .bottom{
+//         display: flex;
+//         flex-direction: row;
+//         .bottomleft{
+//             display: flex;
+//             flex-direction: row;
+//             max-height: 300px;
+//             .D{
+//                 height: 300px;
+//                 img{
+//                     height: 100%;
+//                 }
+//             }
+//             .E{
+//                 height: 300px;
+//                 img{
+//                     height: 50%;
+//                 }
+    
+    
+//             }
+//         }
+//         .bottomright{
+//             display: flex;
+
+//             .F{
+//                 height: 300px;
+//                 overflow: hidden;
+
+//             }
+//             .G{
+//                 height: 300px;
+//                 overflow: hidden;
+
+//             }
+//         }
+//     }
+// }
+
+@media all and (max-width:997px) {
+    .topright{
         display: flex;
-        flex-direction: row;
-        max-height: 300px;
-        align-items: flex-end;
-        .A{
-            height: 300px;
-            overflow: hidden;
-            img{
-                height: 100%;
-            }
+        flex-direction: column;
+        align-items: center;
+        .separator{
+            width: 80%;
         }
-        .B{
-            height: 300px;
-            overflow: hidden;
-            img{
-                height: 300px;
-            }
+        .galleryIntro{
+            max-width: 460px;
         }
     }
+}
+// }
+.home_photowall{
+    display: flex;
+    align-items: center;
     .topright{
+        border: 1px solid white;
         display: flex;
         flex-direction: column;
         .separator{
@@ -345,87 +431,52 @@ button{
             }
         }
     }
-    .bottom{
-        display: flex;
-        flex-direction: row;
-        .bottomleft{
-            display: flex;
-            flex-direction: row;
-            max-height: 300px;
-            .D{
-                height: 300px;
-                img{
-                    height: 100%;
-                }
-            }
-            .E{
-                height: 300px;
-                img{
-                    height: 50%;
-                }
-    
-    
-            }
+    #photos {
+        border:1px solid white;
+        /* Prevent vertical gaps */
+        line-height: 0;
+         
+        -webkit-column-count: 2;
+        -webkit-column-gap:   0px;
+        -moz-column-count:    2;
+        -moz-column-gap:      0px;
+        column-count:         2;
+        column-gap:           0px;  
+      }
+      
+      #photos img {
+        /* Just in case there are inline attributes */
+        width: 100% !important;
+        height: auto !important;
+      }
+      @media (max-width: 1200px) {
+        #photos {
+        -moz-column-count:    2;
+        -webkit-column-count: 2;
+        column-count:         2;
         }
-        .bottomright{
-            display: flex;
-
-            .F{
-                // border: 1px solid white;
-                // background-image: url('../../img/home/首頁-互動牆壁8.jpg');
-                height: 300px;
-                overflow: hidden;
-
-            }
-            .G{
-                height: 300px;
-                overflow: hidden;
-
-            }
+      }
+      @media (max-width: 1000px) {
+        #photos {
+        -moz-column-count:    2;
+        -webkit-column-count: 2;
+        column-count:         2;
         }
-    }
-}
-
-@media all and (max-width:997px) {
-    .topleft{
-        .B{
+      }
+      @media (max-width: 800px) {
+        #photos {
+        -moz-column-count:    2;
+        -webkit-column-count: 2;
+        column-count:         2;
+        }
+      }
+      @media (max-width: 700px) {
+        #photos {
             display: none;
         }
-    }
-    .topright{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        .separator{
-            width: 80%;
-        }
-        .galleryIntro{
-            max-width: 460px;
-        }
-    }
-    .bottom{
-        .bottomleft{
-            .D{
-                display: none;
-            }
-            .E{
-                display: none;
-            }
-        }
-        .bottomright{
-            .F{
-                display: none;
-            }
-            .G{
-                display: none;
-            }
-        }
-    }
+      }
 
 }
-
-
-
 
 //=========商城圖片
 .home_shop{
@@ -532,7 +583,6 @@ button{
                 transform: translate(150%,-100%);
                 max-height: 270px;
                 max-width: 275px;
-
             }
         }
         .item4{

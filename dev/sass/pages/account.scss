@@ -21,15 +21,18 @@ p {
   float: left;
 }
 
-.account_hi, .account_logo {
+.account_hi,
+.account_logo {
   font-size: 20px;
 }
 
-.account_hi, .account_acnum {
+.account_hi,
+.account_acnum {
   font-family: "Microsoft JhengHei";
 }
 
-.account_logo, .account_numlogo {
+.account_logo,
+.account_numlogo {
   font-family: "Nasalization";
   letter-spacing: 5px;
 }
@@ -39,7 +42,9 @@ p {
   letter-spacing: 3px;
 }
 
-.account_numlogo, .account_acnum, .account_num {
+.account_numlogo,
+.account_acnum,
+.account_num {
   font-size: 14px;
   color: #ffff;
 }
@@ -72,13 +77,16 @@ img.littleline {
   max-width: 50%;
 }
 
-.lev_name, .account_total, .account_money {
+.lev_name,
+.account_total,
+.account_money {
   font-family: "Microsoft JhengHei";
   font-size: 14px;
   letter-spacing: 1px;
 }
 
-.account_total, .account_money {
+.account_total,
+.account_money {
   color: #ffffff;
 }
 
@@ -101,7 +109,8 @@ img.littleline {
   /* border: 1px solid red; */
 }
 
-img.nowlev, img.nextlev {
+img.nowlev,
+img.nextlev {
   max-width: 50%;
 }
 
@@ -132,7 +141,8 @@ img.nowlev, img.nextlev {
   /* justify-content: right; */
 }
 
-p.nextacc, p.nowacc {
+p.nextacc,
+p.nowacc {
   float: left;
   letter-spacing: 1px;
   line-height: 20px;
@@ -145,19 +155,24 @@ p.nextacc, p.nowacc {
   margin: 50px 250px 0px 250px;
   border-bottom: none;
 }
+
 .account_nav a {
   color: #C9ADA7;
 }
+
 // .account_nav a:focus {
 //   color: #AD6E4A;
 //   border-bottom: 3px solid #AD6E4A;
 // }
-.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover, .nav-tabs .nav-link.active{
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover,
+.nav-tabs .nav-link.active {
   color: #AD6E4A;
   background: none;
   border: none;
   border-bottom: 3px solid #AD6E4A;
 }
+
 .account_line {
   margin: 0px 250px 0px 250px;
   background-color: #AD6E4A;
@@ -175,18 +190,25 @@ p.nextacc, p.nowacc {
   font-size: 12px;
   color: #C9ADA7;
 }
+
 // 圖片大小
 .infoimg {
   max-width: 100px;
 }
+
 // 表單距離
 .info_img {
   margin: 5px 20px 0px 0px;
 }
-.info_left, .info_right, .info_edit {
-  margin: 25px 10px 0px 10px ;
+
+.info_left,
+.info_right,
+.info_edit {
+  margin: 25px 10px 0px 10px;
 }
-.form-group, label {
+
+.form-group,
+label {
   margin-top: 10px;
   margin-bottom: 5px;
 }
@@ -195,21 +217,23 @@ p.nextacc, p.nowacc {
 input.form-control {
   width: 85%;
   height: 20px;
-  border: 0.5px solid rgba(173,110,74,0.6);
+  border: 0.5px solid rgba(173, 110, 74, 0.6);
   background-color: none;
   color: #ffffff;
   font-family: "Microsoft JhengHei";
   font-size: 14px;
 }
+
 .form-control:focus {
   border-color: #cccaca;
   outline: none;
   box-shadow: none;
 }
-.form-control-plaintext{
+
+.form-control-plaintext {
   width: 85%;
   height: 20px;
-  border: 0.5px solid rgba(173,110,74,0.6);
+  border: 0.5px solid rgba(173, 110, 74, 0.6);
   background: none;
   color: #ffffff;
   font-family: "Microsoft JhengHei";
@@ -219,7 +243,8 @@ input.form-control {
   line-height: 1.5;
   border-radius: .25rem;
 }
-input.form-control-plaintext:focus{
+
+input.form-control-plaintext:focus {
   border-color: #cccaca;
   outline: none;
   box-shadow: none;
@@ -236,18 +261,23 @@ input.form-control-plaintext:focus{
   width: 80%;
   margin-left: 50px;
 }
-.info_editbtn:hover, .heartbtns:hover {
+
+.info_editbtn:hover,
+.heartbtns:hover {
   color: #ffff;
   border: 1px solid #AD6E4A;
   background: #AD6E4A;
 }
+
 // .info_editbtn:focus + .btn, .btn:focus {
 //   outline: 0;
 //   box-shadow: none;
 //   color: #ffffff;
 //   background: #AD6E4A;
 // }
-.info_editbtn:focus+.btn-primary, .heartbtns:focus, .btn-primary:focus {
+.info_editbtn:focus+.btn-primary,
+.heartbtns:focus,
+.btn-primary:focus {
   color: #fff;
   background-color: #AD6E4A;
   border-color: #AD6E4A;
@@ -255,10 +285,11 @@ input.form-control-plaintext:focus{
 }
 
 // 收藏按鈕
-.container_heart{
+.container_heart {
   padding: 30px 800px 0px 270px;
 }
-.heartbtns{
+
+.heartbtns {
   max-width: 100%;
   margin-left: 10px;
   font-family: "Microsoft JhengHei";
@@ -269,23 +300,226 @@ input.form-control-plaintext:focus{
   border-radius: 0px;
 }
 
-
 // 移除點擊時邊框陰影
-.btn-check:focus+.btn, .btn:focus {
+.btn-check:focus+.btn,
+.btn:focus {
   outline: 0;
   box-shadow: none;
 }
+
 // 移除滑鼠移除＆取消點擊時邊框
 .nav-link {
   transition: none
 }
 
 
-
-
-
-
 /* footer */
 footer {
   padding-top: 100px;
+}
+
+
+
+
+
+
+// 行程收藏
+.heart_tripcard {
+  margin-top: 0px;
+}
+.heart_trip {
+  margin-top: 20px;
+}
+
+.second {
+  margin-bottom: 100px;
+
+  .alltrip {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .tripcard_all {
+    display: inline-block;
+    justify-content: center;
+    flex-wrap: none;
+    width: 100%;
+
+    .tripcard {
+      // border: 1px solid white;
+      width: 250px;
+      background-color: #191919;
+      padding: 15px;
+      border-radius: 5px;
+      position: relative;
+      margin: 10px 25px 0 0px;
+
+      @media screen and (min-width: 768px) and (max-width: 992px) {
+        margin: 16px;
+      }
+      @media all and (max-width: 767px) {
+        flex-direction: column;
+        margin: 16px 0 16px 0;
+      }
+
+      .spot_pic {
+        width: 250px;
+      }
+
+      .spot_pic:hover {
+        transform: perspective(0.5px) translateX(-1.5px) translateY(-1.5px);
+      }
+
+      .hot2 {
+        font-weight: bold;
+        margin-bottom: 15px;
+        color: $pink;
+      }
+
+      .tag {
+        display: inline-flex;
+        border: 1px solid $pink;
+        border-radius: 5px;
+        padding: 8px;
+        line-height: 5px;
+        margin: 3px;
+        color: $gray;
+      }
+
+      .price2 {
+        color: $gold;
+        font-weight: bold;
+        letter-spacing: 2px;
+        font-family: "Nasalization";
+        padding-left: 5px;
+        position: absolute;
+        right: 20px;
+        bottom: 10px;
+
+      }
+
+      .addin2 {
+        background-color: $gold;
+        color: $white;
+        border-radius: 15px;
+        width: 110px;
+        line-height: 26px;
+        text-align: center;
+
+        img.plus {
+          width: 15px;
+          display: inline-block;
+          position: relative;
+          top: 2px;
+          padding-right: 4px;
+        }
+      }
+
+      .addin2:hover {
+        background-color: lighten($gold, 10%);
+      }
+
+      .trip_bookmark {
+        background-image: url(../../img/icon/bookmark-outline.png);
+        width: 25px;
+        height: 25px;
+        background-size: 25px;
+        background-repeat: no-repeat;
+        padding: 8px;
+        position: absolute;
+        right: 0px;
+        top: 230px;
+        align-items: center;
+        display: block;
+        justify-content: center;
+        cursor: pointer;
+      }
+
+      .trip_bookmark:hover {
+        background-image: url(../../img/icon/bookmark_hover.png);
+      }
+
+    }
+
+  }
+}
+
+
+
+// 商品
+.productAll {
+  letter-spacing: 5px;
+
+  @include respond(pad) {
+    margin-left: 24px;
+  }
+
+  @include respond(mobile) {
+    margin-left: 0px;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+
+    @include respond(pad) {
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    @include respond(mobile) {
+      justify-content: center;
+    }
+
+    // border: 1px solid $pink;
+    li {
+      width: 30%;
+
+      @include respond(pad) {
+        width: 45%;
+      }
+
+      @include respond(mobile) {
+        width: 100%;
+      }
+
+      // border: 1px solid #fff;
+      a {
+        padding: 10px 0 10px 0;
+        @include flex_middle();
+        flex-direction: column;
+        background-color: rgba($color: #ffffff, $alpha: 0.9);
+        color: black;
+
+        img {
+          width: 50%;
+        }
+
+        .item {
+          text-align: left;
+          width: 100%;
+          @include flex_middle();
+          justify-content: space-around;
+          padding-top: 20px;
+
+          // border: 1px solid #fff;
+          .info {
+            padding: 16px 0;
+
+            .price {
+              // color: $gold;
+              font-weight: bold;
+              font-family: "Nasalization";
+            }
+          }
+
+          img {
+            padding-top: 15px;
+          }
+        }
+      }
+    }
+  }
 }

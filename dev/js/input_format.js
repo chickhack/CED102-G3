@@ -34,3 +34,13 @@ new Cleave('#mobile', {
     phone: true,
     phoneRegionCode: 'TW'
 });
+
+new Cleave('#omobile', {
+    phone: true,
+    phoneRegionCode: 'TW'
+});
+
+new Cleave("#creditDate", {
+    date: true,
+    datePattern: ['m', 'y']
+})

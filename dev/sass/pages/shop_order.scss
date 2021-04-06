@@ -183,14 +183,17 @@ section.orderer{
             vertical-align: middle;
             width: 10px;
             height: 10px;
-            border-radius: 50%;
             padding: 2px;
             margin-right: 10px;
             text-align: center;
         }
         .checkbox_custom:checked + .checkbox_custom_label:before {
-            content: "";
+            content: "\f00c";
+            font-family: 'Font Awesome 5 Free';
             background: $gold;
+            color: #fff;
+            font-weight: 700;
+            font-size: 10px;
         }
         .checkbox_custom:focus + .checkbox_custom-label{
             outline: 1px solid #ddd;
@@ -199,6 +202,24 @@ section.orderer{
             width: 30%;
             @include respond(mobile){
                 width: 40%;
+            }
+        }
+        .credit_check{
+            @include flex_middle();
+            text-align: center;
+            @include respond(pad){
+                flex-direction: column;
+                align-items: start;
+                text-align: left;
+            }
+            label{
+                width: 100%;
+            }
+            .creditInput{
+                @include respond(pad){
+                    margin-left: 0;
+                    margin-top: 8px;
+                }
             }
         }
     }
@@ -263,6 +284,35 @@ section.orderer{
         }
         small{
             margin-right: 6%;
+        }
+    }
+}
+.modal{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,.3);
+    position: fixed;
+    top: 0;
+    @include flex_middle();
+    display: none;
+    .window{
+        min-width: 250px;
+        width: 30vw;
+        padding: 40px 0;
+        border: 1px solid $gold;
+        @include flex_middle();
+        flex-direction: column;
+        background-color: $darkblue;
+        h3{
+            color: $gold;
+            font-weight: 900;
+        }
+        a{
+            color: $white;
+            transition: all .3s;
+            &:hover{
+                background-color: $gold;
+            }
         }
     }
 }
