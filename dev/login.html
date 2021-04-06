@@ -15,7 +15,9 @@
       href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css"
     />
     <link rel="stylesheet" type="text/css" href="./css/pages/login.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
   </head>
+
   <body>
     <div class="container">
         <header>@@include('./layout/header.html')</header>
@@ -40,7 +42,8 @@
                                 <input type="email" class="form-control" placeholder="請輸入"></input>
                             </div>
                             <div class="form-group">
-                                <input type="password" class="form-control" placeholder="請輸入"></input>
+                                <input id="password-field" type="password" class="form-control" placeholder="請輸入" value=""></input>
+                                <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
                             </div>
                             <button type="submit" class="button_min margin_top_3" >登入</button>
                             </form>
@@ -49,12 +52,31 @@
                 </div>
             </div>
             <div class="bottom-section margin_top_3">
-                <div class="signup"><a href="register.html">加入會員</a></div>
-                <div class="forgot margin_top_2"><a>忘記密碼</a></div>
+                <div class="signup">
+                    <img src="img/icon/create-group-button.png" width="20" >
+                    <a href="register.html">加入會員</a>
+                </div>
+                <div class="forgot margin_top_2">
+                    <img src="img/icon/locked-padlock.png" width="15">
+                    <a>忘記密碼</a>
+                </div>
             </div>
         </div>
 
         </section>
     </div>
+    <!-- toggle password visibility -->
+    <script>
+        $(".toggle-password").click(function() {
+
+        $(this).toggleClass("fa-eye fa-eye-slash");
+        var input = $($(this).attr("toggle"));
+        if (input.attr("type") == "password") {
+        input.attr("type", "text");
+        } else {
+        input.attr("type", "password");
+        }
+        });
+    </script>
   </body>
 </html>
