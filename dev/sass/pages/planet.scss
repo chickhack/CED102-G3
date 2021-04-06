@@ -151,6 +151,9 @@ button:hover{
                 }
         
             }
+            .tab-active{
+                position: relative;
+            }
         }
     
     }
@@ -187,7 +190,6 @@ button:hover{
         }
     }
 }
-
 @media only screen and ( max-width:1200px) {
     .tab-inner{
         display: flex;
@@ -196,9 +198,6 @@ button:hover{
         .tab-active{
             display: flex;
             justify-content: center;
-            img{
-                width: 70vw;
-            }
         }
     }
     .planet_content{

@@ -95,6 +95,7 @@ exports.w = function watchFiles() {
     watch('./dev/**/*.html', includeHTML);
     watch('./dev/img/*', moveImg);
     watch('./dev/js/*.js', moveJS);
+    
 };
 
 
