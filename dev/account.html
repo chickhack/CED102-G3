@@ -163,8 +163,12 @@
           Ｂ
         </div>
 
-        <div v-else-if="link ==='c'">
-          Ｃ
+        <div class="" v-else-if="link ==='c'">
+          <div class="post_btns">
+            <a href="./post.html"><button class="col btn postbtns">發文</button></a>
+          </div>
+
+
         </div>
 
         <div v-else-if="link ==='d'">
@@ -174,9 +178,11 @@
         <div class="heart" v-else-if="link ==='e'">
 
           <div class="heart_tab row justify-content-start container_heart heartnav" id="accountapp">
-            <button class="col btn heartbtns" @click="acitve(1)">行程</button>
-            <button class="col btn heartbtns" @click="acitve(2)">商品</button>
-            <button class="col btn heartbtns" @click="acitve(3)">貼文</button>
+            <div class="heart_btns">
+              <button class="col btn heartbtns" @click="acitve(1)">行程</button>
+              <button class="col btn heartbtns" @click="acitve(2)">商品</button>
+              <button class="col btn heartbtns" @click="acitve(3)">貼文</button>
+            </div>
 
             <div class="heartcontent" v-if="step === 1 || active.includes(1)" v-show="step===1">
               <div class=" heart_tripcard second margin_top_10">

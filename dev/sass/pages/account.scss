@@ -21,18 +21,15 @@ p {
   float: left;
 }
 
-.account_hi,
-.account_logo {
+.account_hi, .account_logo {
   font-size: 20px;
 }
 
-.account_hi,
-.account_acnum {
+.account_hi, .account_acnum {
   font-family: "Microsoft JhengHei";
 }
 
-.account_logo,
-.account_numlogo {
+.account_logo, .account_numlogo {
   font-family: "Nasalization";
   letter-spacing: 5px;
 }
@@ -42,9 +39,7 @@ p {
   letter-spacing: 3px;
 }
 
-.account_numlogo,
-.account_acnum,
-.account_num {
+.account_numlogo, .account_acnum, .account_num {
   font-size: 14px;
   color: #ffff;
 }
@@ -77,16 +72,13 @@ img.littleline {
   max-width: 50%;
 }
 
-.lev_name,
-.account_total,
-.account_money {
+.lev_name, .account_total, .account_money {
   font-family: "Microsoft JhengHei";
   font-size: 14px;
   letter-spacing: 1px;
 }
 
-.account_total,
-.account_money {
+.account_total, .account_money {
   color: #ffffff;
 }
 
@@ -109,8 +101,7 @@ img.littleline {
   /* border: 1px solid red; */
 }
 
-img.nowlev,
-img.nextlev {
+img.nowlev, img.nextlev {
   max-width: 50%;
 }
 
@@ -141,8 +132,7 @@ img.nextlev {
   /* justify-content: right; */
 }
 
-p.nextacc,
-p.nowacc {
+p.nextacc, p.nowacc {
   float: left;
   letter-spacing: 1px;
   line-height: 20px;
@@ -164,9 +154,7 @@ p.nowacc {
 //   color: #AD6E4A;
 //   border-bottom: 3px solid #AD6E4A;
 // }
-.nav-tabs .nav-link:focus,
-.nav-tabs .nav-link:hover,
-.nav-tabs .nav-link.active {
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover, .nav-tabs .nav-link.active {
   color: #AD6E4A;
   background: none;
   border: none;
@@ -200,15 +188,10 @@ p.nowacc {
 .info_img {
   margin: 5px 20px 0px 0px;
 }
-
-.info_left,
-.info_right,
-.info_edit {
+.info_left, .info_right, .info_edit {
   margin: 25px 10px 0px 10px;
 }
-
-.form-group,
-label {
+.form-group, label {
   margin-top: 10px;
   margin-bottom: 5px;
 }
@@ -223,13 +206,11 @@ input.form-control {
   font-family: "Microsoft JhengHei";
   font-size: 14px;
 }
-
 .form-control:focus {
   border-color: #cccaca;
   outline: none;
   box-shadow: none;
 }
-
 .form-control-plaintext {
   width: 85%;
   height: 20px;
@@ -243,14 +224,13 @@ input.form-control {
   line-height: 1.5;
   border-radius: .25rem;
 }
-
 input.form-control-plaintext:focus {
   border-color: #cccaca;
   outline: none;
   box-shadow: none;
 }
 
-// 編輯資料按鈕 // 收藏按鈕
+// 編輯資料按鈕 // 收藏按鈕 // 互動管理按鈕
 .info_editbtn {
   font-family: "Microsoft JhengHei";
   font-size: 12px;
@@ -261,36 +241,26 @@ input.form-control-plaintext:focus {
   width: 80%;
   margin-left: 50px;
 }
-
-.info_editbtn:hover,
-.heartbtns:hover {
+.info_editbtn:hover, .heartbtns:hover, .postbtns:hover {
   color: #ffff;
   border: 1px solid #AD6E4A;
   background: #AD6E4A;
 }
-
-// .info_editbtn:focus + .btn, .btn:focus {
-//   outline: 0;
-//   box-shadow: none;
-//   color: #ffffff;
-//   background: #AD6E4A;
-// }
-.info_editbtn:focus+.btn-primary,
-.heartbtns:focus,
-.btn-primary:focus {
+.info_editbtn:focus+.btn-primary, .heartbtns:focus, .btn-primary:focus, .postbtns:focus {
   color: #fff;
   background-color: #AD6E4A;
   border-color: #AD6E4A;
   box-shadow: none;
 }
 
-// 收藏按鈕
-.container_heart {
-  padding: 30px 800px 0px 270px;
-}
 
-.heartbtns {
-  max-width: 100%;
+
+// 互動牆管理按鈕 // 收藏按鈕
+.heart_btns, .post_btns {
+  padding: 20px 0px 0px 270px;
+}
+.heartbtns, .postbtns {
+  width: 90px;
   margin-left: 10px;
   font-family: "Microsoft JhengHei";
   font-size: 12px;
@@ -299,6 +269,11 @@ input.form-control-plaintext:focus {
   background: none;
   border-radius: 0px;
 }
+
+
+
+
+
 
 // 移除點擊時邊框陰影
 .btn-check:focus+.btn,
@@ -311,6 +286,10 @@ input.form-control-plaintext:focus {
 .nav-link {
   transition: none
 }
+
+
+
+
 
 
 /* footer */
