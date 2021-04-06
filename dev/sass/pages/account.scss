@@ -1,4 +1,8 @@
 @import "../all.scss";
+@import "../pages/photowall.scss";
+@import "../pages/shop.scss";
+@import "../pages/alltrip.scss";
+
 
 
 body {
@@ -12,38 +16,33 @@ body {
   align-items: center;
   justify-content: left;
 }
-
 .spacedinfo {
   line-height: 30px;
 }
 
-p {
+// 控制<p>不斷行
+.spacedinfo p {
   float: left;
 }
 
 .account_hi, .account_logo {
   font-size: 20px;
 }
-
 .account_hi, .account_acnum {
   font-family: "Microsoft JhengHei";
 }
-
 .account_logo, .account_numlogo {
   font-family: "Nasalization";
   letter-spacing: 5px;
 }
-
 .account_num {
   font-family: "adobe-std-b";
   letter-spacing: 3px;
 }
-
 .account_numlogo, .account_acnum, .account_num {
   font-size: 14px;
   color: #ffff;
 }
-
 img.account_levimg {
   max-width: 55px;
   padding-left: 20px;
@@ -62,30 +61,26 @@ img.account_levimg {
 .account_now {
   /* border: 1px solid red; */
 }
-
 .your_lev {
   /* border: 1px solid red; */
 }
+
 
 /* 目前累積等級、星球、景點、宇宙幣 */
 img.littleline {
   max-width: 50%;
 }
-
 .lev_name, .account_total, .account_money {
   font-family: "Microsoft JhengHei";
   font-size: 14px;
   letter-spacing: 1px;
 }
-
 .account_total, .account_money {
   color: #ffffff;
 }
-
 .accnum {
   font-family: "Nasalization";
 }
-
 .accmoney {
   font-family: "adobe-std-b";
   letter-spacing: 2px;
@@ -100,38 +95,31 @@ img.littleline {
   margin-bottom: 20px;
   /* border: 1px solid red; */
 }
-
 img.nowlev, img.nextlev {
   max-width: 50%;
 }
-
 .account_rocket {
   max-width: 5%;
 }
-
 .next_rocket {
   margin-left: -50px;
   margin-top: 60px;
 }
-
 .your_acc {
   display: flex;
 }
-
 .now_lev {
   display: flex;
   flex-direction: column;
   align-items: center;
   /* justify-content: left; */
 }
-
 .next_lev {
   display: flex;
   flex-direction: column;
   align-items: center;
   /* justify-content: right; */
 }
-
 p.nextacc, p.nowacc {
   float: left;
   letter-spacing: 1px;
@@ -145,27 +133,19 @@ p.nextacc, p.nowacc {
   margin: 50px 250px 0px 250px;
   border-bottom: none;
 }
-
 .account_nav a {
   color: #C9ADA7;
 }
-
-// .account_nav a:focus {
-//   color: #AD6E4A;
-//   border-bottom: 3px solid #AD6E4A;
-// }
 .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover, .nav-tabs .nav-link.active {
   color: #AD6E4A;
   background: none;
   border: none;
   border-bottom: 3px solid #AD6E4A;
 }
-
 .account_line {
   margin: 0px 250px 0px 250px;
   background-color: #AD6E4A;
 }
-
 
 
 /* 會員資料 */
@@ -257,7 +237,7 @@ input.form-control-plaintext:focus {
 
 // 互動牆管理按鈕 // 收藏按鈕
 .heart_btns, .post_btns {
-  padding: 20px 0px 0px 270px;
+  padding: 0px 0px 0px 270px;
 }
 .heartbtns, .postbtns {
   width: 90px;
@@ -270,14 +250,30 @@ input.form-control-plaintext:focus {
   border-radius: 0px;
 }
 
-
+// 收藏內容、互動管理、訂單、行程內容 控制在270px內
+ .product_card, .tripcontent, .ordercontent, .pointcontent {
+  padding: 0px 270px 100px 270px;
+}
+// 收藏行程內容 控制在270px內
+.heart_tripcard {
+  padding: 0px 250px 100px 250px;
+}
+// 收藏貼文內容 控制在270px內
+.post_card {
+  padding: 0px 250px 100px 250px;
+}
+.grid{
+  margin-top: 32px
+}
+.grid-item {
+  margin: 0px 12.5px 25px 12.5px;
+}
 
 
 
 
 // 移除點擊時邊框陰影
-.btn-check:focus+.btn,
-.btn:focus {
+.btn-check:focus+.btn, .btn:focus {
   outline: 0;
   box-shadow: none;
 }
@@ -297,131 +293,6 @@ footer {
   padding-top: 100px;
 }
 
-
-
-
-
-
-// 行程收藏
-.heart_tripcard {
-  margin-top: 0px;
-}
-.heart_trip {
-  margin-top: 20px;
-}
-
-.second {
-  margin-bottom: 100px;
-
-  .alltrip {
-    text-align: center;
-    margin: 0 auto;
-  }
-
-  .tripcard_all {
-    display: inline-block;
-    justify-content: center;
-    flex-wrap: none;
-    width: 100%;
-
-    .tripcard {
-      // border: 1px solid white;
-      width: 250px;
-      background-color: #191919;
-      padding: 15px;
-      border-radius: 5px;
-      position: relative;
-      margin: 10px 25px 0 0px;
-
-      @media screen and (min-width: 768px) and (max-width: 992px) {
-        margin: 16px;
-      }
-      @media all and (max-width: 767px) {
-        flex-direction: column;
-        margin: 16px 0 16px 0;
-      }
-
-      .spot_pic {
-        width: 250px;
-      }
-
-      .spot_pic:hover {
-        transform: perspective(0.5px) translateX(-1.5px) translateY(-1.5px);
-      }
-
-      .hot2 {
-        font-weight: bold;
-        margin-bottom: 15px;
-        color: $pink;
-      }
-
-      .tag {
-        display: inline-flex;
-        border: 1px solid $pink;
-        border-radius: 5px;
-        padding: 8px;
-        line-height: 5px;
-        margin: 3px;
-        color: $gray;
-      }
-
-      .price2 {
-        color: $gold;
-        font-weight: bold;
-        letter-spacing: 2px;
-        font-family: "Nasalization";
-        padding-left: 5px;
-        position: absolute;
-        right: 20px;
-        bottom: 10px;
-
-      }
-
-      .addin2 {
-        background-color: $gold;
-        color: $white;
-        border-radius: 15px;
-        width: 110px;
-        line-height: 26px;
-        text-align: center;
-
-        img.plus {
-          width: 15px;
-          display: inline-block;
-          position: relative;
-          top: 2px;
-          padding-right: 4px;
-        }
-      }
-
-      .addin2:hover {
-        background-color: lighten($gold, 10%);
-      }
-
-      .trip_bookmark {
-        background-image: url(../../img/icon/bookmark-outline.png);
-        width: 25px;
-        height: 25px;
-        background-size: 25px;
-        background-repeat: no-repeat;
-        padding: 8px;
-        position: absolute;
-        right: 0px;
-        top: 230px;
-        align-items: center;
-        display: block;
-        justify-content: center;
-        cursor: pointer;
-      }
-
-      .trip_bookmark:hover {
-        background-image: url(../../img/icon/bookmark_hover.png);
-      }
-
-    }
-
-  }
-}
 
 
 
@@ -502,3 +373,9 @@ footer {
     }
   }
 }
+
+
+
+
+
+
