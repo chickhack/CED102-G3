@@ -458,8 +458,13 @@ nav .burger div {
         -ms-flex-align: center;
             align-items: center;
     width: 30%;
+<<<<<<< HEAD
+    -webkit-transition: all 1s ease-in;
+    transition: all 1s ease-in;
+=======
     -webkit-transition: all .5s ease-in;
     transition: all .5s ease-in;
+>>>>>>> 0a11f23069364b3c42e82295a897725c6b4b3293
   }
   nav .nav-links li {
     width: 100%;
@@ -1268,6 +1273,7 @@ div.planet_top div.word .addin:hover {
   -moz-column-gap: 0px;
   column-count: 2;
   column-gap: 0px;
+<<<<<<< HEAD
 }
 
 .home_photowall #photos img {
@@ -1276,6 +1282,16 @@ div.planet_top div.word .addin:hover {
   height: auto !important;
 }
 
+=======
+}
+
+.home_photowall #photos img {
+  /* Just in case there are inline attributes */
+  width: 100% !important;
+  height: auto !important;
+}
+
+>>>>>>> 0a11f23069364b3c42e82295a897725c6b4b3293
 @media (max-width: 1200px) {
   .home_photowall #photos {
     -webkit-column-count: 2;

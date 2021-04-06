@@ -8,7 +8,7 @@ const payment_click = document.querySelector(".payment_click");
 const payment = document.querySelector(".payment");
 
 
-console.log(arrow[1]);
+// console.log(arrow[1]);
 arrow[0].addEventListener("click",function(){
     orderer_form.classList.toggle("retract");
 })

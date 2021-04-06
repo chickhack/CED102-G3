@@ -372,7 +372,11 @@ nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
+<<<<<<< HEAD
+  background-image: url("../img/logo.png");
+=======
   background-image: url("../../img/logo.png");
+>>>>>>> 0a11f23069364b3c42e82295a897725c6b4b3293
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -458,8 +462,13 @@ nav .burger div {
         -ms-flex-align: center;
             align-items: center;
     width: 30%;
+<<<<<<< HEAD
+    -webkit-transition: all 1s ease-in;
+    transition: all 1s ease-in;
+=======
     -webkit-transition: all .5s ease-in;
     transition: all .5s ease-in;
+>>>>>>> 0a11f23069364b3c42e82295a897725c6b4b3293
   }
   nav .nav-links li {
     width: 100%;
@@ -486,6 +495,8 @@ nav .burger div {
   nav .nav-active {
     right: 0%;
   }
+<<<<<<< HEAD
+=======
   nav .nav-cart {
     cursor: pointer;
   }
@@ -623,6 +634,7 @@ nav .burger div {
   .cart_slide {
     width: 100%;
   }
+>>>>>>> 0a11f23069364b3c42e82295a897725c6b4b3293
 }
 
 @media (max-width: 768px) {
