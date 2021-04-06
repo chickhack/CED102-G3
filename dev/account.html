@@ -92,11 +92,11 @@
     <div id="accountapp" class="account_tabs">
       <ul class="nav nav-tabs nav-justified account_nav">
         <li class="nav-item"><a class="nav-link" href="#" :class="{'active': link=='a'}" @click.prevent=" link='a'">會員資料</a></li>
-        <li class="nav-item"><a class="nav-link" href="#" :class="{'active': link=='b'}" @click.prevent="link='b'">行程管理</a></li>
-        <li class="nav-item"><a class="nav-link" href="#" :class="{'active': link=='c'}" @click.prevent="link='c'">互動牆管理</a></li>
-        <li class="nav-item"><a class="nav-link" href="#" :class="{'active': link=='d'}" @click.prevent="link='d'">商城訂單</a></li>
-        <li class="nav-item"><a class="nav-link" href="#" :class="{'active': link=='e'}" @click.prevent="link='e'">收藏管理</a></li>
-        <li class="nav-item"><a class="nav-link" href="#" :class="{'active': link=='f'}" @click.prevent="link='f'">轉換積分</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" :class="{'active': link=='b'}" @click.prevent=" link='b'">行程管理</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" :class="{'active': link=='c'}" @click.prevent=" link='c'">互動牆管理</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" :class="{'active': link=='d'}" @click.prevent=" link='d'">商城訂單</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" :class="{'active': link=='e'}" @click.prevent=" link='e'">收藏管理</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" :class="{'active': link=='f'}" @click.prevent=" link='f'">轉換積分</a></li>
       </ul>
 
       <hr class="account_line">
@@ -442,14 +442,37 @@
             </div>
 
           </div>
+        </div>  
 
-          <div v-else-if="link ==='f'">
-            <div class="pointcontent margin_top_3">
-              Ｆ
+        <div v-else-if="link ==='f'">
+
+          <div class="pointcontent margin_top_3">
+            <div class="nowstate">
+              <p class="point_p">可用的積分</p>
+              <p class="point">123,456</p><p>，</p><br>
+              <p class="point_p">目前會員等級</p>
+              <p class="level">初星者</p>
+              <p class="point_p">，每1里程可以轉換為</p>
+              <p class="level">1</p>
+              <p class="point_p">宇宙幣。</p><br>
             </div>
-          </div>
 
+            <div class="exchange margin_top_5">
+              <p class="point_p">將</p>
+              <input type="text" class="form-control point_input" id=""  placeholder=輸入欲轉換的積分>
+              <p class="point_p">積分，轉換為</p>
+              <input type="text" readonly class="form-control-plaintext point_input" id="" value="">
+              <p class="point_p">宇宙幣。</p>
+            </div>
+            <div class="point_btn">
+              <button type="submit" class="btn heartbtns">確認轉換</button>
+            </div>
+
+          </div>
         </div>
+
+        
+
       </div>
     </div>
 

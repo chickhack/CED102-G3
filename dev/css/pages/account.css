@@ -459,14 +459,7 @@ nav .burger div {
         -ms-flex-align: center;
             align-items: center;
     width: 30%;
-<<<<<<< HEAD
     -webkit-transition: all .5s ease-in;
-=======
-<<<<<<< HEAD
-    -webkit-transition: all .5s ease-in;
-=======
->>>>>>> 5746e1b6381c3f57f961138c1a9e2fd432504a5e
->>>>>>> 6c6224bf22e95fb53b1d20d499911440a3f96d05
     transition: all .5s ease-in;
   }
   nav .nav-links li {
@@ -1630,6 +1623,7 @@ input[type=number] {
           transform: translate(-50%, -50%);
   top: 35%;
   letter-spacing: 2px;
+  text-align: center;
 }
 
 @media all and (max-width: 768px) {
@@ -4260,7 +4254,7 @@ body {
   line-height: 30px;
 }
 
-.spacedinfo p {
+.spacedinfo p, .nowstate p, .exchange p, .exchange input {
   float: left;
 }
 
@@ -4487,7 +4481,7 @@ input.form-control-plaintext:focus {
           box-shadow: none;
 }
 
-.info_editbtn {
+.info_editbtn, .pointbtn {
   font-family: "Microsoft JhengHei";
   font-size: 12px;
   color: #ffff;
@@ -4498,13 +4492,13 @@ input.form-control-plaintext:focus {
   margin-left: 50px;
 }
 
-.info_editbtn:hover, .heartbtns:hover, .postbtns:hover {
+.info_editbtn:hover, .heartbtns:hover, .postbtns:hover, .pointbtn:hover {
   color: #ffff;
   border: 1px solid #AD6E4A;
   background: #AD6E4A;
 }
 
-.info_editbtn:focus + .btn-primary, .heartbtns:focus, .btn-primary:focus, .postbtns:focus {
+.info_editbtn:focus + .btn-primary, .heartbtns:focus, .btn-primary:focus, .postbtns:focus, .pointbtn:focus {
   color: #fff;
   background-color: #AD6E4A;
   border-color: #AD6E4A;
@@ -4545,6 +4539,58 @@ input.form-control-plaintext:focus {
 
 .grid-item {
   margin: 0px 12.5px 25px 12.5px;
+}
+
+.nowstate {
+  font-family: "Microsoft JhengHei";
+  font-size: 14px;
+  line-height: 25px;
+  letter-spacing: 2px;
+}
+
+.nowstate .point, .nowstate .level {
+  color: #fff;
+  padding: 0px 10px 0px 10px;
+}
+
+.exchange, .point_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+input.form-control.point_input, input.form-control-plaintext.point_input {
+  width: 120px;
+  height: 20px;
+  border: 0.5px solid rgba(173, 110, 74, 0.6);
+  background: none;
+  color: #ffffff;
+  font-family: "Microsoft JhengHei";
+  font-size: 14px;
+  padding: .375rem .75rem;
+  font-weight: 400;
+  line-height: 1.5;
+  border-radius: .25rem;
+  margin: 0px 15px 0px 15px;
+}
+
+input.form-control.point_input:focus, input.form-control-plaintext.point_input:focus {
+  border-color: #cccaca;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.point_btn {
+  margin-top: 50px;
+  height: auto;
+  max-width: auto;
 }
 
 .btn-check:focus + .btn, .btn:focus {

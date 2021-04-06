@@ -21,7 +21,7 @@ body {
 }
 
 // 控制<p>不斷行
-.spacedinfo p {
+.spacedinfo p, .nowstate p, .exchange p, .exchange input {
   float: left;
 }
 
@@ -210,8 +210,8 @@ input.form-control-plaintext:focus {
   box-shadow: none;
 }
 
-// 編輯資料按鈕 // 收藏按鈕 // 互動管理按鈕
-.info_editbtn {
+// 編輯資料按鈕 // 收藏按鈕 // 互動管理按鈕 // 轉換積分按鈕
+.info_editbtn, .pointbtn {
   font-family: "Microsoft JhengHei";
   font-size: 12px;
   color: #ffff;
@@ -221,12 +221,12 @@ input.form-control-plaintext:focus {
   width: 80%;
   margin-left: 50px;
 }
-.info_editbtn:hover, .heartbtns:hover, .postbtns:hover {
+.info_editbtn:hover, .heartbtns:hover, .postbtns:hover, .pointbtn:hover {
   color: #ffff;
   border: 1px solid #AD6E4A;
   background: #AD6E4A;
 }
-.info_editbtn:focus+.btn-primary, .heartbtns:focus, .btn-primary:focus, .postbtns:focus {
+.info_editbtn:focus+.btn-primary, .heartbtns:focus, .btn-primary:focus, .postbtns:focus, .pointbtn:focus {
   color: #fff;
   background-color: #AD6E4A;
   border-color: #AD6E4A;
@@ -268,6 +268,52 @@ input.form-control-plaintext:focus {
 .grid-item {
   margin: 0px 12.5px 25px 12.5px;
 }
+
+
+// 轉換積分
+.nowstate {
+  font-family: "Microsoft JhengHei";
+  font-size: 14px;
+  line-height: 25px;
+  letter-spacing: 2px;
+}
+.nowstate .point, .nowstate .level{
+  color: #fff;
+  padding: 0px 10px 0px 10px; 
+}
+
+.exchange, .point_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+input.form-control.point_input, input.form-control-plaintext.point_input {
+  width: 120px;
+  height: 20px;
+  border: 0.5px solid rgba(173, 110, 74, 0.6);
+  background: none;
+  color: #ffffff;
+  font-family: "Microsoft JhengHei";
+  font-size: 14px;
+  padding: .375rem .75rem;
+  font-weight: 400;
+  line-height: 1.5;
+  border-radius: .25rem;
+  margin: 0px 15px 0px 15px;
+}
+input.form-control.point_input:focus, input.form-control-plaintext.point_input:focus {
+  border-color: #cccaca;
+  outline: none;
+  box-shadow: none;
+}
+.point_btn{
+  margin-top: 50px;
+  height: auto;
+  max-width: auto;
+}
+
+
+
 
 
 
