@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -372,11 +373,7 @@ nav .logo h1 a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-<<<<<<< HEAD
-  background-image: url("../img/logo.png");
-=======
   background-image: url("../../img/logo.png");
->>>>>>> 0a11f23069364b3c42e82295a897725c6b4b3293
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -462,13 +459,8 @@ nav .burger div {
         -ms-flex-align: center;
             align-items: center;
     width: 30%;
-<<<<<<< HEAD
-    -webkit-transition: all 1s ease-in;
-    transition: all 1s ease-in;
-=======
     -webkit-transition: all .5s ease-in;
     transition: all .5s ease-in;
->>>>>>> 0a11f23069364b3c42e82295a897725c6b4b3293
   }
   nav .nav-links li {
     width: 100%;
@@ -495,8 +487,6 @@ nav .burger div {
   nav .nav-active {
     right: 0%;
   }
-<<<<<<< HEAD
-=======
   nav .nav-cart {
     cursor: pointer;
   }
@@ -634,7 +624,6 @@ nav .burger div {
   .cart_slide {
     width: 100%;
   }
->>>>>>> 0a11f23069364b3c42e82295a897725c6b4b3293
 }
 
 @media (max-width: 768px) {
@@ -808,79 +797,218 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
-.main-section {
+.container {
   margin: 0 auto;
-  margin-top: 130px;
-  padding: 0;
+  max-width: 1100px;
+  text-align: center;
 }
 
-.modal-content {
-  background-color: #434e5a;
+.container a {
+  text-decoration: none;
+}
+
+@media all and (max-width: 768px) {
+  .container {
+    margin: 0;
+  }
+}
+
+.container section.login_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container section.login_container .login_banner {
+  background-color: #353f61;
+  height: 80vh;
+  background-size: 110%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #ffffff;
+  row-gap: 2rem;
+}
+
+.container section.login_container .login_banner h2 {
+  font-family: nasalization, sans-serif;
+}
+
+@media all and (max-width: 992px) {
+  .container section.login_container .login_banner {
+    display: none;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .container section.login_container .login_banner {
+    display: none;
+  }
+}
+
+.container section.login_container .return_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.container section.login_container .return_btn span a {
+  color: #AD6E4A;
+  font-size: 28px;
+  letter-spacing: -6px;
+  font-weight: 800;
+}
+
+.container section.login_container .return_btn h4 a {
+  margin-left: 12px;
+  color: #cccaca;
+}
+
+.container section.login_container .return_btn a:hover {
+  text-decoration: underline;
+}
+
+.container section.login_container .modal-dialog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container section.login_container .modal-dialog .main-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
+.container section.login_container .modal-dialog .main-section .modal-content {
   opacity: .8;
-  padding: 0 18px;
   border-radius: 10px;
+  background-color: transparent;
+  border: none;
 }
 
-.user-img img {
-  height: 120px;
-  width: 120px;
+.container section.login_container .modal-dialog form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: inherit;
+      -ms-flex-align: inherit;
+          align-items: inherit;
 }
 
-.user-img {
-  margin-top: -60px;
-  margin-bottom: 45px;
-}
-
-.form-group {
-  margin-bottom: 25px;
-}
-
-.form-group input {
+.container section.login_container .modal-dialog form .form-group input {
+  margin: 0 auto;
+  margin-top: 24px;
   height: 42px;
   border-radius: 5px;
-  border: 0;
+  border: 1px solid #AD6E4A;
   font-size: 18px;
-  letter-spacing: 2px;
-  padding-left: 54px;
+  padding-left: 14px;
+  padding-top: 14px;
+  width: 90%;
+  background-color: transparent;
 }
 
-.form-group::before {
-  font-family: 'Font Awesome\ 5 Free';
-  content: "\f1fa";
+.container section.login_container .modal-dialog form .form-group input:focus {
+  padding-left: 28px;
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
+  border: none;
+  box-shadow: -1px 0px 20px 5px rgba(173, 110, 74, 0.45);
+  -webkit-box-shadow: -1px 0px 20px 5px rgba(173, 110, 74, 0.45);
+  -moz-box-shadow: -1px 0px 20px 5px rgba(173, 110, 74, 0.45);
+}
+
+.container section.login_container .modal-dialog form .form-group::before {
+  content: "電子信箱";
   position: absolute;
-  font-size: 22px;
-  left: 28px;
-  padding-top: 4px;
-  color: #555e60;
+  font-size: 12px;
+  left: 32px;
+  padding-top: 32px;
+  color: #C9ADA7;
 }
 
-.form-group:last-of-type::before {
-  content: "\f023";
+.container section.login_container .modal-dialog form .form-group:nth-last-of-type(2)::before {
+  content: "密碼";
 }
 
-.form-input button {
-  width: 40%;
-  margin: 5px 0 25px;
+.container section.login_container .modal-dialog form .form-group:last-of-type::before {
+  content: "確認密碼";
 }
 
-.btn-success {
-  background-color: #1c6288;
-  font-size: 19px;
-  border-radius: 5px;
-  padding: 7px 14px;
-  border: 1px solid #daf1ff;
+.container section.login_container .modal-dialog form button {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  background-color: transparent;
+  color: #AD6E4A;
 }
 
-.btn-success:hover {
-  background-color: #13445e;
-  border: 1px solid #daf1ff;
+.container section.login_container .modal-dialog form button:hover {
+  color: #ffff;
+  border: 1px solid #AD6E4A;
+  background: #AD6E4A;
 }
 
-.forgot {
-  padding: 5px 0 25px;
+.container section.login_container .bottom-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.forgot a {
-  color: #daf1ff;
+.container section.login_container .bottom-section .forgot a, .container section.login_container .bottom-section .signup a {
+  color: #cccaca;
+}
+
+.container section.login_container .bottom-section .forgot:hover, .container section.login_container .bottom-section .signup:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+@media all and (max-width: 768px) {
+  .container section.login_container .bottom-section {
+    margin-left: 32px;
+  }
 }
 /*# sourceMappingURL=login.css.map */

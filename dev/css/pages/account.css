@@ -459,13 +459,8 @@ nav .burger div {
         -ms-flex-align: center;
             align-items: center;
     width: 30%;
-<<<<<<< HEAD
-    -webkit-transition: all 1s ease-in;
-    transition: all 1s ease-in;
-=======
     -webkit-transition: all .5s ease-in;
     transition: all .5s ease-in;
->>>>>>> 0a11f23069364b3c42e82295a897725c6b4b3293
   }
   nav .nav-links li {
     width: 100%;
