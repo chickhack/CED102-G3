@@ -178,7 +178,7 @@
             <button class="col btn heartbtns" @click="acitve(2)">商品</button>
             <button class="col btn heartbtns" @click="acitve(3)">貼文</button>
 
-            <div v-if="step === 1 || active.includes(1)" v-show="step===1">
+            <div class="heartcontent" v-if="step === 1 || active.includes(1)" v-show="step===1">
               <div class=" heart_tripcard second margin_top_10">
                 <div class=" heart_trip tripcard_all  ">
                   <div v-for="item in spot1" class="tripcard">
@@ -261,6 +261,7 @@
     // Vue.component('bye', {
     //   template: '<p style="color: red">Bye</p>'
     // });
+
 
     var account_tab = new Vue({
       el: "#accountapp",
