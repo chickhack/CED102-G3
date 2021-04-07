@@ -13,6 +13,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
+    <link rel="stylesheet" href="./css/all.css" />
   </head>
 
   <body>
@@ -101,7 +102,28 @@
 			</div>
 
 		</div> -->
+    <!-- <canvas id="glCanvas" height="500" width="500"></canvas> -->
+    <!-- <script type="module" src="./js/moon.js"></script> -->
+    <div id="observablehq-viewof-planet-d8747644"></div>
+    <!-- <p>
+      Credit:
+      <a href="https://observablehq.com/d/3ac2783e7e267061"> by luisayhr</a>
+    </p> -->
 
-    <script type="module" src="./js/moon.js"></script>
+    <div id="observablehq-d8747644"></div>
+    <!-- <p>
+      Credit:
+      <a href="https://observablehq.com/d/3ac2783e7e267061"> by luisayhr</a>
+    </p> -->
+
+    <script type="module">
+      import {
+        Runtime,
+        Inspector,
+      } from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+      import define from "https://api.observablehq.com/d/3ac2783e7e267061.js?v=3";
+      new Runtime().module(define, Inspector.into("#observablehq-d8747644"));
+    </script>
+    <footer>@@include('./layout/footer.html')</footer>
   </body>
 </html>
