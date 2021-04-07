@@ -26,8 +26,8 @@
     <script type="module" src="https://cdn.jsdelivr.net/npm/three@0.117.1/build/three.module.js"></script>
     <script type="module" src="https://cdn.skypack.dev/three@0.120.0/examples/jsm/controls/OrbitControls.js"></script>
     <!-- 動態背景 -->
-    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->
-
+    <!-- <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>  -->
+    <script type="module" src="./js/mars.js"></script>
   </head>
   <body>
 
@@ -35,9 +35,9 @@
     <div class="container-fluid">
     <header>@@include('./layout/header.html')</header>
     <!-- 動態背景 -->
-      <div id="particles-js">
+      <!-- <div id="particles-js">
         <script src="./js/background.js"></script>
-      </div>
+      </div> -->
       <div class="planet_banner">
         <h2 class="margin_top_5">星星世界帶你探索宇宙</h4>
       </div>
@@ -84,7 +84,7 @@
           <div class="tab-active margin_top_5 col-lg-6 col-md-4">
               <!-- 3D星球 -->
               <div class="3dplanet">
-                <script type="module" src="./js/mars.js"></script>
+                <canvas id="planetCanvas" width="500" height="500" style="border:1px solid white;"></canvas>
               </div>
           </div>
         </div>
