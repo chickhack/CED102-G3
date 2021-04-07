@@ -459,14 +459,16 @@ nav .burger div {
         -ms-flex-align: center;
             align-items: center;
     width: 30%;
-<<<<<<< HEAD
     -webkit-transition: all .5s ease-in;
+<<<<<<< HEAD
+=======
 =======
 <<<<<<< HEAD
     -webkit-transition: all .5s ease-in;
 =======
 >>>>>>> 5746e1b6381c3f57f961138c1a9e2fd432504a5e
 >>>>>>> 6c6224bf22e95fb53b1d20d499911440a3f96d05
+>>>>>>> 14d09e0e2a0aa2a72aba94af7fa2b3d50b9d34ec
     transition: all .5s ease-in;
   }
   nav .nav-links li {
@@ -812,7 +814,6 @@ input[type=number] {
 
 .container a {
   text-decoration: none;
-<<<<<<< HEAD
 }
 
 @media all and (max-width: 768px) {
@@ -922,6 +923,10 @@ input[type=number] {
   border: none;
 }
 
+.container section.login_container .modal-dialog .fa-eye:before, .container section.login_container .modal-dialog .fa-eye-slash:before {
+  color: #AD6E4A;
+}
+
 .container section.login_container .modal-dialog form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -938,6 +943,8 @@ input[type=number] {
           align-items: inherit;
 }
 
+<<<<<<< HEAD
+=======
 =======
 }
 
@@ -1069,6 +1076,7 @@ input[type=number] {
 }
 
 >>>>>>> 5746e1b6381c3f57f961138c1a9e2fd432504a5e
+>>>>>>> 14d09e0e2a0aa2a72aba94af7fa2b3d50b9d34ec
 .container section.login_container .modal-dialog form .form-group input {
   margin: 0 auto;
   margin-top: 24px;
@@ -1084,9 +1092,10 @@ input[type=number] {
 
 .container section.login_container .modal-dialog form .form-group input:focus {
   padding-left: 28px;
-<<<<<<< HEAD
   -webkit-transform: scale(1.08);
           transform: scale(1.08);
+<<<<<<< HEAD
+=======
 =======
 <<<<<<< HEAD
   -webkit-transform: scale(1.08);
@@ -1100,6 +1109,7 @@ input[type=number] {
 =======
   transform: scale(1.08);
 >>>>>>> 6c6224bf22e95fb53b1d20d499911440a3f96d05
+>>>>>>> 14d09e0e2a0aa2a72aba94af7fa2b3d50b9d34ec
   box-shadow: -1px 0px 20px 5px rgba(173, 110, 74, 0.45);
   -webkit-box-shadow: -1px 0px 20px 5px rgba(173, 110, 74, 0.45);
   -moz-box-shadow: -1px 0px 20px 5px rgba(173, 110, 74, 0.45);
@@ -1138,7 +1148,6 @@ input[type=number] {
   }
 }
 
->>>>>>> 5746e1b6381c3f57f961138c1a9e2fd432504a5e
 .container section.login_container .modal-dialog form .form-group::before {
   content: "電子信箱";
   position: absolute;
@@ -1148,13 +1157,8 @@ input[type=number] {
   color: #C9ADA7;
 }
 
-<<<<<<< HEAD
-.container section.login_container .modal-dialog form .form-group:nth-last-of-type(2)::before {
-  content: "密碼";
-}
-
 .container section.login_container .modal-dialog form .form-group:last-of-type::before {
-  content: "確認密碼";
+  content: "密碼";
 }
 
 .container section.login_container .modal-dialog form button {
@@ -1184,6 +1188,12 @@ input[type=number] {
           justify-content: center;
 }
 
+<<<<<<< HEAD
+.container section.login_container .bottom-section .forgot, .container section.login_container .bottom-section .signup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+=======
 =======
 .container section.login_container .modal-dialog form .form-group:last-of-type::before {
   content: "密碼";
@@ -1220,6 +1230,7 @@ input[type=number] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+>>>>>>> 14d09e0e2a0aa2a72aba94af7fa2b3d50b9d34ec
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1228,7 +1239,6 @@ input[type=number] {
           align-items: center;
 }
 
->>>>>>> 5746e1b6381c3f57f961138c1a9e2fd432504a5e
 .container section.login_container .bottom-section .forgot a, .container section.login_container .bottom-section .signup a {
   color: #cccaca;
   margin-left: 4px;

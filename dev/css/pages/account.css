@@ -828,8 +828,23 @@ body {
   line-height: 1;
 }
 
+<<<<<<< HEAD
+/* 歡迎會員 字體大小、字型位置 */
+.welcome {
+  padding: 15vh 250px 0px 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+=======
 ol, ul {
   list-style: none;
+>>>>>>> 14d09e0e2a0aa2a72aba94af7fa2b3d50b9d34ec
 }
 
 blockquote, q {
@@ -933,6 +948,40 @@ small, .small {
   padding-left: 24px;
 }
 
+<<<<<<< HEAD
+.your_acc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.now_lev {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* justify-content: left; */
+}
+
+.next_lev {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* justify-content: right; */
+=======
 .padding_left_4 {
   padding-left: 32px;
 }
@@ -943,6 +992,7 @@ small, .small {
 
 .padding_left_6 {
   padding-left: 48px;
+>>>>>>> 14d09e0e2a0aa2a72aba94af7fa2b3d50b9d34ec
 }
 
 .padding_left_7 {
@@ -989,16 +1039,32 @@ small, .small {
   padding-top: 56px;
 }
 
+<<<<<<< HEAD
+.form-control:focus {
+  border-color: #cccaca;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+=======
 .padding_top_8 {
   padding-top: 64px;
+>>>>>>> 14d09e0e2a0aa2a72aba94af7fa2b3d50b9d34ec
 }
 
 .padding_top_9 {
   padding-top: 72px;
 }
 
+<<<<<<< HEAD
+input.form-control-plaintext:focus {
+  border-color: #cccaca;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+=======
 .padding_top_10 {
   padding-top: 80px;
+>>>>>>> 14d09e0e2a0aa2a72aba94af7fa2b3d50b9d34ec
 }
 
 .padding_top_11 {
@@ -4521,31 +4587,102 @@ input.form-control-plaintext:focus {
   border-radius: 0px;
 }
 
+<<<<<<< HEAD
+.btn-check:focus + .btn,
+.btn:focus {
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.nav-link {
+  -webkit-transition: none;
+  transition: none;
+}
+
+/* footer */
+footer {
+  padding-top: 100px;
+}
+
+.heart_tripcard {
+  margin-top: 0px;
+}
+
+.heart_trip {
+  margin-top: 20px;
+}
+
+.second {
+  margin-bottom: 100px;
+}
+
+.second .alltrip {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.second .tripcard_all {
+  display: inline-block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: none;
+      flex-wrap: none;
+  width: 100%;
+}
+
+.second .tripcard_all .tripcard {
+  width: 250px;
+  background-color: #191919;
+  padding: 15px;
+  border-radius: 5px;
+  position: relative;
+  margin: 10px 25px 0 0px;
+=======
 .product_card, .tripcontent, .ordercontent, .pointcontent {
   padding: 0px 270px 100px 270px;
 }
 
 .heart_tripcard {
   padding: 0px 250px 100px 250px;
+>>>>>>> 14d09e0e2a0aa2a72aba94af7fa2b3d50b9d34ec
 }
 
 .post_card {
   padding: 0px 250px 100px 250px;
 }
 
+<<<<<<< HEAD
+@media all and (max-width: 767px) {
+  .second .tripcard_all .tripcard {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 16px 0 16px 0;
+  }
+=======
 .grid {
   margin-top: 32px;
+>>>>>>> 14d09e0e2a0aa2a72aba94af7fa2b3d50b9d34ec
 }
 
 .grid-item {
   margin: 0px 12.5px 25px 12.5px;
 }
 
+<<<<<<< HEAD
+.second .tripcard_all .tripcard .spot_pic:hover {
+  -webkit-transform: perspective(0.5px) translateX(-1.5px) translateY(-1.5px);
+          transform: perspective(0.5px) translateX(-1.5px) translateY(-1.5px);
+=======
 .nowstate {
   font-family: "Microsoft JhengHei";
   font-size: 14px;
   line-height: 25px;
   letter-spacing: 2px;
+>>>>>>> 14d09e0e2a0aa2a72aba94af7fa2b3d50b9d34ec
 }
 
 .nowstate .point, .nowstate .level {
@@ -4553,6 +4690,18 @@ input.form-control-plaintext:focus {
   padding: 0px 10px 0px 10px;
 }
 
+<<<<<<< HEAD
+.second .tripcard_all .tripcard .tag {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border: 1px solid #C9ADA7;
+  border-radius: 5px;
+  padding: 8px;
+  line-height: 5px;
+  margin: 3px;
+  color: #cccaca;
+=======
 .exchange, .point_btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4563,6 +4712,7 @@ input.form-control-plaintext:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+>>>>>>> 14d09e0e2a0aa2a72aba94af7fa2b3d50b9d34ec
 }
 
 input.form-control.point_input, input.form-control-plaintext.point_input {
@@ -4599,9 +4749,30 @@ input.form-control.point_input:focus, input.form-control-plaintext.point_input:f
           box-shadow: none;
 }
 
+<<<<<<< HEAD
+.second .tripcard_all .tripcard .trip_bookmark {
+  background-image: url(../../img/icon/bookmark-outline.png);
+  width: 25px;
+  height: 25px;
+  background-size: 25px;
+  background-repeat: no-repeat;
+  padding: 8px;
+  position: absolute;
+  right: 0px;
+  top: 230px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+=======
 .nav-link {
   -webkit-transition: none;
   transition: none;
+>>>>>>> 14d09e0e2a0aa2a72aba94af7fa2b3d50b9d34ec
 }
 
 /* footer */
