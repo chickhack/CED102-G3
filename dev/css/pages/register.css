@@ -914,10 +914,6 @@ input[type=number] {
   border: none;
 }
 
-.container section.login_container .modal-dialog .fa-eye:before, .container section.login_container .modal-dialog .fa-eye-slash:before {
-  color: #AD6E4A;
-}
-
 .container section.login_container .modal-dialog form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -998,8 +994,12 @@ input[type=number] {
   color: #C9ADA7;
 }
 
-.container section.login_container .modal-dialog form .form-group:last-of-type::before {
+.container section.login_container .modal-dialog form .form-group:nth-last-of-type(2)::before {
   content: "密碼";
+}
+
+.container section.login_container .modal-dialog form .form-group:last-of-type::before {
+  content: "確認密碼";
 }
 
 .container section.login_container .modal-dialog form button {
@@ -1029,21 +1029,8 @@ input[type=number] {
           justify-content: center;
 }
 
-.container section.login_container .bottom-section .forgot, .container section.login_container .bottom-section .signup {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .container section.login_container .bottom-section .forgot a, .container section.login_container .bottom-section .signup a {
   color: #cccaca;
-  margin-left: 4px;
 }
 
 .container section.login_container .bottom-section .forgot:hover, .container section.login_container .bottom-section .signup:hover {
@@ -1056,4 +1043,4 @@ input[type=number] {
     margin-left: 32px;
   }
 }
-/*# sourceMappingURL=login.css.map */
+/*# sourceMappingURL=register.css.map */

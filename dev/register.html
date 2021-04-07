@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
     <title>加入會員</title>
     <link
       rel="stylesheet"
@@ -13,7 +14,7 @@
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css"
     />
-    <link rel="stylesheet" type="text/css" href="./css/pages/login.css" />
+    <link rel="stylesheet" type="text/css" href="./css/pages/register.css" />
   </head>
   <body>
     <div class="container">
@@ -27,7 +28,7 @@
         <div class="rightbox col-8 col-sm-9">
 
             <div class="return_btn margin_left_2">
-                <span><a href="home.html"><<</a></span>
+                <span><a href="login.html"><<</a></span>
                 <h4><a href="login.html">返回登入頁面</a></h4>
             </div>
             <div class="modal-dialog">
@@ -36,13 +37,13 @@
                         <div class="col-11 form-input">
                             <form id="register_form" method="post" action="php/add_member.php">
                             <div class="form-group">
-                                <input type="email" id="email" class="form-control" placeholder="請輸入"></input>
+                                <input type="email" id="memId" class="form-control" placeholder="請輸入"></input>
                             </div>
                             <div class="form-group">
-                                <input type="password" id="password" class="form-control" placeholder="請輸入密碼"></input>
+                                <input type="password" id="memPsw" class="form-control" placeholder="請輸入密碼"></input>
                             </div>
                             <div class="form-group">
-                                <input type="password" id="confirm_password" class="form-control" placeholder="請重新輸入密碼"></input>
+                                <input type="password" id="memRePsw" class="form-control" placeholder="請重新輸入密碼"></input>
                             </div>
                             <button type="submit" class="button_min margin_top_3" >註冊</button>
                             </form>
@@ -60,12 +61,12 @@
     <script>
         $(document).on("ready", function(){
             //當帳號輸入後檢查帳號是否重複
-            $("#email").on("keyup", function(){
+            $("#username").on("keyup", function(){
                 if($(this).val()!=''){
                     //非空字串才檢查
                 $.ajax({
                     type : "POST", //表單傳送的方式
-                    url : "php/check_username.php", //目標給哪個檔案
+                    url : "./php/check_username.php", //目標給哪個檔案
                     data : {//為要傳過去的資料，使用物件方式呈現，因為變數key值為英文的關係，所以用物件方式送。ex: {name:"輸入的名字",password:"輸入的密碼"}
                     n : $(this).val()//代表要傳一個n變數值為，username文字方塊裡的值
                     },

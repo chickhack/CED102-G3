@@ -1302,4 +1302,58 @@ section.orderer .detail .total > .count, section.orderer .detail .integral > .co
 section.orderer .detail small {
   margin-right: 6%;
 }
+
+.modal {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+}
+
+.modal .window {
+  min-width: 250px;
+  width: 30vw;
+  padding: 40px 0;
+  border: 1px solid #AD6E4A;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #0c0d18;
+}
+
+.modal .window h3 {
+  color: #AD6E4A;
+  font-weight: 900;
+}
+
+.modal .window a {
+  color: #ffffff;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.modal .window a:hover {
+  background-color: #AD6E4A;
+}
 /*# sourceMappingURL=shop_order.css.map */

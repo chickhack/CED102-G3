@@ -808,7 +808,8 @@ input[type=number] {
 }
 
 nav {
-  background-color: #5f5f5f3a;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(97, 97, 97, 0.555)), color-stop(75%, rgba(255, 255, 255, 0)));
+  background: linear-gradient(180deg, rgba(97, 97, 97, 0.555) 0%, rgba(255, 255, 255, 0) 75%);
 }
 
 button:hover {
@@ -820,6 +821,13 @@ button:hover {
 .video-bg {
   height: 100vh;
   overflow: hidden;
+}
+
+.video-overlay {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(75%, #6d0d0d));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #6d0d0d 75%);
+  position: absolute;
+  height: 100vh;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -1215,7 +1223,6 @@ div.planet_top div.word .addin:hover {
 }
 
 .home_photowall .topright {
-  border: 1px solid white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1259,7 +1266,6 @@ div.planet_top div.word .addin:hover {
 }
 
 .home_photowall #photos {
-  border: 1px solid white;
   /* Prevent vertical gaps */
   line-height: 0;
   -webkit-column-count: 2;

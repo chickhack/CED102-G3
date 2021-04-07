@@ -837,6 +837,7 @@ input[type=number] {
           transform: translate(-50%, -50%);
   top: 35%;
   letter-spacing: 2px;
+  text-align: center;
 }
 
 @media all and (max-width: 768px) {
@@ -935,6 +936,7 @@ input[type=number] {
   color: white;
   padding: 0 15px;
   letter-spacing: 2px;
+  font-size: 12px;
 }
 
 .article_all {
@@ -955,6 +957,8 @@ input[type=number] {
   padding: 0 15px 15px 15px;
   color: #ffffff;
   line-height: 32px;
+  font-size: 12px;
+  letter-spacing: 1px;
 }
 
 .article_2 {
@@ -984,7 +988,7 @@ input[type=number] {
 .col-md-1 {
   display: inline-block;
   position: fixed;
-  left: 1300px;
+  left: 80%;
   bottom: 80px;
   z-index: 1;
 }
@@ -1005,13 +1009,13 @@ footer.padding_top_5 {
 
 .light-box-container {
   text-align: center;
-  margin-top: 20px;
   position: absolute;
   background-color: #292B41;
   display: none;
   position: absolute;
   z-index: 2;
   top: 100px;
+  padding-top: 35px;
 }
 
 .row {
@@ -1027,7 +1031,7 @@ button.turnoff_lightbox {
 }
 
 button.turnoff_lightbox img {
-  width: 40px;
+  width: 30px;
   position: absolute;
   top: 5px;
   right: 10px;
@@ -1035,7 +1039,8 @@ button.turnoff_lightbox img {
 
 .img-switch {
   display: inline-block;
-  width: 600px;
+  max-width: 480px;
+  margin: 0 12px 0 12px;
 }
 
 .img-switch img {
@@ -1064,7 +1069,8 @@ button.turnoff_lightbox img {
 
 .words {
   display: inline-block;
-  width: 500px;
+  max-width: 480px;
+  margin: 0 10px 0 10px;
 }
 
 .post_article {
@@ -1079,7 +1085,7 @@ button.turnoff_lightbox img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 15px 15px 0 15px;
+  padding: 10px 15px 0 15px;
 }
 
 .member_info .name {
@@ -1100,7 +1106,7 @@ button.turnoff_lightbox img {
 .post_text {
   color: white;
   line-height: 32px;
-  padding: 15px;
+  padding: 10px 15px 10px 15px;
   text-align: left;
 }
 
@@ -1135,7 +1141,7 @@ button.turnoff_lightbox img {
 
 .message_1 .name, .message_2 .name, .message_3 .name {
   margin: 0 15px;
-  line-height: 49px;
+  line-height: 40px;
   font-weight: 900;
 }
 
@@ -1149,20 +1155,20 @@ button.turnoff_lightbox img {
   display: -ms-flexbox;
   display: flex;
   padding: 0 15px 0 15px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .message_1 .member_photo img, .message_2 .member_photo img, .message_3 .member_photo img {
   border-radius: 50%;
-  max-width: 50px;
+  max-width: 40px;
 }
 
 .message_1 .message_1_text, .message_2 .message_2_text, .message_3 .message_3_text {
-  line-height: 49px;
+  line-height: 40px;
 }
 
 .message_1 .message_1_more, .message_2 .message_2_more, .message_3 .message_3_more {
-  line-height: 52px;
+  line-height: 40px;
   padding-top: 5px;
 }
 

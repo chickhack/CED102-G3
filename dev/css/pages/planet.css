@@ -1024,6 +1024,10 @@ button:hover {
   font-size: 16px;
 }
 
+.planet_tab .tab-inner .taball .tab-active {
+  position: relative;
+}
+
 .planet_content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1093,9 +1097,6 @@ button:hover {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-  .tab-inner .tab-active img {
-    width: 70vw;
   }
   .planet_content {
     display: -webkit-box;
