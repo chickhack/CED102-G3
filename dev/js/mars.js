@@ -19,7 +19,6 @@ import {OrbitControls} from 'https://cdn.skypack.dev/three@0.120.0/examples/jsm/
 // xhttp.send();
 // console.log(data);
 
-
 // *THREEJS CODE
 
 // *CREATE scene where objects will be placed (kinda like a stage)
@@ -28,11 +27,11 @@ const scene = new THREE.Scene();
 // *CREATE camera to see objects (kinda like sittin in the audience)
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000);
     // perspectiveCamera( fov : Number, aspect : Number, near : Number, far : Number )
-
+const myCanvas = document.getElementById("planetCanvas")
 // *CREATE renderer to display the created objects (kind like the ppl who place the different sets on the stage)
-const renderer = new THREE.WebGLRenderer();
+const renderer = new THREE.WebGLRenderer({canvas: myCanvas});
 renderer.setSize(window.innerWidth/2, window.innerHeight/2);
-document.body.appendChild(renderer.domElement);
+// document.body.appendChild(renderer.domElement);
 
 // *CREATE controls so that we can interact with the objects/have interactivity
 const controls = new OrbitControls(camera, renderer.domElement);
@@ -150,16 +149,16 @@ controls.update();
 controls.saveState(); // from here this is the default setting
 
 // Add event listeners so DOM knows what functions to use when obj/items are interacted with 
-window.addEventListener('resize', onWindowResize, false);
+// window.addEventListener('resize', onWindowResize, false);
 
 
 
     // Window resize
-function onWindowResize(){
-    camera.aspect = window.innerWidth / window.innerHeight;
-    camera.updateProjectionMatrix();
-    renderer.setSize(window.innerWidth , window.innerHeight)
-}
+// function onWindowResize(){
+//     camera.aspect = window.innerWidth / window.innerHeight;
+//     camera.updateProjectionMatrix();
+//     renderer.setSize(window.innerWidth , window.innerHeight)
+// }
 
     // Animation function
 function animate() {
@@ -176,6 +175,7 @@ function render(){
 function addCountryCoord(earth, country, language, latitude, longitude, color, region, population, area_sq_mi, gpd_per_capita, climate){
     
 }
+
 
 animate();
 
