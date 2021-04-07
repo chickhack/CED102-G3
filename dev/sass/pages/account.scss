@@ -313,6 +313,17 @@ input.form-control.point_input:focus, input.form-control-plaintext.point_input:f
 }
 
 
+.actionBoxon{
+  display:flex;
+  position: absolute;
+  top: 270px;
+  background-color:black;
+  opacity: 0.5;
+  // position: relative;
+  display: flex;
+}
+
+
 
 
 
@@ -323,7 +334,6 @@ input.form-control.point_input:focus, input.form-control-plaintext.point_input:f
   outline: 0;
   box-shadow: none;
 }
-
 // 移除滑鼠移除＆取消點擊時邊框
 .nav-link {
   transition: none
@@ -419,6 +429,8 @@ footer {
     }
   }
 }
+
+
 
 
 

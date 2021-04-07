@@ -458,14 +458,7 @@ nav .burger div {
         -ms-flex-align: center;
             align-items: center;
     width: 30%;
-<<<<<<< HEAD
     -webkit-transition: all .5s ease-in;
-=======
-<<<<<<< HEAD
-    -webkit-transition: all .5s ease-in;
-=======
->>>>>>> 5746e1b6381c3f57f961138c1a9e2fd432504a5e
->>>>>>> 6c6224bf22e95fb53b1d20d499911440a3f96d05
     transition: all .5s ease-in;
   }
   nav .nav-links li {
@@ -1316,7 +1309,6 @@ section.orderer .detail small {
   background-color: rgba(0, 0, 0, 0.3);
   position: fixed;
   top: 0;
-<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1326,23 +1318,6 @@ section.orderer .detail small {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-=======
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-=======
-  display: flex;
-  justify-content: center;
-  align-items: center;
->>>>>>> 5746e1b6381c3f57f961138c1a9e2fd432504a5e
->>>>>>> 6c6224bf22e95fb53b1d20d499911440a3f96d05
   display: none;
 }
 
@@ -1351,7 +1326,6 @@ section.orderer .detail small {
   width: 30vw;
   padding: 40px 0;
   border: 1px solid #AD6E4A;
-<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1365,28 +1339,6 @@ section.orderer .detail small {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-=======
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-=======
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
->>>>>>> 5746e1b6381c3f57f961138c1a9e2fd432504a5e
->>>>>>> 6c6224bf22e95fb53b1d20d499911440a3f96d05
   background-color: #0c0d18;
 }
 
@@ -1397,14 +1349,7 @@ section.orderer .detail small {
 
 .modal .window a {
   color: #ffffff;
-<<<<<<< HEAD
   -webkit-transition: all .3s;
-=======
-<<<<<<< HEAD
-  -webkit-transition: all .3s;
-=======
->>>>>>> 5746e1b6381c3f57f961138c1a9e2fd432504a5e
->>>>>>> 6c6224bf22e95fb53b1d20d499911440a3f96d05
   transition: all .3s;
 }
 
