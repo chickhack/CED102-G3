@@ -41,7 +41,7 @@
                                                 <p>{{item.name}}</p>
                                                 <p class="margin_top_1 price"> ${{item.price}}</p>
                                             </div>
-                                            <img :src="item.cart" class="icon">
+                                            <img :src="item.cart" class="icon cart" @click.stop="cart">
                                         </div>
                                     </a>
                                 </li>
@@ -150,6 +150,9 @@
             methods: {
                 upDown(e){
                     e.target.nextElementSibling.classList.toggle("chooseShow");
+                },
+                cart(){
+                    cart_slide.classList.toggle("cart-active");
                 }
             },
         })

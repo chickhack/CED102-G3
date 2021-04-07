@@ -59,6 +59,9 @@ nav{
         margin: 5px;
         transition: all .3s ease;
     }
+    .nav-cart{
+        cursor: pointer;
+    }
 }
 
 @media (max-width: 992px){
@@ -102,9 +105,6 @@ nav{
         }
         .nav-active{
             right: 0%;
-        }
-        .nav-cart{
-            cursor: pointer;
         }
     }
 }
