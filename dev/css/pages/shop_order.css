@@ -459,15 +459,6 @@ nav .burger div {
             align-items: center;
     width: 30%;
     -webkit-transition: all .5s ease-in;
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
-    -webkit-transition: all .5s ease-in;
-=======
->>>>>>> 5746e1b6381c3f57f961138c1a9e2fd432504a5e
->>>>>>> 6c6224bf22e95fb53b1d20d499911440a3f96d05
->>>>>>> 14d09e0e2a0aa2a72aba94af7fa2b3d50b9d34ec
     transition: all .5s ease-in;
   }
   nav .nav-links li {
@@ -1327,26 +1318,6 @@ section.orderer .detail small {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-=======
-  display: flex;
-  justify-content: center;
-  align-items: center;
->>>>>>> 5746e1b6381c3f57f961138c1a9e2fd432504a5e
->>>>>>> 6c6224bf22e95fb53b1d20d499911440a3f96d05
->>>>>>> 14d09e0e2a0aa2a72aba94af7fa2b3d50b9d34ec
   display: none;
 }
 
@@ -1368,31 +1339,6 @@ section.orderer .detail small {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-=======
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
->>>>>>> 5746e1b6381c3f57f961138c1a9e2fd432504a5e
->>>>>>> 6c6224bf22e95fb53b1d20d499911440a3f96d05
->>>>>>> 14d09e0e2a0aa2a72aba94af7fa2b3d50b9d34ec
   background-color: #0c0d18;
 }
 
@@ -1404,15 +1350,6 @@ section.orderer .detail small {
 .modal .window a {
   color: #ffffff;
   -webkit-transition: all .3s;
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
-  -webkit-transition: all .3s;
-=======
->>>>>>> 5746e1b6381c3f57f961138c1a9e2fd432504a5e
->>>>>>> 6c6224bf22e95fb53b1d20d499911440a3f96d05
->>>>>>> 14d09e0e2a0aa2a72aba94af7fa2b3d50b9d34ec
   transition: all .3s;
 }
 
