@@ -206,7 +206,7 @@ button.turnoff_lightbox img{
 }
 .img-switch{
   display: inline-block;
-  width: 500px;//600px->500px
+  max-width: 480px;//500px->480px
   margin: 0 12px 0 12px; //新增
 }
 .img-switch img{
@@ -231,7 +231,7 @@ button.turnoff_lightbox img{
 }
 .words{
   display: inline-block;
-  width: 500px;
+  max-width: 480px;//500px->480px
   margin:0 10px 0 10px;//新增
 }
 .post_article{
