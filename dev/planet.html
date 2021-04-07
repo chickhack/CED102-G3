@@ -21,13 +21,13 @@
 
     <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+    <!-- CSS -->
     <link rel="stylesheet" href="./css/all.css" />
     <link rel="stylesheet" href="./css/pages/planet.css"></link>
-    <script type="module" src="https://cdn.jsdelivr.net/npm/three@0.117.1/build/three.module.js"></script>
-    <script type="module" src="https://cdn.skypack.dev/three@0.120.0/examples/jsm/controls/OrbitControls.js"></script>
+    <!-- THREE -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r127/three.min.js"></script>
     <!-- 動態背景 -->
-    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->
-
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   </head>
   <body>
 
@@ -84,8 +84,12 @@
           <div class="tab-active margin_top_5 col-lg-6 col-md-4">
               <!-- 3D星球 -->
               <div class="3dplanet">
-                <script type="module" src="./js/mars.js"></script>
+                <canvas id="planetCanvas" width="500" height="500" style="border:1px solid white;"></canvas>
               </div>
+
+              <template lang="pug">
+                #three
+                </template>
           </div>
         </div>
         <div class="planet_content ">
@@ -139,11 +143,14 @@
     </script>
     <!-- 星球tab Vue-->
     <script>
+      Vue.use({
+        install(Vue){
+          Vue.prototype.$THREE = THREE;
+        }
+      });
       new Vue({
         el: "#planet",
-
         data: {
-          msg: "hi",
           state: {
           clickedPlanet: null
           },
@@ -199,10 +206,16 @@
             paragraph:"12345",
           }]
         },
-        methods:{
+        mounted() {
 
+        },
+        methods:{
+   
         }
+        
+      
       });
     </script>
+    <!-- <script type="module" src="./js/mars.js"></script> -->
   </body>
 </html>
