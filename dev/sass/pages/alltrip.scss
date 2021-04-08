@@ -1,20 +1,20 @@
 @import "../all.scss";
 
-div.bk {
-    background-image: url(../../img/trip/bk.png);
-    height: 550px;
-    width: 550px;
-    background-size: 75%;
-    background-repeat: no-repeat;
-    // border:1px solid red;
-    position: absolute;
-    left: 450px;
-    top: 100px;
-    opacity: 0.6;
-    @media all and (max-width:768px) {
-        display: none;
-    }
-}
+// div.bk {
+//     background-image: url(../../img/trip/bk.png);
+//     height: 550px;
+//     width: 550px;
+//     background-size: 75%;
+//     background-repeat: no-repeat;
+//     // border:1px solid red;
+//     position: absolute;
+//     left: 450px;
+//     top: 100px;
+//     opacity: 0.6;
+//     @media all and (max-width:768px) {
+//         display: none;
+//     }
+// }
 
 div.bk3 {
 
@@ -62,19 +62,26 @@ div.bk3 {
         @media all and (max-width:1200px) {
             padding-left: 8px;
             margin: 0 auto;
-            width: 400px;
+            width: 90%;
         }
 
         h2.title {
             display: inline-block;
             position: relative;
             vertical-align: top;
-            top: 15vh;
+            top: 18vh;
             letter-spacing: 10px;
+            @media all and (max-width:1200px) {
+                font-size: 24px;
+            }
 
             span.h3 {
                 font-weight: 500;
                 letter-spacing: 10px;
+                @media all and (max-width:1200px) {
+                    font-size: 14px;
+                
+                }
             }
         }
     }
@@ -89,9 +96,11 @@ div.bk3 {
         }
 
         .hottrip {
-            top: 15vh;
             display: inline-flex;
-            padding-top: 96px;
+            padding-top: 64px;
+            @media screen and (min-width: 768px) and (max-width: 1200px) {
+                padding-top: 160px;
+            }
         }
 
         div.planet_top {
@@ -107,6 +116,7 @@ div.bk3 {
                 padding-right: 8px;
             }
 
+            
             h4 {
                 color: $pink;
             }
@@ -189,6 +199,9 @@ div.bk3 {
         display: inline-flex;
         width: 280px;
         justify-content: space-between;
+        @media all and (max-width:768px) {
+            width: 90%;
+        }
 
         .icon2 {
             width: 25px;
@@ -221,6 +234,11 @@ div.bk3 {
         @media all and (max-width: 767px) {
             flex-direction: column;
             align-items: center;
+        }
+        .h2{
+            @media all and (max-width:1200px) {
+                font-size: 24px;
+            }
         }
 
         .step {
@@ -327,7 +345,7 @@ div.bk3 {
                 bottom: 10px;
 
             }
-
+            
             .addin2 {
                 background-color: $gold;
                 color: $white;
@@ -335,6 +353,7 @@ div.bk3 {
                 width: 110px;
                 line-height: 26px;
                 text-align: center;
+                text-decoration: none;
 
                 img.plus {
                     width: 15px;

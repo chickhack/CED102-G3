@@ -151,13 +151,14 @@ input::-webkit-inner-spin-button {
             @media screen and (min-width: 577px) and (max-width: 767px) {
                 width: 360px;
                 position: relative;
-                margin: 0 auto;
+                margin: 0 10px;
             }
 
             @media all and (max-width:576px) {
-                width: 90%;
+                top: 32px;
+                width: 85%;
                 position: relative;
-                margin: 8px;
+                margin: 0 5px;
             }
 
             h3 {
