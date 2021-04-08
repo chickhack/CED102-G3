@@ -808,8 +808,8 @@ input[type=number] {
 }
 
 nav {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(97, 97, 97, 0.555)), color-stop(75%, rgba(255, 255, 255, 0)));
-  background: linear-gradient(180deg, rgba(97, 97, 97, 0.555) 0%, rgba(255, 255, 255, 0) 75%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(9%, rgba(12, 13, 24, 0.448915)), to(rgba(12, 13, 24, 0)));
+  background: linear-gradient(-180deg, rgba(12, 13, 24, 0.448915) 9%, rgba(12, 13, 24, 0) 100%);
 }
 
 button:hover {

@@ -885,6 +885,16 @@ input[type=number] {
   display: none;
 }
 
+.img1 .action-box {
+  display: none;
+}
+
+.img1:hover .action-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .action-box {
   display: -webkit-box;
   display: -ms-flexbox;

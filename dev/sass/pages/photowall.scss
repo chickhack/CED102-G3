@@ -73,6 +73,12 @@
 .grid .grid-item:nth-child(n+9){
   display: none;
 }
+.img1 .action-box{
+  display: none;
+}
+.img1:hover .action-box{
+  display: flex;
+}
 .action-box{
   display:flex;
   position: absolute;
