@@ -227,11 +227,9 @@ section.orderer{
         font-size: 2rem;
         // border: 1px solid #fff;
         min-width: 200px;
-        svg{
-            fill: none;
-            opacity: 0.5;
-            background-color: transparent;
-            &.use{
+        i{
+            opacity: .3;
+            +.use{
                 opacity: 1;
                 color: $gold;
                 transform: scale(1.2);

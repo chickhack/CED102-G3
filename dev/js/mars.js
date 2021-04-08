@@ -1,6 +1,8 @@
+const myCanvas = document.querySelector("#planetCanvas")
+console.log(myCanvas)
 // import * as THREE from '/node_modules/three/build/three.module.js';
-import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.117.1/build/three.module.js';
-import {OrbitControls} from 'https://cdn.skypack.dev/three@0.120.0/examples/jsm/controls/OrbitControls.js';
+import * as THREE from 'three';
+import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls';
 
 // *DATA IMPORT
 // let data = [];
@@ -27,10 +29,9 @@ const scene = new THREE.Scene();
 // *CREATE camera to see objects (kinda like sittin in the audience)
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000);
     // perspectiveCamera( fov : Number, aspect : Number, near : Number, far : Number )
-const myCanvas = document.getElementById("planetCanvas")
 // *CREATE renderer to display the created objects (kind like the ppl who place the different sets on the stage)
-const renderer = new THREE.WebGLRenderer({canvas: myCanvas});
-renderer.setSize(window.innerWidth/2, window.innerHeight/2);
+const renderer = new THREE.WebGLRenderer({myCanvas});
+// renderer.setSize(myCanvas.getBoundingClientRect().width/2, myCanvas.getBoundingClientRect().height/2);
 // document.body.appendChild(renderer.domElement);
 
 // *CREATE controls so that we can interact with the objects/have interactivity
