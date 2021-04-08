@@ -10,6 +10,7 @@
 //=========動態背景
   canvas {
     display: block;
+
   } /* ---- particles.js container ---- */
   #particles-js {
     z-index: -10;
@@ -30,6 +31,7 @@ button:hover{
     background: $gold;
 }
 
+//=========星球Banner
 .planet_banner{
     color: $white;
     max-width: 1100px;
@@ -56,6 +58,8 @@ button:hover{
         }
     }
 }
+
+//=========星球Tab
 .planet_tab{
     div.tabList{
         display: flex;
@@ -151,11 +155,13 @@ button:hover{
                 }
         
             }
+            .tab-active{
+                position: relative;
+            }
         }
     
     }
 }
-
 .planet_content{
     display: flex;
     flex-wrap: wrap;
@@ -187,7 +193,6 @@ button:hover{
         }
     }
 }
-
 @media only screen and ( max-width:1200px) {
     .tab-inner{
         display: flex;
@@ -196,9 +201,6 @@ button:hover{
         .tab-active{
             display: flex;
             justify-content: center;
-            img{
-                width: 70vw;
-            }
         }
     }
     .planet_content{

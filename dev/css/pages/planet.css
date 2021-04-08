@@ -423,6 +423,10 @@ nav .burger div {
     justify-content: space-around;
     align-items: center;
     width: 30%;
+<<<<<<< HEAD
+=======
+    -webkit-transition: all .5s ease-in;
+>>>>>>> 820fb9a0498e8fa2c26473a13bf0862f27d386c4
     transition: all .5s ease-in;
   }
   nav .nav-links li {
@@ -891,6 +895,10 @@ button:hover {
   font-size: 16px;
 }
 
+.planet_tab .tab-inner .taball .tab-active {
+  position: relative;
+}
+
 .planet_content {
   display: flex;
   flex-wrap: wrap;
@@ -937,9 +945,6 @@ button:hover {
   .tab-inner .tab-active {
     display: flex;
     justify-content: center;
-  }
-  .tab-inner .tab-active img {
-    width: 70vw;
   }
   .planet_content {
     display: flex;

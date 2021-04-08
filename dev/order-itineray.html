@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>行程訂單明細</title>
     <!-- CSS only -->
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/all.css">
     <link rel="stylesheet" href="./css/pages/order-itineray.css">
 </head>
@@ -149,39 +151,39 @@
                             <div class="automena padding_bottom-2">
                                     <!-- <div class="divider"></div> -->
                                     <div class="row">
-                                        <div class="col-11 align-items-center padding_left_5 line_high">
+                                        <div class="col-11 align-items-center padding_left_5 ">
                                             <input type="checkbox" id="guide-yes" value="是" name="guide" class="checkbox_custom">
-                                            <label for="guide-yes" class="line_high textcolor letter-spacing-1 checkbox_custom_label">加購嚮導（＋3000）</label>
+                                            <label for="guide-yes" class=" textcolor letter-spacing-1 checkbox_custom_label">加購嚮導（＋3000）</label>
                                             <!-- <label for="guide-yes" class="textcolor padding_left_1 padding_right-1">是</label>
                                             <input type="radio" id="guide-no" value="否" name="guide" class="padding_left_3">
                                             <label for="guide-no" class="textcolor padding_left_1">否</label> -->
                                         
                                         </div>
                                     </div>
-                                    <div class="row">
+                                    <div class="row padding_top_2">
                                         <div class="col-11 textcolor line_low margin-left-12">選擇交通工具</div>
                                     </div>
                                     <div class="row " id="row-traffic">
                                         
-                                        <div class="col-10 col-xxl-5 col-xl-5  col-md-6 textcolor  line_low margin_left_3">
+                                        <div class="col-10 col-xxl-5 col-xl-5  col-md-6 textcolor   margin_left_3">
                                             <input type="radio" id="traffic-0" value="基本" class="checkbox_custom" name="traffic">
                                             <label for="traffic-0" class="sss checkbox_custom_label">
                                                 <img src="./img/trip/others/ships-astero.png" alt="">
                                                <div class="padding_left_2">
-                                                   <p>基本交通工具</p>
-                                                   <p>太空梭將以預計的時間到達</p>
+                                                   <p class="line_low">基本交通工具</p>
+                                                   <p class="line_low">太空梭將以預計的時間到達</p>
 
                                                </div>
                                             </label>
                                         </div>
-                                        <div class="col-10 col-xxl-5 col-xl-5 col-md-6 textcolor  line_low" id="fl-traffic">
+                                        <div class="col-10 col-xxl-5 col-xl-5 col-md-6 textcolor" id="fl-traffic">
                                                 
                                             <input type="radio" id="traffic-1" value="升級" class="checkbox_custom" name="traffic">
                                             <label for="traffic-1" class="sss checkbox_custom_label">
                                                 <img src="./img/trip/others/ships-rifter.png" alt="">
                                                 <div class="padding_left_2">
-                                                    <p>升級交通工具(+2000)</p>
-                                                    <p>急速太空梭節省1.5倍的時間</p>
+                                                    <p class="line_low">升級交通工具(+2000)</p>
+                                                    <p class="line_low">急速太空梭節省1.5倍的時間</p>
                                                 </div>
                                                 
                                             </label>
@@ -238,7 +240,7 @@
                                 <div class="row justify-content-start padding_left_5">
                                     <div class="col-10 col-xxl-4 col-lg-5 col-md-6 col-sm-10">
                                         <input type="checkbox" class="checkbox-1 checkbox_custom" id="paymethod-coin" name="paymethod-coin" value="宇宙幣">
-                                        <label for="paymethod-coin" class="check line_high textcolor checkbox_custom_label letter-spacing-2 padding_left_1">宇宙幣尚餘50000 </label>
+                                        <label for="paymethod-coin" class="check  textcolor checkbox_custom_label letter-spacing-2 padding_left_1">宇宙幣尚餘50000 </label>
                                     </div>
                                     <div class="col-11 col-xxl-4 col-lg-5 col-md-8 col-sm-11 ">
                                         <label for="paymethod-coin-nu" class="textcolor" >折抵:</label>
@@ -247,7 +249,7 @@
                                     </div>
                                 </div>
                                 <!-- <div class="divider"></div> -->
-                                <div class="row justify-content-start padding_left_5">
+                                <div class="row justify-content-start padding_left_5 padding_top_2">
                                     <div class="col-12 col-xxl-11" id="">
                                         <input type="checkbox" id="paymethod-automanu-car" class="checkbox_custom">
                                         <label for="paymethod-automanu-car" class="check textcolor padding_left_1 padding_bottom-1 margin_top_3 checkbox_custom_label">信用卡</label>
@@ -301,7 +303,7 @@
                                         <p class="h6">加購專區</p>
 
                                     </div>
-                                    <div class="col-3 col-xxl-3 col-xl-3 col-sm-3">
+                                    <div class="col-3 col-xxl-3 col-xl-3 col-sm-3  orderDetails-automanu-right">
                                         <p class="h7 line_low">嚮導</p>
                                         <p class="h7 line_low">升級交通工具</p>
                                     </div>

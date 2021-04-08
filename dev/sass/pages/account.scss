@@ -1,4 +1,8 @@
 @import "../all.scss";
+@import "../pages/photowall.scss";
+@import "../pages/shop.scss";
+@import "../pages/alltrip.scss";
+
 
 
 body {
@@ -12,43 +16,33 @@ body {
   align-items: center;
   justify-content: left;
 }
-
 .spacedinfo {
   line-height: 30px;
 }
 
-p {
+// 控制<p>不斷行
+.spacedinfo p, .nowstate p, .exchange p, .exchange input {
   float: left;
 }
 
-.account_hi,
-.account_logo {
+.account_hi, .account_logo {
   font-size: 20px;
 }
-
-.account_hi,
-.account_acnum {
+.account_hi, .account_acnum {
   font-family: "Microsoft JhengHei";
 }
-
-.account_logo,
-.account_numlogo {
+.account_logo, .account_numlogo {
   font-family: "Nasalization";
   letter-spacing: 5px;
 }
-
 .account_num {
   font-family: "adobe-std-b";
   letter-spacing: 3px;
 }
-
-.account_numlogo,
-.account_acnum,
-.account_num {
+.account_numlogo, .account_acnum, .account_num {
   font-size: 14px;
   color: #ffff;
 }
-
 img.account_levimg {
   max-width: 55px;
   padding-left: 20px;
@@ -67,33 +61,26 @@ img.account_levimg {
 .account_now {
   /* border: 1px solid red; */
 }
-
 .your_lev {
   /* border: 1px solid red; */
 }
+
 
 /* 目前累積等級、星球、景點、宇宙幣 */
 img.littleline {
   max-width: 50%;
 }
-
-.lev_name,
-.account_total,
-.account_money {
+.lev_name, .account_total, .account_money {
   font-family: "Microsoft JhengHei";
   font-size: 14px;
   letter-spacing: 1px;
 }
-
-.account_total,
-.account_money {
+.account_total, .account_money {
   color: #ffffff;
 }
-
 .accnum {
   font-family: "Nasalization";
 }
-
 .accmoney {
   font-family: "adobe-std-b";
   letter-spacing: 2px;
@@ -108,41 +95,32 @@ img.littleline {
   margin-bottom: 20px;
   /* border: 1px solid red; */
 }
-
-img.nowlev,
-img.nextlev {
+img.nowlev, img.nextlev {
   max-width: 50%;
 }
-
 .account_rocket {
   max-width: 5%;
 }
-
 .next_rocket {
   margin-left: -50px;
   margin-top: 60px;
 }
-
 .your_acc {
   display: flex;
 }
-
 .now_lev {
   display: flex;
   flex-direction: column;
   align-items: center;
   /* justify-content: left; */
 }
-
 .next_lev {
   display: flex;
   flex-direction: column;
   align-items: center;
   /* justify-content: right; */
 }
-
-p.nextacc,
-p.nowacc {
+p.nextacc, p.nowacc {
   float: left;
   letter-spacing: 1px;
   line-height: 20px;
@@ -155,29 +133,19 @@ p.nowacc {
   margin: 50px 250px 0px 250px;
   border-bottom: none;
 }
-
 .account_nav a {
   color: #C9ADA7;
 }
-
-// .account_nav a:focus {
-//   color: #AD6E4A;
-//   border-bottom: 3px solid #AD6E4A;
-// }
-.nav-tabs .nav-link:focus,
-.nav-tabs .nav-link:hover,
-.nav-tabs .nav-link.active {
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover, .nav-tabs .nav-link.active {
   color: #AD6E4A;
   background: none;
   border: none;
   border-bottom: 3px solid #AD6E4A;
 }
-
 .account_line {
   margin: 0px 250px 0px 250px;
   background-color: #AD6E4A;
 }
-
 
 
 /* 會員資料 */
@@ -200,15 +168,10 @@ p.nowacc {
 .info_img {
   margin: 5px 20px 0px 0px;
 }
-
-.info_left,
-.info_right,
-.info_edit {
+.info_left, .info_right, .info_edit {
   margin: 25px 10px 0px 10px;
 }
-
-.form-group,
-label {
+.form-group, label {
   margin-top: 10px;
   margin-bottom: 5px;
 }
@@ -223,13 +186,11 @@ input.form-control {
   font-family: "Microsoft JhengHei";
   font-size: 14px;
 }
-
 .form-control:focus {
   border-color: #cccaca;
   outline: none;
   box-shadow: none;
 }
-
 .form-control-plaintext {
   width: 85%;
   height: 20px;
@@ -243,15 +204,14 @@ input.form-control {
   line-height: 1.5;
   border-radius: .25rem;
 }
-
 input.form-control-plaintext:focus {
   border-color: #cccaca;
   outline: none;
   box-shadow: none;
 }
 
-// 編輯資料按鈕 // 收藏按鈕
-.info_editbtn {
+// 編輯資料按鈕 // 收藏按鈕 // 互動管理按鈕 // 轉換積分按鈕
+.info_editbtn, .pointbtn {
   font-family: "Microsoft JhengHei";
   font-size: 12px;
   color: #ffff;
@@ -261,36 +221,26 @@ input.form-control-plaintext:focus {
   width: 80%;
   margin-left: 50px;
 }
-
-.info_editbtn:hover,
-.heartbtns:hover {
+.info_editbtn:hover, .heartbtns:hover, .postbtns:hover, .pointbtn:hover {
   color: #ffff;
   border: 1px solid #AD6E4A;
   background: #AD6E4A;
 }
-
-// .info_editbtn:focus + .btn, .btn:focus {
-//   outline: 0;
-//   box-shadow: none;
-//   color: #ffffff;
-//   background: #AD6E4A;
-// }
-.info_editbtn:focus+.btn-primary,
-.heartbtns:focus,
-.btn-primary:focus {
+.info_editbtn:focus+.btn-primary, .heartbtns:focus, .btn-primary:focus, .postbtns:focus, .pointbtn:focus {
   color: #fff;
   background-color: #AD6E4A;
   border-color: #AD6E4A;
   box-shadow: none;
 }
 
-// 收藏按鈕
-.container_heart {
-  padding: 30px 800px 0px 270px;
-}
 
-.heartbtns {
-  max-width: 100%;
+
+// 互動牆管理按鈕 // 收藏按鈕
+.heart_btns, .post_btns {
+  padding: 0px 0px 0px 270px;
+}
+.heartbtns, .postbtns {
+  width: 90px;
   margin-left: 10px;
   font-family: "Microsoft JhengHei";
   font-size: 12px;
@@ -300,9 +250,76 @@ input.form-control-plaintext:focus {
   border-radius: 0px;
 }
 
+// 收藏內容、互動管理、訂單、行程內容 控制在270px內
+ .product_card, .tripcontent, .ordercontent, .pointcontent {
+  padding: 0px 270px 100px 270px;
+}
+// 收藏行程內容 控制在270px內
+.heart_tripcard {
+  padding: 0px 250px 100px 250px;
+}
+// 收藏貼文內容 控制在270px內
+.post_card {
+  padding: 0px 250px 100px 250px;
+}
+.grid{
+  margin-top: 32px
+}
+.grid-item {
+  margin: 0px 12.5px 25px 12.5px;
+}
+
+
+// 轉換積分
+.nowstate {
+  font-family: "Microsoft JhengHei";
+  font-size: 14px;
+  line-height: 25px;
+  letter-spacing: 2px;
+}
+.nowstate .point, .nowstate .level{
+  color: #fff;
+  padding: 0px 10px 0px 10px; 
+}
+
+.exchange, .point_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+input.form-control.point_input, input.form-control-plaintext.point_input {
+  width: 120px;
+  height: 20px;
+  border: 0.5px solid rgba(173, 110, 74, 0.6);
+  background: none;
+  color: #ffffff;
+  font-family: "Microsoft JhengHei";
+  font-size: 14px;
+  padding: .375rem .75rem;
+  font-weight: 400;
+  line-height: 1.5;
+  border-radius: .25rem;
+  margin: 0px 15px 0px 15px;
+}
+input.form-control.point_input:focus, input.form-control-plaintext.point_input:focus {
+  border-color: #cccaca;
+  outline: none;
+  box-shadow: none;
+}
+.point_btn{
+  margin-top: 50px;
+  height: auto;
+  max-width: auto;
+}
+
+
+
+
+
+
+
 // 移除點擊時邊框陰影
-.btn-check:focus+.btn,
-.btn:focus {
+.btn-check:focus+.btn, .btn:focus {
   outline: 0;
   box-shadow: none;
 }
@@ -313,136 +330,15 @@ input.form-control-plaintext:focus {
 }
 
 
+
+
+
+
 /* footer */
 footer {
   padding-top: 100px;
 }
 
-
-
-
-
-
-// 行程收藏
-.heart_tripcard {
-  margin-top: 0px;
-}
-.heart_trip {
-  margin-top: 20px;
-}
-
-.second {
-  margin-bottom: 100px;
-
-  .alltrip {
-    text-align: center;
-    margin: 0 auto;
-  }
-
-  .tripcard_all {
-    display: inline-block;
-    justify-content: center;
-    flex-wrap: none;
-    width: 100%;
-
-    .tripcard {
-      // border: 1px solid white;
-      width: 250px;
-      background-color: #191919;
-      padding: 15px;
-      border-radius: 5px;
-      position: relative;
-      margin: 10px 25px 0 0px;
-
-      @media screen and (min-width: 768px) and (max-width: 992px) {
-        margin: 16px;
-      }
-      @media all and (max-width: 767px) {
-        flex-direction: column;
-        margin: 16px 0 16px 0;
-      }
-
-      .spot_pic {
-        width: 250px;
-      }
-
-      .spot_pic:hover {
-        transform: perspective(0.5px) translateX(-1.5px) translateY(-1.5px);
-      }
-
-      .hot2 {
-        font-weight: bold;
-        margin-bottom: 15px;
-        color: $pink;
-      }
-
-      .tag {
-        display: inline-flex;
-        border: 1px solid $pink;
-        border-radius: 5px;
-        padding: 8px;
-        line-height: 5px;
-        margin: 3px;
-        color: $gray;
-      }
-
-      .price2 {
-        color: $gold;
-        font-weight: bold;
-        letter-spacing: 2px;
-        font-family: "Nasalization";
-        padding-left: 5px;
-        position: absolute;
-        right: 20px;
-        bottom: 10px;
-
-      }
-
-      .addin2 {
-        background-color: $gold;
-        color: $white;
-        border-radius: 15px;
-        width: 110px;
-        line-height: 26px;
-        text-align: center;
-
-        img.plus {
-          width: 15px;
-          display: inline-block;
-          position: relative;
-          top: 2px;
-          padding-right: 4px;
-        }
-      }
-
-      .addin2:hover {
-        background-color: lighten($gold, 10%);
-      }
-
-      .trip_bookmark {
-        background-image: url(../../img/icon/bookmark-outline.png);
-        width: 25px;
-        height: 25px;
-        background-size: 25px;
-        background-repeat: no-repeat;
-        padding: 8px;
-        position: absolute;
-        right: 0px;
-        top: 230px;
-        align-items: center;
-        display: block;
-        justify-content: center;
-        cursor: pointer;
-      }
-
-      .trip_bookmark:hover {
-        background-image: url(../../img/icon/bookmark_hover.png);
-      }
-
-    }
-
-  }
-}
 
 
 
@@ -523,3 +419,9 @@ footer {
     }
   }
 }
+
+
+
+
+
+

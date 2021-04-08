@@ -7,10 +7,12 @@
     <title>星球商城</title>
     <link rel="stylesheet" href="./css/pages/shop.css">
     <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.12/vue.js'></script>
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 </head>
 <body>
     <div class="container">
         @@include('./layout/header.html')
+        <div id="particles-js"></div>
         <section class="shop">
             <div class="banner">
                  <h2 class="margin_top_5">星球商城滿足你上外太空的一切需求</h4>
@@ -41,7 +43,7 @@
                                                 <p>{{item.name}}</p>
                                                 <p class="margin_top_1 price"> ${{item.price}}</p>
                                             </div>
-                                            <img :src="item.cart" class="icon">
+                                            <img :src="item.cart" class="icon cart" @click.stop="cart">
                                         </div>
                                     </a>
                                 </li>
@@ -150,9 +152,13 @@
             methods: {
                 upDown(e){
                     e.target.nextElementSibling.classList.toggle("chooseShow");
+                },
+                cart(){
+                    cart_slide.classList.toggle("cart-active");
                 }
             },
         })
     </script>
+    <script src="./js/background.js"></script>
 </body>
 </html>

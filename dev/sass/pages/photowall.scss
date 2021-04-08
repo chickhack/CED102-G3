@@ -34,6 +34,7 @@
           top: 50%;
           margin: 0;
       }
+      text-align: center;
   }
 }
 
@@ -64,7 +65,6 @@
   width: 250px;
   overflow: hidden;
   position: relative;
-
 }
 .grid .grid-item img{
   width: 100%;
@@ -72,6 +72,12 @@
 }
 .grid .grid-item:nth-child(n+9){
   display: none;
+}
+.img1 .action-box{
+  display: none;
+}
+.img1:hover .action-box{
+  display: flex;
 }
 .action-box{
   display:flex;
@@ -206,7 +212,7 @@ button.turnoff_lightbox img{
 }
 .img-switch{
   display: inline-block;
-  width: 500px;//600px->500px
+  max-width: 480px;//500px->480px
   margin: 0 12px 0 12px; //新增
 }
 .img-switch img{
@@ -231,7 +237,7 @@ button.turnoff_lightbox img{
 }
 .words{
   display: inline-block;
-  width: 500px;
+  max-width: 480px;//500px->480px
   margin:0 10px 0 10px;//新增
 }
 .post_article{

@@ -423,6 +423,10 @@ nav .burger div {
     justify-content: space-around;
     align-items: center;
     width: 30%;
+<<<<<<< HEAD
+=======
+    -webkit-transition: all .5s ease-in;
+>>>>>>> 820fb9a0498e8fa2c26473a13bf0862f27d386c4
     transition: all .5s ease-in;
   }
   nav .nav-links li {
@@ -1108,9 +1112,21 @@ section.orderer .detail small {
   background-color: rgba(0, 0, 0, 0.3);
   position: fixed;
   top: 0;
+<<<<<<< HEAD
   display: flex;
   justify-content: center;
   align-items: center;
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+>>>>>>> 820fb9a0498e8fa2c26473a13bf0862f27d386c4
   display: none;
 }
 
@@ -1119,10 +1135,26 @@ section.orderer .detail small {
   width: 30vw;
   padding: 40px 0;
   border: 1px solid #AD6E4A;
+<<<<<<< HEAD
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+>>>>>>> 820fb9a0498e8fa2c26473a13bf0862f27d386c4
   background-color: #0c0d18;
 }
 
@@ -1133,6 +1165,10 @@ section.orderer .detail small {
 
 .modal .window a {
   color: #ffffff;
+<<<<<<< HEAD
+=======
+  -webkit-transition: all .3s;
+>>>>>>> 820fb9a0498e8fa2c26473a13bf0862f27d386c4
   transition: all .3s;
 }
 
