@@ -341,6 +341,19 @@ small, .small {
   padding-top: 15vh;
 }
 
+canvas {
+  display: block;
+}
+
+/* ---- particles.js container ---- */
+#particles-js {
+  z-index: -10;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #0c0d18;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -408,6 +421,10 @@ nav .burger div {
   transition: all .3s ease;
 }
 
+nav .nav-cart {
+  cursor: pointer;
+}
+
 @media (max-width: 992px) {
   nav {
     justify-content: space-around;
@@ -423,10 +440,6 @@ nav .burger div {
     justify-content: space-around;
     align-items: center;
     width: 30%;
-<<<<<<< HEAD
-=======
-    -webkit-transition: all .5s ease-in;
->>>>>>> 820fb9a0498e8fa2c26473a13bf0862f27d386c4
     transition: all .5s ease-in;
   }
   nav .nav-links li {
@@ -451,122 +464,6 @@ nav .burger div {
   }
   nav .nav-active {
     right: 0%;
-  }
-  nav .nav-cart {
-    cursor: pointer;
-  }
-}
-
-.cart_slide {
-  z-index: 1000;
-  position: absolute;
-  right: 0;
-  height: 88vh;
-  top: 12vh;
-  background-color: #AD6E4A;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 30%;
-  position: fixed;
-  transform: translateX(100%);
-  transition: transform .5s ease-in;
-  overflow: scroll;
-  overflow-x: hidden;
-}
-
-.cart_slide::-webkit-scrollbar {
-  width: 0;
-  background: transparent;
-}
-
-.cart_slide .cart_title {
-  border-bottom: 1px solid #ffffff;
-  width: 100%;
-  position: relative;
-  padding: 20px 0;
-  color: #ffffff;
-}
-
-.cart_slide .cart_title span {
-  font-weight: 900;
-  position: absolute;
-  left: 0;
-  padding: 0 20px;
-  cursor: pointer;
-}
-
-.cart_slide .cart_title h3 {
-  font-size: 1.25rem;
-  text-align: center;
-}
-
-.cart_slide .cart_info {
-  width: 100%;
-}
-
-.cart_slide .cart_info .total {
-  margin: 0 40px;
-}
-
-.cart_slide .cart_info .total h3 {
-  padding: 10px 0;
-  font-size: 1.5rem;
-  border-bottom: 1px solid #ffffff;
-}
-
-.cart_slide .cart_info .total .cart_check {
-  margin-top: 20px;
-  padding: 10px 0;
-  background-color: #ffffff;
-  color: #AD6E4A;
-  text-align: center;
-  transition: all .3s;
-}
-
-.cart_slide .cart_info .total .cart_check:hover {
-  filter: brightness(1.5);
-}
-
-.cart_slide .cart_info h3 {
-  align-items: center;
-  padding: 50px 0;
-  font-size: 1.25rem;
-  color: #ffffff;
-}
-
-.cart_slide .cart_info .element {
-  width: 100%;
-  margin-top: 20px;
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-  font-size: 0;
-  color: #ffffff;
-}
-
-.cart_slide .cart_info .element .el_info {
-  font-size: 1rem;
-  color: #ffffff;
-  margin-right: 16px;
-}
-
-.cart_slide .cart_info .element .el_info h3 {
-  padding: 0;
-}
-
-.cart_slide .cart_info .element img {
-  max-width: 100px;
-  background-color: #ffffff;
-}
-
-.cart-active {
-  transform: translateX(0%);
-}
-
-@media (max-width: 768px) {
-  .cart_slide {
-    width: 100%;
   }
 }
 
@@ -711,6 +608,12 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
+#marsloc {
+  top: 15vh;
+  left: 5%;
+  position: absolute;
+}
+
 div.bk3 {
   width: 300px;
   height: 300px;
@@ -718,6 +621,23 @@ div.bk3 {
   left: -120px;
   top: 400px;
   opacity: 0.3;
+  animation: rotation 50s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  33%,
+  66% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .border {
@@ -768,22 +688,24 @@ div.bk3 {
   vertical-align: top;
   top: 18vh;
   letter-spacing: 10px;
+  font-size: 36px;
 }
 
 @media all and (max-width: 1200px) {
   .first .first_left h2.title {
-    font-size: 24px;
+    font-size: 32px;
   }
 }
 
 .first .first_left h2.title span.h3 {
   font-weight: 500;
   letter-spacing: 10px;
+  font-size: 24px;
 }
 
 @media all and (max-width: 1200px) {
   .first .first_left h2.title span.h3 {
-    font-size: 14px;
+    font-size: 18px;
   }
 }
 
@@ -810,7 +732,7 @@ div.bk3 {
   }
 }
 
-.first .first_right div.planet_top {
+.first .first_right .hottrip div.planet_top {
   position: relative;
   padding-top: 90px;
   text-align: center;
@@ -819,30 +741,52 @@ div.bk3 {
   padding-right: 16px;
 }
 
+.first .first_right .hottrip div.planet_top.planet_top:nth-child(1) {
+  animation: float 5s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+}
+
+.first .first_right .hottrip div.planet_top.planet_top:nth-child(2) {
+  animation: float 5.5s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+}
+
+.first .first_right .hottrip div.planet_top.planet_top:nth-child(3) {
+  animation: float 6s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+}
+
+.first .first_right .hottrip div.planet_top.planet_top:nth-child(4) {
+  animation: float 6.5s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+}
+
 @media all and (max-width: 1200px) {
-  .first .first_right div.planet_top {
+  .first .first_right .hottrip div.planet_top {
     padding-left: 8px;
     padding-right: 8px;
   }
 }
 
-.first .first_right div.planet_top h4 {
+.first .first_right .hottrip div.planet_top h4 {
   color: #C9ADA7;
 }
 
-.first .first_right div.planet_top img.planet {
+.first .first_right .hottrip div.planet_top img.planet {
   height: 160px;
   position: absolute;
   top: 15px;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 2;
 }
 
-.first .first_right div.planet_top img.planet_a1 {
+.first .first_right .hottrip div.planet_top img.planet_a1 {
   max-width: 280px;
 }
 
-.first .first_right div.planet_top div.word {
+.first .first_right .hottrip div.planet_top img.planet_a1:hover {
+  transform: translateY(0.15em);
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+.first .first_right .hottrip div.planet_top div.word {
   position: absolute;
   top: 190px;
   left: 50%;
@@ -851,11 +795,11 @@ div.bk3 {
   margin: 0 auto;
 }
 
-.first .first_right div.planet_top div.word .hot {
+.first .first_right .hottrip div.planet_top div.word .hot {
   color: #AD6E4A;
 }
 
-.first .first_right div.planet_top div.word .tag {
+.first .first_right .hottrip div.planet_top div.word .tag {
   display: inline-flex;
   border: 1px solid #C9ADA7;
   border-radius: 5px;
@@ -865,7 +809,7 @@ div.bk3 {
   color: #cccaca;
 }
 
-.first .first_right div.planet_top div.word .price {
+.first .first_right .hottrip div.planet_top div.word .price {
   color: #AD6E4A;
   font-weight: bold;
   letter-spacing: 2px;
@@ -873,7 +817,7 @@ div.bk3 {
   font-family: "Nasalization";
 }
 
-.first .first_right div.planet_top div.word .addin {
+.first .first_right .hottrip div.planet_top div.word .addin {
   background-color: #AD6E4A;
   color: #ffffff;
   border-radius: 15px;
@@ -883,7 +827,7 @@ div.bk3 {
   text-align: center;
 }
 
-.first .first_right div.planet_top div.word .addin img.plus {
+.first .first_right .hottrip div.planet_top div.word .addin img.plus {
   width: 15px;
   display: inline-block;
   position: relative;
@@ -891,32 +835,47 @@ div.bk3 {
   padding-right: 4px;
 }
 
-.first .first_right div.planet_top div.word .addin:hover {
+.first .first_right .hottrip div.planet_top div.word .addin:hover {
   background-color: #bf896b;
 }
 
-.first .tripselect {
+.tripselect {
   display: inline-flex;
   width: 280px;
   justify-content: space-between;
 }
 
 @media all and (max-width: 768px) {
-  .first .tripselect {
+  .tripselect {
     width: 90%;
   }
 }
 
-.first .tripselect .icon2 {
+.tripselect .icon2 {
   width: 25px;
   cursor: pointer;
   z-index: 2;
 }
 
-.first .tripselect .select {
+.tripselect .select {
   position: relative;
   bottom: 4px;
   color: #AD6E4A;
+}
+
+@keyframes float {
+  0% {
+    transform: translate(0, 0);
+  }
+  30% {
+    transform: translate(0, -3px);
+  }
+  70% {
+    transform: translate(0, 5px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
 }
 
 .stepsection {
@@ -1009,6 +968,23 @@ div.bk3 {
   margin: 0 16px 0 16px;
 }
 
+.second .tripcard_all .tripcard:hover {
+  transform: translateY(0.15em);
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+.second .tripcard_all .tripcard.tripcard:nth-child(1) {
+  animation: float 4s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+}
+
+.second .tripcard_all .tripcard.tripcard:nth-child(2) {
+  animation: float 4.5s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+}
+
+.second .tripcard_all .tripcard.tripcard:nth-child(3) {
+  animation: float 5s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+}
+
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .second .tripcard_all .tripcard {
     margin: 16px;
@@ -1097,5 +1073,19 @@ div.bk3 {
 
 .second .tripcard_all .tripcard .trip_bookmark:hover {
   background-image: url(../../img/icon/bookmark_hover.png);
+}
+
+.go-top {
+  font-family: "Proxima Nova";
+  position: fixed;
+  bottom: 80px;
+  right: 80px;
+  text-decoration: none;
+  background-image: url(../../img/icon/TOP.png);
+  width: 28px;
+  height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
 }
 /*# sourceMappingURL=alltrip.css.map */

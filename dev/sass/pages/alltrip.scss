@@ -1,30 +1,40 @@
 @import "../all.scss";
 
-// div.bk {
-//     background-image: url(../../img/trip/bk.png);
-//     height: 550px;
-//     width: 550px;
-//     background-size: 75%;
-//     background-repeat: no-repeat;
-//     // border:1px solid red;
-//     position: absolute;
-//     left: 450px;
-//     top: 100px;
-//     opacity: 0.6;
-//     @media all and (max-width:768px) {
-//         display: none;
-//     }
-// }
+
+#marsloc {
+    top: 15vh;
+    left: 5%;
+    position: absolute;
+}
 
 div.bk3 {
-
     width: 300px;
     height: 300px;
-    // border:1px solid red;
     position: absolute;
     left: -120px;
     top: 400px;
     opacity: 0.3;
+    animation: rotation 50s cubic-bezier(.1, .1, .88, .88) infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    33%,
+    66% {
+        transform: rotate(90deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .border {
@@ -71,16 +81,20 @@ div.bk3 {
             vertical-align: top;
             top: 18vh;
             letter-spacing: 10px;
+            font-size: 36px;
+
             @media all and (max-width:1200px) {
-                font-size: 24px;
+                font-size: 32px;
             }
 
             span.h3 {
                 font-weight: 500;
                 letter-spacing: 10px;
+                font-size: 24px;
+
                 @media all and (max-width:1200px) {
-                    font-size: 14px;
-                
+                    font-size: 18px;
+
                 }
             }
         }
@@ -98,122 +112,163 @@ div.bk3 {
         .hottrip {
             display: inline-flex;
             padding-top: 64px;
+
             @media screen and (min-width: 768px) and (max-width: 1200px) {
                 padding-top: 160px;
             }
-        }
 
-        div.planet_top {
-            position: relative;
-            padding-top: 90px;
-            text-align: center;
-            width: 55%;
-            padding-left: 16px;
-            padding-right: 16px;
-
-            @media all and (max-width:1200px) {
-                padding-left: 8px;
-                padding-right: 8px;
-            }
-
-            
-            h4 {
-                color: $pink;
-            }
-
-            img.planet {
-                height: 160px;
-                position: absolute;
-                top: 15px;
-                left: 50%;
-                transform: translateX(-50%);
-            }
-
-            img.planet_a1 {
-                max-width: 280px;
-            }
-            // img.planet_a1:hover {
-            //     transform: perspective(0.5px) translateX(-1.5px) translateY(-1.5px);
-
-            // }
-
-            div.word {
-                position: absolute;
-                top: 190px;
-                left: 50%;
-                transform: translateX(-50%);
+            div.planet_top {
+                position: relative;
+                padding-top: 90px;
                 text-align: center;
-                margin: 0 auto;
+                width: 55%;
+                padding-left: 16px;
+                padding-right: 16px;
+                
 
-                .hot {
-                    color: $gold;
+                &.planet_top:nth-child(1) {
+                    animation: float 5s cubic-bezier(.1, .1, .88, .88) infinite;
                 }
 
-                .tag {
-                    display: inline-flex;
-                    border: 1px solid $pink;
-                    border-radius: 5px;
-                    padding: 8px;
-                    line-height: 5px;
-                    margin: 3px;
-                    color: $gray;
+                &.planet_top:nth-child(2) {
+                    animation: float 5.5s cubic-bezier(.1, .1, .88, .88) infinite;
                 }
 
-                .price {
-                    color: $gold;
-                    font-weight: bold;
-                    letter-spacing: 2px;
-                    margin-bottom: 8px;
-                    font-family: "Nasalization";
+                &.planet_top:nth-child(3) {
+                    animation: float 6s cubic-bezier(.1, .1, .88, .88) infinite;
                 }
 
-                .addin {
-                    background-color: $gold;
-                    color: $white;
-                    border-radius: 15px;
-                    width: 110px;
-                    margin: 0 auto;
-                    line-height: 26px;
+                &.planet_top:nth-child(4) {
+                    animation: float 6.5s cubic-bezier(.1, .1, .88, .88) infinite;
+                }
+
+                @media all and (max-width:1200px) {
+                    padding-left: 8px;
+                    padding-right: 8px;
+                }
+
+                h4 {
+                    color: $pink;
+                }
+
+                img.planet {
+                    height: 160px;
+                    position: absolute;
+                    top: 15px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    z-index: 2;
+                    
+                }
+
+                img.planet_a1 {
+                    max-width: 280px;
+                    &:hover{
+                        transform:translateY(0.15em);
+                        box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+                    }
+                }
+
+                div.word {
+                    position: absolute;
+                    top: 190px;
+                    left: 50%;
+                    transform: translateX(-50%);
                     text-align: center;
+                    margin: 0 auto;
 
-                    img.plus {
-                        width: 15px;
-                        display: inline-block;
-                        position: relative;
-                        top: 2px;
-                        padding-right: 4px;
+                    .hot {
+                        color: $gold;
+                    }
+
+                    .tag {
+                        display: inline-flex;
+                        border: 1px solid $pink;
+                        border-radius: 5px;
+                        padding: 8px;
+                        line-height: 5px;
+                        margin: 3px;
+                        color: $gray;
+                    }
+
+                    .price {
+                        color: $gold;
+                        font-weight: bold;
+                        letter-spacing: 2px;
+                        margin-bottom: 8px;
+                        font-family: "Nasalization";
+                    }
+
+                    .addin {
+                        background-color: $gold;
+                        color: $white;
+                        border-radius: 15px;
+                        width: 110px;
+                        margin: 0 auto;
+                        line-height: 26px;
+                        text-align: center;
+
+                        img.plus {
+                            width: 15px;
+                            display: inline-block;
+                            position: relative;
+                            top: 2px;
+                            padding-right: 4px;
+                        }
+
+                    }
+
+                    .addin:hover {
+                        background-color: lighten($gold, 10%);
                     }
 
                 }
-
-                .addin:hover {
-                    background-color: lighten($gold, 10%);
-                }
-
             }
         }
     }
+}
 
-    // <!-- ----------slider -->
-    .tripselect {
-        display: inline-flex;
-        width: 280px;
-        justify-content: space-between;
-        @media all and (max-width:768px) {
-            width: 90%;
-        }
 
-        .icon2 {
-            width: 25px;
-            cursor: pointer;
-            z-index: 2;
-        }
 
-        .select {
-            position: relative;
-            bottom: 4px;
-            color: $gold;
-        }
+// <!-- ----------slider -->
+.tripselect {
+    display: inline-flex;
+    width: 280px;
+    justify-content: space-between;
+
+    @media all and (max-width:768px) {
+        width: 90%;
+    }
+
+    .icon2 {
+        width: 25px;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .select {
+        position: relative;
+        bottom: 4px;
+        color: $gold;
+    }
+}
+
+
+@keyframes float {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    30% {
+        transform: translate(0, -3px);
+    }
+
+    70% {
+        transform: translate(0, 5px);
+    }
+
+    100% {
+        transform: translate(0, 0);
     }
 }
 
@@ -235,7 +290,8 @@ div.bk3 {
             flex-direction: column;
             align-items: center;
         }
-        .h2{
+
+        .h2 {
             @media all and (max-width:1200px) {
                 font-size: 24px;
             }
@@ -301,6 +357,17 @@ div.bk3 {
             border-radius: 5px;
             position: relative;
             margin: 0 16px 0 16px;
+            &:hover{
+                transform:translateY(0.15em);
+                box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+            }
+            &.tripcard:nth-child(1){
+                animation: float 4s cubic-bezier(.1,.1,.88,.88) infinite;}
+                &.tripcard:nth-child(2){
+                    animation: float 4.5s cubic-bezier(.1,.1,.88,.88) infinite;}
+                &.tripcard:nth-child(3){
+                        animation: float 5s cubic-bezier(.1,.1,.88,.88) infinite;}
+
 
             @media screen and (min-width: 768px) and (max-width: 992px) {
                 margin: 16px;
@@ -314,6 +381,7 @@ div.bk3 {
             .spot_pic {
                 width: 250px;
             }
+
             .spot_pic:hover {
                 transform: perspective(0.5px) translateX(-1.5px) translateY(-1.5px);
             }
@@ -345,7 +413,7 @@ div.bk3 {
                 bottom: 10px;
 
             }
-            
+
             .addin2 {
                 background-color: $gold;
                 color: $white;
@@ -364,11 +432,11 @@ div.bk3 {
                 }
             }
 
-            .addin2:hover{
+            .addin2:hover {
                 background-color: lighten($gold, 10%);
             }
 
-            .trip_bookmark{
+            .trip_bookmark {
                 background-image: url(../../img/icon/bookmark-outline.png);
                 width: 25px;
                 height: 25px;
@@ -384,11 +452,27 @@ div.bk3 {
                 cursor: pointer;
             }
 
-            .trip_bookmark:hover{
+            .trip_bookmark:hover {
                 background-image: url(../../img/icon/bookmark_hover.png);
             }
 
         }
 
     }
-    }
+}
+
+
+.go-top {
+    font-family: "Proxima Nova";
+    position: fixed;
+    bottom: 80px;
+    right: 80px;
+    text-decoration: none;
+    background-image: url(../../img/icon/TOP.png);
+    width: 28px;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: float 3s cubic-bezier(.1, .1, .88, .88) infinite;
+
+}
