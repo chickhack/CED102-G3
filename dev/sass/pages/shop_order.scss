@@ -207,6 +207,7 @@ section.orderer{
         .credit_check{
             @include flex_middle();
             text-align: center;
+            display: none;
             @include respond(pad){
                 flex-direction: column;
                 align-items: start;
@@ -227,6 +228,7 @@ section.orderer{
         font-size: 2rem;
         // border: 1px solid #fff;
         min-width: 200px;
+        display: none;
         i{
             opacity: .3;
             +.use{

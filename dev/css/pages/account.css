@@ -1303,6 +1303,11 @@ input[type=number] {
 }
 
 .img1:hover .action-box {
+<<<<<<< HEAD
+  display: -webkit-box;
+  display: -ms-flexbox;
+=======
+>>>>>>> 71ce4b8c8eea78dde4153c2c2a0ca239c45e8639
   display: flex;
 }
 
