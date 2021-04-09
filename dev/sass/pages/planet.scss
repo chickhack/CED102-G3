@@ -1,12 +1,12 @@
 @import "../all.scss";
 
 .container-fluid{
-    padding: 0;
-    margin-top: 15vh;
+    padding: 15vh 0;
     @include respond(mobile){
         margin: 0;
     }
 }
+
 //=========動態背景
   canvas {
     display: block;
@@ -31,7 +31,7 @@ button:hover{
     background: $gold;
 }
 
-//=========星球Banner
+// =========星球Banner
 .planet_banner{
     color: $white;
     max-width: 1100px;
@@ -61,17 +61,21 @@ button:hover{
 
 //=========星球Tab
 .planet_tab{
-    div.tabList{
+    ul.tab-title{
         display: flex;
         justify-content: center;
-        column-gap: 1%;
-        button{
+        column-gap: 3%;
+        flex-wrap: wrap;
+        list-style: none;
+        li a{
+            text-decoration: none;
             border: none;
             background-color: transparent;
-            color: $gold;
-            font-size: 16px;
+            color: $pink;
+            font-size: 18px;
+            padding: 12px 24px;
         }
-        button.active{
+        li.active{
             border-bottom: 4px solid $gold;
         }
     }
@@ -85,139 +89,151 @@ button:hover{
         }
     
     }
-    .tab-inner{
-        // border-top: 1px solid $gold;
-        display: flex;
-        .taball{
+        .tab-inner{
+            // border: 1px solid white;
             display: flex;
             flex-direction: column;
             text-align: left;
-            align-items: center;
-            .tab_left{
-                max-width: 400px;
-                h3{
-                    line-height: 2rem;
-                }
-            }
-            p {
-                line-height: 2rem;
-                margin-top: 20px;
-                max-width: 400px;
-            }
-            .data{
-                border: 1px solid $gold;
+            .tab_top{
+                // border: 1px solid white;
                 display: flex;
-                font-family: Haettenschweiler, sans-serif;
-                .grav{
-                    justify-content: center;
-                    align-items: center;
-                    display: flex;
-                    flex-direction: column;
-                    min-width: 130px;
-                    min-height: 130px;
-                    border-right: 1px solid $gold;
+                justify-content: space-between;
+                padding: 0 15%;
+                .tab_left{
+                    max-width: 400px;
+                    h3{
+                        line-height: 2rem;
+                    }
                 }
-                .day{
-                    justify-content: center;
-                    align-items: center;
-                    display: flex;
-                    flex-direction: column;
-                    min-width: 130px;
-                    border-right: 1px solid $gold;
-        
+                p {
+                    line-height: 2rem;
+                    margin-top: 20px;
+                    max-width: 400px;
                 }
-                .temp{
-                    justify-content: center;
-                    align-items: center;
-                    display: flex;
-                    flex-direction: column;
-                    min-width: 130px;
+                .data{
+                    display: inline-flex;
+                    justify-content: flex-end;
+                    font-family: Haettenschweiler, sans-serif;
+                    .grav, .day, .temp{
+                        justify-content: center;
+                        align-items: center;
+                        border: 1px solid $gold;
+                        display: flex;
+                        flex-direction: column;
+                        min-width: 100px;
+                        max-height: 100px;
+                        border-right: 1px solid $gold;
+                    }
+                    // .day{
+                    //     justify-content: center;
+                    //     align-items: center;
+                    //     border: 1px solid $gold;
+                    //     display: flex;
+                    //     flex-direction: column;
+                    //     min-width: 130px;
+                    //     min-height: 130px;
+                    //     border-right: 1px solid $gold;
+            
+                    // }
+                    // .temp{
+                    //     justify-content: center;
+                    //     align-items: center;
+                    //     display: flex;
+                    //     border: 1px solid $gold;
+                    //     flex-direction: column;
+                    //     min-width: 130px;
+                    //     min-height: 130px;
+    
+                    // }
+                    
+                    span.var{
+                        font-size: 36px;
+                        letter-spacing: 3px;
+                    }
+                    span.data-top{
+                        vertical-align:top;
+                        font-size: 24px;
+                    }
+                    span.data-mid{
+                        font-size: 24px;
+                    }
+                    span.data-low{
+                        font-size: 24px;
+                        font-stretch: narrower;
+                    }
+                    p{
+                        margin-top: 5px;
+                        font-size: 16px;
+                    }
+            
                 }
-                
-                span.var{
-                    font-size: 48px;
-                    letter-spacing: 3px;
-                }
-                span.data-top{
-                    vertical-align:top;
-                    font-size: 24px;
-                }
-                span.data-mid{
-                    font-size: 24px;
-                }
-                span.data-low{
-                    font-size: 24px;
-                    font-stretch: narrower;
-                }
-                p{
-                    margin-top: 5px;
-                    font-size: 16px;
-                }
-        
+
             }
             .tab-active{
                 position: relative;
+                
+                // border: 1px solid white;
+                }
+            
+            .planet_content{
+                display: flex;
+                flex-wrap: wrap;
+                .carousel{
+                    display: none;
+                }
+                .imgs{
+                    display:block;
+                    .img1{
+                        transform: translate(20%);
+                    }
+                    .img2{
+                        
+                        transform: translateX(10%);
+                    }
+                    .img3{
+                        
+                        transform: translate(-30%, -350px);
+                    }
+                }
+                .desc{
+                    display:flex;
+                    align-items: center;
+                    justify-content: center;
+                    p{
+                        line-height: 2rem;
+                        text-align: justify;
+                        max-width: 500px;
+                    }
+                }
+            }
+            @media only screen and ( max-width:1200px) {
+                .tab-inner{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .tab-active{
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
+                .planet_content{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .imgs{
+                        display: none;
+                    }
+                    .carousel{
+                        display: block;
+                        width: 400px;
+                    }
+                    .desc{
+                        max-width: 400px;
+                    }
+                    
+                }
+            
             }
         }
-    
-    }
-}
-.planet_content{
-    display: flex;
-    flex-wrap: wrap;
-    .carousel{
-        display: none;
-    }
-    .imgs{
-        display:block;
-        .img1{
-            transform: translate(20%);
-        }
-        .img2{
-            
-            transform: translateX(10%);
-        }
-        .img3{
-            
-            transform: translate(-30%, -350px);
-        }
-    }
-    .desc{
-        display:flex;
-        align-items: center;
-        justify-content: center;
-        p{
-            line-height: 2rem;
-            text-align: justify;
-            max-width: 500px;
-        }
-    }
-}
-@media only screen and ( max-width:1200px) {
-    .tab-inner{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        .tab-active{
-            display: flex;
-            justify-content: center;
-        }
-    }
-    .planet_content{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        .imgs{
-            display: none;
-        }
-        .carousel{
-            display: block;
-            width: 400px;
-        }
-        .desc{
-            max-width: 400px;
-        }
-        
-    }
 
-}
+        }

@@ -18,7 +18,6 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <!-- Vue.js -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
-
     <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
     <!-- CSS -->
@@ -43,13 +42,6 @@
         <h2 class="margin_top_5">星星世界帶你探索宇宙</h4>
       </div>
     <!-- 星球頁籤 -->
-<<<<<<< HEAD
-      <div id="planet" class="container planet_tab">
-        <div class="tabList margin_top_3 col-LG-12 ">
-          <button class="button_min" v-for="planet in planets" v-on:click="state.clickedPlanet = planet">{{planet.name}}</button>
-        </div>
-        <div class="separator col-10"></div>
-=======
       <div id="planet" class="planet_tab margin_top_5">
         <div class="tabList col-LG-12 ">
           <ul class="tab-title">
@@ -99,47 +91,8 @@
                       <p>溫度</p>
                     </div>
                   </div>
->>>>>>> Yi
 
-        <div class="col-12 tab-inner" v-if="this.state.clickedPlanet !== null">
-          <div class="taball margin_top_10 col-lg-6 col-md-12">
-            <div class="tab_left">
-              <h2>{{state.clickedPlanet.name}}</h2>
-              <h3 class="margin_top_4">
-                {{state.clickedPlanet.content}}
-              </h3>
-            </div>
-            <div class="data margin_top_8">
-              <div class="grav">
-                <div class="dataTop">
-                  <span class="var">{{state.clickedPlanet.g}}</span>
-                  <span class="data-mid">％</span>
                 </div>
-<<<<<<< HEAD
-                <p>重力</p>
-              </div>
-              <div class="day">
-              <div class="dataTop">
-                <span class="var">{{state.clickedPlanet.h}}</span>
-                <span class="data-low">HR</span>
-              </div>
-                <p>一天</p>
-              </div>
-              <div class="temp">
-              <div class="dataTop">
-                <span class="data-mid">-</span>
-                <span class="var">{{state.clickedPlanet.t}}</span>
-                <span class="data-top">F</span>
-              </div>
-                <p>溫度</p>
-              </div>
-            </div>
-          </div>
-          <div class="tab-active margin_top_5 col-lg-6 col-md-4">
-              <!-- 3D星球 -->
-              <div class="3dplanet">
-                <canvas id="planetCanvas" width="500" height="500" style="border:1px solid white;"></canvas>
-=======
                 <div class="tab-active margin_top_5 col-lg-6 col-md-12 col-sm-12">
                       <!-- 火星動圖 -->
                       <div id="marsloc" ></div>
@@ -246,51 +199,83 @@
                   </div>
         
                 </div>
->>>>>>> Yi
               </div>
+              <!-- 木星 -->
+              <div id="tab03" class="tab-inner ">
+                <div class="tab_top">
+                  <div class="tab_left col-lg-6 col-md-12">
+                    <h2>火星</h2>
+                    <h3 class="margin_top_4">
+                      火星大氣以二氧化碳為主，既稀薄又寒冷，其表面特徵讓人聯想起月球上的撞擊坑，以及地球上的山谷、沙漠和極地冰蓋。
+                    </h3>
+                  </div>
+                  <div class="data ">
+                    <div class="grav">
+                      <div class="dataTop">
+                        <span class="var">38</span>
+                        <span class="data-mid">％</span>
+                      </div>
+                      <p>重力</p>
+                    </div>
+                    <div class="day">
+                    <div class="dataTop">
+                      <span class="var">24</span>
+                      <span class="data-low">HR</span>
+                    </div>
+                      <p>一天</p>
+                    </div>
+                    <div class="temp">
+                    <div class="dataTop">
+                      <span class="data-mid">-</span>
+                      <span class="var">60</span>
+                      <span class="data-top">F</span>
+                    </div>
+                      <p>溫度</p>
+                    </div>
+                  </div>
 
-              <template lang="pug">
-                #three
-                </template>
-          </div>
-        </div>
-        <div class="planet_content ">
-          <div class="imgs col-6  margin_top_10 ">
-            <img src="./img/planet/set.png"/>
-          </div>
-            <!-- RWD Carousel -->
-            <div id="carouselExampleControls" class="carousel slide margin_top_6" data-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="./img/planet/mars_1.jpg" class="d-block w-100" alt="...">
                 </div>
-<<<<<<< HEAD
-                <div class="carousel-item">
-                  <img src="./img/planet/mars_2.jpg" class="d-block w-100" alt="...">
-=======
                 <div class="tab-active margin_top_5 col-lg-6 col-md-4">
                       <!-- 木星動圖 -->
                       <div id="jupiterloc"></div>
                       <!-- <script src="./js/marsbackground.js"></script> -->
->>>>>>> Yi
                 </div>
-                <div class="carousel-item">
-                  <img src="./img/planet/mars_3.jpg" class="d-block w-100" alt="...">
+                <div class="planet_content ">
+                  <div class="imgs col-6  margin_top_10 ">
+                    <img src="./img/planet/set.png"/>
+                  </div>
+                    <!-- RWD Carousel -->
+                    <div id="carouselExampleControls" class="carousel slide margin_top_6" data-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="./img/planet/mars_1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./img/planet/mars_2.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./img/planet/mars_3.jpg" class="d-block w-100" alt="...">
+                        </div>
+                      </div>
+                      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      </a>
+                      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      </a>
+                    </div>
+        
+                  <div class="desc col-6 margin_top_10">
+                    <p>在Space Adventures的安排中，4名乘客將從SpaceX佛州卡納維爾角的基地起飛，而後在地球軌道上繞行，與過往不同的是，這次將不會造訪國際太空站。不過， 這次雙方合作的旅行，高度預計超越過往所有私人太空之旅，乘客將有機會目睹自雙子星計畫後無人見識過的地球樣貌。</p>
+                  </div>
+        
                 </div>
               </div>
-              <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              </a>
-              <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              </a>
-            </div>
-
-          <div class="desc col-6 margin_top_10">
-            <p>在Space Adventures的安排中，4名乘客將從SpaceX佛州卡納維爾角的基地起飛，而後在地球軌道上繞行，與過往不同的是，這次將不會造訪國際太空站。不過， 這次雙方合作的旅行，高度預計超越過往所有私人太空之旅，乘客將有機會目睹自雙子星計畫後無人見識過的地球樣貌。</p>
           </div>
 
+
         </div>
+
         <div class="planetbtn margin_top_5" align="center">
           <!-- <button class="button_min" >更多關於火星</button> -->
         </div>
@@ -301,90 +286,14 @@
     <!-- 星球頁籤轉移 -->
     <script>
       $(function(){
-        var $button = $('div.tabList button');
-            $($button.eq(0).addClass('active').find('button').siblings('.tab-inner').hide());
+        var $li = $('ul.tab-title li');
+        $($li. eq(0) .addClass('active').find('a').attr('href')).siblings('.tab-inner').hide();
 
-            $button.click(function(){
+            $li.click(function(){
               $($(this).find('a').attr('href')).show().siblings('.tab-inner').hide();
               $(this).addClass('active').siblings('.active').removeClass('active');
             });
       });
     </script>
-    <!-- 星球tab Vue-->
-    <script>
-      Vue.use({
-        install(Vue){
-          Vue.prototype.$THREE = THREE;
-        }
-      });
-      new Vue({
-        el: "#planet",
-        data: {
-          state: {
-          clickedPlanet: null
-          },
-          planets: [{
-            name: "火星",
-            content: "月球大氣以二氧化碳為主，既稀薄又寒冷，其表面特徵讓人聯想起月球上的撞擊坑，以及地球上的山谷、沙漠和極地冰蓋。",
-            g: "38",
-            h:"24",
-            t:"60",
-            image: "./img/planet/mars.png",
-            article:"12345",
-            set:"./img/planet/mars_set.png"
-          },{
-            name: "月球",
-            content: "月球大氣以二氧化碳為主，既稀薄又寒冷，其表面特徵讓人聯想起月球上的撞擊坑，以及地球上的山谷、沙漠和極地冰蓋。",
-            g: "20",
-            h:"22",
-            t:"30",
-            image: "./img/planet/moon.png",
-            paragraph:"12345",
-          },{
-            
-            name: "木星",
-            content: "木星大氣以二氧化碳為主，既稀薄又寒冷，其表面特徵讓人聯想起月球上的撞擊坑，以及地球上的山谷、沙漠和極地冰蓋。",
-            g: "15",
-            h:"50",
-            t:"150",
-            image: "./img/planet/jupiter.png",
-            paragraph:"12345",
-          },{
-            name: "木星",
-            content: "木星大氣以二氧化碳為主，既稀薄又寒冷，其表面特徵讓人聯想起月球上的撞擊坑，以及地球上的山谷、沙漠和極地冰蓋。",
-            g: "15",
-            h:"50",
-            t:"150",
-            image: "./img/planet/jupiter.png",
-            paragraph:"12345",
-          },{
-            name: "木星",
-            content: "木星大氣以二氧化碳為主，既稀薄又寒冷，其表面特徵讓人聯想起月球上的撞擊坑，以及地球上的山谷、沙漠和極地冰蓋。",
-            g: "15",
-            h:"50",
-            t:"150",
-            image: "./img/planet/jupiter.png",
-            paragraph:"12345",
-          },{
-            name: "木星",
-            content: "木星大氣以二氧化碳為主，既稀薄又寒冷，其表面特徵讓人聯想起月球上的撞擊坑，以及地球上的山谷、沙漠和極地冰蓋。",
-            g: "15",
-            h:"50",
-            t:"150",
-            image: "./img/planet/jupiter.png",
-            paragraph:"12345",
-          }]
-        },
-        mounted() {
-
-        },
-        methods:{
-   
-        }
-        
-      
-      });
-    </script>
-    <!-- <script type="module" src="./js/mars.js"></script> -->
   </body>
 </html>
