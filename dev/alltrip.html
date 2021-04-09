@@ -62,9 +62,9 @@
                                     <small class="tag margin_top_3">{{item.grade}}</small>
                                     <small class="tag">{{item.scores}}積分</small>
                                     <h4 class="price">${{item.price}}</h4>
-                                    <a class="addin small myTrip"><img class="plus" src="./img/icon/plus.png"
+                                    <button class="addin small myTrip"><img class="plus" src="./img/icon/plus.png"
                                             alt="">加入我的行程
-                                    </a>
+                                    </button>
                             </div>
                         </a>
                     </div>
@@ -143,8 +143,8 @@
                                 <small class="tag">{{item.grade}}</small>
                                 <small class="tag">{{item.scores}}積分</small>
                                 <h3 class="price2 margin_top_2">${{item.price}}</h3>
-                                <a class="addin2 small margin_top_2 myTrip"><img class="plus" src="./img/icon/plus.png"
-                                        alt="">加入我的行程</a>
+                                <button class="addin2 small margin_top_2 myTrip"><img class="plus"
+                                        src="./img/icon/plus.png" alt="">加入我的行程</button>
                                 <div class="trip_bookmark"></div>
                             </div>
                         </a>
@@ -160,8 +160,8 @@
                                 <small class="tag">{{item.grade}}</small>
                                 <small class="tag">{{item.scores}}積分</small>
                                 <h3 class="price2 margin_top_2">${{item.price}}</h3>
-                                <a class="addin2 small margin_top_2 myTrip"><img class="plus" src="./img/icon/plus.png"
-                                        alt="">加入我的行程</a>
+                                <button class="addin2 small margin_top_2 myTrip"><img class="plus"
+                                        src="./img/icon/plus.png" alt="">加入我的行程</button>
                                 <div class="trip_bookmark"></div>
                             </div>
                         </a>
@@ -181,46 +181,47 @@
         let vm = new Vue({
             el: "#app",
             data: {
-                top: [{
-                    planet: "./img/trip/jupiter.png",
-                    spot: "./img/trip/trip_jupiter/jupiter_top_a_ps.png",
-                    title: "熱門星球",
-                    name: "木星 | 一日冰層探索",
-                    star: "./img/icon/star.png",
-                    grade: "初階",
-                    scores: "3000",
-                    price: 5000,
+                top: [
+                    //     {
+                    //     planet: "./img/trip/jupiter.png",
+                    //     spot: "./img/trip/trip_jupiter/jupiter_top_a_ps.png",
+                    //     title: "熱門星球",
+                    //     name: "木星 | 一日冰層探索",
+                    //     star: "./img/icon/star.png",
+                    //     grade: "初階",
+                    //     scores: "3000",
+                    //     price: 5000,
 
-                }, {
-                    planet: "./img/trip/mars.png",
-                    spot: "./img/trip/trip_mars/mars_top_a1_ps.jpg.png",
-                    title: "進階景點",
-                    name: "火星 | 一日攀登高山",
-                    star: "./img/icon/star.png",
-                    grade: "高階",
-                    scores: "5000",
-                    price: 5000,
+                    // }, {
+                    //     planet: "./img/trip/mars.png",
+                    //     spot: "./img/trip/trip_mars/mars_top_a1_ps.jpg.png",
+                    //     title: "進階景點",
+                    //     name: "火星 | 一日攀登高山",
+                    //     star: "./img/icon/star.png",
+                    //     grade: "高階",
+                    //     scores: "5000",
+                    //     price: 5000,
 
-                }, {
-                    planet: "./img/trip/moon.png",
-                    spot: "./img/trip/trip_moon/moon_top_a1_ps.png",
-                    title: "新景點",
-                    name: "月球 | 一日太空體驗",
-                    star: "./img/icon/star.png",
-                    grade: "初階",
-                    scores: "3000",
-                    price: 5000,
-                }, {
-                    planet: "./img/trip/mars.png",
-                    spot: "./img/trip/trip_mars/mars_top_a1_ps.jpg.png",
-                    title: "進階景點",
-                    name: "火星 | 攀登太陽系第一高山",
-                    star: "./img/icon/star.png",
-                    grade: "高階",
-                    scores: "5000",
-                    price: 5000,
+                    // }, {
+                    //     planet: "./img/trip/moon.png",
+                    //     spot: "./img/trip/trip_moon/moon_top_a1_ps.png",
+                    //     title: "新景點",
+                    //     name: "月球 | 一日太空體驗",
+                    //     star: "./img/icon/star.png",
+                    //     grade: "初階",
+                    //     scores: "3000",
+                    //     price: 5000,
+                    // }, {
+                    //     planet: "./img/trip/mars.png",
+                    //     spot: "./img/trip/trip_mars/mars_top_a1_ps.jpg.png",
+                    //     title: "進階景點",
+                    //     name: "火星 | 攀登太陽系第一高山",
+                    //     star: "./img/icon/star.png",
+                    //     grade: "高階",
+                    //     scores: "5000",
+                    //     price: 5000,
 
-                },
+                    // },
                 ],
                 spot1: [{
                     spot: "./img/trip/trip_moon/moon_a1_ps2.jpg",
@@ -284,6 +285,31 @@
                 ],
             },
         });
+
+        document.ready = function getProducts() {
+            let xhr = new XMLHttpRequest();
+            xhr.onload = function () {
+                top = JSON.parse(xhr.responseText);
+                console.log(top);
+                app.top = top;
+            }
+            xhr.open("get", "./php/getSelectTrip.php", true);
+            xhr.send(null);
+        }
+
+        // window.addEventListener("load", function () {
+        //     //-----------------使用ajax 回server端取回資料
+        //     getProducts();
+        //     //-------------------
+        //     let btnCartAdds = document.getElementsByClassName("btnCartAdd");
+        //     let prodNames = document.getElementsByClassName("prodName");
+        //     for (let i = 0; i < btnCartAdds.length; i++) {
+        //         btnCartAdds[i].onclick = function () {
+        //             console.log(i);
+        //             alert("確定購買" + prodNames[i].innerText + "商品嗎?");
+        //         }
+        //     }
+        // })
     </script>
 
     <!-- 加入我的行程 -->
@@ -296,26 +322,26 @@
     <script>
         TweenMax.staggerFrom(".animatedText1 span", 2, { scale: 0.9, opacity: 0, delay: 0.2, ease: Elastic.easeOut, force3D: true }, 0.2);
     </script>
+    <!-- go top -->
+    <script>
+        $(document).ready(function () {
+            // Show or hide the sticky footer button
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 200) {
+                    $('.go-top').fadeIn(200);
+                } else {
+                    $('.go-top').fadeOut(200);
+                }
+            });
 
-<script>
+            // Animate the scroll to top
+            $('.go-top').click(function (event) {
+                event.preventDefault();
 
-$(document).ready(function () {
-    // Show or hide the sticky footer button
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 200) {
-            $('.go-top').fadeIn(200);
-        } else {
-            $('.go-top').fadeOut(200);
-        }
-    });
-
-    // Animate the scroll to top
-    $('.go-top').click(function (event) {
-        event.preventDefault();
-
-        $('html, body').animate({ scrollTop: 0 }, 900);
-    })
-});</script>
+                $('html, body').animate({ scrollTop: 0 }, 900);
+            })
+        });
+    </script>
 
 
 </body>
