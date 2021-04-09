@@ -3032,22 +3032,10 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
-div.bk {
-  background-image: url(../../img/trip/bk.png);
-  height: 550px;
-  width: 550px;
-  background-size: 75%;
-  background-repeat: no-repeat;
+#marsloc {
+  top: 15vh;
+  left: 5%;
   position: absolute;
-  left: 450px;
-  top: 100px;
-  opacity: 0.6;
-}
-
-@media all and (max-width: 768px) {
-  div.bk {
-    display: none;
-  }
 }
 
 div.bk3 {
@@ -3057,6 +3045,23 @@ div.bk3 {
   left: -120px;
   top: 400px;
   opacity: 0.3;
+  animation: rotation 50s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  33%,
+  66% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .border {
@@ -3097,7 +3102,7 @@ div.bk3 {
   .first .first_left {
     padding-left: 8px;
     margin: 0 auto;
-    width: 400px;
+    width: 90%;
   }
 }
 
@@ -3105,13 +3110,27 @@ div.bk3 {
   display: inline-block;
   position: relative;
   vertical-align: top;
-  top: 15vh;
+  top: 18vh;
   letter-spacing: 10px;
+  font-size: 36px;
+}
+
+@media all and (max-width: 1200px) {
+  .first .first_left h2.title {
+    font-size: 32px;
+  }
 }
 
 .first .first_left h2.title span.h3 {
   font-weight: 500;
   letter-spacing: 10px;
+  font-size: 24px;
+}
+
+@media all and (max-width: 1200px) {
+  .first .first_left h2.title span.h3 {
+    font-size: 18px;
+  }
 }
 
 .first .first_right {
@@ -3127,12 +3146,21 @@ div.bk3 {
 }
 
 .first .first_right .hottrip {
+<<<<<<< HEAD
+=======
   top: 15vh;
+>>>>>>> dev
   display: inline-flex;
-  padding-top: 96px;
+  padding-top: 64px;
 }
 
-.first .first_right div.planet_top {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .first .first_right .hottrip {
+    padding-top: 160px;
+  }
+}
+
+.first .first_right .hottrip div.planet_top {
   position: relative;
   padding-top: 90px;
   text-align: center;
@@ -3141,30 +3169,58 @@ div.bk3 {
   padding-right: 16px;
 }
 
+.first .first_right .hottrip div.planet_top:hover {
+  transform: translateY(0.2em);
+}
+
+.first .first_right .hottrip div.planet_top.planet_top:nth-child(1) {
+  animation: float 5s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+}
+
+.first .first_right .hottrip div.planet_top.planet_top:nth-child(2) {
+  animation: float 5.5s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+}
+
+.first .first_right .hottrip div.planet_top.planet_top:nth-child(3) {
+  animation: float 6s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+}
+
+.first .first_right .hottrip div.planet_top.planet_top:nth-child(4) {
+  animation: float 6.5s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+}
+
 @media all and (max-width: 1200px) {
-  .first .first_right div.planet_top {
+  .first .first_right .hottrip div.planet_top {
     padding-left: 8px;
     padding-right: 8px;
   }
 }
 
-.first .first_right div.planet_top h4 {
+.first .first_right .hottrip div.planet_top h4 {
   color: #C9ADA7;
 }
 
-.first .first_right div.planet_top img.planet {
+.first .first_right .hottrip div.planet_top img.planet {
   height: 160px;
   position: absolute;
   top: 15px;
   left: 50%;
   transform: translateX(-50%);
+<<<<<<< HEAD
+  z-index: 2;
+=======
+>>>>>>> dev
 }
 
-.first .first_right div.planet_top img.planet_a1 {
+.first .first_right .hottrip div.planet_top img.planet_a1 {
   max-width: 280px;
 }
 
-.first .first_right div.planet_top div.word {
+.first .first_right .hottrip div.planet_top img.planet_a1:hover {
+  transform: translateY(0.2em);
+}
+
+.first .first_right .hottrip div.planet_top div.word {
   position: absolute;
   top: 190px;
   left: 50%;
@@ -3173,11 +3229,15 @@ div.bk3 {
   margin: 0 auto;
 }
 
-.first .first_right div.planet_top div.word .hot {
+.first .first_right .hottrip div.planet_top div.word .hot {
   color: #AD6E4A;
 }
 
+<<<<<<< HEAD
+.first .first_right .hottrip div.planet_top div.word .tag {
+=======
 .first .first_right div.planet_top div.word .tag {
+>>>>>>> dev
   display: inline-flex;
   border: 1px solid #C9ADA7;
   border-radius: 5px;
@@ -3187,7 +3247,7 @@ div.bk3 {
   color: #cccaca;
 }
 
-.first .first_right div.planet_top div.word .price {
+.first .first_right .hottrip div.planet_top div.word .price {
   color: #AD6E4A;
   font-weight: bold;
   letter-spacing: 2px;
@@ -3195,7 +3255,7 @@ div.bk3 {
   font-family: "Nasalization";
 }
 
-.first .first_right div.planet_top div.word .addin {
+.first .first_right .hottrip div.planet_top div.word .addin {
   background-color: #AD6E4A;
   color: #ffffff;
   border-radius: 15px;
@@ -3203,9 +3263,11 @@ div.bk3 {
   margin: 0 auto;
   line-height: 26px;
   text-align: center;
+  text-decoration: none;
+  border: none;
 }
 
-.first .first_right div.planet_top div.word .addin img.plus {
+.first .first_right .hottrip div.planet_top div.word .addin img.plus {
   width: 15px;
   display: inline-block;
   position: relative;
@@ -3213,26 +3275,54 @@ div.bk3 {
   padding-right: 4px;
 }
 
-.first .first_right div.planet_top div.word .addin:hover {
+.first .first_right .hottrip div.planet_top div.word .addin:hover {
   background-color: #bf896b;
 }
 
-.first .tripselect {
+<<<<<<< HEAD
+.tripselect {
   display: inline-flex;
   width: 280px;
   justify-content: space-between;
 }
 
-.first .tripselect .icon2 {
+@media all and (max-width: 768px) {
+  .tripselect {
+    width: 90%;
+  }
+=======
+.first .tripselect {
+  display: inline-flex;
+  width: 280px;
+  justify-content: space-between;
+>>>>>>> dev
+}
+
+.tripselect .icon2 {
   width: 25px;
   cursor: pointer;
   z-index: 2;
 }
 
-.first .tripselect .select {
+.tripselect .select {
   position: relative;
   bottom: 4px;
   color: #AD6E4A;
+}
+
+@keyframes float {
+  0% {
+    transform: translate(0, 0);
+  }
+  30% {
+    transform: translate(0, -3px);
+  }
+  70% {
+    transform: translate(0, 5px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
 }
 
 .stepsection {
@@ -3254,6 +3344,15 @@ div.bk3 {
   .stepsection .stepall {
     flex-direction: column;
     align-items: center;
+<<<<<<< HEAD
+  }
+}
+
+@media all and (max-width: 1200px) {
+  .stepsection .stepall .h2 {
+    font-size: 24px;
+=======
+>>>>>>> dev
   }
 }
 
@@ -3319,6 +3418,23 @@ div.bk3 {
   margin: 0 16px 0 16px;
 }
 
+.second .tripcard_all .tripcard:hover {
+  transform: translateY(0.2em);
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+.second .tripcard_all .tripcard.tripcard:nth-child(1) {
+  animation: float 4s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+}
+
+.second .tripcard_all .tripcard.tripcard:nth-child(2) {
+  animation: float 4.5s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+}
+
+.second .tripcard_all .tripcard.tripcard:nth-child(3) {
+  animation: float 5s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+}
+
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .second .tripcard_all .tripcard {
     margin: 16px;
@@ -3374,6 +3490,9 @@ div.bk3 {
   width: 110px;
   line-height: 26px;
   text-align: center;
+  text-decoration: none;
+  border: none;
+  display: block;
 }
 
 .second .tripcard_all .tripcard .addin2 img.plus {
@@ -3406,6 +3525,20 @@ div.bk3 {
 
 .second .tripcard_all .tripcard .trip_bookmark:hover {
   background-image: url(../../img/icon/bookmark_hover.png);
+}
+
+.go-top {
+  font-family: "Proxima Nova";
+  position: fixed;
+  bottom: 80px;
+  right: 80px;
+  text-decoration: none;
+  background-image: url(../../img/icon/TOP.png);
+  width: 28px;
+  height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
 }
 
 body {
@@ -3717,12 +3850,8 @@ input.form-control-plaintext:focus {
 }
 
 .table .tripdetail {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .table .tripdetail img {
@@ -3796,8 +3925,6 @@ input.form-control.point_input:focus, input.form-control-plaintext.point_input:f
 }
 
 .actionBoxon {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: absolute;
   top: 270px;
