@@ -584,11 +584,13 @@ input::-webkit-inner-spin-button {
 .swiper-container {
   margin: 0 auto;
   max-width: 1100px;
+  height: 65vh;
 }
 
 @media all and (max-width: 1200px) {
   .swiper-container {
     width: 95%;
+    height: auto;
   }
 }
 
@@ -736,9 +738,10 @@ input::-webkit-inner-spin-button {
 
 @media all and (max-width: 576px) {
   .parent_container .up_container .book {
-    width: 90%;
+    width: 85%;
     position: relative;
-    margin: 8px;
+    margin: 2px;
+    top: 10px;
   }
 }
 

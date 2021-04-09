@@ -1,31 +1,40 @@
 @import "../all.scss";
 
-div.bk {
-    background-image: url(../../img/trip/bk.png);
-    height: 550px;
-    width: 550px;
-    background-size: 75%;
-    background-repeat: no-repeat;
-    // border:1px solid red;
-    position: absolute;
-    left: 450px;
-    top: 100px;
-    opacity: 0.6;
 
-    @media all and (max-width:768px) {
-        display: none;
-    }
+#marsloc {
+    top: 15vh;
+    left: 5%;
+    position: absolute;
 }
 
 div.bk3 {
-
     width: 300px;
     height: 300px;
-    // border:1px solid red;
     position: absolute;
     left: -120px;
     top: 400px;
     opacity: 0.3;
+    animation: rotation 50s cubic-bezier(.1, .1, .88, .88) infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    33%,
+    66% {
+        transform: rotate(90deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .border {
@@ -63,19 +72,30 @@ div.bk3 {
         @media all and (max-width:1200px) {
             padding-left: 8px;
             margin: 0 auto;
-            width: 400px;
+            width: 90%;
         }
 
         h2.title {
             display: inline-block;
             position: relative;
             vertical-align: top;
-            top: 15vh;
+            top: 18vh;
             letter-spacing: 10px;
+            font-size: 36px;
+
+            @media all and (max-width:1200px) {
+                font-size: 32px;
+            }
 
             span.h3 {
                 font-weight: 500;
                 letter-spacing: 10px;
+                font-size: 24px;
+
+                @media all and (max-width:1200px) {
+                    font-size: 18px;
+
+                }
             }
         }
     }
@@ -90,18 +110,12 @@ div.bk3 {
         }
 
         .hottrip {
-            top: 15vh;
             display: inline-flex;
-            padding-top: 96px;
-        }
+            padding-top: 64px;
 
-        div.planet_top {
-            position: relative;
-            padding-top: 90px;
-            text-align: center;
-            width: 55%;
-            padding-left: 16px;
-            padding-right: 16px;
+            @media screen and (min-width: 768px) and (max-width: 1200px) {
+                padding-top: 160px;
+            }
 
             div.planet_top {
                 position: relative;
@@ -110,10 +124,30 @@ div.bk3 {
                 width: 55%;
                 padding-left: 16px;
                 padding-right: 16px;
-
-                &:hover {
-                    transform: translateY(0.2em);
+                &:hover{
+                    transform:translateY(0.2em);
                     // box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+                }
+
+                &.planet_top:nth-child(1) {
+                    animation: float 5s cubic-bezier(.1, .1, .88, .88) infinite;
+                }
+
+                &.planet_top:nth-child(2) {
+                    animation: float 5.5s cubic-bezier(.1, .1, .88, .88) infinite;
+                }
+
+                &.planet_top:nth-child(3) {
+                    animation: float 6s cubic-bezier(.1, .1, .88, .88) infinite;
+                }
+
+                &.planet_top:nth-child(4) {
+                    animation: float 6.5s cubic-bezier(.1, .1, .88, .88) infinite;
+                }
+
+                @media all and (max-width:1200px) {
+                    padding-left: 8px;
+                    padding-right: 8px;
                 }
 
                 h4 {
@@ -126,16 +160,17 @@ div.bk3 {
                     top: 15px;
                     left: 50%;
                     transform: translateX(-50%);
+                    z-index: 2;
+                    
                 }
 
                 img.planet_a1 {
                     max-width: 280px;
+                    &:hover{
+                        transform:translateY(0.2em);
+                    }
+                    
                 }
-
-                // img.planet_a1:hover {
-                //     transform: perspective(0.5px) translateX(-1.5px) translateY(-1.5px);
-
-                // }
 
                 div.word {
                     position: absolute;
@@ -175,7 +210,8 @@ div.bk3 {
                         margin: 0 auto;
                         line-height: 26px;
                         text-align: center;
-
+                        text-decoration: none;
+                        border: none;
                         img.plus {
                             width: 15px;
                             display: inline-block;
@@ -193,78 +229,109 @@ div.bk3 {
                 }
             }
         }
+    }
+}
 
-        // <!-- ----------slider -->
-        .tripselect {
-            display: inline-flex;
-            width: 280px;
-            justify-content: space-between;
 
-            .icon2 {
-                width: 25px;
-                cursor: pointer;
-                z-index: 2;
-            }
 
-            .select {
-                position: relative;
-                bottom: 4px;
-                color: $gold;
-            }
-        }
+// <!-- ----------slider -->
+.tripselect {
+    display: inline-flex;
+    width: 280px;
+    justify-content: space-between;
+
+    @media all and (max-width:768px) {
+        width: 90%;
     }
 
-    // <!-- ---------流程區 -->
-    .stepsection {
-        text-align: center;
-        background-color: rgba($color: #191919, $alpha: 0.3);
-        padding: 48px;
+    .icon2 {
+        width: 25px;
+        cursor: pointer;
+        z-index: 2;
+    }
 
-        .stepall {
-            max-width: 1000px;
-            margin: 0 auto;
-            display: flex;
-            align-items: baseline;
-            justify-content: space-between;
-            padding: 32px;
+    .select {
+        position: relative;
+        bottom: 4px;
+        color: $gold;
+    }
+}
+
+
+@keyframes float {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    30% {
+        transform: translate(0, -3px);
+    }
+
+    70% {
+        transform: translate(0, 5px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+// <!-- ---------流程區 -->
+.stepsection {
+    text-align: center;
+    background-color: rgba($color: #191919, $alpha: 0.3);
+    padding: 48px;
+
+    .stepall {
+        max-width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        padding: 32px;
+
+        @media all and (max-width: 767px) {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .h2 {
+            @media all and (max-width:1200px) {
+                font-size: 24px;
+            }
+        }
+
+        .step {
+            position: relative;
 
             @media all and (max-width: 767px) {
-                flex-direction: column;
-                align-items: center;
+                margin-left: 0;
+                padding-top: 24px;
             }
 
-            .step {
-                position: relative;
+            img.step_icon {
+                width: 50px;
+                padding: 20px;
+                margin: 0 auto;
+            }
 
-                @media all and (max-width: 767px) {
-                    margin-left: 0;
-                    padding-top: 24px;
-                }
+            img.step_icon4 {
+                width: 85px;
+                padding: 20px;
+                margin: 0 auto;
+            }
 
-                img.step_icon {
-                    width: 50px;
-                    padding: 20px;
-                    margin: 0 auto;
-                }
+            .step_content {
+                color: $gold;
+                font-weight: bold;
+                width: 100%;
 
-                img.step_icon4 {
-                    width: 85px;
-                    padding: 20px;
-                    margin: 0 auto;
-                }
-
-                .step_content {
-                    color: $gold;
-                    font-weight: bold;
-                    width: 100%;
-
-                    img.num {
-                        width: 23px;
-                        display: inline-block;
-                        position: relative;
-                        top: 5px;
-                        padding-right: 8px;
-                    }
+                img.num {
+                    width: 23px;
+                    display: inline-block;
+                    position: relative;
+                    top: 5px;
+                    padding-right: 8px;
                 }
             }
         }
@@ -294,6 +361,17 @@ div.bk3 {
             border-radius: 5px;
             position: relative;
             margin: 0 16px 0 16px;
+            &:hover{
+                transform:translateY(0.2em);
+                box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+            }
+            &.tripcard:nth-child(1){
+                animation: float 4s cubic-bezier(.1,.1,.88,.88) infinite;}
+            &.tripcard:nth-child(2){
+                animation: float 4.5s cubic-bezier(.1,.1,.88,.88) infinite;}
+            &.tripcard:nth-child(3){
+                animation: float 5s cubic-bezier(.1,.1,.88,.88) infinite;}
+
 
             @media screen and (min-width: 768px) and (max-width: 992px) {
                 margin: 16px;
@@ -347,7 +425,9 @@ div.bk3 {
                 width: 110px;
                 line-height: 26px;
                 text-align: center;
-
+                text-decoration: none;
+                border: none;
+                display:block;
                 img.plus {
                     width: 15px;
                     display: inline-block;
@@ -384,4 +464,20 @@ div.bk3 {
         }
 
     }
+}
+
+
+.go-top {
+    font-family: "Proxima Nova";
+    position: fixed;
+    bottom: 80px;
+    right: 80px;
+    text-decoration: none;
+    background-image: url(../../img/icon/TOP.png);
+    width: 28px;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: float 3s cubic-bezier(.1, .1, .88, .88) infinite;
+
 }
