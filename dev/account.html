@@ -79,7 +79,9 @@
             <img class="nowlev" src="./img/icon/初星者.png" alt="lev"><br>
             <p class="nowacc">80,000積分</p>
           </div>
-          <div class="next_rocket"><img class="account_rocket" src="./img/icon/rocket4.png" alt="rocket"></div>
+          <div class="next_rocket">
+            <img class="account_rocket" src="./img/icon/rocket4.png" alt="rocket">
+          </div>
           <div class="next_lev align-items-center">
             <img class="nextlev" src="./img/icon/天星者.png" alt="lev"><br>
             <p class="nextacc">目前尚需 80,000 積分</p>
@@ -156,8 +158,8 @@
                 <input type="text" readonly class="form-control-plaintext" id="" value="台北市大同區中正路一段32巷5弄7號">
                 <!-- <input type="text" class="form-control" id="exampleInputPassword1" placeholder=""> -->
               </div>
+              <div class="col-md-auto align-self-start info_edit">
             </div>
-            <div class="col-md-auto align-self-start info_edit">
               <button type="button" class="btn btn-primary info_editbtn" @click="btnclick">編輯個人資料</button>
             </div>
           </div>
@@ -245,21 +247,18 @@
 
 
           </div>
-          <!-- 
-            <button class="col btn heartbtns">全部</button>
-            <button class="col btn heartbtns">待出發</button>
-            <button class="col btn heartbtns">已結束</button> -->
         </div>
 
         <div v-else-if="link ==='c'">
           <div class="post_tab row justify-content-start container_heart heartnav">
             <div class="post_btns">
-              <a href="./post.html"><button class="col btn postbtns margin_top_3">發文</button></a>
+              <button class="col btn postbtns margin_top_3"><a href="./post.html">發文</a></button>
             </div>
             <div class="postcontent">
               <div class="grid">
-                <div class="col-md-3 grid-item">
-                  <div class="img1"><img src="./img/photowall/samll/mars/mars_a1.jpg" alt="" class="lazy"></div>
+                <div data-aos="fade-up"
+                data-aos-duration="1000" class=" col-md-3 grid-item">
+                  <div class="img1"><img src="./img/photowall/samll/moon/moon_b1_ps.jpg" alt="" class="lazy"></div>
                   <div class="action-box">
                     <div class="heart"><img src="./img/icon/bookmark-outline.png" alt=""></div>
                     <div class="share"><img src="./img/icon/share.png" alt=""></div>
@@ -269,14 +268,33 @@
                   <div class="article_all">
                     <div class="article">
                       <div class="member_photo"><img src="./img/icon/ann.png" alt=""></div>
-                      <div class="name">王美美</div>
+                      <div class="name">吳美女</div>
                       <div class="post_time">2021.02.20</div>
                     </div>
                     <div class="text">雪花堡是繼卡帕多奇亞的另一個土耳其必遊的熱門景點。雪白的棉花堡有三個入口，雪花堡上方還有....more</div>
                   </div>
                 </div>
-                <div class="col-md-3 grid-item">
+                <div data-aos="fade-up"
+                data-aos-duration="1200" class="col-md-3 grid-item">
                   <div class="img1"><img src="./img/photowall/samll/moon/moon_c1.jpg" alt="" class="lazy"></div>
+                  <div class="action-box img2">
+                    <div class="heart"><img src="./img/icon/bookmark-outline.png" alt=""></div>
+                    <div class="share"><img src="./img/icon/share.png" alt=""></div>
+                    <div class="message"><img src="./img/icon/comment.png" alt=""></div>
+                    <button class="button"><img src="./img/icon/more.png" alt=""></button>
+                  </div>
+                  <div class="article_all">
+                    <div class="article">
+                      <div class="member_photo"><img src="./img/icon/donn-round.png" alt=""></div>
+                      <div class="name">劉德華</div>
+                      <div class="post_time">2021.02.20</div>
+                    </div>
+                    <div class="text">雪花堡是繼卡帕多奇亞的另一個土耳其必遊的熱門景點。雪白的棉花堡有三個入口，雪花堡上方還有....more</div>
+                  </div>
+                </div>
+                <div data-aos="fade-up"
+                data-aos-duration="1400" class="col-md-3 grid-item" id="destination_3">
+                  <div class="img1"><img src="./img/photowall/samll/mars/mars_a2.jpg" alt="" class="lazy"></div>
                   <div class="action-box">
                     <div class="heart"><img src="./img/icon/bookmark-outline.png" alt=""></div>
                     <div class="share"><img src="./img/icon/share.png" alt=""></div>
@@ -292,7 +310,8 @@
                     <div class="text">雪花堡是繼卡帕多奇亞的另一個土耳其必遊的熱門景點。雪白的棉花堡有三個入口，雪花堡上方還有....more</div>
                   </div>
                 </div>
-                <div class="col-md-3 grid-item">
+                <div data-aos="fade-up"
+                data-aos-duration="1600" class="col-md-3 grid-item">
                   <div class="img1"><img src="./img/photowall/samll/jupiter/jupiter_a1.jpg" alt="" class="lazy"></div>
                   <div class="action-box">
                     <div class="heart"><img src="./img/icon/bookmark-outline.png" alt=""></div>
@@ -302,68 +321,16 @@
                   </div>
                   <div class="article_all">
                     <div class="article">
-                      <div class="member_photo"><img src="./img/icon/ann.png" alt=""></div>
-                      <div class="name">王美美</div>
-                      <div class="post_time">2021.02.20</div>
-                    </div>
-                    <div class="text line_low">雪花堡是繼卡帕多奇亞的另一個土耳其必遊的熱門景點。雪白的棉花堡有三個入口，雪花堡上方還有....more</div>
-                  </div>
-                </div>
-                <div class="col-md-3 grid-item">
-                  <div class="img1"><img src="./img/photowall/samll/mars/mars_a2.jpg" alt="" class="lazy"></div>
-                  <div class="action-box">
-                    <div class="heart"><img src="./img/icon/bookmark-outline.png" alt=""></div>
-                    <div class="share"><img src="./img/icon/share.png" alt=""></div>
-                    <div class="message"><img src="./img/icon/comment.png" alt=""></div>
-                    <button class="button"><img src="./img/icon/more.png" alt=""></button>
-                  </div>
-                  <div class="article_all">
-                    <div class="article">
-                      <div class="member_photo"><img src="./img/icon/ann.png" alt=""></div>
+                      <div class="member_photo"><img src="./img/icon/donn-round.png" alt=""></div>
                       <div class="name">王美美</div>
                       <div class="post_time">2021.02.20</div>
                     </div>
                     <div class="text">雪花堡是繼卡帕多奇亞的另一個土耳其必遊的熱門景點。雪白的棉花堡有三個入口，雪花堡上方還有....more</div>
                   </div>
-                </div>
-                <div class="col-md-3 grid-item">
-                  <div class="img1"><img src="./img/photowall/samll/mars/mars_a2.jpg" alt="" class="lazy"></div>
-                  <div class="action-box">
-                    <div class="heart"><img src="./img/icon/bookmark-outline.png" alt=""></div>
-                    <div class="share"><img src="./img/icon/share.png" alt=""></div>
-                    <div class="message"><img src="./img/icon/comment.png" alt=""></div>
-                    <button class="button"><img src="./img/icon/more.png" alt=""></button>
-                  </div>
-                  <div class="article_all">
-                    <div class="article">
-                      <div class="member_photo"><img src="./img/icon/ann.png" alt=""></div>
-                      <div class="name">王美美</div>
-                      <div class="post_time">2021.02.20</div>
-                    </div>
-                    <div class="text">雪花堡是繼卡帕多奇亞的另一個土耳其必遊的熱門景點。雪白的棉花堡有三個入口，雪花堡上方還有....more</div>
-                  </div>
-                </div>
-                <div class="col-md-3 grid-item">
-                  <div class="img1"><img src="./img/photowall/samll/mars/mars_a2.jpg" alt="" class="lazy"></div>
-                  <div class="action-box">
-                    <div class="heart"><img src="./img/icon/bookmark-outline.png" alt=""></div>
-                    <div class="share"><img src="./img/icon/share.png" alt=""></div>
-                    <div class="message"><img src="./img/icon/comment.png" alt=""></div>
-                    <button class="button"><img src="./img/icon/more.png" alt=""></button>
-                  </div>
-                  <div class="article_all">
-                    <div class="article">
-                      <div class="member_photo"><img src="./img/icon/ann.png" alt=""></div>
-                      <div class="name">王美美</div>
-                      <div class="post_time">2021.02.20</div>
-                    </div>
-                    <div class="text">雪花堡是繼卡帕多奇亞的另一個土耳其必遊的熱門景點。雪白的棉花堡有三個入口，雪花堡上方還有....more</div>
-                  </div>
-                </div>
+                </div>  
               </div>
             </div>
           </div>
-
         </div>
 
         <div v-else-if="link ==='d'">
@@ -571,9 +538,6 @@
 
 
 
-
-
-
   <script>
 
     // 會員menu切分頁
@@ -694,7 +658,7 @@
       }
     };
 
-    $('.dropdown-toggle').dropdown()
+
   </script>
 
 

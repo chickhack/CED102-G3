@@ -4041,6 +4041,10 @@ input.form-control-plaintext:focus {
   border-radius: 0px;
 }
 
+.heartbtns a, .postbtns a {
+  color: #ffffff;
+}
+
 .trip_order, .ordercontent {
   margin-left: 10px;
 }
@@ -4169,17 +4173,6 @@ input.form-control.point_input:focus, input.form-control-plaintext.point_input:f
   margin-top: 50px;
   height: auto;
   max-width: auto;
-}
-
-.actionBoxon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: absolute;
-  top: 270px;
-  background-color: black;
-  opacity: 0.5;
-  display: flex;
 }
 
 .btn-check:focus + .btn, .btn:focus {

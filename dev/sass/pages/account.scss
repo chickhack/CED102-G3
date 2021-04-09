@@ -247,6 +247,9 @@ input.form-control-plaintext:focus {
   border: 1px solid #AD6E4A;
   background: none;
   border-radius: 0px;
+  a{
+    color: $white;
+  }
 }
 
 // 行程管理
@@ -366,15 +369,15 @@ input.form-control.point_input:focus, input.form-control-plaintext.point_input:f
 }
 
 
-.actionBoxon{
-  display:flex;
-  position: absolute;
-  top: 270px;
-  background-color:black;
-  opacity: 0.5;
-  // position: relative;
-  display: flex;
-}
+// .actionBoxon{
+//   display:flex;
+//   position: absolute;
+//   top: 270px;
+//   background-color:black;
+//   opacity: 0.5;
+//   // position: relative;
+//   display: flex;
+// }
 
 
 
