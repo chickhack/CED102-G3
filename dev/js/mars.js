@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const myCanvas = document.querySelector("#planetCanvas")
 console.log(myCanvas)
 // import * as THREE from '/node_modules/three/build/three.module.js';
@@ -166,6 +167,45 @@ function animate() {
     requestAnimationFrame( animate ); 
     render();
     controls.update();
+=======
+let clock = new THREE.Clock();
+
+const imgLoc = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/";
+let camera = new THREE.PerspectiveCamera(45, innerWidth / innerHeight, 0.1, 10000),
+light = new THREE.PointLight(0xFFFFFF, 2, 5000);
+camera.position.set(1300, 0, 100),
+scene = new THREE.Scene();
+// scene.background = new THREE.Color( 0x000000, 0 );
+
+camera.lookAt(scene.position);
+light.position.set(2000, 2000, 1500);
+scene.add(light);
+
+let marsGeo = new THREE.SphereGeometry (500, 32, 32),
+marsMaterial = new THREE.MeshPhongMaterial(),
+marsMesh = new THREE.Mesh(marsGeo, marsMaterial);
+scene.add(marsMesh);   
+
+let loader = new THREE.TextureLoader();
+marsMaterial.map = loader.load(imgLoc+'mars-map.jpg');
+marsMaterial.bumpMap = loader.load(imgLoc+'mars-bump.jpg');
+marsMaterial.bumpScale = 8;
+marsMaterial.specular = new THREE.Color('#000000');
+
+let renderer = new THREE.WebGLRenderer({antialiasing : true, alpha: true});
+renderer.setSize(window.innerWidth*0.8, window.innerHeight*0.8)       
+marsloc.appendChild(renderer.domElement);
+
+let controls = new THREE.OrbitControls(camera, renderer.domElement);
+controls.addEventListener('change', render);
+controls.enableZoom = false;
+
+
+function animate(){
+  requestAnimationFrame(animate);
+  controls.update();
+  render();       
+>>>>>>> Yi
 }
 
 function render(){

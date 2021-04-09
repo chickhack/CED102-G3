@@ -11,12 +11,22 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/all.css">
     <link rel="stylesheet" href="./css/pages/order-itineray.css">
+    <!-- 動態背景 -->
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 </head>
 <body>
     @@include('./layout/header.html')
     <div class="container-fluid">
-    
-    <form action="#" >
+            <div id="particles-js">
+            <!-- 動態背景 -->
+            <script src="./js/background.js"></script>
+            
+            <!-- <div class="planet_banner">
+                <h2 class="margin_top_5">星星世界帶你探索宇宙</h4>
+                </div> -->
+            </div>
+                <form action="#" >
+       
             <div class="orderinfo">
                 
                     <div class="row">
@@ -370,7 +380,10 @@
                 
             </div>
         </form>
-    </div>
+
+    
+</div>
+
     @@include('./layout/footer.html')
         
     <!-- JavaScript Bundle with Popper -->
