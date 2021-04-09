@@ -1,11 +1,11 @@
 let clock = new THREE.Clock();
 
 const imgLoc = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/";
-let camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 10000),
+let camera = new THREE.PerspectiveCamera(45, innerWidth / innerHeight, 0.1, 10000),
 light = new THREE.PointLight(0xFFFFFF, 2, 5000);
-camera.position.set(1300, 0, 0),
+camera.position.set(1300, 0, 100),
 scene = new THREE.Scene();
-scene.background = new THREE.Color(0x0c0d18);
+// scene.background = new THREE.Color( 0x000000, 0 );
 
 camera.lookAt(scene.position);
 light.position.set(2000, 2000, 1500);
@@ -22,12 +22,14 @@ marsMaterial.bumpMap = loader.load(imgLoc+'mars-bump.jpg');
 marsMaterial.bumpScale = 8;
 marsMaterial.specular = new THREE.Color('#000000');
 
-let renderer = new THREE.WebGLRenderer({antialiasing : true});
-renderer.setSize(window.innerWidth - 40, window.innerHeight -40)       
+let renderer = new THREE.WebGLRenderer({antialiasing : true, alpha: true});
+renderer.setSize(window.innerWidth*0.8, window.innerHeight*0.8)       
 marsloc.appendChild(renderer.domElement);
 
 let controls = new THREE.OrbitControls(camera, renderer.domElement);
 controls.addEventListener('change', render);
+controls.enableZoom = false;
+
 
 function animate(){
   requestAnimationFrame(animate);

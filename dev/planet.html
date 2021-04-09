@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="./css/pages/planet.css"></link>
     <!-- THREE -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r127/three.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/orbitcontrols.js"></script></script>
     <!-- 動態背景 -->
     <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   </head>
@@ -37,11 +38,11 @@
       <div id="particles-js">
         <script src="./js/background.js"></script>
       </div>
-      <!-- <div class="planet_banner">
+      <div class="planet_banner">
         <h2 class="margin_top_5">星星世界帶你探索宇宙</h4>
-      </div> -->
+      </div>
     <!-- 星球頁籤 -->
-      <div id="planet" class="container planet_tab">
+      <div id="planet" class="planet_tab margin_top_5">
         <div class="tabList col-LG-12 ">
           <ul class="tab-title">
             <li><a href="#tab01">火星</a></li>
@@ -56,15 +57,15 @@
         <div class="separator col-10"></div>
       <!-- 星球頁籤內容 -->
         <div class="tabContent">
-          <div class="taball margin_top_10">
+          <div class="taball margin_top_8">
               <!-- 火星 -->
               <div id="tab01" class="tab-inner ">
                 <div class="tab_top">
                   <div class="tab_left col-lg-6 col-md-12">
                     <h2>火星</h2>
-                    <h3 class="margin_top_4">
+                    <h4 class="margin_top_4">
                       火星大氣以二氧化碳為主，既稀薄又寒冷，其表面特徵讓人聯想起月球上的撞擊坑，以及地球上的山谷、沙漠和極地冰蓋。
-                    </h3>
+                    </h4>
                   </div>
                   <div class="data ">
                     <div class="grav">
@@ -92,11 +93,10 @@
                   </div>
 
                 </div>
-                <div class="tab-active margin_top_5 col-lg-6 col-md-4">
-                  <!-- <canvas id="planet" width="500" height="500"></canvas> -->
-                      <!-- 第一屏火星背景 -->
-                      <div id="marsloc"></div>
-                          <script src="./js/marsbackground.js"></script>
+                <div class="tab-active margin_top_5 col-lg-6 col-md-12 col-sm-12">
+                      <!-- 火星動圖 -->
+                      <div id="marsloc" ></div>
+                      <script src="./js/mars.js"></script>
                 </div>
                 <div class="planet_content ">
                   <div class="imgs col-6  margin_top_10 ">
@@ -165,10 +165,10 @@
 
                 </div>
                 <div class="tab-active margin_top_5 col-lg-6 col-md-4">
-                      <!-- 火星動圖 -->
-                      <div id="marsloc"></div>
-                          <script src="./js/mars.js"></script>
-                      </div>
+                      <!-- 月球動圖 -->
+                      <div id="moonloc"></div>
+                      <!-- <script src="./js/marsbackground.js"></script> -->
+                    </div>
                 <div class="planet_content ">
                   <div class="imgs col-6  margin_top_10 ">
                     <img src="./img/planet/set.png"/>
@@ -236,10 +236,9 @@
 
                 </div>
                 <div class="tab-active margin_top_5 col-lg-6 col-md-4">
-                  <!-- <canvas id="planet" width="500" height="500"></canvas> -->
-                      <!-- 第一屏火星背景 -->
-                      <div id="marsloc"></div>
-                          <script src="./js/marsbackground.js"></script>
+                      <!-- 木星動圖 -->
+                      <div id="jupiterloc"></div>
+                      <!-- <script src="./js/marsbackground.js"></script> -->
                 </div>
                 <div class="planet_content ">
                   <div class="imgs col-6  margin_top_10 ">

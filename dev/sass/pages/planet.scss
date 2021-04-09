@@ -1,7 +1,7 @@
 @import "../all.scss";
 
 .container-fluid{
-    padding: 0;
+    padding: 15vh 0;
     @include respond(mobile){
         margin: 0;
     }
@@ -31,33 +31,33 @@ button:hover{
     background: $gold;
 }
 
-//=========星球Banner
-// .planet_banner{
-//     color: $white;
-//     max-width: 1100px;
-//     margin: 0 auto;
-//     background-image: url("../../img/home/mars2.jpg");
-//     background-position: left;
-//     background-repeat: no-repeat;
-//     background-size: cover;
-//     width: 100%;    
-//     padding-top: 15%;
-//     position: relative;
-//     @include respond(mobile){
-//         padding-top: 50%;
-//     }
-//     h2{
-//         @include absolute_middle();
-//         top: 35%;
-//         letter-spacing:2px;
-//         @include respond(mobile){
-//             font-size: .8rem;
-//             width: 80%;
-//             top: 50%;
-//             margin: 0;
-//         }
-//     }
-// }
+// =========星球Banner
+.planet_banner{
+    color: $white;
+    max-width: 1100px;
+    margin: 0 auto;
+    background-image: url("../../img/home/mars2.jpg");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;    
+    padding-top: 15%;
+    position: relative;
+    @include respond(mobile){
+        padding-top: 50%;
+    }
+    h2{
+        @include absolute_middle();
+        top: 35%;
+        letter-spacing:2px;
+        @include respond(mobile){
+            font-size: .8rem;
+            width: 80%;
+            top: 50%;
+            margin: 0;
+        }
+    }
+}
 
 //=========星球Tab
 .planet_tab{
@@ -120,8 +120,8 @@ button:hover{
                         border: 1px solid $gold;
                         display: flex;
                         flex-direction: column;
-                        min-width: 130px;
-                        max-height: 130px;
+                        min-width: 100px;
+                        max-height: 100px;
                         border-right: 1px solid $gold;
                     }
                     // .day{
@@ -147,7 +147,7 @@ button:hover{
                     // }
                     
                     span.var{
-                        font-size: 48px;
+                        font-size: 36px;
                         letter-spacing: 3px;
                     }
                     span.data-top{
@@ -171,7 +171,10 @@ button:hover{
             }
             .tab-active{
                 position: relative;
-            }
+                
+                // border: 1px solid white;
+                }
+            
             .planet_content{
                 display: flex;
                 flex-wrap: wrap;
@@ -234,5 +237,3 @@ button:hover{
         }
 
         }
-    
-
