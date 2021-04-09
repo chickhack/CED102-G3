@@ -1,12 +1,8 @@
 @import "../all.scss";
 
 .container-fluid{
-<<<<<<< HEAD
     padding: 0;
     margin-top: 15vh;
-=======
-    padding: 15vh 0;
->>>>>>> Yi
     @include respond(mobile){
         margin: 0;
     }
@@ -35,11 +31,7 @@ button:hover{
     background: $gold;
 }
 
-<<<<<<< HEAD
 //=========星球Banner
-=======
-// =========星球Banner
->>>>>>> Yi
 .planet_banner{
     color: $white;
     max-width: 1100px;
