@@ -14,7 +14,7 @@
     "renew": "gulp u",
     "watch": "gulp w",
     "browser": "gulp browser",
-    "start": "node app.js"
+    "start": "node app.js",
   },
   "repository": {
     "type": "git",
@@ -28,10 +28,9 @@
   "homepage": "https://github.com/sexfat/ced102#readme",
   "devDependencies": {
     "@babel/core": "^7.13.14",
-    "@babel/preset-env": "^7.13.12",
     "babel-loader": "^8.2.2",
     "browser-sync": "^2.26.14",
-    "css-loader": "^5.2.0",
+    "babel-loader": "^7.1.5",
     "gulp": "^4.0.2",
     "gulp-clean": "^0.4.0",
     "gulp-clean-css": "^4.3.0",
