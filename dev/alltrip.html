@@ -7,16 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>星球景點</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <!-- bootstrap cdn-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
-        crossorigin="anonymous"></script>
     <!-- vue cdn-->
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
     <!-- tweenmax cdn -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
     <!-- jquery cdn-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
@@ -24,22 +18,36 @@
 
     <!-- alltrip css -->
     <link rel="stylesheet" href="./css/pages/alltrip.css">
+    <link rel="stylesheet" href="./vendors/aos/css/aos.css">
+
+    <!-- 動的火星 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r127/three.min.js"></script>
+
+    <!-- 動態背景 -->
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 </head>
 
 <body>
-    <header>
-        @@include('./layout/header.html')
-    </header>
+    <header>@@include('./layout/header.html')</header>
+
+    <!-- 動態背景 -->
+    <div id="particles-js">
+        <script src="./js/background.js"></script>
+    </div>
+
     <div id="app">
         <!-- ----------first -->
         <div class="first padding_top_5">
-            <div class="bk">
-            </div>
+
+            <div id="marsloc"></div>
+
             <div class="bk3">
                 <img src="../dev/img/trip/bk3-01.png">
             </div>
             <div class="first_left">
-                <h2 class="title line_high h1 "><span class="h3">預訂後即刻出發，最短一日行程</span><br>讓你親眼見證宇宙<br> 改變你的內在世界</h2>
+                <h2 class="title line_high h1 animatedText1"><span
+                        class="h3">預訂後<span>即刻出發</span></span><br><span>讓你親眼</span><span>見證宇宙</span><br><span>改變你的</span><span>內在世界</span>
+                </h2>
             </div>
             <div class="first_right swiper-container padding_top_4">
                 <div class="hottrip wiper-wrapper">
@@ -54,8 +62,9 @@
                                     <small class="tag margin_top_3">{{item.grade}}</small>
                                     <small class="tag">{{item.scores}}積分</small>
                                     <h4 class="price">${{item.price}}</h4>
-                                    <div class="addin small"><img class="plus" src="./img/icon/plus.png" alt="">加入我的行程
-                                    </div>
+                                    <button class="addin small myTrip"><img class="plus" src="./img/icon/plus.png"
+                                            alt="">加入我的行程
+                                    </button>
                             </div>
                         </a>
                     </div>
@@ -116,8 +125,8 @@
                                 <small class="tag">{{item.grade}}</small>
                                 <small class="tag">{{item.scores}}積分</small>
                                 <h3 class="price2 margin_top_2">${{item.price}}</h3>
-                                <div class="addin2 small margin_top_2"><img class="plus" src="./img/icon/plus.png"
-                                        alt="">加入我的行程</div>
+                                <button class="addin2 small margin_top_2 myTrip"><img class="plus"
+                                        src="./img/icon/plus.png" alt="">加入我的行程</button>
                                 <div class="trip_bookmark"></div>
                                 <!-- <img class="trip_bookmark" src="./img/icon/bookmark-outline.png" alt=""> -->
                             </div>
@@ -134,8 +143,8 @@
                                 <small class="tag">{{item.grade}}</small>
                                 <small class="tag">{{item.scores}}積分</small>
                                 <h3 class="price2 margin_top_2">${{item.price}}</h3>
-                                <div class="addin2 small margin_top_2"><img class="plus" src="./img/icon/plus.png"
-                                        alt="">加入我的行程</div>
+                                <button class="addin2 small margin_top_2 myTrip"><img class="plus"
+                                        src="./img/icon/plus.png" alt="">加入我的行程</button>
                                 <div class="trip_bookmark"></div>
                             </div>
                         </a>
@@ -151,8 +160,8 @@
                                 <small class="tag">{{item.grade}}</small>
                                 <small class="tag">{{item.scores}}積分</small>
                                 <h3 class="price2 margin_top_2">${{item.price}}</h3>
-                                <div class="addin2 small margin_top_2"><img class="plus" src="./img/icon/plus.png"
-                                        alt="">加入我的行程</div>
+                                <button class="addin2 small margin_top_2 myTrip"><img class="plus"
+                                        src="./img/icon/plus.png" alt="">加入我的行程</button>
                                 <div class="trip_bookmark"></div>
                             </div>
                         </a>
@@ -161,9 +170,8 @@
             </div>
         </div>
     </div>
-    <footer>
-        @@include('./layout/footer.html')
-    </footer>
+    <a href="#" class="go-top"></a>
+    <footer>@@include('./layout/footer.html')</footer>
 
 
 
@@ -173,46 +181,47 @@
         let vm = new Vue({
             el: "#app",
             data: {
-                top: [{
-                    planet: "./img/trip/jupiter.png",
-                    spot: "./img/trip/trip_jupiter/jupiter_top_a_ps.png",
-                    title: "熱門星球",
-                    name: "木星 | 冰層探索一日遊",
-                    star: "./img/icon/star.png",
-                    grade: "初階",
-                    scores: "3000",
-                    price: 5000,
+                top: [
+                    //     {
+                    //     planet: "./img/trip/jupiter.png",
+                    //     spot: "./img/trip/trip_jupiter/jupiter_top_a_ps.png",
+                    //     title: "熱門星球",
+                    //     name: "木星 | 一日冰層探索",
+                    //     star: "./img/icon/star.png",
+                    //     grade: "初階",
+                    //     scores: "3000",
+                    //     price: 5000,
 
-                }, {
-                    planet: "./img/trip/mars.png",
-                    spot: "./img/trip/trip_mars/mars_top_a1_ps.jpg.png",
-                    title: "進階景點",
-                    name: "火星 | 攀登太陽系第一高山",
-                    star: "./img/icon/star.png",
-                    grade: "高階",
-                    scores: "5000",
-                    price: 5000,
+                    // }, {
+                    //     planet: "./img/trip/mars.png",
+                    //     spot: "./img/trip/trip_mars/mars_top_a1_ps.jpg.png",
+                    //     title: "進階景點",
+                    //     name: "火星 | 一日攀登高山",
+                    //     star: "./img/icon/star.png",
+                    //     grade: "高階",
+                    //     scores: "5000",
+                    //     price: 5000,
 
-                }, {
-                    planet: "./img/trip/moon.png",
-                    spot: "./img/trip/trip_moon/moon_top_a1_ps.png",
-                    title: "新景點",
-                    name: "月球 | 太空體驗一日遊",
-                    star: "./img/icon/star.png",
-                    grade: "初階",
-                    scores: "3000",
-                    price: 5000,
-                }, {
-                    planet: "./img/trip/mars.png",
-                    spot: "./img/trip/trip_mars/mars_top_a1_ps.jpg.png",
-                    title: "進階景點",
-                    name: "火星 | 攀登太陽系第一高山",
-                    star: "./img/icon/star.png",
-                    grade: "高階",
-                    scores: "5000",
-                    price: 5000,
+                    // }, {
+                    //     planet: "./img/trip/moon.png",
+                    //     spot: "./img/trip/trip_moon/moon_top_a1_ps.png",
+                    //     title: "新景點",
+                    //     name: "月球 | 一日太空體驗",
+                    //     star: "./img/icon/star.png",
+                    //     grade: "初階",
+                    //     scores: "3000",
+                    //     price: 5000,
+                    // }, {
+                    //     planet: "./img/trip/mars.png",
+                    //     spot: "./img/trip/trip_mars/mars_top_a1_ps.jpg.png",
+                    //     title: "進階景點",
+                    //     name: "火星 | 攀登太陽系第一高山",
+                    //     star: "./img/icon/star.png",
+                    //     grade: "高階",
+                    //     scores: "5000",
+                    //     price: 5000,
 
-                },
+                    // },
                 ],
                 spot1: [{
                     spot: "./img/trip/trip_moon/moon_a1_ps2.jpg",
@@ -276,7 +285,80 @@
                 ],
             },
         });
+
+<<<<<<< HEAD
+        document.ready = function getProducts() {
+            let xhr = new XMLHttpRequest();
+            xhr.onload = function () {
+                top = JSON.parse(xhr.responseText);
+                console.log(top);
+                app.top = top;
+            }
+            xhr.open("get", "./php/getSelectTrip.php", true);
+            xhr.send(null);
+        }
+
+        // window.addEventListener("load", function () {
+        //     //-----------------使用ajax 回server端取回資料
+        //     getProducts();
+        //     //-------------------
+        //     let btnCartAdds = document.getElementsByClassName("btnCartAdd");
+        //     let prodNames = document.getElementsByClassName("prodName");
+        //     for (let i = 0; i < btnCartAdds.length; i++) {
+        //         btnCartAdds[i].onclick = function () {
+        //             console.log(i);
+        //             alert("確定購買" + prodNames[i].innerText + "商品嗎?");
+        //         }
+        //     }
+        // })
+=======
+
+              // window.addEventListener("load",function () { 
+        //     console.log("load");
+        //     let xhr = new XMLHttpRequest();
+        //     xhr.onload = function () {
+        //         test = JSON.parse(xhr.responseText);
+        //         console.log(test);
+        //         app.planets = test;
+        //         console.log(app.planets);
+        //     }
+        //     xhr.open("get", "./php/getSelectTrip.php", true);
+        //     xhr.send(null);
+        // }) 
+>>>>>>> dev
     </script>
+
+    <!-- 加入我的行程 -->
+    <script src="./js/addspot.js"></script>
+
+    <!-- 第一屏火星背景 -->
+    <script src="./js/marsbackground.js"></script>
+
+    <!-- 第一屏大標 -->
+    <script>
+        TweenMax.staggerFrom(".animatedText1 span", 2, { scale: 0.9, opacity: 0, delay: 0.2, ease: Elastic.easeOut, force3D: true }, 0.2);
+    </script>
+    <!-- go top -->
+    <script>
+        $(document).ready(function () {
+            // Show or hide the sticky footer button
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 200) {
+                    $('.go-top').fadeIn(200);
+                } else {
+                    $('.go-top').fadeOut(200);
+                }
+            });
+
+            // Animate the scroll to top
+            $('.go-top').click(function (event) {
+                event.preventDefault();
+
+                $('html, body').animate({ scrollTop: 0 }, 900);
+            })
+        });
+    </script>
+
 
 </body>
 

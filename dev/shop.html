@@ -14,43 +14,33 @@
         @@include('./layout/header.html')
         <div id="particles-js"></div>
         <section class="shop">
-            <div class="banner">
-                 <h2 class="margin_top_5">星球商城滿足你上外太空的一切需求</h4>
+            <div class="banner"><h2>在這裡可以滿足你上外太空的一切需求!</h2></div>
+            <div class="filter margin_top_5">
+                <h2>商品</h2>
+                <div class="custom-select">
+                    <select>
+                        <option value="0">排序</option>
+                        <option value="1">依時間排序</option>
+                        <option value="2">價格高到低</option>
+                    </select>
+                </div>
             </div>
             <div id="app">
-                <div class="shopAll">
-                    <div class="aside">
-                        <ul>
-                            <li class="btn" v-for="i in categories">
-                                <p @click="upDown">{{i.cate}}</p>
-                                <div class="choose">
-                                    <ul>
-                                        <li>選項一</li>
-                                        <li>選項二</li>
-                                    </ul>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="main">
-                        <div class="productAll margin_left_5">
-                            <ul>
-                                <li v-for="item in products" class="margin_top_5">
-                                    <a href="product.html">
-                                        <img :src="item.img" alt="" class="margin_top_2">
-                                        <div class="item">
-                                            <div class="info">
-                                                <p>{{item.name}}</p>
-                                                <p class="margin_top_1 price"> ${{item.price}}</p>
-                                            </div>
-                                            <img :src="item.cart" class="icon cart" @click.stop="cart">
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
+                <ul>
+                    <li v-for="card in products">
+                        <div class="card">
+                            <div class="imgBx">
+                                <img :src="card.img" alt="">
+                                <h3>{{card.name}}</h3>
+                                <p class="h3 margin_top_1 price">${{card.price}}</p>
+                            </div>
+                            <div class="content margin_top_2">
+                                <a href="product.html" class="button_min">查看詳情</a>
+                                <p class="button_min margin_top_2" @click="addCart">加入購物車</p>
+                            </div>
                         </div>
-                    </div>
-                </div>
+                    </li>
+                </ul>
             </div>
         </section>
         @@include("./layout/footer.html")
@@ -60,33 +50,6 @@
         let vm = new Vue({
             el: "#app",
             data: {
-                categories:[{
-                    cate: "裝備",
-                    options: {
-                        one: "選項一",
-                        two: "選項二"
-                    }},{
-                    cate: "甜點",
-                    options: {
-                        one: "選項一",
-                        two: "選項二"
-                    }},{
-                    cate: "紀念品",
-                    options: {
-                        one: "選項一",
-                        two: "選項二"
-                    }},{
-                    cate: "交通工具",
-                    options: {
-                        one: "選項一",
-                        two: "選項二"
-                    }},{
-                    cate: "其他",
-                    options: {
-                        one: "選項一",
-                        two: "選項二"
-                    }
-                }],
                 products: [{
                     img: "./img/shop/shoes.png",
                     name: "宇宙平衡鞋",
@@ -147,18 +110,17 @@
                     name: "太空衣",
                     price: 10000,
                     cart: "./img/shop/cart.png",
-                }]
+                }],
+                cart: [],
             },
             methods: {
-                upDown(e){
-                    e.target.nextElementSibling.classList.toggle("chooseShow");
-                },
-                cart(){
-                    cart_slide.classList.toggle("cart-active");
+                addCart(){
+                    
                 }
             },
         })
     </script>
     <script src="./js/background.js"></script>
+    <script src="./js/customSelect.js"></script>
 </body>
 </html>
