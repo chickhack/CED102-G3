@@ -234,8 +234,7 @@ input.form-control-plaintext:focus {
 }
 
 
-
-// 互動牆管理按鈕 // 收藏按鈕
+// 互動牆管理按鈕 // 收藏按鈕 // 所有放在業僉內按鈕控制
 .heart_btns, .post_btns {
   padding: 0px 0px 0px 270px;
 }
@@ -249,6 +248,60 @@ input.form-control-plaintext:focus {
   background: none;
   border-radius: 0px;
 }
+
+// 行程管理
+.trip_order, .ordercontent {
+  margin-left: 10px;
+}
+.table {
+	width: 100%;
+	// margin: 0 auto;
+  font-family: "Microsoft JhengHei";
+	caption {
+    text-align: left;
+	}
+  span {
+    color: $pink;
+  }
+  span.num{
+    color: $gray;
+    margin-left: 15px;
+    line-height: 20px;
+  }
+	thead, td {
+		border: 1px solid $gold;
+		padding: 8px 15px;
+	}
+  th {
+    padding: 8px 15px;
+  }
+	table {
+		width: 100%;
+		thead {
+			color: $pink;
+		}
+		tbody {
+      color: $gray;
+			// tr:hover {
+			// 	background-color: #ffc4c4;
+			// 	transition: all 0.5s;
+			// 	cursor: pointer;
+		}
+	}
+  .tripdetail {
+    display: flex;
+    align-items: center;
+    img {
+      width: 18px;
+      margin-right: 5px;
+    }
+  }
+}
+
+
+
+
+
 
 // 收藏內容、互動管理、訂單、行程內容 控制在270px內
  .product_card, .tripcontent, .ordercontent, .pointcontent {
