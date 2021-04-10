@@ -23,6 +23,8 @@
   <link href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet" />
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <!-- 動態背景 -->
+  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
   <link rel="stylesheet" href="./css/all.css">
   <link rel="stylesheet" href="./css/pages/photowall.css">
@@ -42,6 +44,13 @@
   <header>
     @@include('./layout/header.html')
   </header>
+  <!-- 動態背景 -->
+  <div id="particles-js">
+    <script src="./js/background.js"></script>
+  </div>
+  <div class="planet_banner">
+    <h2 class="margin_top_5">星星世界帶你探索宇宙</h4>
+  </div>
 
   <div class="welcome">
     <div class="spacedinfo">
@@ -122,7 +131,7 @@
             <div class="col-md-auto align-self-center info_left">
               <div class="form-group">
                 <label for="exampleInputEmail1">暱稱</label>
-                <div class="edit_text"><input type="text"  class="form-control-plaintext" id="" value="大大大大">
+                <div class="edit_text"><input type="text" class="form-control-plaintext" id="" value="大大大大">
                 </div>
                 <!-- <input type="text" class="form-control" id="exampleInputEmail1" placeholder="大大大大"> -->
                 <small id="emailHelp" class="form-text text-muted"></small>
@@ -692,7 +701,7 @@
 
 
       <script>
-        
+
         var account_tab = new Vue({
           el: "#accountapp",
           data: {
