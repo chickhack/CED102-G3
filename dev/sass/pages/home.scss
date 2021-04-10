@@ -216,183 +216,26 @@ button{
 
 
 //=========星球百科
-
-@media all and (max-width:1200px) {
+#marsloc{
+    position: relative;
+    top: 0;
+    right:0;
+}
+.planet_box{
+    margin-top: 65vh;
+}
+@media all and (max-width:1100px) {
     .separator{
         width: 90%;
     }
-}
-.planet_box{
-    .tabList{
-        display: flex;
-        justify-content: center;
-        column-gap: 1%;
-        .button_min{
-            border: none;
-            background-color: transparent;
-            color: $gold;
-            font-size: 16px;
-        }
-        button.active{
-            border-bottom: 4px solid $gold;
-        }
-    }
-    .separator{
-        margin: 0 auto;
-        height: 1px;
-        width: 70%;
-        border-top: solid 1px $gold;
-        @include respond(mobile){
-            width: 100%;
-        }
-    
-    }
-}
-.tab-inner{
-    // border-top: 1px solid $gold;
-    display: flex;
-    justify-content: center;
-    .taball{
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-        align-items: center;
-        .tab_left{
-            max-width: 400px;
-        }
-        p {
-            line-height: 2rem;
-            margin-top: 20px;
-            max-width: 400px;
-        }
-    }
-    .data{
-        border: 1px solid $gold;
-        display: flex;
-        font-family: Haettenschweiler, sans-serif;
-        .grav{
-            justify-content: center;
-            align-items: center;
-            display: flex;
-            flex-direction: column;
-            min-width: 130px;
-            min-height: 130px;
-            border-right: 1px solid $gold;
-        }
-        .day{
-            justify-content: center;
-            align-items: center;
-            display: flex;
-            flex-direction: column;
-            min-width: 130px;
-            border-right: 1px solid $gold;
-
-        }
-        .temp{
-            justify-content: center;
-            align-items: center;
-            display: flex;
-            flex-direction: column;
-            min-width: 130px;
-        }
-        
-        span.var{
-            font-size: 48px;
-            letter-spacing: 3px;
-        }
-        span.data-top{
-            vertical-align:top;
-            font-size: 24px;
-        }
-        span.data-mid{
-            font-size: 24px;
-        }
-        span.data-low{
-            font-size: 24px;
-            font-stretch: narrower;
-        }
-        p{
-            margin-top: 5px;
-            font-size: 16px;
-        }
-
-    }
-    .button_min{
-        display: block;
-        transform: translateX(-100%);
-        width: 130px;
+    #marsloc{
+        margin-top: 32px;
     }
 }
 
 
 
-
-//=========互動牆
-// .gallery{
-//     .gallery_box{
-//         display: flex;
-//     }
-
-//     .topleft{
-//         display: flex;
-//         flex-direction: row;
-//         max-height: 300px;
-//         align-items: flex-end;
-//         .A{
-//             height: 300px;
-//             overflow: hidden;
-//             img{
-//                 height: 100%;
-//             }
-//         }
-//         .B{
-//             height: 300px;
-//             overflow: hidden;
-//             img{
-//                 height: 300px;
-//             }
-//         }
-//     }
-
-//     .bottom{
-//         display: flex;
-//         flex-direction: row;
-//         .bottomleft{
-//             display: flex;
-//             flex-direction: row;
-//             max-height: 300px;
-//             .D{
-//                 height: 300px;
-//                 img{
-//                     height: 100%;
-//                 }
-//             }
-//             .E{
-//                 height: 300px;
-//                 img{
-//                     height: 50%;
-//                 }
-    
-    
-//             }
-//         }
-//         .bottomright{
-//             display: flex;
-
-//             .F{
-//                 height: 300px;
-//                 overflow: hidden;
-
-//             }
-//             .G{
-//                 height: 300px;
-//                 overflow: hidden;
-
-//             }
-//         }
-//     }
-// }
-
+// 互動牆
 @media all and (max-width:997px) {
     .topright{
         display: flex;
@@ -403,10 +246,13 @@ button{
         }
         .galleryIntro{
             max-width: 460px;
+            min-width: 400px;
         }
     }
 }
-// }
+
+
+
 .home_photowall{
     display: flex;
     align-items: center;
@@ -415,6 +261,7 @@ button{
         display: flex;
         flex-direction: column;
         .separator{
+            margin-top: 24px;
             width: 60%;
         }
         .topSct{
@@ -435,6 +282,9 @@ button{
                 text-align: justify;
             }
         }
+    }
+    .photowall_rwd{
+        display: none;
     }
     #photos {
         // border:1px solid white;
@@ -478,6 +328,9 @@ button{
       @media (max-width: 700px) {
         #photos {
             display: none;
+        }
+        .photowall_rwd{
+            display: flex;
         }
       }
 
@@ -703,7 +556,7 @@ button{
 
 
 //=========間距
-.flow_member, .shop_box, .gallery, .planet_box{
+.flow_member, .shop_box, .gallery{
     margin-top: 30vh;
 }
 

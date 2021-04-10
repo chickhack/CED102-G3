@@ -1,7 +1,8 @@
 @import "../all.scss";
 
 .container-fluid{
-    padding: 15vh 0;
+    padding: 0;
+    padding-top: 15vh;
     @include respond(mobile){
         margin: 0;
     }
@@ -98,11 +99,12 @@ button:hover{
                 // border: 1px solid white;
                 display: flex;
                 justify-content: space-between;
+                flex-wrap: wrap;
                 padding: 0 15%;
                 .tab_left{
                     max-width: 400px;
-                    h3{
-                        line-height: 2rem;
+                    h4{
+                        line-height: 3rem;
                     }
                 }
                 p {
@@ -111,8 +113,8 @@ button:hover{
                     max-width: 400px;
                 }
                 .data{
-                    display: inline-flex;
-                    justify-content: flex-end;
+                    display: flex;
+                    justify-content: center;
                     font-family: Haettenschweiler, sans-serif;
                     .grav, .day, .temp{
                         justify-content: center;
@@ -171,7 +173,7 @@ button:hover{
             }
             .tab-active{
                 position: relative;
-                
+                top: 0;
                 // border: 1px solid white;
                 }
             

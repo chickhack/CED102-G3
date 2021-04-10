@@ -52,6 +52,12 @@ section.login_container{
 
         }
     }
+    .fa, .fas{
+        font-weight: 900;
+        position: absolute;
+        right: 40px;
+        top: 150px;
+    }
     .modal-dialog{
         display: flex;
         flex-direction: column;
@@ -70,6 +76,8 @@ section.login_container{
         }
         .fa-eye:before, .fa-eye-slash:before{
             color: $gold;
+        }
+
         }
         form {
             display: flex;
@@ -142,10 +150,16 @@ section.login_container{
             button{
                 align-self: center;
                 background-color: transparent;
-                color: $gold;
+
+                a {
+                    text-decoration: none;
+                    color: $gold;
+                }
             }
             button:hover{
-                color: #ffff;
+                a{
+                    color: #ffff;
+                }
                 border: 1px solid $gold;
                 background: $gold;
             }
@@ -173,7 +187,6 @@ section.login_container{
         }
      }
     }
-}
 
 
 
