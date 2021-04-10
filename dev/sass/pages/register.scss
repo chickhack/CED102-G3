@@ -1,15 +1,24 @@
 @import "../all.scss";
-.container{
+.container-fluid{
+    max-width: 1200px;
+    padding: 0;
+    padding-top: 15vh;
     margin: 0 auto;
-    max-width: 1100px;
-    text-align: center;
-    a{
-        text-decoration: none;
-    }
     @include respond(mobile){
         margin: 0;
     }
-
+}
+// .container{
+//     margin: 0 auto;
+//     max-width: 1100px;
+//     text-align: center;
+//     a{
+//         text-decoration: none;
+//     }
+//     @include respond(mobile){
+//         margin: 0;
+//     }
+// }
 section.login_container{
     display: flex;
     .login_banner{
@@ -167,7 +176,7 @@ section.login_container{
         }
      }
     }
-}
+
 
 
 
