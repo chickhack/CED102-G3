@@ -6,20 +6,23 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <!--Bootstrap5 JavaScript Bundle with Popper -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
   <!--Bootstrap5 CSS only -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-  <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
-  <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
   <!-- Vue.js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.12/vue.js"></script>
   <!-- jQuery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
     integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
     crossorigin="anonymous"></script>
-
+  <link href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet" />
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
   <link rel="stylesheet" href="./css/all.css">
   <link rel="stylesheet" href="./css/pages/photowall.css">
@@ -110,7 +113,7 @@
       <hr class="account_line">
 
       <div class="content">
-        
+
         <div v-if="link ==='a'">
           <div id="info_form" class="row info_form">
             <div class="col-md-auto align-self-start  info_img">
@@ -119,7 +122,7 @@
             <div class="col-md-auto align-self-center info_left">
               <div class="form-group">
                 <label for="exampleInputEmail1">暱稱</label>
-                <div class="edit_text"><input type="text" readonly class="form-control-plaintext" id="" value="大大大大">
+                <div class="edit_text"><input type="text"  class="form-control-plaintext" id="" value="大大大大">
                 </div>
                 <!-- <input type="text" class="form-control" id="exampleInputEmail1" placeholder="大大大大"> -->
                 <small id="emailHelp" class="form-text text-muted"></small>
@@ -168,16 +171,18 @@
           <div class="tripcontent margin_top_3">
 
             <div class="dropdown">
-              <button class="btn btn-secondary dropdown-toggle heartbtns" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <button class="btn heartbtns p" type="button">全部</button>
+              <button class="btn heartbtns p" type="button">待出發</button>
+              <button class="btn heartbtns p" type="button">已結束</button>
+              <!-- <button @click="clickMe" class="btn heartbtns p" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 全部
               </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">全部</a>
-                <a class="dropdown-item" href="#">待出發</a>
-                <a class="dropdown-item" href="#">已結束</a>
-              </div>
+              <div class="dropdown_menu p">
+                <a class="dropdown_item p" href="#">全部</a>
+                <a class="dropdown_item p" href="#">待出發</a>
+                <a class="dropdown_item p" href="#">已結束</a>
+              </div> -->
             </div>
-
 
             <div class="trip_order margin_top_4">
 
@@ -243,12 +248,8 @@
               </div>
             </div>
 
-
           </div>
-          <!-- 
-            <button class="col btn heartbtns">全部</button>
-            <button class="col btn heartbtns">待出發</button>
-            <button class="col btn heartbtns">已結束</button> -->
+
         </div>
 
         <div v-else-if="link ==='c'">
@@ -256,10 +257,12 @@
             <div class="post_btns">
               <button class="col btn postbtns margin_top_3"><a href="./post.html">發文</a></button>
             </div>
+
             <div class="postcontent">
               <div class="grid">
-                <div class="col-md-3 grid-item">
-                  <div class="img1"><img src="./img/photowall/samll/mars/mars_a1.jpg" alt="" class="lazy"></div>
+                <div data-aos="fade-up" data-aos-duration="1000" class=" col-md-3 grid-item">
+                  <div class="img1" @mouseover="mouseMe"><img src="./img/photowall/samll/moon/moon_b1_ps.jpg" alt=""
+                      class="lazy"></div>
                   <div class="action-box">
                     <div class="heart"><img src="./img/icon/bookmark-outline.png" alt=""></div>
                     <div class="share"><img src="./img/icon/share.png" alt=""></div>
@@ -269,14 +272,31 @@
                   <div class="article_all">
                     <div class="article">
                       <div class="member_photo"><img src="./img/icon/ann.png" alt=""></div>
-                      <div class="name">王美美</div>
+                      <div class="name">吳美女</div>
                       <div class="post_time">2021.02.20</div>
                     </div>
                     <div class="text">雪花堡是繼卡帕多奇亞的另一個土耳其必遊的熱門景點。雪白的棉花堡有三個入口，雪花堡上方還有....more</div>
                   </div>
                 </div>
-                <div class="col-md-3 grid-item">
+                <div data-aos="fade-up" data-aos-duration="1200" class="col-md-3 grid-item">
                   <div class="img1"><img src="./img/photowall/samll/moon/moon_c1.jpg" alt="" class="lazy"></div>
+                  <div class="action-box img2">
+                    <div class="heart"><img src="./img/icon/bookmark-outline.png" alt=""></div>
+                    <div class="share"><img src="./img/icon/share.png" alt=""></div>
+                    <div class="message"><img src="./img/icon/comment.png" alt=""></div>
+                    <button class="button"><img src="./img/icon/more.png" alt=""></button>
+                  </div>
+                  <div class="article_all">
+                    <div class="article">
+                      <div class="member_photo"><img src="./img/icon/donn-round.png" alt=""></div>
+                      <div class="name">劉德華</div>
+                      <div class="post_time">2021.02.20</div>
+                    </div>
+                    <div class="text">雪花堡是繼卡帕多奇亞的另一個土耳其必遊的熱門景點。雪白的棉花堡有三個入口，雪花堡上方還有....more</div>
+                  </div>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="1400" class="col-md-3 grid-item" id="destination_3">
+                  <div class="img1"><img src="./img/photowall/samll/mars/mars_a2.jpg" alt="" class="lazy"></div>
                   <div class="action-box">
                     <div class="heart"><img src="./img/icon/bookmark-outline.png" alt=""></div>
                     <div class="share"><img src="./img/icon/share.png" alt=""></div>
@@ -292,7 +312,7 @@
                     <div class="text">雪花堡是繼卡帕多奇亞的另一個土耳其必遊的熱門景點。雪白的棉花堡有三個入口，雪花堡上方還有....more</div>
                   </div>
                 </div>
-                <div class="col-md-3 grid-item">
+                <div data-aos="fade-up" data-aos-duration="1600" class="col-md-3 grid-item">
                   <div class="img1"><img src="./img/photowall/samll/jupiter/jupiter_a1.jpg" alt="" class="lazy"></div>
                   <div class="action-box">
                     <div class="heart"><img src="./img/icon/bookmark-outline.png" alt=""></div>
@@ -302,14 +322,49 @@
                   </div>
                   <div class="article_all">
                     <div class="article">
-                      <div class="member_photo"><img src="./img/icon/ann.png" alt=""></div>
+                      <div class="member_photo"><img src="./img/icon/donn-round.png" alt=""></div>
                       <div class="name">王美美</div>
                       <div class="post_time">2021.02.20</div>
                     </div>
-                    <div class="text line_low">雪花堡是繼卡帕多奇亞的另一個土耳其必遊的熱門景點。雪白的棉花堡有三個入口，雪花堡上方還有....more</div>
+                    <div class="text">雪花堡是繼卡帕多奇亞的另一個土耳其必遊的熱門景點。雪白的棉花堡有三個入口，雪花堡上方還有....more</div>
                   </div>
                 </div>
-                <div class="col-md-3 grid-item">
+                <div data-aos="fade-up" data-aos-duration="1000" class=" col-md-3 grid-item">
+                  <div class="img1" @mouseover="mouseMe"><img src="./img/photowall/samll/moon/moon_b1_ps.jpg" alt=""
+                      class="lazy"></div>
+                  <div class="action-box">
+                    <div class="heart"><img src="./img/icon/bookmark-outline.png" alt=""></div>
+                    <div class="share"><img src="./img/icon/share.png" alt=""></div>
+                    <div class="message"><img src="./img/icon/comment.png" alt=""></div>
+                    <button class="button"><img src="./img/icon/more.png" alt=""></button>
+                  </div>
+                  <div class="article_all">
+                    <div class="article">
+                      <div class="member_photo"><img src="./img/icon/ann.png" alt=""></div>
+                      <div class="name">吳美女</div>
+                      <div class="post_time">2021.02.20</div>
+                    </div>
+                    <div class="text">雪花堡是繼卡帕多奇亞的另一個土耳其必遊的熱門景點。雪白的棉花堡有三個入口，雪花堡上方還有....more</div>
+                  </div>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="1200" class="col-md-3 grid-item">
+                  <div class="img1"><img src="./img/photowall/samll/moon/moon_c1.jpg" alt="" class="lazy"></div>
+                  <div class="action-box img2">
+                    <div class="heart"><img src="./img/icon/bookmark-outline.png" alt=""></div>
+                    <div class="share"><img src="./img/icon/share.png" alt=""></div>
+                    <div class="message"><img src="./img/icon/comment.png" alt=""></div>
+                    <button class="button"><img src="./img/icon/more.png" alt=""></button>
+                  </div>
+                  <div class="article_all">
+                    <div class="article">
+                      <div class="member_photo"><img src="./img/icon/donn-round.png" alt=""></div>
+                      <div class="name">劉德華</div>
+                      <div class="post_time">2021.02.20</div>
+                    </div>
+                    <div class="text">雪花堡是繼卡帕多奇亞的另一個土耳其必遊的熱門景點。雪白的棉花堡有三個入口，雪花堡上方還有....more</div>
+                  </div>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="1400" class="col-md-3 grid-item" id="destination_3">
                   <div class="img1"><img src="./img/photowall/samll/mars/mars_a2.jpg" alt="" class="lazy"></div>
                   <div class="action-box">
                     <div class="heart"><img src="./img/icon/bookmark-outline.png" alt=""></div>
@@ -326,8 +381,8 @@
                     <div class="text">雪花堡是繼卡帕多奇亞的另一個土耳其必遊的熱門景點。雪白的棉花堡有三個入口，雪花堡上方還有....more</div>
                   </div>
                 </div>
-                <div class="col-md-3 grid-item">
-                  <div class="img1"><img src="./img/photowall/samll/mars/mars_a2.jpg" alt="" class="lazy"></div>
+                <div data-aos="fade-up" data-aos-duration="1600" class="col-md-3 grid-item">
+                  <div class="img1"><img src="./img/photowall/samll/jupiter/jupiter_a1.jpg" alt="" class="lazy"></div>
                   <div class="action-box">
                     <div class="heart"><img src="./img/icon/bookmark-outline.png" alt=""></div>
                     <div class="share"><img src="./img/icon/share.png" alt=""></div>
@@ -336,15 +391,15 @@
                   </div>
                   <div class="article_all">
                     <div class="article">
-                      <div class="member_photo"><img src="./img/icon/ann.png" alt=""></div>
+                      <div class="member_photo"><img src="./img/icon/donn-round.png" alt=""></div>
                       <div class="name">王美美</div>
                       <div class="post_time">2021.02.20</div>
                     </div>
                     <div class="text">雪花堡是繼卡帕多奇亞的另一個土耳其必遊的熱門景點。雪白的棉花堡有三個入口，雪花堡上方還有....more</div>
                   </div>
                 </div>
-                <div class="col-md-3 grid-item">
-                  <div class="img1"><img src="./img/photowall/samll/mars/mars_a2.jpg" alt="" class="lazy"></div>
+                <div data-aos="fade-up" data-aos-duration="1600" class="col-md-3 grid-item">
+                  <div class="img1"><img src="./img/photowall/samll/jupiter/jupiter_a1.jpg" alt="" class="lazy"></div>
                   <div class="action-box">
                     <div class="heart"><img src="./img/icon/bookmark-outline.png" alt=""></div>
                     <div class="share"><img src="./img/icon/share.png" alt=""></div>
@@ -353,7 +408,7 @@
                   </div>
                   <div class="article_all">
                     <div class="article">
-                      <div class="member_photo"><img src="./img/icon/ann.png" alt=""></div>
+                      <div class="member_photo"><img src="./img/icon/donn-round.png" alt=""></div>
                       <div class="name">王美美</div>
                       <div class="post_time">2021.02.20</div>
                     </div>
@@ -369,8 +424,8 @@
         <div v-else-if="link ==='d'">
 
           <div class="heart_btns">
-            <input class="col btn heartbtns margin_top_3" type="text" id="datepicker">
-          </div>  
+            <input type="date" id="date-1" class="btn orderbtns margin_top_3 btn-date data-down">
+          </div>
 
           <div class="ordercontent margin_top_3">
             <div class="table margin_top_2">
@@ -490,11 +545,44 @@
             <div v-if="step === 3 || active.includes(3)" v-show="step===3">
               <div class="post_card">
                 <div class="grid">
-
-                  <div class="col-md-3 grid-item">
-                    <div class="img1" @mouseover="hover = true" @mouseleave="hover = false"><img
-                        src="./img/photowall/samll/mars/mars_a1.jpg" alt="" class="lazy"></div>
-                    <div class="action-box actionBoxon" v-if="hover">
+                  <div data-aos="fade-up" data-aos-duration="1000" class=" col-md-3 grid-item">
+                    <div class="img1" @mouseover="mouseMe"><img src="./img/photowall/samll/moon/moon_b1_ps.jpg" alt=""
+                        class="lazy"></div>
+                    <div class="action-box">
+                      <div class="heart"><img src="./img/icon/bookmark-outline.png" alt=""></div>
+                      <div class="share"><img src="./img/icon/share.png" alt=""></div>
+                      <div class="message"><img src="./img/icon/comment.png" alt=""></div>
+                      <button class="button"><img src="./img/icon/more.png" alt=""></button>
+                    </div>
+                    <div class="article_all">
+                      <div class="article">
+                        <div class="member_photo"><img src="./img/icon/ann.png" alt=""></div>
+                        <div class="name">吳美女</div>
+                        <div class="post_time">2021.02.20</div>
+                      </div>
+                      <div class="text">雪花堡是繼卡帕多奇亞的另一個土耳其必遊的熱門景點。雪白的棉花堡有三個入口，雪花堡上方還有....more</div>
+                    </div>
+                  </div>
+                  <div data-aos="fade-up" data-aos-duration="1200" class="col-md-3 grid-item">
+                    <div class="img1"><img src="./img/photowall/samll/moon/moon_c1.jpg" alt="" class="lazy"></div>
+                    <div class="action-box img2">
+                      <div class="heart"><img src="./img/icon/bookmark-outline.png" alt=""></div>
+                      <div class="share"><img src="./img/icon/share.png" alt=""></div>
+                      <div class="message"><img src="./img/icon/comment.png" alt=""></div>
+                      <button class="button"><img src="./img/icon/more.png" alt=""></button>
+                    </div>
+                    <div class="article_all">
+                      <div class="article">
+                        <div class="member_photo"><img src="./img/icon/donn-round.png" alt=""></div>
+                        <div class="name">劉德華</div>
+                        <div class="post_time">2021.02.20</div>
+                      </div>
+                      <div class="text">雪花堡是繼卡帕多奇亞的另一個土耳其必遊的熱門景點。雪白的棉花堡有三個入口，雪花堡上方還有....more</div>
+                    </div>
+                  </div>
+                  <div data-aos="fade-up" data-aos-duration="1400" class="col-md-3 grid-item" id="destination_3">
+                    <div class="img1"><img src="./img/photowall/samll/mars/mars_a2.jpg" alt="" class="lazy"></div>
+                    <div class="action-box">
                       <div class="heart"><img src="./img/icon/bookmark-outline.png" alt=""></div>
                       <div class="share"><img src="./img/icon/share.png" alt=""></div>
                       <div class="message"><img src="./img/icon/comment.png" alt=""></div>
@@ -509,10 +597,27 @@
                       <div class="text">雪花堡是繼卡帕多奇亞的另一個土耳其必遊的熱門景點。雪白的棉花堡有三個入口，雪花堡上方還有....more</div>
                     </div>
                   </div>
-                  <div class="col-md-3 grid-item">
-                    <div class="img1" @mouseover="hover = true" @mouseleave="hover = false"><img
-                        src="./img/photowall/samll/jupiter/jupiter_a1.jpg" alt="" class="lazy"></div>
-                    <div class="action-box actionBoxon" v-if="hover">
+                  <div data-aos="fade-up" data-aos-duration="1600" class="col-md-3 grid-item">
+                    <div class="img1"><img src="./img/photowall/samll/jupiter/jupiter_a1.jpg" alt="" class="lazy"></div>
+                    <div class="action-box">
+                      <div class="heart"><img src="./img/icon/bookmark-outline.png" alt=""></div>
+                      <div class="share"><img src="./img/icon/share.png" alt=""></div>
+                      <div class="message"><img src="./img/icon/comment.png" alt=""></div>
+                      <button class="button"><img src="./img/icon/more.png" alt=""></button>
+                    </div>
+                    <div class="article_all">
+                      <div class="article">
+                        <div class="member_photo"><img src="./img/icon/donn-round.png" alt=""></div>
+                        <div class="name">王美美</div>
+                        <div class="post_time">2021.02.20</div>
+                      </div>
+                      <div class="text">雪花堡是繼卡帕多奇亞的另一個土耳其必遊的熱門景點。雪白的棉花堡有三個入口，雪花堡上方還有....more</div>
+                    </div>
+                  </div>
+                  <div data-aos="fade-up" data-aos-duration="1000" class=" col-md-3 grid-item">
+                    <div class="img1" @mouseover="mouseMe"><img src="./img/photowall/samll/moon/moon_b1_ps.jpg" alt=""
+                        class="lazy"></div>
+                    <div class="action-box">
                       <div class="heart"><img src="./img/icon/bookmark-outline.png" alt=""></div>
                       <div class="share"><img src="./img/icon/share.png" alt=""></div>
                       <div class="message"><img src="./img/icon/comment.png" alt=""></div>
@@ -521,15 +626,30 @@
                     <div class="article_all">
                       <div class="article">
                         <div class="member_photo"><img src="./img/icon/ann.png" alt=""></div>
-                        <div class="name">王美美</div>
+                        <div class="name">吳美女</div>
                         <div class="post_time">2021.02.20</div>
                       </div>
                       <div class="text">雪花堡是繼卡帕多奇亞的另一個土耳其必遊的熱門景點。雪白的棉花堡有三個入口，雪花堡上方還有....more</div>
                     </div>
                   </div>
-
+                  <div data-aos="fade-up" data-aos-duration="1200" class="col-md-3 grid-item">
+                    <div class="img1"><img src="./img/photowall/samll/moon/moon_c1.jpg" alt="" class="lazy"></div>
+                    <div class="action-box img2">
+                      <div class="heart"><img src="./img/icon/bookmark-outline.png" alt=""></div>
+                      <div class="share"><img src="./img/icon/share.png" alt=""></div>
+                      <div class="message"><img src="./img/icon/comment.png" alt=""></div>
+                      <button class="button"><img src="./img/icon/more.png" alt=""></button>
+                    </div>
+                    <div class="article_all">
+                      <div class="article">
+                        <div class="member_photo"><img src="./img/icon/donn-round.png" alt=""></div>
+                        <div class="name">劉德華</div>
+                        <div class="post_time">2021.02.20</div>
+                      </div>
+                      <div class="text">雪花堡是繼卡帕多奇亞的另一個土耳其必遊的熱門景點。雪白的棉花堡有三個入口，雪花堡上方還有....more</div>
+                    </div>
+                  </div>
                 </div>
-
               </div>
             </div>
 
@@ -565,149 +685,150 @@
 
       </div>
 
-  <footer>
-    @@include('./layout/footer.html')
-  </footer>
+      <footer>
+        @@include('./layout/footer.html')
+      </footer>
 
 
 
+      <script>
+        
+        var account_tab = new Vue({
+          el: "#accountapp",
+          data: {
+            link: "a",
+            // dynamicComponent: 'bye',
+            step: null,
+            active: [],
+            spot1: [{
+              spot: "./img/trip/trip_moon/moon_a1_ps2.jpg",
+              title: "月球 | 太空體驗一日遊",
+              grade: "初階",
+              scores: "5000",
+              price: 1000,
+            }, {
+              spot: "./img/trip/trip_moon/moon_b1_ps2.jpg",
+              title: "月球 | 熱氣球一日遊",
+              grade: "初階",
+              scores: "5000",
+              price: 2000,
+            }, {
+              spot: "./img/trip/trip_moon/moon_c1_ps2.jpg",
+              title: "月球 | 熱氣球一日遊",
+              grade: "初階",
+              scores: "5000",
+              price: 3000,
+            }],
+            products: [{
+              img: "./img/shop/shoes.png",
+              name: "宇宙平衡鞋",
+              price: 5000,
+              cart: "./img/shop/cart.png",
+            }, {
+              img: "./img/shop/cloth.png",
+              name: "太空衣",
+              price: 10000,
+              cart: "./img/shop/cart.png",
+            }, {
+              img: "./img/shop/helmet.png",
+              name: "宇宙帽",
+              price: 8000,
+              cart: "./img/shop/cart.png",
+            }, {
+              img: "./img/shop/helmet.png",
+              name: "宇宙帽",
+              price: 8000,
+              cart: "./img/shop/cart.png",
+            }, {
+              img: "./img/shop/helmet.png",
+              name: "宇宙帽",
+              price: 8000,
+              cart: "./img/shop/cart.png",
+            }, {
+              img: "./img/shop/shoes.png",
+              name: "宇宙平衡鞋",
+              price: 5000,
+              cart: "./img/shop/cart.png",
+            }, {
+              img: "./img/shop/shoes.png",
+              name: "宇宙平衡鞋",
+              price: 5000,
+              cart: "./img/shop/cart.png",
+            }, {
+              img: "./img/shop/cloth.png",
+              name: "太空衣",
+              price: 10000,
+              cart: "./img/shop/cart.png",
+            }, {
+              img: "./img/shop/cloth.png",
+              name: "太空衣",
+              price: 10000,
+              cart: "./img/shop/cart.png",
+            }, {
+              img: "./img/shop/shoes.png",
+              name: "宇宙平衡鞋",
+              price: 5000,
+              cart: "./img/shop/cart.png",
+            }, {
+              img: "./img/shop/shoes.png",
+              name: "宇宙平衡鞋",
+              price: 5000,
+              cart: "./img/shop/cart.png",
+            }, {
+              img: "./img/shop/cloth.png",
+              name: "太空衣",
+              price: 10000,
+              cart: "./img/shop/cart.png",
+            }],
+            hover: false,
+          },
+          methods: {
+            acitve(index) {
+              this.step = index
+              !this.active.includes(index) && this.active.push(index)
+            },
+            // clickMe() {
+            //   $('.dropdown_menu').toggle();
+            // },
+            mouseMe() {
+              $('.img1').mouseover(function () {
+                $(this).parent().find(".action-box").css('display', 'flex');
+              });
+              $('.img1').mouseout(function () {
+                $(this).parent().find(".action-box").css('display', 'none');
+              });
+            },
+          },
+        });
 
 
 
-  <script>
-
-    // 會員menu切分頁
-    // Vue.component('hello', {
-    //   template: '<p style="color: blue">Hello</p>'
-    // });
-    // Vue.component('bye', {
-    //   template: '<p style="color: red">Bye</p>'
-    // });
-
-    var account_tab = new Vue({
-      el: "#accountapp",
-      data: {
-        link: "a",
-        // dynamicComponent: 'bye',
-        step: null,
-        active: [],
-        spot1: [{
-          spot: "./img/trip/trip_moon/moon_a1_ps2.jpg",
-          title: "月球 | 太空體驗一日遊",
-          grade: "初階",
-          scores: "5000",
-          price: 1000,
-        }, {
-          spot: "./img/trip/trip_moon/moon_b1_ps2.jpg",
-          title: "月球 | 熱氣球一日遊",
-          grade: "初階",
-          scores: "5000",
-          price: 2000,
-        }, {
-          spot: "./img/trip/trip_moon/moon_c1_ps2.jpg",
-          title: "月球 | 熱氣球一日遊",
-          grade: "初階",
-          scores: "5000",
-          price: 3000,
-        }],
-        products: [{
-          img: "./img/shop/shoes.png",
-          name: "宇宙平衡鞋",
-          price: 5000,
-          cart: "./img/shop/cart.png",
-        }, {
-          img: "./img/shop/cloth.png",
-          name: "太空衣",
-          price: 10000,
-          cart: "./img/shop/cart.png",
-        }, {
-          img: "./img/shop/helmet.png",
-          name: "宇宙帽",
-          price: 8000,
-          cart: "./img/shop/cart.png",
-        }, {
-          img: "./img/shop/helmet.png",
-          name: "宇宙帽",
-          price: 8000,
-          cart: "./img/shop/cart.png",
-        }, {
-          img: "./img/shop/helmet.png",
-          name: "宇宙帽",
-          price: 8000,
-          cart: "./img/shop/cart.png",
-        }, {
-          img: "./img/shop/shoes.png",
-          name: "宇宙平衡鞋",
-          price: 5000,
-          cart: "./img/shop/cart.png",
-        }, {
-          img: "./img/shop/shoes.png",
-          name: "宇宙平衡鞋",
-          price: 5000,
-          cart: "./img/shop/cart.png",
-        }, {
-          img: "./img/shop/cloth.png",
-          name: "太空衣",
-          price: 10000,
-          cart: "./img/shop/cart.png",
-        }, {
-          img: "./img/shop/cloth.png",
-          name: "太空衣",
-          price: 10000,
-          cart: "./img/shop/cart.png",
-        }, {
-          img: "./img/shop/shoes.png",
-          name: "宇宙平衡鞋",
-          price: 5000,
-          cart: "./img/shop/cart.png",
-        }, {
-          img: "./img/shop/shoes.png",
-          name: "宇宙平衡鞋",
-          price: 5000,
-          cart: "./img/shop/cart.png",
-        }, {
-          img: "./img/shop/cloth.png",
-          name: "太空衣",
-          price: 10000,
-          cart: "./img/shop/cart.png",
-        }],
-        hover: false,
-      },
-      methods: {
-        acitve(index) {
-          this.step = index
-          !this.active.includes(index) && this.active.push(index)
-        },
-      },
-    });
-
-    //  點擊menu變色
-    window.onload = function () {
-      for (var i = 0; i < document.links.length; i++) {
-        var thisLink = document.links[i];
-        thisLink.onclick = function () {
+        //  點擊menu變色
+        window.onload = function () {
           for (var i = 0; i < document.links.length; i++) {
-            document.links[i].style = "";
+            var thisLink = document.links[i];
+            thisLink.onclick = function () {
+              for (var i = 0; i < document.links.length; i++) {
+                document.links[i].style = "";
+              }
+              this.style = "color:#AD6E4A; border-bottom: 3px solid #AD6E4A";
+            }
           }
-          this.style = "color:#AD6E4A; border-bottom: 3px solid #AD6E4A";
-        }
-      }
-    };
+        };
 
-    $('.dropdown-toggle').dropdown()
-  </script>
+      </script>
 
 
-  <!-- 第1组 -->
-  <!-- <input type='text' id='txt1' value='Tsybius2014'></input>
+      <!-- 第1组 -->
+      <!-- <input type='text' id='txt1' value='Tsybius2014'></input>
     <button type="button" id='btn1_1'>启用</button>
     <button type="button" id='btn1_2'>禁用</button>
   <hr> -->
-  <!--第2组-->
-  <!-- <input type='text' id='txt2' value='Tsybius2014'></input>
+      <!--第2组-->
+      <!-- <input type='text' id='txt2' value='Tsybius2014'></input>
     <button type="button" id='btn2_1'>启用</button>
     <button type="button" id='btn2_2'>禁用</button> -->
-  <!-- <script>
+      <!-- <script>
     //第1组
     //按钮1_1：启用文本框
     $('#btn1_1').click(function () {

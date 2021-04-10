@@ -234,11 +234,11 @@ input.form-control-plaintext:focus {
 }
 
 
-// 互動牆管理按鈕 // 收藏按鈕 // 所有放在業僉內按鈕控制
+// 互動牆管理按鈕 // 收藏按鈕 // 所有放在分頁內按鈕控制
 .heart_btns, .post_btns {
   padding: 0px 0px 0px 270px;
 }
-.heartbtns, .postbtns {
+.heartbtns, .postbtns, .orderbtns {
   width: 90px;
   margin-left: 10px;
   font-family: "Microsoft JhengHei";
@@ -251,11 +251,50 @@ input.form-control-plaintext:focus {
     color: $white;
   }
 }
+.orderbtns {
+  width: 120px;
+}
 
 // 行程管理
 .trip_order, .ordercontent {
   margin-left: 10px;
 }
+
+.dropdown_menu {
+  position: absolute;
+  top: 100%;
+  z-index: 1000;
+  display: none;
+  min-width: 10rem;
+  padding: .5rem 0;
+  margin: 2px 10px 10px 10px;
+  text-align: left;
+  list-style: none;
+  background-color: $darkblue;
+  background-clip: padding-box;
+  border: 1px solid $gold;
+  border-radius: 0px;
+}
+
+.dropdown_item {
+  display: block;
+  // width: 100%;
+  padding: .25rem 1rem;
+  clear: both;
+  font-weight: 400;
+  color: $white;
+  text-align: inherit;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+}
+a:hover {
+  color: $gold;
+}
+
+
+
 .table {
 	width: 100%;
 	// margin: 0 auto;
@@ -368,16 +407,6 @@ input.form-control.point_input:focus, input.form-control-plaintext.point_input:f
   max-width: auto;
 }
 
-
-.actionBoxon{
-  display:flex;
-  position: absolute;
-  top: 270px;
-  background-color:black;
-  opacity: 0.5;
-  // position: relative;
-  display: flex;
-}
 
 
 
