@@ -46,6 +46,47 @@ function check(e){
         e.preventDefault();
         return;
     }
+
+    //信用卡檢查
+    const credit = document.querySelector(".credit");
+    let odd = 0;
+    let even = 0;
+    let total = 0;
+
+    if(credit.value){
+        let cNum = credit.value.split("-").join("").split("");
+        let checkNum = cNum.pop();
+        let reverseNum = cNum.reverse();
+
+        reverseNum.forEach((num,i) => {
+            let trueNum = reverseNum[i] * 2;
+            //16碼
+            if(reverseNum.length == 15){
+                if((i+1) % 2 == 1){
+                    trueNum >= 10 ? trueNum -= 9 : trueNum;
+                    odd += trueNum;
+                    // console.log(odd);
+                }else{
+                    even += parseInt(num);
+                }
+            //15碼
+            }else if(reverseNum.length == 14){
+                if(i % 2 == 1){
+                    odd += parseInt(num);
+                }else{
+                    trueNum >= 10 ? trueNum -= 9 : trueNum;
+                    even += trueNum;
+                }
+            }
+            total = odd + even ;
+        })
+        let final = total % 10;
+        if(10 - final != checkNum){
+            alert("信用卡卡號錯誤")
+            e.preventDefault();
+            return;
+        }
+    }
 }
 
 form.addEventListener("submit", check);
