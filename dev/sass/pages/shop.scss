@@ -6,161 +6,195 @@ section.shop{
     max-width: 1100px;
     text-align: center;
     color: $white;
-    @include respond(mobile){
-        margin: 0;
+    @include respond(pad){
+        margin: 0 30px;
     }
     .banner{
-        margin: 0 auto;
-        background-image: url("../../img/shop/banner.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 100%;    
-        padding-top: 20%;
-        position: relative;
+      background-image: url("../../img/home/others/mars_landscape.jpg");
+      background-size: cover;
+      background-position: center bottom -250px;
+      background-repeat: no-repeat;
+      width: 100%;
+      padding-top: 20%;
+      position: relative;
+      @include respond(mobile){
+        background-position: center center;
+        padding-top: 40%;
+      }
+      h2{
+        width: 80%;
+        @include absolute_middle();
         @include respond(mobile){
-            padding-top: 50%;
+          font-size: 1rem;
         }
-        h2{
-            @include absolute_middle();
-            top: 35%;
-            letter-spacing:2px;
-            @include respond(mobile){
-                font-size: .8rem;
-                width: 80%;
-                top: 50%;
-                margin: 0;
-            }
-        }
+      }
     }
-    .btn{
-        cursor: pointer;
-    }
-    .shopAll{
+    .filter{
         @include flex_middle();
-        align-items: start;
-        flex-wrap: wrap;
-        margin: 0 30px;
-        .aside{
-            width: 30%;
-            // max-width: 250px;
-            position: sticky;
-            top: 18vh;
-            left: 0;
-            margin-top: 40px;
+        justify-content: space-between;
+        @include respond(pad){
+          margin: 40px 30px;
+        }
+        @include respond(mobile){
+          flex-direction: column;
+        }
+    }
+    #app{
+        ul{
+            @include flex_middle();
+            justify-content: space-around;
+            flex-wrap: wrap;
             @include respond(pad){
-                width: 35%;
-            }
-            @include respond(mobile){
-                top: 0;
-                width: 80%;
-                position: relative;
-            }
-            // border: 1px solid #fff;
-            p{
-                border: 1px solid $pink;
-                // max-width: 400px;
-                padding: 20px 0;
-                background-color: #292B41;
-                border: none;
-                background-image: url("../../img/shop/arrow-right.png");
-                background-repeat: no-repeat;
-                background-position: right 20px center;
-                background-size: 10px;
-            }
-            .choose{
-                max-height: 0;
-                // display: none;
-                overflow: hidden;
-                transition: all .5s linear;
-                li{
-                    padding: 16px 0;
-                    transition: all .3s;
-                    text-align: center;
-                    width: 100%;
-                    background-color: $gold;
-                    &:hover{
-                        background-color: lighten($gold, 10%);
-                    }
-                }
-            }
-            .chooseShow{
-                max-height: 400px;
-                transition: all 1.5s linear;
+              justify-content: space-around;
+              margin: 0 10px;
             }
         }
-        .main{
-            width: 70%;
+        li{
+            position: relative;
+            margin: 0 10px;
+            width: 22%;
             @include respond(pad){
-                width: 60%;
+              width: 45%;
             }
             @include respond(mobile){
-                width: 80%;
+              width: 100%;
+              max-width: 350px;
             }
-            .productAll{
-                letter-spacing: 5px;
-                @include respond(pad){
-                    margin-left: 24px;
-                }
-                @include respond(mobile){
-                    margin-left: 0px;
-                }
-                ul{
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: start;
-                    flex-wrap: wrap;
-                    @include respond(pad){
-                        align-items: center;
-                        justify-content: space-between;
-                    }
-                    @include respond(mobile){
-                        justify-content: center;
-                    }
-                    // border: 1px solid $pink;
-                    li{
-                        width: 30%;
-                        @include respond(pad){
-                            width: 45%;
-                        }
-                        @include respond(mobile){
-                            width: 100%;
-                        }
-                        // border: 1px solid #fff;
-                        a{
-                            padding: 10px 0 10px 0;
-                            @include flex_middle();
-                            flex-direction: column;
-                            background-color: rgba($color: #ffffff, $alpha: 0.9);
-                            color: black;
-                            img{
-                                width: 50%;
-                            }
-                            .item{
-                                text-align: left;
-                                width: 100%;
-                                @include flex_middle();
-                                justify-content: space-around;
-                                padding-top: 20px;
-                                // border: 1px solid #fff;
-                                .info{
-                                    padding: 16px 0;
-                                    
-                                    .price {
-                                        // color: $gold;
-                                        font-weight: bold;
-                                        font-family: "Nasalization";
-                                    }
-                                }
-                                img{
-                                    padding-top: 15px;
-                                }
-                            }
-                        }
+        }
+        .card{
+            position: relative;
+            height: 300px;
+            margin: 30px 0px;
+            @include flex_middle();
+            flex-direction: column;
+            background-color: rgba(255,255,255,0.2);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+            z-index:10;
+            @include respond(mobile){
+              margin-top: 50px;
+            }
+            &:hover{
+                .imgBx{
+                    transform: translateY(-50px);
+                    img{
+                        transform: translateY(-40px) scale(1.3);
                     }
                 }
+                .content{
+                    opacity: 1;
+                    visibility: visible;
+                    transform: translateY(-10px);
+                }
+            }
+        }
+        .imgBx{
+            position: relative;
+            @include flex_middle();
+            flex-direction: column;
+            padding: 20px;
+            transition: 0.5s ease-in-out;
+            @include respond(mobile){
+              transform: translateY(-50px);
+                    img{
+                        transform: translateY(-40px) scale(1.3);
+                    }
+            }
+            img{
+                max-width: 50%;
+                margin: 0 0 20px;
+                transition: .5s ease-in-out;
+            }
+        }
+        .content{
+            position: absolute;
+            bottom: 20px;
+            @include flex_middle();
+            flex-direction: column;
+            transition: .5s ease-in-out;
+            opacity: 0;
+            visibility: hidden;
+            @include respond(mobile){
+              opacity: 1;
+              visibility: visible;
+              transform: translateY(-10px);
+            }
+            .button_min{
+                position: relative;
+                top: 20px;
+                background-color: $gold;
+                color: $white;
+                display: inline-block;
+                cursor: pointer;
             }
         }
     }
 }
 
-
+.custom-select {
+    position: relative;
+    font-family: Arial;
+    width: 12%;
+    @include respond(pad){
+      width: 20%;
+    }
+    @include respond(mobile){
+      width: 80%;
+      margin: 16px 0;
+    }
+  }
+  
+  .custom-select select {
+    display: none; /*hide original SELECT element:*/
+  }
+  
+  .select-selected {
+    background-color: $gold;
+  }
+  
+  /*style the arrow inside the select element:*/
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+  }
+  
+  /*point the arrow upwards when the select box is open (active):*/
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+  }
+  
+  /*style the items (options), including the selected item:*/
+  .select-items div,.select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  /*style items (options):*/
+  .select-items {
+    position: absolute;
+    background-color: $gold;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  
+  /*hide the items when the select box is closed:*/
+  .select-hide {
+    display: none;
+  }
+  
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }

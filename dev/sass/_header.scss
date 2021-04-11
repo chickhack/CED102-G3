@@ -11,7 +11,6 @@ nav{
     min-height: 12vh;
     z-index:9999;
     .logo{
-
         h1{
             a{
                 text-indent: 100%;
@@ -61,6 +60,18 @@ nav{
     }
     .nav-cart{
         cursor: pointer;
+        position: relative;
+        .count{
+            width: 20px;
+            height: 20px;
+            background-color: $gold;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 1.25rem;
+            position: absolute;
+            transform: translate(50%,-50%);
+            // display: none;
+        }
     }
 }
 
