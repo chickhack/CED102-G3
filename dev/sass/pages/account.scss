@@ -146,7 +146,7 @@ p.nextacc, p.nowacc {
 /* 會員資料 */
 .info_form {
   margin: 0px 200px 0px 200px;
-  padding: 30px 80px 0px 80px;
+  padding: 30px 50px 0px 0px;
   border-radius: 10px;
   height: auto;
   font-family: "Microsoft JhengHei";
@@ -172,21 +172,7 @@ p.nextacc, p.nowacc {
 }
 
 // 編輯資料樣式
-input.form-control {
-  width: 85%;
-  height: 20px;
-  border: 0.5px solid rgba(173, 110, 74, 0.6);
-  background-color: none;
-  color: #ffffff;
-  font-family: "Microsoft JhengHei";
-  font-size: 14px;
-}
-.form-control:focus {
-  border-color: #cccaca;
-  outline: none;
-  box-shadow: none;
-}
-.form-control-plaintext {
+.form, .unform {
   width: 85%;
   height: 20px;
   border: 0.5px solid rgba(173, 110, 74, 0.6);
@@ -199,7 +185,7 @@ input.form-control {
   line-height: 1.5;
   border-radius: .25rem;
 }
-input.form-control-plaintext:focus {
+.form:focus {
   border-color: #cccaca;
   outline: none;
   box-shadow: none;
@@ -213,8 +199,9 @@ input.form-control-plaintext:focus {
   border: 1px solid #AD6E4A;
   background: none;
   border-radius: 0px;
-  width: 80%;
+  width: 90px;
   margin-left: 50px;
+  margin-bottom: 10px;
 }
 .info_editbtn:hover, .heartbtns:hover, .postbtns:hover, .pointbtn:hover {
   color: #ffff;
@@ -288,24 +275,6 @@ a:hover {
 }
 
 
-// [aria-expanded="false"] .order_icon_open {
-//   display: inline;
-// }
-// [aria-expanded="false"] .order_icon_close {
-//   display: none;
-// }
-// [aria-expanded="true"] .order_icon_open{
-//   display: none;
-// }
-// [aria-expanded="true"] .order_icon_close {
-//   display: inline;
-// }
-
-// .orderdetails{
-//   display: none;
-// }
-
-
 .table {
 	width: 100%;
   font-family: "Microsoft JhengHei";
@@ -351,30 +320,28 @@ a:hover {
   .detail-open {
     display: none;
   }
-  // &.active {
-  //   display: block;
-  // }
 }
 
   //日期按鈕
   .btn-date {
-      letter-spacing: 2px;
-      padding: 0 5px;
-      border: 1px solid $gold;
-      color: $gold;
-      background-color: $darkblue;
-      height: 25px;
-      text-align: center;
-      width: 180px;
+    letter-spacing: 2px;
+    padding: 0 5px;
+    border: 1px solid $gold;
+    color: $gold;
+    background-color: $darkblue;
+    height: 25px;
+    text-align: center;
+    width: 180px;
   }
+
   // 向下箭頭
   ::-webkit-calendar-picker-indicator {
-      color: $gold;
-      background-image: url(../../img/date-chevron-down.svg);
-      width: 15px;
-      height: 25px;
-      position: relative;
-      top: 5px;
+    color: $gold;
+    background-image: url(../../img/date-chevron-down.svg);
+    width: 15px;
+    height: 25px;
+    position: relative;
+    top: 5px;
   }
 
 
@@ -418,6 +385,7 @@ a:hover {
   align-items: center;
   justify-content: center;
 }
+
 input.form-control.point_input, input.form-control-plaintext.point_input {
   width: 120px;
   height: 20px;

@@ -4102,7 +4102,7 @@ p.nextacc, p.nowacc {
 /* 會員資料 */
 .info_form {
   margin: 0px 200px 0px 200px;
-  padding: 30px 80px 0px 80px;
+  padding: 30px 50px 0px 0px;
   border-radius: 10px;
   height: auto;
   font-family: "Microsoft JhengHei";
@@ -4127,24 +4127,7 @@ p.nextacc, p.nowacc {
   margin-bottom: 5px;
 }
 
-input.form-control {
-  width: 85%;
-  height: 20px;
-  border: 0.5px solid rgba(173, 110, 74, 0.6);
-  background-color: none;
-  color: #ffffff;
-  font-family: "Microsoft JhengHei";
-  font-size: 14px;
-}
-
-.form-control:focus {
-  border-color: #cccaca;
-  outline: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-.form-control-plaintext {
+.form, .unform {
   width: 85%;
   height: 20px;
   border: 0.5px solid rgba(173, 110, 74, 0.6);
@@ -4158,7 +4141,7 @@ input.form-control {
   border-radius: .25rem;
 }
 
-input.form-control-plaintext:focus {
+.form:focus {
   border-color: #cccaca;
   outline: none;
   -webkit-box-shadow: none;
@@ -4172,8 +4155,9 @@ input.form-control-plaintext:focus {
   border: 1px solid #AD6E4A;
   background: none;
   border-radius: 0px;
-  width: 80%;
+  width: 90px;
   margin-left: 50px;
+  margin-bottom: 10px;
 }
 
 .info_editbtn:hover, .heartbtns:hover, .postbtns:hover, .pointbtn:hover {

@@ -129,52 +129,54 @@
 
         <div v-if="link ==='a'">
           <div id="info_form" class="row info_form">
+
             <div class="col-md-auto align-self-start  info_img">
               <img class="infoimg" src="./img/icon/會員頭貼.png" alt=""><br>
+              <button @click="isEditing = !isEditing" v-if="!isEditing">Edit</button>
+              <button @click="save" v-else-if="isEditing">Save</button>
+              <button v-if="isEditing" @click="isEditing = false">Cancel</button>
             </div>
+
             <div class="col-md-auto align-self-center info_left">
               <div class="form-group">
                 <label for="exampleInputEmail1">暱稱</label>
-                <div class="edit_text"><input type="text" class="form-control-plaintext" id="" value="大大大大"></div>
-                <!-- <input type="text" class="form-control" id="exampleInputEmail1" placeholder="大大大大"> -->
+                <div class="edit_text"><input type="text" class="form" ref="nick_name" :value="user.nickName" :disabled="!isEditing" :class="{view: !isEditing}"></div>
               </div>
               <div class="form-group">
                 <label for="exampleInputPassword1">姓名</label>
-                <input type="text" readonly class="form-control-plaintext" id="" value="大大">
-                <!-- <input type="text" class="form-control" id="exampleInputPassword1" placeholder=""> -->
+                <input type="text"  class="unform" id="" :value="user.firstName" disabled>
               </div>
               <div class="form-group">
                 <label for="exampleInputPassword1">性別</label>
-                <input type="text" readonly class="form-control-plaintext" id="" value="男">
-                <!-- <input type="text" class="form-control" id="exampleInputPassword1" placeholder=""> -->
+                <input type="text"  class="unform" id="" :value="user.sex" disabled>
               </div>
               <div class="form-group">
                 <label for="exampleInputPassword1">手機</label>
-                <input type="text" readonly class="form-control-plaintext" id="" value="0988123456">
-                <!-- <input type="phone" class="form-control" id="exampleInputPassword1" placeholder=""> -->
+                <div class="edit_text"><input type="text" class="form" ref="phone" :value="user.phone" :disabled="!isEditing" :class="{view: !isEditing}"></div>
               </div>
             </div>
+
             <div class="col-md-auto align-self-end info_right">
               <div class="form-group">
                 <label for="exampleInputPassword1">姓氏</label>
-                <input type="text" readonly class="form-control-plaintext" id="" value="陳">
-                <!-- <input type="text" class="form-control" id="exampleInputPassword1" placeholder=""> -->
+                <input type="text"  class="unform" id="" :value="user.lastName" disabled>
               </div>
               <div class="form-group">
                 <label for="exampleInputPassword1">生日</label>
-                <input type="text" readonly class="form-control-plaintext" id="" value="1991/12/31">
-                <!-- <input type="date" class="form-control" id="exampleInputPassword1" placeholder=""> -->
+                <input type="text"  class="unform" id="" :value="user.birthDate" disabled>
               </div>
               <div class="form-group">
                 <label for="exampleInputPassword1">地址</label>
-                <input type="text" readonly class="form-control-plaintext" id="" value="台北市大同區中正路一段32巷5弄7號">
-                <!-- <input type="text" class="form-control" id="exampleInputPassword1" placeholder=""> -->
+                <div class="edit_text"><input type="text" class="form" ref="address" :value="user.address" :disabled="!isEditing" :class="{view: !isEditing}"></div>
               </div>
             </div>
+
             <div class="col-md-auto align-self-start info_edit">
-              <button type="button" class="btn btn-primary info_editbtn" @click="btnclick">編輯個人資料</button>
-              <!-- <button type="button" class="btn btn-primary info_editbtn" @click="btnclick">編輯個人資料</button> -->
+              <button @click="isEditing = !isEditing" v-if="!isEditing" type="button" class="btn btn-primary info_editbtn">編輯個人資料</button>
+              <button @click="save" v-else-if="isEditing" type="button" class="btn btn-primary info_editbtn">儲存編輯</button></br>
+              <button v-if="isEditing" @click="isEditing = false" type="button" class="btn btn-primary info_editbtn">取消編輯</button>
             </div>
+
           </div>
         </div>
 
@@ -182,7 +184,7 @@
 
           <div class="tripcontent margin_top_3">
 
-            <div class="dropdown">
+            <div class="select_type">
               <button class="btn heartbtns p" type="button">全部</button>
               <button class="btn heartbtns p" type="button">待出發</button>
               <button class="btn heartbtns p" type="button">已結束</button>
@@ -196,9 +198,9 @@
               </div> -->
             </div>
 
-            <div class="trip_order margin_top_4">
+            <div class="trip_order margin_top_3">
 
-              <div class="table margin_top_2">
+              <div class="table margin_top_5">
                 <caption>
                   <span class="">訂單編號：#TW1637493</span>
                 </caption>
@@ -225,39 +227,40 @@
                   </tbody>
                 </table>
 
-                <div class="margin_top_2 tripdetail">
-                  <img class="" src="./img/icon/drop-down-arrow.png" alt="">
+                <div @click="toggleContent" class="orderdetail margin_top_1">
+                  <img class="order_icon" src="./img/icon/drop-down-arrow.png" alt="">
                   <span class="">訂單明細</span>
                 </div>
-                <table class="margin_top_1">
-                  <thead>
-                    <tr>
-                      <th scope="col">景點編號</th>
-                      <th scope="col">景點名稱</th>
-                      <th scope="col">單價</th>
-                      <th scope="col">積分</th>
-                      <th scope="col">人數</th>
-                    </tr>
-                  </thead>
+                <div class="toBeToggled detail-open margin_top_1">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th scope="col">景點編號</th>
+                        <th scope="col">景點名稱</th>
+                        <th scope="col">單價</th>
+                        <th scope="col">積分</th>
+                        <th scope="col">人數</th>
+                      </tr>
+                    </thead>
 
-                  <tbody>
-                    <tr>
-                      <td>#24</td>
-                      <td>攀登太陽系第一高山-奧林帕斯山三日遊</td>
-                      <td>NT.1,290</td>
-                      <td>10,000</td>
-                      <td>10</td>
-                    </tr>
-                  </tbody>
-                </table>
-
-                <div class="margin_top_2">
-                  <span class="num">收件人姓名：陳大大</span></br>
-                  <span class="num">收件人電話：0988123456</span></br>
-                  <span class="num">收件人信箱：asduhgdfwasf@gmail.com</span>
+                    <tbody>
+                      <tr>
+                        <td>#24</td>
+                        <td>攀登太陽系第一高山-奧林帕斯山三日遊</td>
+                        <td>NT.1,290</td>
+                        <td>10,000</td>
+                        <td>10</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class="margin_top_1">
+                    <span class="num">收件人姓名：陳大大</span></br>
+                    <span class="num">收件人電話：0988123456</span></br>
+                    <span class="num">收件人信箱：asduhgdfwasf@gmail.com</span>
+                  </div>
                 </div>
-
               </div>
+
             </div>
 
           </div>
@@ -439,9 +442,9 @@
             <input type="date" id="date-1" class="btn orderbtns margin_top_3 btn-date data-down">
           </div>
 
-          <div class="menu ordercontent orderdetail margin_top_3">
+          <div class="ordercontent margin_top_3">
 
-            <div class="table margin_top_5 ">
+            <div class="table margin_top_5">
 
               <caption>
                 <span class="">訂單編號：#TW1637493</span>
@@ -501,8 +504,7 @@
 
             </div>
 
-
-            <div class="table margin_top_5 ">
+            <div class="table margin_top_5">
 
               <caption>
                 <span class="">訂單編號：#TW1637493</span>
@@ -527,12 +529,11 @@
               </table>
 
               <div @click="toggleContent" class="orderdetail margin_top_1">
-                <img class="order_icon_open" src="./img/icon/drop-up-arrow.png" alt="">
-                <img class="order_icon_close" src="./img/icon/drop-down-arrow.png" alt="">
+                <img class="order_icon" src="./img/icon/drop-up-arrow.png" alt="">
                 <span class="">訂單明細</span>
               </div>
 
-              <div id="toBeToggled" class="toBeToggled detail-open margin_top_1">
+              <div class="toBeToggled detail-open margin_top_1">
                 <table>
                   <thead>
                     <tr>
@@ -563,7 +564,7 @@
 
             </div>
 
-            <div class="table margin_top_5 ">
+            <div class="table margin_top_5">
 
               <caption>
                 <span class="">訂單編號：#TW1637493</span>
@@ -588,12 +589,11 @@
               </table>
 
               <div @click="toggleContent" class="orderdetail margin_top_1">
-                <img class="order_icon_open" src="./img/icon/drop-up-arrow.png" alt="">
-                <img class="order_icon_close" src="./img/icon/drop-down-arrow.png" alt="">
+                <img class="order_icon" src="./img/icon/drop-up-arrow.png" alt="">
                 <span class="">訂單明細</span>
               </div>
 
-              <div id="toBeToggled" class="toBeToggled detail-open margin_top_1">
+              <div class="toBeToggled detail-open margin_top_1">
                 <table>
                   <thead>
                     <tr>
@@ -843,6 +843,16 @@
             link: "a",
             // dynamicComponent: 'bye',
             step: null,
+            isEditing: false,
+            user: {
+              nickName: '大大',
+              firstName: 'John',
+              lastName: 'Smith',
+              sex: '男',
+              birthDate: '1991/12/21',
+              phone: '0988123456',
+              address: '台北市大同區中正路一段32巷5弄7號',
+            },
             active: [],
             spot1: [{
               spot: "./img/trip/trip_moon/moon1.jpg",
@@ -926,6 +936,16 @@
             }],
           },
           methods: {
+            save() {
+              this.user.nickName = this.$refs['nick_name'].value;
+              // this.user.firstName = this.$refs['first_name'].value;
+              // this.user.lastName = this.$refs['last_name'].value;
+              // this.user.sex = this.$refs['sex'].value;
+              // this.user.birthDate = this.$refs['birthDate'].value;
+              this.user.phone = this.$refs['phone'].value;
+              this.user.address = this.$refs['address'].value;
+              this.isEditing = !this.isEditing;
+            },
             acitve(index) {
               this.step = index
               !this.active.includes(index) && this.active.push(index)
@@ -941,7 +961,6 @@
               };
 
               // $('.detail-open').toggle("show");
-
             },
             mouseMe() {
               $('.img1').mouseover(function () {
@@ -952,18 +971,6 @@
               });
             },
 
-            // showDetails() {
-
-            // $('.orderdetails').toggle(function () {
-            //   if ($(this).find('img').attr('src') == './img/icon/drop-down-arrow.png') {
-            //     $(this).find('img').attr('src', './img/icon/drop-up-arrow.png');
-            //   } else {
-            //     $(this).find('img').attr('src', './img/icon/drop-down-arrow.png');
-            //   }
-            // });
-
-            // $('.detail-open').toggle("show");
-            // },
           },
         });
 
