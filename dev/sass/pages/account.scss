@@ -340,6 +340,32 @@ a:hover {
   }
 }
 
+.date {
+  .date_text {
+      color: $gold;
+      font-weight: bold;
+  }
+  //日期按鈕
+  .btn-date {
+      letter-spacing: 2px;
+      padding: 0 5px;
+      border: 1px solid $gold;
+      color: $gold;
+      background-color: $darkblue;
+      height: 25px;
+      text-align: center;
+      width: 180px;
+  }
+  // 向下箭頭
+  ::-webkit-calendar-picker-indicator {
+      color: $gold;
+      background-image: url(../../img/date-chevron-down.svg);
+      width: 15px;
+      height: 25px;
+      position: relative;
+      top: 5px;
+  }
+}
 
 
 

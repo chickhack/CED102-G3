@@ -48,9 +48,7 @@
   <div id="particles-js">
     <script src="./js/background.js"></script>
   </div>
-  <div class="planet_banner">
-    <h2 class="margin_top_5">星星世界帶你探索宇宙</h4>
-  </div>
+  <div class="planet_banner"></div>
 
   <div class="welcome">
     <div class="spacedinfo">
@@ -506,6 +504,7 @@
             </div>
 
             <div v-if="step === 1 || active.includes(1)" v-show="step===1">
+
               <div class=" heart_tripcard second margin_top_4 ">
                 <div class=" heart_trip tripcard_all  ">
                   <div v-for="item in spot1" class="tripcard">
@@ -710,19 +709,19 @@
             step: null,
             active: [],
             spot1: [{
-              spot: "./img/trip/trip_moon/moon_a1_ps2.jpg",
+              spot: "./img/trip/trip_moon/moon1.jpg",
               title: "月球 | 太空體驗一日遊",
               grade: "初階",
               scores: "5000",
               price: 1000,
             }, {
-              spot: "./img/trip/trip_moon/moon_b1_ps2.jpg",
+              spot: "./img/trip/trip_moon/moon2.jpg",
               title: "月球 | 熱氣球一日遊",
               grade: "初階",
               scores: "5000",
               price: 2000,
             }, {
-              spot: "./img/trip/trip_moon/moon_c1_ps2.jpg",
+              spot: "./img/trip/trip_moon/moon3.jpg",
               title: "月球 | 熱氣球一日遊",
               grade: "初階",
               scores: "5000",
