@@ -58,12 +58,7 @@ img.account_levimg {
 }
 
 /* 會員卡片內容 */
-.account_now {
-  /* border: 1px solid red; */
-}
-.your_lev {
-  /* border: 1px solid red; */
-}
+
 
 
 /* 目前累積等級、星球、景點、宇宙幣 */
@@ -275,7 +270,6 @@ input.form-control-plaintext:focus {
   border: 1px solid $gold;
   border-radius: 0px;
 }
-
 .dropdown_item {
   display: block;
   // width: 100%;
@@ -294,10 +288,26 @@ a:hover {
 }
 
 
+// [aria-expanded="false"] .order_icon_open {
+//   display: inline;
+// }
+// [aria-expanded="false"] .order_icon_close {
+//   display: none;
+// }
+// [aria-expanded="true"] .order_icon_open{
+//   display: none;
+// }
+// [aria-expanded="true"] .order_icon_close {
+//   display: inline;
+// }
+
+// .orderdetails{
+//   display: none;
+// }
+
 
 .table {
 	width: 100%;
-	// margin: 0 auto;
   font-family: "Microsoft JhengHei";
 	caption {
     text-align: left;
@@ -330,7 +340,7 @@ a:hover {
 			// 	cursor: pointer;
 		}
 	}
-  .tripdetail {
+  .orderdetail {
     display: flex;
     align-items: center;
     img {
@@ -338,13 +348,14 @@ a:hover {
       margin-right: 5px;
     }
   }
+  .detail-open {
+    display: none;
+  }
+  // &.active {
+  //   display: block;
+  // }
 }
 
-.date {
-  .date_text {
-      color: $gold;
-      font-weight: bold;
-  }
   //日期按鈕
   .btn-date {
       letter-spacing: 2px;
@@ -365,7 +376,6 @@ a:hover {
       position: relative;
       top: 5px;
   }
-}
 
 
 
@@ -373,11 +383,11 @@ a:hover {
 
 // 收藏內容、互動管理、訂單、行程內容 控制在270px內
  .product_card, .tripcontent, .ordercontent, .pointcontent {
-  padding: 0px 270px 100px 270px;
+  padding: 0px 270px 20px 270px;
 }
 // 收藏行程內容 控制在270px內
 .heart_tripcard {
-  padding: 0px 250px 100px 250px;
+  padding: 0px 200px 100px 200px;
 }
 // 收藏貼文內容 控制在270px內
 .post_card {
