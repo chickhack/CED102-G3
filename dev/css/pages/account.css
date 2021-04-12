@@ -424,6 +424,18 @@ nav .burger div {
 
 nav .nav-cart {
   cursor: pointer;
+  position: relative;
+}
+
+nav .nav-cart .count {
+  width: 20px;
+  height: 20px;
+  background-color: #AD6E4A;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 1.25rem;
+  position: absolute;
+  transform: translate(50%, -50%);
 }
 
 @media (max-width: 992px) {
@@ -1034,6 +1046,18 @@ nav .burger div {
 
 nav .nav-cart {
   cursor: pointer;
+  position: relative;
+}
+
+nav .nav-cart .count {
+  width: 20px;
+  height: 20px;
+  background-color: #AD6E4A;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 1.25rem;
+  position: absolute;
+  transform: translate(50%, -50%);
 }
 
 @media (max-width: 992px) {
@@ -2016,6 +2040,18 @@ nav .burger div {
 
 nav .nav-cart {
   cursor: pointer;
+  position: relative;
+}
+
+nav .nav-cart .count {
+  width: 20px;
+  height: 20px;
+  background-color: #AD6E4A;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 1.25rem;
+  position: absolute;
+  transform: translate(50%, -50%);
 }
 
 @media (max-width: 992px) {
@@ -2208,17 +2244,17 @@ section.shop {
   color: #ffffff;
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 992px) {
   section.shop {
-    margin: 0;
+    margin: 0 30px;
   }
 }
 
 section.shop .banner {
-  margin: 0 auto;
-  background-image: url("../../img/shop/banner.jpg");
-  background-repeat: no-repeat;
+  background-image: url("../../img/home/others/mars_landscape.jpg");
   background-size: cover;
+  background-position: center bottom -250px;
+  background-repeat: no-repeat;
   width: 100%;
   padding-top: 20%;
   position: relative;
@@ -2226,200 +2262,239 @@ section.shop .banner {
 
 @media all and (max-width: 768px) {
   section.shop .banner {
-    padding-top: 50%;
+    background-position: center center;
+    padding-top: 40%;
   }
 }
 
 section.shop .banner h2 {
+  width: 80%;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  top: 35%;
-  letter-spacing: 2px;
 }
 
 @media all and (max-width: 768px) {
   section.shop .banner h2 {
-    font-size: .8rem;
-    width: 80%;
-    top: 50%;
-    margin: 0;
+    font-size: 1rem;
   }
 }
 
-section.shop .btn {
-  cursor: pointer;
-}
-
-section.shop .shopAll {
+section.shop .filter {
   display: flex;
   justify-content: center;
   align-items: center;
-  align-items: start;
-  flex-wrap: wrap;
-  margin: 0 30px;
-}
-
-section.shop .shopAll .aside {
-  width: 30%;
-  position: sticky;
-  top: 18vh;
-  left: 0;
-  margin-top: 40px;
-}
-
-@media all and (max-width: 992px) {
-  section.shop .shopAll .aside {
-    width: 35%;
-  }
-}
-
-@media all and (max-width: 768px) {
-  section.shop .shopAll .aside {
-    top: 0;
-    width: 80%;
-    position: relative;
-  }
-}
-
-section.shop .shopAll .aside p {
-  border: 1px solid #C9ADA7;
-  padding: 20px 0;
-  background-color: #292B41;
-  border: none;
-  background-image: url("../../img/shop/arrow-right.png");
-  background-repeat: no-repeat;
-  background-position: right 20px center;
-  background-size: 10px;
-}
-
-section.shop .shopAll .aside .choose {
-  max-height: 0;
-  overflow: hidden;
-  transition: all .5s linear;
-}
-
-section.shop .shopAll .aside .choose li {
-  padding: 16px 0;
-  transition: all .3s;
-  text-align: center;
-  width: 100%;
-  background-color: #AD6E4A;
-}
-
-section.shop .shopAll .aside .choose li:hover {
-  background-color: #bf896b;
-}
-
-section.shop .shopAll .aside .chooseShow {
-  max-height: 400px;
-  transition: all 1.5s linear;
-}
-
-section.shop .shopAll .main {
-  width: 70%;
-}
-
-@media all and (max-width: 992px) {
-  section.shop .shopAll .main {
-    width: 60%;
-  }
-}
-
-@media all and (max-width: 768px) {
-  section.shop .shopAll .main {
-    width: 80%;
-  }
-}
-
-section.shop .shopAll .main .productAll {
-  letter-spacing: 5px;
-}
-
-@media all and (max-width: 992px) {
-  section.shop .shopAll .main .productAll {
-    margin-left: 24px;
-  }
-}
-
-@media all and (max-width: 768px) {
-  section.shop .shopAll .main .productAll {
-    margin-left: 0px;
-  }
-}
-
-section.shop .shopAll .main .productAll ul {
-  display: flex;
   justify-content: space-between;
-  align-items: start;
-  flex-wrap: wrap;
 }
 
 @media all and (max-width: 992px) {
-  section.shop .shopAll .main .productAll ul {
-    align-items: center;
-    justify-content: space-between;
+  section.shop .filter {
+    margin: 40px 30px;
   }
 }
 
 @media all and (max-width: 768px) {
-  section.shop .shopAll .main .productAll ul {
-    justify-content: center;
+  section.shop .filter {
+    flex-direction: column;
   }
 }
 
-section.shop .shopAll .main .productAll ul li {
-  width: 30%;
+section.shop #app ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 @media all and (max-width: 992px) {
-  section.shop .shopAll .main .productAll ul li {
+  section.shop #app ul {
+    justify-content: space-around;
+    margin: 0 10px;
+  }
+}
+
+section.shop #app li {
+  position: relative;
+  margin: 0 10px;
+  width: 22%;
+}
+
+@media all and (max-width: 992px) {
+  section.shop #app li {
     width: 45%;
   }
 }
 
 @media all and (max-width: 768px) {
-  section.shop .shopAll .main .productAll ul li {
+  section.shop #app li {
     width: 100%;
+    max-width: 350px;
   }
 }
 
-section.shop .shopAll .main .productAll ul li a {
-  padding: 10px 0 10px 0;
+section.shop #app .card {
+  position: relative;
+  height: 300px;
+  margin: 30px 0px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: rgba(255, 255, 255, 0.9);
-  color: black;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  z-index: 10;
 }
 
-section.shop .shopAll .main .productAll ul li a img {
-  width: 50%;
+@media all and (max-width: 768px) {
+  section.shop #app .card {
+    margin-top: 50px;
+  }
 }
 
-section.shop .shopAll .main .productAll ul li a .item {
-  text-align: left;
-  width: 100%;
+section.shop #app .card:hover .imgBx {
+  transform: translateY(-50px);
+}
+
+section.shop #app .card:hover .imgBx img {
+  transform: translateY(-40px) scale(1.3);
+}
+
+section.shop #app .card:hover .content {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(-10px);
+}
+
+section.shop #app .imgBx {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  justify-content: space-around;
-  padding-top: 20px;
+  flex-direction: column;
+  padding: 20px;
+  transition: 0.5s ease-in-out;
 }
 
-section.shop .shopAll .main .productAll ul li a .item .info {
-  padding: 16px 0;
+@media all and (max-width: 768px) {
+  section.shop #app .imgBx {
+    transform: translateY(-50px);
+  }
+  section.shop #app .imgBx img {
+    transform: translateY(-40px) scale(1.3);
+  }
 }
 
-section.shop .shopAll .main .productAll ul li a .item .info .price {
-  font-weight: bold;
-  font-family: "Nasalization";
+section.shop #app .imgBx img {
+  max-width: 50%;
+  margin: 0 0 20px;
+  transition: .5s ease-in-out;
 }
 
-section.shop .shopAll .main .productAll ul li a .item img {
-  padding-top: 15px;
+section.shop #app .content {
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: .5s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+}
+
+@media all and (max-width: 768px) {
+  section.shop #app .content {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-10px);
+  }
+}
+
+section.shop #app .content .button_min {
+  position: relative;
+  top: 20px;
+  background-color: #AD6E4A;
+  color: #ffffff;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.custom-select {
+  position: relative;
+  font-family: Arial;
+  width: 12%;
+}
+
+@media all and (max-width: 992px) {
+  .custom-select {
+    width: 20%;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .custom-select {
+    width: 80%;
+    margin: 16px 0;
+  }
+}
+
+.custom-select select {
+  display: none;
+  /*hide original SELECT element:*/
+}
+
+.select-selected {
+  background-color: #AD6E4A;
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div, .select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  user-select: none;
+}
+
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: #AD6E4A;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 html, body, div, span, applet, object, iframe,
@@ -2847,6 +2922,18 @@ nav .burger div {
 
 nav .nav-cart {
   cursor: pointer;
+  position: relative;
+}
+
+nav .nav-cart .count {
+  width: 20px;
+  height: 20px;
+  background-color: #AD6E4A;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 1.25rem;
+  position: absolute;
+  transform: translate(50%, -50%);
 }
 
 @media (max-width: 992px) {
@@ -3146,10 +3233,6 @@ div.bk3 {
 }
 
 .first .first_right .hottrip {
-<<<<<<< HEAD
-=======
-  top: 15vh;
->>>>>>> dev
   display: inline-flex;
   padding-top: 64px;
 }
@@ -3206,10 +3289,7 @@ div.bk3 {
   top: 15px;
   left: 50%;
   transform: translateX(-50%);
-<<<<<<< HEAD
   z-index: 2;
-=======
->>>>>>> dev
 }
 
 .first .first_right .hottrip div.planet_top img.planet_a1 {
@@ -3233,11 +3313,7 @@ div.bk3 {
   color: #AD6E4A;
 }
 
-<<<<<<< HEAD
 .first .first_right .hottrip div.planet_top div.word .tag {
-=======
-.first .first_right div.planet_top div.word .tag {
->>>>>>> dev
   display: inline-flex;
   border: 1px solid #C9ADA7;
   border-radius: 5px;
@@ -3279,7 +3355,6 @@ div.bk3 {
   background-color: #bf896b;
 }
 
-<<<<<<< HEAD
 .tripselect {
   display: inline-flex;
   width: 280px;
@@ -3290,12 +3365,6 @@ div.bk3 {
   .tripselect {
     width: 90%;
   }
-=======
-.first .tripselect {
-  display: inline-flex;
-  width: 280px;
-  justify-content: space-between;
->>>>>>> dev
 }
 
 .tripselect .icon2 {
@@ -3344,15 +3413,12 @@ div.bk3 {
   .stepsection .stepall {
     flex-direction: column;
     align-items: center;
-<<<<<<< HEAD
   }
 }
 
 @media all and (max-width: 1200px) {
   .stepsection .stepall .h2 {
     font-size: 24px;
-=======
->>>>>>> dev
   }
 }
 
@@ -3965,18 +4031,6 @@ input.form-control.point_input:focus, input.form-control-plaintext.point_input:f
   max-width: auto;
 }
 
-<<<<<<< HEAD
-.actionBoxon {
-  display: flex;
-  position: absolute;
-  top: 270px;
-  background-color: black;
-  opacity: 0.5;
-  display: flex;
-}
-
-=======
->>>>>>> Min
 .btn-check:focus + .btn, .btn:focus {
   outline: 0;
   box-shadow: none;

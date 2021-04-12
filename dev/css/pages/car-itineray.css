@@ -423,6 +423,18 @@ nav .burger div {
 
 nav .nav-cart {
   cursor: pointer;
+  position: relative;
+}
+
+nav .nav-cart .count {
+  width: 20px;
+  height: 20px;
+  background-color: #AD6E4A;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 1.25rem;
+  position: absolute;
+  transform: translate(50%, -50%);
 }
 
 @media (max-width: 992px) {

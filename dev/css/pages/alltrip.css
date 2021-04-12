@@ -423,6 +423,18 @@ nav .burger div {
 
 nav .nav-cart {
   cursor: pointer;
+  position: relative;
+}
+
+nav .nav-cart .count {
+  width: 20px;
+  height: 20px;
+  background-color: #AD6E4A;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 1.25rem;
+  position: absolute;
+  transform: translate(50%, -50%);
 }
 
 @media (max-width: 992px) {
@@ -722,10 +734,6 @@ div.bk3 {
 }
 
 .first .first_right .hottrip {
-<<<<<<< HEAD
-=======
-  top: 15vh;
->>>>>>> dev
   display: inline-flex;
   padding-top: 64px;
 }
@@ -782,10 +790,7 @@ div.bk3 {
   top: 15px;
   left: 50%;
   transform: translateX(-50%);
-<<<<<<< HEAD
   z-index: 2;
-=======
->>>>>>> dev
 }
 
 .first .first_right .hottrip div.planet_top img.planet_a1 {
@@ -809,11 +814,7 @@ div.bk3 {
   color: #AD6E4A;
 }
 
-<<<<<<< HEAD
 .first .first_right .hottrip div.planet_top div.word .tag {
-=======
-.first .first_right div.planet_top div.word .tag {
->>>>>>> dev
   display: inline-flex;
   border: 1px solid #C9ADA7;
   border-radius: 5px;
@@ -855,11 +856,7 @@ div.bk3 {
   background-color: #bf896b;
 }
 
-<<<<<<< HEAD
 .tripselect {
-=======
-.first .tripselect {
->>>>>>> dev
   display: inline-flex;
   width: 280px;
   justify-content: space-between;
@@ -917,15 +914,12 @@ div.bk3 {
   .stepsection .stepall {
     flex-direction: column;
     align-items: center;
-<<<<<<< HEAD
   }
 }
 
 @media all and (max-width: 1200px) {
   .stepsection .stepall .h2 {
     font-size: 24px;
-=======
->>>>>>> dev
   }
 }
 
