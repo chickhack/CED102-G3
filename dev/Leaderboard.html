@@ -13,7 +13,12 @@
     <link rel="stylesheet" href="./css/pages/Leaderboard.css">
 </head>
 <style>
-  
+ #particles-js {
+  z-index: -1;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
 </style>
 <body>
    <header>
@@ -47,7 +52,7 @@
                <div class="col-4 col-xxl-2 col-md-2 del">累積星球</div>
             </div>
         </div>
-        <div class="col-10 text-color line-he-75 hovers" id="top-0">
+        <div class="col-10 text-color line-he-75 hovers" id="top0">
            <div class="row ">
 
               <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-75 ">{{me.Lead}}</div>
@@ -60,12 +65,12 @@
         </div>
         <div class="col-10 text-color-1 line-he-65 hovers" id="top-1" >
                <div class="row justify-content-center"> 
-                  <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-65"><img :src="to.topSrc" alt="" class="leve-1"></div>
-                  <div class="col-4 col-xxl-2 col-md-2 text-01 line-he-65"><img :src="to.meSrc" alt="" class="icon-3">{{to.name}}</div>
+                  <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-65"><img :src="leve.top1src" alt="" class="leve-1"></div>
+                  <div class="col-4 col-xxl-2 col-md-2 text-01 line-he-65"><img :src="to.meSrc" alt="" class="icon-3">{{top1.last_name}}{{top1.first_name}}</div>
                   <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-65 del"><img :src="to.lvSrc" alt="" class="leve-1"></div>
-                  <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-65">{{to.integral}}</div>
-                  <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-65 del">{{to.sp}}</div>
-                  <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-65 del">{{to.itin}}</div>
+                  <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-65">{{top1.miles}}</div>
+                  <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-65 del">{{top1.mem_arr}}</div>
+                  <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-65 del">{{top1.mem_sp}}</div>
                   
 
                </div>
@@ -75,35 +80,35 @@
         <div class="col-10 text-color-1 line-he-65 hovers" id="top-2" >
            <div class="row">
 
-              <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-65"><img :src="to.topSrc" alt="" class="leve-1"></div>
-              <div class="col-4 col-xxl-2 col-md-2 text-01 line-he-65"><img :src="to.meSrc" alt="" class="icon-3">{{to.name}}</div>
-              <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-65 del"><img :src="to.lvSrc" alt="" class="leve-1"></div>
-              <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-65 ">{{to.integral}}</div>
-              <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-65 del">{{to.sp}}</div>
-              <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-65 del">{{to.itin}}</div>
+            <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-65"><img :src="leve.top2src" alt="" class="leve-1"></div>
+            <div class="col-4 col-xxl-2 col-md-2 text-01 line-he-65"><img :src="to.meSrc" alt="" class="icon-3">{{top2.last_name}}{{top2.first_name}}</div>
+            <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-65 del"><img :src="to.lvSrc" alt="" class="leve-1"></div>
+            <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-65 ">{{top2.miles}}</div>
+            <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-65 del">{{top2.mem_arr}}</div>
+            <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-65 del">{{top2.mem_sp}}</div>
            </div>
 
          </div>
          <div class="col-10 text-color-1  line-he-65 hovers" id="top-3" >
             <div class="row">
 
-               <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-65"><img :src="to.topSrc" alt="" class="leve-1"></div>
-               <div class="col-4 col-xxl-2 col-md-2 text-01 line-he-65"><img :src="to.meSrc" alt="" class="icon-3">{{to.name}}</div>
+               <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-65"><img :src="leve.top3src" alt="" class="leve-1"></div>
+               <div class="col-4 col-xxl-2 col-md-2 text-01 line-he-65"><img :src="to.meSrc" alt="" class="icon-3">{{top3.last_name}}{{top3.first_name}}</div>
                <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-65 del"><img :src="to.lvSrc" alt="" class="leve-1"></div>
-               <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-65">{{to.integral}}</div>
-               <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-65 del">{{to.sp}}</div>
-               <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-65 del">{{to.itin}}</div>
+               <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-65">{{top3.miles}}</div>
+               <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-65 del">{{top3.mem_arr}}</div>
+               <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-65 del">{{top3.mem_sp}}</div>
             </div>
          </div>
-         <div class="col-10 text-color-1 line-he-65 hovers" v-for="to1 in to">
+         <div class="col-10 text-color-1 line-he-65 hovers" v-for="(to1,index) in mydata.slice(3,17)">
             <div class="row">
 
-               <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-65">{{to1.leve}}</div>
-               <div class="col-4 col-xxl-2 col-md-2 text-01 line-he-65"><img :src="to1.meSrc" alt="" class="icon-3">{{to1.name}}</div>
+               <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-65">{{index+4}}</div>
+               <div class="col-4 col-xxl-2 col-md-2 text-01 line-he-65"><img :src="to1.meSrc" alt="" class="icon-3">{{to1.last_name}}{{to1.first_name}}</div>
                <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-65 del"><img :src="to1.lvSrc" alt="" class="leve-1"></div>
-               <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-65">{{to1.integral}}</div>
-               <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-65 del">{{to1.sp}}</div>
-               <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-65 del">{{to1.itin}}</div>
+               <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-65">{{to1.miles}}</div>
+               <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-65 del">{{to1.mem_arr}}</div>
+               <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-65 del">{{to1.mem_sp}}</div>
             </div>
 
          </div>
@@ -121,8 +126,9 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 <script>
  var top0= new Vue({
-     el:'#top-0',
+     el:'#top0',
      data:{
+         // me:[],
          
          me:{
             Lead:88,
@@ -138,97 +144,125 @@
         
      }
  });
-var top1 = new Vue({
-   el:'#top-1',
-   data:{
-            to:
-                  {
-                     topSrc:'./img/account/026-medal.png',
+// var top1 = new Vue({
+//    el:'#top-1',
+//    data:{
+//             to:
+//                   {
+//                      topSrc:'./img/account/026-medal.png',
                      
-                     name:'Toru',
-                     meSrc:'./img/icon/tony.png',
-                     lvSrc:'./img/account/lev2.png',
-                     integral:'1700k',
-                     sp:'7',
-                     itin:'3', 
-                  },
+//                      name:'Toru',
+//                      meSrc:'./img/icon/tony.png',
+//                      lvSrc:'./img/account/lev2.png',
+//                      integral:'1700k',
+//                      sp:'7',
+//                      itin:'3', 
+//                   },
                   
                
-         }
+//          }
       
    
-});
-var top2 = new Vue({
-   el:'#top-2',
-   data:{
-      to:{
-            topSrc:'./img/account/019-medal.png',
-            name:'hasaki',
-            meSrc:'./img/icon/ann.png',
-            lvSrc:'./img/account/lev2.png',
-            integral:'1600k',
-            sp:'7',
-            itin:'3',
-      },
-   }
-});
-var top3 = new Vue({
-   el:'#top-3',
-   data:{
-      to:{
-            topSrc:'./img/account/049-medal.png',
-            name:'hasaki',
-            meSrc:'./img/icon/donn-round.png',
-            lvSrc:'./img/account/lev2.png',
-            integral:'1400k',
-            sp:'7',
-            itin:'3',
-      }
-   }
-});
+// });
+// var top2 = new Vue({
+//    el:'#top-2',
+//    data:{
+//       to:{
+//             topSrc:'./img/account/019-medal.png',
+//             name:'hasaki',
+//             meSrc:'./img/icon/ann.png',
+//             lvSrc:'./img/account/lev2.png',
+//             integral:'1600k',
+//             sp:'7',
+//             itin:'3',
+//       },
+//    }
+// });
+// var top3 = new Vue({
+//    el:'#top-3',
+//    data:{
+//       to:{
+//             topSrc:'./img/account/049-medal.png',
+//             name:'hasaki',
+//             meSrc:'./img/icon/donn-round.png',
+//             lvSrc:'./img/account/lev2.png',
+//             integral:'1400k',
+//             sp:'7',
+//             itin:'3',
+//       }
+//    }
+// });
 var top4 = new Vue({
    el:'#top-4',
    data:{
-      to:[  
-            {
-               leve:4,
-               name:'Toru',
-               meSrc:'./img/icon/donn-round.png',
-               lvSrc:'./img/account/lev2.png',
-               integral:'1700k',
-               sp:'7',
-               itin:'3', 
-            },
-            {
-               leve:5,
-               name:'Toru',
-               meSrc:'./img/icon/tony.png',
-               lvSrc:'./img/account/lev2.png',
-               integral:'1700k',
-               sp:'7',
-               itin:'3', 
-            },
-            {
-               leve:6,
-               name:'Toru',
-               meSrc:'./img/account/P101.JPG',
-               lvSrc:'./img/account/lev2.png',
-               integral:'1700k',
-               sp:'7',
-               itin:'3', 
-            },
-            {
-               leve:7,
-               name:'Toru',
-               meSrc:'./img/icon/tony.png',
-               lvSrc:'./img/account/lev2.png',
-               integral:'1700k',
-               sp:'7',
-               itin:'3', 
-            },
-         ]
-   }
-})
+      // to:[  
+      //       {
+      //          leve:4,
+      //          name:'Toru',
+      //          meSrc:'./img/icon/donn-round.png',
+      //          lvSrc:'./img/account/lev2.png',
+      //          integral:'1700k',
+      //          sp:'7',
+      //          itin:'3', 
+      //       },
+      //       {
+      //          leve:5,
+      //          name:'Toru',
+      //          meSrc:'./img/icon/tony.png',
+      //          lvSrc:'./img/account/lev2.png',
+      //          integral:'1700k',
+      //          sp:'7',
+      //          itin:'3', 
+      //       },
+      //       {
+      //          leve:6,
+      //          name:'Toru',
+      //          meSrc:'./img/account/P101.JPG',
+      //          lvSrc:'./img/account/lev2.png',
+      //          integral:'1700k',
+      //          sp:'7',
+      //          itin:'3', 
+      //       },
+      //       {
+      //          leve:7,
+      //          name:'Toru',
+      //          meSrc:'./img/icon/tony.png',
+      //          lvSrc:'./img/account/lev2.png',
+      //          integral:'1700k',
+      //          sp:'7',
+      //          itin:'3', 
+      //       },
+      //    ],
+      mytada:[],
+      top1:[],
+      top2:[],
+      top3:[],
+      leve:{
+         top1src:'./img/account/026-medal.png',
+         top2src:'./img/account/019-medal.png',
+         top3src:'/img/account/049-medal.png',
+      },
+      },
+      mounted() {
+      // res是區域變數出去後不可使用
+      fetch('./php/Leaderboard.php').then(res => res.json()).then(res => this.mydata = res);
+      setTimeout(()=>{
+         // console.log( this.mydata[2])
+         this.top1=this.mydata[0];
+         this.top2=this.mydata[1];
+         this.top3=this.mydata[2];
+         // this.mydata1.push(this.mydata[3]);
+         // console.log( this.mydata1)
+
+         
+      },1000);
+   },    
+   
+      
+   
+});
+
+
 </script>
 </body>
 </html>
