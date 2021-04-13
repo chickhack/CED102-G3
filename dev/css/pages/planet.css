@@ -610,7 +610,7 @@ input[type=number] {
 
 .container-fluid {
   padding: 0;
-  margin-top: 15vh;
+  padding-top: 15vh;
 }
 
 @media all and (max-width: 768px) {
@@ -680,20 +680,24 @@ button:hover {
   }
 }
 
-.planet_tab div.tabList {
+.planet_tab ul.tab-title {
   display: flex;
   justify-content: center;
-  column-gap: 1%;
+  column-gap: 3%;
+  flex-wrap: wrap;
+  list-style: none;
 }
 
-.planet_tab div.tabList button {
+.planet_tab ul.tab-title li a {
+  text-decoration: none;
   border: none;
   background-color: transparent;
-  color: #AD6E4A;
-  font-size: 16px;
+  color: #C9ADA7;
+  font-size: 18px;
+  padding: 12px 24px;
 }
 
-.planet_tab div.tabList button.active {
+.planet_tab ul.tab-title li.active {
   border-bottom: 4px solid #AD6E4A;
 }
 
@@ -712,150 +716,137 @@ button:hover {
 
 .planet_tab .tab-inner {
   display: flex;
-}
-
-.planet_tab .tab-inner .taball {
-  display: flex;
   flex-direction: column;
   text-align: left;
-  align-items: center;
 }
 
-.planet_tab .tab-inner .taball .tab_left {
+.planet_tab .tab-inner .tab_top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 15%;
+}
+
+.planet_tab .tab-inner .tab_top .tab_left {
   max-width: 400px;
 }
 
-.planet_tab .tab-inner .taball .tab_left h3 {
-  line-height: 2rem;
+.planet_tab .tab-inner .tab_top .tab_left h4 {
+  line-height: 3rem;
 }
 
-.planet_tab .tab-inner .taball p {
+.planet_tab .tab-inner .tab_top p {
   line-height: 2rem;
   margin-top: 20px;
   max-width: 400px;
 }
 
-.planet_tab .tab-inner .taball .data {
-  border: 1px solid #AD6E4A;
+.planet_tab .tab-inner .tab_top .data {
   display: flex;
+  justify-content: center;
   font-family: Haettenschweiler, sans-serif;
 }
 
-.planet_tab .tab-inner .taball .data .grav {
+.planet_tab .tab-inner .tab_top .data .grav, .planet_tab .tab-inner .tab_top .data .day, .planet_tab .tab-inner .tab_top .data .temp {
   justify-content: center;
   align-items: center;
+  border: 1px solid #AD6E4A;
   display: flex;
   flex-direction: column;
-  min-width: 130px;
-  min-height: 130px;
+  min-width: 100px;
+  max-height: 100px;
   border-right: 1px solid #AD6E4A;
 }
 
-.planet_tab .tab-inner .taball .data .day {
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  min-width: 130px;
-  border-right: 1px solid #AD6E4A;
-}
-
-.planet_tab .tab-inner .taball .data .temp {
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  min-width: 130px;
-}
-
-.planet_tab .tab-inner .taball .data span.var {
-  font-size: 48px;
+.planet_tab .tab-inner .tab_top .data span.var {
+  font-size: 36px;
   letter-spacing: 3px;
 }
 
-.planet_tab .tab-inner .taball .data span.data-top {
+.planet_tab .tab-inner .tab_top .data span.data-top {
   vertical-align: top;
   font-size: 24px;
 }
 
-.planet_tab .tab-inner .taball .data span.data-mid {
+.planet_tab .tab-inner .tab_top .data span.data-mid {
   font-size: 24px;
 }
 
-.planet_tab .tab-inner .taball .data span.data-low {
+.planet_tab .tab-inner .tab_top .data span.data-low {
   font-size: 24px;
   font-stretch: narrower;
 }
 
-.planet_tab .tab-inner .taball .data p {
+.planet_tab .tab-inner .tab_top .data p {
   margin-top: 5px;
   font-size: 16px;
 }
 
-.planet_tab .tab-inner .taball .tab-active {
+.planet_tab .tab-inner .tab-active {
   position: relative;
+  top: 0;
 }
 
-.planet_content {
+.planet_tab .tab-inner .planet_content {
   display: flex;
   flex-wrap: wrap;
 }
 
-.planet_content .carousel {
+.planet_tab .tab-inner .planet_content .carousel {
   display: none;
 }
 
-.planet_content .imgs {
+.planet_tab .tab-inner .planet_content .imgs {
   display: block;
 }
 
-.planet_content .imgs .img1 {
+.planet_tab .tab-inner .planet_content .imgs .img1 {
   transform: translate(20%);
 }
 
-.planet_content .imgs .img2 {
+.planet_tab .tab-inner .planet_content .imgs .img2 {
   transform: translateX(10%);
 }
 
-.planet_content .imgs .img3 {
+.planet_tab .tab-inner .planet_content .imgs .img3 {
   transform: translate(-30%, -350px);
 }
 
-.planet_content .desc {
+.planet_tab .tab-inner .planet_content .desc {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.planet_content .desc p {
+.planet_tab .tab-inner .planet_content .desc p {
   line-height: 2rem;
   text-align: justify;
   max-width: 500px;
 }
 
 @media only screen and (max-width: 1200px) {
-  .tab-inner {
+  .planet_tab .tab-inner .tab-inner {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .tab-inner .tab-active {
+  .planet_tab .tab-inner .tab-inner .tab-active {
     display: flex;
     justify-content: center;
   }
-  .planet_content {
+  .planet_tab .tab-inner .planet_content {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .planet_content .imgs {
+  .planet_tab .tab-inner .planet_content .imgs {
     display: none;
   }
-  .planet_content .carousel {
+  .planet_tab .tab-inner .planet_content .carousel {
     display: block;
     width: 400px;
   }
-  .planet_content .desc {
+  .planet_tab .tab-inner .planet_content .desc {
     max-width: 400px;
   }
 }

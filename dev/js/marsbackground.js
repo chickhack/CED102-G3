@@ -36,7 +36,7 @@ function animate() {
 
 function render() {
     var delta = clock.getDelta();
-    marsMesh.rotation.x += 0.05 * delta;
+    marsMesh.rotation.x += 0.08 * delta;
     renderer.clear();
     renderer.render(scene, camera);
 }
