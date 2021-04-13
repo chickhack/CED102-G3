@@ -619,4 +619,18 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
+
+.go-top {
+  font-family: "Proxima Nova";
+  position: fixed;
+  bottom: 80px;
+  right: 80px;
+  text-decoration: none;
+  background-image: url(../../img/icon/TOP.png);
+  width: 28px;
+  height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+}
 /*# sourceMappingURL=all.css.map */

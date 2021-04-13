@@ -2,9 +2,12 @@
 
 
 #marsloc {
-    top: 15vh;
-    left: 5%;
+    top: 10vh;
+    left: 0;
     position: absolute;
+    @media all and (max-width:1200px) {
+       display:none;
+    }
 }
 
 div.bk3 {
@@ -68,13 +71,13 @@ div.bk3 {
         padding-left: 40px;
         width: 35%;
         display: flex;
-
+    
         @media all and (max-width:1200px) {
             padding-left: 8px;
             margin: 0 auto;
             width: 90%;
         }
-
+    
         h2.title {
             display: inline-block;
             position: relative;
@@ -82,26 +85,29 @@ div.bk3 {
             top: 18vh;
             letter-spacing: 10px;
             font-size: 36px;
-
+            color:$pink;
+            -webkit-animation: h2 1.2s infinite; 
+            animation: h2 1.2s infinite;
+    
             @media all and (max-width:1200px) {
                 font-size: 32px;
             }
-
+    
             span.h3 {
                 font-weight: 500;
                 letter-spacing: 10px;
                 font-size: 24px;
-
+    
                 @media all and (max-width:1200px) {
                     font-size: 18px;
-
+    
                 }
             }
         }
     }
 
     .first_right {
-        width: 50%;
+        width: 53%;
         position: relative;
 
         @media all and (max-width:1200px) {
@@ -122,8 +128,8 @@ div.bk3 {
                 padding-top: 90px;
                 text-align: center;
                 width: 55%;
-                padding-left: 16px;
-                padding-right: 16px;
+                padding-left: 8px;
+                padding-right: 8px;
                 &:hover{
                     transform:translateY(0.2em);
                     // box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
@@ -165,7 +171,7 @@ div.bk3 {
                 }
 
                 img.planet_a1 {
-                    max-width: 280px;
+                    max-width: 270px;
                     &:hover{
                         transform:translateY(0.2em);
                     }
@@ -232,6 +238,11 @@ div.bk3 {
     }
 }
 
+@keyframes h2 {
+    0%   {text-shadow: 0 0 6px #FFF;}
+    100%  {text-shadow: 0 0 0px #000;}
+}
+
 
 
 // <!-- ----------slider -->
@@ -281,6 +292,7 @@ div.bk3 {
     text-align: center;
     background-color: rgba($color: #191919, $alpha: 0.3);
     padding: 48px;
+    margin-top:120px;
 
     .stepall {
         max-width: 1000px;
@@ -365,12 +377,12 @@ div.bk3 {
                 transform:translateY(0.2em);
                 box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
             }
-            &.tripcard:nth-child(1){
-                animation: float 4s cubic-bezier(.1,.1,.88,.88) infinite;}
-            &.tripcard:nth-child(2){
-                animation: float 4.5s cubic-bezier(.1,.1,.88,.88) infinite;}
-            &.tripcard:nth-child(3){
-                animation: float 5s cubic-bezier(.1,.1,.88,.88) infinite;}
+            // &.tripcard:nth-child(1){
+            //     animation: float 4s cubic-bezier(.1,.1,.88,.88) infinite;}
+            // &.tripcard:nth-child(2){
+            //     animation: float 4.5s cubic-bezier(.1,.1,.88,.88) infinite;}
+            // &.tripcard:nth-child(3){
+            //     animation: float 5s cubic-bezier(.1,.1,.88,.88) infinite;}
 
 
             @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -466,18 +478,3 @@ div.bk3 {
     }
 }
 
-
-.go-top {
-    font-family: "Proxima Nova";
-    position: fixed;
-    bottom: 80px;
-    right: 80px;
-    text-decoration: none;
-    background-image: url(../../img/icon/TOP.png);
-    width: 28px;
-    height: 100px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    animation: float 3s cubic-bezier(.1, .1, .88, .88) infinite;
-
-}

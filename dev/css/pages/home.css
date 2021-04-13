@@ -829,12 +829,21 @@ div.planet_top div.word .addin:hover {
   position: relative;
   top: 0;
   right: 0;
+<<<<<<< HEAD
 }
 
 .planet_box {
   margin-top: 65vh;
 }
 
+=======
+}
+
+.planet_box {
+  margin-top: 65vh;
+}
+
+>>>>>>> KAI
 @media all and (max-width: 1100px) {
   .separator {
     width: 90%;
