@@ -9,9 +9,18 @@ const clean = require('gulp-clean');
 const browserSync = require('browser-sync').create();
 const reload = browserSync.reload; //browser的方法 更新後~
 
+function movePhp(){
+    return src("dev/php/*").pipe(dest("dist/php"));
+}
+
+function moveIndex(){
+    return src("dev/*.php").pipe(dest("dist/"));
+}
+
 function moveImg() {
     return src('dev/img/**').pipe(dest('dist/img/'));
 }
+
 
 function concatJSAndMove() {
     return src('dev/js/*.js').pipe(concat('all.js')).pipe(dest('dist/js/'));
@@ -67,7 +76,7 @@ function killDist() {
 }
 
 exports.kill = killDist;
-exports.u = series(killDist, parallel(moveImg, moveJS, commonStyle, pageStyle, includeHTML));
+exports.u = series(killDist, parallel(moveImg, moveJS, commonStyle, pageStyle, includeHTML,movePhp,moveIndex));
 
 exports.browser = function browsersync() {
     browserSync.init({
@@ -87,6 +96,7 @@ exports.browser = function browsersync() {
     watch('./dev/**/*.html', includeHTML).on('change', reload);
     watch('./dev/img/*', moveImg).on('change', reload);
     watch('./dev/js/*.js', moveJS).on('change', reload);
+    watch("./dev/*.php",moveIndex).on("change",reload);
 };
 
 exports.w = function watchFiles() {
@@ -95,7 +105,8 @@ exports.w = function watchFiles() {
     watch('./dev/**/*.html', includeHTML);
     watch('./dev/img/*', moveImg);
     watch('./dev/js/*.js', moveJS);
-    
+    watch('./dev/php/*.php', movePhp);
+    watch("./dev/*.php",moveIndex);
 };
 
 

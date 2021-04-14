@@ -423,6 +423,36 @@ nav .burger div {
 
 nav .nav-cart {
   cursor: pointer;
+  position: relative;
+}
+
+nav .nav-cart .count {
+  width: 25px;
+  height: 25px;
+  background-color: #AD6E4A;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 1.5rem;
+  position: absolute;
+  transform: translate(50%, -150%);
+  display: block;
+  color: white;
+}
+
+@media all and (max-width: 992px) {
+  nav .nav-cart .count {
+    transform: translate(100%, -150%);
+  }
+}
+
+@media all and (max-width: 768px) {
+  nav .nav-cart .count {
+    transform: translate(40%, -170%);
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    line-height: 1.25rem;
+  }
 }
 
 @media (max-width: 992px) {

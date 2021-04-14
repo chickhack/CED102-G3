@@ -424,6 +424,36 @@ nav .burger div {
 
 nav .nav-cart {
   cursor: pointer;
+  position: relative;
+}
+
+nav .nav-cart .count {
+  width: 25px;
+  height: 25px;
+  background-color: #AD6E4A;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 1.5rem;
+  position: absolute;
+  transform: translate(50%, -150%);
+  display: block;
+  color: white;
+}
+
+@media all and (max-width: 992px) {
+  nav .nav-cart .count {
+    transform: translate(100%, -150%);
+  }
+}
+
+@media all and (max-width: 768px) {
+  nav .nav-cart .count {
+    transform: translate(40%, -170%);
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    line-height: 1.25rem;
+  }
 }
 
 @media (max-width: 992px) {
@@ -609,27 +639,38 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
-.container {
-  margin: 0 auto;
-  max-width: 1100px;
-  text-align: center;
+.go-top {
+  font-family: "Proxima Nova";
+  position: fixed;
+  bottom: 80px;
+  right: 80px;
+  text-decoration: none;
+  background-image: url(../../img/icon/TOP.png);
+  width: 28px;
+  height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
 }
 
-.container a {
-  text-decoration: none;
+.container-fluid {
+  max-width: 1200px;
+  padding: 0;
+  padding-top: 15vh;
+  margin: 0 auto;
 }
 
 @media all and (max-width: 768px) {
-  .container {
+  .container-fluid {
     margin: 0;
   }
 }
 
-.container section.login_container {
+section.login_container {
   display: flex;
 }
 
-.container section.login_container .login_banner {
+section.login_container .login_banner {
   background-color: #353f61;
   height: 80vh;
   background-size: 110%;
@@ -641,71 +682,71 @@ input[type=number] {
   row-gap: 2rem;
 }
 
-.container section.login_container .login_banner h2 {
+section.login_container .login_banner h2 {
   font-family: nasalization, sans-serif;
 }
 
 @media all and (max-width: 992px) {
-  .container section.login_container .login_banner {
+  section.login_container .login_banner {
     display: none;
   }
 }
 
 @media all and (max-width: 768px) {
-  .container section.login_container .login_banner {
+  section.login_container .login_banner {
     display: none;
   }
 }
 
-.container section.login_container .return_btn {
+section.login_container .return_btn {
   display: flex;
   align-self: flex-start;
   align-items: baseline;
 }
 
-.container section.login_container .return_btn span a {
+section.login_container .return_btn span a {
   color: #AD6E4A;
   font-size: 28px;
   letter-spacing: -6px;
   font-weight: 800;
 }
 
-.container section.login_container .return_btn h4 a {
+section.login_container .return_btn h4 a {
   margin-left: 12px;
   color: #cccaca;
 }
 
-.container section.login_container .return_btn a:hover {
+section.login_container .return_btn a:hover {
   text-decoration: underline;
 }
 
-.container section.login_container .modal-dialog {
+section.login_container .modal-dialog {
   display: flex;
   flex-direction: column;
 }
 
-.container section.login_container .modal-dialog .main-section {
+section.login_container .modal-dialog .main-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
 }
 
-.container section.login_container .modal-dialog .main-section .modal-content {
+section.login_container .modal-dialog .main-section .modal-content {
   opacity: .8;
   border-radius: 10px;
   background-color: transparent;
   border: none;
 }
 
-.container section.login_container .modal-dialog form {
+section.login_container .modal-dialog form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: inherit;
 }
 
-.container section.login_container .modal-dialog form .form-group input {
+section.login_container .modal-dialog form .form-group input {
   margin: 0 auto;
   margin-top: 24px;
   height: 42px;
@@ -718,7 +759,7 @@ input[type=number] {
   background-color: transparent;
 }
 
-.container section.login_container .modal-dialog form .form-group input:focus {
+section.login_container .modal-dialog form .form-group input:focus {
   padding-left: 28px;
   transform: scale(1.08);
   box-shadow: -1px 0px 20px 5px rgba(173, 110, 74, 0.45);
@@ -727,7 +768,7 @@ input[type=number] {
   border: none;
 }
 
-.container section.login_container .modal-dialog form .form-group input:hover {
+section.login_container .modal-dialog form .form-group input:hover {
   animation: pulse .5s 1;
 }
 
@@ -743,7 +784,7 @@ input[type=number] {
   }
 }
 
-.container section.login_container .modal-dialog form .form-group::before {
+section.login_container .modal-dialog form .form-group::before {
   content: "電子信箱";
   position: absolute;
   font-size: 12px;
@@ -752,43 +793,43 @@ input[type=number] {
   color: #C9ADA7;
 }
 
-.container section.login_container .modal-dialog form .form-group:nth-last-of-type(2)::before {
+section.login_container .modal-dialog form .form-group:nth-last-of-type(2)::before {
   content: "密碼";
 }
 
-.container section.login_container .modal-dialog form .form-group:last-of-type::before {
+section.login_container .modal-dialog form .form-group:last-of-type::before {
   content: "確認密碼";
 }
 
-.container section.login_container .modal-dialog form button {
+section.login_container .modal-dialog form button {
   align-self: center;
   background-color: transparent;
   color: #AD6E4A;
 }
 
-.container section.login_container .modal-dialog form button:hover {
+section.login_container .modal-dialog form button:hover {
   color: #ffff;
   border: 1px solid #AD6E4A;
   background: #AD6E4A;
 }
 
-.container section.login_container .bottom-section {
+section.login_container .bottom-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.container section.login_container .bottom-section .forgot a, .container section.login_container .bottom-section .signup a {
+section.login_container .bottom-section .forgot a, section.login_container .bottom-section .signup a {
   color: #cccaca;
 }
 
-.container section.login_container .bottom-section .forgot:hover, .container section.login_container .bottom-section .signup:hover {
+section.login_container .bottom-section .forgot:hover, section.login_container .bottom-section .signup:hover {
   cursor: pointer;
   text-decoration: underline;
 }
 
 @media all and (max-width: 768px) {
-  .container section.login_container .bottom-section {
+  section.login_container .bottom-section {
     margin-left: 32px;
   }
 }

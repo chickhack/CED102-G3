@@ -16,16 +16,21 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-
+    <!-- 動態背景 -->
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <title>火星 | 攀登太陽系第一高山</title>
 </head>
 
 <body>
-    
-        <header>
-            @@include('./layout/header.html')
-        </header>
-        <div id="app" >
+
+    <header>
+        @@include('./layout/header.html')
+    </header>
+    <!-- 動態背景 -->
+    <div id="particles-js">
+        <script src="./js/background.js"></script>
+    </div>
+    <div id="app">
         <!-- Slider main container -->
         <div class="swiper-container">
             <!-- Additional required wrapper -->
@@ -41,13 +46,7 @@
                 </div>
             </div>
             <div class="swiper-pagination"></div>
-            <!-- Add Scrollbar -->
-            <!-- <div class="swiper-button-next">
-                <i class="fas fa-chevron-circle-right arrow-icon"></i>
-            </div>
-            <div class="swiper-button-prev">
-                <i class="fas fa-chevron-circle-left arrow-icon"></i>
-            </div> -->
+
         </div>
         <div class="parent_container">
             <div class="up_container">
@@ -189,15 +188,15 @@
             </div>
         </div>
     </div>
-        <footer>
-            @@include('./layout/footer.html')
-        </footer>
-    
+    <footer>
+        @@include('./layout/footer.html')
+    </footer>
 
 
 
+    <!-- vue -->
     <script>
-        // ----vue
+
         let vm = new Vue({
             el: "#app",
             data: {
@@ -239,13 +238,13 @@
                     grade: "初階",
                     scores: "5000",
                     price: 3000,
-                },{
+                }, {
                     spot: "./img/trip/trip_jupiter/jupiter3.jpg",
                     title: "月球 | 太空體驗一日遊",
                     grade: "初階",
                     scores: "5000",
                     price: 1000,
-                }, ],
+                },],
                 computed: {
                     subContent() {
                         if (this.content.length > 20) {
@@ -257,8 +256,11 @@
                 }
             },
         })
+    </script>
+    
+    <!-- 頁籤 -->
+    <script>
 
-        // ----頁籤
         $(function () {
             $("a.tab").on("click", function (e) {
                 e.preventDefault();
@@ -272,8 +274,10 @@
                 $("div.tab." + $(this).attr("data-target")).addClass("-on");
             });
         });
+    </script>
 
-        // ----輪播
+    <!-- 輪播 -->
+    <script>
         var swiper = new Swiper(".swiper-container", {
             slidesPerView: 1.5,
             spaceBetween: 5,
@@ -303,7 +307,8 @@
             }
         });
     </script>
-    <!-- ----加減 -->
+
+    <!-- 加減 -->
     <script>
         $('#add').click(function () {
             let nu = $('#num').val();
