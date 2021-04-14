@@ -1,3 +1,12 @@
+<?php
+    session_start();
+    if(isset($_POST['create'])){
+        $username = $_POST['username'];
+        $password = $_POST['password'];
+        echo $username;
+        echo $password;
+    }
+?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -19,7 +28,49 @@
   </head>
 
   <body>
-      <header>@@include('./layout/header.html')</header>
+    <nav id="nav">
+        <div class="logo">
+          <h1><a href="../home.html">SPACED</a></h1>
+        </div>
+        <ul class="nav-links">
+          <li class="margin_left_5"><a href="alltrip.html">星球景點</a></li>
+          <li class="margin_left_5"><a href="planet.html">星星世界</a></li>
+          <li class="margin_left_5"><a href="shop.html">星球商城</a></li>
+          <li class="margin_left_5"><a href="photowall.html">太空互動</a></li>
+          <li class="margin_left_5"><a href="Leaderboard.html">玩家排行</a></li>
+          <!-- <li><a href=""><img src="./images/ticket.png" alt="" class="icon"></a></li>
+              <li><a href=""><img src="./images/shopping-cart_(1).png" alt="" class="icon"></a></li>
+              <li><a href=""><img src="./images/round-account-button-with-user-inside_(1).png" alt="" class="icon"></a></li> -->
+        </ul>
+        <ul class="nav-icons">
+          <li>
+            <a href="./car-itineray.html"
+              ><img src="../img/icon/header/luggage.png" alt="" class="icon"
+            /></a>
+          </li>
+          <li class="nav-cart">
+              <a href="./shop_cart.php">
+                  <img src="../img/icon/header/shopping-cart_(1).png" alt="" class="icon"/>
+              </a>
+          </li> 
+          <li>
+            <a href="./login.php"
+              ><img
+                src="../img/icon/header/round-account-button-with-user-inside_(1).png"
+                alt=""
+                class="icon"
+            /></a>
+          </li>
+        </ul>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
+      
+      <script src="../js/header.js"></script>
+      
       <div class="container-fluid">
         <section class="login_container col-12">
         <div class="login_banner col-3">
@@ -45,7 +96,7 @@
                                 <input id="password-field" type="password" class="form-control" placeholder="請輸入" value=""></input>
                                 <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
                             </div>
-                            <input type="submit" class="button_min margin_top_3" value="登入"><a href="./account.html" ></a></input>
+                            <input disabled type="submit" class="button_min margin_top_3" value="登入"><a href="./account.html" ></a></input>
                             </form>
                         </div>
                     </div>
@@ -54,7 +105,7 @@
             <div class="bottom-section margin_top_3">
                 <div class="signup">
                     <img src="img/icon/create-group-button.png" width="20" >
-                    <a href="./php/register.php">加入會員</a>
+                    <a href="register.php">加入會員</a>
                 </div>
                 <div class="forgot margin_top_2">
                     <img src="img/icon/locked-padlock.png" width="15">
