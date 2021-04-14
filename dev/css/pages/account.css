@@ -422,12 +422,12 @@ nav .burger div {
   transition: all .3s ease;
 }
 
-nav .nav-cart .nav-trip {
+nav .nav-cart {
   cursor: pointer;
   position: relative;
 }
 
-nav .nav-cart .nav-trip .count .trip-count {
+nav .nav-cart .count {
   width: 25px;
   height: 25px;
   background-color: #AD6E4A;
@@ -441,13 +441,47 @@ nav .nav-cart .nav-trip .count .trip-count {
 }
 
 @media all and (max-width: 992px) {
-  nav .nav-cart .nav-trip .count .trip-count {
+  nav .nav-cart .count {
     transform: translate(100%, -150%);
   }
 }
 
 @media all and (max-width: 768px) {
-  nav .nav-cart .nav-trip .count .trip-count {
+  nav .nav-cart .count {
+    transform: translate(40%, -170%);
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    line-height: 1.25rem;
+  }
+}
+
+nav .nav-trip {
+  cursor: pointer;
+  position: relative;
+}
+
+nav .nav-trip .trip-count {
+  width: 25px;
+  height: 25px;
+  background-color: #AD6E4A;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 1.5rem;
+  position: absolute;
+  transform: translate(50%, -150%);
+  display: block;
+  color: white;
+}
+
+@media all and (max-width: 992px) {
+  nav .nav-trip .trip-count {
+    transform: translate(100%, -150%);
+  }
+}
+
+@media all and (max-width: 768px) {
+  nav .nav-trip .trip-count {
     transform: translate(40%, -170%);
     width: 20px;
     height: 20px;
@@ -1076,12 +1110,12 @@ nav .burger div {
   transition: all .3s ease;
 }
 
-nav .nav-cart .nav-trip {
+nav .nav-cart {
   cursor: pointer;
   position: relative;
 }
 
-nav .nav-cart .nav-trip .count .trip-count {
+nav .nav-cart .count {
   width: 25px;
   height: 25px;
   background-color: #AD6E4A;
@@ -1095,13 +1129,47 @@ nav .nav-cart .nav-trip .count .trip-count {
 }
 
 @media all and (max-width: 992px) {
-  nav .nav-cart .nav-trip .count .trip-count {
+  nav .nav-cart .count {
     transform: translate(100%, -150%);
   }
 }
 
 @media all and (max-width: 768px) {
-  nav .nav-cart .nav-trip .count .trip-count {
+  nav .nav-cart .count {
+    transform: translate(40%, -170%);
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    line-height: 1.25rem;
+  }
+}
+
+nav .nav-trip {
+  cursor: pointer;
+  position: relative;
+}
+
+nav .nav-trip .trip-count {
+  width: 25px;
+  height: 25px;
+  background-color: #AD6E4A;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 1.5rem;
+  position: absolute;
+  transform: translate(50%, -150%);
+  display: block;
+  color: white;
+}
+
+@media all and (max-width: 992px) {
+  nav .nav-trip .trip-count {
+    transform: translate(100%, -150%);
+  }
+}
+
+@media all and (max-width: 768px) {
+  nav .nav-trip .trip-count {
     transform: translate(40%, -170%);
     width: 20px;
     height: 20px;
@@ -2102,12 +2170,12 @@ nav .burger div {
   transition: all .3s ease;
 }
 
-nav .nav-cart .nav-trip {
+nav .nav-cart {
   cursor: pointer;
   position: relative;
 }
 
-nav .nav-cart .nav-trip .count .trip-count {
+nav .nav-cart .count {
   width: 25px;
   height: 25px;
   background-color: #AD6E4A;
@@ -2121,13 +2189,47 @@ nav .nav-cart .nav-trip .count .trip-count {
 }
 
 @media all and (max-width: 992px) {
-  nav .nav-cart .nav-trip .count .trip-count {
+  nav .nav-cart .count {
     transform: translate(100%, -150%);
   }
 }
 
 @media all and (max-width: 768px) {
-  nav .nav-cart .nav-trip .count .trip-count {
+  nav .nav-cart .count {
+    transform: translate(40%, -170%);
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    line-height: 1.25rem;
+  }
+}
+
+nav .nav-trip {
+  cursor: pointer;
+  position: relative;
+}
+
+nav .nav-trip .trip-count {
+  width: 25px;
+  height: 25px;
+  background-color: #AD6E4A;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 1.5rem;
+  position: absolute;
+  transform: translate(50%, -150%);
+  display: block;
+  color: white;
+}
+
+@media all and (max-width: 992px) {
+  nav .nav-trip .trip-count {
+    transform: translate(100%, -150%);
+  }
+}
+
+@media all and (max-width: 768px) {
+  nav .nav-trip .trip-count {
     transform: translate(40%, -170%);
     width: 20px;
     height: 20px;
@@ -3016,12 +3118,12 @@ nav .burger div {
   transition: all .3s ease;
 }
 
-nav .nav-cart .nav-trip {
+nav .nav-cart {
   cursor: pointer;
   position: relative;
 }
 
-nav .nav-cart .nav-trip .count .trip-count {
+nav .nav-cart .count {
   width: 25px;
   height: 25px;
   background-color: #AD6E4A;
@@ -3035,13 +3137,47 @@ nav .nav-cart .nav-trip .count .trip-count {
 }
 
 @media all and (max-width: 992px) {
-  nav .nav-cart .nav-trip .count .trip-count {
+  nav .nav-cart .count {
     transform: translate(100%, -150%);
   }
 }
 
 @media all and (max-width: 768px) {
-  nav .nav-cart .nav-trip .count .trip-count {
+  nav .nav-cart .count {
+    transform: translate(40%, -170%);
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    line-height: 1.25rem;
+  }
+}
+
+nav .nav-trip {
+  cursor: pointer;
+  position: relative;
+}
+
+nav .nav-trip .trip-count {
+  width: 25px;
+  height: 25px;
+  background-color: #AD6E4A;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 1.5rem;
+  position: absolute;
+  transform: translate(50%, -150%);
+  display: block;
+  color: white;
+}
+
+@media all and (max-width: 992px) {
+  nav .nav-trip .trip-count {
+    transform: translate(100%, -150%);
+  }
+}
+
+@media all and (max-width: 768px) {
+  nav .nav-trip .trip-count {
     transform: translate(40%, -170%);
     width: 20px;
     height: 20px;
