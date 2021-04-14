@@ -116,12 +116,12 @@
                     <li v-for="(card,index) in products">
                         <form class="card" action="shop.php" method="post">
                             <div class="imgBx">
-                                <img :src="'./img/shop/'+card.prod_pic" alt="">
+                                <img :src="'./img/shop/'+card.png" alt="">
                                 <h3>{{card.prod_name}}</h3>
                                 <p class="h3 margin_top_1 price">${{card.prod_price}}</p>
                             </div>
                             <div class="content margin_top_2">
-                                <a href="product.php" class="button_min">查看詳情</a>
+                                <a class="button_min" :href="card.url">查看詳情</a>
                                 <button type="submit" name="add" class="button_min margin_top_2">加入購物車</button>
                                 <input type="hidden" name="product_id" :value="card.prod_no">
                             </div>
@@ -144,7 +144,6 @@
             <img src="./img/footer_moon.png" alt="" class="footer_moon">
             <img src="./img/smoke.png" alt="" class="smoke">
         </footer>
-
     </div>
     <!-- vue -->
     <script>
@@ -159,7 +158,7 @@
                     this.products.forEach(prod => {
                         console.log(prod["prod_price"].sort());
                     })
-                }
+                },
             },
         })
 
@@ -167,7 +166,10 @@
                                      .then(data => {
                                          vm.products = data;
                                          for(let i=0 ; i<data.length ; i++){
-                                             vm.products[i]["prod_pic"] = data[i]["prod_pic"].split("==")[0];     
+                                             vm.products[i].png = data[i]["prod_pic"].split("==")[0];
+                                             let url = `product.php?name=${data[i].prod_name}&price=${data[i].prod_price}&info=${data[i].prod_info}&pic=${data[i].prod_pic}`;
+                                             vm.products[i].url = encodeURI(url);
+                                             console.log(vm.products[i].url)
                                          }
                                      });
     </script>
