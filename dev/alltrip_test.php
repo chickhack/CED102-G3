@@ -10,7 +10,7 @@ session_start();
                 "spot_id" => $_POST["spot_id"]
             );
             $_SESSION["trip-cart"][$count] =$item_array;
-            echo '<script>window.location="alltrip_test.php"</script>';
+            // echo '<script>window.location="alltrip_test.php"</script>';
         }else{
             echo "<script>alert('已加入我的行程')</script>";
             echo "<script>window.location ='alltrip_test.php'</script>";
@@ -19,8 +19,9 @@ session_start();
         $item_array = array(
             "spot_id" => $_POST["spot_id"]
         );
-    };
-    $_SESSION["trip-cart"][0] = $item_array;
+    
+        $_SESSION["trip-cart"][0] = $item_array;
+    }
  }
  
 ?>
@@ -53,7 +54,7 @@ session_start();
 </head>
 
 <body>
-<header>
+    <header>
         <nav id="nav">
             <div class="logo">
                 <h1><a href="home.html">SPACED</a></h1>
@@ -141,20 +142,21 @@ session_start();
             <div class="first_right padding_top_4">
                 <div class="hottrip ">
                     <div v-for="item in planets.slice(0,3)" :key="item.spot_no" class="planet_top">
-                    <form class="card" action="alltrip_test.php" method="post">
-                    <a href="trip.html">
-                            <img :src="item.spot_pic" class="planet" alt="planet">
-                            <img :src="item.spot_pics" class="planet_a1" alt="planettrip">
-                            <div class="word line_low">
-                                <h3 class="hot">精選景點</h3>
-                                <h4>{{item.spot_name}}</h3>
-                                    <small class="tag margin_top_3">{{item.spot_lv}}</small>
-                                    <small class="tag">{{item.miles}}積分</small>
-                                    <h4 class="price">${{item.spot_price}}</h4>
-                        </a>
-                        <button type="submit" name="add" class="addin small myTrip" ><img class="plus" src="./img/icon/plus.png" alt="">加入我的行程
-                        </button>
-                        <!-- <input type="hidden" name="spot_id" :value="card.spot_no"> -->
+                        <form class="card" action="alltrip_test.php" method="post">
+                            <a href="trip.html">
+                                <img :src="item.spot_pic" class="planet" alt="planet">
+                                <img :src="item.spot_pics" class="planet_a1" alt="planettrip">
+                                <div class="word line_low">
+                                    <h3 class="hot">精選景點</h3>
+                                    <h4>{{item.spot_name}}</h3>
+                                        <small class="tag margin_top_3">{{item.spot_lv}}</small>
+                                        <small class="tag">{{item.miles}}積分</small>
+                                        <h4 class="price">${{item.spot_price}}</h4>
+                            </a>
+                            <button type="submit" name="add" class="addin small myTrip"><img class="plus"
+                                    src="./img/icon/plus.png" alt="">加入我的行程
+                            </button>
+                            <!-- <input type="hidden" name="spot_id" :value="card.spot_no"> -->
                         </form>
                     </div>
 
@@ -211,20 +213,20 @@ session_start();
             <h3 class="padding_top_5 alltrip ">月球景點</h3>
             <div class="tripcard_all  margin_top_5">
                 <div v-for="item in spot1.slice(0,3)" class="tripcard ">
-                <form class="card" action="alltrip_test.php" method="post">
-                    <a href="trip.html">
-                        <img :src="item.spot_pic1" class="spot_pic" alt="spot_pic">
-                        <div class="content line_low">
-                            <h4 class="hot2 margin_top_1">{{item.spot_name}}</h4>
-                            <small class="tag">{{item.spot_lv}}</small>
-                            <small class="tag">{{item.miles}}積分</small>
-                            <h3 class="price2 margin_top_2">${{item.spot_price}}</h3>
-                        </div>
-                    </a>
-                    <button type="submit" name="add" class="addin2 small margin_top_2 myTrip"><img class="plus" src="./img/icon/plus.png"
-                            alt="">加入我的行程</button>
-                    <!-- <div class="trip_bookmark" id="bookmark"></div> -->
-            </form>
+                    <form class="card" action="alltrip_test.php" method="post">
+                        <a href="trip.html">
+                            <img :src="item.spot_pic1" class="spot_pic" alt="spot_pic">
+                            <div class="content line_low">
+                                <h4 class="hot2 margin_top_1">{{item.spot_name}}</h4>
+                                <small class="tag">{{item.spot_lv}}</small>
+                                <small class="tag">{{item.miles}}積分</small>
+                                <h3 class="price2 margin_top_2">${{item.spot_price}}</h3>
+                            </div>
+                        </a>
+                        <button type="submit" name="add" class="addin2 small margin_top_2 myTrip"><img class="plus"
+                                src="./img/icon/plus.png" alt="">加入我的行程</button>
+                        <!-- <div class="trip_bookmark" id="bookmark"></div> -->
+                    </form>
                 </div>
 
             </div>
@@ -232,41 +234,41 @@ session_start();
             <h3 class="padding_top_5 alltrip ">火星景點</h3>
             <div class="tripcard_all  margin_top_5">
                 <div v-for="item in spot2.slice(3,6)" class="tripcard ">
-                <form class="card" action="alltrip_test.php" method="post">
+                    <form class="card" action="alltrip_test.php" method="post">
 
-                    <a href="trip.html">
-                        <img :src="item.spot_pic1" class="spot_pic" alt="spot_pic">
-                        <div class="content line_low">
-                            <h4 class="hot2 margin_top_1">{{item.spot_name}}</h4>
-                            <small class="tag">{{item.spot_lv}}</small>
-                            <small class="tag">{{item.miles}}積分</small>
-                            <h3 class="price2 margin_top_2">${{item.spot_price}}</h3>
-                        </div>
-                    </a>
-                    <button type="submit" name="add" class="addin2 small margin_top_2 myTrip"><img class="plus" src="./img/icon/plus.png"
-                            alt="">加入我的行程</button>
-                    <!-- <div class="trip_bookmark" id="bookmark"></div> -->
-            </form>
+                        <a href="trip.html">
+                            <img :src="item.spot_pic1" class="spot_pic" alt="spot_pic">
+                            <div class="content line_low">
+                                <h4 class="hot2 margin_top_1">{{item.spot_name}}</h4>
+                                <small class="tag">{{item.spot_lv}}</small>
+                                <small class="tag">{{item.miles}}積分</small>
+                                <h3 class="price2 margin_top_2">${{item.spot_price}}</h3>
+                            </div>
+                        </a>
+                        <button type="submit" name="add" class="addin2 small margin_top_2 myTrip"><img class="plus"
+                                src="./img/icon/plus.png" alt="">加入我的行程</button>
+                        <!-- <div class="trip_bookmark" id="bookmark"></div> -->
+                    </form>
                 </div>
             </div>
             <h3 class="padding_top_5 alltrip ">木星景點</h3>
             <div class="tripcard_all  margin_top_5">
                 <div v-for="item in spot3.slice(6,9)" class="tripcard ">
-                <form class="card" action="alltrip_test.php" method="post">
+                    <form class="card" action="alltrip_test.php" method="post">
 
-                <a href="trip.html">
-                        <img :src="item.spot_pic1" class="spot_pic" alt="spot_pic">
-                        <div class="content line_low">
-                            <h4 class="hot2 margin_top_1">{{item.spot_name}}</h4>
-                            <small class="tag">{{item.spot_lv}}</small>
-                            <small class="tag">{{item.miles}}積分</small>
-                            <h3 class="price2 margin_top_2">${{item.spot_price}}</h3>
-                        </div>
-                    </a>
-                    <button type="submit" name="add" class="addin2 small margin_top_2 myTrip"><img class="plus" src="./img/icon/plus.png"
-                            alt="">加入我的行程</button>
-                    <!-- <div class="trip_bookmark" id="bookmark"></div> -->
-            </form>
+                        <a href="trip.html">
+                            <img :src="item.spot_pic1" class="spot_pic" alt="spot_pic">
+                            <div class="content line_low">
+                                <h4 class="hot2 margin_top_1">{{item.spot_name}}</h4>
+                                <small class="tag">{{item.spot_lv}}</small>
+                                <small class="tag">{{item.miles}}積分</small>
+                                <h3 class="price2 margin_top_2">${{item.spot_price}}</h3>
+                            </div>
+                        </a>
+                        <button type="submit" name="add" class="addin2 small margin_top_2 myTrip"><img class="plus"
+                                src="./img/icon/plus.png" alt="">加入我的行程</button>
+                        <!-- <div class="trip_bookmark" id="bookmark"></div> -->
+                    </form>
                 </div>
             </div>
         </div>
@@ -295,23 +297,25 @@ session_start();
 
     <!-- go top -->
     <script>
-        $(document).ready(function () {
-            // Show or hide the sticky footer button
-            $(window).scroll(function () {
-                if ($(this).scrollTop() > 200) {
-                    $('.go-top').fadeIn(200);
-                } else {
-                    $('.go-top').fadeOut(200);
-                }
-            });
-
-            // Animate the scroll to top
-            $('.go-top').click(function (event) {
-                event.preventDefault();
-
-                $('html, body').animate({ scrollTop: 0 }, 900);
-            })
+    $(document).ready(function() {
+        // Show or hide the sticky footer button
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+                $('.go-top').fadeIn(200);
+            } else {
+                $('.go-top').fadeOut(200);
+            }
         });
+
+        // Animate the scroll to top
+        $('.go-top').click(function(event) {
+            event.preventDefault();
+
+            $('html, body').animate({
+                scrollTop: 0
+            }, 900);
+        })
+    });
     </script>
 
     <!-- 第一屏火星背景 -->
@@ -319,27 +323,27 @@ session_start();
 
     <!-- vue -->
     <!-- <script src="./js/alltrip.js"></script> -->
-     <!-- vue -->
-     <script>
+    <!-- vue -->
+    <script>
     let vm = new Vue({
-    el: "#app",
-    data: {
-        planets: [],
-        spot1: [],
-        spot2: [],
-        spot3: [],
-    
-    },
-    mounted() {
-        console.log("load");
-        fetch('./php/getSelectTrip.php').then(res => res.json()).then(res => this.planets = res);
-        console.log(this.planets);
-        fetch('./php/getMoon.php').then(res => res.json()).then(res => this.spot1 = res);
-        fetch('./php/getMars.php').then(res => res.json()).then(res => this.spot2 = res);
-        fetch('./php/getJupiter.php').then(res => res.json()).then(res => this.spot3 = res);
-    },
-});
-</script>
+        el: "#app",
+        data: {
+            planets: [],
+            spot1: [],
+            spot2: [],
+            spot3: [],
+
+        },
+        mounted() {
+            console.log("load");
+            fetch('./php/getSelectTrip.php').then(res => res.json()).then(res => this.planets = res);
+            console.log(this.planets);
+            fetch('./php/getMoon.php').then(res => res.json()).then(res => this.spot1 = res);
+            fetch('./php/getMars.php').then(res => res.json()).then(res => this.spot2 = res);
+            fetch('./php/getJupiter.php').then(res => res.json()).then(res => this.spot3 = res);
+        },
+    });
+    </script>
 
 
 
