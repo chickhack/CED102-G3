@@ -20,7 +20,7 @@
 
   <body>
       <header>@@include('./layout/header.html')</header>
-    <div class="container-fluid">
+      <div class="container-fluid">
         <section class="login_container col-12">
         <div class="login_banner col-3">
             <h2>加入 SPACED</h2>
@@ -65,8 +65,9 @@
 
         </section>
     </div>
-    <!-- toggle password visibility -->
     <script>
+
+        // 切換密碼可見
         $(".toggle-password").click(function() {
 
         $(this).toggleClass("fa-eye fa-eye-slash");

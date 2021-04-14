@@ -20,22 +20,31 @@ button:hover{
     background: $gold;
 }
 
-//背景影片
+
+//=========背景影片
 .video-bg{
     height: 100vh;
     overflow: hidden;
 }
-.video-overlay{
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(109, 13, 13) 75%);
+.video-overlay {
     position: absolute;
-    height: 100vh;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(255,255,255,0) 70%, rgba(12,13,24,1) 100%);
+    z-index: 2;
+    .overlay-off & {
+        z-index: 0;
+    }
 }
+      
 @media only screen and ( max-width:1200px) {
     .banner_bg{
         height: 100vh;
     }
 }
-//整頁邊框
+//=========整頁邊框
 
 .frame{
     border: 1px solid #ad6e4a57;
@@ -43,13 +52,13 @@ button:hover{
 }
 
 
-//按鈕
+//=========按鈕
 button{
     background-color: transparent;
     color: $gold;
 }
 
-
+//=========首頁標語
 .banner{
     position: absolute;
     top: 40%;
@@ -63,7 +72,8 @@ button{
             color: white;
             font-family: "Haettenschweiler", sans-serif;
             letter-spacing:15px;
-            opacity: 0.8;
+            // opacity: 0.8;
+            box-shadow: grey;
         }
     }
     .scroll{
@@ -220,6 +230,7 @@ button{
     position: relative;
     top: 0;
     right:0;
+    
 }
 .planet_box{
     margin-top: 65vh;
