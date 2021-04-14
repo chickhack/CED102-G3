@@ -1,3 +1,32 @@
+<?php
+session_start();
+ if(isset($_POST["add"])){
+     if(isset($_SESSION["trip-cart"])){
+        $item_array_id = array_column($_SESSION["trip-cart"],"spot_id"); 
+     
+        if(!in_array($_POST["spot_id"], $item_array_id)){
+            $count = count($_SESSION["trip-cart"]);
+            $item_array = array(
+                "spot_id" => $_POST["spot_id"]
+            );
+            $_SESSION["trip-cart"][$count] =$item_array;
+            echo '<script>window.location="alltrip_test.php"</script>';
+        }else{
+            echo "<script>alert('已加入我的行程')</script>";
+            echo "<script>window.location ='alltrip_test.php'</script>";
+    }
+}else{
+        $item_array = array(
+            "spot_id" => $_POST["spot_id"]
+        );
+    };
+    $_SESSION["trip-cart"][0] = $item_array;
+ }
+ 
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -24,7 +53,64 @@
 </head>
 
 <body>
-    <header>@@include('./layout/header.html')</header>
+<header>
+        <nav id="nav">
+            <div class="logo">
+                <h1><a href="home.html">SPACED</a></h1>
+            </div>
+            <ul class="nav-links">
+                <li class="margin_left_5"><a href="alltrip.html">星球景點</a></li>
+                <li class="margin_left_5"><a href="planet.html">星星世界</a></li>
+                <li class="margin_left_5"><a href="shop.html">星球商城</a></li>
+                <li class="margin_left_5"><a href="photowall.html">太空互動</a></li>
+                <li class="margin_left_5"><a href="Leaderboard.html">玩家排行</a></li>
+                <!-- <li><a href=""><img src="./images/ticket.png" alt="" class="icon"></a></li>
+        <li><a href=""><img src="./images/shopping-cart_(1).png" alt="" class="icon"></a></li>
+        <li><a href=""><img src="./images/round-account-button-with-user-inside_(1).png" alt="" class="icon"></a></li> -->
+            </ul>
+            <ul class="nav-icons">
+                <li class="nav-trip">
+                    <a href="./car-itineray.php">
+                        <img src="./img/icon/header/luggage.png" alt="" class="icon" />
+                        <?php
+                        if(isset($_SESSION["trip-cart"])){
+                            $count = count($_SESSION["trip-cart"]);
+                            echo "<div class='trip-count'>$count</div>";
+                        }else{
+                            echo "";
+                        }
+                     ?>
+                    </a>
+                </li>
+                <li class="nav-cart">
+                    <a href="./shop_cart.php">
+                        <img src="./img/icon/header/shopping-cart_(1).png" alt="" class="icon" />
+                        <?php
+                if(isset($_SESSION["cart"])){
+                    $count = count($_SESSION["cart"]);
+                    echo "<div class='count'>$count</div>";
+                }else{
+                    echo "";
+                }
+            ?>
+                    </a>
+                </li>
+                <li>
+                    <a href="./login.html"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png"
+                            alt="" class="icon" /></a>
+                </li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+
+        <script src="./js/header.js"></script>
+
+
+    </header>
 
     <!-- 動態背景 -->
     <div id="particles-js">
@@ -55,7 +141,8 @@
             <div class="first_right padding_top_4">
                 <div class="hottrip ">
                     <div v-for="item in planets.slice(0,3)" :key="item.spot_no" class="planet_top">
-                        <a href="trip.html">
+                    <form class="card" action="alltrip_test.php" method="post">
+                    <a href="trip.html">
                             <img :src="item.spot_pic" class="planet" alt="planet">
                             <img :src="item.spot_pics" class="planet_a1" alt="planettrip">
                             <div class="word line_low">
@@ -65,8 +152,10 @@
                                     <small class="tag">{{item.miles}}積分</small>
                                     <h4 class="price">${{item.spot_price}}</h4>
                         </a>
-                        <button class="addin small myTrip" ><img class="plus" src="./img/icon/plus.png" alt="">加入我的行程
+                        <button type="submit" name="add" class="addin small myTrip" ><img class="plus" src="./img/icon/plus.png" alt="">加入我的行程
                         </button>
+                        <!-- <input type="hidden" name="spot_id" :value="card.spot_no"> -->
+                        </form>
                     </div>
 
                 </div>
@@ -122,6 +211,7 @@
             <h3 class="padding_top_5 alltrip ">月球景點</h3>
             <div class="tripcard_all  margin_top_5">
                 <div v-for="item in spot1.slice(0,3)" class="tripcard ">
+                <form class="card" action="alltrip_test.php" method="post">
                     <a href="trip.html">
                         <img :src="item.spot_pic1" class="spot_pic" alt="spot_pic">
                         <div class="content line_low">
@@ -131,9 +221,10 @@
                             <h3 class="price2 margin_top_2">${{item.spot_price}}</h3>
                         </div>
                     </a>
-                    <button class="addin2 small margin_top_2 myTrip"><img class="plus" src="./img/icon/plus.png"
+                    <button type="submit" name="add" class="addin2 small margin_top_2 myTrip"><img class="plus" src="./img/icon/plus.png"
                             alt="">加入我的行程</button>
                     <!-- <div class="trip_bookmark" id="bookmark"></div> -->
+            </form>
                 </div>
 
             </div>
@@ -141,6 +232,8 @@
             <h3 class="padding_top_5 alltrip ">火星景點</h3>
             <div class="tripcard_all  margin_top_5">
                 <div v-for="item in spot2.slice(3,6)" class="tripcard ">
+                <form class="card" action="alltrip_test.php" method="post">
+
                     <a href="trip.html">
                         <img :src="item.spot_pic1" class="spot_pic" alt="spot_pic">
                         <div class="content line_low">
@@ -150,16 +243,18 @@
                             <h3 class="price2 margin_top_2">${{item.spot_price}}</h3>
                         </div>
                     </a>
-                    <button class="addin2 small margin_top_2 myTrip"><img class="plus" src="./img/icon/plus.png"
+                    <button type="submit" name="add" class="addin2 small margin_top_2 myTrip"><img class="plus" src="./img/icon/plus.png"
                             alt="">加入我的行程</button>
                     <!-- <div class="trip_bookmark" id="bookmark"></div> -->
-                    
+            </form>
                 </div>
             </div>
             <h3 class="padding_top_5 alltrip ">木星景點</h3>
             <div class="tripcard_all  margin_top_5">
                 <div v-for="item in spot3.slice(6,9)" class="tripcard ">
-                    <a href="trip.html">
+                <form class="card" action="alltrip_test.php" method="post">
+
+                <a href="trip.html">
                         <img :src="item.spot_pic1" class="spot_pic" alt="spot_pic">
                         <div class="content line_low">
                             <h4 class="hot2 margin_top_1">{{item.spot_name}}</h4>
@@ -168,9 +263,10 @@
                             <h3 class="price2 margin_top_2">${{item.spot_price}}</h3>
                         </div>
                     </a>
-                    <button class="addin2 small margin_top_2 myTrip"><img class="plus" src="./img/icon/plus.png"
+                    <button type="submit" name="add" class="addin2 small margin_top_2 myTrip"><img class="plus" src="./img/icon/plus.png"
                             alt="">加入我的行程</button>
                     <!-- <div class="trip_bookmark" id="bookmark"></div> -->
+            </form>
                 </div>
             </div>
         </div>
@@ -178,7 +274,21 @@
 
     <a href="#" class="go-top"></a>
 
-    <footer>@@include('./layout/footer.html')</footer>
+    <footer class="padding_top_10">
+        <div class="links">
+            <div class="logo"><img src="./img/logo.png" alt=""></div>
+            <ul class="footer-links margin_top_2">
+                <li><a href="alltrip.html">星球景點</a></li>
+                <li><a href="planet.html">星星世界</a></li>
+                <li><a href="shop.html">星球商城</a></li>
+                <li><a href="photowall.html">太空互動</a></li>
+                <li><a href="Leaderboard.html">玩家排行</a></li>
+            </ul>
+        </div>
+        <img src="./img/footer_moon.png" alt="" class="footer_moon">
+        <img src="./img/smoke.png" alt="" class="smoke">
+    </footer>
+
 
 
 
@@ -208,28 +318,28 @@
     <script src="./js/marsbackground.js"></script>
 
     <!-- vue -->
-    <script src="./js/alltrip.js"></script>
-    <!-- save -->
-    <script>
-        function switchFavorite() {
-            let bookmark = document.getElementById("bookmark");
-            
-            if (bookmark.title == "save") {
-                bookmark.src = "./img/icon/bookmark-ribbon.png";
-                bookmark.title = "cancel";
-            } else {
-                bookmark.src = "./img/icon/bookmark-outline.png";
-                bookmark.title = "save";
-            }
-        }
-
-        function init() {
-            let bookmark = document.getElementById("bookmark");
-            bookmark.onclick = switchFavorite;
-        }
-
-        window.addEventListener("load", init, false);
-    </script>
+    <!-- <script src="./js/alltrip.js"></script> -->
+     <!-- vue -->
+     <script>
+    let vm = new Vue({
+    el: "#app",
+    data: {
+        planets: [],
+        spot1: [],
+        spot2: [],
+        spot3: [],
+    
+    },
+    mounted() {
+        console.log("load");
+        fetch('./php/getSelectTrip.php').then(res => res.json()).then(res => this.planets = res);
+        console.log(this.planets);
+        fetch('./php/getMoon.php').then(res => res.json()).then(res => this.spot1 = res);
+        fetch('./php/getMars.php').then(res => res.json()).then(res => this.spot2 = res);
+        fetch('./php/getJupiter.php').then(res => res.json()).then(res => this.spot3 = res);
+    },
+});
+</script>
 
 
 
