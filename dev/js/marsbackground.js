@@ -3,7 +3,7 @@ let clock = new THREE.Clock();
 const imgLoc = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/";
 let camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 10000),
     light = new THREE.PointLight(0xFFFFFF, 2, 4000);
-camera.position.set(1300, 0, 0),
+camera.position.set(1400, 0, 0),
 
     scene = new THREE.Scene();
 // scene.background = new THREE.Color(0x0c0d18);

@@ -59,10 +59,10 @@ nav{
         margin: 5px;
         transition: all .3s ease;
     }
-    .nav-cart{
+    .nav-cart .nav-trip{
         cursor: pointer;
         position: relative;
-        .count{
+        .count .trip-count{
             width: 25px;
             height: 25px;
             background-color: $gold;
