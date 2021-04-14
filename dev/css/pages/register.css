@@ -422,12 +422,12 @@ nav .burger div {
   transition: all .3s ease;
 }
 
-nav .nav-cart {
+nav .nav-cart .nav-trip {
   cursor: pointer;
   position: relative;
 }
 
-nav .nav-cart .count {
+nav .nav-cart .nav-trip .count .trip-count {
   width: 25px;
   height: 25px;
   background-color: #AD6E4A;
@@ -441,13 +441,13 @@ nav .nav-cart .count {
 }
 
 @media all and (max-width: 992px) {
-  nav .nav-cart .count {
+  nav .nav-cart .nav-trip .count .trip-count {
     transform: translate(100%, -150%);
   }
 }
 
 @media all and (max-width: 768px) {
-  nav .nav-cart .count {
+  nav .nav-cart .nav-trip .count .trip-count {
     transform: translate(40%, -170%);
     width: 20px;
     height: 20px;

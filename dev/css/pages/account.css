@@ -422,12 +422,12 @@ nav .burger div {
   transition: all .3s ease;
 }
 
-nav .nav-cart {
+nav .nav-cart .nav-trip {
   cursor: pointer;
   position: relative;
 }
 
-nav .nav-cart .count {
+nav .nav-cart .nav-trip .count .trip-count {
   width: 25px;
   height: 25px;
   background-color: #AD6E4A;
@@ -441,13 +441,13 @@ nav .nav-cart .count {
 }
 
 @media all and (max-width: 992px) {
-  nav .nav-cart .count {
+  nav .nav-cart .nav-trip .count .trip-count {
     transform: translate(100%, -150%);
   }
 }
 
 @media all and (max-width: 768px) {
-  nav .nav-cart .count {
+  nav .nav-cart .nav-trip .count .trip-count {
     transform: translate(40%, -170%);
     width: 20px;
     height: 20px;
@@ -1076,12 +1076,12 @@ nav .burger div {
   transition: all .3s ease;
 }
 
-nav .nav-cart {
+nav .nav-cart .nav-trip {
   cursor: pointer;
   position: relative;
 }
 
-nav .nav-cart .count {
+nav .nav-cart .nav-trip .count .trip-count {
   width: 25px;
   height: 25px;
   background-color: #AD6E4A;
@@ -1095,13 +1095,13 @@ nav .nav-cart .count {
 }
 
 @media all and (max-width: 992px) {
-  nav .nav-cart .count {
+  nav .nav-cart .nav-trip .count .trip-count {
     transform: translate(100%, -150%);
   }
 }
 
 @media all and (max-width: 768px) {
-  nav .nav-cart .count {
+  nav .nav-cart .nav-trip .count .trip-count {
     transform: translate(40%, -170%);
     width: 20px;
     height: 20px;
@@ -2102,12 +2102,12 @@ nav .burger div {
   transition: all .3s ease;
 }
 
-nav .nav-cart {
+nav .nav-cart .nav-trip {
   cursor: pointer;
   position: relative;
 }
 
-nav .nav-cart .count {
+nav .nav-cart .nav-trip .count .trip-count {
   width: 25px;
   height: 25px;
   background-color: #AD6E4A;
@@ -2121,13 +2121,13 @@ nav .nav-cart .count {
 }
 
 @media all and (max-width: 992px) {
-  nav .nav-cart .count {
+  nav .nav-cart .nav-trip .count .trip-count {
     transform: translate(100%, -150%);
   }
 }
 
 @media all and (max-width: 768px) {
-  nav .nav-cart .count {
+  nav .nav-cart .nav-trip .count .trip-count {
     transform: translate(40%, -170%);
     width: 20px;
     height: 20px;
@@ -3016,12 +3016,12 @@ nav .burger div {
   transition: all .3s ease;
 }
 
-nav .nav-cart {
+nav .nav-cart .nav-trip {
   cursor: pointer;
   position: relative;
 }
 
-nav .nav-cart .count {
+nav .nav-cart .nav-trip .count .trip-count {
   width: 25px;
   height: 25px;
   background-color: #AD6E4A;
@@ -3035,13 +3035,13 @@ nav .nav-cart .count {
 }
 
 @media all and (max-width: 992px) {
-  nav .nav-cart .count {
+  nav .nav-cart .nav-trip .count .trip-count {
     transform: translate(100%, -150%);
   }
 }
 
 @media all and (max-width: 768px) {
-  nav .nav-cart .count {
+  nav .nav-cart .nav-trip .count .trip-count {
     transform: translate(40%, -170%);
     width: 20px;
     height: 20px;
@@ -3370,7 +3370,7 @@ div.bk3 {
 
 .first .first_right .hottrip {
   display: inline-flex;
-  padding-top: 64px;
+  padding-top: 80px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
@@ -3543,7 +3543,7 @@ div.bk3 {
   text-align: center;
   background-color: rgba(25, 25, 25, 0.3);
   padding: 48px;
-  margin-top: 120px;
+  margin-top: 144px;
 }
 
 .stepsection .stepall {
@@ -3633,6 +3633,18 @@ div.bk3 {
 .second .tripcard_all .tripcard:hover {
   transform: translateY(0.2em);
   box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+.second .tripcard_all .tripcard.tripcard:nth-child(1) {
+  animation: float 4s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+}
+
+.second .tripcard_all .tripcard.tripcard:nth-child(2) {
+  animation: float 4.5s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+}
+
+.second .tripcard_all .tripcard.tripcard:nth-child(3) {
+  animation: float 5s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
