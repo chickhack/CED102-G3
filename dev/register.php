@@ -23,9 +23,8 @@
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css"
     />
-    <link rel="stylesheet" type="text/css" href="../css/pages/register.css" />
+    <link rel="stylesheet" type="text/css" href="./css/pages/register.css" />
   </head>
-  <body>
   <body>
     <nav id="nav">
   <div class="logo">
@@ -80,8 +79,8 @@
         <div class="rightbox col-8 col-sm-9">
 
             <div class="return_btn margin_left_2">
-                <span><a href="../login.html"><<</a></span>
-                <h4><a href="../login.html">返回登入頁面</a></h4>
+                <span><a href="./login.php"><<</a></span>
+                <h4><a href="./login.php">返回登入頁面</a></h4>
             </div>
             <div class="modal-dialog">
                 <div class="col-sm-9 main-section">
@@ -99,7 +98,7 @@
                                 <input type="password" id="confirm_password" class="form-control" placeholder="請重新輸入密碼" required></input>
                             </div>
                             <span id='message'></span>
-                            <button type="submit" class="button_min margin_top_3" id="register" name="create">註冊</button>
+                            <input type="submit" class="button_min margin_top_3" id="register" name="create" value="註冊"></input>
                             </form>
                         </div>
                     </div>
@@ -179,9 +178,8 @@
             }
         }; 
 
-        window.addEventlistener("load", function(){
-
-            $id('register_form').onsubmit = validatePassword(e);
+        window.addEventListener("load", function(){
+            $id('register_form').onsubmit = validatePassword;
         })
         
         
