@@ -427,14 +427,32 @@ nav .nav-cart {
 }
 
 nav .nav-cart .count {
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   background-color: #AD6E4A;
   border-radius: 50%;
   text-align: center;
-  line-height: 1.25rem;
+  line-height: 1.5rem;
   position: absolute;
-  transform: translate(50%, -50%);
+  transform: translate(50%, -150%);
+  display: block;
+  color: white;
+}
+
+@media all and (max-width: 992px) {
+  nav .nav-cart .count {
+    transform: translate(100%, -150%);
+  }
+}
+
+@media all and (max-width: 768px) {
+  nav .nav-cart .count {
+    transform: translate(40%, -170%);
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    line-height: 1.25rem;
+  }
 }
 
 @media (max-width: 992px) {
@@ -620,10 +638,30 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
+.go-top {
+  font-family: "Proxima Nova";
+  position: fixed;
+  bottom: 80px;
+  right: 80px;
+  text-decoration: none;
+  background-image: url(../../img/icon/TOP.png);
+  width: 28px;
+  height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+}
+
 #marsloc {
-  top: 15vh;
-  left: 5%;
+  top: 10vh;
+  left: 0;
   position: absolute;
+}
+
+@media all and (max-width: 1200px) {
+  #marsloc {
+    display: none;
+  }
 }
 
 div.bk3 {
@@ -701,6 +739,8 @@ div.bk3 {
   top: 18vh;
   letter-spacing: 10px;
   font-size: 36px;
+  color: #C9ADA7;
+  animation: h2 1.2s infinite;
 }
 
 @media all and (max-width: 1200px) {
@@ -722,7 +762,7 @@ div.bk3 {
 }
 
 .first .first_right {
-  width: 50%;
+  width: 53%;
   position: relative;
 }
 
@@ -749,8 +789,8 @@ div.bk3 {
   padding-top: 90px;
   text-align: center;
   width: 55%;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 .first .first_right .hottrip div.planet_top:hover {
@@ -794,7 +834,7 @@ div.bk3 {
 }
 
 .first .first_right .hottrip div.planet_top img.planet_a1 {
-  max-width: 280px;
+  max-width: 270px;
 }
 
 .first .first_right .hottrip div.planet_top img.planet_a1:hover {
@@ -856,6 +896,15 @@ div.bk3 {
   background-color: #bf896b;
 }
 
+@keyframes h2 {
+  0% {
+    text-shadow: 0 0 6px #FFF;
+  }
+  100% {
+    text-shadow: 0 0 0px #000;
+  }
+}
+
 .tripselect {
   display: inline-flex;
   width: 280px;
@@ -899,6 +948,7 @@ div.bk3 {
   text-align: center;
   background-color: rgba(25, 25, 25, 0.3);
   padding: 48px;
+  margin-top: 120px;
 }
 
 .stepsection .stepall {
@@ -988,18 +1038,6 @@ div.bk3 {
 .second .tripcard_all .tripcard:hover {
   transform: translateY(0.2em);
   box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
-}
-
-.second .tripcard_all .tripcard.tripcard:nth-child(1) {
-  animation: float 4s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
-}
-
-.second .tripcard_all .tripcard.tripcard:nth-child(2) {
-  animation: float 4.5s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
-}
-
-.second .tripcard_all .tripcard.tripcard:nth-child(3) {
-  animation: float 5s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -1092,19 +1130,5 @@ div.bk3 {
 
 .second .tripcard_all .tripcard .trip_bookmark:hover {
   background-image: url(../../img/icon/bookmark_hover.png);
-}
-
-.go-top {
-  font-family: "Proxima Nova";
-  position: fixed;
-  bottom: 80px;
-  right: 80px;
-  text-decoration: none;
-  background-image: url(../../img/icon/TOP.png);
-  width: 28px;
-  height: 100px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
 }
 /*# sourceMappingURL=alltrip.css.map */
