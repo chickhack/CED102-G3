@@ -1,16 +1,5 @@
 <?php
-// require_once("./php/connectbooks_kai.php");
-
-// try {
-// 	$sql = "select * from g3";
-// 	$tops = $pdo->query($sql);  //執行指令
-// } catch (PDOException $e) {
-// 	// echo "系統忙碌, 請通知系統維護人員~";
-// 	echo "錯誤原因 : ", $e->getMessage(), "<br>";
-// 	echo "錯誤行號 : ", $e->getLine(), "<br>";	
-// }
-
-
+8
 session_start();
  if(isset($_POST["add"])){
      if(isset($_SESSION["trip-cart"])){
@@ -123,7 +112,7 @@ session_start();
     <div id="particles-js">
         <script src="./js/background.js"></script>
     </div>
-    
+    <div id="app">
         <!-- Slider main container -->
         <div class="swiper-container">
             <!-- Additional required wrapper -->
@@ -141,7 +130,7 @@ session_start();
             <div class="swiper-pagination"></div>
 
         </div>
-        <div id="app">
+       
         <div class="parent_container">
             <div class="up_container">
                 <main class="trip_content_all margin_left_3">
