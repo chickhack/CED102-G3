@@ -40,7 +40,7 @@
         </div>
         <div class="div-right">
                     <div class="div-right-span padding_top_3 margin_left_3">
-                        <button class="btn-updata">＋新增</button>
+                        <button type="button" class="btn-updata" onclick="open11()">＋新增</button>
                         <div class="span-1 margin_left_3">
                             <label for="search1">
 
@@ -70,10 +70,44 @@
                         <p class="wi-10 text-1">1</p>
                         <p class="wi-10 text-1">1</p>
                         <!-- <p class="wi-15 text-1">1</p> -->
-                    </div>          
+                    </div>
+                    <div id="linebox">
+                        <div class="upbox">
+                            <form action="./php/updatabackstage.php" method="POST" enctype="multipart/form-data">
+
+                                <input type="number" placeholder="景點編號" name="spot_no" disabled>
+                                <input type="text" placeholder="景點名稱" name="spot_name">
+                                <input type="file" name="spot_pic">
+                                <input type="text" placeholder="等級初星者或天星者" name="spot_lv">
+                                <input type="text" placeholder="景點內容" name="spot_info">
+                                <input type="text" placeholder="景點說明" name="spot_intro">
+                                <input type="text" placeholder="注意事項" name="spot_dnt">
+                                <input type="number" placeholder="景點狀態" name="spot_status" min="0" max="1">
+                                <input type="number" placeholder="精選景點狀態" name="spot_s_status" min="0" max="1">
+                                <input type="number" placeholder="輸入價格" name="spot_price">
+                                <input type="number" placeholder="輸入積分" name="miles"> 
+                                <input type="submit">       
+                            </form>
+                            <a href="#" class="clo" onclick="close11()">X</a>
+                        </div>
+                    </div>
         </div>
     </div>
+    
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+<script>
+    var linebox =document.getElementById("linebox");
+function open11(){
+    // alert(1);
+    document.getElementById("linebox").style.display ='block';
 
+}
+function close11(){
+    // alert(1);
+    document.getElementById("linebox").style.display ='none';
+
+}  
+
+</script>
 </body>
 </html>

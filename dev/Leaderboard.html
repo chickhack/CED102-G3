@@ -22,7 +22,50 @@
 </style>
 <body>
    <header>
-      @@include('./layout/header.html')
+      <nav id="nav">
+  <div class="logo">
+    <h1><a href="home.html">SPACED</a></h1>
+  </div>
+  <ul class="nav-links">
+    <li class="margin_left_5"><a href="alltrip.html">星球景點</a></li>
+    <li class="margin_left_5"><a href="planet.html">星星世界</a></li>
+    <li class="margin_left_5"><a href="shop.html">星球商城</a></li>
+    <li class="margin_left_5"><a href="photowall.html">太空互動</a></li>
+    <li class="margin_left_5"><a href="Leaderboard.html">玩家排行</a></li>
+    <!-- <li><a href=""><img src="./images/ticket.png" alt="" class="icon"></a></li>
+        <li><a href=""><img src="./images/shopping-cart_(1).png" alt="" class="icon"></a></li>
+        <li><a href=""><img src="./images/round-account-button-with-user-inside_(1).png" alt="" class="icon"></a></li> -->
+  </ul>
+  <ul class="nav-icons">
+    <li>
+      <a href="./car-itineray.html"
+        ><img src="./img/icon/header/luggage.png" alt="" class="icon"
+      /></a>
+    </li>
+    <li class="nav-cart">
+      <a href="./shop_cart.html">
+        <img src="./img/icon/header/shopping-cart_(1).png" alt="" class="icon"/>
+      </a>
+    </li> 
+    <li>
+      <a href="./login.html"
+        ><img
+          src="./img/icon/header/round-account-button-with-user-inside_(1).png"
+          alt=""
+          class="icon"
+      /></a>
+    </li>
+  </ul>
+  <div class="burger">
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line3"></div>
+  </div>
+</nav>
+
+<script src="./js/header.js"></script>
+
+
    </header>
    <div id="particles-js">
       <!-- 動態背景 -->
@@ -66,8 +109,8 @@
         <div class="col-10 text-color-1 line-he-65 hovers" id="top-1" >
                <div class="row justify-content-center"> 
                   <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-65"><img :src="leve.top1src" alt="" class="leve-1"></div>
-                  <div class="col-4 col-xxl-2 col-md-2 text-01 line-he-65"><img :src="to.meSrc" alt="" class="icon-3">{{top1.last_name}}{{top1.first_name}}</div>
-                  <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-65 del"><img :src="to.lvSrc" alt="" class="leve-1"></div>
+                  <div class="col-4 col-xxl-2 col-md-2 text-01 line-he-65"><img :src="top1.mem_pic" alt="" class="icon-3">{{top1.last_name}}{{top1.first_name}}</div>
+                  <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-65 del"><img V-if="top1.mem_lv == '天星者'" :src="medal.medalSrc1"  alt="" class="leve-1"><img v-else :src="medal.medalSrc2"alt="" class="leve-1"> </div>
                   <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-65">{{top1.miles}}</div>
                   <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-65 del">{{top1.mem_arr}}</div>
                   <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-65 del">{{top1.mem_sp}}</div>
@@ -81,8 +124,8 @@
            <div class="row">
 
             <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-65"><img :src="leve.top2src" alt="" class="leve-1"></div>
-            <div class="col-4 col-xxl-2 col-md-2 text-01 line-he-65"><img :src="to.meSrc" alt="" class="icon-3">{{top2.last_name}}{{top2.first_name}}</div>
-            <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-65 del"><img :src="to.lvSrc" alt="" class="leve-1"></div>
+            <div class="col-4 col-xxl-2 col-md-2 text-01 line-he-65"><img :src="top2.mem_pic" alt="" class="icon-3">{{top2.last_name}}{{top2.first_name}}</div>
+            <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-65 del"><img V-if="top2.mem_lv == '天星者'" :src="medal.medalSrc1"  alt="" class="leve-1"><img v-else :src="medal.medalSrc2"alt="" class="leve-1"> </div>
             <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-65 ">{{top2.miles}}</div>
             <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-65 del">{{top2.mem_arr}}</div>
             <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-65 del">{{top2.mem_sp}}</div>
@@ -93,8 +136,8 @@
             <div class="row">
 
                <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-65"><img :src="leve.top3src" alt="" class="leve-1"></div>
-               <div class="col-4 col-xxl-2 col-md-2 text-01 line-he-65"><img :src="to.meSrc" alt="" class="icon-3">{{top3.last_name}}{{top3.first_name}}</div>
-               <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-65 del"><img :src="to.lvSrc" alt="" class="leve-1"></div>
+               <div class="col-4 col-xxl-2 col-md-2 text-01 line-he-65"><img :src="top3.mem_pic" alt="" class="icon-3">{{top3.last_name}}{{top3.first_name}}</div>
+               <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-65 del"><img V-if="top3.mem_lv == '天星者'" :src="medal.medalSrc1"  alt="" class="leve-1"><img v-else :src="medal.medalSrc2"alt="" class="leve-1"> </div>
                <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-65">{{top3.miles}}</div>
                <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-65 del">{{top3.mem_arr}}</div>
                <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-65 del">{{top3.mem_sp}}</div>
@@ -104,8 +147,8 @@
             <div class="row">
 
                <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-65">{{index+4}}</div>
-               <div class="col-4 col-xxl-2 col-md-2 text-01 line-he-65"><img :src="to1.meSrc" alt="" class="icon-3">{{to1.last_name}}{{to1.first_name}}</div>
-               <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-65 del"><img :src="to1.lvSrc" alt="" class="leve-1"></div>
+               <div class="col-4 col-xxl-2 col-md-2 text-01 line-he-65"><img :src="to1.mem_pic" alt="" class="icon-3">{{to1.last_name}}{{to1.first_name}}</div>
+               <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-65 del"><img V-if="to1.mem_lv == '天星者'" :src="medal.medalSrc1"  alt="" class="leve-1"><img v-else :src="medal.medalSrc2"alt="" class="leve-1"> </div>
                <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-65">{{to1.miles}}</div>
                <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-65 del">{{to1.mem_arr}}</div>
                <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-65 del">{{to1.mem_sp}}</div>
@@ -120,7 +163,22 @@
       
    </div>
    <footer>
-      @@include('./layout/footer.html')
+      <footer class="padding_top_10">
+    <div class="links">
+        <div class="logo"><img src="./img/logo.png" alt=""></div>
+        <ul class="footer-links margin_top_2">
+            <li><a href="alltrip.html">星球景點</a></li>
+            <li><a href="planet.html">星星世界</a></li>
+            <li><a href="shop.html">星球商城</a></li>
+            <li><a href="photowall.html">太空互動</a></li>
+            <li><a href="Leaderboard.html">玩家排行</a></li>
+        </ul>
+    </div>
+    <img src="./img/footer_moon.png" alt="" class="footer_moon">
+    <img src="./img/smoke.png" alt="" class="smoke">
+    
+</footer>
+
   </footer>
    </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
@@ -128,126 +186,42 @@
  var top0= new Vue({
      el:'#top0',
      data:{
-         // me:[],
-         
          me:{
             Lead:88,
             name:'Melody',
             src:'./img/account/lev1.png',
-            mesrc:'./img/icon/ann.png',
+            mesrc:'./img/userprofile/user9.png',
             integral:2023,
             sp:5,
             itin:3,
          },
-         
-        
-        
-     }
+      }
  });
-// var top1 = new Vue({
-//    el:'#top-1',
-//    data:{
-//             to:
-//                   {
-//                      topSrc:'./img/account/026-medal.png',
-                     
-//                      name:'Toru',
-//                      meSrc:'./img/icon/tony.png',
-//                      lvSrc:'./img/account/lev2.png',
-//                      integral:'1700k',
-//                      sp:'7',
-//                      itin:'3', 
-//                   },
-                  
-               
-//          }
-      
-   
-// });
-// var top2 = new Vue({
-//    el:'#top-2',
-//    data:{
-//       to:{
-//             topSrc:'./img/account/019-medal.png',
-//             name:'hasaki',
-//             meSrc:'./img/icon/ann.png',
-//             lvSrc:'./img/account/lev2.png',
-//             integral:'1600k',
-//             sp:'7',
-//             itin:'3',
-//       },
-//    }
-// });
-// var top3 = new Vue({
-//    el:'#top-3',
-//    data:{
-//       to:{
-//             topSrc:'./img/account/049-medal.png',
-//             name:'hasaki',
-//             meSrc:'./img/icon/donn-round.png',
-//             lvSrc:'./img/account/lev2.png',
-//             integral:'1400k',
-//             sp:'7',
-//             itin:'3',
-//       }
-//    }
-// });
+
 var top4 = new Vue({
    el:'#top-4',
    data:{
-      // to:[  
-      //       {
-      //          leve:4,
-      //          name:'Toru',
-      //          meSrc:'./img/icon/donn-round.png',
-      //          lvSrc:'./img/account/lev2.png',
-      //          integral:'1700k',
-      //          sp:'7',
-      //          itin:'3', 
-      //       },
-      //       {
-      //          leve:5,
-      //          name:'Toru',
-      //          meSrc:'./img/icon/tony.png',
-      //          lvSrc:'./img/account/lev2.png',
-      //          integral:'1700k',
-      //          sp:'7',
-      //          itin:'3', 
-      //       },
-      //       {
-      //          leve:6,
-      //          name:'Toru',
-      //          meSrc:'./img/account/P101.JPG',
-      //          lvSrc:'./img/account/lev2.png',
-      //          integral:'1700k',
-      //          sp:'7',
-      //          itin:'3', 
-      //       },
-      //       {
-      //          leve:7,
-      //          name:'Toru',
-      //          meSrc:'./img/icon/tony.png',
-      //          lvSrc:'./img/account/lev2.png',
-      //          integral:'1700k',
-      //          sp:'7',
-      //          itin:'3', 
-      //       },
-      //    ],
-      mytada:[],
+      mydata:[],
       top1:[],
       top2:[],
       top3:[],
       leve:{
          top1src:'./img/account/026-medal.png',
          top2src:'./img/account/019-medal.png',
-         top3src:'/img/account/049-medal.png',
+         top3src:'./img/account/049-medal.png',
+// <img v-if="dd.ddd="123"" :src="leve.top1src" >
+// <img v-else :src="leve.top2src" >
       },
-      },
+      medal:{
+         medalSrc1:'./img/icon/天星者.png',
+         medalSrc2:'./img/icon/初星者.png',
+      }
+   },
       mounted() {
       // res是區域變數出去後不可使用
       fetch('./php/Leaderboard.php').then(res => res.json()).then(res => this.mydata = res);
       setTimeout(()=>{
-         // console.log( this.mydata[2])
+         // console.log( this.mydata);
          this.top1=this.mydata[0];
          this.top2=this.mydata[1];
          this.top3=this.mydata[2];
