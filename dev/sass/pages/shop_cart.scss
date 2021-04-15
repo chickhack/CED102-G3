@@ -4,7 +4,13 @@ section.cart{
     max-width: 900px;
     margin: 0 auto;
     // border: 1px solid #fff;
-    padding-top: 5vh;
+    min-height: 50vh;
+    @include respond(desktop){
+        min-height: 63vh;
+    }
+    @include respond(mobile){
+        min-height: 58vh;
+    }
     form{
         // border: 1px solid #fff;
         margin: 0 30px;

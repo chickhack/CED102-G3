@@ -5,12 +5,12 @@
     //  print_r($_POST["product_id"])
      if(isset($_SESSION["cart"])){
          $item_array_id = array_column($_SESSION["cart"],"product_id");
-         print_r($item_array_id);
+        //  print_r($item_array_id);
         // print_r($_SESSION["cart"]);
 
         if(in_array($_POST["product_id"],$item_array_id)){
             echo "<script>alert('product is already added in the cart')</script>";
-            echo "<script>window.location ='shop.php'</script>";
+            echo "<script>window.history.back()</script>";
         }else{
             $count = count($_SESSION["cart"]);
             $item_array = array(
@@ -18,7 +18,7 @@
             );
 
             $_SESSION["cart"][$count] = $item_array;
-            print_r($_SESSION["cart"]);
+            // print_r($_SESSION["cart"]);
         }
 
      }else{
@@ -27,7 +27,7 @@
          );
         //  create new session variable
         $_SESSION["cart"][0] = $item_array;
-        print_r($_SESSION["cart"]);
+        // print_r($_SESSION["cart"]);
      }
  }
 ?>
@@ -167,7 +167,7 @@
                                          vm.products = data;
                                          for(let i=0 ; i<data.length ; i++){
                                              vm.products[i].png = data[i]["prod_pic"].split("==")[0];
-                                             let url = `product.php?name=${data[i].prod_name}&price=${data[i].prod_price}&info=${data[i].prod_info}&pic=${data[i].prod_pic}`;
+                                             let url = `product.php?id=${data[i].prod_no}&name=${data[i].prod_name}&price=${data[i].prod_price}&info=${data[i].prod_info}&pic=${data[i].prod_pic}`;
                                              vm.products[i].url = encodeURI(url);
                                              console.log(vm.products[i].url)
                                          }
