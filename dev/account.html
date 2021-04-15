@@ -128,53 +128,66 @@
       <div class="content">
 
         <div v-if="link ==='a'">
-          <div id="info_form" class="row info_form">
 
-            <div class="col-md-auto align-self-start  info_img">
-              <img class="infoimg" src="./img/icon/會員頭貼.png" alt=""><br>
-              <button @click="isEditing = !isEditing" v-if="!isEditing">Edit</button>
-              <button @click="save" v-else-if="isEditing">Save</button>
-              <button v-if="isEditing" @click="isEditing = false">Cancel</button>
+          <div id="info_form" class="row info_form">
+            <div class="col-md-auto align-self-start info_img">
+              <div class="circle-image">
+                <img class="infoimg " ref="image" :src="user.image">
+              </div>
+              <label @click="isChange = !isChange" v-if="!isChange">
+                <input @click="isChange = !isChange" v-if="!isChange" type="file" @change="fileChange"
+                  class="hideinput">
+                <i class="btn img_input">上傳圖片</i>
+              </label>
+              <button @click="saveImage" v-else-if="isChange" type="file"
+                class="btn btn-primary img_input">儲存編輯</button></br>
+              <button v-if="isChange" @click="isChange = false" type="file"
+                class="btn btn-primary img_input">取消編輯</button>
             </div>
 
-            <div class="col-md-auto align-self-center info_left">
+            <div class="col-md-auto align-self-center info_left center">
               <div class="form-group">
                 <label for="exampleInputEmail1">暱稱</label>
-                <div class="edit_text"><input type="text" class="form" ref="nick_name" :value="user.nickName" :disabled="!isEditing" :class="{view: !isEditing}"></div>
+                <div class="edit_text"><input type="text" class="form focus" ref="nick_name" :value="user.nickName"
+                    :disabled="!isEditing" :class="{view: !isEditing}"></div>
               </div>
               <div class="form-group">
                 <label for="exampleInputPassword1">姓名</label>
-                <input type="text"  class="unform" id="" :value="user.firstName" disabled>
+                <input type="text" class="unform" id="" :value="user.firstName" disabled>
               </div>
               <div class="form-group">
                 <label for="exampleInputPassword1">性別</label>
-                <input type="text"  class="unform" id="" :value="user.sex" disabled>
+                <input type="text" class="unform" id="" :value="user.sex" disabled>
               </div>
               <div class="form-group">
                 <label for="exampleInputPassword1">手機</label>
-                <div class="edit_text"><input type="text" class="form" ref="phone" :value="user.phone" :disabled="!isEditing" :class="{view: !isEditing}"></div>
+                <div class="edit_text"><input type="text" class="form focus" ref="phone" :value="user.phone"
+                    :disabled="!isEditing" :class="{view: !isEditing}"></div>
               </div>
             </div>
-
-            <div class="col-md-auto align-self-end info_right">
+            <div class="col-md-auto align-self-end info_right center">
               <div class="form-group">
                 <label for="exampleInputPassword1">姓氏</label>
-                <input type="text"  class="unform" id="" :value="user.lastName" disabled>
+                <input type="text" class="unform" id="" :value="user.lastName" disabled>
               </div>
               <div class="form-group">
                 <label for="exampleInputPassword1">生日</label>
-                <input type="text"  class="unform" id="" :value="user.birthDate" disabled>
+                <input type="text" class="unform" id="" :value="user.birthDate" disabled>
               </div>
               <div class="form-group">
                 <label for="exampleInputPassword1">地址</label>
-                <div class="edit_text"><input type="text" class="form" ref="address" :value="user.address" :disabled="!isEditing" :class="{view: !isEditing}"></div>
+                <div class="edit_text"><input type="text" class="form focus" ref="address" :value="user.address"
+                    :disabled="!isEditing" :class="{view: !isEditing}"></div>
               </div>
             </div>
 
             <div class="col-md-auto align-self-start info_edit">
-              <button @click="isEditing = !isEditing" v-if="!isEditing" type="button" class="btn btn-primary info_editbtn">編輯個人資料</button>
-              <button @click="save" v-else-if="isEditing" type="button" class="btn btn-primary info_editbtn">儲存編輯</button></br>
-              <button v-if="isEditing" @click="isEditing = false" type="button" class="btn btn-primary info_editbtn">取消編輯</button>
+              <button @click="edit" v-if="!isEditing" type="button" class="btn btn-primary info_editbtn">編輯個人資料</button>
+              <!-- <button @click="{isEditing = !isEditing; focus}" v-if="!isEditing" type="button" class="btn btn-primary info_editbtn">編輯個人資料</button> -->
+              <button @click="save" v-else-if="isEditing" type="button"
+                class="btn btn-primary info_editbtn">儲存編輯</button></br>
+              <button v-if="isEditing" @click="isEditing = false" type="button"
+                class="btn btn-primary info_editbtn">取消編輯</button>
             </div>
 
           </div>
@@ -261,6 +274,69 @@
                 </div>
               </div>
 
+            </div>
+
+            <div class="ordercontent margin_top_3">
+
+              <div v-for="(item,index) in prod_order" class="table margin_top_5">
+  
+                <caption>
+                  <span class="">訂單編號： {{item.ordNum}} </span>
+                </caption>
+                <table class="margin_top_1">
+                  <thead class="table_title">
+                    <tr>
+                      <th scope="col">總金額</th>
+                      <th scope="col">總積分</th>
+                      <th scope="col">下單日期</th>
+                      <th scope="col">訂單狀態</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>NT.{{item.price}}</td>
+                      <td>{{item.scores}}</td>
+                      <td>{{item.date}}</td>
+                      <td>{{item.state}}</td>
+                    </tr>
+                  </tbody>
+                </table>
+  
+                <div @click="toggleContent(index)" class="orderdetail margin_top_1">
+                  <img class="order_icon" src="./img/icon/drop-down-arrow.png">
+                  <span class="">訂單明細</span>
+                </div>
+  
+                <div class="toBeToggled detail-open margin_top_1">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th scope="col">商品編號</th>
+                        <th scope="col">商品名稱</th>
+                        <th scope="col">單價</th>
+                        <th scope="col">數量</th>
+                        <th scope="col">備註</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>{{item.proNum}}</td>
+                        <td>{{item.proName}}</td>
+                        <td>{{item.proPrice}}</td>
+                        <td>{{item.scores}}</td>
+                        <td>{{item.note}}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div v-for="item in ord_recip" class="margin_top_1">
+                    <span class="num">收件人姓名：{{item.name}}</span></br>
+                    <span class="num">收件人電話：{{item.phone}}</span></br>
+                    <span class="num">收件人信箱：{{item.email}}</span>
+                  </div>
+                </div>
+  
+              </div>
+  
             </div>
 
           </div>
@@ -444,13 +520,13 @@
 
           <div class="ordercontent margin_top_3">
 
-            <div class="table margin_top_5">
+            <div v-for="(item,index) in prod_order" class="table margin_top_5">
 
               <caption>
-                <span class="">訂單編號：#TW1637493</span>
+                <span class="">訂單編號： {{item.ordNum}} </span>
               </caption>
               <table class="margin_top_1">
-                <thead>
+                <thead class="table_title">
                   <tr>
                     <th scope="col">總金額</th>
                     <th scope="col">總積分</th>
@@ -460,16 +536,16 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td>NT.1,290</td>
-                    <td>10,000</td>
-                    <td>2021/02/04</td>
-                    <td>已結束</td>
+                    <td>NT.{{item.price}}</td>
+                    <td>{{item.scores}}</td>
+                    <td>{{item.date}}</td>
+                    <td>{{item.state}}</td>
                   </tr>
                 </tbody>
               </table>
 
-              <div @click="toggleContent" class="orderdetail margin_top_1">
-                <img class="order_icon" src="./img/icon/drop-up-arrow.png" alt="">
+              <div @click="toggleContent(index)" class="orderdetail margin_top_1">
+                <img class="order_icon" src="./img/icon/drop-down-arrow.png">
                 <span class="">訂單明細</span>
               </div>
 
@@ -484,141 +560,20 @@
                       <th scope="col">備註</th>
                     </tr>
                   </thead>
-
                   <tbody>
                     <tr>
-                      <td>#24</td>
-                      <td>攀登太陽系第一高山-奧林帕斯山三日遊</td>
-                      <td>NT.1,290</td>
-                      <td>10,000</td>
-                      <td>10</td>
+                      <td>{{item.proNum}}</td>
+                      <td>{{item.proName}}</td>
+                      <td>{{item.proPrice}}</td>
+                      <td>{{item.scores}}</td>
+                      <td>{{item.note}}</td>
                     </tr>
                   </tbody>
                 </table>
-                <div class="margin_top_1">
-                  <span class="num">收件人姓名：陳大大</span></br>
-                  <span class="num">收件人電話：0988123456</span></br>
-                  <span class="num">收件人信箱：asduhgdfwasf@gmail.com</span>
-                </div>
-              </div>
-
-            </div>
-
-            <div class="table margin_top_5">
-
-              <caption>
-                <span class="">訂單編號：#TW1637493</span>
-              </caption>
-              <table class="margin_top_1">
-                <thead>
-                  <tr>
-                    <th scope="col">總金額</th>
-                    <th scope="col">總積分</th>
-                    <th scope="col">下單日期</th>
-                    <th scope="col">訂單狀態</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>NT.1,290</td>
-                    <td>10,000</td>
-                    <td>2021/02/04</td>
-                    <td>已結束</td>
-                  </tr>
-                </tbody>
-              </table>
-
-              <div @click="toggleContent" class="orderdetail margin_top_1">
-                <img class="order_icon" src="./img/icon/drop-up-arrow.png" alt="">
-                <span class="">訂單明細</span>
-              </div>
-
-              <div class="toBeToggled detail-open margin_top_1">
-                <table>
-                  <thead>
-                    <tr>
-                      <th scope="col">商品編號</th>
-                      <th scope="col">商品名稱</th>
-                      <th scope="col">單價</th>
-                      <th scope="col">數量</th>
-                      <th scope="col">備註</th>
-                    </tr>
-                  </thead>
-
-                  <tbody>
-                    <tr>
-                      <td>#24</td>
-                      <td>攀登太陽系第一高山-奧林帕斯山三日遊</td>
-                      <td>NT.1,290</td>
-                      <td>10,000</td>
-                      <td>10</td>
-                    </tr>
-                  </tbody>
-                </table>
-                <div class="margin_top_1">
-                  <span class="num">收件人姓名：陳大大</span></br>
-                  <span class="num">收件人電話：0988123456</span></br>
-                  <span class="num">收件人信箱：asduhgdfwasf@gmail.com</span>
-                </div>
-              </div>
-
-            </div>
-
-            <div class="table margin_top_5">
-
-              <caption>
-                <span class="">訂單編號：#TW1637493</span>
-              </caption>
-              <table class="margin_top_1">
-                <thead>
-                  <tr>
-                    <th scope="col">總金額</th>
-                    <th scope="col">總積分</th>
-                    <th scope="col">下單日期</th>
-                    <th scope="col">訂單狀態</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>NT.1,290</td>
-                    <td>10,000</td>
-                    <td>2021/02/04</td>
-                    <td>已結束</td>
-                  </tr>
-                </tbody>
-              </table>
-
-              <div @click="toggleContent" class="orderdetail margin_top_1">
-                <img class="order_icon" src="./img/icon/drop-up-arrow.png" alt="">
-                <span class="">訂單明細</span>
-              </div>
-
-              <div class="toBeToggled detail-open margin_top_1">
-                <table>
-                  <thead>
-                    <tr>
-                      <th scope="col">商品編號</th>
-                      <th scope="col">商品名稱</th>
-                      <th scope="col">單價</th>
-                      <th scope="col">數量</th>
-                      <th scope="col">備註</th>
-                    </tr>
-                  </thead>
-
-                  <tbody>
-                    <tr>
-                      <td>#24</td>
-                      <td>攀登太陽系第一高山-奧林帕斯山三日遊</td>
-                      <td>NT.1,290</td>
-                      <td>10,000</td>
-                      <td>10</td>
-                    </tr>
-                  </tbody>
-                </table>
-                <div class="margin_top_1">
-                  <span class="num">收件人姓名：陳大大</span></br>
-                  <span class="num">收件人電話：0988123456</span></br>
-                  <span class="num">收件人信箱：asduhgdfwasf@gmail.com</span>
+                <div v-for="item in ord_recip" class="margin_top_1">
+                  <span class="num">收件人姓名：{{item.name}}</span></br>
+                  <span class="num">收件人電話：{{item.phone}}</span></br>
+                  <span class="num">收件人信箱：{{item.email}}</span>
                 </div>
               </div>
 
@@ -631,10 +586,13 @@
 
         <div v-else-if="link ==='e'">
           <div class="heart_tab row justify-content-start container_heart heartnav margin_top_3" id="accountapp">
+
             <div class="heart_btns">
-              <button class="col btn heartbtns" @click="acitve(1)">行程</button>
-              <button class="col btn heartbtns" @click="acitve(2)">商品</button>
-              <button class="col btn heartbtns" @click="acitve(3)">貼文</button>
+
+              <button class="col btn heartbtns" @click="acitve(1)" :class="{active: step===1}">行程</button>
+              <button class="col btn heartbtns" @click="acitve(2)" :class="{active: step===2}">商品</button>
+              <button class="col btn heartbtns" @click="acitve(3)" :class="{active: step===3}">貼文</button>
+
             </div>
 
             <div v-if="step === 1 || active.includes(1)" v-show="step===1">
@@ -658,6 +616,7 @@
                   </div>
                 </div>
               </div>
+
             </div>
 
             <div v-if="step === 2 || active.includes(2)" v-show="step===2">
@@ -835,16 +794,17 @@
 
       <script>
 
-        // Vue.component('vue-slide-up-down', VueSlideUpDown);
-
         var account_tab = new Vue({
           el: "#accountapp",
           data: {
             link: "a",
             // dynamicComponent: 'bye',
-            step: null,
+            step: 1,
+            isChange: false,
             isEditing: false,
+            toggle: false,
             user: {
+              image: './img/icon/會員頭貼.png',
               nickName: '大大',
               firstName: 'John',
               lastName: 'Smith',
@@ -853,7 +813,65 @@
               phone: '0988123456',
               address: '台北市大同區中正路一段32巷5弄7號',
             },
-            active: [],
+            prod_order: [{
+              ordNum: '#TW1637493',
+              price: '1,290',
+              scores: '10,000',
+              date: '2021/02/04',
+              state: '已結束',
+              proNum: '#24',
+              proName: '攀登太陽系第一高山-奧林帕斯山三日遊',
+              proPrice: '1,290',
+              scores: '10,000',
+              note: '無',
+            }, {
+              ordNum: '#TW1641010',
+              price: '5,700',
+              scores: '90,000',
+              date: '2021/04/13',
+              state: '待出貨',
+              proNum: '#24',
+              proName: '攀登太陽系第一高山-奧林帕斯山三日遊',
+              proPrice: '1,290',
+              scores: '10,000',
+              note: '無',
+            }, {
+              ordNum: '#TW1648990',
+              price: '6,690',
+              scores: '280,000',
+              date: '2021/03/05',
+              state: '已結束',
+            }],
+            ord_detail: [{
+              proNum: '#24',
+              proName: '攀登太陽系第一高山-奧林帕斯山三日遊',
+              proPrice: '1,290',
+              scores: '10,000',
+              note: '無',
+            }, {
+              proNum: '#24',
+              proName: '攀登太陽系第一高山-奧林帕斯山三日遊',
+              proPrice: '1,290',
+              scores: '10,000',
+              note: '無',
+            }, {
+              proNum: '#24',
+              proName: '攀登太陽系第一高山-奧林帕斯山三日遊',
+              proPrice: '1,290',
+              scores: '10,000',
+              note: '無',
+            }],
+            ord_recip: [{
+              name: '陳大大',
+              phone: '0988123456',
+              email: 'asduhgdfwasf@gmail.com',
+            }],
+            trip_order: [{
+
+            }],
+            active: [
+
+            ],
             spot1: [{
               spot: "./img/trip/trip_moon/moon1.jpg",
               title: "月球 | 太空體驗一日遊",
@@ -938,29 +956,46 @@
           methods: {
             save() {
               this.user.nickName = this.$refs['nick_name'].value;
-              // this.user.firstName = this.$refs['first_name'].value;
-              // this.user.lastName = this.$refs['last_name'].value;
-              // this.user.sex = this.$refs['sex'].value;
-              // this.user.birthDate = this.$refs['birthDate'].value;
               this.user.phone = this.$refs['phone'].value;
               this.user.address = this.$refs['address'].value;
               this.isEditing = !this.isEditing;
             },
-            acitve(index) {
-              this.step = index
-              !this.active.includes(index) && this.active.push(index)
-            },
-            toggleContent() {
-              this.toggle = !this.toggle;
-              if (this.toggle == true) {
-                $(".toBeToggled").slideDown()
-                $(".order_icon").attr("src", "./img/icon/drop-down-arrow.png");
+            edit() {
+              this.isEditing = !this.isEditing;
+              if (this.isEditing == true) {
+                $(".focus").css('border-color', '#cccaca')
               } else {
-                $(".toBeToggled").slideUp()
-                $(".order_icon").attr("src", "./img/icon/drop-up-arrow.png");
+                $(".focus").css('border-color', '#AD6E4A');
+              }
+            },
+            fileChange(e) {
+              let file = e.target.files[0];
+              let readFile = new FileReader();
+              readFile.readAsDataURL(file);
+              readFile.addEventListener('load', this.loadImage);
+            },
+            loadImage(e) {
+              this.user.image = e.target.result;
+            },
+            saveImage(e) {
+              this.user.image = this.$refs['image'].value;
+              this.isChange = !this.isChange;
+            },
+            acitve(index) {  // 切換收藏分類
+              this.step = index
+              !this.active.includes(index) && this.active.push(index);
+            },            
+            toggleContent(e) {
+              this.toggle = !this.toggle;
+              $('.toBeToggled').eq(e).toggle("show");
+              if (this.toggle == true) {
+                // $(".toBeToggled").eq(e).slideDown()
+                $(".order_icon").eq(e).attr("src", "./img/icon/drop-up-arrow.png");
+              } else {
+                // $(".toBeToggled").eq(e).slideUp()
+                $(".order_icon").eq(e).attr("src", "./img/icon/drop-down-arrow.png");
               };
 
-              // $('.detail-open').toggle("show");
             },
             mouseMe() {
               $('.img1').mouseover(function () {
@@ -970,11 +1005,10 @@
                 $(this).parent().find(".action-box").css('display', 'none');
               });
             },
-
+            
           },
+
         });
-
-
 
         //  點擊menu變色
         window.onload = function () {
