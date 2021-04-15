@@ -1,4 +1,16 @@
 <?php
+// require_once("./php/connectbooks_kai.php");
+
+// try {
+// 	$sql = "select * from g3";
+// 	$tops = $pdo->query($sql);  //執行指令
+// } catch (PDOException $e) {
+// 	// echo "系統忙碌, 請通知系統維護人員~";
+// 	echo "錯誤原因 : ", $e->getMessage(), "<br>";
+// 	echo "錯誤行號 : ", $e->getLine(), "<br>";	
+// }
+
+
 session_start();
  if(isset($_POST["add"])){
      if(isset($_SESSION["trip-cart"])){
@@ -13,14 +25,13 @@ session_start();
             // echo '<script>window.location="alltrip_test.php"</script>';
         }else{
             echo "<script>alert('已加入我的行程')</script>";
-            echo "<script>window.location ='alltrip_test.php'</script>";
+            // echo "<script>window.location ='alltrip_test.php'</script>";
     }
-}else{
-        $item_array = array(
-            "spot_id" => $_POST["spot_id"]
-        );
-    
-        $_SESSION["trip-cart"][0] = $item_array;
+        }else{
+            $item_array = array(
+                "spot_id" => $_POST["spot_id"]
+            );
+            $_SESSION["trip-cart"][0] = $item_array;
     }
  }
  
@@ -50,6 +61,7 @@ session_start();
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r127/three.min.js"></script>
     <!-- alltrip css -->
     <link rel="stylesheet" href="./css/pages/alltrip.css">
+    
 
 </head>
 
@@ -143,7 +155,7 @@ session_start();
                 <div class="hottrip ">
                     <div v-for="item in planets.slice(0,3)" :key="item.spot_no" class="planet_top">
                         <form class="card" action="alltrip_test.php" method="post">
-                            <a href="trip.html">
+                            <a :href="item.url">
                                 <img :src="item.spot_pic" class="planet" alt="planet">
                                 <img :src="item.spot_pics" class="planet_a1" alt="planettrip">
                                 <div class="word line_low">
@@ -156,7 +168,7 @@ session_start();
                             <button type="submit" name="add" class="addin small myTrip"><img class="plus"
                                     src="./img/icon/plus.png" alt="">加入我的行程
                             </button>
-                            <!-- <input type="hidden" name="spot_id" :value="card.spot_no"> -->
+                            <input type="hidden" name="spot_id" :value="item.spot_no">
                         </form>
                     </div>
 
@@ -226,6 +238,8 @@ session_start();
                         <button type="submit" name="add" class="addin2 small margin_top_2 myTrip"><img class="plus"
                                 src="./img/icon/plus.png" alt="">加入我的行程</button>
                         <!-- <div class="trip_bookmark" id="bookmark"></div> -->
+                        <input type="hidden" name="spot_id" :value="item.spot_no">
+
                     </form>
                 </div>
 
@@ -248,6 +262,8 @@ session_start();
                         <button type="submit" name="add" class="addin2 small margin_top_2 myTrip"><img class="plus"
                                 src="./img/icon/plus.png" alt="">加入我的行程</button>
                         <!-- <div class="trip_bookmark" id="bookmark"></div> -->
+                        <input type="hidden" name="spot_id" :value="item.spot_no">
+
                     </form>
                 </div>
             </div>
@@ -268,11 +284,14 @@ session_start();
                         <button type="submit" name="add" class="addin2 small margin_top_2 myTrip"><img class="plus"
                                 src="./img/icon/plus.png" alt="">加入我的行程</button>
                         <!-- <div class="trip_bookmark" id="bookmark"></div> -->
+                        <input type="hidden" name="spot_id" :value="item.spot_no">
+
                     </form>
                 </div>
             </div>
         </div>
     </div>
+ 
 
     <a href="#" class="go-top"></a>
 
@@ -336,7 +355,14 @@ session_start();
         },
         mounted() {
             console.log("load");
-            fetch('./php/getSelectTrip.php').then(res => res.json()).then(res => this.planets = res);
+            fetch('./php/getSelectTrip.php').then(res => res.json()).then(data => {
+                                         vm.planets = data;
+                                         for(let i=0 ; i<data.length ; i++){
+                                             let url = `trip.php?no=${data[i].spot_no}`;
+                                             vm.planets[i].url = encodeURI(url);
+                                             console.log(vm.planets[i].url)
+                                         }
+                                     });
             console.log(this.planets);
             fetch('./php/getMoon.php').then(res => res.json()).then(res => this.spot1 = res);
             fetch('./php/getMars.php').then(res => res.json()).then(res => this.spot2 = res);
