@@ -24,7 +24,6 @@ body {
 .spacedinfo p, .nowstate p, .exchange p, .exchange input {
   float: left;
 }
-
 .account_hi, .account_logo {
   font-size: 20px;
 }
@@ -56,10 +55,6 @@ img.account_levimg {
   padding: 30px;
   border-radius: 10px;
 }
-
-/* 會員卡片內容 */
-
-
 
 /* 目前累積等級、星球、景點、宇宙幣 */
 img.littleline {
@@ -122,6 +117,8 @@ p.nextacc, p.nowacc {
   font-family: "Microsoft JhengHei";
   font-size: 14px;
 }
+
+
 
 /* 會員menu */
 .account_nav {
@@ -254,7 +251,7 @@ p.nextacc, p.nowacc {
 }
 
 // 行程管理
-.trip_order, .ordercontent {
+.tripcontent, .ordercontent {
   margin-left: 10px;
 }
 

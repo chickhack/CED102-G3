@@ -3987,7 +3987,6 @@ img.account_levimg {
   border-radius: 10px;
 }
 
-/* 會員卡片內容 */
 /* 目前累積等級、星球、景點、宇宙幣 */
 img.littleline {
   max-width: 50%;
@@ -4218,7 +4217,7 @@ p.nextacc, p.nowacc {
   width: 120px;
 }
 
-.trip_order, .ordercontent {
+.tripcontent, .ordercontent {
   margin-left: 10px;
 }
 
