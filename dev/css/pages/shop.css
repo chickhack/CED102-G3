@@ -460,20 +460,23 @@ nav .nav-cart .count {
   text-align: center;
   line-height: 1.5rem;
   position: absolute;
-  transform: translate(50%, -150%);
+  -webkit-transform: translate(50%, -150%);
+          transform: translate(50%, -150%);
   display: block;
   color: white;
 }
 
 @media all and (max-width: 992px) {
   nav .nav-cart .count {
-    transform: translate(100%, -150%);
+    -webkit-transform: translate(100%, -150%);
+            transform: translate(100%, -150%);
   }
 }
 
 @media all and (max-width: 768px) {
   nav .nav-cart .count {
-    transform: translate(40%, -170%);
+    -webkit-transform: translate(40%, -170%);
+            transform: translate(40%, -170%);
     width: 20px;
     height: 20px;
     font-size: 12px;
@@ -494,20 +497,23 @@ nav .nav-trip .trip-count {
   text-align: center;
   line-height: 1.5rem;
   position: absolute;
-  transform: translate(50%, -150%);
+  -webkit-transform: translate(50%, -150%);
+          transform: translate(50%, -150%);
   display: block;
   color: white;
 }
 
 @media all and (max-width: 992px) {
   nav .nav-trip .trip-count {
-    transform: translate(100%, -150%);
+    -webkit-transform: translate(100%, -150%);
+            transform: translate(100%, -150%);
   }
 }
 
 @media all and (max-width: 768px) {
   nav .nav-trip .trip-count {
-    transform: translate(40%, -170%);
+    -webkit-transform: translate(40%, -170%);
+            transform: translate(40%, -170%);
     width: 20px;
     height: 20px;
     font-size: 12px;
@@ -751,7 +757,8 @@ input[type=number] {
   height: 100px;
   background-size: contain;
   background-repeat: no-repeat;
-  animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+  -webkit-animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+          animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
 }
 
 section.shop {
@@ -789,14 +796,8 @@ section.shop .banner h2 {
   position: absolute;
   left: 50%;
   top: 50%;
-<<<<<<< HEAD
-  transform: translate(-50%, -50%);
-=======
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  top: 35%;
-  letter-spacing: 2px;
->>>>>>> Min
 }
 
 @media all and (max-width: 768px) {
@@ -805,18 +806,7 @@ section.shop .banner h2 {
   }
 }
 
-<<<<<<< HEAD
 section.shop .filter {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-between;
-=======
-section.shop .btn {
-  cursor: pointer;
-}
-
-section.shop .shopAll {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -826,22 +816,9 @@ section.shop .shopAll {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: 0 30px;
-}
-
-section.shop .shopAll .aside {
-  width: 30%;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 18vh;
-  left: 0;
-  margin-top: 40px;
->>>>>>> Min
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 @media all and (max-width: 992px) {
@@ -852,22 +829,33 @@ section.shop .shopAll .aside {
 
 @media all and (max-width: 768px) {
   section.shop .filter {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
 section.shop #app ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-<<<<<<< HEAD
 @media all and (max-width: 992px) {
   section.shop #app ul {
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     margin: 0 10px;
   }
 }
@@ -876,22 +864,6 @@ section.shop #app li {
   position: relative;
   margin: 0 10px;
   width: 22%;
-=======
-section.shop .shopAll .aside .choose {
-  max-height: 0;
-  overflow: hidden;
-  -webkit-transition: all .5s linear;
-  transition: all .5s linear;
-}
-
-section.shop .shopAll .aside .choose li {
-  padding: 16px 0;
-  -webkit-transition: all .3s;
-  transition: all .3s;
-  text-align: center;
-  width: 100%;
-  background-color: #AD6E4A;
->>>>>>> Min
 }
 
 @media all and (max-width: 992px) {
@@ -900,31 +872,35 @@ section.shop .shopAll .aside .choose li {
   }
 }
 
-<<<<<<< HEAD
 @media all and (max-width: 768px) {
   section.shop #app li {
     width: 100%;
     max-width: 350px;
   }
-=======
-section.shop .shopAll .aside .chooseShow {
-  max-height: 400px;
-  -webkit-transition: all 1.5s linear;
-  transition: all 1.5s linear;
->>>>>>> Min
 }
 
 section.shop #app .card {
   position: relative;
   height: 300px;
   margin: 30px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-color: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(10px);
+  -webkit-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
   z-index: 10;
 }
 
@@ -935,52 +911,77 @@ section.shop #app .card {
 }
 
 section.shop #app .card:hover .imgBx {
-  transform: translateY(-50px);
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
 }
 
 section.shop #app .card:hover .imgBx img {
-  transform: translateY(-40px) scale(1.3);
+  -webkit-transform: translateY(-40px) scale(1.3);
+          transform: translateY(-40px) scale(1.3);
 }
 
 section.shop #app .card:hover .content {
   opacity: 1;
   visibility: visible;
-  transform: translateY(-10px);
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
 }
 
 section.shop #app .imgBx {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 20px;
+  -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
 
 @media all and (max-width: 768px) {
   section.shop #app .imgBx {
-    transform: translateY(-50px);
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
   }
   section.shop #app .imgBx img {
-    transform: translateY(-40px) scale(1.3);
+    -webkit-transform: translateY(-40px) scale(1.3);
+            transform: translateY(-40px) scale(1.3);
   }
 }
 
-<<<<<<< HEAD
 section.shop #app .imgBx img {
   max-width: 50%;
   margin: 0 0 20px;
+  -webkit-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
 }
 
 section.shop #app .content {
   position: absolute;
   bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
   opacity: 0;
   visibility: hidden;
@@ -990,39 +991,8 @@ section.shop #app .content {
   section.shop #app .content {
     opacity: 1;
     visibility: visible;
-    transform: translateY(-10px);
-=======
-section.shop .shopAll .main .productAll ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-@media all and (max-width: 992px) {
-  section.shop .shopAll .main .productAll ul {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-}
-
-@media all and (max-width: 768px) {
-  section.shop .shopAll .main .productAll ul {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
->>>>>>> Min
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
   }
 }
 
@@ -1054,36 +1024,15 @@ section.shop #app .content .button_min {
   }
 }
 
-<<<<<<< HEAD
 .custom-select select {
   display: none;
   /*hide original SELECT element:*/
-=======
-section.shop .shopAll .main .productAll ul li a {
-  padding: 10px 0 10px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background-color: rgba(255, 255, 255, 0.9);
-  color: black;
->>>>>>> Min
 }
 
 .select-selected {
   background-color: #AD6E4A;
 }
 
-<<<<<<< HEAD
 /*style the arrow inside the select element:*/
 .select-selected:after {
   position: absolute;
@@ -1100,23 +1049,6 @@ section.shop .shopAll .main .productAll ul li a {
 .select-selected.select-arrow-active:after {
   border-color: transparent transparent #fff transparent;
   top: 7px;
-=======
-section.shop .shopAll .main .productAll ul li a .item {
-  text-align: left;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding-top: 20px;
->>>>>>> Min
 }
 
 /*style the items (options), including the selected item:*/
@@ -1126,7 +1058,10 @@ section.shop .shopAll .main .productAll ul li a .item {
   border: 1px solid transparent;
   border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
   cursor: pointer;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 /*style items (options):*/
