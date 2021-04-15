@@ -85,6 +85,32 @@ nav{
             }
         }
     }
+    .nav-trip{
+        cursor: pointer;
+        position: relative;
+        .trip-count{
+            width: 25px;
+            height: 25px;
+            background-color: $gold;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 1.5rem;
+            position: absolute;
+            transform: translate(50%,-150%);
+            display: block;
+            color: white;
+            @include respond(pad){
+                transform: translate(100%,-150%);
+            }
+            @include respond(mobile){
+                transform: translate(40%,-170%);
+                width: 20px;
+                height: 20px;
+                font-size: 12px;
+                line-height: 1.25rem;
+            }
+        }
+    }
 }
 
 @media (max-width: 992px){

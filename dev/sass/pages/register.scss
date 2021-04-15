@@ -20,7 +20,10 @@
 //     }
 // }
 section.login_container{
+    padding: 0;
+    border: 1px solid #ad6e4a83;
     display: flex;
+    border-radius: 5px;
     .login_banner{
         background-color: rgb(53, 63, 97);
         height: 80vh;
@@ -146,6 +149,9 @@ section.login_container{
             }
             .form-group:last-of-type::before {
                 content: "確認密碼";
+            }
+            span{
+                align-self: center;
             }
             button{
                 align-self: center;

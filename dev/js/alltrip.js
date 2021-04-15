@@ -5,6 +5,14 @@ let vm = new Vue({
         spot1: [],
         spot2: [],
         spot3: [],
+    
+    },
+    methods: {
+        pricePick(){
+            this.products.forEach(prod => {
+                console.log(prod["spot_price"].sort());
+            })
+        }
     },
     mounted() {
         console.log("load");
@@ -15,3 +23,5 @@ let vm = new Vue({
         fetch('./php/getJupiter.php').then(res => res.json()).then(res => this.spot3 = res);
     },
 });
+
+

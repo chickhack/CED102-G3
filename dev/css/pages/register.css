@@ -456,6 +456,40 @@ nav .nav-cart .count {
   }
 }
 
+nav .nav-trip {
+  cursor: pointer;
+  position: relative;
+}
+
+nav .nav-trip .trip-count {
+  width: 25px;
+  height: 25px;
+  background-color: #AD6E4A;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 1.5rem;
+  position: absolute;
+  transform: translate(50%, -150%);
+  display: block;
+  color: white;
+}
+
+@media all and (max-width: 992px) {
+  nav .nav-trip .trip-count {
+    transform: translate(100%, -150%);
+  }
+}
+
+@media all and (max-width: 768px) {
+  nav .nav-trip .trip-count {
+    transform: translate(40%, -170%);
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    line-height: 1.25rem;
+  }
+}
+
 @media (max-width: 992px) {
   nav {
     justify-content: space-around;
@@ -667,7 +701,10 @@ input[type=number] {
 }
 
 section.login_container {
+  padding: 0;
+  border: 1px solid #ad6e4a83;
   display: flex;
+  border-radius: 5px;
 }
 
 section.login_container .login_banner {
@@ -799,6 +836,10 @@ section.login_container .modal-dialog form .form-group:nth-last-of-type(2)::befo
 
 section.login_container .modal-dialog form .form-group:last-of-type::before {
   content: "確認密碼";
+}
+
+section.login_container .modal-dialog form span {
+  align-self: center;
 }
 
 section.login_container .modal-dialog form button {

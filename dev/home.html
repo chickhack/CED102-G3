@@ -42,11 +42,11 @@
     <link rel="stylesheet" href="./css/pages/home.css"></link>
   </head>
   <body>
-    <div class="container-fluid ">
+    <div class="container-fluid" id="fullview">
       <header>@@include('./layout/header.html')</header>
-      <div class="video-bg ">
-        <video playsinline autoplay loop muted="true" style="opacity:1; width: 1600px; " src="https://d1titnu6se1qmv.cloudfront.net/uploads/2019/04/home-vbg.mp4"></video>
+      <div class="video-bg">
         <div class="video-overlay"></div>
+        <video playsinline autoplay loop muted="true" style="opacity:1; width: 1600px; " src="https://d1titnu6se1qmv.cloudfront.net/uploads/2019/04/home-vbg.mp4"></video>
       </div>
         <div class="banner">
           <div class="slogan" >
@@ -54,7 +54,7 @@
           </div>
         </div>
 <!-- 訂購流程 -->
-        <div class="stepsection margin_top_10">
+        <div class="stepsection margin_top_10" >
           <h2>打造專屬的星球行程</h2>
           <h3 class="margin_top_3 line_low">累積景點積分，獲得更多宇宙幣，讓你無限暢遊宇宙</h3>
 <div id="trigger01"></div>
@@ -162,10 +162,54 @@
                             <script src="./js/mars.js"></script>
                       </div>
                     </div>
-
+                  </div>
+                  <!-- 其他tab -->
+                    <div id="tab02" class="tab-inner ">
+                      <div class="tab_top">
+                        <div class="tab_left col-lg-6 col-md-12">
+                          <h2>月球</h2>
+                          <h4 class="margin_top_4">
+                            月球火山活動的主要後果是顯著的月海。這是由大面積漫溢的低反照率的玄武岩熔岩所構成，覆蓋了月球正面的三分之一。
+                          </h4>
+                          <div class="data margin_top_4">
+                            <div class="grav">
+                              <div class="dataTop">
+                                <span class="var">38</span>
+                                <span class="data-mid">％</span>
+                              </div>
+                              <p>重力</p>
+                            </div>
+                            <div class="day">
+                            <div class="dataTop">
+                              <span class="var">24</span>
+                              <span class="data-low">HR</span>
+                            </div>
+                              <p>一天</p>
+                            </div>
+                            <div class="temp">
+                            <div class="dataTop">
+                              <span class="data-mid">-</span>
+                              <span class="var">60</span>
+                              <span class="data-top">F</span>
+                            </div>
+                              <p>溫度</p>
+                            </div>
+                          </div>
+                        </div>
+      
+                      </div>
+                      <div class="tab-active margin_top_5 col-lg-6 col-md-12 col-sm-12">
+                            <!-- 月球動圖 -->
+                            <div id="moonloc"></div>
+                            <img src="img/planet/moon.png">
+                             <!-- <script src="./js/moon.js"></script>  -->
+                      </div>
                     </div>
+                  <div id="tab03" class="tab-inner ">
+
                   </div>
-                  </div>
+              </div>
+          </div>
 <!-- 互動牆 -->
         <section class="home_photowall col-12 margin_top_10 ">
           <div id="photos" class="col-lg-6">
@@ -373,8 +417,8 @@
       </script>
       <script>
         //Header變顏色
-            var controller = new ScrollMagic.Controller();
-            new ScrollMagic.Scene({
+        var controller = new ScrollMagic.Controller();
+        new ScrollMagic.Scene({
             triggerElement : '#trigger01',
             duration: '600%'
         }).on('enter', function(){
@@ -386,32 +430,16 @@
         })
         .addTo(controller);
 
-
+        //卡片fade in
+        var tm02 = TweenMax.from(".stepsection", 2, { x: 0, y: 100 });
+        new ScrollMagic.Scene({
+          triggerElement: "#trigger01",
+        })
+          .setTween(tm02)
+          // .addIndicators()
+          .addTo(controller);
 
       </script>
-      <script>
-          //Slogan延遲
-            console.clear();
-
-            const split = new SplitText('#slogan',{type:'chars'});
-            const chars = split.chars;
-            const tl = gsap.timeline();
-            chars.forEach((char, index)=>{
-              tl.from(char, {
-                duration: 2.5,
-                delay: index *0.02,
-                repeatDelay: 5,
-                yoyo: true,
-                repeat: 01,
-                opacity: 0,
-                x: gasp.utils.random(-500,500),
-                y: gasp.utils.random(-500,500),
-                z: gasp.utils.random(-500,500),
-                scale: .1,
-              },0)
-            });
-      </script>
-
-  </script>
+ 
   </body>
 </html>
