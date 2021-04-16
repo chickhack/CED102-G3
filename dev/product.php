@@ -1,5 +1,34 @@
 <?php
     session_start();
+    if(isset($_POST["add"])){
+        //  print_r($_POST["product_id"])
+         if(isset($_SESSION["cart"])){
+             $item_array_id = array_column($_SESSION["cart"],"product_id");
+             print_r($item_array_id);
+            // print_r($_SESSION["cart"]);
+    
+            if(in_array($_POST["product_id"],$item_array_id)){
+                echo "<script>alert('product is already added in the cart')</script>";
+                echo "<script>window.history.back()</script>";
+            }else{
+                $count = count($_SESSION["cart"]);
+                $item_array = array(
+                    "product_id" => $_POST["product_id"]
+                );
+    
+                $_SESSION["cart"][$count] = $item_array;
+                // print_r($_SESSION["cart"]);
+            }
+    
+         }else{
+             $item_array = array(
+                 "product_id" => $_POST["product_id"]
+             );
+            //  create new session variable
+            $_SESSION["cart"][0] = $item_array;
+            // print_r($_SESSION["cart"]);
+         }
+     }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -90,7 +119,9 @@
                     </div>
                 </div>
             </div>
-            <form class="detail margin_left_4">
+            <form class="detail margin_left_4" 
+                    action="product.php?id=<?php echo $_GET["id"]?>&name=<?php echo $_GET["name"]?>&price=<?php echo $_GET["price"]?>&info=<?php echo $_GET["info"]?>&pic=<?php echo $_GET["pic"]?>" 
+                    method="post">
                 <p>裝備</p>
                 <h3 class="margin_top_2"><? echo $_GET["name"]?></h3>
                 <hr class="margin_top_2">
@@ -104,8 +135,9 @@
                         <input type="number" name="quantity" id="quantity" value="1" min="1">
                         <span class="add">&plus;</span>
                     </div>
-                    <p class="button_large margin_top_4">加入購物車</p>
-                    <a class="button_large margin_top_2 margin_left_1 buy" href="shop_cart.html">立即購買</a>
+                    <button type="submit" name="add" class="button_large margin_top_2">加入購物車</button>
+                    <input type="hidden" name="product_id" value=<?php echo $_GET["id"]?>>
+                    <a class="button_large margin_top_2 margin_left_1 buy" href="shop_cart.php">立即購買</a>
                 </div>
                 <img src="./img/icon/bookmark-outline.png" alt="" class="icon favorites">
             </form>

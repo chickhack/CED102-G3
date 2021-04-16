@@ -143,21 +143,23 @@ body {
             }
 
             .button_large {
-                width: 45%;
+                width: 40%;
                 display: inline-block;
                 cursor: pointer;
                 padding: 8px 0;
                 transition: all .3s ease;
+                background-color: transparent;
+                color: $white;
                 &:hover{
                     color: $white;
                     background-color: $gold;
                 }
-
                 &.buy {
                     background-color: $gold;
                     color: $white;
                     font-weight: 900;
                     transition: all .3s;
+                    padding: 10.4px 0;
                     @include respond(mobile){
                         margin-left: 0;
                     }

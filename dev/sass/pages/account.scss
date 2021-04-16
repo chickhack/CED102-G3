@@ -24,7 +24,6 @@ body {
 .spacedinfo p, .nowstate p, .exchange p, .exchange input {
   float: left;
 }
-
 .account_hi, .account_logo {
   font-size: 20px;
 }
@@ -56,15 +55,6 @@ img.account_levimg {
   padding: 30px;
   border-radius: 10px;
 }
-
-/* 會員卡片內容 */
-.account_now {
-  /* border: 1px solid red; */
-}
-.your_lev {
-  /* border: 1px solid red; */
-}
-
 
 /* 目前累積等級、星球、景點、宇宙幣 */
 img.littleline {
@@ -128,6 +118,8 @@ p.nextacc, p.nowacc {
   font-size: 14px;
 }
 
+
+
 /* 會員menu */
 .account_nav {
   margin: 50px 250px 0px 250px;
@@ -158,15 +150,24 @@ p.nextacc, p.nowacc {
   font-size: 12px;
   color: #C9ADA7;
 }
-
-// 圖片大小
-.infoimg {
-  max-width: 100px;
+.circle-image{
+  width:120px; 
+  height:120px; 
+  border-radius:50%; 
+  overflow:hidden;
+  // 圖片大小
+  .infoimg {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 // 表單距離
 .info_img {
-  margin: 5px 20px 0px 0px;
+  margin: 5px 50px 0px 0px;
+  .img_input{
+    margin: 15px 0px 0px 0px;
+  }
 }
 .info_left, .info_right, .info_edit {
   margin: 25px 10px 0px 10px;
@@ -175,23 +176,13 @@ p.nextacc, p.nowacc {
   margin-top: 10px;
   margin-bottom: 5px;
 }
+.center{
+  margin: 0 auto;
+  float: none;
+}
 
 // 編輯資料樣式
-input.form-control {
-  width: 85%;
-  height: 20px;
-  border: 0.5px solid rgba(173, 110, 74, 0.6);
-  background-color: none;
-  color: #ffffff;
-  font-family: "Microsoft JhengHei";
-  font-size: 14px;
-}
-.form-control:focus {
-  border-color: #cccaca;
-  outline: none;
-  box-shadow: none;
-}
-.form-control-plaintext {
+.form, .unform {
   width: 85%;
   height: 20px;
   border: 0.5px solid rgba(173, 110, 74, 0.6);
@@ -204,33 +195,37 @@ input.form-control {
   line-height: 1.5;
   border-radius: .25rem;
 }
-input.form-control-plaintext:focus {
+.form:focus {
   border-color: #cccaca;
   outline: none;
   box-shadow: none;
 }
 
 // 編輯資料按鈕 // 收藏按鈕 // 互動管理按鈕 // 轉換積分按鈕
-.info_editbtn, .pointbtn {
+.info_editbtn, .pointbtn, .img_input {
   font-family: "Microsoft JhengHei";
   font-size: 12px;
   color: #ffff;
   border: 1px solid #AD6E4A;
   background: none;
   border-radius: 0px;
-  width: 80%;
+  width: 90px;
   margin-left: 50px;
+  margin-bottom: 10px;
 }
-.info_editbtn:hover, .heartbtns:hover, .postbtns:hover, .pointbtn:hover {
+.info_editbtn:hover, .heartbtns:hover, .postbtns:hover, .pointbtn:hover, .img_input:hover, .heartbtns.active {
   color: #ffff;
   border: 1px solid #AD6E4A;
   background: #AD6E4A;
 }
-.info_editbtn:focus+.btn-primary, .heartbtns:focus, .btn-primary:focus, .postbtns:focus, .pointbtn:focus {
+.info_editbtn:focus+.btn-primary, .heartbtns:focus, .btn-primary:focus, .postbtns:focus, .pointbtn:focus, .img_input:focus {
   color: #fff;
   background-color: #AD6E4A;
   border-color: #AD6E4A;
   box-shadow: none;
+}
+.hideinput{
+  display: none;
 }
 
 
@@ -256,7 +251,7 @@ input.form-control-plaintext:focus {
 }
 
 // 行程管理
-.trip_order, .ordercontent {
+.tripcontent, .ordercontent {
   margin-left: 10px;
 }
 
@@ -275,7 +270,6 @@ input.form-control-plaintext:focus {
   border: 1px solid $gold;
   border-radius: 0px;
 }
-
 .dropdown_item {
   display: block;
   // width: 100%;
@@ -294,10 +288,8 @@ a:hover {
 }
 
 
-
 .table {
 	width: 100%;
-	// margin: 0 auto;
   font-family: "Microsoft JhengHei";
 	caption {
     text-align: left;
@@ -311,7 +303,7 @@ a:hover {
     line-height: 20px;
   }
 	thead, td {
-		border: 1px solid $gold;
+		border: 1px solid #292b41;
 		padding: 8px 15px;
 	}
   th {
@@ -320,8 +312,12 @@ a:hover {
 	table {
 		width: 100%;
 		thead {
-			color: $pink;
+			color: $white;
 		}
+    .table_title{
+      background-color: #292b41;
+
+    }
 		tbody {
       color: $gray;
 			// tr:hover {
@@ -330,7 +326,7 @@ a:hover {
 			// 	cursor: pointer;
 		}
 	}
-  .tripdetail {
+  .orderdetail {
     display: flex;
     align-items: center;
     img {
@@ -338,8 +334,32 @@ a:hover {
       margin-right: 5px;
     }
   }
+  .detail-open {
+    display: none;
+  }
 }
 
+  //日期按鈕
+  .btn-date {
+    letter-spacing: 2px;
+    padding: 0 5px;
+    border: 1px solid $gold;
+    color: $gold;
+    background-color: $darkblue;
+    height: 25px;
+    text-align: center;
+    width: 180px;
+  }
+
+  // 向下箭頭
+  ::-webkit-calendar-picker-indicator {
+    color: $gold;
+    background-image: url(../../img/date-chevron-down.svg);
+    width: 15px;
+    height: 25px;
+    position: relative;
+    top: 5px;
+  }
 
 
 
@@ -347,11 +367,11 @@ a:hover {
 
 // 收藏內容、互動管理、訂單、行程內容 控制在270px內
  .product_card, .tripcontent, .ordercontent, .pointcontent {
-  padding: 0px 270px 100px 270px;
+  padding: 0px 270px 20px 270px;
 }
 // 收藏行程內容 控制在270px內
 .heart_tripcard {
-  padding: 0px 250px 100px 250px;
+  padding: 0px 200px 100px 200px;
 }
 // 收藏貼文內容 控制在270px內
 .post_card {
@@ -382,6 +402,7 @@ a:hover {
   align-items: center;
   justify-content: center;
 }
+
 input.form-control.point_input, input.form-control-plaintext.point_input {
   width: 120px;
   height: 20px;
