@@ -845,23 +845,16 @@ section.login_container form .form-group:last-of-type::before {
   content: "密碼";
 }
 
-section.login_container form button {
+section.login_container form .login_btn {
   align-self: center;
   background-color: transparent;
-}
-
-section.login_container form button a {
-  text-decoration: none;
   color: #AD6E4A;
 }
 
-section.login_container form button:hover {
+section.login_container form .login_btn:hover {
+  color: #ffff;
   border: 1px solid #AD6E4A;
   background: #AD6E4A;
-}
-
-section.login_container form button:hover a {
-  color: #ffff;
 }
 
 .bottom-section {

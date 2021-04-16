@@ -10,7 +10,7 @@
     <?php
 $errMsg = "";
 try {
-	require_once("./log.php");
+	require_once("./connectbooks_kai.php");
 
 	//.......確定是否上傳成功
 	if( $_FILES["spot_pic"]["error"] == UPLOAD_ERR_OK){
@@ -36,7 +36,7 @@ try {
 			$sql = "INSERT INTO `spot` (`spot_no`,`spot_name`, `spot_pic`, `spot_lv`, `spot_info`, `spot_intro`, `spot_dnt`,`spot_status`,`spot_s_status`,`spot_price`,`miles`)
 			values(null,:spot_name, :spot_pic, :spot_lv, :spot_info, :spot_intro, :spot_dnt,:spot_status,:spot_s_status,:spot_price,:miles )";
 			$products = $pdo->prepare( $sql );
-			$products -> bindValue(":spot_name",$ff);//bindvalue("values設定的名稱",$_POST["前台送回來的name"]) $_POST["spot_name"]
+			$products -> bindValue(":spot_name",$_POST["spot_name"]);//bindvalue("values設定的名稱",$_POST["前台送回來的name"]) $_POST["spot_name"]
 			$products -> bindValue(":spot_pic", $filename);
 			$products -> bindValue(":spot_lv", $_POST["spot_lv"]);
 			$products -> bindValue(":spot_info", $_POST["spot_info"]);

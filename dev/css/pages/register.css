@@ -842,13 +842,13 @@ section.login_container .modal-dialog form span {
   align-self: center;
 }
 
-section.login_container .modal-dialog form button {
+section.login_container .modal-dialog form #register {
   align-self: center;
   background-color: transparent;
   color: #AD6E4A;
 }
 
-section.login_container .modal-dialog form button:hover {
+section.login_container .modal-dialog form #register:hover {
   color: #ffff;
   border: 1px solid #AD6E4A;
   background: #AD6E4A;

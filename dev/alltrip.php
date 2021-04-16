@@ -343,7 +343,7 @@ session_start();
             fetch('./php/getSelectTrip.php').then(res => res.json()).then(data => {
                                          vm.planets = data;
                                          for(let i=0 ; i<data.length ; i++){
-                                             let url = `trip.php?no=${data[i].spot_no}`;
+                                             let url = `trip.php?spot_no=${data[i].spot_no}`;
                                              vm.planets[i].url = encodeURI(url);
                                              console.log(vm.planets[i].url)
                                          }
@@ -352,7 +352,7 @@ session_start();
             fetch('./php/getTrip.php').then(res => res.json()).then(data => {
                                          vm.spot1 = data;
                                          for(let i=0 ; i<data.length ; i++){
-                                             let url = `trip.php?no=${data[i].spot_no}`;
+                                             let url = `trip.php?spot_no=${data[i].spot_no}`;
                                              vm.spot1[i].url = encodeURI(url);
                                              console.log(vm.spot1[i].url)
                                          }
