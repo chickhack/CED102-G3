@@ -25,9 +25,9 @@ try {
 		if(file_exists("../images") === false){
 			mkdir("../images");
 		}
-		$ff=$pdo->last_insert_id();//這會去抓取最後新增的ID，放在新曾送出後
-		$_SESSION["name"]=2;		//=============================去抓會員是誰
-		$ff=$_SESSION["name"];
+		// $ff=$pdo->lastInsertId();//這會去抓取最後新增的ID，放在新曾送出後
+		// $_SESSION["name"]=2;		//=============================去抓會員是誰
+		// $fff=$_SESSION["name"];
 		//---將檔案copy到要放的路徑
 		$from = $_FILES["spot_pic"]["tmp_name"];
 		$to = "../images/$filename";
@@ -47,6 +47,7 @@ try {
 			$products -> bindValue(":spot_price", $_POST["spot_price"]);
 			$products -> bindValue(":miles", $_POST["miles"]);
 			$products -> execute();
+		// $ff=$pdo->lastInsertId();//這會去抓取最後新增的ID，要放在新增送出之後
 
 			echo "新增成功~";
 		}else{
@@ -66,7 +67,7 @@ try {
 // 使用foreach迴圈來新增訂單明細
 // $sql = "INSERT INTO `spot` (`spot_no`) values(:spot)";
 // $products = $pdo->prepare( $sql );
-// foreach($products as $i=>)
+// foreach($products as $i=>$dss){
     ?>
 </body>
 </html>
