@@ -1,20 +1,5 @@
 <?php
-$spot_no = $_REQUEST["spot_no"];
-$errMsg = "";
-
-try{
-    require_once("./php/connectbooks_kai.php");
-    $sql = "select *from spot where spot_no = :spot_no";
-    $spot = $pdo->prepare($sql);
-    $spot->bindValue(":spot_no", $spot_no);
-    $spot->execute();
-  }catch(PDOException $e){
-    $errMsg .= "錯誤原因 : ".$e -> getMessage(). "<br>";
-    $errMsg .= "錯誤行號 : ".$e -> getLine(). "<br>";
-  }
-
-
-
+8
 session_start();
  if(isset($_POST["add"])){
      if(isset($_SESSION["trip-cart"])){
@@ -39,9 +24,6 @@ session_start();
     }
  }
  
-
-
-
 ?>
 
 
@@ -130,16 +112,7 @@ session_start();
     <div id="particles-js">
         <script src="./js/background.js"></script>
     </div>
-
-    <?php 
-if( $errMsg != ""){ //例外
-  echo "<div><center>$errMsg</center></div>";
-}elseif($spot->rowCount()==0){
-      echo "<div><center>查無此景點資料</center></div>";
-}else{
-      $spotRow = $spot->fetchObject();
-?>
-    
+    <div id="app">
         <!-- Slider main container -->
         <div class="swiper-container">
             <!-- Additional required wrapper -->
@@ -157,11 +130,11 @@ if( $errMsg != ""){ //例外
             <div class="swiper-pagination"></div>
 
         </div>
-        <div id="app">
+       
         <div class="parent_container">
             <div class="up_container">
                 <main class="trip_content_all margin_left_3">
-                    <div class="h2 trip_title margin_top_2"><?php echo $spotRow->spot_name;?>
+                    <div class="h2 trip_title margin_top_2">火星 | 攀登太陽系第一高山
                         <div class="h3 number margin_left_2">{{number}}</div>
                         <div class="trip_bookmark"></div>
                         <!-- <img class="bookmark" src="./img/icon/bookmark-outline.png" alt=""> -->
@@ -178,7 +151,7 @@ if( $errMsg != ""){ //例外
                         <div class="tab_contents">
 
                             <div class="margin_top_2 line_low tab tab1 -on">
-                                <small class="tag "><?php echo $spotRow->spot_lv;?>景點</small>
+                                <small class="tag ">初階景點</small>
                                 <small class="tag">3000積分</small>
                                 <br>
                                 攀登太陽系第一高山為為三日行程。<br>
@@ -300,9 +273,6 @@ if( $errMsg != ""){ //例外
             </div>
         
     </div>
-<?php
-}
-?>
     <footer class="padding_top_10">
         <div class="links">
             <div class="logo"><img src="./img/logo.png" alt=""></div>
