@@ -66,13 +66,24 @@
   overflow: hidden;
   position: relative;
 }
-.grid .grid-item img{
-  width: 100%;
-  object-fit: cover;
+.grid .grid-item .img1{
+  width: 250px;
+  height: 310px;
 }
-.grid .grid-item:nth-child(n+9){
+.img1 .action-box{
   display: none;
 }
+.img1:hover .action-box{
+  display: flex;
+}
+.grid .grid-item .img1 img{
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+// .grid .grid-item:nth-child(n+9){
+//   display: none;
+// }
 .action-box{
   display:flex;
   position: absolute;
@@ -99,6 +110,9 @@
   padding: 10px;
   margin-left: 81px;
 }
+.action-box .button.button img{
+  min-width: 50%;
+}
 .article_all .article .member_photo{
   padding:15px;
 }
@@ -118,6 +132,9 @@
   // margin-left: 35px;
   letter-spacing: 2px;
   font-size: 12px;//新增
+  overflow:hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .article_all{
   position: relative;
@@ -132,9 +149,15 @@
 .text{
   padding:0 15px 15px 15px;
   color:$white;
-  line-height: 32px;
+  line-height: 42px;
   font-size: 12px;//新增
   letter-spacing: 1px;//新增
+  display: -webkit-box;
+  -webkit-line-clamp: 3; //行數
+  -webkit-box-orient: vertical;
+  white-space: normal;
+  overflow: hidden;
+
 
 
 }
