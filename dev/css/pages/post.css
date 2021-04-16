@@ -686,517 +686,95 @@ input[type=number] {
   animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
 }
 
-#marsloc {
-  top: 10vh;
-  left: 0;
-  position: absolute;
+.container {
+  position: relative;
 }
 
-@media all and (max-width: 1200px) {
-  #marsloc {
-    display: none;
-  }
+.container-fluid {
+  padding: 0;
+  margin-top: 15vh;
 }
 
-div.bk3 {
-  width: 300px;
-  height: 300px;
-  position: absolute;
-  left: -120px;
-  top: 400px;
-  opacity: 0.3;
-  animation: rotation 50s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+.row {
+  margin: 0;
 }
 
-@keyframes rotation {
-  0% {
-    transform: rotate(0deg);
-  }
-  33%,
-  66% {
-    transform: rotate(90deg);
-  }
-  50% {
-    transform: rotate(180deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+.col-12 {
+  margin-top: 2%;
+  padding: 0;
 }
 
-.border {
-  border: 1px solid #AD6E4A;
-  margin: 0px auto;
+form.post {
   width: 90%;
-  height: 100%;
-  top: 80px;
-  position: absolute;
-  opacity: 0.2;
-}
-
-.first {
-  display: flex;
-  max-width: 1200px;
   margin: 0 auto;
+  padding: 30px;
+  background-color: #292B41;
+  max-width: 900px;
 }
 
-@media all and (max-width: 1200px) {
-  .first {
-    flex-direction: column;
-    justify-content: center;
-    width: 95%;
-  }
+form.post .select_trip {
+  margin-bottom: 30px;
+  border: none;
+  outline: none;
 }
 
-.first img {
+form.post .select_trip select {
+  border: none;
+  outline: none;
+  padding: 5px;
+}
+
+.post form.post label.teaching {
   display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
 }
 
-.first .first_left {
-  padding-left: 40px;
-  width: 35%;
-  display: flex;
-}
-
-@media all and (max-width: 1200px) {
-  .first .first_left {
-    padding-left: 8px;
-    margin: 0 auto;
-    width: 90%;
-  }
-}
-
-.first .first_left h2.title {
-  display: inline-block;
-  position: relative;
-  vertical-align: top;
-  top: 18vh;
-  letter-spacing: 10px;
-  font-size: 36px;
-  color: #C9ADA7;
-  animation: h2 1.2s infinite;
-}
-
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-  .first .first_left h2.title {
-    font-size: 32px;
-    top: 10vh;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .first .first_left h2.title {
-    font-size: 24px;
-    top: 10vh;
-  }
-}
-
-.first .first_left h2.title span.h3 {
-  font-weight: 500;
-  letter-spacing: 10px;
-  font-size: 24px;
-}
-
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-  .first .first_left h2.title span.h3 {
-    font-size: 18px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .first .first_left h2.title span.h3 {
-    font-size: 14px;
-  }
-}
-
-.first .first_right {
-  width: 53%;
-  position: relative;
-}
-
-@media all and (max-width: 1200px) {
-  .first .first_right {
-    overflow: hidden;
-    width: 95%;
-  }
-}
-
-.first .first_right .hottrip {
-  display: inline-flex;
-  padding-top: 80px;
-}
-
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-  .first .first_right .hottrip {
-    padding-top: 120px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .first .first_right .hottrip {
-    flex-direction: column;
-    margin: 0 auto;
-    justify-content: space-between;
-  }
-}
-
-.first .first_right .hottrip div.planet_top {
-  position: relative;
-  padding-top: 90px;
-  text-align: center;
-  width: 55%;
-  padding-left: 8px;
-  padding-right: 8px;
-}
-
-.first .first_right .hottrip div.planet_top:hover {
-  transform: translateY(0.2em);
-}
-
-.first .first_right .hottrip div.planet_top.planet_top:nth-child(1) {
-  animation: float 5s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
-}
-
-.first .first_right .hottrip div.planet_top.planet_top:nth-child(2) {
-  animation: float 5.5s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
-}
-
-.first .first_right .hottrip div.planet_top.planet_top:nth-child(3) {
-  animation: float 6s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
-}
-
-.first .first_right .hottrip div.planet_top.planet_top:nth-child(4) {
-  animation: float 6.5s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
-}
-
-@media all and (max-width: 1200px) {
-  .first .first_right .hottrip div.planet_top {
-    padding-left: 8px;
-    padding-right: 8px;
-  }
-}
-
-.first .first_right .hottrip div.planet_top h4 {
-  color: #C9ADA7;
-}
-
-.first .first_right .hottrip div.planet_top img.planet {
-  height: 160px;
-  position: absolute;
-  top: 15px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 2;
-}
-
-.first .first_right .hottrip div.planet_top img.planet_a1 {
-  max-width: 270px;
-}
-
-.first .first_right .hottrip div.planet_top img.planet_a1:hover {
-  transform: translateY(0.2em);
-}
-
-.first .first_right .hottrip div.planet_top div.word {
-  position: absolute;
-  top: 190px;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  margin: 0 auto;
-}
-
-.first .first_right .hottrip div.planet_top div.word .hot {
-  color: #AD6E4A;
-}
-
-.first .first_right .hottrip div.planet_top div.word .tag {
-  display: inline-flex;
-  border: 1px solid #cccaca;
-  border-radius: 5px;
-  padding: 8px;
-  line-height: 5px;
-  margin: 3px;
-  color: #cccaca;
-}
-
-.first .first_right .hottrip div.planet_top div.word .price {
-  color: #AD6E4A;
-  font-weight: bold;
-  letter-spacing: 2px;
-  margin-bottom: 8px;
-  font-family: "Nasalization";
-}
-
-.first .first_right .hottrip div.planet_top div.word .addin {
-  background-color: #AD6E4A;
-  color: #ffffff;
-  border-radius: 15px;
-  width: 110px;
-  margin: 0 auto;
-  line-height: 26px;
-  text-align: center;
-  text-decoration: none;
+.post form.post .upload_img button {
+  outline: none;
   border: none;
 }
 
-.first .first_right .hottrip div.planet_top div.word .addin img.plus {
-  width: 15px;
-  display: inline-block;
-  position: relative;
-  top: 2px;
-  padding-right: 4px;
+.post form.post .post_text {
+  margin-top: 30px;
 }
 
-.first .first_right .hottrip div.planet_top div.word .addin:hover {
-  background-color: #bf896b;
+.post_text label.post, .post_text input.texts {
+  display: block;
 }
 
-@keyframes h2 {
-  0% {
-    text-shadow: 0 0 6px #FFF;
-  }
-  100% {
-    text-shadow: 0 0 0px #000;
-  }
+.post_text textarea.texts {
+  outline: none;
+  width: 90%;
+  height: 200px;
+  resize: none;
+  padding: 10px;
 }
 
-.tripselect {
-  display: inline-flex;
-  width: 280px;
-  justify-content: space-between;
+div.post form.post div.post_text label.post {
+  margin-bottom: 10px;
+  font-size: 16px;
 }
 
-@media all and (max-width: 768px) {
-  .tripselect {
-    width: 90%;
-  }
+.post_text {
+  margin-bottom: 30px;
 }
 
-.tripselect .icon2 {
-  width: 25px;
-  cursor: pointer;
-  z-index: 2;
-}
-
-.tripselect .select {
-  position: relative;
-  bottom: 4px;
-  color: #AD6E4A;
-}
-
-@keyframes float {
-  0% {
-    transform: translate(0, 0);
-  }
-  30% {
-    transform: translate(0, -3px);
-  }
-  70% {
-    transform: translate(0, 5px);
-  }
-  100% {
-    transform: translate(0, 0);
-  }
-}
-
-.stepsection {
+.button_post {
   text-align: center;
-  background-color: rgba(25, 25, 25, 0.3);
-  padding: 48px;
-  margin-top: 144px;
 }
 
-.stepsection .stepall {
-  max-width: 1000px;
-  margin: 0 auto;
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  padding: 32px;
-}
-
-@media all and (max-width: 767px) {
-  .stepsection .stepall {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-@media all and (max-width: 1200px) {
-  .stepsection .stepall .h2 {
-    font-size: 24px;
-  }
-}
-
-.stepsection .stepall .step {
-  position: relative;
-}
-
-@media all and (max-width: 767px) {
-  .stepsection .stepall .step {
-    margin-left: 0;
-    padding-top: 24px;
-  }
-}
-
-.stepsection .stepall .step img.step_icon {
-  width: 50px;
-  padding: 20px;
-  margin: 0 auto;
-}
-
-.stepsection .stepall .step img.step_icon4 {
-  width: 85px;
-  padding: 20px;
-  margin: 0 auto;
-}
-
-.stepsection .stepall .step .step_content {
-  color: #AD6E4A;
-  font-weight: bold;
-  width: 100%;
-}
-
-.stepsection .stepall .step .step_content img.num {
-  width: 23px;
-  display: inline-block;
-  position: relative;
-  top: 5px;
-  padding-right: 8px;
-}
-
-.second {
-  margin-bottom: 100px;
-}
-
-.second .alltrip {
+button.button_min {
+  width: 100px;
   text-align: center;
-  margin: 0 auto;
-}
-
-.second .tripcard_all {
-  display: inline-flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
-.second .tripcard_all .tripcard {
-  width: 250px;
-  background-color: #191919;
-  padding: 15px;
-  border-radius: 5px;
-  position: relative;
-  margin: 0 16px 0 16px;
-}
-
-.second .tripcard_all .tripcard:hover {
-  transform: translateY(0.2em);
-  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
-}
-
-.second .tripcard_all .tripcard.tripcard:nth-child(1) {
-  animation: float 4s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
-}
-
-.second .tripcard_all .tripcard.tripcard:nth-child(2) {
-  animation: float 4.5s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
-}
-
-.second .tripcard_all .tripcard.tripcard:nth-child(3) {
-  animation: float 5s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
-}
-
-@media screen and (min-width: 768px) and (max-width: 992px) {
-  .second .tripcard_all .tripcard {
-    margin: 16px;
-  }
-}
-
-@media all and (max-width: 767px) {
-  .second .tripcard_all .tripcard {
-    flex-direction: column;
-    margin: 16px 0 16px 0;
-  }
-}
-
-.second .tripcard_all .tripcard .spot_pic {
-  width: 250px;
-}
-
-.second .tripcard_all .tripcard .spot_pic:hover {
-  transform: perspective(0.5px) translateX(-1.5px) translateY(-1.5px);
-}
-
-.second .tripcard_all .tripcard .hot2 {
-  font-weight: bold;
-  margin-bottom: 15px;
-  color: #C9ADA7;
-}
-
-.second .tripcard_all .tripcard .tag {
-  display: inline-flex;
-  border: 1px solid #C9ADA7;
-  border-radius: 5px;
-  padding: 8px;
-  line-height: 5px;
-  margin: 3px;
-  color: #cccaca;
-}
-
-.second .tripcard_all .tripcard .price2 {
-  color: #AD6E4A;
-  font-weight: bold;
-  letter-spacing: 2px;
-  font-family: "Nasalization";
-  padding-left: 5px;
-  position: absolute;
-  right: 20px;
-  bottom: 10px;
-}
-
-.second .tripcard_all .tripcard .addin2 {
   background-color: #AD6E4A;
-  color: #ffffff;
-  border-radius: 15px;
-  width: 110px;
-  line-height: 26px;
-  text-align: center;
-  text-decoration: none;
+  color: white;
   border: none;
-  display: block;
+  outline: none;
+  font-size: 14px;
 }
 
-.second .tripcard_all .tripcard .addin2 img.plus {
-  width: 15px;
-  display: inline-block;
-  position: relative;
-  top: 2px;
-  padding-right: 4px;
-}
-
-.second .tripcard_all .tripcard .addin2:hover {
+button.button_min:hover {
   background-color: #bf896b;
 }
-
-.second .tripcard_all .tripcard .trip_bookmark {
-  background-image: url(../../img/icon/bookmark-outline.png);
-  width: 25px;
-  height: 25px;
-  background-size: 25px;
-  background-repeat: no-repeat;
-  padding: 8px;
-  position: absolute;
-  right: 0px;
-  top: 230px;
-  align-items: center;
-  display: block;
-  justify-content: center;
-  cursor: pointer;
-}
-
-.second .tripcard_all .tripcard .trip_bookmark:hover {
-  background-image: url(../../img/icon/bookmark_hover.png);
-}
-/*# sourceMappingURL=alltrip.css.map */
+/*# sourceMappingURL=post.css.map */

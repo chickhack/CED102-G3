@@ -35,10 +35,7 @@ session_start();
             );
             $_SESSION["trip-cart"][0] = $item_array;
     }
- }
- 
-
-
+}
 
 ?>
 
@@ -151,7 +148,6 @@ if( $errMsg != ""){ //例外
             </div>
         </div>
         <div class="swiper-pagination"></div>
-
     </div>
     <div id="app">
         <div class="parent_container">
@@ -211,14 +207,12 @@ if( $errMsg != ""){ //例外
                                 <button class="add btn-pull" id="add">＋</button>
                             </div>
                         </div>
-                        <!-- <div class="total margin_top_2 h3">總計$2000</div> -->
                         <div class="btn  margin_top_2">
                             <button type="submit" name="add" class="addin small"><img class="plus" src="./img/icon/plus.png" alt="">
-                            加入我的行程</button>
-                                    
+                            加入我的行程</button>    
                             <button type="submit" name="add" class="button_min p buy margin_left_3">前往訂購</button>
                         </div>
-</form>
+                        </form>
                 </div>
 
                 <div class="comment margin_top_10 margin_left_3">
@@ -254,7 +248,7 @@ if( $errMsg != ""){ //例外
                 </div>
             </div>
             <div class="recommend">
-                <h3 class="margin_top_10 alltrip ">其他推薦景點</h3>
+                <h3 class="margin_top_10 alltrip ">推薦精選景點</h3>
                 <div class="tripcard_all  margin_top_6">
                     <div v-for="item in second.slice(0,4)" class="tripcard">
                         <form class="card" action="trip.php" method="post">

@@ -1445,13 +1445,23 @@ input[type=number] {
   position: relative;
 }
 
-.grid .grid-item img {
-  width: 100%;
-  object-fit: cover;
+.grid .grid-item .img1 {
+  width: 250px;
+  height: 310px;
 }
 
-.grid .grid-item:nth-child(n+9) {
+.img1 .action-box {
   display: none;
+}
+
+.img1:hover .action-box {
+  display: flex;
+}
+
+.grid .grid-item .img1 img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
 }
 
 .action-box {
@@ -1483,6 +1493,10 @@ input[type=number] {
   margin-left: 81px;
 }
 
+.action-box .button.button img {
+  min-width: 50%;
+}
+
 .article_all .article .member_photo {
   padding: 15px;
 }
@@ -1504,6 +1518,9 @@ input[type=number] {
   padding: 0 15px;
   letter-spacing: 2px;
   font-size: 12px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .article_all {
@@ -1521,9 +1538,13 @@ input[type=number] {
 .text {
   padding: 0 15px 15px 15px;
   color: #ffffff;
-  line-height: 32px;
+  line-height: 42px;
   font-size: 12px;
   letter-spacing: 1px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  white-space: normal;
+  overflow: hidden;
 }
 
 .article_2 {
@@ -3474,9 +3495,15 @@ div.bk3 {
   animation: h2 1.2s infinite;
 }
 
-@media all and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .first .first_left h2.title {
     font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .first .first_left h2.title {
+    font-size: 24px;
   }
 }
 
@@ -3486,9 +3513,15 @@ div.bk3 {
   font-size: 24px;
 }
 
-@media all and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .first .first_left h2.title span.h3 {
     font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .first .first_left h2.title span.h3 {
+    font-size: 14px;
   }
 }
 
@@ -3512,6 +3545,14 @@ div.bk3 {
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .first .first_right .hottrip {
     padding-top: 160px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .first .first_right .hottrip {
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: space-between;
   }
 }
 

@@ -686,517 +686,263 @@ input[type=number] {
   animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
 }
 
-#marsloc {
-  top: 10vh;
-  left: 0;
-  position: absolute;
-}
-
-@media all and (max-width: 1200px) {
-  #marsloc {
-    display: none;
-  }
-}
-
-div.bk3 {
-  width: 300px;
-  height: 300px;
-  position: absolute;
-  left: -120px;
-  top: 400px;
-  opacity: 0.3;
-  animation: rotation 50s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
-}
-
-@keyframes rotation {
-  0% {
-    transform: rotate(0deg);
-  }
-  33%,
-  66% {
-    transform: rotate(90deg);
-  }
-  50% {
-    transform: rotate(180deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-.border {
-  border: 1px solid #AD6E4A;
-  margin: 0px auto;
-  width: 90%;
-  height: 100%;
-  top: 80px;
-  position: absolute;
-  opacity: 0.2;
-}
-
-.first {
-  display: flex;
-  max-width: 1200px;
+section.shop {
   margin: 0 auto;
-}
-
-@media all and (max-width: 1200px) {
-  .first {
-    flex-direction: column;
-    justify-content: center;
-    width: 95%;
-  }
-}
-
-.first img {
-  display: block;
-}
-
-.first .first_left {
-  padding-left: 40px;
-  width: 35%;
-  display: flex;
-}
-
-@media all and (max-width: 1200px) {
-  .first .first_left {
-    padding-left: 8px;
-    margin: 0 auto;
-    width: 90%;
-  }
-}
-
-.first .first_left h2.title {
-  display: inline-block;
-  position: relative;
-  vertical-align: top;
-  top: 18vh;
-  letter-spacing: 10px;
-  font-size: 36px;
-  color: #C9ADA7;
-  animation: h2 1.2s infinite;
-}
-
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-  .first .first_left h2.title {
-    font-size: 32px;
-    top: 10vh;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .first .first_left h2.title {
-    font-size: 24px;
-    top: 10vh;
-  }
-}
-
-.first .first_left h2.title span.h3 {
-  font-weight: 500;
-  letter-spacing: 10px;
-  font-size: 24px;
-}
-
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-  .first .first_left h2.title span.h3 {
-    font-size: 18px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .first .first_left h2.title span.h3 {
-    font-size: 14px;
-  }
-}
-
-.first .first_right {
-  width: 53%;
-  position: relative;
-}
-
-@media all and (max-width: 1200px) {
-  .first .first_right {
-    overflow: hidden;
-    width: 95%;
-  }
-}
-
-.first .first_right .hottrip {
-  display: inline-flex;
-  padding-top: 80px;
-}
-
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-  .first .first_right .hottrip {
-    padding-top: 120px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .first .first_right .hottrip {
-    flex-direction: column;
-    margin: 0 auto;
-    justify-content: space-between;
-  }
-}
-
-.first .first_right .hottrip div.planet_top {
-  position: relative;
-  padding-top: 90px;
+  max-width: 1100px;
   text-align: center;
-  width: 55%;
-  padding-left: 8px;
-  padding-right: 8px;
-}
-
-.first .first_right .hottrip div.planet_top:hover {
-  transform: translateY(0.2em);
-}
-
-.first .first_right .hottrip div.planet_top.planet_top:nth-child(1) {
-  animation: float 5s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
-}
-
-.first .first_right .hottrip div.planet_top.planet_top:nth-child(2) {
-  animation: float 5.5s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
-}
-
-.first .first_right .hottrip div.planet_top.planet_top:nth-child(3) {
-  animation: float 6s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
-}
-
-.first .first_right .hottrip div.planet_top.planet_top:nth-child(4) {
-  animation: float 6.5s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
-}
-
-@media all and (max-width: 1200px) {
-  .first .first_right .hottrip div.planet_top {
-    padding-left: 8px;
-    padding-right: 8px;
-  }
-}
-
-.first .first_right .hottrip div.planet_top h4 {
-  color: #C9ADA7;
-}
-
-.first .first_right .hottrip div.planet_top img.planet {
-  height: 160px;
-  position: absolute;
-  top: 15px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 2;
-}
-
-.first .first_right .hottrip div.planet_top img.planet_a1 {
-  max-width: 270px;
-}
-
-.first .first_right .hottrip div.planet_top img.planet_a1:hover {
-  transform: translateY(0.2em);
-}
-
-.first .first_right .hottrip div.planet_top div.word {
-  position: absolute;
-  top: 190px;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  margin: 0 auto;
-}
-
-.first .first_right .hottrip div.planet_top div.word .hot {
-  color: #AD6E4A;
-}
-
-.first .first_right .hottrip div.planet_top div.word .tag {
-  display: inline-flex;
-  border: 1px solid #cccaca;
-  border-radius: 5px;
-  padding: 8px;
-  line-height: 5px;
-  margin: 3px;
-  color: #cccaca;
-}
-
-.first .first_right .hottrip div.planet_top div.word .price {
-  color: #AD6E4A;
-  font-weight: bold;
-  letter-spacing: 2px;
-  margin-bottom: 8px;
-  font-family: "Nasalization";
-}
-
-.first .first_right .hottrip div.planet_top div.word .addin {
-  background-color: #AD6E4A;
   color: #ffffff;
-  border-radius: 15px;
-  width: 110px;
-  margin: 0 auto;
-  line-height: 26px;
-  text-align: center;
-  text-decoration: none;
-  border: none;
 }
 
-.first .first_right .hottrip div.planet_top div.word .addin img.plus {
-  width: 15px;
-  display: inline-block;
+@media all and (max-width: 992px) {
+  section.shop {
+    margin: 0 30px;
+  }
+}
+
+section.shop .banner {
+  background-image: url("../../img/home/others/mars_landscape.jpg");
+  background-size: cover;
+  background-position: center bottom -250px;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding-top: 20%;
   position: relative;
-  top: 2px;
-  padding-right: 4px;
-}
-
-.first .first_right .hottrip div.planet_top div.word .addin:hover {
-  background-color: #bf896b;
-}
-
-@keyframes h2 {
-  0% {
-    text-shadow: 0 0 6px #FFF;
-  }
-  100% {
-    text-shadow: 0 0 0px #000;
-  }
-}
-
-.tripselect {
-  display: inline-flex;
-  width: 280px;
-  justify-content: space-between;
 }
 
 @media all and (max-width: 768px) {
-  .tripselect {
-    width: 90%;
+  section.shop .banner {
+    background-position: center center;
+    padding-top: 40%;
   }
 }
 
-.tripselect .icon2 {
-  width: 25px;
-  cursor: pointer;
-  z-index: 2;
-}
-
-.tripselect .select {
-  position: relative;
-  bottom: 4px;
-  color: #AD6E4A;
-}
-
-@keyframes float {
-  0% {
-    transform: translate(0, 0);
-  }
-  30% {
-    transform: translate(0, -3px);
-  }
-  70% {
-    transform: translate(0, 5px);
-  }
-  100% {
-    transform: translate(0, 0);
-  }
-}
-
-.stepsection {
-  text-align: center;
-  background-color: rgba(25, 25, 25, 0.3);
-  padding: 48px;
-  margin-top: 144px;
-}
-
-.stepsection .stepall {
-  max-width: 1000px;
-  margin: 0 auto;
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  padding: 32px;
-}
-
-@media all and (max-width: 767px) {
-  .stepsection .stepall {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-@media all and (max-width: 1200px) {
-  .stepsection .stepall .h2 {
-    font-size: 24px;
-  }
-}
-
-.stepsection .stepall .step {
-  position: relative;
-}
-
-@media all and (max-width: 767px) {
-  .stepsection .stepall .step {
-    margin-left: 0;
-    padding-top: 24px;
-  }
-}
-
-.stepsection .stepall .step img.step_icon {
-  width: 50px;
-  padding: 20px;
-  margin: 0 auto;
-}
-
-.stepsection .stepall .step img.step_icon4 {
-  width: 85px;
-  padding: 20px;
-  margin: 0 auto;
-}
-
-.stepsection .stepall .step .step_content {
-  color: #AD6E4A;
-  font-weight: bold;
-  width: 100%;
-}
-
-.stepsection .stepall .step .step_content img.num {
-  width: 23px;
-  display: inline-block;
-  position: relative;
-  top: 5px;
-  padding-right: 8px;
-}
-
-.second {
-  margin-bottom: 100px;
-}
-
-.second .alltrip {
-  text-align: center;
-  margin: 0 auto;
-}
-
-.second .tripcard_all {
-  display: inline-flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
-.second .tripcard_all .tripcard {
-  width: 250px;
-  background-color: #191919;
-  padding: 15px;
-  border-radius: 5px;
-  position: relative;
-  margin: 0 16px 0 16px;
-}
-
-.second .tripcard_all .tripcard:hover {
-  transform: translateY(0.2em);
-  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
-}
-
-.second .tripcard_all .tripcard.tripcard:nth-child(1) {
-  animation: float 4s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
-}
-
-.second .tripcard_all .tripcard.tripcard:nth-child(2) {
-  animation: float 4.5s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
-}
-
-.second .tripcard_all .tripcard.tripcard:nth-child(3) {
-  animation: float 5s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
-}
-
-@media screen and (min-width: 768px) and (max-width: 992px) {
-  .second .tripcard_all .tripcard {
-    margin: 16px;
-  }
-}
-
-@media all and (max-width: 767px) {
-  .second .tripcard_all .tripcard {
-    flex-direction: column;
-    margin: 16px 0 16px 0;
-  }
-}
-
-.second .tripcard_all .tripcard .spot_pic {
-  width: 250px;
-}
-
-.second .tripcard_all .tripcard .spot_pic:hover {
-  transform: perspective(0.5px) translateX(-1.5px) translateY(-1.5px);
-}
-
-.second .tripcard_all .tripcard .hot2 {
-  font-weight: bold;
-  margin-bottom: 15px;
-  color: #C9ADA7;
-}
-
-.second .tripcard_all .tripcard .tag {
-  display: inline-flex;
-  border: 1px solid #C9ADA7;
-  border-radius: 5px;
-  padding: 8px;
-  line-height: 5px;
-  margin: 3px;
-  color: #cccaca;
-}
-
-.second .tripcard_all .tripcard .price2 {
-  color: #AD6E4A;
-  font-weight: bold;
-  letter-spacing: 2px;
-  font-family: "Nasalization";
-  padding-left: 5px;
+section.shop .banner h2 {
+  width: 80%;
   position: absolute;
-  right: 20px;
-  bottom: 10px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.second .tripcard_all .tripcard .addin2 {
+@media all and (max-width: 768px) {
+  section.shop .banner h2 {
+    font-size: 1rem;
+  }
+}
+
+section.shop .filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media all and (max-width: 992px) {
+  section.shop .filter {
+    margin: 40px 30px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  section.shop .filter {
+    flex-direction: column;
+  }
+}
+
+section.shop #app ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+@media all and (max-width: 992px) {
+  section.shop #app ul {
+    justify-content: space-around;
+    margin: 0 10px;
+  }
+}
+
+section.shop #app li {
+  position: relative;
+  margin: 0 10px;
+  width: 22%;
+}
+
+@media all and (max-width: 992px) {
+  section.shop #app li {
+    width: 45%;
+  }
+}
+
+@media all and (max-width: 768px) {
+  section.shop #app li {
+    width: 100%;
+    max-width: 350px;
+  }
+}
+
+section.shop #app .card {
+  position: relative;
+  height: 300px;
+  margin: 30px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  z-index: 10;
+}
+
+@media all and (max-width: 768px) {
+  section.shop #app .card {
+    margin-top: 50px;
+  }
+}
+
+section.shop #app .card:hover .imgBx {
+  transform: translateY(-50px);
+}
+
+section.shop #app .card:hover .imgBx img {
+  transform: translateY(-40px) scale(1.3);
+}
+
+section.shop #app .card:hover .content {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(-10px);
+}
+
+section.shop #app .imgBx {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  transition: 0.5s ease-in-out;
+}
+
+@media all and (max-width: 768px) {
+  section.shop #app .imgBx {
+    transform: translateY(-50px);
+  }
+  section.shop #app .imgBx img {
+    transform: translateY(-40px) scale(1.3);
+  }
+}
+
+section.shop #app .imgBx img {
+  max-width: 50%;
+  margin: 0 0 20px;
+  transition: .5s ease-in-out;
+}
+
+section.shop #app .content {
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: .5s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+}
+
+@media all and (max-width: 768px) {
+  section.shop #app .content {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-10px);
+  }
+}
+
+section.shop #app .content .button_min {
+  position: relative;
+  top: 20px;
   background-color: #AD6E4A;
   color: #ffffff;
-  border-radius: 15px;
-  width: 110px;
-  line-height: 26px;
-  text-align: center;
-  text-decoration: none;
-  border: none;
-  display: block;
-}
-
-.second .tripcard_all .tripcard .addin2 img.plus {
-  width: 15px;
   display: inline-block;
-  position: relative;
-  top: 2px;
-  padding-right: 4px;
-}
-
-.second .tripcard_all .tripcard .addin2:hover {
-  background-color: #bf896b;
-}
-
-.second .tripcard_all .tripcard .trip_bookmark {
-  background-image: url(../../img/icon/bookmark-outline.png);
-  width: 25px;
-  height: 25px;
-  background-size: 25px;
-  background-repeat: no-repeat;
-  padding: 8px;
-  position: absolute;
-  right: 0px;
-  top: 230px;
-  align-items: center;
-  display: block;
-  justify-content: center;
   cursor: pointer;
 }
 
-.second .tripcard_all .tripcard .trip_bookmark:hover {
-  background-image: url(../../img/icon/bookmark_hover.png);
+.custom-select {
+  position: relative;
+  font-family: Arial;
+  width: 12%;
 }
-/*# sourceMappingURL=alltrip.css.map */
+
+@media all and (max-width: 992px) {
+  .custom-select {
+    width: 20%;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .custom-select {
+    width: 80%;
+    margin: 16px 0;
+  }
+}
+
+.custom-select select {
+  display: none;
+  /*hide original SELECT element:*/
+}
+
+.select-selected {
+  background-color: #AD6E4A;
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div, .select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  user-select: none;
+}
+
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: #AD6E4A;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+/*# sourceMappingURL=shop.css.map */

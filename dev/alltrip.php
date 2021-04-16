@@ -1,5 +1,4 @@
 <?php
-
 session_start();
  if(isset($_POST["add"])){
      if(isset($_SESSION["trip-cart"])){
@@ -23,10 +22,8 @@ session_start();
             $_SESSION["trip-cart"][0] = $item_array;
     }
  }
- 
+
 ?>
-
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -51,7 +48,6 @@ session_start();
     <!-- alltrip css -->
     <link rel="stylesheet" href="./css/pages/alltrip.css">
     
-
 </head>
 
 <body>
@@ -108,9 +104,7 @@ session_start();
                 <div class="line3"></div>
             </div>
         </nav>
-
         <script src="./js/header.js"></script>
-
 
     </header>
 
@@ -119,9 +113,6 @@ session_start();
         <script src="./js/background.js"></script>
     </div>
 
-
-
-
     <!-- 動的火星 -->
     <div id="marsloc"></div>
     <div class="bk3">
@@ -129,8 +120,6 @@ session_start();
     </div>
 
     <!-- ----------first -->
-
-
     <div id="app">
 
         <div class="first padding_top_5">
@@ -174,7 +163,6 @@ session_start();
         </div>
 
     </div>
-
 
     <!-- ---------流程區 -->
     <div class="stepsection">
@@ -233,7 +221,6 @@ session_start();
                 </div>
 
             </div>
-
             <h3 class="padding_top_5 alltrip ">火星景點</h3>
             <div class="tripcard_all  margin_top_5">
                 <div v-for="item in spot1.slice(3,6)" class="tripcard ">
@@ -280,7 +267,6 @@ session_start();
         </div>
     </div>
  
-
     <a href="#" class="go-top"></a>
 
     <footer class="padding_top_10">
@@ -297,9 +283,6 @@ session_start();
         <img src="./img/footer_moon.png" alt="" class="footer_moon">
         <img src="./img/smoke.png" alt="" class="smoke">
     </footer>
-
-
-
 
 
     <!-- go top -->
@@ -330,6 +313,7 @@ session_start();
 
     <!-- vue -->
     <!-- <script src="./js/alltrip.js"></script> -->
+
     <!-- vue -->
     <script>
     let vm = new Vue({
