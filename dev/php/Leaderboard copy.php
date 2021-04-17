@@ -1,7 +1,7 @@
 <?php
 try {
 	require_once("./log.php");
-	$sql ="SELECT * FROM `customer` ORDER BY miles DESC";
+	$sql ="SELECT * FROM `spot`";
 	$products = $pdo->query($sql);
 	$prodRows = $products->fetchAll(PDO::FETCH_ASSOC);
 	// $sql1 ="SELECT * FROM `customer` ORDER BY miles DESC";
