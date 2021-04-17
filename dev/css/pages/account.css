@@ -3498,12 +3498,14 @@ div.bk3 {
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .first .first_left h2.title {
     font-size: 32px;
+    top: 10vh;
   }
 }
 
 @media screen and (max-width: 767px) {
   .first .first_left h2.title {
     font-size: 24px;
+    top: 10vh;
   }
 }
 
@@ -3544,7 +3546,7 @@ div.bk3 {
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .first .first_right .hottrip {
-    padding-top: 160px;
+    padding-top: 120px;
   }
 }
 
