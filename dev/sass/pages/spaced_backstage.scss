@@ -156,6 +156,7 @@
         main.main{
             padding-top: 120px;
         }
+        
         #linebox{
             position: fixed;
             width: 100%;
@@ -197,6 +198,10 @@
             display: flex;
             background-color: #292b419d;
             padding: 16px 0px;
+            .toomuch{
+                height:150px;
+                overflow-y: auto;
+            }
         }
         .div-right-span{
             display: flex;

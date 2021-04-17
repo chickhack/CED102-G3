@@ -557,6 +557,11 @@ canvas {
   padding: 16px 0px;
 }
 
+.div-menu .div-right .div-right-span-for .toomuch {
+  height: 150px;
+  overflow-y: auto;
+}
+
 .div-menu .div-right .div-right-span {
   display: flex;
 }
