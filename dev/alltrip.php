@@ -20,7 +20,7 @@ session_start();
             "spot_id" => $_GET["spot_id"]
         );
     };
-    $_SESSION["trip-cart"][0] = $item_array;
+    $_SESSION["trip-cart"] = $item_array;
  }
  
 ?>
