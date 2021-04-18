@@ -159,7 +159,7 @@ body {
                     color: $white;
                     font-weight: 900;
                     transition: all .3s;
-                    padding: 10.4px 0;
+                    padding: 8.4px 0;
                     @include respond(mobile){
                         margin-left: 0;
                     }
@@ -323,6 +323,7 @@ body {
 
     .messages {
         @include flex_middle();
+        justify-content: start;
         border-bottom: 1px solid $gold;
         padding: 16px 0;
         position: relative;
@@ -330,7 +331,6 @@ body {
         img {
             max-width: 50px;
         }
-
         .name {
             @include flex_middle();
             justify-content: start;
@@ -346,8 +346,9 @@ body {
         .more {
             color: $white;
             text-decoration: underline;
-            position: relative;
-            float: right;
+            position: absolute;
+            right: 0;
+            bottom: 10px;
             cursor: pointer;
         }
     }
