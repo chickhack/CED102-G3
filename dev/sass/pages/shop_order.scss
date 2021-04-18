@@ -5,6 +5,9 @@ section.orderDetail{
     // border: 1px solid #fff;
     margin: 0 auto;
     padding-top: 5vh;
+    h3{
+        margin: 0 80px;
+    }
     ul{
         margin: 0 80px;
         @include respond(mobile){
@@ -215,6 +218,11 @@ section.orderer{
             }
             label{
                 width: 100%;
+            }
+            #creditDate{
+                @include respond(pad){
+                    margin-top: 8px;
+                }
             }
             .creditInput{
                 @include respond(pad){

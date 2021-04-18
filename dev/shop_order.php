@@ -231,7 +231,7 @@
                         </div>
                         <small class="margin_top_1">累積後目前有50000積分</small>
                     </div>
-                    <input type="submit" value="確認付款" class="button_min">
+                    <input type="submit" value="確認付款" class="button_min" name="checkOut">
                 </form>
             </section>
             <div class="modal">
