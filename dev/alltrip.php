@@ -19,17 +19,8 @@ session_start();
             $item_array = array(
                 "spot_id" => $_POST["spot_id"]
             );
-            $_SESSION["trip-cart"][0] = $item_array;
+            $_SESSION["trip-cart"]= $item_array;
     }
-<<<<<<< HEAD
-=======
-}else{
-        $item_array = array(
-            "spot_id" => $_GET["spot_id"]
-        );
-    };
-    $_SESSION["trip-cart"] = $item_array;
->>>>>>> chickhack
  }
 
 ?>
