@@ -435,20 +435,23 @@ nav .nav-cart .count {
   text-align: center;
   line-height: 1.5rem;
   position: absolute;
-  transform: translate(50%, -150%);
+  -webkit-transform: translate(50%, -150%);
+          transform: translate(50%, -150%);
   display: block;
   color: white;
 }
 
 @media all and (max-width: 992px) {
   nav .nav-cart .count {
-    transform: translate(100%, -150%);
+    -webkit-transform: translate(100%, -150%);
+            transform: translate(100%, -150%);
   }
 }
 
 @media all and (max-width: 768px) {
   nav .nav-cart .count {
-    transform: translate(40%, -170%);
+    -webkit-transform: translate(40%, -170%);
+            transform: translate(40%, -170%);
     width: 20px;
     height: 20px;
     font-size: 12px;
@@ -469,20 +472,23 @@ nav .nav-trip .trip-count {
   text-align: center;
   line-height: 1.5rem;
   position: absolute;
-  transform: translate(50%, -150%);
+  -webkit-transform: translate(50%, -150%);
+          transform: translate(50%, -150%);
   display: block;
   color: white;
 }
 
 @media all and (max-width: 992px) {
   nav .nav-trip .trip-count {
-    transform: translate(100%, -150%);
+    -webkit-transform: translate(100%, -150%);
+            transform: translate(100%, -150%);
   }
 }
 
 @media all and (max-width: 768px) {
   nav .nav-trip .trip-count {
-    transform: translate(40%, -170%);
+    -webkit-transform: translate(40%, -170%);
+            transform: translate(40%, -170%);
     width: 20px;
     height: 20px;
     font-size: 12px;
@@ -684,7 +690,8 @@ input[type=number] {
   height: 100px;
   background-size: contain;
   background-repeat: no-repeat;
-  animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+  -webkit-animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+          animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
 }
 
 .container-fluid {
@@ -703,6 +710,11 @@ input[type=number] {
 section.login_container {
   padding: 0;
   border: 1px solid #ad6e4a83;
+<<<<<<< HEAD
+  display: -webkit-box;
+  display: -ms-flexbox;
+=======
+>>>>>>> dev
   display: flex;
   border-radius: 5px;
 }
@@ -736,6 +748,11 @@ section.login_container .login_banner h2 {
 }
 
 section.login_container .return_btn {
+<<<<<<< HEAD
+  display: -webkit-box;
+  display: -ms-flexbox;
+=======
+>>>>>>> dev
   display: flex;
   align-self: flex-start;
   align-items: baseline;
@@ -758,11 +775,21 @@ section.login_container .return_btn a:hover {
 }
 
 section.login_container .modal-dialog {
+<<<<<<< HEAD
+  display: -webkit-box;
+  display: -ms-flexbox;
+=======
+>>>>>>> dev
   display: flex;
   flex-direction: column;
 }
 
 section.login_container .modal-dialog .main-section {
+<<<<<<< HEAD
+  display: -webkit-box;
+  display: -ms-flexbox;
+=======
+>>>>>>> dev
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -777,10 +804,26 @@ section.login_container .modal-dialog .main-section .modal-content {
 }
 
 section.login_container .modal-dialog form {
+<<<<<<< HEAD
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: inherit;
+      -ms-flex-align: inherit;
+          align-items: inherit;
+=======
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: inherit;
+>>>>>>> dev
 }
 
 section.login_container .modal-dialog form .form-group input {
@@ -806,7 +849,24 @@ section.login_container .modal-dialog form .form-group input:focus {
 }
 
 section.login_container .modal-dialog form .form-group input:hover {
+<<<<<<< HEAD
+  -webkit-animation: pulse .5s 1;
+          animation: pulse .5s 1;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(204, 140, 44, 0.4);
+  }
+  70% {
+    -webkit-box-shadow: 0 0 0 7px rgba(204, 140, 44, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(204, 140, 44, 0);
+  }
+=======
   animation: pulse .5s 1;
+>>>>>>> dev
 }
 
 @keyframes pulse {
@@ -839,11 +899,20 @@ section.login_container .modal-dialog form .form-group:last-of-type::before {
 }
 
 section.login_container .modal-dialog form span {
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
+<<<<<<< HEAD
+section.login_container .modal-dialog form button {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+=======
 section.login_container .modal-dialog form #register {
   align-self: center;
+>>>>>>> dev
   background-color: transparent;
   color: #AD6E4A;
 }
@@ -855,6 +924,11 @@ section.login_container .modal-dialog form #register:hover {
 }
 
 section.login_container .bottom-section {
+<<<<<<< HEAD
+  display: -webkit-box;
+  display: -ms-flexbox;
+=======
+>>>>>>> dev
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -434,20 +434,23 @@ nav .nav-cart .count {
   text-align: center;
   line-height: 1.5rem;
   position: absolute;
-  transform: translate(50%, -150%);
+  -webkit-transform: translate(50%, -150%);
+          transform: translate(50%, -150%);
   display: block;
   color: white;
 }
 
 @media all and (max-width: 992px) {
   nav .nav-cart .count {
-    transform: translate(100%, -150%);
+    -webkit-transform: translate(100%, -150%);
+            transform: translate(100%, -150%);
   }
 }
 
 @media all and (max-width: 768px) {
   nav .nav-cart .count {
-    transform: translate(40%, -170%);
+    -webkit-transform: translate(40%, -170%);
+            transform: translate(40%, -170%);
     width: 20px;
     height: 20px;
     font-size: 12px;
@@ -468,20 +471,23 @@ nav .nav-trip .trip-count {
   text-align: center;
   line-height: 1.5rem;
   position: absolute;
-  transform: translate(50%, -150%);
+  -webkit-transform: translate(50%, -150%);
+          transform: translate(50%, -150%);
   display: block;
   color: white;
 }
 
 @media all and (max-width: 992px) {
   nav .nav-trip .trip-count {
-    transform: translate(100%, -150%);
+    -webkit-transform: translate(100%, -150%);
+            transform: translate(100%, -150%);
   }
 }
 
 @media all and (max-width: 768px) {
   nav .nav-trip .trip-count {
-    transform: translate(40%, -170%);
+    -webkit-transform: translate(40%, -170%);
+            transform: translate(40%, -170%);
     width: 20px;
     height: 20px;
     font-size: 12px;
@@ -960,7 +966,7 @@ input::-webkit-inner-spin-button {
 .parent_container .up_container .book .btn .button_min {
   background-color: #AD6E4A;
   color: #ffffff;
-  padding: 0 8px;
+  padding: 8px;
 }
 
 .parent_container .up_container .book .btn .button_min a {

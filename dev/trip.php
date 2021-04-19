@@ -1,7 +1,30 @@
 <?php
+session_start();
+if(isset($_POST["add"])){
+    if(isset($_SESSION["trip-cart"])){
+       $item_array_id = array_column($_SESSION["trip-cart"],"spot_id"); 
+    
+       if(!in_array($_POST["spot_id"], $item_array_id)){
+           $count = count($_SESSION["trip-cart"]);
+           $item_array = array(
+               "spot_id" => $_POST["spot_id"]
+           );
+           $_SESSION["trip-cart"][$count] =$item_array;
+           // echo '<script>window.location="alltrip_test.php"</script>';
+       }else{
+           echo "<script>alert('已加入我的行程')</script>";
+           // echo "<script>window.location ='alltrip_test.php'</script>";
+   }
+       }else{
+           $item_array = array(
+               "spot_id" => $_POST["spot_id"]
+           );
+           $_SESSION["trip-cart"][0] = $item_array;
+   }
+}
+
 $spot_no = $_GET["spot_no"];
 $errMsg = "";
-
 try{
     require_once("./php/connectbooks_kai.php");
     $sql = "select *from spot where spot_no = :spot_no";
@@ -13,29 +36,7 @@ try{
     $errMsg .= "錯誤行號 : ".$e -> getLine(). "<br>";
   }
 
-session_start();
- if(isset($_POST["add"])){
-     if(isset($_SESSION["trip-cart"])){
-        $item_array_id = array_column($_SESSION["trip-cart"],"spot_id"); 
-     
-        if(!in_array($_POST["spot_id"], $item_array_id)){
-            $count = count($_SESSION["trip-cart"]);
-            $item_array = array(
-                "spot_id" => $_POST["spot_id"]
-            );
-            $_SESSION["trip-cart"][$count] =$item_array;
-            // echo '<script>window.location="alltrip_test.php"</script>';
-        }else{
-            echo "<script>alert('已加入我的行程')</script>";
-            // echo "<script>window.location ='alltrip_test.php'</script>";
-    }
-        }else{
-            $item_array = array(
-                "spot_id" => $_POST["spot_id"]
-            );
-            $_SESSION["trip-cart"][0] = $item_array;
-    }
-}
+
 
 ?>
 
@@ -193,27 +194,35 @@ if( $errMsg != ""){ //例外
                         <p class="margin_top_1 small">
                             SPACED會在預訂成功後的1個工作日內確認，並將使用憑證發送至您的電子郵箱，如在註明的時限內還沒收到郵件，請查看垃圾郵件箱或與我們聯絡。
                         </p>
-                        <hr class="margin_top_2">
+                        <!-- <hr class="margin_top_2"> -->
                         <form class="card" action="trip.php" method="post">
-                        <div class="select">
-                            <div class="date margin_top_2">
-                                <label for="date-1" class="h4 date_text">選擇出發日期</label><br>
-                                <input type="date" id="date-1" class="btn-date data-down">
+                            <div class="select">
+                                <div class="date margin_top_2">
+                                    <label for="date-1" class="h4 date_text">選擇出發日期</label><br>
+                                    <input type="date" id="date-1" class="btn-date data-down">
+                                </div>
+                                <div class="amount margin_top_2">
+                                    <p class="h4 date_text">數量</p>
+                                    <button class="minus btn-pull" id="minus">－</button>
+                                    <input type="number" value="1" id="num" class="btn-nu p" min="0">
+                                    <button class="add btn-pull" id="add">＋</button>
+                                </div>
                             </div>
-                            <div class="amount margin_top_2">
-                                <p class="h4 date_text">數量</p>
-                                <button class="minus btn-pull" id="minus">－</button>
-                                <input type="number" value="1" id="num" class="btn-nu p" min="0">
-                                <button class="add btn-pull" id="add">＋</button>
+                            
+                            <div class="btn  margin_top_2">
+                                
+                                <button type="submit" name="add" class="addin small myTrip"><img class="plus"
+                                        src="./img/icon/plus.png" alt="">
+                                    加入我的行程</button>
+                                    <input type="hidden" name="spot_id" :value="spot_no">
+                                <button type="submit" name="add" class="button_min p buy margin_left_3"><a href="./car-itineray.php">前往訂購</a></button>
                             </div>
-                        </div>
-                        <div class="btn  margin_top_2">
-                            <button type="submit" name="add" class="addin small"><img class="plus" src="./img/icon/plus.png" alt="">
-                            加入我的行程</button>    
-                            <button type="submit" name="add" class="button_min p buy margin_left_3">前往訂購</button>
-                        </div>
                         </form>
                 </div>
+
+                <?php
+}
+?>
 
                 <div class="comment margin_top_10 margin_left_3">
                     <h3>旅客評論</h3>
@@ -231,17 +240,17 @@ if( $errMsg != ""){ //例外
                     </div>
                     <ul class="margin_top_5">
                         <li class="messages" v-for="comment in comments">
-                            <img :src="comment.src" alt="">
+                            <!-- <img :src="comment.src" alt=""> -->
                             <div class="words margin_left_3">
                                 <div class="name">
-                                    <p>{{comment.name}}</p>
+                                    <p>{{comment.mem_no}}</p>
                                     <hr>
-                                    <p>{comment.date}</p>
+                                    <p>{{comment.trev_date}}</p>
                                 </div>
                                 <div class="message margin_top_1 line_low">
-                                    <p>{{comment.content}}</p>
+                                    <p>{{comment.trev}}</p>
                                 </div>
-                                <small class="more">瀏覽更多</small>
+                                <!-- <small class="more">瀏覽更多</small> -->
                             </div>
                         </li>
                     </ul>
@@ -272,9 +281,7 @@ if( $errMsg != ""){ //例外
         </div>
 
     </div>
-    <?php
-}
-?>
+
     <footer class="padding_top_10">
         <div class="links">
             <div class="logo"><img src="./img/logo.png" alt=""></div>
@@ -299,44 +306,47 @@ if( $errMsg != ""){ //例外
         data: {
             number: 4.8,
             totalStar: 5,
-            comments: [{
-                src: "./img/userprofile/user1.png",
-                name: "Doris",
-                date: "21.03.11",
-                content: "我和先生都喜歡玩水，第一次接觸SUP，雖然我不太會游泳，但全程教練們都在一旁讓人感覺很安心，除了專業又幽默的教學外😊"
-            }, {
-                src: "./img/userprofile/user3.png",
-                name: "Doris",
-                date: "21.03.11",
-                content: "我和先生都喜歡玩水，第一次接觸SUP，雖然我不太會游泳，但全程教練們都在一旁讓人感覺很安心，除了專業又幽默的教學外😊"
-            }, {
-                src: "./img/userprofile/user5.png",
-                name: "Doris",
-                date: "21.03.11",
-                content: "我和先生都喜歡玩水，第一次接觸SUP，雖然我不太會游泳，但全程教練們都在一旁讓人感覺很安心，除了專業又幽默的教學外😊"
-            }, ],
+            comments: [
+            //     {
+            //     src: "./img/userprofile/user1.png",
+            //     name: "Doris",
+            //     date: "21.03.11",
+            //     content: "我和先生都喜歡玩水，第一次接觸SUP，雖然我不太會游泳，但全程教練們都在一旁讓人感覺很安心，除了專業又幽默的教學外😊"
+            // }, {
+            //     src: "./img/userprofile/user3.png",
+            //     name: "Doris",
+            //     date: "21.03.11",
+            //     content: "我和先生都喜歡玩水，第一次接觸SUP，雖然我不太會游泳，但全程教練們都在一旁讓人感覺很安心，除了專業又幽默的教學外😊"
+            // }, {
+            //     src: "./img/userprofile/user5.png",
+            //     name: "Doris",
+            //     date: "21.03.11",
+            //     content: "我和先生都喜歡玩水，第一次接觸SUP，雖然我不太會游泳，但全程教練們都在一旁讓人感覺很安心，除了專業又幽默的教學外😊"
+            // }, 
+        ],
             computed: {
-                subContent() {
-                    if (this.content.length > 20) {
-                        return this.content.substr(1, 10);
-                    } else {
-                        return this.content;
-                    }
-                }
+                // subContent() {
+                //     if (this.content.length > 20) {
+                //         return this.content.substr(1, 10);
+                //     } else {
+                //         return this.content;
+                //     }
+                // }
             },
             second: [],
-            
+
         },
         mounted() {
-                fetch('./php/getSelectTrip.php').then(res => res.json()).then(data => {
-                    vm.second = data;
-                    for (let i = 0; i < data.length; i++) {
-                        let url = `trip.php?spot_no=${data[i].spot_no}`;
-                        vm.second[i].url = encodeURI(url);
-                        console.log(vm.second[i].url)
-                    }
-                });
-            },
+            fetch('./php/getSelectTrip.php').then(res => res.json()).then(data => {
+                vm.second = data;
+                for (let i = 0; i < data.length; i++) {
+                    let url = `trip.php?spot_no=${data[i].spot_no}`;
+                    vm.second[i].url = encodeURI(url);
+                    console.log(vm.second[i].url)
+                }
+            });
+            fetch('./php/getReviews.php').then(res => res.json()).then(res => this.comments = res);
+        },
     })
     </script>
 

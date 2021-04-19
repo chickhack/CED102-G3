@@ -21,12 +21,6 @@ session_start();
             );
             $_SESSION["trip-cart"][0] = $item_array;
     }
-}else{
-        $item_array = array(
-            "spot_id" => $_GET["spot_id"]
-        );
-    };
-    $_SESSION["trip-cart"] = $item_array;
  }
 
 ?>
