@@ -142,7 +142,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <p class="h3">{{mainPrice}}</p>
+                            <p class="h3">$\{{mainPrice}}</p>
                             <button type="submit" name="remove"><img src="./img/icon/trashcan.png" class="icon trashcan" :data-no="item.prod_no" @click="increment"></button>
                         </div>
                     </li>
