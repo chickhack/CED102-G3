@@ -1,5 +1,4 @@
 <?php
-8
 session_start();
  if(isset($_POST["add"])){
      if(isset($_SESSION["trip-cart"])){
@@ -23,7 +22,6 @@ session_start();
             $_SESSION["trip-cart"][0] = $item_array;
     }
  }
- 
 ?>
 
 

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -761,473 +762,256 @@ input[type=number] {
           animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
 }
 
-body {
-  -o-object-fit: cover;
-     object-fit: cover;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-}
-
-.container {
-  max-width: 900px;
+.container-fluid {
+  max-width: 1200px;
+  padding: 0;
+  padding-top: 15vh;
   margin: 0 auto;
-  padding-bottom: 0px;
 }
 
 @media all and (max-width: 768px) {
-  .container {
-    margin: 0 30px;
+  .container-fluid {
+    margin: 0;
   }
 }
 
-.product {
+section.login_container {
+  padding: 0;
+  border: 1px solid #ad6e4a83;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  border-radius: 5px;
 }
 
-.product .imgs {
+section.login_container .login_banner {
+  background-color: #353f61;
+  height: 80vh;
+  background-size: 110%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  max-width: 948px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #ffffff;
+  row-gap: 2rem;
 }
 
-.product .imgs .img {
-  max-width: 400px;
-  text-align: center;
+section.login_container .login_banner h2 {
+  font-family: nasalization, sans-serif;
+}
+
+@media all and (max-width: 992px) {
+  section.login_container .login_banner {
+    display: none;
+  }
+}
+
+@media all and (max-width: 768px) {
+  section.login_container .login_banner {
+    display: none;
+  }
+}
+
+section.login_container .return_btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+section.login_container .return_btn span a {
+  color: #AD6E4A;
+  font-size: 28px;
+  letter-spacing: -6px;
+  font-weight: 800;
+}
+
+section.login_container .return_btn h4 a {
+  margin-left: 12px;
+  color: #cccaca;
+}
+
+section.login_container .return_btn a:hover {
+  text-decoration: underline;
+}
+
+section.login_container .modal-dialog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
 
-@media all and (max-width: 768px) {
-  .product .imgs .img {
-    max-width: 948px;
-  }
-}
-
-.product .imgs .img .bigImg {
-  width: 100%;
-  max-height: 266px;
-  background-color: #ffffff;
-}
-
-@media all and (max-width: 768px) {
-  .product .imgs .img .bigImg {
-    max-height: 400px;
-  }
-}
-
-.product .imgs .img .smallImg {
+section.login_container .modal-dialog .main-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  width: 100%;
-}
-
-.product .imgs .img .smallImg .imgDetail {
-  max-width: 80px;
-  max-height: 60px;
-  background-color: #ffffff;
-  cursor: pointer;
-  margin-right: 16px;
-  padding: 4px;
-}
-
-.product .imgs .img .smallImg .imgDetail img {
-  width: 100%;
-}
-
-.product .detail {
-  width: 30%;
-  text-align: left;
-  position: relative;
-}
-
-@media all and (max-width: 768px) {
-  .product .detail {
-    width: 100%;
-    margin: 60px 30px;
-  }
-}
-
-.product .detail strong {
-  font-weight: 900;
-}
-
-.product .detail p {
-  width: 100%;
-}
-
-@media all and (max-width: 768px) {
-  .product .detail p {
-    width: 100%;
-  }
-}
-
-.product .detail .price {
-  font-family: "Nasalization";
-  font-weight: bold;
-  letter-spacing: 2px;
-  color: #AD6E4A;
-}
-
-.product .detail hr {
-  margin-left: 0;
-  margin-right: 0;
-  width: 100%;
-  height: 1px;
-  border: none;
-  background-color: #AD6E4A;
-}
-
-@media all and (max-width: 768px) {
-  .product .detail hr {
-    width: 100%;
-  }
-}
-
-.product .detail .h3 {
-  letter-spacing: 3px;
-}
-
-.product .detail .quantity > label {
-  display: block;
-  font-weight: 900;
-}
-
-.product .detail .quantity .as {
-  color: #AD6E4A;
-}
-
-.product .detail .quantity .as input[type=number] {
-  max-width: 50px;
-  background-color: transparent;
-  outline: none;
-  border: none;
-  text-align: center;
-  color: #AD6E4A;
-}
-
-.product .detail .quantity .as span {
-  border: 1px solid #AD6E4A;
-  outline: none;
-  background-color: transparent;
-  padding: 4px 8px;
-  cursor: pointer;
-}
-
-.product .detail .quantity .button_large {
-  width: 40%;
-  display: inline-block;
-  cursor: pointer;
-  padding: 8px 0;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
-  background-color: transparent;
-  color: #ffffff;
-}
-
-.product .detail .quantity .button_large:hover {
-  color: #ffffff;
-  background-color: #AD6E4A;
-}
-
-.product .detail .quantity .button_large.buy {
-  background-color: #AD6E4A;
-  color: #ffffff;
-  font-weight: 900;
-  -webkit-transition: all .3s;
-  transition: all .3s;
-  padding: 10.4px 0;
-}
-
-@media all and (max-width: 768px) {
-  .product .detail .quantity .button_large.buy {
-    margin-left: 0;
-  }
-}
-
-.product .detail .quantity .button_large.buy:hover {
-  background-color: #bf896b;
-}
-
-@media all and (max-width: 768px) {
-  .product .detail .quantity .button_large {
-    width: 100%;
-  }
-}
-
-.product .detail .favorites {
-  position: absolute;
-  right: 0;
-  top: 0;
-  cursor: pointer;
-}
-
-.describe {
-  max-width: 300px;
-  margin: 80px auto;
-  text-align: center;
-}
-
-@media all and (max-width: 768px) {
-  .describe {
-    margin: 0 auto;
-    margin-bottom: 80px;
-  }
-}
-
-.recommend {
   margin: 0 auto;
-  padding-bottom: 80px;
 }
 
-.recommend h3 {
-  text-align: center;
+section.login_container .modal-dialog .main-section .modal-content {
+  opacity: .8;
+  border-radius: 10px;
+  background-color: transparent;
+  border: none;
 }
 
-.recommend .tripcard_all {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+section.login_container .modal-dialog form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 100%;
+  -webkit-box-align: inherit;
+      -ms-flex-align: inherit;
+          align-items: inherit;
 }
 
-@media all and (max-width: 767px) {
-  .recommend .tripcard_all {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+section.login_container .modal-dialog form .form-group input {
+  margin: 0 auto;
+  margin-top: 24px;
+  height: 42px;
+  border-radius: 5px;
+  border: 1px solid #AD6E4A;
+  font-size: 18px;
+  padding-left: 14px;
+  padding-top: 14px;
+  width: 90%;
+  background-color: transparent;
+}
+
+section.login_container .modal-dialog form .form-group input:focus {
+  padding-left: 28px;
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
+  box-shadow: -1px 0px 20px 5px rgba(173, 110, 74, 0.45);
+  -webkit-box-shadow: -1px 0px 20px 5px rgba(173, 110, 74, 0.45);
+  -moz-box-shadow: -1px 0px 20px 5px rgba(173, 110, 74, 0.45);
+  border: none;
+}
+
+section.login_container .modal-dialog form .form-group input:hover {
+  -webkit-animation: pulse .5s 1;
+          animation: pulse .5s 1;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(204, 140, 44, 0.4);
+  }
+  70% {
+    -webkit-box-shadow: 0 0 0 7px rgba(204, 140, 44, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(204, 140, 44, 0);
   }
 }
 
-.recommend .tripcard_all .tripcard {
-  width: 250px;
-  background-color: #191919;
-  padding: 15px;
-  border-radius: 5px;
-  position: relative;
-  margin: 0 16px 0 16px;
-  color: #ffffff;
-}
-
-@media all and (max-width: 767px) {
-  .recommend .tripcard_all .tripcard {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin: 16px 0 16px 0;
+@keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(204, 140, 44, 0.4);
+            box-shadow: 0 0 0 0 rgba(204, 140, 44, 0.4);
+  }
+  70% {
+    -webkit-box-shadow: 0 0 0 7px rgba(204, 140, 44, 0);
+            box-shadow: 0 0 0 7px rgba(204, 140, 44, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(204, 140, 44, 0);
+            box-shadow: 0 0 0 0 rgba(204, 140, 44, 0);
   }
 }
 
-.recommend .tripcard_all .tripcard .spot_pic {
-  width: 250px;
-}
-
-.recommend .tripcard_all .tripcard .spot_pic:hover {
-  -webkit-transform: perspective(0.5px) translateX(-1.5px) translateY(-1.5px);
-          transform: perspective(0.5px) translateX(-1.5px) translateY(-1.5px);
-}
-
-.recommend .tripcard_all .tripcard .hot2 {
-  font-weight: bold;
-  margin-bottom: 15px;
-}
-
-.recommend .tripcard_all .tripcard .tag {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  border: 1px solid #C9ADA7;
-  border-radius: 5px;
-  padding: 8px;
-  line-height: 5px;
-  margin: 3px;
-}
-
-.recommend .tripcard_all .tripcard .price2 {
-  color: #AD6E4A;
-  font-weight: bold;
-  letter-spacing: 2px;
-  font-family: "Nasalization";
-  padding-left: 5px;
+section.login_container .modal-dialog form .form-group::before {
+  content: "電子信箱";
   position: absolute;
-  right: 20px;
-  bottom: 10px;
-}
-
-.recommend .tripcard_all .tripcard .addin2 {
-  background-color: #AD6E4A;
-  color: #ffffff;
-  border-radius: 15px;
-  width: 110px;
-  line-height: 26px;
-  text-align: center;
   font-size: 12px;
+  left: 32px;
+  padding-top: 32px;
+  color: #C9ADA7;
 }
 
-.recommend .tripcard_all .tripcard .addin2 img.plus {
-  width: 15px;
-  display: inline-block;
-  position: relative;
-  top: 2px;
-  padding-right: 4px;
+section.login_container .modal-dialog form .form-group:nth-last-of-type(2)::before {
+  content: "密碼";
 }
 
-.recommend .tripcard_all .tripcard .addin2:hover {
-  background-color: #bf896b;
+section.login_container .modal-dialog form .form-group:last-of-type::before {
+  content: "確認密碼";
 }
 
-.comment {
-  max-width: 900px;
-  margin: 0 16px;
+section.login_container .modal-dialog form span {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+section.login_container .modal-dialog form #register {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  background-color: transparent;
+  color: #AD6E4A;
+}
+
+section.login_container .modal-dialog form #register:hover {
+  color: #ffff;
+  border: 1px solid #AD6E4A;
+  background: #AD6E4A;
+}
+
+section.login_container .bottom-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.login_container .bottom-section .forgot a, section.login_container .bottom-section .signup a {
+  color: #cccaca;
+}
+
+section.login_container .bottom-section .forgot:hover, section.login_container .bottom-section .signup:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 @media all and (max-width: 768px) {
-  .comment {
-    margin: 0 30px;
+  section.login_container .bottom-section {
+    margin-left: 32px;
   }
 }
-
-.comment .score {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-}
-
-.comment .score .number {
-  background-color: #AD6E4A;
-  padding: 8px;
-}
-
-.comment .score .stars {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.comment .score .stars .star {
-  margin-left: 4px;
-}
-
-.comment .score .stars .icon {
-  width: 15px;
-}
-
-.comment .score .more {
-  position: absolute;
-  right: 0;
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-.comment .messages {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-bottom: 1px solid #AD6E4A;
-  padding: 16px 0;
-  position: relative;
-}
-
-.comment .messages img {
-  max-width: 50px;
-}
-
-.comment .messages .name {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-}
-
-.comment .messages .name hr {
-  height: 10px;
-  background-color: #C9ADA7;
-  border: 1px solid #C9ADA7;
-  margin: 0 8px;
-}
-
-.comment .messages .more {
-  color: #ffffff;
-  text-decoration: underline;
-  position: relative;
-  float: right;
-  cursor: pointer;
-}
-/*# sourceMappingURL=product.css.map */
+/*# sourceMappingURL=register.css.map */

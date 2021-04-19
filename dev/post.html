@@ -17,7 +17,8 @@
   <div class="container-fluid">
   <div class="post row">
     <div class="col-12 col-md-12 col-lg-12 col-xl-12">
-      <form action="" class="post">
+      <form method="post" action="post.php" class="post" enctype="multipart/form-data">
+        <a href="./photowall.html"><img src="./img/icon/turnoff.png" alt=""></a>
         <div class="select_trip">
           <select>
             <option>請選擇行程</option>
@@ -27,14 +28,19 @@
         </select>
         </div>
         <div class="upload_img">
-          <label for="" class="teaching">圖片</label>
-          <button type="button"><img src="./img/icon/upload_button.png" alt=""></button>
+          <p class="upload_photo">圖片</p>
+          <input type="file" id="name2" hidden name="upfile1"><label for="name2" class="teaching"><img src="./img/icon/upload_button.png" alt=""></label>
+          <input type="file" id="name2" hidden name="upfile2"><label for="name2" class="teaching"><img src="./img/icon/upload_button.png" alt=""></label>
+          <input type="file" id="name2" hidden name="upfile3"><label for="name2" class="teaching"><img src="./img/icon/upload_button.png" alt=""></label>
+          <!-- <input type="file" id="name2" hidden> -->
+          <!-- <button type="button"><img src="./img/icon/upload_button.png" alt=""></button> -->
         </div>
         <div class="post_text">
           <label for="" class="post">發文</label>
-          <textarea class="texts" placeholder="請發表文章...."></textarea>
+          <textarea class="texts" placeholder="請發表文章...." name=""></textarea>
         </div>
-        <div class="button_post"><button type="button" class="button_min">發表文章</button></div>
+        <!-- <div class="button_post"><button type="button" class="button_min">發表文章</button></div> -->
+        <div class="button_post"><input type="submit" value="發表文章" class="button_min"></div>
         
   
       </form>
