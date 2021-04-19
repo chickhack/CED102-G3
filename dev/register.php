@@ -1,5 +1,31 @@
 <?php
-    require_once('./php/connectbooks_yi.php')
+    require_once('./php/connectbooks_yi.php');
+
+    if(isset($_POST['register_btn'])){
+        // 接收所有資料
+        $mem_id = $_POST['mem_id'];
+        $mem_psw = $_POST['mem_psw'];
+        // 新增一筆資料
+        try{
+            $select_stmt=$pdo->prepare("SELECT mem_id FROM customer WHERE mem_id=:mem_id");
+
+            $select_stmt->execute(array(':mem_id'=>$mem_id));
+            $row=$select_stmt->fetch(PDO::FETCH_ASSOC);
+
+            if($row['mem_id']==$mem_id){
+                echo "username already exists";
+            }else if(!isset($errorMsg)){
+                $insert_stmt=$dsn->prepare("INSERT INTO customer (mem_id, mem_psw) VALUES ($mem_id,$mem_psw)");
+                if($insert_stmt->execute(array(':mem_id' => $mem_id, ':mem_psw'=> $mem_psw))){
+                    echo "Register Successfully";
+                }else{
+                    echo 'error';
+                }
+            }
+        }catch(PDOException $e){
+            echo $e->getMessage();
+        }
+    }
 ?>
 <!DOCTYPE html>
 <html>
@@ -71,6 +97,28 @@
     </nav>
     <script src="../js/header.js"></script>
 
+    <?php
+        if(isset($errorMsg))
+        {
+            foreach($errorMsg as $error)
+            {
+            ?>
+            <div class="alert">
+                <strong>WRONG!<?php echo $error;?></strong>
+            </div>
+                <?php
+            }
+        }
+        if(isset($registerMsg))
+        {
+            ?>
+            <div class="alert">
+            <strong><?php echo $registerMsg; ?></strong>
+            </div>
+        <?php
+        }
+        ?>
+
     <div class="container-fluid">
         <section class="login_container col-12">
         <div class="login_banner col-3">
@@ -79,7 +127,6 @@
             <h2>航行宇宙</h2>
         </div>
         <div class="rightbox col-8 col-sm-9">
-
             <div class="return_btn margin_left_2">
                 <span><a href="./login.php"><<</a></span>
                 <h4><a href="./login.php">返回登入頁面</a></h4>
@@ -100,7 +147,7 @@
                                 <input type="password" id="confirm_password" class="form-control" placeholder="請重新輸入密碼" required></input>
                             </div>
                             <span id='message'></span>
-                            <input type="submit" class="button_min margin_top_3" id="register" name="register" value="註冊"></input>
+                            <input type="submit" class="button_min margin_top_3 register_btn" id="register" name="register" value="註冊"></input>
                             </form>
                         </div>
                     </div>
@@ -116,7 +163,7 @@
         function $id(id){
             return document.getElementById(id);
         }
-        
+
         //檢查密碼是否符合
         function validatePassword(e) { 
             let password = document.getElementById("mem_psw"); 
@@ -151,37 +198,37 @@
         })
         
         // 點擊register按鈕後的提示
-        $(function(){
-            $('#register').click(function(e){
-                var valid = this.form.checkValidity();
-                if(valid){
-                    var mem_id = $('#mem_id').val();
-                    var mem_psw = $('#mem_psw').val();
-
-                    e.preventDefault();
-                    $.ajax({
-                        type: 'POST',
-                        url: './php/process.php',
-                        data: { mem_id : mem_id, mem_psw : mem_psw},
-                        success: function(data){
-                            Swal.fire({
-                                'title': '恭喜您！',
-                                'text': data,
-                                'type': 'success'
-                            })
-                        },
-                        errors: function(data){
-                            Swal.fire({
-                                'title': '錯誤',
-                                'text': data,
-                                'type': 'error'
-                            })
-                        }
-                    });
-                }else{
-                }
-            });
-        });
+        // $(function(){
+        //     $('#register').click(function(e){
+        //         var valid = this.form.checkValidity();
+        //         if(valid){
+        //             var mem_id = $('#mem_id').val();
+        //             var mem_psw = $('#mem_psw').val();
+                    
+        //             e.preventDefault();
+        //             $.ajax({
+        //                 type: 'POST',
+        //                 url: './login.php',
+        //                 data: { mem_id : mem_id, mem_psw : mem_psw},
+        //                 success: function(data){
+        //                     Swal.fire({
+        //                         'title': '恭喜您！',
+        //                         'text': "註冊成功",
+        //                         'type': 'success'
+        //                     })
+        //                 },
+        //                 errors: function(data){
+        //                     Swal.fire({
+        //                         'title': '錯誤',
+        //                         'text': "註冊失敗",
+        //                         'type': 'error'
+        //                     })
+        //                 }
+        //             });
+        //         }else{
+        //         }
+        //     });
+        // });
         
         
         

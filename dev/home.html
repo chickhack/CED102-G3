@@ -17,9 +17,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- THREE -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r127/three.min.js"></script>
-    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/orbitcontrols.js"></script></script>
+    <!-- 3D星球套件 -->
+    <script src="https://zimjs.org/cdn/1.2.3/createjs_min.js"></script>
+    <script src="https://zimjs.org/cdn/10.7.1/zim.js"></script>
+    <script src="https://zimjs.org/cdn/icon5.js"></script>
+    <script src="https://zimjs.org/cdn/three_r82.min.js"></script>
+    <script src="https://zimjs.org/cdn/three_2.0.js"></script>
+
     <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
     <!-- Vue.js -->
@@ -57,8 +61,6 @@
           <h2>打造專屬的星球行程</h2>
           <h3 class="margin_top_3 line_low">累積景點積分，獲得更多宇宙幣，讓你無限暢遊宇宙</h3>
 <div id="trigger01"></div>
-<div id="trigger02"></div>
-
 
           <div class="stepall">
               <div class="step margin_left_5">
@@ -103,8 +105,6 @@
               </div>
           </div>
         </div>
-
-
 
 <!-- 星球百科 -->
         <div class="planet_box margin_top_15">
@@ -160,8 +160,8 @@
                       </div>
                       <div class="tab-active col-lg-6 col-md-12 col-sm-12">
                             <!-- 火星動圖 -->
-                            <div id="marsloc" class="col-md-12 col-sm-12" style="width: 500px; height: 500px;"></div>
-                            <script src="./js/mars.js"></script>
+                            <div id="tag" class="col-md-12 col-sm-12" style="width: 1024px; height: 768px;"></div>
+                            <!-- <script src="./js/mars.js"></script> -->
                       </div>
                     </div>
                   </div>
@@ -212,6 +212,8 @@
                   </div>
               </div>
           </div>
+        </div>
+        </div>
 <!-- 互動牆 -->
         <section class="home_photowall col-12 margin_top_10 ">
           <div id="photos" class="col-lg-6">
@@ -241,8 +243,6 @@
             </div>
           </div>
         </section>
-
-
 <!-- 商城 -->
         <div class="shop_box" >
           <div class="home_shop">
@@ -377,7 +377,7 @@
     <!-- 星球頁籤轉移 -->
     <script src="./js/tabSwitch.js"></script>
     <!-- 精選景點 vue -->
-        <script>
+      <script>
           let vm = new Vue({
               el: "#app",
               data: {
@@ -434,16 +434,15 @@
         })
         .addTo(controller);
 
+        //Slogan延遲出現
+        var tl = new TimelineLite({ delay: 1 });
+        tl.from(['#slogan'], 2, { scale: 0.5, opacity: 0, delay: 0.5, ease:Power3.easeIn, force3D: true})
+
         //卡片fade in
-        var tm02 = new TimelineMax();
-        TweenMax.from(".stepsection", 2, { x: 0, y: 120 });
-        new ScrollMagic.Scene({
-          triggerElement: "#trigger02",
-        })      
-          // .setClassToggle(".section03", "on")
-          .setTween(tm02)
-          .addIndicators()
-          .addTo(controller);
+        // not working
+
+
+
 
       </script>
  
