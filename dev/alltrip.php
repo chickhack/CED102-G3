@@ -47,7 +47,7 @@ session_start();
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r127/three.min.js"></script>
     <!-- alltrip css -->
     <link rel="stylesheet" href="./css/pages/alltrip.css">
-    
+
 </head>
 
 <body>
@@ -266,7 +266,7 @@ session_start();
             </div>
         </div>
     </div>
- 
+
     <a href="#" class="go-top"></a>
 
     <footer class="padding_top_10">
@@ -325,22 +325,23 @@ session_start();
         mounted() {
             console.log("load");
             fetch('./php/getSelectTrip.php').then(res => res.json()).then(data => {
-                                         vm.planets = data;
-                                         for(let i=0 ; i<data.length ; i++){
-                                             let url = `trip.php?spot_no=${data[i].spot_no}`;
-                                             vm.planets[i].url = encodeURI(url);
-                                             console.log(vm.planets[i].url)
-                                         }
-                                     });
+                vm.planets = data;
+                for (let i = 0; i < data.length; i++) {
+                    let url = `trip.php?spot_no=${data[i].spot_no}`;
+                    vm.planets[i].url = encodeURI(url);
+                    console.log(vm.planets[i].url)
+                }
+            });
             console.log(this.planets);
             fetch('./php/getTrip.php').then(res => res.json()).then(data => {
-                                         vm.spot1 = data;
-                                         for(let i=0 ; i<data.length ; i++){
-                                             let url = `trip.php?spot_no=${data[i].spot_no}`;
-                                             vm.spot1[i].url = encodeURI(url);
-                                             console.log(vm.spot1[i].url)
-                                         }
-                                     });
+                vm.spot1 = data;
+                for (let i = 0; i < data.length; i++) {
+                    let url = `trip.php?spot_no=${data[i].spot_no}`;
+                    vm.spot1[i].url = encodeURI(url);
+                    console.log(vm.spot1[i].url)
+                }
+            });
+
         },
     });
     </script>
