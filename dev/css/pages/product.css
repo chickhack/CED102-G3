@@ -981,7 +981,7 @@ body {
   font-weight: 900;
   -webkit-transition: all .3s;
   transition: all .3s;
-  padding: 10.4px 0;
+  padding: 8.4px 0;
 }
 
 @media all and (max-width: 768px) {
@@ -1186,12 +1186,18 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+=======
+  justify-content: center;
+  align-items: center;
+  justify-content: start;
+>>>>>>> dev
   border-bottom: 1px solid #AD6E4A;
   padding: 16px 0;
   position: relative;
@@ -1226,8 +1232,9 @@ body {
 .comment .messages .more {
   color: #ffffff;
   text-decoration: underline;
-  position: relative;
-  float: right;
+  position: absolute;
+  right: 0;
+  bottom: 10px;
   cursor: pointer;
 }
 /*# sourceMappingURL=product.css.map */

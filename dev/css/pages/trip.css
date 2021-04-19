@@ -56,8 +56,12 @@ img {
 *,
 *:before,
 *:after {
+<<<<<<< HEAD
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
+=======
+  box-sizing: inherit;
+>>>>>>> dev
   margin: 0;
   padding: 0;
 }
@@ -78,11 +82,16 @@ body {
   font-size: 14px;
   background-color: #0c0d18;
   overflow-x: hidden;
+<<<<<<< HEAD
   -webkit-user-select: none;
   -moz-user-select: none;
   -o-user-select: none;
   -ms-user-select: none;
       user-select: none;
+=======
+  -o-user-select: none;
+  user-select: none;
+>>>>>>> dev
 }
 
 h1, .h1 {
@@ -363,6 +372,7 @@ body {
 }
 
 nav {
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -372,6 +382,11 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+=======
+  display: flex;
+  justify-content: center;
+  align-items: center;
+>>>>>>> dev
   justify-content: center;
   background-color: #0c0d18;
   position: fixed;
@@ -395,6 +410,7 @@ nav .logo h1 a {
 }
 
 nav .nav-links {
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -407,6 +423,12 @@ nav .nav-links {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+=======
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-end;
+>>>>>>> dev
   width: 75%;
 }
 
@@ -417,6 +439,7 @@ nav .nav-links a {
 }
 
 nav .nav-icons {
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -428,6 +451,12 @@ nav .nav-icons {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+=======
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+>>>>>>> dev
   width: 12%;
   margin-left: 50px;
 }
@@ -443,7 +472,10 @@ nav .burger div {
   height: 2px;
   background-color: #ffffff;
   margin: 5px;
+<<<<<<< HEAD
   -webkit-transition: all .3s ease;
+=======
+>>>>>>> dev
   transition: all .3s ease;
 }
 
@@ -523,8 +555,12 @@ nav .nav-trip .trip-count {
 
 @media (max-width: 992px) {
   nav {
+<<<<<<< HEAD
     -ms-flex-pack: distribute;
         justify-content: space-around;
+=======
+    justify-content: space-around;
+>>>>>>> dev
   }
   nav .nav-links {
     position: absolute;
@@ -532,6 +568,7 @@ nav .nav-trip .trip-count {
     height: 88vh;
     top: 12vh;
     background-color: #AD6E4A;
+<<<<<<< HEAD
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -546,6 +583,13 @@ nav .nav-trip .trip-count {
             align-items: center;
     width: 30%;
     -webkit-transition: all .5s ease-in;
+=======
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+>>>>>>> dev
     transition: all .5s ease-in;
   }
   nav .nav-links li {
@@ -560,9 +604,13 @@ nav .nav-trip .trip-count {
   }
   nav .nav-icons {
     width: 100%;
+<<<<<<< HEAD
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+=======
+    justify-content: flex-end;
+>>>>>>> dev
   }
   nav .nav-icons .icon {
     margin: 0 30px 0 15px;
@@ -585,15 +633,20 @@ nav .nav-trip .trip-count {
   nav .nav-icons {
     width: 50%;
     margin-left: 16px;
+<<<<<<< HEAD
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+=======
+    justify-content: space-between;
+>>>>>>> dev
   }
   nav .nav-icons .icon {
     margin: 0;
   }
 }
 
+<<<<<<< HEAD
 @-webkit-keyframes navLinkFade {
   from {
     opacity: 0;
@@ -617,12 +670,26 @@ nav .nav-trip .trip-count {
     opacity: 1;
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
+=======
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+>>>>>>> dev
   }
 }
 
 .toggle .line1 {
+<<<<<<< HEAD
   -webkit-transform: rotate(45deg) translate(4px, 6px);
           transform: rotate(45deg) translate(4px, 6px);
+=======
+  transform: rotate(45deg) translate(4px, 6px);
+>>>>>>> dev
 }
 
 .toggle .line2 {
@@ -630,8 +697,12 @@ nav .nav-trip .trip-count {
 }
 
 .toggle .line3 {
+<<<<<<< HEAD
   -webkit-transform: rotate(-45deg) translate(3px, -6px);
           transform: rotate(-45deg) translate(3px, -6px);
+=======
+  transform: rotate(-45deg) translate(3px, -6px);
+>>>>>>> dev
 }
 
 footer {
@@ -651,6 +722,7 @@ footer .links .logo {
   position: relative;
   left: 50%;
   bottom: 50px;
+<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
@@ -667,12 +739,26 @@ footer .links .footer-links {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+=======
+  transform: translateX(-50%);
+}
+
+footer .links .footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+>>>>>>> dev
   width: 55%;
   position: relative;
   left: 50%;
   bottom: 30px;
+<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+=======
+  transform: translateX(-50%);
+>>>>>>> dev
 }
 
 footer .links .footer-links a {
@@ -683,8 +769,12 @@ footer .footer_moon {
   position: relative;
   left: 50%;
   max-width: 40%;
+<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+=======
+  transform: translateX(-50%);
+>>>>>>> dev
 }
 
 footer .smoke {
@@ -693,8 +783,12 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
+<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+=======
+  transform: translateX(-50%);
+>>>>>>> dev
 }
 
 @media (max-width: 768px) {
@@ -722,7 +816,11 @@ input::-webkit-inner-spin-button {
 .swiper-container {
   margin: 0 auto;
   max-width: 1100px;
+<<<<<<< HEAD
   height: 65vh;
+=======
+  height: 75vh;
+>>>>>>> dev
 }
 
 @media all and (max-width: 1200px) {
@@ -761,6 +859,7 @@ input::-webkit-inner-spin-button {
 }
 
 .parent_container .up_container .trip_content_all .trip_title {
+<<<<<<< HEAD
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -770,6 +869,11 @@ input::-webkit-inner-spin-button {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+=======
+  display: inline-flex;
+  align-items: baseline;
+  justify-content: flex-start;
+>>>>>>> dev
   width: 100%;
   font-weight: bold;
   position: relative;
@@ -835,8 +939,11 @@ input::-webkit-inner-spin-button {
 }
 
 .parent_container .up_container .trip_content_all .tab_contents .tag {
+<<<<<<< HEAD
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
+=======
+>>>>>>> dev
   display: inline-flex;
   border: 1px solid #C9ADA7;
   border-radius: 5px;
@@ -862,7 +969,10 @@ input::-webkit-inner-spin-button {
   vertical-align: top;
   border: 1px solid #AD6E4A;
   padding: 20px;
+<<<<<<< HEAD
   position: -webkit-sticky;
+=======
+>>>>>>> dev
   position: sticky;
   top: 96px;
   z-index: 2;
@@ -921,6 +1031,7 @@ input::-webkit-inner-spin-button {
 }
 
 .parent_container .up_container .book .select {
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -931,14 +1042,23 @@ input::-webkit-inner-spin-button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+=======
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+>>>>>>> dev
 }
 
 @media all and (max-width: 1200px) {
   .parent_container .up_container .book .select {
+<<<<<<< HEAD
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+=======
+    flex-direction: column;
+>>>>>>> dev
   }
 }
 
@@ -1016,6 +1136,7 @@ input::-webkit-inner-spin-button {
 }
 
 .parent_container .up_container .book .btn {
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1025,6 +1146,11 @@ input::-webkit-inner-spin-button {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+=======
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+>>>>>>> dev
   margin-right: 15px;
 }
 
@@ -1035,6 +1161,10 @@ input::-webkit-inner-spin-button {
   width: 110px;
   line-height: 26px;
   text-align: center;
+<<<<<<< HEAD
+=======
+  background-color: #0c0d18;
+>>>>>>> dev
 }
 
 .parent_container .up_container .book .btn .addin a {
@@ -1058,7 +1188,11 @@ input::-webkit-inner-spin-button {
 .parent_container .up_container .book .btn .button_min {
   background-color: #AD6E4A;
   color: #ffffff;
+<<<<<<< HEAD
   padding: 0 8px 0 8px;
+=======
+  padding: 8px;
+>>>>>>> dev
 }
 
 .parent_container .up_container .book .btn .button_min a {
@@ -1091,12 +1225,17 @@ input::-webkit-inner-spin-button {
 }
 
 .parent_container .up_container .comment .score {
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+=======
+  display: flex;
+  align-items: center;
+>>>>>>> dev
   position: relative;
 }
 
@@ -1106,6 +1245,7 @@ input::-webkit-inner-spin-button {
 }
 
 .parent_container .up_container .comment .score .stars {
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1115,6 +1255,11 @@ input::-webkit-inner-spin-button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+=======
+  display: flex;
+  justify-content: center;
+  align-items: center;
+>>>>>>> dev
 }
 
 .parent_container .up_container .comment .score .stars .star {
@@ -1133,6 +1278,7 @@ input::-webkit-inner-spin-button {
 }
 
 .parent_container .up_container .comment .messages {
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1142,6 +1288,11 @@ input::-webkit-inner-spin-button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+=======
+  display: flex;
+  justify-content: center;
+  align-items: center;
+>>>>>>> dev
   border-bottom: 1px solid #AD6E4A;
   padding: 16px 0;
   position: relative;
@@ -1153,6 +1304,7 @@ input::-webkit-inner-spin-button {
 }
 
 .parent_container .up_container .comment .messages .name {
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1165,6 +1317,12 @@ input::-webkit-inner-spin-button {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
+=======
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: start;
+>>>>>>> dev
 }
 
 .parent_container .up_container .comment .messages .name hr {
@@ -1199,17 +1357,23 @@ input::-webkit-inner-spin-button {
 }
 
 .parent_container .recommend .tripcard_all {
+<<<<<<< HEAD
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+=======
+  display: inline-flex;
+  justify-content: center;
+>>>>>>> dev
   width: 100%;
 }
 
 @media all and (max-width: 767px) {
   .parent_container .recommend .tripcard_all {
+<<<<<<< HEAD
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1217,6 +1381,10 @@ input::-webkit-inner-spin-button {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+=======
+    flex-direction: column;
+    align-items: center;
+>>>>>>> dev
   }
 }
 
@@ -1229,12 +1397,39 @@ input::-webkit-inner-spin-button {
   margin: 0 16px 0 16px;
 }
 
+<<<<<<< HEAD
 @media all and (max-width: 767px) {
   .parent_container .recommend .tripcard_all .tripcard {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+=======
+.parent_container .recommend .tripcard_all .tripcard:hover {
+  transform: translateY(0.2em);
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+.parent_container .recommend .tripcard_all .tripcard.tripcard:nth-child(1) {
+  animation: float 4s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+}
+
+.parent_container .recommend .tripcard_all .tripcard.tripcard:nth-child(2) {
+  animation: float 4.5s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+}
+
+.parent_container .recommend .tripcard_all .tripcard.tripcard:nth-child(3) {
+  animation: float 5s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+}
+
+.parent_container .recommend .tripcard_all .tripcard.tripcard:nth-child(4) {
+  animation: float 5.5s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+}
+
+@media all and (max-width: 767px) {
+  .parent_container .recommend .tripcard_all .tripcard {
+    flex-direction: column;
+>>>>>>> dev
     margin: 16px 0 16px 0;
   }
 }
@@ -1244,13 +1439,18 @@ input::-webkit-inner-spin-button {
 }
 
 .parent_container .recommend .tripcard_all .tripcard .spot_pic:hover {
+<<<<<<< HEAD
   -webkit-transform: perspective(0.5px) translateX(-1.5px) translateY(-1.5px);
           transform: perspective(0.5px) translateX(-1.5px) translateY(-1.5px);
+=======
+  transform: perspective(0.5px) translateX(-1.5px) translateY(-1.5px);
+>>>>>>> dev
 }
 
 .parent_container .recommend .tripcard_all .tripcard .hot2 {
   font-weight: bold;
   margin-bottom: 15px;
+<<<<<<< HEAD
 }
 
 .parent_container .recommend .tripcard_all .tripcard .tag {
@@ -1258,10 +1458,22 @@ input::-webkit-inner-spin-button {
   display: -ms-inline-flexbox;
   display: inline-flex;
   border: 1px solid #C9ADA7;
+=======
+  color: #C9ADA7;
+}
+
+.parent_container .recommend .tripcard_all .tripcard .tag {
+  display: inline-flex;
+  border: 1px solid #cccaca;
+>>>>>>> dev
   border-radius: 5px;
   padding: 8px;
   line-height: 5px;
   margin: 3px;
+<<<<<<< HEAD
+=======
+  color: #cccaca;
+>>>>>>> dev
 }
 
 .parent_container .recommend .tripcard_all .tripcard .price2 {
@@ -1282,6 +1494,11 @@ input::-webkit-inner-spin-button {
   width: 110px;
   line-height: 26px;
   text-align: center;
+<<<<<<< HEAD
+=======
+  text-decoration: none;
+  border: none;
+>>>>>>> dev
 }
 
 .parent_container .recommend .tripcard_all .tripcard .addin2 img.plus {
@@ -1295,4 +1512,22 @@ input::-webkit-inner-spin-button {
 .parent_container .recommend .tripcard_all .tripcard .addin2:hover {
   background-color: #bf896b;
 }
+<<<<<<< HEAD
+=======
+
+@keyframes float {
+  0% {
+    transform: translate(0, 0);
+  }
+  30% {
+    transform: translate(0, -3px);
+  }
+  70% {
+    transform: translate(0, 5px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+>>>>>>> dev
 /*# sourceMappingURL=trip.css.map */

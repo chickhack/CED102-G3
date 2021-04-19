@@ -57,8 +57,12 @@ img {
 *,
 *:before,
 *:after {
+<<<<<<< HEAD
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
+=======
+  box-sizing: inherit;
+>>>>>>> dev
   margin: 0;
   padding: 0;
 }
@@ -79,11 +83,16 @@ body {
   font-size: 14px;
   background-color: #0c0d18;
   overflow-x: hidden;
+<<<<<<< HEAD
   -webkit-user-select: none;
   -moz-user-select: none;
   -o-user-select: none;
   -ms-user-select: none;
       user-select: none;
+=======
+  -o-user-select: none;
+  user-select: none;
+>>>>>>> dev
 }
 
 h1, .h1 {
@@ -364,6 +373,7 @@ body {
 }
 
 nav {
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -373,6 +383,11 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+=======
+  display: flex;
+  justify-content: center;
+  align-items: center;
+>>>>>>> dev
   justify-content: center;
   background-color: #0c0d18;
   position: fixed;
@@ -396,6 +411,7 @@ nav .logo h1 a {
 }
 
 nav .nav-links {
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -408,6 +424,12 @@ nav .nav-links {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+=======
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-end;
+>>>>>>> dev
   width: 75%;
 }
 
@@ -418,6 +440,7 @@ nav .nav-links a {
 }
 
 nav .nav-icons {
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -429,6 +452,12 @@ nav .nav-icons {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+=======
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+>>>>>>> dev
   width: 12%;
   margin-left: 50px;
 }
@@ -444,7 +473,10 @@ nav .burger div {
   height: 2px;
   background-color: #ffffff;
   margin: 5px;
+<<<<<<< HEAD
   -webkit-transition: all .3s ease;
+=======
+>>>>>>> dev
   transition: all .3s ease;
 }
 
@@ -524,8 +556,12 @@ nav .nav-trip .trip-count {
 
 @media (max-width: 992px) {
   nav {
+<<<<<<< HEAD
     -ms-flex-pack: distribute;
         justify-content: space-around;
+=======
+    justify-content: space-around;
+>>>>>>> dev
   }
   nav .nav-links {
     position: absolute;
@@ -533,6 +569,7 @@ nav .nav-trip .trip-count {
     height: 88vh;
     top: 12vh;
     background-color: #AD6E4A;
+<<<<<<< HEAD
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -547,6 +584,13 @@ nav .nav-trip .trip-count {
             align-items: center;
     width: 30%;
     -webkit-transition: all .5s ease-in;
+=======
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+>>>>>>> dev
     transition: all .5s ease-in;
   }
   nav .nav-links li {
@@ -561,9 +605,13 @@ nav .nav-trip .trip-count {
   }
   nav .nav-icons {
     width: 100%;
+<<<<<<< HEAD
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+=======
+    justify-content: flex-end;
+>>>>>>> dev
   }
   nav .nav-icons .icon {
     margin: 0 30px 0 15px;
@@ -586,15 +634,20 @@ nav .nav-trip .trip-count {
   nav .nav-icons {
     width: 50%;
     margin-left: 16px;
+<<<<<<< HEAD
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+=======
+    justify-content: space-between;
+>>>>>>> dev
   }
   nav .nav-icons .icon {
     margin: 0;
   }
 }
 
+<<<<<<< HEAD
 @-webkit-keyframes navLinkFade {
   from {
     opacity: 0;
@@ -618,12 +671,26 @@ nav .nav-trip .trip-count {
     opacity: 1;
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
+=======
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+>>>>>>> dev
   }
 }
 
 .toggle .line1 {
+<<<<<<< HEAD
   -webkit-transform: rotate(45deg) translate(4px, 6px);
           transform: rotate(45deg) translate(4px, 6px);
+=======
+  transform: rotate(45deg) translate(4px, 6px);
+>>>>>>> dev
 }
 
 .toggle .line2 {
@@ -631,8 +698,12 @@ nav .nav-trip .trip-count {
 }
 
 .toggle .line3 {
+<<<<<<< HEAD
   -webkit-transform: rotate(-45deg) translate(3px, -6px);
           transform: rotate(-45deg) translate(3px, -6px);
+=======
+  transform: rotate(-45deg) translate(3px, -6px);
+>>>>>>> dev
 }
 
 footer {
@@ -652,6 +723,7 @@ footer .links .logo {
   position: relative;
   left: 50%;
   bottom: 50px;
+<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
@@ -668,12 +740,26 @@ footer .links .footer-links {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+=======
+  transform: translateX(-50%);
+}
+
+footer .links .footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+>>>>>>> dev
   width: 55%;
   position: relative;
   left: 50%;
   bottom: 30px;
+<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+=======
+  transform: translateX(-50%);
+>>>>>>> dev
 }
 
 footer .links .footer-links a {
@@ -684,8 +770,12 @@ footer .footer_moon {
   position: relative;
   left: 50%;
   max-width: 40%;
+<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+=======
+  transform: translateX(-50%);
+>>>>>>> dev
 }
 
 footer .smoke {
@@ -694,8 +784,12 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
+<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+=======
+  transform: translateX(-50%);
+>>>>>>> dev
 }
 
 @media (max-width: 768px) {
@@ -778,8 +872,16 @@ input[type=number] {
 section.login_container {
   padding: 0;
   border: 1px solid #ad6e4a83;
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
+=======
+<<<<<<< HEAD
+  display: -webkit-box;
+  display: -ms-flexbox;
+=======
+>>>>>>> dev
+>>>>>>> dev
   display: flex;
   border-radius: 5px;
 }
@@ -788,6 +890,7 @@ section.login_container .login_banner {
   background-color: #353f61;
   height: 80vh;
   background-size: 110%;
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -801,6 +904,12 @@ section.login_container .login_banner {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+=======
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+>>>>>>> dev
   color: #ffffff;
   row-gap: 2rem;
 }
@@ -822,6 +931,7 @@ section.login_container .login_banner h2 {
 }
 
 section.login_container .return_btn {
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -830,6 +940,16 @@ section.login_container .return_btn {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+=======
+<<<<<<< HEAD
+  display: -webkit-box;
+  display: -ms-flexbox;
+=======
+>>>>>>> dev
+  display: flex;
+  align-self: flex-start;
+  align-items: baseline;
+>>>>>>> dev
 }
 
 section.login_container .return_btn span a {
@@ -849,6 +969,7 @@ section.login_container .return_btn a:hover {
 }
 
 section.login_container .modal-dialog {
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -869,6 +990,26 @@ section.login_container .modal-dialog .main-section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+=======
+<<<<<<< HEAD
+  display: -webkit-box;
+  display: -ms-flexbox;
+=======
+>>>>>>> dev
+  display: flex;
+  flex-direction: column;
+}
+
+section.login_container .modal-dialog .main-section {
+<<<<<<< HEAD
+  display: -webkit-box;
+  display: -ms-flexbox;
+=======
+>>>>>>> dev
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+>>>>>>> dev
   margin: 0 auto;
 }
 
@@ -880,6 +1021,10 @@ section.login_container .modal-dialog .main-section .modal-content {
 }
 
 section.login_container .modal-dialog form {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> dev
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -893,6 +1038,15 @@ section.login_container .modal-dialog form {
   -webkit-box-align: inherit;
       -ms-flex-align: inherit;
           align-items: inherit;
+<<<<<<< HEAD
+=======
+=======
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: inherit;
+>>>>>>> dev
+>>>>>>> dev
 }
 
 section.login_container .modal-dialog form .form-group input {
@@ -910,8 +1064,12 @@ section.login_container .modal-dialog form .form-group input {
 
 section.login_container .modal-dialog form .form-group input:focus {
   padding-left: 28px;
+<<<<<<< HEAD
   -webkit-transform: scale(1.08);
           transform: scale(1.08);
+=======
+  transform: scale(1.08);
+>>>>>>> dev
   box-shadow: -1px 0px 20px 5px rgba(173, 110, 74, 0.45);
   -webkit-box-shadow: -1px 0px 20px 5px rgba(173, 110, 74, 0.45);
   -moz-box-shadow: -1px 0px 20px 5px rgba(173, 110, 74, 0.45);
@@ -919,6 +1077,10 @@ section.login_container .modal-dialog form .form-group input:focus {
 }
 
 section.login_container .modal-dialog form .form-group input:hover {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> dev
   -webkit-animation: pulse .5s 1;
           animation: pulse .5s 1;
 }
@@ -933,10 +1095,17 @@ section.login_container .modal-dialog form .form-group input:hover {
   100% {
     -webkit-box-shadow: 0 0 0 0 rgba(204, 140, 44, 0);
   }
+<<<<<<< HEAD
+=======
+=======
+  animation: pulse .5s 1;
+>>>>>>> dev
+>>>>>>> dev
 }
 
 @keyframes pulse {
   0% {
+<<<<<<< HEAD
     -webkit-box-shadow: 0 0 0 0 rgba(204, 140, 44, 0.4);
             box-shadow: 0 0 0 0 rgba(204, 140, 44, 0.4);
   }
@@ -947,6 +1116,15 @@ section.login_container .modal-dialog form .form-group input:hover {
   100% {
     -webkit-box-shadow: 0 0 0 0 rgba(204, 140, 44, 0);
             box-shadow: 0 0 0 0 rgba(204, 140, 44, 0);
+=======
+    box-shadow: 0 0 0 0 rgba(204, 140, 44, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 7px rgba(204, 140, 44, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(204, 140, 44, 0);
+>>>>>>> dev
   }
 }
 
@@ -973,10 +1151,22 @@ section.login_container .modal-dialog form span {
       align-self: center;
 }
 
+<<<<<<< HEAD
 section.login_container .modal-dialog form #register {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+=======
+<<<<<<< HEAD
+section.login_container .modal-dialog form button {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+=======
+section.login_container .modal-dialog form #register {
+  align-self: center;
+>>>>>>> dev
+>>>>>>> dev
   background-color: transparent;
   color: #AD6E4A;
 }
@@ -988,6 +1178,7 @@ section.login_container .modal-dialog form #register:hover {
 }
 
 section.login_container .bottom-section {
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -998,6 +1189,16 @@ section.login_container .bottom-section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+=======
+<<<<<<< HEAD
+  display: -webkit-box;
+  display: -ms-flexbox;
+=======
+>>>>>>> dev
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+>>>>>>> dev
 }
 
 section.login_container .bottom-section .forgot a, section.login_container .bottom-section .signup a {
