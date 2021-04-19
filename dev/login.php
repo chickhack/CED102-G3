@@ -96,7 +96,7 @@
                                 <input id="password-field" type="password" class="form-control" placeholder="請輸入" value=""></input>
                                 <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
                             </div>
-                            <input disabled type="submit" class="button_min margin_top_3" value="登入"><a href="./account.html" ></a></input>
+                            <input disabled type="submit" class="button_min margin_top_3 login_btn" value="登入"><a href="./account.html" ></a></input>
                             </form>
                         </div>
                     </div>

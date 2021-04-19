@@ -159,19 +159,13 @@ section.login_container{
             .form-group:last-of-type::before {
                 content: "密碼";
             }
-            button{
+            .login_btn{
                 align-self: center;
                 background-color: transparent;
-
-                a {
-                    text-decoration: none;
-                    color: $gold;
-                }
+                color: $gold;
             }
-            button:hover{
-                a{
-                    color: #ffff;
-                }
+            .login_btn:hover{
+                color: #ffff;
                 border: 1px solid $gold;
                 background: $gold;
             }

@@ -1,5 +1,17 @@
 <?php
     session_start();
+    if(isset($_POST['remove'])){
+        if($_GET['action'] = 'remove'){ 
+            foreach($_SESSION['cart'] as $key => $value){
+                if($value['product_id'] == $_GET['id']){
+                    unset($_SESSION['cart'][$key]);
+                    $_SESSION['cart'] = array_values($_SESSION['cart']);
+                    echo "<script>alert('Product has been removed!')</script>";
+                    echo "<script>window.history.back()</script>";
+                }
+            }
+        }
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -66,16 +78,16 @@
         <script src="./js/header.js"></script>
         <div id="particles-js"></div>
         <section class="cart" id="app">
-            <form action="">
+            <form :action="name+id" method="post">
                 <h3 class="h2">我的商品</h3>
                 <ul>
-                    <cart :item="val" v-for="val in products"></cart>
+                    <cart @get="getId" :item="val" v-for="(val,index) in products"></cart>
                 </ul>
                 <div class="checkout margin_top_8">
                     <div class="total">
                         <div class="totalPrice">
                             <p>商品合計</p>
-                            <p class="margin_left_1">${{totalPrice}}</p>
+                            <p class="margin_left_1">$100</p>
                         </div>
                         <div class="totalIntegral margin_top_1">
                             <small>可累計積分</small>
@@ -83,7 +95,7 @@
                             <small>+{{totalPoints}}</small>
                         </div>
                     </div>
-                    <a class="button_min margin_left_3" href="shop_order.html">前往結帳</a>
+                    <button type="submit" name="check" class="button_min margin_left_3" @click="location">前往結帳</button>
                 </div>
             </form>
         </section>
@@ -114,6 +126,7 @@
                         <div class="info">
                             <div class="pdname">
                                 <p>{{item.prod_name}}</p>
+                                <input type="hidden" :value="item.prod_no" name="product_id">
                                 <div class="integral">
                                     <div class="points">
                                         <img src="./img/s.png" alt="" class="icon">
@@ -123,20 +136,31 @@
                                         <div class="as margin_top_2">
                                             <span class="minus" @click="subQuantity">&minus;</span>
                                             <input type="number" name="quantity" id="quantity" v-model.number="verified" :min="0" :max="100">
+                                            <input type="hidden" :name="'prod_qty'+item.prod_no" :value="verified">
                                             <span class="add" @click="addQuantity">&plus;</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <p class="h3">{{item.prod_price}}</p>
-                            <img src="./img/icon/trashcan.png" class="icon trashcan">
+                            <p class="h3">$\{{mainPrice}}</p>
+                            <button type="submit" name="remove"><img src="./img/icon/trashcan.png" class="icon trashcan" :data-no="item.prod_no" @click="increment"></button>
                         </div>
                     </li>
                     `,
             data() {
                 return {
-                    verified: 1,
+                    verified: this.item.qty,
+                    id: 0,
+                    name: "",
                 }
+            },
+            computed: {
+                mainPrice(){
+                    return this.item.prod_price * this.verified ;
+                },
+                mainPoints(){
+                    return this.item.prod_point * this.verified ;
+                },
             },
             methods: {
                 subQuantity() {
@@ -147,22 +171,29 @@
                 },
                 addQuantity() {
                     this.verified += 1;
-                }
-            }
+                },
+                increment(e) {
+                    this.id = e.target.dataset.no;
+                    this.$emit("get", this.id);
+                },
+            },
         })
 
         let vm = new Vue({
             el: "#app",
             data:{
                 products:[],
+                id:0,
+                verified: 0,
+                name: 'shop_cart.php?action=remove&id=',
             },
             computed: {
                 totalPrice(){
-                    let total = 0;
-                    for(let i=0; i<this.products.length; i++){
-                        total += parseInt(this.products[i]["prod_price"]);
-                    }
-                    return total;
+                    const price = document.querySelectorAll(".info>.h3");
+                    price.forEach(p => {
+                        this.price += parseInt(p.textContent);
+                    })
+                    return this.price;
                 },
                 totalPoints(){
                     let total = 0;
@@ -170,24 +201,36 @@
                         total += parseInt(this.products[i]["prod_points"]);
                     }
                     return total;
+                },
+            },
+            methods: {
+                getId(id){
+                    this.id = id ;
+                },
+                location(e){
+                    if(e.target.name = "check"){
+                        const form = document.querySelector("form");
+                        this.name = "./shop_order.php";
+                        this.id="";
+                    }
                 }
-            }
+            },
         })
 
         
         fetch("./php/getProduct.php").then(res => res.json())
                                      .then(data => {
                                          let arr = [];
+                                         let qty = [];
                                          for(let i=0 ; i<data.length ; i++){
                                             <?php
                                                 if(isset($_SESSION["cart"])){
-                                                    foreach($_SESSION["cart"] as $v1) {
-                                                        foreach ($v1 as $v2) {?>
-                                                            if(i == <?php echo $v2 ?>){
-                                                                arr.push(data[i]);
+                                                    foreach($_SESSION["cart"] as $v1) {?>
+                                                            if(i == <?php echo $v1['product_id'] ?>){
+                                                                data[i-1].qty = <?=$v1['prod_qty']?>;
+                                                                arr.push(data[i-1])
                                                             }
                                                             <?php
-                                                            };
                                                         };
                                                     }?>
                                                 }

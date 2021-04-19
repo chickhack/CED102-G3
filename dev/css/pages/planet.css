@@ -56,8 +56,7 @@ img {
 *,
 *:before,
 *:after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
   margin: 0;
   padding: 0;
 }
@@ -78,11 +77,8 @@ body {
   font-size: 14px;
   background-color: #0c0d18;
   overflow-x: hidden;
-  -webkit-user-select: none;
-  -moz-user-select: none;
   -o-user-select: none;
-  -ms-user-select: none;
-      user-select: none;
+  user-select: none;
 }
 
 h1, .h1 {
@@ -363,15 +359,9 @@ body {
 }
 
 nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   justify-content: center;
   background-color: #0c0d18;
   position: fixed;
@@ -395,18 +385,10 @@ nav .logo h1 a {
 }
 
 nav .nav-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-end;
   width: 75%;
 }
 
@@ -417,17 +399,10 @@ nav .nav-links a {
 }
 
 nav .nav-icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
   width: 12%;
   margin-left: 50px;
 }
@@ -443,7 +418,6 @@ nav .burger div {
   height: 2px;
   background-color: #ffffff;
   margin: 5px;
-  -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
 
@@ -523,8 +497,7 @@ nav .nav-trip .trip-count {
 
 @media (max-width: 992px) {
   nav {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
   }
   nav .nav-links {
     position: absolute;
@@ -532,20 +505,11 @@ nav .nav-trip .trip-count {
     height: 88vh;
     top: 12vh;
     background-color: #AD6E4A;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     width: 30%;
-    -webkit-transition: all .5s ease-in;
     transition: all .5s ease-in;
   }
   nav .nav-links li {
@@ -560,9 +524,7 @@ nav .nav-trip .trip-count {
   }
   nav .nav-icons {
     width: 100%;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    justify-content: flex-end;
   }
   nav .nav-icons .icon {
     margin: 0 30px 0 15px;
@@ -585,44 +547,26 @@ nav .nav-trip .trip-count {
   nav .nav-icons {
     width: 50%;
     margin-left: 16px;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
   }
   nav .nav-icons .icon {
     margin: 0;
   }
 }
 
-@-webkit-keyframes navLinkFade {
-  from {
-    opacity: 0;
-    -webkit-transform: translateX(50px);
-            transform: translateX(50px);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-  }
-}
-
 @keyframes navLinkFade {
   from {
     opacity: 0;
-    -webkit-transform: translateX(50px);
-            transform: translateX(50px);
+    transform: translateX(50px);
   }
   to {
     opacity: 1;
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
+    transform: translateX(0px);
   }
 }
 
 .toggle .line1 {
-  -webkit-transform: rotate(45deg) translate(4px, 6px);
-          transform: rotate(45deg) translate(4px, 6px);
+  transform: rotate(45deg) translate(4px, 6px);
 }
 
 .toggle .line2 {
@@ -630,8 +574,7 @@ nav .nav-trip .trip-count {
 }
 
 .toggle .line3 {
-  -webkit-transform: rotate(-45deg) translate(3px, -6px);
-          transform: rotate(-45deg) translate(3px, -6px);
+  transform: rotate(-45deg) translate(3px, -6px);
 }
 
 footer {
@@ -651,28 +594,19 @@ footer .links .logo {
   position: relative;
   left: 50%;
   bottom: 50px;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 footer .links .footer-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
   width: 55%;
   position: relative;
   left: 50%;
   bottom: 30px;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 footer .links .footer-links a {
@@ -683,8 +617,7 @@ footer .footer_moon {
   position: relative;
   left: 50%;
   max-width: 40%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 footer .smoke {
@@ -693,8 +626,7 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 @media (max-width: 768px) {
@@ -819,8 +751,7 @@ button:hover {
   position: absolute;
   left: 50%;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   top: 35%;
   letter-spacing: 2px;
 }
@@ -835,6 +766,7 @@ button:hover {
 }
 
 .planet_tab ul.tab-title {
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -845,6 +777,12 @@ button:hover {
           column-gap: 3%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+=======
+  display: flex;
+  justify-content: center;
+  column-gap: 3%;
+  flex-wrap: wrap;
+>>>>>>> dev
   list-style: none;
 }
 
@@ -875,17 +813,20 @@ button:hover {
 }
 
 .planet_tab .tab-inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+=======
+  flex-direction: column;
+>>>>>>> dev
   text-align: left;
 }
 
 .planet_tab .tab-inner .tab_top {
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -894,6 +835,11 @@ button:hover {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+=======
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+>>>>>>> dev
   padding: 0 15%;
 }
 
@@ -912,16 +858,22 @@ button:hover {
 }
 
 .planet_tab .tab-inner .tab_top .data {
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+=======
+  display: flex;
+  justify-content: center;
+>>>>>>> dev
   font-family: Haettenschweiler, sans-serif;
 }
 
 .planet_tab .tab-inner .tab_top .data .grav, .planet_tab .tab-inner .tab_top .data .day, .planet_tab .tab-inner .tab_top .data .temp {
+<<<<<<< HEAD
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -936,6 +888,13 @@ button:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+=======
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #AD6E4A;
+  display: flex;
+  flex-direction: column;
+>>>>>>> dev
   min-width: 100px;
   max-height: 100px;
   border-right: 1px solid #AD6E4A;
@@ -971,11 +930,13 @@ button:hover {
 }
 
 .planet_tab .tab-inner .planet_content {
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
+=======
+>>>>>>> dev
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .planet_tab .tab-inner .planet_content .carousel {
@@ -987,6 +948,7 @@ button:hover {
 }
 
 .planet_tab .tab-inner .planet_content .imgs .img1 {
+<<<<<<< HEAD
   -webkit-transform: translate(20%);
           transform: translate(20%);
 }
@@ -1004,13 +966,23 @@ button:hover {
 .planet_tab .tab-inner .planet_content .desc {
   display: -webkit-box;
   display: -ms-flexbox;
+=======
+  transform: translate(20%);
+}
+
+.planet_tab .tab-inner .planet_content .imgs .img2 {
+  transform: translateX(10%);
+}
+
+.planet_tab .tab-inner .planet_content .imgs .img3 {
+  transform: translate(-30%, -350px);
+}
+
+.planet_tab .tab-inner .planet_content .desc {
+>>>>>>> dev
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .planet_tab .tab-inner .planet_content .desc p {
@@ -1021,36 +993,33 @@ button:hover {
 
 @media only screen and (max-width: 1200px) {
   .planet_tab .tab-inner .tab-inner {
+<<<<<<< HEAD
     display: -webkit-box;
     display: -ms-flexbox;
+=======
+>>>>>>> dev
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
   .planet_tab .tab-inner .tab-inner .tab-active {
+<<<<<<< HEAD
     display: -webkit-box;
     display: -ms-flexbox;
+=======
+>>>>>>> dev
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   .planet_tab .tab-inner .planet_content {
+<<<<<<< HEAD
     display: -webkit-box;
     display: -ms-flexbox;
+=======
+>>>>>>> dev
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
   .planet_tab .tab-inner .planet_content .imgs {
     display: none;

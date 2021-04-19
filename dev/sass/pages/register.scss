@@ -153,12 +153,12 @@ section.login_container{
             span{
                 align-self: center;
             }
-            button{
+            #register{
                 align-self: center;
                 background-color: transparent;
                 color: $gold;
             }
-            button:hover{
+            #register:hover{
                 color: #ffff;
                 border: 1px solid $gold;
                 background: $gold;

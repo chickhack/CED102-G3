@@ -11,6 +11,8 @@
   src="https://code.jquery.com/jquery-3.5.1.js"
   integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
   crossorigin="anonymous"></script>
+  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
   <link rel="stylesheet" href="./css/all.css">
   <link rel="stylesheet" href="./css/pages/photowall.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -19,39 +21,66 @@
 
   <!-- <header> -->
     <!-- </header> -->
-    <div class="container-fluid">
+    <div class="container-fluid" id="app">
     @@include('./layout/header.html')
+     <!-- 動態背景 -->
+     <div id="particles-js">
+      <script src="./js/background.js"></script>
+    </div>
   <div class="photowall_banner">
-    <h2 class="margin_top_5">星際旅遊給你美好的回憶</h4>
+    <h2 class="margin_top_5">太空旅遊給你美好的回憶</h4>
   </div>
   <div class="grid">
-    <div data-aos="fade-up"
+    <!-- <div data-aos="fade-up"
     data-aos-duration="1000" class=" col-md-3 grid-item">
-      <div class="img1"><img src="./img/photowall/samll/moon/moon_b1_ps.jpg" alt="" class="lazy"></div>
-      <div class="action-box">
-        <div class="heart"><img src="./img/icon/bookmark-outline.png" alt=""></div>
-        <div class="share"><img src="./img/icon/share.png" alt=""></div>
-        <div class="message"><img src="./img/icon/comment.png" alt=""></div>
-        <button class="button"><img src="./img/icon/more.png" alt=""></button>
+      <div class="img1"><img src="./img/photowall/samll/moon/moon_b1_ps.jpg" alt="" class="lazy">
+        <div class="action-box">
+          <div class="heart"><img src="./img/icon/bookmark-outline.png" alt=""></div>
+          <div class="share"><img src="./img/icon/share.png" alt=""></div>
+          <div class="message"><img src="./img/icon/comment.png" alt=""></div>
+          <button class="button"><img src="./img/icon/more.png" alt=""></button>
+        </div>
       </div>
       <div class="article_all">
         <div class="article">
-          <div class="member_photo"><img src="./img/icon/ann.png" alt=""></div>
+          <div class="member_photo"><img src="./img/userprofile/user10.png" alt=""></div>
           <div class="name">吳美女</div>
           <div class="post_time">2021.02.20</div>
         </div>
         <div class="text">雪花堡是繼卡帕多奇亞的另一個土耳其必遊的熱門景點。雪白的棉花堡有三個入口，雪花堡上方還有....more</div>
       </div>
+    </div> -->
+    <!-- ==========資料庫卡片===== -->
+    <div data-aos="fade-up"
+    data-aos-duration="1000" class=" col-md-3 grid-item" v-for="card in getpost">
+      <div class="img1"><img :src="card.post_pic1" alt="" class="lazy">
+        <div class="action-box">
+          <div class="heart"><img src="./img/icon/bookmark-outline.png" alt=""></div>
+          <div class="share"><img src="./img/icon/share.png" alt=""></div>
+          <div class="message"><img src="./img/icon/comment.png" alt=""></div>
+          <button class="button"><img src="./img/icon/more.png" alt=""></button>
+        </div>
+      </div><!-- 調整 -->
+      <div class="article_all">
+        <div class="article">
+          <div class="member_photo"><img :src="card.mem_pic" alt=""></div>
+          <div class="name">{{card.person_name}}</div>
+          <div class="post_time">{{card.post_date}}</div>
+        </div>
+        <div class="text">{{card.post_content}}</div>
+      </div>
     </div>
+    <!-- ====================== -->
     <div data-aos="fade-up"
     data-aos-duration="1200" class="col-md-3 grid-item">
-      <div class="img1"><img src="./img/photowall/samll/moon/moon_c1.jpg" alt="" class="lazy"></div>
-      <div class="action-box img2">
-        <div class="heart"><img src="./img/icon/bookmark-outline.png" alt=""></div>
-        <div class="share"><img src="./img/icon/share.png" alt=""></div>
-        <div class="message"><img src="./img/icon/comment.png" alt=""></div>
-        <button class="button"><img src="./img/icon/more.png" alt=""></button>
-      </div>
+      <div class="img1"><img src="./img/photowall/samll/moon/moon_c1.jpg" alt="" class="lazy">
+        <div class="action-box img2">
+          <div class="heart"><img src="./img/icon/bookmark-outline.png" alt=""></div>
+          <div class="share"><img src="./img/icon/share.png" alt=""></div>
+          <div class="message"><img src="./img/icon/comment.png" alt=""></div>
+          <button class="button"><img src="./img/icon/more.png" alt=""></button>
+        </div>
+      </div>  
       <div class="article_all">
         <div class="article">
           <div class="member_photo"><img src="./img/icon/donn-round.png" alt=""></div>
@@ -63,12 +92,13 @@
     </div>
     <div data-aos="fade-up"
     data-aos-duration="1400" class="col-md-3 grid-item" id="destination_3">
-      <div class="img1"><img src="./img/photowall/samll/mars/mars_a2.jpg" alt="" class="lazy"></div>
-      <div class="action-box">
-        <div class="heart"><img src="./img/icon/bookmark-outline.png" alt=""></div>
-        <div class="share"><img src="./img/icon/share.png" alt=""></div>
-        <div class="message"><img src="./img/icon/comment.png" alt=""></div>
-        <button class="button"><img src="./img/icon/more.png" alt=""></button>
+      <div class="img1"><img src="./img/photowall/samll/mars/mars_a2.jpg" alt="" class="lazy">
+        <div class="action-box">
+          <div class="heart"><img src="./img/icon/bookmark-outline.png" alt=""></div>
+          <div class="share"><img src="./img/icon/share.png" alt=""></div>
+          <div class="message"><img src="./img/icon/comment.png" alt=""></div>
+          <button class="button"><img src="./img/icon/more.png" alt=""></button>
+        </div>
       </div>
       <div class="article_all">
         <div class="article">
@@ -81,12 +111,13 @@
     </div>
     <div data-aos="fade-up"
     data-aos-duration="1600" class="col-md-3 grid-item">
-      <div class="img1"><img src="./img/photowall/samll/jupiter/jupiter_a1.jpg" alt="" class="lazy"></div>
-      <div class="action-box">
-        <div class="heart"><img src="./img/icon/bookmark-outline.png" alt=""></div>
-        <div class="share"><img src="./img/icon/share.png" alt=""></div>
-        <div class="message"><img src="./img/icon/comment.png" alt=""></div>
-        <button class="button"><img src="./img/icon/more.png" alt=""></button>
+      <div class="img1"><img src="./img/photowall/samll/jupiter/jupiter_a1.jpg" alt="" class="lazy">
+        <div class="action-box">
+          <div class="heart"><img src="./img/icon/bookmark-outline.png" alt=""></div>
+          <div class="share"><img src="./img/icon/share.png" alt=""></div>
+          <div class="message"><img src="./img/icon/comment.png" alt=""></div>
+          <button class="button"><img src="./img/icon/more.png" alt=""></button>
+        </div>
       </div>
       <div class="article_all">
         <div class="article">
@@ -98,14 +129,15 @@
       </div>
     </div>  
 <!-- =====================second================================= -->
-    <div data-aos="fade-up"
+    <!-- <div data-aos="fade-up"
     data-aos-duration="1000" class="col-md-3 grid-item">
-      <div class="img1"><img src="./img/photowall/samll/mars/mars_a1.jpg" alt="" class="lazy"></div>
-      <div class="action-box">
-        <div class="heart"><img src="./img/icon/bookmark-outline.png" alt=""></div>
-        <div class="share"><img src="./img/icon/share.png" alt=""></div>
-        <div class="message"><img src="./img/icon/comment.png" alt=""></div>
-        <button class="button"><img src="./img/icon/more.png" alt=""></button>
+      <div class="img1"><img src="./img/photowall/samll/mars/mars_a1.jpg" alt="" class="lazy">
+        <div class="action-box">
+          <div class="heart"><img src="./img/icon/bookmark-outline.png" alt=""></div>
+          <div class="share"><img src="./img/icon/share.png" alt=""></div>
+          <div class="message"><img src="./img/icon/comment.png" alt=""></div>
+          <button class="button"><img src="./img/icon/more.png" alt=""></button>
+        </div>
       </div>
       <div class="article_all">
         <div class="article">
@@ -118,12 +150,13 @@
     </div>
     <div data-aos="fade-up"
     data-aos-duration="1200" class="col-md-3 grid-item ">
-      <div class="img1"><img src="./img/photowall/samll/moon/moon_c1.jpg" alt="" class="lazy"></div>
-      <div class="action-box">
-        <div class="heart"><img src="./img/icon/bookmark-outline.png" alt=""></div>
-        <div class="share"><img src="./img/icon/share.png" alt=""></div>
-        <div class="message"><img src="./img/icon/comment.png" alt=""></div>
-        <button class="button"><img src="./img/icon/more.png" alt=""></button>
+      <div class="img1"><img src="./img/photowall/samll/moon/moon_c1.jpg" alt="" class="lazy">
+        <div class="action-box">
+          <div class="heart"><img src="./img/icon/bookmark-outline.png" alt=""></div>
+          <div class="share"><img src="./img/icon/share.png" alt=""></div>
+          <div class="message"><img src="./img/icon/comment.png" alt=""></div>
+          <button class="button"><img src="./img/icon/more.png" alt=""></button>
+        </div>
       </div>
       <div class="article_all">
         <div class="article">
@@ -136,12 +169,13 @@
     </div>
     <div data-aos="fade-up"
     data-aos-duration="1400" class="col-md-3 grid-item ">
-      <div class="img1"><img src="./img/photowall/samll/jupiter/jupiter_a1.jpg" alt="" class="lazy"></div>
-      <div class="action-box">
-        <div class="heart"><img src="./img/icon/bookmark-outline.png" alt=""></div>
-        <div class="share"><img src="./img/icon/share.png" alt=""></div>
-        <div class="message"><img src="./img/icon/comment.png" alt=""></div>
-        <button class="button"><img src="./img/icon/more.png" alt=""></button>
+      <div class="img1"><img src="./img/photowall/samll/jupiter/jupiter_a1.jpg" alt="" class="lazy">
+        <div class="action-box">
+          <div class="heart"><img src="./img/icon/bookmark-outline.png" alt=""></div>
+          <div class="share"><img src="./img/icon/share.png" alt=""></div>
+          <div class="message"><img src="./img/icon/comment.png" alt=""></div>
+          <button class="button"><img src="./img/icon/more.png" alt=""></button>
+        </div>
       </div>
       <div class="article_all">
         <div class="article">
@@ -154,12 +188,13 @@
     </div>
     <div data-aos="fade-up"
     data-aos-duration="1600" class="col-md-3 grid-item">
-      <div class="img1"><img src="./img/photowall/samll/mars/mars_a2.jpg" alt="" class="lazy"></div>
-      <div class="action-box">
-        <div class="heart"><img src="./img/icon/bookmark-outline.png" alt=""></div>
-        <div class="share"><img src="./img/icon/share.png" alt=""></div>
-        <div class="message"><img src="./img/icon/comment.png" alt=""></div>
-        <button class="button"><img src="./img/icon/more.png" alt=""></button>
+      <div class="img1"><img src="./img/photowall/samll/mars/mars_a2.jpg" alt="" class="lazy">
+        <div class="action-box">
+          <div class="heart"><img src="./img/icon/bookmark-outline.png" alt=""></div>
+          <div class="share"><img src="./img/icon/share.png" alt=""></div>
+          <div class="message"><img src="./img/icon/comment.png" alt=""></div>
+          <button class="button"><img src="./img/icon/more.png" alt=""></button>
+        </div>
       </div>
       <div class="article_all">
         <div class="article">
@@ -169,16 +204,17 @@
         </div>
         <div class="text">雪花堡是繼卡帕多奇亞的另一個土耳其必遊的熱門景點。雪白的棉花堡有三個入口，雪花堡上方還有....more</div>
       </div>
-    </div>  
+    </div>   -->
 <!-- ======================third==================== -->
-    <div data-aos="fade-up"
+    <!-- <div data-aos="fade-up"
     data-aos-duration="1000" class="col-md-3 grid-item">
-      <div class="img1"><img src="./img/photowall/samll/mars/mars_a1.jpg" alt="" class="lazy"></div>
-      <div class="action-box">
-        <div class="heart"><img src="./img/icon/bookmark-outline.png" alt=""></div>
-        <div class="share"><img src="./img/icon/share.png" alt=""></div>
-        <div class="message"><img src="./img/icon/comment.png" alt=""></div>
-        <button class="button"><img src="./img/icon/more.png" alt=""></button>
+      <div class="img1"><img src="./img/photowall/samll/mars/mars_a1.jpg" alt="" class="lazy">
+        <div class="action-box">
+          <div class="heart"><img src="./img/icon/bookmark-outline.png" alt=""></div>
+          <div class="share"><img src="./img/icon/share.png" alt=""></div>
+          <div class="message"><img src="./img/icon/comment.png" alt=""></div>
+          <button class="button"><img src="./img/icon/more.png" alt=""></button>
+        </div>
       </div>
       <div class="article_all">
         <div class="article">
@@ -191,12 +227,13 @@
     </div>
     <div data-aos="fade-up"
     data-aos-duration="1200" class="col-md-3 grid-item">
-      <div class="img1"><img src="./img/photowall/samll/moon/moon_c1.jpg" alt=""  class="lazy"></div>
-      <div class="action-box">
-        <div class="heart"><img src="./img/icon/bookmark-outline.png" alt=""></div>
-        <div class="share"><img src="./img/icon/share.png" alt=""></div>
-        <div class="message"><img src="./img/icon/comment.png" alt=""></div>
-        <button class="button"><img src="./img/icon/more.png" alt=""></button>
+      <div class="img1"><img src="./img/photowall/samll/moon/moon_c1.jpg" alt=""  class="lazy">
+        <div class="action-box">
+          <div class="heart"><img src="./img/icon/bookmark-outline.png" alt=""></div>
+          <div class="share"><img src="./img/icon/share.png" alt=""></div>
+          <div class="message"><img src="./img/icon/comment.png" alt=""></div>
+          <button class="button"><img src="./img/icon/more.png" alt=""></button>
+        </div>
       </div>
       <div class="article_all">
         <div class="article">
@@ -209,12 +246,13 @@
     </div>
     <div data-aos="fade-up"
     data-aos-duration="1400" class="col-md-3 grid-item">
-      <div class="img1"><img src="./img/photowall/samll/jupiter/jupiter_a1.jpg" alt=""  class="lazy"></div>
-      <div class="action-box">
-        <div class="heart"><img src="./img/icon/bookmark-outline.png" alt=""></div>
-        <div class="share"><img src="./img/icon/share.png" alt=""></div>
-        <div class="message"><img src="./img/icon/comment.png" alt=""></div>
-        <button class="button"><img src="./img/icon/more.png" alt=""></button>
+      <div class="img1"><img src="./img/photowall/samll/jupiter/jupiter_a1.jpg" alt=""  class="lazy">
+        <div class="action-box">
+          <div class="heart"><img src="./img/icon/bookmark-outline.png" alt=""></div>
+          <div class="share"><img src="./img/icon/share.png" alt=""></div>
+          <div class="message"><img src="./img/icon/comment.png" alt=""></div>
+          <button class="button"><img src="./img/icon/more.png" alt=""></button>
+        </div>
       </div>
       <div class="article_all">
         <div class="article">
@@ -227,12 +265,13 @@
     </div>
     <div data-aos="fade-up"
     data-aos-duration="1600" class="col-md-3 grid-item">
-      <div class="img1"><img src="./img/photowall/samll/mars/mars_a2.jpg" alt="" class="lazy"></div>
-      <div class="action-box">
-        <div class="heart"><img src="./img/icon/bookmark-outline.png" alt=""></div>
-        <div class="share"><img src="./img/icon/share.png" alt=""></div>
-        <div class="message"><img src="./img/icon/comment.png" alt=""></div>
-        <button class="button"><img src="./img/icon/more.png" alt=""></button>
+      <div class="img1"><img src="./img/photowall/samll/mars/mars_a2.jpg" alt="" class="lazy">
+        <div class="action-box">
+          <div class="heart"><img src="./img/icon/bookmark-outline.png" alt=""></div>
+          <div class="share"><img src="./img/icon/share.png" alt=""></div>
+          <div class="message"><img src="./img/icon/comment.png" alt=""></div>
+          <button class="button"><img src="./img/icon/more.png" alt=""></button>
+        </div>
       </div>
       <div class="article_all">
         <div class="article">
@@ -242,16 +281,17 @@
         </div>
         <div class="text">雪花堡是繼卡帕多奇亞的另一個土耳其必遊的熱門景點。雪白的棉花堡有三個入口，雪花堡上方還有....more</div>
       </div>
-    </div>
+    </div> -->
   <!-- =================fourth============= -->
-    <div data-aos="fade-up"
+    <!-- <div data-aos="fade-up"
     data-aos-duration="1000" class="col-md-3 grid-item ">
-      <div class="img1"><img src="./img/photowall/samll/mars/mars_a1.jpg" alt="" class="lazy"></div>
-      <div class="action-box">
-        <div class="heart"><img src="./img/icon/bookmark-outline.png" alt=""></div>
-        <div class="share"><img src="./img/icon/share.png" alt=""></div>
-        <div class="message"><img src="./img/icon/comment.png" alt=""></div>
-        <button class="button"><img src="./img/icon/more.png" alt=""></button>
+      <div class="img1"><img src="./img/photowall/samll/mars/mars_a1.jpg" alt="" class="lazy">
+        <div class="action-box">
+          <div class="heart"><img src="./img/icon/bookmark-outline.png" alt=""></div>
+          <div class="share"><img src="./img/icon/share.png" alt=""></div>
+          <div class="message"><img src="./img/icon/comment.png" alt=""></div>
+          <button class="button"><img src="./img/icon/more.png" alt=""></button>
+        </div>
       </div>
       <div class="article_all">
         <div class="article">
@@ -264,12 +304,13 @@
     </div>
     <div data-aos="fade-up"
     data-aos-duration="1200" class="col-md-3 grid-item ">
-      <div class="img1"><img src="./img/photowall/samll/moon/moon_c1.jpg" alt=""  class="lazy"></div>
-      <div class="action-box">
-        <div class="heart"><img src="./img/icon/bookmark-outline.png " alt=""></div>
-        <div class="share"><img src="./img/icon/share.png" alt=""></div>
-        <div class="message"><img src="./img/icon/comment.png" alt=""></div>
-        <button class="button"><img src="./img/icon/more.png" alt=""></button>
+      <div class="img1"><img src="./img/photowall/samll/moon/moon_c1.jpg" alt=""  class="lazy">
+        <div class="action-box">
+          <div class="heart"><img src="./img/icon/bookmark-outline.png " alt=""></div>
+          <div class="share"><img src="./img/icon/share.png" alt=""></div>
+          <div class="message"><img src="./img/icon/comment.png" alt=""></div>
+          <button class="button"><img src="./img/icon/more.png" alt=""></button>
+        </div>
       </div>
       <div class="article_all">
         <div class="article">
@@ -282,12 +323,13 @@
     </div>
     <div data-aos="fade-up"
     data-aos-duration="1400" class="col-md-3 grid-item">
-      <div class="img1"><img src="./img/photowall/samll/jupiter/jupiter_a1.jpg" alt=""  class="lazy"></div>
-      <div class="action-box">
-        <div class="heart"><img src="./img/icon/bookmark-outline.png" alt=""></div>
-        <div class="share"><img src="./img/icon/share.png" alt=""></div>
-        <div class="message"><img src="./img/icon/comment.png" alt=""></div>
-        <button class="button"><img src="./img/icon/more.png" alt=""></button>
+      <div class="img1"><img src="./img/photowall/samll/jupiter/jupiter_a1.jpg" alt=""  class="lazy">
+        <div class="action-box">
+          <div class="heart"><img src="./img/icon/bookmark-outline.png" alt=""></div>
+          <div class="share"><img src="./img/icon/share.png" alt=""></div>
+          <div class="message"><img src="./img/icon/comment.png" alt=""></div>
+          <button class="button"><img src="./img/icon/more.png" alt=""></button>
+        </div>
       </div>
       <div class="article_all">
         <div class="article">
@@ -300,12 +342,13 @@
     </div>
     <div data-aos="fade-up"
     data-aos-duration="1600" class="col-md-3 grid-item">
-      <div class="img1"><img src="./img/photowall/samll/mars/mars_a2.jpg" alt="" class="lazy"></div>
-      <div class="action-box">
-        <div class="heart"><img src="./img/icon/bookmark-outline.png" alt=""></div>
-        <div class="share"><img src="./img/icon/share.png" alt=""></div>
-        <div class="message"><img src="./img/icon/comment.png" alt=""></div>
-        <button class="button"><img src="./img/icon/more.png" alt=""></button>
+      <div class="img1"><img src="./img/photowall/samll/mars/mars_a2.jpg" alt="" class="lazy">
+        <div class="action-box">
+          <div class="heart"><img src="./img/icon/bookmark-outline.png" alt=""></div>
+          <div class="share"><img src="./img/icon/share.png" alt=""></div>
+          <div class="message"><img src="./img/icon/comment.png" alt=""></div>
+          <button class="button"><img src="./img/icon/more.png" alt=""></button>
+        </div>
       </div>
       <div class="article_all">
         <div class="article">
@@ -315,16 +358,17 @@
         </div>
         <div class="text">雪花堡是繼卡帕多奇亞的另一個土耳其必遊的熱門景點。雪白的棉花堡有三個入口，雪花堡上方還有....more</div>
       </div>
-    </div>
+    </div> -->
   <!-- =========fiveth==== -->
-    <div data-aos="fade-up"
+    <!-- <div data-aos="fade-up"
     data-aos-duration="1000" class="col-md-3 grid-item ">
-      <div class="img1"><img src="./img/photowall/samll/mars/mars_a1.jpg" alt="" class="lazy"></div>
-      <div class="action-box">
-        <div class="heart"><img src="./img/icon/bookmark-outline.png" alt=""></div>
-        <div class="share"><img src="./img/icon/share.png" alt=""></div>
-        <div class="message"><img src="./img/icon/comment.png" alt=""></div>
-        <button class="button"><img src="./img/icon/more.png" alt=""></button>
+      <div class="img1"><img src="./img/photowall/samll/mars/mars_a1.jpg" alt="" class="lazy">
+        <div class="action-box">
+          <div class="heart"><img src="./img/icon/bookmark-outline.png" alt=""></div>
+          <div class="share"><img src="./img/icon/share.png" alt=""></div>
+          <div class="message"><img src="./img/icon/comment.png" alt=""></div>
+          <button class="button"><img src="./img/icon/more.png" alt=""></button>
+        </div>
       </div>
       <div class="article_all">
         <div class="article">
@@ -337,12 +381,13 @@
     </div>
     <div data-aos="fade-up"
     data-aos-duration="1200" class="col-md-3 grid-item ">
-      <div class="img1"><img src="./img/photowall/samll/moon/moon_c1.jpg" alt=""  class="lazy"></div>
-      <div class="action-box">
-        <div class="heart"><img src="./img/icon/bookmark-outline.png" alt=""></div>
-        <div class="share"><img src="./img/icon/share.png" alt=""></div>
-        <div class="message"><img src="./img/icon/comment.png" alt=""></div>
-        <button class="button"><img src="./img/icon/more.png" alt=""></button>
+      <div class="img1"><img src="./img/photowall/samll/moon/moon_c1.jpg" alt=""  class="lazy">
+        <div class="action-box">
+          <div class="heart"><img src="./img/icon/bookmark-outline.png" alt=""></div>
+          <div class="share"><img src="./img/icon/share.png" alt=""></div>
+          <div class="message"><img src="./img/icon/comment.png" alt=""></div>
+          <button class="button"><img src="./img/icon/more.png" alt=""></button>
+        </div>
       </div>
       <div class="article_all">
         <div class="article">
@@ -355,12 +400,13 @@
     </div>
     <div data-aos="fade-up"
     data-aos-duration="1400" class="col-md-3 grid-item">
-      <div class="img1"><img src="./img/photowall/samll/jupiter/jupiter_a1.jpg" alt=""  class="lazy"></div>
-      <div class="action-box">
-        <div class="heart"><img src="./img/icon/bookmark-outline.png" alt=""></div>
-        <div class="share"><img src="./img/icon/share.png" alt=""></div>
-        <div class="message"><img src="./img/icon/comment.png" alt=""></div>
-        <button class="button"><img src="./img/icon/more.png" alt=""></button>
+      <div class="img1"><img src="./img/photowall/samll/jupiter/jupiter_a1.jpg" alt=""  class="lazy">
+        <div class="action-box">
+          <div class="heart"><img src="./img/icon/bookmark-outline.png" alt=""></div>
+          <div class="share"><img src="./img/icon/share.png" alt=""></div>
+          <div class="message"><img src="./img/icon/comment.png" alt=""></div>
+          <button class="button"><img src="./img/icon/more.png" alt=""></button>
+        </div>
       </div>
       <div class="article_all">
         <div class="article">
@@ -373,12 +419,13 @@
     </div>
     <div data-aos="fade-up"
     data-aos-duration="1600" class="col-md-3 grid-item">
-      <div class="img1"><img src="./img/photowall/samll/mars/mars_a2.jpg" alt="" class="lazy"></div>
-      <div class="action-box">
-        <div class="heart"><img src="./img/icon/bookmark-outline.png" alt=""></div>
-        <div class="share"><img src="./img/icon/share.png" alt=""></div>
-        <div class="message"><img src="./img/icon/comment.png" alt=""></div>
-        <button class="button"><img src="./img/icon/more.png" alt=""></button>
+      <div class="img1"><img src="./img/photowall/samll/mars/mars_a2.jpg" alt="" class="lazy">
+        <div class="action-box">
+          <div class="heart"><img src="./img/icon/bookmark-outline.png" alt=""></div>
+          <div class="share"><img src="./img/icon/share.png" alt=""></div>
+          <div class="message"><img src="./img/icon/comment.png" alt=""></div>
+          <button class="button"><img src="./img/icon/more.png" alt=""></button>
+        </div>
       </div>
       <div class="article_all">
         <div class="article">
@@ -388,7 +435,7 @@
         </div>
         <div class="text">雪花堡是繼卡帕多奇亞的另一個土耳其必遊的熱門景點。雪白的棉花堡有三個入口，雪花堡上方還有....more</div>
       </div>
-    </div>
+    </div> -->
 <!-- ===============燈箱區============ -->
 <!-- =========點小圖換大圖區=========== -->
 <div class="light-box-container container_1" id="destination_lightbox" >
@@ -547,20 +594,32 @@
 
   
 </script>
-
-
-<script>
-  $('.img1').mouseover(function(){
-    $(this).parent().find(".action-box").css('display','flex');
-  });
-  $('.img1').mouseout(function(){
-    $(this).parent().find(".action-box").css('display','none');
-  });
-</script>
 </div>
+<!-- =========AOS============== -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 <script>
   AOS.init();
+</script>
+<!-- =========抓資料====== -->
+<script>
+  var ppoo = new Vue({
+    el:'#app',
+    data:{
+      getpost:[], 
+      getcustomer:[],
+    },
+    mounted(){
+      //res 是區域變數出去後不可使用
+      fetch('./php/getPost.php').then(res => res.json()).then(res => this.getpost = res);
+      fetch('./php/getcustomer.php').then(res => res.json()).then(res => this.getcustomer = res);
+      setTimeout(()=>{
+        console.log( this.getpost);
+        console.log( this.getcustomer);
+        
+      },1000);
+    },
+  });
 </script>
 </body>
 </html>
