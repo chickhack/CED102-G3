@@ -1,6 +1,5 @@
 <?php
     session_start();
-    // print_r($_POST['prod_qty'])
     $arr = [];
     for($i=1; $i < count($_SESSION['cart'])+1 ; $i++){
         $no = $_SESSION['cart'][$i-1]['product_id'];
@@ -9,19 +8,6 @@
         }
     };
     print_r($arr);
-    // if(isset($_POST['check'])){
-    //     if(isset($_SESSION["cart"])){
-    //         $item_array_id = array_column($_SESSION["cart"],"product_id");
-    //        //  print_r($_SESSION["cart"]);
-   
-    //        if(in_array($_POST["product_id"],$item_array_id)){
-    //            foreach($_SESSION['cart'] as $v1){
-    //                $v1['prod_qty'] = $_POST['prod_qty'];
-    //            }
-    //        }
-    //     }
-    // }
-    // print_r($_SESSION['cart']);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -46,18 +32,18 @@
             <h1><a href="home.html">SPACED</a></h1>
         </div>
         <ul class="nav-links">
-            <li class="margin_left_5"><a href="alltrip.html">星球景點</a></li>
-            <li class="margin_left_5"><a href="planet.html">星星世界</a></li>
-            <li class="margin_left_5"><a href="shop.html">星球商城</a></li>
-            <li class="margin_left_5"><a href="photowall.html">太空互動</a></li>
-            <li class="margin_left_5"><a href="Leaderboard.html">玩家排行</a></li>
+            <li class="margin_left_5"><a href="alltrip.php">星球景點</a></li>
+            <li class="margin_left_5"><a href="planet.php">星星世界</a></li>
+            <li class="margin_left_5"><a href="shop.php">星球商城</a></li>
+            <li class="margin_left_5"><a href="photowall.php">太空互動</a></li>
+            <li class="margin_left_5"><a href="Leaderboard.php">玩家排行</a></li>
             <!-- <li><a href=""><img src="./images/ticket.png" alt="" class="icon"></a></li>
                 <li><a href=""><img src="./images/shopping-cart_(1).png" alt="" class="icon"></a></li>
                 <li><a href=""><img src="./images/round-account-button-with-user-inside_(1).png" alt="" class="icon"></a></li> -->
         </ul>
         <ul class="nav-icons">
             <li>
-            <a href="./car-itineray.html"
+            <a href="./car-itineray.php"
                 ><img src="./img/icon/header/luggage.png" alt="" class="icon"
             /></a>
             </li>
@@ -75,7 +61,7 @@
                 </a>
             </li> 
             <li>
-            <a href="./login.html"
+            <a href="./login.php"
                 ><img
                 src="./img/icon/header/round-account-button-with-user-inside_(1).png"
                 alt=""
@@ -152,7 +138,11 @@
                             <img src="./img/date-chevron-down.svg" alt="">
                             <h3 class="margin_left_1 recipient_click">收件人資訊</h3>
                         </div>
-                        <div class="info">
+                        <div class="checkbox_group">
+                            <input type="checkbox" name="same" id="same" class="checkbox_custom">
+                            <label class="checkbox_custom_label" for="same" @click="getValue">收件人資訊與寄件人資訊相同</label>
+                        </div>
+                        <div class="info margin_top_2">
                             <div class="input_group">
                                 <label for="fName">名字</label>
                                 <input type="text" class="margin_top_1" name="fName" id="fName">
@@ -299,9 +289,15 @@
                 totalPoints(){
                     let total = 0;
                     this.products.forEach(prod => {
-                        total += prod.prod_points * prod.qty;
+                        total += parseInt(prod.prod_points);
                     })
                     return total;
+                }
+            },
+            methods: {
+                getValue(){
+                    const value = document.querySelector("#ofName");
+                    console.log(value.value);
                 }
             }
         })
