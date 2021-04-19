@@ -384,7 +384,8 @@ input::-webkit-inner-spin-button {
             }
 
             .messages {
-                @include flex_middle();
+                display: flex;
+                align-items: center;
                 border-bottom: 1px solid $gold;
                 padding: 16px 0;
                 position: relative;

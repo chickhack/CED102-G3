@@ -434,23 +434,20 @@ nav .nav-cart .count {
   text-align: center;
   line-height: 1.5rem;
   position: absolute;
-  -webkit-transform: translate(50%, -150%);
-          transform: translate(50%, -150%);
+  transform: translate(50%, -150%);
   display: block;
   color: white;
 }
 
 @media all and (max-width: 992px) {
   nav .nav-cart .count {
-    -webkit-transform: translate(100%, -150%);
-            transform: translate(100%, -150%);
+    transform: translate(100%, -150%);
   }
 }
 
 @media all and (max-width: 768px) {
   nav .nav-cart .count {
-    -webkit-transform: translate(40%, -170%);
-            transform: translate(40%, -170%);
+    transform: translate(40%, -170%);
     width: 20px;
     height: 20px;
     font-size: 12px;
@@ -471,23 +468,20 @@ nav .nav-trip .trip-count {
   text-align: center;
   line-height: 1.5rem;
   position: absolute;
-  -webkit-transform: translate(50%, -150%);
-          transform: translate(50%, -150%);
+  transform: translate(50%, -150%);
   display: block;
   color: white;
 }
 
 @media all and (max-width: 992px) {
   nav .nav-trip .trip-count {
-    -webkit-transform: translate(100%, -150%);
-            transform: translate(100%, -150%);
+    transform: translate(100%, -150%);
   }
 }
 
 @media all and (max-width: 768px) {
   nav .nav-trip .trip-count {
-    -webkit-transform: translate(40%, -170%);
-            transform: translate(40%, -170%);
+    transform: translate(40%, -170%);
     width: 20px;
     height: 20px;
     font-size: 12px;
@@ -689,8 +683,7 @@ input[type=number] {
   height: 100px;
   background-size: contain;
   background-repeat: no-repeat;
-  -webkit-animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
-          animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+  animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
 }
 
 #marsloc {
@@ -781,7 +774,6 @@ div.bk3 {
   letter-spacing: 10px;
   font-size: 36px;
   color: #C9ADA7;
-  -webkit-animation: h2 1.2s infinite;
   animation: h2 1.2s infinite;
 }
 
@@ -830,11 +822,6 @@ div.bk3 {
 }
 
 .first .first_right .hottrip {
-<<<<<<< HEAD
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-=======
->>>>>>> dev
   display: inline-flex;
   padding-top: 80px;
 }
@@ -898,12 +885,7 @@ div.bk3 {
   position: absolute;
   top: 15px;
   left: 50%;
-<<<<<<< HEAD
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-=======
   transform: translateX(-50%);
->>>>>>> dev
   z-index: 2;
 }
 
@@ -929,11 +911,6 @@ div.bk3 {
 }
 
 .first .first_right .hottrip div.planet_top div.word .tag {
-<<<<<<< HEAD
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-=======
->>>>>>> dev
   display: inline-flex;
   border: 1px solid #cccaca;
   border-radius: 5px;
@@ -975,18 +952,6 @@ div.bk3 {
   background-color: #bf896b;
 }
 
-<<<<<<< HEAD
-@-webkit-keyframes h2 {
-  0% {
-    text-shadow: 0 0 6px #FFF;
-  }
-  100% {
-    text-shadow: 0 0 0px #000;
-  }
-}
-
-=======
->>>>>>> dev
 @keyframes h2 {
   0% {
     text-shadow: 0 0 6px #FFF;
@@ -997,11 +962,6 @@ div.bk3 {
 }
 
 .tripselect {
-<<<<<<< HEAD
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-=======
->>>>>>> dev
   display: inline-flex;
   width: 280px;
   justify-content: space-between;
@@ -1058,18 +1018,8 @@ div.bk3 {
 
 @media all and (max-width: 767px) {
   .stepsection .stepall {
-<<<<<<< HEAD
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-=======
     flex-direction: column;
     align-items: center;
->>>>>>> dev
   }
 }
 

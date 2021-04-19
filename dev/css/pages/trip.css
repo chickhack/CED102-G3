@@ -434,23 +434,20 @@ nav .nav-cart .count {
   text-align: center;
   line-height: 1.5rem;
   position: absolute;
-  -webkit-transform: translate(50%, -150%);
-          transform: translate(50%, -150%);
+  transform: translate(50%, -150%);
   display: block;
   color: white;
 }
 
 @media all and (max-width: 992px) {
   nav .nav-cart .count {
-    -webkit-transform: translate(100%, -150%);
-            transform: translate(100%, -150%);
+    transform: translate(100%, -150%);
   }
 }
 
 @media all and (max-width: 768px) {
   nav .nav-cart .count {
-    -webkit-transform: translate(40%, -170%);
-            transform: translate(40%, -170%);
+    transform: translate(40%, -170%);
     width: 20px;
     height: 20px;
     font-size: 12px;
@@ -471,23 +468,20 @@ nav .nav-trip .trip-count {
   text-align: center;
   line-height: 1.5rem;
   position: absolute;
-  -webkit-transform: translate(50%, -150%);
-          transform: translate(50%, -150%);
+  transform: translate(50%, -150%);
   display: block;
   color: white;
 }
 
 @media all and (max-width: 992px) {
   nav .nav-trip .trip-count {
-    -webkit-transform: translate(100%, -150%);
-            transform: translate(100%, -150%);
+    transform: translate(100%, -150%);
   }
 }
 
 @media all and (max-width: 768px) {
   nav .nav-trip .trip-count {
-    -webkit-transform: translate(40%, -170%);
-            transform: translate(40%, -170%);
+    transform: translate(40%, -170%);
     width: 20px;
     height: 20px;
     font-size: 12px;
@@ -1031,9 +1025,6 @@ input::-webkit-inner-spin-button {
 }
 
 .parent_container .up_container .comment .messages {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border-bottom: 1px solid #AD6E4A;
   padding: 16px 0;
   position: relative;

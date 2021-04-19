@@ -233,10 +233,11 @@ if( $errMsg != ""){ //例外
                     </div>
                     <ul class="margin_top_5">
                         <li class="messages" v-for="comment in comments" v-if="<?php echo $spot_no;?>==comment.spot_no">
-                            <!-- <img :src="comment.src" alt=""> -->
+                        <!-- <li class="messages" v-for="comment in comments" > -->
+                            <img :src="comment.mem_pic" alt="">
                             <div class="words margin_left_3">
                             <div class="name">
-                            <p>{{comment.mem_no}}</p>
+                            <p>{{comment.last_name}}{{comment.first_name}}</p>
                                     <hr>
                                     <p>{{comment.trev_date}}</p>
                                 </div>
@@ -265,7 +266,6 @@ if( $errMsg != ""){ //例外
                             </a>
                             <button type="submit" name="add" class="addin2 small margin_top_2 myTrip"><img class="plus"
                                     src="./img/icon/plus.png" alt="">加入我的行程</button>
-                            <!-- <div class="trip_bookmark" id="bookmark"></div> -->
                             <input type="hidden" name="spot_id" :value="item.spot_no">
                         </form>
                     </div>
@@ -305,6 +305,10 @@ if( $errMsg != ""){ //例外
             second: [],
         },
         mounted() {
+            fetch('./php/getReviews.php').then(res => res.json()).then(res => {
+                this.comments = res;
+                this.$forceUpdate();
+            });
             fetch('./php/getSelectTrip.php').then(res => res.json()).then(data => {
                 vm.second = data;
                 for (let i = 0; i < data.length; i++) {
@@ -313,7 +317,7 @@ if( $errMsg != ""){ //例外
                     console.log(vm.second[i].url)
                 }
             });
-            fetch('./php/getReviews.php').then(res => res.json()).then(res => this.comments = res);
+
         },
     })
     </script>
