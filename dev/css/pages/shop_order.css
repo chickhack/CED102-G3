@@ -699,17 +699,21 @@ section.orderDetail {
   padding-top: 5vh;
 }
 
-section.orderDetail .order {
+section.orderDetail h3 {
+  margin: 0 80px;
+}
+
+section.orderDetail ul {
   margin: 0 80px;
 }
 
 @media all and (max-width: 768px) {
-  section.orderDetail .order {
+  section.orderDetail ul {
     margin: 0 30px;
   }
 }
 
-section.orderDetail .order li {
+section.orderDetail li {
   font-weight: 900;
   background-color: #292B41;
   display: flex;
@@ -719,7 +723,7 @@ section.orderDetail .order li {
   padding: 8px 0;
 }
 
-section.orderDetail .order li .imgWord {
+section.orderDetail li .imgWord {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -728,18 +732,18 @@ section.orderDetail .order li .imgWord {
   flex-wrap: wrap;
 }
 
-section.orderDetail .order li .imgWord .prod {
+section.orderDetail li .imgWord .prod {
   width: 8%;
 }
 
 @media all and (max-width: 768px) {
-  section.orderDetail .order li .imgWord .prod {
+  section.orderDetail li .imgWord .prod {
     width: 15%;
     margin-left: 8px;
   }
 }
 
-section.orderDetail .order li .imgWord .imgRight {
+section.orderDetail li .imgWord .imgRight {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -748,23 +752,23 @@ section.orderDetail .order li .imgWord .imgRight {
 }
 
 @media all and (max-width: 768px) {
-  section.orderDetail .order li .imgWord .imgRight {
+  section.orderDetail li .imgWord .imgRight {
     width: 75%;
     justify-content: space-around;
   }
 }
 
-section.orderDetail .order li .imgWord .integral {
+section.orderDetail li .imgWord .integral {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-section.orderDetail .order li .imgWord .integral .icon {
+section.orderDetail li .imgWord .integral .icon {
   max-width: 10px;
 }
 
-section.orderDetail .order li .quantity {
+section.orderDetail li .quantity {
   width: 80%;
   display: flex;
   justify-content: center;
@@ -992,6 +996,12 @@ section.orderer .checkbox_group .credit_check {
 
 section.orderer .checkbox_group .credit_check label {
   width: 100%;
+}
+
+@media all and (max-width: 992px) {
+  section.orderer .checkbox_group .credit_check #creditDate {
+    margin-top: 8px;
+  }
 }
 
 @media all and (max-width: 992px) {

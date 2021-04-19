@@ -760,6 +760,11 @@ section.cart .item .info .points {
   }
 }
 
+section.cart .item button {
+  background-color: transparent;
+  border: none;
+}
+
 section.cart .item .trashcan {
   cursor: pointer;
 }

@@ -35,9 +35,6 @@ try{
     $errMsg .= "錯誤原因 : ".$e -> getMessage(). "<br>";
     $errMsg .= "錯誤行號 : ".$e -> getLine(). "<br>";
   }
-
-
-
 ?>
 
 <!DOCTYPE html>
@@ -119,7 +116,6 @@ try{
         </nav>
         <script src="./js/header.js"></script>
     </header>
-
     <!-- 動態背景 -->
     <div id="particles-js">
         <script src="./js/background.js"></script>
@@ -220,9 +216,6 @@ if( $errMsg != ""){ //例外
                         </form>
                 </div>
 
-                <?php
-}
-?>
 
                 <div class="comment margin_top_10 margin_left_3">
                     <h3>旅客評論</h3>
@@ -239,11 +232,11 @@ if( $errMsg != ""){ //例外
                         <p class="more">瀏覽評論</p>
                     </div>
                     <ul class="margin_top_5">
-                        <li class="messages" v-for="comment in comments">
+                        <li class="messages" v-for="comment in comments" v-if="<?php echo $spot_no;?>==comment.spot_no">
                             <!-- <img :src="comment.src" alt=""> -->
                             <div class="words margin_left_3">
-                                <div class="name">
-                                    <p>{{comment.mem_no}}</p>
+                            <div class="name">
+                            <p>{{comment.mem_no}}</p>
                                     <hr>
                                     <p>{{comment.trev_date}}</p>
                                 </div>
@@ -281,7 +274,9 @@ if( $errMsg != ""){ //例外
         </div>
 
     </div>
-
+    <?php
+}
+?>
     <footer class="padding_top_10">
         <div class="links">
             <div class="logo"><img src="./img/logo.png" alt=""></div>
@@ -306,35 +301,8 @@ if( $errMsg != ""){ //例外
         data: {
             number: 4.8,
             totalStar: 5,
-            comments: [
-            //     {
-            //     src: "./img/userprofile/user1.png",
-            //     name: "Doris",
-            //     date: "21.03.11",
-            //     content: "我和先生都喜歡玩水，第一次接觸SUP，雖然我不太會游泳，但全程教練們都在一旁讓人感覺很安心，除了專業又幽默的教學外😊"
-            // }, {
-            //     src: "./img/userprofile/user3.png",
-            //     name: "Doris",
-            //     date: "21.03.11",
-            //     content: "我和先生都喜歡玩水，第一次接觸SUP，雖然我不太會游泳，但全程教練們都在一旁讓人感覺很安心，除了專業又幽默的教學外😊"
-            // }, {
-            //     src: "./img/userprofile/user5.png",
-            //     name: "Doris",
-            //     date: "21.03.11",
-            //     content: "我和先生都喜歡玩水，第一次接觸SUP，雖然我不太會游泳，但全程教練們都在一旁讓人感覺很安心，除了專業又幽默的教學外😊"
-            // }, 
-        ],
-            computed: {
-                // subContent() {
-                //     if (this.content.length > 20) {
-                //         return this.content.substr(1, 10);
-                //     } else {
-                //         return this.content;
-                //     }
-                // }
-            },
+            comments: [],
             second: [],
-
         },
         mounted() {
             fetch('./php/getSelectTrip.php').then(res => res.json()).then(data => {
