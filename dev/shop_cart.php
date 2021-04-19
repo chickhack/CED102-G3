@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="./css/pages/shop_cart.css">
     <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.12/vue.js'></script>
     <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vuex/3.6.2/vuex.min.js"></script>
     <title>星球商城</title>
 </head>
 <body>
@@ -87,7 +88,7 @@
                     <div class="total">
                         <div class="totalPrice">
                             <p>商品合計</p>
-                            <p class="margin_left_1">$100</p>
+                            <p class="margin_left_1">${{totalPrice}}</p>
                         </div>
                         <div class="totalIntegral margin_top_1">
                             <small>可累計積分</small>
@@ -116,6 +117,35 @@
 
     </div>
     <script>
+        Vue.use(Vuex);
+
+        const mapState = Vuex.mapState
+        const mapMutations = Vuex.mapMutations
+        const mapActions = Vuex.mapActions
+        const mapGetters = Vuex.mapGetters
+
+        const store = new Vuex.Store({
+            state: {
+                totalPrice: 0,
+                totalPoints: 0,
+            },
+            mutations:{
+                updateAddPrice(state,payload){
+                    state.totalPrice += payload;
+                },
+                updateMinusPrice(state, payload){
+                    state.totalPrice -= payload;
+                },
+                all(state,payload){
+                    state.totalPrice = payload;
+                },
+                pt(state, payload){
+                    state.totalPoints = payload;
+                }
+            }
+        })
+        console.log(store);
+
         Vue.component("cart", {
             props: ["item"],
             template: `                    
@@ -164,13 +194,14 @@
             },
             methods: {
                 subQuantity() {
-                    if(this.verified ){
+                    if(this.verified > 1){
                         this.verified -= 1;
+                        this.$store.commit("updateMinusPrice", parseInt(this.item.prod_price));
                     }
-                    
                 },
                 addQuantity() {
                     this.verified += 1;
+                    this.$store.commit("updateAddPrice", parseInt(this.item.prod_price));
                 },
                 increment(e) {
                     this.id = e.target.dataset.no;
@@ -179,46 +210,20 @@
             },
         })
 
+        //global
         let vm = new Vue({
             el: "#app",
+            store,
             data:{
                 products:[],
                 id:0,
                 verified: 0,
                 name: 'shop_cart.php?action=remove&id=',
             },
-            computed: {
-                totalPrice(){
-                    const price = document.querySelectorAll(".info>.h3");
-                    price.forEach(p => {
-                        this.price += parseInt(p.textContent);
-                    })
-                    return this.price;
-                },
-                totalPoints(){
-                    let total = 0;
-                    for(let i=0; i<this.products.length; i++){
-                        total += parseInt(this.products[i]["prod_points"]);
-                    }
-                    return total;
-                },
-            },
-            methods: {
-                getId(id){
-                    this.id = id ;
-                },
-                location(e){
-                    if(e.target.name = "check"){
-                        const form = document.querySelector("form");
-                        this.name = "./shop_order.php";
-                        this.id="";
-                    }
-                }
-            },
-        })
-
-        
-        fetch("./php/getProduct.php").then(res => res.json())
+            mounted() {
+                let total = 0;
+                let points = 0;
+                fetch("./php/getProduct.php").then(res => res.json())
                                      .then(data => {
                                          let arr = [];
                                          let qty = [];
@@ -236,9 +241,36 @@
                                                 }
                                             arr.forEach(prod => {
                                                 prod.png = prod["prod_pic"].split("==")[0];
+                                                total += parseInt(prod['prod_price']) * parseInt(prod['qty']);
+                                                points += parseInt(prod['prod_points']);
+                                                console.log(points);
                                             })
-                                            vm.products = arr;
-                                        });
+                                            this.products = arr;
+                                        }).then(()=>{
+                                            this.$store.commit('all', total);
+                                            this.$store.commit('pt', points);
+                                        })
+            },
+            computed: {
+                // totalPrice(){
+                //     return this.$store.state.totalPrice;
+                // }
+                ...mapState(['totalPrice','totalPoints']),
+            },
+            methods: {
+                getId(id){
+                    this.id = id ;
+                },
+                location(e){
+                    if(e.target.name = "check"){
+                        const form = document.querySelector("form");
+                        this.name = "./shop_order.php";
+                        this.id="";
+                    }
+                }
+            },
+        })
+
     </script>
     <script src="./js/background.js"></script>
 </body>
