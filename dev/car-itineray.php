@@ -1,7 +1,17 @@
 <?php
 session_start();
-$_SESSION["trio-cart"]["spot_id"]=101;
-$_SESSION["trio-cart"]["spot_sal"]=1000;
+if(isset($_POST['remove'])){
+    if($_GET['action'] = 'remove'){ 
+        foreach($_SESSION['cart'] as $key => $value){
+            if($value['product_id'] == $_GET['id']){
+                unset($_SESSION['cart'][$key]);
+                $_SESSION['cart'] = array_values($_SESSION['cart']);
+                echo "<script>alert('Product has been removed!')</script>";
+                echo "<script>window.history.back()</script>";
+            }
+        }
+    }
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -15,7 +25,52 @@ $_SESSION["trio-cart"]["spot_sal"]=1000;
     <link rel="stylesheet" href="./css/pages/car-itineray.css">
 </head>
 <body>
-    @@include('./layout/header.html')
+<nav id="nav">
+  <div class="logo">
+    <h1><a href="home.html">SPACED</a></h1>
+  </div>
+  <ul class="nav-links">
+    <li class="margin_left_5"><a href="alltrip.html">星球景點</a></li>
+    <li class="margin_left_5"><a href="planet.html">星星世界</a></li>
+    <li class="margin_left_5"><a href="shop.html">星球商城</a></li>
+    <li class="margin_left_5"><a href="photowall.html">太空互動</a></li>
+    <li class="margin_left_5"><a href="Leaderboard.html">玩家排行</a></li>
+    <!-- <li><a href=""><img src="./images/ticket.png" alt="" class="icon"></a></li>
+        <li><a href=""><img src="./images/shopping-cart_(1).png" alt="" class="icon"></a></li>
+        <li><a href=""><img src="./images/round-account-button-with-user-inside_(1).png" alt="" class="icon"></a></li> -->
+  </ul>
+  <ul class="nav-icons">
+    <li>
+      <a href="./car-itineray.html"
+        ><img src="./img/icon/header/luggage.png" alt="" class="icon"
+      /></a>
+    </li>
+    <li class="nav-cart">
+      <a href="./shop_cart.html">
+        <img
+          src="./img/icon/header/shopping-cart_(1).png"
+          alt=""
+          class="icon"
+        />
+      </a>
+    </li>
+    <li>
+      <a href="./login.php"
+        ><img
+          src="./img/icon/header/round-account-button-with-user-inside_(1).png"
+          alt=""
+          class="icon"
+      /></a>
+    </li>
+  </ul>
+  <div class="burger">
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line3"></div>
+  </div>
+</nav>
+
+<script src="./js/header.js"></script>
 <div class="container-fluid">
     <!-- <form action="#"> -->
         
@@ -102,7 +157,22 @@ $_SESSION["trio-cart"]["spot_sal"]=1000;
         </div>
     <!-- </form> -->
 </div>
-@@include('./layout/footer.html')
+<a href="#" class="go-top"></a>
+
+<footer class="padding_top_10">
+    <div class="links">
+        <div class="logo"><img src="./img/logo.png" alt=""></div>
+        <ul class="footer-links margin_top_2">
+            <li><a href="alltrip.html">星球景點</a></li>
+            <li><a href="planet.html">星星世界</a></li>
+            <li><a href="shop.html">星球商城</a></li>
+            <li><a href="photowall.html">太空互動</a></li>
+            <li><a href="Leaderboard.html">玩家排行</a></li>
+        </ul>
+    </div>
+    <img src="./img/footer_moon.png" alt="" class="footer_moon">
+    <img src="./img/smoke.png" alt="" class="smoke">
+</footer>
 
 
 
@@ -110,7 +180,17 @@ $_SESSION["trio-cart"]["spot_sal"]=1000;
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 <!-- <script src="./js/addMinus.js"></script> -->
 <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.12/vue.js'></script>
-
+<script>
+    $(document).ready(function() {
+        // Show or hide the sticky footer button
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+                $('.go-top').fadeIn(200);
+            } else {
+                $('.go-top').fadeOut(200);
+            }
+        });
+</script>
 <script>
 var app1 = new Vue({
     el:'#nextTop',
