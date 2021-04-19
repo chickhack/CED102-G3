@@ -1,11 +1,42 @@
 <?php
     session_start();
+    //立即購買按鈕
+    if(isset($_POST['buy'])){
+        if(isset($_SESSION["cart"])){
+            $item_array_id = array_column($_SESSION["cart"],"product_id");
+           //  print_r($_SESSION["cart"]);
+   
+           if(in_array($_POST["product_id"],$item_array_id)){
+               echo "<script>window.location.href = './shop_cart.php'</script>";
+           }else{
+               $count = count($_SESSION["cart"]);
+               $item_array = array(
+                   "product_id" => $_POST["product_id"],
+                   "prod_qty" => $_POST['prod_qty']
+               );
+   
+               $_SESSION["cart"][$count] = $item_array;
+               // print_r($_SESSION["cart"]);
+               echo "<script>window.location.href = './shop_cart.php'</script>";
+           }
+   
+        }else{
+            $item_array = array(
+                "product_id" => $_POST["product_id"],
+                "prod_qty" => $_POST['prod_qty']
+            );
+           //  create new session variable
+           $_SESSION["cart"][0] = $item_array;
+           // print_r($_SESSION["cart"]);
+        }
+    }
+
+    //加入購物車按鈕
     if(isset($_POST["add"])){
-        //  print_r($_POST["product_id"])
+        //  print_r($_POST["prod_qty"]);
          if(isset($_SESSION["cart"])){
              $item_array_id = array_column($_SESSION["cart"],"product_id");
-             print_r($item_array_id);
-            // print_r($_SESSION["cart"]);
+            //  print_r($_SESSION["cart"]);
     
             if(in_array($_POST["product_id"],$item_array_id)){
                 echo "<script>alert('product is already added in the cart')</script>";
@@ -13,7 +44,8 @@
             }else{
                 $count = count($_SESSION["cart"]);
                 $item_array = array(
-                    "product_id" => $_POST["product_id"]
+                    "product_id" => $_POST["product_id"],
+                    "prod_qty" => $_POST['prod_qty']
                 );
     
                 $_SESSION["cart"][$count] = $item_array;
@@ -22,7 +54,8 @@
     
          }else{
              $item_array = array(
-                 "product_id" => $_POST["product_id"]
+                 "product_id" => $_POST["product_id"],
+                 "prod_qty" => $_POST['prod_qty']
              );
             //  create new session variable
             $_SESSION["cart"][0] = $item_array;
@@ -97,56 +130,44 @@
 
 
     <div id="particles-js"></div>
-    <section class="container">
+    <section class="container" id="app">
         <div class="product">
             <div class="imgs">
                 <div class="img">
-                    <?php
-                        $img = $_GET["pic"];
-                        $arrImg = explode("==", $img);
-                    ?>
-                    <img src=<?php echo "./img/shop/$arrImg[1]"?> alt="" class="bigImg">
+                    <img :src="'./img/shop/' + products[0].png" alt="" class="bigImg">
                     <div class="smallImg margin_top_2">
-                        <?php
-                            for($i=1;$i<count($arrImg);$i++){
-                        ?>
-                        <div class="imgDetail img1">
-                            <img src=<?php echo "./img/shop/$arrImg[$i]";?> alt="">
-                        </div>
-                        <?php
-                            }
-                        ?>
+                        <div class="imgDetail img1" v-for="pic in products[0]['prod_pic']" @click="changeImg">
+                            <img :src="'./img/shop/'+ pic" alt="">
+                        </div>  
                     </div>
                 </div>
             </div>
             <form class="detail margin_left_4" 
-                    action="product.php?id=<?php echo $_GET["id"]?>&name=<?php echo $_GET["name"]?>&price=<?php echo $_GET["price"]?>&info=<?php echo $_GET["info"]?>&pic=<?php echo $_GET["pic"]?>" 
+                    action="product.php?id=<?php echo $_GET["id"]?>"
                     method="post">
                 <p>裝備</p>
-                <h3 class="margin_top_2"><? echo $_GET["name"]?></h3>
+                <h3 class="margin_top_2">{{products[0]["prod_name"]}}</h3>
                 <hr class="margin_top_2">
-                <p class="margin_top_2 line_low"><? echo $_GET["info"]?></p>
+                <p class="margin_top_2 line_low">{{products[0]["prod_info"]}}</p>
                 <p class="margin_top_2"><strong>價格</strong></p>
-                <p class="h3 margin_top_2 price"><? echo '$'.$_GET["price"]?></p>
+                <p class="h3 margin_top_2 price">${{products[0]["prod_price"]}}</p>
                 <div class="quantity margin_top_3">
                     <label for="quantity">數量</label>
                     <div class="as margin_top_2">
-                        <span class="minus">&minus;</span>
-                        <input type="number" name="quantity" id="quantity" value="1" min="1">
-                        <span class="add">&plus;</span>
+                        <span class="minus" @click="subQuantity">&minus;</span>
+                        <input type="number" name="quantity" id="quantity" v-model.number="verified" :min="0" :max="100">
+                        <input type="hidden" name="prod_qty" :value="verified">
+                        <span class="add" @click="addQuantity">&plus;</span>
                     </div>
                     <button type="submit" name="add" class="button_large margin_top_2">加入購物車</button>
                     <input type="hidden" name="product_id" value=<?php echo $_GET["id"]?>>
-                    <a class="button_large margin_top_2 margin_left_1 buy" href="shop_cart.php">立即購買</a>
+                    <button type="submit" name="buy" class="button_large margin_top_2 margin_left_1 buy" href="./shop_cart.php">立即購買</button>
                 </div>
                 <img src="./img/icon/bookmark-outline.png" alt="" class="icon favorites">
             </form>
         </div>
-        <p class="describe line_low">選用高質感的超細纖維皮革，具有真皮的透氣度與柔軟度，軟可彎折，
-            輕量好攜帶，精緻銜扣設計讓整體質感大提升，兩種可後踩設計，出
-            門方便又省時，橡膠防滑鞋底，有效降低打滑危機
-        </p>
-        <div id="app">
+        <p class="describe line_low">{{products[0]["prod_intro"]}}</p>
+        <div>
             <div class="recommend">
                 <h3 class="margin_top_10 alltrip ">建議搭配景點</h3>
                 <div class="tripcard_all  margin_top_5">
@@ -180,18 +201,18 @@
                     <p class="more">瀏覽評論</p>
                 </div>
                 <ul class="margin_top_5">
-                    <li class="messages" v-for="comment in comments">
-                        <img :src="comment.src" alt="">
+                    <li class="messages" v-for="comment in products">
+                        <img :src="comment.mem_pic" alt="">
                         <div class="words margin_left_3">
                             <div class="name">
-                                <p>{{comment.name}}</p>
+                                <p>{{comment.last_name}}{{comment.first_name}}</p>
                                 <hr>
-                                <p>{{comment.date}}</p>
+                                <p>{{comment["date(pt.prev_date)"]}}</p>
                             </div>
                             <div class="message margin_top_1 line_low">
-                                <p>{{comment.content}}</p>                          
-                                <p class="more">瀏覽更多</p>
+                                <p>{{comment.prev}}</p>                          
                             </div>
+                            <p class="more">瀏覽更多</p>
 
                         </div>
                     </li>
@@ -219,6 +240,8 @@
         let vm = new Vue({
             el: "#app",
             data:{
+                verified: 1,
+                products:[],
                 number: 4.8,
                 totalStar: 5,
                 second: [{
@@ -258,17 +281,34 @@
                         content: "選用高質感的超細纖維皮革，具有真皮的透氣度與柔軟度，軟可彎折，輕量好攜帶，精緻銜扣設計讓整體質感大提升，兩種可後踩設計，出門方便又省時，橡膠防滑鞋底，有效降低打滑危機"
                     },
                 ],
-                computed:{
-                    subContent(){
-                        if(this.content.length > 20){
-                            return this.content.substr(1,10);
-                        }else{
-                            return this.content;
-                        }
+            },
+            methods: {
+                changeImg(e){
+                    const bigImg = document.querySelector(".bigImg");
+                    bigImg.src = e.target.src;
+                },
+                subQuantity() {
+                    if(this.verified ){
+                        this.verified -= 1;
                     }
+                    
+                },
+                addQuantity() {
+                    this.verified += 1;
                 }
             }
-        })
+        });
+            let id = sessionStorage.getItem("no");
+            fetch(`./php/getId.php?id=${id}`).then(res => res.json())
+                                             .then(data => {                                        
+                                                    vm.products = data;
+                                                    vm.products[0].png = data[0]["prod_pic"].split("==")[0];
+                                                    let picArr = data[0]["prod_pic"].split("==");
+                                                    picArr.shift();
+                                                    vm.products[0]["prod_pic"] = picArr;
+                });
+
+                                            
     </script>
     <script src="./js/background.js"></script>
 </body>
