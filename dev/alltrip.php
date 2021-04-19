@@ -19,7 +19,7 @@ session_start();
             $item_array = array(
                 "spot_id" => $_POST["spot_id"]
             );
-            $_SESSION["trip-cart"]= $item_array;
+            $_SESSION["trip-cart"][0] = $item_array;
     }
  }
 

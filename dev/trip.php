@@ -196,7 +196,7 @@ if( $errMsg != ""){ //例外
                         </p>
                         <!-- <hr class="margin_top_2"> -->
                         <form class="card" action="trip.php" method="post">
-                            <!-- <div class="select">
+                            <div class="select">
                                 <div class="date margin_top_2">
                                     <label for="date-1" class="h4 date_text">選擇出發日期</label><br>
                                     <input type="date" id="date-1" class="btn-date data-down">
@@ -207,14 +207,14 @@ if( $errMsg != ""){ //例外
                                     <input type="number" value="1" id="num" class="btn-nu p" min="0">
                                     <button class="add btn-pull" id="add">＋</button>
                                 </div>
-                            </div> -->
+                            </div>
                             
                             <div class="btn  margin_top_2">
                                 
                                 <button type="submit" name="add" class="addin small myTrip"><img class="plus"
                                         src="./img/icon/plus.png" alt="">
                                     加入我的行程</button>
-                                    <!-- <input type="hidden" name="spot_id" :value="item.spot_no"> -->
+                                    <input type="hidden" name="spot_id" :value="spot_no">
                                 <button type="submit" name="add" class="button_min p buy margin_left_3"><a href="./car-itineray.php">前往訂購</a></button>
                             </div>
                         </form>
@@ -245,12 +245,12 @@ if( $errMsg != ""){ //例外
                                 <div class="name">
                                     <p>{{comment.mem_no}}</p>
                                     <hr>
-                                    <p>{{comment.trev_name}}</p>
+                                    <p>{{comment.trev_date}}</p>
                                 </div>
                                 <div class="message margin_top_1 line_low">
                                     <p>{{comment.trev}}</p>
                                 </div>
-                                <small class="more">瀏覽更多</small>
+                                <!-- <small class="more">瀏覽更多</small> -->
                             </div>
                         </li>
                     </ul>
@@ -345,6 +345,7 @@ if( $errMsg != ""){ //例外
                     console.log(vm.second[i].url)
                 }
             });
+            fetch('./php/getReviews.php').then(res => res.json()).then(res => this.comments = res);
         },
     })
     </script>
