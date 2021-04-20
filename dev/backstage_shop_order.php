@@ -1,7 +1,7 @@
 <?php
     try{
         require_once("./php/log.php");
-        $sql = "select * from prod";
+        $sql = "select * from prod_order";
         $product = $pdo->query($sql);  
     }catch(PDOException $e){
         echo $e->getMessage();
@@ -36,9 +36,9 @@
             </div>
             <button class="div-list-btn-a">商城</button>
             <div>
-                <a href="#" class="div-list-btn-s now">商品管理</a>
+                <a href="#" class="div-list-btn-s ">商品管理</a>
                 <a href="#" class="div-list-btn-s">商品評價</a>
-                <a href="#" class="div-list-btn-s">商品訂單管理</a>
+                <a href="#" class="div-list-btn-s now">商品訂單管理</a>
             </div>
             <!-- <a href="#" class="div-list-btn-a">百科管理</a> -->
             <button class="div-list-btn-a">互動牆</button>
@@ -65,16 +65,16 @@
                 </div>
 
                 <div class="data_name h3 div-right-span padding_top_3 line_low">
-                    <p class="wi-10 text-1">商品編號</p>
-                    <p class="wi-5 text-1">裝備</p>
-                    <p class="wi-10 text-1">商品名稱</p>
-                    <p class="wi-10 text-1">價格</p>
-                    <p class="wi-15 text-1">商品說明</p>
-                    <p class="wi-15 text-1">商品介紹</p>
-                    <p class="wi-10 text-1">上架日期</p>
-                    <p class="wi-10 text-1">下架日期</p>
-                    <p class="wi-10 text-1">圖片</p>
-                    <p class="wi-10 text-1">積分</p>
+                    <p class="wi-10 text-1">訂單編號</p>
+                    <p class="wi-10 text-1">會員編號</p>
+                    <p class="wi-10 text-1">下單日期</p>
+                    <p class="wi-10 text-1">總價</p>
+                    <p class="wi-10 text-1">姓名</p>
+                    <p class="wi-15 text-1">地址</p>
+                    <p class="wi-10 text-1">電話</p>
+                    <p class="wi-10 text-1">信用卡</p>
+                    <p class="wi-10 text-1">檢查碼</p>
+                    <p class="wi-10 text-1">總積分</p>
                     <p class="wi-5 text-1">狀態</p>
 
 
@@ -86,24 +86,23 @@
                     <?php while($prodRow = $product->fetch(PDO::FETCH_ASSOC)){?>
                         <form action="#" method="POST" enctype="multipart/form-data">
                                 <div class="div-right-span-for line_low margin_top_3">
-                                    <p class="wi-10 text-1"><?=$prodRow["prod_no"]?></p>
-                                    
-                                    <a href="./php/spot_order_datail.php?cat_no=<?=$prodRow["cat_no"]?>"
-                                        class="wi-5 text-1"><?=$prodRow ["cat_no"]?></a> 
-                                    <p class="wi-10 text-1"><?=$prodRow["prod_name"]?></p>
-                                    <p class="wi-10 text-1"><?=$prodRow["prod_price"]?></p>
-                                    <p class="wi-15 text-1 toomuch"><?=$prodRow["prod_info"]?></p>
-                                    <p class="wi-15 text-1 toomuch"><?=$prodRow["prod_intro"]?></p>
-                                    <p class="wi-10 text-1 toomuch"><?=$prodRow["prod_ondate"]?></p>
-                                    <p class="wi-10 text-1 toomuch"><?=$prodRow["prod_offdate"]?></p>
-                                    
-                                    <p class="wi-10 text-1 toomuch"><?=$prodRow["prod_pic"]?></p>
-                                    <p class="wi-10 text-1"><?=$prodRow["prod_points"]?></p>
+                                    <a href="./php/shop_order_datail.php?order_no=<?=$prodRow["order_no"]?>"
+                                        class="wi-10 text-1"><?=$prodRow ["order_no"]?></a>  
+                                    <a href="./php/backstage_shop_customer.php?mem_no=<?=$prodRow["mem_no"]?>"
+                                        class="wi-10 text-1"><?=$prodRow ["mem_no"]?></a>
+                                    <p class="wi-10 text-1"><?=$prodRow["order_date"]?></p>
+                                    <p class="wi-10 text-1"><?=$prodRow["total_price"]?></p>
+                                    <p class="wi-10 text-1 "><?=$prodRow["orderer"]?></p>
+                                    <p class="wi-15 text-1 toomuch"><?=$prodRow["address"]?></p>
+                                    <p class="wi-10 text-1 "><?=$prodRow["tel"]?></p>
+                                    <p class="wi-10 text-1 toomuch"><?=$prodRow["car_no"]?></p>
+                                    <p class="wi-10 text-1"><?=$prodRow["car_insp"]?></p>
+                                    <p class="wi-10 text-1"><?=$prodRow["order_total"]?></p>
                                     <?php
-                                            if($prodRow['prod_status'] == 0){
-                                                echo "<p class='wi-5 text-1'><a href='./php/edit_backstage_prod.php?prod_no=$prodRow[prod_no]&prod_status=$prodRow[prod_status]' name='update' type='button' class='btn btn-primary btn-sm'>上架</a></p>";
+                                            if($prodRow['order_status'] == 0){
+                                                echo "<p class='wi-5 text-1'><a href='./php/edit_backstage_shop_order.php?order_no=$prodRow[order_no]&order_status=$prodRow[order_status]' name='update' type='button' class='btn btn-primary btn-sm'>上架</a></p>";
                                             }else{
-                                                echo "<p class='wi-5 text-1'><a href='./php/edit_backstage_prod.php?prod_no=$prodRow[prod_no]&prod_status=$prodRow[prod_status]' name='update' type='button' class='btn btn-danger btn-sm'>下架</a></p>";
+                                                echo "<p class='wi-5 text-1'><a href='./php/edit_backstage_shop_order.php?order_no=$prodRow[order_no]&order_status=$prodRow[order_status]' name='update' type='button' class='btn btn-danger btn-sm'>下架</a></p>";
                                             }
                                         ?>
                                 
