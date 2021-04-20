@@ -251,7 +251,7 @@
                                     <p>{{msg["date(pt.prev_date)"]}}</p>
                                 </div>
                                 <div class="message margin_top_1 line_low">
-                                    <p v-if="msg.prev.length > 50">{{msg.prev.substring(0,50)}}</p> 
+                                    <p v-if="msg.prev.length > 50">{{message}}</p> 
                                     <p v-else>{{msg.prev.substring(0,50)}}</p> 
                                 </div>
                                 <p class="more" v-if="msg.prev.length > 50"  @click="allComment">瀏覽更多</p>
@@ -259,10 +259,16 @@
                             </div>
                         </li>
                         `,
+            data(){
+                return{
+                    message: this.msg.prev.substring(0,50)
+                }
+            },
             methods: {
                 allComment(e){
-                    const message = document.querySelector(".message");
-                    message.textContent = this.msg.prev;
+                    // const message = document.querySelector(".message");
+                    // console.log(this.message);
+                    this.message = this.msg.prev;
                     e.target.style.opacity = 0 ;
                 }
             }
