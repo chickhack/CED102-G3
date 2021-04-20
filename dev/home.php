@@ -43,9 +43,6 @@
     <link rel="stylesheet" href="./css/pages/planet.css"></link>
     <link rel="stylesheet" href="./css/pages/alltrip.css"></link>
     <link rel="stylesheet" href="./css/pages/home.css"></link>
-    <!-- Gallery -->
-    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://rawgit.com/LeshikJanz/libraries/master/Bootstrap/baguetteBox.min.css">
   </head>
   <body>
     <div class="container-fluid" id="fullview">
@@ -109,7 +106,8 @@
         <div class="stepsection margin_top_10" >
           <h2>打造專屬的星球行程</h2>
           <h3 class="margin_top_3 line_low">累積景點積分，獲得更多宇宙幣，讓你無限暢遊宇宙</h3>
-<div id="trigger01"></div>
+          <!-- trigger -->
+          <div id="trigger01"></div>
 
           <div class="stepall">
               <div class="step margin_left_5">
@@ -134,30 +132,29 @@
           </div>
         </div>
 <!-- 精選行程 -->   
-<div class="first_right padding_top_4" id="app">
-  <div class="hottrip ">
-      <div v-for="item in planets.slice(0,3)" :key="item.spot_no" class="planet_top">
-          <form class="trip_card" action="alltrip.php" method="post">
-              <a :href="item.url">
-                  <img :src="item.spot_pic" class="planet" alt="planet">
-                  <img :src="item.spot_pics" class="planet_a1" alt="planettrip">
-                  <div class="word line_low">
-                      <h3 class="hot">精選景點</h3>
-                      <h4>{{item.spot_name}}</h3>
-                          <small class="tag margin_top_3">{{item.spot_lv}}</small>
-                          <small class="tag">{{item.miles}}積分</small>
-                          <h4 class="price">${{item.spot_price}}</h4>
-              </a>
-              <button type="submit" name="add" class="addin small myTrip"><img class="plus"
-                      src="./img/icon/plus.png" alt="">加入我的行程
-              </button>
-              <input type="hidden" name="spot_id" :value="item.spot_no">
-          </form>
-      </div>
-
-  </div>
-</div>
-</div>
+        <div class="first_right padding_top_4" id="app">
+          <div class="hottrip ">
+              <div v-for="item in planets.slice(0,3)" :key="item.spot_no" class="planet_top">
+                  <form class="trip_card" action="alltrip.php" method="post">
+                      <a :href="item.url">
+                          <img :src="item.spot_pic" class="planet" alt="planet">
+                          <img :src="item.spot_pics" class="planet_a1" alt="planettrip">
+                          <div class="word line_low">
+                              <h3 class="hot">精選景點</h3>
+                              <h4>{{item.spot_name}}</h3>
+                                  <small class="tag margin_top_3">{{item.spot_lv}}</small>
+                                  <small class="tag">{{item.miles}}積分</small>
+                                  <h4 class="price">${{item.spot_price}}</h4>
+                      </a>
+                      <button type="submit" name="add" class="addin small myTrip"><img class="plus"
+                              src="./img/icon/plus.png" alt="">加入我的行程
+                      </button>
+                      <input type="hidden" name="spot_id" :value="item.spot_no">
+                  </form>
+              </div>
+            </div>
+          </div>
+        </div>
 
 <!-- 星球百科 -->
         <div class="planet_box margin_top_15">
@@ -255,7 +252,6 @@
                       </div>
                       <div class="tab-active margin_top_5 col-lg-6 col-md-12 col-sm-12">
                             <!-- 月球動圖 -->
-                            <div id="moonloc"></div>
                             <img src="img/planet/moon.png">
                              <!-- <script src="./js/moon.js"></script>  -->
                       </div>
@@ -268,62 +264,45 @@
         </div>
         </div>
 <!-- 互動牆 -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
-    <script>
-        baguetteBox.run('.tz-gallery');
-    </script>
+        <section class="home_photowall col-10 " >
+          <h2 class="margin_top_10">星球互動</h2>
+          <div class="tz-gallery margin_top_10">
+            <!-- <div class="row"> -->
+              <div class="upper col-10">
+                <div class=" col-4">
+                    <a class="lightbox" href="./img/home/mars1.jpg">
+                        <img src="./img/home/mars2.jpg" alt="Bridge">
+                    </a>
+                </div>
 
+                <div class="col-4">
+                    <a class="lightbox" href="./img/home/mars2.jpg">
+                        <img src="./img/home/others/首頁-互動牆壁5.jpg" alt="Park">
+                    </a>
+                </div>
 
-        <section class="home_photowall col-10 margin_top_10 ">
-        <div class="tz-gallery">
-          <div class="row">
-            <div class="upper col-10">
-              <div class="col-sm-12 col-md-4 col-lg-3">
-                  <a class="lightbox" href="./img/home/mars1.jpg">
-                      <img src="./img/home/mars1.jpg" alt="Bridge">
-                  </a>
+                <div class="col-4">
+                    <a class="lightbox" href="./img/home/首頁-互動牆壁9.jpg">
+                        <img src="./img/home/首頁-互動牆壁9.jpg" alt="Tunnel">
+                    </a>
+                </div>
               </div>
+              <div class="lower col-10
+              ">
+                <div class="col-6">
+                    <a class="lightbox" href="./img/home/首頁-互動牆壁8.jpg">
+                        <img src="./img/home/首頁-互動牆壁8.jpg" alt="Tunnel">
+                    </a>
+                </div>
 
-              <div class="col-sm-6 col-md-4 col-lg-4">
-                  <a class="lightbox" href="./img/home/mars2.jpg">
-                      <img src="./img/home/mars2.jpg" alt="Park">
-                  </a>
+                <div class="col-6">
+                    <a class="lightbox" href="./img/home/首頁-互動牆壁2.jpg">
+                        <img src="./img/home/others/mars_landscape.jpg" alt="Tunnel">
+                    </a>
+                </div> 
               </div>
-
-              <div class="col-sm-6 col-md-4 col-lg-4">
-                  <a class="lightbox" href="./img/home/首頁-互動牆壁9.jpg">
-                      <img src="./img/home/首頁-互動牆壁9.jpg" alt="Tunnel">
-                  </a>
-              </div>
+              <!-- </div> -->
             </div>
-            <div class="lower col-10">
-              <div class="col-sm-12 col-md-8 col-lg-5">
-                  <a class="lightbox" href="./img/home/首頁-互動牆壁8.jpg">
-                      <img src="./img/home/首頁-互動牆壁8.jpg" alt="Tunnel">
-                  </a>
-              </div>
-
-              <div class="col-sm-6 col-md-4 col-lg-5">
-                  <a class="lightbox" href="./img/home/首頁-互動牆壁2.jpg">
-                      <img src="./img/home/首頁-互動牆壁2.jpg" alt="Tunnel">
-                  </a>
-              </div> 
-            </div>
-            </div>
-          </div>
-
-
-
-          <!-- <div id="photos" class="col-lg-12">
-              <img src=""  alt="">
-              <img src=""  alt="">
-              <img src="" alt="">
-              <img src="./img/home/首頁-互動牆壁2.jpg" alt="">
-              <img src="./img/home/首頁-互動牆壁8.jpg" alt="">
-          </div> -->
-          <!-- <div class="photowall_rwd">
-            <img src="./img/home/mars1.jpg" class="col-lg-6" alt="">
-          </div> -->
         </section>
 <!-- 商城 -->
         <div class="shop_box" >
@@ -454,10 +433,15 @@
                 <button class="button button_min margin_top_10" >加入會員</button>
               </div>
         </div>
+
+<!-- 置頂火箭 -->
         <a href="#" class="go-top"></a>
 
+<!-- footer  -->
       <footer>@@include('./layout/footer.html')</footer>
-          </div>
+    
+    <!-- container-fluid結尾 -->
+    </div>
     <!-- 星球頁籤轉移 -->
     <script src="./js/tabSwitch.js"></script>
     <!-- 精選景點 vue -->

@@ -292,58 +292,39 @@ button{
 // ===============互動牆
 
 .home_photowall{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
     .tz-gallery {
-        padding: 40px;
-    
-    
+        // padding: 40px;
+        // margin: 0 ;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
     /* Override bootstrap column paddings */
-    .row > div {
-        padding: 2px;
-    }
-    
-    .lightbox img {
-        width: 100%;
-        border-radius: 0;
-        position: relative;
-    }
-    
-    .lightbox:before {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        margin-top: -13px;
-        margin-left: -13px;
-        opacity: 0;
-        color: #fff;
-        font-size: 26px;
-        font-family: 'Glyphicons Halflings';
-        content: '\e003';
-        pointer-events: none;
-        z-index: 9000;
-        transition: 0.4s;
-    }
-    
-    
-    .lightbox:after {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        opacity: 0;
-        background-color: rgba(46, 132, 206, 0.7);
-        content: '';
-        transition: 0.4s;
-    }
-    
-    .tz-gallery .lightbox:hover:after,
-    .tz-gallery .lightbox:hover:before {
-        opacity: 1;
-    }
-    
-    .baguetteBox-button {
-        background-color: transparent !important;
-    }
+        .upper, .lower{
+            display: flex;
+        }
+        .lightbox:hover img{
+            transform: scale(1.3);
+        }
+        .loghtbox:hover {
+            color: green;
+        }
+        .lightbox img {
+            width: 100%;
+            border-radius: 0;
+            position: relative;
+            transition: all .3s;
+        }
+        
+        .lightbox{
+            overflow: hidden;
+
+        }
     }
 
 }    
@@ -554,7 +535,8 @@ button{
     .item2{
         .hovereffect{
             position: relative;
-            top: -30px;
+            top: -150px;
+            left: -80px;
             z-index: 1;
             max-height: 600px;
             max-width:250px;
@@ -567,12 +549,12 @@ button{
     .item3{
         .hovereffect{
             position: relative;
-            left: 170px;
+            left: 100px;
             bottom: 300px;
-            max-height: 250px;
-            max-width: 300px;
+            max-height: 320px;
+            width: 320px;
             img{
-                max-width:310px;
+                max-width:410px;
             }
         }
     }
@@ -580,8 +562,8 @@ button{
         .hovereffect{
             position: relative;
             z-index:1;
-            bottom: 400px;
-            left: 370px;
+            bottom: 550px;
+            left: 450px;
             max-height: 270px;
             width: 280px;
             img{
@@ -592,15 +574,15 @@ button{
     }
     .item5{
         .hovereffect{
-            z-index:1;
+            // z-index:1;
             position: relative;
-            bottom: 800px;
+            bottom: 1000px;
             left: 550px;
             // transform: translate(260%,-310%);
-            max-height: 296px;
-            min-width: 250px;
+            max-height: 350px;
+            min-width: 350px;
             img{
-                max-width: 260px;
+                max-width: 400px;
 
             }
         }
