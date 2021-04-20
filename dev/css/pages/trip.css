@@ -792,10 +792,10 @@ input::-webkit-inner-spin-button {
   }
 }
 
-@media screen and (min-width: 577px) and (max-width: 767px) {
+@media screen and (min-width: 577px) and (max-width: 768px) {
   .parent_container .up_container .book {
-    width: 360px;
-    position: relative;
+    width: 35%;
+    top: 15vh;
     margin: 0 auto;
   }
 }
@@ -1025,6 +1025,8 @@ input::-webkit-inner-spin-button {
 }
 
 .parent_container .up_container .comment .messages {
+  display: flex;
+  align-items: center;
   border-bottom: 1px solid #AD6E4A;
   padding: 16px 0;
   position: relative;
@@ -1040,6 +1042,8 @@ input::-webkit-inner-spin-button {
   justify-content: center;
   align-items: center;
   justify-content: start;
+  color: #cccaca;
+  font-weight: 600;
 }
 
 .parent_container .up_container .comment .messages .name hr {

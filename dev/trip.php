@@ -253,7 +253,7 @@ if( $errMsg != ""){ //例外
             <div class="recommend">
                 <h3 class="margin_top_10 alltrip ">推薦精選景點</h3>
                 <div class="tripcard_all  margin_top_6">
-                    <div v-for="item in second.slice(0,4)" class="tripcard">
+                    <div v-for="item in second.slice(0,3)" class="tripcard">
                         <form class="card" action="trip.php" method="post">
                             <a :href="item.url">
                                 <img :src="item.spot_pic1" class="spot_pic" alt="spot_pic">

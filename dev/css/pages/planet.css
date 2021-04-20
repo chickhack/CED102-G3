@@ -860,11 +860,6 @@ button:hover {
   font-size: 16px;
 }
 
-.planet_tab .tab-inner .tab-active {
-  position: relative;
-  top: 0;
-}
-
 .planet_tab .tab-inner .planet_content {
   display: flex;
   flex-wrap: wrap;
