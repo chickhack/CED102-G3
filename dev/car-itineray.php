@@ -3,7 +3,7 @@ session_start();
 if(isset($_POST['remove'])){
     if($_GET['action'] = 'remove'){ 
         foreach($_SESSION['cart'] as $key => $value){
-            if($value['product_id'] == $_GET['id']){
+            if($value['spot_id'] == $_GET['id']){
                 unset($_SESSION['cart'][$key]);
                 $_SESSION['cart'] = array_values($_SESSION['cart']);
                 echo "<script>alert('Product has been removed!')</script>";
