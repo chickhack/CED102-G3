@@ -168,7 +168,7 @@ session_start();
     <div class="stepsection">
         <h2>打造專屬的星球行程</h2>
         <h3 class="margin_top_3 line_low">累積景點積分，獲得更多宇宙幣，讓你無限暢遊宇宙</h3>
-        <div class="stepall">
+        <div class="stepall line_low">
 
             <div class="step padding_top_2 margin_left_5 flex-2">
                 <img src="./img/icon/search-location.png" class="step_icon" alt="icon">
