@@ -1,11 +1,11 @@
 <?php
-$mem_no = $_REQUEST["mem_no"];
+$order_no = $_REQUEST["order_no"];
 $errMsg='';
 try {
 	require_once("log.php");
-	$sql = "select * from customer where mem_no=:mem_no";
+	$sql = "select * from prod_order_datail where order_no=:order_no";
 	$order = $pdo->prepare($sql);	//執行指令
-	$order->bindValue(":mem_no", $mem_no);
+	$order->bindValue(":order_no", $order_no);
   	$order->execute();
 } catch (PDOException $e) {
 	// echo "系統忙碌, 請通知系統維護人員~";
@@ -57,7 +57,7 @@ try {
 
 <div class="title">
 	<div class=" div-right-span padding_top_3 margin_left_2">
-    <button type="button" class="btn-updata" ><a href="../spaced_backstage_order.php" class="text-1">返回</a></button>
+    <button type="button" class="btn-updata" ><a href="../backstage_shop_order.php" class="text-1">返回</a></button>
 		<div class="span-1 margin_left_3">
 			<label for="search1">
 
@@ -69,21 +69,13 @@ try {
 
 	<div class="data_name h3 div-right-span padding_top_3 line_low">
 		<!-- <p class="wi-10 text-1">訂單編</p> -->
-		<p class="wi-10 text-1">會員編號</p>
-		<p class="wi-10 text-1">等級</p>
-		<p class="wi-5 text-1">姓</p>
-		<p class="wi-5 text-1">名</p>
-		<p class="wi-5 text-1">性別</p>
-		<p class="wi-15 text-1">信箱</p>
-		<p class="wi-15 text-1">電話</p>
-		<p class="wi-15 text-1">生日</p>
-		<p class="wi-20 text-1">地址</p>
-		<p class="wi-10 text-1">積分</p>
-		<p class="wi-10 text-1">宇宙幣</p>
-		<p class="wi-5 text-1">停權</p>
-		<!-- <p class="wi-15 text-1">累積景點</p> -->
-		<!-- <p class="wi-15 text-1">累積星球</p> -->
-		<p class="wi-20 text-1">頭像照片</p>
+		<p class="wi-20 text-1">訂單編號</p>
+		<p class="wi-20 text-1">商品編號</p>
+		<p class="wi-20 text-1">商品名稱</p>
+		<p class="wi-10 text-1">數量</p>
+		<p class="wi-10 text-1">價格</p>
+		<p class="wi-20 text-1">積分</p>
+		
 	</div>
 </div>
 <main class="main" >
@@ -96,19 +88,12 @@ if( $errMsg != ""){ //例外
       $orders = $order->fetchObject();
 ?>
   <div class="div-right-span-for line_low margin_top_2">
-                    <p class="wi-10 text-1"><?php echo $orders->mem_no;?></p>
-                    <p class="wi-10 text-1"><?php echo $orders->mem_lv;?></p>
-                    <p class="wi-5 text-1"><?php echo $orders->last_name;?></p>
-                    <p class="wi-5 text-1 toomuch"><?php echo $orders->first_name;?></p>
-                    <p class="wi-5 text-1  toomuch"><?php echo $orders->gender;?></p>
-                    <p class="wi-15 text-1  toomuch"><?php echo $orders->email;?></p>
-                    <p class="wi-15 text-1"><?php echo $orders->phone;?></p>
-                    <p class="wi-15 text-1"><?php echo $orders->bday;?></p>
-                    <p class="wi-20 text-1"><?php echo $orders->address;?></p>
-                    <p class="wi-10 text-1"><?php echo $orders->miles;?></p>
-                    <p class="wi-10 text-1"><?php echo $orders->coin;?></p>
-                    <p class="wi-5 text-1"><?php echo $orders->mem_stats;?></p>
-                    <p class="wi-20 text-1"><?php echo $orders->mem_pic;?></p>
+                    <p class="wi-20 text-1"><?php echo $orders->order_no;?></p>
+                    <p class="wi-20 text-1"><?php echo $orders->prod_no;?></p>
+                    <p class="wi-20 text-1"><?php echo $orders->prod_name;?></p>
+                    <p class="wi-10 text-1 "><?php echo $orders->qty;?></p>
+                    <p class="wi-10 text-1  "><?php echo $orders->price;?></p>
+                    <p class="wi-20 text-1  "><?php echo $orders->prod_points;?></p>
                 </div>
     
     

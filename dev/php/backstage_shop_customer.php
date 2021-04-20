@@ -57,7 +57,7 @@ try {
 
 <div class="title">
 	<div class=" div-right-span padding_top_3 margin_left_2">
-    <button type="button" class="btn-updata" ><a href="../spaced_backstage_order.php" class="text-1">返回</a></button>
+    <button type="button" class="btn-updata" ><a href="../backstage_shop_order.php" class="text-1">返回</a></button>
 		<div class="span-1 margin_left_3">
 			<label for="search1">
 
@@ -108,7 +108,7 @@ if( $errMsg != ""){ //例外
                     <p class="wi-10 text-1"><?php echo $orders->miles;?></p>
                     <p class="wi-10 text-1"><?php echo $orders->coin;?></p>
                     <p class="wi-5 text-1"><?php echo $orders->mem_stats;?></p>
-                    <p class="wi-20 text-1"><?php echo $orders->mem_pic;?></p>
+                    <p class="wi-20 text-1 toomuch"><?php echo $orders->mem_pic;?></p>
                 </div>
     
     
