@@ -61,17 +61,17 @@ try{
 </head>
 
 <body>
-    <header>
+<header>
         <nav id="nav">
             <div class="logo">
-                <h1><a href="home.html">SPACED</a></h1>
+                <h1><a href="home.php">SPACED</a></h1>
             </div>
             <ul class="nav-links">
-                <li class="margin_left_5"><a href="alltrip.html">星球景點</a></li>
+                <li class="margin_left_5"><a href="alltrip.php">星球景點</a></li>
                 <li class="margin_left_5"><a href="planet.html">星星世界</a></li>
-                <li class="margin_left_5"><a href="shop.html">星球商城</a></li>
-                <li class="margin_left_5"><a href="photowall.html">太空互動</a></li>
-                <li class="margin_left_5"><a href="Leaderboard.html">玩家排行</a></li>
+                <li class="margin_left_5"><a href="shop.php">星球商城</a></li>
+                <li class="margin_left_5"><a href="photowall.php">太空互動</a></li>
+                <li class="margin_left_5"><a href="Leaderboard.php">玩家排行</a></li>
                 <!-- <li><a href=""><img src="./images/ticket.png" alt="" class="icon"></a></li>
         <li><a href=""><img src="./images/shopping-cart_(1).png" alt="" class="icon"></a></li>
         <li><a href=""><img src="./images/round-account-button-with-user-inside_(1).png" alt="" class="icon"></a></li> -->
@@ -115,6 +115,7 @@ try{
             </div>
         </nav>
         <script src="./js/header.js"></script>
+
     </header>
     <!-- 動態背景 -->
     <div id="particles-js">
@@ -253,7 +254,7 @@ if( $errMsg != ""){ //例外
             <div class="recommend">
                 <h3 class="margin_top_10 alltrip ">推薦精選景點</h3>
                 <div class="tripcard_all  margin_top_6">
-                    <div v-for="item in second.slice(0,4)" class="tripcard">
+                    <div v-for="item in second.slice(0,3)" class="tripcard">
                         <form class="card" action="trip.php" method="post">
                             <a :href="item.url">
                                 <img :src="item.spot_pic1" class="spot_pic" alt="spot_pic">

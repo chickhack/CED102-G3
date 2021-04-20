@@ -125,7 +125,7 @@ button:hover{
                 }
                 .data{
                     display: flex;
-                    justify-content: center;
+                    // justify-content: center;
                     font-family: Haettenschweiler, sans-serif;
                     .grav, .day, .temp{
                         justify-content: center;
@@ -134,7 +134,7 @@ button:hover{
                         display: flex;
                         flex-direction: column;
                         min-width: 100px;
-                        max-height: 100px;
+                        max-height: 160px;
                         border-right: 1px solid $gold;
                     }
                     // .day{
