@@ -1,44 +1,24 @@
 <?php
+    require_once('./php/connectbooks_yi.php');
+?>
+<?php
 
-      require_once("./php/connectbooks_yi.php");
-      
-      session_start();
+if(isset($_POST)){
 
-      if(isset($_SESSION["user_login"]))
-      {
-        header("location: home.html");
-      }
-      if(isset($_REQUEST["login_btn"]))
-      {
-        $mem_id = strip_tags($_REQUEST["mem_id"]);
-        $mem_psw = strip_tags($_REQUEST["mem_psw"]);
-        
-        try{
-          $select_stmt=$pdo->prepare("SELECT * FROM customer WHERE mem_id=:mem_id");
-          $select_stmt->execute(array(':mem_id' => $mem_id));
-          $row=$select_stmt->fetch(PDO::FETCH_ASSOC);
-          if($select_stmt->rowCount()>0){
-            // 如果帳號符合db裡的帳號
-            if($mem_id==$row['mem_id']){
-              // 如果密碼符合
-              if(password_verify($mem_psw, $row["mem_psw"])){
-                $_SESSION["user_login"] = $row["first_name"];
-                $loginMsg = 'login successfully';
-              }else{
-                $errorMsg[]= 'wrong password';
-              }
-            }else{
-              $errorMsg[]= 'wrong username or password';
-            }
-          }else{
-            $errorMsg[]= 'wrong username or password';
-          }
-        }catch(PDOException $e){
-          $e-> getMessage();
-        }
-      }
-    
-      
+	$email 			= $_POST['email'];
+	$mem_psw 		= sha1($_POST['mem_psw']);
+
+		$sql = "INSERT INTO customer (email, mem_psw ) VALUES(?,?)";
+		$stmtinsert = $dsn->prepare($sql);
+		$result = $stmtinsert->execute([$email, $mem_psw]);
+		if($result){
+			echo 'Successfully saved.';
+		}else{
+			echo 'There were erros while saving the data.';
+		}
+}else{
+	echo 'No data';
+}
 ?>
 <!DOCTYPE html>
 <html>
@@ -104,29 +84,6 @@
     </nav>
       
       <script src="../js/header.js"></script>
-  
-      <?php
-      if(isset($errorMsg))
-      {
-        foreach($errorMsg as $error)
-        {
-          ?>
-          <div class="alert">
-            <strong><?php echo $error;?></strong>
-          </div>
-            <?php
-        }
-      }
-      if(isset($loginMsg))
-      {
-        ?>
-        <div class="alert">
-          <strong><?php echo $loginMsg; ?></strong>
-        </div>
-      <?php
-      }
-      ?>
-
 
 
       <div class="container-fluid">
@@ -148,7 +105,7 @@
                         <div class="col-11 form-input">
                             <form id="login_form" action="login.php" method="post">
                             <div class="form-group">
-                                <input type="email" name="mem_id" id="mem_id" class="form-control" placeholder="請輸入"></input>
+                                <input type="email" name="email" id="email" class="form-control" placeholder="請輸入"></input>
                             </div>
                             <div class="form-group">
                                 <input id="password-field" name="mem_psw" id="mem_psw" type="password" class="form-control" placeholder="請輸入" value=""></input>
