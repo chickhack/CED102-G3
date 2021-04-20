@@ -126,102 +126,144 @@ button{
 
 //=========精選行程
 
-    .hottrip {
-        top: 15vh;
-        display: flex;
-        padding-top: 96px;
-        margin: 0 auto;
+.first_right {
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    @media all and (max-width:1200px) {
+        overflow: hidden;
+        width: 95%;
     }
 
-    div.planet_top {
-        position: relative;
-        padding-top: 90px;
-        text-align: center;
-        width: 45%;
-        padding-left: 16px;
-        padding-right: 16px;
+    .hottrip {
+        display: inline-flex;
+        padding-top: 80px;
 
-        @media all and (max-width:1200px) {
+
+        @media screen and (min-width: 768px) and (max-width: 1200px) {
+            padding-top: 120px;
+        }
+        @media screen and (max-width: 767px) {
+            flex-direction: column;
+            margin: 0 auto;
+            justify-content: space-between;
+           
+        }
+
+        div.planet_top {
+            position: relative;
+            padding-top: 90px;
+            text-align: center;
+            width: 55%;
             padding-left: 8px;
             padding-right: 8px;
-        }
-
-        h4 {
-            color: $pink;
-        }
-
-        img.planet {
-            height: 160px;
-            position: absolute;
-            top: 15px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-
-        img.planet_a1 {
-            max-width: 280px;
-        }
-        // img.planet_a1:hover {
-        //     transform: perspective(0.5px) translateX(-1.5px) translateY(-1.5px);
-
-        // }
-
-        div.word {
-            position: absolute;
-            top: 190px;
-            left: 50%;
-            transform: translateX(-50%);
-            text-align: center;
-            margin: 0 auto;
-
-            .hot {
-                color: $gold;
+            &:hover{
+                transform:translateY(0.2em);
+                // box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
             }
 
-            .tag {
-                display: inline-flex;
-                border: 1px solid $pink;
-                border-radius: 5px;
-                padding: 8px;
-                line-height: 5px;
-                margin: 3px;
-                color: $gray;
+            &.planet_top:nth-child(1) {
+                animation: float 5s cubic-bezier(.1, .1, .88, .88) infinite;
             }
 
-            .price {
-                color: $gold;
-                font-weight: bold;
-                letter-spacing: 2px;
-                margin-bottom: 8px;
-                font-family: "Nasalization";
+            &.planet_top:nth-child(2) {
+                animation: float 5.5s cubic-bezier(.1, .1, .88, .88) infinite;
             }
 
-            .addin {
-                background-color: $gold;
-                color: $white;
-                border-radius: 15px;
-                width: 110px;
-                margin: 0 auto;
-                line-height: 26px;
+            &.planet_top:nth-child(3) {
+                animation: float 6s cubic-bezier(.1, .1, .88, .88) infinite;
+            }
+
+            &.planet_top:nth-child(4) {
+                animation: float 6.5s cubic-bezier(.1, .1, .88, .88) infinite;
+            }
+
+            @media all and (max-width:1200px) {
+                padding-left: 8px;
+                padding-right: 8px;
+            }
+
+            h4 {
+                color: $pink;
+            }
+
+            img.planet {
+                height: 160px;
+                position: absolute;
+                top: 15px;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: 2;
+                
+            }
+
+            img.planet_a1 {
+                max-width: 270px;
+                &:hover{
+                    transform:translateY(0.2em);
+                }
+                
+            }
+
+            div.word {
+                position: absolute;
+                top: 190px;
+                left: 50%;
+                transform: translateX(-50%);
                 text-align: center;
+                margin: 0 auto;
 
-                img.plus {
-                    width: 15px;
-                    display: inline-block;
-                    position: relative;
-                    top: 2px;
-                    padding-right: 4px;
+                .hot {
+                    color: $gold;
+                }
+
+                .tag {
+                    display: inline-flex;
+                    border: 1px solid $gray;
+                    border-radius: 5px;
+                    padding: 8px;
+                    line-height: 5px;
+                    margin: 3px;
+                    color: $gray;
+                }
+
+                .price {
+                    color: $gold;
+                    font-weight: bold;
+                    letter-spacing: 2px;
+                    margin-bottom: 8px;
+                    font-family: "Nasalization";
+                }
+
+                .addin {
+                    background-color: $gold;
+                    color: $white;
+                    border-radius: 15px;
+                    width: 110px;
+                    margin: 0 auto;
+                    line-height: 26px;
+                    text-align: center;
+                    text-decoration: none;
+                    border: none;
+                    img.plus {
+                        width: 15px;
+                        display: inline-block;
+                        position: relative;
+                        top: 2px;
+                        padding-right: 4px;
+                    }
+
+                }
+
+                .addin:hover {
+                    background-color: lighten($gold, 10%);
                 }
 
             }
-
-            .addin:hover {
-                background-color: lighten($gold, 10%);
-                color: #5f5f5f3a
-            }
-
         }
     }
+}
 
 
 
@@ -268,33 +310,6 @@ button{
 .home_photowall{
     display: flex;
     align-items: center;
-    .topright{
-        // border: 1px solid white;
-        display: flex;
-        flex-direction: column;
-        .separator{
-            margin-top: 24px;
-            width: 60%;
-        }
-        .topSct{
-            display: flex;
-            justify-content: space-around;
-        }
-        button.btn{
-            background-color: transparent;
-            color: $gold;
-            border: 1px solid $gold;
-        }
-        .galleryIntro{
-            display: flex;
-            justify-content: center;
-            h5{
-                max-width: 500px;
-                line-height: 2rem;
-                text-align: justify;
-            }
-        }
-    }
     .photowall_rwd{
         display: none;
     }
@@ -303,11 +318,11 @@ button{
         /* Prevent vertical gaps */
         line-height: 0;
          
-        -webkit-column-count: 2;
+        -webkit-column-count: 3;
         -webkit-column-gap:   0px;
-        -moz-column-count:    2;
+        -moz-column-count:    3;
         -moz-column-gap:      0px;
-        column-count:         2;
+        column-count:         3;
         column-gap:           0px;  
       }
       
@@ -318,16 +333,16 @@ button{
       }
       @media (max-width: 1200px) {
         #photos {
-        -moz-column-count:    2;
-        -webkit-column-count: 2;
-        column-count:         2;
+        -moz-column-count:    3;
+        -webkit-column-count: 3;
+        column-count:         3;
         }
       }
       @media (max-width: 1000px) {
         #photos {
-        -moz-column-count:    2;
-        -webkit-column-count: 2;
-        column-count:         2;
+        -moz-column-count:    3;
+        -webkit-column-count: 3;
+        column-count:         3;
         }
       }
       @media (max-width: 800px) {
@@ -495,7 +510,7 @@ button{
         .hovereffect{
             position: relative;
             left: 170px;
-            bottom: 200px;
+            bottom: 300px;
             max-height: 250px;
             max-width: 300px;
             img{

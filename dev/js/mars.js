@@ -1,13 +1,13 @@
 const scaling = "tag"; // this will resize to fit inside the screen dimensions
 const width = 1024;
 const height = 768;
-const color = "#000000";
-const outerColor = "#000000";
+const color = "#0c0d18";
+const outerColor = "#0c0d18";
 const assets = "mars-map.jpg";
 const path = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/";
-// const waiter = new Waiter({corner:0, backgroundColor:blue});
+const waiter = new Waiter({corner:0, backgroundColor:blue});
 
-const frame = new Frame(scaling, width, height, color, outerColor, assets, path);
+const frame = new Frame(scaling, width, height, color, outerColor, assets, path, waiter);
 frame.on("ready", ()=>{ // ES6 Arrow Function - similar to function(){}
     zog("ready from ZIM Frame"); // logs in console (F12 - choose console)
 
@@ -34,8 +34,7 @@ frame.on("ready", ()=>{ // ES6 Arrow Function - similar to function(){}
 		height:stageH,
         // pull camera out perpendicular from monitor 400
 		cameraPosition:new THREE.Vector3(0, 0, 400)
-  });
-
+	});
 
 	if (outerSpace.success) { // otherwise no WebGL
 
@@ -43,7 +42,7 @@ frame.on("ready", ()=>{ // ES6 Arrow Function - similar to function(){}
 		const camera = outerSpace.camera;
 
 		var planet;
-    var swiper;
+        var swiper;
 		const loader = new THREE.TextureLoader();
 		loader.load(path+assets, texture=>{
 
@@ -115,15 +114,14 @@ frame.on("ready", ()=>{ // ES6 Arrow Function - similar to function(){}
 
                 var tipTimeout;
                 const list = new List({
-                    list:craters,
+                    list:craters
                 })
                     // make sure we specify this stage otherwise it gets put on the first stage
                     // and we will not have updated that first stage at this time
                     // so if we left off stage, when working in the second stage, we would not see the list
                     // SUMMARY - when working on a stage other than the first stage,
                     // we have to specify the stage for things like center(), loc(), pos(), Ticker.add(), Pane(), Grid(), etc.
-                    // .pos(30,100,null,null,stage)
-                    .loc(0,0)
+                    .pos(30,100,null,null,stage)
                     .alp(0)
                     .animate({alpha:.5}, 700)
 
@@ -186,7 +184,7 @@ frame.on("ready", ()=>{ // ES6 Arrow Function - similar to function(){}
                         outside:true, // outside the circle
                         target:circle,
                         align:"center",
-                        valign:"top",
+                        valign:"bottom",
                         margin:14,
                         corner:0,
                         size:20
@@ -244,7 +242,7 @@ frame.on("ready", ()=>{ // ES6 Arrow Function - similar to function(){}
 	// https://zimjs.com/docs.html?item=decimals
 	// https://zimjs.com/docs.html?item=zog
 	// https://zimjs.com/docs.html?item=Ticker
-  
+
 
 
 }); // end of frame ready

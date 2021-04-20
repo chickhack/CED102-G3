@@ -1,31 +1,5 @@
 <?php
     require_once('./php/connectbooks_yi.php');
-
-    if(isset($_POST['register_btn'])){
-        // 接收所有資料
-        $mem_id = $_POST['mem_id'];
-        $mem_psw = $_POST['mem_psw'];
-        // 新增一筆資料
-        try{
-            $select_stmt=$pdo->prepare("SELECT mem_id FROM customer WHERE mem_id=:mem_id");
-
-            $select_stmt->execute(array(':mem_id'=>$mem_id));
-            $row=$select_stmt->fetch(PDO::FETCH_ASSOC);
-
-            if($row['mem_id']==$mem_id){
-                echo "username already exists";
-            }else if(!isset($errorMsg)){
-                $insert_stmt=$dsn->prepare("INSERT INTO customer (mem_id, mem_psw) VALUES ($mem_id,$mem_psw)");
-                if($insert_stmt->execute(array(':mem_id' => $mem_id, ':mem_psw'=> $mem_psw))){
-                    echo "Register Successfully";
-                }else{
-                    echo 'error';
-                }
-            }
-        }catch(PDOException $e){
-            echo $e->getMessage();
-        }
-    }
 ?>
 <!DOCTYPE html>
 <html>
@@ -97,28 +71,6 @@
     </nav>
     <script src="../js/header.js"></script>
 
-    <?php
-        if(isset($errorMsg))
-        {
-            foreach($errorMsg as $error)
-            {
-            ?>
-            <div class="alert">
-                <strong>WRONG!<?php echo $error;?></strong>
-            </div>
-                <?php
-            }
-        }
-        if(isset($registerMsg))
-        {
-            ?>
-            <div class="alert">
-            <strong><?php echo $registerMsg; ?></strong>
-            </div>
-        <?php
-        }
-        ?>
-
     <div class="container-fluid">
         <section class="login_container col-12">
         <div class="login_banner col-3">
@@ -139,15 +91,17 @@
                             <div class="form-group">
                                 <input type="email" id="mem_id" name="mem_id" class="form-control" placeholder="請輸入" required></input>
                             </div>
+                            <input type="submit" class="button_min check_user" id="check_user" value="檢查"></input>
+                            <!-- <span id="message"></span> -->
                             <div class="form-group">
-                                <input type="password" id="mem_psw" name="mem_psw" class="form-control" placeholder="請輸入密碼" required onkeyup="return passwordChanged();"></input>
+                                <input type="password" id="mem_psw" name="mem_psw" class="form-control" placeholder="請輸入密碼" onkeyup="return passwordChanged();"></input>
                             </div>
                             <span id="strength"></span>
                             <div class="form-group">
-                                <input type="password" id="confirm_password" class="form-control" placeholder="請重新輸入密碼" required></input>
+                                <input type="password" id="confirm_password" class="form-control" placeholder="請重新輸入密碼"></input>
                             </div>
                             <span id='message'></span>
-                            <input type="submit" class="button_min margin_top_3 register_btn" id="register" name="register" value="註冊"></input>
+                            <input type="submit" class="button_min margin_top_3 register_btn" id="register_btn" name="register" value="註冊"></input>
                             </form>
                         </div>
                     </div>
@@ -166,9 +120,11 @@
 
         //檢查密碼是否符合
         function validatePassword(e) { 
+
             let password = document.getElementById("mem_psw"); 
             let confirm_password = document.getElementById("confirm_password"); 
-            let regex = new RegExp(/^((?=.{8,}$)(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).*|(?=.{8,}$)(?=.*\d)(?=.*[a-zA-Z])(?=.*[!\u0022#$%&'()*+,./:;<=>?@[\]\^_`{|}~-]).*)/, "g");
+            let regex = new RegExp(/^(?=.*\d)(?=.*[A-Z])(?=.*[a-z])(?=.*[a-zA-Z!#$%&? "])[a-zA-Z0-9!#$%&?]{8,20}$/);
+            
             if(password.value.length < 8 && password!= null ){ 
                 alert("密碼不可少於8碼");
                 e.preventDefault();
@@ -189,65 +145,89 @@
                 e.preventDefault();
                 return;
             }
+             
+
+
+        // 提交後台判斷
+            // -----檢查帳號信箱重複
+            function checkId(){
+                let xhr = new XMLHttpRequest();
+                let logMemId = document.getElementById("register_form");
+                xhr.onload = function(){//server端已執行完畢
+                    console.log("onload : ", xhr.readyState);
+                    if(xhr.status == 200){//http status is OK
+                        if(xhr.responseText == 2 && logMemId.value != null){
+                            // createNewAcc.disabled = false;
+                            // createRemind.style.opacity = 0;
+                            alert("此帳號可使用");
+                        }else{
+                            // createNewAcc.disabled=true
+                            alert("此帳號已存在, 不可用");
+                            // createRemind.style.opacity = 1;
+                        }
+                    }else{
+                        alert(xhr.status);
+                    }
+                } 
+                
+                let url = "./php/check_username.php";
+                xhr.open("post", url, true);
+                xhr.setRequestHeader("content-type","application/x-www-form-urlencoded");
+                let data_AD = `logMemId=${$id("email").value}`;
+                xhr.send(data_AD);
+
+            };
             
-        }; 
-        
+
+        }
         
         window.addEventListener("load", function(){
             $id('register_form').onsubmit = validatePassword;
-        })
+        });
         
-        // 點擊register按鈕後的提示
-        // $(function(){
-        //     $('#register').click(function(e){
-        //         var valid = this.form.checkValidity();
-        //         if(valid){
-        //             var mem_id = $('#mem_id').val();
-        //             var mem_psw = $('#mem_psw').val();
-                    
-        //             e.preventDefault();
+        //檢查帳號是否重複
+        // $(document).ready(function(){
+        //     $("#register_form").on("submit",function(e){
+        //         e.preventDefault();
+        //         var email = $("#email").val();
+        //     if (email !== "") {
         //             $.ajax({
-        //                 type: 'POST',
-        //                 url: './login.php',
-        //                 data: { mem_id : mem_id, mem_psw : mem_psw},
-        //                 success: function(data){
-        //                     Swal.fire({
-        //                         'title': '恭喜您！',
-        //                         'text': "註冊成功",
-        //                         'type': 'success'
-        //                     })
-        //                 },
-        //                 errors: function(data){
-        //                     Swal.fire({
-        //                         'title': '錯誤',
-        //                         'text': "註冊失敗",
-        //                         'type': 'error'
-        //                     })
+        //             url : "./php/check_username.php",
+        //             type : "POST",
+        //             cache:false,
+        //             data : {email:email},
+        //             success:function(result){
+        //                 if (result == 1) {
+        //                 $("#message").text('此信箱已被註冊！').css("color", "red");
+        //                 }else{
+        //                 $("#message").text('此帳號可被使用！').css("color", "green");
         //                 }
+        //             }
         //             });
         //         }else{
+        //         $("#message").text('Please fill the all fields');
         //         }
         //     });
         // });
-        
-        
-        
-        
+
+
         // 檢查密碼強度
         function passwordChanged() {
-        let strength = document.getElementById('strength');
-        let strongRegex = new RegExp("^(?=.{14,})(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*\\W).*$", "g");
-        let mediumRegex = new RegExp("^(?=.{10,})(((?=.*[A-Z])(?=.*[a-z]))|((?=.*[A-Z])(?=.*[0-9]))|((?=.*[a-z])(?=.*[0-9]))).*$", "g");
-        let enoughRegex = new RegExp("(?=.{8,}).*", "g");
-        let pwd = document.getElementById("mem_psw");
-        if (strongRegex.test(pwd.value)) {
-            strength.innerHTML = '<span style="color:green">密碼強度：強</span></span>';
-        } else if (mediumRegex.test(pwd.value)) {
-            strength.innerHTML = '<span style="color:orange">密碼強度：中</span>';
-        } else {
-            strength.innerHTML = '<span style="color:red">密碼強度：弱</span>';
+            let strength = document.getElementById('strength');
+            let strongRegex = new RegExp("^(?=.{14,})(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*\\W).*$", "g");
+            let mediumRegex = new RegExp("^(?=.{10,})(((?=.*[A-Z])(?=.*[a-z]))|((?=.*[A-Z])(?=.*[0-9]))|((?=.*[a-z])(?=.*[0-9]))).*$", "g");
+            let enoughRegex = new RegExp("(?=.{8,}).*", "g");
+            let pwd = document.getElementById("mem_psw");
+            if (strongRegex.test(pwd.value)) {
+                strength.innerHTML = '<span style="color:green">密碼強度：強</span></span>';
+            } else if (mediumRegex.test(pwd.value)) {
+                strength.innerHTML = '<span style="color:orange">密碼強度：中</span>';
+            } else {
+                strength.innerHTML = '<span style="color:red">密碼強度：弱</span>';
+            }
         }
-        }
+
+        
     </script>
   </body>
 </html>

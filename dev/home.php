@@ -46,7 +46,53 @@
   </head>
   <body>
     <div class="container-fluid" id="fullview">
-      <header>@@include('./layout/header.html')</header>
+      <nav id="nav">
+        <div class="logo">
+          <h1><a href="home.html">SPACED</a></h1>
+        </div>
+        <ul class="nav-links">
+          <li class="margin_left_5"><a href="alltrip.html">星球景點</a></li>
+          <li class="margin_left_5"><a href="planet.html">星星世界</a></li>
+          <li class="margin_left_5"><a href="shop.html">星球商城</a></li>
+          <li class="margin_left_5"><a href="photowall.html">太空互動</a></li>
+          <li class="margin_left_5"><a href="Leaderboard.html">玩家排行</a></li>
+          <!-- <li><a href=""><img src="./images/ticket.png" alt="" class="icon"></a></li>
+              <li><a href=""><img src="./images/shopping-cart_(1).png" alt="" class="icon"></a></li>
+              <li><a href=""><img src="./images/round-account-button-with-user-inside_(1).png" alt="" class="icon"></a></li> -->
+        </ul>
+        <ul class="nav-icons">
+          <li>
+            <a href="./car-itineray.html"
+              ><img src="./img/icon/header/luggage.png" alt="" class="icon"
+            /></a>
+          </li>
+          <li class="nav-cart">
+            <a href="./shop_cart.html">
+              <img
+                src="./img/icon/header/shopping-cart_(1).png"
+                alt=""
+                class="icon"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="./login.php"
+              ><img
+                src="./img/icon/header/round-account-button-with-user-inside_(1).png"
+                alt=""
+                class="icon"
+            /></a>
+          </li>
+        </ul>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
+
+      <script src="./js/header.js"></script>
+
       <div class="video-bg">
         <div class="video-overlay"></div>
         <video playsinline autoplay loop muted="true" style="opacity:1; width: 1600px; " src="https://d1titnu6se1qmv.cloudfront.net/uploads/2019/04/home-vbg.mp4"></video>
@@ -85,26 +131,30 @@
           </div>
         </div>
 <!-- 精選行程 -->   
-        <div class="first_right swiper-container" id="app" >
-          <div class="hottrip wiper-wrapper col-10">
-              <div v-for="item in top" class="planet_top swiper-slide">
-                  <a href="trip.html">
-                      <img :src="item.planet" class="planet" alt="planet">
-                      <img :src="item.spot" class="planet_a1" alt="planettrip">
-                      <div class="word line_low ">
-                          <h3 class="hot">{{item.title}}</h3>
-                          <h4>{{item.name}}</h3>
-                              <!-- <img :src="item.star" class="star margin_top_1" alt="star"> -->
-                              <small class="tag margin_top_3">{{item.grade}}</small>
-                              <small class="tag">{{item.scores}}積分</small>
-                              <h4 class="price">${{item.price}}</h4>
-                              <div class="addin small"><img class="plus" src="./img/icon/plus.png" alt="">加入我的行程
-                              </div>
-                      </div>
-                  </a>
-              </div>
-          </div>
-        </div>
+<div class="first_right padding_top_4" id="app">
+  <div class="hottrip ">
+      <div v-for="item in planets.slice(0,3)" :key="item.spot_no" class="planet_top">
+          <form class="trip_card" action="alltrip.php" method="post">
+              <a :href="item.url">
+                  <img :src="item.spot_pic" class="planet" alt="planet">
+                  <img :src="item.spot_pics" class="planet_a1" alt="planettrip">
+                  <div class="word line_low">
+                      <h3 class="hot">精選景點</h3>
+                      <h4>{{item.spot_name}}</h3>
+                          <small class="tag margin_top_3">{{item.spot_lv}}</small>
+                          <small class="tag">{{item.miles}}積分</small>
+                          <h4 class="price">${{item.spot_price}}</h4>
+              </a>
+              <button type="submit" name="add" class="addin small myTrip"><img class="plus"
+                      src="./img/icon/plus.png" alt="">加入我的行程
+              </button>
+              <input type="hidden" name="spot_id" :value="item.spot_no">
+          </form>
+      </div>
+
+  </div>
+</div>
+</div>
 
 <!-- 星球百科 -->
         <div class="planet_box margin_top_15">
@@ -161,7 +211,7 @@
                       <div class="tab-active col-lg-6 col-md-12 col-sm-12">
                             <!-- 火星動圖 -->
                             <div id="tag" class="col-md-12 col-sm-12" style="width: 1024px; height: 768px;"></div>
-                            <!-- <script src="./js/mars.js"></script> -->
+                            <script src="./js/mars.js"></script>
                       </div>
                     </div>
                   </div>
@@ -216,7 +266,7 @@
         </div>
 <!-- 互動牆 -->
         <section class="home_photowall col-12 margin_top_10 ">
-          <div id="photos" class="col-lg-6">
+          <div id="photos" class="col-lg-12">
               <img src="./img/home/mars1.jpg"  alt="">
               <img src="./img/home/mars2.jpg"  alt="">
               <img src="./img/home/首頁-互動牆壁9.jpg" alt="">
@@ -225,22 +275,6 @@
           </div>
           <div class="photowall_rwd">
             <img src="./img/home/mars1.jpg" class="col-lg-6" alt="">
-          </div>
-
-          <div class="topright col-6">
-            <div class="topSct col-md-12 col-sm-12">
-              <h2>太空互動</h2>
-              <div class="btn-group" role="group">
-                <button type="button" @click="changeGallery()" class="btn btn-secondary"><</button>
-                <button type="button" @click="changeGalleryBack()" class="btn btn-secondary">></button>
-              </div>
-            </div>
-            <div class="separator margin_top_2"></div>
-            <div class="galleryIntro">
-              <h5 class="margin_top_3 col-8" >
-                由美國加州、全球最大太空建築公司（Orbital Assembly Corporation，OAC）宣布，太空旅館預計2025~2026年動工建造，順利的話有望在2027年開幕升空！由24個模組構成，如同巨大般的摩天輪外型，透過旋轉產生1/6地球重力。預計每90分鐘繞行地球一圈、每天繞地球16次。
-              </h5>
-            </div>
           </div>
         </section>
 <!-- 商城 -->
@@ -372,50 +406,42 @@
                 <button class="button button_min margin_top_10" >加入會員</button>
               </div>
         </div>
+        <a href="#" class="go-top"></a>
+
       <footer>@@include('./layout/footer.html')</footer>
           </div>
     <!-- 星球頁籤轉移 -->
     <script src="./js/tabSwitch.js"></script>
     <!-- 精選景點 vue -->
-      <script>
-          let vm = new Vue({
-              el: "#app",
-              data: {
-                  top: [{
-                      planet: "./img/trip/jupiter.png",
-                      spot: "./img/trip/trip_jupiter/jupiter_top_a_ps.png",
-                      title: "熱門星球",
-                      name: "木星 | 冰層探索一日遊",
-                      star: "./img/icon/star.png",
-                      grade: "初階",
-                      scores: "3000",
-                      price: 5000,
+    <script>
+      let vm = new Vue({
+          el: "#app",
+          data: {
+              planets: [],
+              spot1: [],
+          },
+          mounted() {
+              console.log("load");
+              fetch('./php/getSelectTrip.php').then(res => res.json()).then(data => {
+                  vm.planets = data;
+                  for (let i = 0; i < data.length; i++) {
+                      let url = `trip.php?spot_no=${data[i].spot_no}`;
+                      vm.planets[i].url = encodeURI(url);
+                      console.log(vm.planets[i].url)
+                  }
+              });
+              console.log(this.planets);
+              fetch('./php/getTrip.php').then(res => res.json()).then(data => {
+                  vm.spot1 = data;
+                  for (let i = 0; i < data.length; i++) {
+                      let url = `trip.php?spot_no=${data[i].spot_no}`;
+                      vm.spot1[i].url = encodeURI(url);
+                      console.log(vm.spot1[i].url)
+                  }
+              });
   
-                  }, {
-                      planet: "./img/trip/mars.png",
-                      spot: "./img/trip/trip_mars/mars_top_a1_ps.jpg.png",
-                      title: "進階景點",
-                      name: "火星 | 攀登太陽系第一高山",
-                      star: "./img/icon/star.png",
-                      grade: "高階",
-                      scores: "5000",
-                      price: 5000,
-  
-                  }, {
-                      planet: "./img/trip/moon.png",
-                      spot: "./img/trip/trip_moon/moon_top_a1_ps.png",
-                      title: "新景點",
-                      name: "月球 | 太空體驗一日遊",
-                      star: "./img/icon/star.png",
-                      grade: "初階",
-                      scores: "3000",
-                      price: 5000,
-                  }, 
-                  ],
-
-
-              },
-          });
+          },
+      });
       </script>
       <script>
         //Header變顏色
@@ -445,6 +471,31 @@
 
 
       </script>
- 
-  </body>
+     <!-- go top -->
+     <script>
+      $(document).ready(function() {
+          // Show or hide the sticky footer button
+          $(window).scroll(function() {
+              if ($(this).scrollTop() > 200) {
+                  $('.go-top').fadeIn(200);
+              } else {
+                  $('.go-top').fadeOut(200);
+              }
+          });
+
+          // Animate the scroll to top
+          $('.go-top').click(function(event) {
+              event.preventDefault();
+
+              $('html, body').animate({
+                  scrollTop: 0
+              }, 900);
+          })
+      });
+    </script>
+  
+
+
+
+</body>
 </html>
