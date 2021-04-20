@@ -821,7 +821,6 @@ button:hover {
 
 .planet_tab .tab-inner .tab_top .data {
   display: flex;
-  justify-content: center;
   font-family: Haettenschweiler, sans-serif;
 }
 
@@ -832,7 +831,7 @@ button:hover {
   display: flex;
   flex-direction: column;
   min-width: 100px;
-  max-height: 100px;
+  max-height: 160px;
   border-right: 1px solid #AD6E4A;
 }
 

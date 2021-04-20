@@ -1,0 +1,5493 @@
+body {
+  background: #171819;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 400px;
+}
+
+div {
+  transform-style: preserve-3d;
+  position: absolute;
+}
+
+.container {
+  position: relative;
+  display: grid;
+  grid-template-rows: repeat(20, 5vh);
+  grid-template-columns: repeat(20, 5vw);
+  transform-style: preserve-3d;
+}
+
+.container::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 100%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 60px 50px black inset;
+}
+
+.link {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.link a {
+  border: 1px solid #fff;
+  color: white;
+  text-decoration: none;
+  max-width: 200px;
+  font-size: 50px;
+  margin: 20px 50px;
+  transition: all .5s;
+}
+
+.link a:hover {
+  box-shadow: 0 0 28px 9px white inset;
+}
+
+.monitor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  transform-style: preserve-3d;
+}
+
+.trigger {
+  position: relative;
+}
+
+.trigger:nth-child(1):hover ~ .monitor .camera.-x {
+  transform: rotateX(-88deg);
+}
+
+.trigger:nth-child(1):hover ~ .monitor .camera.-y {
+  transform: rotateY(-80deg);
+}
+
+.trigger:nth-child(2):hover ~ .monitor .camera.-x {
+  transform: rotateX(-88deg);
+}
+
+.trigger:nth-child(2):hover ~ .monitor .camera.-y {
+  transform: rotateY(-72deg);
+}
+
+.trigger:nth-child(3):hover ~ .monitor .camera.-x {
+  transform: rotateX(-88deg);
+}
+
+.trigger:nth-child(3):hover ~ .monitor .camera.-y {
+  transform: rotateY(-64deg);
+}
+
+.trigger:nth-child(4):hover ~ .monitor .camera.-x {
+  transform: rotateX(-88deg);
+}
+
+.trigger:nth-child(4):hover ~ .monitor .camera.-y {
+  transform: rotateY(-56deg);
+}
+
+.trigger:nth-child(5):hover ~ .monitor .camera.-x {
+  transform: rotateX(-88deg);
+}
+
+.trigger:nth-child(5):hover ~ .monitor .camera.-y {
+  transform: rotateY(-48deg);
+}
+
+.trigger:nth-child(6):hover ~ .monitor .camera.-x {
+  transform: rotateX(-88deg);
+}
+
+.trigger:nth-child(6):hover ~ .monitor .camera.-y {
+  transform: rotateY(-40deg);
+}
+
+.trigger:nth-child(7):hover ~ .monitor .camera.-x {
+  transform: rotateX(-88deg);
+}
+
+.trigger:nth-child(7):hover ~ .monitor .camera.-y {
+  transform: rotateY(-32deg);
+}
+
+.trigger:nth-child(8):hover ~ .monitor .camera.-x {
+  transform: rotateX(-88deg);
+}
+
+.trigger:nth-child(8):hover ~ .monitor .camera.-y {
+  transform: rotateY(-24deg);
+}
+
+.trigger:nth-child(9):hover ~ .monitor .camera.-x {
+  transform: rotateX(-88deg);
+}
+
+.trigger:nth-child(9):hover ~ .monitor .camera.-y {
+  transform: rotateY(-16deg);
+}
+
+.trigger:nth-child(10):hover ~ .monitor .camera.-x {
+  transform: rotateX(-88deg);
+}
+
+.trigger:nth-child(10):hover ~ .monitor .camera.-y {
+  transform: rotateY(-8deg);
+}
+
+.trigger:nth-child(11):hover ~ .monitor .camera.-x {
+  transform: rotateX(-88deg);
+}
+
+.trigger:nth-child(11):hover ~ .monitor .camera.-y {
+  transform: rotateY(0deg);
+}
+
+.trigger:nth-child(12):hover ~ .monitor .camera.-x {
+  transform: rotateX(-88deg);
+}
+
+.trigger:nth-child(12):hover ~ .monitor .camera.-y {
+  transform: rotateY(8deg);
+}
+
+.trigger:nth-child(13):hover ~ .monitor .camera.-x {
+  transform: rotateX(-88deg);
+}
+
+.trigger:nth-child(13):hover ~ .monitor .camera.-y {
+  transform: rotateY(16deg);
+}
+
+.trigger:nth-child(14):hover ~ .monitor .camera.-x {
+  transform: rotateX(-88deg);
+}
+
+.trigger:nth-child(14):hover ~ .monitor .camera.-y {
+  transform: rotateY(24deg);
+}
+
+.trigger:nth-child(15):hover ~ .monitor .camera.-x {
+  transform: rotateX(-88deg);
+}
+
+.trigger:nth-child(15):hover ~ .monitor .camera.-y {
+  transform: rotateY(32deg);
+}
+
+.trigger:nth-child(16):hover ~ .monitor .camera.-x {
+  transform: rotateX(-88deg);
+}
+
+.trigger:nth-child(16):hover ~ .monitor .camera.-y {
+  transform: rotateY(40deg);
+}
+
+.trigger:nth-child(17):hover ~ .monitor .camera.-x {
+  transform: rotateX(-88deg);
+}
+
+.trigger:nth-child(17):hover ~ .monitor .camera.-y {
+  transform: rotateY(48deg);
+}
+
+.trigger:nth-child(18):hover ~ .monitor .camera.-x {
+  transform: rotateX(-88deg);
+}
+
+.trigger:nth-child(18):hover ~ .monitor .camera.-y {
+  transform: rotateY(56deg);
+}
+
+.trigger:nth-child(19):hover ~ .monitor .camera.-x {
+  transform: rotateX(-88deg);
+}
+
+.trigger:nth-child(19):hover ~ .monitor .camera.-y {
+  transform: rotateY(64deg);
+}
+
+.trigger:nth-child(20):hover ~ .monitor .camera.-x {
+  transform: rotateX(-88deg);
+}
+
+.trigger:nth-child(20):hover ~ .monitor .camera.-y {
+  transform: rotateY(72deg);
+}
+
+.trigger:nth-child(21):hover ~ .monitor .camera.-x {
+  transform: rotateX(-80deg);
+}
+
+.trigger:nth-child(21):hover ~ .monitor .camera.-y {
+  transform: rotateY(-80deg);
+}
+
+.trigger:nth-child(22):hover ~ .monitor .camera.-x {
+  transform: rotateX(-80deg);
+}
+
+.trigger:nth-child(22):hover ~ .monitor .camera.-y {
+  transform: rotateY(-72deg);
+}
+
+.trigger:nth-child(23):hover ~ .monitor .camera.-x {
+  transform: rotateX(-80deg);
+}
+
+.trigger:nth-child(23):hover ~ .monitor .camera.-y {
+  transform: rotateY(-64deg);
+}
+
+.trigger:nth-child(24):hover ~ .monitor .camera.-x {
+  transform: rotateX(-80deg);
+}
+
+.trigger:nth-child(24):hover ~ .monitor .camera.-y {
+  transform: rotateY(-56deg);
+}
+
+.trigger:nth-child(25):hover ~ .monitor .camera.-x {
+  transform: rotateX(-80deg);
+}
+
+.trigger:nth-child(25):hover ~ .monitor .camera.-y {
+  transform: rotateY(-48deg);
+}
+
+.trigger:nth-child(26):hover ~ .monitor .camera.-x {
+  transform: rotateX(-80deg);
+}
+
+.trigger:nth-child(26):hover ~ .monitor .camera.-y {
+  transform: rotateY(-40deg);
+}
+
+.trigger:nth-child(27):hover ~ .monitor .camera.-x {
+  transform: rotateX(-80deg);
+}
+
+.trigger:nth-child(27):hover ~ .monitor .camera.-y {
+  transform: rotateY(-32deg);
+}
+
+.trigger:nth-child(28):hover ~ .monitor .camera.-x {
+  transform: rotateX(-80deg);
+}
+
+.trigger:nth-child(28):hover ~ .monitor .camera.-y {
+  transform: rotateY(-24deg);
+}
+
+.trigger:nth-child(29):hover ~ .monitor .camera.-x {
+  transform: rotateX(-80deg);
+}
+
+.trigger:nth-child(29):hover ~ .monitor .camera.-y {
+  transform: rotateY(-16deg);
+}
+
+.trigger:nth-child(30):hover ~ .monitor .camera.-x {
+  transform: rotateX(-80deg);
+}
+
+.trigger:nth-child(30):hover ~ .monitor .camera.-y {
+  transform: rotateY(-8deg);
+}
+
+.trigger:nth-child(31):hover ~ .monitor .camera.-x {
+  transform: rotateX(-80deg);
+}
+
+.trigger:nth-child(31):hover ~ .monitor .camera.-y {
+  transform: rotateY(0deg);
+}
+
+.trigger:nth-child(32):hover ~ .monitor .camera.-x {
+  transform: rotateX(-80deg);
+}
+
+.trigger:nth-child(32):hover ~ .monitor .camera.-y {
+  transform: rotateY(8deg);
+}
+
+.trigger:nth-child(33):hover ~ .monitor .camera.-x {
+  transform: rotateX(-80deg);
+}
+
+.trigger:nth-child(33):hover ~ .monitor .camera.-y {
+  transform: rotateY(16deg);
+}
+
+.trigger:nth-child(34):hover ~ .monitor .camera.-x {
+  transform: rotateX(-80deg);
+}
+
+.trigger:nth-child(34):hover ~ .monitor .camera.-y {
+  transform: rotateY(24deg);
+}
+
+.trigger:nth-child(35):hover ~ .monitor .camera.-x {
+  transform: rotateX(-80deg);
+}
+
+.trigger:nth-child(35):hover ~ .monitor .camera.-y {
+  transform: rotateY(32deg);
+}
+
+.trigger:nth-child(36):hover ~ .monitor .camera.-x {
+  transform: rotateX(-80deg);
+}
+
+.trigger:nth-child(36):hover ~ .monitor .camera.-y {
+  transform: rotateY(40deg);
+}
+
+.trigger:nth-child(37):hover ~ .monitor .camera.-x {
+  transform: rotateX(-80deg);
+}
+
+.trigger:nth-child(37):hover ~ .monitor .camera.-y {
+  transform: rotateY(48deg);
+}
+
+.trigger:nth-child(38):hover ~ .monitor .camera.-x {
+  transform: rotateX(-80deg);
+}
+
+.trigger:nth-child(38):hover ~ .monitor .camera.-y {
+  transform: rotateY(56deg);
+}
+
+.trigger:nth-child(39):hover ~ .monitor .camera.-x {
+  transform: rotateX(-80deg);
+}
+
+.trigger:nth-child(39):hover ~ .monitor .camera.-y {
+  transform: rotateY(64deg);
+}
+
+.trigger:nth-child(40):hover ~ .monitor .camera.-x {
+  transform: rotateX(-80deg);
+}
+
+.trigger:nth-child(40):hover ~ .monitor .camera.-y {
+  transform: rotateY(72deg);
+}
+
+.trigger:nth-child(41):hover ~ .monitor .camera.-x {
+  transform: rotateX(-72deg);
+}
+
+.trigger:nth-child(41):hover ~ .monitor .camera.-y {
+  transform: rotateY(-80deg);
+}
+
+.trigger:nth-child(42):hover ~ .monitor .camera.-x {
+  transform: rotateX(-72deg);
+}
+
+.trigger:nth-child(42):hover ~ .monitor .camera.-y {
+  transform: rotateY(-72deg);
+}
+
+.trigger:nth-child(43):hover ~ .monitor .camera.-x {
+  transform: rotateX(-72deg);
+}
+
+.trigger:nth-child(43):hover ~ .monitor .camera.-y {
+  transform: rotateY(-64deg);
+}
+
+.trigger:nth-child(44):hover ~ .monitor .camera.-x {
+  transform: rotateX(-72deg);
+}
+
+.trigger:nth-child(44):hover ~ .monitor .camera.-y {
+  transform: rotateY(-56deg);
+}
+
+.trigger:nth-child(45):hover ~ .monitor .camera.-x {
+  transform: rotateX(-72deg);
+}
+
+.trigger:nth-child(45):hover ~ .monitor .camera.-y {
+  transform: rotateY(-48deg);
+}
+
+.trigger:nth-child(46):hover ~ .monitor .camera.-x {
+  transform: rotateX(-72deg);
+}
+
+.trigger:nth-child(46):hover ~ .monitor .camera.-y {
+  transform: rotateY(-40deg);
+}
+
+.trigger:nth-child(47):hover ~ .monitor .camera.-x {
+  transform: rotateX(-72deg);
+}
+
+.trigger:nth-child(47):hover ~ .monitor .camera.-y {
+  transform: rotateY(-32deg);
+}
+
+.trigger:nth-child(48):hover ~ .monitor .camera.-x {
+  transform: rotateX(-72deg);
+}
+
+.trigger:nth-child(48):hover ~ .monitor .camera.-y {
+  transform: rotateY(-24deg);
+}
+
+.trigger:nth-child(49):hover ~ .monitor .camera.-x {
+  transform: rotateX(-72deg);
+}
+
+.trigger:nth-child(49):hover ~ .monitor .camera.-y {
+  transform: rotateY(-16deg);
+}
+
+.trigger:nth-child(50):hover ~ .monitor .camera.-x {
+  transform: rotateX(-72deg);
+}
+
+.trigger:nth-child(50):hover ~ .monitor .camera.-y {
+  transform: rotateY(-8deg);
+}
+
+.trigger:nth-child(51):hover ~ .monitor .camera.-x {
+  transform: rotateX(-72deg);
+}
+
+.trigger:nth-child(51):hover ~ .monitor .camera.-y {
+  transform: rotateY(0deg);
+}
+
+.trigger:nth-child(52):hover ~ .monitor .camera.-x {
+  transform: rotateX(-72deg);
+}
+
+.trigger:nth-child(52):hover ~ .monitor .camera.-y {
+  transform: rotateY(8deg);
+}
+
+.trigger:nth-child(53):hover ~ .monitor .camera.-x {
+  transform: rotateX(-72deg);
+}
+
+.trigger:nth-child(53):hover ~ .monitor .camera.-y {
+  transform: rotateY(16deg);
+}
+
+.trigger:nth-child(54):hover ~ .monitor .camera.-x {
+  transform: rotateX(-72deg);
+}
+
+.trigger:nth-child(54):hover ~ .monitor .camera.-y {
+  transform: rotateY(24deg);
+}
+
+.trigger:nth-child(55):hover ~ .monitor .camera.-x {
+  transform: rotateX(-72deg);
+}
+
+.trigger:nth-child(55):hover ~ .monitor .camera.-y {
+  transform: rotateY(32deg);
+}
+
+.trigger:nth-child(56):hover ~ .monitor .camera.-x {
+  transform: rotateX(-72deg);
+}
+
+.trigger:nth-child(56):hover ~ .monitor .camera.-y {
+  transform: rotateY(40deg);
+}
+
+.trigger:nth-child(57):hover ~ .monitor .camera.-x {
+  transform: rotateX(-72deg);
+}
+
+.trigger:nth-child(57):hover ~ .monitor .camera.-y {
+  transform: rotateY(48deg);
+}
+
+.trigger:nth-child(58):hover ~ .monitor .camera.-x {
+  transform: rotateX(-72deg);
+}
+
+.trigger:nth-child(58):hover ~ .monitor .camera.-y {
+  transform: rotateY(56deg);
+}
+
+.trigger:nth-child(59):hover ~ .monitor .camera.-x {
+  transform: rotateX(-72deg);
+}
+
+.trigger:nth-child(59):hover ~ .monitor .camera.-y {
+  transform: rotateY(64deg);
+}
+
+.trigger:nth-child(60):hover ~ .monitor .camera.-x {
+  transform: rotateX(-72deg);
+}
+
+.trigger:nth-child(60):hover ~ .monitor .camera.-y {
+  transform: rotateY(72deg);
+}
+
+.trigger:nth-child(61):hover ~ .monitor .camera.-x {
+  transform: rotateX(-64deg);
+}
+
+.trigger:nth-child(61):hover ~ .monitor .camera.-y {
+  transform: rotateY(-80deg);
+}
+
+.trigger:nth-child(62):hover ~ .monitor .camera.-x {
+  transform: rotateX(-64deg);
+}
+
+.trigger:nth-child(62):hover ~ .monitor .camera.-y {
+  transform: rotateY(-72deg);
+}
+
+.trigger:nth-child(63):hover ~ .monitor .camera.-x {
+  transform: rotateX(-64deg);
+}
+
+.trigger:nth-child(63):hover ~ .monitor .camera.-y {
+  transform: rotateY(-64deg);
+}
+
+.trigger:nth-child(64):hover ~ .monitor .camera.-x {
+  transform: rotateX(-64deg);
+}
+
+.trigger:nth-child(64):hover ~ .monitor .camera.-y {
+  transform: rotateY(-56deg);
+}
+
+.trigger:nth-child(65):hover ~ .monitor .camera.-x {
+  transform: rotateX(-64deg);
+}
+
+.trigger:nth-child(65):hover ~ .monitor .camera.-y {
+  transform: rotateY(-48deg);
+}
+
+.trigger:nth-child(66):hover ~ .monitor .camera.-x {
+  transform: rotateX(-64deg);
+}
+
+.trigger:nth-child(66):hover ~ .monitor .camera.-y {
+  transform: rotateY(-40deg);
+}
+
+.trigger:nth-child(67):hover ~ .monitor .camera.-x {
+  transform: rotateX(-64deg);
+}
+
+.trigger:nth-child(67):hover ~ .monitor .camera.-y {
+  transform: rotateY(-32deg);
+}
+
+.trigger:nth-child(68):hover ~ .monitor .camera.-x {
+  transform: rotateX(-64deg);
+}
+
+.trigger:nth-child(68):hover ~ .monitor .camera.-y {
+  transform: rotateY(-24deg);
+}
+
+.trigger:nth-child(69):hover ~ .monitor .camera.-x {
+  transform: rotateX(-64deg);
+}
+
+.trigger:nth-child(69):hover ~ .monitor .camera.-y {
+  transform: rotateY(-16deg);
+}
+
+.trigger:nth-child(70):hover ~ .monitor .camera.-x {
+  transform: rotateX(-64deg);
+}
+
+.trigger:nth-child(70):hover ~ .monitor .camera.-y {
+  transform: rotateY(-8deg);
+}
+
+.trigger:nth-child(71):hover ~ .monitor .camera.-x {
+  transform: rotateX(-64deg);
+}
+
+.trigger:nth-child(71):hover ~ .monitor .camera.-y {
+  transform: rotateY(0deg);
+}
+
+.trigger:nth-child(72):hover ~ .monitor .camera.-x {
+  transform: rotateX(-64deg);
+}
+
+.trigger:nth-child(72):hover ~ .monitor .camera.-y {
+  transform: rotateY(8deg);
+}
+
+.trigger:nth-child(73):hover ~ .monitor .camera.-x {
+  transform: rotateX(-64deg);
+}
+
+.trigger:nth-child(73):hover ~ .monitor .camera.-y {
+  transform: rotateY(16deg);
+}
+
+.trigger:nth-child(74):hover ~ .monitor .camera.-x {
+  transform: rotateX(-64deg);
+}
+
+.trigger:nth-child(74):hover ~ .monitor .camera.-y {
+  transform: rotateY(24deg);
+}
+
+.trigger:nth-child(75):hover ~ .monitor .camera.-x {
+  transform: rotateX(-64deg);
+}
+
+.trigger:nth-child(75):hover ~ .monitor .camera.-y {
+  transform: rotateY(32deg);
+}
+
+.trigger:nth-child(76):hover ~ .monitor .camera.-x {
+  transform: rotateX(-64deg);
+}
+
+.trigger:nth-child(76):hover ~ .monitor .camera.-y {
+  transform: rotateY(40deg);
+}
+
+.trigger:nth-child(77):hover ~ .monitor .camera.-x {
+  transform: rotateX(-64deg);
+}
+
+.trigger:nth-child(77):hover ~ .monitor .camera.-y {
+  transform: rotateY(48deg);
+}
+
+.trigger:nth-child(78):hover ~ .monitor .camera.-x {
+  transform: rotateX(-64deg);
+}
+
+.trigger:nth-child(78):hover ~ .monitor .camera.-y {
+  transform: rotateY(56deg);
+}
+
+.trigger:nth-child(79):hover ~ .monitor .camera.-x {
+  transform: rotateX(-64deg);
+}
+
+.trigger:nth-child(79):hover ~ .monitor .camera.-y {
+  transform: rotateY(64deg);
+}
+
+.trigger:nth-child(80):hover ~ .monitor .camera.-x {
+  transform: rotateX(-64deg);
+}
+
+.trigger:nth-child(80):hover ~ .monitor .camera.-y {
+  transform: rotateY(72deg);
+}
+
+.trigger:nth-child(81):hover ~ .monitor .camera.-x {
+  transform: rotateX(-56deg);
+}
+
+.trigger:nth-child(81):hover ~ .monitor .camera.-y {
+  transform: rotateY(-80deg);
+}
+
+.trigger:nth-child(82):hover ~ .monitor .camera.-x {
+  transform: rotateX(-56deg);
+}
+
+.trigger:nth-child(82):hover ~ .monitor .camera.-y {
+  transform: rotateY(-72deg);
+}
+
+.trigger:nth-child(83):hover ~ .monitor .camera.-x {
+  transform: rotateX(-56deg);
+}
+
+.trigger:nth-child(83):hover ~ .monitor .camera.-y {
+  transform: rotateY(-64deg);
+}
+
+.trigger:nth-child(84):hover ~ .monitor .camera.-x {
+  transform: rotateX(-56deg);
+}
+
+.trigger:nth-child(84):hover ~ .monitor .camera.-y {
+  transform: rotateY(-56deg);
+}
+
+.trigger:nth-child(85):hover ~ .monitor .camera.-x {
+  transform: rotateX(-56deg);
+}
+
+.trigger:nth-child(85):hover ~ .monitor .camera.-y {
+  transform: rotateY(-48deg);
+}
+
+.trigger:nth-child(86):hover ~ .monitor .camera.-x {
+  transform: rotateX(-56deg);
+}
+
+.trigger:nth-child(86):hover ~ .monitor .camera.-y {
+  transform: rotateY(-40deg);
+}
+
+.trigger:nth-child(87):hover ~ .monitor .camera.-x {
+  transform: rotateX(-56deg);
+}
+
+.trigger:nth-child(87):hover ~ .monitor .camera.-y {
+  transform: rotateY(-32deg);
+}
+
+.trigger:nth-child(88):hover ~ .monitor .camera.-x {
+  transform: rotateX(-56deg);
+}
+
+.trigger:nth-child(88):hover ~ .monitor .camera.-y {
+  transform: rotateY(-24deg);
+}
+
+.trigger:nth-child(89):hover ~ .monitor .camera.-x {
+  transform: rotateX(-56deg);
+}
+
+.trigger:nth-child(89):hover ~ .monitor .camera.-y {
+  transform: rotateY(-16deg);
+}
+
+.trigger:nth-child(90):hover ~ .monitor .camera.-x {
+  transform: rotateX(-56deg);
+}
+
+.trigger:nth-child(90):hover ~ .monitor .camera.-y {
+  transform: rotateY(-8deg);
+}
+
+.trigger:nth-child(91):hover ~ .monitor .camera.-x {
+  transform: rotateX(-56deg);
+}
+
+.trigger:nth-child(91):hover ~ .monitor .camera.-y {
+  transform: rotateY(0deg);
+}
+
+.trigger:nth-child(92):hover ~ .monitor .camera.-x {
+  transform: rotateX(-56deg);
+}
+
+.trigger:nth-child(92):hover ~ .monitor .camera.-y {
+  transform: rotateY(8deg);
+}
+
+.trigger:nth-child(93):hover ~ .monitor .camera.-x {
+  transform: rotateX(-56deg);
+}
+
+.trigger:nth-child(93):hover ~ .monitor .camera.-y {
+  transform: rotateY(16deg);
+}
+
+.trigger:nth-child(94):hover ~ .monitor .camera.-x {
+  transform: rotateX(-56deg);
+}
+
+.trigger:nth-child(94):hover ~ .monitor .camera.-y {
+  transform: rotateY(24deg);
+}
+
+.trigger:nth-child(95):hover ~ .monitor .camera.-x {
+  transform: rotateX(-56deg);
+}
+
+.trigger:nth-child(95):hover ~ .monitor .camera.-y {
+  transform: rotateY(32deg);
+}
+
+.trigger:nth-child(96):hover ~ .monitor .camera.-x {
+  transform: rotateX(-56deg);
+}
+
+.trigger:nth-child(96):hover ~ .monitor .camera.-y {
+  transform: rotateY(40deg);
+}
+
+.trigger:nth-child(97):hover ~ .monitor .camera.-x {
+  transform: rotateX(-56deg);
+}
+
+.trigger:nth-child(97):hover ~ .monitor .camera.-y {
+  transform: rotateY(48deg);
+}
+
+.trigger:nth-child(98):hover ~ .monitor .camera.-x {
+  transform: rotateX(-56deg);
+}
+
+.trigger:nth-child(98):hover ~ .monitor .camera.-y {
+  transform: rotateY(56deg);
+}
+
+.trigger:nth-child(99):hover ~ .monitor .camera.-x {
+  transform: rotateX(-56deg);
+}
+
+.trigger:nth-child(99):hover ~ .monitor .camera.-y {
+  transform: rotateY(64deg);
+}
+
+.trigger:nth-child(100):hover ~ .monitor .camera.-x {
+  transform: rotateX(-56deg);
+}
+
+.trigger:nth-child(100):hover ~ .monitor .camera.-y {
+  transform: rotateY(72deg);
+}
+
+.trigger:nth-child(101):hover ~ .monitor .camera.-x {
+  transform: rotateX(-48deg);
+}
+
+.trigger:nth-child(101):hover ~ .monitor .camera.-y {
+  transform: rotateY(-80deg);
+}
+
+.trigger:nth-child(102):hover ~ .monitor .camera.-x {
+  transform: rotateX(-48deg);
+}
+
+.trigger:nth-child(102):hover ~ .monitor .camera.-y {
+  transform: rotateY(-72deg);
+}
+
+.trigger:nth-child(103):hover ~ .monitor .camera.-x {
+  transform: rotateX(-48deg);
+}
+
+.trigger:nth-child(103):hover ~ .monitor .camera.-y {
+  transform: rotateY(-64deg);
+}
+
+.trigger:nth-child(104):hover ~ .monitor .camera.-x {
+  transform: rotateX(-48deg);
+}
+
+.trigger:nth-child(104):hover ~ .monitor .camera.-y {
+  transform: rotateY(-56deg);
+}
+
+.trigger:nth-child(105):hover ~ .monitor .camera.-x {
+  transform: rotateX(-48deg);
+}
+
+.trigger:nth-child(105):hover ~ .monitor .camera.-y {
+  transform: rotateY(-48deg);
+}
+
+.trigger:nth-child(106):hover ~ .monitor .camera.-x {
+  transform: rotateX(-48deg);
+}
+
+.trigger:nth-child(106):hover ~ .monitor .camera.-y {
+  transform: rotateY(-40deg);
+}
+
+.trigger:nth-child(107):hover ~ .monitor .camera.-x {
+  transform: rotateX(-48deg);
+}
+
+.trigger:nth-child(107):hover ~ .monitor .camera.-y {
+  transform: rotateY(-32deg);
+}
+
+.trigger:nth-child(108):hover ~ .monitor .camera.-x {
+  transform: rotateX(-48deg);
+}
+
+.trigger:nth-child(108):hover ~ .monitor .camera.-y {
+  transform: rotateY(-24deg);
+}
+
+.trigger:nth-child(109):hover ~ .monitor .camera.-x {
+  transform: rotateX(-48deg);
+}
+
+.trigger:nth-child(109):hover ~ .monitor .camera.-y {
+  transform: rotateY(-16deg);
+}
+
+.trigger:nth-child(110):hover ~ .monitor .camera.-x {
+  transform: rotateX(-48deg);
+}
+
+.trigger:nth-child(110):hover ~ .monitor .camera.-y {
+  transform: rotateY(-8deg);
+}
+
+.trigger:nth-child(111):hover ~ .monitor .camera.-x {
+  transform: rotateX(-48deg);
+}
+
+.trigger:nth-child(111):hover ~ .monitor .camera.-y {
+  transform: rotateY(0deg);
+}
+
+.trigger:nth-child(112):hover ~ .monitor .camera.-x {
+  transform: rotateX(-48deg);
+}
+
+.trigger:nth-child(112):hover ~ .monitor .camera.-y {
+  transform: rotateY(8deg);
+}
+
+.trigger:nth-child(113):hover ~ .monitor .camera.-x {
+  transform: rotateX(-48deg);
+}
+
+.trigger:nth-child(113):hover ~ .monitor .camera.-y {
+  transform: rotateY(16deg);
+}
+
+.trigger:nth-child(114):hover ~ .monitor .camera.-x {
+  transform: rotateX(-48deg);
+}
+
+.trigger:nth-child(114):hover ~ .monitor .camera.-y {
+  transform: rotateY(24deg);
+}
+
+.trigger:nth-child(115):hover ~ .monitor .camera.-x {
+  transform: rotateX(-48deg);
+}
+
+.trigger:nth-child(115):hover ~ .monitor .camera.-y {
+  transform: rotateY(32deg);
+}
+
+.trigger:nth-child(116):hover ~ .monitor .camera.-x {
+  transform: rotateX(-48deg);
+}
+
+.trigger:nth-child(116):hover ~ .monitor .camera.-y {
+  transform: rotateY(40deg);
+}
+
+.trigger:nth-child(117):hover ~ .monitor .camera.-x {
+  transform: rotateX(-48deg);
+}
+
+.trigger:nth-child(117):hover ~ .monitor .camera.-y {
+  transform: rotateY(48deg);
+}
+
+.trigger:nth-child(118):hover ~ .monitor .camera.-x {
+  transform: rotateX(-48deg);
+}
+
+.trigger:nth-child(118):hover ~ .monitor .camera.-y {
+  transform: rotateY(56deg);
+}
+
+.trigger:nth-child(119):hover ~ .monitor .camera.-x {
+  transform: rotateX(-48deg);
+}
+
+.trigger:nth-child(119):hover ~ .monitor .camera.-y {
+  transform: rotateY(64deg);
+}
+
+.trigger:nth-child(120):hover ~ .monitor .camera.-x {
+  transform: rotateX(-48deg);
+}
+
+.trigger:nth-child(120):hover ~ .monitor .camera.-y {
+  transform: rotateY(72deg);
+}
+
+.trigger:nth-child(121):hover ~ .monitor .camera.-x {
+  transform: rotateX(-40deg);
+}
+
+.trigger:nth-child(121):hover ~ .monitor .camera.-y {
+  transform: rotateY(-80deg);
+}
+
+.trigger:nth-child(122):hover ~ .monitor .camera.-x {
+  transform: rotateX(-40deg);
+}
+
+.trigger:nth-child(122):hover ~ .monitor .camera.-y {
+  transform: rotateY(-72deg);
+}
+
+.trigger:nth-child(123):hover ~ .monitor .camera.-x {
+  transform: rotateX(-40deg);
+}
+
+.trigger:nth-child(123):hover ~ .monitor .camera.-y {
+  transform: rotateY(-64deg);
+}
+
+.trigger:nth-child(124):hover ~ .monitor .camera.-x {
+  transform: rotateX(-40deg);
+}
+
+.trigger:nth-child(124):hover ~ .monitor .camera.-y {
+  transform: rotateY(-56deg);
+}
+
+.trigger:nth-child(125):hover ~ .monitor .camera.-x {
+  transform: rotateX(-40deg);
+}
+
+.trigger:nth-child(125):hover ~ .monitor .camera.-y {
+  transform: rotateY(-48deg);
+}
+
+.trigger:nth-child(126):hover ~ .monitor .camera.-x {
+  transform: rotateX(-40deg);
+}
+
+.trigger:nth-child(126):hover ~ .monitor .camera.-y {
+  transform: rotateY(-40deg);
+}
+
+.trigger:nth-child(127):hover ~ .monitor .camera.-x {
+  transform: rotateX(-40deg);
+}
+
+.trigger:nth-child(127):hover ~ .monitor .camera.-y {
+  transform: rotateY(-32deg);
+}
+
+.trigger:nth-child(128):hover ~ .monitor .camera.-x {
+  transform: rotateX(-40deg);
+}
+
+.trigger:nth-child(128):hover ~ .monitor .camera.-y {
+  transform: rotateY(-24deg);
+}
+
+.trigger:nth-child(129):hover ~ .monitor .camera.-x {
+  transform: rotateX(-40deg);
+}
+
+.trigger:nth-child(129):hover ~ .monitor .camera.-y {
+  transform: rotateY(-16deg);
+}
+
+.trigger:nth-child(130):hover ~ .monitor .camera.-x {
+  transform: rotateX(-40deg);
+}
+
+.trigger:nth-child(130):hover ~ .monitor .camera.-y {
+  transform: rotateY(-8deg);
+}
+
+.trigger:nth-child(131):hover ~ .monitor .camera.-x {
+  transform: rotateX(-40deg);
+}
+
+.trigger:nth-child(131):hover ~ .monitor .camera.-y {
+  transform: rotateY(0deg);
+}
+
+.trigger:nth-child(132):hover ~ .monitor .camera.-x {
+  transform: rotateX(-40deg);
+}
+
+.trigger:nth-child(132):hover ~ .monitor .camera.-y {
+  transform: rotateY(8deg);
+}
+
+.trigger:nth-child(133):hover ~ .monitor .camera.-x {
+  transform: rotateX(-40deg);
+}
+
+.trigger:nth-child(133):hover ~ .monitor .camera.-y {
+  transform: rotateY(16deg);
+}
+
+.trigger:nth-child(134):hover ~ .monitor .camera.-x {
+  transform: rotateX(-40deg);
+}
+
+.trigger:nth-child(134):hover ~ .monitor .camera.-y {
+  transform: rotateY(24deg);
+}
+
+.trigger:nth-child(135):hover ~ .monitor .camera.-x {
+  transform: rotateX(-40deg);
+}
+
+.trigger:nth-child(135):hover ~ .monitor .camera.-y {
+  transform: rotateY(32deg);
+}
+
+.trigger:nth-child(136):hover ~ .monitor .camera.-x {
+  transform: rotateX(-40deg);
+}
+
+.trigger:nth-child(136):hover ~ .monitor .camera.-y {
+  transform: rotateY(40deg);
+}
+
+.trigger:nth-child(137):hover ~ .monitor .camera.-x {
+  transform: rotateX(-40deg);
+}
+
+.trigger:nth-child(137):hover ~ .monitor .camera.-y {
+  transform: rotateY(48deg);
+}
+
+.trigger:nth-child(138):hover ~ .monitor .camera.-x {
+  transform: rotateX(-40deg);
+}
+
+.trigger:nth-child(138):hover ~ .monitor .camera.-y {
+  transform: rotateY(56deg);
+}
+
+.trigger:nth-child(139):hover ~ .monitor .camera.-x {
+  transform: rotateX(-40deg);
+}
+
+.trigger:nth-child(139):hover ~ .monitor .camera.-y {
+  transform: rotateY(64deg);
+}
+
+.trigger:nth-child(140):hover ~ .monitor .camera.-x {
+  transform: rotateX(-40deg);
+}
+
+.trigger:nth-child(140):hover ~ .monitor .camera.-y {
+  transform: rotateY(72deg);
+}
+
+.trigger:nth-child(141):hover ~ .monitor .camera.-x {
+  transform: rotateX(-32deg);
+}
+
+.trigger:nth-child(141):hover ~ .monitor .camera.-y {
+  transform: rotateY(-80deg);
+}
+
+.trigger:nth-child(142):hover ~ .monitor .camera.-x {
+  transform: rotateX(-32deg);
+}
+
+.trigger:nth-child(142):hover ~ .monitor .camera.-y {
+  transform: rotateY(-72deg);
+}
+
+.trigger:nth-child(143):hover ~ .monitor .camera.-x {
+  transform: rotateX(-32deg);
+}
+
+.trigger:nth-child(143):hover ~ .monitor .camera.-y {
+  transform: rotateY(-64deg);
+}
+
+.trigger:nth-child(144):hover ~ .monitor .camera.-x {
+  transform: rotateX(-32deg);
+}
+
+.trigger:nth-child(144):hover ~ .monitor .camera.-y {
+  transform: rotateY(-56deg);
+}
+
+.trigger:nth-child(145):hover ~ .monitor .camera.-x {
+  transform: rotateX(-32deg);
+}
+
+.trigger:nth-child(145):hover ~ .monitor .camera.-y {
+  transform: rotateY(-48deg);
+}
+
+.trigger:nth-child(146):hover ~ .monitor .camera.-x {
+  transform: rotateX(-32deg);
+}
+
+.trigger:nth-child(146):hover ~ .monitor .camera.-y {
+  transform: rotateY(-40deg);
+}
+
+.trigger:nth-child(147):hover ~ .monitor .camera.-x {
+  transform: rotateX(-32deg);
+}
+
+.trigger:nth-child(147):hover ~ .monitor .camera.-y {
+  transform: rotateY(-32deg);
+}
+
+.trigger:nth-child(148):hover ~ .monitor .camera.-x {
+  transform: rotateX(-32deg);
+}
+
+.trigger:nth-child(148):hover ~ .monitor .camera.-y {
+  transform: rotateY(-24deg);
+}
+
+.trigger:nth-child(149):hover ~ .monitor .camera.-x {
+  transform: rotateX(-32deg);
+}
+
+.trigger:nth-child(149):hover ~ .monitor .camera.-y {
+  transform: rotateY(-16deg);
+}
+
+.trigger:nth-child(150):hover ~ .monitor .camera.-x {
+  transform: rotateX(-32deg);
+}
+
+.trigger:nth-child(150):hover ~ .monitor .camera.-y {
+  transform: rotateY(-8deg);
+}
+
+.trigger:nth-child(151):hover ~ .monitor .camera.-x {
+  transform: rotateX(-32deg);
+}
+
+.trigger:nth-child(151):hover ~ .monitor .camera.-y {
+  transform: rotateY(0deg);
+}
+
+.trigger:nth-child(152):hover ~ .monitor .camera.-x {
+  transform: rotateX(-32deg);
+}
+
+.trigger:nth-child(152):hover ~ .monitor .camera.-y {
+  transform: rotateY(8deg);
+}
+
+.trigger:nth-child(153):hover ~ .monitor .camera.-x {
+  transform: rotateX(-32deg);
+}
+
+.trigger:nth-child(153):hover ~ .monitor .camera.-y {
+  transform: rotateY(16deg);
+}
+
+.trigger:nth-child(154):hover ~ .monitor .camera.-x {
+  transform: rotateX(-32deg);
+}
+
+.trigger:nth-child(154):hover ~ .monitor .camera.-y {
+  transform: rotateY(24deg);
+}
+
+.trigger:nth-child(155):hover ~ .monitor .camera.-x {
+  transform: rotateX(-32deg);
+}
+
+.trigger:nth-child(155):hover ~ .monitor .camera.-y {
+  transform: rotateY(32deg);
+}
+
+.trigger:nth-child(156):hover ~ .monitor .camera.-x {
+  transform: rotateX(-32deg);
+}
+
+.trigger:nth-child(156):hover ~ .monitor .camera.-y {
+  transform: rotateY(40deg);
+}
+
+.trigger:nth-child(157):hover ~ .monitor .camera.-x {
+  transform: rotateX(-32deg);
+}
+
+.trigger:nth-child(157):hover ~ .monitor .camera.-y {
+  transform: rotateY(48deg);
+}
+
+.trigger:nth-child(158):hover ~ .monitor .camera.-x {
+  transform: rotateX(-32deg);
+}
+
+.trigger:nth-child(158):hover ~ .monitor .camera.-y {
+  transform: rotateY(56deg);
+}
+
+.trigger:nth-child(159):hover ~ .monitor .camera.-x {
+  transform: rotateX(-32deg);
+}
+
+.trigger:nth-child(159):hover ~ .monitor .camera.-y {
+  transform: rotateY(64deg);
+}
+
+.trigger:nth-child(160):hover ~ .monitor .camera.-x {
+  transform: rotateX(-32deg);
+}
+
+.trigger:nth-child(160):hover ~ .monitor .camera.-y {
+  transform: rotateY(72deg);
+}
+
+.trigger:nth-child(161):hover ~ .monitor .camera.-x {
+  transform: rotateX(-24deg);
+}
+
+.trigger:nth-child(161):hover ~ .monitor .camera.-y {
+  transform: rotateY(-80deg);
+}
+
+.trigger:nth-child(162):hover ~ .monitor .camera.-x {
+  transform: rotateX(-24deg);
+}
+
+.trigger:nth-child(162):hover ~ .monitor .camera.-y {
+  transform: rotateY(-72deg);
+}
+
+.trigger:nth-child(163):hover ~ .monitor .camera.-x {
+  transform: rotateX(-24deg);
+}
+
+.trigger:nth-child(163):hover ~ .monitor .camera.-y {
+  transform: rotateY(-64deg);
+}
+
+.trigger:nth-child(164):hover ~ .monitor .camera.-x {
+  transform: rotateX(-24deg);
+}
+
+.trigger:nth-child(164):hover ~ .monitor .camera.-y {
+  transform: rotateY(-56deg);
+}
+
+.trigger:nth-child(165):hover ~ .monitor .camera.-x {
+  transform: rotateX(-24deg);
+}
+
+.trigger:nth-child(165):hover ~ .monitor .camera.-y {
+  transform: rotateY(-48deg);
+}
+
+.trigger:nth-child(166):hover ~ .monitor .camera.-x {
+  transform: rotateX(-24deg);
+}
+
+.trigger:nth-child(166):hover ~ .monitor .camera.-y {
+  transform: rotateY(-40deg);
+}
+
+.trigger:nth-child(167):hover ~ .monitor .camera.-x {
+  transform: rotateX(-24deg);
+}
+
+.trigger:nth-child(167):hover ~ .monitor .camera.-y {
+  transform: rotateY(-32deg);
+}
+
+.trigger:nth-child(168):hover ~ .monitor .camera.-x {
+  transform: rotateX(-24deg);
+}
+
+.trigger:nth-child(168):hover ~ .monitor .camera.-y {
+  transform: rotateY(-24deg);
+}
+
+.trigger:nth-child(169):hover ~ .monitor .camera.-x {
+  transform: rotateX(-24deg);
+}
+
+.trigger:nth-child(169):hover ~ .monitor .camera.-y {
+  transform: rotateY(-16deg);
+}
+
+.trigger:nth-child(170):hover ~ .monitor .camera.-x {
+  transform: rotateX(-24deg);
+}
+
+.trigger:nth-child(170):hover ~ .monitor .camera.-y {
+  transform: rotateY(-8deg);
+}
+
+.trigger:nth-child(171):hover ~ .monitor .camera.-x {
+  transform: rotateX(-24deg);
+}
+
+.trigger:nth-child(171):hover ~ .monitor .camera.-y {
+  transform: rotateY(0deg);
+}
+
+.trigger:nth-child(172):hover ~ .monitor .camera.-x {
+  transform: rotateX(-24deg);
+}
+
+.trigger:nth-child(172):hover ~ .monitor .camera.-y {
+  transform: rotateY(8deg);
+}
+
+.trigger:nth-child(173):hover ~ .monitor .camera.-x {
+  transform: rotateX(-24deg);
+}
+
+.trigger:nth-child(173):hover ~ .monitor .camera.-y {
+  transform: rotateY(16deg);
+}
+
+.trigger:nth-child(174):hover ~ .monitor .camera.-x {
+  transform: rotateX(-24deg);
+}
+
+.trigger:nth-child(174):hover ~ .monitor .camera.-y {
+  transform: rotateY(24deg);
+}
+
+.trigger:nth-child(175):hover ~ .monitor .camera.-x {
+  transform: rotateX(-24deg);
+}
+
+.trigger:nth-child(175):hover ~ .monitor .camera.-y {
+  transform: rotateY(32deg);
+}
+
+.trigger:nth-child(176):hover ~ .monitor .camera.-x {
+  transform: rotateX(-24deg);
+}
+
+.trigger:nth-child(176):hover ~ .monitor .camera.-y {
+  transform: rotateY(40deg);
+}
+
+.trigger:nth-child(177):hover ~ .monitor .camera.-x {
+  transform: rotateX(-24deg);
+}
+
+.trigger:nth-child(177):hover ~ .monitor .camera.-y {
+  transform: rotateY(48deg);
+}
+
+.trigger:nth-child(178):hover ~ .monitor .camera.-x {
+  transform: rotateX(-24deg);
+}
+
+.trigger:nth-child(178):hover ~ .monitor .camera.-y {
+  transform: rotateY(56deg);
+}
+
+.trigger:nth-child(179):hover ~ .monitor .camera.-x {
+  transform: rotateX(-24deg);
+}
+
+.trigger:nth-child(179):hover ~ .monitor .camera.-y {
+  transform: rotateY(64deg);
+}
+
+.trigger:nth-child(180):hover ~ .monitor .camera.-x {
+  transform: rotateX(-24deg);
+}
+
+.trigger:nth-child(180):hover ~ .monitor .camera.-y {
+  transform: rotateY(72deg);
+}
+
+.trigger:nth-child(181):hover ~ .monitor .camera.-x {
+  transform: rotateX(-16deg);
+}
+
+.trigger:nth-child(181):hover ~ .monitor .camera.-y {
+  transform: rotateY(-80deg);
+}
+
+.trigger:nth-child(182):hover ~ .monitor .camera.-x {
+  transform: rotateX(-16deg);
+}
+
+.trigger:nth-child(182):hover ~ .monitor .camera.-y {
+  transform: rotateY(-72deg);
+}
+
+.trigger:nth-child(183):hover ~ .monitor .camera.-x {
+  transform: rotateX(-16deg);
+}
+
+.trigger:nth-child(183):hover ~ .monitor .camera.-y {
+  transform: rotateY(-64deg);
+}
+
+.trigger:nth-child(184):hover ~ .monitor .camera.-x {
+  transform: rotateX(-16deg);
+}
+
+.trigger:nth-child(184):hover ~ .monitor .camera.-y {
+  transform: rotateY(-56deg);
+}
+
+.trigger:nth-child(185):hover ~ .monitor .camera.-x {
+  transform: rotateX(-16deg);
+}
+
+.trigger:nth-child(185):hover ~ .monitor .camera.-y {
+  transform: rotateY(-48deg);
+}
+
+.trigger:nth-child(186):hover ~ .monitor .camera.-x {
+  transform: rotateX(-16deg);
+}
+
+.trigger:nth-child(186):hover ~ .monitor .camera.-y {
+  transform: rotateY(-40deg);
+}
+
+.trigger:nth-child(187):hover ~ .monitor .camera.-x {
+  transform: rotateX(-16deg);
+}
+
+.trigger:nth-child(187):hover ~ .monitor .camera.-y {
+  transform: rotateY(-32deg);
+}
+
+.trigger:nth-child(188):hover ~ .monitor .camera.-x {
+  transform: rotateX(-16deg);
+}
+
+.trigger:nth-child(188):hover ~ .monitor .camera.-y {
+  transform: rotateY(-24deg);
+}
+
+.trigger:nth-child(189):hover ~ .monitor .camera.-x {
+  transform: rotateX(-16deg);
+}
+
+.trigger:nth-child(189):hover ~ .monitor .camera.-y {
+  transform: rotateY(-16deg);
+}
+
+.trigger:nth-child(190):hover ~ .monitor .camera.-x {
+  transform: rotateX(-16deg);
+}
+
+.trigger:nth-child(190):hover ~ .monitor .camera.-y {
+  transform: rotateY(-8deg);
+}
+
+.trigger:nth-child(191):hover ~ .monitor .camera.-x {
+  transform: rotateX(-16deg);
+}
+
+.trigger:nth-child(191):hover ~ .monitor .camera.-y {
+  transform: rotateY(0deg);
+}
+
+.trigger:nth-child(192):hover ~ .monitor .camera.-x {
+  transform: rotateX(-16deg);
+}
+
+.trigger:nth-child(192):hover ~ .monitor .camera.-y {
+  transform: rotateY(8deg);
+}
+
+.trigger:nth-child(193):hover ~ .monitor .camera.-x {
+  transform: rotateX(-16deg);
+}
+
+.trigger:nth-child(193):hover ~ .monitor .camera.-y {
+  transform: rotateY(16deg);
+}
+
+.trigger:nth-child(194):hover ~ .monitor .camera.-x {
+  transform: rotateX(-16deg);
+}
+
+.trigger:nth-child(194):hover ~ .monitor .camera.-y {
+  transform: rotateY(24deg);
+}
+
+.trigger:nth-child(195):hover ~ .monitor .camera.-x {
+  transform: rotateX(-16deg);
+}
+
+.trigger:nth-child(195):hover ~ .monitor .camera.-y {
+  transform: rotateY(32deg);
+}
+
+.trigger:nth-child(196):hover ~ .monitor .camera.-x {
+  transform: rotateX(-16deg);
+}
+
+.trigger:nth-child(196):hover ~ .monitor .camera.-y {
+  transform: rotateY(40deg);
+}
+
+.trigger:nth-child(197):hover ~ .monitor .camera.-x {
+  transform: rotateX(-16deg);
+}
+
+.trigger:nth-child(197):hover ~ .monitor .camera.-y {
+  transform: rotateY(48deg);
+}
+
+.trigger:nth-child(198):hover ~ .monitor .camera.-x {
+  transform: rotateX(-16deg);
+}
+
+.trigger:nth-child(198):hover ~ .monitor .camera.-y {
+  transform: rotateY(56deg);
+}
+
+.trigger:nth-child(199):hover ~ .monitor .camera.-x {
+  transform: rotateX(-16deg);
+}
+
+.trigger:nth-child(199):hover ~ .monitor .camera.-y {
+  transform: rotateY(64deg);
+}
+
+.trigger:nth-child(200):hover ~ .monitor .camera.-x {
+  transform: rotateX(-16deg);
+}
+
+.trigger:nth-child(200):hover ~ .monitor .camera.-y {
+  transform: rotateY(72deg);
+}
+
+.trigger:nth-child(201):hover ~ .monitor .camera.-x {
+  transform: rotateX(-8deg);
+}
+
+.trigger:nth-child(201):hover ~ .monitor .camera.-y {
+  transform: rotateY(-80deg);
+}
+
+.trigger:nth-child(202):hover ~ .monitor .camera.-x {
+  transform: rotateX(-8deg);
+}
+
+.trigger:nth-child(202):hover ~ .monitor .camera.-y {
+  transform: rotateY(-72deg);
+}
+
+.trigger:nth-child(203):hover ~ .monitor .camera.-x {
+  transform: rotateX(-8deg);
+}
+
+.trigger:nth-child(203):hover ~ .monitor .camera.-y {
+  transform: rotateY(-64deg);
+}
+
+.trigger:nth-child(204):hover ~ .monitor .camera.-x {
+  transform: rotateX(-8deg);
+}
+
+.trigger:nth-child(204):hover ~ .monitor .camera.-y {
+  transform: rotateY(-56deg);
+}
+
+.trigger:nth-child(205):hover ~ .monitor .camera.-x {
+  transform: rotateX(-8deg);
+}
+
+.trigger:nth-child(205):hover ~ .monitor .camera.-y {
+  transform: rotateY(-48deg);
+}
+
+.trigger:nth-child(206):hover ~ .monitor .camera.-x {
+  transform: rotateX(-8deg);
+}
+
+.trigger:nth-child(206):hover ~ .monitor .camera.-y {
+  transform: rotateY(-40deg);
+}
+
+.trigger:nth-child(207):hover ~ .monitor .camera.-x {
+  transform: rotateX(-8deg);
+}
+
+.trigger:nth-child(207):hover ~ .monitor .camera.-y {
+  transform: rotateY(-32deg);
+}
+
+.trigger:nth-child(208):hover ~ .monitor .camera.-x {
+  transform: rotateX(-8deg);
+}
+
+.trigger:nth-child(208):hover ~ .monitor .camera.-y {
+  transform: rotateY(-24deg);
+}
+
+.trigger:nth-child(209):hover ~ .monitor .camera.-x {
+  transform: rotateX(-8deg);
+}
+
+.trigger:nth-child(209):hover ~ .monitor .camera.-y {
+  transform: rotateY(-16deg);
+}
+
+.trigger:nth-child(210):hover ~ .monitor .camera.-x {
+  transform: rotateX(-8deg);
+}
+
+.trigger:nth-child(210):hover ~ .monitor .camera.-y {
+  transform: rotateY(-8deg);
+}
+
+.trigger:nth-child(211):hover ~ .monitor .camera.-x {
+  transform: rotateX(-8deg);
+}
+
+.trigger:nth-child(211):hover ~ .monitor .camera.-y {
+  transform: rotateY(0deg);
+}
+
+.trigger:nth-child(212):hover ~ .monitor .camera.-x {
+  transform: rotateX(-8deg);
+}
+
+.trigger:nth-child(212):hover ~ .monitor .camera.-y {
+  transform: rotateY(8deg);
+}
+
+.trigger:nth-child(213):hover ~ .monitor .camera.-x {
+  transform: rotateX(-8deg);
+}
+
+.trigger:nth-child(213):hover ~ .monitor .camera.-y {
+  transform: rotateY(16deg);
+}
+
+.trigger:nth-child(214):hover ~ .monitor .camera.-x {
+  transform: rotateX(-8deg);
+}
+
+.trigger:nth-child(214):hover ~ .monitor .camera.-y {
+  transform: rotateY(24deg);
+}
+
+.trigger:nth-child(215):hover ~ .monitor .camera.-x {
+  transform: rotateX(-8deg);
+}
+
+.trigger:nth-child(215):hover ~ .monitor .camera.-y {
+  transform: rotateY(32deg);
+}
+
+.trigger:nth-child(216):hover ~ .monitor .camera.-x {
+  transform: rotateX(-8deg);
+}
+
+.trigger:nth-child(216):hover ~ .monitor .camera.-y {
+  transform: rotateY(40deg);
+}
+
+.trigger:nth-child(217):hover ~ .monitor .camera.-x {
+  transform: rotateX(-8deg);
+}
+
+.trigger:nth-child(217):hover ~ .monitor .camera.-y {
+  transform: rotateY(48deg);
+}
+
+.trigger:nth-child(218):hover ~ .monitor .camera.-x {
+  transform: rotateX(-8deg);
+}
+
+.trigger:nth-child(218):hover ~ .monitor .camera.-y {
+  transform: rotateY(56deg);
+}
+
+.trigger:nth-child(219):hover ~ .monitor .camera.-x {
+  transform: rotateX(-8deg);
+}
+
+.trigger:nth-child(219):hover ~ .monitor .camera.-y {
+  transform: rotateY(64deg);
+}
+
+.trigger:nth-child(220):hover ~ .monitor .camera.-x {
+  transform: rotateX(-8deg);
+}
+
+.trigger:nth-child(220):hover ~ .monitor .camera.-y {
+  transform: rotateY(72deg);
+}
+
+.trigger:nth-child(221):hover ~ .monitor .camera.-x {
+  transform: rotateX(0deg);
+}
+
+.trigger:nth-child(221):hover ~ .monitor .camera.-y {
+  transform: rotateY(-80deg);
+}
+
+.trigger:nth-child(222):hover ~ .monitor .camera.-x {
+  transform: rotateX(0deg);
+}
+
+.trigger:nth-child(222):hover ~ .monitor .camera.-y {
+  transform: rotateY(-72deg);
+}
+
+.trigger:nth-child(223):hover ~ .monitor .camera.-x {
+  transform: rotateX(0deg);
+}
+
+.trigger:nth-child(223):hover ~ .monitor .camera.-y {
+  transform: rotateY(-64deg);
+}
+
+.trigger:nth-child(224):hover ~ .monitor .camera.-x {
+  transform: rotateX(0deg);
+}
+
+.trigger:nth-child(224):hover ~ .monitor .camera.-y {
+  transform: rotateY(-56deg);
+}
+
+.trigger:nth-child(225):hover ~ .monitor .camera.-x {
+  transform: rotateX(0deg);
+}
+
+.trigger:nth-child(225):hover ~ .monitor .camera.-y {
+  transform: rotateY(-48deg);
+}
+
+.trigger:nth-child(226):hover ~ .monitor .camera.-x {
+  transform: rotateX(0deg);
+}
+
+.trigger:nth-child(226):hover ~ .monitor .camera.-y {
+  transform: rotateY(-40deg);
+}
+
+.trigger:nth-child(227):hover ~ .monitor .camera.-x {
+  transform: rotateX(0deg);
+}
+
+.trigger:nth-child(227):hover ~ .monitor .camera.-y {
+  transform: rotateY(-32deg);
+}
+
+.trigger:nth-child(228):hover ~ .monitor .camera.-x {
+  transform: rotateX(0deg);
+}
+
+.trigger:nth-child(228):hover ~ .monitor .camera.-y {
+  transform: rotateY(-24deg);
+}
+
+.trigger:nth-child(229):hover ~ .monitor .camera.-x {
+  transform: rotateX(0deg);
+}
+
+.trigger:nth-child(229):hover ~ .monitor .camera.-y {
+  transform: rotateY(-16deg);
+}
+
+.trigger:nth-child(230):hover ~ .monitor .camera.-x {
+  transform: rotateX(0deg);
+}
+
+.trigger:nth-child(230):hover ~ .monitor .camera.-y {
+  transform: rotateY(-8deg);
+}
+
+.trigger:nth-child(231):hover ~ .monitor .camera.-x {
+  transform: rotateX(0deg);
+}
+
+.trigger:nth-child(231):hover ~ .monitor .camera.-y {
+  transform: rotateY(0deg);
+}
+
+.trigger:nth-child(232):hover ~ .monitor .camera.-x {
+  transform: rotateX(0deg);
+}
+
+.trigger:nth-child(232):hover ~ .monitor .camera.-y {
+  transform: rotateY(8deg);
+}
+
+.trigger:nth-child(233):hover ~ .monitor .camera.-x {
+  transform: rotateX(0deg);
+}
+
+.trigger:nth-child(233):hover ~ .monitor .camera.-y {
+  transform: rotateY(16deg);
+}
+
+.trigger:nth-child(234):hover ~ .monitor .camera.-x {
+  transform: rotateX(0deg);
+}
+
+.trigger:nth-child(234):hover ~ .monitor .camera.-y {
+  transform: rotateY(24deg);
+}
+
+.trigger:nth-child(235):hover ~ .monitor .camera.-x {
+  transform: rotateX(0deg);
+}
+
+.trigger:nth-child(235):hover ~ .monitor .camera.-y {
+  transform: rotateY(32deg);
+}
+
+.trigger:nth-child(236):hover ~ .monitor .camera.-x {
+  transform: rotateX(0deg);
+}
+
+.trigger:nth-child(236):hover ~ .monitor .camera.-y {
+  transform: rotateY(40deg);
+}
+
+.trigger:nth-child(237):hover ~ .monitor .camera.-x {
+  transform: rotateX(0deg);
+}
+
+.trigger:nth-child(237):hover ~ .monitor .camera.-y {
+  transform: rotateY(48deg);
+}
+
+.trigger:nth-child(238):hover ~ .monitor .camera.-x {
+  transform: rotateX(0deg);
+}
+
+.trigger:nth-child(238):hover ~ .monitor .camera.-y {
+  transform: rotateY(56deg);
+}
+
+.trigger:nth-child(239):hover ~ .monitor .camera.-x {
+  transform: rotateX(0deg);
+}
+
+.trigger:nth-child(239):hover ~ .monitor .camera.-y {
+  transform: rotateY(64deg);
+}
+
+.trigger:nth-child(240):hover ~ .monitor .camera.-x {
+  transform: rotateX(0deg);
+}
+
+.trigger:nth-child(240):hover ~ .monitor .camera.-y {
+  transform: rotateY(72deg);
+}
+
+.trigger:nth-child(241):hover ~ .monitor .camera.-x {
+  transform: rotateX(8deg);
+}
+
+.trigger:nth-child(241):hover ~ .monitor .camera.-y {
+  transform: rotateY(-80deg);
+}
+
+.trigger:nth-child(242):hover ~ .monitor .camera.-x {
+  transform: rotateX(8deg);
+}
+
+.trigger:nth-child(242):hover ~ .monitor .camera.-y {
+  transform: rotateY(-72deg);
+}
+
+.trigger:nth-child(243):hover ~ .monitor .camera.-x {
+  transform: rotateX(8deg);
+}
+
+.trigger:nth-child(243):hover ~ .monitor .camera.-y {
+  transform: rotateY(-64deg);
+}
+
+.trigger:nth-child(244):hover ~ .monitor .camera.-x {
+  transform: rotateX(8deg);
+}
+
+.trigger:nth-child(244):hover ~ .monitor .camera.-y {
+  transform: rotateY(-56deg);
+}
+
+.trigger:nth-child(245):hover ~ .monitor .camera.-x {
+  transform: rotateX(8deg);
+}
+
+.trigger:nth-child(245):hover ~ .monitor .camera.-y {
+  transform: rotateY(-48deg);
+}
+
+.trigger:nth-child(246):hover ~ .monitor .camera.-x {
+  transform: rotateX(8deg);
+}
+
+.trigger:nth-child(246):hover ~ .monitor .camera.-y {
+  transform: rotateY(-40deg);
+}
+
+.trigger:nth-child(247):hover ~ .monitor .camera.-x {
+  transform: rotateX(8deg);
+}
+
+.trigger:nth-child(247):hover ~ .monitor .camera.-y {
+  transform: rotateY(-32deg);
+}
+
+.trigger:nth-child(248):hover ~ .monitor .camera.-x {
+  transform: rotateX(8deg);
+}
+
+.trigger:nth-child(248):hover ~ .monitor .camera.-y {
+  transform: rotateY(-24deg);
+}
+
+.trigger:nth-child(249):hover ~ .monitor .camera.-x {
+  transform: rotateX(8deg);
+}
+
+.trigger:nth-child(249):hover ~ .monitor .camera.-y {
+  transform: rotateY(-16deg);
+}
+
+.trigger:nth-child(250):hover ~ .monitor .camera.-x {
+  transform: rotateX(8deg);
+}
+
+.trigger:nth-child(250):hover ~ .monitor .camera.-y {
+  transform: rotateY(-8deg);
+}
+
+.trigger:nth-child(251):hover ~ .monitor .camera.-x {
+  transform: rotateX(8deg);
+}
+
+.trigger:nth-child(251):hover ~ .monitor .camera.-y {
+  transform: rotateY(0deg);
+}
+
+.trigger:nth-child(252):hover ~ .monitor .camera.-x {
+  transform: rotateX(8deg);
+}
+
+.trigger:nth-child(252):hover ~ .monitor .camera.-y {
+  transform: rotateY(8deg);
+}
+
+.trigger:nth-child(253):hover ~ .monitor .camera.-x {
+  transform: rotateX(8deg);
+}
+
+.trigger:nth-child(253):hover ~ .monitor .camera.-y {
+  transform: rotateY(16deg);
+}
+
+.trigger:nth-child(254):hover ~ .monitor .camera.-x {
+  transform: rotateX(8deg);
+}
+
+.trigger:nth-child(254):hover ~ .monitor .camera.-y {
+  transform: rotateY(24deg);
+}
+
+.trigger:nth-child(255):hover ~ .monitor .camera.-x {
+  transform: rotateX(8deg);
+}
+
+.trigger:nth-child(255):hover ~ .monitor .camera.-y {
+  transform: rotateY(32deg);
+}
+
+.trigger:nth-child(256):hover ~ .monitor .camera.-x {
+  transform: rotateX(8deg);
+}
+
+.trigger:nth-child(256):hover ~ .monitor .camera.-y {
+  transform: rotateY(40deg);
+}
+
+.trigger:nth-child(257):hover ~ .monitor .camera.-x {
+  transform: rotateX(8deg);
+}
+
+.trigger:nth-child(257):hover ~ .monitor .camera.-y {
+  transform: rotateY(48deg);
+}
+
+.trigger:nth-child(258):hover ~ .monitor .camera.-x {
+  transform: rotateX(8deg);
+}
+
+.trigger:nth-child(258):hover ~ .monitor .camera.-y {
+  transform: rotateY(56deg);
+}
+
+.trigger:nth-child(259):hover ~ .monitor .camera.-x {
+  transform: rotateX(8deg);
+}
+
+.trigger:nth-child(259):hover ~ .monitor .camera.-y {
+  transform: rotateY(64deg);
+}
+
+.trigger:nth-child(260):hover ~ .monitor .camera.-x {
+  transform: rotateX(8deg);
+}
+
+.trigger:nth-child(260):hover ~ .monitor .camera.-y {
+  transform: rotateY(72deg);
+}
+
+.trigger:nth-child(261):hover ~ .monitor .camera.-x {
+  transform: rotateX(16deg);
+}
+
+.trigger:nth-child(261):hover ~ .monitor .camera.-y {
+  transform: rotateY(-80deg);
+}
+
+.trigger:nth-child(262):hover ~ .monitor .camera.-x {
+  transform: rotateX(16deg);
+}
+
+.trigger:nth-child(262):hover ~ .monitor .camera.-y {
+  transform: rotateY(-72deg);
+}
+
+.trigger:nth-child(263):hover ~ .monitor .camera.-x {
+  transform: rotateX(16deg);
+}
+
+.trigger:nth-child(263):hover ~ .monitor .camera.-y {
+  transform: rotateY(-64deg);
+}
+
+.trigger:nth-child(264):hover ~ .monitor .camera.-x {
+  transform: rotateX(16deg);
+}
+
+.trigger:nth-child(264):hover ~ .monitor .camera.-y {
+  transform: rotateY(-56deg);
+}
+
+.trigger:nth-child(265):hover ~ .monitor .camera.-x {
+  transform: rotateX(16deg);
+}
+
+.trigger:nth-child(265):hover ~ .monitor .camera.-y {
+  transform: rotateY(-48deg);
+}
+
+.trigger:nth-child(266):hover ~ .monitor .camera.-x {
+  transform: rotateX(16deg);
+}
+
+.trigger:nth-child(266):hover ~ .monitor .camera.-y {
+  transform: rotateY(-40deg);
+}
+
+.trigger:nth-child(267):hover ~ .monitor .camera.-x {
+  transform: rotateX(16deg);
+}
+
+.trigger:nth-child(267):hover ~ .monitor .camera.-y {
+  transform: rotateY(-32deg);
+}
+
+.trigger:nth-child(268):hover ~ .monitor .camera.-x {
+  transform: rotateX(16deg);
+}
+
+.trigger:nth-child(268):hover ~ .monitor .camera.-y {
+  transform: rotateY(-24deg);
+}
+
+.trigger:nth-child(269):hover ~ .monitor .camera.-x {
+  transform: rotateX(16deg);
+}
+
+.trigger:nth-child(269):hover ~ .monitor .camera.-y {
+  transform: rotateY(-16deg);
+}
+
+.trigger:nth-child(270):hover ~ .monitor .camera.-x {
+  transform: rotateX(16deg);
+}
+
+.trigger:nth-child(270):hover ~ .monitor .camera.-y {
+  transform: rotateY(-8deg);
+}
+
+.trigger:nth-child(271):hover ~ .monitor .camera.-x {
+  transform: rotateX(16deg);
+}
+
+.trigger:nth-child(271):hover ~ .monitor .camera.-y {
+  transform: rotateY(0deg);
+}
+
+.trigger:nth-child(272):hover ~ .monitor .camera.-x {
+  transform: rotateX(16deg);
+}
+
+.trigger:nth-child(272):hover ~ .monitor .camera.-y {
+  transform: rotateY(8deg);
+}
+
+.trigger:nth-child(273):hover ~ .monitor .camera.-x {
+  transform: rotateX(16deg);
+}
+
+.trigger:nth-child(273):hover ~ .monitor .camera.-y {
+  transform: rotateY(16deg);
+}
+
+.trigger:nth-child(274):hover ~ .monitor .camera.-x {
+  transform: rotateX(16deg);
+}
+
+.trigger:nth-child(274):hover ~ .monitor .camera.-y {
+  transform: rotateY(24deg);
+}
+
+.trigger:nth-child(275):hover ~ .monitor .camera.-x {
+  transform: rotateX(16deg);
+}
+
+.trigger:nth-child(275):hover ~ .monitor .camera.-y {
+  transform: rotateY(32deg);
+}
+
+.trigger:nth-child(276):hover ~ .monitor .camera.-x {
+  transform: rotateX(16deg);
+}
+
+.trigger:nth-child(276):hover ~ .monitor .camera.-y {
+  transform: rotateY(40deg);
+}
+
+.trigger:nth-child(277):hover ~ .monitor .camera.-x {
+  transform: rotateX(16deg);
+}
+
+.trigger:nth-child(277):hover ~ .monitor .camera.-y {
+  transform: rotateY(48deg);
+}
+
+.trigger:nth-child(278):hover ~ .monitor .camera.-x {
+  transform: rotateX(16deg);
+}
+
+.trigger:nth-child(278):hover ~ .monitor .camera.-y {
+  transform: rotateY(56deg);
+}
+
+.trigger:nth-child(279):hover ~ .monitor .camera.-x {
+  transform: rotateX(16deg);
+}
+
+.trigger:nth-child(279):hover ~ .monitor .camera.-y {
+  transform: rotateY(64deg);
+}
+
+.trigger:nth-child(280):hover ~ .monitor .camera.-x {
+  transform: rotateX(16deg);
+}
+
+.trigger:nth-child(280):hover ~ .monitor .camera.-y {
+  transform: rotateY(72deg);
+}
+
+.trigger:nth-child(281):hover ~ .monitor .camera.-x {
+  transform: rotateX(24deg);
+}
+
+.trigger:nth-child(281):hover ~ .monitor .camera.-y {
+  transform: rotateY(-80deg);
+}
+
+.trigger:nth-child(282):hover ~ .monitor .camera.-x {
+  transform: rotateX(24deg);
+}
+
+.trigger:nth-child(282):hover ~ .monitor .camera.-y {
+  transform: rotateY(-72deg);
+}
+
+.trigger:nth-child(283):hover ~ .monitor .camera.-x {
+  transform: rotateX(24deg);
+}
+
+.trigger:nth-child(283):hover ~ .monitor .camera.-y {
+  transform: rotateY(-64deg);
+}
+
+.trigger:nth-child(284):hover ~ .monitor .camera.-x {
+  transform: rotateX(24deg);
+}
+
+.trigger:nth-child(284):hover ~ .monitor .camera.-y {
+  transform: rotateY(-56deg);
+}
+
+.trigger:nth-child(285):hover ~ .monitor .camera.-x {
+  transform: rotateX(24deg);
+}
+
+.trigger:nth-child(285):hover ~ .monitor .camera.-y {
+  transform: rotateY(-48deg);
+}
+
+.trigger:nth-child(286):hover ~ .monitor .camera.-x {
+  transform: rotateX(24deg);
+}
+
+.trigger:nth-child(286):hover ~ .monitor .camera.-y {
+  transform: rotateY(-40deg);
+}
+
+.trigger:nth-child(287):hover ~ .monitor .camera.-x {
+  transform: rotateX(24deg);
+}
+
+.trigger:nth-child(287):hover ~ .monitor .camera.-y {
+  transform: rotateY(-32deg);
+}
+
+.trigger:nth-child(288):hover ~ .monitor .camera.-x {
+  transform: rotateX(24deg);
+}
+
+.trigger:nth-child(288):hover ~ .monitor .camera.-y {
+  transform: rotateY(-24deg);
+}
+
+.trigger:nth-child(289):hover ~ .monitor .camera.-x {
+  transform: rotateX(24deg);
+}
+
+.trigger:nth-child(289):hover ~ .monitor .camera.-y {
+  transform: rotateY(-16deg);
+}
+
+.trigger:nth-child(290):hover ~ .monitor .camera.-x {
+  transform: rotateX(24deg);
+}
+
+.trigger:nth-child(290):hover ~ .monitor .camera.-y {
+  transform: rotateY(-8deg);
+}
+
+.trigger:nth-child(291):hover ~ .monitor .camera.-x {
+  transform: rotateX(24deg);
+}
+
+.trigger:nth-child(291):hover ~ .monitor .camera.-y {
+  transform: rotateY(0deg);
+}
+
+.trigger:nth-child(292):hover ~ .monitor .camera.-x {
+  transform: rotateX(24deg);
+}
+
+.trigger:nth-child(292):hover ~ .monitor .camera.-y {
+  transform: rotateY(8deg);
+}
+
+.trigger:nth-child(293):hover ~ .monitor .camera.-x {
+  transform: rotateX(24deg);
+}
+
+.trigger:nth-child(293):hover ~ .monitor .camera.-y {
+  transform: rotateY(16deg);
+}
+
+.trigger:nth-child(294):hover ~ .monitor .camera.-x {
+  transform: rotateX(24deg);
+}
+
+.trigger:nth-child(294):hover ~ .monitor .camera.-y {
+  transform: rotateY(24deg);
+}
+
+.trigger:nth-child(295):hover ~ .monitor .camera.-x {
+  transform: rotateX(24deg);
+}
+
+.trigger:nth-child(295):hover ~ .monitor .camera.-y {
+  transform: rotateY(32deg);
+}
+
+.trigger:nth-child(296):hover ~ .monitor .camera.-x {
+  transform: rotateX(24deg);
+}
+
+.trigger:nth-child(296):hover ~ .monitor .camera.-y {
+  transform: rotateY(40deg);
+}
+
+.trigger:nth-child(297):hover ~ .monitor .camera.-x {
+  transform: rotateX(24deg);
+}
+
+.trigger:nth-child(297):hover ~ .monitor .camera.-y {
+  transform: rotateY(48deg);
+}
+
+.trigger:nth-child(298):hover ~ .monitor .camera.-x {
+  transform: rotateX(24deg);
+}
+
+.trigger:nth-child(298):hover ~ .monitor .camera.-y {
+  transform: rotateY(56deg);
+}
+
+.trigger:nth-child(299):hover ~ .monitor .camera.-x {
+  transform: rotateX(24deg);
+}
+
+.trigger:nth-child(299):hover ~ .monitor .camera.-y {
+  transform: rotateY(64deg);
+}
+
+.trigger:nth-child(300):hover ~ .monitor .camera.-x {
+  transform: rotateX(24deg);
+}
+
+.trigger:nth-child(300):hover ~ .monitor .camera.-y {
+  transform: rotateY(72deg);
+}
+
+.trigger:nth-child(301):hover ~ .monitor .camera.-x {
+  transform: rotateX(32deg);
+}
+
+.trigger:nth-child(301):hover ~ .monitor .camera.-y {
+  transform: rotateY(-80deg);
+}
+
+.trigger:nth-child(302):hover ~ .monitor .camera.-x {
+  transform: rotateX(32deg);
+}
+
+.trigger:nth-child(302):hover ~ .monitor .camera.-y {
+  transform: rotateY(-72deg);
+}
+
+.trigger:nth-child(303):hover ~ .monitor .camera.-x {
+  transform: rotateX(32deg);
+}
+
+.trigger:nth-child(303):hover ~ .monitor .camera.-y {
+  transform: rotateY(-64deg);
+}
+
+.trigger:nth-child(304):hover ~ .monitor .camera.-x {
+  transform: rotateX(32deg);
+}
+
+.trigger:nth-child(304):hover ~ .monitor .camera.-y {
+  transform: rotateY(-56deg);
+}
+
+.trigger:nth-child(305):hover ~ .monitor .camera.-x {
+  transform: rotateX(32deg);
+}
+
+.trigger:nth-child(305):hover ~ .monitor .camera.-y {
+  transform: rotateY(-48deg);
+}
+
+.trigger:nth-child(306):hover ~ .monitor .camera.-x {
+  transform: rotateX(32deg);
+}
+
+.trigger:nth-child(306):hover ~ .monitor .camera.-y {
+  transform: rotateY(-40deg);
+}
+
+.trigger:nth-child(307):hover ~ .monitor .camera.-x {
+  transform: rotateX(32deg);
+}
+
+.trigger:nth-child(307):hover ~ .monitor .camera.-y {
+  transform: rotateY(-32deg);
+}
+
+.trigger:nth-child(308):hover ~ .monitor .camera.-x {
+  transform: rotateX(32deg);
+}
+
+.trigger:nth-child(308):hover ~ .monitor .camera.-y {
+  transform: rotateY(-24deg);
+}
+
+.trigger:nth-child(309):hover ~ .monitor .camera.-x {
+  transform: rotateX(32deg);
+}
+
+.trigger:nth-child(309):hover ~ .monitor .camera.-y {
+  transform: rotateY(-16deg);
+}
+
+.trigger:nth-child(310):hover ~ .monitor .camera.-x {
+  transform: rotateX(32deg);
+}
+
+.trigger:nth-child(310):hover ~ .monitor .camera.-y {
+  transform: rotateY(-8deg);
+}
+
+.trigger:nth-child(311):hover ~ .monitor .camera.-x {
+  transform: rotateX(32deg);
+}
+
+.trigger:nth-child(311):hover ~ .monitor .camera.-y {
+  transform: rotateY(0deg);
+}
+
+.trigger:nth-child(312):hover ~ .monitor .camera.-x {
+  transform: rotateX(32deg);
+}
+
+.trigger:nth-child(312):hover ~ .monitor .camera.-y {
+  transform: rotateY(8deg);
+}
+
+.trigger:nth-child(313):hover ~ .monitor .camera.-x {
+  transform: rotateX(32deg);
+}
+
+.trigger:nth-child(313):hover ~ .monitor .camera.-y {
+  transform: rotateY(16deg);
+}
+
+.trigger:nth-child(314):hover ~ .monitor .camera.-x {
+  transform: rotateX(32deg);
+}
+
+.trigger:nth-child(314):hover ~ .monitor .camera.-y {
+  transform: rotateY(24deg);
+}
+
+.trigger:nth-child(315):hover ~ .monitor .camera.-x {
+  transform: rotateX(32deg);
+}
+
+.trigger:nth-child(315):hover ~ .monitor .camera.-y {
+  transform: rotateY(32deg);
+}
+
+.trigger:nth-child(316):hover ~ .monitor .camera.-x {
+  transform: rotateX(32deg);
+}
+
+.trigger:nth-child(316):hover ~ .monitor .camera.-y {
+  transform: rotateY(40deg);
+}
+
+.trigger:nth-child(317):hover ~ .monitor .camera.-x {
+  transform: rotateX(32deg);
+}
+
+.trigger:nth-child(317):hover ~ .monitor .camera.-y {
+  transform: rotateY(48deg);
+}
+
+.trigger:nth-child(318):hover ~ .monitor .camera.-x {
+  transform: rotateX(32deg);
+}
+
+.trigger:nth-child(318):hover ~ .monitor .camera.-y {
+  transform: rotateY(56deg);
+}
+
+.trigger:nth-child(319):hover ~ .monitor .camera.-x {
+  transform: rotateX(32deg);
+}
+
+.trigger:nth-child(319):hover ~ .monitor .camera.-y {
+  transform: rotateY(64deg);
+}
+
+.trigger:nth-child(320):hover ~ .monitor .camera.-x {
+  transform: rotateX(32deg);
+}
+
+.trigger:nth-child(320):hover ~ .monitor .camera.-y {
+  transform: rotateY(72deg);
+}
+
+.trigger:nth-child(321):hover ~ .monitor .camera.-x {
+  transform: rotateX(40deg);
+}
+
+.trigger:nth-child(321):hover ~ .monitor .camera.-y {
+  transform: rotateY(-80deg);
+}
+
+.trigger:nth-child(322):hover ~ .monitor .camera.-x {
+  transform: rotateX(40deg);
+}
+
+.trigger:nth-child(322):hover ~ .monitor .camera.-y {
+  transform: rotateY(-72deg);
+}
+
+.trigger:nth-child(323):hover ~ .monitor .camera.-x {
+  transform: rotateX(40deg);
+}
+
+.trigger:nth-child(323):hover ~ .monitor .camera.-y {
+  transform: rotateY(-64deg);
+}
+
+.trigger:nth-child(324):hover ~ .monitor .camera.-x {
+  transform: rotateX(40deg);
+}
+
+.trigger:nth-child(324):hover ~ .monitor .camera.-y {
+  transform: rotateY(-56deg);
+}
+
+.trigger:nth-child(325):hover ~ .monitor .camera.-x {
+  transform: rotateX(40deg);
+}
+
+.trigger:nth-child(325):hover ~ .monitor .camera.-y {
+  transform: rotateY(-48deg);
+}
+
+.trigger:nth-child(326):hover ~ .monitor .camera.-x {
+  transform: rotateX(40deg);
+}
+
+.trigger:nth-child(326):hover ~ .monitor .camera.-y {
+  transform: rotateY(-40deg);
+}
+
+.trigger:nth-child(327):hover ~ .monitor .camera.-x {
+  transform: rotateX(40deg);
+}
+
+.trigger:nth-child(327):hover ~ .monitor .camera.-y {
+  transform: rotateY(-32deg);
+}
+
+.trigger:nth-child(328):hover ~ .monitor .camera.-x {
+  transform: rotateX(40deg);
+}
+
+.trigger:nth-child(328):hover ~ .monitor .camera.-y {
+  transform: rotateY(-24deg);
+}
+
+.trigger:nth-child(329):hover ~ .monitor .camera.-x {
+  transform: rotateX(40deg);
+}
+
+.trigger:nth-child(329):hover ~ .monitor .camera.-y {
+  transform: rotateY(-16deg);
+}
+
+.trigger:nth-child(330):hover ~ .monitor .camera.-x {
+  transform: rotateX(40deg);
+}
+
+.trigger:nth-child(330):hover ~ .monitor .camera.-y {
+  transform: rotateY(-8deg);
+}
+
+.trigger:nth-child(331):hover ~ .monitor .camera.-x {
+  transform: rotateX(40deg);
+}
+
+.trigger:nth-child(331):hover ~ .monitor .camera.-y {
+  transform: rotateY(0deg);
+}
+
+.trigger:nth-child(332):hover ~ .monitor .camera.-x {
+  transform: rotateX(40deg);
+}
+
+.trigger:nth-child(332):hover ~ .monitor .camera.-y {
+  transform: rotateY(8deg);
+}
+
+.trigger:nth-child(333):hover ~ .monitor .camera.-x {
+  transform: rotateX(40deg);
+}
+
+.trigger:nth-child(333):hover ~ .monitor .camera.-y {
+  transform: rotateY(16deg);
+}
+
+.trigger:nth-child(334):hover ~ .monitor .camera.-x {
+  transform: rotateX(40deg);
+}
+
+.trigger:nth-child(334):hover ~ .monitor .camera.-y {
+  transform: rotateY(24deg);
+}
+
+.trigger:nth-child(335):hover ~ .monitor .camera.-x {
+  transform: rotateX(40deg);
+}
+
+.trigger:nth-child(335):hover ~ .monitor .camera.-y {
+  transform: rotateY(32deg);
+}
+
+.trigger:nth-child(336):hover ~ .monitor .camera.-x {
+  transform: rotateX(40deg);
+}
+
+.trigger:nth-child(336):hover ~ .monitor .camera.-y {
+  transform: rotateY(40deg);
+}
+
+.trigger:nth-child(337):hover ~ .monitor .camera.-x {
+  transform: rotateX(40deg);
+}
+
+.trigger:nth-child(337):hover ~ .monitor .camera.-y {
+  transform: rotateY(48deg);
+}
+
+.trigger:nth-child(338):hover ~ .monitor .camera.-x {
+  transform: rotateX(40deg);
+}
+
+.trigger:nth-child(338):hover ~ .monitor .camera.-y {
+  transform: rotateY(56deg);
+}
+
+.trigger:nth-child(339):hover ~ .monitor .camera.-x {
+  transform: rotateX(40deg);
+}
+
+.trigger:nth-child(339):hover ~ .monitor .camera.-y {
+  transform: rotateY(64deg);
+}
+
+.trigger:nth-child(340):hover ~ .monitor .camera.-x {
+  transform: rotateX(40deg);
+}
+
+.trigger:nth-child(340):hover ~ .monitor .camera.-y {
+  transform: rotateY(72deg);
+}
+
+.trigger:nth-child(341):hover ~ .monitor .camera.-x {
+  transform: rotateX(48deg);
+}
+
+.trigger:nth-child(341):hover ~ .monitor .camera.-y {
+  transform: rotateY(-80deg);
+}
+
+.trigger:nth-child(342):hover ~ .monitor .camera.-x {
+  transform: rotateX(48deg);
+}
+
+.trigger:nth-child(342):hover ~ .monitor .camera.-y {
+  transform: rotateY(-72deg);
+}
+
+.trigger:nth-child(343):hover ~ .monitor .camera.-x {
+  transform: rotateX(48deg);
+}
+
+.trigger:nth-child(343):hover ~ .monitor .camera.-y {
+  transform: rotateY(-64deg);
+}
+
+.trigger:nth-child(344):hover ~ .monitor .camera.-x {
+  transform: rotateX(48deg);
+}
+
+.trigger:nth-child(344):hover ~ .monitor .camera.-y {
+  transform: rotateY(-56deg);
+}
+
+.trigger:nth-child(345):hover ~ .monitor .camera.-x {
+  transform: rotateX(48deg);
+}
+
+.trigger:nth-child(345):hover ~ .monitor .camera.-y {
+  transform: rotateY(-48deg);
+}
+
+.trigger:nth-child(346):hover ~ .monitor .camera.-x {
+  transform: rotateX(48deg);
+}
+
+.trigger:nth-child(346):hover ~ .monitor .camera.-y {
+  transform: rotateY(-40deg);
+}
+
+.trigger:nth-child(347):hover ~ .monitor .camera.-x {
+  transform: rotateX(48deg);
+}
+
+.trigger:nth-child(347):hover ~ .monitor .camera.-y {
+  transform: rotateY(-32deg);
+}
+
+.trigger:nth-child(348):hover ~ .monitor .camera.-x {
+  transform: rotateX(48deg);
+}
+
+.trigger:nth-child(348):hover ~ .monitor .camera.-y {
+  transform: rotateY(-24deg);
+}
+
+.trigger:nth-child(349):hover ~ .monitor .camera.-x {
+  transform: rotateX(48deg);
+}
+
+.trigger:nth-child(349):hover ~ .monitor .camera.-y {
+  transform: rotateY(-16deg);
+}
+
+.trigger:nth-child(350):hover ~ .monitor .camera.-x {
+  transform: rotateX(48deg);
+}
+
+.trigger:nth-child(350):hover ~ .monitor .camera.-y {
+  transform: rotateY(-8deg);
+}
+
+.trigger:nth-child(351):hover ~ .monitor .camera.-x {
+  transform: rotateX(48deg);
+}
+
+.trigger:nth-child(351):hover ~ .monitor .camera.-y {
+  transform: rotateY(0deg);
+}
+
+.trigger:nth-child(352):hover ~ .monitor .camera.-x {
+  transform: rotateX(48deg);
+}
+
+.trigger:nth-child(352):hover ~ .monitor .camera.-y {
+  transform: rotateY(8deg);
+}
+
+.trigger:nth-child(353):hover ~ .monitor .camera.-x {
+  transform: rotateX(48deg);
+}
+
+.trigger:nth-child(353):hover ~ .monitor .camera.-y {
+  transform: rotateY(16deg);
+}
+
+.trigger:nth-child(354):hover ~ .monitor .camera.-x {
+  transform: rotateX(48deg);
+}
+
+.trigger:nth-child(354):hover ~ .monitor .camera.-y {
+  transform: rotateY(24deg);
+}
+
+.trigger:nth-child(355):hover ~ .monitor .camera.-x {
+  transform: rotateX(48deg);
+}
+
+.trigger:nth-child(355):hover ~ .monitor .camera.-y {
+  transform: rotateY(32deg);
+}
+
+.trigger:nth-child(356):hover ~ .monitor .camera.-x {
+  transform: rotateX(48deg);
+}
+
+.trigger:nth-child(356):hover ~ .monitor .camera.-y {
+  transform: rotateY(40deg);
+}
+
+.trigger:nth-child(357):hover ~ .monitor .camera.-x {
+  transform: rotateX(48deg);
+}
+
+.trigger:nth-child(357):hover ~ .monitor .camera.-y {
+  transform: rotateY(48deg);
+}
+
+.trigger:nth-child(358):hover ~ .monitor .camera.-x {
+  transform: rotateX(48deg);
+}
+
+.trigger:nth-child(358):hover ~ .monitor .camera.-y {
+  transform: rotateY(56deg);
+}
+
+.trigger:nth-child(359):hover ~ .monitor .camera.-x {
+  transform: rotateX(48deg);
+}
+
+.trigger:nth-child(359):hover ~ .monitor .camera.-y {
+  transform: rotateY(64deg);
+}
+
+.trigger:nth-child(360):hover ~ .monitor .camera.-x {
+  transform: rotateX(48deg);
+}
+
+.trigger:nth-child(360):hover ~ .monitor .camera.-y {
+  transform: rotateY(72deg);
+}
+
+.trigger:nth-child(361):hover ~ .monitor .camera.-x {
+  transform: rotateX(56deg);
+}
+
+.trigger:nth-child(361):hover ~ .monitor .camera.-y {
+  transform: rotateY(-80deg);
+}
+
+.trigger:nth-child(362):hover ~ .monitor .camera.-x {
+  transform: rotateX(56deg);
+}
+
+.trigger:nth-child(362):hover ~ .monitor .camera.-y {
+  transform: rotateY(-72deg);
+}
+
+.trigger:nth-child(363):hover ~ .monitor .camera.-x {
+  transform: rotateX(56deg);
+}
+
+.trigger:nth-child(363):hover ~ .monitor .camera.-y {
+  transform: rotateY(-64deg);
+}
+
+.trigger:nth-child(364):hover ~ .monitor .camera.-x {
+  transform: rotateX(56deg);
+}
+
+.trigger:nth-child(364):hover ~ .monitor .camera.-y {
+  transform: rotateY(-56deg);
+}
+
+.trigger:nth-child(365):hover ~ .monitor .camera.-x {
+  transform: rotateX(56deg);
+}
+
+.trigger:nth-child(365):hover ~ .monitor .camera.-y {
+  transform: rotateY(-48deg);
+}
+
+.trigger:nth-child(366):hover ~ .monitor .camera.-x {
+  transform: rotateX(56deg);
+}
+
+.trigger:nth-child(366):hover ~ .monitor .camera.-y {
+  transform: rotateY(-40deg);
+}
+
+.trigger:nth-child(367):hover ~ .monitor .camera.-x {
+  transform: rotateX(56deg);
+}
+
+.trigger:nth-child(367):hover ~ .monitor .camera.-y {
+  transform: rotateY(-32deg);
+}
+
+.trigger:nth-child(368):hover ~ .monitor .camera.-x {
+  transform: rotateX(56deg);
+}
+
+.trigger:nth-child(368):hover ~ .monitor .camera.-y {
+  transform: rotateY(-24deg);
+}
+
+.trigger:nth-child(369):hover ~ .monitor .camera.-x {
+  transform: rotateX(56deg);
+}
+
+.trigger:nth-child(369):hover ~ .monitor .camera.-y {
+  transform: rotateY(-16deg);
+}
+
+.trigger:nth-child(370):hover ~ .monitor .camera.-x {
+  transform: rotateX(56deg);
+}
+
+.trigger:nth-child(370):hover ~ .monitor .camera.-y {
+  transform: rotateY(-8deg);
+}
+
+.trigger:nth-child(371):hover ~ .monitor .camera.-x {
+  transform: rotateX(56deg);
+}
+
+.trigger:nth-child(371):hover ~ .monitor .camera.-y {
+  transform: rotateY(0deg);
+}
+
+.trigger:nth-child(372):hover ~ .monitor .camera.-x {
+  transform: rotateX(56deg);
+}
+
+.trigger:nth-child(372):hover ~ .monitor .camera.-y {
+  transform: rotateY(8deg);
+}
+
+.trigger:nth-child(373):hover ~ .monitor .camera.-x {
+  transform: rotateX(56deg);
+}
+
+.trigger:nth-child(373):hover ~ .monitor .camera.-y {
+  transform: rotateY(16deg);
+}
+
+.trigger:nth-child(374):hover ~ .monitor .camera.-x {
+  transform: rotateX(56deg);
+}
+
+.trigger:nth-child(374):hover ~ .monitor .camera.-y {
+  transform: rotateY(24deg);
+}
+
+.trigger:nth-child(375):hover ~ .monitor .camera.-x {
+  transform: rotateX(56deg);
+}
+
+.trigger:nth-child(375):hover ~ .monitor .camera.-y {
+  transform: rotateY(32deg);
+}
+
+.trigger:nth-child(376):hover ~ .monitor .camera.-x {
+  transform: rotateX(56deg);
+}
+
+.trigger:nth-child(376):hover ~ .monitor .camera.-y {
+  transform: rotateY(40deg);
+}
+
+.trigger:nth-child(377):hover ~ .monitor .camera.-x {
+  transform: rotateX(56deg);
+}
+
+.trigger:nth-child(377):hover ~ .monitor .camera.-y {
+  transform: rotateY(48deg);
+}
+
+.trigger:nth-child(378):hover ~ .monitor .camera.-x {
+  transform: rotateX(56deg);
+}
+
+.trigger:nth-child(378):hover ~ .monitor .camera.-y {
+  transform: rotateY(56deg);
+}
+
+.trigger:nth-child(379):hover ~ .monitor .camera.-x {
+  transform: rotateX(56deg);
+}
+
+.trigger:nth-child(379):hover ~ .monitor .camera.-y {
+  transform: rotateY(64deg);
+}
+
+.trigger:nth-child(380):hover ~ .monitor .camera.-x {
+  transform: rotateX(56deg);
+}
+
+.trigger:nth-child(380):hover ~ .monitor .camera.-y {
+  transform: rotateY(72deg);
+}
+
+.trigger:nth-child(381):hover ~ .monitor .camera.-x {
+  transform: rotateX(64deg);
+}
+
+.trigger:nth-child(381):hover ~ .monitor .camera.-y {
+  transform: rotateY(-80deg);
+}
+
+.trigger:nth-child(382):hover ~ .monitor .camera.-x {
+  transform: rotateX(64deg);
+}
+
+.trigger:nth-child(382):hover ~ .monitor .camera.-y {
+  transform: rotateY(-72deg);
+}
+
+.trigger:nth-child(383):hover ~ .monitor .camera.-x {
+  transform: rotateX(64deg);
+}
+
+.trigger:nth-child(383):hover ~ .monitor .camera.-y {
+  transform: rotateY(-64deg);
+}
+
+.trigger:nth-child(384):hover ~ .monitor .camera.-x {
+  transform: rotateX(64deg);
+}
+
+.trigger:nth-child(384):hover ~ .monitor .camera.-y {
+  transform: rotateY(-56deg);
+}
+
+.trigger:nth-child(385):hover ~ .monitor .camera.-x {
+  transform: rotateX(64deg);
+}
+
+.trigger:nth-child(385):hover ~ .monitor .camera.-y {
+  transform: rotateY(-48deg);
+}
+
+.trigger:nth-child(386):hover ~ .monitor .camera.-x {
+  transform: rotateX(64deg);
+}
+
+.trigger:nth-child(386):hover ~ .monitor .camera.-y {
+  transform: rotateY(-40deg);
+}
+
+.trigger:nth-child(387):hover ~ .monitor .camera.-x {
+  transform: rotateX(64deg);
+}
+
+.trigger:nth-child(387):hover ~ .monitor .camera.-y {
+  transform: rotateY(-32deg);
+}
+
+.trigger:nth-child(388):hover ~ .monitor .camera.-x {
+  transform: rotateX(64deg);
+}
+
+.trigger:nth-child(388):hover ~ .monitor .camera.-y {
+  transform: rotateY(-24deg);
+}
+
+.trigger:nth-child(389):hover ~ .monitor .camera.-x {
+  transform: rotateX(64deg);
+}
+
+.trigger:nth-child(389):hover ~ .monitor .camera.-y {
+  transform: rotateY(-16deg);
+}
+
+.trigger:nth-child(390):hover ~ .monitor .camera.-x {
+  transform: rotateX(64deg);
+}
+
+.trigger:nth-child(390):hover ~ .monitor .camera.-y {
+  transform: rotateY(-8deg);
+}
+
+.trigger:nth-child(391):hover ~ .monitor .camera.-x {
+  transform: rotateX(64deg);
+}
+
+.trigger:nth-child(391):hover ~ .monitor .camera.-y {
+  transform: rotateY(0deg);
+}
+
+.trigger:nth-child(392):hover ~ .monitor .camera.-x {
+  transform: rotateX(64deg);
+}
+
+.trigger:nth-child(392):hover ~ .monitor .camera.-y {
+  transform: rotateY(8deg);
+}
+
+.trigger:nth-child(393):hover ~ .monitor .camera.-x {
+  transform: rotateX(64deg);
+}
+
+.trigger:nth-child(393):hover ~ .monitor .camera.-y {
+  transform: rotateY(16deg);
+}
+
+.trigger:nth-child(394):hover ~ .monitor .camera.-x {
+  transform: rotateX(64deg);
+}
+
+.trigger:nth-child(394):hover ~ .monitor .camera.-y {
+  transform: rotateY(24deg);
+}
+
+.trigger:nth-child(395):hover ~ .monitor .camera.-x {
+  transform: rotateX(64deg);
+}
+
+.trigger:nth-child(395):hover ~ .monitor .camera.-y {
+  transform: rotateY(32deg);
+}
+
+.trigger:nth-child(396):hover ~ .monitor .camera.-x {
+  transform: rotateX(64deg);
+}
+
+.trigger:nth-child(396):hover ~ .monitor .camera.-y {
+  transform: rotateY(40deg);
+}
+
+.trigger:nth-child(397):hover ~ .monitor .camera.-x {
+  transform: rotateX(64deg);
+}
+
+.trigger:nth-child(397):hover ~ .monitor .camera.-y {
+  transform: rotateY(48deg);
+}
+
+.trigger:nth-child(398):hover ~ .monitor .camera.-x {
+  transform: rotateX(64deg);
+}
+
+.trigger:nth-child(398):hover ~ .monitor .camera.-y {
+  transform: rotateY(56deg);
+}
+
+.trigger:nth-child(399):hover ~ .monitor .camera.-x {
+  transform: rotateX(64deg);
+}
+
+.trigger:nth-child(399):hover ~ .monitor .camera.-y {
+  transform: rotateY(64deg);
+}
+
+.trigger:nth-child(400):hover ~ .monitor .camera.-x {
+  transform: rotateX(64deg);
+}
+
+.trigger:nth-child(400):hover ~ .monitor .camera.-y {
+  transform: rotateY(72deg);
+}
+
+.camera {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transition: 500ms;
+}
+
+.camera.-x {
+  transform: rotateX(0deg);
+}
+
+.camera.-y {
+  transform: rotateY(0deg);
+}
+
+.graphic {
+  top: -5px;
+  left: -15px;
+  width: 30px;
+  height: 10px;
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+  background: #fff;
+}
+
+.panel {
+  transform: translateZ(200px);
+}
+
+.line:nth-child(1) {
+  transform: rotateX(-19deg);
+}
+
+.line:nth-child(1) .rotate {
+  animation-delay: -6757ms;
+  animation-duration: 7088ms;
+}
+
+.line:nth-child(1) .graphic {
+  animation: rotateX 5165ms -5610ms linear infinite;
+}
+
+.line:nth-child(2) {
+  transform: rotateX(-18deg);
+}
+
+.line:nth-child(2) .rotate {
+  animation-delay: -1667ms;
+  animation-duration: 7333ms;
+}
+
+.line:nth-child(2) .graphic {
+  animation: rotateX 4014ms -4261ms linear infinite;
+}
+
+.line:nth-child(3) {
+  transform: rotateX(-17deg);
+}
+
+.line:nth-child(3) .rotate {
+  animation-delay: -9505ms;
+  animation-duration: 5646ms;
+}
+
+.line:nth-child(3) .graphic {
+  animation: rotateX 5296ms -63ms linear infinite;
+}
+
+.line:nth-child(4) {
+  transform: rotateX(-16deg);
+}
+
+.line:nth-child(4) .rotate {
+  animation-delay: -9851ms;
+  animation-duration: 7931ms;
+}
+
+.line:nth-child(4) .graphic {
+  animation: rotateX 3532ms -1563ms linear infinite;
+}
+
+.line:nth-child(5) {
+  transform: rotateX(-15deg);
+}
+
+.line:nth-child(5) .rotate {
+  animation-delay: -4765ms;
+  animation-duration: 5184ms;
+}
+
+.line:nth-child(5) .graphic {
+  animation: rotateX 4846ms -4623ms linear infinite;
+}
+
+.line:nth-child(6) {
+  transform: rotateX(-14deg);
+}
+
+.line:nth-child(6) .rotate {
+  animation-delay: -5589ms;
+  animation-duration: 6329ms;
+}
+
+.line:nth-child(6) .graphic {
+  animation: rotateX 4720ms -194ms linear infinite;
+}
+
+.line:nth-child(7) {
+  transform: rotateX(-13deg);
+}
+
+.line:nth-child(7) .rotate {
+  animation-delay: -7148ms;
+  animation-duration: 6715ms;
+}
+
+.line:nth-child(7) .graphic {
+  animation: rotateX 3175ms -3930ms linear infinite;
+}
+
+.line:nth-child(8) {
+  transform: rotateX(-12deg);
+}
+
+.line:nth-child(8) .rotate {
+  animation-delay: -9870ms;
+  animation-duration: 5097ms;
+}
+
+.line:nth-child(8) .graphic {
+  animation: rotateX 4096ms -4855ms linear infinite;
+}
+
+.line:nth-child(9) {
+  transform: rotateX(-11deg);
+}
+
+.line:nth-child(9) .rotate {
+  animation-delay: -3929ms;
+  animation-duration: 7283ms;
+}
+
+.line:nth-child(9) .graphic {
+  animation: rotateX 4735ms -3290ms linear infinite;
+}
+
+.line:nth-child(10) {
+  transform: rotateX(-10deg);
+}
+
+.line:nth-child(10) .rotate {
+  animation-delay: -8329ms;
+  animation-duration: 5979ms;
+}
+
+.line:nth-child(10) .graphic {
+  animation: rotateX 3853ms -1407ms linear infinite;
+}
+
+.line:nth-child(11) {
+  transform: rotateX(-9deg);
+}
+
+.line:nth-child(11) .rotate {
+  animation-delay: -3199ms;
+  animation-duration: 7812ms;
+}
+
+.line:nth-child(11) .graphic {
+  animation: rotateX 5619ms -1267ms linear infinite;
+}
+
+.line:nth-child(12) {
+  transform: rotateX(-8deg);
+}
+
+.line:nth-child(12) .rotate {
+  animation-delay: -6221ms;
+  animation-duration: 7481ms;
+}
+
+.line:nth-child(12) .graphic {
+  animation: rotateX 5594ms -499ms linear infinite;
+}
+
+.line:nth-child(13) {
+  transform: rotateX(-7deg);
+}
+
+.line:nth-child(13) .rotate {
+  animation-delay: -5037ms;
+  animation-duration: 6818ms;
+}
+
+.line:nth-child(13) .graphic {
+  animation: rotateX 4174ms -1100ms linear infinite;
+}
+
+.line:nth-child(14) {
+  transform: rotateX(-6deg);
+}
+
+.line:nth-child(14) .rotate {
+  animation-delay: -1162ms;
+  animation-duration: 5096ms;
+}
+
+.line:nth-child(14) .graphic {
+  animation: rotateX 3752ms -4797ms linear infinite;
+}
+
+.line:nth-child(15) {
+  transform: rotateX(-5deg);
+}
+
+.line:nth-child(15) .rotate {
+  animation-delay: -425ms;
+  animation-duration: 6873ms;
+}
+
+.line:nth-child(15) .graphic {
+  animation: rotateX 3343ms -867ms linear infinite;
+}
+
+.line:nth-child(16) {
+  transform: rotateX(-4deg);
+}
+
+.line:nth-child(16) .rotate {
+  animation-delay: -5379ms;
+  animation-duration: 5018ms;
+}
+
+.line:nth-child(16) .graphic {
+  animation: rotateX 3975ms -2958ms linear infinite;
+}
+
+.line:nth-child(17) {
+  transform: rotateX(-3deg);
+}
+
+.line:nth-child(17) .rotate {
+  animation-delay: -7804ms;
+  animation-duration: 7848ms;
+}
+
+.line:nth-child(17) .graphic {
+  animation: rotateX 5475ms -4650ms linear infinite;
+}
+
+.line:nth-child(18) {
+  transform: rotateX(-2deg);
+}
+
+.line:nth-child(18) .rotate {
+  animation-delay: -2407ms;
+  animation-duration: 6591ms;
+}
+
+.line:nth-child(18) .graphic {
+  animation: rotateX 3203ms -3376ms linear infinite;
+}
+
+.line:nth-child(19) {
+  transform: rotateX(-1deg);
+}
+
+.line:nth-child(19) .rotate {
+  animation-delay: -1014ms;
+  animation-duration: 7140ms;
+}
+
+.line:nth-child(19) .graphic {
+  animation: rotateX 4209ms -1582ms linear infinite;
+}
+
+.line:nth-child(20) {
+  transform: rotateX(0deg);
+}
+
+.line:nth-child(20) .rotate {
+  animation-delay: -576ms;
+  animation-duration: 7728ms;
+}
+
+.line:nth-child(20) .graphic {
+  animation: rotateX 4274ms -490ms linear infinite;
+}
+
+.line:nth-child(21) {
+  transform: rotateX(1deg);
+}
+
+.line:nth-child(21) .rotate {
+  animation-delay: -3236ms;
+  animation-duration: 6116ms;
+}
+
+.line:nth-child(21) .graphic {
+  animation: rotateX 3975ms -2ms linear infinite;
+}
+
+.line:nth-child(22) {
+  transform: rotateX(2deg);
+}
+
+.line:nth-child(22) .rotate {
+  animation-delay: -7684ms;
+  animation-duration: 7110ms;
+}
+
+.line:nth-child(22) .graphic {
+  animation: rotateX 5645ms -2842ms linear infinite;
+}
+
+.line:nth-child(23) {
+  transform: rotateX(3deg);
+}
+
+.line:nth-child(23) .rotate {
+  animation-delay: -4568ms;
+  animation-duration: 5667ms;
+}
+
+.line:nth-child(23) .graphic {
+  animation: rotateX 5118ms -5232ms linear infinite;
+}
+
+.line:nth-child(24) {
+  transform: rotateX(4deg);
+}
+
+.line:nth-child(24) .rotate {
+  animation-delay: -4973ms;
+  animation-duration: 5661ms;
+}
+
+.line:nth-child(24) .graphic {
+  animation: rotateX 5300ms -3395ms linear infinite;
+}
+
+.line:nth-child(25) {
+  transform: rotateX(5deg);
+}
+
+.line:nth-child(25) .rotate {
+  animation-delay: -2872ms;
+  animation-duration: 7714ms;
+}
+
+.line:nth-child(25) .graphic {
+  animation: rotateX 3778ms -1164ms linear infinite;
+}
+
+.line:nth-child(26) {
+  transform: rotateX(6deg);
+}
+
+.line:nth-child(26) .rotate {
+  animation-delay: -4069ms;
+  animation-duration: 7770ms;
+}
+
+.line:nth-child(26) .graphic {
+  animation: rotateX 5514ms -1837ms linear infinite;
+}
+
+.line:nth-child(27) {
+  transform: rotateX(7deg);
+}
+
+.line:nth-child(27) .rotate {
+  animation-delay: -3084ms;
+  animation-duration: 7930ms;
+}
+
+.line:nth-child(27) .graphic {
+  animation: rotateX 4702ms -447ms linear infinite;
+}
+
+.line:nth-child(28) {
+  transform: rotateX(8deg);
+}
+
+.line:nth-child(28) .rotate {
+  animation-delay: -123ms;
+  animation-duration: 6546ms;
+}
+
+.line:nth-child(28) .graphic {
+  animation: rotateX 4144ms -4868ms linear infinite;
+}
+
+.line:nth-child(29) {
+  transform: rotateX(9deg);
+}
+
+.line:nth-child(29) .rotate {
+  animation-delay: -4745ms;
+  animation-duration: 6300ms;
+}
+
+.line:nth-child(29) .graphic {
+  animation: rotateX 3800ms -2005ms linear infinite;
+}
+
+.line:nth-child(30) {
+  transform: rotateX(10deg);
+}
+
+.line:nth-child(30) .rotate {
+  animation-delay: -2445ms;
+  animation-duration: 7097ms;
+}
+
+.line:nth-child(30) .graphic {
+  animation: rotateX 3816ms -2143ms linear infinite;
+}
+
+.line:nth-child(31) {
+  transform: rotateX(11deg);
+}
+
+.line:nth-child(31) .rotate {
+  animation-delay: -2540ms;
+  animation-duration: 5204ms;
+}
+
+.line:nth-child(31) .graphic {
+  animation: rotateX 5580ms -773ms linear infinite;
+}
+
+.line:nth-child(32) {
+  transform: rotateX(12deg);
+}
+
+.line:nth-child(32) .rotate {
+  animation-delay: -7878ms;
+  animation-duration: 6879ms;
+}
+
+.line:nth-child(32) .graphic {
+  animation: rotateX 4951ms -1093ms linear infinite;
+}
+
+.line:nth-child(33) {
+  transform: rotateX(13deg);
+}
+
+.line:nth-child(33) .rotate {
+  animation-delay: -9136ms;
+  animation-duration: 7555ms;
+}
+
+.line:nth-child(33) .graphic {
+  animation: rotateX 4238ms -2120ms linear infinite;
+}
+
+.line:nth-child(34) {
+  transform: rotateX(14deg);
+}
+
+.line:nth-child(34) .rotate {
+  animation-delay: -8593ms;
+  animation-duration: 5150ms;
+}
+
+.line:nth-child(34) .graphic {
+  animation: rotateX 4508ms -5756ms linear infinite;
+}
+
+.line:nth-child(35) {
+  transform: rotateX(15deg);
+}
+
+.line:nth-child(35) .rotate {
+  animation-delay: -8381ms;
+  animation-duration: 7154ms;
+}
+
+.line:nth-child(35) .graphic {
+  animation: rotateX 5199ms -546ms linear infinite;
+}
+
+.line:nth-child(36) {
+  transform: rotateX(16deg);
+}
+
+.line:nth-child(36) .rotate {
+  animation-delay: -1186ms;
+  animation-duration: 6867ms;
+}
+
+.line:nth-child(36) .graphic {
+  animation: rotateX 4654ms -1683ms linear infinite;
+}
+
+.line:nth-child(37) {
+  transform: rotateX(17deg);
+}
+
+.line:nth-child(37) .rotate {
+  animation-delay: -2637ms;
+  animation-duration: 5060ms;
+}
+
+.line:nth-child(37) .graphic {
+  animation: rotateX 5152ms -2227ms linear infinite;
+}
+
+.line:nth-child(38) {
+  transform: rotateX(18deg);
+}
+
+.line:nth-child(38) .rotate {
+  animation-delay: -8345ms;
+  animation-duration: 6574ms;
+}
+
+.line:nth-child(38) .graphic {
+  animation: rotateX 4336ms -789ms linear infinite;
+}
+
+.line:nth-child(39) {
+  transform: rotateX(19deg);
+}
+
+.line:nth-child(39) .rotate {
+  animation-delay: -5514ms;
+  animation-duration: 6163ms;
+}
+
+.line:nth-child(39) .graphic {
+  animation: rotateX 4046ms -4737ms linear infinite;
+}
+
+.line:nth-child(40) {
+  transform: rotateX(20deg);
+}
+
+.line:nth-child(40) .rotate {
+  animation-delay: -6737ms;
+  animation-duration: 5616ms;
+}
+
+.line:nth-child(40) .graphic {
+  animation: rotateX 5112ms -1057ms linear infinite;
+}
+
+.line:nth-child(41) {
+  transform: rotateX(21deg);
+}
+
+.line:nth-child(41) .rotate {
+  animation-delay: -8448ms;
+  animation-duration: 5318ms;
+}
+
+.line:nth-child(41) .graphic {
+  animation: rotateX 5330ms -5764ms linear infinite;
+}
+
+.line:nth-child(42) {
+  transform: rotateX(22deg);
+}
+
+.line:nth-child(42) .rotate {
+  animation-delay: -714ms;
+  animation-duration: 7295ms;
+}
+
+.line:nth-child(42) .graphic {
+  animation: rotateX 3329ms -4953ms linear infinite;
+}
+
+.line:nth-child(43) {
+  transform: rotateX(23deg);
+}
+
+.line:nth-child(43) .rotate {
+  animation-delay: -7094ms;
+  animation-duration: 5173ms;
+}
+
+.line:nth-child(43) .graphic {
+  animation: rotateX 3302ms -4987ms linear infinite;
+}
+
+.line:nth-child(44) {
+  transform: rotateX(24deg);
+}
+
+.line:nth-child(44) .rotate {
+  animation-delay: -1743ms;
+  animation-duration: 5248ms;
+}
+
+.line:nth-child(44) .graphic {
+  animation: rotateX 5223ms -5228ms linear infinite;
+}
+
+.line:nth-child(45) {
+  transform: rotateX(25deg);
+}
+
+.line:nth-child(45) .rotate {
+  animation-delay: -4283ms;
+  animation-duration: 5322ms;
+}
+
+.line:nth-child(45) .graphic {
+  animation: rotateX 5613ms -4287ms linear infinite;
+}
+
+.line:nth-child(46) {
+  transform: rotateX(26deg);
+}
+
+.line:nth-child(46) .rotate {
+  animation-delay: -1233ms;
+  animation-duration: 5815ms;
+}
+
+.line:nth-child(46) .graphic {
+  animation: rotateX 5810ms -3381ms linear infinite;
+}
+
+.line:nth-child(47) {
+  transform: rotateX(27deg);
+}
+
+.line:nth-child(47) .rotate {
+  animation-delay: -829ms;
+  animation-duration: 6915ms;
+}
+
+.line:nth-child(47) .graphic {
+  animation: rotateX 3044ms -5553ms linear infinite;
+}
+
+.line:nth-child(48) {
+  transform: rotateX(28deg);
+}
+
+.line:nth-child(48) .rotate {
+  animation-delay: -6321ms;
+  animation-duration: 6889ms;
+}
+
+.line:nth-child(48) .graphic {
+  animation: rotateX 3600ms -897ms linear infinite;
+}
+
+.line:nth-child(49) {
+  transform: rotateX(29deg);
+}
+
+.line:nth-child(49) .rotate {
+  animation-delay: -6299ms;
+  animation-duration: 6445ms;
+}
+
+.line:nth-child(49) .graphic {
+  animation: rotateX 3380ms -1038ms linear infinite;
+}
+
+.line:nth-child(50) {
+  transform: rotateX(30deg);
+}
+
+.line:nth-child(50) .rotate {
+  animation-delay: -816ms;
+  animation-duration: 6014ms;
+}
+
+.line:nth-child(50) .graphic {
+  animation: rotateX 4529ms -3050ms linear infinite;
+}
+
+.rotate {
+  animation: rotateY 5000ms linear infinite;
+}
+
+.particle {
+  width: 1px;
+  height: 1px;
+  background: #fff;
+}
+
+.particle:nth-child(1) {
+  transform: translate3d(478.75px, 486.75px, 259.75px) rotateY(347deg);
+  animation: flash 300ms -9511ms infinite alternate;
+}
+
+.particle:nth-child(2) {
+  transform: translate3d(13.25px, 636.75px, 767px) rotateY(114deg);
+  animation: flash 300ms -7892ms infinite alternate;
+}
+
+.particle:nth-child(3) {
+  transform: translate3d(227px, -340px, -412.75px) rotateY(325deg);
+  animation: flash 300ms -2147ms infinite alternate;
+}
+
+.particle:nth-child(4) {
+  transform: translate3d(-217px, 32.5px, -121px) rotateY(138deg);
+  animation: flash 300ms -2151ms infinite alternate;
+}
+
+.particle:nth-child(5) {
+  transform: translate3d(810.75px, -154px, -247.75px) rotateY(53deg);
+  animation: flash 300ms -6053ms infinite alternate;
+}
+
+.particle:nth-child(6) {
+  transform: translate3d(-241px, 219.75px, 77px) rotateY(316deg);
+  animation: flash 300ms -8509ms infinite alternate;
+}
+
+.particle:nth-child(7) {
+  transform: translate3d(76px, 100.5px, -222px) rotateY(97deg);
+  animation: flash 300ms -3331ms infinite alternate;
+}
+
+.particle:nth-child(8) {
+  transform: translate3d(-263.5px, -30.25px, -95.25px) rotateY(293deg);
+  animation: flash 300ms -4796ms infinite alternate;
+}
+
+.particle:nth-child(9) {
+  transform: translate3d(-215.25px, -766px, -108.5px) rotateY(58deg);
+  animation: flash 300ms -3156ms infinite alternate;
+}
+
+.particle:nth-child(10) {
+  transform: translate3d(103px, 319.75px, -470.5px) rotateY(215deg);
+  animation: flash 300ms -4037ms infinite alternate;
+}
+
+.particle:nth-child(11) {
+  transform: translate3d(-223px, 210.75px, 398px) rotateY(254deg);
+  animation: flash 300ms -4320ms infinite alternate;
+}
+
+.particle:nth-child(12) {
+  transform: translate3d(-169.5px, -20.5px, 171.75px) rotateY(55deg);
+  animation: flash 300ms -2188ms infinite alternate;
+}
+
+.particle:nth-child(13) {
+  transform: translate3d(174px, -355.5px, 217.75px) rotateY(338deg);
+  animation: flash 300ms -1011ms infinite alternate;
+}
+
+.particle:nth-child(14) {
+  transform: translate3d(-529.5px, 251.75px, 120.75px) rotateY(255deg);
+  animation: flash 300ms -8382ms infinite alternate;
+}
+
+.particle:nth-child(15) {
+  transform: translate3d(429.75px, 95.5px, -101.5px) rotateY(300deg);
+  animation: flash 300ms -8865ms infinite alternate;
+}
+
+.particle:nth-child(16) {
+  transform: translate3d(307.5px, 528px, 478.25px) rotateY(205deg);
+  animation: flash 300ms -8948ms infinite alternate;
+}
+
+.particle:nth-child(17) {
+  transform: translate3d(-61px, 164px, 270.5px) rotateY(217deg);
+  animation: flash 300ms -4063ms infinite alternate;
+}
+
+.particle:nth-child(18) {
+  transform: translate3d(265.5px, -413px, -5.5px) rotateY(68deg);
+  animation: flash 300ms -942ms infinite alternate;
+}
+
+.particle:nth-child(19) {
+  transform: translate3d(-37.75px, -201.25px, 306px) rotateY(213deg);
+  animation: flash 300ms -9384ms infinite alternate;
+}
+
+.particle:nth-child(20) {
+  transform: translate3d(-160.75px, 18.75px, -188px) rotateY(328deg);
+  animation: flash 300ms -5122ms infinite alternate;
+}
+
+.particle:nth-child(21) {
+  transform: translate3d(360.5px, 94.25px, -588.5px) rotateY(177deg);
+  animation: flash 300ms -8110ms infinite alternate;
+}
+
+.particle:nth-child(22) {
+  transform: translate3d(-28.5px, 4.75px, 426.25px) rotateY(138deg);
+  animation: flash 300ms -8571ms infinite alternate;
+}
+
+.particle:nth-child(23) {
+  transform: translate3d(237.25px, 169.75px, -672px) rotateY(223deg);
+  animation: flash 300ms -45ms infinite alternate;
+}
+
+.particle:nth-child(24) {
+  transform: translate3d(-186.75px, -305.5px, 1.5px) rotateY(210deg);
+  animation: flash 300ms -3333ms infinite alternate;
+}
+
+.particle:nth-child(25) {
+  transform: translate3d(443px, -119.5px, -488.5px) rotateY(7deg);
+  animation: flash 300ms -1479ms infinite alternate;
+}
+
+.particle:nth-child(26) {
+  transform: translate3d(637.25px, -621.25px, -170.5px) rotateY(346deg);
+  animation: flash 300ms -4564ms infinite alternate;
+}
+
+.particle:nth-child(27) {
+  transform: translate3d(221.75px, 82.5px, -109.75px) rotateY(87deg);
+  animation: flash 300ms -2279ms infinite alternate;
+}
+
+.particle:nth-child(28) {
+  transform: translate3d(-210px, -66.75px, 340px) rotateY(301deg);
+  animation: flash 300ms -545ms infinite alternate;
+}
+
+.particle:nth-child(29) {
+  transform: translate3d(-146.75px, 167px, 71.25px) rotateY(184deg);
+  animation: flash 300ms -3076ms infinite alternate;
+}
+
+.particle:nth-child(30) {
+  transform: translate3d(-363px, -208px, 9.5px) rotateY(223deg);
+  animation: flash 300ms -7523ms infinite alternate;
+}
+
+.particle:nth-child(31) {
+  transform: translate3d(246.5px, 247px, -237.25px) rotateY(25deg);
+  animation: flash 300ms -4884ms infinite alternate;
+}
+
+.particle:nth-child(32) {
+  transform: translate3d(280.75px, 93.25px, -303.5px) rotateY(108deg);
+  animation: flash 300ms -3916ms infinite alternate;
+}
+
+.particle:nth-child(33) {
+  transform: translate3d(83.75px, 78.5px, 355.5px) rotateY(174deg);
+  animation: flash 300ms -6966ms infinite alternate;
+}
+
+.particle:nth-child(34) {
+  transform: translate3d(-17.5px, -109.25px, -136.5px) rotateY(159deg);
+  animation: flash 300ms -2972ms infinite alternate;
+}
+
+.particle:nth-child(35) {
+  transform: translate3d(315.5px, 199.75px, -523.75px) rotateY(191deg);
+  animation: flash 300ms -2789ms infinite alternate;
+}
+
+.particle:nth-child(36) {
+  transform: translate3d(324px, 75px, -355px) rotateY(240deg);
+  animation: flash 300ms -4344ms infinite alternate;
+}
+
+.particle:nth-child(37) {
+  transform: translate3d(-111.5px, 163.75px, -363.25px) rotateY(30deg);
+  animation: flash 300ms -5808ms infinite alternate;
+}
+
+.particle:nth-child(38) {
+  transform: translate3d(-698.75px, -458.25px, 198.5px) rotateY(246deg);
+  animation: flash 300ms -3750ms infinite alternate;
+}
+
+.particle:nth-child(39) {
+  transform: translate3d(-310.75px, 55.75px, -112.25px) rotateY(248deg);
+  animation: flash 300ms -4217ms infinite alternate;
+}
+
+.particle:nth-child(40) {
+  transform: translate3d(-92.5px, -135.25px, 373.25px) rotateY(24deg);
+  animation: flash 300ms -2849ms infinite alternate;
+}
+
+.particle:nth-child(41) {
+  transform: translate3d(167.75px, 234.75px, 558.25px) rotateY(140deg);
+  animation: flash 300ms -4932ms infinite alternate;
+}
+
+.particle:nth-child(42) {
+  transform: translate3d(134.5px, 66px, 250.75px) rotateY(228deg);
+  animation: flash 300ms -3304ms infinite alternate;
+}
+
+.particle:nth-child(43) {
+  transform: translate3d(-68.75px, 561.75px, -538.25px) rotateY(286deg);
+  animation: flash 300ms -8492ms infinite alternate;
+}
+
+.particle:nth-child(44) {
+  transform: translate3d(-488.25px, 64px, -262px) rotateY(265deg);
+  animation: flash 300ms -5329ms infinite alternate;
+}
+
+.particle:nth-child(45) {
+  transform: translate3d(209.5px, -98px, -111.75px) rotateY(295deg);
+  animation: flash 300ms -6735ms infinite alternate;
+}
+
+.particle:nth-child(46) {
+  transform: translate3d(48.5px, 67.25px, 183.25px) rotateY(122deg);
+  animation: flash 300ms -2853ms infinite alternate;
+}
+
+.particle:nth-child(47) {
+  transform: translate3d(-638.25px, -637.25px, 253px) rotateY(10deg);
+  animation: flash 300ms -519ms infinite alternate;
+}
+
+.particle:nth-child(48) {
+  transform: translate3d(-110.5px, 11.25px, 393.5px) rotateY(272deg);
+  animation: flash 300ms -6844ms infinite alternate;
+}
+
+.particle:nth-child(49) {
+  transform: translate3d(154px, 179.25px, -405px) rotateY(259deg);
+  animation: flash 300ms -5114ms infinite alternate;
+}
+
+.particle:nth-child(50) {
+  transform: translate3d(338.25px, -251.25px, -346.25px) rotateY(124deg);
+  animation: flash 300ms -7417ms infinite alternate;
+}
+
+.particle:nth-child(51) {
+  transform: translate3d(-442.25px, 38px, 178.75px) rotateY(286deg);
+  animation: flash 300ms -7142ms infinite alternate;
+}
+
+.particle:nth-child(52) {
+  transform: translate3d(131.25px, 632.5px, -194px) rotateY(124deg);
+  animation: flash 300ms -8977ms infinite alternate;
+}
+
+.particle:nth-child(53) {
+  transform: translate3d(-378.25px, -259.75px, -615px) rotateY(147deg);
+  animation: flash 300ms -446ms infinite alternate;
+}
+
+.particle:nth-child(54) {
+  transform: translate3d(-195.5px, 464.25px, 211.5px) rotateY(307deg);
+  animation: flash 300ms -9394ms infinite alternate;
+}
+
+.particle:nth-child(55) {
+  transform: translate3d(52.75px, 506.25px, -348.25px) rotateY(206deg);
+  animation: flash 300ms -10ms infinite alternate;
+}
+
+.particle:nth-child(56) {
+  transform: translate3d(-303.5px, 194.75px, 160.75px) rotateY(68deg);
+  animation: flash 300ms -8039ms infinite alternate;
+}
+
+.particle:nth-child(57) {
+  transform: translate3d(-164.5px, 58.25px, 415.25px) rotateY(47deg);
+  animation: flash 300ms -5866ms infinite alternate;
+}
+
+.particle:nth-child(58) {
+  transform: translate3d(-347.75px, 396.5px, -147px) rotateY(313deg);
+  animation: flash 300ms -7410ms infinite alternate;
+}
+
+.particle:nth-child(59) {
+  transform: translate3d(401px, -187px, -331.75px) rotateY(127deg);
+  animation: flash 300ms -5334ms infinite alternate;
+}
+
+.particle:nth-child(60) {
+  transform: translate3d(585px, -350.75px, -488px) rotateY(15deg);
+  animation: flash 300ms -181ms infinite alternate;
+}
+
+.particle:nth-child(61) {
+  transform: translate3d(385.5px, -58.5px, 635px) rotateY(353deg);
+  animation: flash 300ms -5334ms infinite alternate;
+}
+
+.particle:nth-child(62) {
+  transform: translate3d(15.5px, 427.75px, 3.25px) rotateY(267deg);
+  animation: flash 300ms -5882ms infinite alternate;
+}
+
+.particle:nth-child(63) {
+  transform: translate3d(-260.25px, 35.5px, 7.75px) rotateY(10deg);
+  animation: flash 300ms -4696ms infinite alternate;
+}
+
+.particle:nth-child(64) {
+  transform: translate3d(-390.5px, -33.75px, 89.75px) rotateY(57deg);
+  animation: flash 300ms -5268ms infinite alternate;
+}
+
+.particle:nth-child(65) {
+  transform: translate3d(208.5px, 43.5px, 60px) rotateY(214deg);
+  animation: flash 300ms -6323ms infinite alternate;
+}
+
+.particle:nth-child(66) {
+  transform: translate3d(157.25px, 38.25px, 291px) rotateY(205deg);
+  animation: flash 300ms -8099ms infinite alternate;
+}
+
+.particle:nth-child(67) {
+  transform: translate3d(-1.75px, 222.5px, -207.5px) rotateY(286deg);
+  animation: flash 300ms -495ms infinite alternate;
+}
+
+.particle:nth-child(68) {
+  transform: translate3d(526px, 197px, 30px) rotateY(132deg);
+  animation: flash 300ms -6750ms infinite alternate;
+}
+
+.particle:nth-child(69) {
+  transform: translate3d(-152.75px, 318.25px, 588.5px) rotateY(261deg);
+  animation: flash 300ms -1121ms infinite alternate;
+}
+
+.particle:nth-child(70) {
+  transform: translate3d(82.75px, 152.75px, -174.25px) rotateY(352deg);
+  animation: flash 300ms -3458ms infinite alternate;
+}
+
+.particle:nth-child(71) {
+  transform: translate3d(613.5px, -282.5px, -452.75px) rotateY(280deg);
+  animation: flash 300ms -8870ms infinite alternate;
+}
+
+.particle:nth-child(72) {
+  transform: translate3d(186.5px, -543px, -294.5px) rotateY(152deg);
+  animation: flash 300ms -4244ms infinite alternate;
+}
+
+.particle:nth-child(73) {
+  transform: translate3d(-400.75px, -46.25px, 46.75px) rotateY(274deg);
+  animation: flash 300ms -7099ms infinite alternate;
+}
+
+.particle:nth-child(74) {
+  transform: translate3d(-263px, -397.75px, -612.5px) rotateY(253deg);
+  animation: flash 300ms -8073ms infinite alternate;
+}
+
+.particle:nth-child(75) {
+  transform: translate3d(335.25px, 262.75px, 154.75px) rotateY(69deg);
+  animation: flash 300ms -4784ms infinite alternate;
+}
+
+.particle:nth-child(76) {
+  transform: translate3d(377.75px, -319.5px, -240.5px) rotateY(28deg);
+  animation: flash 300ms -5558ms infinite alternate;
+}
+
+.particle:nth-child(77) {
+  transform: translate3d(105.75px, -261.25px, 304.75px) rotateY(29deg);
+  animation: flash 300ms -7677ms infinite alternate;
+}
+
+.particle:nth-child(78) {
+  transform: translate3d(-508px, -110.75px, -717.75px) rotateY(49deg);
+  animation: flash 300ms -8262ms infinite alternate;
+}
+
+.particle:nth-child(79) {
+  transform: translate3d(-408px, 363.5px, -10px) rotateY(352deg);
+  animation: flash 300ms -5261ms infinite alternate;
+}
+
+.particle:nth-child(80) {
+  transform: translate3d(41.75px, 46px, 567.25px) rotateY(123deg);
+  animation: flash 300ms -8190ms infinite alternate;
+}
+
+.particle:nth-child(81) {
+  transform: translate3d(127.75px, 130.25px, -387px) rotateY(72deg);
+  animation: flash 300ms -8677ms infinite alternate;
+}
+
+.particle:nth-child(82) {
+  transform: translate3d(435.75px, 218.5px, 65.25px) rotateY(152deg);
+  animation: flash 300ms -5827ms infinite alternate;
+}
+
+.particle:nth-child(83) {
+  transform: translate3d(87.25px, 536.5px, -38.75px) rotateY(356deg);
+  animation: flash 300ms -2255ms infinite alternate;
+}
+
+.particle:nth-child(84) {
+  transform: translate3d(182px, 321px, 121px) rotateY(173deg);
+  animation: flash 300ms -6234ms infinite alternate;
+}
+
+.particle:nth-child(85) {
+  transform: translate3d(-106.5px, 60.25px, 85.75px) rotateY(61deg);
+  animation: flash 300ms -5787ms infinite alternate;
+}
+
+.particle:nth-child(86) {
+  transform: translate3d(-127.5px, -86px, 40px) rotateY(10deg);
+  animation: flash 300ms -1809ms infinite alternate;
+}
+
+.particle:nth-child(87) {
+  transform: translate3d(-61.5px, 25px, -473px) rotateY(266deg);
+  animation: flash 300ms -8760ms infinite alternate;
+}
+
+.particle:nth-child(88) {
+  transform: translate3d(251.25px, 474.5px, -48.5px) rotateY(112deg);
+  animation: flash 300ms -6338ms infinite alternate;
+}
+
+.particle:nth-child(89) {
+  transform: translate3d(-322.5px, 325.25px, -458.75px) rotateY(147deg);
+  animation: flash 300ms -9022ms infinite alternate;
+}
+
+.particle:nth-child(90) {
+  transform: translate3d(-393.25px, 222px, -129px) rotateY(77deg);
+  animation: flash 300ms -7775ms infinite alternate;
+}
+
+.particle:nth-child(91) {
+  transform: translate3d(-52.75px, 81.5px, -92px) rotateY(280deg);
+  animation: flash 300ms -3542ms infinite alternate;
+}
+
+.particle:nth-child(92) {
+  transform: translate3d(-99px, -332.25px, 93.75px) rotateY(235deg);
+  animation: flash 300ms -1821ms infinite alternate;
+}
+
+.particle:nth-child(93) {
+  transform: translate3d(64.5px, 45.25px, 170px) rotateY(351deg);
+  animation: flash 300ms -6661ms infinite alternate;
+}
+
+.particle:nth-child(94) {
+  transform: translate3d(92.25px, 115px, -249.25px) rotateY(209deg);
+  animation: flash 300ms -2568ms infinite alternate;
+}
+
+.particle:nth-child(95) {
+  transform: translate3d(237px, 343.75px, 312px) rotateY(88deg);
+  animation: flash 300ms -360ms infinite alternate;
+}
+
+.particle:nth-child(96) {
+  transform: translate3d(13.25px, 305.25px, 287.75px) rotateY(354deg);
+  animation: flash 300ms -8789ms infinite alternate;
+}
+
+.particle:nth-child(97) {
+  transform: translate3d(7.5px, -829.25px, -416.75px) rotateY(57deg);
+  animation: flash 300ms -5890ms infinite alternate;
+}
+
+.particle:nth-child(98) {
+  transform: translate3d(-280.25px, -697.5px, 226.25px) rotateY(281deg);
+  animation: flash 300ms -8401ms infinite alternate;
+}
+
+.particle:nth-child(99) {
+  transform: translate3d(-208.75px, -330.25px, -472.5px) rotateY(215deg);
+  animation: flash 300ms -1212ms infinite alternate;
+}
+
+.particle:nth-child(100) {
+  transform: translate3d(262.5px, 98px, 340.75px) rotateY(79deg);
+  animation: flash 300ms -1960ms infinite alternate;
+}
+
+.particle:nth-child(101) {
+  transform: translate3d(-552.75px, -249.5px, 118.25px) rotateY(344deg);
+  animation: flash 300ms -3553ms infinite alternate;
+}
+
+.particle:nth-child(102) {
+  transform: translate3d(359.75px, 143.25px, 403.25px) rotateY(354deg);
+  animation: flash 300ms -3597ms infinite alternate;
+}
+
+.particle:nth-child(103) {
+  transform: translate3d(121.75px, 96.5px, 321.75px) rotateY(302deg);
+  animation: flash 300ms -9907ms infinite alternate;
+}
+
+.particle:nth-child(104) {
+  transform: translate3d(143.75px, 213.75px, 257px) rotateY(185deg);
+  animation: flash 300ms -2841ms infinite alternate;
+}
+
+.particle:nth-child(105) {
+  transform: translate3d(358px, 112px, 224.25px) rotateY(215deg);
+  animation: flash 300ms -5126ms infinite alternate;
+}
+
+.particle:nth-child(106) {
+  transform: translate3d(28.5px, -201px, -158.5px) rotateY(62deg);
+  animation: flash 300ms -9824ms infinite alternate;
+}
+
+.particle:nth-child(107) {
+  transform: translate3d(-81.25px, 280.25px, 359.75px) rotateY(18deg);
+  animation: flash 300ms -1481ms infinite alternate;
+}
+
+.particle:nth-child(108) {
+  transform: translate3d(468px, 237.25px, -322.25px) rotateY(175deg);
+  animation: flash 300ms -7917ms infinite alternate;
+}
+
+.particle:nth-child(109) {
+  transform: translate3d(-274.75px, 214.75px, -575.25px) rotateY(38deg);
+  animation: flash 300ms -1325ms infinite alternate;
+}
+
+.particle:nth-child(110) {
+  transform: translate3d(23px, -415.75px, 7px) rotateY(359deg);
+  animation: flash 300ms -9577ms infinite alternate;
+}
+
+.particle:nth-child(111) {
+  transform: translate3d(-194px, -297.5px, -224px) rotateY(198deg);
+  animation: flash 300ms -173ms infinite alternate;
+}
+
+.particle:nth-child(112) {
+  transform: translate3d(527.5px, -129px, 330.25px) rotateY(331deg);
+  animation: flash 300ms -9282ms infinite alternate;
+}
+
+.particle:nth-child(113) {
+  transform: translate3d(83.5px, 6.25px, -13.25px) rotateY(82deg);
+  animation: flash 300ms -2767ms infinite alternate;
+}
+
+.particle:nth-child(114) {
+  transform: translate3d(13px, 32px, -48.5px) rotateY(190deg);
+  animation: flash 300ms -4315ms infinite alternate;
+}
+
+.particle:nth-child(115) {
+  transform: translate3d(-88.25px, -132.75px, -47.75px) rotateY(259deg);
+  animation: flash 300ms -8385ms infinite alternate;
+}
+
+.particle:nth-child(116) {
+  transform: translate3d(-24px, 78.5px, 68.75px) rotateY(143deg);
+  animation: flash 300ms -7512ms infinite alternate;
+}
+
+.particle:nth-child(117) {
+  transform: translate3d(-119.25px, 402.5px, 126.75px) rotateY(6deg);
+  animation: flash 300ms -3847ms infinite alternate;
+}
+
+.particle:nth-child(118) {
+  transform: translate3d(74.5px, -381px, -444px) rotateY(98deg);
+  animation: flash 300ms -9424ms infinite alternate;
+}
+
+.particle:nth-child(119) {
+  transform: translate3d(-419.75px, 67.25px, -202.25px) rotateY(342deg);
+  animation: flash 300ms -269ms infinite alternate;
+}
+
+.particle:nth-child(120) {
+  transform: translate3d(-129.25px, -66.5px, 172px) rotateY(236deg);
+  animation: flash 300ms -6663ms infinite alternate;
+}
+
+.particle:nth-child(121) {
+  transform: translate3d(-244px, 55.75px, 105.25px) rotateY(341deg);
+  animation: flash 300ms -77ms infinite alternate;
+}
+
+.particle:nth-child(122) {
+  transform: translate3d(-34.75px, -192px, 374.5px) rotateY(146deg);
+  animation: flash 300ms -3083ms infinite alternate;
+}
+
+.particle:nth-child(123) {
+  transform: translate3d(102.25px, 380px, 51.5px) rotateY(322deg);
+  animation: flash 300ms -4749ms infinite alternate;
+}
+
+.particle:nth-child(124) {
+  transform: translate3d(-509.25px, 164px, -292.25px) rotateY(338deg);
+  animation: flash 300ms -3455ms infinite alternate;
+}
+
+.particle:nth-child(125) {
+  transform: translate3d(-167.75px, -343.75px, -149px) rotateY(243deg);
+  animation: flash 300ms -7562ms infinite alternate;
+}
+
+.particle:nth-child(126) {
+  transform: translate3d(-222.75px, 347.75px, -58.75px) rotateY(29deg);
+  animation: flash 300ms -1997ms infinite alternate;
+}
+
+.particle:nth-child(127) {
+  transform: translate3d(-178px, -319.75px, 134px) rotateY(356deg);
+  animation: flash 300ms -527ms infinite alternate;
+}
+
+.particle:nth-child(128) {
+  transform: translate3d(175px, 592.75px, 438px) rotateY(213deg);
+  animation: flash 300ms -7488ms infinite alternate;
+}
+
+.particle:nth-child(129) {
+  transform: translate3d(255px, -140.25px, 37px) rotateY(327deg);
+  animation: flash 300ms -1096ms infinite alternate;
+}
+
+.particle:nth-child(130) {
+  transform: translate3d(-223.75px, -116.5px, 182.75px) rotateY(171deg);
+  animation: flash 300ms -7170ms infinite alternate;
+}
+
+.particle:nth-child(131) {
+  transform: translate3d(175px, 63.25px, -203px) rotateY(33deg);
+  animation: flash 300ms -6443ms infinite alternate;
+}
+
+.particle:nth-child(132) {
+  transform: translate3d(-15.5px, 234.5px, 373.5px) rotateY(114deg);
+  animation: flash 300ms -5366ms infinite alternate;
+}
+
+.particle:nth-child(133) {
+  transform: translate3d(-238.25px, -77.25px, -102.25px) rotateY(89deg);
+  animation: flash 300ms -2152ms infinite alternate;
+}
+
+.particle:nth-child(134) {
+  transform: translate3d(612.25px, -21.25px, -321px) rotateY(35deg);
+  animation: flash 300ms -4029ms infinite alternate;
+}
+
+.particle:nth-child(135) {
+  transform: translate3d(-99px, 188.75px, -531.5px) rotateY(93deg);
+  animation: flash 300ms -2069ms infinite alternate;
+}
+
+.particle:nth-child(136) {
+  transform: translate3d(-342.25px, 289.25px, 55.5px) rotateY(201deg);
+  animation: flash 300ms -101ms infinite alternate;
+}
+
+.particle:nth-child(137) {
+  transform: translate3d(100.5px, 8.25px, -478px) rotateY(124deg);
+  animation: flash 300ms -5187ms infinite alternate;
+}
+
+.particle:nth-child(138) {
+  transform: translate3d(-142px, 87.5px, 381.5px) rotateY(329deg);
+  animation: flash 300ms -9733ms infinite alternate;
+}
+
+.particle:nth-child(139) {
+  transform: translate3d(79.25px, -2px, -270.75px) rotateY(229deg);
+  animation: flash 300ms -6420ms infinite alternate;
+}
+
+.particle:nth-child(140) {
+  transform: translate3d(-166.75px, -464px, 504.5px) rotateY(105deg);
+  animation: flash 300ms -9190ms infinite alternate;
+}
+
+.particle:nth-child(141) {
+  transform: translate3d(-184.75px, -157px, -104px) rotateY(274deg);
+  animation: flash 300ms -4197ms infinite alternate;
+}
+
+.particle:nth-child(142) {
+  transform: translate3d(81px, -226.25px, 92.25px) rotateY(360deg);
+  animation: flash 300ms -5586ms infinite alternate;
+}
+
+.particle:nth-child(143) {
+  transform: translate3d(330.25px, 135.75px, -684.25px) rotateY(25deg);
+  animation: flash 300ms -1764ms infinite alternate;
+}
+
+.particle:nth-child(144) {
+  transform: translate3d(-33.25px, 133.5px, 142.75px) rotateY(39deg);
+  animation: flash 300ms -1668ms infinite alternate;
+}
+
+.particle:nth-child(145) {
+  transform: translate3d(609.5px, -369.75px, 190px) rotateY(61deg);
+  animation: flash 300ms -8033ms infinite alternate;
+}
+
+.particle:nth-child(146) {
+  transform: translate3d(-399px, 145.75px, 0.5px) rotateY(128deg);
+  animation: flash 300ms -7872ms infinite alternate;
+}
+
+.particle:nth-child(147) {
+  transform: translate3d(543.25px, 356.5px, -46px) rotateY(318deg);
+  animation: flash 300ms -8978ms infinite alternate;
+}
+
+.particle:nth-child(148) {
+  transform: translate3d(-325.75px, -200.75px, 304px) rotateY(81deg);
+  animation: flash 300ms -8285ms infinite alternate;
+}
+
+.particle:nth-child(149) {
+  transform: translate3d(-145.5px, -242.75px, 154.75px) rotateY(291deg);
+  animation: flash 300ms -1279ms infinite alternate;
+}
+
+.particle:nth-child(150) {
+  transform: translate3d(-277.5px, -180px, 135.25px) rotateY(206deg);
+  animation: flash 300ms -8032ms infinite alternate;
+}
+
+.particle:nth-child(151) {
+  transform: translate3d(346px, -46.75px, -472.75px) rotateY(225deg);
+  animation: flash 300ms -5388ms infinite alternate;
+}
+
+.particle:nth-child(152) {
+  transform: translate3d(452.25px, 410.25px, 186.5px) rotateY(197deg);
+  animation: flash 300ms -8820ms infinite alternate;
+}
+
+.particle:nth-child(153) {
+  transform: translate3d(-366.75px, -137.25px, 470.75px) rotateY(82deg);
+  animation: flash 300ms -8664ms infinite alternate;
+}
+
+.particle:nth-child(154) {
+  transform: translate3d(501px, -98.5px, -147px) rotateY(272deg);
+  animation: flash 300ms -617ms infinite alternate;
+}
+
+.particle:nth-child(155) {
+  transform: translate3d(-78.5px, 251.5px, -614.75px) rotateY(121deg);
+  animation: flash 300ms -5894ms infinite alternate;
+}
+
+.particle:nth-child(156) {
+  transform: translate3d(-339.5px, -186px, -369px) rotateY(35deg);
+  animation: flash 300ms -8594ms infinite alternate;
+}
+
+.particle:nth-child(157) {
+  transform: translate3d(169.25px, -135px, -57.25px) rotateY(232deg);
+  animation: flash 300ms -7699ms infinite alternate;
+}
+
+.particle:nth-child(158) {
+  transform: translate3d(-240.75px, -461.5px, -205.25px) rotateY(327deg);
+  animation: flash 300ms -8746ms infinite alternate;
+}
+
+.particle:nth-child(159) {
+  transform: translate3d(274.75px, 81.25px, -66.75px) rotateY(99deg);
+  animation: flash 300ms -7330ms infinite alternate;
+}
+
+.particle:nth-child(160) {
+  transform: translate3d(-21.5px, -363.75px, -247.75px) rotateY(172deg);
+  animation: flash 300ms -6914ms infinite alternate;
+}
+
+.particle:nth-child(161) {
+  transform: translate3d(509.5px, 426px, -436.25px) rotateY(131deg);
+  animation: flash 300ms -2750ms infinite alternate;
+}
+
+.particle:nth-child(162) {
+  transform: translate3d(86.75px, -149.75px, -176.25px) rotateY(293deg);
+  animation: flash 300ms -4948ms infinite alternate;
+}
+
+.particle:nth-child(163) {
+  transform: translate3d(564.75px, 365.25px, -154px) rotateY(210deg);
+  animation: flash 300ms -8816ms infinite alternate;
+}
+
+.particle:nth-child(164) {
+  transform: translate3d(-315.75px, 57.75px, 79.75px) rotateY(48deg);
+  animation: flash 300ms -8332ms infinite alternate;
+}
+
+.particle:nth-child(165) {
+  transform: translate3d(-142.5px, 403px, 280.5px) rotateY(311deg);
+  animation: flash 300ms -4920ms infinite alternate;
+}
+
+.particle:nth-child(166) {
+  transform: translate3d(-86.75px, 124.75px, -194.25px) rotateY(301deg);
+  animation: flash 300ms -8910ms infinite alternate;
+}
+
+.particle:nth-child(167) {
+  transform: translate3d(-331.25px, 190.5px, 409.5px) rotateY(47deg);
+  animation: flash 300ms -4037ms infinite alternate;
+}
+
+.particle:nth-child(168) {
+  transform: translate3d(-10.25px, 211.75px, -387.75px) rotateY(166deg);
+  animation: flash 300ms -5912ms infinite alternate;
+}
+
+.particle:nth-child(169) {
+  transform: translate3d(-186px, -294.5px, 19px) rotateY(269deg);
+  animation: flash 300ms -2552ms infinite alternate;
+}
+
+.particle:nth-child(170) {
+  transform: translate3d(491.75px, 635.5px, -64.5px) rotateY(291deg);
+  animation: flash 300ms -644ms infinite alternate;
+}
+
+.particle:nth-child(171) {
+  transform: translate3d(-70px, 258px, 30.5px) rotateY(35deg);
+  animation: flash 300ms -4774ms infinite alternate;
+}
+
+.particle:nth-child(172) {
+  transform: translate3d(212.75px, -368.5px, 146.25px) rotateY(162deg);
+  animation: flash 300ms -3797ms infinite alternate;
+}
+
+.particle:nth-child(173) {
+  transform: translate3d(564.75px, 164.25px, -462.25px) rotateY(203deg);
+  animation: flash 300ms -8061ms infinite alternate;
+}
+
+.particle:nth-child(174) {
+  transform: translate3d(664px, 242.75px, -341.5px) rotateY(352deg);
+  animation: flash 300ms -9120ms infinite alternate;
+}
+
+.particle:nth-child(175) {
+  transform: translate3d(194.75px, 339.25px, 195px) rotateY(3deg);
+  animation: flash 300ms -6534ms infinite alternate;
+}
+
+.particle:nth-child(176) {
+  transform: translate3d(-153.25px, -221.5px, 176.75px) rotateY(255deg);
+  animation: flash 300ms -8199ms infinite alternate;
+}
+
+.particle:nth-child(177) {
+  transform: translate3d(87px, -21px, 433px) rotateY(57deg);
+  animation: flash 300ms -8576ms infinite alternate;
+}
+
+.particle:nth-child(178) {
+  transform: translate3d(-177px, 23px, 84.5px) rotateY(48deg);
+  animation: flash 300ms -2647ms infinite alternate;
+}
+
+.particle:nth-child(179) {
+  transform: translate3d(-302.25px, 145.25px, -517px) rotateY(55deg);
+  animation: flash 300ms -4120ms infinite alternate;
+}
+
+.particle:nth-child(180) {
+  transform: translate3d(-93.5px, 201.5px, -100.75px) rotateY(311deg);
+  animation: flash 300ms -7531ms infinite alternate;
+}
+
+.particle:nth-child(181) {
+  transform: translate3d(262.75px, 13.75px, -569.5px) rotateY(322deg);
+  animation: flash 300ms -9520ms infinite alternate;
+}
+
+.particle:nth-child(182) {
+  transform: translate3d(22.25px, -225px, -312px) rotateY(93deg);
+  animation: flash 300ms -6879ms infinite alternate;
+}
+
+.particle:nth-child(183) {
+  transform: translate3d(-175px, 157.25px, -9.5px) rotateY(240deg);
+  animation: flash 300ms -3398ms infinite alternate;
+}
+
+.particle:nth-child(184) {
+  transform: translate3d(-196.5px, 106px, -285.75px) rotateY(199deg);
+  animation: flash 300ms -6128ms infinite alternate;
+}
+
+.particle:nth-child(185) {
+  transform: translate3d(-159.5px, -46.25px, 28.5px) rotateY(142deg);
+  animation: flash 300ms -7330ms infinite alternate;
+}
+
+.particle:nth-child(186) {
+  transform: translate3d(223px, -265px, -330px) rotateY(218deg);
+  animation: flash 300ms -2094ms infinite alternate;
+}
+
+.particle:nth-child(187) {
+  transform: translate3d(-113.75px, -474.5px, -209.75px) rotateY(189deg);
+  animation: flash 300ms -2515ms infinite alternate;
+}
+
+.particle:nth-child(188) {
+  transform: translate3d(61.25px, 14.5px, -85.75px) rotateY(153deg);
+  animation: flash 300ms -9971ms infinite alternate;
+}
+
+.particle:nth-child(189) {
+  transform: translate3d(377.5px, 416.25px, -270px) rotateY(43deg);
+  animation: flash 300ms -1269ms infinite alternate;
+}
+
+.particle:nth-child(190) {
+  transform: translate3d(115.5px, 40.25px, -80.5px) rotateY(233deg);
+  animation: flash 300ms -5426ms infinite alternate;
+}
+
+.particle:nth-child(191) {
+  transform: translate3d(206.5px, 101px, -135px) rotateY(1deg);
+  animation: flash 300ms -5131ms infinite alternate;
+}
+
+.particle:nth-child(192) {
+  transform: translate3d(305.75px, -381.25px, 7.75px) rotateY(135deg);
+  animation: flash 300ms -5503ms infinite alternate;
+}
+
+.particle:nth-child(193) {
+  transform: translate3d(312px, 102.5px, 303.25px) rotateY(129deg);
+  animation: flash 300ms -7114ms infinite alternate;
+}
+
+.particle:nth-child(194) {
+  transform: translate3d(36.25px, -149.75px, -69.5px) rotateY(322deg);
+  animation: flash 300ms -2389ms infinite alternate;
+}
+
+.particle:nth-child(195) {
+  transform: translate3d(2.25px, -277.5px, 196.75px) rotateY(108deg);
+  animation: flash 300ms -6219ms infinite alternate;
+}
+
+.particle:nth-child(196) {
+  transform: translate3d(-147.25px, 334.25px, -162.5px) rotateY(202deg);
+  animation: flash 300ms -7511ms infinite alternate;
+}
+
+.particle:nth-child(197) {
+  transform: translate3d(-191.75px, -301.75px, -53.5px) rotateY(86deg);
+  animation: flash 300ms -6684ms infinite alternate;
+}
+
+.particle:nth-child(198) {
+  transform: translate3d(551px, 492px, -200.5px) rotateY(153deg);
+  animation: flash 300ms -8614ms infinite alternate;
+}
+
+.particle:nth-child(199) {
+  transform: translate3d(125px, -115px, -697px) rotateY(108deg);
+  animation: flash 300ms -5178ms infinite alternate;
+}
+
+.particle:nth-child(200) {
+  transform: translate3d(-55px, 42.25px, 172.25px) rotateY(323deg);
+  animation: flash 300ms -4700ms infinite alternate;
+}
+
+.particle:nth-child(201) {
+  transform: translate3d(42.25px, -331.5px, 201.25px) rotateY(172deg);
+  animation: flash 300ms -5957ms infinite alternate;
+}
+
+.particle:nth-child(202) {
+  transform: translate3d(-145.75px, -51.75px, 198.75px) rotateY(232deg);
+  animation: flash 300ms -2364ms infinite alternate;
+}
+
+.particle:nth-child(203) {
+  transform: translate3d(186.75px, 595.5px, -339px) rotateY(299deg);
+  animation: flash 300ms -7142ms infinite alternate;
+}
+
+.particle:nth-child(204) {
+  transform: translate3d(105px, 185.5px, 502px) rotateY(284deg);
+  animation: flash 300ms -984ms infinite alternate;
+}
+
+.particle:nth-child(205) {
+  transform: translate3d(-446px, 584px, -278.5px) rotateY(286deg);
+  animation: flash 300ms -8370ms infinite alternate;
+}
+
+.particle:nth-child(206) {
+  transform: translate3d(-408.5px, 18px, -105.25px) rotateY(73deg);
+  animation: flash 300ms -8062ms infinite alternate;
+}
+
+.particle:nth-child(207) {
+  transform: translate3d(-40px, -369.75px, -261.75px) rotateY(150deg);
+  animation: flash 300ms -66ms infinite alternate;
+}
+
+.particle:nth-child(208) {
+  transform: translate3d(206px, -120.75px, 140.5px) rotateY(290deg);
+  animation: flash 300ms -7618ms infinite alternate;
+}
+
+.particle:nth-child(209) {
+  transform: translate3d(187.75px, 73.75px, -391.5px) rotateY(283deg);
+  animation: flash 300ms -5308ms infinite alternate;
+}
+
+.particle:nth-child(210) {
+  transform: translate3d(353.75px, -80.5px, -138.25px) rotateY(330deg);
+  animation: flash 300ms -9732ms infinite alternate;
+}
+
+.particle:nth-child(211) {
+  transform: translate3d(433px, 115.5px, 437.25px) rotateY(326deg);
+  animation: flash 300ms -3168ms infinite alternate;
+}
+
+.particle:nth-child(212) {
+  transform: translate3d(-16.75px, 299.75px, -2px) rotateY(129deg);
+  animation: flash 300ms -223ms infinite alternate;
+}
+
+.particle:nth-child(213) {
+  transform: translate3d(-78.5px, 127.25px, 68.25px) rotateY(256deg);
+  animation: flash 300ms -2609ms infinite alternate;
+}
+
+.particle:nth-child(214) {
+  transform: translate3d(204.5px, 615.5px, -382px) rotateY(74deg);
+  animation: flash 300ms -6606ms infinite alternate;
+}
+
+.particle:nth-child(215) {
+  transform: translate3d(-479.25px, -334px, -269.25px) rotateY(86deg);
+  animation: flash 300ms -4724ms infinite alternate;
+}
+
+.particle:nth-child(216) {
+  transform: translate3d(202.5px, -416.25px, 133px) rotateY(252deg);
+  animation: flash 300ms -1909ms infinite alternate;
+}
+
+.particle:nth-child(217) {
+  transform: translate3d(182.5px, 32.75px, -113.25px) rotateY(297deg);
+  animation: flash 300ms -2679ms infinite alternate;
+}
+
+.particle:nth-child(218) {
+  transform: translate3d(60.75px, 307.25px, -199.5px) rotateY(265deg);
+  animation: flash 300ms -3734ms infinite alternate;
+}
+
+.particle:nth-child(219) {
+  transform: translate3d(228px, -106.5px, 223.25px) rotateY(46deg);
+  animation: flash 300ms -2792ms infinite alternate;
+}
+
+.particle:nth-child(220) {
+  transform: translate3d(-410px, 113.5px, -371.75px) rotateY(339deg);
+  animation: flash 300ms -9726ms infinite alternate;
+}
+
+.particle:nth-child(221) {
+  transform: translate3d(385.25px, 362px, 271px) rotateY(338deg);
+  animation: flash 300ms -5590ms infinite alternate;
+}
+
+.particle:nth-child(222) {
+  transform: translate3d(125.75px, -1.5px, 539px) rotateY(167deg);
+  animation: flash 300ms -1234ms infinite alternate;
+}
+
+.particle:nth-child(223) {
+  transform: translate3d(-108.25px, -144.25px, 239.25px) rotateY(329deg);
+  animation: flash 300ms -6354ms infinite alternate;
+}
+
+.particle:nth-child(224) {
+  transform: translate3d(-305px, 523px, 51.75px) rotateY(331deg);
+  animation: flash 300ms -1763ms infinite alternate;
+}
+
+.particle:nth-child(225) {
+  transform: translate3d(39.5px, 413px, -278.5px) rotateY(123deg);
+  animation: flash 300ms -2358ms infinite alternate;
+}
+
+.particle:nth-child(226) {
+  transform: translate3d(825.25px, 197px, -351.75px) rotateY(95deg);
+  animation: flash 300ms -2665ms infinite alternate;
+}
+
+.particle:nth-child(227) {
+  transform: translate3d(415px, -63.25px, -105.75px) rotateY(14deg);
+  animation: flash 300ms -6453ms infinite alternate;
+}
+
+.particle:nth-child(228) {
+  transform: translate3d(609.25px, -72px, 87px) rotateY(166deg);
+  animation: flash 300ms -7218ms infinite alternate;
+}
+
+.particle:nth-child(229) {
+  transform: translate3d(353.25px, -47.25px, 356.25px) rotateY(211deg);
+  animation: flash 300ms -9727ms infinite alternate;
+}
+
+.particle:nth-child(230) {
+  transform: translate3d(-224.25px, -48.75px, 427.25px) rotateY(298deg);
+  animation: flash 300ms -7853ms infinite alternate;
+}
+
+.particle:nth-child(231) {
+  transform: translate3d(-145px, 361.25px, -140.75px) rotateY(195deg);
+  animation: flash 300ms -1318ms infinite alternate;
+}
+
+.particle:nth-child(232) {
+  transform: translate3d(44.5px, 666.75px, 17.25px) rotateY(319deg);
+  animation: flash 300ms -3293ms infinite alternate;
+}
+
+.particle:nth-child(233) {
+  transform: translate3d(-34.25px, -45.5px, -43.75px) rotateY(346deg);
+  animation: flash 300ms -7437ms infinite alternate;
+}
+
+.particle:nth-child(234) {
+  transform: translate3d(233px, 90px, -372.5px) rotateY(320deg);
+  animation: flash 300ms -8863ms infinite alternate;
+}
+
+.particle:nth-child(235) {
+  transform: translate3d(59.75px, -411px, 404.75px) rotateY(8deg);
+  animation: flash 300ms -2923ms infinite alternate;
+}
+
+.particle:nth-child(236) {
+  transform: translate3d(103.25px, -178.25px, 78.75px) rotateY(276deg);
+  animation: flash 300ms -6195ms infinite alternate;
+}
+
+.particle:nth-child(237) {
+  transform: translate3d(-261.75px, -551.5px, 89.25px) rotateY(356deg);
+  animation: flash 300ms -5732ms infinite alternate;
+}
+
+.particle:nth-child(238) {
+  transform: translate3d(-330.5px, -381.25px, -46px) rotateY(128deg);
+  animation: flash 300ms -761ms infinite alternate;
+}
+
+.particle:nth-child(239) {
+  transform: translate3d(-254.5px, 69.25px, -505.75px) rotateY(55deg);
+  animation: flash 300ms -3138ms infinite alternate;
+}
+
+.particle:nth-child(240) {
+  transform: translate3d(-76px, -251px, 93px) rotateY(335deg);
+  animation: flash 300ms -6424ms infinite alternate;
+}
+
+.particle:nth-child(241) {
+  transform: translate3d(50px, 413.25px, 73.5px) rotateY(262deg);
+  animation: flash 300ms -7500ms infinite alternate;
+}
+
+.particle:nth-child(242) {
+  transform: translate3d(129.75px, -59.75px, -349.25px) rotateY(194deg);
+  animation: flash 300ms -7102ms infinite alternate;
+}
+
+.particle:nth-child(243) {
+  transform: translate3d(231.5px, 635.5px, 177px) rotateY(243deg);
+  animation: flash 300ms -6215ms infinite alternate;
+}
+
+.particle:nth-child(244) {
+  transform: translate3d(624px, 379.5px, -244.5px) rotateY(271deg);
+  animation: flash 300ms -5624ms infinite alternate;
+}
+
+.particle:nth-child(245) {
+  transform: translate3d(-24.5px, -81.5px, -541px) rotateY(198deg);
+  animation: flash 300ms -1697ms infinite alternate;
+}
+
+.particle:nth-child(246) {
+  transform: translate3d(150.5px, 197px, 232px) rotateY(143deg);
+  animation: flash 300ms -9434ms infinite alternate;
+}
+
+.particle:nth-child(247) {
+  transform: translate3d(194px, 243.75px, 374.5px) rotateY(107deg);
+  animation: flash 300ms -5483ms infinite alternate;
+}
+
+.particle:nth-child(248) {
+  transform: translate3d(597px, -250px, 170.5px) rotateY(336deg);
+  animation: flash 300ms -9761ms infinite alternate;
+}
+
+.particle:nth-child(249) {
+  transform: translate3d(205.25px, -28.75px, -55.5px) rotateY(303deg);
+  animation: flash 300ms -6083ms infinite alternate;
+}
+
+.particle:nth-child(250) {
+  transform: translate3d(68px, 0.25px, 517.75px) rotateY(228deg);
+  animation: flash 300ms -3145ms infinite alternate;
+}
+
+.particle:nth-child(251) {
+  transform: translate3d(198px, -169.25px, -335.5px) rotateY(28deg);
+  animation: flash 300ms -4910ms infinite alternate;
+}
+
+.particle:nth-child(252) {
+  transform: translate3d(18.25px, 117.25px, 183.75px) rotateY(65deg);
+  animation: flash 300ms -1080ms infinite alternate;
+}
+
+.particle:nth-child(253) {
+  transform: translate3d(23px, 393.75px, -435px) rotateY(160deg);
+  animation: flash 300ms -8231ms infinite alternate;
+}
+
+.particle:nth-child(254) {
+  transform: translate3d(222.5px, 187.25px, -295.25px) rotateY(163deg);
+  animation: flash 300ms -2830ms infinite alternate;
+}
+
+.particle:nth-child(255) {
+  transform: translate3d(-121.5px, -92.75px, 524.25px) rotateY(80deg);
+  animation: flash 300ms -8149ms infinite alternate;
+}
+
+.particle:nth-child(256) {
+  transform: translate3d(-303.5px, -529.25px, 47.75px) rotateY(338deg);
+  animation: flash 300ms -3307ms infinite alternate;
+}
+
+.particle:nth-child(257) {
+  transform: translate3d(344.75px, 110.25px, -505.75px) rotateY(340deg);
+  animation: flash 300ms -758ms infinite alternate;
+}
+
+.particle:nth-child(258) {
+  transform: translate3d(50.75px, -36px, -227.25px) rotateY(184deg);
+  animation: flash 300ms -4115ms infinite alternate;
+}
+
+.particle:nth-child(259) {
+  transform: translate3d(235px, -143.75px, 232px) rotateY(360deg);
+  animation: flash 300ms -769ms infinite alternate;
+}
+
+.particle:nth-child(260) {
+  transform: translate3d(65.5px, -194.25px, -164px) rotateY(258deg);
+  animation: flash 300ms -2686ms infinite alternate;
+}
+
+.particle:nth-child(261) {
+  transform: translate3d(-475.75px, 224.75px, -38.25px) rotateY(176deg);
+  animation: flash 300ms -1388ms infinite alternate;
+}
+
+.particle:nth-child(262) {
+  transform: translate3d(-365.25px, -455px, -186.25px) rotateY(261deg);
+  animation: flash 300ms -7713ms infinite alternate;
+}
+
+.particle:nth-child(263) {
+  transform: translate3d(-641.25px, 377.5px, -552.25px) rotateY(249deg);
+  animation: flash 300ms -8891ms infinite alternate;
+}
+
+.particle:nth-child(264) {
+  transform: translate3d(-166.5px, -383.5px, 71px) rotateY(106deg);
+  animation: flash 300ms -3473ms infinite alternate;
+}
+
+.particle:nth-child(265) {
+  transform: translate3d(-218.75px, 638.5px, -283.5px) rotateY(135deg);
+  animation: flash 300ms -8903ms infinite alternate;
+}
+
+.particle:nth-child(266) {
+  transform: translate3d(-126.25px, -211.25px, 475.5px) rotateY(312deg);
+  animation: flash 300ms -462ms infinite alternate;
+}
+
+.particle:nth-child(267) {
+  transform: translate3d(247px, 6px, -99.75px) rotateY(204deg);
+  animation: flash 300ms -6473ms infinite alternate;
+}
+
+.particle:nth-child(268) {
+  transform: translate3d(-233.5px, 424px, -35px) rotateY(109deg);
+  animation: flash 300ms -6567ms infinite alternate;
+}
+
+.particle:nth-child(269) {
+  transform: translate3d(518.5px, 137.75px, 68px) rotateY(195deg);
+  animation: flash 300ms -7226ms infinite alternate;
+}
+
+.particle:nth-child(270) {
+  transform: translate3d(82.25px, 119.75px, -213.75px) rotateY(152deg);
+  animation: flash 300ms -2056ms infinite alternate;
+}
+
+.particle:nth-child(271) {
+  transform: translate3d(-641px, -271.5px, 15.5px) rotateY(92deg);
+  animation: flash 300ms -5136ms infinite alternate;
+}
+
+.particle:nth-child(272) {
+  transform: translate3d(212px, -519px, -139.5px) rotateY(98deg);
+  animation: flash 300ms -552ms infinite alternate;
+}
+
+.particle:nth-child(273) {
+  transform: translate3d(-640.25px, 167.25px, 198.75px) rotateY(125deg);
+  animation: flash 300ms -6625ms infinite alternate;
+}
+
+.particle:nth-child(274) {
+  transform: translate3d(376px, 186px, 394.25px) rotateY(159deg);
+  animation: flash 300ms -8434ms infinite alternate;
+}
+
+.particle:nth-child(275) {
+  transform: translate3d(23.75px, 38.5px, -405.25px) rotateY(138deg);
+  animation: flash 300ms -7254ms infinite alternate;
+}
+
+.particle:nth-child(276) {
+  transform: translate3d(440px, 340.25px, 277.5px) rotateY(47deg);
+  animation: flash 300ms -1906ms infinite alternate;
+}
+
+.particle:nth-child(277) {
+  transform: translate3d(-13.5px, -477.25px, 372.75px) rotateY(223deg);
+  animation: flash 300ms -9477ms infinite alternate;
+}
+
+.particle:nth-child(278) {
+  transform: translate3d(317.5px, 589.75px, -232px) rotateY(53deg);
+  animation: flash 300ms -7617ms infinite alternate;
+}
+
+.particle:nth-child(279) {
+  transform: translate3d(171px, 21.25px, -223.25px) rotateY(240deg);
+  animation: flash 300ms -3722ms infinite alternate;
+}
+
+.particle:nth-child(280) {
+  transform: translate3d(576px, 289.25px, -138.5px) rotateY(33deg);
+  animation: flash 300ms -8021ms infinite alternate;
+}
+
+.particle:nth-child(281) {
+  transform: translate3d(359.25px, -95.75px, 569.5px) rotateY(231deg);
+  animation: flash 300ms -2301ms infinite alternate;
+}
+
+.particle:nth-child(282) {
+  transform: translate3d(-33px, 52.5px, -68.75px) rotateY(292deg);
+  animation: flash 300ms -9467ms infinite alternate;
+}
+
+.particle:nth-child(283) {
+  transform: translate3d(-78.75px, 90.75px, 111.5px) rotateY(210deg);
+  animation: flash 300ms -1133ms infinite alternate;
+}
+
+.particle:nth-child(284) {
+  transform: translate3d(38.75px, 234.5px, -147.5px) rotateY(170deg);
+  animation: flash 300ms -7846ms infinite alternate;
+}
+
+.particle:nth-child(285) {
+  transform: translate3d(-331.75px, 344.75px, -217.25px) rotateY(255deg);
+  animation: flash 300ms -4414ms infinite alternate;
+}
+
+.particle:nth-child(286) {
+  transform: translate3d(-63.5px, -521.75px, 59px) rotateY(305deg);
+  animation: flash 300ms -2061ms infinite alternate;
+}
+
+.particle:nth-child(287) {
+  transform: translate3d(-201.25px, 50.5px, -177.75px) rotateY(341deg);
+  animation: flash 300ms -4549ms infinite alternate;
+}
+
+.particle:nth-child(288) {
+  transform: translate3d(134.25px, -338.75px, 532px) rotateY(201deg);
+  animation: flash 300ms -3689ms infinite alternate;
+}
+
+.particle:nth-child(289) {
+  transform: translate3d(703px, -232.5px, -582px) rotateY(183deg);
+  animation: flash 300ms -7091ms infinite alternate;
+}
+
+.particle:nth-child(290) {
+  transform: translate3d(-140.75px, -173.5px, 424.25px) rotateY(205deg);
+  animation: flash 300ms -8918ms infinite alternate;
+}
+
+.particle:nth-child(291) {
+  transform: translate3d(-241.5px, -324px, 193.5px) rotateY(72deg);
+  animation: flash 300ms -115ms infinite alternate;
+}
+
+.particle:nth-child(292) {
+  transform: translate3d(613.5px, -145px, 137.5px) rotateY(297deg);
+  animation: flash 300ms -9142ms infinite alternate;
+}
+
+.particle:nth-child(293) {
+  transform: translate3d(128.75px, 783.5px, 153.75px) rotateY(280deg);
+  animation: flash 300ms -9029ms infinite alternate;
+}
+
+.particle:nth-child(294) {
+  transform: translate3d(124.25px, -60.25px, -232.25px) rotateY(220deg);
+  animation: flash 300ms -3671ms infinite alternate;
+}
+
+.particle:nth-child(295) {
+  transform: translate3d(-67px, 80.75px, -353.25px) rotateY(263deg);
+  animation: flash 300ms -505ms infinite alternate;
+}
+
+.particle:nth-child(296) {
+  transform: translate3d(-46.25px, 272px, 456.75px) rotateY(252deg);
+  animation: flash 300ms -9548ms infinite alternate;
+}
+
+.particle:nth-child(297) {
+  transform: translate3d(-41.25px, -457px, 19.75px) rotateY(192deg);
+  animation: flash 300ms -1532ms infinite alternate;
+}
+
+.particle:nth-child(298) {
+  transform: translate3d(-30.75px, 129.5px, 38.5px) rotateY(177deg);
+  animation: flash 300ms -183ms infinite alternate;
+}
+
+.particle:nth-child(299) {
+  transform: translate3d(-361px, -329.75px, 151.25px) rotateY(110deg);
+  animation: flash 300ms -7530ms infinite alternate;
+}
+
+.particle:nth-child(300) {
+  transform: translate3d(-430.75px, -24.25px, -224px) rotateY(142deg);
+  animation: flash 300ms -6810ms infinite alternate;
+}
+
+@keyframes rotateY {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes rotateX {
+  0% {
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform: rotateX(360deg);
+  }
+}
+
+@keyframes flash {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/*# sourceMappingURL=index_former.css.map */
