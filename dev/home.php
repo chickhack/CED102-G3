@@ -43,6 +43,9 @@
     <link rel="stylesheet" href="./css/pages/planet.css"></link>
     <link rel="stylesheet" href="./css/pages/alltrip.css"></link>
     <link rel="stylesheet" href="./css/pages/home.css"></link>
+    <!-- Gallery -->
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://rawgit.com/LeshikJanz/libraries/master/Bootstrap/baguetteBox.min.css">
   </head>
   <body>
     <div class="container-fluid" id="fullview">
@@ -166,9 +169,9 @@
                   <li><a href="#tab02">月球</a></li>
                   <li><a href="#tab03">木星</a></li>
                   <li><a href="#tab03">水星</a></li>
-                  <li><a href="#tab03">水星</a></li>
-                  <li><a href="#tab03">水星</a></li>
-                  <li><a href="#tab03">水星</a></li>
+                  <li><a href="#tab03">金星</a></li>
+                  <li><a href="#tab03">土星</a></li>
+                  <li><a href="#tab03">天王星</a></li>
               </ul>
             </div>
             <div class="separator col-10"></div>
@@ -265,17 +268,62 @@
         </div>
         </div>
 <!-- 互動牆 -->
-        <section class="home_photowall col-12 margin_top_10 ">
-          <div id="photos" class="col-lg-12">
-              <img src="./img/home/mars1.jpg"  alt="">
-              <img src="./img/home/mars2.jpg"  alt="">
-              <img src="./img/home/首頁-互動牆壁9.jpg" alt="">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+    <script>
+        baguetteBox.run('.tz-gallery');
+    </script>
+
+
+        <section class="home_photowall col-10 margin_top_10 ">
+        <div class="tz-gallery">
+          <div class="row">
+            <div class="upper col-10">
+              <div class="col-sm-12 col-md-4 col-lg-3">
+                  <a class="lightbox" href="./img/home/mars1.jpg">
+                      <img src="./img/home/mars1.jpg" alt="Bridge">
+                  </a>
+              </div>
+
+              <div class="col-sm-6 col-md-4 col-lg-4">
+                  <a class="lightbox" href="./img/home/mars2.jpg">
+                      <img src="./img/home/mars2.jpg" alt="Park">
+                  </a>
+              </div>
+
+              <div class="col-sm-6 col-md-4 col-lg-4">
+                  <a class="lightbox" href="./img/home/首頁-互動牆壁9.jpg">
+                      <img src="./img/home/首頁-互動牆壁9.jpg" alt="Tunnel">
+                  </a>
+              </div>
+            </div>
+            <div class="lower col-10">
+              <div class="col-sm-12 col-md-8 col-lg-5">
+                  <a class="lightbox" href="./img/home/首頁-互動牆壁8.jpg">
+                      <img src="./img/home/首頁-互動牆壁8.jpg" alt="Tunnel">
+                  </a>
+              </div>
+
+              <div class="col-sm-6 col-md-4 col-lg-5">
+                  <a class="lightbox" href="./img/home/首頁-互動牆壁2.jpg">
+                      <img src="./img/home/首頁-互動牆壁2.jpg" alt="Tunnel">
+                  </a>
+              </div> 
+            </div>
+            </div>
+          </div>
+
+
+
+          <!-- <div id="photos" class="col-lg-12">
+              <img src=""  alt="">
+              <img src=""  alt="">
+              <img src="" alt="">
               <img src="./img/home/首頁-互動牆壁2.jpg" alt="">
               <img src="./img/home/首頁-互動牆壁8.jpg" alt="">
-          </div>
-          <div class="photowall_rwd">
+          </div> -->
+          <!-- <div class="photowall_rwd">
             <img src="./img/home/mars1.jpg" class="col-lg-6" alt="">
-          </div>
+          </div> -->
         </section>
 <!-- 商城 -->
         <div class="shop_box" >
@@ -442,8 +490,10 @@
   
           },
       });
-      </script>
-      <script>
+    </script>
+
+
+    <script>
         //Header變顏色
         var controller = new ScrollMagic.Controller();
         

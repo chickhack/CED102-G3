@@ -1,24 +1,37 @@
+
 <?php
-    require_once('./php/connectbooks_yi.php');
-?>
-<?php
+session_start();
+try{
+  require_once('./php/connectbooks_yi.php');
+  $sql = "select * from customer where email=:email and mem_psw=:mem_psw"; 
 
-if(isset($_POST)){
+  $member = $pdo->prepare($sql);
+  $member->bindValue(":email", $_POST["email"]);
+  $member->bindValue(":mem_psw", $_POST["mem_psw"]);
+  $member->execute();
 
-	$email 			= $_POST['email'];
-	$mem_psw 		= sha1($_POST['mem_psw']);
+  if( $member->rowCount()==0){ //查無此人
+   echo "{}";
+  }else{ //登入成功
+    //自資料庫中取回資料
+   $memRow = $member->fetch(PDO::FETCH_ASSOC);
+    $_SESSION["email"] = $memRow["email"];
+    $_SESSION["mem_psw"] = $memRow["mem_psw"];
 
-		$sql = "INSERT INTO customer (email, mem_psw ) VALUES(?,?)";
-		$stmtinsert = $dsn->prepare($sql);
-		$result = $stmtinsert->execute([$email, $mem_psw]);
-		if($result){
-			echo 'Successfully saved.';
-		}else{
-			echo 'There were erros while saving the data.';
-		}
-}else{
-	echo 'No data';
+    //送出登入者的姓名資料
+    $res = ["email"=>$memRow["email"], "mem_psw"=>$memRow["mem_psw"]];
+
+    echo json_encode($memRow); //輸出json
+
+    echo ("<SCRIPT LANGUAGE='JavaScript'>
+    window.location.href='home.php';
+    window.alert('登入成功！')
+      </SCRIPT>");
+  }
+}catch(PDOException $e){
+  echo $e->getMessage();
 }
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -37,7 +50,7 @@ if(isset($_POST)){
       href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css"
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
-    <!-- <link rel="stylesheet" type="text/css" href="./css/pages/login.css" /> -->
+    <link rel="stylesheet" type="text/css" href="./css/pages/login.css" />
   </head>
 
   <body>
