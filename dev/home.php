@@ -367,7 +367,7 @@ if(isset($_SESSION["email"])===true){ //表示已登入
             <!-- </div> -->
         </div>
             <a href="photowall.php">
-                <button class="button button_min margin_top_5">看遊記</button>
+                <button class="button button_min margin_top_5">看互動</button>
             </a>
     </section>
     <!-- 商城 -->
