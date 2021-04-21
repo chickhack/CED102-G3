@@ -1,16 +1,3 @@
-<?php
-  // require_once('./php/connectbooks_yi.php');
-  // session_start();
-
-  // if(isset($_SESSION["email"])===true){ //表示已登入
-  // $result =  ["email"=>$memRow["email"], "mem_psw"=>$memRow["mem_psw"]];
-  // echo json_encode($result);
-  // }else{
-  // echo 50;
-  // }
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -67,8 +54,64 @@
 </head>
 
 <body>
-  <?php include('../dev/layout/header.php');?>
     <div class="container-fluid" id="fullview">
+    <header>
+        <nav id="nav">
+            <div class="logo">
+                <h1><a href="home.php">SPACED</a></h1>
+            </div>
+            <ul class="nav-links">
+                <li class="margin_left_5"><a href="alltrip.php">星球景點</a></li>
+                <li class="margin_left_5"><a href="planet.html">星星世界</a></li>
+                <li class="margin_left_5"><a href="shop.php">星球商城</a></li>
+                <li class="margin_left_5"><a href="photowall.php">太空互動</a></li>
+                <li class="margin_left_5"><a href="Leaderboard.php">玩家排行</a></li>
+                <!-- <li><a href=""><img src="./images/ticket.png" alt="" class="icon"></a></li>
+        <li><a href=""><img src="./images/shopping-cart_(1).png" alt="" class="icon"></a></li>
+        <li><a href=""><img src="./images/round-account-button-with-user-inside_(1).png" alt="" class="icon"></a></li> -->
+            </ul>
+            <ul class="nav-icons">
+                <li class="nav-trip">
+                    <a href="./car-itineray.php">
+                        <img src="./img/icon/header/luggage.png" alt="" class="icon" />
+                        <?php
+                        if(isset($_SESSION["trip-cart"])){
+                            $count = count($_SESSION["trip-cart"]);
+                            echo "<div class='trip-count'>$count</div>";
+                        }else{
+                            echo "";
+                        }
+                     ?>
+                    </a>
+                </li>
+                <li class="nav-cart">
+                    <a href="./shop_cart.php">
+                        <img src="./img/icon/header/shopping-cart_(1).png" alt="" class="icon" />
+                        <?php
+                if(isset($_SESSION["cart"])){
+                    $count = count($_SESSION["cart"]);
+                    echo "<div class='count'>$count</div>";
+                }else{
+                    echo "";
+                }
+            ?>
+                    </a>
+                </li>
+                <li>
+                    <a href="./login.html"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png"
+                            alt="" class="icon" /></a>
+                </li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+        <script src="./js/header.js"></script>
+
+    </header>
+
        
 
         <div class="video-bg">
@@ -191,9 +234,6 @@
                                         <p>溫度</p>
                                     </div>
                                 </div>
-                                <div class="planet_btn">
-                                    <button class="button button_min "><a href="photowall.html">更多關於火星</a></button>
-                                </div>
                             </div>
                             <div class="tab-active col-lg-6 col-md-12 col-sm-12">
                                 <!-- 火星動圖 -->
@@ -209,7 +249,49 @@
                       </div>
                     </div>
                     <!-- 其他tab -->
+                    <div id="tab02" class="tab-inner ">
+                        <div class="tab_top">
+                            <div class="tab_left col-lg-6 col-md-12">
+                                <h2>月球</h2>
+                                <h4 class="margin_top_4">
+                                    月球火山活動的主要後果是顯著的月海。這是由大面積漫溢的低反照率的玄武岩熔岩所構成，覆蓋了月球正面的三分之一。
+                                </h4>
+                                <div class="data margin_top_4">
+                                    <div class="grav">
+                                        <div class="dataTop">
+                                            <span class="var">38</span>
+                                            <span class="data-mid">％</span>
+                                        </div>
+                                        <p>重力</p>
+                                    </div>
+                                    <div class="day">
+                                        <div class="dataTop">
+                                            <span class="var">24</span>
+                                            <span class="data-low">HR</span>
+                                        </div>
+                                        <p>一天</p>
+                                    </div>
+                                    <div class="temp">
+                                        <div class="dataTop">
+                                            <span class="data-mid">-</span>
+                                            <span class="var">60</span>
+                                            <span class="data-top">F</span>
+                                        </div>
+                                        <p>溫度</p>
+                                    </div>
+                                </div>
+                            </div>
 
+                        </div>
+                        <div class="tab-active margin_top_5 col-lg-6 col-md-12 col-sm-12">
+                            <!-- 月球動圖 -->
+                            <img src="img/planet/moon.png">
+                            <!-- <script src="./js/moon.js"></script>  -->
+                        </div>
+                    </div>
+                    <div id="tab03" class="tab-inner ">
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -255,9 +337,6 @@
                 </div>
             </div>
             <!-- </div> -->
-        </div>
-        <div class="gallery_btn">
-            <button class="button button_min margin_top_10"><a href="photowall.html">看遊記</a></button>
         </div>
     </section>
     <!-- 商城 -->
@@ -388,7 +467,7 @@
             </div>
         </div>
         <div class="memberbtn">
-            <button class="button button_min margin_top_10"><a href="register.php">加入會員</a></button>
+            <button class="button button_min margin_top_10">加入會員</button>
         </div>
     </div>
 

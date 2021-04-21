@@ -10,7 +10,7 @@ if($_GET['prod_status'] == 0){
 }
 
 try{
-    require_once("connectbooks_kai.php");
+    require_once("../../../../connect_ced102_g3_local.php");
     $sql = "UPDATE prod SET prod_status=$status WHERE prod_no=:prod_no";
     $product = $pdo->prepare($sql);
     $product->bindValue(":prod_no", $prod_no);
@@ -18,7 +18,7 @@ try{
     if($product->execute()){
         
         // echo "<script>alert('已下架!')</script>";
-	    echo "<script>window.location.href='../backstage_shop.php'</script>";
+	    echo "<script>window.location.href='../../../backstage_shop.php'</script>";
     }
 }
 catch(PDOException $e){

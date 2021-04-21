@@ -182,12 +182,15 @@ button:hover{
                 }
 
             }
-
             @include respond(mobile){
                 .tab_top{
                     padding: 0 5%;
                 }
             }
+            // .tab-active{
+            //     position: relative;
+            //     top: 0;
+            //     }
             
             .planet_content{
                 display: flex;
@@ -249,19 +252,5 @@ button:hover{
             
             }
         }
-        .tab_moon{
-            .tab_top{
-                display:flex;
-            }
-            .tab-active{
-                // bordeR: 1px solid yellow;
-            }
-            img.moon_pic{
-                position: relative;
-                z-index: 99;
-                top: -100px;
-                left: -10px;
 
-            }
-        }
         }

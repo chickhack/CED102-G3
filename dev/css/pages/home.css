@@ -900,10 +900,7 @@ button {
   top: 15vh;
   display: -webkit-box;
   display: -ms-flexbox;
-<<<<<<< HEAD
-=======
 >>>>>>> Min
->>>>>>> dev
   display: flex;
   justify-content: center;
 }
@@ -973,10 +970,6 @@ button {
   top: 15px;
   left: 50%;
 <<<<<<< HEAD
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-=======
-<<<<<<< HEAD
   transform: translateX(-50%);
   z-index: 2;
 =======
@@ -987,7 +980,6 @@ button {
 
 .first_right .hottrip div.planet_top img.planet_a1 {
   max-width: 270px;
->>>>>>> dev
 }
 
 .first_right .hottrip div.planet_top img.planet_a1:hover {
@@ -1014,10 +1006,7 @@ button {
 div.planet_top div.word .tag {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
-<<<<<<< HEAD
-=======
 >>>>>>> Min
->>>>>>> dev
   display: inline-flex;
   border: 1px solid #cccaca;
   border-radius: 5px;
@@ -1104,17 +1093,6 @@ div.planet_top div.word .tag {
   display: -ms-flexbox;
   display: flex;
 <<<<<<< HEAD
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.home_photowall .topright {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-=======
-<<<<<<< HEAD
   flex-direction: column;
   align-items: center;
   max-width: 1200px;
@@ -1141,7 +1119,6 @@ div.planet_top div.word .tag {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
->>>>>>> dev
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1159,10 +1136,7 @@ div.planet_top div.word .tag {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-<<<<<<< HEAD
-=======
 >>>>>>> Min
->>>>>>> dev
 }
 
 .home_photowall .tz-gallery .lightbox:hover img {
@@ -1245,18 +1219,12 @@ div.planet_top div.word .tag {
     display: none;
   }
 <<<<<<< HEAD
-  .home_photowall .photowall_rwd {
-    display: -webkit-box;
-    display: -ms-flexbox;
-=======
-<<<<<<< HEAD
   .shop_box .home_shop .shopRWD {
 =======
   .home_photowall .photowall_rwd {
     display: -webkit-box;
     display: -ms-flexbox;
 >>>>>>> Min
->>>>>>> dev
     display: flex;
     justify-content: center;
   }
@@ -1362,10 +1330,7 @@ div.planet_top div.word .tag {
 =======
 .home_shop .shopItem .hovereffect:hover h2:after {
   -webkit-transform: translate3d(0, 0, 0);
-<<<<<<< HEAD
-=======
 >>>>>>> Min
->>>>>>> dev
   transform: translate3d(0, 0, 0);
 }
 
@@ -1396,15 +1361,10 @@ div.planet_top div.word .tag {
   max-width: 500px;
   max-height: 250px;
 <<<<<<< HEAD
-  -webkit-transform: translate(-10%, 0);
-          transform: translate(-10%, 0);
-=======
-<<<<<<< HEAD
 =======
   -webkit-transform: translate(-10%, 0);
           transform: translate(-10%, 0);
 >>>>>>> Min
->>>>>>> dev
 }
 
 .shopItem .item1 .hovereffect img {
@@ -1417,12 +1377,9 @@ div.planet_top div.word .tag {
   left: -80px;
   z-index: 1;
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
   max-height: 600px;
   max-width: 250px;
 =======
->>>>>>> dev
   -webkit-transform: translate(110%, -20%);
           transform: translate(110%, -20%);
   max-height: 450px;
@@ -1459,17 +1416,12 @@ div.planet_top div.word .tag {
   position: relative;
   z-index: 1;
 <<<<<<< HEAD
-  -webkit-transform: translate(255%, -260%);
-          transform: translate(255%, -260%);
-=======
-<<<<<<< HEAD
   bottom: 550px;
   left: 450px;
 =======
   -webkit-transform: translate(255%, -260%);
           transform: translate(255%, -260%);
 >>>>>>> Min
->>>>>>> dev
   max-height: 270px;
   width: 280px;
 }

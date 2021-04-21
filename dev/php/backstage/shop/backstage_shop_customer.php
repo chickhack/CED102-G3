@@ -2,7 +2,7 @@
 $mem_no = $_REQUEST["mem_no"];
 $errMsg='';
 try {
-	require_once("log.php");
+	require_once("../../log.php");
 	$sql = "select * from customer where mem_no=:mem_no";
 	$order = $pdo->prepare($sql);	//執行指令
 	$order->bindValue(":mem_no", $mem_no);
@@ -20,22 +20,22 @@ try {
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>訂單查詢會員</title>
-    <link rel="stylesheet" href="../css/all.css">
-	<link rel="stylesheet" href="../css/pages/spaced_backstage.css">
+    <link rel="stylesheet" href="../../../css/all.css">
+	<link rel="stylesheet" href="../../../css/pages/spaced_backstage.css">
 </head>
 <body>
 <div class="top w-100 header">
         <!-- <p class="h1 padding_left_4 "></p> -->
-        <img src="../img/logo.png" class="imgs padding_left_4 padding_top_1" alt="">
+        <img src="../../../img/logo.png" class="imgs padding_left_4 padding_top_1" alt="">
         <p class="text-top padding_left_4 ">Backstage</p>
     </div>
     <div class="div-menu">
         <div class="div-list">
             <button class="div-list-btn-a">景點</button>
             <div>
-                <a href="../spaced_backstage_trip.php" class="div-list-btn-s ">景點管理</a>
-                <a href="../spaced_backstage_trip_reviews.php" class="div-list-btn-s">景點評價</a>
-                <a href="../spaced_backstage_order.php" class="div-list-btn-s now">行程訂單管理</a>
+                <a href="../../../backsatge/spaced_backstage_trip.php" class="div-list-btn-s ">景點管理</a>
+                <a href="../../../backsatge/spaced_backstage_trip_reviews.php" class="div-list-btn-s">景點評價</a>
+                <a href="../../../backsatge/spaced_backstage_order.php" class="div-list-btn-s now">行程訂單管理</a>
             </div>
             <button class="div-list-btn-a">商城</button>
             <div>
@@ -57,11 +57,11 @@ try {
 
 <div class="title">
 	<div class=" div-right-span padding_top_3 margin_left_2">
-    <button type="button" class="btn-updata" ><a href="../backstage_shop_order.php" class="text-1">返回</a></button>
+    <button type="button" class="btn-updata" ><a href="../../../backsatge/backstage_shop_order.php" class="text-1">返回</a></button>
 		<div class="span-1 margin_left_3">
 			<label for="search1">
 
-				<img src="../img/icon/loupe.png" alt="" class="">
+				<img src="../../../img/icon/loupe.png" alt="" class="">
 			</label>
 			<input type="search" class="search1" id="search1" placeholder="輸入景點編號、名稱">
 		</div>

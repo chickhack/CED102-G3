@@ -925,15 +925,10 @@ div.bk3 {
 
 .first .first_right .hottrip {
 <<<<<<< HEAD
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-=======
-<<<<<<< HEAD
 =======
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
 >>>>>>> Min
->>>>>>> dev
   display: inline-flex;
   padding-top: 80px;
 }
@@ -1007,16 +1002,11 @@ div.bk3 {
   top: 15px;
   left: 50%;
 <<<<<<< HEAD
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-=======
-<<<<<<< HEAD
   transform: translateX(-50%);
 =======
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 >>>>>>> Min
->>>>>>> dev
   z-index: 2;
 }
 
@@ -1027,8 +1017,6 @@ div.bk3 {
 .first .first_right .hottrip div.planet_top img.planet_a1:hover {
   -webkit-transform: translateY(0.2em);
           transform: translateY(0.2em);
-<<<<<<< HEAD
-=======
 }
 
 @media all and (max-width: 577px) {
@@ -1036,7 +1024,6 @@ div.bk3 {
     margin: 0 auto;
     max-width: 90%;
   }
->>>>>>> dev
 }
 
 .first .first_right .hottrip div.planet_top div.word {
@@ -1047,10 +1034,7 @@ div.bk3 {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-<<<<<<< HEAD
-=======
 >>>>>>> Min
->>>>>>> dev
   text-align: center;
   margin: 0 auto;
   width: 100%;
@@ -1062,15 +1046,10 @@ div.bk3 {
 
 .first .first_right .hottrip div.planet_top div.word .tag {
 <<<<<<< HEAD
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-=======
-<<<<<<< HEAD
 =======
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
 >>>>>>> Min
->>>>>>> dev
   display: inline-flex;
   border: 1px solid #cccaca;
   border-radius: 5px;
@@ -1113,13 +1092,10 @@ div.bk3 {
 }
 
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
 @media screen and (min-width: 577px) and (max-width: 768px) {
   .first .first_right .hottrip .planet_top:nth-child(3) {
     display: none;
 =======
->>>>>>> dev
 @-webkit-keyframes h2 {
   0% {
     text-shadow: 0 0 6px #FFF;
@@ -1141,15 +1117,10 @@ div.bk3 {
 
 .tripselect {
 <<<<<<< HEAD
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-=======
-<<<<<<< HEAD
 =======
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
 >>>>>>> Min
->>>>>>> dev
   display: inline-flex;
   width: 280px;
   -webkit-box-pack: justify;
@@ -1238,12 +1209,9 @@ div.bk3 {
 @media all and (max-width: 767px) {
   .stepsection .stepall {
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
     flex-direction: column;
     align-items: center;
 =======
->>>>>>> dev
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1251,10 +1219,7 @@ div.bk3 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-<<<<<<< HEAD
-=======
 >>>>>>> Min
->>>>>>> dev
   }
 }
 
