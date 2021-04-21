@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +18,53 @@
     <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 </head>
 <body>
-    @@include('./layout/header.html')
+    <nav id="nav">
+  <div class="logo">
+    <h1><a href="home.html">SPACED</a></h1>
+  </div>
+  <ul class="nav-links">
+    <li class="margin_left_5"><a href="alltrip.html">星球景點</a></li>
+    <li class="margin_left_5"><a href="planet.html">星星世界</a></li>
+    <li class="margin_left_5"><a href="shop.html">星球商城</a></li>
+    <li class="margin_left_5"><a href="photowall.html">太空互動</a></li>
+    <li class="margin_left_5"><a href="Leaderboard.html">玩家排行</a></li>
+    <!-- <li><a href=""><img src="./images/ticket.png" alt="" class="icon"></a></li>
+        <li><a href=""><img src="./images/shopping-cart_(1).png" alt="" class="icon"></a></li>
+        <li><a href=""><img src="./images/round-account-button-with-user-inside_(1).png" alt="" class="icon"></a></li> -->
+  </ul>
+  <ul class="nav-icons">
+    <li>
+      <a href="./car-itineray.html"
+        ><img src="./img/icon/header/luggage.png" alt="" class="icon"
+      /></a>
+    </li>
+    <li class="nav-cart">
+      <a href="./shop_cart.html">
+        <img
+          src="./img/icon/header/shopping-cart_(1).png"
+          alt=""
+          class="icon"
+        />
+      </a>
+    </li>
+    <li>
+      <a href="./login.php"
+        ><img
+          src="./img/icon/header/round-account-button-with-user-inside_(1).png"
+          alt=""
+          class="icon"
+      /></a>
+    </li>
+  </ul>
+  <div class="burger">
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line3"></div>
+  </div>
+</nav>
+
+<script src="./js/header.js"></script>
+
     <div class="container-fluid">
             <div id="particles-js">
             <!-- 動態背景 -->
@@ -384,11 +433,28 @@
     
 </div>
 
-    @@include('./layout/footer.html')
+    <footer class="padding_top_10">
+    <div class="links">
+        <div class="logo"><img src="./img/logo.png" alt=""></div>
+        <ul class="footer-links margin_top_2">
+            <li><a href="alltrip.html">星球景點</a></li>
+            <li><a href="planet.html">星星世界</a></li>
+            <li><a href="shop.html">星球商城</a></li>
+            <li><a href="photowall.html">太空互動</a></li>
+            <li><a href="Leaderboard.html">玩家排行</a></li>
+        </ul>
+    </div>
+    <img src="./img/footer_moon.png" alt="" class="footer_moon">
+    <img src="./img/smoke.png" alt="" class="smoke">
+</footer>
+
         
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./js/order-itineray.js"></script>
+    <script>
+    
+    </script>
 </body>
 </html>

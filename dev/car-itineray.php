@@ -97,7 +97,7 @@
             <form :action="name+id" method="post">
                 <h3 class="h2">我的行程</h3>
                 <?php
-                print_r($_SESSION["trip-cart"]);
+                // print_r($_SESSION["trip-cart"]);
                 ?>
                 <ul>
                     <cart @get="getId" :item="val" v-for="(val,index) in products"></cart>
@@ -249,7 +249,7 @@
                                          let arr = [];
                                          let qty=[];
                                          let ky =100;
-                                        //  let j=1;
+                                         let j=1;
                                          for(let i=0 ; i<data.length ; i++){
                                             
                                             <?php
@@ -258,8 +258,8 @@
                                                             if(ky == <?php echo $v1['spot_id'] ?>){
                                                                 // console.log("hi");
                                                                 
-                                                                data[i-1].qty = <?php echo $v1['spot_qty']?>;
-                                                                arr.push(data[i-1]);
+                                                                data[j-1].qty = <?php echo $v1['spot_qty']?>;
+                                                                arr.push(data[j-1]);
                                                                 
                                                             }
                                                             <?php
@@ -267,7 +267,7 @@
                                                     }?>
                                                     // console.log(qty);
                                                     ky++;
-                                                    // j++;
+                                                    j++;
                                                     console.log(arr);
                                                 }
                                             arr.forEach(prod => {

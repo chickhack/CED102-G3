@@ -3,7 +3,7 @@ $spot_no = $_GET["spot_no"];
 $errMsg = "";
 
 try{
-    require_once("connectbooks_kai.php");
+    require_once("../../connect_ced102_g3_local.php");
     $sql = "select *from spot where spot_no = :spot_no";
     $spot = $pdo->prepare($sql);
     $spot->bindValue(":spot_no", $spot_no);
