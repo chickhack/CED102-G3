@@ -56,12 +56,8 @@ img {
 *,
 *:before,
 *:after {
-<<<<<<< HEAD
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
-=======
-  box-sizing: inherit;
->>>>>>> dev
   margin: 0;
   padding: 0;
 }
@@ -82,16 +78,11 @@ body {
   font-size: 14px;
   background-color: #0c0d18;
   overflow-x: hidden;
-<<<<<<< HEAD
   -webkit-user-select: none;
   -moz-user-select: none;
   -o-user-select: none;
   -ms-user-select: none;
       user-select: none;
-=======
-  -o-user-select: none;
-  user-select: none;
->>>>>>> dev
 }
 
 h1, .h1 {
@@ -372,7 +363,6 @@ body {
 }
 
 nav {
-<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -382,11 +372,6 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-=======
-  display: flex;
-  justify-content: center;
-  align-items: center;
->>>>>>> dev
   justify-content: center;
   background-color: #0c0d18;
   position: fixed;
@@ -410,7 +395,6 @@ nav .logo h1 a {
 }
 
 nav .nav-links {
-<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -423,12 +407,6 @@ nav .nav-links {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-=======
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: flex-end;
->>>>>>> dev
   width: 75%;
 }
 
@@ -439,7 +417,6 @@ nav .nav-links a {
 }
 
 nav .nav-icons {
-<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -451,12 +428,6 @@ nav .nav-icons {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-=======
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
->>>>>>> dev
   width: 12%;
   margin-left: 50px;
 }
@@ -472,10 +443,7 @@ nav .burger div {
   height: 2px;
   background-color: #ffffff;
   margin: 5px;
-<<<<<<< HEAD
   -webkit-transition: all .3s ease;
-=======
->>>>>>> dev
   transition: all .3s ease;
 }
 
@@ -555,12 +523,8 @@ nav .nav-trip .trip-count {
 
 @media (max-width: 992px) {
   nav {
-<<<<<<< HEAD
     -ms-flex-pack: distribute;
         justify-content: space-around;
-=======
-    justify-content: space-around;
->>>>>>> dev
   }
   nav .nav-links {
     position: absolute;
@@ -568,7 +532,6 @@ nav .nav-trip .trip-count {
     height: 88vh;
     top: 12vh;
     background-color: #AD6E4A;
-<<<<<<< HEAD
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -583,13 +546,6 @@ nav .nav-trip .trip-count {
             align-items: center;
     width: 30%;
     -webkit-transition: all .5s ease-in;
-=======
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    width: 30%;
->>>>>>> dev
     transition: all .5s ease-in;
   }
   nav .nav-links li {
@@ -604,13 +560,9 @@ nav .nav-trip .trip-count {
   }
   nav .nav-icons {
     width: 100%;
-<<<<<<< HEAD
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-=======
-    justify-content: flex-end;
->>>>>>> dev
   }
   nav .nav-icons .icon {
     margin: 0 30px 0 15px;
@@ -633,20 +585,15 @@ nav .nav-trip .trip-count {
   nav .nav-icons {
     width: 50%;
     margin-left: 16px;
-<<<<<<< HEAD
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-=======
-    justify-content: space-between;
->>>>>>> dev
   }
   nav .nav-icons .icon {
     margin: 0;
   }
 }
 
-<<<<<<< HEAD
 @-webkit-keyframes navLinkFade {
   from {
     opacity: 0;
@@ -670,26 +617,12 @@ nav .nav-trip .trip-count {
     opacity: 1;
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
-=======
-@keyframes navLinkFade {
-  from {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0px);
->>>>>>> dev
   }
 }
 
 .toggle .line1 {
-<<<<<<< HEAD
   -webkit-transform: rotate(45deg) translate(4px, 6px);
           transform: rotate(45deg) translate(4px, 6px);
-=======
-  transform: rotate(45deg) translate(4px, 6px);
->>>>>>> dev
 }
 
 .toggle .line2 {
@@ -697,12 +630,8 @@ nav .nav-trip .trip-count {
 }
 
 .toggle .line3 {
-<<<<<<< HEAD
   -webkit-transform: rotate(-45deg) translate(3px, -6px);
           transform: rotate(-45deg) translate(3px, -6px);
-=======
-  transform: rotate(-45deg) translate(3px, -6px);
->>>>>>> dev
 }
 
 footer {
@@ -722,7 +651,6 @@ footer .links .logo {
   position: relative;
   left: 50%;
   bottom: 50px;
-<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
@@ -739,26 +667,12 @@ footer .links .footer-links {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-=======
-  transform: translateX(-50%);
-}
-
-footer .links .footer-links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
->>>>>>> dev
   width: 55%;
   position: relative;
   left: 50%;
   bottom: 30px;
-<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-=======
-  transform: translateX(-50%);
->>>>>>> dev
 }
 
 footer .links .footer-links a {
@@ -769,12 +683,8 @@ footer .footer_moon {
   position: relative;
   left: 50%;
   max-width: 40%;
-<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-=======
-  transform: translateX(-50%);
->>>>>>> dev
 }
 
 footer .smoke {
@@ -783,12 +693,8 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
-<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-=======
-  transform: translateX(-50%);
->>>>>>> dev
 }
 
 @media (max-width: 768px) {
@@ -881,7 +787,6 @@ form.post {
   max-width: 900px;
 }
 
-<<<<<<< HEAD
 form.post a {
   max-width: 30px;
   position: absolute;
@@ -893,8 +798,6 @@ form.post a img {
   max-width: 25px;
 }
 
-=======
->>>>>>> dev
 form.post .select_trip {
   margin-bottom: 30px;
   border: none;
@@ -907,7 +810,6 @@ form.post .select_trip select {
   padding: 5px;
 }
 
-<<<<<<< HEAD
 p.upload_photo {
   margin-bottom: 10px;
 }
@@ -917,12 +819,10 @@ p.upload_photo {
   margin-bottom: 10px;
   font-size: 16px;
   margin-left: 10px;
-=======
-.post form.post label.teaching {
-  display: block;
-  margin-bottom: 10px;
-  font-size: 16px;
->>>>>>> dev
+}
+
+.upload_img label input img {
+  max-width: 70%;
 }
 
 .post form.post .upload_img button {
@@ -959,11 +859,7 @@ div.post form.post div.post_text label.post {
   text-align: center;
 }
 
-<<<<<<< HEAD
 button.button_min, input.button_min {
-=======
-button.button_min {
->>>>>>> dev
   width: 100px;
   text-align: center;
   background-color: #AD6E4A;
@@ -973,11 +869,7 @@ button.button_min {
   font-size: 14px;
 }
 
-<<<<<<< HEAD
 button.button_min:hover, input.button_min:hover {
-=======
-button.button_min:hover {
->>>>>>> dev
   background-color: #bf896b;
 }
 /*# sourceMappingURL=post.css.map */

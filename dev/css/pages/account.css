@@ -1601,22 +1601,15 @@ input[type=number] {
 }
 
 .img1:hover .action-box {
-<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
-=======
->>>>>>> dev
   display: flex;
 }
 
 .grid .grid-item .img1 img {
   width: 100%;
-<<<<<<< HEAD
   -o-object-fit: cover;
      object-fit: cover;
-=======
-  object-fit: cover;
->>>>>>> dev
   height: 100%;
 }
 
@@ -1703,10 +1696,7 @@ input[type=number] {
   letter-spacing: 1px;
   display: -webkit-box;
   -webkit-line-clamp: 3;
-<<<<<<< HEAD
   -webkit-box-orient: vertical;
-=======
->>>>>>> dev
   white-space: normal;
   overflow: hidden;
 }
@@ -2725,17 +2715,8 @@ section.shop .banner h2 {
   position: absolute;
   left: 50%;
   top: 50%;
-<<<<<<< HEAD
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-=======
-<<<<<<< HEAD
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-=======
-  transform: translate(-50%, -50%);
->>>>>>> dev
->>>>>>> dev
 }
 
 @media all and (max-width: 768px) {
@@ -2745,7 +2726,6 @@ section.shop .banner h2 {
 }
 
 section.shop .filter {
-<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2758,27 +2738,6 @@ section.shop .filter {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-=======
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-=======
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-between;
->>>>>>> dev
->>>>>>> dev
 }
 
 @media all and (max-width: 992px) {
@@ -2951,17 +2910,8 @@ section.shop #app .content {
   section.shop #app .content {
     opacity: 1;
     visibility: visible;
-<<<<<<< HEAD
     -webkit-transform: translateY(-10px);
             transform: translateY(-10px);
-=======
-<<<<<<< HEAD
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
-=======
-    transform: translateY(-10px);
->>>>>>> dev
->>>>>>> dev
   }
 }
 
@@ -3973,16 +3923,8 @@ div.bk3 {
 }
 
 .first .first_right .hottrip {
-<<<<<<< HEAD
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
-=======
-<<<<<<< HEAD
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-=======
->>>>>>> dev
->>>>>>> dev
   display: inline-flex;
   padding-top: 80px;
 }
@@ -3995,9 +3937,14 @@ div.bk3 {
 
 @media screen and (max-width: 767px) {
   .first .first_right .hottrip {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin: 0 auto;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -4051,17 +3998,8 @@ div.bk3 {
   position: absolute;
   top: 15px;
   left: 50%;
-<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-=======
-<<<<<<< HEAD
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-=======
-  transform: translateX(-50%);
->>>>>>> dev
->>>>>>> dev
   z-index: 2;
 }
 
@@ -4089,16 +4027,8 @@ div.bk3 {
 }
 
 .first .first_right .hottrip div.planet_top div.word .tag {
-<<<<<<< HEAD
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
-=======
-<<<<<<< HEAD
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-=======
->>>>>>> dev
->>>>>>> dev
   display: inline-flex;
   border: 1px solid #cccaca;
   border-radius: 5px;
@@ -4140,10 +4070,6 @@ div.bk3 {
   background-color: #bf896b;
 }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> dev
 @-webkit-keyframes h2 {
   0% {
     text-shadow: 0 0 6px #FFF;
@@ -4153,11 +4079,6 @@ div.bk3 {
   }
 }
 
-<<<<<<< HEAD
-=======
-=======
->>>>>>> dev
->>>>>>> dev
 @keyframes h2 {
   0% {
     text-shadow: 0 0 6px #FFF;
@@ -4257,10 +4178,6 @@ div.bk3 {
 
 @media all and (max-width: 767px) {
   .stepsection .stepall {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> dev
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -4268,13 +4185,6 @@ div.bk3 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-<<<<<<< HEAD
-=======
-=======
-    flex-direction: column;
-    align-items: center;
->>>>>>> dev
->>>>>>> dev
   }
 }
 

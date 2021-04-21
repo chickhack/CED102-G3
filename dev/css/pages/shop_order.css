@@ -56,12 +56,8 @@ img {
 *,
 *:before,
 *:after {
-<<<<<<< HEAD
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
-=======
-  box-sizing: inherit;
->>>>>>> dev
   margin: 0;
   padding: 0;
 }
@@ -82,16 +78,11 @@ body {
   font-size: 14px;
   background-color: #0c0d18;
   overflow-x: hidden;
-<<<<<<< HEAD
   -webkit-user-select: none;
   -moz-user-select: none;
   -o-user-select: none;
   -ms-user-select: none;
       user-select: none;
-=======
-  -o-user-select: none;
-  user-select: none;
->>>>>>> dev
 }
 
 h1, .h1 {
@@ -372,7 +363,6 @@ body {
 }
 
 nav {
-<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -382,11 +372,6 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-=======
-  display: flex;
-  justify-content: center;
-  align-items: center;
->>>>>>> dev
   justify-content: center;
   background-color: #0c0d18;
   position: fixed;
@@ -410,7 +395,6 @@ nav .logo h1 a {
 }
 
 nav .nav-links {
-<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -423,12 +407,6 @@ nav .nav-links {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-=======
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: flex-end;
->>>>>>> dev
   width: 75%;
 }
 
@@ -439,7 +417,6 @@ nav .nav-links a {
 }
 
 nav .nav-icons {
-<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -451,12 +428,6 @@ nav .nav-icons {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-=======
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
->>>>>>> dev
   width: 12%;
   margin-left: 50px;
 }
@@ -472,10 +443,7 @@ nav .burger div {
   height: 2px;
   background-color: #ffffff;
   margin: 5px;
-<<<<<<< HEAD
   -webkit-transition: all .3s ease;
-=======
->>>>>>> dev
   transition: all .3s ease;
 }
 
@@ -555,12 +523,8 @@ nav .nav-trip .trip-count {
 
 @media (max-width: 992px) {
   nav {
-<<<<<<< HEAD
     -ms-flex-pack: distribute;
         justify-content: space-around;
-=======
-    justify-content: space-around;
->>>>>>> dev
   }
   nav .nav-links {
     position: absolute;
@@ -568,7 +532,6 @@ nav .nav-trip .trip-count {
     height: 88vh;
     top: 12vh;
     background-color: #AD6E4A;
-<<<<<<< HEAD
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -583,13 +546,6 @@ nav .nav-trip .trip-count {
             align-items: center;
     width: 30%;
     -webkit-transition: all .5s ease-in;
-=======
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    width: 30%;
->>>>>>> dev
     transition: all .5s ease-in;
   }
   nav .nav-links li {
@@ -604,13 +560,9 @@ nav .nav-trip .trip-count {
   }
   nav .nav-icons {
     width: 100%;
-<<<<<<< HEAD
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-=======
-    justify-content: flex-end;
->>>>>>> dev
   }
   nav .nav-icons .icon {
     margin: 0 30px 0 15px;
@@ -633,20 +585,15 @@ nav .nav-trip .trip-count {
   nav .nav-icons {
     width: 50%;
     margin-left: 16px;
-<<<<<<< HEAD
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-=======
-    justify-content: space-between;
->>>>>>> dev
   }
   nav .nav-icons .icon {
     margin: 0;
   }
 }
 
-<<<<<<< HEAD
 @-webkit-keyframes navLinkFade {
   from {
     opacity: 0;
@@ -670,26 +617,12 @@ nav .nav-trip .trip-count {
     opacity: 1;
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
-=======
-@keyframes navLinkFade {
-  from {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0px);
->>>>>>> dev
   }
 }
 
 .toggle .line1 {
-<<<<<<< HEAD
   -webkit-transform: rotate(45deg) translate(4px, 6px);
           transform: rotate(45deg) translate(4px, 6px);
-=======
-  transform: rotate(45deg) translate(4px, 6px);
->>>>>>> dev
 }
 
 .toggle .line2 {
@@ -697,12 +630,8 @@ nav .nav-trip .trip-count {
 }
 
 .toggle .line3 {
-<<<<<<< HEAD
   -webkit-transform: rotate(-45deg) translate(3px, -6px);
           transform: rotate(-45deg) translate(3px, -6px);
-=======
-  transform: rotate(-45deg) translate(3px, -6px);
->>>>>>> dev
 }
 
 footer {
@@ -722,7 +651,6 @@ footer .links .logo {
   position: relative;
   left: 50%;
   bottom: 50px;
-<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
@@ -739,26 +667,12 @@ footer .links .footer-links {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-=======
-  transform: translateX(-50%);
-}
-
-footer .links .footer-links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
->>>>>>> dev
   width: 55%;
   position: relative;
   left: 50%;
   bottom: 30px;
-<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-=======
-  transform: translateX(-50%);
->>>>>>> dev
 }
 
 footer .links .footer-links a {
@@ -769,12 +683,8 @@ footer .footer_moon {
   position: relative;
   left: 50%;
   max-width: 40%;
-<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-=======
-  transform: translateX(-50%);
->>>>>>> dev
 }
 
 footer .smoke {
@@ -783,12 +693,8 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
-<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-=======
-  transform: translateX(-50%);
->>>>>>> dev
 }
 
 @media (max-width: 768px) {
@@ -861,30 +767,21 @@ section.orderDetail {
   padding-top: 5vh;
 }
 
-<<<<<<< HEAD
-section.orderDetail .order {
-=======
 section.orderDetail h3 {
   margin: 0 80px;
 }
 
 section.orderDetail ul {
->>>>>>> dev
   margin: 0 80px;
 }
 
 @media all and (max-width: 768px) {
-<<<<<<< HEAD
-  section.orderDetail .order {
-=======
   section.orderDetail ul {
->>>>>>> dev
     margin: 0 30px;
   }
 }
 
-<<<<<<< HEAD
-section.orderDetail .order li {
+section.orderDetail li {
   font-weight: 900;
   background-color: #292B41;
   display: -webkit-box;
@@ -902,7 +799,7 @@ section.orderDetail .order li {
   padding: 8px 0;
 }
 
-section.orderDetail .order li .imgWord {
+section.orderDetail li .imgWord {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -919,45 +816,18 @@ section.orderDetail .order li .imgWord {
       flex-wrap: wrap;
 }
 
-section.orderDetail .order li .imgWord .prod {
-=======
-section.orderDetail li {
-  font-weight: 900;
-  background-color: #292B41;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-between;
-  padding: 8px 0;
-}
-
-section.orderDetail li .imgWord {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
 section.orderDetail li .imgWord .prod {
->>>>>>> dev
   width: 8%;
 }
 
 @media all and (max-width: 768px) {
-<<<<<<< HEAD
-  section.orderDetail .order li .imgWord .prod {
-=======
   section.orderDetail li .imgWord .prod {
->>>>>>> dev
     width: 15%;
     margin-left: 8px;
   }
 }
 
-<<<<<<< HEAD
-section.orderDetail .order li .imgWord .imgRight {
+section.orderDetail li .imgWord .imgRight {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -970,26 +840,18 @@ section.orderDetail .order li .imgWord .imgRight {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-=======
-section.orderDetail li .imgWord .imgRight {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-between;
->>>>>>> dev
   width: 60%;
 }
 
 @media all and (max-width: 768px) {
-<<<<<<< HEAD
-  section.orderDetail .order li .imgWord .imgRight {
+  section.orderDetail li .imgWord .imgRight {
     width: 75%;
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
 }
 
-section.orderDetail .order li .imgWord .integral {
+section.orderDetail li .imgWord .integral {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1001,11 +863,11 @@ section.orderDetail .order li .imgWord .integral {
           align-items: center;
 }
 
-section.orderDetail .order li .imgWord .integral .icon {
+section.orderDetail li .imgWord .integral .icon {
   max-width: 10px;
 }
 
-section.orderDetail .order li .quantity {
+section.orderDetail li .quantity {
   width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1018,30 +880,6 @@ section.orderDetail .order li .quantity {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-=======
-  section.orderDetail li .imgWord .imgRight {
-    width: 75%;
-    justify-content: space-around;
-  }
-}
-
-section.orderDetail li .imgWord .integral {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-section.orderDetail li .imgWord .integral .icon {
-  max-width: 10px;
-}
-
-section.orderDetail li .quantity {
-  width: 80%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
->>>>>>> dev
 }
 
 section.orderer {
@@ -1071,10 +909,7 @@ section.orderer .orderer_form, section.orderer .recipient, section.orderer .paym
   padding-bottom: 60px;
   max-height: 0;
   overflow: hidden;
-<<<<<<< HEAD
   -webkit-transition: all 1s;
-=======
->>>>>>> dev
   transition: all 1s;
 }
 
@@ -1084,25 +919,24 @@ section.orderer .orderer_form, section.orderer .recipient, section.orderer .paym
   }
 }
 
+section.orderer .input {
+  width: 88%;
+  margin: 0 auto;
+}
+
 section.orderer .arrow {
-<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-=======
-  display: flex;
-  align-items: center;
->>>>>>> dev
   padding: 20px 0;
   margin: 0 8px;
   cursor: pointer;
 }
 
 section.orderer .arrow img {
-<<<<<<< HEAD
   -webkit-transition: all .5s;
   transition: all .5s;
   -webkit-transform: rotate(-90deg);
@@ -1124,18 +958,6 @@ section.orderer .info {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-=======
-  transition: all .5s;
-  transform: rotate(-90deg);
-}
-
-section.orderer .info {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: space-between;
->>>>>>> dev
   width: 80%;
   margin-left: 6%;
 }
@@ -1166,10 +988,7 @@ section.orderer .info input {
   border: 1px solid #AD6E4A;
   padding: 5px 10px;
   width: 100%;
-<<<<<<< HEAD
   -webkit-transition: all .3s;
-=======
->>>>>>> dev
   transition: all .3s;
 }
 
@@ -1188,12 +1007,8 @@ section.orderer .retract {
 }
 
 section.orderer .retract img {
-<<<<<<< HEAD
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
-=======
-  transform: rotate(0deg);
->>>>>>> dev
 }
 
 section.orderer .payTitle {
@@ -1207,7 +1022,6 @@ section.orderer .payTitle {
 }
 
 section.orderer .group {
-<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1237,45 +1051,22 @@ section.orderer .checkbox_group {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-=======
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 100%;
-  justify-content: start;
-}
-
-section.orderer .checkbox_group {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
->>>>>>> dev
 }
 
 @media all and (max-width: 768px) {
   section.orderer .checkbox_group {
-<<<<<<< HEAD
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
-=======
-    justify-content: start;
->>>>>>> dev
     width: 100%;
     margin: 8px 0;
   }
 }
 
 section.orderer .checkbox_group.long {
-<<<<<<< HEAD
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
-=======
-  justify-content: start;
->>>>>>> dev
   width: 50%;
 }
 
@@ -1338,7 +1129,6 @@ section.orderer .checkbox_group #discount {
 }
 
 section.orderer .checkbox_group .credit_check {
-<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1348,17 +1138,11 @@ section.orderer .checkbox_group .credit_check {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-=======
-  display: flex;
-  justify-content: center;
-  align-items: center;
->>>>>>> dev
   text-align: center;
 }
 
 @media all and (max-width: 992px) {
   section.orderer .checkbox_group .credit_check {
-<<<<<<< HEAD
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1366,10 +1150,6 @@ section.orderer .checkbox_group .credit_check {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: start;
-=======
-    flex-direction: column;
-    align-items: start;
->>>>>>> dev
     text-align: left;
   }
 }
@@ -1379,15 +1159,12 @@ section.orderer .checkbox_group .credit_check label {
 }
 
 @media all and (max-width: 992px) {
-<<<<<<< HEAD
-=======
   section.orderer .checkbox_group .credit_check #creditDate {
     margin-top: 8px;
   }
 }
 
 @media all and (max-width: 992px) {
->>>>>>> dev
   section.orderer .checkbox_group .credit_check .creditInput {
     margin-left: 0;
     margin-top: 8px;
@@ -1406,12 +1183,8 @@ section.orderer .credit_icon i {
 section.orderer .credit_icon i + .use {
   opacity: 1;
   color: #AD6E4A;
-<<<<<<< HEAD
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
-=======
-  transform: scale(1.2);
->>>>>>> dev
 }
 
 section.orderer .credit_icon input {
@@ -1439,7 +1212,6 @@ section.orderer .button_min {
 }
 
 section.orderer .detail {
-<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1453,12 +1225,6 @@ section.orderer .detail {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-=======
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
->>>>>>> dev
   padding: 16px 0;
   margin: 32px 80px;
   background-color: #292B41;
@@ -1466,19 +1232,14 @@ section.orderer .detail {
 
 @media all and (max-width: 768px) {
   section.orderer .detail {
-<<<<<<< HEAD
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-=======
-    justify-content: center;
->>>>>>> dev
     margin: 32px 30px;
   }
 }
 
 section.orderer .detail .total, section.orderer .detail .integral {
-<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1490,12 +1251,6 @@ section.orderer .detail .total, section.orderer .detail .integral {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-=======
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
->>>>>>> dev
   width: 40%;
 }
 
@@ -1511,7 +1266,6 @@ section.orderer .detail .total p:nth-child(2), section.orderer .detail .integral
 }
 
 section.orderer .detail .total > .count, section.orderer .detail .integral > .count {
-<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1521,11 +1275,6 @@ section.orderer .detail .total > .count, section.orderer .detail .integral > .co
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-=======
-  display: flex;
-  justify-content: center;
-  align-items: center;
->>>>>>> dev
 }
 
 section.orderer .detail small {
@@ -1538,7 +1287,6 @@ section.orderer .detail small {
   background-color: rgba(0, 0, 0, 0.3);
   position: fixed;
   top: 0;
-<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1548,11 +1296,6 @@ section.orderer .detail small {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-=======
-  display: flex;
-  justify-content: center;
-  align-items: center;
->>>>>>> dev
   display: none;
 }
 
@@ -1561,7 +1304,6 @@ section.orderer .detail small {
   width: 30vw;
   padding: 40px 0;
   border: 1px solid #AD6E4A;
-<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1575,12 +1317,6 @@ section.orderer .detail small {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-=======
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
->>>>>>> dev
   background-color: #0c0d18;
 }
 
@@ -1591,10 +1327,7 @@ section.orderer .detail small {
 
 .modal .window a {
   color: #ffffff;
-<<<<<<< HEAD
   -webkit-transition: all .3s;
-=======
->>>>>>> dev
   transition: all .3s;
 }
 

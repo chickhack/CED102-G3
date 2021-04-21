@@ -56,12 +56,8 @@ img {
 *,
 *:before,
 *:after {
-<<<<<<< HEAD
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
-=======
-  box-sizing: inherit;
->>>>>>> dev
   margin: 0;
   padding: 0;
 }
@@ -82,16 +78,11 @@ body {
   font-size: 14px;
   background-color: #0c0d18;
   overflow-x: hidden;
-<<<<<<< HEAD
   -webkit-user-select: none;
   -moz-user-select: none;
   -o-user-select: none;
   -ms-user-select: none;
       user-select: none;
-=======
-  -o-user-select: none;
-  user-select: none;
->>>>>>> dev
 }
 
 h1, .h1 {
@@ -372,7 +363,6 @@ body {
 }
 
 nav {
-<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -382,11 +372,6 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-=======
-  display: flex;
-  justify-content: center;
-  align-items: center;
->>>>>>> dev
   justify-content: center;
   background-color: #0c0d18;
   position: fixed;
@@ -410,7 +395,6 @@ nav .logo h1 a {
 }
 
 nav .nav-links {
-<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -423,12 +407,6 @@ nav .nav-links {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-=======
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: flex-end;
->>>>>>> dev
   width: 75%;
 }
 
@@ -439,7 +417,6 @@ nav .nav-links a {
 }
 
 nav .nav-icons {
-<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -451,12 +428,6 @@ nav .nav-icons {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-=======
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
->>>>>>> dev
   width: 12%;
   margin-left: 50px;
 }
@@ -472,10 +443,7 @@ nav .burger div {
   height: 2px;
   background-color: #ffffff;
   margin: 5px;
-<<<<<<< HEAD
   -webkit-transition: all .3s ease;
-=======
->>>>>>> dev
   transition: all .3s ease;
 }
 
@@ -555,12 +523,8 @@ nav .nav-trip .trip-count {
 
 @media (max-width: 992px) {
   nav {
-<<<<<<< HEAD
     -ms-flex-pack: distribute;
         justify-content: space-around;
-=======
-    justify-content: space-around;
->>>>>>> dev
   }
   nav .nav-links {
     position: absolute;
@@ -568,7 +532,6 @@ nav .nav-trip .trip-count {
     height: 88vh;
     top: 12vh;
     background-color: #AD6E4A;
-<<<<<<< HEAD
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -583,13 +546,6 @@ nav .nav-trip .trip-count {
             align-items: center;
     width: 30%;
     -webkit-transition: all .5s ease-in;
-=======
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    width: 30%;
->>>>>>> dev
     transition: all .5s ease-in;
   }
   nav .nav-links li {
@@ -604,13 +560,9 @@ nav .nav-trip .trip-count {
   }
   nav .nav-icons {
     width: 100%;
-<<<<<<< HEAD
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-=======
-    justify-content: flex-end;
->>>>>>> dev
   }
   nav .nav-icons .icon {
     margin: 0 30px 0 15px;
@@ -633,20 +585,15 @@ nav .nav-trip .trip-count {
   nav .nav-icons {
     width: 50%;
     margin-left: 16px;
-<<<<<<< HEAD
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-=======
-    justify-content: space-between;
->>>>>>> dev
   }
   nav .nav-icons .icon {
     margin: 0;
   }
 }
 
-<<<<<<< HEAD
 @-webkit-keyframes navLinkFade {
   from {
     opacity: 0;
@@ -670,26 +617,12 @@ nav .nav-trip .trip-count {
     opacity: 1;
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
-=======
-@keyframes navLinkFade {
-  from {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0px);
->>>>>>> dev
   }
 }
 
 .toggle .line1 {
-<<<<<<< HEAD
   -webkit-transform: rotate(45deg) translate(4px, 6px);
           transform: rotate(45deg) translate(4px, 6px);
-=======
-  transform: rotate(45deg) translate(4px, 6px);
->>>>>>> dev
 }
 
 .toggle .line2 {
@@ -697,12 +630,8 @@ nav .nav-trip .trip-count {
 }
 
 .toggle .line3 {
-<<<<<<< HEAD
   -webkit-transform: rotate(-45deg) translate(3px, -6px);
           transform: rotate(-45deg) translate(3px, -6px);
-=======
-  transform: rotate(-45deg) translate(3px, -6px);
->>>>>>> dev
 }
 
 footer {
@@ -722,7 +651,6 @@ footer .links .logo {
   position: relative;
   left: 50%;
   bottom: 50px;
-<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
@@ -739,26 +667,12 @@ footer .links .footer-links {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-=======
-  transform: translateX(-50%);
-}
-
-footer .links .footer-links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
->>>>>>> dev
   width: 55%;
   position: relative;
   left: 50%;
   bottom: 30px;
-<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-=======
-  transform: translateX(-50%);
->>>>>>> dev
 }
 
 footer .links .footer-links a {
@@ -769,12 +683,8 @@ footer .footer_moon {
   position: relative;
   left: 50%;
   max-width: 40%;
-<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-=======
-  transform: translateX(-50%);
->>>>>>> dev
 }
 
 footer .smoke {
@@ -783,12 +693,8 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
-<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-=======
-  transform: translateX(-50%);
->>>>>>> dev
 }
 
 @media (max-width: 768px) {
@@ -865,12 +771,8 @@ input[type=number] {
 }
 
 * {
-<<<<<<< HEAD
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-=======
-  box-sizing: border-box;
->>>>>>> dev
 }
 
 .photowall_banner {
@@ -896,12 +798,8 @@ input[type=number] {
   position: absolute;
   left: 50%;
   top: 50%;
-<<<<<<< HEAD
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-=======
-  transform: translate(-50%, -50%);
->>>>>>> dev
   top: 35%;
   letter-spacing: 2px;
   text-align: center;
@@ -917,7 +815,6 @@ input[type=number] {
 }
 
 .grid {
-<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -929,12 +826,6 @@ input[type=number] {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
-=======
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: start;
->>>>>>> dev
   max-width: 1100px;
   margin: 0 auto;
   margin-top: 40px;
@@ -959,31 +850,21 @@ input[type=number] {
 }
 
 .img1:hover .action-box {
-<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
-=======
->>>>>>> dev
   display: flex;
 }
 
 .grid .grid-item .img1 img {
   width: 100%;
-<<<<<<< HEAD
   -o-object-fit: cover;
      object-fit: cover;
-=======
-  object-fit: cover;
->>>>>>> dev
   height: 100%;
 }
 
 .action-box {
-<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
-=======
->>>>>>> dev
   display: flex;
   position: absolute;
   top: 270px;
@@ -1047,11 +928,8 @@ input[type=number] {
 }
 
 .article {
-<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
-=======
->>>>>>> dev
   display: flex;
 }
 
@@ -1067,20 +945,14 @@ input[type=number] {
   letter-spacing: 1px;
   display: -webkit-box;
   -webkit-line-clamp: 3;
-<<<<<<< HEAD
   -webkit-box-orient: vertical;
-=======
->>>>>>> dev
   white-space: normal;
   overflow: hidden;
 }
 
 .article_2 {
-<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
-=======
->>>>>>> dev
   display: flex;
   margin-top: 10px;
 }
@@ -1116,12 +988,8 @@ input[type=number] {
 }
 
 .col-md-1 .button_2:hover {
-<<<<<<< HEAD
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
-=======
-  transform: translateY(-5px);
->>>>>>> dev
 }
 
 footer.padding_top_5 {
@@ -1132,10 +1000,6 @@ footer.padding_top_5 {
   text-align: center;
   position: absolute;
   background-color: #292B41;
-<<<<<<< HEAD
-=======
-  display: none;
->>>>>>> dev
   position: absolute;
   z-index: 2;
   top: 100px;
@@ -1143,13 +1007,9 @@ footer.padding_top_5 {
 }
 
 .row {
-<<<<<<< HEAD
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-=======
-  justify-content: center;
->>>>>>> dev
 }
 
 button.turnoff_lightbox {
@@ -1210,11 +1070,8 @@ button.turnoff_lightbox img {
 }
 
 .member_info {
-<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
-=======
->>>>>>> dev
   display: flex;
   padding: 10px 15px 0 15px;
 }
@@ -1282,11 +1139,8 @@ button.turnoff_lightbox img {
 }
 
 .message_1, .message_2, .message_3 {
-<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
-=======
->>>>>>> dev
   display: flex;
   padding: 0 15px 0 15px;
   margin-bottom: 10px;

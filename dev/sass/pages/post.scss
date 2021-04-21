@@ -49,6 +49,9 @@ p.upload_photo{
   font-size: 16px;
   margin-left: 10px;
 }
+.upload_img label input img{
+  max-width: 70%;
+}
 .post form.post .upload_img button{
   outline: none;
   border: none;

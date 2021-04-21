@@ -1,5 +1,5 @@
 <?php 
-require_once("./php/connectbooks_kai.php");
+require_once("./php/connectBooks_kai.php");
 
 try {
 	$sql = "select * from spot";
@@ -9,11 +9,8 @@ try {
 	echo "錯誤原因 : ", $e->getMessage(), "<br>";
 	echo "錯誤行號 : ", $e->getLine(), "<br>";	
 }
-<<<<<<< HEAD
-=======
 
 
->>>>>>> dev
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -40,11 +37,7 @@ try {
             <button class="div-list-btn-a">景點</button>
             <div>
                 <a href="./spaced_backstage_trip.php" class="div-list-btn-s now">景點管理</a>
-<<<<<<< HEAD
-                <a href="./spaced_backstage_trip_review.php" class="div-list-btn-s">景點評價</a>
-=======
                 <a href="./spaced_backstage_trip_reviews.php" class="div-list-btn-s">景點評價</a>
->>>>>>> dev
                 <a href="#" class="div-list-btn-s">行程訂單管理</a>
             </div>
             <button class="div-list-btn-a">商城</button>
@@ -66,11 +59,7 @@ try {
         <div class="div-right">
 
             <div class="title">
-<<<<<<< HEAD
-                <div class=" div-right-span padding_top_3 margin_left_3">
-=======
                 <div class=" div-right-span padding_top_3 margin_left_2">
->>>>>>> dev
                     <button type="button" class="btn-updata" onclick="open11()">＋新增</button>
                     <div class="span-1 margin_left_3">
                         <label for="search1">
@@ -84,11 +73,7 @@ try {
                 <div class="data_name h3 div-right-span padding_top_3 line_low">
                     <p class="wi-5 text-1">編號</p>
                     <p class="wi-10 text-1">名稱</p>
-<<<<<<< HEAD
-                    <p class="wi-5 text-1">階級</p>
-=======
                     <p class="wi-5 text-1">等級</p>
->>>>>>> dev
                     <p class="wi-15 text-1">介紹</p>
                     <p class="wi-15 text-1">說明</p>
                     <p class="wi-15 text-1">注意事項</p>
@@ -97,11 +82,8 @@ try {
                     <p class="wi-5 text-1">上架</p>
                     <p class="wi-5 text-1">精選</p>
                     <p class="wi-15 text-1">圖片</p>
-<<<<<<< HEAD
-=======
                     <p class="wi-5 text-1"></p>
                     <p class="wi-5 text-1"></p>
->>>>>>> dev
 
                 </div>
             </div>
@@ -110,15 +92,6 @@ try {
                 <?php		
 while($spotRow = $spot->fetch(PDO::FETCH_ASSOC)){ 
 ?>
-<<<<<<< HEAD
-                <div class="div-right-span-for line_low">
-                    <p class="wi-5 text-1"><?=$spotRow["spot_no"]?></p>
-                    <p class="wi-10 text-1"><?=$spotRow["spot_name"]?></p>
-                    <p class="wi-5 text-1"><?=$spotRow["spot_lv"]?></p>
-                    <p class="wi-15 text-1"><?=$spotRow["spot_info"]?></p>
-                    <p class="wi-15 text-1"><?=$spotRow["spot_intro"]?></p>
-                    <p class="wi-15 text-1"><?=$spotRow["spot_dnt"]?></p>
-=======
                 <div class="div-right-span-for line_low margin_top_2">
                     <p class="wi-5 text-1"><?=$spotRow["spot_no"]?></p>
                     <p class="wi-10 text-1"><?=$spotRow["spot_name"]?></p>
@@ -126,18 +99,13 @@ while($spotRow = $spot->fetch(PDO::FETCH_ASSOC)){
                     <p class="wi-15 text-1 toomuch"><?=$spotRow["spot_info"]?></p>
                     <p class="wi-15 text-1  toomuch"><?=$spotRow["spot_intro"]?></p>
                     <p class="wi-15 text-1  toomuch"><?=$spotRow["spot_dnt"]?></p>
->>>>>>> dev
                     <p class="wi-5 text-1"><?=$spotRow["spot_price"]?></p>
                     <p class="wi-5 text-1"><?=$spotRow["miles"]?></p>
                     <p class="wi-5 text-1"><?=$spotRow["spot_status"]?></p>
                     <p class="wi-5 text-1"><?=$spotRow["spot_s_status"]?></p>
-<<<<<<< HEAD
-                    <p class="wi-15 text-1"><?=$spotRow["spot_pic"]?></p>
-=======
                     <p class="wi-15 text-1 toomuch"><?=$spotRow["spot_pic"]?><br><?=$spotRow["spot_pic1"]?><br><?=$spotRow["spot_pic2"]?><br><?=$spotRow["spot_pic3"]?><br><?=$spotRow["spot_pic2"]?><br><?=$spotRow["spot_pic3"]?><br><?=$spotRow["spot_pic2"]?><br><?=$spotRow["spot_pic4"]?><br><?=$spotRow["spot_pic2"]?><br><?=$spotRow["spot_pics"]?></p>
                     <a href="./php/edit_backstage_trip.php?spot_no=<?=$spotRow["spot_no"]?>" class="wi-5 text-1"><button type="button" class="btn btn-info btn-sm">修改</button></a>
                     <a href="./php/delete_backstage_trip.php?spot_no=<?=$spotRow["spot_no"]?>"class="wi-5 text-1"><button type="button" class="btn btn-danger btn-sm">刪除</button></a>
->>>>>>> dev
                 </div>
 
                 <?php 
@@ -146,20 +114,12 @@ while($spotRow = $spot->fetch(PDO::FETCH_ASSOC)){
 
                 <div id="linebox">
                     <div class="upbox">
-<<<<<<< HEAD
-                        <form action="./php/updatabackstage.php" method="POST" enctype="multipart/form-data">
-=======
                         <form action="./php/create_backstage_trip.php" method="POST" enctype="multipart/form-data">
->>>>>>> dev
 
                             <input type="number" placeholder="景點編號" name="spot_no" disabled>
                             <input type="text" placeholder="景點名稱" name="spot_name">
                             <input type="file" name="spot_pic">
-<<<<<<< HEAD
-                            <input type="text" placeholder="等級初星者或天星者" name="spot_lv">
-=======
                             <input type="text" placeholder="等級(初階/高階)" name="spot_lv">
->>>>>>> dev
                             <input type="text" placeholder="景點內容" name="spot_info">
                             <input type="text" placeholder="景點說明" name="spot_intro">
                             <input type="text" placeholder="注意事項" name="spot_dnt">
@@ -173,11 +133,8 @@ while($spotRow = $spot->fetch(PDO::FETCH_ASSOC)){
                     </div>
                 </div>
 
-<<<<<<< HEAD
-=======
 
 
->>>>>>> dev
             </main>
         </div>
 
@@ -188,10 +145,6 @@ while($spotRow = $spot->fetch(PDO::FETCH_ASSOC)){
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
     </script>
-<<<<<<< HEAD
-=======
-
->>>>>>> dev
     <script>
     var linebox = document.getElementById("linebox");
 

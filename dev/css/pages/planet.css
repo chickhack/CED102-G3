@@ -56,12 +56,8 @@ img {
 *,
 *:before,
 *:after {
-<<<<<<< HEAD
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
-=======
-  box-sizing: inherit;
->>>>>>> dev
   margin: 0;
   padding: 0;
 }
@@ -82,16 +78,11 @@ body {
   font-size: 14px;
   background-color: #0c0d18;
   overflow-x: hidden;
-<<<<<<< HEAD
   -webkit-user-select: none;
   -moz-user-select: none;
   -o-user-select: none;
   -ms-user-select: none;
       user-select: none;
-=======
-  -o-user-select: none;
-  user-select: none;
->>>>>>> dev
 }
 
 h1, .h1 {
@@ -372,7 +363,6 @@ body {
 }
 
 nav {
-<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -382,11 +372,6 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-=======
-  display: flex;
-  justify-content: center;
-  align-items: center;
->>>>>>> dev
   justify-content: center;
   background-color: #0c0d18;
   position: fixed;
@@ -410,7 +395,6 @@ nav .logo h1 a {
 }
 
 nav .nav-links {
-<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -423,12 +407,6 @@ nav .nav-links {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-=======
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: flex-end;
->>>>>>> dev
   width: 75%;
 }
 
@@ -439,7 +417,6 @@ nav .nav-links a {
 }
 
 nav .nav-icons {
-<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -451,12 +428,6 @@ nav .nav-icons {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-=======
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
->>>>>>> dev
   width: 12%;
   margin-left: 50px;
 }
@@ -472,10 +443,7 @@ nav .burger div {
   height: 2px;
   background-color: #ffffff;
   margin: 5px;
-<<<<<<< HEAD
   -webkit-transition: all .3s ease;
-=======
->>>>>>> dev
   transition: all .3s ease;
 }
 
@@ -555,12 +523,8 @@ nav .nav-trip .trip-count {
 
 @media (max-width: 992px) {
   nav {
-<<<<<<< HEAD
     -ms-flex-pack: distribute;
         justify-content: space-around;
-=======
-    justify-content: space-around;
->>>>>>> dev
   }
   nav .nav-links {
     position: absolute;
@@ -568,7 +532,6 @@ nav .nav-trip .trip-count {
     height: 88vh;
     top: 12vh;
     background-color: #AD6E4A;
-<<<<<<< HEAD
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -583,13 +546,6 @@ nav .nav-trip .trip-count {
             align-items: center;
     width: 30%;
     -webkit-transition: all .5s ease-in;
-=======
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    width: 30%;
->>>>>>> dev
     transition: all .5s ease-in;
   }
   nav .nav-links li {
@@ -604,13 +560,9 @@ nav .nav-trip .trip-count {
   }
   nav .nav-icons {
     width: 100%;
-<<<<<<< HEAD
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-=======
-    justify-content: flex-end;
->>>>>>> dev
   }
   nav .nav-icons .icon {
     margin: 0 30px 0 15px;
@@ -633,20 +585,15 @@ nav .nav-trip .trip-count {
   nav .nav-icons {
     width: 50%;
     margin-left: 16px;
-<<<<<<< HEAD
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-=======
-    justify-content: space-between;
->>>>>>> dev
   }
   nav .nav-icons .icon {
     margin: 0;
   }
 }
 
-<<<<<<< HEAD
 @-webkit-keyframes navLinkFade {
   from {
     opacity: 0;
@@ -670,26 +617,12 @@ nav .nav-trip .trip-count {
     opacity: 1;
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
-=======
-@keyframes navLinkFade {
-  from {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0px);
->>>>>>> dev
   }
 }
 
 .toggle .line1 {
-<<<<<<< HEAD
   -webkit-transform: rotate(45deg) translate(4px, 6px);
           transform: rotate(45deg) translate(4px, 6px);
-=======
-  transform: rotate(45deg) translate(4px, 6px);
->>>>>>> dev
 }
 
 .toggle .line2 {
@@ -697,12 +630,8 @@ nav .nav-trip .trip-count {
 }
 
 .toggle .line3 {
-<<<<<<< HEAD
   -webkit-transform: rotate(-45deg) translate(3px, -6px);
           transform: rotate(-45deg) translate(3px, -6px);
-=======
-  transform: rotate(-45deg) translate(3px, -6px);
->>>>>>> dev
 }
 
 footer {
@@ -722,7 +651,6 @@ footer .links .logo {
   position: relative;
   left: 50%;
   bottom: 50px;
-<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
@@ -739,26 +667,12 @@ footer .links .footer-links {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-=======
-  transform: translateX(-50%);
-}
-
-footer .links .footer-links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
->>>>>>> dev
   width: 55%;
   position: relative;
   left: 50%;
   bottom: 30px;
-<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-=======
-  transform: translateX(-50%);
->>>>>>> dev
 }
 
 footer .links .footer-links a {
@@ -769,12 +683,8 @@ footer .footer_moon {
   position: relative;
   left: 50%;
   max-width: 40%;
-<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-=======
-  transform: translateX(-50%);
->>>>>>> dev
 }
 
 footer .smoke {
@@ -783,12 +693,8 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
-<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-=======
-  transform: translateX(-50%);
->>>>>>> dev
 }
 
 @media (max-width: 768px) {
@@ -913,12 +819,8 @@ button:hover {
   position: absolute;
   left: 50%;
   top: 50%;
-<<<<<<< HEAD
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-=======
-  transform: translate(-50%, -50%);
->>>>>>> dev
   top: 35%;
   letter-spacing: 2px;
 }
@@ -933,10 +835,6 @@ button:hover {
 }
 
 .planet_tab ul.tab-title {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> dev
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -947,15 +845,6 @@ button:hover {
           column-gap: 3%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-<<<<<<< HEAD
-=======
-=======
-  display: flex;
-  justify-content: center;
-  column-gap: 3%;
-  flex-wrap: wrap;
->>>>>>> dev
->>>>>>> dev
   list-style: none;
 }
 
@@ -986,32 +875,17 @@ button:hover {
 }
 
 .planet_tab .tab-inner {
-<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-=======
-  display: flex;
-<<<<<<< HEAD
->>>>>>> dev
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-<<<<<<< HEAD
-=======
-=======
-  flex-direction: column;
->>>>>>> dev
->>>>>>> dev
   text-align: left;
 }
 
 .planet_tab .tab-inner .tab_top {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> dev
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1020,14 +894,6 @@ button:hover {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-<<<<<<< HEAD
-=======
-=======
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
->>>>>>> dev
->>>>>>> dev
   padding: 0 15%;
 }
 
@@ -1046,31 +912,16 @@ button:hover {
 }
 
 .planet_tab .tab-inner .tab_top .data {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> dev
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-<<<<<<< HEAD
-=======
-=======
-  display: flex;
-  justify-content: center;
->>>>>>> dev
->>>>>>> dev
   font-family: Haettenschweiler, sans-serif;
 }
 
 .planet_tab .tab-inner .tab_top .data .grav, .planet_tab .tab-inner .tab_top .data .day, .planet_tab .tab-inner .tab_top .data .temp {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> dev
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1085,16 +936,6 @@ button:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-<<<<<<< HEAD
-=======
-=======
-  justify-content: center;
-  align-items: center;
-  border: 1px solid #AD6E4A;
-  display: flex;
-  flex-direction: column;
->>>>>>> dev
->>>>>>> dev
   min-width: 100px;
   max-height: 100px;
   border-right: 1px solid #AD6E4A;
@@ -1130,21 +971,11 @@ button:hover {
 }
 
 .planet_tab .tab-inner .planet_content {
-<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-=======
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-=======
->>>>>>> dev
-  display: flex;
-  flex-wrap: wrap;
->>>>>>> dev
 }
 
 .planet_tab .tab-inner .planet_content .carousel {
@@ -1156,10 +987,6 @@ button:hover {
 }
 
 .planet_tab .tab-inner .planet_content .imgs .img1 {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> dev
   -webkit-transform: translate(20%);
           transform: translate(20%);
 }
@@ -1177,7 +1004,6 @@ button:hover {
 .planet_tab .tab-inner .planet_content .desc {
   display: -webkit-box;
   display: -ms-flexbox;
-<<<<<<< HEAD
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1185,25 +1011,6 @@ button:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-=======
-=======
-  transform: translate(20%);
-}
-
-.planet_tab .tab-inner .planet_content .imgs .img2 {
-  transform: translateX(10%);
-}
-
-.planet_tab .tab-inner .planet_content .imgs .img3 {
-  transform: translate(-30%, -350px);
-}
-
-.planet_tab .tab-inner .planet_content .desc {
->>>>>>> dev
-  display: flex;
-  align-items: center;
-  justify-content: center;
->>>>>>> dev
 }
 
 .planet_tab .tab-inner .planet_content .desc p {
@@ -1214,7 +1021,6 @@ button:hover {
 
 @media only screen and (max-width: 1200px) {
   .planet_tab .tab-inner .tab-inner {
-<<<<<<< HEAD
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1245,35 +1051,6 @@ button:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-=======
-<<<<<<< HEAD
-    display: -webkit-box;
-    display: -ms-flexbox;
-=======
->>>>>>> dev
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .planet_tab .tab-inner .tab-inner .tab-active {
-<<<<<<< HEAD
-    display: -webkit-box;
-    display: -ms-flexbox;
-=======
->>>>>>> dev
-    display: flex;
-    justify-content: center;
-  }
-  .planet_tab .tab-inner .planet_content {
-<<<<<<< HEAD
-    display: -webkit-box;
-    display: -ms-flexbox;
-=======
->>>>>>> dev
-    display: flex;
-    flex-direction: column;
-    align-items: center;
->>>>>>> dev
   }
   .planet_tab .tab-inner .planet_content .imgs {
     display: none;
