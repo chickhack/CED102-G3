@@ -11,7 +11,7 @@ if($_GET['trev_stats'] == 0){
 
 
 try{
-    require_once("connectbooks_kai.php");
+    require_once("../connectbooks_kai.php");
     $sql = "UPDATE spot_trev SET trev_stats=$status WHERE trev_no=:trev_no";
     $spot = $pdo->prepare($sql);
     $spot->bindValue(":trev_no", $trev_no);
@@ -19,7 +19,7 @@ try{
     if($spot->execute()){
         
         echo "已下架!". "<br>";
-	    echo "<script>window.location.href='../backstage_shop.php'</script>";
+	    echo "<script>window.location.href='../../spaced_backstage_trip_reviews.php'</script>";
     }
 }
 catch(PDOException $e){
