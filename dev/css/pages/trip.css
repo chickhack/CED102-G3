@@ -1132,21 +1132,15 @@ input::-webkit-inner-spin-button {
   display: -ms-flexbox;
   display: flex;
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
   align-items: center;
 =======
->>>>>>> dev
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-<<<<<<< HEAD
-=======
 >>>>>>> Min
->>>>>>> dev
   border-bottom: 1px solid #AD6E4A;
   padding: 16px 0;
   position: relative;
@@ -1162,15 +1156,12 @@ input::-webkit-inner-spin-button {
   display: -ms-flexbox;
   display: flex;
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
   justify-content: center;
   align-items: center;
   justify-content: start;
   color: #cccaca;
   font-weight: 600;
 =======
->>>>>>> dev
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1180,10 +1171,7 @@ input::-webkit-inner-spin-button {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
-<<<<<<< HEAD
-=======
 >>>>>>> Min
->>>>>>> dev
 }
 
 .parent_container .up_container .comment .messages .name hr {

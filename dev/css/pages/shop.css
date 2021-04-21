@@ -790,16 +790,11 @@ section.shop .banner h2 {
   left: 50%;
   top: 50%;
 <<<<<<< HEAD
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-=======
-<<<<<<< HEAD
   transform: translate(-50%, -50%);
 =======
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 >>>>>>> Min
->>>>>>> dev
 }
 
 @media all and (max-width: 768px) {
@@ -810,14 +805,11 @@ section.shop .banner h2 {
 
 section.shop .filter {
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
   display: flex;
   justify-content: center;
   align-items: center;
   justify-content: space-between;
 =======
->>>>>>> dev
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -830,10 +822,7 @@ section.shop .filter {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-<<<<<<< HEAD
-=======
 >>>>>>> Min
->>>>>>> dev
 }
 
 @media all and (max-width: 992px) {
@@ -958,16 +947,11 @@ section.shop #app .content {
     opacity: 1;
     visibility: visible;
 <<<<<<< HEAD
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
-=======
-<<<<<<< HEAD
     transform: translateY(-10px);
 =======
     -webkit-transform: translateY(-10px);
             transform: translateY(-10px);
 >>>>>>> Min
->>>>>>> dev
   }
 }
 

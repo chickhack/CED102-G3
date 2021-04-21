@@ -79,19 +79,6 @@ section.login_container{
                 background-color: transparent;
                 border: none;
             }
-        //=========按鈕
-            .check_user, .register_btn{
-                background-color: transparent;
-                text-decoration: none;
-                color: $gold;
-                
-                &:hover{
-                    border: 1px solid $gold;
-                    background: $gold;
-                    color: $white;
-                    
-                }
-            }
         }
         form {
             display: flex;

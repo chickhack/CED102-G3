@@ -772,15 +772,10 @@ section.login_container {
   padding: 0;
   border: 1px solid #ad6e4a83;
 <<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-=======
-<<<<<<< HEAD
 =======
   display: -webkit-box;
   display: -ms-flexbox;
 >>>>>>> Min
->>>>>>> dev
   display: flex;
   border-radius: 5px;
 }
@@ -824,15 +819,10 @@ section.login_container .login_banner h2 {
 
 section.login_container .return_btn {
 <<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-=======
-<<<<<<< HEAD
 =======
   display: -webkit-box;
   display: -ms-flexbox;
 >>>>>>> Min
->>>>>>> dev
   display: flex;
   -ms-flex-item-align: start;
       align-self: flex-start;
@@ -859,15 +849,10 @@ section.login_container .return_btn a:hover {
 
 section.login_container .modal-dialog {
 <<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-=======
-<<<<<<< HEAD
 =======
   display: -webkit-box;
   display: -ms-flexbox;
 >>>>>>> Min
->>>>>>> dev
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -877,15 +862,10 @@ section.login_container .modal-dialog {
 
 section.login_container .modal-dialog .main-section {
 <<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-=======
-<<<<<<< HEAD
 =======
   display: -webkit-box;
   display: -ms-flexbox;
 >>>>>>> Min
->>>>>>> dev
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -906,14 +886,11 @@ section.login_container .modal-dialog .main-section .modal-content {
 
 section.login_container .modal-dialog form {
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: inherit;
 =======
->>>>>>> dev
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -927,10 +904,7 @@ section.login_container .modal-dialog form {
   -webkit-box-align: inherit;
       -ms-flex-align: inherit;
           align-items: inherit;
-<<<<<<< HEAD
-=======
 >>>>>>> Min
->>>>>>> dev
 }
 
 section.login_container .modal-dialog form .form-group input {
@@ -958,11 +932,8 @@ section.login_container .modal-dialog form .form-group input:focus {
 
 section.login_container .modal-dialog form .form-group input:hover {
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
   animation: pulse .5s 1;
 =======
->>>>>>> dev
   -webkit-animation: pulse .5s 1;
           animation: pulse .5s 1;
 }
@@ -977,10 +948,7 @@ section.login_container .modal-dialog form .form-group input:hover {
   100% {
     -webkit-box-shadow: 0 0 0 0 rgba(204, 140, 44, 0);
   }
-<<<<<<< HEAD
-=======
 >>>>>>> Min
->>>>>>> dev
 }
 
 @keyframes pulse {
@@ -1021,18 +989,12 @@ section.login_container .modal-dialog form span {
 
 section.login_container .modal-dialog form #register {
 <<<<<<< HEAD
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-=======
-<<<<<<< HEAD
   align-self: center;
 =======
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
 >>>>>>> Min
->>>>>>> dev
   background-color: transparent;
   color: #AD6E4A;
 }
@@ -1045,15 +1007,10 @@ section.login_container .modal-dialog form #register:hover {
 
 section.login_container .bottom-section {
 <<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-=======
-<<<<<<< HEAD
 =======
   display: -webkit-box;
   display: -ms-flexbox;
 >>>>>>> Min
->>>>>>> dev
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;

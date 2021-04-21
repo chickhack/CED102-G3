@@ -1,9 +1,5 @@
 <?php 
-<<<<<<< HEAD:dev/spaced_backstage_trip_reviews.php
-require_once("./php/connectBooks_kai.php");
-=======
 require_once("../php/connectbooks_kai.php");
->>>>>>> dev:dev/backstage/spaced_backstage_trip_reviews.php
 $sql = "select * from spot_trev";
 $spottrev = $pdo->query($sql);  //執行指令
 $spottrev ->execute();
