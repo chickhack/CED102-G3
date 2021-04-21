@@ -262,7 +262,7 @@
                     </tr>
                   </thead>
                   <tbody v-for="item1 in spot_order_detail" v-if="item.order_no==item1.order_no">
-                    <div v-for=>
+                    
                     <tr>
                       <td>{{item1.spot_no}}</td>
                       <td>{{item1.spot_name}}</td>
@@ -270,7 +270,7 @@
                       <td>{{item1.integral}}</td>
                       <td>{{item1.people}}</td>
                     </tr>
-                    </div>
+                    
                   </tbody>
                 </table>
                 <div class="margin_top_1">
@@ -755,13 +755,9 @@
         isChange: false,
         isEditing: false,
         toggle: false,
-<<<<<<< HEAD
         timefilter: new Date(),
         // visibility: '全部',
         visibility: '0',
-=======
-        visibility: '全部',
->>>>>>> Min
         customer: { //會員資料
           mem_no: '1010006',
           mem_lv: '初星者',
@@ -833,64 +829,8 @@
           prod_point: '100',
           qty: '1',
         }],
-        spot_order: [
-          // { // 行程訂單+收件人
-        //   ord_no: '#TW1637493',
-        //   dep_date: '2021/02/04',
-        //   total_price: '1,290',
-        //   scores: '10,000',
-        //   order_date: '2021/02/04',
-        //   state: '已結束',
-        //   guide: '加購',
-        //   order_name: '陳大大',
-        //   order_ph: '0988123456',
-        //   order_email: '台北市中正區大西路48號',
-        // }, {
-        //   ord_no: '#TW1637493',
-        //   dep_date: '2021/02/04',
-        //   total_price: '1,290',
-        //   scores: '10,000',
-        //   order_date: '2021/02/04',
-        //   state: '待出發',
-        //   guide: '加購',
-        //   order_name: '陳中中',
-        //   order_ph: '0988123456',
-        //   order_email: '台北市中正區大西路48號',
-        // }, {
-        //   ord_no: '#TW1637493',
-        //   dep_date: '2021/02/04',
-        //   total_price: '1,290',
-        //   scores: '10,000',
-        //   order_date: '2021/02/04',
-        //   state: '待出發',
-        //   guide: '加購',
-        //   order_name: '陳小小',
-        //   order_ph: '0988123456',
-        //   order_email: '台北市中正區大西路48號',
-        // }
-        ],
-        
-        spot_order_detail: [
-        //   { // 行程訂單明細
-        //   spot_no: '#24',
-        //   spot_name: '攀登太陽系第一高山-奧林帕斯山三日遊',
-        //   price: '1,290',
-        //   integral: '10,000',
-        //   people: '1',
-        // }, {
-        //   spot_no: '#24',
-        //   spot_name: '攀登太陽系第一高山-奧林帕斯山三日遊',
-        //   price: '1,290',
-        //   integral: '10,000',
-        //   people: '1',
-        // }, {
-        //   spot_no: '#24',
-        //   spot_name: '攀登太陽系第一高山-奧林帕斯山三日遊',
-        //   price: '1,290',
-        //   integral: '10,000',
-        //   people: '1',
-        // }
-        ],
+        spot_order: [],
+        spot_order_detail: [],
         active: [],
         spot1: [{ // 行程內容
           spot: "./img/trip/trip_moon/moon1.jpg",
