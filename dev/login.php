@@ -24,7 +24,7 @@ try{
     echo json_encode($memRow); //輸出json
 
     echo ("<SCRIPT LANGUAGE='JavaScript'>
-    window.location.href='home.php';
+    window.location.href='account.html';
     window.alert('登入成功！')
       </SCRIPT>");
   }

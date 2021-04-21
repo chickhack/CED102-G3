@@ -133,6 +133,7 @@ button:hover{
                     // justify-content: center;
                     font-family: Haettenschweiler, sans-serif;
                     .grav, .day, .temp{
+                        padding: 5px 0;
                         justify-content: center;
                         align-items: center;
                         border: 1px solid $gold;
@@ -254,19 +255,5 @@ button:hover{
             
             }
         }
-        .tab_moon{
-            .tab_top{
-                display:flex;
-            }
-            .tab-active{
-                // bordeR: 1px solid yellow;
-            }
-            img.moon_pic{
-                position: relative;
-                z-index: 99;
-                top: -100px;
-                left: -10px;
 
-            }
-        }
         }

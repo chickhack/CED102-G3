@@ -247,7 +247,7 @@
                                     </div>
                                 </div>
                                 <div class="planet_btn">
-                                    <button class="button button_min "><a href="photowall.html">更多關於火星</a></button>
+                                    <button class="button button_min "><a href="planet.php">更多關於火星</a></button>
                                 </div>
                             </div>
                             <div class="tab-active col-lg-6 col-md-12 col-sm-12">
@@ -411,7 +411,7 @@
                     </a>
                 </div>
             </div>
-            <a href="shop.html">
+            <a href="shop.php">
                 <button class="button button_min margin_top_5">去逛逛</button>
             </a>
         </div>
