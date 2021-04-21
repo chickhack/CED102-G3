@@ -1,5 +1,6 @@
 @import "../all.scss";
 
+
 #marsloc {
     top: 10vh;
     left: 0;
@@ -88,14 +89,8 @@ div.bk3 {
             -webkit-animation: h2 1.2s infinite; 
             animation: h2 1.2s infinite;
     
-            @media screen and (min-width: 768px) and (max-width:1200px) {
+            @media all and (max-width:1200px) {
                 font-size: 32px;
-                top: 10vh;
-            }
-
-            @media screen and (max-width: 767px) {
-                font-size: 24px;
-                top: 10vh;
             }
     
             span.h3 {
@@ -103,13 +98,9 @@ div.bk3 {
                 letter-spacing: 10px;
                 font-size: 24px;
     
-                @media screen and (min-width: 768px) and (max-width:1200px) {
+                @media all and (max-width:1200px) {
                     font-size: 18px;
     
-                }
-                @media screen and (max-width: 767px) {
-                    font-size: 14px;
-                   
                 }
             }
         }
@@ -128,16 +119,8 @@ div.bk3 {
             display: inline-flex;
             padding-top: 80px;
 
-
             @media screen and (min-width: 768px) and (max-width: 1200px) {
-                padding-top: 120px;
-            }
-            
-            @media screen and (max-width: 576px) {
-                flex-direction: column;
-                margin: 0 auto;
-                justify-content: space-between;
-               
+                padding-top: 160px;
             }
 
             div.planet_top {
@@ -169,13 +152,9 @@ div.bk3 {
                 }
 
                 @media all and (max-width:1200px) {
-                    // padding-left: 8px;
-                    // padding-right: 8px;
-                    width: 100%;
-                 
+                    padding-left: 8px;
+                    padding-right: 8px;
                 }
-
-                
 
                 h4 {
                     color: $pink;
@@ -195,29 +174,25 @@ div.bk3 {
                     max-width: 270px;
                     &:hover{
                         transform:translateY(0.2em);
-                    }  
-                    @media all and (max-width:577px) {
-                      margin: 0 auto;  
-                      max-width: 90%;
-                 }  
+                    }
+                    
                 }
-
 
                 div.word {
                     position: absolute;
                     top: 190px;
-                    // left: 50%;
-                    // transform: translateX(-50%);
+                    left: 50%;
+                    transform: translateX(-50%);
                     text-align: center;
                     margin: 0 auto;
-                    width: 100%;
+
                     .hot {
                         color: $gold;
                     }
 
                     .tag {
                         display: inline-flex;
-                        border: 1px solid $gray;
+                        border: 1px solid $pink;
                         border-radius: 5px;
                         padding: 8px;
                         line-height: 5px;
@@ -257,14 +232,6 @@ div.bk3 {
                         background-color: lighten($gold, 10%);
                     }
 
-                }
-            }
-            @media screen and (min-width: 577px) and (max-width: 768px) {
-                .planet_top:nth-child(3){
-                    display: none;
-                }
-                .planet_top{
-                    margin: 0 36px;
                 }
             }
         }

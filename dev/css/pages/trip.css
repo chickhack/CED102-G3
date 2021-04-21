@@ -414,6 +414,11 @@ nav .nav-links .bread {
   font-weight: 900;
 }
 
+nav .nav-links .bread {
+  color: #AD6E4A;
+  font-weight: 900;
+}
+
 nav .nav-icons {
   display: flex;
   justify-content: center;
@@ -450,20 +455,23 @@ nav .nav-cart .count {
   text-align: center;
   line-height: 1.5rem;
   position: absolute;
-  transform: translate(50%, -150%);
+  -webkit-transform: translate(50%, -150%);
+          transform: translate(50%, -150%);
   display: block;
   color: white;
 }
 
 @media all and (max-width: 992px) {
   nav .nav-cart .count {
-    transform: translate(100%, -150%);
+    -webkit-transform: translate(100%, -150%);
+            transform: translate(100%, -150%);
   }
 }
 
 @media all and (max-width: 768px) {
   nav .nav-cart .count {
-    transform: translate(40%, -170%);
+    -webkit-transform: translate(40%, -170%);
+            transform: translate(40%, -170%);
     width: 20px;
     height: 20px;
     font-size: 12px;
@@ -484,20 +492,23 @@ nav .nav-trip .trip-count {
   text-align: center;
   line-height: 1.5rem;
   position: absolute;
-  transform: translate(50%, -150%);
+  -webkit-transform: translate(50%, -150%);
+          transform: translate(50%, -150%);
   display: block;
   color: white;
 }
 
 @media all and (max-width: 992px) {
   nav .nav-trip .trip-count {
-    transform: translate(100%, -150%);
+    -webkit-transform: translate(100%, -150%);
+            transform: translate(100%, -150%);
   }
 }
 
 @media all and (max-width: 768px) {
   nav .nav-trip .trip-count {
-    transform: translate(40%, -170%);
+    -webkit-transform: translate(40%, -170%);
+            transform: translate(40%, -170%);
     width: 20px;
     height: 20px;
     font-size: 12px;
@@ -664,7 +675,7 @@ input::-webkit-inner-spin-button {
 .swiper-container {
   margin: 0 auto;
   max-width: 1100px;
-  height: 75vh;
+  height: 65vh;
 }
 
 @media all and (max-width: 1200px) {
@@ -808,10 +819,10 @@ input::-webkit-inner-spin-button {
   }
 }
 
-@media screen and (min-width: 577px) and (max-width: 768px) {
+@media screen and (min-width: 577px) and (max-width: 767px) {
   .parent_container .up_container .book {
-    width: 35%;
-    top: 15vh;
+    width: 360px;
+    position: relative;
     margin: 0 auto;
   }
 }
@@ -952,7 +963,6 @@ input::-webkit-inner-spin-button {
   width: 110px;
   line-height: 26px;
   text-align: center;
-  background-color: #0c0d18;
 }
 
 .parent_container .up_container .book .btn .addin a {
@@ -976,7 +986,7 @@ input::-webkit-inner-spin-button {
 .parent_container .up_container .book .btn .button_min {
   background-color: #AD6E4A;
   color: #ffffff;
-  padding: 8px;
+  padding: 0 8px 0 8px;
 }
 
 .parent_container .up_container .book .btn .button_min a {
@@ -1043,19 +1053,25 @@ input::-webkit-inner-spin-button {
 .parent_container .up_container .comment .messages {
   display: flex;
 <<<<<<< HEAD
+<<<<<<< HEAD
   align-items: center;
 =======
 <<<<<<< HEAD
   align-items: center;
 =======
+=======
+>>>>>>> denis
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+<<<<<<< HEAD
 >>>>>>> Min
 >>>>>>> 1ae28f91038a4c3c157553d18c3f0413d55d75a6
+=======
+>>>>>>> denis
   border-bottom: 1px solid #AD6E4A;
   padding: 16px 0;
   position: relative;
@@ -1069,6 +1085,7 @@ input::-webkit-inner-spin-button {
 .parent_container .up_container .comment .messages .name {
   display: flex;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 1ae28f91038a4c3c157553d18c3f0413d55d75a6
@@ -1080,6 +1097,8 @@ input::-webkit-inner-spin-button {
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> denis
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1089,8 +1108,11 @@ input::-webkit-inner-spin-button {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
+<<<<<<< HEAD
 >>>>>>> Min
 >>>>>>> 1ae28f91038a4c3c157553d18c3f0413d55d75a6
+=======
+>>>>>>> denis
 }
 
 .parent_container .up_container .comment .messages .name hr {
@@ -1146,6 +1168,7 @@ input::-webkit-inner-spin-button {
   margin: 0 16px 0 16px;
 }
 
+<<<<<<< HEAD
 .parent_container .recommend .tripcard_all .tripcard:hover {
   transform: translateY(0.2em);
   box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
@@ -1167,6 +1190,8 @@ input::-webkit-inner-spin-button {
   animation: float 5.5s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
 }
 
+=======
+>>>>>>> denis
 @media all and (max-width: 767px) {
   .parent_container .recommend .tripcard_all .tripcard {
     flex-direction: column;
@@ -1185,17 +1210,15 @@ input::-webkit-inner-spin-button {
 .parent_container .recommend .tripcard_all .tripcard .hot2 {
   font-weight: bold;
   margin-bottom: 15px;
-  color: #C9ADA7;
 }
 
 .parent_container .recommend .tripcard_all .tripcard .tag {
   display: inline-flex;
-  border: 1px solid #cccaca;
+  border: 1px solid #C9ADA7;
   border-radius: 5px;
   padding: 8px;
   line-height: 5px;
   margin: 3px;
-  color: #cccaca;
 }
 
 .parent_container .recommend .tripcard_all .tripcard .price2 {
@@ -1216,8 +1239,6 @@ input::-webkit-inner-spin-button {
   width: 110px;
   line-height: 26px;
   text-align: center;
-  text-decoration: none;
-  border: none;
 }
 
 .parent_container .recommend .tripcard_all .tripcard .addin2 img.plus {
@@ -1231,6 +1252,7 @@ input::-webkit-inner-spin-button {
 .parent_container .recommend .tripcard_all .tripcard .addin2:hover {
   background-color: #bf896b;
 }
+<<<<<<< HEAD
 
 @keyframes float {
   0% {
@@ -1246,4 +1268,6 @@ input::-webkit-inner-spin-button {
     transform: translate(0, 0);
   }
 }
+=======
+>>>>>>> denis
 /*# sourceMappingURL=trip.css.map */

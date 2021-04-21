@@ -414,6 +414,11 @@ nav .nav-links .bread {
   font-weight: 900;
 }
 
+nav .nav-links .bread {
+  color: #AD6E4A;
+  font-weight: 900;
+}
+
 nav .nav-icons {
   display: flex;
   justify-content: center;
@@ -450,20 +455,23 @@ nav .nav-cart .count {
   text-align: center;
   line-height: 1.5rem;
   position: absolute;
-  transform: translate(50%, -150%);
+  -webkit-transform: translate(50%, -150%);
+          transform: translate(50%, -150%);
   display: block;
   color: white;
 }
 
 @media all and (max-width: 992px) {
   nav .nav-cart .count {
-    transform: translate(100%, -150%);
+    -webkit-transform: translate(100%, -150%);
+            transform: translate(100%, -150%);
   }
 }
 
 @media all and (max-width: 768px) {
   nav .nav-cart .count {
-    transform: translate(40%, -170%);
+    -webkit-transform: translate(40%, -170%);
+            transform: translate(40%, -170%);
     width: 20px;
     height: 20px;
     font-size: 12px;
@@ -484,20 +492,23 @@ nav .nav-trip .trip-count {
   text-align: center;
   line-height: 1.5rem;
   position: absolute;
-  transform: translate(50%, -150%);
+  -webkit-transform: translate(50%, -150%);
+          transform: translate(50%, -150%);
   display: block;
   color: white;
 }
 
 @media all and (max-width: 992px) {
   nav .nav-trip .trip-count {
-    transform: translate(100%, -150%);
+    -webkit-transform: translate(100%, -150%);
+            transform: translate(100%, -150%);
   }
 }
 
 @media all and (max-width: 768px) {
   nav .nav-trip .trip-count {
-    transform: translate(40%, -170%);
+    -webkit-transform: translate(40%, -170%);
+            transform: translate(40%, -170%);
     width: 20px;
     height: 20px;
     font-size: 12px;
@@ -699,7 +710,8 @@ input[type=number] {
   height: 100px;
   background-size: contain;
   background-repeat: no-repeat;
-  animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+  -webkit-animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+          animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
 }
 
 body {
@@ -890,7 +902,7 @@ body {
   color: #ffffff;
   font-weight: 900;
   transition: all .3s;
-  padding: 8.4px 0;
+  padding: 10.4px 0;
 }
 
 @media all and (max-width: 768px) {
@@ -1069,6 +1081,7 @@ body {
 .comment .messages {
   display: flex;
 <<<<<<< HEAD
+<<<<<<< HEAD
   justify-content: center;
   align-items: center;
   justify-content: start;
@@ -1078,17 +1091,22 @@ body {
   align-items: center;
   justify-content: start;
 =======
+=======
+>>>>>>> denis
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+<<<<<<< HEAD
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
 >>>>>>> Min
 >>>>>>> 1ae28f91038a4c3c157553d18c3f0413d55d75a6
+=======
+>>>>>>> denis
   border-bottom: 1px solid #AD6E4A;
   padding: 16px 0;
   position: relative;
@@ -1115,9 +1133,8 @@ body {
 .comment .messages .more {
   color: #ffffff;
   text-decoration: underline;
-  position: absolute;
-  right: 0;
-  bottom: 10px;
+  position: relative;
+  float: right;
   cursor: pointer;
 }
 /*# sourceMappingURL=product.css.map */

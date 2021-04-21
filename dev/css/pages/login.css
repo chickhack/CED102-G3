@@ -415,6 +415,11 @@ nav .nav-links .bread {
   font-weight: 900;
 }
 
+nav .nav-links .bread {
+  color: #AD6E4A;
+  font-weight: 900;
+}
+
 nav .nav-icons {
   display: flex;
   justify-content: center;
@@ -451,20 +456,23 @@ nav .nav-cart .count {
   text-align: center;
   line-height: 1.5rem;
   position: absolute;
-  transform: translate(50%, -150%);
+  -webkit-transform: translate(50%, -150%);
+          transform: translate(50%, -150%);
   display: block;
   color: white;
 }
 
 @media all and (max-width: 992px) {
   nav .nav-cart .count {
-    transform: translate(100%, -150%);
+    -webkit-transform: translate(100%, -150%);
+            transform: translate(100%, -150%);
   }
 }
 
 @media all and (max-width: 768px) {
   nav .nav-cart .count {
-    transform: translate(40%, -170%);
+    -webkit-transform: translate(40%, -170%);
+            transform: translate(40%, -170%);
     width: 20px;
     height: 20px;
     font-size: 12px;
@@ -485,20 +493,23 @@ nav .nav-trip .trip-count {
   text-align: center;
   line-height: 1.5rem;
   position: absolute;
-  transform: translate(50%, -150%);
+  -webkit-transform: translate(50%, -150%);
+          transform: translate(50%, -150%);
   display: block;
   color: white;
 }
 
 @media all and (max-width: 992px) {
   nav .nav-trip .trip-count {
-    transform: translate(100%, -150%);
+    -webkit-transform: translate(100%, -150%);
+            transform: translate(100%, -150%);
   }
 }
 
 @media all and (max-width: 768px) {
   nav .nav-trip .trip-count {
-    transform: translate(40%, -170%);
+    -webkit-transform: translate(40%, -170%);
+            transform: translate(40%, -170%);
     width: 20px;
     height: 20px;
     font-size: 12px;
@@ -700,7 +711,8 @@ input[type=number] {
   height: 100px;
   background-size: contain;
   background-repeat: no-repeat;
-  animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+  -webkit-animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+          animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
 }
 
 .container-fluid {
@@ -720,6 +732,7 @@ section.login_container {
   padding: 0;
   border: 1px solid #ad6e4a83;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -727,6 +740,10 @@ section.login_container {
   display: -ms-flexbox;
 >>>>>>> Min
 >>>>>>> 1ae28f91038a4c3c157553d18c3f0413d55d75a6
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> denis
   display: flex;
   border-radius: 5px;
 }
@@ -761,6 +778,7 @@ section.login_container .login_banner h2 {
 
 section.login_container .return_btn {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -768,6 +786,10 @@ section.login_container .return_btn {
   display: -ms-flexbox;
 >>>>>>> Min
 >>>>>>> 1ae28f91038a4c3c157553d18c3f0413d55d75a6
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> denis
   display: flex;
   align-self: flex-start;
   align-items: baseline;
@@ -798,6 +820,7 @@ section.login_container .fa, section.login_container .fas {
 
 section.login_container .modal-dialog {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -805,12 +828,17 @@ section.login_container .modal-dialog {
   display: -ms-flexbox;
 >>>>>>> Min
 >>>>>>> 1ae28f91038a4c3c157553d18c3f0413d55d75a6
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> denis
   display: flex;
   flex-direction: column;
 }
 
 section.login_container .modal-dialog .main-section {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -818,6 +846,10 @@ section.login_container .modal-dialog .main-section {
   display: -ms-flexbox;
 >>>>>>> Min
 >>>>>>> 1ae28f91038a4c3c157553d18c3f0413d55d75a6
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> denis
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -837,6 +869,7 @@ section.login_container .modal-dialog .fa-eye:before, section.login_container .m
 
 section.login_container form {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 1ae28f91038a4c3c157553d18c3f0413d55d75a6
@@ -847,6 +880,8 @@ section.login_container form {
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> denis
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -860,8 +895,11 @@ section.login_container form {
   -webkit-box-align: inherit;
       -ms-flex-align: inherit;
           align-items: inherit;
+<<<<<<< HEAD
 >>>>>>> Min
 >>>>>>> 1ae28f91038a4c3c157553d18c3f0413d55d75a6
+=======
+>>>>>>> denis
 }
 
 section.login_container form .form-group input {
@@ -888,11 +926,14 @@ section.login_container form .form-group input:focus {
 
 section.login_container form .form-group input:hover {
 <<<<<<< HEAD
+<<<<<<< HEAD
   animation: pulse .5s 1;
 =======
 <<<<<<< HEAD
   animation: pulse .5s 1;
 =======
+=======
+>>>>>>> denis
   -webkit-animation: pulse .5s 1;
           animation: pulse .5s 1;
 }
@@ -907,8 +948,11 @@ section.login_container form .form-group input:hover {
   100% {
     -webkit-box-shadow: 0 0 0 0 rgba(204, 140, 44, 0);
   }
+<<<<<<< HEAD
 >>>>>>> Min
 >>>>>>> 1ae28f91038a4c3c157553d18c3f0413d55d75a6
+=======
+>>>>>>> denis
 }
 
 @keyframes pulse {
@@ -938,6 +982,7 @@ section.login_container form .form-group:last-of-type::before {
 
 section.login_container form .login_btn {
 <<<<<<< HEAD
+<<<<<<< HEAD
   align-self: center;
 =======
 <<<<<<< HEAD
@@ -948,6 +993,11 @@ section.login_container form .login_btn {
       align-self: center;
 >>>>>>> Min
 >>>>>>> 1ae28f91038a4c3c157553d18c3f0413d55d75a6
+=======
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+>>>>>>> denis
   background-color: transparent;
   color: #AD6E4A;
 }
@@ -959,6 +1009,7 @@ section.login_container form .login_btn:hover {
 }
 
 .bottom-section {
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -975,6 +1026,8 @@ section.login_container form .login_btn:hover {
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> denis
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -997,8 +1050,11 @@ section.login_container form .login_btn:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+<<<<<<< HEAD
 >>>>>>> Min
 >>>>>>> 1ae28f91038a4c3c157553d18c3f0413d55d75a6
+=======
+>>>>>>> denis
 }
 
 .bottom-section .forgot a, .bottom-section .signup a {

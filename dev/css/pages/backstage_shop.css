@@ -2,16 +2,23 @@
   background-color: #ad6e4a;
   width: 80%;
   border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 5px 1px;
   cursor: pointer;
 }
 
 .upimgsr img {
   max-width: 25px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 #upimgs {
@@ -19,12 +26,8 @@
 }
 
 .inputext {
-  width: 70%;
+  width: 100%;
   outline: none;
-}
-
-.text-1 {
-  line-height: 1.25rem;
 }
 
 .status_sty {
@@ -48,6 +51,7 @@
   right: 0;
   background-color: #ccc;
   border-radius: 30px;
+  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
@@ -61,6 +65,7 @@
   bottom: 4px;
   border-radius: 50%;
   background-color: #fff;
+  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
@@ -69,10 +74,12 @@ input:checked + .status_span {
 }
 
 input:focus + .status_span {
-  box-shadow: 0 0 1px #ad6e4a;
+  -webkit-box-shadow: 0 0 1px #ad6e4a;
+          box-shadow: 0 0 1px #ad6e4a;
 }
 
 input:checked + .status_span::before {
-  transform: translateX(26px);
+  -webkit-transform: translateX(26px);
+          transform: translateX(26px);
 }
 /*# sourceMappingURL=backstage_shop.css.map */

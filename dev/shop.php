@@ -14,8 +14,7 @@
         }else{
             $count = count($_SESSION["cart"]);
             $item_array = array(
-                "product_id" => $_POST["product_id"],
-                "prod_qty" => 1
+                "product_id" => $_POST["product_id"]
             );
 
             $_SESSION["cart"][$count] = $item_array;
@@ -24,8 +23,7 @@
 
      }else{
          $item_array = array(
-             "product_id" => $_POST["product_id"],
-             "prod_qty" => 1
+             "product_id" => $_POST["product_id"]
          );
         //  create new session variable
         $_SESSION["cart"][0] = $item_array;
@@ -56,18 +54,18 @@
     <h1><a href="home.php">SPACED</a></h1>
   </div>
   <ul class="nav-links">
-    <li class="margin_left_5"><a href="alltrip.php">星球景點</a></li>
-    <li class="margin_left_5"><a href="planet.php">星星世界</a></li>
-    <li class="margin_left_5"><a href="shop.php" class="bread">星球商城</a></li>
-    <li class="margin_left_5"><a href="photowall.php">太空互動</a></li>
-    <li class="margin_left_5"><a href="Leaderboard.php">玩家排行</a></li>
+    <li class="margin_left_5"><a href="alltrip.html">星球景點</a></li>
+    <li class="margin_left_5"><a href="planet.html">星星世界</a></li>
+    <li class="margin_left_5"><a href="shop.html">星球商城</a></li>
+    <li class="margin_left_5"><a href="photowall.html">太空互動</a></li>
+    <li class="margin_left_5"><a href="Leaderboard.html">玩家排行</a></li>
     <!-- <li><a href=""><img src="./images/ticket.png" alt="" class="icon"></a></li>
         <li><a href=""><img src="./images/shopping-cart_(1).png" alt="" class="icon"></a></li>
         <li><a href=""><img src="./images/round-account-button-with-user-inside_(1).png" alt="" class="icon"></a></li> -->
   </ul>
   <ul class="nav-icons">
     <li>
-      <a href="./car-itineray.php"
+      <a href="./car-itineray.html"
         ><img src="./img/icon/header/luggage.png" alt="" class="icon"
       /></a>
     </li>
@@ -85,7 +83,7 @@
         </a>
     </li> 
     <li>
-      <a href="./login.php"
+      <a href="./login.html"
         ><img
           src="./img/icon/header/round-account-button-with-user-inside_(1).png"
           alt=""
@@ -112,11 +110,11 @@
             <div id="app">
                 <div class="filter margin_top_5">
                     <h2>商品</h2>
-                    <div class="custom-select"  @click="pick">
-                        <select>
+                    <div class="custom-select">
+                        <select @click="pricePick" >
                             <option value="0">排序</option>
                             <option value="1">依時間排序</option>
-                            <option value="2">依價格排序</option>
+                            <option value="2">價格高到低</option>
                         </select>
                     </div>
                 </div>
@@ -129,7 +127,7 @@
                                 <p class="h3 margin_top_1 price">${{card.prod_price}}</p>
                             </div>
                             <div class="content margin_top_2">
-                                <a @click="getId(index)" class="button_min" :href="card.url">查看詳情</a>
+                                <a class="button_min" :href="card.url">查看詳情</a>
                                 <button type="submit" name="add" class="button_min margin_top_2">加入購物車</button>
                                 <input type="hidden" name="product_id" :value="card.prod_no">
                             </div>
@@ -162,55 +160,24 @@
                 cart: [],
             },
             methods: {
-                pick(e){
-                    switch(e.target.innerHTML){
-                        case "依時間排序":
-                            this.products.sort((a,b) => {
-                                const d1 = new Date(a.prod_ondate);
-                                const d2 = new Date(b.prod_ondate);
-                                if(d1 > d2){
-                                    return 1;
-                                }else if(d1 < d2){
-                                    return -1;
-                                }
-                                return 0;
-                            })
-                            break;
-                        case "依價格排序":
-                            this.products.sort((a,b) => {
-                                const p1 = parseInt(a.prod_price);
-                                const p2 = parseInt(b.prod_price);
-                                if(p1 > p2){
-                                    return 1;
-                                }else if(p1 < p2){
-                                    return -1;
-                                }
-                                return 0;
-                            })
-                            console.log(this.products);
-                            break;
-                    }
+                pricePick(){
+                    this.products.forEach(prod => {
+                        console.log(prod["prod_price"].sort());
+                    })
                 },
-                getId(index){
-              
-                        sessionStorage.setItem("no", index+1);
-              
-                }
             },
         })
-        
+
         fetch("./php/getProduct.php").then(res => res.json())
-        .then(data => {
-            vm.products = data;
-            for(let i=0 ; i<data.length ; i++){
+                                     .then(data => {
+                                         vm.products = data;
+                                         for(let i=0 ; i<data.length ; i++){
                                              vm.products[i].png = data[i]["prod_pic"].split("==")[0];
-                                             let url = `product.php?id=${data[i].prod_no}`;
+                                             let url = `product.php?id=${data[i].prod_no}&name=${data[i].prod_name}&price=${data[i].prod_price}&info=${data[i].prod_info}&pic=${data[i].prod_pic}`;
                                              vm.products[i].url = encodeURI(url);
                                              console.log(vm.products[i].url)
-                                            }
-                                        });
-                                        
-                                     
+                                         }
+                                     });
     </script>
     <script src="./js/background.js"></script>
     <script src="./js/customSelect.js"></script>
