@@ -1,5 +1,5 @@
 <?php 
-require_once("./php/connectBooks_wei.php");
+require_once("../../connect_ced102_g3_local.php");
 $sql = "select * from post_cmt";
 $spottrev = $pdo->query($sql);  //執行指令
 $spottrev ->execute();
@@ -15,8 +15,8 @@ $spottrev ->execute();
     <title>後台景點評價管理</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/all.css">
-    <link rel="stylesheet" href="./css/pages/spaced_backstage.css">
+    <link rel="stylesheet" href=".././css/all.css">
+    <link rel="stylesheet" href=".././css/pages/spaced_backstage.css">
 </head>
 
 <body>
@@ -57,7 +57,7 @@ $spottrev ->execute();
                     <div class="span-1 margin_left_1">
                         <label for="search1">
 
-                            <img src="./img/icon/loupe.png" alt="" class="">
+                            <img src=".././img/icon/loupe.png" alt="" class="">
                         </label>
                         <input type="search" class="search1" id="search1" placeholder="輸入發文編號、會員編號、內容">
                     </div>

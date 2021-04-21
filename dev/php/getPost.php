@@ -1,6 +1,6 @@
 <?php
 try {
-	require_once("./connectBooks_wei.php");
+	require_once("../../connect_ced102_g3_local.php");
 	$sql = "SELECT CONCAT(last_name,first_name) 
 	as person_name, post_no, 
 	DATE(post_date) 

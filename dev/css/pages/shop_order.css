@@ -416,6 +416,11 @@ nav .nav-links a {
   padding: 8px;
 }
 
+nav .nav-links .bread {
+  color: #AD6E4A;
+  font-weight: 900;
+}
+
 nav .nav-icons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -460,20 +465,23 @@ nav .nav-cart .count {
   text-align: center;
   line-height: 1.5rem;
   position: absolute;
-  transform: translate(50%, -150%);
+  -webkit-transform: translate(50%, -150%);
+          transform: translate(50%, -150%);
   display: block;
   color: white;
 }
 
 @media all and (max-width: 992px) {
   nav .nav-cart .count {
-    transform: translate(100%, -150%);
+    -webkit-transform: translate(100%, -150%);
+            transform: translate(100%, -150%);
   }
 }
 
 @media all and (max-width: 768px) {
   nav .nav-cart .count {
-    transform: translate(40%, -170%);
+    -webkit-transform: translate(40%, -170%);
+            transform: translate(40%, -170%);
     width: 20px;
     height: 20px;
     font-size: 12px;
@@ -494,20 +502,23 @@ nav .nav-trip .trip-count {
   text-align: center;
   line-height: 1.5rem;
   position: absolute;
-  transform: translate(50%, -150%);
+  -webkit-transform: translate(50%, -150%);
+          transform: translate(50%, -150%);
   display: block;
   color: white;
 }
 
 @media all and (max-width: 992px) {
   nav .nav-trip .trip-count {
-    transform: translate(100%, -150%);
+    -webkit-transform: translate(100%, -150%);
+            transform: translate(100%, -150%);
   }
 }
 
 @media all and (max-width: 768px) {
   nav .nav-trip .trip-count {
-    transform: translate(40%, -170%);
+    -webkit-transform: translate(40%, -170%);
+            transform: translate(40%, -170%);
     width: 20px;
     height: 20px;
     font-size: 12px;
@@ -751,7 +762,8 @@ input[type=number] {
   height: 100px;
   background-size: contain;
   background-repeat: no-repeat;
-  animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+  -webkit-animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+          animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
 }
 
 section.orderDetail {
@@ -760,21 +772,17 @@ section.orderDetail {
   padding-top: 5vh;
 }
 
-section.orderDetail h3 {
-  margin: 0 80px;
-}
-
-section.orderDetail ul {
+section.orderDetail .order {
   margin: 0 80px;
 }
 
 @media all and (max-width: 768px) {
-  section.orderDetail ul {
+  section.orderDetail .order {
     margin: 0 30px;
   }
 }
 
-section.orderDetail li {
+section.orderDetail .order li {
   font-weight: 900;
   background-color: #292B41;
   display: -webkit-box;
@@ -792,17 +800,11 @@ section.orderDetail li {
   padding: 8px 0;
 }
 
-section.orderDetail li .imgWord {
+section.orderDetail .order li .imgWord {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
-  flex-wrap: wrap;
-=======
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -813,26 +815,22 @@ section.orderDetail li .imgWord {
       justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
->>>>>>> Min
 }
 
-section.orderDetail li .imgWord .prod {
+section.orderDetail .order li .imgWord .prod {
   width: 8%;
 }
 
 @media all and (max-width: 768px) {
-  section.orderDetail li .imgWord .prod {
+  section.orderDetail .order li .imgWord .prod {
     width: 15%;
     margin-left: 8px;
   }
 }
 
-section.orderDetail li .imgWord .imgRight {
-<<<<<<< HEAD
-=======
+section.orderDetail .order li .imgWord .imgRight {
   display: -webkit-box;
   display: -ms-flexbox;
->>>>>>> Min
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -847,19 +845,16 @@ section.orderDetail li .imgWord .imgRight {
 }
 
 @media all and (max-width: 768px) {
-  section.orderDetail li .imgWord .imgRight {
+  section.orderDetail .order li .imgWord .imgRight {
     width: 75%;
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
 }
 
-section.orderDetail li .imgWord .integral {
-<<<<<<< HEAD
-=======
+section.orderDetail .order li .imgWord .integral {
   display: -webkit-box;
   display: -ms-flexbox;
->>>>>>> Min
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -869,11 +864,11 @@ section.orderDetail li .imgWord .integral {
           align-items: center;
 }
 
-section.orderDetail li .imgWord .integral .icon {
+section.orderDetail .order li .imgWord .integral .icon {
   max-width: 10px;
 }
 
-section.orderDetail li .quantity {
+section.orderDetail .order li .quantity {
   width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -923,11 +918,6 @@ section.orderer .orderer_form, section.orderer .recipient, section.orderer .paym
   section.orderer .orderer_form, section.orderer .recipient, section.orderer .payment {
     margin: 32px 30px;
   }
-}
-
-section.orderer .input {
-  width: 88%;
-  margin: 0 auto;
 }
 
 section.orderer .arrow {
@@ -1162,12 +1152,6 @@ section.orderer .checkbox_group .credit_check {
 
 section.orderer .checkbox_group .credit_check label {
   width: 100%;
-}
-
-@media all and (max-width: 992px) {
-  section.orderer .checkbox_group .credit_check #creditDate {
-    margin-top: 8px;
-  }
 }
 
 @media all and (max-width: 992px) {

@@ -131,7 +131,7 @@
          <div class="member_info">
            <div class="member_photo"><img :src="targetPost.mem_pic" alt=""></div>
            <div class="name">{{targetPost.person_name}}</div>
-           <a href="trip.html"><button type="button" class="button_large">{{targetPost.post_sub}}</button></a>
+           <a href="trip.php"><button type="button" class="button_large">{{targetPost.post_sub}}</button></a>
          </div>
          <div class="post_text">
            {{targetPost.post_content}}
@@ -176,6 +176,7 @@
 		</div>
 		<form action="" class="post_message">
 			<input type="text" placeholder="留言...." >
+      <button acttion="submit"></button>
 		</form>
 		
      	</div>
