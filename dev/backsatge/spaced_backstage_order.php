@@ -1,6 +1,10 @@
 <?php 
+<<<<<<< HEAD:dev/backsatge/spaced_backstage_order.php
 // require_once("./php/connectbooks_kai.php");
 require_once("./php/connectBooks_Yun.php");
+=======
+require_once("../php/connectbooks_kai.php");
+>>>>>>> 34462b282fb3557e5596bfde68fbe15593b76fcf:dev/backstage/spaced_backstage_trip.php
 
 try {
 	$sql = "select * from spot_order";
@@ -23,23 +27,29 @@ try {
     <title>後台景點管理</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/all.css">
-    <link rel="stylesheet" href="./css/pages/spaced_backstage.css">
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../css/pages/spaced_backstage.css">
 </head>
 
 <body>
     <div class="top w-100 header">
         <!-- <p class="h1 padding_left_4 "></p> -->
-        <img src="./img/logo.png" class="imgs padding_left_4 padding_top_1" alt="">
+        <img src="../img/logo.png" class="imgs padding_left_4 padding_top_1" alt="">
         <p class="text-top padding_left_4 ">Backstage</p>
     </div>
     <div class="div-menu">
         <div class="div-list">
             <button class="div-list-btn-a">景點</button>
             <div>
+<<<<<<< HEAD:dev/backsatge/spaced_backstage_order.php
                 <a href="./spaced_backstage_trip.php" class="div-list-btn-s ">景點管理</a>
                 <a href="./spaced_backstage_trip_reviews.php" class="div-list-btn-s">景點評價</a>
                 <a href="./spaced_backstage_order.php" class="div-list-btn-s now">行程訂單管理</a>
+=======
+                <a href="spaced_backstage_trip.php" class="div-list-btn-s now">景點管理</a>
+                <a href="spaced_backstage_trip_reviews.php" class="div-list-btn-s">景點評價</a>
+                <a href="#" class="div-list-btn-s">行程訂單管理</a>
+>>>>>>> 34462b282fb3557e5596bfde68fbe15593b76fcf:dev/backstage/spaced_backstage_trip.php
             </div>
             <button class="div-list-btn-a">商城</button>
             <div>
@@ -65,7 +75,7 @@ try {
                     <div class="span-1 margin_left_3">
                         <label for="search1">
 
-                            <img src="./img/icon/loupe.png" alt="" class="">
+                            <img src="../img/icon/loupe.png" alt="" class="">
                         </label>
                         <input type="search" class="search1" id="search1" placeholder="輸入景點編號、名稱">
                     </div>
@@ -131,7 +141,7 @@ try {
 
                 <div id="linebox">
                     <div class="upbox">
-                        <form action="./php/create_backstage_trip.php" method="POST" enctype="multipart/form-data">
+                        <form action="../php/backstage/trip/create_backstage_trip.php" method="POST" enctype="multipart/form-data">
 
                             <input type="number" placeholder="景點編號" name="spot_no" disabled>
                             <input type="text" placeholder="景點名稱" name="spot_name">
