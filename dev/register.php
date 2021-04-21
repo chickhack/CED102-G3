@@ -1,5 +1,21 @@
 <?php
-    require_once('./php/connectbooks_yi.php')
+    require_once('./php/connectbooks_yi.php');
+
+    if(isset($_POST['email']))
+    {	 
+        $email = $_POST['email'];
+        $mem_psw = $_POST['mem_psw'];
+        $sql = "INSERT INTO customer (email,mem_psw)
+        VALUES (?,?)";
+        if (mysqli_query($dsn, $sql)) {
+            echo "註冊成功!";
+        } else {
+            echo "Error: " . $sql . "
+    " . mysqli_error($dsn);
+        }
+        mysqli_close($dsn);
+    }
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -21,55 +37,13 @@
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css"
     />
-    <!-- <link rel="stylesheet" type="text/css" href="./css/pages/register.css" /> -->
+    <link rel="stylesheet" type="text/css" href="./css/pages/register.css" />
   </head>
   <body>
-    <div>
-        <?php
-
-        ?>
-    </div>
-    <nav id="nav">
-        <div class="logo">
-            <h1><a href="../home.html">SPACED</a></h1>
-        </div>
-        <ul class="nav-links">
-            <li class="margin_left_5"><a href="alltrip.html">星球景點</a></li>
-            <li class="margin_left_5"><a href="planet.html">星星世界</a></li>
-            <li class="margin_left_5"><a href="shop.html">星球商城</a></li>
-            <li class="margin_left_5"><a href="photowall.html">太空互動</a></li>
-            <li class="margin_left_5"><a href="Leaderboard.html">玩家排行</a></li>
-            <!-- <li><a href=""><img src="./images/ticket.png" alt="" class="icon"></a></li>
-                <li><a href=""><img src="./images/shopping-cart_(1).png" alt="" class="icon"></a></li>
-                <li><a href=""><img src="./images/round-account-button-with-user-inside_(1).png" alt="" class="icon"></a></li> -->
-        </ul>
-        <ul class="nav-icons">
-            <li>
-            <a href="./car-itineray.html"
-                ><img src="../img/icon/header/luggage.png" alt="" class="icon"
-            /></a>
-            </li>
-            <li class="nav-cart">
-                <a href="./shop_cart.php">
-                    <img src="../img/icon/header/shopping-cart_(1).png" alt="" class="icon"/>
-                </a>
-            </li> 
-            <li>
-            <a href="./login.html"
-                ><img
-                src="../img/icon/header/round-account-button-with-user-inside_(1).png"
-                alt=""
-                class="icon"
-            /></a>
-            </li>
-        </ul>
-        <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
-    </nav>
-    <script src="../js/header.js"></script>
+  <?php
+      include '../dev/layout/header.php';
+  ?>
+       
 
     <div class="container-fluid">
         <section class="login_container col-12">
@@ -79,7 +53,6 @@
             <h2>航行宇宙</h2>
         </div>
         <div class="rightbox col-8 col-sm-9">
-
             <div class="return_btn margin_left_2">
                 <span><a href="./login.php"><<</a></span>
                 <h4><a href="./login.php">返回登入頁面</a></h4>
@@ -92,15 +65,17 @@
                             <div class="form-group">
                                 <input type="email" id="mem_id" name="mem_id" class="form-control" placeholder="請輸入" required></input>
                             </div>
+                            <input type="submit" class="button_min check_user" id="check_user" value="檢查"></input>
+                            <!-- <span id="message"></span> -->
                             <div class="form-group">
-                                <input type="password" id="mem_psw" name="mem_psw" class="form-control" placeholder="請輸入密碼" required onkeyup="return passwordChanged();"></input>
+                                <input type="password" id="mem_psw" name="mem_psw" class="form-control" placeholder="請輸入密碼" onkeyup="return passwordChanged();"></input>
                             </div>
                             <span id="strength"></span>
                             <div class="form-group">
-                                <input type="password" id="confirm_password" class="form-control" placeholder="請重新輸入密碼" required></input>
+                                <input type="password" id="confirm_password" class="form-control" placeholder="請重新輸入密碼"></input>
                             </div>
                             <span id='message'></span>
-                            <input type="submit" class="button_min margin_top_3" id="register" name="register" value="註冊"></input>
+                            <input type="submit" class="button_min margin_top_3 register_btn" id="register_btn" name="register" value="註冊"></input>
                             </form>
                         </div>
                     </div>
@@ -116,12 +91,15 @@
         function $id(id){
             return document.getElementById(id);
         }
-        
+        var register_btn = document.querySelector(".register_btn");
+
         //檢查密碼是否符合
         function validatePassword(e) { 
+
             let password = document.getElementById("mem_psw"); 
             let confirm_password = document.getElementById("confirm_password"); 
-            let regex = new RegExp(/^((?=.{8,}$)(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).*|(?=.{8,}$)(?=.*\d)(?=.*[a-zA-Z])(?=.*[!\u0022#$%&'()*+,./:;<=>?@[\]\^_`{|}~-]).*)/, "g");
+            let regex = new RegExp(/^(?=.*\d)(?=.*[A-Z])(?=.*[a-z])(?=.*[a-zA-Z!#$%&? "])[a-zA-Z0-9!#$%&?]{8,20}$/);
+            
             if(password.value.length < 8 && password!= null ){ 
                 alert("密碼不可少於8碼");
                 e.preventDefault();
@@ -142,65 +120,63 @@
                 e.preventDefault();
                 return;
             }
-            
-        }; 
-        
-        
-        window.addEventListener("load", function(){
-            $id('register_form').onsubmit = validatePassword;
-        })
-        
-        // 點擊register按鈕後的提示
-        $(function(){
-            $('#register').click(function(e){
-                var valid = this.form.checkValidity();
-                if(valid){
-                    var mem_id = $('#mem_id').val();
-                    var mem_psw = $('#mem_psw').val();
+        }
 
-                    e.preventDefault();
-                    $.ajax({
-                        type: 'POST',
-                        url: './php/process.php',
-                        data: { mem_id : mem_id, mem_psw : mem_psw},
-                        success: function(data){
-                            Swal.fire({
-                                'title': '恭喜您！',
-                                'text': data,
-                                'type': 'success'
-                            })
-                        },
-                        errors: function(data){
-                            Swal.fire({
-                                'title': '錯誤',
-                                'text': data,
-                                'type': 'error'
-                            })
+
+        // 提交後台判斷
+            // -----檢查帳號信箱重複
+            function signupCheck(){
+                let xhr = new XMLHttpRequest();
+                let newEmail = document.getElementById('email');
+                let check_user = document.getElementById(".check_user");
+                    console.log("onload : ", xhr.readyState);
+                    if(xhr.status == 200){//http status is OK
+                        if(xhr.responseText == 2 && newEmail.value != null){
+                            register_btn.disabled = false;
+                            // createRemind.style.opacity = 0;
+                            alert("此帳號可使用");
+                        }else{
+                            register_btn.disabled = true;
+                            alert("此帳號已存在, 不可用");
+                            // createRemind.style.opacity = 1;
                         }
-                    });
-                }else{
-                }
-            });
-        });
+                    }else{
+                        alert(xhr.status);
+                    }
+                 
+                
+                let url = "./php/check_username.php";
+                xhr.open("post", url, true);
+                xhr.setRequestHeader("content-type","application/x-www-form-urlencoded");
+                let data = `newEmail=${$id('newEmail').value}`;
+                xhr.send(data);
+
+            };
+            
+
         
         
-        
-        
+        check_user.addEventListener('click', signupCheck(),false);
+        register_btn.addEventListener('click', validatePassword(),false);
+
+
         // 檢查密碼強度
         function passwordChanged() {
-        let strength = document.getElementById('strength');
-        let strongRegex = new RegExp("^(?=.{14,})(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*\\W).*$", "g");
-        let mediumRegex = new RegExp("^(?=.{10,})(((?=.*[A-Z])(?=.*[a-z]))|((?=.*[A-Z])(?=.*[0-9]))|((?=.*[a-z])(?=.*[0-9]))).*$", "g");
-        let enoughRegex = new RegExp("(?=.{8,}).*", "g");
-        let pwd = document.getElementById("mem_psw");
-        if (strongRegex.test(pwd.value)) {
-            strength.innerHTML = '<span style="color:green">密碼強度：強</span></span>';
-        } else if (mediumRegex.test(pwd.value)) {
-            strength.innerHTML = '<span style="color:orange">密碼強度：中</span>';
-        } else {
-            strength.innerHTML = '<span style="color:red">密碼強度：弱</span>';
+            let strength = document.getElementById('strength');
+            let strongRegex = new RegExp("^(?=.{14,})(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*\\W).*$", "g");
+            let mediumRegex = new RegExp("^(?=.{10,})(((?=.*[A-Z])(?=.*[a-z]))|((?=.*[A-Z])(?=.*[0-9]))|((?=.*[a-z])(?=.*[0-9]))).*$", "g");
+            let enoughRegex = new RegExp("(?=.{8,}).*", "g");
+            let pwd = document.getElementById("mem_psw");
+            if (strongRegex.test(pwd.value)) {
+                strength.innerHTML = '<span style="color:green">密碼強度：強</span></span>';
+            } else if (mediumRegex.test(pwd.value)) {
+                strength.innerHTML = '<span style="color:orange">密碼強度：中</span>';
+            } else {
+                strength.innerHTML = '<span style="color:red">密碼強度：弱</span>';
+            }
         }
-        }
+
+        
     </script>
   </body>
 </html>

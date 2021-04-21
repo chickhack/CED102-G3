@@ -1,5 +1,5 @@
 <?php
-$mem_no = $_REQUEST["memno"];
+$mem_no = $_REQUEST["mem_no"];
 $errMsg='';
 try {
 	require_once("log.php");
@@ -57,7 +57,7 @@ try {
 
 <div class="title">
 	<div class=" div-right-span padding_top_3 margin_left_2">
-		<button type="button" class="btn-updata" onclick="open11()">＋新增</button>
+    <button type="button" class="btn-updata" ><a href="../spaced_backstage_order.php" class="text-1">返回</a></button>
 		<div class="span-1 margin_left_3">
 			<label for="search1">
 

@@ -460,23 +460,20 @@ nav .nav-cart .count {
   text-align: center;
   line-height: 1.5rem;
   position: absolute;
-  -webkit-transform: translate(50%, -150%);
-          transform: translate(50%, -150%);
+  transform: translate(50%, -150%);
   display: block;
   color: white;
 }
 
 @media all and (max-width: 992px) {
   nav .nav-cart .count {
-    -webkit-transform: translate(100%, -150%);
-            transform: translate(100%, -150%);
+    transform: translate(100%, -150%);
   }
 }
 
 @media all and (max-width: 768px) {
   nav .nav-cart .count {
-    -webkit-transform: translate(40%, -170%);
-            transform: translate(40%, -170%);
+    transform: translate(40%, -170%);
     width: 20px;
     height: 20px;
     font-size: 12px;
@@ -497,23 +494,20 @@ nav .nav-trip .trip-count {
   text-align: center;
   line-height: 1.5rem;
   position: absolute;
-  -webkit-transform: translate(50%, -150%);
-          transform: translate(50%, -150%);
+  transform: translate(50%, -150%);
   display: block;
   color: white;
 }
 
 @media all and (max-width: 992px) {
   nav .nav-trip .trip-count {
-    -webkit-transform: translate(100%, -150%);
-            transform: translate(100%, -150%);
+    transform: translate(100%, -150%);
   }
 }
 
 @media all and (max-width: 768px) {
   nav .nav-trip .trip-count {
-    -webkit-transform: translate(40%, -170%);
-            transform: translate(40%, -170%);
+    transform: translate(40%, -170%);
     width: 20px;
     height: 20px;
     font-size: 12px;
@@ -757,8 +751,7 @@ input[type=number] {
   height: 100px;
   background-size: contain;
   background-repeat: no-repeat;
-  -webkit-animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
-          animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+  animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
 }
 
 #marsloc {
@@ -883,7 +876,6 @@ div.bk3 {
   letter-spacing: 10px;
   font-size: 36px;
   color: #C9ADA7;
-  -webkit-animation: h2 1.2s infinite;
   animation: h2 1.2s infinite;
 }
 
@@ -932,8 +924,16 @@ div.bk3 {
 }
 
 .first .first_right .hottrip {
+<<<<<<< HEAD
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
+=======
+<<<<<<< HEAD
+=======
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+>>>>>>> Min
+>>>>>>> dev
   display: inline-flex;
   padding-top: 80px;
 }
@@ -944,7 +944,7 @@ div.bk3 {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 576px) {
   .first .first_right .hottrip {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -993,8 +993,7 @@ div.bk3 {
 
 @media all and (max-width: 1200px) {
   .first .first_right .hottrip div.planet_top {
-    padding-left: 8px;
-    padding-right: 8px;
+    width: 100%;
   }
 }
 
@@ -1007,8 +1006,17 @@ div.bk3 {
   position: absolute;
   top: 15px;
   left: 50%;
+<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+=======
+<<<<<<< HEAD
+  transform: translateX(-50%);
+=======
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+>>>>>>> Min
+>>>>>>> dev
   z-index: 2;
 }
 
@@ -1019,16 +1027,33 @@ div.bk3 {
 .first .first_right .hottrip div.planet_top img.planet_a1:hover {
   -webkit-transform: translateY(0.2em);
           transform: translateY(0.2em);
+<<<<<<< HEAD
+=======
+}
+
+@media all and (max-width: 577px) {
+  .first .first_right .hottrip div.planet_top img.planet_a1 {
+    margin: 0 auto;
+    max-width: 90%;
+  }
+>>>>>>> dev
 }
 
 .first .first_right .hottrip div.planet_top div.word {
   position: absolute;
   top: 190px;
+<<<<<<< HEAD
+=======
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+<<<<<<< HEAD
+=======
+>>>>>>> Min
+>>>>>>> dev
   text-align: center;
   margin: 0 auto;
+  width: 100%;
 }
 
 .first .first_right .hottrip div.planet_top div.word .hot {
@@ -1036,8 +1061,16 @@ div.bk3 {
 }
 
 .first .first_right .hottrip div.planet_top div.word .tag {
+<<<<<<< HEAD
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
+=======
+<<<<<<< HEAD
+=======
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+>>>>>>> Min
+>>>>>>> dev
   display: inline-flex;
   border: 1px solid #cccaca;
   border-radius: 5px;
@@ -1079,12 +1112,21 @@ div.bk3 {
   background-color: #bf896b;
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .first .first_right .hottrip .planet_top:nth-child(3) {
+    display: none;
+=======
+>>>>>>> dev
 @-webkit-keyframes h2 {
   0% {
     text-shadow: 0 0 6px #FFF;
+>>>>>>> Min
   }
-  100% {
-    text-shadow: 0 0 0px #000;
+  .first .first_right .hottrip .planet_top {
+    margin: 0 36px;
   }
 }
 
@@ -1098,8 +1140,16 @@ div.bk3 {
 }
 
 .tripselect {
+<<<<<<< HEAD
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
+=======
+<<<<<<< HEAD
+=======
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+>>>>>>> Min
+>>>>>>> dev
   display: inline-flex;
   width: 280px;
   -webkit-box-pack: justify;
@@ -1187,6 +1237,13 @@ div.bk3 {
 
 @media all and (max-width: 767px) {
   .stepsection .stepall {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    flex-direction: column;
+    align-items: center;
+=======
+>>>>>>> dev
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1194,6 +1251,10 @@ div.bk3 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+<<<<<<< HEAD
+=======
+>>>>>>> Min
+>>>>>>> dev
   }
 }
 

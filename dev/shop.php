@@ -54,7 +54,7 @@
   <ul class="nav-links">
     <li class="margin_left_5"><a href="alltrip.php">星球景點</a></li>
     <li class="margin_left_5"><a href="planet.php">星星世界</a></li>
-    <li class="margin_left_5"><a href="shop.php">星球商城</a></li>
+    <li class="margin_left_5"><a href="shop.php" class="bread">星球商城</a></li>
     <li class="margin_left_5"><a href="photowall.php">太空互動</a></li>
     <li class="margin_left_5"><a href="Leaderboard.php">玩家排行</a></li>
     <!-- <li><a href=""><img src="./images/ticket.png" alt="" class="icon"></a></li>
@@ -106,11 +106,11 @@
             <div id="app">
                 <div class="filter margin_top_5">
                     <h2>商品</h2>
-                    <div class="custom-select"  @click="pricePick">
+                    <div class="custom-select"  @click="pick">
                         <select>
                             <option value="0">排序</option>
                             <option value="1">依時間排序</option>
-                            <option value="2">價格高到低</option>
+                            <option value="2">依價格排序</option>
                         </select>
                     </div>
                 </div>
@@ -156,8 +156,34 @@
                 cart: [],
             },
             methods: {
-                pricePick(e){
-                    console.log(e.target.textContent);
+                pick(e){
+                    switch(e.target.innerHTML){
+                        case "依時間排序":
+                            this.products.sort((a,b) => {
+                                const d1 = new Date(a.prod_ondate);
+                                const d2 = new Date(b.prod_ondate);
+                                if(d1 > d2){
+                                    return 1;
+                                }else if(d1 < d2){
+                                    return -1;
+                                }
+                                return 0;
+                            })
+                            break;
+                        case "依價格排序":
+                            this.products.sort((a,b) => {
+                                const p1 = parseInt(a.prod_price);
+                                const p2 = parseInt(b.prod_price);
+                                if(p1 > p2){
+                                    return 1;
+                                }else if(p1 < p2){
+                                    return -1;
+                                }
+                                return 0;
+                            })
+                            console.log(this.products);
+                            break;
+                    }
                 },
                 getId(index){
               

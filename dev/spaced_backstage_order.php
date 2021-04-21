@@ -61,7 +61,7 @@ try {
 
             <div class="title">
                 <div class=" div-right-span padding_top_3 margin_left_2">
-                    <button type="button" class="btn-updata" onclick="open11()">＋新增</button>
+                    <!-- <button type="button" class="btn-updata" onclick="open11()">＋新增</button> -->
                     <div class="span-1 margin_left_3">
                         <label for="search1">
 
@@ -86,7 +86,7 @@ try {
                     <p class="wi-5 text-1">飛船</p>
                     <p class="wi-15 text-1">信用卡</p>
                     <p class="wi-10 text-1">檢查碼</p>
-                    <p class="wi-10 text-1">修改刪除</p>
+                    <p class="wi-5 text-1">修改</p>
 
 
                 </div>
@@ -100,14 +100,14 @@ try {
                     <a href="./php/spot_order_datail.php?order_no=<?=$orderRow["order_no"]?>"
                     class="wi-10 text-1"
                     ><?=$orderRow ["order_no"]?></a> 
-                    <a href="./php/spaced_backstage_order_customer.php?memno=<?=$orderRow["mem_no"]?>"
+                    <a href="./php/spaced_backstage_order_customer.php?mem_no=<?=$orderRow["mem_no"]?>"
                     class="wi-10 text-1"
                     ><?=$orderRow ["mem_no"]?></a>
                    
                     <p class="wi-15 text-1"><?=$orderRow ["dep_date"]?></p>
-                    <p class="wi-15 text-1 toomuch"><?=$orderRow ["order_date"]?></p>
-                    <p class="wi-10 text-1  toomuch"><?=$orderRow ["total_price"]?></p>
-                    <p class="wi-10 text-1  toomuch"><?=$orderRow ["miles"]?></p>
+                    <p class="wi-15 text-1"><?=$orderRow ["order_date"]?></p>
+                    <p class="wi-10 text-1 "><?=$orderRow ["total_price"]?></p>
+                    <p class="wi-10 text-1 "><?=$orderRow ["miles"]?></p>
                     <p class="wi-10 text-1"><?=$orderRow ["order_name"]?></p>
                     <p class="wi-15 text-1"><?=$orderRow ["order_ph"]?></p>
                     <p class="wi-15 text-1"><?=$orderRow ["order_email"]?></p>
@@ -116,8 +116,13 @@ try {
                     <p class="wi-5 text-1"><?=$orderRow ["rocket"]?></p>
                     <p class="wi-15 text-1"><?=$orderRow ["car_no"]?></p>
                     <p class="wi-10 text-1"><?=$orderRow ["car_insp"]?></p>
-                    <a href="./php/edit_backstage_trip.php?spot_no=<?=$orderRow ["order_no"]?>" class="wi-5 text-1"><button type="button" class="btn btn-info btn-sm">修改</button></a>
-                    <a href="./php/delete_backstage_trip.php?spot_no=<?=$orderRow ["order_no"]?>"class="wi-5 text-1"><button type="button" class="btn btn-danger btn-sm">刪除</button></a>
+                    <?php
+                        if($orderRow['order_status'] == 0){
+                            echo "<p class='wi-5 text-1'><a href='./php/edit_backstage_spot_order.php?order_no=$orderRow[order_no]&order_status=$orderRow[order_status]' name='update' type='button' class='btn btn-primary btn-sm'>上架</a></p>";
+                        }else{
+                            echo "<p class='wi-5 text-1'><a href='./php/edit_backstage_spot_order.php?order_no=$orderRow[order_no]&order_status=$orderRow[order_status]' name='update' type='button' class='btn btn-danger btn-sm'>下架</a></p>";
+                            }
+                    ?>
                 </div>
 
                 <?php 

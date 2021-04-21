@@ -80,6 +80,16 @@ button:hover{
             border-bottom: 4px solid $gold;
         }
     }
+    @include respond(mobile){
+        ul.tab-title{
+            column-gap: 1%;
+            li a{
+                font-size: 14px;
+                padding: 12px 10px;
+
+            }
+        }
+    }
     .separator{
         margin: 0 auto;
         height: 1px;
@@ -104,6 +114,7 @@ button:hover{
                 .tab_left{
                     max-width: 400px;
                     h4{
+                        // font-size: 24px;
                         line-height: 3rem;
                     }
                 }
@@ -114,7 +125,7 @@ button:hover{
                 }
                 .data{
                     display: flex;
-                    justify-content: center;
+                    // justify-content: center;
                     font-family: Haettenschweiler, sans-serif;
                     .grav, .day, .temp{
                         justify-content: center;
@@ -123,7 +134,7 @@ button:hover{
                         display: flex;
                         flex-direction: column;
                         min-width: 100px;
-                        max-height: 100px;
+                        max-height: 160px;
                         border-right: 1px solid $gold;
                     }
                     // .day{
@@ -171,11 +182,12 @@ button:hover{
                 }
 
             }
-            .tab-active{
-                position: relative;
-                top: 0;
-                // border: 1px solid white;
+
+            @include respond(mobile){
+                .tab_top{
+                    padding: 0 5%;
                 }
+            }
             
             .planet_content{
                 display: flex;
@@ -237,5 +249,19 @@ button:hover{
             
             }
         }
+        .tab_moon{
+            .tab_top{
+                display:flex;
+            }
+            .tab-active{
+                // bordeR: 1px solid yellow;
+            }
+            img.moon_pic{
+                position: relative;
+                z-index: 99;
+                top: -100px;
+                left: -10px;
 
+            }
+        }
         }

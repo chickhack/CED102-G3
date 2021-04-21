@@ -61,17 +61,17 @@ try{
 </head>
 
 <body>
-    <header>
+<header>
         <nav id="nav">
             <div class="logo">
-                <h1><a href="home.html">SPACED</a></h1>
+                <h1><a href="home.php">SPACED</a></h1>
             </div>
             <ul class="nav-links">
-                <li class="margin_left_5"><a href="alltrip.html">星球景點</a></li>
+                <li class="margin_left_5"><a href="alltrip.php">星球景點</a></li>
                 <li class="margin_left_5"><a href="planet.html">星星世界</a></li>
-                <li class="margin_left_5"><a href="shop.html">星球商城</a></li>
-                <li class="margin_left_5"><a href="photowall.html">太空互動</a></li>
-                <li class="margin_left_5"><a href="Leaderboard.html">玩家排行</a></li>
+                <li class="margin_left_5"><a href="shop.php">星球商城</a></li>
+                <li class="margin_left_5"><a href="photowall.php">太空互動</a></li>
+                <li class="margin_left_5"><a href="Leaderboard.php">玩家排行</a></li>
                 <!-- <li><a href=""><img src="./images/ticket.png" alt="" class="icon"></a></li>
         <li><a href=""><img src="./images/shopping-cart_(1).png" alt="" class="icon"></a></li>
         <li><a href=""><img src="./images/round-account-button-with-user-inside_(1).png" alt="" class="icon"></a></li> -->
@@ -115,6 +115,7 @@ try{
             </div>
         </nav>
         <script src="./js/header.js"></script>
+
     </header>
     <!-- 動態背景 -->
     <div id="particles-js">
@@ -233,10 +234,11 @@ if( $errMsg != ""){ //例外
                     </div>
                     <ul class="margin_top_5">
                         <li class="messages" v-for="comment in comments" v-if="<?php echo $spot_no;?>==comment.spot_no">
-                            <!-- <img :src="comment.src" alt=""> -->
+                        <!-- <li class="messages" v-for="comment in comments" > -->
+                            <img :src="comment.mem_pic" alt="">
                             <div class="words margin_left_3">
                             <div class="name">
-                            <p>{{comment.mem_no}}</p>
+                            <p>{{comment.last_name}}{{comment.first_name}}</p>
                                     <hr>
                                     <p>{{comment.trev_date}}</p>
                                 </div>
@@ -252,7 +254,7 @@ if( $errMsg != ""){ //例外
             <div class="recommend">
                 <h3 class="margin_top_10 alltrip ">推薦精選景點</h3>
                 <div class="tripcard_all  margin_top_6">
-                    <div v-for="item in second.slice(0,4)" class="tripcard">
+                    <div v-for="item in second.slice(0,3)" class="tripcard">
                         <form class="card" action="trip.php" method="post">
                             <a :href="item.url">
                                 <img :src="item.spot_pic1" class="spot_pic" alt="spot_pic">
@@ -265,7 +267,6 @@ if( $errMsg != ""){ //例外
                             </a>
                             <button type="submit" name="add" class="addin2 small margin_top_2 myTrip"><img class="plus"
                                     src="./img/icon/plus.png" alt="">加入我的行程</button>
-                            <!-- <div class="trip_bookmark" id="bookmark"></div> -->
                             <input type="hidden" name="spot_id" :value="item.spot_no">
                         </form>
                     </div>
@@ -305,6 +306,10 @@ if( $errMsg != ""){ //例外
             second: [],
         },
         mounted() {
+            fetch('./php/getReviews.php').then(res => res.json()).then(res => {
+                this.comments = res;
+                this.$forceUpdate();
+            });
             fetch('./php/getSelectTrip.php').then(res => res.json()).then(data => {
                 vm.second = data;
                 for (let i = 0; i < data.length; i++) {
@@ -313,7 +318,7 @@ if( $errMsg != ""){ //例外
                     console.log(vm.second[i].url)
                 }
             });
-            fetch('./php/getReviews.php').then(res => res.json()).then(res => this.comments = res);
+
         },
     })
     </script>

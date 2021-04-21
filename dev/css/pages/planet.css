@@ -460,23 +460,20 @@ nav .nav-cart .count {
   text-align: center;
   line-height: 1.5rem;
   position: absolute;
-  -webkit-transform: translate(50%, -150%);
-          transform: translate(50%, -150%);
+  transform: translate(50%, -150%);
   display: block;
   color: white;
 }
 
 @media all and (max-width: 992px) {
   nav .nav-cart .count {
-    -webkit-transform: translate(100%, -150%);
-            transform: translate(100%, -150%);
+    transform: translate(100%, -150%);
   }
 }
 
 @media all and (max-width: 768px) {
   nav .nav-cart .count {
-    -webkit-transform: translate(40%, -170%);
-            transform: translate(40%, -170%);
+    transform: translate(40%, -170%);
     width: 20px;
     height: 20px;
     font-size: 12px;
@@ -497,23 +494,20 @@ nav .nav-trip .trip-count {
   text-align: center;
   line-height: 1.5rem;
   position: absolute;
-  -webkit-transform: translate(50%, -150%);
-          transform: translate(50%, -150%);
+  transform: translate(50%, -150%);
   display: block;
   color: white;
 }
 
 @media all and (max-width: 992px) {
   nav .nav-trip .trip-count {
-    -webkit-transform: translate(100%, -150%);
-            transform: translate(100%, -150%);
+    transform: translate(100%, -150%);
   }
 }
 
 @media all and (max-width: 768px) {
   nav .nav-trip .trip-count {
-    -webkit-transform: translate(40%, -170%);
-            transform: translate(40%, -170%);
+    transform: translate(40%, -170%);
     width: 20px;
     height: 20px;
     font-size: 12px;
@@ -757,8 +751,7 @@ input[type=number] {
   height: 100px;
   background-size: contain;
   background-repeat: no-repeat;
-  -webkit-animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
-          animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+  animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
 }
 
 .container-fluid {
@@ -835,6 +828,15 @@ button:hover {
 }
 
 .planet_tab ul.tab-title {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+  display: flex;
+  justify-content: center;
+  column-gap: 3%;
+  flex-wrap: wrap;
+=======
+>>>>>>> dev
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -845,6 +847,10 @@ button:hover {
           column-gap: 3%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+<<<<<<< HEAD
+=======
+>>>>>>> Min
+>>>>>>> dev
   list-style: none;
 }
 
@@ -878,14 +884,32 @@ button:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+  flex-direction: column;
+=======
+>>>>>>> dev
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+<<<<<<< HEAD
+=======
+>>>>>>> Min
+>>>>>>> dev
   text-align: left;
 }
 
 .planet_tab .tab-inner .tab_top {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+=======
+>>>>>>> dev
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -894,6 +918,10 @@ button:hover {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+<<<<<<< HEAD
+=======
+>>>>>>> Min
+>>>>>>> dev
   padding: 0 15%;
 }
 
@@ -912,16 +940,36 @@ button:hover {
 }
 
 .planet_tab .tab-inner .tab_top .data {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+  display: flex;
+=======
+>>>>>>> dev
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+<<<<<<< HEAD
+=======
+>>>>>>> Min
+>>>>>>> dev
   font-family: Haettenschweiler, sans-serif;
 }
 
 .planet_tab .tab-inner .tab_top .data .grav, .planet_tab .tab-inner .tab_top .data .day, .planet_tab .tab-inner .tab_top .data .temp {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #AD6E4A;
+  display: flex;
+  flex-direction: column;
+=======
+>>>>>>> dev
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -936,8 +984,12 @@ button:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+<<<<<<< HEAD
+=======
+>>>>>>> Min
+>>>>>>> dev
   min-width: 100px;
-  max-height: 100px;
+  max-height: 160px;
   border-right: 1px solid #AD6E4A;
 }
 
@@ -965,14 +1017,17 @@ button:hover {
   font-size: 16px;
 }
 
-.planet_tab .tab-inner .tab-active {
-  position: relative;
-  top: 0;
-}
-
 .planet_tab .tab-inner .planet_content {
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
+=======
+<<<<<<< HEAD
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> Min
+>>>>>>> dev
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -987,6 +1042,29 @@ button:hover {
 }
 
 .planet_tab .tab-inner .planet_content .imgs .img1 {
+<<<<<<< HEAD
+  -webkit-transform: translate(20%);
+          transform: translate(20%);
+=======
+<<<<<<< HEAD
+  transform: translate(20%);
+>>>>>>> dev
+}
+
+.planet_tab .tab-inner .planet_content .imgs .img2 {
+  transform: translateX(10%);
+}
+
+.planet_tab .tab-inner .planet_content .imgs .img3 {
+  transform: translate(-30%, -350px);
+}
+
+.planet_tab .tab-inner .planet_content .desc {
+<<<<<<< HEAD
+  display: -webkit-box;
+  display: -ms-flexbox;
+=======
+=======
   -webkit-transform: translate(20%);
           transform: translate(20%);
 }
@@ -1004,6 +1082,8 @@ button:hover {
 .planet_tab .tab-inner .planet_content .desc {
   display: -webkit-box;
   display: -ms-flexbox;
+>>>>>>> Min
+>>>>>>> dev
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1021,8 +1101,16 @@ button:hover {
 
 @media only screen and (max-width: 1200px) {
   .planet_tab .tab-inner .tab-inner {
+<<<<<<< HEAD
     display: -webkit-box;
     display: -ms-flexbox;
+=======
+<<<<<<< HEAD
+=======
+    display: -webkit-box;
+    display: -ms-flexbox;
+>>>>>>> Min
+>>>>>>> dev
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1033,16 +1121,32 @@ button:hover {
             align-items: center;
   }
   .planet_tab .tab-inner .tab-inner .tab-active {
+<<<<<<< HEAD
     display: -webkit-box;
     display: -ms-flexbox;
+=======
+<<<<<<< HEAD
+=======
+    display: -webkit-box;
+    display: -ms-flexbox;
+>>>>>>> Min
+>>>>>>> dev
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
   .planet_tab .tab-inner .planet_content {
+<<<<<<< HEAD
     display: -webkit-box;
     display: -ms-flexbox;
+=======
+<<<<<<< HEAD
+=======
+    display: -webkit-box;
+    display: -ms-flexbox;
+>>>>>>> Min
+>>>>>>> dev
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

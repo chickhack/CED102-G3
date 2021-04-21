@@ -1,18 +1,25 @@
 <?php 
 $trev_no =$_GET['trev_no'];
 $errMsg = "";
+$status = 0;
 
-require_once("connectbooks_kai.php");
+if($_GET['trev_stats'] == 0){
+    $status = 1;
+}else{
+    $status = 0;
+}
+
 
 try{
-    $sql = "UPDATE spot_trev SET trev_stats='0' WHERE trev_no=:trev_no";
+    require_once("../connectbooks_kai.php");
+    $sql = "UPDATE spot_trev SET trev_stats=$status WHERE trev_no=:trev_no";
     $spot = $pdo->prepare($sql);
     $spot->bindValue(":trev_no", $trev_no);
     $spot->execute();
     if($spot->execute()){
         
         echo "已下架!". "<br>";
-	    echo "<a href='../spaced_backstage_trip_reviews.php'>返回景點評價管理</a>";
+	    echo "<script>window.location.href='../../spaced_backstage_trip_reviews.php'</script>";
     }
 }
 catch(PDOException $e){

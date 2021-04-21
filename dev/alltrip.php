@@ -7,7 +7,8 @@ session_start();
         if(!in_array($_POST["spot_id"], $item_array_id)){
             $count = count($_SESSION["trip-cart"]);
             $item_array = array(
-                "spot_id" => $_POST["spot_id"]
+                "spot_id" => $_POST["spot_id"],
+                "spot_qty" => 1
             );
             $_SESSION["trip-cart"][$count] =$item_array;
             // echo '<script>window.location="alltrip.php"</script>';
@@ -17,7 +18,8 @@ session_start();
     }
         }else{
             $item_array = array(
-                "spot_id" => $_POST["spot_id"]
+                "spot_id" => $_POST["spot_id"],
+                "spot_qty" => 1
             );
             $_SESSION["trip-cart"][0] = $item_array;
     }
@@ -51,17 +53,17 @@ session_start();
 </head>
 
 <body>
-    <header>
+<header>
         <nav id="nav">
             <div class="logo">
-                <h1><a href="home.html">SPACED</a></h1>
+                <h1><a href="home.php">SPACED</a></h1>
             </div>
             <ul class="nav-links">
-                <li class="margin_left_5"><a href="alltrip.html">星球景點</a></li>
-                <li class="margin_left_5"><a href="planet.html">星星世界</a></li>
-                <li class="margin_left_5"><a href="shop.html">星球商城</a></li>
-                <li class="margin_left_5"><a href="photowall.html">太空互動</a></li>
-                <li class="margin_left_5"><a href="Leaderboard.html">玩家排行</a></li>
+                <li class="margin_left_5 now"><a href="alltrip.php">星球景點</a></li>
+                <li class="margin_left_5"><a href="planet.php">星星世界</a></li>
+                <li class="margin_left_5"><a href="shop.php">星球商城</a></li>
+                <li class="margin_left_5"><a href="photowall.php">太空互動</a></li>
+                <li class="margin_left_5"><a href="Leaderboard.php">玩家排行</a></li>
                 <!-- <li><a href=""><img src="./images/ticket.png" alt="" class="icon"></a></li>
         <li><a href=""><img src="./images/shopping-cart_(1).png" alt="" class="icon"></a></li>
         <li><a href=""><img src="./images/round-account-button-with-user-inside_(1).png" alt="" class="icon"></a></li> -->
@@ -94,7 +96,7 @@ session_start();
                     </a>
                 </li>
                 <li>
-                    <a href="./login.html"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png"
+                    <a href="./login.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png"
                             alt="" class="icon" /></a>
                 </li>
             </ul>
@@ -168,7 +170,7 @@ session_start();
     <div class="stepsection">
         <h2>打造專屬的星球行程</h2>
         <h3 class="margin_top_3 line_low">累積景點積分，獲得更多宇宙幣，讓你無限暢遊宇宙</h3>
-        <div class="stepall">
+        <div class="stepall line_low">
 
             <div class="step padding_top_2 margin_left_5 flex-2">
                 <img src="./img/icon/search-location.png" class="step_icon" alt="icon">
@@ -273,11 +275,11 @@ session_start();
         <div class="links">
             <div class="logo"><img src="./img/logo.png" alt=""></div>
             <ul class="footer-links margin_top_2">
-                <li><a href="alltrip.html">星球景點</a></li>
-                <li><a href="planet.html">星星世界</a></li>
-                <li><a href="shop.html">星球商城</a></li>
-                <li><a href="photowall.html">太空互動</a></li>
-                <li><a href="Leaderboard.html">玩家排行</a></li>
+                <li><a href="alltrip.php">星球景點</a></li>
+                <li><a href="planet.php">星星世界</a></li>
+                <li><a href="shop.php">星球商城</a></li>
+                <li><a href="photowall.php">太空互動</a></li>
+                <li><a href="Leaderboard.php">玩家排行</a></li>
             </ul>
         </div>
         <img src="./img/footer_moon.png" alt="" class="footer_moon">

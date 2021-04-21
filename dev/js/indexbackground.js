@@ -19,7 +19,7 @@ animate();
 function init() {
     scene = new THREE.Scene();
 
-    camera = new THREE.PerspectiveCamera(55, window.innerWidth / window.innerHeight, 0.01, 1000)
+    camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 0.01, 800)
     camera.position.set(0,0,230);
 
     const directionalLight = new THREE.DirectionalLight("#fff", 2);
@@ -195,21 +195,3 @@ function onWindowResize() {
     renderer.setSize(container.clientWidth, container.clientHeight);
 }
 
-
-
-/*     Fullscreen btn     */
-let fullscreen;
-let fsEnter = document.getElementById('fullscr');
-fsEnter.addEventListener('click', function (e) {
-    e.preventDefault();
-    if (!fullscreen) {
-        fullscreen = true;
-        document.documentElement.requestFullscreen();
-        fsEnter.innerHTML = "Exit Fullscreen";
-    }
-    else {
-        fullscreen = false;
-        document.exitFullscreen();
-        fsEnter.innerHTML = "Go Fullscreen";
-    }
-});
