@@ -42,9 +42,64 @@
 </style>
 
 <body>
+
   <header>
-    @@include('./layout/header.html')
+    <nav id="nav">
+      <div class="logo">
+        <h1><a href="home.php">SPACED</a></h1>
+      </div>
+      <ul class="nav-links">
+        <li class="margin_left_5 now"><a href="alltrip.php">星球景點</a></li>
+        <li class="margin_left_5"><a href="planet.php">星星世界</a></li>
+        <li class="margin_left_5"><a href="shop.php">星球商城</a></li>
+        <li class="margin_left_5"><a href="photowall.php">太空互動</a></li>
+        <li class="margin_left_5"><a href="Leaderboard.php">玩家排行</a></li>
+        <!-- <li><a href=""><img src="./images/ticket.png" alt="" class="icon"></a></li>
+    <li><a href=""><img src="./images/shopping-cart_(1).png" alt="" class="icon"></a></li>
+    <li><a href=""><img src="./images/round-account-button-with-user-inside_(1).png" alt="" class="icon"></a></li> -->
+      </ul>
+      <ul class="nav-icons">
+        <li class="nav-trip">
+          <a href="./car-itineray.php">
+            <img src="./img/icon/header/luggage.png" alt="" class="icon" />
+            <?php
+                    if(isset($_SESSION["trip-cart"])){
+                        $count = count($_SESSION["trip-cart"]);
+                        echo "<div class='trip-count'>$count</div>";
+                    }else{
+                        echo "";
+                    }
+                 ?>
+          </a>
+        </li>
+        <li class="nav-cart">
+          <a href="./shop_cart.php">
+            <img src="./img/icon/header/shopping-cart_(1).png" alt="" class="icon" />
+            <?php
+            if(isset($_SESSION["cart"])){
+                $count = count($_SESSION["cart"]);
+                echo "<div class='count'>$count</div>";
+            }else{
+                echo "";
+            }
+        ?>
+          </a>
+        </li>
+        <li>
+          <a href="./login.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png" alt=""
+              class="icon" /></a>
+        </li>
+      </ul>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+    <script src="./js/header.js"></script>
+
   </header>
+
   <!-- 動態背景 -->
   <div id="particles-js">
     <script src="./js/background.js"></script>
@@ -67,42 +122,36 @@
       </div>
 
       <div class="account_card">
-        <div class="account_now">
-          <div class="your_lev">
-            <div class="container_card your_nowlev">
-              <div class="row align-items-center">
-                <div class="col col-md-auto lev_name">{{customer.mem_lv}}</div>
-                <div class="col-md-auto"><img class="littleline" src="./img/icon/littleline.png" alt=""></div>
-                <div class="col account_total">累積旅行
-                  <span class="accnum">{{customer.mem_arr}} </span>顆星球、
-                  <span class="accnum">{{customer.mem_sp}} </span>個景點
-                </div>
-                <div class="col col-md-auto account_money">目前持有
-                  <span class="accmoney">{{customer.coin}}</span>宇宙幣
-                </div>
-              </div>
-            </div>
-          </div>
 
-          <div class="lev_acc">
-            <little><span>12個月內累積</span></little>
+        <div class="your_nowlev row align-items-center">
+          <div class="col col-md-auto lev_name">{{customer.mem_lv}}</div>
+          <div class="col-md-auto"><img class="littleline" src="./img/icon/littleline.png" alt=""></div>
+          <div class="col account_total">累積旅行
+            <span class="accnum">{{customer.mem_arr}} </span>顆星球、
+            <span class="accnum">{{customer.mem_sp}} </span>個景點
           </div>
-          <div class="container_">
-            <div class="your_acc">
-              <div class="now_lev align-items-center">
-                <img class="nowlev" :src="customer.lv_img" alt="lev"><br>
-                <p class="nowacc">{{customer.miles}} 積分</p>
-              </div>
-              <div class="next_rocket"><img class="account_rocket" src="./img/icon/rocket4.png" alt="rocket"></div>
-              <div class="next_lev align-items-center">
-                <img class="nextlev" :src="customer.mem_next_img" alt="lev"><br>
-                <p class="nextacc">目前尚需 {{ minus_lev() }} 積分</p>
-                <p class="nextacc">才能升級至{{customer.em_next_lv}}</p>
-              </div>
-            </div>
+          <div class="col col-md-auto account_money">目前持有
+            <span class="accmoney">{{customer.coin}}</span>宇宙幣
           </div>
-
         </div>
+
+        <div class="lev_acc">
+          <little><span>12個月內累積</span></little>
+        </div>
+
+        <div class="your_acc">
+          <div class="now_lev align-items-center">
+            <img class="nowlev" :src="customer.lv_img" alt="lev"><br>
+            <p class="nowacc">{{customer.miles}} 積分</p>
+          </div>
+          <div class="next_rocket"><img class="account_rocket" src="./img/icon/rocket4.png" alt="rocket"></div>
+          <div class="next_lev align-items-center">
+            <img class="nextlev" :src="customer.mem_next_img" alt="lev"><br class="none">
+            <p class="nextacc">目前尚需 {{ minus_lev() }} 積分</p>
+            <p class="nextacc">才能升級至 {{customer.mem_next_lv}}</p>
+          </div>
+        </div>
+
       </div>
 
     </div>
@@ -130,8 +179,7 @@
 
         <!-- 會員資料 -->
         <div v-if="link ==='a'">
-
-          <div id="" v-for="" class="row info_form">
+          <div class="row info_form">
 
             <div class="col-md-auto align-self-start info_img">
               <div class="circle-image">
@@ -150,43 +198,44 @@
 
             <div class="col-md-auto align-self-center info_left center">
               <div class="form-group">
-                <label for="exampleInputEmail1">暱稱</label>
-                  <input type="text" class="form focus" ref="mem_id" :value="customer.mem_id" :disabled="!isEditing"
-                    :class="{view: !isEditing}">
+                <label for="exampleInputEmail1">暱稱</label></br>
+                <input type="text" class="form focus" ref="mem_id" :value="customer.mem_id" :disabled="!isEditing"
+                  :class="{view: !isEditing}"></br>
               </div>
               <div class="form-group">
-                <label for="exampleInputPassword1">姓名</label>
-                <input type="text" class="unform" id="" :value="customer.first_Name" disabled>
+                <label for="exampleInputPassword1">姓名</label></br>
+                <input type="text" class="unform" id="" :value="customer.first_Name" disabled></br>
               </div>
               <div class="form-group">
-                <label for="exampleInputPassword1">性別</label>
-                <input type="text" class="unform" id="" :value="customer.gender" disabled>
+                <label for="exampleInputPassword1">性別</label></br>
+                <input type="text" class="unform" id="" :value="customer.gender" disabled></br>
               </div>
               <div class="form-group">
-                <label for="exampleInputPassword1">手機</label>
+                <label for="exampleInputPassword1">手機</label></br>
                 <div class="edit_text"><input type="text" class="form focus" ref="phone" :value="customer.phone"
-                    :disabled="!isEditing" :class="{view: !isEditing}"></div>
+                    :disabled="!isEditing" :class="{view: !isEditing}"></div></br>
               </div>
             </div>
             <div class="col-md-auto align-self-end info_right center">
               <div class="form-group">
-                <label for="exampleInputPassword1">姓氏</label>
-                <input type="text" class="unform" id="" :value="customer.last_Name" disabled>
+                <label for="exampleInputPassword1">姓氏</label></br>
+                <input type="text" class="unform" id="" :value="customer.last_Name" disabled></br>
               </div>
               <div class="form-group">
-                <label for="exampleInputPassword1">生日</label>
-                <input type="text" class="unform" id="" :value="customer.bday" disabled>
+                <label for="exampleInputPassword1">生日</label></br>
+                <input type="text" class="unform" id="" :value="customer.bday" disabled></br>
               </div>
               <div class="form-group">
-                <label for="exampleInputPassword1">地址</label>
+                <label for="exampleInputPassword1">地址</label></br>
                 <div class="edit_text"><input type="text" class="form focus" ref="address" :value="customer.address"
-                    :disabled="!isEditing" :class="{view: !isEditing}"></div>
+                    :disabled="!isEditing" :class="{view: !isEditing}"></div></br>
               </div>
             </div>
 
             <div class="col-md-auto align-self-start info_edit">
               <button @click="edit" v-if="!isEditing" type="button" class="btn btn-primary info_editbtn">編輯個人資料</button>
-              <button @click="save" v-else-if="isEditing" type="button" class="btn btn-primary info_editbtn">儲存編輯</button></br>
+              <button @click="save" v-else-if="isEditing" type="button"
+                class="btn btn-primary info_editbtn">儲存編輯</button></br>
               <button v-if="isEditing" @click="edit" type="button" class="btn btn-primary info_editbtn">取消編輯</button>
             </div>
 
@@ -195,22 +244,13 @@
 
         <!-- 行程管理 -->
         <div v-else-if="link ==='b'">
-
           <div class="heart_btns margin_top_3">
-            <button @click="visibility=3" :class="{'active': visibility == 3}" class="btn heartbtns p"
+            <button @click="visibility='全部'" :class="{'active': visibility == '全部'}" class="btn heartbtns p"
               type="button">全部</button>
-            <button @click="visibility=0" :class="{'active': visibility == 0}" class="btn heartbtns p"
+            <button @click="visibility='待出發'" :class="{'active': visibility == '待出發'}" class="btn heartbtns p"
               type="button">待出發</button>
-            <button @click="visibility=1" :class="{'active': visibility == 1}" class="btn heartbtns p"
+            <button @click="visibility='已結束'" :class="{'active': visibility == '已結束'}" class="btn heartbtns p"
               type="button">已結束</button>
-            <!-- <button @click="clickMe" class="btn heartbtns p" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  全部
-                </button>
-                <div class="dropdown_menu p">
-                  <a class="dropdown_item p" href="#">全部</a>
-                  <a class="dropdown_item p" href="#">待出發</a>
-                  <a class="dropdown_item p" href="#">已結束</a>
-                </div> -->
           </div>
 
           <div class="tripcontent margin_top_3">
@@ -218,7 +258,7 @@
             <div v-for="(item,index) in travelstatus" class="table margin_top_5">
 
               <caption>
-                <span class="">訂單編號： {{item.order_no}} </span>
+                <span class="">訂單編號： {{item.ord_no}} </span>
               </caption>
               <table class="margin_top_1">
                 <thead class="table_title">
@@ -235,11 +275,9 @@
                   <tr>
                     <td>{{item.dep_date}}</td>
                     <td>NT.{{item.total_price}}</td>
-                    <td>{{item.miles}}</td>
+                    <td>{{item.scores}}</td>
                     <td>{{item.order_date}}</td>
-                    <td v-if="item.order_status==0">待出發</td>
-                    <td v-else="item.order_status==1">已出發</td>
-                    <!-- <td>{{item.order_status}}</td> -->
+                    <td>{{item.state}}</td>
                     <td>{{item.guide}}</td>
                   </tr>
                 </tbody>
@@ -261,16 +299,14 @@
                       <th scope="col">人數</th>
                     </tr>
                   </thead>
-                  <tbody v-for="item1 in spot_order_detail" v-if="item.order_no==item1.order_no">
-                    <div v-for=>
+                  <tbody v-for="item in spot_order_detail">
                     <tr>
-                      <td>{{item1.spot_no}}</td>
-                      <td>{{item1.spot_name}}</td>
-                      <td>{{item1.price}}</td>
-                      <td>{{item1.integral}}</td>
-                      <td>{{item1.people}}</td>
+                      <td>{{item.spot_no}}</td>
+                      <td>{{item.spot_name}}</td>
+                      <td>{{item.price}}</td>
+                      <td>{{item.integral}}</td>
+                      <td>{{item.people}}</td>
                     </tr>
-                    </div>
                   </tbody>
                 </table>
                 <div class="margin_top_1">
@@ -460,7 +496,7 @@
         <div v-else-if="link ==='d'">
 
           <div class="heart_btns">
-            <input value="<?php echo date("Y-m-d");?>"  type="date" id="date-1" class="btn orderbtns margin_top_3 btn-date data-down">
+            <input type="date" id="date-1" value="<?php echo date("Y-m-d");?>"  class="btn orderbtns margin_top_3 btn-date data-down">
           </div>
 
           <div class="ordercontent margin_top_3">
@@ -737,8 +773,19 @@
 
   </div>
 
-  <footer>
-    @@include('./layout/footer.html')
+  <footer class="padding_top_10">
+    <div class="links">
+      <div class="logo"><img src="./img/logo.png" alt=""></div>
+      <ul class="footer-links margin_top_2">
+        <li><a href="alltrip.php">星球景點</a></li>
+        <li><a href="planet.php">星星世界</a></li>
+        <li><a href="shop.php">星球商城</a></li>
+        <li><a href="photowall.php">太空互動</a></li>
+        <li><a href="Leaderboard.php">玩家排行</a></li>
+      </ul>
+    </div>
+    <img src="./img/footer_moon.png" alt="" class="footer_moon">
+    <img src="./img/smoke.png" alt="" class="smoke">
   </footer>
 
 
@@ -748,20 +795,13 @@
     var account_tab = new Vue({
       el: "#accountapp",
       data: {
-        mydata:[],
         link: "a",
         // dynamicComponent: 'bye',
         step: 1,
         isChange: false,
         isEditing: false,
         toggle: false,
-<<<<<<< HEAD
-        timefilter: new Date(),
-        // visibility: '全部',
-        visibility: '0',
-=======
         visibility: '全部',
->>>>>>> Min
         customer: { //會員資料
           mem_no: '1010006',
           mem_lv: '初星者',
@@ -833,64 +873,59 @@
           prod_point: '100',
           qty: '1',
         }],
-        spot_order: [
-          // { // 行程訂單+收件人
-        //   ord_no: '#TW1637493',
-        //   dep_date: '2021/02/04',
-        //   total_price: '1,290',
-        //   scores: '10,000',
-        //   order_date: '2021/02/04',
-        //   state: '已結束',
-        //   guide: '加購',
-        //   order_name: '陳大大',
-        //   order_ph: '0988123456',
-        //   order_email: '台北市中正區大西路48號',
-        // }, {
-        //   ord_no: '#TW1637493',
-        //   dep_date: '2021/02/04',
-        //   total_price: '1,290',
-        //   scores: '10,000',
-        //   order_date: '2021/02/04',
-        //   state: '待出發',
-        //   guide: '加購',
-        //   order_name: '陳中中',
-        //   order_ph: '0988123456',
-        //   order_email: '台北市中正區大西路48號',
-        // }, {
-        //   ord_no: '#TW1637493',
-        //   dep_date: '2021/02/04',
-        //   total_price: '1,290',
-        //   scores: '10,000',
-        //   order_date: '2021/02/04',
-        //   state: '待出發',
-        //   guide: '加購',
-        //   order_name: '陳小小',
-        //   order_ph: '0988123456',
-        //   order_email: '台北市中正區大西路48號',
-        // }
-        ],
-        
-        spot_order_detail: [
-        //   { // 行程訂單明細
-        //   spot_no: '#24',
-        //   spot_name: '攀登太陽系第一高山-奧林帕斯山三日遊',
-        //   price: '1,290',
-        //   integral: '10,000',
-        //   people: '1',
-        // }, {
-        //   spot_no: '#24',
-        //   spot_name: '攀登太陽系第一高山-奧林帕斯山三日遊',
-        //   price: '1,290',
-        //   integral: '10,000',
-        //   people: '1',
-        // }, {
-        //   spot_no: '#24',
-        //   spot_name: '攀登太陽系第一高山-奧林帕斯山三日遊',
-        //   price: '1,290',
-        //   integral: '10,000',
-        //   people: '1',
-        // }
-        ],
+        spot_order: [{ // 行程訂單+收件人
+          ord_no: '#TW1637493',
+          dep_date: '2021/02/04',
+          total_price: '1,290',
+          scores: '10,000',
+          order_date: '2021/02/04',
+          state: '已結束',
+          guide: '加購',
+          order_name: '陳大大',
+          order_ph: '0988123456',
+          order_email: '台北市中正區大西路48號',
+        }, {
+          ord_no: '#TW1637493',
+          dep_date: '2021/02/04',
+          total_price: '1,290',
+          scores: '10,000',
+          order_date: '2021/02/04',
+          state: '待出發',
+          guide: '加購',
+          order_name: '陳中中',
+          order_ph: '0988123456',
+          order_email: '台北市中正區大西路48號',
+        }, {
+          ord_no: '#TW1637493',
+          dep_date: '2021/02/04',
+          total_price: '1,290',
+          scores: '10,000',
+          order_date: '2021/02/04',
+          state: '待出發',
+          guide: '加購',
+          order_name: '陳小小',
+          order_ph: '0988123456',
+          order_email: '台北市中正區大西路48號',
+        }],
+        spot_order_detail: [{ // 行程訂單明細
+          spot_no: '#24',
+          spot_name: '攀登太陽系第一高山-奧林帕斯山三日遊',
+          price: '1,290',
+          integral: '10,000',
+          people: '1',
+        }, {
+          spot_no: '#24',
+          spot_name: '攀登太陽系第一高山-奧林帕斯山三日遊',
+          price: '1,290',
+          integral: '10,000',
+          people: '1',
+        }, {
+          spot_no: '#24',
+          spot_name: '攀登太陽系第一高山-奧林帕斯山三日遊',
+          price: '1,290',
+          integral: '10,000',
+          people: '1',
+        }],
         active: [],
         spot1: [{ // 行程內容
           spot: "./img/trip/trip_moon/moon1.jpg",
@@ -1038,26 +1073,19 @@
           });
         },
       },
-      mounted() {
-          fetch('./php/getspot_order.php').then(res => res.json()).then(res => this.spot_order = res);
-          fetch('./php/getspot_order_datail.php').then(res => res.json()).then(res => this.spot_order_detail = res);
-          
-      },
       computed: {
         travelstatus() {
-          if (this.visibility == 3) {
-              return this.spot_order;
+          if (this.visibility == '全部') {
+            return this.spot_order
           } else {
             return this.spot_order.filter(item => {
-              // return item.state == this.visibility
-              return item.order_status== this.visibility;
+              return item.state == this.visibility
             })
           }
         },
 
       },
     });
-
 
     window.onload = function () {        //  點擊menu變色
       for (var i = 0; i < document.links.length; i++) {

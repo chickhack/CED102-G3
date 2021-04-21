@@ -72,14 +72,18 @@
     <link rel="stylesheet" href="./css/all.css">
     <link rel="stylesheet" href="./css/pages/trip.css"></link>
     <link rel="stylesheet" href="./css/pages/product.css">
+    <link rel="shortcut icon" href="./img/icon/shortcut.png" type="image/x-icon">
     <title>星球商城</title>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.12/vue.js'></script>
     <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous"></script>
 </head>
 <body>
     <nav id="nav">
   <div class="logo">
-    <h1><a href="home.html">SPACED</a></h1>
+    <h1><a href="home.php">SPACED</a></h1>
   </div>
   <ul class="nav-links">
     <li class="margin_left_5"><a href="alltrip.php">星球景點</a></li>
@@ -130,6 +134,7 @@
 
 
     <div id="particles-js"></div>
+    <a href="#" class="go-top"></a>
     <section class="container" id="app">
         <div class="product">
             <div class="imgs">
@@ -365,5 +370,6 @@
                                             
     </script>
     <script src="./js/background.js"></script>
+    <script src="./js/gotop.js"></script>
 </body>
 </html>

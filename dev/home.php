@@ -1,16 +1,3 @@
-<?php
-  // require_once('./php/connectbooks_yi.php');
-  // session_start();
-
-  // if(isset($_SESSION["email"])===true){ //表示已登入
-  // $result =  ["email"=>$memRow["email"], "mem_psw"=>$memRow["mem_psw"]];
-  // echo json_encode($result);
-  // }else{
-  // echo 50;
-  // }
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -67,8 +54,120 @@
 </head>
 
 <body>
-  <?php include('../dev/layout/header.php');?>
+<header>
+        <nav id="nav">
+            <div class="logo">
+                <h1><a href="home.php">SPACED</a></h1>
+            </div>
+            <ul class="nav-links">
+                <li class="margin_left_5 now"><a href="alltrip.php">星球景點</a></li>
+                <li class="margin_left_5"><a href="planet.php">星星世界</a></li>
+                <li class="margin_left_5"><a href="shop.php">星球商城</a></li>
+                <li class="margin_left_5"><a href="photowall.php">太空互動</a></li>
+                <li class="margin_left_5"><a href="Leaderboard.php">玩家排行</a></li>
+                <!-- <li><a href=""><img src="./images/ticket.png" alt="" class="icon"></a></li>
+        <li><a href=""><img src="./images/shopping-cart_(1).png" alt="" class="icon"></a></li>
+        <li><a href=""><img src="./images/round-account-button-with-user-inside_(1).png" alt="" class="icon"></a></li> -->
+            </ul>
+            <ul class="nav-icons">
+                <li class="nav-trip">
+                    <a href="./car-itineray.php">
+                        <img src="./img/icon/header/luggage.png" alt="" class="icon" />
+                        <?php
+                        if(isset($_SESSION["trip-cart"])){
+                            $count = count($_SESSION["trip-cart"]);
+                            echo "<div class='trip-count'>$count</div>";
+                        }else{
+                            echo "";
+                        }
+                     ?>
+                    </a>
+                </li>
+                <li class="nav-cart">
+                    <a href="./shop_cart.php">
+                        <img src="./img/icon/header/shopping-cart_(1).png" alt="" class="icon" />
+                        <?php
+                if(isset($_SESSION["cart"])){
+                    $count = count($_SESSION["cart"]);
+                    echo "<div class='count'>$count</div>";
+                }else{
+                    echo "";
+                }
+            ?>
+                    </a>
+                </li>
+                <li>
+                    <a href="./login.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png"
+                            alt="" class="icon" /></a>
+                </li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+        <script src="./js/header.js"></script>
+
+    </header>
     <div class="container-fluid" id="fullview">
+    <header>
+        <nav id="nav">
+            <div class="logo">
+                <h1><a href="home.php">SPACED</a></h1>
+            </div>
+            <ul class="nav-links">
+                <li class="margin_left_5"><a href="alltrip.php">星球景點</a></li>
+                <li class="margin_left_5"><a href="planet.html">星星世界</a></li>
+                <li class="margin_left_5"><a href="shop.php">星球商城</a></li>
+                <li class="margin_left_5"><a href="photowall.php">太空互動</a></li>
+                <li class="margin_left_5"><a href="Leaderboard.php">玩家排行</a></li>
+                <!-- <li><a href=""><img src="./images/ticket.png" alt="" class="icon"></a></li>
+        <li><a href=""><img src="./images/shopping-cart_(1).png" alt="" class="icon"></a></li>
+        <li><a href=""><img src="./images/round-account-button-with-user-inside_(1).png" alt="" class="icon"></a></li> -->
+            </ul>
+            <ul class="nav-icons">
+                <li class="nav-trip">
+                    <a href="./car-itineray.php">
+                        <img src="./img/icon/header/luggage.png" alt="" class="icon" />
+                        <?php
+                        if(isset($_SESSION["trip-cart"])){
+                            $count = count($_SESSION["trip-cart"]);
+                            echo "<div class='trip-count'>$count</div>";
+                        }else{
+                            echo "";
+                        }
+                     ?>
+                    </a>
+                </li>
+                <li class="nav-cart">
+                    <a href="./shop_cart.php">
+                        <img src="./img/icon/header/shopping-cart_(1).png" alt="" class="icon" />
+                        <?php
+                if(isset($_SESSION["cart"])){
+                    $count = count($_SESSION["cart"]);
+                    echo "<div class='count'>$count</div>";
+                }else{
+                    echo "";
+                }
+            ?>
+                    </a>
+                </li>
+                <li>
+                    <a href="./login.html"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png"
+                            alt="" class="icon" /></a>
+                </li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+        <script src="./js/header.js"></script>
+
+    </header>
+
        
 
         <div class="video-bg">
@@ -141,7 +240,7 @@
     <!-- 星球百科 -->
     <h2 align="center" class="margin_top_10" >星星世界</h2>
         <h3 class="margin_top_3 line_low" align="center">暢遊宇宙之前，進入星星世界，一起了解宇宙知識，做好萬全準備!</h3>
-    <div class="planet_box margin_top_15">
+    <div class="planet_box margin_top_5">
         <!-- <h2 align="center" class="">星星世界</h2> -->
         <div id="planet" class="planet_tab">
             <div class="tabList col-LG-12 ">
@@ -192,12 +291,12 @@
                                     </div>
                                 </div>
                                 <div class="planet_btn">
-                                    <button class="button button_min "><a href="photowall.html">更多關於火星</a></button>
+                                    <button class="button button_min "><a href="planet.php">更多關於火星</a></button>
                                 </div>
                             </div>
                             <div class="tab-active col-lg-6 col-md-12 col-sm-12">
                                 <!-- 火星動圖 -->
-                                <div id="tag" class="col-md-12 col-sm-12" style="width: 1024px; height: 768px;"></div>
+                                <div id="tag" class="col-md-12 col-sm-12" style=""></div>
                                 <script src="./js/mars.js"></script>
                             </div>
                         </div>
@@ -208,8 +307,8 @@
                             <script src="./js/mars.js"></script>
                       </div>
                     </div>
-                    <!-- 其他tab -->
 
+                    </div>
                 </div>
             </div>
         </div>
@@ -256,9 +355,9 @@
             </div>
             <!-- </div> -->
         </div>
-        <div class="gallery_btn">
-            <button class="button button_min margin_top_10"><a href="photowall.html">看遊記</a></button>
-        </div>
+            <a href="photowall.php">
+                <button class="button button_min margin_top_5">看遊記</button>
+            </a>
     </section>
     <!-- 商城 -->
     <div class="shop_box">
@@ -356,7 +455,7 @@
                     </a>
                 </div>
             </div>
-            <a href="shop.html">
+            <a href="shop.php">
                 <button class="button button_min margin_top_5">去逛逛</button>
             </a>
         </div>
@@ -388,7 +487,7 @@
             </div>
         </div>
         <div class="memberbtn">
-            <button class="button button_min margin_top_10"><a href="register.php">加入會員</a></button>
+            <button class="button button_min margin_top_10">加入會員</button>
         </div>
     </div>
 
@@ -401,7 +500,7 @@
             <div class="logo"><img src="./img/logo.png" alt=""></div>
             <ul class="footer-links margin_top_2">
                 <li><a href="alltrip.php">星球景點</a></li>
-                <li><a href="planet.html">星星世界</a></li>
+                <li><a href="planet.php">星星世界</a></li>
                 <li><a href="shop.php">星球商城</a></li>
                 <li><a href="photowall.php">太空互動</a></li>
                 <li><a href="Leaderboard.php">玩家排行</a></li>

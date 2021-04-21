@@ -1,9 +1,5 @@
 <?php 
-<<<<<<< HEAD:dev/spaced_backstage_trip_reviews.php
-require_once("./php/connectBooks_kai.php");
-=======
 require_once("../php/connectbooks_kai.php");
->>>>>>> dev:dev/backstage/spaced_backstage_trip_reviews.php
 $sql = "select * from spot_trev";
 $spottrev = $pdo->query($sql);  //執行指令
 $spottrev ->execute();
@@ -26,15 +22,15 @@ $spottrev ->execute();
 <body>
     <div class="top w-100 header">
         <!-- <p class="h1 padding_left_4 "></p> -->
-        <img src="./img/logo.png" class="imgs padding_left_4 padding_top_1" alt="">
+        <img src="../img/logo.png" class="imgs padding_left_4 padding_top_1" alt="">
         <p class="text-top padding_left_4 ">Backstage</p>
     </div>
     <div class="div-menu">
         <div class="div-list">
             <button class="div-list-btn-a">景點</button>
             <div>
-                <a href="../spaced_backstage_trip.php" class="div-list-btn-s ">景點管理</a>
-                <a href="../spaced_backstage_trip_reviews.php" class="div-list-btn-s now">景點評價</a>
+                <a href="spaced_backstage_trip.php" class="div-list-btn-s ">景點管理</a>
+                <a href="spaced_backstage_trip_reviews.php" class="div-list-btn-s now">景點評價</a>
                 <a href="#" class="div-list-btn-s">行程訂單管理</a>
             </div>
             <button class="div-list-btn-a">商城</button>
@@ -94,9 +90,9 @@ while($spottrevRow = $spottrev->fetch(PDO::FETCH_ASSOC)){
                         <p class="wi-10 text-1"><?=$spottrevRow["trev_stats"]?></p>
                         <?php
                         if($spottrevRow['trev_stats'] == 0){
-                            echo "<p class='wi-5 text-1'><a href='../php/trip/edit_backstage_trip_reviews.php?trev_no=$spottrevRow[trev_no]&trev_stats=$spottrevRow[trev_stats]' name='update' type='button' class='btn btn-primary btn-sm'>上架</a></p>";
+                            echo "<p class='wi-5 text-1'><a href='../../dev/php/backstage/trip/edit_backstage_trip_reviews.php?trev_no=$spottrevRow[trev_no]&trev_stats=$spottrevRow[trev_stats]' name='update' type='button' class='btn btn-primary btn-sm'>上架</a></p>";
                         }else{
-                            echo "<p class='wi-5 text-1'><a href='../php/trip/edit_backstage_trip_reviews.php?trev_no=$spottrevRow[trev_no]&trev_stats=$spottrevRow[trev_stats]' name='update' type='button' class='btn btn-danger btn-sm'>下架</a></p>";
+                            echo "<p class='wi-5 text-1'><a href='../../dev/php/backstage/trip/edit_backstage_trip_reviews.php?trev_no=$spottrevRow[trev_no]&trev_stats=$spottrevRow[trev_stats]' name='update' type='button' class='btn btn-danger btn-sm'>下架</a></p>";
                             }
                     ?>
                     </div>

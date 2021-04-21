@@ -527,6 +527,7 @@ canvas {
 .div-menu .div-right .title {
   position: fixed;
   top: 12vh;
+  width: calc(100% - 250px);
   background-color: #1d1e2e;
 }
 

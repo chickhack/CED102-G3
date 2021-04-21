@@ -2,7 +2,7 @@
 $spot_no =$_GET['spot_no'];
 $errMsg = "";
 
-require_once("connectbooks_kai.php");
+require_once("../../connectbooks_kai.php");
 
 try{
     $sql = 'DELETE FROM spot WHERE spot_no=:spot_no';

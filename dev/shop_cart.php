@@ -21,16 +21,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/pages/shop_cart.css">
+    <link rel="shortcut icon" href="./img/icon/shortcut.png" type="image/x-icon">
     <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.12/vue.js'></script>
     <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vuex/3.6.2/vuex.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous"></script>
     <title>星球商城</title>
 </head>
 <body>
     <div class="container">
         <nav id="nav">
         <div class="logo">
-            <h1><a href="home.html">SPACED</a></h1>
+            <h1><a href="home.php">SPACED</a></h1>
         </div>
         <ul class="nav-links">
             <li class="margin_left_5"><a href="alltrip.php">星球景點</a></li>
@@ -79,6 +83,7 @@
 
         <script src="./js/header.js"></script>
         <div id="particles-js"></div>
+        <a href="#" class="go-top"></a>
         <section class="cart" id="app">
             <form :action="name+id" method="post">
                 <h3 class="h2">我的商品</h3>
@@ -278,5 +283,6 @@
 
     </script>
     <script src="./js/background.js"></script>
+    <script src="./js/gotop.js"></script>
 </body>
 </html>

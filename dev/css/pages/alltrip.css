@@ -838,6 +838,14 @@ div.bk3 {
 }
 
 .first .first_right .hottrip {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+>>>>>>> Min
+>>>>>>> 1ae28f91038a4c3c157553d18c3f0413d55d75a6
   display: inline-flex;
   padding-top: 80px;
 }
@@ -900,7 +908,16 @@ div.bk3 {
   position: absolute;
   top: 15px;
   left: 50%;
+<<<<<<< HEAD
   transform: translateX(-50%);
+=======
+<<<<<<< HEAD
+  transform: translateX(-50%);
+=======
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+>>>>>>> Min
+>>>>>>> 1ae28f91038a4c3c157553d18c3f0413d55d75a6
   z-index: 2;
 }
 
@@ -909,7 +926,12 @@ div.bk3 {
 }
 
 .first .first_right .hottrip div.planet_top img.planet_a1:hover {
+<<<<<<< HEAD
   transform: translateY(0.2em);
+=======
+  -webkit-transform: translateY(0.2em);
+          transform: translateY(0.2em);
+>>>>>>> 1ae28f91038a4c3c157553d18c3f0413d55d75a6
 }
 
 @media all and (max-width: 577px) {
@@ -922,6 +944,15 @@ div.bk3 {
 .first .first_right .hottrip div.planet_top div.word {
   position: absolute;
   top: 190px;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+>>>>>>> Min
+>>>>>>> 1ae28f91038a4c3c157553d18c3f0413d55d75a6
   text-align: center;
   margin: 0 auto;
   width: 100%;
@@ -932,6 +963,14 @@ div.bk3 {
 }
 
 .first .first_right .hottrip div.planet_top div.word .tag {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+>>>>>>> Min
+>>>>>>> 1ae28f91038a4c3c157553d18c3f0413d55d75a6
   display: inline-flex;
   border: 1px solid #cccaca;
   border-radius: 5px;
@@ -973,9 +1012,21 @@ div.bk3 {
   background-color: #bf896b;
 }
 
+<<<<<<< HEAD
 @media screen and (min-width: 577px) and (max-width: 768px) {
   .first .first_right .hottrip .planet_top:nth-child(3) {
     display: none;
+=======
+<<<<<<< HEAD
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .first .first_right .hottrip .planet_top:nth-child(3) {
+    display: none;
+=======
+@-webkit-keyframes h2 {
+  0% {
+    text-shadow: 0 0 6px #FFF;
+>>>>>>> Min
+>>>>>>> 1ae28f91038a4c3c157553d18c3f0413d55d75a6
   }
   .first .first_right .hottrip .planet_top {
     margin: 0 36px;
@@ -992,6 +1043,14 @@ div.bk3 {
 }
 
 .tripselect {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+>>>>>>> Min
+>>>>>>> 1ae28f91038a4c3c157553d18c3f0413d55d75a6
   display: inline-flex;
   width: 280px;
   justify-content: space-between;
@@ -1048,8 +1107,23 @@ div.bk3 {
 
 @media all and (max-width: 767px) {
   .stepsection .stepall {
+<<<<<<< HEAD
     flex-direction: column;
     align-items: center;
+=======
+<<<<<<< HEAD
+    flex-direction: column;
+    align-items: center;
+=======
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+>>>>>>> Min
+>>>>>>> 1ae28f91038a4c3c157553d18c3f0413d55d75a6
   }
 }
 

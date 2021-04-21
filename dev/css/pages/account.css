@@ -1626,6 +1626,7 @@ footer.padding_top_5 {
   text-align: center;
   position: absolute;
   background-color: #292B41;
+  display: none;
   position: absolute;
   z-index: 2;
   top: 100px;
@@ -2538,7 +2539,12 @@ section.shop .banner h2 {
   position: absolute;
   left: 50%;
   top: 50%;
+<<<<<<< HEAD
   transform: translate(-50%, -50%);
+=======
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+>>>>>>> 1ae28f91038a4c3c157553d18c3f0413d55d75a6
 }
 
 @media all and (max-width: 768px) {
@@ -2548,10 +2554,25 @@ section.shop .banner h2 {
 }
 
 section.shop .filter {
+<<<<<<< HEAD
   display: flex;
   justify-content: center;
   align-items: center;
   justify-content: space-between;
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+>>>>>>> 1ae28f91038a4c3c157553d18c3f0413d55d75a6
 }
 
 @media all and (max-width: 992px) {
@@ -2676,7 +2697,12 @@ section.shop #app .content {
   section.shop #app .content {
     opacity: 1;
     visibility: visible;
+<<<<<<< HEAD
     transform: translateY(-10px);
+=======
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+>>>>>>> 1ae28f91038a4c3c157553d18c3f0413d55d75a6
   }
 }
 
@@ -3604,6 +3630,11 @@ div.bk3 {
 }
 
 .first .first_right .hottrip {
+<<<<<<< HEAD
+=======
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+>>>>>>> 1ae28f91038a4c3c157553d18c3f0413d55d75a6
   display: inline-flex;
   padding-top: 80px;
 }
@@ -3666,7 +3697,12 @@ div.bk3 {
   position: absolute;
   top: 15px;
   left: 50%;
+<<<<<<< HEAD
   transform: translateX(-50%);
+=======
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+>>>>>>> 1ae28f91038a4c3c157553d18c3f0413d55d75a6
   z-index: 2;
 }
 
@@ -3675,7 +3711,12 @@ div.bk3 {
 }
 
 .first .first_right .hottrip div.planet_top img.planet_a1:hover {
+<<<<<<< HEAD
   transform: translateY(0.2em);
+=======
+  -webkit-transform: translateY(0.2em);
+          transform: translateY(0.2em);
+>>>>>>> 1ae28f91038a4c3c157553d18c3f0413d55d75a6
 }
 
 @media all and (max-width: 577px) {
@@ -3698,6 +3739,11 @@ div.bk3 {
 }
 
 .first .first_right .hottrip div.planet_top div.word .tag {
+<<<<<<< HEAD
+=======
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+>>>>>>> 1ae28f91038a4c3c157553d18c3f0413d55d75a6
   display: inline-flex;
   border: 1px solid #cccaca;
   border-radius: 5px;
@@ -3748,6 +3794,18 @@ div.bk3 {
   }
 }
 
+<<<<<<< HEAD
+=======
+@-webkit-keyframes h2 {
+  0% {
+    text-shadow: 0 0 6px #FFF;
+  }
+  100% {
+    text-shadow: 0 0 0px #000;
+  }
+}
+
+>>>>>>> 1ae28f91038a4c3c157553d18c3f0413d55d75a6
 @keyframes h2 {
   0% {
     text-shadow: 0 0 6px #FFF;
@@ -3814,8 +3872,18 @@ div.bk3 {
 
 @media all and (max-width: 767px) {
   .stepsection .stepall {
+<<<<<<< HEAD
     flex-direction: column;
     align-items: center;
+=======
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+>>>>>>> 1ae28f91038a4c3c157553d18c3f0413d55d75a6
   }
 }
 
@@ -4081,13 +4149,31 @@ div.bk3 {
 }
 
 .account_card .your_acc {
+<<<<<<< HEAD
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> 1ae28f91038a4c3c157553d18c3f0413d55d75a6
   display: flex;
 }
 
 .account_card .your_acc .now_lev, .account_card .your_acc .next_lev {
+<<<<<<< HEAD
   display: flex;
   flex-direction: column;
   align-items: center;
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+>>>>>>> 1ae28f91038a4c3c157553d18c3f0413d55d75a6
 }
 
 .account_card .your_acc .now_lev img, .account_card .your_acc .next_lev img {
@@ -4209,7 +4295,12 @@ div.bk3 {
 
 .account_tabs .content .btn-check:focus + .btn, .account_tabs .content .btn:focus {
   outline: 0;
+<<<<<<< HEAD
   box-shadow: none;
+=======
+  -webkit-box-shadow: none;
+          box-shadow: none;
+>>>>>>> 1ae28f91038a4c3c157553d18c3f0413d55d75a6
 }
 
 .account_tabs .content .info_editbtn, .account_tabs .content .pointbtn, .account_tabs .content .img_input {
@@ -4309,9 +4400,21 @@ div.bk3 {
 }
 
 .account_tabs .content .product_card .exchange, .account_tabs .content .product_card .point_btn, .account_tabs .content .tripcontent .exchange, .account_tabs .content .tripcontent .point_btn, .account_tabs .content .ordercontent .exchange, .account_tabs .content .ordercontent .point_btn, .account_tabs .content .pointcontent .exchange, .account_tabs .content .pointcontent .point_btn {
+<<<<<<< HEAD
   display: flex;
   align-items: center;
   justify-content: center;
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+>>>>>>> 1ae28f91038a4c3c157553d18c3f0413d55d75a6
   margin-top: 50px;
   height: auto;
   max-width: auto;
@@ -4400,7 +4503,7 @@ div.bk3 {
   display: none;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 992px) and (max-width: 1200px) {
   .welcome {
     padding: 15vh 50px 0px 50px;
   }

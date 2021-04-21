@@ -735,10 +735,29 @@ section.orderDetail li {
 section.orderDetail li .imgWord {
   width: 100%;
   display: flex;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 1ae28f91038a4c3c157553d18c3f0413d55d75a6
   justify-content: center;
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
+<<<<<<< HEAD
+=======
+=======
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+>>>>>>> Min
+>>>>>>> 1ae28f91038a4c3c157553d18c3f0413d55d75a6
 }
 
 section.orderDetail li .imgWord .prod {
@@ -753,6 +772,14 @@ section.orderDetail li .imgWord .prod {
 }
 
 section.orderDetail li .imgWord .imgRight {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> Min
+>>>>>>> 1ae28f91038a4c3c157553d18c3f0413d55d75a6
   display: flex;
   justify-content: center;
   align-items: center;
@@ -768,6 +795,14 @@ section.orderDetail li .imgWord .imgRight {
 }
 
 section.orderDetail li .imgWord .integral {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> Min
+>>>>>>> 1ae28f91038a4c3c157553d18c3f0413d55d75a6
   display: flex;
   justify-content: center;
   align-items: center;

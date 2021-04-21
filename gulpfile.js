@@ -10,7 +10,7 @@ const browserSync = require('browser-sync').create();
 const reload = browserSync.reload; //browser的方法 更新後~
 
 function movePhp(){
-    return src("dev/php/**").pipe(dest("dist/php"));
+    return src("dev/php/*").pipe(dest("dist/php"));
 }
 
 function moveIndex(){
@@ -28,10 +28,6 @@ function concatJSAndMove() {
 
 function moveJS() {
     return src('dev/js/*.js').pipe(dest('dist/js/'));
-}
-
-function moveBackstage() {
-    return src('dev/backstage/*.php').pipe(dest('dist/backstage/'));
 }
 
 function commonStyle() {
@@ -80,7 +76,7 @@ function killDist() {
 }
 
 exports.kill = killDist;
-exports.u = series(killDist, parallel(moveBackstage, moveImg, moveJS, commonStyle, pageStyle, includeHTML,movePhp,moveIndex));
+exports.u = series(killDist, parallel(moveImg, moveJS, commonStyle, pageStyle, includeHTML,movePhp,moveIndex));
 
 exports.browser = function browsersync() {
     browserSync.init({
