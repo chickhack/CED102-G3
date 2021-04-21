@@ -57,6 +57,20 @@ button:hover{
 button{
     background-color: transparent;
     color: $gold;
+    a{
+        text-decoration: none;
+        color: $gold;
+    }
+}
+button:hover{
+    color: #ffff;
+    border: 1px solid $gold;
+    background: $gold;
+    a{
+        text-decoration: none;
+        color: white;
+    
+    }
 }
 
 //=========首頁標語
