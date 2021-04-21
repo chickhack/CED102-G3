@@ -19,10 +19,63 @@
 </head>
 <body>
 
-  <!-- <header> -->
-    <!-- </header> -->
+<header>
+        <nav id="nav">
+            <div class="logo">
+                <h1><a href="home.php">SPACED</a></h1>
+            </div>
+            <ul class="nav-links">
+                <li class="margin_left_5 now"><a href="alltrip.php">星球景點</a></li>
+                <li class="margin_left_5"><a href="planet.php">星星世界</a></li>
+                <li class="margin_left_5"><a href="shop.php">星球商城</a></li>
+                <li class="margin_left_5 "><a href="photowall.php" class="bread">太空互動</a></li>
+                <li class="margin_left_5"><a href="Leaderboard.php">玩家排行</a></li>
+                <!-- <li><a href=""><img src="./images/ticket.png" alt="" class="icon"></a></li>
+        <li><a href=""><img src="./images/shopping-cart_(1).png" alt="" class="icon"></a></li>
+        <li><a href=""><img src="./images/round-account-button-with-user-inside_(1).png" alt="" class="icon"></a></li> -->
+            </ul>
+            <ul class="nav-icons">
+                <li class="nav-trip">
+                    <a href="./car-itineray.php">
+                        <img src="./img/icon/header/luggage.png" alt="" class="icon" />
+                        <?php
+                        if(isset($_SESSION["trip-cart"])){
+                            $count = count($_SESSION["trip-cart"]);
+                            echo "<div class='trip-count'>$count</div>";
+                        }else{
+                            echo "";
+                        }
+                     ?>
+                    </a>
+                </li>
+                <li class="nav-cart">
+                    <a href="./shop_cart.php">
+                        <img src="./img/icon/header/shopping-cart_(1).png" alt="" class="icon" />
+                        <?php
+                if(isset($_SESSION["cart"])){
+                    $count = count($_SESSION["cart"]);
+                    echo "<div class='count'>$count</div>";
+                }else{
+                    echo "";
+                }
+            ?>
+                    </a>
+                </li>
+                <li>
+                    <a href="./login.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png"
+                            alt="" class="icon" /></a>
+                </li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+        <script src="./js/header.js"></script>
+
+    </header>
 <div class="container-fluid" id="app">
-    @@include('./layout/header.html')
      <!-- 動態背景 -->
      <div id="particles-js">
       <script src="./js/background.js"></script>
@@ -142,14 +195,25 @@
 <!-- ============發文按鈕============= -->
 <div class="col-md-1">
   <div class="button_2">
-    <a href="./post.html"><button class="button_min"><img src="./img/photowall/icon/post.png" alt=""></button></a>
+    <a href="./post.php"><button class="button_min"><img src="./img/photowall/icon/post.png" alt=""></button></a>
   </div>
   
 </div>
 <a href="#" class="go-top"></a>
-  <footer>
-    @@include('./layout/footer.html')
-  </footer>
+<footer class="padding_top_10">
+        <div class="links">
+            <div class="logo"><img src="./img/logo.png" alt=""></div>
+            <ul class="footer-links margin_top_2">
+                <li><a href="alltrip.php">星球景點</a></li>
+                <li><a href="planet.php">星星世界</a></li>
+                <li><a href="shop.php">星球商城</a></li>
+                <li><a href="photowall.php">太空互動</a></li>
+                <li><a href="Leaderboard.php">玩家排行</a></li>
+            </ul>
+        </div>
+        <img src="./img/footer_moon.png" alt="" class="footer_moon">
+        <img src="./img/smoke.png" alt="" class="smoke">
+    </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js "></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js "></script>
