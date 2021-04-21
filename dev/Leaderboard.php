@@ -34,7 +34,7 @@ session_start();
     <li class="margin_left_5"><a href="planet.html">星星世界</a></li>
     <li class="margin_left_5"><a href="shop.html">星球商城</a></li>
     <li class="margin_left_5"><a href="photowall.html">太空互動</a></li>
-    <li class="margin_left_5"><a href="Leaderboard.html">玩家排行</a></li>
+    <li class="margin_left_5"><a href="Leaderboard.html" class="bread">玩家排行</a></li>
     <!-- <li><a href=""><img src="./images/ticket.png" alt="" class="icon"></a></li>
         <li><a href=""><img src="./images/shopping-cart_(1).png" alt="" class="icon"></a></li>
         <li><a href=""><img src="./images/round-account-button-with-user-inside_(1).png" alt="" class="icon"></a></li> -->
