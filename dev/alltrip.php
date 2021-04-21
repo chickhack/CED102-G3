@@ -96,7 +96,7 @@ session_start();
                     </a>
                 </li>
                 <li>
-                    <a href="./login.html"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png"
+                    <a href="./login.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png"
                             alt="" class="icon" /></a>
                 </li>
             </ul>
