@@ -1,17 +1,17 @@
 <?php
-session_start();
-if(isset($_POST['remove'])){
-    if($_GET['action'] = 'remove'){ 
-        foreach($_SESSION['cart'] as $key => $value){
-            if($value['product_id'] == $_GET['id']){
-                unset($_SESSION['cart'][$key]);
-                $_SESSION['cart'] = array_values($_SESSION['cart']);
-                echo "<script>alert('Product has been removed!')</script>";
-                echo "<script>window.history.back()</script>";
+    session_start();
+    if(isset($_POST['remove'])){
+        if($_GET['action'] = 'remove'){ 
+            foreach($_SESSION['trip-cart'] as $key => $value){
+                if($value['spot_id'] == $_GET['id']){
+                    unset($_SESSION['trip-cart'][$key]);
+                    $_SESSION['trip-cart'] = array_values($_SESSION['trip-cart']);
+                    echo "<script>alert('Product has been removed!')</script>";
+                    echo "<script>window.history.back()</script>";
+                }
             }
         }
     }
-}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,227 +19,293 @@ if(isset($_POST['remove'])){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/pages/shop_cart.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.12/vue.js'></script>
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vuex/3.6.2/vuex.min.js"></script>
     <title>我的行程</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/all.css">
-    <link rel="stylesheet" href="./css/pages/car-itineray.css">
+    <style>
+    .count{
+        width: 25px;
+      height: 25px;
+      background-color: #AD6E4A;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 1.5rem;
+      position: absolute;
+      transform: translate(50%, -150%);
+      display: block;
+      color: white; 
+    }
+    </style>
 </head>
 <body>
-<nav id="nav">
-  <div class="logo">
-    <h1><a href="home.html">SPACED</a></h1>
-  </div>
-  <ul class="nav-links">
-    <li class="margin_left_5"><a href="alltrip.html">星球景點</a></li>
-    <li class="margin_left_5"><a href="planet.html">星星世界</a></li>
-    <li class="margin_left_5"><a href="shop.html">星球商城</a></li>
-    <li class="margin_left_5"><a href="photowall.html">太空互動</a></li>
-    <li class="margin_left_5"><a href="Leaderboard.html">玩家排行</a></li>
-    <!-- <li><a href=""><img src="./images/ticket.png" alt="" class="icon"></a></li>
-        <li><a href=""><img src="./images/shopping-cart_(1).png" alt="" class="icon"></a></li>
-        <li><a href=""><img src="./images/round-account-button-with-user-inside_(1).png" alt="" class="icon"></a></li> -->
-  </ul>
-  <ul class="nav-icons">
-    <li>
-      <a href="./car-itineray.html"
-        ><img src="./img/icon/header/luggage.png" alt="" class="icon"
-      /></a>
-    </li>
-    <li class="nav-cart">
-      <a href="./shop_cart.html">
-        <img
-          src="./img/icon/header/shopping-cart_(1).png"
-          alt=""
-          class="icon"
-        />
-      </a>
-    </li>
-    <li>
-      <a href="./login.php"
-        ><img
-          src="./img/icon/header/round-account-button-with-user-inside_(1).png"
-          alt=""
-          class="icon"
-      /></a>
-    </li>
-  </ul>
-  <div class="burger">
-    <div class="line1"></div>
-    <div class="line2"></div>
-    <div class="line3"></div>
-  </div>
-</nav>
-
-<script src="./js/header.js"></script>
-<div class="container-fluid">
-    <!-- <form action="#"> -->
-        
-        <div class="row w-100" id="nextTop">
-            <div class="col-11 col-xxl-12 col-xl-12 col-md-12">
-                <p class="text-1 line_high">我的行程</p>
-            
-                <!-- // if(!empty($_SESSION["trio-cart"])){ -->
-                    <!-- // $total = 0; -->
-                    <!-- // foreach($_SESSION["trio-cart"] as $key => $val){ -->
-                        
-                
-                        <div class="row backcol w-100 " > 
-                            <div class="col-2 allcol">
-
-                                    <img src="./img/trip/trip_jupiter/jupiter_a_ps.png" alt="" class="imgsr">
-                            </div>
-                            <div class="col-5 col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-4 allcol" 
-                                    v-for="me in medata" 
-                                    v-if="<?php echo $_SESSION["trio-cart"]["spot_id"];?>==me.spot_no">
-                                <p class="p-text-1">{{me.spot_name}}</p>
-                                <p class="p-text-2 padding_top_1">積分{{me.miles}}</p>
-                               
-                            
-                            </div>
-                            <div class="col-4 col-md-2 col-sm-4 allcol">
-                                <input type="date" id="date-1" class="btn-date data-down margin_top_2">
-
-                            </div>
-                            <div class="col-4 col-xxl-2 col-xl-2 col-lg-2 col-md-3 col-sm-4 datacol">
-                                <div class="margin-bottom-2">
-                                    <p 
-                                        class="padding_top_2 padding-bottom-1">
-                                        數量
-                                    </p>
-                                    <button 
-                                        class=" btn-pull" 
-                                        @click="minus">
-                                        －
-                                    </button>
-                                    <input 
-                                        type="number" 
-                                        v-model.number="total" 
-                                        class="btn-nu" 
-                                        min="0">
-                                    <button 
-                                        class=" btn-pull btn-p " 
-                                        @click="add"
-                                        >
-                                        ＋
-                                    </button>
-                                </div>    
-                            </div>
-                            <div 
-                                class="col-2 col-sm-1 allcol"> 
-                                <p 
-                                    class="padding_top_2">
-                              
-                                    {{all1}}
-                                </p>
-                            </div>
-                            <div class="col-1 allcol">
-                                <img src="./img/icon/rubbish-bin-delete-button.png" alt="" class="icon-g">
-                            
-                            </div>
-                       
-                        </div>
-                    <!-- }  -->
-                <!-- } -->
-            </div>
-            
-            <div class="col-11 col-xxl-12 col-xl-12 col-md-12 margin_top_5 backcol allcoin">
-                <div class="coin-left">
-                    <p class="line_low letter-1">可累積積分800</p>
-                    <p class="letter-1">商品合計:${{allcoin}}</p>
-
-                </div>
-                <div class="coin-right">
-                    <a href="./order-itineray.html" class="button_min btn-coin">前往結帳</a>
-                    
-                </div>
-                
-            </div>
+    <div class="container">
+        <nav id="nav">
+        <div class="logo">
+            <h1><a href="home.html">SPACED</a></h1>
         </div>
-    <!-- </form> -->
-</div>
-<a href="#" class="go-top"></a>
-
-<footer class="padding_top_10">
-    <div class="links">
-        <div class="logo"><img src="./img/logo.png" alt=""></div>
-        <ul class="footer-links margin_top_2">
-            <li><a href="alltrip.html">星球景點</a></li>
-            <li><a href="planet.html">星星世界</a></li>
-            <li><a href="shop.html">星球商城</a></li>
-            <li><a href="photowall.html">太空互動</a></li>
-            <li><a href="Leaderboard.html">玩家排行</a></li>
+        <ul class="nav-links">
+            <li class="margin_left_5"><a href="alltrip.php">星球景點</a></li>
+            <li class="margin_left_5"><a href="planet.html">星星世界</a></li>
+            <li class="margin_left_5"><a href="shop.html">星球商城</a></li>
+            <li class="margin_left_5"><a href="photowall.html">太空互動</a></li>
+            <li class="margin_left_5"><a href="Leaderboard.html">玩家排行</a></li>
+            <!-- <li><a href=""><img src="./images/ticket.png" alt="" class="icon"></a></li>
+                <li><a href=""><img src="./images/shopping-cart_(1).png" alt="" class="icon"></a></li>
+                <li><a href=""><img src="./images/round-account-button-with-user-inside_(1).png" alt="" class="icon"></a></li> -->
         </ul>
+        <ul class="nav-icons">
+            <li class="nav-itineray">
+            <a href="./car-itineray.php"
+                ><img src="./img/icon/header/luggage.png" alt="" class="icon"/>
+                <?php
+                        if(isset($_SESSION["trip-cart"])){
+                            $count = count($_SESSION["trip-cart"]);
+                            echo "<div class='count'>$count</div>";
+                        }else{
+                            echo "";
+                        }
+                        ?>
+            </a>
+            </li>
+            <li class="nav-cart">
+                <a href="./shop_cart.php">
+                    <img src="./img/icon/header/shopping-cart_(1).png" alt="" class="icon"/>
+                    
+                </a>
+            </li> 
+            <li>
+            <a href="./login.html"
+                ><img
+                src="./img/icon/header/round-account-button-with-user-inside_(1).png"
+                alt=""
+                class="icon"
+            /></a>
+            </li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        </nav>
+
+        <script src="./js/header.js"></script>
+        <div id="particles-js"></div>
+        <section class="cart" id="app">
+            <form :action="name+id" method="post">
+                <h3 class="h2">我的行程</h3>
+                <?php
+                print_r($_SESSION["trip-cart"]);
+                ?>
+                <ul>
+                    <cart @get="getId" :item="val" v-for="(val,index) in products"></cart>
+                </ul>
+                <div class="checkout margin_top_8">
+                    <div class="total">
+                        <div class="totalPrice">
+                            <p>行程合計</p>
+                            <p class="margin_left_1">${{totalPrice}}</p>
+                        </div>
+                        <div class="totalIntegral margin_top_1">
+                            <small>可累計積分</small>
+                            <img src="./img/s.png" class="icon margin_left_1">
+                            <small>+{{totalPoints}}</small>
+                        </div>
+                    </div>
+                    <button type="submit" name="check" class="button_min margin_left_3" @click="location">前往結帳</button>
+                </div>
+            </form>
+        </section>
+        <footer class="padding_top_10">
+            <div class="links">
+                <div class="logo"><img src="./img/logo.png" alt=""></div>
+                <ul class="footer-links margin_top_2">
+                    <li><a href="alltrip.html">星球景點</a></li>
+                    <li><a href="planet.html">星星世界</a></li>
+                    <li><a href="shop.html">星球商城</a></li>
+                    <li><a href="photowall.html">太空互動</a></li>
+                    <li><a href="Leaderboard.html">玩家排行</a></li>
+                </ul>
+            </div>
+            <img src="./img/footer_moon.png" alt="" class="footer_moon">
+            <img src="./img/smoke.png" alt="" class="smoke">
+        </footer>
+
     </div>
-    <img src="./img/footer_moon.png" alt="" class="footer_moon">
-    <img src="./img/smoke.png" alt="" class="smoke">
-</footer>
+    <script>
+        Vue.use(Vuex);
 
+        const mapState = Vuex.mapState
+        const mapMutations = Vuex.mapMutations
+        const mapActions = Vuex.mapActions
+        const mapGetters = Vuex.mapGetters
 
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-<!-- <script src="./js/addMinus.js"></script> -->
-<script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.12/vue.js'></script>
-<script>
-    $(document).ready(function() {
-        // Show or hide the sticky footer button
-        $(window).scroll(function() {
-            if ($(this).scrollTop() > 200) {
-                $('.go-top').fadeIn(200);
-            } else {
-                $('.go-top').fadeOut(200);
+        const store = new Vuex.Store({
+            state: {
+                totalPrice: 0,
+                totalPoints: 0,
+            },
+            mutations:{
+                updateAddPrice(state,payload){
+                    state.totalPrice += payload;
+                },
+                updateMinusPrice(state, payload){
+                    state.totalPrice -= payload;
+                },
+                all(state,payload){
+                    state.totalPrice = payload;
+                },
+                pt(state, payload){
+                    state.totalPoints = payload;
+                }
             }
-        });
-</script>
-<script>
-var app1 = new Vue({
-    el:'#nextTop',
-    data:{
-        medata:[],
-        medata1:[],
-        total:1,
-        to1:0,//2000
-        all1:0,
-        // allcoin:'',
-    },
-    
-    mounted() {
-        // console.log('work')
-        fetch(`./php/Leaderboard_copy.php`).then(res => res.json()).then(res => this.medata = res);
-        // fetch(`./php/Leaderboard_copy.php?id=${val}`//帶變數回傳去這個檔案).then(res => res.json()).then(res => this.medata = res);   
-        setTimeout(() => {
-            console.log(this.medata);
-        }, 1000);  
+        })
+        console.log(store);
 
+        Vue.component("cart", {
+            props: ["item"],
+            template: `                    
+                    <li class="item margin_top_3">
+                        <div class="img">
+                            <img :src="item.spot_pic1" alt="">
+                        </div>
+                        <div class="info">
+                            <div class="pdname">
+                                <p>{{item.spot_name}}</p>
+                                <input type="hidden" :value="item.spot_no" name="spot_id">
+                                <div class="integral">
+                                    <div class="points">
+                                        <img src="./img/s.png" alt="" class="icon">
+                                        <p>{{item.miles}}</p>
+                                    </div>
+                                    <div class="quantity">
+                                        <div class="as margin_top_2">
+                                            <span class="minus" @click="subQuantity">&minus;</span>
+                                            <input type="number" name="quantity" id="quantity" v-model.number="verified" :min="0" :max="100">
+                                            <input type="hidden" :name="'spot_qty'+item.spot_no" :value="verified">
+                                            <span class="add" @click="addQuantity">&plus;</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="h3">$\{{mainPrice}}</p>
+                            <button type="submit" name="remove"><img src="./img/icon/trashcan.png" class="icon trashcan" :data-no="item.spot_no" @click="increment"></button>
+                        </div>
+                    </li>
+                    `,
+            data() {
+                return {
+                    verified: this.item.qty,
+                    id: 0,
+                    name: "",
+                }
+            },
+            computed: {
+                mainPrice(){
+                    return this.item.spot_price * this.verified ;
+                },
+                mainPoints(){
+                    return this.item.spot_point * this.verified ;
+                },
+            },
+            methods: {
+                subQuantity() {
+                    if(this.verified > 1){
+                        this.verified -= 1;
+                        this.$store.commit("updateMinusPrice", parseInt(this.item.spot_price));
+                    }
+                },
+                addQuantity() {
+                    this.verified += 1;
+                    this.$store.commit("updateAddPrice", parseInt(this.item.spot_price));
+                },
+                increment(e) {
+                    this.id = e.target.dataset.no;
+                    this.$emit("get", this.id);
+                },
+            },
+        })
 
-        this.all1=<?php echo $_SESSION["trio-cart"]["spot_sal"];?>;
-        this.to1=this.all1;
-        
-    },
-    methods: {
-        add(){
-            this.total +=1;
-            this.all1=this.total*this.to1;
-        },
+        //global
+        let vm = new Vue({
+            el: "#app",
+            store,
+            data:{
+                // mydata:[],
+                products:[],
+                id:0,
+                verified: 0,
+                name: 'car-itineray.php?action=remove&id=',
+            },
+            mounted() {
+                let total = 0;
+                let points = 0;
+                // fetch('./php/Leaderboard.php').then(res => res.json()).then(res => this.mydata = res);
 
-        minus(){
-            if(this.total>0){
-                this.total -=1;
-                this.all1= this.total * this.to1;
-            }
-        },
-        
-    },
-    computed:{
-        allcoin(){
-            // for(var i=1;1=this.all1.length;i++){
-            return this.all1; 
+                fetch("./php/get_car-itineray_spot.php").then(res => res.json())
+                                     .then(data => {
+                                         let arr = [];
+                                         let qty=[];
+                                         let ky =100;
+                                        //  let j=1;
+                                         for(let i=0 ; i<data.length ; i++){
+                                            
+                                            <?php
+                                                if(isset($_SESSION["trip-cart"])){
+                                                    foreach($_SESSION["trip-cart"] as $v1) {?>
+                                                            if(ky == <?php echo $v1['spot_id'] ?>){
+                                                                // console.log("hi");
+                                                                
+                                                                data[i-1].qty = <?php echo $v1['spot_qty']?>;
+                                                                arr.push(data[i-1]);
+                                                                
+                                                            }
+                                                            <?php
+                                                        };
+                                                    }?>
+                                                    // console.log(qty);
+                                                    ky++;
+                                                    // j++;
+                                                    console.log(arr);
+                                                }
+                                            arr.forEach(prod => {
+                                                prod.png = prod["spot_pic1"];
+                                                total += parseInt(prod['spot_price']) * parseInt(prod['qty']);
+                                                points += parseInt(prod['miles']);
+                                                console.log(points);
+                                                console.log(prod['qty']);
 
-            // }
-        },
-    },
-})
+                                            })
+                                            this.products = arr;
+                                            
+                                        }).then(()=>{
+                                            this.$store.commit('all', total);
+                                            this.$store.commit('pt', points);
+                                        })
+            },
+            computed: {
+                // totalPrice(){
+                //     return this.$store.state.totalPrice;
+                // }
+                ...mapState(['totalPrice','totalPoints']),
+            },
+            methods: {
+                getId(id){
+                    this.id = id ;
+                },
+                location(e){
+                    if(e.target.name = "check"){
+                        const form = document.querySelector("form");
+                        this.name = "./order-itineray.php";
+                        this.id="";
+                    }
+                }
+            },
+        })
 
-</script>
+    </script>
+    <script src="./js/background.js"></script>
 </body>
 </html>

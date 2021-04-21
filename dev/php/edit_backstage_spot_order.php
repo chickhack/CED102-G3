@@ -1,24 +1,24 @@
 <?php 
-$prod_no =$_GET['prod_no'];
+$order_no =$_GET['order_no'];
 $errMsg = "";
 $status = 0;
 
-if($_GET['prod_status'] == 0){
+if($_GET['order_status'] == 0){
     $status = 1;
 }else{
     $status = 0;
 }
 
 try{
-    require_once("connectbooks_kai.php");
-    $sql = "UPDATE prod SET prod_status=$status WHERE prod_no=:prod_no";
+    require_once("log.php");
+    $sql = "UPDATE spot_order SET order_status=$status WHERE order_no=:order_no";
     $product = $pdo->prepare($sql);
-    $product->bindValue(":prod_no", $prod_no);
+    $product->bindValue(":order_no", $order_no);
     $product->execute();
     if($product->execute()){
         
         // echo "<script>alert('已下架!')</script>";
-	    echo "<script>window.location.href='../backstage_shop.php'</script>";
+	    echo "<script>window.location.href='../spaced_backstage_order.php'</script>";
     }
 }
 catch(PDOException $e){

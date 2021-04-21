@@ -7,7 +7,8 @@ session_start();
         if(!in_array($_POST["spot_id"], $item_array_id)){
             $count = count($_SESSION["trip-cart"]);
             $item_array = array(
-                "spot_id" => $_POST["spot_id"]
+                "spot_id" => $_POST["spot_id"],
+                "spot_qty" => 1
             );
             $_SESSION["trip-cart"][$count] =$item_array;
             // echo '<script>window.location="alltrip.php"</script>';
@@ -17,7 +18,8 @@ session_start();
     }
         }else{
             $item_array = array(
-                "spot_id" => $_POST["spot_id"]
+                "spot_id" => $_POST["spot_id"],
+                "spot_qty" => 1
             );
             $_SESSION["trip-cart"][0] = $item_array;
     }
@@ -57,7 +59,7 @@ session_start();
                 <h1><a href="home.php">SPACED</a></h1>
             </div>
             <ul class="nav-links">
-                <li class="margin_left_5"><a href="alltrip.php">星球景點</a></li>
+                <li class="margin_left_5 now"><a href="alltrip.php">星球景點</a></li>
                 <li class="margin_left_5"><a href="planet.html">星星世界</a></li>
                 <li class="margin_left_5"><a href="shop.php">星球商城</a></li>
                 <li class="margin_left_5"><a href="photowall.php">太空互動</a></li>
