@@ -1,5 +1,9 @@
 <?php 
-require_once("../../connect_ced102_g3_local.php");
+<<<<<<< HEAD:dev/spaced_backstage_trip_reviews.php
+require_once("./php/connectBooks_kai.php");
+=======
+require_once("../php/connectbooks_kai.php");
+>>>>>>> dev:dev/backstage/spaced_backstage_trip_reviews.php
 $sql = "select * from spot_trev";
 $spottrev = $pdo->query($sql);  //執行指令
 $spottrev ->execute();
@@ -29,15 +33,15 @@ $spottrev ->execute();
         <div class="div-list">
             <button class="div-list-btn-a">景點</button>
             <div>
-                <a href="./spaced_backstage_trip.php" class="div-list-btn-s ">景點管理</a>
-                <a href="./spaced_backstage_trip_reviews.php" class="div-list-btn-s now">景點評價</a>
-                <a href="./spaced_backstage_order.php" class="div-list-btn-s">行程訂單管理</a>
+                <a href="../spaced_backstage_trip.php" class="div-list-btn-s ">景點管理</a>
+                <a href="../spaced_backstage_trip_reviews.php" class="div-list-btn-s now">景點評價</a>
+                <a href="#" class="div-list-btn-s">行程訂單管理</a>
             </div>
             <button class="div-list-btn-a">商城</button>
             <div>
-                <a href="./backstage_shop.php" class="div-list-btn-s">商品管理</a>
+                <a href="#" class="div-list-btn-s">商品管理</a>
                 <a href="#" class="div-list-btn-s">商品評價</a>
-                <a href="./backstage_shop_order.php" class="div-list-btn-s">商品訂單管理</a>
+                <a href="#" class="div-list-btn-s">商品訂單管理</a>
             </div>
             <!-- <a href="#" class="div-list-btn-a">百科管理</a> -->
             <button class="div-list-btn-a">互動牆</button>
