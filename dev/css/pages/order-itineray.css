@@ -1,0 +1,756 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+#particles-js {
+  z-index: -10;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.container-fluid {
+  padding-top: 15vh;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+body {
+  background-color: #0c0d18;
+  font-family: "Microsoft JhengHei";
+}
+
+.svgRight::before {
+  content: url(../../img/chevron-compact-right.svg) !important;
+  width: 20px;
+  height: 20px;
+}
+
+.checkbox-1 {
+  border: 1px solid #ad6e4a;
+}
+
+.width-50 {
+  width: 50%;
+}
+
+.backco {
+  background-color: #292B41;
+}
+
+.titi {
+  line-height: 50px;
+  font-size: 18px;
+}
+
+.textRight {
+  text-align: right;
+}
+
+.text-cn {
+  padding-left: 3%;
+}
+
+.textHeight-1 {
+  line-height: 10px;
+}
+
+.textHeight-2 {
+  line-height: 20px;
+}
+
+.backcol {
+  background-color: #292B41;
+}
+
+.divider {
+  padding-top: 1%;
+  border-bottom: 1px solid;
+  border-color: #ad6e4a;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.divider-1 {
+  padding-top: 1%;
+  border-bottom: 1px solid;
+  border-color: #ad6e4a;
+  width: 96%;
+}
+
+.text-va {
+  vertical-align: text-top;
+}
+
+.textcolor {
+  color: #C9ADA7;
+  font-size: 16px;
+}
+
+.textcolor-1 {
+  color: #ad6e4a;
+  font-size: 16px;
+}
+
+.h4 {
+  font-size: 18px;
+  color: #C9ADA7;
+  margin: 0;
+  text-align: end;
+}
+
+.h5 {
+  font-size: 18px;
+  color: #C9ADA7;
+  margin: 0;
+  width: 100%;
+  max-width: 150px;
+}
+
+.h6 {
+  color: #C9ADA7;
+  font-size: 18px;
+  text-align: center;
+}
+
+.h7 {
+  color: #C9ADA7;
+  font-size: 14px;
+}
+
+.h8 {
+  line-height: 30px;
+  color: #C9ADA7;
+  font-size: 16px;
+  width: 100%;
+  margin: 0;
+}
+
+.h9 {
+  color: #ad6e4a;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.letter-spacing-1 {
+  letter-spacing: 1px;
+}
+
+.letter-spacing-2 {
+  letter-spacing: 2px;
+}
+
+.padding_right-1 {
+  padding-right: 8px;
+}
+
+.padding_right-2 {
+  padding-right: 16px;
+}
+
+.padding_right-3 {
+  padding-right: 24px;
+}
+
+.padding_right-4 {
+  padding-right: 32px;
+}
+
+.padding_right-5 {
+  padding-right: 48px;
+}
+
+.padding_right-6 {
+  padding-right: 74px;
+}
+
+.padding_bottom-1 {
+  padding-bottom: 5%;
+}
+
+.padding_bottom-2 {
+  padding-bottom: 16px;
+}
+
+.padding_bottom-20 {
+  padding-bottom: 20px;
+}
+
+.padding_bottom-80 {
+  padding-bottom: 80px;
+}
+
+.margin-bottom-20 {
+  margin-bottom: 20px;
+}
+
+.margin-left-12 {
+  margin-left: 88px;
+}
+
+.imgs {
+  width: 100%;
+  max-width: 100px;
+  height: 100%;
+  max-height: 50px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.imgsr {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  max-height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#paymethod-coin-nu {
+  background-color: #292B41;
+  border: 1px solid #AD6E4A;
+  color: #fff;
+  font-size: 16px;
+  width: 30%;
+  letter-spacing: 2px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#paymethod-coin-nu:focus {
+  background-color: #ad6e4a;
+  outline: none;
+}
+
+.button_large-1 {
+  width: 100px;
+  font-size: 12px;
+  color: #fff;
+  background-color: #ad6e4a;
+  padding: 15px;
+  text-align: center;
+  border: 1px solid #AD6E4A;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.button_large-1:hover {
+  color: #fff;
+  background-color: #bf896b;
+}
+
+.btn-allAuto {
+  width: 100%;
+  text-align: justify;
+  background-color: #292B41;
+  outline: none;
+  border: none;
+  color: #C9ADA7;
+  font-size: 18px;
+  padding: 30px 0;
+}
+
+.btn-allAuto::before {
+  content: url(../../img/chevron-down.svg);
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  padding-right: 8px;
+}
+
+.icon-1 {
+  width: 25px;
+  height: 25px;
+}
+
+.checkbox_custom {
+  opacity: 0;
+  position: absolute;
+  width: 20px;
+}
+
+.checkbox_custom, .checkbox_custom_label {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.checkbox_custom_label {
+  position: relative;
+}
+
+.checkbox_custom + .checkbox_custom_label:before {
+  content: '';
+  background: transparent;
+  border: 1px solid #ad6e4a;
+  display: inline-block;
+  vertical-align: middle;
+  width: 10px;
+  height: 10px;
+  padding: 2px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.checkbox_custom:checked + .checkbox_custom_label:before {
+  content: "\f00c";
+  font-family: 'Font Awesome 5 Free';
+  background: #ad6e4a;
+  color: #fff;
+  font-weight: 700;
+  font-size: 10px;
+}
+
+.checkbox_custom:focus + .checkbox_custom-label {
+  outline: 1px solid #ddd;
+}
+
+form {
+  padding: 0 0 0 0;
+  height: 100%;
+}
+
+form .orderinfo .row {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+form .orderinfo .row .col-10 {
+  background-color: #292B41;
+  padding-bottom: 10px;
+}
+
+form .orderinfo .row .col-10 .row {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+form .orderinfo .row .col-10 .row .col-7 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+form .orderinfo .row .col-10 .row .col-7 input {
+  font-size: 16px;
+  color: #fff;
+  width: 100%;
+  background-color: #292B41;
+  border: 1px solid #ad6e4a;
+  padding: 5px 10px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+form .orderinfo .row .col-10 .row .col-7 input:focus {
+  background-color: #ad6e4a;
+  outline: none;
+}
+
+form .orderinfo .row .col-10 .row .col-11 {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+form .orderinfo .row .col-10 .row .col-11 input {
+  color: #fff;
+  width: 100%;
+  background-color: #292B41;
+  border: 1px solid #ad6e4a;
+  padding: 5px 10px;
+}
+
+form .ltineraryinfo .row {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+form .ltineraryinfo .row .col-10 .row {
+  margin-bottom: 32px;
+  background-color: #292B41;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+form .ltineraryinfo .row .col-10 .row .col-3 {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+form .ltineraryinfo .row .col-10 .row .col-3 img {
+  max-width: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+form .ltineraryinfo .row .col-10 .row .col-7 .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+
+form .ltineraryinfo .row .col-10 .row .col-7 .row .col-11 {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+form .ltineraryinfo .row .col-10 .row .col-7 .row .text-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 0;
+}
+
+form .ltineraryinfo .row .col-10 .row .col-7 .row .text-div img {
+  width: 25px;
+  height: 25px;
+}
+
+form .addPay .row {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+form .addPay .row .col-10 .automena .row .col-10 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+form .addPay .row .col-10 .automena .row .col-10 .sss {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #191919;
+  margin-bottom: 3%;
+  width: 100%;
+  padding: 15px 10px;
+  cursor: pointer;
+}
+
+form .addPay .row .col-10 .automena .row .col-10 .sss img {
+  width: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+form .addPay .row .col-10 .automena .row .col-10 input {
+  display: none;
+}
+
+form .addPay .row .col-10 .automena .row .col-11 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+form .addPay .row .col-10 .automena .row .col-11 input {
+  display: none;
+}
+
+form .paymethod .row {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+form .paymethod .row .col-10 .paymethod-automanu .row #paymethod-coin, form .paymethod .row .col-10 .paymethod-automanu .row #paymethod-automanu-car {
+  display: none;
+}
+
+form .paymethod .row .col-10 .paymethod-automanu .row .col-11 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+form .paymethod .row .col-10 .paymethod-automanu .row .col-12 .paymethod-automanu-car-automanu {
+  display: none;
+}
+
+form .paymethod .row .col-10 .paymethod-automanu .row .col-12 .paymethod-automanu-car-automanu .row {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+form .paymethod .row .col-10 .paymethod-automanu .row .col-12 .paymethod-automanu-car-automanu .row input {
+  width: 100%;
+  font-size: 16px;
+  background-color: #292B41;
+  border: 1px solid #AD6E4A;
+  padding: 5px 10px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+form .paymethod .row .col-10 .paymethod-automanu .row .col-12 .paymethod-automanu-car-automanu .row input:focus {
+  background-color: #ad6e4a;
+  outline: none;
+}
+
+form .paymethod .row .col-10 .paymethod-automanu .row .col-5 input.paymethod-coin-btn {
+  width: 50px;
+  height: 20px;
+  outline: none;
+  border-color: #ad6e4a;
+  background-color: #ad6e4a;
+  color: #fff;
+  line-height: 0px;
+}
+
+form .paymethod .row .col-10 .paymethod-automanu .row .col-4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+form .paymethod .row .col-10 .paymethod-automanu .row .col-4 .intput-nu {
+  background-color: #292B41;
+}
+
+form .orderDetails .row {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+form .orderDetails .row .allpay-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+form .orderDetails .row .col-10 .order-coin .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+form .orderDetails .row .col-10 .order-coin .row .order-coin-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+form .orderDetails .row .col-10 .order-coin .row .order-coin-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+form .orderDetails .row .col-10 .order-coin .row .col-4 {
+  padding: 0px;
+}
+
+form .orderDetails .row .col-10 .order-coin .row .col-3 {
+  padding: 0px;
+}
+
+form .orderDetails .row .col-10 .orderDetails-automanu .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+form .orderDetails .row .col-10 .orderDetails-automanu .row .orderDetails-automanu-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+form .orderDetails .row .col-10 .orderDetails-automanu .row .orderDetails-automanu-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+form .orderDetails .row .col-10 .orderDetails-automanu .row .col-4 {
+  padding: 0;
+}
+
+form .orderDetails .row .col-10 .orderDetails-automanu .row .col-3 {
+  padding: 0;
+}
+
+form .orderDetails .row .col-10 .orderDetails-automanu-allcoin {
+  padding-bottom: 16px;
+}
+
+form .orderDetails .row .col-10 .orderDetails-automanu-allcoin .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+form .orderDetails .row .col-10 .orderDetails-automanu-allcoin .row .orderDetails-automanu-allcoin-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+form .orderDetails .row .col-10 .orderDetails-automanu-allcoin .row .orderDetails-automanu-allcoin-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+form .orderDetails .row .col-10 .orderDetails-automanu-allcoin .row .col-4 {
+  padding: 0;
+}
+
+form .orderDetails .row .col-10 .orderDetails-automanu-allcoin .row .col-3 {
+  padding: 0;
+}
+
+form .orderDetails .row .col-10 .allcoinmenu {
+  padding: 16px 0px;
+}
+
+form .orderDetails .row .col-10 .allcoinmenu .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+form .orderDetails .row .col-10 .allcoinmenu .row .allcoinmenu-con {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+form .orderDetails .row .col-10 .allcoinmenu .row .allcoinmenu-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+form .orderDetails .row .col-10 .allcoinmenu .row .col-4 {
+  padding: 0;
+}
+
+form .orderDetails .row .col-10 .allcoinmenu .row .col-3 {
+  padding: 0;
+}
+
+form .orderDetails .row .col-10 .btn-orderDetails {
+  width: 100%;
+  text-align: left;
+  background-color: #292B41;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+}
+
+form .orderDetails .row .col-10 .btn-orderDetails::before {
+  content: url(../../img/chevron-down.svg);
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  padding-right: 8px;
+}
+
+@media (max-width: 1200px) {
+  #fl-traffic {
+    margin-left: 24px;
+  }
+}
+/*# sourceMappingURL=order-itineray.css.map */

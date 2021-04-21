@@ -1,0 +1,564 @@
+@import "../reset";
+@import "../base";
+@import "../header";
+@import "../footer";
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.container {
+    margin: 0 auto;
+    padding-bottom: 80px;
+}
+
+.swiper-container {
+    margin: 0 auto;
+    max-width: 1100px;
+    height: 75vh;
+
+    @media all and (max-width: 1200px) {
+        width: 95%;
+        height: auto;
+    }
+
+    .trippic {
+        width: 750px;
+    }
+}
+
+.parent_container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .up_container {
+        margin: 0 auto;
+        width: 100%;
+
+        .trip_content_all {
+            width: 50%;
+            display: inline-block;
+            vertical-align: top;
+            padding: 20px;
+
+            @media all and (max-width: 767px) {
+                width: 90%;
+                margin: 0 auto;
+            }
+
+            .trip_title {
+                display: inline-flex;
+                align-items: baseline;
+                justify-content: flex-start;
+                width: 100%;
+                font-weight: bold;
+                position: relative;
+
+                @media all and (max-width: 768px) {
+                    font-size: 16px;
+                }
+
+                .number {
+                    background-color: $gold;
+                    padding: 8px;
+                }
+
+                .trip_bookmark {
+                    background-image: url(../../img/icon/bookmark-outline.png);
+                    background-size: 25px;
+                    background-repeat: no-repeat;
+                    width: 25px;
+                    height: 30px;
+                    background-size: 25px;
+                    padding: 8px;
+                    padding-right: 0;
+                    position: absolute;
+                    top: 5px;
+                    right: 0px;
+                    text-align: end;
+                    cursor: pointer;
+                }
+
+                .trip_bookmark:hover {
+                    background-image: url(../../img/icon/bookmark_hover.png);
+                }
+
+            }
+
+            div.tab_container div.tab_contents div.tab {
+                display: none;
+            }
+
+            div.tab_container div.tab_contents div.tab.-on {
+                display: block;
+            }
+
+            .tab_list_block {
+                list-style: none;
+
+                li {
+                    display: inline-block;
+
+                    a {
+                        text-decoration: none;
+                        color: $gold;
+                        font-weight: bold;
+                        padding-bottom: 12px;
+                    }
+                }
+            }
+
+            .tab_contents {
+                border-top: 1px solid $gold;
+                letter-spacing: 1.5px;
+
+                .tag {
+                    display: inline-flex;
+                    border: 1px solid $pink;
+                    border-radius: 5px;
+                    padding: 8px;
+                    line-height: 5px;
+                    margin: 3px;
+                    color: $gray;
+                }
+
+                .g {
+                    color: $gold;
+                }
+            }
+
+            a.-on {
+                border-bottom: 4px solid $gold;
+                width: 70px;
+                text-align: center;
+            }
+
+        }
+
+        .book {
+            width: 30%;
+            display: inline-block;
+            vertical-align: top;
+            border: 1px solid $gold;
+            padding: 20px;
+            position: sticky;
+            top: 96px;
+            z-index: 2;
+            background-color: $darkblue;
+
+            @media screen and (min-width: 768px) and (max-width:1200px) {
+                margin-left: 16px;
+            }
+
+            @media screen and (min-width: 577px) and (max-width: 768px) {
+                width: 35%;
+                top: 15vh;
+                margin: 0 auto;
+            }
+
+            @media all and (max-width:576px) {
+                width: 85%;
+                position: relative;
+                margin: 2px;
+                top: 10px;
+            }
+
+            h3 {
+                font-weight: bold;
+
+                @media all and (max-width: 768px) {
+                    font-size: 16px;
+                }
+            }
+
+            .price_dis {
+                color: $gray;
+            }
+
+            .price {
+                color: $gold;
+                font-weight: bold;
+                letter-spacing: 2px;
+                font-family: "Nasalization";
+            }
+
+            hr {
+                border: 0;
+                height: 0.5px;
+                background: $gold;
+                opacity: 0.5;
+            }
+
+            .select {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                @media all and (max-width:1200px) {
+                    flex-direction: column;
+                }
+
+                .date {
+
+
+
+                    .date_text {
+                        color: $gold;
+                        font-weight: bold;
+                    }
+
+                    //日期按鈕
+                    .btn-date {
+                        letter-spacing: 2px;
+                        padding: 0 5px;
+                        border: 1px solid $gold;
+                        color: $gold;
+                        background-color: $darkblue;
+                        height: 25px;
+                        text-align: center;
+                        width: 180px;
+                    }
+
+                    // 向下箭頭
+                    ::-webkit-calendar-picker-indicator {
+                        color: $gold;
+                        background-image: url(../../img/date-chevron-down.svg);
+                        width: 15px;
+                        height: 25px;
+                        position: relative;
+                        top: 5px;
+                    }
+
+                }
+
+                .amount {
+                    margin-right: 15px;
+
+                    @media all and (max-width:1200px) {
+                        margin-top: 6px;
+                    }
+
+                    .date_text {
+                        color: $gold;
+                        font-weight: bold;
+                    }
+
+                    //加減按鈕
+                    .btn-pull {
+                        color: $gold;
+                        background-color: $darkblue;
+                        font-size: 14px;
+                        border: 1px solid $gold;
+                        width: 25px;
+                        height: 25px;
+                        line-height: 0px;
+                        padding-bottom: 1px;
+                    }
+
+                    // 數量的按鈕
+                    .btn-nu {
+                        color: $gold;
+                        background-color: $darkblue;
+                        border: 0px solid $gold;
+                        width: 30px;
+                        height: 30px;
+                        line-height: 0px;
+                        text-align: center;
+                        outline: none;
+                        padding-left: 12px;
+                        padding-right: 12px;
+                    }
+
+                }
+            }
+
+            .total {
+                color: $gold;
+                text-align: right;
+                padding-right: 16px;
+                font-weight: bold;
+                font-family: "Nasalization";
+                letter-spacing: 2px;
+            }
+
+            .btn {
+                display: flex;
+                justify-content: flex-end;
+                align-items: baseline;
+                margin-right: 15px;
+
+                .addin {
+                    border: 1px solid $white;
+                    color: $white;
+                    border-radius: 15px;
+                    width: 110px;
+                    line-height: 26px;
+                    text-align: center;
+                    background-color: $darkblue;
+                    a {
+                        color: $white;
+                        display: inline-block;
+                    }
+
+                    img.plus {
+                        width: 15px;
+                        display: inline-block;
+                        position: relative;
+                        top: 2px;
+                        padding-right: 4px;
+                    }
+
+
+                }
+
+                .addin:hover {
+                    border: 1px solid $gray;
+                    color: $gray;
+                }
+
+                .button_min {
+                    background-color: $gold;
+                    color: $white;
+                    padding: 8px;
+
+                    a {
+                        color: $white;
+                        display: inline-block;
+                    }
+                }
+
+                .button_min:hover {
+                    background-color: lighten($gold, 10%);
+                }
+
+
+
+            }
+
+        }
+
+        .comment {
+            width: 50%;
+            padding: 20px;
+
+            @media screen and (min-width: 576px) and (max-width: 767px) {
+                width: 365px;
+            }
+
+            @media all and (max-width:576px) {
+                width: 90%;
+                position: relative;
+                margin: 0 auto;
+                padding-top: 80px;
+            }
+
+            .score {
+                display: flex;
+                align-items: center;
+                position: relative;
+
+                .number {
+                    background-color: $gold;
+                    padding: 8px;
+                }
+
+                .stars {
+                    @include flex_middle();
+
+                    .star {
+                        margin-left: 4px;
+                    }
+
+                    .icon {
+                        width: 15px;
+                    }
+                }
+
+                .more {
+                    position: absolute;
+                    right: 0;
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+            }
+
+            .messages {
+                display: flex;
+                align-items: center;
+                border-bottom: 1px solid $gold;
+                padding: 16px 0;
+                position: relative;
+
+                img {
+                    max-width: 50px;
+                    top: 50px;
+                }
+
+                .name {
+                    @include flex_middle();
+                    justify-content: start;
+                    color:$gray;
+                    font-weight: 600;
+
+                    hr {
+                        height: 10px;
+                        background-color: $pink;
+                        border: 1px solid $pink;
+                        margin: 0 8px;
+                    }
+                }
+
+                .more {
+                    position: absolute;
+                    right: 0;
+                    bottom: 16px;
+                    color: $white;
+                    text-decoration: underline;
+                    cursor: pointer;
+
+                    @media all and (max-width: 767px) {
+                        bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .recommend {
+        margin: 0 auto;
+        padding-bottom: 80px;
+
+        h3 {
+            text-align: center;
+        }
+
+        .tripcard_all {
+            display: inline-flex;
+            justify-content: center;
+            width: 100%;
+
+            @media all and (max-width: 767px) {
+                flex-direction: column;
+                align-items: center;
+            } 
+
+            .tripcard {
+                // border: 1px solid white;
+                width: 250px;
+                background-color: #191919;
+                padding: 15px;
+                border-radius: 5px;
+                position: relative;
+                margin: 0 16px 0 16px;
+
+                &:hover {
+                    transform: translateY(0.2em);
+                    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+                }
+
+                &.tripcard:nth-child(1) {
+                    animation: float 4s cubic-bezier(.1, .1, .88, .88) infinite;
+                }
+
+                &.tripcard:nth-child(2) {
+                    animation: float 4.5s cubic-bezier(.1, .1, .88, .88) infinite;
+                }
+
+                &.tripcard:nth-child(3) {
+                    animation: float 5s cubic-bezier(.1, .1, .88, .88) infinite;
+                }
+
+                &.tripcard:nth-child(4) {
+                    animation: float 5.5s cubic-bezier(.1, .1, .88, .88) infinite;
+                }
+
+                @media all and (max-width: 767px) {
+                    flex-direction: column;
+                    margin: 16px 0 16px 0;
+                }
+
+                .spot_pic {
+                    width: 250px;
+                }
+
+                .spot_pic:hover {
+                    transform: perspective(0.5px) translateX(-1.5px) translateY(-1.5px);
+                }
+
+                .hot2 {
+                    font-weight: bold;
+                    margin-bottom: 15px;
+                    color: $pink;
+                }
+
+                .tag {
+                    display: inline-flex;
+                    border: 1px solid $gray;
+                    border-radius: 5px;
+                    padding: 8px;
+                    line-height: 5px;
+                    margin: 3px;
+                    color: $gray;
+                }
+
+                .price2 {
+                    color: $gold;
+                    font-weight: bold;
+                    letter-spacing: 2px;
+                    font-family: "Nasalization";
+                    padding-left: 5px;
+                    position: absolute;
+                    right: 20px;
+                    bottom: 10px;
+
+                }
+
+                .addin2 {
+                    background-color: $gold;
+                    color: $white;
+                    border-radius: 15px;
+                    width: 110px;
+                    line-height: 26px;
+                    text-align: center;
+                    text-decoration: none;
+                    border: none;
+
+                    img.plus {
+                        width: 15px;
+                        display: inline-block;
+                        position: relative;
+                        top: 2px;
+                        padding-right: 4px;
+                    }
+                }
+
+                .addin2:hover {
+                    background-color: lighten($gold, 10%);
+                }
+            } 
+            
+        }
+        
+    }
+}
+
+
+
+@keyframes float {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    30% {
+        transform: translate(0, -3px);
+    }
+
+    70% {
+        transform: translate(0, 5px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}

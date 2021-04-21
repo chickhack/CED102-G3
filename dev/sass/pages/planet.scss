@@ -1,0 +1,262 @@
+@import "../all.scss";
+
+.container-fluid{
+    padding: 0;
+    padding-top: 15vh;
+    @include respond(mobile){
+        margin: 0;
+    }
+}
+
+//=========動態背景
+  canvas {
+    display: block;
+
+  } /* ---- particles.js container ---- */
+  #particles-js {
+    z-index: -10;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: $darkblue;
+  } 
+  
+//=========按鈕設定
+button{
+    background-color: transparent;
+    color: white;
+}
+button:hover{
+    color: #ffff;
+    border: 1px solid $gold;
+    background: $gold;
+}
+
+// =========星球Banner
+.planet_banner{
+    color: $white;
+    max-width: 1100px;
+    margin: 0 auto;
+    background-image: url("../../img/home/mars2.jpg");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;    
+    padding-top: 15%;
+    position: relative;
+    @include respond(mobile){
+        padding-top: 50%;
+    }
+    h2{
+        @include absolute_middle();
+        top: 35%;
+        letter-spacing:2px;
+        @include respond(mobile){
+            font-size: .8rem;
+            width: 80%;
+            top: 50%;
+            margin: 0;
+        }
+    }
+}
+
+//=========星球Tab
+.planet_tab{
+    ul.tab-title{
+        display: flex;
+        justify-content: center;
+        column-gap: 3%;
+        flex-wrap: wrap;
+        list-style: none;
+        li a{
+            text-decoration: none;
+            border: none;
+            background-color: transparent;
+            color: $pink;
+            font-size: 18px;
+            padding: 12px 24px;
+        }
+        li.active{
+            border-bottom: 4px solid $gold;
+        }
+    }
+    @include respond(mobile){
+        ul.tab-title{
+            column-gap: 1%;
+            li a{
+                font-size: 14px;
+                padding: 12px 10px;
+
+            }
+        }
+    }
+    .separator{
+        margin: 0 auto;
+        height: 1px;
+        width: 70%;
+        border-top: solid 1px $gold;
+        @include respond(mobile){
+            width: 100%;
+        }
+    
+    }
+        .tab-inner{
+            // border: 1px solid white;
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            .tab_top{
+                // border: 1px solid white;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                padding: 0 15%;
+                .tab-active{
+                    .tag{
+                        left: -500px;
+                    }
+                }
+                .tab_left{
+                    max-width: 400px;
+                    h4{
+                        // font-size: 24px;
+                        line-height: 3rem;
+                    }
+                }
+                p {
+                    line-height: 2rem;
+                    margin-top: 20px;
+                    max-width: 400px;
+                }
+                .data{
+                    display: flex;
+                    // justify-content: center;
+                    font-family: Haettenschweiler, sans-serif;
+                    .grav, .day, .temp{
+                        padding: 5px 0;
+                        justify-content: center;
+                        align-items: center;
+                        border: 1px solid $gold;
+                        display: flex;
+                        flex-direction: column;
+                        min-width: 100px;
+                        max-height: 160px;
+                        border-right: 1px solid $gold;
+                    }
+                    // .day{
+                    //     justify-content: center;
+                    //     align-items: center;
+                    //     border: 1px solid $gold;
+                    //     display: flex;
+                    //     flex-direction: column;
+                    //     min-width: 130px;
+                    //     min-height: 130px;
+                    //     border-right: 1px solid $gold;
+            
+                    // }
+                    // .temp{
+                    //     justify-content: center;
+                    //     align-items: center;
+                    //     display: flex;
+                    //     border: 1px solid $gold;
+                    //     flex-direction: column;
+                    //     min-width: 130px;
+                    //     min-height: 130px;
+    
+                    // }
+                    
+                    span.var{
+                        font-size: 36px;
+                        letter-spacing: 3px;
+                    }
+                    span.data-top{
+                        vertical-align:top;
+                        font-size: 24px;
+                    }
+                    span.data-mid{
+                        font-size: 24px;
+                    }
+                    span.data-low{
+                        font-size: 24px;
+                        font-stretch: narrower;
+                    }
+                    p{
+                        margin-top: 5px;
+                        font-size: 16px;
+                    }
+            
+                }
+
+            }
+            @include respond(mobile){
+                .tab_top{
+                    padding: 0 5%;
+                }
+            }
+            // .tab-active{
+            //     position: relative;
+            //     top: 0;
+            //     }
+            
+            .planet_content{
+                display: flex;
+                flex-wrap: wrap;
+                .carousel{
+                    display: none;
+                }
+                .imgs{
+                    display:block;
+                    .img1{
+                        transform: translate(20%);
+                    }
+                    .img2{
+                        
+                        transform: translateX(10%);
+                    }
+                    .img3{
+                        
+                        transform: translate(-30%, -350px);
+                    }
+                }
+                .desc{
+                    display:flex;
+                    align-items: center;
+                    justify-content: center;
+                    p{
+                        line-height: 2rem;
+                        text-align: justify;
+                        max-width: 500px;
+                    }
+                }
+            }
+            @media only screen and ( max-width:1200px) {
+                .tab-inner{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .tab-active{
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
+                .planet_content{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .imgs{
+                        display: none;
+                    }
+                    .carousel{
+                        display: block;
+                        width: 400px;
+                    }
+                    .desc{
+                        max-width: 400px;
+                    }
+                    
+                }
+            
+            }
+        }
+
+        }

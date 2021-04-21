@@ -1,0 +1,513 @@
+@import "../all.scss";
+
+#marsloc {
+    top: 10vh;
+    left: 0;
+    position: absolute;
+    @media all and (max-width:1200px) {
+       display:none;
+    }
+}
+
+div.bk3 {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: -120px;
+    top: 400px;
+    opacity: 0.3;
+    animation: rotation 50s cubic-bezier(.1, .1, .88, .88) infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    33%,
+    66% {
+        transform: rotate(90deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.border {
+    border: 1px solid $gold;
+    margin: 0px auto;
+    width: 90%;
+    height: 100%;
+    top: 80px;
+    position: absolute;
+    opacity: 0.2;
+}
+
+
+// <!-- ----------first -->
+.first {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    @media all and (max-width:1200px) {
+        flex-direction: column;
+        justify-content: center;
+        width: 95%;
+    }
+
+    img {
+        display: block;
+    }
+
+    .first_left {
+        padding-left: 40px;
+        width: 35%;
+        display: flex;
+    
+        @media all and (max-width:1200px) {
+            padding-left: 8px;
+            margin: 0 auto;
+            width: 90%;
+        }
+    
+        h2.title {
+            display: inline-block;
+            position: relative;
+            vertical-align: top;
+            top: 18vh;
+            letter-spacing: 10px;
+            font-size: 36px;
+            color:$pink;
+            -webkit-animation: h2 1.2s infinite; 
+            animation: h2 1.2s infinite;
+    
+            @media screen and (min-width: 768px) and (max-width:1200px) {
+                font-size: 32px;
+                top: 10vh;
+            }
+
+            @media screen and (max-width: 767px) {
+                font-size: 24px;
+                top: 10vh;
+            }
+    
+            span.h3 {
+                font-weight: 500;
+                letter-spacing: 10px;
+                font-size: 24px;
+    
+                @media screen and (min-width: 768px) and (max-width:1200px) {
+                    font-size: 18px;
+    
+                }
+                @media screen and (max-width: 767px) {
+                    font-size: 14px;
+                   
+                }
+            }
+        }
+    }
+
+    .first_right {
+        width: 53%;
+        position: relative;
+
+        @media all and (max-width:1200px) {
+            overflow: hidden;
+            width: 95%;
+        }
+
+        .hottrip {
+            display: inline-flex;
+            padding-top: 80px;
+
+
+            @media screen and (min-width: 768px) and (max-width: 1200px) {
+                padding-top: 120px;
+            }
+            
+            @media screen and (max-width: 576px) {
+                flex-direction: column;
+                margin: 0 auto;
+                justify-content: space-between;
+               
+            }
+
+            div.planet_top {
+                position: relative;
+                padding-top: 90px;
+                text-align: center;
+                width: 55%;
+                padding-left: 8px;
+                padding-right: 8px;
+                &:hover{
+                    transform:translateY(0.2em);
+                    // box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+                }
+
+                &.planet_top:nth-child(1) {
+                    animation: float 5s cubic-bezier(.1, .1, .88, .88) infinite;
+                }
+
+                &.planet_top:nth-child(2) {
+                    animation: float 5.5s cubic-bezier(.1, .1, .88, .88) infinite;
+                }
+
+                &.planet_top:nth-child(3) {
+                    animation: float 6s cubic-bezier(.1, .1, .88, .88) infinite;
+                }
+
+                &.planet_top:nth-child(4) {
+                    animation: float 6.5s cubic-bezier(.1, .1, .88, .88) infinite;
+                }
+
+                @media all and (max-width:1200px) {
+                    // padding-left: 8px;
+                    // padding-right: 8px;
+                    width: 100%;
+                 
+                }
+
+                
+
+                h4 {
+                    color: $pink;
+                }
+
+                img.planet {
+                    height: 160px;
+                    position: absolute;
+                    top: 15px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    z-index: 2;
+                    
+                }
+
+                img.planet_a1 {
+                    max-width: 270px;
+                    &:hover{
+                        transform:translateY(0.2em);
+                    }  
+                    @media all and (max-width:577px) {
+                      margin: 0 auto;  
+                      max-width: 90%;
+                 }  
+                }
+
+
+                div.word {
+                    position: absolute;
+                    top: 190px;
+                    // left: 50%;
+                    // transform: translateX(-50%);
+                    text-align: center;
+                    margin: 0 auto;
+                    width: 100%;
+                    .hot {
+                        color: $gold;
+                    }
+
+                    .tag {
+                        display: inline-flex;
+                        border: 1px solid $gray;
+                        border-radius: 5px;
+                        padding: 8px;
+                        line-height: 5px;
+                        margin: 3px;
+                        color: $gray;
+                    }
+
+                    .price {
+                        color: $gold;
+                        font-weight: bold;
+                        letter-spacing: 2px;
+                        margin-bottom: 8px;
+                        font-family: "Nasalization";
+                    }
+
+                    .addin {
+                        background-color: $gold;
+                        color: $white;
+                        border-radius: 15px;
+                        width: 110px;
+                        margin: 0 auto;
+                        line-height: 26px;
+                        text-align: center;
+                        text-decoration: none;
+                        border: none;
+                        img.plus {
+                            width: 15px;
+                            display: inline-block;
+                            position: relative;
+                            top: 2px;
+                            padding-right: 4px;
+                        }
+
+                    }
+
+                    .addin:hover {
+                        background-color: lighten($gold, 10%);
+                    }
+
+                }
+            }
+            @media screen and (min-width: 577px) and (max-width: 768px) {
+                .planet_top:nth-child(3){
+                    display: none;
+                }
+                .planet_top{
+                    margin: 0 36px;
+                }
+            }
+        }
+    }
+}
+
+@keyframes h2 {
+    0%   {text-shadow: 0 0 6px #FFF;}
+    100%  {text-shadow: 0 0 0px #000;}
+}
+
+
+
+// <!-- ----------slider -->
+.tripselect {
+    display: inline-flex;
+    width: 280px;
+    justify-content: space-between;
+
+    @media all and (max-width:768px) {
+        width: 90%;
+    }
+
+    .icon2 {
+        width: 25px;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .select {
+        position: relative;
+        bottom: 4px;
+        color: $gold;
+    }
+}
+
+
+@keyframes float {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    30% {
+        transform: translate(0, -3px);
+    }
+
+    70% {
+        transform: translate(0, 5px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+// <!-- ---------流程區 -->
+.stepsection {
+    text-align: center;
+    background-color: rgba($color: #191919, $alpha: 0.3);
+    padding: 48px;
+    margin-top:144px;
+
+    .stepall {
+        max-width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        padding: 32px;
+
+        @media all and (max-width: 767px) {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .h2 {
+            @media all and (max-width:1200px) {
+                font-size: 24px;
+            }
+        }
+
+        .step {
+            position: relative;
+
+            @media all and (max-width: 767px) {
+                margin-left: 0;
+                padding-top: 24px;
+            }
+
+            img.step_icon {
+                width: 50px;
+                padding: 20px;
+                margin: 0 auto;
+            }
+
+            img.step_icon4 {
+                width: 85px;
+                padding: 20px;
+                margin: 0 auto;
+            }
+
+            .step_content {
+                color: $gold;
+                font-weight: bold;
+                width: 100%;
+
+                img.num {
+                    width: 23px;
+                    display: inline-block;
+                    position: relative;
+                    top: 5px;
+                    padding-right: 8px;
+                }
+            }
+        }
+    }
+}
+
+// <!-- ---------second -->
+.second {
+    margin-bottom: 100px;
+
+    .alltrip {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .tripcard_all {
+        display: inline-flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+
+        .tripcard {
+            // border: 1px solid white;
+            width: 250px;
+            background-color: #191919;
+            padding: 15px;
+            border-radius: 5px;
+            position: relative;
+            margin: 0 16px 0 16px;
+            &:hover{
+                transform:translateY(0.2em);
+                box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+            }
+            &.tripcard:nth-child(1){
+                animation: float 4s cubic-bezier(.1,.1,.88,.88) infinite;}
+            &.tripcard:nth-child(2){
+                animation: float 4.5s cubic-bezier(.1,.1,.88,.88) infinite;}
+            &.tripcard:nth-child(3){
+                animation: float 5s cubic-bezier(.1,.1,.88,.88) infinite;}
+
+
+            @media screen and (min-width: 768px) and (max-width: 992px) {
+                margin: 16px;
+            }
+
+            @media all and (max-width: 767px) {
+                flex-direction: column;
+                margin: 16px 0 16px 0;
+            }
+
+            .spot_pic {
+                width: 250px;
+            }
+
+            .spot_pic:hover {
+                transform: perspective(0.5px) translateX(-1.5px) translateY(-1.5px);
+            }
+
+            .hot2 {
+                font-weight: bold;
+                margin-bottom: 15px;
+                color: $pink;
+            }
+
+            .tag {
+                display: inline-flex;
+                border: 1px solid $pink;
+                border-radius: 5px;
+                padding: 8px;
+                line-height: 5px;
+                margin: 3px;
+                color: $gray;
+            }
+
+            .price2 {
+                color: $gold;
+                font-weight: bold;
+                letter-spacing: 2px;
+                font-family: "Nasalization";
+                padding-left: 5px;
+                position: absolute;
+                right: 20px;
+                bottom: 10px;
+
+            }
+
+            .addin2 {
+                background-color: $gold;
+                color: $white;
+                border-radius: 15px;
+                width: 110px;
+                line-height: 26px;
+                text-align: center;
+                text-decoration: none;
+                border: none;
+                display:block;
+                img.plus {
+                    width: 15px;
+                    display: inline-block;
+                    position: relative;
+                    top: 2px;
+                    padding-right: 4px;
+                }
+            }
+
+            .addin2:hover {
+                background-color: lighten($gold, 10%);
+            }
+
+            .trip_bookmark {
+                background-image: url(../../img/icon/bookmark-outline.png);
+                width: 25px;
+                height: 25px;
+                background-size: 25px;
+                background-repeat: no-repeat;
+                padding: 8px;
+                position: absolute;
+                right: 0px;
+                top: 230px;
+                align-items: center;
+                display: block;
+                justify-content: center;
+                cursor: pointer;
+            }
+
+            .trip_bookmark:hover {
+                background-image: url(../../img/icon/bookmark_hover.png);
+            }
+
+        }
+
+    }
+}
+

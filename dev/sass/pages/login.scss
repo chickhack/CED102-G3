@@ -1,0 +1,199 @@
+@import "../all.scss";
+.container-fluid{
+    max-width: 1200px;
+    padding: 0;
+    padding-top: 15vh;
+    margin: 0 auto;
+    @include respond(mobile){
+        margin: 0;
+    }
+}
+// .container{
+//     margin: 0 auto;
+//     max-width: 1100px;
+//     text-align: center;
+//     a{
+//         text-decoration: none;
+//     }
+//     @include respond(mobile){
+//         margin: 0;
+//     }
+// }
+section.login_container{
+    padding: 0;
+    border: 1px solid #ad6e4a83;
+    display: flex;
+    border-radius: 5px;
+    .login_banner{
+        background-color: rgb(22, 28, 46);
+        height: 80vh;
+        background-size: 110%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: $white;
+        row-gap: 2rem;
+        h2{
+            font-family: nasalization, sans-serif;
+        }
+        @include respond(pad){
+            display: none;
+        }
+        @include respond(mobile){
+            display: none;
+        }
+    }
+
+    .return_btn{
+        display: flex;
+        align-self: flex-start;
+        align-items: baseline;
+        span a{
+            color: $gold;
+            font-size: 28px;
+            letter-spacing: -6px;
+            font-weight: 800;
+        }
+        h4 a{
+            margin-left: 12px;
+            color: $gray;
+        }
+        a:hover{
+            text-decoration: underline;
+
+        }
+    }
+    .fa, .fas{
+        font-weight: 900;
+        position: absolute;
+        right: 40px;
+        top: 150px;
+    }
+    .modal-dialog{
+        display: flex;
+        flex-direction: column;
+        // padding-top: 10vh;
+        .main-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 auto;
+            .modal-content {
+                opacity: .8;
+                border-radius: 10px;
+                background-color: transparent;
+                border: none;
+            }
+        }
+        .fa-eye:before, .fa-eye-slash:before{
+            color: $gold;
+        }
+
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: inherit;
+            .form-group input {
+                margin: 0 auto;
+                margin-top: 24px;
+                height: 42px;
+                border-radius: 5px;
+                border: 1px solid $gold;
+                font-size: 18px;
+                // letter-spacing: 1px;
+                padding-left: 14px;
+                padding-top: 14px;
+                width: 90%;
+                background-color: transparent;
+            }
+            .form-group input:focus{
+                padding-left: 28px; 
+                transform: scale(1.08);
+                box-shadow: 
+                                    -1px 0px 20px 5px rgba(#AD6E4A,0.45);
+                -webkit-box-shadow: -1px 0px 20px 5px rgba(#AD6E4A,0.45);
+                -moz-box-shadow:    -1px 0px 20px 5px rgba(#AD6E4A,0.45);
+                
+                border: none;
+            }
+            .form-group input:hover{
+                animation: pulse .5s 1;
+            }
+            @-webkit-keyframes pulse {
+                0% {
+                  -webkit-box-shadow: 0 0 0 0 rgba(204, 140, 44, 0.4);
+                }
+                70% {
+                    -webkit-box-shadow: 0 0 0 7px rgba(204, 140, 44, 0);
+                }
+                100% {
+                    -webkit-box-shadow: 0 0 0 0 rgba(204, 140, 44, 0);
+                }
+              }
+              @keyframes pulse {
+                0% {
+                  -moz-box-shadow: 0 0 0 0 rgba(204, 140, 44, 0.4);
+                  box-shadow: 0 0 0 0 rgba(204, 140, 44, 0.4);
+                }
+                70% {
+                    -moz-box-shadow: 0 0 0 7px rgba(204, 140, 44, 0);
+                    box-shadow: 0 0 0 7px rgba(204, 140, 44, 0);
+                }
+                100% {
+                    -moz-box-shadow: 0 0 0 0 rgba(204, 140, 44, 0);
+                    box-shadow: 0 0 0 0 rgba(204, 140, 44, 0);
+                }
+              }
+            .form-group::before {
+                content: "電子信箱";
+                position: absolute;
+                font-size: 12px;
+                left: 32px;
+                padding-top: 32px;
+                color: $pink;
+            }
+
+            .form-group:last-of-type::before {
+                content: "密碼";
+            }
+            .login_btn{
+                align-self: center;
+                background-color: transparent;
+                color: $gold;
+            }
+            .login_btn:hover{
+                color: #ffff;
+                border: 1px solid $gold;
+                background: $gold;
+            }
+        }
+    }
+    .bottom-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .forgot, .signup{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .forgot a, .signup a{
+            color: $gray;
+            margin-left: 4px;
+        }
+        .forgot:hover , .signup:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        @include respond(mobile){
+            margin-left: 32px;
+        }
+     }
+    
+
+
+
+

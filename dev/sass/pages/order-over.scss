@@ -1,0 +1,33 @@
+.container-fluid{
+    padding: 15vh 0 0 0;
+    height: 50vh;
+    .row{
+        display: flex;
+        justify-content: center;
+        .col-9{
+            background-color: #292B41;
+            border: 1px solid #AD6E4A;
+            // height: 8px;
+            text-align: center;
+            .sub{
+                display: flex;
+                justify-content: center;
+                padding: 24px 0 80px 0;
+                
+            }
+        }
+    }
+}
+.btn-coin{
+    background-color: #ad6e4a;
+    color: #fff;
+}
+.btn-coin:hover{
+    color: #fff;
+    background-color: lighten(#ad6e4a,10%);
+}
+.text-1{
+    color: #ad6e4a;
+    font-size: 18px;
+    font-weight: 900;
+}

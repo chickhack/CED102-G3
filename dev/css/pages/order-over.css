@@ -1,0 +1,46 @@
+.container-fluid {
+  padding: 15vh 0 0 0;
+  height: 50vh;
+}
+
+.container-fluid .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container-fluid .row .col-9 {
+  background-color: #292B41;
+  border: 1px solid #AD6E4A;
+  text-align: center;
+}
+
+.container-fluid .row .col-9 .sub {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 24px 0 80px 0;
+}
+
+.btn-coin {
+  background-color: #ad6e4a;
+  color: #fff;
+}
+
+.btn-coin:hover {
+  color: #fff;
+  background-color: #bf896b;
+}
+
+.text-1 {
+  color: #ad6e4a;
+  font-size: 18px;
+  font-weight: 900;
+}
+/*# sourceMappingURL=order-over.css.map */

@@ -1,0 +1,352 @@
+@import "../all.scss";
+.container{
+  position: relative;
+}
+.container-fluid{
+  padding: 0;
+  margin-top: 15vh;
+}
+*{
+  box-sizing: border-box;
+}
+
+.photowall_banner{
+  max-width: 1100px;
+  margin: 0 auto;
+  background-image: url("../../img/home/others/mars_astranaut.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;    
+  padding-top: 15%;
+  position: relative;
+  color: $white;
+  @include respond(mobile){
+      padding-top: 50%;
+  }
+  h2{
+      @include absolute_middle();
+      top: 35%;
+      letter-spacing:2px;
+      @include respond(mobile){
+          font-size: .8rem;
+          width: 80%;
+          top: 50%;
+          margin: 0;
+      }
+      text-align: center;
+  }
+}
+
+// .top_photo{
+//   max-width: 1100px;
+//   text-align: center;
+//   margin: auto;
+// }
+// .top_photo img{
+//   height: 240px;
+//   width: 100%;
+//   object-fit: cover;
+// }
+.grid{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: start;
+  max-width: 1100px;
+  margin: 0 auto;
+  margin-top:40px;
+}
+
+.grid-item{
+  margin: 12.5px;
+  border: 1px solid #ad6e4a36;
+  border-radius: 5px;
+  width: 250px;
+  overflow: hidden;
+  position: relative;
+}
+.grid .grid-item .img1{
+  width: 250px;
+  height: 310px;
+}
+.img1 .action-box{
+  display: none;
+}
+.img1:hover .action-box{
+  display: flex;
+}
+.grid .grid-item .img1 img{
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+// .grid .grid-item:nth-child(n+9){
+//   display: none;
+// }
+.action-box{
+  display:flex;
+  position: absolute;
+  top: 270px;
+  background-color:black;
+  opacity: 0.5;
+  // position: relative;
+  display: none;
+}
+
+.action-box .heart img,.action-box .message img{
+  padding-top:2px;
+}
+.heart,.share,.message{
+  padding: 10px;
+}
+.grid .action-box img{
+  max-width: 25px;
+}
+.action-box .button{
+  background-color: transparent;
+  border-width: 0px;
+  outline: none;
+  padding: 10px;
+  margin-left: 81px;
+}
+.action-box .button.button img{
+  min-width: 50%;
+}
+.article_all .article .member_photo{
+  padding:15px;
+}
+.member_photo img{
+  max-width: 35px;
+}
+.article_all .article .name{
+  line-height: 60px;
+  color: #fff;
+  margin-right: 10px;
+  font-weight: 900;
+}
+.post_time{
+  line-height: 60px;
+  color: white;
+  padding: 0 15px;
+  // margin-left: 35px;
+  letter-spacing: 2px;
+  font-size: 12px;//新增
+  overflow:hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.article_all{
+  position: relative;
+  // bottom: 48px;
+}
+.article{
+  display: flex;
+}
+.article .member_photo img,.article_2 .member_photo img{
+  border-radius: 50%;
+}
+.text{
+  padding:0 15px 15px 15px;
+  color:$white;
+  line-height: 42px;
+  font-size: 12px;//新增
+  letter-spacing: 1px;//新增
+  display: -webkit-box;
+  -webkit-line-clamp: 3; //行數
+  -webkit-box-orient: vertical;
+  white-space: normal;
+  overflow: hidden;
+
+
+
+}
+.article_2{
+  display: flex;
+  margin-top: 10px;
+}
+
+.col-md-12{
+  text-align: center;
+}
+
+.button button{
+  color:white;
+  border: 1px solid #ad6e4afb;
+  padding: 15px;
+  margin: 30px 0 80px 0;
+  background-color: transparent;
+  outline: none;
+}
+.button button:hover{
+  background:#ad6e4a;;
+}
+
+.col-md-1 {
+  display: inline-block;
+  position: fixed;
+  left: 80%;//1300px->80%
+  bottom: 80px;
+  z-index: 1;
+}
+.col-md-1 .button_2 a button.button_min{
+  background-color: transparent;
+  border: none;
+}
+
+.col-md-1 .button_2:hover{
+  transform: translateY(-5px);
+}
+
+footer.padding_top_5{
+  padding-top: 10px;
+}
+// =======燈箱區=======
+.light-box-container{
+  text-align: center;
+  // margin-top: 20px;
+  position: absolute;
+  background-color: #292B41;
+  display: none;
+  position: absolute;
+  z-index: 2;
+  top: 100px;
+  padding-top: 35px;//新增
+}
+.row{
+  justify-content: center;
+}
+button.turnoff_lightbox{
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+button.turnoff_lightbox img{
+  width: 30px; //40->30
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+.img-switch{
+  display: inline-block;
+  max-width: 480px;//500px->480px
+  margin: 0 12px 0 12px; //新增
+}
+.img-switch img{
+  width: 100%;
+}
+#SMALL{
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  margin-top: 30px;
+}
+#SMALL img{
+  margin: 0 10px;
+  cursor: pointer;
+  width:100px;
+  height: 100px;
+  padding-bottom: 18px;
+}
+.member_info img{
+  border-radius: 50%;
+  max-width: 50px;
+}
+.words{
+  display: inline-block;
+  max-width: 480px;//500px->480px
+  margin:0 10px 0 10px;//新增
+}
+.post_article{
+  border: 1px solid #AD6E4A;
+}
+.message_text{
+  color: white;
+}
+.member_info{
+  display: flex;
+  padding: 10px 15px 0 15px;//15->10
+}
+.member_info .name{
+  color: white;
+  margin:0 15px;
+  line-height: 49px;
+  font-weight: 900;
+}
+.member_info a button{
+  margin-top: 10px;
+}
+.member_info a button:hover{
+  background-color: lighten($gold, 10%);
+}
+.post_text{
+  color: white;
+  line-height: 32px;
+  padding:10px 15px 10px 15px;//15 
+  text-align: left;
+}
+.member_info button{
+  background-color:#AD6E4A;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 5%;
+  cursor: pointer;
+}
+.movement{
+  margin-top: 10px;
+}
+.movement img.collection{
+  margin-right: 20px;
+  max-width: 23px;
+  padding-top: 10px;
+}
+.movement img.sharing{
+  margin-right: 73%;
+  max-width: 25px;
+}
+.movement img.more{
+  max-width: 22px;
+  opacity: .5;
+}
+.message_1 .name,.message_2 .name,.message_3 .name{
+  margin: 0 15px;
+  line-height: 40px;//49->40
+  font-weight: 900;
+}
+.message_text .message_title{
+  text-align: left;
+  margin: 20px;
+}
+.message_1,.message_2,.message_3{
+  display: flex;
+  padding: 0 15px 0 15px;
+  margin-bottom: 10px;//15->10
+}
+.message_1 .member_photo img,.message_2 .member_photo img,.message_3 .member_photo img{
+  border-radius: 50%;
+  max-width: 40px;//50->40
+}
+.message_1 .message_1_text,.message_2 .message_2_text,.message_3 .message_3_text{
+  line-height: 40px;//49->40
+}
+.message_1 .message_1_more,.message_2 .message_2_more,.message_3 .message_3_more{
+  line-height: 40px;//52->40
+  padding-top: 5px;
+}
+form.post_message input{
+background-color:#292B41;
+outline: none;
+width: 100%;
+padding: 3px;
+caret-color: white;
+border: 1px solid white;
+}
+.message_1 .message_1_more img, .message_2 .message_2_more img,.message_3 .message_3_more img{
+margin-left: 70px;
+max-width: 22px;
+opacity: .5;
+}
+form.post_message{
+  margin-bottom: 30px;
+}

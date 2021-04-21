@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/pages/shop_cart.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.12/vue.js'></script>
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <title>星球商城</title>
+</head>
+<body>
+    <div class="container">
+        @@include("./layout/header.html")
+        <div id="particles-js"></div>
+        <section class="cart" id="app">
+            <form action="">
+                <h3 class="h2">我的商品</h3>
+                <ul>
+                    <!-- <li class="item margin_top_3" v-for="product in products">
+                        <div class="img">
+                            <img :src="product.src" alt="">
+                        </div>
+                        <div class="info">
+                            <div class="pdname">
+                                <p>{{product.name}}</p>
+                                <div class="integral">
+                                    <div class="points">
+                                        <img src="./img/s.png" alt="" class="icon">
+                                        <p>{{product.integral}}</p>
+                                    </div>
+                                    <div class="quantity">
+                                        <div class="as margin_top_2">
+                                            <span class="minus" @click="subQuantity">&minus;</span>
+                                            <input type="number" name="quantity" id="quantity" v-model.number="verifiedQuantity" :min="button.min" :max="button.max">
+                                            <span class="add" @click="addQuantity">&plus;</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="h3">${{product.price}}</p>
+                            <img src="./img/icon/trashcan.png" class="icon trashcan">
+                        </div>
+                    </li> -->
+                    <cart :item="val" v-for="val in products"></cart>
+                </ul>
+                <div class="checkout margin_top_8">
+                    <div class="total">
+                        <div class="totalPrice">
+                            <p>商品合計</p>
+                            <p class="margin_left_1">${{totalPrice}}</p>
+                        </div>
+                        <div class="totalIntegral margin_top_1">
+                            <small>可累計積分</small>
+                            <img src="./img/s.png" class="icon margin_left_1">
+                            <small>+6000</small>
+                        </div>
+                    </div>
+                    <a class="button_min margin_left_3" href="shop_order.html">前往結帳</a>
+                </div>
+            </form>
+        </section>
+        @@include("./layout/footer.html")
+    </div>
+    <script>
+        Vue.component("cart", {
+            props: ["item"],
+            template: `                    
+                    <li class="item margin_top_3">
+                        <div class="img">
+                            <img :src="item.src" alt="">
+                        </div>
+                        <div class="info">
+                            <div class="pdname">
+                                <p>{{item.name}}</p>
+                                <div class="integral">
+                                    <div class="points">
+                                        <img src="./img/s.png" alt="" class="icon">
+                                        <p>{{item.integral}}</p>
+                                    </div>
+                                    <div class="quantity">
+                                        <div class="as margin_top_2">
+                                            <span class="minus" @click="subQuantity">&minus;</span>
+                                            <input type="number" name="quantity" id="quantity" v-model.number="verified" :min="item.button.min" :max="item.button.max">
+                                            <span class="add" @click="addQuantity">&plus;</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="h3">{{item.price}}</p>
+                            <img src="./img/icon/trashcan.png" class="icon trashcan">
+                        </div>
+                    </li>`,
+            data() {
+                return {
+                    verified: 1,
+                }
+            },
+            methods: {
+                subQuantity() {
+                    if(this.verified ){
+                        this.verified -= 1;
+                    }
+                    
+                },
+                addQuantity() {
+                    this.verified += 1;
+                }
+            }
+        })
+
+        let vm = new Vue({
+            el: "#app",
+            data:{
+                products: [{
+                    src: "./img/shop/shoes.png",
+                    name: "宇宙平衡鞋",
+                    integral: 3000,
+                    price: 5000,
+                    button: {
+                        min: 1,
+                        max: 99,
+                        quantity: 2,
+                    }
+                },{
+                    src: "./img/shop/cloth.png",
+                    name: "宇宙衣",
+                    integral: 3000,
+                    price: 5000,
+                    button: {
+                        min: 1,
+                        max: 99,
+                        quantity: 3,
+                    }
+                },{
+                    src: "./img/shop/helmet.png",
+                    name: "太空帽",
+                    integral: 3000,
+                    price: 5000,
+                    button: {
+                        min: 1,
+                        max: 99,
+                        quantity: 11,
+                    }
+                },{
+                    src: "./img/shop/shoes.png",
+                    name: "宇宙平衡鞋",
+                    integral: 3000,
+                    price: 5000,
+                    button: {
+                        min: 1,
+                        max: 99,
+                        quantity: 1,
+                    }
+                }],
+                totalPrice: 20000,
+                totalIntegral: 12000,
+            },
+        })
+    </script>
+    <script src="./js/background.js"></script>
+</body>
+</html>
