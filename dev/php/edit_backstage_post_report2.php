@@ -17,7 +17,7 @@ try{
     $product->execute();
     if($product->execute()){
         
-        // echo "<script>alert('已下架!')</script>";
+        // echo "<script>alert('已下架!')</script>";<!-- 狀態列 -->
 	    echo "<script>window.location.href='../spaced_backstage_post_report2.php'</script>";
     }
 }

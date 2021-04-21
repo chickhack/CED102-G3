@@ -83,7 +83,7 @@ while($spottrevRow = $spottrev->fetch(PDO::FETCH_ASSOC)){
                         <p class="wi-15 text-1"><?=$spottrevRow["rep_date"]?></p>
                         <p class="wi-15 text-1"><?=$spottrevRow["rep_content"]?></p>
                         <p class="wi-15 text-1"><?=$spottrevRow["rep_status"]?></p>
-
+                        <!-- 狀態列 -->
                     </div>
              </form>
                     <?php 

@@ -79,6 +79,7 @@ while($spottrevRow = $spottrev->fetch(PDO::FETCH_ASSOC)){
                         <p class="wi-10 text-1"><?=$spottrevRow["post_no"]?></p>
                         <p class="wi-15 text-1"><?=$spottrevRow["mem_no"]?></p>
                         <p class="wi-10 text-1"><?=$spottrevRow["post_keep"]?></p>
+                        <!-- 狀態列 -->
                         
                    
 

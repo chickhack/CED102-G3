@@ -98,6 +98,7 @@ while($spottrevRow = $spottrev->fetch(PDO::FETCH_ASSOC)){
                                     echo "<p class='wi-10 text-1'><a href='./php/edit_backstage_post.php?post_no=$spottrevRow[post_no]&post_stats=$spottrevRow[post_stats]' name='update' type='button' class='btn btn-danger btn-sm'>下架</a></p>";
                                 }
                             ?>
+                            <!-- 狀態列 -->
 
                     </div>
              </form>

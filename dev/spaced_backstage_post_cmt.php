@@ -90,7 +90,7 @@ while($spottrevRow = $spottrev->fetch(PDO::FETCH_ASSOC)){
                         <p class="wi-15 text-1"><?=$spottrevRow["mem_no"]?></p>
                         <p class="wi-15 text-1"><?=$spottrevRow["cmt_date"]?></p>
                         <p class="wi-15 text-1 toomuch"><?=$spottrevRow["cmt_content"]?></p>
-                        <p class="wi-15 text-1"><?=$spottrevRow["cmt_stats"]?></p>
+                        <p class="wi-15 text-1"><?=$spottrevRow["cmt_stats"]?></p><!-- 狀態列 -->
 
                     </div>
              </form>
