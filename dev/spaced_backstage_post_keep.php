@@ -78,14 +78,9 @@ while($spottrevRow = $spottrev->fetch(PDO::FETCH_ASSOC)){
                     <div class="div-right-span-for line_low margin_top_3">
                         <p class="wi-10 text-1"><?=$spottrevRow["post_no"]?></p>
                         <p class="wi-15 text-1"><?=$spottrevRow["mem_no"]?></p>
+                        <p class="wi-10 text-1"><?=$spottrevRow["post_keep"]?></p>
                         
-                        <?php
-                                if($spottrevRow['post_keep'] == 0){
-                                    echo "<p class='wi-10 text-1'><a href='./php/edit_backstage_post_keep.php?post_no=$spottrevRow[post_no]&post_stats=$spottrevRow[post_keep]' name='update' type='button' class='btn btn-primary btn-sm'>上架</a></p>";
-                                }else{
-                                    echo "<p class='wi-10 text-1'><a href='./php/edit_backstage_post_keep.php?post_no=$spottrevRow[post_no]&post_stats=$spottrevRow[post_keep]' name='update' type='button' class='btn btn-danger btn-sm'>下架</a></p>";
-                                }
-                            ?>
+                   
 
 
                     </div>
