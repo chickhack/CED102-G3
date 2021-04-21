@@ -140,9 +140,10 @@ button:hover{
 //=========精選行程
 
 .first_right {
-    position: relative;
+    // width: 53%;
     display: flex;
     justify-content: center;
+    position: relative;
 
     @media all and (max-width:1200px) {
         overflow: hidden;
@@ -154,10 +155,11 @@ button:hover{
         // padding-top: 80px;
 
 
-        // @media screen and (min-width: 768px) and (max-width: 1200px) {
-        //     padding-top: 120px;
-        // }
-        @media screen and (max-width: 767px) {
+        @media screen and (min-width: 768px) and (max-width: 1200px) {
+            padding-top: 120px;
+        }
+        
+        @media screen and (max-width: 576px) {
             flex-direction: column;
             margin: 0 auto;
             justify-content: space-between;
@@ -169,8 +171,8 @@ button:hover{
             padding-top: 90px;
             text-align: center;
             width: 55%;
-            padding-left: 24px;
-            padding-right: 24px;
+            padding-left: 8px;
+            padding-right: 8px;
             &:hover{
                 transform:translateY(0.2em);
                 // box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
@@ -193,9 +195,13 @@ button:hover{
             }
 
             @media all and (max-width:1200px) {
-                padding-left: 8px;
-                padding-right: 8px;
+                // padding-left: 8px;
+                // padding-right: 8px;
+                width: 100%;
+             
             }
+
+            
 
             h4 {
                 color: $pink;
@@ -215,18 +221,22 @@ button:hover{
                 max-width: 270px;
                 &:hover{
                     transform:translateY(0.2em);
-                }
-                
+                }  
+                @media all and (max-width:577px) {
+                  margin: 0 auto;  
+                  max-width: 90%;
+             }  
             }
+
 
             div.word {
                 position: absolute;
                 top: 190px;
-                left: 50%;
-                transform: translateX(-50%);
+                // left: 50%;
+                // transform: translateX(-50%);
                 text-align: center;
                 margin: 0 auto;
-
+                width: 100%;
                 .hot {
                     color: $gold;
                 }
@@ -273,6 +283,14 @@ button:hover{
                     background-color: lighten($gold, 10%);
                 }
 
+            }
+        }
+        @media screen and (min-width: 577px) and (max-width: 768px) {
+            .planet_top:nth-child(3){
+                display: none;
+            }
+            .planet_top{
+                margin: 0 36px;
             }
         }
     }
@@ -631,6 +649,7 @@ button:hover{
                 margin: 0 auto;
             }
             .separator{
+                justify-items: center;
                 height: 1px;
                 width: 100%;
                 border-top: solid 1px $gold;

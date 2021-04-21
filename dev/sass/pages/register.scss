@@ -19,6 +19,38 @@
 //         margin: 0;
 //     }
 // }
+//=========動態背景
+canvas {
+    display: block;
+
+  } /* ---- particles.js container ---- */
+  #particles-js {
+    z-index: -10;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: $darkblue;
+  } 
+  
+//=========按鈕設定
+input{
+    background-color: transparent;
+    color: $gold;
+    a{
+        text-decoration: none;
+        color: $gold;
+    }
+}
+input:hover{
+    color: #ffff;
+    border: 1px solid $gold;
+    background: $gold;
+    a{
+        text-decoration: none;
+        color: $white;
+    }
+}
+
 section.login_container{
     padding: 0;
     border: 1px solid #ad6e4a83;

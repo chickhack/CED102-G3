@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>星星世界</title>
+    <link rel="shortcut icon" href="./img/icon/shortcut.png" type="image/x-icon">
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
@@ -196,7 +197,7 @@
         </div>
 
         <div class="planetbtn margin_top_5" align="center">
-          <!-- <button class="button_min" >更多關於火星</button> -->
+          <button class="button_min" ><a href="alltrip.php">去看所有景點<a></button>
         </div>
       </div>
       

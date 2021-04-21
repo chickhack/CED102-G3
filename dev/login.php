@@ -38,6 +38,7 @@ try{
   <head>
     <meta charset="utf-8">
     <title>登入頁面</title>
+    <link rel="shortcut icon" href="./img/icon/shortcut.png" type="image/x-icon">
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
