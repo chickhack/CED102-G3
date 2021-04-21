@@ -460,7 +460,7 @@
         <div v-else-if="link ==='d'">
 
           <div class="heart_btns">
-            <input value="<?php echo date("Y-m-d");?>" type="date" id="date-1" class="btn orderbtns margin_top_3 btn-date data-down">
+            <input value="<?php echo date("Y-m-d");?>"  type="date" id="date-1" class="btn orderbtns margin_top_3 btn-date data-down">
           </div>
 
           <div class="ordercontent margin_top_3">
@@ -755,9 +755,13 @@
         isChange: false,
         isEditing: false,
         toggle: false,
+<<<<<<< HEAD
         timefilter: new Date(),
         // visibility: '全部',
         visibility: '0',
+=======
+        visibility: '全部',
+>>>>>>> Min
         customer: { //會員資料
           mem_no: '1010006',
           mem_lv: '初星者',
@@ -790,7 +794,7 @@
           order_status: '已結束',
           orderer: '陳大大',
           tel: '0988123456',
-          address: '台北市中正區大西路48號',
+          address: '台北市中正區大西路48號'
         }, {
           ord_no: '#TW1637493',
           total_price: '1,290',
@@ -799,16 +803,16 @@
           order_status: '已結束',
           orderer: '陳中中',
           tel: '0988123456',
-          address: '台北市中正區大西路48號',
+          address: '台北市中正區大西路48號'
         }, {
           ord_no: '#TW1637493',
           total_price: '1,290',
           order_total: '10,000',
-          order_date: '2021/02/04',
+          order_date: '2021/02/02',
           order_status: '已結束',
           orderer: '陳小小',
           tel: '0988123456',
-          address: '台北市中正區大西路48號',
+          address: '台北市中正區大西路48號'
         }],
         prod_order_detail: [{ // 商品訂單明細
           prod_no: '#24',
@@ -1050,6 +1054,7 @@
             })
           }
         },
+
       },
     });
 

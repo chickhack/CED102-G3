@@ -40,7 +40,9 @@
 
 
     <div class="container-fluid">
-    <header>@@include('./layout/header.html')</header>
+    <?php
+      include '../dev/layout/header.php';
+    ?>
     <!-- 動態背景 -->
       <div id="particles-js">
         <script src="./js/background.js"></script>
@@ -53,13 +55,13 @@
         <div class="tabList col-LG-12 ">
           <ul class="tab-title">
             <li><a href="#tab01">火星</a></li>
-              <li><a href="#tab02">月球</a></li>
-              <li><a href="#tab03">木星</a></li>
-              <li><a href="#tab03">水星</a></li>
-              <li><a href="#tab03">水星</a></li>
-              <li><a href="#tab03">水星</a></li>
-              <li><a href="#tab03">水星</a></li>
-          </ul>
+            <li><a href="#tab02">月球</a></li>
+            <li><a href="#tab03">木星</a></li>
+            <li><a href="#tab03">水星</a></li>
+            <li><a href="#tab03">金星</a></li>
+            <li><a href="#tab03">土星</a></li>
+            <li><a href="#tab03">天王星</a></li>
+        </ul>
         </div>
         <div class="separator col-10"></div>
       <!-- 星球頁籤內容 -->
@@ -136,7 +138,7 @@
                 </div>
               </div>
               <!-- 月球 -->
-              <div id="tab02" class="tab-inner ">
+              <div id="tab02" class="tab-inner tab_moon">
                 <div class="tab_top">
                   <div class="tab_left col-lg-6 col-md-12">
                     <h2>月球</h2>
@@ -169,12 +171,11 @@
                     </div>
                   </div>
 
-                </div>
-                <div class="tab-active margin_top_5 col-lg-6 col-md-12 col-sm-12">
-                      <!-- 月球動圖 -->
-                      <div id="moonloc"></div>
-                      <img src="img/planet/moon.png">
-                       <!-- <script src="./js/moon.js"></script>  -->
+                  <div class="tab-active margin_top_5 col-lg-5 col-md-12 col-sm-12">
+                        <!-- 月球動圖 -->
+                        <img src="img/planet/moon.png" class="moon_pic" width="500">
+                         <!-- <script src="./js/moon.js"></script>  -->
+                  </div>
                 </div>
                 <div class="planet_content ">
                   <div class="imgs col-6  margin_top_10 ">
