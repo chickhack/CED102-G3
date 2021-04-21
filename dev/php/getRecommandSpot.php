@@ -1,11 +1,10 @@
 <?php 
 try {
 	require_once("./connectbooks_kai.php");
-	$sql = "select *from spot where spot_s_status=1";
-
+	$sql = "select spot_name,spot_lv,spot_price,miles,spot_pic1 from spot";
 	$tops = $pdo->query($sql);
-	$planets = $tops->fetchAll(PDO::FETCH_ASSOC);
-	echo json_encode($planets);
+	$second = $tops->fetchAll(PDO::FETCH_ASSOC);
+	echo json_encode($second);
 } catch (PDOException $e) {
 	echo $e->getLine(), $e->getMessage();
 }
