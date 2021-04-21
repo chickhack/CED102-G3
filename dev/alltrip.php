@@ -57,7 +57,7 @@ session_start();
                 <h1><a href="home.php">SPACED</a></h1>
             </div>
             <ul class="nav-links">
-                <li class="margin_left_5"><a href="alltrip.php">星球景點</a></li>
+                <li class="margin_left_5 now"><a href="alltrip.php">星球景點</a></li>
                 <li class="margin_left_5"><a href="planet.html">星星世界</a></li>
                 <li class="margin_left_5"><a href="shop.php">星球商城</a></li>
                 <li class="margin_left_5"><a href="photowall.php">太空互動</a></li>

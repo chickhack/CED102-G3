@@ -10,7 +10,7 @@ if($_GET['prod_status'] == 0){
 }
 
 try{
-    require_once("connectbooks_Yun.php");
+    require_once("connectbooks_kai.php");
     $sql = "UPDATE prod SET prod_status=$status WHERE prod_no=:prod_no";
     $product = $pdo->prepare($sql);
     $product->bindValue(":prod_no", $prod_no);
