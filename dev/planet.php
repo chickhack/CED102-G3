@@ -40,7 +40,9 @@
 
 
     <div class="container-fluid">
-    <header>@@include('./layout/header.html')</header>
+    <?php
+      include '../dev/layout/header.php';
+    ?>
     <!-- 動態背景 -->
       <div id="particles-js">
         <script src="./js/background.js"></script>

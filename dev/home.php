@@ -1,13 +1,13 @@
 <?php
-  require_once('./php/connectbooks_yi.php');
-  session_start();
+  // require_once('./php/connectbooks_yi.php');
+  // session_start();
 
-  if(isset($_SESSION["email"])===true){ //表示已登入
-  $result =  ["email"=>$memRow["email"], "mem_psw"=>$memRow["mem_psw"]];
-  echo json_encode($result);
-  }else{
-  echo 50;
-  }
+  // if(isset($_SESSION["email"])===true){ //表示已登入
+  // $result =  ["email"=>$memRow["email"], "mem_psw"=>$memRow["mem_psw"]];
+  // echo json_encode($result);
+  // }else{
+  // echo 50;
+  // }
 
 ?>
 
