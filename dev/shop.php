@@ -85,12 +85,12 @@
         </a>
     </li> 
     <li>
-      <a href="./login.php"
-        ><img
-          src="./img/icon/header/round-account-button-with-user-inside_(1).png"
-          alt=""
-          class="icon"
-      /></a>
+        <?php
+            if(isset($_SESSION['mem_no'])){?>
+                <a href="./account.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png" alt="" class="icon"/></a>
+        <?php }else{ ?>
+                <a href="./login.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png" alt="" class="icon"/></a>
+        <?php } ?>
     </li>
   </ul>
   <div class="burger">
