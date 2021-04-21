@@ -1,5 +1,9 @@
 <?php 
+<<<<<<< HEAD:dev/spaced_backstage_trip_reviews.php
+require_once("./php/connectBooks_kai.php");
+=======
 require_once("../php/connectbooks_kai.php");
+>>>>>>> dev:dev/backstage/spaced_backstage_trip_reviews.php
 $sql = "select * from spot_trev";
 $spottrev = $pdo->query($sql);  //執行指令
 $spottrev ->execute();
@@ -88,8 +92,13 @@ while($spottrevRow = $spottrev->fetch(PDO::FETCH_ASSOC)){
                         <p class="wi-15 text-1"><?=$spottrevRow["trev_score"]?></p>
                         <p class="wi-20 text-1"><?=$spottrevRow["trev"]?></p>
                         <p class="wi-10 text-1"><?=$spottrevRow["trev_stats"]?></p>
-                        <p class="wi-10 text-1"><a href="../php/trip/edit_backstage_trip_reviews.php?trev_no=<?=$spottrevRow["trev_no"]?>" name="update" type="button" class="btn btn-danger btn-sm">下架</a></p>
-
+                        <?php
+                        if($spottrevRow['trev_stats'] == 0){
+                            echo "<p class='wi-5 text-1'><a href='../php/trip/edit_backstage_trip_reviews.php?trev_no=$spottrevRow[trev_no]&trev_stats=$spottrevRow[trev_stats]' name='update' type='button' class='btn btn-primary btn-sm'>上架</a></p>";
+                        }else{
+                            echo "<p class='wi-5 text-1'><a href='../php/trip/edit_backstage_trip_reviews.php?trev_no=$spottrevRow[trev_no]&trev_stats=$spottrevRow[trev_stats]' name='update' type='button' class='btn btn-danger btn-sm'>下架</a></p>";
+                            }
+                    ?>
                     </div>
              </form>
                     <?php 
