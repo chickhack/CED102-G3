@@ -1,5 +1,4 @@
 <?php
-
 session_start();
  if(isset($_POST["add"])){
      if(isset($_SESSION["trip-cart"])){
@@ -8,7 +7,8 @@ session_start();
         if(!in_array($_POST["spot_id"], $item_array_id)){
             $count = count($_SESSION["trip-cart"]);
             $item_array = array(
-                "spot_id" => $_POST["spot_id"]
+                "spot_id" => $_POST["spot_id"],
+                "spot_qty" => 1
             );
             $_SESSION["trip-cart"][$count] =$item_array;
             // echo '<script>window.location="alltrip.php"</script>';
@@ -18,15 +18,14 @@ session_start();
     }
         }else{
             $item_array = array(
-                "spot_id" => $_POST["spot_id"]
+                "spot_id" => $_POST["spot_id"],
+                "spot_qty" => 1
             );
             $_SESSION["trip-cart"][0] = $item_array;
     }
  }
- 
+
 ?>
-
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -50,7 +49,6 @@ session_start();
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r127/three.min.js"></script>
     <!-- alltrip css -->
     <link rel="stylesheet" href="./css/pages/alltrip.css">
-    
 
 </head>
 
@@ -58,22 +56,19 @@ session_start();
     <header>
         <nav id="nav">
             <div class="logo">
-                <h1><a href="home.html">SPACED</a></h1>
+                <h1><a href="home.php">SPACED</a></h1>
             </div>
             <ul class="nav-links">
 <<<<<<< HEAD
                 <li class="margin_left_5 now "><a href="alltrip.php" class="bread">星球景點</a></li>
                 <li class="margin_left_5"><a href="planet.php">星星世界</a></li>
+=======
+                <li class="margin_left_5 now"><a href="alltrip.php">星球景點</a></li>
+                <li class="margin_left_5"><a href="planet.html">星星世界</a></li>
+>>>>>>> 297431834968603e149982f10b2e88b593556356
                 <li class="margin_left_5"><a href="shop.php">星球商城</a></li>
                 <li class="margin_left_5"><a href="photowall.php">太空互動</a></li>
                 <li class="margin_left_5"><a href="Leaderboard.php">玩家排行</a></li>
-=======
-                <li class="margin_left_5"><a href="alltrip.html">星球景點</a></li>
-                <li class="margin_left_5"><a href="planet.html">星星世界</a></li>
-                <li class="margin_left_5"><a href="shop.html">星球商城</a></li>
-                <li class="margin_left_5"><a href="photowall.html">太空互動</a></li>
-                <li class="margin_left_5"><a href="Leaderboard.html">玩家排行</a></li>
->>>>>>> denis
                 <!-- <li><a href=""><img src="./images/ticket.png" alt="" class="icon"></a></li>
         <li><a href=""><img src="./images/shopping-cart_(1).png" alt="" class="icon"></a></li>
         <li><a href=""><img src="./images/round-account-button-with-user-inside_(1).png" alt="" class="icon"></a></li> -->
@@ -116,9 +111,7 @@ session_start();
                 <div class="line3"></div>
             </div>
         </nav>
-
         <script src="./js/header.js"></script>
-
 
     </header>
 
@@ -127,9 +120,6 @@ session_start();
         <script src="./js/background.js"></script>
     </div>
 
-
-
-
     <!-- 動的火星 -->
     <div id="marsloc"></div>
     <div class="bk3">
@@ -137,8 +127,6 @@ session_start();
     </div>
 
     <!-- ----------first -->
-
-
     <div id="app">
 
         <div class="first padding_top_5">
@@ -183,12 +171,11 @@ session_start();
 
     </div>
 
-
     <!-- ---------流程區 -->
     <div class="stepsection">
         <h2>打造專屬的星球行程</h2>
         <h3 class="margin_top_3 line_low">累積景點積分，獲得更多宇宙幣，讓你無限暢遊宇宙</h3>
-        <div class="stepall">
+        <div class="stepall line_low">
 
             <div class="step padding_top_2 margin_left_5 flex-2">
                 <img src="./img/icon/search-location.png" class="step_icon" alt="icon">
@@ -241,7 +228,6 @@ session_start();
                 </div>
 
             </div>
-
             <h3 class="padding_top_5 alltrip ">火星景點</h3>
             <div class="tripcard_all  margin_top_5">
                 <div v-for="item in spot1.slice(3,6)" class="tripcard ">
@@ -287,7 +273,6 @@ session_start();
             </div>
         </div>
     </div>
- 
 
     <a href="#" class="go-top"></a>
 
@@ -305,9 +290,6 @@ session_start();
         <img src="./img/footer_moon.png" alt="" class="footer_moon">
         <img src="./img/smoke.png" alt="" class="smoke">
     </footer>
-
-
-
 
 
     <!-- go top -->
@@ -338,6 +320,7 @@ session_start();
 
     <!-- vue -->
     <!-- <script src="./js/alltrip.js"></script> -->
+
     <!-- vue -->
     <script>
     let vm = new Vue({
@@ -349,22 +332,23 @@ session_start();
         mounted() {
             console.log("load");
             fetch('./php/getSelectTrip.php').then(res => res.json()).then(data => {
-                                         vm.planets = data;
-                                         for(let i=0 ; i<data.length ; i++){
-                                             let url = `trip.php?no=${data[i].spot_no}`;
-                                             vm.planets[i].url = encodeURI(url);
-                                             console.log(vm.planets[i].url)
-                                         }
-                                     });
+                vm.planets = data;
+                for (let i = 0; i < data.length; i++) {
+                    let url = `trip.php?spot_no=${data[i].spot_no}`;
+                    vm.planets[i].url = encodeURI(url);
+                    console.log(vm.planets[i].url)
+                }
+            });
             console.log(this.planets);
             fetch('./php/getTrip.php').then(res => res.json()).then(data => {
-                                         vm.spot1 = data;
-                                         for(let i=0 ; i<data.length ; i++){
-                                             let url = `trip.php?no=${data[i].spot_no}`;
-                                             vm.spot1[i].url = encodeURI(url);
-                                             console.log(vm.spot1[i].url)
-                                         }
-                                     });
+                vm.spot1 = data;
+                for (let i = 0; i < data.length; i++) {
+                    let url = `trip.php?spot_no=${data[i].spot_no}`;
+                    vm.spot1[i].url = encodeURI(url);
+                    console.log(vm.spot1[i].url)
+                }
+            });
+
         },
     });
     </script>

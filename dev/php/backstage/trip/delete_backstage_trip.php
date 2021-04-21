@@ -2,7 +2,7 @@
 $spot_no =$_GET['spot_no'];
 $errMsg = "";
 
-require_once("../../connectbooks_kai.php");
+require_once("../../../../connect_ced102_g3_local.php");
 
 try{
     $sql = 'DELETE FROM spot WHERE spot_no=:spot_no';
@@ -10,7 +10,7 @@ try{
     $spot->bindValue(":spot_no", $spot_no);
     $spot->execute();
 	echo "已刪除!". "<br>";
-	echo "<a href='../spaced_backstage_trip.php'>返回景點管理</a>";
+	echo "<a href='../../../backstage/spaced_backstage_trip.php'>返回景點管理</a>";
     
 }
 catch(PDOException $e){

@@ -50,6 +50,10 @@ section.cart{
                 }
             }
         }
+        button{
+            background-color: transparent;
+            border: none;
+        }
         .trashcan{
             cursor: pointer;
         }
@@ -86,6 +90,10 @@ section.cart{
                 margin-top: 16px;
                 width: 80%;
             }
+        }
+        .disabled{
+            background-color: gray;
+            border: none;
         }
     }
 }

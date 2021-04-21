@@ -30,24 +30,11 @@ form.post .select_trip select{
   outline: none;
   padding: 5px;
 }
-form.post a{
-  max-width:20px;
-  position: absolute;
-  left: 80%;
-  bottom: 77%;
-}
-p.upload_photo{
-  margin-bottom: 10px;
-}
 .post form.post label.teaching{
   // color: white;
-  display: inline-block;
+  display: block;
   margin-bottom: 10px;
   font-size: 16px;
-  margin-left: 10px;
-}
-.upload_img label input img{
-  max-width: 70%;
 }
 .post form.post .upload_img button{
   outline: none;
@@ -76,7 +63,7 @@ div.post form.post div.post_text label.post{
 .button_post{
   text-align: center;
 }
-button.button_min,input.button_min{
+button.button_min{
   width: 100px;
   text-align: center;
   background-color: #AD6E4A;
@@ -85,6 +72,6 @@ button.button_min,input.button_min{
   outline: none;
   font-size: 14px;
 }
-button.button_min:hover,input.button_min:hover{
+button.button_min:hover{
   background-color: lighten($gold, 10%);
 }

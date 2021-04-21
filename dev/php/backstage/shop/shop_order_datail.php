@@ -2,7 +2,7 @@
 $order_no = $_REQUEST["order_no"];
 $errMsg='';
 try {
-	require_once("../../log.php");
+	require_once("../../../../connect_ced102_g3_local.php");
 	$sql = "select * from prod_order_datail where order_no=:order_no";
 	$order = $pdo->prepare($sql);	//執行指令
 	$order->bindValue(":order_no", $order_no);

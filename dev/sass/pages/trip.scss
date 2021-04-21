@@ -16,7 +16,7 @@ input::-webkit-inner-spin-button {
 .swiper-container {
     margin: 0 auto;
     max-width: 1100px;
-    height: 65vh;
+    height: 75vh;
 
     @media all and (max-width: 1200px) {
         width: 95%;
@@ -63,12 +63,13 @@ input::-webkit-inner-spin-button {
                     background-color: $gold;
                     padding: 8px;
                 }
-                .trip_bookmark{
+
+                .trip_bookmark {
                     background-image: url(../../img/icon/bookmark-outline.png);
                     background-size: 25px;
                     background-repeat: no-repeat;
                     width: 25px;
-                    height:30px;
+                    height: 30px;
                     background-size: 25px;
                     padding: 8px;
                     padding-right: 0;
@@ -78,7 +79,8 @@ input::-webkit-inner-spin-button {
                     text-align: end;
                     cursor: pointer;
                 }
-                .trip_bookmark:hover{
+
+                .trip_bookmark:hover {
                     background-image: url(../../img/icon/bookmark_hover.png);
                 }
 
@@ -149,9 +151,9 @@ input::-webkit-inner-spin-button {
                 margin-left: 16px;
             }
 
-            @media screen and (min-width: 577px) and (max-width: 767px) {
-                width: 360px;
-                position: relative;
+            @media screen and (min-width: 577px) and (max-width: 768px) {
+                width: 35%;
+                top: 15vh;
                 margin: 0 auto;
             }
 
@@ -293,7 +295,7 @@ input::-webkit-inner-spin-button {
                     width: 110px;
                     line-height: 26px;
                     text-align: center;
-
+                    background-color: $darkblue;
                     a {
                         color: $white;
                         display: inline-block;
@@ -306,23 +308,26 @@ input::-webkit-inner-spin-button {
                         top: 2px;
                         padding-right: 4px;
                     }
-                    
+
 
                 }
-                .addin:hover{
+
+                .addin:hover {
                     border: 1px solid $gray;
-                    color:$gray;
+                    color: $gray;
                 }
 
                 .button_min {
                     background-color: $gold;
                     color: $white;
-                    padding: 0 8px 0 8px;
+                    padding: 8px;
+
                     a {
                         color: $white;
                         display: inline-block;
                     }
                 }
+
                 .button_min:hover {
                     background-color: lighten($gold, 10%);
                 }
@@ -330,7 +335,7 @@ input::-webkit-inner-spin-button {
 
 
             }
-            
+
         }
 
         .comment {
@@ -379,7 +384,8 @@ input::-webkit-inner-spin-button {
             }
 
             .messages {
-                @include flex_middle();
+                display: flex;
+                align-items: center;
                 border-bottom: 1px solid $gold;
                 padding: 16px 0;
                 position: relative;
@@ -392,6 +398,8 @@ input::-webkit-inner-spin-button {
                 .name {
                     @include flex_middle();
                     justify-content: start;
+                    color:$gray;
+                    font-weight: 600;
 
                     hr {
                         height: 10px;
@@ -433,7 +441,7 @@ input::-webkit-inner-spin-button {
             @media all and (max-width: 767px) {
                 flex-direction: column;
                 align-items: center;
-            }
+            } 
 
             .tripcard {
                 // border: 1px solid white;
@@ -444,6 +452,27 @@ input::-webkit-inner-spin-button {
                 position: relative;
                 margin: 0 16px 0 16px;
 
+                &:hover {
+                    transform: translateY(0.2em);
+                    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+                }
+
+                &.tripcard:nth-child(1) {
+                    animation: float 4s cubic-bezier(.1, .1, .88, .88) infinite;
+                }
+
+                &.tripcard:nth-child(2) {
+                    animation: float 4.5s cubic-bezier(.1, .1, .88, .88) infinite;
+                }
+
+                &.tripcard:nth-child(3) {
+                    animation: float 5s cubic-bezier(.1, .1, .88, .88) infinite;
+                }
+
+                &.tripcard:nth-child(4) {
+                    animation: float 5.5s cubic-bezier(.1, .1, .88, .88) infinite;
+                }
+
                 @media all and (max-width: 767px) {
                     flex-direction: column;
                     margin: 16px 0 16px 0;
@@ -452,6 +481,7 @@ input::-webkit-inner-spin-button {
                 .spot_pic {
                     width: 250px;
                 }
+
                 .spot_pic:hover {
                     transform: perspective(0.5px) translateX(-1.5px) translateY(-1.5px);
                 }
@@ -459,15 +489,17 @@ input::-webkit-inner-spin-button {
                 .hot2 {
                     font-weight: bold;
                     margin-bottom: 15px;
+                    color: $pink;
                 }
 
                 .tag {
                     display: inline-flex;
-                    border: 1px solid $pink;
+                    border: 1px solid $gray;
                     border-radius: 5px;
                     padding: 8px;
                     line-height: 5px;
                     margin: 3px;
+                    color: $gray;
                 }
 
                 .price2 {
@@ -489,6 +521,8 @@ input::-webkit-inner-spin-button {
                     width: 110px;
                     line-height: 26px;
                     text-align: center;
+                    text-decoration: none;
+                    border: none;
 
                     img.plus {
                         width: 15px;
@@ -498,10 +532,33 @@ input::-webkit-inner-spin-button {
                         padding-right: 4px;
                     }
                 }
+
                 .addin2:hover {
                     background-color: lighten($gold, 10%);
                 }
-            }
+            } 
+            
         }
+        
+    }
+}
+
+
+
+@keyframes float {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    30% {
+        transform: translate(0, -3px);
+    }
+
+    70% {
+        transform: translate(0, 5px);
+    }
+
+    100% {
+        transform: translate(0, 0);
     }
 }

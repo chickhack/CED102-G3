@@ -9,8 +9,12 @@ const clean = require('gulp-clean');
 const browserSync = require('browser-sync').create();
 const reload = browserSync.reload; //browser的方法 更新後~
 
+function moveBackstage(){
+    return src("dev/backstage/*").pipe(dest("dist/backstage"));
+}
+
 function movePhp(){
-    return src("dev/php/*").pipe(dest("dist/php"));
+    return src("dev/php/**").pipe(dest("dist/php"));
 }
 
 function moveIndex(){
@@ -76,7 +80,7 @@ function killDist() {
 }
 
 exports.kill = killDist;
-exports.u = series(killDist, parallel(moveImg, moveJS, commonStyle, pageStyle, includeHTML,movePhp,moveIndex));
+exports.u = series(killDist, parallel(moveImg, moveJS, commonStyle, pageStyle, includeHTML,movePhp,moveIndex,moveBackstage));
 
 exports.browser = function browsersync() {
     browserSync.init({
@@ -107,6 +111,7 @@ exports.w = function watchFiles() {
     watch('./dev/js/*.js', moveJS);
     watch('./dev/php/*.php', movePhp);
     watch("./dev/*.php",moveIndex);
+    watch("./dev/backsatge",moveBackstage);
 };
 
 
