@@ -38,14 +38,12 @@ body {
             }
 
             .bigImg {
-                width: 400px;
-                height: 300px;
-                object-fit: cover;
+                width: 100%;
+                max-height: 266px;
                 background-color: $white;
 
                 @include respond(mobile) {
-                    // max-height: 400px;
-                    width: 100%;
+                    max-height: 400px;
                 }
             }
 
@@ -55,19 +53,15 @@ body {
                 width: 100%;
 
                 .imgDetail {
+                    max-width: 80px;
+                    max-height: 60px;
                     background-color: $white;
                     cursor: pointer;
                     margin-right: 16px;
                     padding: 4px;
 
                     img {
-                        width: 80px;
-                        height: 60px;
-                        object-fit: cover;
-                        @include respond(mobile){
-                            max-width: 60px;
-                            max-height: 60px;
-                        }
+                        width: 100%;
                     }
                 }
             }
@@ -165,7 +159,7 @@ body {
                     color: $white;
                     font-weight: 900;
                     transition: all .3s;
-                    padding: 8.4px 0;
+                    padding: 10.4px 0;
                     @include respond(mobile){
                         margin-left: 0;
                     }
@@ -329,7 +323,6 @@ body {
 
     .messages {
         @include flex_middle();
-        justify-content: start;
         border-bottom: 1px solid $gold;
         padding: 16px 0;
         position: relative;
@@ -337,6 +330,7 @@ body {
         img {
             max-width: 50px;
         }
+
         .name {
             @include flex_middle();
             justify-content: start;
@@ -352,9 +346,8 @@ body {
         .more {
             color: $white;
             text-decoration: underline;
-            position: absolute;
-            right: 0;
-            bottom: 10px;
+            position: relative;
+            float: right;
             cursor: pointer;
         }
     }

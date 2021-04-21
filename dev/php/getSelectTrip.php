@@ -2,6 +2,7 @@
 try {
 	require_once("./connectbooks_yi.php");
 	$sql = "select *from spot where spot_s_status=1";
+
 	$tops = $pdo->query($sql);
 	$planets = $tops->fetchAll(PDO::FETCH_ASSOC);
 	echo json_encode($planets);

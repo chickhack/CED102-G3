@@ -96,7 +96,6 @@ section.shop{
             transition: 0.5s ease-in-out;
             @include respond(mobile){
               transform: translateY(-50px);
-              padding: 20px 50px;
                     img{
                         transform: translateY(-40px) scale(1.3);
                     }

@@ -414,6 +414,11 @@ nav .nav-links .bread {
   font-weight: 900;
 }
 
+nav .nav-links .bread {
+  color: #AD6E4A;
+  font-weight: 900;
+}
+
 nav .nav-icons {
   display: flex;
   justify-content: center;
@@ -450,20 +455,23 @@ nav .nav-cart .count {
   text-align: center;
   line-height: 1.5rem;
   position: absolute;
-  transform: translate(50%, -150%);
+  -webkit-transform: translate(50%, -150%);
+          transform: translate(50%, -150%);
   display: block;
   color: white;
 }
 
 @media all and (max-width: 992px) {
   nav .nav-cart .count {
-    transform: translate(100%, -150%);
+    -webkit-transform: translate(100%, -150%);
+            transform: translate(100%, -150%);
   }
 }
 
 @media all and (max-width: 768px) {
   nav .nav-cart .count {
-    transform: translate(40%, -170%);
+    -webkit-transform: translate(40%, -170%);
+            transform: translate(40%, -170%);
     width: 20px;
     height: 20px;
     font-size: 12px;
@@ -484,20 +492,23 @@ nav .nav-trip .trip-count {
   text-align: center;
   line-height: 1.5rem;
   position: absolute;
-  transform: translate(50%, -150%);
+  -webkit-transform: translate(50%, -150%);
+          transform: translate(50%, -150%);
   display: block;
   color: white;
 }
 
 @media all and (max-width: 992px) {
   nav .nav-trip .trip-count {
-    transform: translate(100%, -150%);
+    -webkit-transform: translate(100%, -150%);
+            transform: translate(100%, -150%);
   }
 }
 
 @media all and (max-width: 768px) {
   nav .nav-trip .trip-count {
-    transform: translate(40%, -170%);
+    -webkit-transform: translate(40%, -170%);
+            transform: translate(40%, -170%);
     width: 20px;
     height: 20px;
     font-size: 12px;
@@ -699,7 +710,8 @@ input[type=number] {
   height: 100px;
   background-size: contain;
   background-repeat: no-repeat;
-  animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+  -webkit-animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+          animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
 }
 
 #marsloc {
@@ -790,20 +802,13 @@ div.bk3 {
   letter-spacing: 10px;
   font-size: 36px;
   color: #C9ADA7;
+  -webkit-animation: h2 1.2s infinite;
   animation: h2 1.2s infinite;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media all and (max-width: 1200px) {
   .first .first_left h2.title {
     font-size: 32px;
-    top: 10vh;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .first .first_left h2.title {
-    font-size: 24px;
-    top: 10vh;
   }
 }
 
@@ -813,15 +818,9 @@ div.bk3 {
   font-size: 24px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media all and (max-width: 1200px) {
   .first .first_left h2.title span.h3 {
     font-size: 18px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .first .first_left h2.title span.h3 {
-    font-size: 14px;
   }
 }
 
@@ -839,6 +838,7 @@ div.bk3 {
 
 .first .first_right .hottrip {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -846,12 +846,17 @@ div.bk3 {
   display: -ms-inline-flexbox;
 >>>>>>> Min
 >>>>>>> 1ae28f91038a4c3c157553d18c3f0413d55d75a6
+=======
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+>>>>>>> denis
   display: inline-flex;
   padding-top: 80px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .first .first_right .hottrip {
+<<<<<<< HEAD
     padding-top: 120px;
   }
 }
@@ -861,6 +866,9 @@ div.bk3 {
     flex-direction: column;
     margin: 0 auto;
     justify-content: space-between;
+=======
+    padding-top: 160px;
+>>>>>>> denis
   }
 }
 
@@ -895,7 +903,8 @@ div.bk3 {
 
 @media all and (max-width: 1200px) {
   .first .first_right .hottrip div.planet_top {
-    width: 100%;
+    padding-left: 8px;
+    padding-right: 8px;
   }
 }
 
@@ -909,6 +918,7 @@ div.bk3 {
   top: 15px;
   left: 50%;
 <<<<<<< HEAD
+<<<<<<< HEAD
   transform: translateX(-50%);
 =======
 <<<<<<< HEAD
@@ -918,6 +928,10 @@ div.bk3 {
           transform: translateX(-50%);
 >>>>>>> Min
 >>>>>>> 1ae28f91038a4c3c157553d18c3f0413d55d75a6
+=======
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+>>>>>>> denis
   z-index: 2;
 }
 
@@ -934,16 +948,10 @@ div.bk3 {
 >>>>>>> 1ae28f91038a4c3c157553d18c3f0413d55d75a6
 }
 
-@media all and (max-width: 577px) {
-  .first .first_right .hottrip div.planet_top img.planet_a1 {
-    margin: 0 auto;
-    max-width: 90%;
-  }
-}
-
 .first .first_right .hottrip div.planet_top div.word {
   position: absolute;
   top: 190px;
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -953,9 +961,13 @@ div.bk3 {
           transform: translateX(-50%);
 >>>>>>> Min
 >>>>>>> 1ae28f91038a4c3c157553d18c3f0413d55d75a6
+=======
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+>>>>>>> denis
   text-align: center;
   margin: 0 auto;
-  width: 100%;
 }
 
 .first .first_right .hottrip div.planet_top div.word .hot {
@@ -964,6 +976,7 @@ div.bk3 {
 
 .first .first_right .hottrip div.planet_top div.word .tag {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -971,8 +984,12 @@ div.bk3 {
   display: -ms-inline-flexbox;
 >>>>>>> Min
 >>>>>>> 1ae28f91038a4c3c157553d18c3f0413d55d75a6
+=======
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+>>>>>>> denis
   display: inline-flex;
-  border: 1px solid #cccaca;
+  border: 1px solid #C9ADA7;
   border-radius: 5px;
   padding: 8px;
   line-height: 5px;
@@ -1013,6 +1030,7 @@ div.bk3 {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 @media screen and (min-width: 577px) and (max-width: 768px) {
   .first .first_right .hottrip .planet_top:nth-child(3) {
     display: none;
@@ -1027,9 +1045,14 @@ div.bk3 {
     text-shadow: 0 0 6px #FFF;
 >>>>>>> Min
 >>>>>>> 1ae28f91038a4c3c157553d18c3f0413d55d75a6
+=======
+@-webkit-keyframes h2 {
+  0% {
+    text-shadow: 0 0 6px #FFF;
+>>>>>>> denis
   }
-  .first .first_right .hottrip .planet_top {
-    margin: 0 36px;
+  100% {
+    text-shadow: 0 0 0px #000;
   }
 }
 
@@ -1044,6 +1067,7 @@ div.bk3 {
 
 .tripselect {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -1051,6 +1075,10 @@ div.bk3 {
   display: -ms-inline-flexbox;
 >>>>>>> Min
 >>>>>>> 1ae28f91038a4c3c157553d18c3f0413d55d75a6
+=======
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+>>>>>>> denis
   display: inline-flex;
   width: 280px;
   justify-content: space-between;
@@ -1108,6 +1136,7 @@ div.bk3 {
 @media all and (max-width: 767px) {
   .stepsection .stepall {
 <<<<<<< HEAD
+<<<<<<< HEAD
     flex-direction: column;
     align-items: center;
 =======
@@ -1115,6 +1144,8 @@ div.bk3 {
     flex-direction: column;
     align-items: center;
 =======
+=======
+>>>>>>> denis
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1122,8 +1153,11 @@ div.bk3 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+<<<<<<< HEAD
 >>>>>>> Min
 >>>>>>> 1ae28f91038a4c3c157553d18c3f0413d55d75a6
+=======
+>>>>>>> denis
   }
 }
 

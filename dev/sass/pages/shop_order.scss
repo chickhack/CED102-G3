@@ -5,58 +5,54 @@ section.orderDetail{
     // border: 1px solid #fff;
     margin: 0 auto;
     padding-top: 5vh;
-    h3{
-        margin: 0 80px;
-    }
-    ul{
+    .order{
         margin: 0 80px;
         @include respond(mobile){
             margin: 0 30px;
         }
-    }
         // border: 1px solid $pink;
-    li{
-        font-weight: 900;
-        background-color: #292B41;
-        @include flex_middle();
-        justify-content: space-between;
-        padding: 8px 0;
-        .imgWord{
-            width: 100%;
+        li{
+            font-weight: 900;
+            background-color: #292B41;
             @include flex_middle();
-            justify-content: space-around;
-            flex-wrap: wrap;
-            .prod{
-                width: 8%;
-                @include respond(mobile){
-                    width: 15%;
-                    margin-left: 8px;
-                }
-            }
-            .imgRight{
+            justify-content: space-between;
+            padding: 8px 0;
+            .imgWord{
+                width: 100%;
                 @include flex_middle();
-                justify-content: space-between;
-                width: 60%;
-                @include respond(mobile){
-                    width: 75%;
-                    justify-content: space-around;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                .prod{
+                    width: 8%;
+                    @include respond(mobile){
+                        width: 15%;
+                        margin-left: 8px;
+                    }
+                }
+                .imgRight{
+                    @include flex_middle();
+                    justify-content: space-between;
+                    width: 60%;
+                    @include respond(mobile){
+                        width: 75%;
+                        justify-content: space-around;
+                    }
+                }
+                .integral{
+                    @include flex_middle();
+                    .icon{
+                        max-width:10px;
+                    }
                 }
             }
-            .integral{
+            .quantity{
+                width: 80%;
                 @include flex_middle();
-                .icon{
-                    max-width:10px;
-                }
+                justify-content: space-around;
             }
-        }
-        .quantity{
-            width: 80%;
-            @include flex_middle();
-            justify-content: space-around;
         }
     }
 }
-
 
 section.orderer{
     max-width: 900px;
@@ -82,10 +78,6 @@ section.orderer{
         @include respond(mobile){
             margin: 32px 30px;
         }
-    }
-    .input{
-        width: 88%;
-        margin: 0 auto;
     }
     .arrow{
         display: flex;
@@ -172,7 +164,6 @@ section.orderer{
             opacity: 0;
             position: absolute;
             width: 20px;
-            left: -100%;
         }
         .checkbox_custom,.checkbox_custom_label{
             display: inline-block;
@@ -223,11 +214,6 @@ section.orderer{
             }
             label{
                 width: 100%;
-            }
-            #creditDate{
-                @include respond(pad){
-                    margin-top: 8px;
-                }
             }
             .creditInput{
                 @include respond(pad){
@@ -306,9 +292,7 @@ section.orderer{
     position: fixed;
     top: 0;
     @include flex_middle();
-    opacity: 0;
-    visibility: hidden;
-    transition: all .3s;
+    display: none;
     .window{
         min-width: 250px;
         width: 30vw;
