@@ -111,6 +111,11 @@ button:hover{
                 justify-content: space-between;
                 flex-wrap: wrap;
                 padding: 0 15%;
+                .tab-active{
+                    .tag{
+                        left: -500px;
+                    }
+                }
                 .tab_left{
                     max-width: 400px;
                     h4{
