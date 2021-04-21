@@ -56,7 +56,8 @@ img {
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
   margin: 0;
   padding: 0;
 }
@@ -77,8 +78,11 @@ body {
   font-size: 14px;
   background-color: #0c0d18;
   overflow-x: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
   -o-user-select: none;
-  user-select: none;
+  -ms-user-select: none;
+      user-select: none;
 }
 
 h1, .h1 {
@@ -359,9 +363,15 @@ body {
 }
 
 nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   justify-content: center;
   background-color: #0c0d18;
   position: fixed;
@@ -385,10 +395,18 @@ nav .logo h1 a {
 }
 
 nav .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   width: 75%;
 }
 
@@ -399,10 +417,17 @@ nav .nav-links a {
 }
 
 nav .nav-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 12%;
   margin-left: 50px;
 }
@@ -418,6 +443,7 @@ nav .burger div {
   height: 2px;
   background-color: #ffffff;
   margin: 5px;
+  -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
 
@@ -497,7 +523,8 @@ nav .nav-trip .trip-count {
 
 @media (max-width: 992px) {
   nav {
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   nav .nav-links {
     position: absolute;
@@ -505,11 +532,20 @@ nav .nav-trip .trip-count {
     height: 88vh;
     top: 12vh;
     background-color: #AD6E4A;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 30%;
+    -webkit-transition: all .5s ease-in;
     transition: all .5s ease-in;
   }
   nav .nav-links li {
@@ -524,7 +560,9 @@ nav .nav-trip .trip-count {
   }
   nav .nav-icons {
     width: 100%;
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
   nav .nav-icons .icon {
     margin: 0 30px 0 15px;
@@ -547,26 +585,44 @@ nav .nav-trip .trip-count {
   nav .nav-icons {
     width: 50%;
     margin-left: 16px;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   nav .nav-icons .icon {
     margin: 0;
   }
 }
 
-@keyframes navLinkFade {
+@-webkit-keyframes navLinkFade {
   from {
     opacity: 0;
-    transform: translateX(50px);
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
   }
   to {
     opacity: 1;
-    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
   }
 }
 
 .toggle .line1 {
-  transform: rotate(45deg) translate(4px, 6px);
+  -webkit-transform: rotate(45deg) translate(4px, 6px);
+          transform: rotate(45deg) translate(4px, 6px);
 }
 
 .toggle .line2 {
@@ -574,7 +630,8 @@ nav .nav-trip .trip-count {
 }
 
 .toggle .line3 {
-  transform: rotate(-45deg) translate(3px, -6px);
+  -webkit-transform: rotate(-45deg) translate(3px, -6px);
+          transform: rotate(-45deg) translate(3px, -6px);
 }
 
 footer {
@@ -594,19 +651,28 @@ footer .links .logo {
   position: relative;
   left: 50%;
   bottom: 50px;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 footer .links .footer-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 55%;
   position: relative;
   left: 50%;
   bottom: 30px;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 footer .links .footer-links a {
@@ -617,7 +683,8 @@ footer .footer_moon {
   position: relative;
   left: 50%;
   max-width: 40%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 footer .smoke {
@@ -626,7 +693,8 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 @media (max-width: 768px) {
@@ -705,6 +773,7 @@ input[type=number] {
 }
 
 nav {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(9%, rgba(12, 13, 24, 0.448915)), to(rgba(12, 13, 24, 0)));
   background: linear-gradient(-180deg, rgba(12, 13, 24, 0.448915) 9%, rgba(12, 13, 24, 0) 100%);
 }
 
@@ -757,8 +826,12 @@ button {
 }
 
 .banner .slogan {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .banner .slogan p {
@@ -771,8 +844,12 @@ button {
 }
 
 .banner .scroll {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .banner .scroll img {
@@ -793,8 +870,13 @@ button {
 
 .home_intro {
   margin-top: 15vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .home_intro h2 {
@@ -811,12 +893,17 @@ button {
 
 @media all and (max-width: 768px) {
   .stepsection {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
 .hottrip {
   top: 15vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding-top: 96px;
   margin: 0 auto;
@@ -847,7 +934,8 @@ div.planet_top img.planet {
   position: absolute;
   top: 15px;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 div.planet_top img.planet_a1 {
@@ -858,7 +946,8 @@ div.planet_top div.word {
   position: absolute;
   top: 190px;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   text-align: center;
   margin: 0 auto;
 }
@@ -868,6 +957,8 @@ div.planet_top div.word .hot {
 }
 
 div.planet_top div.word .tag {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
   border: 1px solid #C9ADA7;
   border-radius: 5px;
@@ -929,9 +1020,16 @@ div.planet_top div.word .addin:hover {
 
 @media all and (max-width: 997px) {
   .topright {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .topright .separator {
     width: 80%;
@@ -943,13 +1041,22 @@ div.planet_top div.word .addin:hover {
 }
 
 .home_photowall {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .home_photowall .topright {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .home_photowall .topright .separator {
@@ -958,8 +1065,11 @@ div.planet_top div.word .addin:hover {
 }
 
 .home_photowall .topright .topSct {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .home_photowall .topright button.btn {
@@ -969,8 +1079,12 @@ div.planet_top div.word .addin:hover {
 }
 
 .home_photowall .topright .galleryIntro {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .home_photowall .topright .galleryIntro h5 {
@@ -1002,18 +1116,21 @@ div.planet_top div.word .addin:hover {
 
 @media (max-width: 1200px) {
   .home_photowall #photos {
+    -webkit-column-count: 2;
     column-count: 2;
   }
 }
 
 @media (max-width: 1000px) {
   .home_photowall #photos {
+    -webkit-column-count: 2;
     column-count: 2;
   }
 }
 
 @media (max-width: 800px) {
   .home_photowall #photos {
+    -webkit-column-count: 2;
     column-count: 2;
   }
 }
@@ -1023,18 +1140,20 @@ div.planet_top div.word .addin:hover {
     display: none;
   }
   .home_photowall .photowall_rwd {
-<<<<<<< HEAD
     display: -webkit-box;
     display: -ms-flexbox;
-=======
->>>>>>> dev
     display: flex;
   }
 }
 
 .home_shop {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .home_shop a {
@@ -1067,27 +1186,40 @@ div.planet_top div.word .addin:hover {
   overflow: hidden;
   top: 0;
   left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .home_shop .shopItem .hovereffect img {
   display: block;
   position: relative;
   max-width: none;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
+  -webkit-transform: translate3d(-10px, 0, 0);
   transform: translate3d(-10px, 0, 0);
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
 .home_shop .shopItem .hovereffect:hover img {
   opacity: 0.4;
   filter: alpha(opacity=40);
+  -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
 
 .home_shop .shopItem .hovereffect:hover h2:after {
+  -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
 
@@ -1095,13 +1227,18 @@ div.planet_top div.word .addin:hover {
   color: #FFF;
   opacity: 0;
   filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
+  -webkit-transform: translate3d(100%, 0, 0);
   transform: translate3d(100%, 0, 0);
 }
 
 .home_shop .shopItem .hovereffect:hover a, .home_shop .shopItem .hovereffect:hover h2 {
   opacity: 1;
   filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
 
@@ -1113,7 +1250,8 @@ div.planet_top div.word .addin:hover {
   z-index: 1;
   max-width: 400px;
   max-height: 250px;
-  transform: translate(-10%, 0);
+  -webkit-transform: translate(-10%, 0);
+          transform: translate(-10%, 0);
 }
 
 .home_shop .shopItem .item1 .hovereffect img {
@@ -1122,7 +1260,8 @@ div.planet_top div.word .addin:hover {
 
 .home_shop .shopItem .item2 .hovereffect {
   z-index: 1;
-  transform: translate(110%, -20%);
+  -webkit-transform: translate(110%, -20%);
+          transform: translate(110%, -20%);
   max-height: 450px;
   max-width: 220px;
 }
@@ -1132,14 +1271,16 @@ div.planet_top div.word .addin:hover {
 }
 
 .home_shop .shopItem .item3 .hovereffect {
-  transform: translate(150%, -100%);
+  -webkit-transform: translate(150%, -100%);
+          transform: translate(150%, -100%);
   max-height: 270px;
   max-width: 275px;
 }
 
 .home_shop .shopItem .item4 .hovereffect {
   z-index: 1;
-  transform: translate(255%, -260%);
+  -webkit-transform: translate(255%, -260%);
+          transform: translate(255%, -260%);
   max-height: 270px;
   max-width: 280px;
 }
@@ -1149,7 +1290,8 @@ div.planet_top div.word .addin:hover {
 }
 
 .home_shop .shopItem .item5 .hovereffect {
-  transform: translate(260%, -310%);
+  -webkit-transform: translate(260%, -310%);
+          transform: translate(260%, -310%);
   max-height: 296px;
   max-width: 300px;
 }
@@ -1167,8 +1309,12 @@ div.planet_top div.word .addin:hover {
     display: none;
   }
   .home_shop .shopRWD {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .home_shop .shopRWD .shop_carousel {
     display: block;
@@ -1188,20 +1334,37 @@ div.planet_top div.word .addin:hover {
 }
 
 .flow_member {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .flow_member .flowall {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  column-gap: 10%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 10%;
+          column-gap: 10%;
 }
 
 .flow_member .flowall .flow {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: center;
 }
 
@@ -1228,15 +1391,24 @@ div.planet_top div.word .addin:hover {
 }
 
 .flow_member .memberbtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 70px;
 }
 
 @media all and (max-width: 1200px) {
   .flow_member .flowall {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .flow_member .flowall .flow .separator {
     width: 30%;
