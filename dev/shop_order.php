@@ -34,7 +34,7 @@
         <ul class="nav-links">
             <li class="margin_left_5"><a href="alltrip.php">星球景點</a></li>
             <li class="margin_left_5"><a href="planet.php">星星世界</a></li>
-            <li class="margin_left_5"><a href="shop.php">星球商城</a></li>
+            <li class="margin_left_5"><a href="shop.php" class="bread">星球商城</a></li>
             <li class="margin_left_5"><a href="photowall.php">太空互動</a></li>
             <li class="margin_left_5"><a href="Leaderboard.php">玩家排行</a></li>
             <!-- <li><a href=""><img src="./images/ticket.png" alt="" class="icon"></a></li>
@@ -232,7 +232,20 @@
                 </div>
             </div>
         </div>
-        @@include("./layout/footer.html")
+        <footer class="padding_top_10">
+            <div class="links">
+                <div class="logo"><img src="./img/logo.png" alt=""></div>
+                <ul class="footer-links margin_top_2">
+                    <li><a href="alltrip.html">星球景點</a></li>
+                    <li><a href="planet.html">星星世界</a></li>
+                    <li><a href="shop.html">星球商城</a></li>
+                    <li><a href="photowall.html">太空互動</a></li>
+                    <li><a href="Leaderboard.html">玩家排行</a></li>
+                </ul>
+            </div>
+            <img src="./img/footer_moon.png" alt="" class="footer_moon">
+            <img src="./img/smoke.png" alt="" class="smoke">
+        </footer>
     </div>
     <script src="./js/retract.js"></script>
     <!-- <script src="./js/input_format.js"></script> -->

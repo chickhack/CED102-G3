@@ -12,6 +12,7 @@
             }
         }
     }
+    echo empty(($_SESSION['cart']));
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -34,7 +35,7 @@
         <ul class="nav-links">
             <li class="margin_left_5"><a href="alltrip.php">星球景點</a></li>
             <li class="margin_left_5"><a href="planet.php">星星世界</a></li>
-            <li class="margin_left_5"><a href="shop.php">星球商城</a></li>
+            <li class="margin_left_5"><a href="shop.php" class="bread">星球商城</a></li>
             <li class="margin_left_5"><a href="photowall.php">太空互動</a></li>
             <li class="margin_left_5"><a href="Leaderboard.php">玩家排行</a></li>
             <!-- <li><a href=""><img src="./images/ticket.png" alt="" class="icon"></a></li>
@@ -96,7 +97,11 @@
                             <small>+{{totalPoints}}</small>
                         </div>
                     </div>
-                    <button type="submit" name="check" class="button_min margin_left_3" @click="location">前往結帳</button>
+                    <?php if(empty($_SESSION['cart'])){?>
+                        <button type="submit" name="check" class="button_min disabled margin_left_3" @click="location" disabled>前往結帳</button>
+                    <?php }else{?>
+                        <button type="submit" name="check" class="button_min margin_left_3" @click="location">前往結帳</button>
+                    <?php }?>
                 </div>
             </form>
         </section>
