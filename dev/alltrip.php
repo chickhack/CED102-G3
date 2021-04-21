@@ -53,7 +53,7 @@ session_start();
 </head>
 
 <body>
-<header>
+    <header>
         <nav id="nav">
             <div class="logo">
                 <h1><a href="home.php">SPACED</a></h1>
