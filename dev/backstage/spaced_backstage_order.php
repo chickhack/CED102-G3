@@ -1,6 +1,6 @@
 <?php 
 // require_once("./php/connectbooks_kai.php");
-require_once("./php/connectBooks_Yun.php");
+require_once("../../connect_ced102_g3_local.php");
 
 try {
 	$sql = "select * from spot_order";
@@ -23,14 +23,14 @@ try {
     <title>後台景點管理</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/all.css">
-    <link rel="stylesheet" href="./css/pages/spaced_backstage.css">
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../css/pages/spaced_backstage.css">
 </head>
 
 <body>
     <div class="top w-100 header">
         <!-- <p class="h1 padding_left_4 "></p> -->
-        <img src="./img/logo.png" class="imgs padding_left_4 padding_top_1" alt="">
+        <img src="../img/logo.png" class="imgs padding_left_4 padding_top_1" alt="">
         <p class="text-top padding_left_4 ">Backstage</p>
     </div>
     <div class="div-menu">
@@ -65,7 +65,7 @@ try {
                     <div class="span-1 margin_left_3">
                         <label for="search1">
 
-                            <img src="./img/icon/loupe.png" alt="" class="">
+                            <img src="../img/icon/loupe.png" alt="" class="">
                         </label>
                         <input type="search" class="search1" id="search1" placeholder="輸入景點編號、名稱">
                     </div>
@@ -97,10 +97,10 @@ try {
                 while($orderRow = $order->fetch(PDO::FETCH_ASSOC)){ 
                 ?>
                 <div class="div-right-span-for line_low margin_top_2">
-                    <a href="./php/spot_order_datail.php?order_no=<?=$orderRow["order_no"]?>"
+                    <a href="../php/backstage/spot_order/spot_order_datail.php?order_no=<?=$orderRow["order_no"]?>"
                     class="wi-10 text-1"
                     ><?=$orderRow ["order_no"]?></a> 
-                    <a href="./php/spaced_backstage_order_customer.php?mem_no=<?=$orderRow["mem_no"]?>"
+                    <a href="../php/backstage/spot_order/spaced_backstage_order_customer.php?mem_no=<?=$orderRow["mem_no"]?>"
                     class="wi-10 text-1"
                     ><?=$orderRow ["mem_no"]?></a>
                    
@@ -118,9 +118,9 @@ try {
                     <p class="wi-10 text-1"><?=$orderRow ["car_insp"]?></p>
                     <?php
                         if($orderRow['order_status'] == 0){
-                            echo "<p class='wi-5 text-1'><a href='./php/edit_backstage_spot_order.php?order_no=$orderRow[order_no]&order_status=$orderRow[order_status]' name='update' type='button' class='btn btn-primary btn-sm'>上架</a></p>";
+                            echo "<p class='wi-5 text-1'><a href='../php/backstage/spot_order/edit_backstage_spot_order.php?order_no=$orderRow[order_no]&order_status=$orderRow[order_status]' name='update' type='button' class='btn btn-primary btn-sm'>上架</a></p>";
                         }else{
-                            echo "<p class='wi-5 text-1'><a href='./php/edit_backstage_spot_order.php?order_no=$orderRow[order_no]&order_status=$orderRow[order_status]' name='update' type='button' class='btn btn-danger btn-sm'>下架</a></p>";
+                            echo "<p class='wi-5 text-1'><a href='../php/backstage/spot_order/edit_backstage_spot_order.php?order_no=$orderRow[order_no]&order_status=$orderRow[order_status]' name='update' type='button' class='btn btn-danger btn-sm'>下架</a></p>";
                             }
                     ?>
                 </div>

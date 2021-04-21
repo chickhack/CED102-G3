@@ -2,7 +2,7 @@
 $order_no = $_REQUEST["order_no"];
 $errMsg='';
 try {
-	require_once("log.php");
+	require_once("../../../../connect_ced102_g3_local.php");
 	$sql = "select * from spot_order_datail where order_no=:order_no";
 	$order = $pdo->prepare($sql);	//執行指令
 	$order->bindValue(":order_no", $order_no);
@@ -20,23 +20,23 @@ try {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../css/all.css">
-	<link rel="stylesheet" href="../css/pages/spaced_backstage.css">
+    <link rel="stylesheet" href="../../../css/all.css">
+	<link rel="stylesheet" href="../../../css/pages/spaced_backstage.css">
 
 </head>
 <body>
 <div class="top w-100 header">
         <!-- <p class="h1 padding_left_4 "></p> -->
-        <img src="../img/logo.png" class="imgs padding_left_4 padding_top_1" alt="">
+        <img src="../../../img/logo.png" class="imgs padding_left_4 padding_top_1" alt="">
         <p class="text-top padding_left_4 ">Backstage</p>
 </div>
     <div class="div-menu">
         <div class="div-list">
             <button class="div-list-btn-a">景點</button>
             <div>
-                <a href="../spaced_backstage_trip.php" class="div-list-btn-s ">景點管理</a>
-                <a href="../spaced_backstage_trip_reviews.php" class="div-list-btn-s">景點評價</a>
-                <a href="../spaced_backstage_order.php" class="div-list-btn-s now">行程訂單管理</a>
+                <a href="../../../backstage/spaced_backstage_trip.php" class="div-list-btn-s ">景點管理</a>
+                <a href="../../../backstage/spaced_backstage_trip_reviews.php" class="div-list-btn-s">景點評價</a>
+                <a href="../../../backstage/spaced_backstage_order.php" class="div-list-btn-s now">行程訂單管理</a>
             </div>
             <button class="div-list-btn-a">商城</button>
             <div>
@@ -58,11 +58,11 @@ try {
 
             <div class="title">
                 <div class=" div-right-span padding_top_3 margin_left_2">
-                    <button type="button" class="btn-updata" onclick="open11()">＋新增</button>
+                    <button type="button" class="btn-updata" ><a href="../../../backstage/spaced_backstage_order.php" class="text-1">返回</a></button>
                     <div class="span-1 margin_left_3">
                         <label for="search1">
 
-                            <img src="../img/icon/loupe.png" alt="" class="">
+                            <img src="../../../img/icon/loupe.png" alt="" class="">
                         </label>
                         <input type="search" class="search1" id="search1" placeholder="輸入景點編號、名稱">
                     </div>
@@ -91,9 +91,9 @@ try {
                 ?>
                     <div class="div-right-span-for line_low margin_top_2">
                         <p class="wi-15 text-1"><?=$orders ["order_no"]?></p>
-                        <p class="wi-15 text-1 toomuch"><?=$orders ["spot_no"]?></p>
-                        <p class="wi-20 text-1  toomuch"><?=$orders ["spot_name"]?></p>
-                        <p class="wi-20 text-1  toomuch"><?=$orders ["spot_pic"]?></p>
+                        <p class="wi-15 text-1 "><?=$orders ["spot_no"]?></p>
+                        <p class="wi-20 text-1 "><?=$orders ["spot_name"]?></p>
+                        <p class="wi-20 text-1 "><?=$orders ["spot_pic"]?></p>
                         <p class="wi-10 text-1"><?=$orders ["price"]?></p>
                         <p class="wi-10 text-1"><?=$orders ["integral"]?></p>
                         <p class="wi-10 text-1"><?=$orders ["people"]?></p>
