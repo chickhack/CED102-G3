@@ -134,7 +134,7 @@
         <div class="product">
             <div class="imgs">
                 <div class="img">
-                    <img :src="'./img/shop/' + products[0].png" alt="" class="bigImg">
+                    <img :src="'./img/shop/'+products[0].img" alt="" class="bigImg">
                     <div class="smallImg margin_top_2">
                         <div class="imgDetail img1" v-for="pic in products[0]['prod_pic']" @click="changeImg">
                             <img :src="'./img/shop/'+ pic" alt="">
@@ -168,7 +168,7 @@
         </div>
         <p class="describe line_low">{{products[0]["prod_intro"]}}</p>
         <div>
-            <div class="recommend">
+            <!-- <div class="recommend">
                 <h3 class="margin_top_10 alltrip ">建議搭配景點</h3>
                 <div class="tripcard_all  margin_top_5">
 
@@ -185,23 +185,24 @@
                     </a>
 
                 </div>
-            </div>
+            </div> -->
             <div class="comment">
                 <h3>買家評論</h3>
                 <div class="score margin_top_1">
-                    <p class="h3 number">{{number}}</p>
+                    <p class="h3 number">{{scores}}</p>
                     <div class="starMessage margin_left_1">
                         <ul class="stars">
-                            <li v-for="star in totalStar" class="star">
+                            <li v-for="star in stars" class="star">
                                 <img class="icon" src="./img/shop/star.png">
                             </li>
                         </ul>
-                        <div class="messageNum margin_top_1 margin_left_1">100則留言</div>
+                        <div class="messageNum margin_top_1 margin_left_1">{{products.length}}則留言</div>
                     </div>
-                    <p class="more">瀏覽評論</p>
+                    <p v-if="products.length > 3" class="more">瀏覽評論</p>
                 </div>
                 <ul class="margin_top_5">
-                    <li class="messages" v-for="comment in products">
+                    <message :msg="comment" v-for="comment in products"></message>
+                    <!-- <li class="messages" v-for="comment in products">
                         <img :src="comment.mem_pic" alt="">
                         <div class="words margin_left_3">
                             <div class="name">
@@ -210,12 +211,13 @@
                                 <p>{{comment["date(pt.prev_date)"]}}</p>
                             </div>
                             <div class="message margin_top_1 line_low">
-                                <p>{{comment.prev}}</p>                          
+                                <p v-if="comment.prev.length > 50">{{comment.prev}}</p> 
+                                <p v-else>{{comment.prev.substring(0,50)}}</p> 
                             </div>
-                            <p class="more">瀏覽更多</p>
+                            <p class="more" v-if="comment.prev.length > 50"  @click="allComment">瀏覽更多</p>
 
                         </div>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
         </div>
@@ -237,50 +239,82 @@
     <script src="./js/addMinus.js"></script>
     <script src="./js/productImgChange.js"></script>
     <script>
+        Vue.component('message',{
+            props:["msg"],
+            template: `
+                        <li class="messages">
+                            <img :src="msg.mem_pic" alt="">
+                            <div class="words margin_left_3">
+                                <div class="name">
+                                    <p>{{msg.last_name}}{{msg.first_name}}</p>
+                                    <hr>
+                                    <p>{{msg["date(pt.prev_date)"]}}</p>
+                                </div>
+                                <div class="message margin_top_1 line_low">
+                                    <p v-if="msg.prev.length > 50">{{message}}</p> 
+                                    <p v-else>{{msg.prev.substring(0,50)}}</p> 
+                                </div>
+                                <p class="more" v-if="msg.prev.length > 50"  @click="allComment">瀏覽更多</p>
+
+                            </div>
+                        </li>
+                        `,
+            data(){
+                return{
+                    message: this.msg.prev.substring(0,50)
+                }
+            },
+            methods: {
+                allComment(e){
+                    // const message = document.querySelector(".message");
+                    // console.log(this.message);
+                    this.message = this.msg.prev;
+                    e.target.style.opacity = 0 ;
+                }
+            }
+        })
         let vm = new Vue({
             el: "#app",
             data:{
                 verified: 1,
                 products:[],
-                number: 4.8,
-                totalStar: 5,
-                second: [{
-                    spot: "./img/trip/trip_jupiter/jupiter_a1_ps2.jpg",
-                    title: "月球 | 太空體驗一日遊",
-                    grade: "初階",
-                    scores: "5000",
-                    price: 1000,
-                }, {
-                    spot: "./img/trip/trip_jupiter/jupiter_b1_ps2.jpg",
-                    title: "月球 | 熱氣球一日遊",
-                    grade: "初階",
-                    scores: "5000",
-                    price: 2000,
-                }, {
-                    spot: "./img/trip/trip_jupiter/jupiter_c4_ps2.jpg",
-                    title: "月球 | 熱氣球一日遊",
-                    grade: "初階",
-                    scores: "5000",
-                    price: 3000,
-                },],
-                comments: [
-                    {
-                        src: "./img/shop/user.png",
-                        name: "Doris",
-                        date: "21.03.11",
-                        content: "選用高質感的超細纖維皮革，具有真皮的透氣度與柔軟度，軟可彎折，輕量好攜帶，精緻銜扣設計讓整體質感大提升，兩種可後踩設計，出門方便又省時，橡膠防滑鞋底，有效降低打滑危機"
-                    },{
-                        src: "./img/shop/user.png",
-                        name: "Doris",
-                        date: "21.03.11",
-                        content: "選用高質感的超細纖維皮革，具有真皮的透氣度與柔軟度，軟可彎折，輕量好攜帶，精緻銜扣設計讓整體質感大提升，兩種可後踩設計，出門方便又省時，橡膠防滑鞋底，有效降低打滑危機"
-                    },{
-                        src: "./img/shop/user.png",
-                        name: "Doris",
-                        date: "21.03.11",
-                        content: "選用高質感的超細纖維皮革，具有真皮的透氣度與柔軟度，軟可彎折，輕量好攜帶，精緻銜扣設計讓整體質感大提升，兩種可後踩設計，出門方便又省時，橡膠防滑鞋底，有效降低打滑危機"
-                    },
-                ],
+                // second: [{
+                //     spot: "./img/trip/trip_jupiter/jupiter_a1_ps2.jpg",
+                //     title: "月球 | 太空體驗一日遊",
+                //     grade: "初階",
+                //     scores: "5000",
+                //     price: 1000,
+                // }, {
+                //     spot: "./img/trip/trip_jupiter/jupiter_b1_ps2.jpg",
+                //     title: "月球 | 熱氣球一日遊",
+                //     grade: "初階",
+                //     scores: "5000",
+                //     price: 2000,
+                // }, {
+                //     spot: "./img/trip/trip_jupiter/jupiter_c4_ps2.jpg",
+                //     title: "月球 | 熱氣球一日遊",
+                //     grade: "初階",
+                //     scores: "5000",
+                //     price: 3000,
+                // },],
+                // comments: [
+                //     {
+                //         src: "./img/shop/user.png",
+                //         name: "Doris",
+                //         date: "21.03.11",
+                //         content: "選用高質感的超細纖維皮革，具有真皮的透氣度與柔軟度，軟可彎折，輕量好攜帶，精緻銜扣設計讓整體質感大提升，兩種可後踩設計，出門方便又省時，橡膠防滑鞋底，有效降低打滑危機"
+                //     },{
+                //         src: "./img/shop/user.png",
+                //         name: "Doris",
+                //         date: "21.03.11",
+                //         content: "選用高質感的超細纖維皮革，具有真皮的透氣度與柔軟度，軟可彎折，輕量好攜帶，精緻銜扣設計讓整體質感大提升，兩種可後踩設計，出門方便又省時，橡膠防滑鞋底，有效降低打滑危機"
+                //     },{
+                //         src: "./img/shop/user.png",
+                //         name: "Doris",
+                //         date: "21.03.11",
+                //         content: "選用高質感的超細纖維皮革，具有真皮的透氣度與柔軟度，軟可彎折，輕量好攜帶，精緻銜扣設計讓整體質感大提升，兩種可後踩設計，出門方便又省時，橡膠防滑鞋底，有效降低打滑危機"
+                //     },
+                // ],
             },
             methods: {
                 changeImg(e){
@@ -295,18 +329,39 @@
                 },
                 addQuantity() {
                     this.verified += 1;
+                },
+            },
+            computed: {
+                stars(){
+                    let total = 0;
+                    // let avg = 0;
+                    this.products.forEach(product => {
+                        total += parseInt(product.score);
+                    })
+                    return parseInt(total / this.products.length);
+                },
+                scores(){
+                    let total = 0;
+                    // let avg = 0;
+                    this.products.forEach(product => {
+                        total += parseInt(product.score);
+                    })
+                    return (total / this.products.length).toFixed(1);
                 }
+            },
+            mounted(){
+                let id = sessionStorage.getItem("no");
+                fetch(`./php/getId.php?id=${id}`).then(res => res.json())
+                                                .then(data => {                                        
+                                                        vm.products = data;
+                                                        vm.products[0].img = data[0]["prod_pic"].split("==")[1];
+                                                        let picArr = data[0]["prod_pic"].split("==");
+                                                        picArr.shift();
+                                                        vm.products[0]["prod_pic"] = picArr;
+                                                        console.log(vm.products);
+                    });
             }
         });
-            let id = sessionStorage.getItem("no");
-            fetch(`./php/getId.php?id=${id}`).then(res => res.json())
-                                             .then(data => {                                        
-                                                    vm.products = data;
-                                                    vm.products[0].png = data[0]["prod_pic"].split("==")[0];
-                                                    let picArr = data[0]["prod_pic"].split("==");
-                                                    picArr.shift();
-                                                    vm.products[0]["prod_pic"] = picArr;
-                });
 
                                             
     </script>

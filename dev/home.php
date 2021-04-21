@@ -241,6 +241,12 @@
                                 <script src="./js/mars.js"></script>
                             </div>
                         </div>
+                      </div>
+                      <div class="tab-active col-lg-6 col-md-12 col-sm-12">
+                            <!-- 火星動圖 -->
+                            <div id="tag" class="col-md-12 col-sm-12" ></div>
+                            <script src="./js/mars.js"></script>
+                      </div>
                     </div>
                     <!-- 其他tab -->
                     <div id="tab02" class="tab-inner ">

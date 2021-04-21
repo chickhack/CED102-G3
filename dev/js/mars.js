@@ -1,6 +1,6 @@
 const scaling = "tag"; // this will resize to fit inside the screen dimensions
-const width = 1024;
-const height = 768;
+const width = 600;
+const height = 400;
 const color = "#0c0d18";
 const outerColor = "#0c0d18";
 const assets = "mars-map.jpg";
@@ -8,8 +8,12 @@ const path = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/";
 const waiter = new Waiter({corner:0, backgroundColor:blue});
 
 const frame = new Frame(scaling, width, height, color, outerColor, assets, path, waiter);
+
+
 frame.on("ready", ()=>{ // ES6 Arrow Function - similar to function(){}
     zog("ready from ZIM Frame"); // logs in console (F12 - choose console)
+
+
 
     // often need below - so consider it part of the template
     let stage = frame.stage;
@@ -27,14 +31,13 @@ frame.on("ready", ()=>{ // ES6 Arrow Function - similar to function(){}
 
     // we will use ThreeJS to show the planet and ZIM to do interface
     // ZIM has a helper module for ThreeJS called three.js that makes it easy!
-
 	const outerSpace = new Three({
 		frame:frame,
 		width:stageW,
 		height:stageH,
         // pull camera out perpendicular from monitor 400
 		cameraPosition:new THREE.Vector3(0, 0, 400)
-	});
+    });
 
 	if (outerSpace.success) { // otherwise no WebGL
 
@@ -52,7 +55,8 @@ frame.on("ready", ()=>{ // ES6 Arrow Function - similar to function(){}
 			planet = new THREE.Mesh(geometry, material);
             // ThreeJS use x, y and z on position and rotation properties
             planet.position.x = 30;
-			scene.add(planet);
+            scene.add(planet)
+            ;
 
             // LIGHT
             // MeshLambertMaterial needs to have light to see it
@@ -121,9 +125,10 @@ frame.on("ready", ()=>{ // ES6 Arrow Function - similar to function(){}
                     // so if we left off stage, when working in the second stage, we would not see the list
                     // SUMMARY - when working on a stage other than the first stage,
                     // we have to specify the stage for things like center(), loc(), pos(), Ticker.add(), Pane(), Grid(), etc.
-                    .pos(30,100,null,null,stage)
+                    .pos(0,0,null,null,stage)
                     .alp(0)
                     .animate({alpha:.5}, 700)
+                    .siz(180,120)
 
                     // using tap instead of change so can locate current selection again if needed
                     .tap(()=>{
@@ -161,10 +166,10 @@ frame.on("ready", ()=>{ // ES6 Arrow Function - similar to function(){}
                     // but we are going to drag the circle around to create the data
                     // clear or null would not let us drag the middle of the circle
                     // just left this in there for demonstration - would normally set to null
-                    let circle = new Circle(50, faint, white, 2)
+                    let circle = new Circle(40, faint, white, 2)
                         .center(stage)
-                        .mov(35) // shift over in the x to match planet center
-                        .loc(null, y-10) // apply the y data
+                        .mov(10) // shift over in the x to match planet center
+                        .loc(250, 250) // apply the y data
                         .alp(0)
                         .animate({alpha:1}, 500)
                         // .drag({all:true}); // drag was set to record y position
@@ -188,7 +193,7 @@ frame.on("ready", ()=>{ // ES6 Arrow Function - similar to function(){}
                         margin:14,
                         corner:0,
                         size:20
-                    }).alp(0).show(null,1000000000).animate({alpha:.6}, 500);
+                    }).alp(0).show(null,1000000000).animate({alpha:.6}, 500).top();
 
                     // remove the tip on stagemousedown
                     // could reuse the tip, etc. but it is tricky to properly center an edited tip
@@ -197,6 +202,7 @@ frame.on("ready", ()=>{ // ES6 Arrow Function - similar to function(){}
                     stage.on("stagemousedown", ()=>{
                         tip.dispose();
                         circle.removeFrom();
+                        list.selectedIndex = -1;
                     }, null, true); // only once
                 }
                 // makeTip(); // used for recording data
@@ -243,6 +249,14 @@ frame.on("ready", ()=>{ // ES6 Arrow Function - similar to function(){}
 	// https://zimjs.com/docs.html?item=zog
 	// https://zimjs.com/docs.html?item=Ticker
 
+    // where these three objects have already been made
+    // *** Note that the Loader and TextArea are already resized if added to an Accessibility object that is resized
+    frame.on("resize",()=>{
+        var stageW = frame.width;
+        var stageH = frame.height;
+        frame.scaleTo(stage, 50,50);
+        frame2.scaleTo(stage, 50,50);
+    });
 
 
 }); // end of frame ready

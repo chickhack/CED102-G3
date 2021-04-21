@@ -107,7 +107,7 @@
                 </ul>
             </section>
             <section class="orderer">
-                <form class="form">
+                <form class="form" method="POST">
                     <div class="orderer_form retract">
                         <div class="arrow">
                             <img src="./img/date-chevron-down.svg" alt="">
@@ -175,7 +175,7 @@
                             <div class="group">
                                 <div class="checkbox_group">
                                     <input type="checkbox" name="coins" id="coins" class="checkbox_custom">
-                                    <label for="coins" class="checkbox_custom_label">宇宙幣</label>
+                                    <label for="coins" class="checkbox_custom_label" id="coin">宇宙幣</label>
                                     <p>尚餘</p>
                                     <span class="margin_left_1">$50000</span>
                                     <img src="./img/dollar_(1).png" alt="" class="icon margin_left_1">
@@ -189,7 +189,7 @@
                                 <input type="checkbox" name="credit" id="credit" class="checkbox_custom">
                                 <label for="credit" class="checkbox_custom_label">信用卡</label>
                                 <div class="credit_icon margin_left_4">
-                                    <cleave v-model="card" :options="options"></cleave> 
+                                    <cleave v-model="card" :options="options" class="credit"></cleave> 
                                     <i class="fab fa-cc-amex"></i>
                                     <i class="fab fa-cc-jcb"></i>
                                     <i class="fab fa-cc-visa"></i>
@@ -221,7 +221,7 @@
                         </div>
                         <small class="margin_top_1">累積後目前有50000積分</small>
                     </div>
-                    <input type="submit" value="確認付款" class="button_min" name="checkOut">
+                    <input type="button" value="確認付款" class="button_min" name="checkOut" @click="checkSubmit">
                 </form>
             </section>
             <div class="modal">
@@ -296,8 +296,171 @@
             },
             methods: {
                 getValue(){
-                    const value = document.querySelector("#ofName");
-                    console.log(value.value);
+                    const same = document.querySelector("#same");
+                    const v = document.querySelector("#fName");
+                    const lName = document.querySelector("#lName");
+                    const ph = document.querySelector("#mobile");
+                    const email = document.querySelector("#email");
+
+                    if(!same.checked){
+                        //名字
+                        const value = document.querySelector("#ofName");
+                        let val = value.value;
+                        v.value = val;
+                        //姓氏
+                        const olName = document.querySelector("#olName");
+                        let lVal = olName.value;
+                        lName.value = lVal;
+        
+                        //手機
+                        const phone = document.querySelector("#omobile");
+                        let mobile = phone.value;
+                        ph.value = mobile;
+    
+                        //電子郵件
+                        const oEmail = document.querySelector("#oEmail");
+                        let em = oEmail.value;
+                        email.value = em;
+                    }else{
+                        v.value = "";
+                        lName.value = "";
+                        ph.value = "";
+                        email.value = "";
+                    }
+                },
+                checkInput(e){
+                    const ofName = document.querySelector("#ofName");
+                    const fName = document.querySelector("#fName");
+
+                    if(ofName.value == "" && fName.value == ""){
+                        alert("名字未填寫");
+                        e.preventDefault();
+                        return;
+                    }
+                    //姓氏一定要填
+                    const olName = document.querySelector("#olName");
+                    const lName = document.querySelector("#lName");
+
+                    if(olName.value == "" && lName.value == ""){
+                        alert("姓氏未填寫");
+                        e.preventDefault();
+                        return;
+                    }
+                    //手機一定要填
+                    const omobile = document.querySelector("#omobile");
+                    const mobile = document.querySelector("#mobile");
+
+                    if(omobile.value < 10 && mobile.value < 10){
+                        alert("手機號碼未滿10碼");
+                        e.preventDefault();
+                        return;
+                    }
+                    //電子信箱一定要填
+                    const oemail = document.querySelector("#oemail");
+                    const email = document.querySelector("#email");
+
+                    if(oemail.value == "" && email.value == ""){
+                        alert("電子信箱未填寫");
+                        e.preventDefault();
+                        return;
+                    }
+                    //收件地址一定要填
+                    const address = document.querySelector("#address");
+
+                    if(address.value == ""){
+                        alert("收件地址未填寫");
+                        e.preventDefault();
+                        return;
+                    }
+
+                    //信用卡檢查
+                    const credit = document.querySelector(".credit");
+                    console.log(credit);
+                    let odd = 0;
+                    let even = 0;
+                    let total = 0;
+
+                    if(credit.value){
+                        let cNum = credit.value.split("-").join("").split("");
+                        let checkNum = cNum.pop();
+                        let reverseNum = cNum.reverse();
+
+                        reverseNum.forEach((num,i) => {
+                            let trueNum = reverseNum[i] * 2;
+                            //16碼
+                            if(reverseNum.length == 15){
+                                if((i+1) % 2 == 1){
+                                    trueNum >= 10 ? trueNum -= 9 : trueNum;
+                                    odd += trueNum;
+                                    // console.log(odd);
+                                }else{
+                                    even += parseInt(num);
+                                }
+                            //15碼
+                            }else if(reverseNum.length == 14){
+                                if(i % 2 == 1){
+                                    odd += parseInt(num);
+                                }else{
+                                    trueNum >= 10 ? trueNum -= 9 : trueNum;
+                                    even += trueNum;
+                                }
+                            }
+                            total = odd + even ;
+                        })
+                        let final = total % 10;
+                        if(10 - final != checkNum){
+                            alert("信用卡卡號錯誤")
+                            e.preventDefault();
+                            return;
+                        }
+                    }else{
+                        alert("請輸入信用卡卡號")
+                        e.preventDefault();
+                        return;
+                    }
+
+                    //showModal
+                    const modal = document.querySelector(".modal");
+                    modal.style.opacity= 1;
+                    modal.style.visibility = "inherit";
+                },
+                insertData(){
+                    const firstName = document.querySelector("#ofName").value
+                    const lastName =  document.querySelector("#olName").value
+                    const mobile = document.querySelector("#omobile").value
+                    const email = document.querySelector("#oemail").value
+                    const address = document.querySelector("#address").value
+                    const credit = document.querySelector(".credit").value
+                    const check = document.querySelector("#check").value
+                    let cNum = credit.split("-").join("")
+
+                    let url = "./php/shopOrder.php";
+                    let data = {
+                        mem_no: "1010006",
+                        total_price: this.totalPrice,
+                        order_status: '1',
+                        orderer: lastName+firstName,
+                        address: address,
+                        tel: mobile,
+                        car_no: cNum,
+                        car_insp: check,
+                        order_total: this.totalPoints,
+                        order_date: new Date().toISOString().slice(0, 19).replace('T', ' '),
+                        detail: this.products,
+                    };
+                    fetch(url,{
+                        method: "post",
+                        body: JSON.stringify(data),
+                        headers: new Headers({
+                                    'Content-Type': 'application/json'
+                                })
+                        }).then(res => res.text())
+                        .catch(error => console.log(error))
+                        .then(body => console.log(body))
+                },
+                checkSubmit(){
+                    this.checkInput();
+                    this.insertData();
                 }
             }
         })
