@@ -58,7 +58,7 @@
                     <div class="span-1 margin_left_1">
                         <label for="search1">
 
-                            <img src="../../" alt="" class="">
+                            <img src="../img/icon/loupe.png" alt="" class="">
                         </label>
                         <input type="search" class="search1" id="search1" placeholder="輸入景點編號、評價編號、內容">
                     </div>
@@ -113,7 +113,7 @@
                     <?php }?>
                     <div id="linebox">
                     <div class="upbox">
-                        <form action="../php/shopupdate.php" method="POST" enctype="multipart/form-data">
+                        <form action="./php/shopupdate.php" method="POST" enctype="multipart/form-data">
 
                             <input type="number" placeholder="類型" name="cat_no">
                             <input type="text" placeholder="商品名稱" name="prod_name">

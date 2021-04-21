@@ -40,9 +40,68 @@
 
 
     <div class="container-fluid">
+<<<<<<< HEAD
+    <header>
+        <nav id="nav">
+            <div class="logo">
+                <h1><a href="home.php">SPACED</a></h1>
+            </div>
+            <ul class="nav-links">
+                <li class="margin_left_5 now"><a href="alltrip.php">星球景點</a></li>
+                <li class="margin_left_5"><a href="planet.php" class="bread">星星世界</a></li>
+                <li class="margin_left_5"><a href="shop.php">星球商城</a></li>
+                <li class="margin_left_5"><a href="photowall.php">太空互動</a></li>
+                <li class="margin_left_5"><a href="Leaderboard.php">玩家排行</a></li>
+                <!-- <li><a href=""><img src="./images/ticket.png" alt="" class="icon"></a></li>
+        <li><a href=""><img src="./images/shopping-cart_(1).png" alt="" class="icon"></a></li>
+        <li><a href=""><img src="./images/round-account-button-with-user-inside_(1).png" alt="" class="icon"></a></li> -->
+            </ul>
+            <ul class="nav-icons">
+                <li class="nav-trip">
+                    <a href="./car-itineray.php">
+                        <img src="./img/icon/header/luggage.png" alt="" class="icon" />
+                        <?php
+                        if(isset($_SESSION["trip-cart"])){
+                            $count = count($_SESSION["trip-cart"]);
+                            echo "<div class='trip-count'>$count</div>";
+                        }else{
+                            echo "";
+                        }
+                     ?>
+                    </a>
+                </li>
+                <li class="nav-cart">
+                    <a href="./shop_cart.php">
+                        <img src="./img/icon/header/shopping-cart_(1).png" alt="" class="icon" />
+                        <?php
+                if(isset($_SESSION["cart"])){
+                    $count = count($_SESSION["cart"]);
+                    echo "<div class='count'>$count</div>";
+                }else{
+                    echo "";
+                }
+            ?>
+                    </a>
+                </li>
+                <li>
+                    <a href="./login.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png"
+                            alt="" class="icon" /></a>
+                </li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+        <script src="./js/header.js"></script>
+
+    </header>
+=======
     <?php
       include '../dev/layout/header.php';
     ?>
+>>>>>>> 24048ab3ca93da3399a74a0e051f303885825473
     <!-- 動態背景 -->
       <div id="particles-js">
         <script src="./js/background.js"></script>
@@ -55,6 +114,15 @@
         <div class="tabList col-LG-12 ">
           <ul class="tab-title">
             <li><a href="#tab01">火星</a></li>
+<<<<<<< HEAD
+              <li><a href="#tab02">月球</a></li>
+              <li><a href="#tab03">木星</a></li>
+              <li><a href="#tab03">水星</a></li>
+              <li><a href="#tab03">水星</a></li>
+              <li><a href="#tab03">水星</a></li>
+              <li><a href="#tab03">水星</a></li>
+          </ul>
+=======
             <li><a href="#tab02">月球</a></li>
             <li><a href="#tab03">木星</a></li>
             <li><a href="#tab03">水星</a></li>
@@ -62,6 +130,7 @@
             <li><a href="#tab03">土星</a></li>
             <li><a href="#tab03">天王星</a></li>
         </ul>
+>>>>>>> 24048ab3ca93da3399a74a0e051f303885825473
         </div>
         <div class="separator col-10"></div>
       <!-- 星球頁籤內容 -->
@@ -102,7 +171,11 @@
                   </div>
                   <div class="tab-active col-lg-6 col-md-12 col-sm-12">
                     <!-- 火星動圖 -->
+<<<<<<< HEAD
+                    <div id="tag" class="col-md-12 col-sm-12" style="background-color: #0c0d18;"></div>
+=======
                     <div id="tag" class="col-md-12 col-sm-12" style="width: 1024px; height: 768px; background-color: #0c0d18;"></div>
+>>>>>>> 24048ab3ca93da3399a74a0e051f303885825473
                     <script src="./js/mars.js"></script>
                   </div>
                 </div>
@@ -137,6 +210,8 @@
         
                 </div>
               </div>
+<<<<<<< HEAD
+=======
               <!-- 月球 -->
               <div id="tab02" class="tab-inner tab_moon">
                 <div class="tab_top">
@@ -210,6 +285,7 @@
               </div>
               <!-- 木星 -->
 
+>>>>>>> 24048ab3ca93da3399a74a0e051f303885825473
           </div>
 
 
@@ -220,7 +296,24 @@
         </div>
       </div>
       
+<<<<<<< HEAD
+      <footer class="padding_top_10">
+        <div class="links">
+            <div class="logo"><img src="./img/logo.png" alt=""></div>
+            <ul class="footer-links margin_top_2">
+                <li><a href="alltrip.php">星球景點</a></li>
+                <li><a href="planet.php" class="bread">星星世界</a></li>
+                <li><a href="shop.php">星球商城</a></li>
+                <li><a href="photowall.php">太空互動</a></li>
+                <li><a href="Leaderboard.php">玩家排行</a></li>
+            </ul>
+        </div>
+        <img src="./img/footer_moon.png" alt="" class="footer_moon">
+        <img src="./img/smoke.png" alt="" class="smoke">
+    </footer>
+=======
     <footer>@@include('./layout/footer.html')</footer>
+>>>>>>> 24048ab3ca93da3399a74a0e051f303885825473
     </div>
     <!-- 星球頁籤轉移 -->
     <script>

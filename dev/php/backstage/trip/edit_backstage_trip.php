@@ -3,7 +3,11 @@ $spot_no = $_GET["spot_no"];
 $errMsg = "";
 
 try{
+<<<<<<< HEAD
+    require_once("../../connect_ced102_g3_local.php");
+=======
     require_once("../../../../connect_ced102_g3_local.php");
+>>>>>>> 24048ab3ca93da3399a74a0e051f303885825473
     $sql = "select *from spot where spot_no = :spot_no";
     $spot = $pdo->prepare($sql);
     $spot->bindValue(":spot_no", $spot_no);

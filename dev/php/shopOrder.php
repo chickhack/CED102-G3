@@ -43,5 +43,9 @@
     }catch(PDOException $e){
         echo $e->getMessage();
     }
+<<<<<<< HEAD
+    session_destroy();
+=======
 
+>>>>>>> 24048ab3ca93da3399a74a0e051f303885825473
 ?>
