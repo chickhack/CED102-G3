@@ -23,7 +23,7 @@
 <body>
     <div class="top w-100 header">
         <!-- <p class="h1 padding_left_4 "></p> -->
-        <img src="./img/logo.png" class="imgs padding_left_4 padding_top_1" alt="">
+        <img src="../img/logo.png" class="imgs padding_left_4 padding_top_1" alt="">
         <p class="text-top padding_left_4 ">Backstage</p>
     </div>
     <div class="div-menu">
