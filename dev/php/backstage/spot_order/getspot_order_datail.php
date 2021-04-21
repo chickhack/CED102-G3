@@ -1,6 +1,6 @@
 <?php
 try {
-	require_once("./log.php");
+	require_once("../../../../connect_ced102_g3_local.php");
 	// $sql ="SELECT * FROM `spot_order`";
 	$sql = "SELECT * FROM spot_order a INNER join spot_order_datail b on a.order_no=b.order_no WHERE mem_no=1010006";
 	

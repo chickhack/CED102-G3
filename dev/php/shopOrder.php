@@ -1,4 +1,5 @@
 <?php
+    session_start();
     require_once("../../connect_ced102_g3_local.php");
     try{
         $receive_data = json_decode(trim(file_get_contents("php://input")));
@@ -37,9 +38,14 @@
             "message" => "data inserted"
         );
         echo json_encode($output);
+        unset($_SESSION['cart']);
 
     }catch(PDOException $e){
         echo $e->getMessage();
     }
+<<<<<<< HEAD
     session_destroy();
+=======
+
+>>>>>>> 24048ab3ca93da3399a74a0e051f303885825473
 ?>

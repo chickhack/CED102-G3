@@ -2,7 +2,7 @@
 $mem_no = $_REQUEST["mem_no"];
 $errMsg='';
 try {
-	require_once("log.php");
+	require_once("../../../../connect_ced102_g3_local.php");
 	$sql = "select * from customer where mem_no=:mem_no";
 	$order = $pdo->prepare($sql);	//執行指令
 	$order->bindValue(":mem_no", $mem_no);
@@ -33,15 +33,15 @@ try {
         <div class="div-list">
             <button class="div-list-btn-a">景點</button>
             <div>
-                <a href="../spaced_backstage_trip.php" class="div-list-btn-s ">景點管理</a>
-                <a href="../spaced_backstage_trip_reviews.php" class="div-list-btn-s">景點評價</a>
-                <a href="../spaced_backstage_order.php" class="div-list-btn-s now">行程訂單管理</a>
+                <a href="../../../backstage/spaced_backstage_trip.php" class="div-list-btn-s ">景點管理</a>
+                <a href="../../../backstage/spaced_backstage_trip_reviews.php" class="div-list-btn-s">景點評價</a>
+                <a href="../../../backstage/spaced_backstage_order.php" class="div-list-btn-s now">行程訂單管理</a>
             </div>
             <button class="div-list-btn-a">商城</button>
             <div>
-                <a href="#" class="div-list-btn-s">商品管理</a>
+                <a href="../../../backstage/backstage_shop.php" class="div-list-btn-s">商品管理</a>
                 <a href="#" class="div-list-btn-s">商品評價</a>
-                <a href="#" class="div-list-btn-s">商品訂單管理</a>
+                <a href="../../../backstage/backstage_shop_order.php" class="div-list-btn-s">商品訂單管理</a>
             </div>
             <!-- <a href="#" class="div-list-btn-a">百科管理</a> -->
             <button class="div-list-btn-a">互動牆</button>
@@ -57,7 +57,7 @@ try {
 
 <div class="title">
 	<div class=" div-right-span padding_top_3 margin_left_2">
-    <button type="button" class="btn-updata" ><a href="../spaced_backstage_order.php" class="text-1">返回</a></button>
+    <button type="button" class="btn-updata" ><a href="../../../backstage/backstage_shop_order.php" class="text-1">返回</a></button>
 		<div class="span-1 margin_left_3">
 			<label for="search1">
 

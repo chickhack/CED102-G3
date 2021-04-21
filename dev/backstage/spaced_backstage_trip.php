@@ -1,5 +1,5 @@
 <?php 
-require_once("../php/connectbooks_kai.php");
+require_once("./php/connectBooks_kai.php");
 
 try {
 	$sql = "select * from spot";
@@ -22,22 +22,22 @@ try {
     <title>後台景點管理</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/all.css">
-    <link rel="stylesheet" href="../css/pages/spaced_backstage.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/pages/spaced_backstage.css">
 </head>
 
 <body>
     <div class="top w-100 header">
         <!-- <p class="h1 padding_left_4 "></p> -->
-        <img src="../img/logo.png" class="imgs padding_left_4 padding_top_1" alt="">
+        <img src="./img/logo.png" class="imgs padding_left_4 padding_top_1" alt="">
         <p class="text-top padding_left_4 ">Backstage</p>
     </div>
     <div class="div-menu">
         <div class="div-list">
             <button class="div-list-btn-a">景點</button>
             <div>
-                <a href="spaced_backstage_trip.php" class="div-list-btn-s now">景點管理</a>
-                <a href="spaced_backstage_trip_reviews.php" class="div-list-btn-s">景點評價</a>
+                <a href="./spaced_backstage_trip.php" class="div-list-btn-s now">景點管理</a>
+                <a href="./spaced_backstage_trip_reviews.php" class="div-list-btn-s">景點評價</a>
                 <a href="#" class="div-list-btn-s">行程訂單管理</a>
             </div>
             <button class="div-list-btn-a">商城</button>
@@ -64,7 +64,7 @@ try {
                     <div class="span-1 margin_left_3">
                         <label for="search1">
 
-                            <img src="../img/icon/loupe.png" alt="" class="">
+                            <img src="./img/icon/loupe.png" alt="" class="">
                         </label>
                         <input type="search" class="search1" id="search1" placeholder="輸入景點編號、名稱">
                     </div>
@@ -114,7 +114,7 @@ while($spotRow = $spot->fetch(PDO::FETCH_ASSOC)){
 
                 <div id="linebox">
                     <div class="upbox">
-                        <form action="../php/backstage/trip/create_backstage_trip.php" method="POST" enctype="multipart/form-data">
+                        <form action="./php/create_backstage_trip.php" method="POST" enctype="multipart/form-data">
 
                             <input type="number" placeholder="景點編號" name="spot_no" disabled>
                             <input type="text" placeholder="景點名稱" name="spot_name">
@@ -145,7 +145,6 @@ while($spotRow = $spot->fetch(PDO::FETCH_ASSOC)){
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
     </script>
-
     <script>
     var linebox = document.getElementById("linebox");
 

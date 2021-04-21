@@ -11,7 +11,7 @@ if($_GET['trev_stats'] == 0){
 
 
 try{
-    require_once("../../connectbooks_kai.php");
+    require_once("../../../../connect_ced102_g3_local.php");
     $sql = "UPDATE spot_trev SET trev_stats=$status WHERE trev_no=:trev_no";
     $spot = $pdo->prepare($sql);
     $spot->bindValue(":trev_no", $trev_no);

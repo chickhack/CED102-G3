@@ -1,6 +1,6 @@
 <?php
     try{
-        require_once("../php/log.php");
+        require_once("../../../../connect_ced102_g3_local.php");
         $sql = "select * from prod";
         $product = $pdo->query($sql);  
     }catch(PDOException $e){
@@ -58,7 +58,7 @@
                     <div class="span-1 margin_left_1">
                         <label for="search1">
 
-                            <img src="../img/icon/loupe.png" alt="" class="">
+                            <img src="../../" alt="" class="">
                         </label>
                         <input type="search" class="search1" id="search1" placeholder="輸入景點編號、評價編號、內容">
                     </div>

@@ -2,7 +2,7 @@
 $mem_no = $_REQUEST["mem_no"];
 $errMsg='';
 try {
-	require_once("../../log.php");
+	require_once("../../../../connect_ced102_g3_local.php");
 	$sql = "select * from customer where mem_no=:mem_no";
 	$order = $pdo->prepare($sql);	//執行指令
 	$order->bindValue(":mem_no", $mem_no);

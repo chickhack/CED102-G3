@@ -1,5 +1,18 @@
 <?php 
+<<<<<<< HEAD:dev/backstage/spaced_backstage_order.php
 require_once("../../connect_ced102_g3_local.php");
+=======
+<<<<<<< HEAD:dev/backsatge/spaced_backstage_order.php
+// require_once("./php/connectbooks_kai.php");
+<<<<<<< HEAD:dev/backstage/spaced_backstage_order.php
+require_once("../../connect_ced102_g3_local.php");
+=======
+require_once("./php/connectBooks_Yun.php");
+=======
+require_once("../php/connectbooks_kai.php");
+>>>>>>> 34462b282fb3557e5596bfde68fbe15593b76fcf:dev/backstage/spaced_backstage_trip.php
+>>>>>>> 1ae28f91038a4c3c157553d18c3f0413d55d75a6:dev/backsatge/spaced_backstage_order.php
+>>>>>>> 24048ab3ca93da3399a74a0e051f303885825473:dev/backsatge/spaced_backstage_trip.php
 
 try {
 	$sql = "select * from spot_order";
@@ -36,9 +49,21 @@ try {
         <div class="div-list">
             <button class="div-list-btn-a">景點</button>
             <div>
+<<<<<<< HEAD:dev/backstage/spaced_backstage_order.php
                 <a href="spaced_backstage_trip.php" class="div-list-btn-s">景點管理</a>
                 <a href="spaced_backstage_trip_reviews.php" class="div-list-btn-s">景點評價</a>
                 <a href="./spaced_backstage_order.php" class="div-list-btn-s now">行程訂單管理</a>
+=======
+<<<<<<< HEAD:dev/backsatge/spaced_backstage_order.php
+                <a href="./spaced_backstage_trip.php" class="div-list-btn-s ">景點管理</a>
+                <a href="./spaced_backstage_trip_reviews.php" class="div-list-btn-s">景點評價</a>
+                <a href="./spaced_backstage_order.php" class="div-list-btn-s now">行程訂單管理</a>
+=======
+                <a href="spaced_backstage_trip.php" class="div-list-btn-s now">景點管理</a>
+                <a href="spaced_backstage_trip_reviews.php" class="div-list-btn-s">景點評價</a>
+                <a href="#" class="div-list-btn-s">行程訂單管理</a>
+>>>>>>> 34462b282fb3557e5596bfde68fbe15593b76fcf:dev/backstage/spaced_backstage_trip.php
+>>>>>>> 24048ab3ca93da3399a74a0e051f303885825473:dev/backsatge/spaced_backstage_trip.php
             </div>
             <button class="div-list-btn-a">商城</button>
             <div>
@@ -96,10 +121,17 @@ try {
                 while($orderRow = $order->fetch(PDO::FETCH_ASSOC)){ 
                 ?>
                 <div class="div-right-span-for line_low margin_top_2">
+<<<<<<< HEAD:dev/backstage/spaced_backstage_order.php
                     <a href="./php/spot_order_datail.php?order_no=<?=$orderRow["order_no"]?>"
                     class="wi-10 text-1"
                     ><?=$orderRow ["order_no"]?></a> 
                     <a href="./php/spaced_backstage_order_customer.php?mem_no=<?=$orderRow["mem_no"]?>"
+=======
+                    <a href="../php/backstage/spot_order/spot_order_datail.php?order_no=<?=$orderRow["order_no"]?>"
+                    class="wi-10 text-1"
+                    ><?=$orderRow ["order_no"]?></a> 
+                    <a href="../php/backstage/spot_order/spaced_backstage_order_customer.php?mem_no=<?=$orderRow["mem_no"]?>"
+>>>>>>> 24048ab3ca93da3399a74a0e051f303885825473:dev/backsatge/spaced_backstage_trip.php
                     class="wi-10 text-1"
                     ><?=$orderRow ["mem_no"]?></a>
                    
@@ -117,9 +149,15 @@ try {
                     <p class="wi-10 text-1"><?=$orderRow ["car_insp"]?></p>
                     <?php
                         if($orderRow['order_status'] == 0){
+<<<<<<< HEAD:dev/backstage/spaced_backstage_order.php
                             echo "<p class='wi-5 text-1'><a href='./php/edit_backstage_spot_order.php?order_no=$orderRow[order_no]&order_status=$orderRow[order_status]' name='update' type='button' class='btn btn-primary btn-sm'>上架</a></p>";
                         }else{
                             echo "<p class='wi-5 text-1'><a href='./php/edit_backstage_spot_order.php?order_no=$orderRow[order_no]&order_status=$orderRow[order_status]' name='update' type='button' class='btn btn-danger btn-sm'>下架</a></p>";
+=======
+                            echo "<p class='wi-5 text-1'><a href='../php/backstage/spot_order/edit_backstage_spot_order.php?order_no=$orderRow[order_no]&order_status=$orderRow[order_status]' name='update' type='button' class='btn btn-primary btn-sm'>上架</a></p>";
+                        }else{
+                            echo "<p class='wi-5 text-1'><a href='../php/backstage/spot_order/edit_backstage_spot_order.php?order_no=$orderRow[order_no]&order_status=$orderRow[order_status]' name='update' type='button' class='btn btn-danger btn-sm'>下架</a></p>";
+>>>>>>> 24048ab3ca93da3399a74a0e051f303885825473:dev/backsatge/spaced_backstage_trip.php
                             }
                     ?>
                 </div>

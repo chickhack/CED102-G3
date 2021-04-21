@@ -12,7 +12,6 @@
             }
         }
     }
-    echo empty(($_SESSION['cart']));
 ?>
 <!DOCTYPE html>
 <html lang="en">

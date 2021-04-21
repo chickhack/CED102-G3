@@ -1,6 +1,6 @@
 <?php
 try {
-	require_once("./log.php");
+	require_once("../../../../connect_ced102_g3_local.php");
 	// $sql ="SELECT * FROM `spot_order`";
 	$sql= "SELECT * FROM spot_order where mem_no=1010006";
 	$products = $pdo->query($sql);

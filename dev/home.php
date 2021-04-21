@@ -296,7 +296,7 @@
                             </div>
                             <div class="tab-active col-lg-6 col-md-12 col-sm-12">
                                 <!-- 火星動圖 -->
-                                <div id="tag" class="col-md-12 col-sm-12" style="width: 1024px; height: 768px;"></div>
+                                <div id="tag" class="col-md-12 col-sm-12" style=""></div>
                                 <script src="./js/mars.js"></script>
                             </div>
                         </div>
@@ -307,48 +307,6 @@
                             <script src="./js/mars.js"></script>
                       </div>
                     </div>
-                    <!-- 其他tab -->
-                    <div id="tab02" class="tab-inner ">
-                        <div class="tab_top">
-                            <div class="tab_left col-lg-6 col-md-12">
-                                <h2>月球</h2>
-                                <h4 class="margin_top_4">
-                                    月球火山活動的主要後果是顯著的月海。這是由大面積漫溢的低反照率的玄武岩熔岩所構成，覆蓋了月球正面的三分之一。
-                                </h4>
-                                <div class="data margin_top_4">
-                                    <div class="grav">
-                                        <div class="dataTop">
-                                            <span class="var">38</span>
-                                            <span class="data-mid">％</span>
-                                        </div>
-                                        <p>重力</p>
-                                    </div>
-                                    <div class="day">
-                                        <div class="dataTop">
-                                            <span class="var">24</span>
-                                            <span class="data-low">HR</span>
-                                        </div>
-                                        <p>一天</p>
-                                    </div>
-                                    <div class="temp">
-                                        <div class="dataTop">
-                                            <span class="data-mid">-</span>
-                                            <span class="var">60</span>
-                                            <span class="data-top">F</span>
-                                        </div>
-                                        <p>溫度</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="tab-active margin_top_5 col-lg-6 col-md-12 col-sm-12">
-                            <!-- 月球動圖 -->
-                            <img src="img/planet/moon.png">
-                            <!-- <script src="./js/moon.js"></script>  -->
-                        </div>
-                    </div>
-                    <div id="tab03" class="tab-inner ">
 
                     </div>
                 </div>
@@ -397,6 +355,9 @@
             </div>
             <!-- </div> -->
         </div>
+            <a href="photowall.php">
+                <button class="button button_min margin_top_5">看遊記</button>
+            </a>
     </section>
     <!-- 商城 -->
     <div class="shop_box">
