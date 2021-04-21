@@ -2,7 +2,7 @@
 $order_no = $_REQUEST["order_no"];
 $errMsg='';
 try {
-	require_once("log.php");
+	require_once("../../log.php");
 	$sql = "select * from prod_order_datail where order_no=:order_no";
 	$order = $pdo->prepare($sql);	//執行指令
 	$order->bindValue(":order_no", $order_no);
@@ -20,7 +20,7 @@ try {
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>訂單查詢會員</title>
-    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../../../css/all.css">
 	<link rel="stylesheet" href="../css/pages/spaced_backstage.css">
 </head>
 <body>
