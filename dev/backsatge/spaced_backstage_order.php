@@ -1,6 +1,14 @@
 <?php 
+<<<<<<< HEAD:dev/backsatge/spaced_backstage_order.php
 // require_once("./php/connectbooks_kai.php");
+<<<<<<< HEAD:dev/backstage/spaced_backstage_order.php
 require_once("../../connect_ced102_g3_local.php");
+=======
+require_once("./php/connectBooks_Yun.php");
+=======
+require_once("../php/connectbooks_kai.php");
+>>>>>>> 34462b282fb3557e5596bfde68fbe15593b76fcf:dev/backstage/spaced_backstage_trip.php
+>>>>>>> 1ae28f91038a4c3c157553d18c3f0413d55d75a6:dev/backsatge/spaced_backstage_order.php
 
 try {
 	$sql = "select * from spot_order";
@@ -37,9 +45,15 @@ try {
         <div class="div-list">
             <button class="div-list-btn-a">景點</button>
             <div>
+<<<<<<< HEAD:dev/backsatge/spaced_backstage_order.php
                 <a href="./spaced_backstage_trip.php" class="div-list-btn-s ">景點管理</a>
                 <a href="./spaced_backstage_trip_reviews.php" class="div-list-btn-s">景點評價</a>
                 <a href="./spaced_backstage_order.php" class="div-list-btn-s now">行程訂單管理</a>
+=======
+                <a href="spaced_backstage_trip.php" class="div-list-btn-s now">景點管理</a>
+                <a href="spaced_backstage_trip_reviews.php" class="div-list-btn-s">景點評價</a>
+                <a href="#" class="div-list-btn-s">行程訂單管理</a>
+>>>>>>> 34462b282fb3557e5596bfde68fbe15593b76fcf:dev/backstage/spaced_backstage_trip.php
             </div>
             <button class="div-list-btn-a">商城</button>
             <div>
@@ -131,7 +145,7 @@ try {
 
                 <div id="linebox">
                     <div class="upbox">
-                        <form action="./php/create_backstage_trip.php" method="POST" enctype="multipart/form-data">
+                        <form action="../php/backstage/trip/create_backstage_trip.php" method="POST" enctype="multipart/form-data">
 
                             <input type="number" placeholder="景點編號" name="spot_no" disabled>
                             <input type="text" placeholder="景點名稱" name="spot_name">

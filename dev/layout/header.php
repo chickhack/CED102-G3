@@ -1,9 +1,6 @@
-
-
-
 <nav id="nav">
   <div class="logo">
-    <h1><a href="home.php">SPACED</a></h1>
+    <h1><a href="home.html">SPACED</a></h1>
   </div>
   <ul class="nav-links">
     <li class="margin_left_5"><a href="alltrip.php">星球景點</a></li>

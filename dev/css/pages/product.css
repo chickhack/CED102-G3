@@ -1068,9 +1068,27 @@ body {
 
 .comment .messages {
   display: flex;
+<<<<<<< HEAD
   justify-content: center;
   align-items: center;
   justify-content: start;
+=======
+<<<<<<< HEAD
+  justify-content: center;
+  align-items: center;
+  justify-content: start;
+=======
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+>>>>>>> Min
+>>>>>>> 1ae28f91038a4c3c157553d18c3f0413d55d75a6
   border-bottom: 1px solid #AD6E4A;
   padding: 16px 0;
   position: relative;

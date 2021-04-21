@@ -1,21 +1,5 @@
 <?php
     require_once('./php/connectbooks_yi.php');
-
-    if(isset($_POST['email']))
-    {	 
-        $email = $_POST['email'];
-        $mem_psw = $_POST['mem_psw'];
-        $sql = "INSERT INTO customer (email,mem_psw)
-        VALUES (?,?)";
-        if (mysqli_query($dsn, $sql)) {
-            echo "註冊成功!";
-        } else {
-            echo "Error: " . $sql . "
-    " . mysqli_error($dsn);
-        }
-        mysqli_close($dsn);
-    }
-
 ?>
 <!DOCTYPE html>
 <html>
@@ -37,12 +21,65 @@
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css"
     />
-    <link rel="stylesheet" type="text/css" href="./css/pages/register.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="./css/pages/register.css" /> -->
   </head>
   <body>
-  <?php
-      include '../dev/layout/header.php';
-  ?>
+  <header>
+        <nav id="nav">
+            <div class="logo">
+                <h1><a href="home.php">SPACED</a></h1>
+            </div>
+            <ul class="nav-links">
+                <li class="margin_left_5 now"><a href="alltrip.php">星球景點</a></li>
+                <li class="margin_left_5"><a href="planet.php">星星世界</a></li>
+                <li class="margin_left_5"><a href="shop.php">星球商城</a></li>
+                <li class="margin_left_5"><a href="photowall.php">太空互動</a></li>
+                <li class="margin_left_5"><a href="Leaderboard.php">玩家排行</a></li>
+                <!-- <li><a href=""><img src="./images/ticket.png" alt="" class="icon"></a></li>
+        <li><a href=""><img src="./images/shopping-cart_(1).png" alt="" class="icon"></a></li>
+        <li><a href=""><img src="./images/round-account-button-with-user-inside_(1).png" alt="" class="icon"></a></li> -->
+            </ul>
+            <ul class="nav-icons">
+                <li class="nav-trip">
+                    <a href="./car-itineray.php">
+                        <img src="./img/icon/header/luggage.png" alt="" class="icon" />
+                        <?php
+                        if(isset($_SESSION["trip-cart"])){
+                            $count = count($_SESSION["trip-cart"]);
+                            echo "<div class='trip-count'>$count</div>";
+                        }else{
+                            echo "";
+                        }
+                     ?>
+                    </a>
+                </li>
+                <li class="nav-cart">
+                    <a href="./shop_cart.php">
+                        <img src="./img/icon/header/shopping-cart_(1).png" alt="" class="icon" />
+                        <?php
+                if(isset($_SESSION["cart"])){
+                    $count = count($_SESSION["cart"]);
+                    echo "<div class='count'>$count</div>";
+                }else{
+                    echo "";
+                }
+            ?>
+                    </a>
+                </li>
+                <li>
+                    <a href="./login.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png"
+                            alt="" class="icon" /></a>
+                </li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+        <script src="./js/header.js"></script>
+
+    </header>
        
 
     <div class="container-fluid">
@@ -91,7 +128,6 @@
         function $id(id){
             return document.getElementById(id);
         }
-        var register_btn = document.querySelector(".register_btn");
 
         //檢查密碼是否符合
         function validatePassword(e) { 
@@ -120,44 +156,70 @@
                 e.preventDefault();
                 return;
             }
-        }
+             
 
 
         // 提交後台判斷
             // -----檢查帳號信箱重複
-            function signupCheck(){
+            function checkId(){
                 let xhr = new XMLHttpRequest();
-                let newEmail = document.getElementById('email');
-                let check_user = document.getElementById(".check_user");
+                let logMemId = document.getElementById("register_form");
+                xhr.onload = function(){//server端已執行完畢
                     console.log("onload : ", xhr.readyState);
                     if(xhr.status == 200){//http status is OK
-                        if(xhr.responseText == 2 && newEmail.value != null){
-                            register_btn.disabled = false;
+                        if(xhr.responseText == 2 && logMemId.value != null){
+                            // createNewAcc.disabled = false;
                             // createRemind.style.opacity = 0;
                             alert("此帳號可使用");
                         }else{
-                            register_btn.disabled = true;
+                            // createNewAcc.disabled=true
                             alert("此帳號已存在, 不可用");
                             // createRemind.style.opacity = 1;
                         }
                     }else{
                         alert(xhr.status);
                     }
-                 
+                } 
                 
                 let url = "./php/check_username.php";
                 xhr.open("post", url, true);
                 xhr.setRequestHeader("content-type","application/x-www-form-urlencoded");
-                let data = `newEmail=${$id('newEmail').value}`;
-                xhr.send(data);
+                let data_AD = `logMemId=${$id("email").value}`;
+                xhr.send(data_AD);
 
             };
             
 
+        }
         
+        window.addEventListener("load", function(){
+            $id('register_form').onsubmit = validatePassword;
+        });
         
-        check_user.addEventListener('click', signupCheck(),false);
-        register_btn.addEventListener('click', validatePassword(),false);
+        //檢查帳號是否重複
+        // $(document).ready(function(){
+        //     $("#register_form").on("submit",function(e){
+        //         e.preventDefault();
+        //         var email = $("#email").val();
+        //     if (email !== "") {
+        //             $.ajax({
+        //             url : "./php/check_username.php",
+        //             type : "POST",
+        //             cache:false,
+        //             data : {email:email},
+        //             success:function(result){
+        //                 if (result == 1) {
+        //                 $("#message").text('此信箱已被註冊！').css("color", "red");
+        //                 }else{
+        //                 $("#message").text('此帳號可被使用！').css("color", "green");
+        //                 }
+        //             }
+        //             });
+        //         }else{
+        //         $("#message").text('Please fill the all fields');
+        //         }
+        //     });
+        // });
 
 
         // 檢查密碼強度

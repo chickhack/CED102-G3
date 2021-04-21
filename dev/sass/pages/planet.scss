@@ -111,6 +111,11 @@ button:hover{
                 justify-content: space-between;
                 flex-wrap: wrap;
                 padding: 0 15%;
+                .tab-active{
+                    .tag{
+                        left: -500px;
+                    }
+                }
                 .tab_left{
                     max-width: 400px;
                     h4{
@@ -128,6 +133,7 @@ button:hover{
                     // justify-content: center;
                     font-family: Haettenschweiler, sans-serif;
                     .grav, .day, .temp{
+                        padding: 5px 0;
                         justify-content: center;
                         align-items: center;
                         border: 1px solid $gold;
@@ -182,12 +188,15 @@ button:hover{
                 }
 
             }
-
             @include respond(mobile){
                 .tab_top{
                     padding: 0 5%;
                 }
             }
+            // .tab-active{
+            //     position: relative;
+            //     top: 0;
+            //     }
             
             .planet_content{
                 display: flex;
@@ -249,19 +258,5 @@ button:hover{
             
             }
         }
-        .tab_moon{
-            .tab_top{
-                display:flex;
-            }
-            .tab-active{
-                // bordeR: 1px solid yellow;
-            }
-            img.moon_pic{
-                position: relative;
-                z-index: 99;
-                top: -100px;
-                left: -10px;
 
-            }
-        }
         }
