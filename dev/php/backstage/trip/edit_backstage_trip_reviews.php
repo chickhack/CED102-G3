@@ -11,14 +11,14 @@ if($_GET['trev_stats'] == 0){
 
 
 try{
-    require_once("../../../../connect_ced102_g3_local.php");
+    require_once("../../connect_ced102_g3_local.php");
     $sql = "UPDATE spot_trev SET trev_stats=$status WHERE trev_no=:trev_no";
     $spot = $pdo->prepare($sql);
     $spot->bindValue(":trev_no", $trev_no);
     $spot->execute();
     if($spot->execute()){
         
-        echo "已下架!". "<br>";
+        // echo "已下架!". "<br>";
 	    echo "<script>window.location.href='../../../backstage/spaced_backstage_trip_reviews.php'</script>";
     }
 }

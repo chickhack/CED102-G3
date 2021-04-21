@@ -40,7 +40,6 @@
 
 
     <div class="container-fluid">
-<<<<<<< HEAD
     <header>
         <nav id="nav">
             <div class="logo">
@@ -97,11 +96,6 @@
         <script src="./js/header.js"></script>
 
     </header>
-=======
-    <?php
-      include '../dev/layout/header.php';
-    ?>
->>>>>>> 24048ab3ca93da3399a74a0e051f303885825473
     <!-- 動態背景 -->
       <div id="particles-js">
         <script src="./js/background.js"></script>
@@ -114,15 +108,6 @@
         <div class="tabList col-LG-12 ">
           <ul class="tab-title">
             <li><a href="#tab01">火星</a></li>
-<<<<<<< HEAD
-              <li><a href="#tab02">月球</a></li>
-              <li><a href="#tab03">木星</a></li>
-              <li><a href="#tab03">水星</a></li>
-              <li><a href="#tab03">水星</a></li>
-              <li><a href="#tab03">水星</a></li>
-              <li><a href="#tab03">水星</a></li>
-          </ul>
-=======
             <li><a href="#tab02">月球</a></li>
             <li><a href="#tab03">木星</a></li>
             <li><a href="#tab03">水星</a></li>
@@ -130,7 +115,6 @@
             <li><a href="#tab03">土星</a></li>
             <li><a href="#tab03">天王星</a></li>
         </ul>
->>>>>>> 24048ab3ca93da3399a74a0e051f303885825473
         </div>
         <div class="separator col-10"></div>
       <!-- 星球頁籤內容 -->

@@ -7,7 +7,9 @@ if(isset($_POST["add"])){
        if(!in_array($_POST["spot_id"], $item_array_id)){
            $count = count($_SESSION["trip-cart"]);
            $item_array = array(
-               "spot_id" => $_POST["spot_id"]
+               "spot_id" => $_POST["spot_id"],
+            //    "spot_qty" => $_POST['spot_qty'],
+            //    "spot_date" => $_POST['spot_date']
            );
            $_SESSION["trip-cart"][$count] =$item_array;
            // echo '<script>window.location="alltrip_test.php"</script>';
@@ -17,16 +19,18 @@ if(isset($_POST["add"])){
    }
        }else{
            $item_array = array(
-               "spot_id" => $_POST["spot_id"]
+               "spot_id" => $_POST["spot_id"],
+            //    "spot_qty" => $_POST['spot_qty'],
+            //    "spot_date" => $_POST['spot_date']
            );
            $_SESSION["trip-cart"][0] = $item_array;
    }
 }
 
-$spot_no = $_GET["spot_no"];
+$spot_no = @$_GET["spot_no"];
 $errMsg = "";
 try{
-    require_once("../connect_ced102_g3_local.php");
+    require_once("./php/connect_ced102_g3_local.php");
     $sql = "select *from spot where spot_no = :spot_no";
     $spot = $pdo->prepare($sql);
     $spot->bindValue(":spot_no", $spot_no);
@@ -62,7 +66,7 @@ try{
 </head>
 
 <body>
-<header>
+    <header>
         <nav id="nav">
             <div class="logo">
                 <h1><a href="home.php">SPACED</a></h1>
@@ -202,18 +206,22 @@ if( $errMsg != ""){ //例外
                                 <div class="amount margin_top_2">
                                     <p class="h4 date_text">數量</p>
                                     <button class="minus btn-pull" id="minus">－</button>
+                                    <!-- <input type="number" name="quantity" id="quantity" v-model.number="verified"
+                                        :min="0" :max="100"> -->
+                                    <input type="hidden" name="spot_qty" :value="verified">
                                     <input type="number" value="1" id="num" class="btn-nu p" min="0">
                                     <button class="add btn-pull" id="add">＋</button>
                                 </div>
                             </div>
-                            
+
                             <div class="btn  margin_top_2">
-                                
+
                                 <button type="submit" name="add" class="addin small myTrip"><img class="plus"
                                         src="./img/icon/plus.png" alt="">
                                     加入我的行程</button>
-                                    <input type="hidden" name="spot_id" :value="spot_no">
-                                <button type="submit" name="add" class="button_min p buy margin_left_3"><a href="./car-itineray.php">前往訂購</a></button>
+                                <input type="hidden" name="spot_id" :value="spot_no">
+                                <button type="submit" name="add" class="button_min p buy margin_left_3"><a
+                                        href="./car-itineray.php">前往訂購</a></button>
                             </div>
                         </form>
                 </div>
@@ -235,11 +243,11 @@ if( $errMsg != ""){ //例外
                     </div>
                     <ul class="margin_top_5">
                         <li class="messages" v-for="comment in comments" v-if="<?php echo $spot_no;?>==comment.spot_no">
-                        <!-- <li class="messages" v-for="comment in comments" > -->
+                            <!-- <li class="messages" v-for="comment in comments" > -->
                             <img :src="comment.mem_pic" alt="">
                             <div class="words margin_left_3">
-                            <div class="name">
-                            <p>{{comment.last_name}}{{comment.first_name}}</p>
+                                <div class="name">
+                                    <p>{{comment.last_name}}{{comment.first_name}}</p>
                                     <hr>
                                     <p>{{comment.trev_date}}</p>
                                 </div>
