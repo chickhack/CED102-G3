@@ -56,7 +56,8 @@ img {
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
   margin: 0;
   padding: 0;
 }
@@ -77,8 +78,11 @@ body {
   font-size: 14px;
   background-color: #0c0d18;
   overflow-x: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
   -o-user-select: none;
-  user-select: none;
+  -ms-user-select: none;
+      user-select: none;
 }
 
 h1, .h1 {
@@ -359,9 +363,15 @@ body {
 }
 
 nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   justify-content: center;
   background-color: #0c0d18;
   position: fixed;
@@ -385,10 +395,18 @@ nav .logo h1 a {
 }
 
 nav .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   width: 75%;
 }
 
@@ -396,29 +414,20 @@ nav .nav-links a {
   width: 100%;
   color: #ffffff;
   padding: 8px;
-  transition: all .3s;
-}
-
-nav .nav-links a:hover {
-  color: #AD6E4A;
-}
-
-@media all and (max-width: 992px) {
-  nav .nav-links a:hover {
-    color: #0c0d18;
-  }
-}
-
-nav .nav-links .bread {
-  color: #AD6E4A;
-  font-weight: 900;
 }
 
 nav .nav-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 12%;
   margin-left: 50px;
 }
@@ -434,6 +443,7 @@ nav .burger div {
   height: 2px;
   background-color: #ffffff;
   margin: 5px;
+  -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
 
@@ -507,7 +517,8 @@ nav .nav-trip .trip-count {
 
 @media (max-width: 992px) {
   nav {
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   nav .nav-links {
     position: absolute;
@@ -515,11 +526,20 @@ nav .nav-trip .trip-count {
     height: 88vh;
     top: 12vh;
     background-color: #AD6E4A;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 30%;
+    -webkit-transition: all .5s ease-in;
     transition: all .5s ease-in;
   }
   nav .nav-links li {
@@ -534,7 +554,9 @@ nav .nav-trip .trip-count {
   }
   nav .nav-icons {
     width: 100%;
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
   nav .nav-icons .icon {
     margin: 0 30px 0 15px;
@@ -557,26 +579,44 @@ nav .nav-trip .trip-count {
   nav .nav-icons {
     width: 50%;
     margin-left: 16px;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   nav .nav-icons .icon {
     margin: 0;
   }
 }
 
-@keyframes navLinkFade {
+@-webkit-keyframes navLinkFade {
   from {
     opacity: 0;
-    transform: translateX(50px);
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
   }
   to {
     opacity: 1;
-    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
   }
 }
 
 .toggle .line1 {
-  transform: rotate(45deg) translate(4px, 6px);
+  -webkit-transform: rotate(45deg) translate(4px, 6px);
+          transform: rotate(45deg) translate(4px, 6px);
 }
 
 .toggle .line2 {
@@ -584,7 +624,8 @@ nav .nav-trip .trip-count {
 }
 
 .toggle .line3 {
-  transform: rotate(-45deg) translate(3px, -6px);
+  -webkit-transform: rotate(-45deg) translate(3px, -6px);
+          transform: rotate(-45deg) translate(3px, -6px);
 }
 
 footer {
@@ -604,19 +645,28 @@ footer .links .logo {
   position: relative;
   left: 50%;
   bottom: 50px;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 footer .links .footer-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 55%;
   position: relative;
   left: 50%;
   bottom: 30px;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 footer .links .footer-links a {
@@ -627,7 +677,8 @@ footer .footer_moon {
   position: relative;
   left: 50%;
   max-width: 40%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 footer .smoke {
@@ -636,7 +687,8 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 @media (max-width: 768px) {
@@ -760,7 +812,8 @@ button:hover {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   top: 35%;
   letter-spacing: 2px;
 }
@@ -776,15 +829,10 @@ button:hover {
 
 .planet_tab ul.tab-title {
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 1ae28f91038a4c3c157553d18c3f0413d55d75a6
   display: flex;
   justify-content: center;
   column-gap: 3%;
   flex-wrap: wrap;
-<<<<<<< HEAD
-=======
 =======
   display: -webkit-box;
   display: -ms-flexbox;
@@ -797,7 +845,6 @@ button:hover {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 >>>>>>> Min
->>>>>>> 1ae28f91038a4c3c157553d18c3f0413d55d75a6
   list-style: none;
 }
 
@@ -814,16 +861,6 @@ button:hover {
   border-bottom: 4px solid #AD6E4A;
 }
 
-@media all and (max-width: 768px) {
-  .planet_tab ul.tab-title {
-    column-gap: 1%;
-  }
-  .planet_tab ul.tab-title li a {
-    font-size: 14px;
-    padding: 12px 10px;
-  }
-}
-
 .planet_tab .separator {
   margin: 0 auto;
   height: 1px;
@@ -838,10 +875,9 @@ button:hover {
 }
 
 .planet_tab .tab-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
-  flex-direction: column;
-=======
 <<<<<<< HEAD
   flex-direction: column;
 =======
@@ -850,16 +886,10 @@ button:hover {
       -ms-flex-direction: column;
           flex-direction: column;
 >>>>>>> Min
->>>>>>> 1ae28f91038a4c3c157553d18c3f0413d55d75a6
   text-align: left;
 }
 
 .planet_tab .tab-inner .tab_top {
-<<<<<<< HEAD
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-=======
 <<<<<<< HEAD
   display: flex;
   justify-content: space-between;
@@ -874,7 +904,6 @@ button:hover {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 >>>>>>> Min
->>>>>>> 1ae28f91038a4c3c157553d18c3f0413d55d75a6
   padding: 0 15%;
 }
 
@@ -896,9 +925,6 @@ button:hover {
 <<<<<<< HEAD
   display: flex;
 =======
-<<<<<<< HEAD
-  display: flex;
-=======
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -906,22 +932,16 @@ button:hover {
       -ms-flex-pack: center;
           justify-content: center;
 >>>>>>> Min
->>>>>>> 1ae28f91038a4c3c157553d18c3f0413d55d75a6
   font-family: Haettenschweiler, sans-serif;
 }
 
 .planet_tab .tab-inner .tab_top .data .grav, .planet_tab .tab-inner .tab_top .data .day, .planet_tab .tab-inner .tab_top .data .temp {
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 1ae28f91038a4c3c157553d18c3f0413d55d75a6
   justify-content: center;
   align-items: center;
   border: 1px solid #AD6E4A;
   display: flex;
   flex-direction: column;
-<<<<<<< HEAD
-=======
 =======
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -938,7 +958,6 @@ button:hover {
       -ms-flex-direction: column;
           flex-direction: column;
 >>>>>>> Min
->>>>>>> 1ae28f91038a4c3c157553d18c3f0413d55d75a6
   min-width: 100px;
   max-height: 160px;
   border-right: 1px solid #AD6E4A;
@@ -968,23 +987,15 @@ button:hover {
   font-size: 16px;
 }
 
-@media all and (max-width: 768px) {
-  .planet_tab .tab-inner .tab_top {
-    padding: 0 5%;
-  }
-}
-
 .planet_tab .tab-inner .planet_content {
-<<<<<<< HEAD
-=======
 <<<<<<< HEAD
 =======
   display: -webkit-box;
   display: -ms-flexbox;
 >>>>>>> Min
->>>>>>> 1ae28f91038a4c3c157553d18c3f0413d55d75a6
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .planet_tab .tab-inner .planet_content .carousel {
@@ -997,9 +1008,6 @@ button:hover {
 
 .planet_tab .tab-inner .planet_content .imgs .img1 {
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 1ae28f91038a4c3c157553d18c3f0413d55d75a6
   transform: translate(20%);
 }
 
@@ -1012,8 +1020,6 @@ button:hover {
 }
 
 .planet_tab .tab-inner .planet_content .desc {
-<<<<<<< HEAD
-=======
 =======
   -webkit-transform: translate(20%);
           transform: translate(20%);
@@ -1033,10 +1039,13 @@ button:hover {
   display: -webkit-box;
   display: -ms-flexbox;
 >>>>>>> Min
->>>>>>> 1ae28f91038a4c3c157553d18c3f0413d55d75a6
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .planet_tab .tab-inner .planet_content .desc p {
@@ -1049,40 +1058,43 @@ button:hover {
   .planet_tab .tab-inner .tab-inner {
 <<<<<<< HEAD
 =======
-<<<<<<< HEAD
-=======
     display: -webkit-box;
     display: -ms-flexbox;
 >>>>>>> Min
->>>>>>> 1ae28f91038a4c3c157553d18c3f0413d55d75a6
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .planet_tab .tab-inner .tab-inner .tab-active {
 <<<<<<< HEAD
 =======
-<<<<<<< HEAD
-=======
     display: -webkit-box;
     display: -ms-flexbox;
 >>>>>>> Min
->>>>>>> 1ae28f91038a4c3c157553d18c3f0413d55d75a6
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .planet_tab .tab-inner .planet_content {
 <<<<<<< HEAD
 =======
-<<<<<<< HEAD
-=======
     display: -webkit-box;
     display: -ms-flexbox;
 >>>>>>> Min
->>>>>>> 1ae28f91038a4c3c157553d18c3f0413d55d75a6
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .planet_tab .tab-inner .planet_content .imgs {
     display: none;
@@ -1094,16 +1106,5 @@ button:hover {
   .planet_tab .tab-inner .planet_content .desc {
     max-width: 400px;
   }
-}
-
-.planet_tab .tab_moon .tab_top {
-  display: flex;
-}
-
-.planet_tab .tab_moon img.moon_pic {
-  position: relative;
-  z-index: 99;
-  top: -100px;
-  left: -10px;
 }
 /*# sourceMappingURL=planet.css.map */

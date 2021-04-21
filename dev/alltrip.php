@@ -59,8 +59,13 @@ session_start();
                 <h1><a href="home.php">SPACED</a></h1>
             </div>
             <ul class="nav-links">
+<<<<<<< HEAD
                 <li class="margin_left_5 now "><a href="alltrip.php" class="bread">星球景點</a></li>
                 <li class="margin_left_5"><a href="planet.php">星星世界</a></li>
+=======
+                <li class="margin_left_5 now"><a href="alltrip.php">星球景點</a></li>
+                <li class="margin_left_5"><a href="planet.html">星星世界</a></li>
+>>>>>>> 297431834968603e149982f10b2e88b593556356
                 <li class="margin_left_5"><a href="shop.php">星球商城</a></li>
                 <li class="margin_left_5"><a href="photowall.php">太空互動</a></li>
                 <li class="margin_left_5"><a href="Leaderboard.php">玩家排行</a></li>

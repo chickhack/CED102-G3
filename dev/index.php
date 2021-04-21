@@ -20,7 +20,7 @@
         <div class="link">
             <img class="logo"src="img/logo.png" alt="">
             <a href="home.php" class="btn btn-4"><span>前台</span></a>
-            <a href="spaced_backstage_trip.php" class="btn btn-4"><span>後台</span></a>
+            <a href="./backstage/spaced_backstage_trip.php" class="btn btn-4"><span>後台</span></a>
         </div>
 
 </div>

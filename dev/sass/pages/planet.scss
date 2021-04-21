@@ -24,20 +24,12 @@
 //=========按鈕設定
 button{
     background-color: transparent;
-    color: $gold;
-    a{
-        text-decoration: none;
-        color: $gold;
-    }
+    color: white;
 }
 button:hover{
     color: #ffff;
     border: 1px solid $gold;
     background: $gold;
-    a{
-        text-decoration: none;
-        color: $white;
-    }
 }
 
 // =========星球Banner
