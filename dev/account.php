@@ -27,7 +27,7 @@
   <!-- 動態背景 -->
   <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
-  <link rel="stylesheet" href="./css/all.css">
+  <link rel="stylesheet" href="./css/pages/all.css">
   <link rel="stylesheet" href="./css/pages/photowall.css">
   <link rel="stylesheet" href="./css/pages/shop.css">
   <link rel="stylesheet" href="./css/pages/alltrip.css">
@@ -108,7 +108,6 @@
   <div id="particles-js">
     <script src="./js/background.js"></script>
   </div>
-  <div class="planet_banner"></div>
 
   <div id="accountapp">
 
@@ -284,7 +283,9 @@
                     <td v-if="item.order_status == 0">待出發</td>
                     <td v-else="item.order_status == 1">已結束</td>
                     <!-- <td>{{item.state}}</td> -->
-                    <td>{{item.guide}}</td>
+                    <td v-if="item.guide == 0">無</td>
+                    <td v-else="item.guide == 1">有</td>
+                    <!-- <td>{{item.guide}}</td> -->
                   </tr>
                 </tbody>
               </table>
@@ -762,9 +763,9 @@
 
             <div class="exchange margin_top_5">
               <p class="point_p">將</p>
-              <input type="text" class="form-control point_input" id="" placeholder=輸入欲轉換的積分>
+              <input type="text" v-model="miles" @input="miles2coin" class="form-control point_input" placeholder=輸入欲轉換的積分>
               <p class="point_p">積分，轉換為</p>
-              <input type="text" readonly class="form-control-plaintext point_input" id="" value="">
+              <input type="text" v-model="coin" readonly class="form-control-plaintext point_input">
               <p class="point_p">宇宙幣。</p>
             </div>
             <div class="point_btn">
@@ -803,12 +804,13 @@
       el: "#accountapp",
       data: {
         link: "a",
-        // dynamicComponent: 'bye',
         step: 1,
         isChange: false,
         isEditing: false,
         toggle: false,
         visibility: 3,
+        miles: 2,
+        coin: 1,
         customer: { //會員資料
           mem_no: '1010006',
           mem_lv: '初星者',
@@ -936,31 +938,6 @@
           name: "宇宙平衡鞋",
           price: 5000,
           cart: "./img/shop/cart.png",
-        }, {
-          img: "./img/shop/cloth.png",
-          name: "太空衣",
-          price: 10000,
-          cart: "./img/shop/cart.png",
-        }, {
-          img: "./img/shop/cloth.png",
-          name: "太空衣",
-          price: 10000,
-          cart: "./img/shop/cart.png",
-        }, {
-          img: "./img/shop/shoes.png",
-          name: "宇宙平衡鞋",
-          price: 5000,
-          cart: "./img/shop/cart.png",
-        }, {
-          img: "./img/shop/shoes.png",
-          name: "宇宙平衡鞋",
-          price: 5000,
-          cart: "./img/shop/cart.png",
-        }, {
-          img: "./img/shop/cloth.png",
-          name: "太空衣",
-          price: 10000,
-          cart: "./img/shop/cart.png",
         }],
       },
       methods: {
@@ -1018,6 +995,9 @@
             // $(".toBeToggled").eq(e).slideUp()
             $(".order_icon").eq(e).attr("src", "./img/icon/drop-down-arrow.png");
           };
+        },
+        miles2coin(){  // 轉換積分
+          this.coin = this.miles / 2
         },
         mouseMe() {  // hover貼文功能
           $('.img1').mouseover(function () {
