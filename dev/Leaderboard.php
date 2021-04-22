@@ -12,7 +12,7 @@ session_start();
     <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.12/vue.js'></script>
     <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <link rel="shortcut icon" href="./img/icon/shortcut.png" type="image/x-icon">
-    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/pages/all.css">
     <link rel="stylesheet" href="./css/pages/Leaderboard.css">
 </head>
 <style>
@@ -74,6 +74,14 @@ session_start();
           alt=""
           class="icon"
       /></a>
+    </li>
+    <li>
+        <?php
+            if(isset($_SESSION['mem_no'])){?>
+                <a href="./account.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png" alt="" class="icon"/></a>
+        <?php }else{ ?>
+                <a href="./login.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png" alt="" class="icon"/></a>
+        <?php } ?>
     </li>
   </ul>
   <div class="burger">
@@ -202,6 +210,8 @@ session_start();
 
   </footer>
    </div>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 <script>
    $(document).ready(function() {

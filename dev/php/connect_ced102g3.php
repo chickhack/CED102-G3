@@ -1,5 +1,5 @@
 <?php
- $dbname="tebamefe_ced102g3";
+ $dbname="tibamefe_ced102g3";
      $user="tibamefe_since2021";
     $password="vwRBSb.j&K#E";
     $dsn="mysql:host=localhost;post=3306;dbname=$dbname;charset=utf8";

@@ -12,7 +12,7 @@ session_start();
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/pages/all.css">
     <link rel="stylesheet" href="./css/pages/order-itineray.css">
     <link rel="shortcut icon" href="./img/icon/shortcut.png" type="image/x-icon">
     <!-- 動態背景 -->
