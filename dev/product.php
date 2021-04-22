@@ -1,11 +1,42 @@
 <?php
     session_start();
+    //立即購買按鈕
+    if(isset($_POST['buy'])){
+        if(isset($_SESSION["cart"])){
+            $item_array_id = array_column($_SESSION["cart"],"product_id");
+           //  print_r($_SESSION["cart"]);
+   
+           if(in_array($_POST["product_id"],$item_array_id)){
+               echo "<script>window.location.href = './shop_cart.php'</script>";
+           }else{
+               $count = count($_SESSION["cart"]);
+               $item_array = array(
+                   "product_id" => $_POST["product_id"],
+                   "prod_qty" => $_POST['prod_qty']
+               );
+   
+               $_SESSION["cart"][$count] = $item_array;
+               // print_r($_SESSION["cart"]);
+               echo "<script>window.location.href = './shop_cart.php'</script>";
+           }
+   
+        }else{
+            $item_array = array(
+                "product_id" => $_POST["product_id"],
+                "prod_qty" => $_POST['prod_qty']
+            );
+           //  create new session variable
+           $_SESSION["cart"][0] = $item_array;
+           // print_r($_SESSION["cart"]);
+        }
+    }
+
+    //加入購物車按鈕
     if(isset($_POST["add"])){
-        //  print_r($_POST["product_id"])
+        //  print_r($_POST["prod_qty"]);
          if(isset($_SESSION["cart"])){
              $item_array_id = array_column($_SESSION["cart"],"product_id");
-             print_r($item_array_id);
-            // print_r($_SESSION["cart"]);
+            //  print_r($_SESSION["cart"]);
     
             if(in_array($_POST["product_id"],$item_array_id)){
                 echo "<script>alert('product is already added in the cart')</script>";
@@ -13,7 +44,8 @@
             }else{
                 $count = count($_SESSION["cart"]);
                 $item_array = array(
-                    "product_id" => $_POST["product_id"]
+                    "product_id" => $_POST["product_id"],
+                    "prod_qty" => $_POST['prod_qty']
                 );
     
                 $_SESSION["cart"][$count] = $item_array;
@@ -22,7 +54,8 @@
     
          }else{
              $item_array = array(
-                 "product_id" => $_POST["product_id"]
+                 "product_id" => $_POST["product_id"],
+                 "prod_qty" => $_POST['prod_qty']
              );
             //  create new session variable
             $_SESSION["cart"][0] = $item_array;
@@ -53,18 +86,18 @@
     <h1><a href="home.php">SPACED</a></h1>
   </div>
   <ul class="nav-links">
-    <li class="margin_left_5"><a href="alltrip.html">星球景點</a></li>
-    <li class="margin_left_5"><a href="planet.html">星星世界</a></li>
-    <li class="margin_left_5"><a href="shop.html">星球商城</a></li>
-    <li class="margin_left_5"><a href="photowall.html">太空互動</a></li>
-    <li class="margin_left_5"><a href="Leaderboard.html">玩家排行</a></li>
+    <li class="margin_left_5"><a href="alltrip.php">星球景點</a></li>
+    <li class="margin_left_5"><a href="planet.php">星星世界</a></li>
+    <li class="margin_left_5"><a href="shop.php" class="bread">星球商城</a></li>
+    <li class="margin_left_5"><a href="photowall.php">太空互動</a></li>
+    <li class="margin_left_5"><a href="Leaderboard.php">玩家排行</a></li>
     <!-- <li><a href=""><img src="./images/ticket.png" alt="" class="icon"></a></li>
         <li><a href=""><img src="./images/shopping-cart_(1).png" alt="" class="icon"></a></li>
         <li><a href=""><img src="./images/round-account-button-with-user-inside_(1).png" alt="" class="icon"></a></li> -->
   </ul>
   <ul class="nav-icons">
     <li>
-      <a href="./car-itineray.html"
+      <a href="./car-itineray.php"
         ><img src="./img/icon/header/luggage.png" alt="" class="icon"
       /></a>
     </li>
@@ -82,7 +115,7 @@
         </a>
     </li> 
     <li>
-      <a href="./login.html"
+      <a href="./login.php"
         ><img
           src="./img/icon/header/round-account-button-with-user-inside_(1).png"
           alt=""
@@ -101,62 +134,46 @@
 
 
     <div id="particles-js"></div>
-<<<<<<< HEAD
     <a href="#" class="go-top"></a>
     <section class="container" id="app">
-=======
-    <section class="container">
->>>>>>> denis
         <div class="product">
             <div class="imgs">
                 <div class="img">
-                    <?php
-                        $img = $_GET["pic"];
-                        $arrImg = explode("==", $img);
-                    ?>
-                    <img src=<?php echo "./img/shop/$arrImg[1]"?> alt="" class="bigImg">
+                    <img :src="'./img/shop/'+products[0].img" alt="" class="bigImg">
                     <div class="smallImg margin_top_2">
-                        <?php
-                            for($i=1;$i<count($arrImg);$i++){
-                        ?>
-                        <div class="imgDetail img1">
-                            <img src=<?php echo "./img/shop/$arrImg[$i]";?> alt="">
-                        </div>
-                        <?php
-                            }
-                        ?>
+                        <div class="imgDetail img1" v-for="pic in products[0]['prod_pic']" @click="changeImg">
+                            <img :src="'./img/shop/'+ pic" alt="">
+                        </div>  
                     </div>
                 </div>
             </div>
             <form class="detail margin_left_4" 
-                    action="product.php?id=<?php echo $_GET["id"]?>&name=<?php echo $_GET["name"]?>&price=<?php echo $_GET["price"]?>&info=<?php echo $_GET["info"]?>&pic=<?php echo $_GET["pic"]?>" 
+                    action="product.php?id=<?php echo $_GET["id"]?>"
                     method="post">
                 <p>裝備</p>
-                <h3 class="margin_top_2"><? echo $_GET["name"]?></h3>
+                <h3 class="margin_top_2">{{products[0]["prod_name"]}}</h3>
                 <hr class="margin_top_2">
-                <p class="margin_top_2 line_low"><? echo $_GET["info"]?></p>
+                <p class="margin_top_2 line_low">{{products[0]["prod_info"]}}</p>
                 <p class="margin_top_2"><strong>價格</strong></p>
-                <p class="h3 margin_top_2 price"><? echo '$'.$_GET["price"]?></p>
+                <p class="h3 margin_top_2 price">${{products[0]["prod_price"]}}</p>
                 <div class="quantity margin_top_3">
                     <label for="quantity">數量</label>
                     <div class="as margin_top_2">
-                        <span class="minus">&minus;</span>
-                        <input type="number" name="quantity" id="quantity" value="1" min="1">
-                        <span class="add">&plus;</span>
+                        <span class="minus" @click="subQuantity">&minus;</span>
+                        <input type="number" name="quantity" id="quantity" v-model.number="verified" :min="0" :max="100">
+                        <input type="hidden" name="prod_qty" :value="verified">
+                        <span class="add" @click="addQuantity">&plus;</span>
                     </div>
                     <button type="submit" name="add" class="button_large margin_top_2">加入購物車</button>
                     <input type="hidden" name="product_id" value=<?php echo $_GET["id"]?>>
-                    <a class="button_large margin_top_2 margin_left_1 buy" href="shop_cart.php">立即購買</a>
+                    <button type="submit" name="buy" class="button_large margin_top_2 margin_left_1 buy" href="./shop_cart.php">立即購買</button>
                 </div>
                 <img src="./img/icon/bookmark-outline.png" alt="" class="icon favorites">
             </form>
         </div>
-        <p class="describe line_low">選用高質感的超細纖維皮革，具有真皮的透氣度與柔軟度，軟可彎折，
-            輕量好攜帶，精緻銜扣設計讓整體質感大提升，兩種可後踩設計，出
-            門方便又省時，橡膠防滑鞋底，有效降低打滑危機
-        </p>
-        <div id="app">
-            <div class="recommend">
+        <p class="describe line_low">{{products[0]["prod_intro"]}}</p>
+        <div>
+            <!-- <div class="recommend">
                 <h3 class="margin_top_10 alltrip ">建議搭配景點</h3>
                 <div class="tripcard_all  margin_top_5">
 
@@ -173,37 +190,39 @@
                     </a>
 
                 </div>
-            </div>
+            </div> -->
             <div class="comment">
                 <h3>買家評論</h3>
                 <div class="score margin_top_1">
-                    <p class="h3 number">{{number}}</p>
+                    <p class="h3 number">{{scores}}</p>
                     <div class="starMessage margin_left_1">
                         <ul class="stars">
-                            <li v-for="star in totalStar" class="star">
+                            <li v-for="star in stars" class="star">
                                 <img class="icon" src="./img/shop/star.png">
                             </li>
                         </ul>
-                        <div class="messageNum margin_top_1 margin_left_1">100則留言</div>
+                        <div class="messageNum margin_top_1 margin_left_1">{{products.length}}則留言</div>
                     </div>
-                    <p class="more">瀏覽評論</p>
+                    <p v-if="products.length > 3" class="more">瀏覽評論</p>
                 </div>
                 <ul class="margin_top_5">
-                    <li class="messages" v-for="comment in comments">
-                        <img :src="comment.src" alt="">
+                    <message :msg="comment" v-for="comment in products"></message>
+                    <!-- <li class="messages" v-for="comment in products">
+                        <img :src="comment.mem_pic" alt="">
                         <div class="words margin_left_3">
                             <div class="name">
-                                <p>{{comment.name}}</p>
+                                <p>{{comment.last_name}}{{comment.first_name}}</p>
                                 <hr>
-                                <p>{{comment.date}}</p>
+                                <p>{{comment["date(pt.prev_date)"]}}</p>
                             </div>
                             <div class="message margin_top_1 line_low">
-                                <p>{{comment.content}}</p>                          
-                                <p class="more">瀏覽更多</p>
+                                <p v-if="comment.prev.length > 50">{{comment.prev}}</p> 
+                                <p v-else>{{comment.prev.substring(0,50)}}</p> 
                             </div>
+                            <p class="more" v-if="comment.prev.length > 50"  @click="allComment">瀏覽更多</p>
 
                         </div>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
         </div>
@@ -225,59 +244,130 @@
     <script src="./js/addMinus.js"></script>
     <script src="./js/productImgChange.js"></script>
     <script>
-        let vm = new Vue({
-            el: "#app",
-            data:{
-                number: 4.8,
-                totalStar: 5,
-                second: [{
-                    spot: "./img/trip/trip_jupiter/jupiter_a1_ps2.jpg",
-                    title: "月球 | 太空體驗一日遊",
-                    grade: "初階",
-                    scores: "5000",
-                    price: 1000,
-                }, {
-                    spot: "./img/trip/trip_jupiter/jupiter_b1_ps2.jpg",
-                    title: "月球 | 熱氣球一日遊",
-                    grade: "初階",
-                    scores: "5000",
-                    price: 2000,
-                }, {
-                    spot: "./img/trip/trip_jupiter/jupiter_c4_ps2.jpg",
-                    title: "月球 | 熱氣球一日遊",
-                    grade: "初階",
-                    scores: "5000",
-                    price: 3000,
-                },],
-                comments: [
-                    {
-                        src: "./img/shop/user.png",
-                        name: "Doris",
-                        date: "21.03.11",
-                        content: "選用高質感的超細纖維皮革，具有真皮的透氣度與柔軟度，軟可彎折，輕量好攜帶，精緻銜扣設計讓整體質感大提升，兩種可後踩設計，出門方便又省時，橡膠防滑鞋底，有效降低打滑危機"
-                    },{
-                        src: "./img/shop/user.png",
-                        name: "Doris",
-                        date: "21.03.11",
-                        content: "選用高質感的超細纖維皮革，具有真皮的透氣度與柔軟度，軟可彎折，輕量好攜帶，精緻銜扣設計讓整體質感大提升，兩種可後踩設計，出門方便又省時，橡膠防滑鞋底，有效降低打滑危機"
-                    },{
-                        src: "./img/shop/user.png",
-                        name: "Doris",
-                        date: "21.03.11",
-                        content: "選用高質感的超細纖維皮革，具有真皮的透氣度與柔軟度，軟可彎折，輕量好攜帶，精緻銜扣設計讓整體質感大提升，兩種可後踩設計，出門方便又省時，橡膠防滑鞋底，有效降低打滑危機"
-                    },
-                ],
-                computed:{
-                    subContent(){
-                        if(this.content.length > 20){
-                            return this.content.substr(1,10);
-                        }else{
-                            return this.content;
-                        }
-                    }
+        Vue.component('message',{
+            props:["msg"],
+            template: `
+                        <li class="messages">
+                            <img :src="msg.mem_pic" alt="">
+                            <div class="words margin_left_3">
+                                <div class="name">
+                                    <p>{{msg.last_name}}{{msg.first_name}}</p>
+                                    <hr>
+                                    <p>{{msg["date(pt.prev_date)"]}}</p>
+                                </div>
+                                <div class="message margin_top_1 line_low">
+                                    <p v-if="msg.prev.length > 50">{{message}}</p> 
+                                    <p v-else>{{msg.prev.substring(0,50)}}</p> 
+                                </div>
+                                <p class="more" v-if="msg.prev.length > 50"  @click="allComment">瀏覽更多</p>
+
+                            </div>
+                        </li>
+                        `,
+            data(){
+                return{
+                    message: this.msg.prev.substring(0,50)
+                }
+            },
+            methods: {
+                allComment(e){
+                    // const message = document.querySelector(".message");
+                    // console.log(this.message);
+                    this.message = this.msg.prev;
+                    e.target.style.opacity = 0 ;
                 }
             }
         })
+        let vm = new Vue({
+            el: "#app",
+            data:{
+                verified: 1,
+                products:[],
+                // second: [{
+                //     spot: "./img/trip/trip_jupiter/jupiter_a1_ps2.jpg",
+                //     title: "月球 | 太空體驗一日遊",
+                //     grade: "初階",
+                //     scores: "5000",
+                //     price: 1000,
+                // }, {
+                //     spot: "./img/trip/trip_jupiter/jupiter_b1_ps2.jpg",
+                //     title: "月球 | 熱氣球一日遊",
+                //     grade: "初階",
+                //     scores: "5000",
+                //     price: 2000,
+                // }, {
+                //     spot: "./img/trip/trip_jupiter/jupiter_c4_ps2.jpg",
+                //     title: "月球 | 熱氣球一日遊",
+                //     grade: "初階",
+                //     scores: "5000",
+                //     price: 3000,
+                // },],
+                // comments: [
+                //     {
+                //         src: "./img/shop/user.png",
+                //         name: "Doris",
+                //         date: "21.03.11",
+                //         content: "選用高質感的超細纖維皮革，具有真皮的透氣度與柔軟度，軟可彎折，輕量好攜帶，精緻銜扣設計讓整體質感大提升，兩種可後踩設計，出門方便又省時，橡膠防滑鞋底，有效降低打滑危機"
+                //     },{
+                //         src: "./img/shop/user.png",
+                //         name: "Doris",
+                //         date: "21.03.11",
+                //         content: "選用高質感的超細纖維皮革，具有真皮的透氣度與柔軟度，軟可彎折，輕量好攜帶，精緻銜扣設計讓整體質感大提升，兩種可後踩設計，出門方便又省時，橡膠防滑鞋底，有效降低打滑危機"
+                //     },{
+                //         src: "./img/shop/user.png",
+                //         name: "Doris",
+                //         date: "21.03.11",
+                //         content: "選用高質感的超細纖維皮革，具有真皮的透氣度與柔軟度，軟可彎折，輕量好攜帶，精緻銜扣設計讓整體質感大提升，兩種可後踩設計，出門方便又省時，橡膠防滑鞋底，有效降低打滑危機"
+                //     },
+                // ],
+            },
+            methods: {
+                changeImg(e){
+                    const bigImg = document.querySelector(".bigImg");
+                    bigImg.src = e.target.src;
+                },
+                subQuantity() {
+                    if(this.verified ){
+                        this.verified -= 1;
+                    }
+                    
+                },
+                addQuantity() {
+                    this.verified += 1;
+                },
+            },
+            computed: {
+                stars(){
+                    let total = 0;
+                    // let avg = 0;
+                    this.products.forEach(product => {
+                        total += parseInt(product.score);
+                    })
+                    return parseInt(total / this.products.length);
+                },
+                scores(){
+                    let total = 0;
+                    // let avg = 0;
+                    this.products.forEach(product => {
+                        total += parseInt(product.score);
+                    })
+                    return (total / this.products.length).toFixed(1);
+                }
+            },
+            mounted(){
+                let id = sessionStorage.getItem("no");
+                fetch(`./php/getId.php?id=${id}`).then(res => res.json())
+                                                .then(data => {                                        
+                                                        vm.products = data;
+                                                        vm.products[0].img = data[0]["prod_pic"].split("==")[1];
+                                                        let picArr = data[0]["prod_pic"].split("==");
+                                                        picArr.shift();
+                                                        vm.products[0]["prod_pic"] = picArr;
+                    });
+            }
+        });
+
+                                            
     </script>
     <script src="./js/background.js"></script>
     <script src="./js/gotop.js"></script>

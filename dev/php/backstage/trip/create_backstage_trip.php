@@ -10,7 +10,7 @@
     <?php
 $errMsg = "";
 try {
-	require_once("../../connectbooks_kai.php");
+	require_once("../../connect_ced102_g3_local.php");
 
 	//.......確定是否上傳成功
 	if( $_FILES["spot_pic"]["error"] == UPLOAD_ERR_OK){
@@ -49,7 +49,7 @@ try {
 			$products -> execute();
 		// $ff=$pdo->lastInsertId();//這會去抓取最後新增的ID，要放在新增送出之後
 
-			echo "新增成功~". "<br>";
+			// echo "新增成功~". "<br>";
 			echo "<script>window.location.href='../../../backstage/spaced_backstage_trip.php'</script>";
 
 		}else{

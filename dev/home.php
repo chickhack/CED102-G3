@@ -1,13 +1,3 @@
-
-<!-- <?php 
-session_start();
-if(isset($_SESSION["email"])===true){ //表示已登入
-    $res = ["email"=>$memRow["email"], "mem_psw"=>$memRow["mem_psw"]];
- echo json_encode($result);
-}else{
- echo 50;
-}
-?> -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,7 +6,6 @@ if(isset($_SESSION["email"])===true){ //表示已登入
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SPACED</title>
-    <link rel="shortcut icon" href="./img/icon/shortcut.png" type="image/x-icon">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
@@ -108,7 +97,7 @@ if(isset($_SESSION["email"])===true){ //表示已登入
                     </a>
                 </li>
                 <li>
-                    <a href="login.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png"
+                    <a href="./login.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png"
                             alt="" class="icon" /></a>
                 </li>
             </ul>
@@ -129,7 +118,7 @@ if(isset($_SESSION["email"])===true){ //表示已登入
             </div>
             <ul class="nav-links">
                 <li class="margin_left_5"><a href="alltrip.php">星球景點</a></li>
-                <li class="margin_left_5"><a href="planet.php">星星世界</a></li>
+                <li class="margin_left_5"><a href="planet.html">星星世界</a></li>
                 <li class="margin_left_5"><a href="shop.php">星球商城</a></li>
                 <li class="margin_left_5"><a href="photowall.php">太空互動</a></li>
                 <li class="margin_left_5"><a href="Leaderboard.php">玩家排行</a></li>
@@ -165,7 +154,7 @@ if(isset($_SESSION["email"])===true){ //表示已登入
                     </a>
                 </li>
                 <li>
-                    <a href="./login.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png"
+                    <a href="./login.html"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png"
                             alt="" class="icon" /></a>
                 </li>
             </ul>
@@ -249,7 +238,7 @@ if(isset($_SESSION["email"])===true){ //表示已登入
     </div>
 
     <!-- 星球百科 -->
-    <h2 align="center" class="margin_top_15" >星星世界</h2>
+    <h2 align="center" class="margin_top_10" >星星世界</h2>
         <h3 class="margin_top_3 line_low" align="center">暢遊宇宙之前，進入星星世界，一起了解宇宙知識，做好萬全準備!</h3>
     <div class="planet_box margin_top_5">
         <!-- <h2 align="center" class="">星星世界</h2> -->
@@ -367,7 +356,7 @@ if(isset($_SESSION["email"])===true){ //表示已登入
             <!-- </div> -->
         </div>
             <a href="photowall.php">
-                <button class="button button_min margin_top_5">看互動</button>
+                <button class="button button_min margin_top_5">看遊記</button>
             </a>
     </section>
     <!-- 商城 -->

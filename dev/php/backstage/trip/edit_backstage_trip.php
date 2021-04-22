@@ -3,7 +3,7 @@ $spot_no = $_GET["spot_no"];
 $errMsg = "";
 
 try{
-    require_once("connectbooks_kai.php");
+    require_once("../../connect_ced102_g3_local.php");
     $sql = "select *from spot where spot_no = :spot_no";
     $spot = $pdo->prepare($sql);
     $spot->bindValue(":spot_no", $spot_no);
@@ -31,8 +31,8 @@ catch(PDOException $e){
     <title></title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/all.css">
-    <link rel="stylesheet" href="../css/pages/spaced_backstage.css">
+    <link rel="stylesheet" href="../../../css/all.css">
+    <link rel="stylesheet" href="../../../css/pages/spaced_backstage.css">
 </head>
 
 <body>
@@ -45,15 +45,15 @@ catch(PDOException $e){
         <div class="div-list">
             <button class="div-list-btn-a">景點</button>
             <div>
-                <a href="../spaced_backstage_trip.php" class="div-list-btn-s now">景點管理</a>
-                <a href="../spaced_backstage_trip_reviews.php" class="div-list-btn-s">景點評價</a>
-                <a href="#" class="div-list-btn-s">行程訂單管理</a>
+                <a href="../../../backstage/spaced_backstage_trip.php" class="div-list-btn-s now">景點管理</a>
+                <a href="../../../backstage/spaced_backstage_trip_reviews.php" class="div-list-btn-s">景點評價</a>
+                <a href="../../../backstage/spaced_backstage_order.php" class="div-list-btn-s">行程訂單管理</a>
             </div>
             <button class="div-list-btn-a">商城</button>
             <div>
-                <a href="#" class="div-list-btn-s">商品管理</a>
+                <a href="../../../backstage/backstage_shop.php" class="div-list-btn-s">商品管理</a>
                 <a href="#" class="div-list-btn-s">商品評價</a>
-                <a href="#" class="div-list-btn-s">商品訂單管理</a>
+                <a href="../../../backstage/backstage_shop_order.php" class="div-list-btn-s">商品訂單管理</a>
             </div>
             <!-- <a href="#" class="div-list-btn-a">百科管理</a> -->
             <button class="div-list-btn-a">互動牆</button>
@@ -91,7 +91,7 @@ if( $errMsg != ""){ //例外
                             max="1" value="<?=$spotRow -> spot_s_status ?>"></li>
                     <li class="list-group-item">價格 <input type="number" placeholder="輸入價格" name="spot_price" value="<?=$spotRow -> spot_price ?>"></li>
                     <li class="list-group-item">積分 <input type="number" placeholder="輸入積分" name="miles" value="<?=$spotRow -> miles ?>"></li>
-                    <li class="list-group-item "><input type="submit" name="update" class="btn btn-info btn-sm" value="確認修改"> &emsp;<a href="../spaced_backstage_trip.php" type="button" class="btn btn-dark btn-sm">取消修改</a>
+                    <li class="list-group-item "><input type="submit" name="update" class="btn btn-info btn-sm" value="確認修改"> &emsp;<a href="../../../backstage/spaced_backstage_trip.php" type="button" class="btn btn-dark btn-sm">取消修改</a>
 </li>
                 </form>
             </ul>

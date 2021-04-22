@@ -33,8 +33,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
     <!-- scrollmagic 觸發點指標顯示 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
-    <!-- gsap -->
+    <!-- gsap+split -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.0/gsap.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/SplitText3.min.js"></script>
     <!-- CSS -->
     <link rel="stylesheet" href="./css/pages/planet.css"></link>
     <link rel="stylesheet" href="./css/pages/alltrip.css"></link>
@@ -57,9 +58,6 @@
           <h2>打造專屬的星球行程</h2>
           <h3 class="margin_top_3 line_low">累積景點積分，獲得更多宇宙幣，讓你無限暢遊宇宙</h3>
 <div id="trigger01"></div>
-<div id="trigger02"></div>
-
-
           <div class="stepall">
               <div class="step margin_left_5">
                   <img src="./img/icon/search-location.png" class="step_icon" alt="icon">
@@ -373,7 +371,7 @@
               </div>
         </div>
       <footer>@@include('./layout/footer.html')</footer>
-          </div>
+    </div>
     <!-- 星球頁籤轉移 -->
     <script src="./js/tabSwitch.js"></script>
     <!-- 精選景點 vue -->
@@ -420,11 +418,9 @@
       <script>
         //Header變顏色
         var controller = new ScrollMagic.Controller();
-        
         new ScrollMagic.Scene({
             triggerElement : '#trigger01',
-            duration: '600%',
-            reverse: true,
+            duration: '600%'
         }).on('enter', function(){
             console.log('enter 進入');
             $('#nav').css('background-color' , '#0c0d18')
@@ -435,14 +431,12 @@
         .addTo(controller);
 
         //卡片fade in
-        var tm02 = new TimelineMax();
-        TweenMax.from(".stepsection", 2, { x: 0, y: 120 });
+        var tm02 = TweenMax.from(".stepsection", 2, { x: 0, y: 100 });
         new ScrollMagic.Scene({
-          triggerElement: "#trigger02",
-        })      
-          // .setClassToggle(".section03", "on")
+          triggerElement: "#trigger01",
+        })
           .setTween(tm02)
-          .addIndicators()
+          // .addIndicators()
           .addTo(controller);
 
       </script>

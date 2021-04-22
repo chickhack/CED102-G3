@@ -10,7 +10,7 @@ if($_GET['order_status'] == 0){
 }
 
 try{
-    require_once("../../../../connect_ced102_g3_local.php");
+    require_once("../../connect_ced102_g3_local.php");
     $sql = "UPDATE spot_order SET order_status=$status WHERE order_no=:order_no";
     $product = $pdo->prepare($sql);
     $product->bindValue(":order_no", $order_no);

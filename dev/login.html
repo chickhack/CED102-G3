@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>登入頁面</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/pages/login.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+  </head>
+
+  <body>
+    <div class="container">
+        <header>@@include('./layout/header.html')</header>
+        <section class="login_container col-12">
+        <div class="login_banner col-3">
+            <h2>加入 SPACED</h2>
+            <h2>一同體驗</h2>
+            <h2>航行宇宙</h2>
+        </div>
+        <div class="rightbox col-8 col-sm-9">
+
+            <div class="return_btn margin_left_2">
+                <h4><a href="home.html"> << 返回 </a></h4>
+            </div>
+            <div class="modal-dialog">
+                <div class="col-sm-9 main-section">
+                    <div class="modal-content margin_top_13">
+                        <div class="col-11 form-input">
+                            <form>
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="請輸入"></input>
+                            </div>
+                            <div class="form-group">
+                                <input id="password-field" type="password" class="form-control" placeholder="請輸入"></input>
+                                <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                            </div>
+                            <button type="submit" class="button_min margin_top_3" >登入</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-section margin_top_3">
+                <div class="signup">
+                    <img src="img/icon/create-group-button.png" width="20" >
+                    <a href="register.html">加入會員</a>
+                </div>
+                <div class="forgot margin_top_2">
+                    <img src="img/icon/locked-padlock.png" width="15">
+                    <a>忘記密碼</a>
+                </div>
+            </div>
+        </div>
+
+        </section>
+    </div>
+    <!-- toggle password visibility -->
+    <script>
+        $(".toggle-password").click(function() {
+
+        $(this).toggleClass("fa-eye fa-eye-slash");
+        var input = $($(this).attr("toggle"));
+        if (input.attr("type") == "password") {
+        input.attr("type", "text");
+        } else {
+        input.attr("type", "password");
+        }
+        });
+    </script>
+  </body>
+</html>

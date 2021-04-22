@@ -2,7 +2,7 @@
 $mem_no = $_REQUEST["mem_no"];
 $errMsg='';
 try {
-	require_once("../../../../connect_ced102_g3_local.php");
+	require_once("../../connect_ced102_g3_local.php");
 	$sql = "select * from customer where mem_no=:mem_no";
 	$order = $pdo->prepare($sql);	//執行指令
 	$order->bindValue(":mem_no", $mem_no);
@@ -20,13 +20,13 @@ try {
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>訂單查詢會員</title>
-    <link rel="stylesheet" href="../../../css/all.css">
-	<link rel="stylesheet" href="../../../css/pages/spaced_backstage.css">
+    <link rel="stylesheet" href="../css/all.css">
+	<link rel="stylesheet" href="../css/pages/spaced_backstage.css">
 </head>
 <body>
 <div class="top w-100 header">
         <!-- <p class="h1 padding_left_4 "></p> -->
-        <img src="../../../img/logo.png" class="imgs padding_left_4 padding_top_1" alt="">
+        <img src="../img/logo.png" class="imgs padding_left_4 padding_top_1" alt="">
         <p class="text-top padding_left_4 ">Backstage</p>
     </div>
     <div class="div-menu">
@@ -39,9 +39,9 @@ try {
             </div>
             <button class="div-list-btn-a">商城</button>
             <div>
-                <a href="#" class="div-list-btn-s">商品管理</a>
+                <a href="../../../backstage/backstage_shop.php" class="div-list-btn-s">商品管理</a>
                 <a href="#" class="div-list-btn-s">商品評價</a>
-                <a href="#" class="div-list-btn-s">商品訂單管理</a>
+                <a href="../../../backstage/backstage_shop_order.php" class="div-list-btn-s">商品訂單管理</a>
             </div>
             <!-- <a href="#" class="div-list-btn-a">百科管理</a> -->
             <button class="div-list-btn-a">互動牆</button>
@@ -57,11 +57,11 @@ try {
 
 <div class="title">
 	<div class=" div-right-span padding_top_3 margin_left_2">
-    <button type="button" class="btn-updata" ><a href="../../../backstage/spaced_backstage_order.php" class="text-1">返回</a></button>
+    <button type="button" class="btn-updata" ><a href="../../../backstage/backstage_shop_order.php" class="text-1">返回</a></button>
 		<div class="span-1 margin_left_3">
 			<label for="search1">
 
-				<img src="../../../img/icon/loupe.png" alt="" class="">
+				<img src="../img/icon/loupe.png" alt="" class="">
 			</label>
 			<input type="search" class="search1" id="search1" placeholder="輸入景點編號、名稱">
 		</div>
@@ -108,7 +108,7 @@ if( $errMsg != ""){ //例外
                     <p class="wi-10 text-1"><?php echo $orders->miles;?></p>
                     <p class="wi-10 text-1"><?php echo $orders->coin;?></p>
                     <p class="wi-5 text-1"><?php echo $orders->mem_stats;?></p>
-                    <p class="wi-20 text-1  toomuch"><?php echo $orders->mem_pic;?></p>
+                    <p class="wi-20 text-1"><?php echo $orders->mem_pic;?></p>
                 </div>
     
     

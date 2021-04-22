@@ -14,46 +14,52 @@ session_start();
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/all.css">
     <link rel="stylesheet" href="./css/pages/order-itineray.css">
+    <link rel="shortcut icon" href="./img/icon/shortcut.png" type="image/x-icon">
     <!-- 動態背景 -->
     <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 </head>
 <body>
+<header>
     <nav id="nav">
   <div class="logo">
-    <h1><a href="home.html">SPACED</a></h1>
+    <h1><a href="home.php">SPACED</a></h1>
   </div>
   <ul class="nav-links">
-    <li class="margin_left_5"><a href="alltrip.html">星球景點</a></li>
-    <li class="margin_left_5"><a href="planet.html">星星世界</a></li>
-    <li class="margin_left_5"><a href="shop.html">星球商城</a></li>
-    <li class="margin_left_5"><a href="photowall.html">太空互動</a></li>
-    <li class="margin_left_5"><a href="Leaderboard.html">玩家排行</a></li>
+    <li class="margin_left_5"><a href="alltrip.php">星球景點</a></li>
+    <li class="margin_left_5"><a href="planet.php">星星世界</a></li>
+    <li class="margin_left_5"><a href="shop.php">星球商城</a></li>
+    <li class="margin_left_5"><a href="photowall.php">太空互動</a></li>
+    <li class="margin_left_5"><a href="Leaderboard.php">玩家排行</a></li>
     <!-- <li><a href=""><img src="./images/ticket.png" alt="" class="icon"></a></li>
         <li><a href=""><img src="./images/shopping-cart_(1).png" alt="" class="icon"></a></li>
         <li><a href=""><img src="./images/round-account-button-with-user-inside_(1).png" alt="" class="icon"></a></li> -->
   </ul>
   <ul class="nav-icons">
     <li>
-      <a href="./car-itineray.html"
+      <a href="./car-itineray.php"
         ><img src="./img/icon/header/luggage.png" alt="" class="icon"
       /></a>
     </li>
     <li class="nav-cart">
-      <a href="./shop_cart.html">
-        <img
-          src="./img/icon/header/shopping-cart_(1).png"
-          alt=""
-          class="icon"
-        />
-      </a>
-    </li>
+        <a href="./shop_cart.php">
+            <img src="./img/icon/header/shopping-cart_(1).png" alt="" class="icon"/>
+            <?php
+                if(isset($_SESSION["cart"])){
+                    $count = count($_SESSION["cart"]);
+                    echo "<div class='count'>$count</div>";
+                }else{
+                    echo "";
+                }
+            ?>
+        </a>
+    </li> 
     <li>
-      <a href="./login.php"
-        ><img
-          src="./img/icon/header/round-account-button-with-user-inside_(1).png"
-          alt=""
-          class="icon"
-      /></a>
+        <?php
+            if(isset($_SESSION['mem_no'])){?>
+                <a href="./account.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png" alt="" class="icon"/></a>
+        <?php }else{ ?>
+                <a href="./login.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png" alt="" class="icon"/></a>
+        <?php } ?>
     </li>
   </ul>
   <div class="burger">
@@ -64,6 +70,9 @@ session_start();
 </nav>
 
 <script src="./js/header.js"></script>
+
+
+  </header>
 
     <div class="container-fluid">
             <div id="particles-js">
@@ -432,16 +441,16 @@ session_start();
 
     
 </div>
-
+<a href="#" class="go-top"></a>
     <footer class="padding_top_10">
     <div class="links">
         <div class="logo"><img src="./img/logo.png" alt=""></div>
         <ul class="footer-links margin_top_2">
-            <li><a href="alltrip.html">星球景點</a></li>
-            <li><a href="planet.html">星星世界</a></li>
-            <li><a href="shop.html">星球商城</a></li>
-            <li><a href="photowall.html">太空互動</a></li>
-            <li><a href="Leaderboard.html">玩家排行</a></li>
+            <li><a href="alltrip.php">星球景點</a></li>
+            <li><a href="planet.php">星星世界</a></li>
+            <li><a href="shop.php">星球商城</a></li>
+            <li><a href="photowall.php">太空互動</a></li>
+            <li><a href="Leaderboard.php">玩家排行</a></li>
         </ul>
     </div>
     <img src="./img/footer_moon.png" alt="" class="footer_moon">
@@ -454,7 +463,25 @@ session_start();
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./js/order-itineray.js"></script>
     <script>
-    
+     $(document).ready(function() {
+        // Show or hide the sticky footer button
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+                $('.go-top').fadeIn(200);
+            } else {
+                $('.go-top').fadeOut(200);
+            }
+        });
+
+        // Animate the scroll to top
+        $('.go-top').click(function(event) {
+            event.preventDefault();
+
+            $('html, body').animate({
+                scrollTop: 0
+            }, 900);
+        })
+    });
     </script>
 </body>
 </html>

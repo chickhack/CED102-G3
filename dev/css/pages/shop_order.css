@@ -414,11 +414,29 @@ nav .nav-links a {
   width: 100%;
   color: #ffffff;
   padding: 8px;
+<<<<<<< HEAD
+=======
+  transition: all .3s;
+}
+
+nav .nav-links a:hover {
+  color: #AD6E4A;
+}
+
+@media all and (max-width: 992px) {
+  nav .nav-links a:hover {
+    color: #0c0d18;
+  }
+>>>>>>> 598ba5df0bf3137fafc125593c0c546a2b21a527
 }
 
 nav .nav-links .bread {
   color: #AD6E4A;
   font-weight: 900;
+<<<<<<< HEAD
+=======
+  font-size: 16px;
+>>>>>>> 598ba5df0bf3137fafc125593c0c546a2b21a527
 }
 
 nav .nav-icons {
@@ -465,23 +483,20 @@ nav .nav-cart .count {
   text-align: center;
   line-height: 1.5rem;
   position: absolute;
-  -webkit-transform: translate(50%, -150%);
-          transform: translate(50%, -150%);
+  transform: translate(50%, -150%);
   display: block;
   color: white;
 }
 
 @media all and (max-width: 992px) {
   nav .nav-cart .count {
-    -webkit-transform: translate(100%, -150%);
-            transform: translate(100%, -150%);
+    transform: translate(100%, -150%);
   }
 }
 
 @media all and (max-width: 768px) {
   nav .nav-cart .count {
-    -webkit-transform: translate(40%, -170%);
-            transform: translate(40%, -170%);
+    transform: translate(40%, -170%);
     width: 20px;
     height: 20px;
     font-size: 12px;
@@ -502,23 +517,20 @@ nav .nav-trip .trip-count {
   text-align: center;
   line-height: 1.5rem;
   position: absolute;
-  -webkit-transform: translate(50%, -150%);
-          transform: translate(50%, -150%);
+  transform: translate(50%, -150%);
   display: block;
   color: white;
 }
 
 @media all and (max-width: 992px) {
   nav .nav-trip .trip-count {
-    -webkit-transform: translate(100%, -150%);
-            transform: translate(100%, -150%);
+    transform: translate(100%, -150%);
   }
 }
 
 @media all and (max-width: 768px) {
   nav .nav-trip .trip-count {
-    -webkit-transform: translate(40%, -170%);
-            transform: translate(40%, -170%);
+    transform: translate(40%, -170%);
     width: 20px;
     height: 20px;
     font-size: 12px;
@@ -762,8 +774,7 @@ input[type=number] {
   height: 100px;
   background-size: contain;
   background-repeat: no-repeat;
-  -webkit-animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
-          animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+  animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
 }
 
 section.orderDetail {
@@ -772,17 +783,21 @@ section.orderDetail {
   padding-top: 5vh;
 }
 
-section.orderDetail .order {
+section.orderDetail h3 {
+  margin: 0 80px;
+}
+
+section.orderDetail ul {
   margin: 0 80px;
 }
 
 @media all and (max-width: 768px) {
-  section.orderDetail .order {
+  section.orderDetail ul {
     margin: 0 30px;
   }
 }
 
-section.orderDetail .order li {
+section.orderDetail li {
   font-weight: 900;
   background-color: #292B41;
   display: -webkit-box;
@@ -800,11 +815,12 @@ section.orderDetail .order li {
   padding: 8px 0;
 }
 
-section.orderDetail .order li .imgWord {
+section.orderDetail li .imgWord {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -818,19 +834,32 @@ section.orderDetail .order li .imgWord {
 }
 
 section.orderDetail .order li .imgWord .prod {
+=======
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+section.orderDetail li .imgWord .prod {
+>>>>>>> 598ba5df0bf3137fafc125593c0c546a2b21a527
   width: 8%;
 }
 
 @media all and (max-width: 768px) {
-  section.orderDetail .order li .imgWord .prod {
+  section.orderDetail li .imgWord .prod {
     width: 15%;
     margin-left: 8px;
   }
 }
 
+<<<<<<< HEAD
 section.orderDetail .order li .imgWord .imgRight {
   display: -webkit-box;
   display: -ms-flexbox;
+=======
+section.orderDetail li .imgWord .imgRight {
+>>>>>>> 598ba5df0bf3137fafc125593c0c546a2b21a527
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -845,16 +874,20 @@ section.orderDetail .order li .imgWord .imgRight {
 }
 
 @media all and (max-width: 768px) {
-  section.orderDetail .order li .imgWord .imgRight {
+  section.orderDetail li .imgWord .imgRight {
     width: 75%;
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
 }
 
+<<<<<<< HEAD
 section.orderDetail .order li .imgWord .integral {
   display: -webkit-box;
   display: -ms-flexbox;
+=======
+section.orderDetail li .imgWord .integral {
+>>>>>>> 598ba5df0bf3137fafc125593c0c546a2b21a527
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -864,11 +897,11 @@ section.orderDetail .order li .imgWord .integral {
           align-items: center;
 }
 
-section.orderDetail .order li .imgWord .integral .icon {
+section.orderDetail li .imgWord .integral .icon {
   max-width: 10px;
 }
 
-section.orderDetail .order li .quantity {
+section.orderDetail li .quantity {
   width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -918,6 +951,11 @@ section.orderer .orderer_form, section.orderer .recipient, section.orderer .paym
   section.orderer .orderer_form, section.orderer .recipient, section.orderer .payment {
     margin: 32px 30px;
   }
+}
+
+section.orderer .input {
+  width: 88%;
+  margin: 0 auto;
 }
 
 section.orderer .arrow {
@@ -1152,6 +1190,12 @@ section.orderer .checkbox_group .credit_check {
 
 section.orderer .checkbox_group .credit_check label {
   width: 100%;
+}
+
+@media all and (max-width: 992px) {
+  section.orderer .checkbox_group .credit_check #creditDate {
+    margin-top: 8px;
+  }
 }
 
 @media all and (max-width: 992px) {

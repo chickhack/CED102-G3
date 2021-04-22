@@ -414,11 +414,29 @@ nav .nav-links a {
   width: 100%;
   color: #ffffff;
   padding: 8px;
+<<<<<<< HEAD
+=======
+  transition: all .3s;
+}
+
+nav .nav-links a:hover {
+  color: #AD6E4A;
+}
+
+@media all and (max-width: 992px) {
+  nav .nav-links a:hover {
+    color: #0c0d18;
+  }
+>>>>>>> 598ba5df0bf3137fafc125593c0c546a2b21a527
 }
 
 nav .nav-links .bread {
   color: #AD6E4A;
   font-weight: 900;
+<<<<<<< HEAD
+=======
+  font-size: 16px;
+>>>>>>> 598ba5df0bf3137fafc125593c0c546a2b21a527
 }
 
 nav .nav-icons {
@@ -465,23 +483,20 @@ nav .nav-cart .count {
   text-align: center;
   line-height: 1.5rem;
   position: absolute;
-  -webkit-transform: translate(50%, -150%);
-          transform: translate(50%, -150%);
+  transform: translate(50%, -150%);
   display: block;
   color: white;
 }
 
 @media all and (max-width: 992px) {
   nav .nav-cart .count {
-    -webkit-transform: translate(100%, -150%);
-            transform: translate(100%, -150%);
+    transform: translate(100%, -150%);
   }
 }
 
 @media all and (max-width: 768px) {
   nav .nav-cart .count {
-    -webkit-transform: translate(40%, -170%);
-            transform: translate(40%, -170%);
+    transform: translate(40%, -170%);
     width: 20px;
     height: 20px;
     font-size: 12px;
@@ -502,23 +517,20 @@ nav .nav-trip .trip-count {
   text-align: center;
   line-height: 1.5rem;
   position: absolute;
-  -webkit-transform: translate(50%, -150%);
-          transform: translate(50%, -150%);
+  transform: translate(50%, -150%);
   display: block;
   color: white;
 }
 
 @media all and (max-width: 992px) {
   nav .nav-trip .trip-count {
-    -webkit-transform: translate(100%, -150%);
-            transform: translate(100%, -150%);
+    transform: translate(100%, -150%);
   }
 }
 
 @media all and (max-width: 768px) {
   nav .nav-trip .trip-count {
-    -webkit-transform: translate(40%, -170%);
-            transform: translate(40%, -170%);
+    transform: translate(40%, -170%);
     width: 20px;
     height: 20px;
     font-size: 12px;
@@ -762,8 +774,7 @@ input[type=number] {
   height: 100px;
   background-size: contain;
   background-repeat: no-repeat;
-  -webkit-animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
-          animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+  animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
 }
 
 body {
@@ -986,7 +997,7 @@ body {
   font-weight: 900;
   -webkit-transition: all .3s;
   transition: all .3s;
-  padding: 10.4px 0;
+  padding: 8.4px 0;
 }
 
 @media all and (max-width: 768px) {
@@ -1191,12 +1202,18 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+=======
+  justify-content: center;
+  align-items: center;
+  justify-content: start;
+>>>>>>> 598ba5df0bf3137fafc125593c0c546a2b21a527
   border-bottom: 1px solid #AD6E4A;
   padding: 16px 0;
   position: relative;
@@ -1231,8 +1248,9 @@ body {
 .comment .messages .more {
   color: #ffffff;
   text-decoration: underline;
-  position: relative;
-  float: right;
+  position: absolute;
+  right: 0;
+  bottom: 10px;
   cursor: pointer;
 }
 /*# sourceMappingURL=product.css.map */

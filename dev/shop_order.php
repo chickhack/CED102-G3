@@ -234,7 +234,7 @@
                 <div class="window">
                     <h3>訂購完成</h3>
                     <p class="margin_top_2 h4">感謝您的訂購!</p>
-                    <a href="account.html" class="margin_top_5 button_large">查看訂單明細</a>
+                    <a href="account.php" class="margin_top_5 button_large">查看訂單明細</a>
                 </div>
             </div>
         </div>
