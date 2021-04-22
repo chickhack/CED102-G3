@@ -43,7 +43,6 @@
 </style>
 
 <body>
-
   <header>
     <nav id="nav">
       <div class="logo">
@@ -250,11 +249,11 @@
         <!-- 行程管理 -->
         <div v-else-if="link ==='b'">
           <div class="heart_btns margin_top_3">
-            <button @click="visibility='全部'" :class="{'active': visibility == '全部'}" class="btn heartbtns p"
+            <button @click="visibility=3" :class="{'active': visibility == 3}" class="btn heartbtns p"
               type="button">全部</button>
-            <button @click="visibility='待出發'" :class="{'active': visibility == '待出發'}" class="btn heartbtns p"
+            <button @click="visibility=0" :class="{'active': visibility == 0}" class="btn heartbtns p"
               type="button">待出發</button>
-            <button @click="visibility='已結束'" :class="{'active': visibility == '已結束'}" class="btn heartbtns p"
+            <button @click="visibility=1" :class="{'active': visibility == 1}" class="btn heartbtns p"
               type="button">已結束</button>
           </div>
 
@@ -263,7 +262,7 @@
             <div v-for="(item,index) in travelstatus" class="table margin_top_5">
 
               <caption>
-                <span class="">訂單編號： {{item.ord_no}} </span>
+                <span class="">訂單編號： {{item.order_no}} </span>
               </caption>
               <table class="margin_top_1">
                 <thead class="table_title">
@@ -280,15 +279,11 @@
                   <tr>
                     <td>{{item.dep_date}}</td>
                     <td>NT.{{item.total_price}}</td>
-                    <td>{{item.scores}}</td>
+                    <td>{{item.miles}}</td>
                     <td>{{item.order_date}}</td>
-<<<<<<< HEAD
                     <td v-if="item.order_status == 0">待出發</td>
                     <td v-else="item.order_status == 1">已結束</td>
                     <!-- <td>{{item.state}}</td> -->
-=======
-                    <td>{{item.state}}</td>
->>>>>>> 598ba5df0bf3137fafc125593c0c546a2b21a527
                     <td>{{item.guide}}</td>
                   </tr>
                 </tbody>
@@ -310,17 +305,13 @@
                       <th scope="col">人數</th>
                     </tr>
                   </thead>
-<<<<<<< HEAD
                   <tbody v-for="item1 in spot_order_detail" v-if="item.order_no == item1.order_no">
-=======
-                  <tbody v-for="item in spot_order_detail">
->>>>>>> 598ba5df0bf3137fafc125593c0c546a2b21a527
                     <tr>
-                      <td>{{item.spot_no}}</td>
-                      <td>{{item.spot_name}}</td>
-                      <td>{{item.price}}</td>
-                      <td>{{item.integral}}</td>
-                      <td>{{item.people}}</td>
+                      <td>{{item1.spot_no}}</td>
+                      <td>{{item1.spot_name}}</td>
+                      <td>{{item1.price}}</td>
+                      <td>{{item1.integral}}</td>
+                      <td>{{item1.people}}</td>
                     </tr>
                   </tbody>
                 </table>
@@ -511,11 +502,7 @@
         <div v-else-if="link ==='d'">
 
           <div class="heart_btns">
-<<<<<<< HEAD
             <input type="date" id="date-1" class="btn orderbtns margin_top_3 btn-date data-down">
-=======
-            <input type="date" id="date-1" value="<?php echo date("Y-m-d");?>"  class="btn orderbtns margin_top_3 btn-date data-down">
->>>>>>> 598ba5df0bf3137fafc125593c0c546a2b21a527
           </div>
           <!-- value="<?php echo date("Y-m-d");?>"  -->
 
@@ -821,11 +808,7 @@
         isChange: false,
         isEditing: false,
         toggle: false,
-<<<<<<< HEAD
         visibility: 3,
-=======
-        visibility: '全部',
->>>>>>> 598ba5df0bf3137fafc125593c0c546a2b21a527
         customer: { //會員資料
           mem_no: '1010006',
           mem_lv: '初星者',
@@ -894,66 +877,10 @@
           prod_point: '100',
           qty: '1',
         }],
-<<<<<<< HEAD
         
         spot_order: [], // 行程訂單+收件人
         spot_order_detail: [], // 行程訂單明細
 
-=======
-        spot_order: [{ // 行程訂單+收件人
-          ord_no: '#TW1637493',
-          dep_date: '2021/02/04',
-          total_price: '1,290',
-          scores: '10,000',
-          order_date: '2021/02/04',
-          state: '已結束',
-          guide: '加購',
-          order_name: '陳大大',
-          order_ph: '0988123456',
-          order_email: '台北市中正區大西路48號',
-        }, {
-          ord_no: '#TW1637493',
-          dep_date: '2021/02/04',
-          total_price: '1,290',
-          scores: '10,000',
-          order_date: '2021/02/04',
-          state: '待出發',
-          guide: '加購',
-          order_name: '陳中中',
-          order_ph: '0988123456',
-          order_email: '台北市中正區大西路48號',
-        }, {
-          ord_no: '#TW1637493',
-          dep_date: '2021/02/04',
-          total_price: '1,290',
-          scores: '10,000',
-          order_date: '2021/02/04',
-          state: '待出發',
-          guide: '加購',
-          order_name: '陳小小',
-          order_ph: '0988123456',
-          order_email: '台北市中正區大西路48號',
-        }],
-        spot_order_detail: [{ // 行程訂單明細
-          spot_no: '#24',
-          spot_name: '攀登太陽系第一高山-奧林帕斯山三日遊',
-          price: '1,290',
-          integral: '10,000',
-          people: '1',
-        }, {
-          spot_no: '#24',
-          spot_name: '攀登太陽系第一高山-奧林帕斯山三日遊',
-          price: '1,290',
-          integral: '10,000',
-          people: '1',
-        }, {
-          spot_no: '#24',
-          spot_name: '攀登太陽系第一高山-奧林帕斯山三日遊',
-          price: '1,290',
-          integral: '10,000',
-          people: '1',
-        }],
->>>>>>> 598ba5df0bf3137fafc125593c0c546a2b21a527
         active: [],
         spot1: [{ // 行程內容
           spot: "./img/trip/trip_moon/moon1.jpg",
@@ -1101,24 +1028,17 @@
           });
         },
       },
-<<<<<<< HEAD
       mounted(){
         fetch('./php/getspot_order.php').then(res => res.json()).then(res => this.spot_order = res);
         fetch('./php/getspot_order_datail.php').then(res => res.json()).then(res => this.spot_order_detail = res);
       },
-=======
->>>>>>> 598ba5df0bf3137fafc125593c0c546a2b21a527
       computed: {
         travelstatus() {
           if (this.visibility == '全部') {
             return this.spot_order
           } else {
             return this.spot_order.filter(item => {
-<<<<<<< HEAD
               return item.order_status == this.visibility
-=======
-              return item.state == this.visibility
->>>>>>> 598ba5df0bf3137fafc125593c0c546a2b21a527
             })
           }
         },
