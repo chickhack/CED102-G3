@@ -29,13 +29,8 @@ $spottrev ->execute();
         <div class="div-list">
             <button class="div-list-btn-a">景點</button>
             <div>
-<<<<<<< HEAD:dev/backstage/spaced_backstage_trip_reviews.php
                 <a href="spaced_backstage_trip.php" class="div-list-btn-s ">景點管理</a>
                 <a href="spaced_backstage_trip_reviews.php" class="div-list-btn-s now">景點評價</a>
-=======
-                <a href="./spaced_backstage_trip.php" class="div-list-btn-s ">景點管理</a>
-                <a href="./spaced_backstage_trip_reviews.php" class="div-list-btn-s now">景點評價</a>
->>>>>>> denis:dev/backsatge/spaced_backstage_post_report2.php
                 <a href="#" class="div-list-btn-s">行程訂單管理</a>
             </div>
             <button class="div-list-btn-a">商城</button>
@@ -91,22 +86,12 @@ while($spottrevRow = $spottrev->fetch(PDO::FETCH_ASSOC)){
                         
 
                         <?php
-<<<<<<< HEAD:dev/backstage/spaced_backstage_trip_reviews.php
                         if($spottrevRow['trev_stats'] == 0){
                             echo "<p class='wi-5 text-1'><a href='../../dev/php/backstage/trip/edit_backstage_trip_reviews.php?trev_no=$spottrevRow[trev_no]&trev_stats=$spottrevRow[trev_stats]' name='update' type='button' class='btn btn-primary btn-sm'>上架</a></p>";
                         }else{
                             echo "<p class='wi-5 text-1'><a href='../../dev/php/backstage/trip/edit_backstage_trip_reviews.php?trev_no=$spottrevRow[trev_no]&trev_stats=$spottrevRow[trev_stats]' name='update' type='button' class='btn btn-danger btn-sm'>下架</a></p>";
                             }
                     ?>
-=======
-                                if($spottrevRow['rep_status'] == 0){
-                                    echo "<p class='wi-10 text-1'><a href='./php/edit_backstage_post_report2.php?post_no=$spottrevRow[post_no]&post_stats=$spottrevRow[rep_status]' name='update' type='button' class='btn btn-primary btn-sm'>上架</a></p>";
-                                }else{
-                                    echo "<p class='wi-10 text-1'><a href='./php/edit_backstage_post_report2.php?post_no=$spottrevRow[post_no]&post_stats=$spottrevRow[rep_status]' name='update' type='button' class='btn btn-danger btn-sm'>下架</a></p>";
-                                }
-                            ?>
-                                <!-- 狀態列 -->
->>>>>>> denis:dev/backsatge/spaced_backstage_post_report2.php
                     </div>
              </form>
                     <?php 

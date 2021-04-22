@@ -20,10 +20,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/pages/shop_cart.css">
+    <link rel="stylesheet" href="./css/pages/all.css">
     <link rel="shortcut icon" href="./img/icon/shortcut.png" type="image/x-icon">
     <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.12/vue.js'></script>
     <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vuex/3.6.2/vuex.min.js"></script>
+
     <title>我的行程</title>
     <style>
     
@@ -39,7 +41,7 @@
   <ul class="nav-links">
     <li class="margin_left_5"><a href="alltrip.php">星球景點</a></li>
     <li class="margin_left_5"><a href="planet.php">星星世界</a></li>
-    <li class="margin_left_5"><a href="shop.php" class="bread">星球商城</a></li>
+    <li class="margin_left_5"><a href="shop.php" >星球商城</a></li>
     <li class="margin_left_5"><a href="photowall.php">太空互動</a></li>
     <li class="margin_left_5"><a href="Leaderboard.php">玩家排行</a></li>
     <!-- <li><a href=""><img src="./images/ticket.png" alt="" class="icon"></a></li>
@@ -65,6 +67,14 @@
             ?>
         </a>
     </li> 
+    <li>
+        <?php
+            if(isset($_SESSION['mem_no'])){?>
+                <a href="./account.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png" alt="" class="icon"/></a>
+        <?php }else{ ?>
+                <a href="./login.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png" alt="" class="icon"/></a>
+        <?php } ?>
+    </li>
     <li>
         <?php
             if(isset($_SESSION['mem_no'])){?>
@@ -128,6 +138,8 @@
         </footer>
 
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
     <script>
  $(document).ready(function() {
         // Show or hide the sticky footer button
