@@ -87,17 +87,12 @@
           </a>
         </li>
         <li>
-<<<<<<< HEAD
           <?php
             if(isset($_SESSION['mem_no'])){ ?>
               <a href="./account.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png" alt="" class="icon"/></a>
           <?php }else{ ?>
             <a href="./login.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png" alt="" class="icon"/></a>
           <?php } ?>
-=======
-          <a href="./login.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png" alt=""
-              class="icon" /></a>
->>>>>>> 598ba5df0bf3137fafc125593c0c546a2b21a527
         </li>
       </ul>
       <div class="burger">
