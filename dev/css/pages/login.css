@@ -752,22 +752,10 @@ section.login_container .login_banner h2 {
   }
 }
 
-section.login_container .return_btn {
-  display: flex;
-  align-self: flex-start;
-  align-items: baseline;
-}
-
-section.login_container .return_btn span a {
-  color: #AD6E4A;
-  font-size: 28px;
-  letter-spacing: -6px;
-  font-weight: 800;
-}
-
 section.login_container .return_btn h4 a {
-  margin-left: 12px;
-  color: #cccaca;
+  color: #AD6E4A;
+  font-size: 20px;
+  font-weight: 800;
 }
 
 section.login_container .return_btn a:hover {

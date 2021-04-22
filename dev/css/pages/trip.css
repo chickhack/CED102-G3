@@ -906,6 +906,10 @@ input::-webkit-inner-spin-button {
   font-weight: bold;
 }
 
+.parent_container .up_container .book .select .amount span {
+  cursor: pointer;
+}
+
 .parent_container .up_container .book .select .amount .btn-pull {
   color: #AD6E4A;
   background-color: #0c0d18;
@@ -914,7 +918,7 @@ input::-webkit-inner-spin-button {
   width: 25px;
   height: 25px;
   line-height: 0px;
-  padding-bottom: 1px;
+  padding: 5px;
 }
 
 .parent_container .up_container .book .select .amount .btn-nu {
@@ -928,6 +932,7 @@ input::-webkit-inner-spin-button {
   outline: none;
   padding-left: 12px;
   padding-right: 12px;
+  cursor: pointer;
 }
 
 .parent_container .up_container .book .total {
