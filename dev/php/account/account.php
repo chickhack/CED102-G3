@@ -1,6 +1,6 @@
 <?php
 try {
-	require_once("../account/connectbooks_ru.php");
+	require_once("../../../connect_ced102_g3_local.php");
 	
 	$sql ="SELECT * FROM `customer`";
 	$products = $pdo->query($sql);
