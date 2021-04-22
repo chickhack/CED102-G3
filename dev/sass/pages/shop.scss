@@ -46,6 +46,7 @@ section.shop{
             flex-wrap: wrap;
             @include respond(pad){
               justify-content: space-around;
+              align-items: start;
               margin: 0 10px;
             }
         }

@@ -36,10 +36,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>星球商城</title>
+  
     <link rel="stylesheet" href="./css/pages/shop.css">
     <link rel="shortcut icon" href="./img/icon/shortcut.png" type="image/x-icon">
     <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.12/vue.js'></script>
@@ -87,7 +84,15 @@
     <li>
         <?php
             if(isset($_SESSION['mem_no'])){?>
-                <a href="./account.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png" alt="" class="icon"/></a>
+                <div class="member"  onclick="toggle()">
+                    <div class="info">
+                        <img src="<?= $_SESSION['mem_pic'] ?>" alt="">
+                        <div class="infoData">
+                            <a href="./account.php">會員中心</a>
+                            <a href="./login.php" onclick="show()">登出</a>
+                        </div>
+                    </div>  
+                </div>
         <?php }else{ ?>
                 <a href="./login.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png" alt="" class="icon"/></a>
         <?php } ?>
@@ -168,24 +173,20 @@
                             this.products.sort((a,b) => {
                                 const d1 = new Date(a.prod_ondate);
                                 const d2 = new Date(b.prod_ondate);
-                                if(d1 > d2){
-                                    return 1;
-                                }else if(d1 < d2){
-                                    return -1;
-                                }
-                                return 0;
+                                return d2 - d1 ;
+                                // if(d1 > d2){
+                                //     return 1;
+                                // }else if(d1 < d2){
+                                //     return -1;
+                                // }
+                                // return 0;
                             })
                             break;
                         case "依價格排序":
                             this.products.sort((a,b) => {
                                 const p1 = parseInt(a.prod_price);
                                 const p2 = parseInt(b.prod_price);
-                                if(p1 > p2){
-                                    return 1;
-                                }else if(p1 < p2){
-                                    return -1;
-                                }
-                                return 0;
+                                return p2 - p1;
                             })
                             console.log(this.products);
                             break;
@@ -209,8 +210,19 @@
                                              console.log(vm.products[i].url)
                                             }
                                         });
-                                        
-                                     
+        const member = document.querySelector(".member");
+        member.addEventListener("click", function(){
+            fetch("./php/logout.php");
+        })
+
+        function show(){
+            fetch("./php/logout.php");
+            window.location.href = "./login.php";
+        }                               
+        function toggle(){
+            const infoData = document.querySelector(".infoData");
+            infoData.classList.toggle("show");
+        }      
     </script>
     <script src="./js/background.js"></script>
     <script src="./js/customSelect.js"></script>

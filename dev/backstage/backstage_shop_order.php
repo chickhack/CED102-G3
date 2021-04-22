@@ -1,10 +1,6 @@
 <?php
     try{
-<<<<<<< HEAD
         require_once("../../connect_ced102_g3_local.php");
-=======
-        require_once("../php/log.php");
->>>>>>> 24048ab3ca93da3399a74a0e051f303885825473
         $sql = "select * from prod_order";
         $product = $pdo->query($sql);  
     }catch(PDOException $e){

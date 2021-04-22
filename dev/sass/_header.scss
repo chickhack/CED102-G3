@@ -57,6 +57,55 @@ nav{
         width: 12%;
         margin-left: 50px;
         // border: 1px solid #fff;
+        @include respond(mobile){
+            justify-content: space-between;
+        }
+        .member{
+            position: relative;
+        }
+        .info{
+            width: 100%;
+            cursor: pointer;
+            position: relative;
+            img{
+                width: 40px;
+                @include respond(mobile){
+                    width: 30px;
+                }
+            }
+            .infoData{
+                position: absolute;
+                background-color: $gold;
+                width: 80px;
+                left: 50%;
+                transform: translateX(-50%);
+                display: none;
+                &::before{
+                    content: "";
+                    width: 10px;
+                    height: 10px;
+                    top: 0;
+                    left: 50%;
+                    transform : translate(-50%,-50%) rotate(45deg);
+                    background-color: $gold;
+                    position: absolute;
+                    z-index: 0;
+                }
+                a{
+                    text-align: center;
+                    color: $darkblue;
+                    transition: all .3s;
+                    padding: 10px 0;
+                    z-index:1;
+                    &:hover{
+                        color: lighten($gold, 30%);
+                    }
+                }
+            }
+            .show{
+                display: block;
+            }
+        }
     }
     .burger{
         display: none;
@@ -156,7 +205,7 @@ nav{
             justify-content: flex-end;
             // border: 1px solid #fff;
             .icon{
-                margin: 0 30px 0 15px;
+                margin: 0 50px 0 15px;
                 // max-width: 25px;
             }
         }
