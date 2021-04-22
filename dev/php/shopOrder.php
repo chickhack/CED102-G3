@@ -1,6 +1,6 @@
 <?php
     session_start();
-    require_once("../../connect_ced102_g3_local.php");
+    require_once("./connect_ced102_g3_local.php");
     try{
         $receive_data = json_decode(trim(file_get_contents("php://input")));
         // print_r($receive_data);
@@ -43,5 +43,8 @@
     }catch(PDOException $e){
         echo $e->getMessage();
     }
-
+<<<<<<< HEAD
+=======
+    unset($_SESSION['cart']);
+>>>>>>> 4ac592c9c7147349477b61321ddc551065e9e32b
 ?>

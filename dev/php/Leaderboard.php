@@ -1,6 +1,6 @@
 <?php
 try {
-	require_once("./log.php");
+	require_once("../../connect_ced102_g3_local.php");
 	$sql ="SELECT * FROM `customer` ORDER BY miles DESC";
 	$products = $pdo->query($sql);
 	$prodRows = $products->fetchAll(PDO::FETCH_ASSOC);

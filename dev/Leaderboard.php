@@ -11,7 +11,7 @@ session_start();
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.12/vue.js'></script>
     <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-
+    <link rel="shortcut icon" href="./img/icon/shortcut.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/all.css">
     <link rel="stylesheet" href="./css/pages/Leaderboard.css">
 </head>
@@ -27,31 +27,52 @@ session_start();
    <header>
       <nav id="nav">
   <div class="logo">
-    <h1><a href="home.html">SPACED</a></h1>
+    <h1><a href="home.php">SPACED</a></h1>
   </div>
   <ul class="nav-links">
     <li class="margin_left_5"><a href="alltrip.php">星球景點</a></li>
     <li class="margin_left_5"><a href="planet.php">星星世界</a></li>
     <li class="margin_left_5"><a href="shop.php">星球商城</a></li>
     <li class="margin_left_5"><a href="photowall.php">太空互動</a></li>
+<<<<<<< HEAD
     <li class="margin_left_5"><a href="Leaderboard.php">玩家排行</a></li>
+=======
+    <li class="margin_left_5"><a href="Leaderboard.php" class="bread">玩家排行</a></li>
+>>>>>>> dev
     <!-- <li><a href=""><img src="./images/ticket.png" alt="" class="icon"></a></li>
         <li><a href=""><img src="./images/shopping-cart_(1).png" alt="" class="icon"></a></li>
         <li><a href=""><img src="./images/round-account-button-with-user-inside_(1).png" alt="" class="icon"></a></li> -->
   </ul>
   <ul class="nav-icons">
     <li>
-      <a href="./car-itineray.html"
-        ><img src="./img/icon/header/luggage.png" alt="" class="icon"
-      /></a>
+      <a href="./car-itineray.php">
+      <img src="./img/icon/header/luggage.png" alt="" class="icon"/>
+      <?php
+            if(isset($_SESSION["trip-cart"])){
+               $count = count($_SESSION["trip-cart"]);
+               echo "<div class='count'>$count</div>";
+            }else{
+                  echo "";
+               }
+      ?>
+      </a>
     </li>
     <li class="nav-cart">
-      <a href="./shop_cart.html">
+      <a href="./shop_cart.php">
         <img src="./img/icon/header/shopping-cart_(1).png" alt="" class="icon"/>
+
+        <?php
+                if(isset($_SESSION["cart"])){
+                    $count = count($_SESSION["cart"]);
+                    echo "<div class='count'>$count</div>";
+                }else{
+                    echo "";
+                }
+            ?>
       </a>
     </li> 
     <li>
-      <a href="./login.html"
+      <a href="./login.php"
         ><img
           src="./img/icon/header/round-account-button-with-user-inside_(1).png"
           alt=""
@@ -165,6 +186,7 @@ session_start();
       
       
    </div>
+   <a href="#" class="go-top"></a>
    <footer>
       <footer class="padding_top_10">
     <div class="links">
@@ -185,6 +207,27 @@ session_start();
   </footer>
    </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+<script>
+   $(document).ready(function() {
+        // Show or hide the sticky footer button
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+                $('.go-top').fadeIn(200);
+            } else {
+                $('.go-top').fadeOut(200);
+            }
+        });
+
+        // Animate the scroll to top
+        $('.go-top').click(function(event) {
+            event.preventDefault();
+
+            $('html, body').animate({
+                scrollTop: 0
+            }, 900);
+        })
+    });
+</script>
 <script>
  var top0= new Vue({
      el:'#top0',

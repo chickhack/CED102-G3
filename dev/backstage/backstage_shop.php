@@ -1,6 +1,6 @@
 <?php
     try{
-        require_once("../../../../connect_ced102_g3_local.php");
+        require_once("../../connect_ced102_g3_local.php");
         $sql = "select * from prod";
         $product = $pdo->query($sql);  
     }catch(PDOException $e){
@@ -30,15 +30,15 @@
         <div class="div-list">
             <button class="div-list-btn-a">景點</button>
             <div>
-                <a href="../spaced_backstage_trip.php" class="div-list-btn-s ">景點管理</a>
-                <a href="../spaced_backstage_trip_reviews.php" class="div-list-btn-s ">景點評價</a>
-                <a href="#" class="div-list-btn-s">行程訂單管理</a>
+                <a href="./spaced_backstage_trip.php" class="div-list-btn-s ">景點管理</a>
+                <a href="./spaced_backstage_trip_reviews.php" class="div-list-btn-s ">景點評價</a>
+                <a href="./spaced_backstage_order.php" class="div-list-btn-s">行程訂單管理</a>
             </div>
             <button class="div-list-btn-a">商城</button>
             <div>
-                <a href="#" class="div-list-btn-s now">商品管理</a>
+                <a href="./backstage_shop.php" class="div-list-btn-s now">商品管理</a>
                 <a href="#" class="div-list-btn-s">商品評價</a>
-                <a href="#" class="div-list-btn-s">商品訂單管理</a>
+                <a href="./backstage_shop_order.php" class="div-list-btn-s">商品訂單管理</a>
             </div>
             <!-- <a href="#" class="div-list-btn-a">百科管理</a> -->
             <button class="div-list-btn-a">互動牆</button>
@@ -58,7 +58,7 @@
                     <div class="span-1 margin_left_1">
                         <label for="search1">
 
-                            <img src="../../" alt="" class="">
+                            <img src="../img/icon/loupe.png" alt="" class="">
                         </label>
                         <input type="search" class="search1" id="search1" placeholder="輸入景點編號、評價編號、內容">
                     </div>
@@ -113,7 +113,7 @@
                     <?php }?>
                     <div id="linebox">
                     <div class="upbox">
-                        <form action="../php/shopupdate.php" method="POST" enctype="multipart/form-data">
+                        <form action="./php/shopupdate.php" method="POST" enctype="multipart/form-data">
 
                             <input type="number" placeholder="類型" name="cat_no">
                             <input type="text" placeholder="商品名稱" name="prod_name">

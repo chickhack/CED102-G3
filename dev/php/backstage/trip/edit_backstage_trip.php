@@ -3,7 +3,7 @@ $spot_no = $_GET["spot_no"];
 $errMsg = "";
 
 try{
-    require_once("../../../../connect_ced102_g3_local.php");
+    require_once("../../connect_ced102_g3_local.php");
     $sql = "select *from spot where spot_no = :spot_no";
     $spot = $pdo->prepare($sql);
     $spot->bindValue(":spot_no", $spot_no);
@@ -91,7 +91,7 @@ if( $errMsg != ""){ //例外
                             max="1" value="<?=$spotRow -> spot_s_status ?>"></li>
                     <li class="list-group-item">價格 <input type="number" placeholder="輸入價格" name="spot_price" value="<?=$spotRow -> spot_price ?>"></li>
                     <li class="list-group-item">積分 <input type="number" placeholder="輸入積分" name="miles" value="<?=$spotRow -> miles ?>"></li>
-                    <li class="list-group-item "><input type="submit" name="update" class="btn btn-info btn-sm" value="確認修改"> &emsp;<a href="../spaced_backstage_trip.php" type="button" class="btn btn-dark btn-sm">取消修改</a>
+                    <li class="list-group-item "><input type="submit" name="update" class="btn btn-info btn-sm" value="確認修改"> &emsp;<a href="../../../backstage/spaced_backstage_trip.php" type="button" class="btn btn-dark btn-sm">取消修改</a>
 </li>
                 </form>
             </ul>

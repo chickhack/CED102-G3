@@ -414,6 +414,29 @@ nav .nav-links a {
   width: 100%;
   color: #ffffff;
   padding: 8px;
+<<<<<<< HEAD
+=======
+  transition: all .3s;
+}
+
+nav .nav-links a:hover {
+  color: #AD6E4A;
+}
+
+@media all and (max-width: 992px) {
+  nav .nav-links a:hover {
+    color: #0c0d18;
+  }
+>>>>>>> 598ba5df0bf3137fafc125593c0c546a2b21a527
+}
+
+nav .nav-links .bread {
+  color: #AD6E4A;
+  font-weight: 900;
+<<<<<<< HEAD
+=======
+  font-size: 16px;
+>>>>>>> 598ba5df0bf3137fafc125593c0c546a2b21a527
 }
 
 nav .nav-icons {

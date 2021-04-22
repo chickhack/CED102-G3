@@ -414,7 +414,12 @@ nav .nav-links a {
   width: 100%;
   color: #ffffff;
   padding: 8px;
+<<<<<<< HEAD
   -webkit-transition: all .3s;
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> dev
   transition: all .3s;
 }
 
@@ -426,11 +431,22 @@ nav .nav-links a:hover {
   nav .nav-links a:hover {
     color: #0c0d18;
   }
+<<<<<<< HEAD
+=======
+>>>>>>> 598ba5df0bf3137fafc125593c0c546a2b21a527
+>>>>>>> dev
 }
 
 nav .nav-links .bread {
   color: #AD6E4A;
   font-weight: 900;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+  font-size: 16px;
+>>>>>>> 598ba5df0bf3137fafc125593c0c546a2b21a527
+>>>>>>> dev
 }
 
 nav .nav-icons {
@@ -821,6 +837,10 @@ section.orderDetail li .imgWord {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> dev
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -831,9 +851,21 @@ section.orderDetail li .imgWord {
       justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+<<<<<<< HEAD
+=======
+}
+
+section.orderDetail .order li .imgWord .prod {
+=======
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+>>>>>>> dev
 }
 
 section.orderDetail li .imgWord .prod {
+>>>>>>> 598ba5df0bf3137fafc125593c0c546a2b21a527
   width: 8%;
 }
 
@@ -844,9 +876,19 @@ section.orderDetail li .imgWord .prod {
   }
 }
 
+<<<<<<< HEAD
 section.orderDetail li .imgWord .imgRight {
   display: -webkit-box;
   display: -ms-flexbox;
+=======
+<<<<<<< HEAD
+section.orderDetail .order li .imgWord .imgRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+=======
+section.orderDetail li .imgWord .imgRight {
+>>>>>>> 598ba5df0bf3137fafc125593c0c546a2b21a527
+>>>>>>> dev
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -868,9 +910,19 @@ section.orderDetail li .imgWord .imgRight {
   }
 }
 
+<<<<<<< HEAD
 section.orderDetail li .imgWord .integral {
   display: -webkit-box;
   display: -ms-flexbox;
+=======
+<<<<<<< HEAD
+section.orderDetail .order li .imgWord .integral {
+  display: -webkit-box;
+  display: -ms-flexbox;
+=======
+section.orderDetail li .imgWord .integral {
+>>>>>>> 598ba5df0bf3137fafc125593c0c546a2b21a527
+>>>>>>> dev
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;

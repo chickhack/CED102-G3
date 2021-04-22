@@ -414,7 +414,12 @@ nav .nav-links a {
   width: 100%;
   color: #ffffff;
   padding: 8px;
+<<<<<<< HEAD
   -webkit-transition: all .3s;
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> dev
   transition: all .3s;
 }
 
@@ -426,11 +431,22 @@ nav .nav-links a:hover {
   nav .nav-links a:hover {
     color: #0c0d18;
   }
+<<<<<<< HEAD
+=======
+>>>>>>> 598ba5df0bf3137fafc125593c0c546a2b21a527
+>>>>>>> dev
 }
 
 nav .nav-links .bread {
   color: #AD6E4A;
   font-weight: 900;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+  font-size: 16px;
+>>>>>>> 598ba5df0bf3137fafc125593c0c546a2b21a527
+>>>>>>> dev
 }
 
 nav .nav-icons {
@@ -1213,15 +1229,27 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> dev
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+<<<<<<< HEAD
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
+=======
+=======
+  justify-content: center;
+  align-items: center;
+  justify-content: start;
+>>>>>>> 598ba5df0bf3137fafc125593c0c546a2b21a527
+>>>>>>> dev
   border-bottom: 1px solid #AD6E4A;
   padding: 16px 0;
   position: relative;

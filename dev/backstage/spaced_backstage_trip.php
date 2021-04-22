@@ -1,5 +1,5 @@
 <?php 
-require_once("./php/connectBooks_kai.php");
+require_once("../php/connect_ced102_g3_local.php");
 
 try {
 	$sql = "select * from spot";
@@ -22,35 +22,37 @@ try {
     <title>後台景點管理</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/all.css">
-    <link rel="stylesheet" href="./css/pages/spaced_backstage.css">
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../css/pages/spaced_backstage.css">
+    <link rel="shortcut icon" href="./img/icon/shortcut.png" type="image/x-icon">
+
 </head>
 
 <body>
     <div class="top w-100 header">
         <!-- <p class="h1 padding_left_4 "></p> -->
-        <img src="./img/logo.png" class="imgs padding_left_4 padding_top_1" alt="">
+        <img src="../img/logo.png" class="imgs padding_left_4 padding_top_1" alt="">
         <p class="text-top padding_left_4 ">Backstage</p>
     </div>
     <div class="div-menu">
         <div class="div-list">
             <button class="div-list-btn-a">景點</button>
             <div>
-                <a href="./spaced_backstage_trip.php" class="div-list-btn-s now">景點管理</a>
-                <a href="./spaced_backstage_trip_reviews.php" class="div-list-btn-s">景點評價</a>
-                <a href="#" class="div-list-btn-s">行程訂單管理</a>
+                <a href="spaced_backstage_trip.php" class="div-list-btn-s now">景點管理</a>
+                <a href="spaced_backstage_trip_reviews.php" class="div-list-btn-s">景點評價</a>
+                <a href="spaced_backstage_order.php" class="div-list-btn-s ">行程訂單管理</a>
             </div>
             <button class="div-list-btn-a">商城</button>
             <div>
-                <a href="#" class="div-list-btn-s">商品管理</a>
+                <a href="backstage_shop.php" class="div-list-btn-s">商品管理</a>
                 <a href="#" class="div-list-btn-s">商品評價</a>
-                <a href="#" class="div-list-btn-s">商品訂單管理</a>
+                <a href="backstage_shop_order.php" class="div-list-btn-s">商品訂單管理</a>
             </div>
             <!-- <a href="#" class="div-list-btn-a">百科管理</a> -->
             <button class="div-list-btn-a">互動牆</button>
             <div>
                 <a href="#" class="div-list-btn-s">互動牆管理</a>
-                <a href="#" class="div-list-btn-s">互動牆檢舉管理</a>
+                <!-- <a href="#" class="div-list-btn-s">互動牆檢舉管理</a> -->
             </div>
             <a href="#" class="div-list-btn-a">會員管理</a>
             <a href="#" class="div-list-btn-a">管理員管理</a>
@@ -64,7 +66,7 @@ try {
                     <div class="span-1 margin_left_3">
                         <label for="search1">
 
-                            <img src="./img/icon/loupe.png" alt="" class="">
+                            <img src="../img/icon/loupe.png" alt="" class="">
                         </label>
                         <input type="search" class="search1" id="search1" placeholder="輸入景點編號、名稱">
                     </div>
@@ -81,7 +83,7 @@ try {
                     <p class="wi-5 text-1">積分</p>
                     <p class="wi-5 text-1">上架</p>
                     <p class="wi-5 text-1">精選</p>
-                    <p class="wi-15 text-1">圖片</p>
+                    <!-- <p class="wi-15 text-1">圖片</p> -->
                     <p class="wi-5 text-1"></p>
                     <p class="wi-5 text-1"></p>
 
@@ -103,9 +105,9 @@ while($spotRow = $spot->fetch(PDO::FETCH_ASSOC)){
                     <p class="wi-5 text-1"><?=$spotRow["miles"]?></p>
                     <p class="wi-5 text-1"><?=$spotRow["spot_status"]?></p>
                     <p class="wi-5 text-1"><?=$spotRow["spot_s_status"]?></p>
-                    <p class="wi-15 text-1 toomuch"><?=$spotRow["spot_pic"]?><br><?=$spotRow["spot_pic1"]?><br><?=$spotRow["spot_pic2"]?><br><?=$spotRow["spot_pic3"]?><br><?=$spotRow["spot_pic2"]?><br><?=$spotRow["spot_pic3"]?><br><?=$spotRow["spot_pic2"]?><br><?=$spotRow["spot_pic4"]?><br><?=$spotRow["spot_pic2"]?><br><?=$spotRow["spot_pics"]?></p>
-                    <a href="./php/edit_backstage_trip.php?spot_no=<?=$spotRow["spot_no"]?>" class="wi-5 text-1"><button type="button" class="btn btn-info btn-sm">修改</button></a>
-                    <a href="./php/delete_backstage_trip.php?spot_no=<?=$spotRow["spot_no"]?>"class="wi-5 text-1"><button type="button" class="btn btn-danger btn-sm">刪除</button></a>
+                    <!-- <p class="wi-15 text-1 toomuch"><?=$spotRow["spot_pic"]?><br><?=$spotRow["spot_pic1"]?><br><?=$spotRow["spot_pic2"]?><br><?=$spotRow["spot_pic3"]?><br><?=$spotRow["spot_pic2"]?><br><?=$spotRow["spot_pic3"]?><br><?=$spotRow["spot_pic2"]?><br><?=$spotRow["spot_pic4"]?><br><?=$spotRow["spot_pic2"]?><br><?=$spotRow["spot_pics"]?></p> -->
+                    <a href="../php/backstage/trip/edit_backstage_trip.php?spot_no=<?=$spotRow["spot_no"]?>" class="wi-5 text-1"><button type="button" class="btn btn-info btn-sm">修改</button></a>
+                    <a href="../php/backstage/trip/delete_backstage_trip.php?spot_no=<?=$spotRow["spot_no"]?>"class="wi-5 text-1"><button type="button" class="btn btn-danger btn-sm">刪除</button></a>
                 </div>
 
                 <?php 
@@ -114,7 +116,7 @@ while($spotRow = $spot->fetch(PDO::FETCH_ASSOC)){
 
                 <div id="linebox">
                     <div class="upbox">
-                        <form action="./php/create_backstage_trip.php" method="POST" enctype="multipart/form-data">
+                        <form action="../php/backstage/trip/create_backstage_trip.php" method="POST" enctype="multipart/form-data">
 
                             <input type="number" placeholder="景點編號" name="spot_no" disabled>
                             <input type="text" placeholder="景點名稱" name="spot_name">

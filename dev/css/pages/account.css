@@ -432,6 +432,7 @@ nav .nav-links a:hover {
 nav .nav-links .bread {
   color: #AD6E4A;
   font-weight: 900;
+  font-size: 16px;
 }
 
 nav .nav-icons {
@@ -1212,6 +1213,7 @@ nav .nav-links a:hover {
 nav .nav-links .bread {
   color: #AD6E4A;
   font-weight: 900;
+  font-size: 16px;
 }
 
 nav .nav-icons {
@@ -2398,6 +2400,7 @@ nav .nav-links a:hover {
 nav .nav-links .bread {
   color: #AD6E4A;
   font-weight: 900;
+  font-size: 16px;
 }
 
 nav .nav-icons {
@@ -3488,6 +3491,7 @@ nav .nav-links a:hover {
 nav .nav-links .bread {
   color: #AD6E4A;
   font-weight: 900;
+  font-size: 16px;
 }
 
 nav .nav-icons {
@@ -4686,6 +4690,15 @@ div.bk3 {
   border-radius: .25rem;
 }
 
+.account_tabs .content .info_form .info_left input.form.focus:focus, .account_tabs .content .info_form .info_right input.form.focus:focus, .account_tabs .content .info_form .info_edit input.form.focus:focus {
+  padding-left: 28px;
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
+  box-shadow: -1px 0px 20px 5px rgba(173, 110, 74, 0.45);
+  -webkit-box-shadow: -1px 0px 20px 5px rgba(173, 110, 74, 0.45);
+  -moz-box-shadow: -1px 0px 20px 5px rgba(173, 110, 74, 0.45);
+}
+
 .account_tabs .content .info_form .center {
   margin: 0 auto;
   float: none;
@@ -4832,59 +4845,63 @@ div.bk3 {
 .account_tabs .content .product_card input.form-control.point_input:focus, .account_tabs .content .product_card input.form-control-plaintext.point_input:focus, .account_tabs .content .tripcontent input.form-control.point_input:focus, .account_tabs .content .tripcontent input.form-control-plaintext.point_input:focus, .account_tabs .content .ordercontent input.form-control.point_input:focus, .account_tabs .content .ordercontent input.form-control-plaintext.point_input:focus, .account_tabs .content .pointcontent input.form-control.point_input:focus, .account_tabs .content .pointcontent input.form-control-plaintext.point_input:focus {
   border-color: #cccaca;
   outline: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  padding-left: 28px;
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
+  box-shadow: -1px 0px 20px 5px rgba(173, 110, 74, 0.45);
+  -webkit-box-shadow: -1px 0px 20px 5px rgba(173, 110, 74, 0.45);
+  -moz-box-shadow: -1px 0px 20px 5px rgba(173, 110, 74, 0.45);
 }
 
-.account_tabs .content .tripcontent, .account_tabs .content .ordercontent {
+.account_tabs .content .product_card .tripcontent, .account_tabs .content .product_card .ordercontent, .account_tabs .content .tripcontent .tripcontent, .account_tabs .content .tripcontent .ordercontent, .account_tabs .content .ordercontent .tripcontent, .account_tabs .content .ordercontent .ordercontent, .account_tabs .content .pointcontent .tripcontent, .account_tabs .content .pointcontent .ordercontent {
   margin-left: 10px;
 }
 
-.account_tabs .content .tripcontent .table, .account_tabs .content .ordercontent .table {
+.account_tabs .content .product_card .tripcontent .table, .account_tabs .content .product_card .ordercontent .table, .account_tabs .content .tripcontent .tripcontent .table, .account_tabs .content .tripcontent .ordercontent .table, .account_tabs .content .ordercontent .tripcontent .table, .account_tabs .content .ordercontent .ordercontent .table, .account_tabs .content .pointcontent .tripcontent .table, .account_tabs .content .pointcontent .ordercontent .table {
   width: 100%;
   font-family: "Microsoft JhengHei";
 }
 
-.account_tabs .content .tripcontent .table caption, .account_tabs .content .ordercontent .table caption {
+.account_tabs .content .product_card .tripcontent .table caption, .account_tabs .content .product_card .ordercontent .table caption, .account_tabs .content .tripcontent .tripcontent .table caption, .account_tabs .content .tripcontent .ordercontent .table caption, .account_tabs .content .ordercontent .tripcontent .table caption, .account_tabs .content .ordercontent .ordercontent .table caption, .account_tabs .content .pointcontent .tripcontent .table caption, .account_tabs .content .pointcontent .ordercontent .table caption {
   text-align: left;
 }
 
-.account_tabs .content .tripcontent .table span, .account_tabs .content .ordercontent .table span {
+.account_tabs .content .product_card .tripcontent .table span, .account_tabs .content .product_card .ordercontent .table span, .account_tabs .content .tripcontent .tripcontent .table span, .account_tabs .content .tripcontent .ordercontent .table span, .account_tabs .content .ordercontent .tripcontent .table span, .account_tabs .content .ordercontent .ordercontent .table span, .account_tabs .content .pointcontent .tripcontent .table span, .account_tabs .content .pointcontent .ordercontent .table span {
   color: #C9ADA7;
 }
 
-.account_tabs .content .tripcontent .table span.num, .account_tabs .content .ordercontent .table span.num {
+.account_tabs .content .product_card .tripcontent .table span.num, .account_tabs .content .product_card .ordercontent .table span.num, .account_tabs .content .tripcontent .tripcontent .table span.num, .account_tabs .content .tripcontent .ordercontent .table span.num, .account_tabs .content .ordercontent .tripcontent .table span.num, .account_tabs .content .ordercontent .ordercontent .table span.num, .account_tabs .content .pointcontent .tripcontent .table span.num, .account_tabs .content .pointcontent .ordercontent .table span.num {
   color: #cccaca;
   margin-left: 15px;
   line-height: 20px;
 }
 
-.account_tabs .content .tripcontent .table thead, .account_tabs .content .tripcontent .table td, .account_tabs .content .ordercontent .table thead, .account_tabs .content .ordercontent .table td {
+.account_tabs .content .product_card .tripcontent .table thead, .account_tabs .content .product_card .tripcontent .table td, .account_tabs .content .product_card .ordercontent .table thead, .account_tabs .content .product_card .ordercontent .table td, .account_tabs .content .tripcontent .tripcontent .table thead, .account_tabs .content .tripcontent .tripcontent .table td, .account_tabs .content .tripcontent .ordercontent .table thead, .account_tabs .content .tripcontent .ordercontent .table td, .account_tabs .content .ordercontent .tripcontent .table thead, .account_tabs .content .ordercontent .tripcontent .table td, .account_tabs .content .ordercontent .ordercontent .table thead, .account_tabs .content .ordercontent .ordercontent .table td, .account_tabs .content .pointcontent .tripcontent .table thead, .account_tabs .content .pointcontent .tripcontent .table td, .account_tabs .content .pointcontent .ordercontent .table thead, .account_tabs .content .pointcontent .ordercontent .table td {
   border: 1px solid #292b41;
   padding: 8px 15px;
 }
 
-.account_tabs .content .tripcontent .table th, .account_tabs .content .ordercontent .table th {
+.account_tabs .content .product_card .tripcontent .table th, .account_tabs .content .product_card .ordercontent .table th, .account_tabs .content .tripcontent .tripcontent .table th, .account_tabs .content .tripcontent .ordercontent .table th, .account_tabs .content .ordercontent .tripcontent .table th, .account_tabs .content .ordercontent .ordercontent .table th, .account_tabs .content .pointcontent .tripcontent .table th, .account_tabs .content .pointcontent .ordercontent .table th {
   padding: 8px 15px;
 }
 
-.account_tabs .content .tripcontent .table table, .account_tabs .content .ordercontent .table table {
+.account_tabs .content .product_card .tripcontent .table table, .account_tabs .content .product_card .ordercontent .table table, .account_tabs .content .tripcontent .tripcontent .table table, .account_tabs .content .tripcontent .ordercontent .table table, .account_tabs .content .ordercontent .tripcontent .table table, .account_tabs .content .ordercontent .ordercontent .table table, .account_tabs .content .pointcontent .tripcontent .table table, .account_tabs .content .pointcontent .ordercontent .table table {
   width: 100%;
 }
 
-.account_tabs .content .tripcontent .table table thead, .account_tabs .content .ordercontent .table table thead {
+.account_tabs .content .product_card .tripcontent .table table thead, .account_tabs .content .product_card .ordercontent .table table thead, .account_tabs .content .tripcontent .tripcontent .table table thead, .account_tabs .content .tripcontent .ordercontent .table table thead, .account_tabs .content .ordercontent .tripcontent .table table thead, .account_tabs .content .ordercontent .ordercontent .table table thead, .account_tabs .content .pointcontent .tripcontent .table table thead, .account_tabs .content .pointcontent .ordercontent .table table thead {
   color: #ffffff;
 }
 
-.account_tabs .content .tripcontent .table table .table_title, .account_tabs .content .ordercontent .table table .table_title {
+.account_tabs .content .product_card .tripcontent .table table .table_title, .account_tabs .content .product_card .ordercontent .table table .table_title, .account_tabs .content .tripcontent .tripcontent .table table .table_title, .account_tabs .content .tripcontent .ordercontent .table table .table_title, .account_tabs .content .ordercontent .tripcontent .table table .table_title, .account_tabs .content .ordercontent .ordercontent .table table .table_title, .account_tabs .content .pointcontent .tripcontent .table table .table_title, .account_tabs .content .pointcontent .ordercontent .table table .table_title {
   background-color: #292b41;
 }
 
-.account_tabs .content .tripcontent .table table tbody, .account_tabs .content .ordercontent .table table tbody {
+.account_tabs .content .product_card .tripcontent .table table tbody, .account_tabs .content .product_card .ordercontent .table table tbody, .account_tabs .content .tripcontent .tripcontent .table table tbody, .account_tabs .content .tripcontent .ordercontent .table table tbody, .account_tabs .content .ordercontent .tripcontent .table table tbody, .account_tabs .content .ordercontent .ordercontent .table table tbody, .account_tabs .content .pointcontent .tripcontent .table table tbody, .account_tabs .content .pointcontent .ordercontent .table table tbody {
   color: #cccaca;
 }
 
-.account_tabs .content .tripcontent .table .orderdetail, .account_tabs .content .ordercontent .table .orderdetail {
+.account_tabs .content .product_card .tripcontent .table .orderdetail, .account_tabs .content .product_card .ordercontent .table .orderdetail, .account_tabs .content .tripcontent .tripcontent .table .orderdetail, .account_tabs .content .tripcontent .ordercontent .table .orderdetail, .account_tabs .content .ordercontent .tripcontent .table .orderdetail, .account_tabs .content .ordercontent .ordercontent .table .orderdetail, .account_tabs .content .pointcontent .tripcontent .table .orderdetail, .account_tabs .content .pointcontent .ordercontent .table .orderdetail {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4893,183 +4910,159 @@ div.bk3 {
           align-items: center;
 }
 
-.account_tabs .content .tripcontent .table .orderdetail img, .account_tabs .content .ordercontent .table .orderdetail img {
+.account_tabs .content .product_card .tripcontent .table .orderdetail img, .account_tabs .content .product_card .ordercontent .table .orderdetail img, .account_tabs .content .tripcontent .tripcontent .table .orderdetail img, .account_tabs .content .tripcontent .ordercontent .table .orderdetail img, .account_tabs .content .ordercontent .tripcontent .table .orderdetail img, .account_tabs .content .ordercontent .ordercontent .table .orderdetail img, .account_tabs .content .pointcontent .tripcontent .table .orderdetail img, .account_tabs .content .pointcontent .ordercontent .table .orderdetail img {
   width: 18px;
   margin-right: 5px;
 }
 
-.account_tabs .content .tripcontent .table .detail-open, .account_tabs .content .ordercontent .table .detail-open {
+.account_tabs .content .product_card .tripcontent .table .detail-open, .account_tabs .content .product_card .ordercontent .table .detail-open, .account_tabs .content .tripcontent .tripcontent .table .detail-open, .account_tabs .content .tripcontent .ordercontent .table .detail-open, .account_tabs .content .ordercontent .tripcontent .table .detail-open, .account_tabs .content .ordercontent .ordercontent .table .detail-open, .account_tabs .content .pointcontent .tripcontent .table .detail-open, .account_tabs .content .pointcontent .ordercontent .table .detail-open {
   display: none;
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
-  .welcome {
+  .account_tabs .welcome {
     padding: 15vh 50px 0px 50px;
   }
-  .account_card {
+  .account_tabs .account_card {
     margin: 30px 50px 0px 50px;
     padding: 30px;
   }
-  .account_card .lev_acc {
+  .account_tabs .account_card .lev_acc {
     padding: 30px 0px 20px 45px;
   }
-  .account_card .your_acc .next_rocket {
+  .account_tabs .account_card .your_acc .next_rocket {
     margin-left: -30px;
     margin-top: 40px;
   }
-  .account_card .your_acc .next_rocket .account_rocket {
+  .account_tabs .account_card .your_acc .next_rocket .account_rocket {
     max-width: 5%;
   }
-  .account_tabs .account_nav {
+  .account_tabs .account_tabs .account_nav {
     margin: 40px 50px 0px 50px;
   }
-  .account_tabs .account_line {
+  .account_tabs .account_tabs .account_line {
     margin: 0px 50px 0px 50px;
   }
-  .account_tabs .content {
+  .account_tabs .account_tabs .content {
     padding-bottom: 100px;
   }
-  .account_tabs .content .info_form {
+  .account_tabs .account_tabs .content .info_form {
     margin: 0px 50px 0px 50px;
     padding: 30px 0px 30px 0px;
   }
-  .account_tabs .content .info_form .info_img {
+  .account_tabs .account_tabs .content .info_form .info_img {
     margin: 0px 30px 0px 0px;
   }
-  .account_tabs .content .info_form .info_img .img_input {
+  .account_tabs .account_tabs .content .info_form .info_img .img_input {
     margin: 15px 10px 0px 10px;
     width: auto;
   }
-  .account_tabs .content .info_form .info_img .circle-image {
+  .account_tabs .account_tabs .content .info_form .info_img .circle-image {
     width: 100px;
     height: 100px;
   }
-  .account_tabs .content .info_form .info_img .circle-image .infoimg {
+  .account_tabs .account_tabs .content .info_form .info_img .circle-image .infoimg {
     width: 100%;
     height: 100%;
   }
-  .account_tabs .content .info_form .info_left .form, .account_tabs .content .info_form .info_left .unform, .account_tabs .content .info_form .info_right .form, .account_tabs .content .info_form .info_right .unform, .account_tabs .content .info_form .info_edit .form, .account_tabs .content .info_form .info_edit .unform {
+  .account_tabs .account_tabs .content .info_form .info_left .form, .account_tabs .account_tabs .content .info_form .info_left .unform, .account_tabs .account_tabs .content .info_form .info_right .form, .account_tabs .account_tabs .content .info_form .info_right .unform, .account_tabs .account_tabs .content .info_form .info_edit .form, .account_tabs .account_tabs .content .info_form .info_edit .unform {
     width: 70%;
   }
-  .account_tabs .content .info_form .info_left .info_editbtn, .account_tabs .content .info_form .info_right .info_editbtn, .account_tabs .content .info_form .info_edit .info_editbtn {
+  .account_tabs .account_tabs .content .info_form .info_left .info_editbtn, .account_tabs .account_tabs .content .info_form .info_right .info_editbtn, .account_tabs .account_tabs .content .info_form .info_edit .info_editbtn {
     margin-left: 0px;
   }
-  .account_tabs .content .info_form .center {
+  .account_tabs .account_tabs .content .info_form .center {
     margin: 0;
   }
-  .account_tabs .content .row > * {
+  .account_tabs .account_tabs .content .row > * {
     padding-right: 0px;
     padding-left: 0px;
   }
-  .account_tabs .content .info_editbtn, .account_tabs .content .pointbtn {
+  .account_tabs .account_tabs .content .info_editbtn, .account_tabs .account_tabs .content .pointbtn {
     margin-left: 50px;
     margin-bottom: 10px;
   }
-  .account_tabs .content .info_editbtn:hover, .account_tabs .content .heartbtns:hover, .account_tabs .content .postbtns:hover, .account_tabs .content .pointbtn:hover, .account_tabs .content .img_input:hover, .account_tabs .content .heartbtns.active {
-    color: #ffff;
-    border: 1px solid #AD6E4A;
-    background: #AD6E4A;
-  }
-  .account_tabs .content .info_editbtn:focus + .btn-primary, .account_tabs .content .heartbtns:focus, .account_tabs .content .btn-primary:focus, .account_tabs .content .postbtns:focus, .account_tabs .content .pointbtn:focus, .account_tabs .content .img_input:focus {
-    color: #fff;
-    background-color: #AD6E4A;
-    border-color: #AD6E4A;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-  }
-  .account_tabs .content .heart_btns, .account_tabs .content .post_btns {
+  .account_tabs .account_tabs .content .heart_btns, .account_tabs .account_tabs .content .post_btns {
     padding: 0px 70px 0px 70px;
   }
-  .account_tabs .content .product_card, .account_tabs .content .tripcontent, .account_tabs .content .ordercontent, .account_tabs .content .pointcontent {
+  .account_tabs .account_tabs .content .product_card, .account_tabs .account_tabs .content .tripcontent, .account_tabs .account_tabs .content .ordercontent, .account_tabs .account_tabs .content .pointcontent {
     padding: 0px 70px 20px 70px;
   }
-  .account_tabs .content .tripcontent, .account_tabs .content .ordercontent {
+  .account_tabs .account_tabs .content .tripcontent, .account_tabs .account_tabs .content .ordercontent {
     margin-left: 10px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
-  .welcome {
+  .account_tabs .welcome {
     padding: 15vh 50px 0px 50px;
   }
-  .account_card {
+  .account_tabs .account_card {
     margin: 30px 50px 0px 50px;
     padding: 30px;
   }
-  .account_card .lev_acc {
+  .account_tabs .account_card .lev_acc {
     padding: 30px 0px 20px 45px;
   }
-  .account_card .your_acc .next_rocket {
+  .account_tabs .account_card .your_acc .next_rocket {
     margin-left: -30px;
     margin-top: 40px;
   }
-  .account_card .your_acc .next_rocket .account_rocket {
+  .account_tabs .account_card .your_acc .next_rocket .account_rocket {
     max-width: 5%;
   }
-  .account_tabs .account_nav {
+  .account_tabs .account_tabs .account_nav {
     margin: 40px 50px 0px 50px;
   }
-  .account_tabs .account_line {
+  .account_tabs .account_tabs .account_line {
     margin: 0px 50px 0px 50px;
   }
-  .account_tabs .content {
+  .account_tabs .account_tabs .content {
     padding-bottom: 100px;
   }
-  .account_tabs .content .info_form {
+  .account_tabs .account_tabs .content .info_form {
     margin: 0px 50px 0px 50px;
     padding: 30px 0px 30px 0px;
   }
-  .account_tabs .content .info_form .info_img {
+  .account_tabs .account_tabs .content .info_form .info_img {
     margin: 0px 30px 0px 0px;
   }
-  .account_tabs .content .info_form .info_img .img_input {
+  .account_tabs .account_tabs .content .info_form .info_img .img_input {
     margin: 15px 10px 0px 10px;
     width: auto;
   }
-  .account_tabs .content .info_form .info_img .circle-image {
+  .account_tabs .account_tabs .content .info_form .info_img .circle-image {
     width: 100px;
     height: 100px;
   }
-  .account_tabs .content .info_form .info_img .circle-image .infoimg {
+  .account_tabs .account_tabs .content .info_form .info_img .circle-image .infoimg {
     width: 100%;
     height: 100%;
   }
-  .account_tabs .content .info_form .info_left .form, .account_tabs .content .info_form .info_left .unform, .account_tabs .content .info_form .info_right .form, .account_tabs .content .info_form .info_right .unform, .account_tabs .content .info_form .info_edit .form, .account_tabs .content .info_form .info_edit .unform {
+  .account_tabs .account_tabs .content .info_form .info_left .form, .account_tabs .account_tabs .content .info_form .info_left .unform, .account_tabs .account_tabs .content .info_form .info_right .form, .account_tabs .account_tabs .content .info_form .info_right .unform, .account_tabs .account_tabs .content .info_form .info_edit .form, .account_tabs .account_tabs .content .info_form .info_edit .unform {
     width: 70%;
   }
-  .account_tabs .content .info_form .info_left .info_editbtn, .account_tabs .content .info_form .info_right .info_editbtn, .account_tabs .content .info_form .info_edit .info_editbtn {
+  .account_tabs .account_tabs .content .info_form .info_left .info_editbtn, .account_tabs .account_tabs .content .info_form .info_right .info_editbtn, .account_tabs .account_tabs .content .info_form .info_edit .info_editbtn {
     margin-left: 0px;
   }
-  .account_tabs .content .info_form .center {
+  .account_tabs .account_tabs .content .info_form .center {
     margin: 0;
   }
-  .account_tabs .content .row > * {
+  .account_tabs .account_tabs .content .row > * {
     padding-right: 0px;
     padding-left: 0px;
   }
-  .account_tabs .content .info_editbtn, .account_tabs .content .pointbtn {
+  .account_tabs .account_tabs .info_editbtn, .account_tabs .account_tabs .pointbtn {
     margin-left: 50px;
     margin-bottom: 10px;
   }
-  .account_tabs .content .info_editbtn:hover, .account_tabs .content .heartbtns:hover, .account_tabs .content .postbtns:hover, .account_tabs .content .pointbtn:hover, .account_tabs .content .img_input:hover, .account_tabs .content .heartbtns.active {
-    color: #ffff;
-    border: 1px solid #AD6E4A;
-    background: #AD6E4A;
-  }
-  .account_tabs .content .info_editbtn:focus + .btn-primary, .account_tabs .content .heartbtns:focus, .account_tabs .content .btn-primary:focus, .account_tabs .content .postbtns:focus, .account_tabs .content .pointbtn:focus, .account_tabs .content .img_input:focus {
-    color: #fff;
-    background-color: #AD6E4A;
-    border-color: #AD6E4A;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-  }
-  .account_tabs .content .heart_btns, .account_tabs .content .post_btns {
+  .account_tabs .account_tabs .heart_btns, .account_tabs .account_tabs .post_btns {
     padding: 0px 70px 0px 70px;
   }
-  .account_tabs .content .product_card, .account_tabs .content .tripcontent, .account_tabs .content .ordercontent, .account_tabs .content .pointcontent {
+  .account_tabs .account_tabs .product_card, .account_tabs .account_tabs .tripcontent, .account_tabs .account_tabs .ordercontent, .account_tabs .account_tabs .pointcontent {
     padding: 0px 70px 20px 70px;
   }
-  .account_tabs .content .tripcontent, .account_tabs .content .ordercontent {
+  .account_tabs .account_tabs .tripcontent, .account_tabs .account_tabs .ordercontent {
     margin-left: 10px;
   }
 }
@@ -5136,18 +5129,6 @@ div.bk3 {
   .account_tabs .content .info_editbtn, .account_tabs .content .pointbtn {
     margin-left: 50px;
     margin-bottom: 10px;
-  }
-  .account_tabs .content .info_editbtn:hover, .account_tabs .content .heartbtns:hover, .account_tabs .content .postbtns:hover, .account_tabs .content .pointbtn:hover, .account_tabs .content .img_input:hover, .account_tabs .content .heartbtns.active {
-    color: #ffff;
-    border: 1px solid #AD6E4A;
-    background: #AD6E4A;
-  }
-  .account_tabs .content .info_editbtn:focus + .btn-primary, .account_tabs .content .heartbtns:focus, .account_tabs .content .btn-primary:focus, .account_tabs .content .postbtns:focus, .account_tabs .content .pointbtn:focus, .account_tabs .content .img_input:focus {
-    color: #fff;
-    background-color: #AD6E4A;
-    border-color: #AD6E4A;
-    -webkit-box-shadow: none;
-            box-shadow: none;
   }
   .account_tabs .content .heart_btns, .account_tabs .content .post_btns {
     padding: 0px 70px 0px 70px;

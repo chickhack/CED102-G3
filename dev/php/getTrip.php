@@ -1,6 +1,6 @@
 <?php 
 try {
-	require_once("./connectbooks_kai.php");
+	require_once("connect_ced102_g3_local.php");
 	$sql = "select *from spot";
 	$tops = $pdo->query($sql);
 	$spot1 = $tops->fetchAll(PDO::FETCH_ASSOC);

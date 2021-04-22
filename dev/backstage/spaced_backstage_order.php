@@ -1,14 +1,6 @@
 <?php 
-<<<<<<< HEAD:dev/backsatge/spaced_backstage_order.php
-// require_once("./php/connectbooks_kai.php");
-<<<<<<< HEAD:dev/backstage/spaced_backstage_order.php
-require_once("../../connect_ced102_g3_local.php");
-=======
-require_once("./php/connectBooks_Yun.php");
-=======
-require_once("../php/connectbooks_kai.php");
->>>>>>> 34462b282fb3557e5596bfde68fbe15593b76fcf:dev/backstage/spaced_backstage_trip.php
->>>>>>> 1ae28f91038a4c3c157553d18c3f0413d55d75a6:dev/backsatge/spaced_backstage_order.php
+require_once("../php/connect_ced102_g3_local.php");
+
 
 try {
 	$sql = "select * from spot_order";
@@ -42,30 +34,24 @@ try {
         <p class="text-top padding_left_4 ">Backstage</p>
     </div>
     <div class="div-menu">
-        <div class="div-list">
+    <div class="div-list">
             <button class="div-list-btn-a">景點</button>
             <div>
-<<<<<<< HEAD:dev/backsatge/spaced_backstage_order.php
-                <a href="./spaced_backstage_trip.php" class="div-list-btn-s ">景點管理</a>
-                <a href="./spaced_backstage_trip_reviews.php" class="div-list-btn-s">景點評價</a>
-                <a href="./spaced_backstage_order.php" class="div-list-btn-s now">行程訂單管理</a>
-=======
-                <a href="spaced_backstage_trip.php" class="div-list-btn-s now">景點管理</a>
+                <a href="spaced_backstage_trip.php" class="div-list-btn-s ">景點管理</a>
                 <a href="spaced_backstage_trip_reviews.php" class="div-list-btn-s">景點評價</a>
-                <a href="#" class="div-list-btn-s">行程訂單管理</a>
->>>>>>> 34462b282fb3557e5596bfde68fbe15593b76fcf:dev/backstage/spaced_backstage_trip.php
+                <a href="spaced_backstage_order.php" class="div-list-btn-s now">行程訂單管理</a>
             </div>
             <button class="div-list-btn-a">商城</button>
             <div>
-                <a href="#" class="div-list-btn-s">商品管理</a>
+                <a href="backstage_shop.php" class="div-list-btn-s">商品管理</a>
                 <a href="#" class="div-list-btn-s">商品評價</a>
-                <a href="#" class="div-list-btn-s">商品訂單管理</a>
+                <a href="backstage_shop_order.php" class="div-list-btn-s">商品訂單管理</a>
             </div>
             <!-- <a href="#" class="div-list-btn-a">百科管理</a> -->
             <button class="div-list-btn-a">互動牆</button>
             <div>
                 <a href="#" class="div-list-btn-s">互動牆管理</a>
-                <a href="#" class="div-list-btn-s">互動牆檢舉管理</a>
+                <!-- <a href="#" class="div-list-btn-s">互動牆檢舉管理</a> -->
             </div>
             <a href="#" class="div-list-btn-a">會員管理</a>
             <a href="#" class="div-list-btn-a">管理員管理</a>
@@ -98,8 +84,8 @@ try {
                     <p class="wi-5 text-1">結案</p>
                     <p class="wi-5 text-1">導遊</p>
                     <p class="wi-5 text-1">飛船</p>
-                    <p class="wi-15 text-1">信用卡</p>
-                    <p class="wi-10 text-1">檢查碼</p>
+                    <!-- <p class="wi-15 text-1">信用卡</p>
+                    <p class="wi-10 text-1">檢查碼</p> -->
                     <p class="wi-5 text-1">修改</p>
 
 
@@ -128,8 +114,8 @@ try {
                     <p class="wi-5 text-1"><?=$orderRow ["order_status"]?></p>
                     <p class="wi-5 text-1"><?=$orderRow ["guide"]?></p>
                     <p class="wi-5 text-1"><?=$orderRow ["rocket"]?></p>
-                    <p class="wi-15 text-1"><?=$orderRow ["car_no"]?></p>
-                    <p class="wi-10 text-1"><?=$orderRow ["car_insp"]?></p>
+                    <!-- <p class="wi-15 text-1"><?=$orderRow ["car_no"]?></p>
+                    <p class="wi-10 text-1"><?=$orderRow ["car_insp"]?></p> -->
                     <?php
                         if($orderRow['order_status'] == 0){
                             echo "<p class='wi-5 text-1'><a href='../php/backstage/spot_order/edit_backstage_spot_order.php?order_no=$orderRow[order_no]&order_status=$orderRow[order_status]' name='update' type='button' class='btn btn-primary btn-sm'>上架</a></p>";

@@ -182,6 +182,15 @@
           line-height: 1.5;
           border-radius: .25rem;
         }
+        input.form.focus:focus{
+          padding-left: 28px; 
+          transform: scale(1.08);
+          box-shadow: -1px 0px 20px 5px rgba(#AD6E4A,0.45);
+          -webkit-box-shadow: -1px 0px 20px 5px rgba(#AD6E4A,0.45);
+          -moz-box-shadow: -1px 0px 20px 5px rgba(#AD6E4A,0.45);
+          
+          // border: none;
+        }        
       }
       .center {
         margin: 0 auto;
@@ -221,6 +230,7 @@
       border-color: #AD6E4A;
       box-shadow: none;
     }
+
     // 互動牆管理按鈕 // 收藏按鈕 // 所有放在分頁內按鈕控制
     .heart_btns, .post_btns {
       padding: 0px 0px 0px 270px;
@@ -320,11 +330,14 @@
       input.form-control.point_input:focus, input.form-control-plaintext.point_input:focus {
         border-color: #cccaca;
         outline: none;
-        box-shadow: none;
+        padding-left: 28px; 
+        transform: scale(1.08);
+        box-shadow:  -1px 0px 20px 5px rgba(#AD6E4A,0.45);
+        -webkit-box-shadow: -1px 0px 20px 5px rgba(#AD6E4A,0.45);
+        -moz-box-shadow: -1px 0px 20px 5px rgba(#AD6E4A,0.45);
       }
 
-
-    }
+      
 
     //行程管理 //商品管理
     .tripcontent, .ordercontent {
@@ -446,25 +459,10 @@
         padding-right: 0px;
         padding-left: 0px;
       }
-      .btn-check:focus+.btn, .btn:focus {  // 移除點擊時邊框陰影
-        // outline: 0;
-        // box-shadow: none;
-      }
       // 編輯資料按鈕 // 收藏按鈕 // 互動管理按鈕 // 轉換積分按鈕
       .info_editbtn, .pointbtn {
         margin-left: 50px;
         margin-bottom: 10px;
-      }
-      .info_editbtn:hover, .heartbtns:hover, .postbtns:hover, .pointbtn:hover, .img_input:hover, .heartbtns.active {
-        color: #ffff;
-        border: 1px solid #AD6E4A;
-        background: #AD6E4A;
-      }
-      .info_editbtn:focus+.btn-primary, .heartbtns:focus, .btn-primary:focus, .postbtns:focus, .pointbtn:focus, .img_input:focus {
-        color: #fff;
-        background-color: #AD6E4A;
-        border-color: #AD6E4A;
-        box-shadow: none;
       }
       // 互動牆管理按鈕 // 收藏按鈕 // 所有放在分頁內按鈕控制
       .heart_btns, .post_btns {
@@ -545,26 +543,13 @@
         padding-right: 0px;
         padding-left: 0px;
       }
-      .btn-check:focus+.btn, .btn:focus {  // 移除點擊時邊框陰影
-        // outline: 0;
-        // box-shadow: none;
       }
       // 編輯資料按鈕 // 收藏按鈕 // 互動管理按鈕 // 轉換積分按鈕
       .info_editbtn, .pointbtn {
         margin-left: 50px;
         margin-bottom: 10px;
       }
-      .info_editbtn:hover, .heartbtns:hover, .postbtns:hover, .pointbtn:hover, .img_input:hover, .heartbtns.active {
-        color: #ffff;
-        border: 1px solid #AD6E4A;
-        background: #AD6E4A;
-      }
-      .info_editbtn:focus+.btn-primary, .heartbtns:focus, .btn-primary:focus, .postbtns:focus, .pointbtn:focus, .img_input:focus {
-        color: #fff;
-        background-color: #AD6E4A;
-        border-color: #AD6E4A;
-        box-shadow: none;
-      }
+
       // 互動牆管理按鈕 // 收藏按鈕 // 所有放在分頁內按鈕控制
       .heart_btns, .post_btns {
         padding: 0px 70px 0px 70px;
@@ -644,25 +629,10 @@
         padding-right: 0px;
         padding-left: 0px;
       }
-      .btn-check:focus+.btn, .btn:focus {  // 移除點擊時邊框陰影
-        // outline: 0;
-        // box-shadow: none;
-      }
       // 編輯資料按鈕 // 收藏按鈕 // 互動管理按鈕 // 轉換積分按鈕
       .info_editbtn, .pointbtn {
         margin-left: 50px;
         margin-bottom: 10px;
-      }
-      .info_editbtn:hover, .heartbtns:hover, .postbtns:hover, .pointbtn:hover, .img_input:hover, .heartbtns.active {
-        color: #ffff;
-        border: 1px solid #AD6E4A;
-        background: #AD6E4A;
-      }
-      .info_editbtn:focus+.btn-primary, .heartbtns:focus, .btn-primary:focus, .postbtns:focus, .pointbtn:focus, .img_input:focus {
-        color: #fff;
-        background-color: #AD6E4A;
-        border-color: #AD6E4A;
-        box-shadow: none;
       }
       // 互動牆管理按鈕 // 收藏按鈕 // 所有放在分頁內按鈕控制
       .heart_btns, .post_btns {

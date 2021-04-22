@@ -414,7 +414,12 @@ nav .nav-links a {
   width: 100%;
   color: #ffffff;
   padding: 8px;
+<<<<<<< HEAD
   -webkit-transition: all .3s;
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> dev
   transition: all .3s;
 }
 
@@ -426,11 +431,22 @@ nav .nav-links a:hover {
   nav .nav-links a:hover {
     color: #0c0d18;
   }
+<<<<<<< HEAD
+=======
+>>>>>>> 598ba5df0bf3137fafc125593c0c546a2b21a527
+>>>>>>> dev
 }
 
 nav .nav-links .bread {
   color: #AD6E4A;
   font-weight: 900;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+  font-size: 16px;
+>>>>>>> 598ba5df0bf3137fafc125593c0c546a2b21a527
+>>>>>>> dev
 }
 
 nav .nav-icons {
@@ -949,28 +965,35 @@ div.bk3 {
 }
 
 .first .first_right .hottrip {
+<<<<<<< HEAD
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
+=======
+<<<<<<< HEAD
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+=======
+>>>>>>> 598ba5df0bf3137fafc125593c0c546a2b21a527
+>>>>>>> dev
   display: inline-flex;
   padding-top: 80px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .first .first_right .hottrip {
+<<<<<<< HEAD
+    padding-top: 160px;
+=======
     padding-top: 120px;
   }
 }
 
 @media screen and (max-width: 576px) {
   .first .first_right .hottrip {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     margin: 0 auto;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
+>>>>>>> 598ba5df0bf3137fafc125593c0c546a2b21a527
   }
 }
 
@@ -1023,8 +1046,17 @@ div.bk3 {
   position: absolute;
   top: 15px;
   left: 50%;
+<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+=======
+<<<<<<< HEAD
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+=======
+  transform: translateX(-50%);
+>>>>>>> 598ba5df0bf3137fafc125593c0c546a2b21a527
+>>>>>>> dev
   z-index: 2;
 }
 
@@ -1033,8 +1065,11 @@ div.bk3 {
 }
 
 .first .first_right .hottrip div.planet_top img.planet_a1:hover {
+<<<<<<< HEAD
   -webkit-transform: translateY(0.2em);
           transform: translateY(0.2em);
+=======
+  transform: translateY(0.2em);
 }
 
 @media all and (max-width: 577px) {
@@ -1042,11 +1077,21 @@ div.bk3 {
     margin: 0 auto;
     max-width: 90%;
   }
+>>>>>>> 598ba5df0bf3137fafc125593c0c546a2b21a527
 }
 
 .first .first_right .hottrip div.planet_top div.word {
   position: absolute;
   top: 190px;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+=======
+>>>>>>> 598ba5df0bf3137fafc125593c0c546a2b21a527
+>>>>>>> dev
   text-align: center;
   margin: 0 auto;
   width: 100%;
@@ -1057,8 +1102,16 @@ div.bk3 {
 }
 
 .first .first_right .hottrip div.planet_top div.word .tag {
+<<<<<<< HEAD
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
+=======
+<<<<<<< HEAD
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+=======
+>>>>>>> 598ba5df0bf3137fafc125593c0c546a2b21a527
+>>>>>>> dev
   display: inline-flex;
   border: 1px solid #cccaca;
   border-radius: 5px;
@@ -1100,6 +1153,7 @@ div.bk3 {
   background-color: #bf896b;
 }
 
+<<<<<<< HEAD
 @media screen and (min-width: 577px) and (max-width: 768px) {
   .first .first_right .hottrip .planet_top:nth-child(3) {
     display: none;
@@ -1112,6 +1166,17 @@ div.bk3 {
 @-webkit-keyframes h2 {
   0% {
     text-shadow: 0 0 6px #FFF;
+=======
+<<<<<<< HEAD
+@-webkit-keyframes h2 {
+  0% {
+    text-shadow: 0 0 6px #FFF;
+=======
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .first .first_right .hottrip .planet_top:nth-child(3) {
+    display: none;
+>>>>>>> 598ba5df0bf3137fafc125593c0c546a2b21a527
+>>>>>>> dev
   }
   100% {
     text-shadow: 0 0 0px #000;
@@ -1128,8 +1193,16 @@ div.bk3 {
 }
 
 .tripselect {
+<<<<<<< HEAD
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
+=======
+<<<<<<< HEAD
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+=======
+>>>>>>> 598ba5df0bf3137fafc125593c0c546a2b21a527
+>>>>>>> dev
   display: inline-flex;
   width: 280px;
   -webkit-box-pack: justify;
@@ -1217,6 +1290,10 @@ div.bk3 {
 
 @media all and (max-width: 767px) {
   .stepsection .stepall {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> dev
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1224,6 +1301,13 @@ div.bk3 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+<<<<<<< HEAD
+=======
+=======
+    flex-direction: column;
+    align-items: center;
+>>>>>>> 598ba5df0bf3137fafc125593c0c546a2b21a527
+>>>>>>> dev
   }
 }
 

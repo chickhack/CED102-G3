@@ -46,19 +46,18 @@ section.login_container{
     }
 
     .return_btn{
-        display: flex;
-        align-self: flex-start;
-        align-items: baseline;
-        span a{
+        // display: flex;
+        // align-self: flex-start;
+        // align-items: baseline;
+        h4 a{
             color: $gold;
-            font-size: 28px;
-            letter-spacing: -6px;
+            font-size: 20px;
             font-weight: 800;
         }
-        h4 a{
-            margin-left: 12px;
-            color: $gray;
-        }
+        // h4 a{
+        //     margin-left: 12px;
+        //     color: $gray;
+        // }
         a:hover{
             text-decoration: underline;
 
