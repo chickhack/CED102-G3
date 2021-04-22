@@ -20,6 +20,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/pages/shop_cart.css">
+    <link rel="shortcut icon" href="./img/icon/shortcut.png" type="image/x-icon">
     <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.12/vue.js'></script>
     <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vuex/3.6.2/vuex.min.js"></script>
@@ -47,10 +48,10 @@
         </div>
         <ul class="nav-links">
             <li class="margin_left_5"><a href="alltrip.php">星球景點</a></li>
-            <li class="margin_left_5"><a href="planet.html">星星世界</a></li>
-            <li class="margin_left_5"><a href="shop.html">星球商城</a></li>
-            <li class="margin_left_5"><a href="photowall.html">太空互動</a></li>
-            <li class="margin_left_5"><a href="Leaderboard.html">玩家排行</a></li>
+            <li class="margin_left_5"><a href="planet.php">星星世界</a></li>
+            <li class="margin_left_5"><a href="shop.php">星球商城</a></li>
+            <li class="margin_left_5"><a href="photowall.php">太空互動</a></li>
+            <li class="margin_left_5"><a href="Leaderboard.php">玩家排行</a></li>
             <!-- <li><a href=""><img src="./images/ticket.png" alt="" class="icon"></a></li>
                 <li><a href=""><img src="./images/shopping-cart_(1).png" alt="" class="icon"></a></li>
                 <li><a href=""><img src="./images/round-account-button-with-user-inside_(1).png" alt="" class="icon"></a></li> -->
@@ -72,11 +73,18 @@
             <li class="nav-cart">
                 <a href="./shop_cart.php">
                     <img src="./img/icon/header/shopping-cart_(1).png" alt="" class="icon"/>
-                    
+                    <?php
+                if(isset($_SESSION["cart"])){
+                    $count = count($_SESSION["cart"]);
+                    echo "<div class='count'>$count</div>";
+                }else{
+                    echo "";
+                }
+            ?>
                 </a>
             </li> 
             <li>
-            <a href="./login.html"
+            <a href="./login.php"
                 ><img
                 src="./img/icon/header/round-account-button-with-user-inside_(1).png"
                 alt=""
@@ -97,7 +105,7 @@
             <form :action="name+id" method="post">
                 <h3 class="h2">我的行程</h3>
                 <?php
-                // print_r($_SESSION["trip-cart"]);
+                print_r($_SESSION["trip-cart"]);
                 ?>
                 <ul>
                     <cart @get="getId" :item="val" v-for="(val,index) in products"></cart>
@@ -248,7 +256,7 @@
                                      .then(data => {
                                          let arr = [];
                                          let qty=[];
-                                         let ky =100;
+                                         let ky =101;
                                          let j=1;
                                          for(let i=0 ; i<data.length ; i++){
                                             
@@ -260,7 +268,6 @@
                                                                 
                                                                 data[j-1].qty = <?php echo $v1['spot_qty']?>;
                                                                 arr.push(data[j-1]);
-                                                                
                                                             }
                                                             <?php
                                                         };
