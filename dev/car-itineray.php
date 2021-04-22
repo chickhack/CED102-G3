@@ -1,5 +1,6 @@
 <?php
     session_start();
+    // session_unset();
     if(isset($_POST['remove'])){
         if($_GET['action'] = 'remove'){ 
             foreach($_SESSION['trip-cart'] as $key => $value){
@@ -218,6 +219,7 @@
                                     </div>
                                 </div>
                             </div>
+                            <input type="date" id="date-1" class="btn-date data-down margin_top_2" value="<?php foreach($_SESSION["trip-cart"] as $data){echo $data["spot_date"];}?>">
                             <p class="h3">$\{{mainPrice}}</p>
                             <button type="submit" name="remove"><img src="./img/icon/trashcan.png" class="icon trashcan" :data-no="item.spot_no" @click="increment"></button>
                         </div>
