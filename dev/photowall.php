@@ -7,6 +7,7 @@
   <title>互動牆</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta2/css/bootstrap.min.css">
+  <link rel="shortcut icon" href="./img/icon/shortcut.png" type="image/x-icon">
   <script
   src="https://code.jquery.com/jquery-3.5.1.js"
   integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
@@ -62,9 +63,13 @@
                     </a>
                 </li>
                 <li>
-                    <a href="./login.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png"
-                            alt="" class="icon" /></a>
-                </li>
+        <?php
+            if(isset($_SESSION['mem_no'])){?>
+                <a href="./account.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png" alt="" class="icon"/></a>
+        <?php }else{ ?>
+                <a href="./login.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png" alt="" class="icon"/></a>
+        <?php } ?>
+    </li>
             </ul>
             <div class="burger">
                 <div class="line1"></div>
@@ -156,20 +161,20 @@
 			</div> -->
       <div class="message_1">
 				<div class="member_photo"><img src="./img/userprofile/user18.png" alt=""></div>
-				<div class="name">陳美美</div>
+				<div class="name">葉浩南</div>
 				<div class="message_1_text">謝謝！我都是一名熱愛旅遊的旅客</div>
 				<div class="message_1_more"><img src="./img/icon/more.png" alt="" class="detail"></div>
 			</div>
 
 			<div class="message_2">
 				<div class="member_photo"><img src="./img/userprofile/user19.png" alt=""></div>
-				<div class="name">劉美人</div>
+				<div class="name">王某某</div>
 				<div class="message_2_text">謝謝！我都是一名熱愛旅遊的旅客 </div>
 				<div class="message_2_more"><img src="./img/icon/more.png" alt=""></div>
 			</div>
 			<div class="message_3">
 				<div class="member_photo"><img src="./img/userprofile/user19.png" alt=""></div>
-				<div class="name">劉曉華</div>
+				<div class="name">羅強尼</div>
 				<div class="message_3_text">謝謝！我都是一名熱愛旅遊的旅客 </div>
 				<div class="message_3_more"><img src="./img/icon/more.png" alt="" class="detail"></div>
 			</div>

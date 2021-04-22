@@ -632,7 +632,12 @@ form .orderDetails .row .col-10 .btn-orderDetails::before {
   text-align: center;
   line-height: 1.5rem;
   position: absolute;
+<<<<<<< HEAD
   transform: translate(50%, -150%);
+=======
+  -webkit-transform: translate(50%, -150%);
+          transform: translate(50%, -150%);
+>>>>>>> denis
   display: block;
   color: white;
 }

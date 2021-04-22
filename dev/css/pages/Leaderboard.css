@@ -396,6 +396,10 @@ nav .nav-links a {
   width: 100%;
   color: #ffffff;
   padding: 8px;
+<<<<<<< HEAD
+=======
+  -webkit-transition: all .3s;
+>>>>>>> denis
   transition: all .3s;
 }
 
@@ -451,20 +455,23 @@ nav .nav-cart .count {
   text-align: center;
   line-height: 1.5rem;
   position: absolute;
-  transform: translate(50%, -150%);
+  -webkit-transform: translate(50%, -150%);
+          transform: translate(50%, -150%);
   display: block;
   color: white;
 }
 
 @media all and (max-width: 992px) {
   nav .nav-cart .count {
-    transform: translate(100%, -150%);
+    -webkit-transform: translate(100%, -150%);
+            transform: translate(100%, -150%);
   }
 }
 
 @media all and (max-width: 768px) {
   nav .nav-cart .count {
-    transform: translate(40%, -170%);
+    -webkit-transform: translate(40%, -170%);
+            transform: translate(40%, -170%);
     width: 20px;
     height: 20px;
     font-size: 12px;
@@ -485,20 +492,23 @@ nav .nav-trip .trip-count {
   text-align: center;
   line-height: 1.5rem;
   position: absolute;
-  transform: translate(50%, -150%);
+  -webkit-transform: translate(50%, -150%);
+          transform: translate(50%, -150%);
   display: block;
   color: white;
 }
 
 @media all and (max-width: 992px) {
   nav .nav-trip .trip-count {
-    transform: translate(100%, -150%);
+    -webkit-transform: translate(100%, -150%);
+            transform: translate(100%, -150%);
   }
 }
 
 @media all and (max-width: 768px) {
   nav .nav-trip .trip-count {
-    transform: translate(40%, -170%);
+    -webkit-transform: translate(40%, -170%);
+            transform: translate(40%, -170%);
     width: 20px;
     height: 20px;
     font-size: 12px;
@@ -700,7 +710,8 @@ input[type=number] {
   height: 100px;
   background-size: contain;
   background-repeat: no-repeat;
-  animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+  -webkit-animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+          animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
 }
 
 #particles-js {
@@ -710,11 +721,14 @@ input[type=number] {
   height: 100%;
 }
 
+<<<<<<< HEAD
 @font-face {
   font-family: "Nasalization";
   src: local("./fonts/Nasa.ttf");
 }
 
+=======
+>>>>>>> denis
 .count {
   width: 25px;
   height: 25px;
@@ -723,7 +737,12 @@ input[type=number] {
   text-align: center;
   line-height: 1.5rem;
   position: absolute;
+<<<<<<< HEAD
   transform: translate(50%, -150%);
+=======
+  -webkit-transform: translate(50%, -150%);
+          transform: translate(50%, -150%);
+>>>>>>> denis
   display: block;
   color: white;
 }
@@ -804,9 +823,18 @@ input[type=number] {
 
 .text-00 {
   display: flex;
+<<<<<<< HEAD
   align-items: center;
   justify-content: center;
   font-family: "Nasalization";
+=======
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+>>>>>>> denis
 }
 
 .text-01 {
