@@ -17,7 +17,7 @@ try {
 		$allfile='';
 		foreach($_FILES["prod_pic"]["error"] as $i =>$data){
 			switch($_FILES["prod_pic"]["error"][$i]){
-				$dir="images"
+				$dir="images";
 				if(file_exists($dir)==false){
 					mkdir("images");
 				}
@@ -26,7 +26,7 @@ try {
 				$pathinfoArr = pathinfo($_FILES["prod_pic"]["name"][$i]);
 				$filename = "{$uniqid}.{$pathinfoArr["extension"]}";
 				$to ="{$dir}/".$filename;
-				copy($from,$to)
+				copy($from,$to);
 			}
 			$allfile .= "==".$filename;
 		}
@@ -72,7 +72,7 @@ try {
 		echo "錯誤代碼 : {$_FILES["prod_pic"]["error"]} <br>";
 		echo "新增失敗<br>";
 	}
-} catch (PDOException $e) {
+  catch (PDOException $e) {
 	$errMsg .= "錯誤原因 : ".$e -> getMessage(). "<br>";
 	$errMsg .= "錯誤行號 : ".$e -> getLine(). "<br>";	
 	echo $errMsg;

@@ -1,3 +1,7 @@
+<?php
+    session_start();
+    $_SESSION["mem_no"]=1010001;
+    ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -73,6 +77,7 @@
     <div class="col-12 col-md-12 col-lg-12 col-xl-12">
       <form method="post" action="./php/backstage/phptowall/photowall_post.php" class="post" enctype="multipart/form-data">
         <a href="./photowall.php"><img src="./img/icon/turnoff.png" alt=""></a>
+        <input type="hidden" value="<?=$_SESSION["mem_no"]?>" name="member_no">
         <div class="select_trip">
           <select name="upload"> 
             <option>請選擇行程</option>

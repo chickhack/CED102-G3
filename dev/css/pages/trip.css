@@ -414,12 +414,7 @@ nav .nav-links a {
   width: 100%;
   color: #ffffff;
   padding: 8px;
-<<<<<<< HEAD
   -webkit-transition: all .3s;
-=======
-<<<<<<< HEAD
-=======
->>>>>>> dev
   transition: all .3s;
 }
 
@@ -431,22 +426,12 @@ nav .nav-links a:hover {
   nav .nav-links a:hover {
     color: #0c0d18;
   }
-<<<<<<< HEAD
-=======
->>>>>>> 598ba5df0bf3137fafc125593c0c546a2b21a527
->>>>>>> dev
 }
 
 nav .nav-links .bread {
   color: #AD6E4A;
   font-weight: 900;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
   font-size: 16px;
->>>>>>> 598ba5df0bf3137fafc125593c0c546a2b21a527
->>>>>>> dev
 }
 
 nav .nav-icons {
@@ -1170,22 +1155,9 @@ input::-webkit-inner-spin-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-=======
-<<<<<<< HEAD
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-=======
-  align-items: center;
->>>>>>> 598ba5df0bf3137fafc125593c0c546a2b21a527
->>>>>>> dev
   border-bottom: 1px solid #AD6E4A;
   padding: 16px 0;
   position: relative;
@@ -1200,10 +1172,6 @@ input::-webkit-inner-spin-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> dev
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1213,18 +1181,8 @@ input::-webkit-inner-spin-button {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
-<<<<<<< HEAD
   color: #cccaca;
   font-weight: 600;
-=======
-=======
-  justify-content: center;
-  align-items: center;
-  justify-content: start;
-  color: #cccaca;
-  font-weight: 600;
->>>>>>> 598ba5df0bf3137fafc125593c0c546a2b21a527
->>>>>>> dev
 }
 
 .parent_container .up_container .comment .messages .name hr {
@@ -1289,30 +1247,33 @@ input::-webkit-inner-spin-button {
   margin: 0 16px 0 16px;
 }
 
-<<<<<<< HEAD
-=======
 .parent_container .recommend .tripcard_all .tripcard:hover {
-  transform: translateY(0.2em);
-  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  -webkit-transform: translateY(0.2em);
+          transform: translateY(0.2em);
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+          box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
 
 .parent_container .recommend .tripcard_all .tripcard.tripcard:nth-child(1) {
-  animation: float 4s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+  -webkit-animation: float 4s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+          animation: float 4s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
 }
 
 .parent_container .recommend .tripcard_all .tripcard.tripcard:nth-child(2) {
-  animation: float 4.5s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+  -webkit-animation: float 4.5s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+          animation: float 4.5s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
 }
 
 .parent_container .recommend .tripcard_all .tripcard.tripcard:nth-child(3) {
-  animation: float 5s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+  -webkit-animation: float 5s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+          animation: float 5s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
 }
 
 .parent_container .recommend .tripcard_all .tripcard.tripcard:nth-child(4) {
-  animation: float 5.5s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+  -webkit-animation: float 5.5s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+          animation: float 5.5s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
 }
 
->>>>>>> 598ba5df0bf3137fafc125593c0c546a2b21a527
 @media all and (max-width: 767px) {
   .parent_container .recommend .tripcard_all .tripcard {
     -webkit-box-orient: vertical;
@@ -1383,22 +1344,42 @@ input::-webkit-inner-spin-button {
 .parent_container .recommend .tripcard_all .tripcard .addin2:hover {
   background-color: #bf896b;
 }
-<<<<<<< HEAD
-=======
+
+@-webkit-keyframes float {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  30% {
+    -webkit-transform: translate(0, -3px);
+            transform: translate(0, -3px);
+  }
+  70% {
+    -webkit-transform: translate(0, 5px);
+            transform: translate(0, 5px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
 
 @keyframes float {
   0% {
-    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
   }
   30% {
-    transform: translate(0, -3px);
+    -webkit-transform: translate(0, -3px);
+            transform: translate(0, -3px);
   }
   70% {
-    transform: translate(0, 5px);
+    -webkit-transform: translate(0, 5px);
+            transform: translate(0, 5px);
   }
   100% {
-    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
   }
 }
->>>>>>> 598ba5df0bf3137fafc125593c0c546a2b21a527
 /*# sourceMappingURL=trip.css.map */

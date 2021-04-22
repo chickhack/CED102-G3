@@ -414,12 +414,7 @@ nav .nav-links a {
   width: 100%;
   color: #ffffff;
   padding: 8px;
-<<<<<<< HEAD
   -webkit-transition: all .3s;
-=======
-<<<<<<< HEAD
-=======
->>>>>>> dev
   transition: all .3s;
 }
 
@@ -431,22 +426,12 @@ nav .nav-links a:hover {
   nav .nav-links a:hover {
     color: #0c0d18;
   }
-<<<<<<< HEAD
-=======
->>>>>>> 598ba5df0bf3137fafc125593c0c546a2b21a527
->>>>>>> dev
 }
 
 nav .nav-links .bread {
   color: #AD6E4A;
   font-weight: 900;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
   font-size: 16px;
->>>>>>> 598ba5df0bf3137fafc125593c0c546a2b21a527
->>>>>>> dev
 }
 
 nav .nav-icons {
@@ -797,6 +782,20 @@ input[type=number] {
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
+}
+
+.count {
+  width: 25px;
+  height: 25px;
+  background-color: #AD6E4A;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 1.5rem;
+  position: absolute;
+  -webkit-transform: translate(50%, -150%);
+          transform: translate(50%, -150%);
+  display: block;
+  color: white;
 }
 
 .margin-bottom-2 {

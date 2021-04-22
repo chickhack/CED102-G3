@@ -414,12 +414,7 @@ nav .nav-links a {
   width: 100%;
   color: #ffffff;
   padding: 8px;
-<<<<<<< HEAD
   -webkit-transition: all .3s;
-=======
-<<<<<<< HEAD
-=======
->>>>>>> dev
   transition: all .3s;
 }
 
@@ -431,22 +426,12 @@ nav .nav-links a:hover {
   nav .nav-links a:hover {
     color: #0c0d18;
   }
-<<<<<<< HEAD
-=======
->>>>>>> 598ba5df0bf3137fafc125593c0c546a2b21a527
->>>>>>> dev
 }
 
 nav .nav-links .bread {
   color: #AD6E4A;
   font-weight: 900;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
   font-size: 16px;
->>>>>>> 598ba5df0bf3137fafc125593c0c546a2b21a527
->>>>>>> dev
 }
 
 nav .nav-icons {
@@ -820,23 +805,13 @@ canvas {
 
 button {
   background-color: transparent;
-  color: #AD6E4A;
-}
-
-button a {
-  text-decoration: none;
-  color: #AD6E4A;
+  color: white;
 }
 
 button:hover {
   color: #ffff;
   border: 1px solid #AD6E4A;
   background: #AD6E4A;
-}
-
-button:hover a {
-  text-decoration: none;
-  color: #ffffff;
 }
 
 .planet_banner {
@@ -878,10 +853,6 @@ button:hover a {
 }
 
 .planet_tab ul.tab-title {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> dev
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -892,15 +863,6 @@ button:hover a {
           column-gap: 3%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-<<<<<<< HEAD
-=======
-=======
-  display: flex;
-  justify-content: center;
-  column-gap: 3%;
-  flex-wrap: wrap;
->>>>>>> 598ba5df0bf3137fafc125593c0c546a2b21a527
->>>>>>> dev
   list-style: none;
 }
 
@@ -945,28 +907,14 @@ button:hover a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> dev
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-<<<<<<< HEAD
-=======
-=======
-  flex-direction: column;
->>>>>>> 598ba5df0bf3137fafc125593c0c546a2b21a527
->>>>>>> dev
   text-align: left;
 }
 
 .planet_tab .tab-inner .tab_top {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> dev
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -975,14 +923,6 @@ button:hover a {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-<<<<<<< HEAD
-=======
-=======
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
->>>>>>> 598ba5df0bf3137fafc125593c0c546a2b21a527
->>>>>>> dev
   padding: 0 15%;
 }
 
@@ -1005,31 +945,14 @@ button:hover a {
 }
 
 .planet_tab .tab-inner .tab_top .data {
-<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-=======
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-=======
-  display: flex;
->>>>>>> 598ba5df0bf3137fafc125593c0c546a2b21a527
->>>>>>> dev
   font-family: Haettenschweiler, sans-serif;
 }
 
 .planet_tab .tab-inner .tab_top .data .grav, .planet_tab .tab-inner .tab_top .data .day, .planet_tab .tab-inner .tab_top .data .temp {
   padding: 5px 0;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> dev
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1044,16 +967,6 @@ button:hover a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-<<<<<<< HEAD
-=======
-=======
-  justify-content: center;
-  align-items: center;
-  border: 1px solid #AD6E4A;
-  display: flex;
-  flex-direction: column;
->>>>>>> 598ba5df0bf3137fafc125593c0c546a2b21a527
->>>>>>> dev
   min-width: 100px;
   max-height: 160px;
   border-right: 1px solid #AD6E4A;
@@ -1083,34 +996,15 @@ button:hover a {
   font-size: 16px;
 }
 
-<<<<<<< HEAD
 @media all and (max-width: 768px) {
   .planet_tab .tab-inner .tab_top {
     padding: 0 5%;
   }
-=======
-<<<<<<< HEAD
-.planet_tab .tab-inner .tab-active {
-  position: relative;
-  top: 0;
->>>>>>> dev
 }
 
 .planet_tab .tab-inner .planet_content {
   display: -webkit-box;
   display: -ms-flexbox;
-<<<<<<< HEAD
-=======
-=======
-@media all and (max-width: 768px) {
-  .planet_tab .tab-inner .tab_top {
-    padding: 0 5%;
-  }
-}
-
-.planet_tab .tab-inner .planet_content {
->>>>>>> 598ba5df0bf3137fafc125593c0c546a2b21a527
->>>>>>> dev
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -1125,11 +1019,6 @@ button:hover a {
 }
 
 .planet_tab .tab-inner .planet_content .imgs .img1 {
-<<<<<<< HEAD
-  -webkit-transform: translate(20%);
-          transform: translate(20%);
-=======
-<<<<<<< HEAD
   -webkit-transform: translate(20%);
           transform: translate(20%);
 }
@@ -1147,26 +1036,6 @@ button:hover a {
 .planet_tab .tab-inner .planet_content .desc {
   display: -webkit-box;
   display: -ms-flexbox;
-=======
-  transform: translate(20%);
->>>>>>> dev
-}
-
-.planet_tab .tab-inner .planet_content .imgs .img2 {
-  transform: translateX(10%);
-}
-
-.planet_tab .tab-inner .planet_content .imgs .img3 {
-  transform: translate(-30%, -350px);
-}
-
-.planet_tab .tab-inner .planet_content .desc {
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-=======
->>>>>>> 598ba5df0bf3137fafc125593c0c546a2b21a527
->>>>>>> dev
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1184,16 +1053,8 @@ button:hover a {
 
 @media only screen and (max-width: 1200px) {
   .planet_tab .tab-inner .tab-inner {
-<<<<<<< HEAD
     display: -webkit-box;
     display: -ms-flexbox;
-=======
-<<<<<<< HEAD
-    display: -webkit-box;
-    display: -ms-flexbox;
-=======
->>>>>>> 598ba5df0bf3137fafc125593c0c546a2b21a527
->>>>>>> dev
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1204,32 +1065,16 @@ button:hover a {
             align-items: center;
   }
   .planet_tab .tab-inner .tab-inner .tab-active {
-<<<<<<< HEAD
     display: -webkit-box;
     display: -ms-flexbox;
-=======
-<<<<<<< HEAD
-    display: -webkit-box;
-    display: -ms-flexbox;
-=======
->>>>>>> 598ba5df0bf3137fafc125593c0c546a2b21a527
->>>>>>> dev
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
   .planet_tab .tab-inner .planet_content {
-<<<<<<< HEAD
     display: -webkit-box;
     display: -ms-flexbox;
-=======
-<<<<<<< HEAD
-    display: -webkit-box;
-    display: -ms-flexbox;
-=======
->>>>>>> 598ba5df0bf3137fafc125593c0c546a2b21a527
->>>>>>> dev
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

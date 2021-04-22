@@ -414,12 +414,7 @@ nav .nav-links a {
   width: 100%;
   color: #ffffff;
   padding: 8px;
-<<<<<<< HEAD
   -webkit-transition: all .3s;
-=======
-<<<<<<< HEAD
-=======
->>>>>>> dev
   transition: all .3s;
 }
 
@@ -431,22 +426,12 @@ nav .nav-links a:hover {
   nav .nav-links a:hover {
     color: #0c0d18;
   }
-<<<<<<< HEAD
-=======
->>>>>>> 598ba5df0bf3137fafc125593c0c546a2b21a527
->>>>>>> dev
 }
 
 nav .nav-links .bread {
   color: #AD6E4A;
   font-weight: 900;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
   font-size: 16px;
->>>>>>> 598ba5df0bf3137fafc125593c0c546a2b21a527
->>>>>>> dev
 }
 
 nav .nav-icons {
@@ -829,17 +814,8 @@ section.shop .banner h2 {
   position: absolute;
   left: 50%;
   top: 50%;
-<<<<<<< HEAD
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-=======
-<<<<<<< HEAD
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-=======
-  transform: translate(-50%, -50%);
->>>>>>> 598ba5df0bf3137fafc125593c0c546a2b21a527
->>>>>>> dev
 }
 
 @media all and (max-width: 768px) {
@@ -849,10 +825,6 @@ section.shop .banner h2 {
 }
 
 section.shop .filter {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> dev
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -865,15 +837,6 @@ section.shop .filter {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-<<<<<<< HEAD
-=======
-=======
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-between;
->>>>>>> 598ba5df0bf3137fafc125593c0c546a2b21a527
->>>>>>> dev
 }
 
 @media all and (max-width: 992px) {
@@ -1004,19 +967,9 @@ section.shop #app .imgBx {
 
 @media all and (max-width: 768px) {
   section.shop #app .imgBx {
-<<<<<<< HEAD
     -webkit-transform: translateY(-50px);
             transform: translateY(-50px);
     padding: 20px 50px;
-=======
-<<<<<<< HEAD
-    -webkit-transform: translateY(-50px);
-            transform: translateY(-50px);
-=======
-    transform: translateY(-50px);
-    padding: 20px 50px;
->>>>>>> 598ba5df0bf3137fafc125593c0c546a2b21a527
->>>>>>> dev
   }
   section.shop #app .imgBx img {
     -webkit-transform: translateY(-40px) scale(1.3);
@@ -1057,17 +1010,8 @@ section.shop #app .content {
   section.shop #app .content {
     opacity: 1;
     visibility: visible;
-<<<<<<< HEAD
     -webkit-transform: translateY(-10px);
             transform: translateY(-10px);
-=======
-<<<<<<< HEAD
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
-=======
-    transform: translateY(-10px);
->>>>>>> 598ba5df0bf3137fafc125593c0c546a2b21a527
->>>>>>> dev
   }
 }
 

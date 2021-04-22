@@ -415,12 +415,7 @@ nav .nav-links a {
   width: 100%;
   color: #ffffff;
   padding: 8px;
-<<<<<<< HEAD
   -webkit-transition: all .3s;
-=======
-<<<<<<< HEAD
-=======
->>>>>>> dev
   transition: all .3s;
 }
 
@@ -432,22 +427,12 @@ nav .nav-links a:hover {
   nav .nav-links a:hover {
     color: #0c0d18;
   }
-<<<<<<< HEAD
-=======
->>>>>>> 598ba5df0bf3137fafc125593c0c546a2b21a527
->>>>>>> dev
 }
 
 nav .nav-links .bread {
   color: #AD6E4A;
   font-weight: 900;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
   font-size: 16px;
->>>>>>> 598ba5df0bf3137fafc125593c0c546a2b21a527
->>>>>>> dev
 }
 
 nav .nav-icons {
@@ -811,16 +796,8 @@ input[type=number] {
 section.login_container {
   padding: 0;
   border: 1px solid #ad6e4a83;
-<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
-=======
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-=======
->>>>>>> 598ba5df0bf3137fafc125593c0c546a2b21a527
->>>>>>> dev
   display: flex;
   border-radius: 5px;
 }
@@ -862,35 +839,10 @@ section.login_container .login_banner h2 {
   }
 }
 
-section.login_container .return_btn {
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-=======
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-=======
->>>>>>> 598ba5df0bf3137fafc125593c0c546a2b21a527
->>>>>>> dev
-  display: flex;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-}
-
-section.login_container .return_btn span a {
-  color: #AD6E4A;
-  font-size: 28px;
-  letter-spacing: -6px;
-  font-weight: 800;
-}
-
 section.login_container .return_btn h4 a {
-  margin-left: 12px;
-  color: #cccaca;
+  color: #AD6E4A;
+  font-size: 20px;
+  font-weight: 800;
 }
 
 section.login_container .return_btn a:hover {
@@ -905,16 +857,8 @@ section.login_container .fa, section.login_container .fas {
 }
 
 section.login_container .modal-dialog {
-<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
-=======
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-=======
->>>>>>> 598ba5df0bf3137fafc125593c0c546a2b21a527
->>>>>>> dev
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -923,16 +867,8 @@ section.login_container .modal-dialog {
 }
 
 section.login_container .modal-dialog .main-section {
-<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
-=======
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-=======
->>>>>>> 598ba5df0bf3137fafc125593c0c546a2b21a527
->>>>>>> dev
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -956,10 +892,6 @@ section.login_container .modal-dialog .fa-eye:before, section.login_container .m
 }
 
 section.login_container form {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> dev
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -973,15 +905,6 @@ section.login_container form {
   -webkit-box-align: inherit;
       -ms-flex-align: inherit;
           align-items: inherit;
-<<<<<<< HEAD
-=======
-=======
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: inherit;
->>>>>>> 598ba5df0bf3137fafc125593c0c546a2b21a527
->>>>>>> dev
 }
 
 section.login_container form .form-group input {
@@ -1008,10 +931,6 @@ section.login_container form .form-group input:focus {
 }
 
 section.login_container form .form-group input:hover {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> dev
   -webkit-animation: pulse .5s 1;
           animation: pulse .5s 1;
 }
@@ -1026,12 +945,6 @@ section.login_container form .form-group input:hover {
   100% {
     -webkit-box-shadow: 0 0 0 0 rgba(204, 140, 44, 0);
   }
-<<<<<<< HEAD
-=======
-=======
-  animation: pulse .5s 1;
->>>>>>> 598ba5df0bf3137fafc125593c0c546a2b21a527
->>>>>>> dev
 }
 
 @keyframes pulse {
@@ -1063,19 +976,9 @@ section.login_container form .form-group:last-of-type::before {
 }
 
 section.login_container form .login_btn {
-<<<<<<< HEAD
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-=======
-<<<<<<< HEAD
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-=======
-  align-self: center;
->>>>>>> 598ba5df0bf3137fafc125593c0c546a2b21a527
->>>>>>> dev
   background-color: transparent;
   color: #AD6E4A;
 }
@@ -1087,10 +990,6 @@ section.login_container form .login_btn:hover {
 }
 
 .bottom-section {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> dev
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1113,20 +1012,6 @@ section.login_container form .login_btn:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-<<<<<<< HEAD
-=======
-=======
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.bottom-section .forgot, .bottom-section .signup {
-  display: flex;
-  justify-content: center;
-  align-items: center;
->>>>>>> 598ba5df0bf3137fafc125593c0c546a2b21a527
->>>>>>> dev
 }
 
 .bottom-section .forgot a, .bottom-section .signup a {

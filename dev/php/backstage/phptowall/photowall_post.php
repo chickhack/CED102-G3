@@ -75,10 +75,11 @@ try {
         else{$filename3 = null;}
 		// if(copy( $from, $to)===true){
 			//insert `資料表名稱`(`選擇要存入的欄位`,`選擇要存入的欄位`,`選擇要存入的欄位`)
-			$sql = "INSERT INTO `post` (`post_no`,`mem_no`, `post_teg`, `post_date` , `post_content`,`post_stats`,`post_pic1`,`post_pic2`,`post_pic3`)
-			values(null,:mem_no, :post_teg, null,:post_content, :post_stats,:post_pic1,:post_pic2,:post_pic3)";//代碼跟欄位用依樣名稱
+			$sql = "INSERT INTO `post` (`post_no`,`mem_no`, `post_teg`, `post_content`,`post_pic1`,`post_pic2`,`post_pic3`)
+			values(null,:mem_no, :post_teg,:post_content,:post_pic1,:post_pic2,:post_pic3)";//代碼跟欄位用依樣名稱
 			$products = $pdo->prepare( $sql );	//固定寫法
 			$products -> bindValue(":post_content",$_POST["article"]);//bindvalue("values設定的名稱",$_POST["前台送回來的name"]) $_POST["spot_name"]
+      $products -> bindValue(":mem_no",$_POST["member_no"]);
 			$products -> bindValue(":post_pic1", $filename1);//第一個是代碼，$filename是前面傳回來的東西
       $products -> bindValue(":post_pic2", $filename2);
       $products -> bindValue(":post_pic3", $filename3);

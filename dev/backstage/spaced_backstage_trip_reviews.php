@@ -1,9 +1,5 @@
 <?php 
-<<<<<<< HEAD
-require_once("../php/connectbooks_kai.php");
-=======
 require_once("../php/connect_ced102_g3_local.php");
->>>>>>> dev
 $sql = "select * from spot_trev";
 $spottrev = $pdo->query($sql);  //執行指令
 $spottrev ->execute();
