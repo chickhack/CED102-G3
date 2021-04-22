@@ -1,6 +1,3 @@
-<?php
-    require_once('./php/connectbooks_yi.php');
-?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -21,7 +18,7 @@
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css"
     />
-    <!-- <link rel="stylesheet" type="text/css" href="./css/pages/register.css" /> -->
+    <link rel="stylesheet" type="text/css" href="./css/pages/register.css" />
   </head>
   <body>
   <header>
@@ -79,7 +76,7 @@
         </nav>
         <script src="./js/header.js"></script>
 
-    </header>
+</header>
        
 
     <div class="container-fluid">
@@ -98,12 +95,12 @@
                 <div class="col-sm-9 main-section">
                     <div class="modal-content margin_top_5">
                         <div class="col-11 form-input">
-                            <form id="register_form" action="register.php" method="post">
+                            <form id="register_form" action="./php/check_username.php" method="post" >
                             <div class="form-group">
-                                <input type="email" id="mem_id" name="mem_id" class="form-control" placeholder="請輸入" required></input>
+                                <input type="email" id="email" name="email" class="form-control" placeholder="請輸入" required></input>
                             </div>
-                            <input type="submit" class="button_min check_user" id="check_user" value="檢查"></input>
-                            <!-- <span id="message"></span> -->
+                            <!-- <input type="submit" class="button_min check_user" id="check_user" value="檢查"></input> -->
+                            <span id="message"></span>
                             <div class="form-group">
                                 <input type="password" id="mem_psw" name="mem_psw" class="form-control" placeholder="請輸入密碼" onkeyup="return passwordChanged();"></input>
                             </div>
@@ -128,21 +125,20 @@
         function $id(id){
             return document.getElementById(id);
         }
-
         //檢查密碼是否符合
         function validatePassword(e) { 
 
             let password = document.getElementById("mem_psw"); 
             let confirm_password = document.getElementById("confirm_password"); 
-            let regex = new RegExp(/^(?=.*\d)(?=.*[A-Z])(?=.*[a-z])(?=.*[a-zA-Z!#$%&? "])[a-zA-Z0-9!#$%&?]{8,20}$/);
+            let regex = new RegExp(/^(?=.*\d)(?=.*[A-Z])(?=.*[a-z])(?=.*[a-zA-Z!#$%&? "])[a-zA-Z0-9!#$%&?]{6,20}$/);
             
-            if(password.value.length < 8 && password!= null ){ 
-                alert("密碼不可少於8碼");
+            if(password.value.length < 6 && password!= null ){ 
+                alert("密碼不可少於6碼");
                 e.preventDefault();
                 return;
             } 
             if(password.value.length > 15 ){ 
-                alert("密碼長度為8-15碼");
+                alert("密碼長度為6-15碼");
                 e.preventDefault();
                 return;
             } 
@@ -151,43 +147,43 @@
                 e.preventDefault();
                 return;
             }
-            if((password.value).match(regex) == null){
-                alert( "密碼需包含小寫字母、大寫字母、 數字和特殊符號");
-                e.preventDefault();
-                return;
-            }
+            // if((password.value).match(regex) == null){
+            //     alert( "密碼需包含小寫字母、大寫字母和數字");
+            //     e.preventDefault();
+            //     return;
+            // }
              
 
 
-        // 提交後台判斷
-            // -----檢查帳號信箱重複
-            function checkId(){
-                let xhr = new XMLHttpRequest();
-                let logMemId = document.getElementById("register_form");
-                xhr.onload = function(){//server端已執行完畢
-                    console.log("onload : ", xhr.readyState);
-                    if(xhr.status == 200){//http status is OK
-                        if(xhr.responseText == 2 && logMemId.value != null){
-                            // createNewAcc.disabled = false;
-                            // createRemind.style.opacity = 0;
-                            alert("此帳號可使用");
-                        }else{
-                            // createNewAcc.disabled=true
-                            alert("此帳號已存在, 不可用");
-                            // createRemind.style.opacity = 1;
-                        }
-                    }else{
-                        alert(xhr.status);
-                    }
-                } 
+        // // 提交後台判斷
+        //     // -----檢查帳號信箱重複
+        //     function checkId(){
+        //         let xhr = new XMLHttpRequest();
+        //         let logMemId = document.getElementById("register_form");
+        //         xhr.onload = function(){//server端已執行完畢
+        //             console.log("onload : ", xhr.readyState);
+        //             if(xhr.status == 200){//http status is OK
+        //                 if(xhr.responseText == 2 && logMemId.value != null){
+        //                     // createNewAcc.disabled = false;
+        //                     // createRemind.style.opacity = 0;
+        //                     alert("此帳號可使用");
+        //                 }else{
+        //                     // createNewAcc.disabled=true
+        //                     alert("此帳號已存在, 不可用");
+        //                     // createRemind.style.opacity = 1;
+        //                 }
+        //             }else{
+        //                 alert(xhr.status);
+        //             }
+        //         } 
                 
-                let url = "./php/check_username.php";
-                xhr.open("post", url, true);
-                xhr.setRequestHeader("content-type","application/x-www-form-urlencoded");
-                let data_AD = `logMemId=${$id("email").value}`;
-                xhr.send(data_AD);
+        //         let url = "./php/check_username.php";
+        //         xhr.open("post", url, true);
+        //         xhr.setRequestHeader("content-type","application/x-www-form-urlencoded");
+        //         let data_AD = `logMemId=${$id("email").value}`;
+        //         xhr.send(data_AD);
 
-            };
+        //     };
             
 
         }
@@ -196,7 +192,7 @@
             $id('register_form').onsubmit = validatePassword;
         });
         
-        //檢查帳號是否重複
+        // 檢查帳號是否重複
         // $(document).ready(function(){
         //     $("#register_form").on("submit",function(e){
         //         e.preventDefault();

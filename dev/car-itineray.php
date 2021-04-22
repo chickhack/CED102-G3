@@ -1,5 +1,6 @@
 <?php
     session_start();
+    // session_unset();
     if(isset($_POST['remove'])){
         if($_GET['action'] = 'remove'){ 
             foreach($_SESSION['trip-cart'] as $key => $value){
@@ -20,78 +21,81 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/pages/shop_cart.css">
+    <link rel="stylesheet" href="./css/pages/all.css">
+    <link rel="shortcut icon" href="./img/icon/shortcut.png" type="image/x-icon">
     <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.12/vue.js'></script>
     <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vuex/3.6.2/vuex.min.js"></script>
+
     <title>我的行程</title>
     <style>
-    .count{
-        width: 25px;
-      height: 25px;
-      background-color: #AD6E4A;
-      border-radius: 50%;
-      text-align: center;
-      line-height: 1.5rem;
-      position: absolute;
-      transform: translate(50%, -150%);
-      display: block;
-      color: white; 
-    }
+    
     </style>
 </head>
 <body>
     <div class="container">
-        <nav id="nav">
-        <div class="logo">
-            <h1><a href="home.html">SPACED</a></h1>
-        </div>
-        <ul class="nav-links">
-            <li class="margin_left_5"><a href="alltrip.php">星球景點</a></li>
-            <li class="margin_left_5"><a href="planet.html">星星世界</a></li>
-            <li class="margin_left_5"><a href="shop.html">星球商城</a></li>
-            <li class="margin_left_5"><a href="photowall.html">太空互動</a></li>
-            <li class="margin_left_5"><a href="Leaderboard.html">玩家排行</a></li>
-            <!-- <li><a href=""><img src="./images/ticket.png" alt="" class="icon"></a></li>
-                <li><a href=""><img src="./images/shopping-cart_(1).png" alt="" class="icon"></a></li>
-                <li><a href=""><img src="./images/round-account-button-with-user-inside_(1).png" alt="" class="icon"></a></li> -->
-        </ul>
-        <ul class="nav-icons">
-            <li class="nav-itineray">
-            <a href="./car-itineray.php"
-                ><img src="./img/icon/header/luggage.png" alt="" class="icon"/>
-                <?php
+    <header>
+    <nav id="nav">
+  <div class="logo">
+    <h1><a href="home.php">SPACED</a></h1>
+  </div>
+  <ul class="nav-links">
+    <li class="margin_left_5"><a href="alltrip.php">星球景點</a></li>
+    <li class="margin_left_5"><a href="planet.php">星星世界</a></li>
+    <li class="margin_left_5"><a href="shop.php" >星球商城</a></li>
+    <li class="margin_left_5"><a href="photowall.php">太空互動</a></li>
+    <li class="margin_left_5"><a href="Leaderboard.php">玩家排行</a></li>
+    <!-- <li><a href=""><img src="./images/ticket.png" alt="" class="icon"></a></li>
+        <li><a href=""><img src="./images/shopping-cart_(1).png" alt="" class="icon"></a></li>
+        <li><a href=""><img src="./images/round-account-button-with-user-inside_(1).png" alt="" class="icon"></a></li> -->
+  </ul>
+  <ul class="nav-icons">
+  <li class="nav-trip">
+                    <a href="./car-itineray.php">
+                        <img src="./img/icon/header/luggage.png" alt="" class="icon" />
+                        <?php
                         if(isset($_SESSION["trip-cart"])){
                             $count = count($_SESSION["trip-cart"]);
-                            echo "<div class='count'>$count</div>";
+                            echo "<div class='trip-count'>$count</div>";
                         }else{
                             echo "";
                         }
-                        ?>
-            </a>
-            </li>
-            <li class="nav-cart">
-                <a href="./shop_cart.php">
-                    <img src="./img/icon/header/shopping-cart_(1).png" alt="" class="icon"/>
-                    
-                </a>
-            </li> 
-            <li>
-            <a href="./login.html"
-                ><img
-                src="./img/icon/header/round-account-button-with-user-inside_(1).png"
-                alt=""
-                class="icon"
-            /></a>
-            </li>
-        </ul>
-        <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
-        </nav>
+                     ?>
+                    </a>
+                </li>
+                <li class="nav-cart">
+        <a href="./shop_cart.php">
+            <img src="./img/icon/header/shopping-cart_(1).png" alt="" class="icon"/>
+            <?php
+                if(isset($_SESSION["cart"])){
+                    $count = count($_SESSION["cart"]);
+                    echo "<div class='count'>$count</div>";
+                }else{
+                    echo "";
+                }
+            ?>
+        </a>
+    </li> 
+    <li>
+        <?php
+            if(isset($_SESSION['mem_no'])){?>
+                <a href="./account.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png" alt="" class="icon"/></a>
+        <?php }else{ ?>
+                <a href="./login.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png" alt="" class="icon"/></a>
+        <?php } ?>
+    </li>
+  </ul>
+  <div class="burger">
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line3"></div>
+  </div>
+</nav>
 
-        <script src="./js/header.js"></script>
+<script src="./js/header.js"></script>
+
+
+  </header>
         <div id="particles-js"></div>
         <section class="cart" id="app">
             <form :action="name+id" method="post">
@@ -118,15 +122,16 @@
                 </div>
             </form>
         </section>
+    <a href="#" class="go-top"></a>
         <footer class="padding_top_10">
             <div class="links">
                 <div class="logo"><img src="./img/logo.png" alt=""></div>
                 <ul class="footer-links margin_top_2">
-                    <li><a href="alltrip.html">星球景點</a></li>
-                    <li><a href="planet.html">星星世界</a></li>
-                    <li><a href="shop.html">星球商城</a></li>
-                    <li><a href="photowall.html">太空互動</a></li>
-                    <li><a href="Leaderboard.html">玩家排行</a></li>
+                    <li><a href="alltrip.php">星球景點</a></li>
+                    <li><a href="planet.php">星星世界</a></li>
+                    <li><a href="shop.php">星球商城</a></li>
+                    <li><a href="photowall.php">太空互動</a></li>
+                    <li><a href="Leaderboard.php">玩家排行</a></li>
                 </ul>
             </div>
             <img src="./img/footer_moon.png" alt="" class="footer_moon">
@@ -134,6 +139,30 @@
         </footer>
 
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+ $(document).ready(function() {
+        // Show or hide the sticky footer button
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+                $('.go-top').fadeIn(200);
+            } else {
+                $('.go-top').fadeOut(200);
+            }
+        });
+
+        // Animate the scroll to top
+        $('.go-top').click(function(event) {
+            event.preventDefault();
+
+            $('html, body').animate({
+                scrollTop: 0
+            }, 900);
+        })
+    });
+
+    </script>
     <script>
         Vue.use(Vuex);
 
@@ -190,6 +219,7 @@
                                     </div>
                                 </div>
                             </div>
+                            <input type="date" id="date-1" class="btn-date data-down margin_top_2" value="<?php foreach($_SESSION["trip-cart"] as $data){echo $data["spot_date"];}?>">
                             <p class="h3">$\{{mainPrice}}</p>
                             <button type="submit" name="remove"><img src="./img/icon/trashcan.png" class="icon trashcan" :data-no="item.spot_no" @click="increment"></button>
                         </div>
@@ -248,7 +278,7 @@
                                      .then(data => {
                                          let arr = [];
                                          let qty=[];
-                                         let ky =100;
+                                         let ky =101;
                                          let j=1;
                                          for(let i=0 ; i<data.length ; i++){
                                             
@@ -260,7 +290,6 @@
                                                                 
                                                                 data[j-1].qty = <?php echo $v1['spot_qty']?>;
                                                                 arr.push(data[j-1]);
-                                                                
                                                             }
                                                             <?php
                                                         };

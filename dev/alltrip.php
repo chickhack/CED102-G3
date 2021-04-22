@@ -8,7 +8,8 @@ session_start();
             $count = count($_SESSION["trip-cart"]);
             $item_array = array(
                 "spot_id" => $_POST["spot_id"],
-                "spot_qty" => 1
+                "spot_qty" => 1,
+                "spot_date" => 0,
             );
             $_SESSION["trip-cart"][$count] =$item_array;
             // echo '<script>window.location="alltrip.php"</script>';
@@ -19,7 +20,8 @@ session_start();
         }else{
             $item_array = array(
                 "spot_id" => $_POST["spot_id"],
-                "spot_qty" => 1
+                "spot_qty" => 1,
+                "spot_date" => 0,
             );
             $_SESSION["trip-cart"][0] = $item_array;
     }
@@ -98,9 +100,13 @@ session_start();
                     </a>
                 </li>
                 <li>
-                    <a href="./login.html"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png"
-                            alt="" class="icon" /></a>
-                </li>
+        <?php
+            if(isset($_SESSION['mem_no'])){?>
+                <a href="./account.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png" alt="" class="icon"/></a>
+        <?php }else{ ?>
+                <a href="./login.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png" alt="" class="icon"/></a>
+        <?php } ?>
+    </li>
             </ul>
             <div class="burger">
                 <div class="line1"></div>

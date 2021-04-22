@@ -1,6 +1,6 @@
 <?php
     try{
-        require_once("../../connect_ced102_g3_local.php");
+        require_once("../php/connect_ced102_g3_local.php");
         $sql = "select * from prod_order";
         $product = $pdo->query($sql);  
     }catch(PDOException $e){
@@ -13,7 +13,7 @@
 <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>商品管理</title>
+    <title>商品訂單管理</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/all.css">
@@ -32,7 +32,6 @@
             <div>
                 <a href="./spaced_backstage_trip.php" class="div-list-btn-s ">景點管理</a>
                 <a href="./spaced_backstage_trip_reviews.php" class="div-list-btn-s ">景點評價</a>
-<<<<<<< HEAD
                 <a href="./spaced_backstage_order.php" class="div-list-btn-s">行程訂單管理</a>
             </div>
             <button class="div-list-btn-a">商城</button>
@@ -40,21 +39,12 @@
                 <a href="./backstage_shop.php" class="div-list-btn-s ">商品管理</a>
                 <a href="#" class="div-list-btn-s">商品評價</a>
                 <a href="./backstage_shop_order.php" class="div-list-btn-s now">商品訂單管理</a>
-=======
-                <a href="#" class="div-list-btn-s">行程訂單管理</a>
-            </div>
-            <button class="div-list-btn-a">商城</button>
-            <div>
-                <a href="#" class="div-list-btn-s ">商品管理</a>
-                <a href="#" class="div-list-btn-s">商品評價</a>
-                <a href="#" class="div-list-btn-s now">商品訂單管理</a>
->>>>>>> 24048ab3ca93da3399a74a0e051f303885825473
             </div>
             <!-- <a href="#" class="div-list-btn-a">百科管理</a> -->
             <button class="div-list-btn-a">互動牆</button>
             <div>
-                <a href="#" class="div-list-btn-s">互動牆管理</a>
-                <a href="#" class="div-list-btn-s">互動牆檢舉管理</a>
+                <a href="./spaced_backstage_post.php" class="div-list-btn-s">互動牆管理</a>
+               
             </div>
             <a href="#" class="div-list-btn-a">會員管理</a>
             <a href="#" class="div-list-btn-a">管理員管理</a>

@@ -95,7 +95,7 @@
                 <div class="col-sm-9 main-section">
                     <div class="modal-content margin_top_13">
                         <div class="col-11 form-input">
-                            <form id="login_form" action="./login_func.php" method="post">
+                            <form id="login_form" action="./php/login_func.php" method="post">
                             <div class="form-group">
                                 <input type="email" name="email" id="email" class="form-control" placeholder="請輸入"></input>
                             </div>

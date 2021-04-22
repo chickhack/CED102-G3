@@ -1,36 +1,42 @@
 <?php
 session_start();
+$spot_no = @$_GET["spot_no"];
+
 if(isset($_POST["add"])){
     if(isset($_SESSION["trip-cart"])){
        $item_array_id = array_column($_SESSION["trip-cart"],"spot_id"); 
-    
+       echo "<script>window.history.back()</script>";
        if(!in_array($_POST["spot_id"], $item_array_id)){
            $count = count($_SESSION["trip-cart"]);
            $item_array = array(
-               "spot_id" => $_POST["spot_id"]
+               "spot_id" => $_POST["spot_id"],
+               "spot_qty" => $_POST['spot_qty'],
+               "spot_date" => $_POST['spot_date']
            );
            $_SESSION["trip-cart"][$count] =$item_array;
            // echo '<script>window.location="alltrip_test.php"</script>';
+           echo "<script>window.history.back()</script>";
        }else{
            echo "<script>alert('已加入我的行程')</script>";
-           // echo "<script>window.location ='alltrip_test.php'</script>";
+           echo "<script>window.history.back()</script>";
    }
        }else{
            $item_array = array(
-               "spot_id" => $_POST["spot_id"]
+               "spot_id" => $_POST["spot_id"],
+               "spot_qty" => $_POST['spot_qty'],
+               "spot_date" => $_POST['spot_date']
            );
            $_SESSION["trip-cart"][0] = $item_array;
    }
 }
-
-$spot_no = $_GET["spot_no"];
 $errMsg = "";
 try{
-    require_once("../connect_ced102_g3_local.php");
+    require_once("./php/connect_ced102_g3_local.php");
     $sql = "select *from spot where spot_no = :spot_no";
     $spot = $pdo->prepare($sql);
     $spot->bindValue(":spot_no", $spot_no);
     $spot->execute();
+    // echo "<script>window.history.back();</script>";
   }catch(PDOException $e){
     $errMsg .= "錯誤原因 : ".$e -> getMessage(). "<br>";
     $errMsg .= "錯誤行號 : ".$e -> getLine(). "<br>";
@@ -68,8 +74,8 @@ try{
                 <h1><a href="home.php">SPACED</a></h1>
             </div>
             <ul class="nav-links">
-                <li class="margin_left_5"><a href="alltrip.php" class="bread">星球景點</a></li>
-                <li class="margin_left_5"><a href="planet.html">星星世界</a></li>
+                <li class="margin_left_5 now "><a href="alltrip.php" class="bread">星球景點</a></li>
+                <li class="margin_left_5"><a href="planet.php">星星世界</a></li>
                 <li class="margin_left_5"><a href="shop.php">星球商城</a></li>
                 <li class="margin_left_5"><a href="photowall.php">太空互動</a></li>
                 <li class="margin_left_5"><a href="Leaderboard.php">玩家排行</a></li>
@@ -105,9 +111,13 @@ try{
                     </a>
                 </li>
                 <li>
-                    <a href="./login.html"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png"
-                            alt="" class="icon" /></a>
-                </li>
+        <?php
+            if(isset($_SESSION['mem_no'])){?>
+                <a href="./account.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png" alt="" class="icon"/></a>
+        <?php }else{ ?>
+                <a href="./login.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png" alt="" class="icon"/></a>
+        <?php } ?>
+    </li>
             </ul>
             <div class="burger">
                 <div class="line1"></div>
@@ -197,23 +207,27 @@ if( $errMsg != ""){ //例外
                             <div class="select">
                                 <div class="date margin_top_2">
                                     <label for="date-1" class="h4 date_text">選擇出發日期</label><br>
-                                    <input type="date" id="date-1" class="btn-date data-down">
+                                    <input type="date" id="date-1" name="spot_date" class="btn-date data-down">
                                 </div>
                                 <div class="amount margin_top_2">
                                     <p class="h4 date_text">數量</p>
-                                    <button class="minus btn-pull" id="minus">－</button>
-                                    <input type="number" value="1" id="num" class="btn-nu p" min="0">
-                                    <button class="add btn-pull" id="add">＋</button>
+                                    <span class="minus btn-pull" id="minus">－</span>
+                                    <!-- <input type="number" name="quantity" id="quantity" v-model.number="verified"
+                                        :min="0" :max="100"> -->
+                                    <!-- <input type="hidden" name="spot_qty" :value="verified"> -->
+                                    <input type="number" value="1" id="num" class="btn-nu p" min="1" name="spot_qty">
+                                    <span class="add btn-pull" id="add">＋</span>
                                 </div>
                             </div>
-                            
+
                             <div class="btn  margin_top_2">
-                                
+
                                 <button type="submit" name="add" class="addin small myTrip"><img class="plus"
                                         src="./img/icon/plus.png" alt="">
                                     加入我的行程</button>
-                                    <input type="hidden" name="spot_id" :value="spot_no">
-                                <button type="submit" name="add" class="button_min p buy margin_left_3"><a href="./car-itineray.php">前往訂購</a></button>
+                                <input type="hidden" name="spot_id" value="<?=$spot_no?>">
+                                <button type="submit" name="add" class="button_min p buy margin_left_3"><a
+                                        href="./car-itineray.php">前往訂購</a></button>
                             </div>
                         </form>
                 </div>
@@ -235,11 +249,11 @@ if( $errMsg != ""){ //例外
                     </div>
                     <ul class="margin_top_5">
                         <li class="messages" v-for="comment in comments" v-if="<?php echo $spot_no;?>==comment.spot_no">
-                        <!-- <li class="messages" v-for="comment in comments" > -->
+                            <!-- <li class="messages" v-for="comment in comments" > -->
                             <img :src="comment.mem_pic" alt="">
                             <div class="words margin_left_3">
-                            <div class="name">
-                            <p>{{comment.last_name}}{{comment.first_name}}</p>
+                                <div class="name">
+                                    <p>{{comment.last_name}}{{comment.first_name}}</p>
                                     <hr>
                                     <p>{{comment.trev_date}}</p>
                                 </div>

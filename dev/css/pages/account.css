@@ -432,6 +432,7 @@ nav .nav-links a:hover {
 nav .nav-links .bread {
   color: #AD6E4A;
   font-weight: 900;
+  font-size: 16px;
 }
 
 nav .nav-icons {
@@ -1212,6 +1213,7 @@ nav .nav-links a:hover {
 nav .nav-links .bread {
   color: #AD6E4A;
   font-weight: 900;
+  font-size: 16px;
 }
 
 nav .nav-icons {
@@ -2398,6 +2400,7 @@ nav .nav-links a:hover {
 nav .nav-links .bread {
   color: #AD6E4A;
   font-weight: 900;
+  font-size: 16px;
 }
 
 nav .nav-icons {
@@ -3488,6 +3491,7 @@ nav .nav-links a:hover {
 nav .nav-links .bread {
   color: #AD6E4A;
   font-weight: 900;
+  font-size: 16px;
 }
 
 nav .nav-icons {
@@ -4084,7 +4088,7 @@ div.bk3 {
 @media all and (max-width: 577px) {
   .first .first_right .hottrip div.planet_top img.planet_a1 {
     margin: 0 auto;
-    max-width: 90%;
+    max-width: 75%;
   }
 }
 
@@ -4486,6 +4490,18 @@ div.bk3 {
           justify-content: left;
 }
 
+@media all and (max-width: 992px) {
+  .welcome {
+    padding: 15vh 50px 0px 50px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .welcome {
+    padding: 15vh 10px 0px 10px;
+  }
+}
+
 .welcome .spacedinfo {
   line-height: 30px;
 }
@@ -4684,6 +4700,7 @@ div.bk3 {
   font-weight: 400;
   line-height: 1.5;
   border-radius: .25rem;
+  outline: none;
 }
 
 .account_tabs .content .info_form .center {
@@ -4834,6 +4851,12 @@ div.bk3 {
   outline: none;
   -webkit-box-shadow: none;
           box-shadow: none;
+  padding-left: 28px;
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
+  box-shadow: -1px 0px 20px 5px rgba(173, 110, 74, 0.45);
+  -webkit-box-shadow: -1px 0px 20px 5px rgba(173, 110, 74, 0.45);
+  -moz-box-shadow: -1px 0px 20px 5px rgba(173, 110, 74, 0.45);
 }
 
 .account_tabs .content .tripcontent, .account_tabs .content .ordercontent {
@@ -4903,178 +4926,6 @@ div.bk3 {
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
-  .welcome {
-    padding: 15vh 50px 0px 50px;
-  }
-  .account_card {
-    margin: 30px 50px 0px 50px;
-    padding: 30px;
-  }
-  .account_card .lev_acc {
-    padding: 30px 0px 20px 45px;
-  }
-  .account_card .your_acc .next_rocket {
-    margin-left: -30px;
-    margin-top: 40px;
-  }
-  .account_card .your_acc .next_rocket .account_rocket {
-    max-width: 5%;
-  }
-  .account_tabs .account_nav {
-    margin: 40px 50px 0px 50px;
-  }
-  .account_tabs .account_line {
-    margin: 0px 50px 0px 50px;
-  }
-  .account_tabs .content {
-    padding-bottom: 100px;
-  }
-  .account_tabs .content .info_form {
-    margin: 0px 50px 0px 50px;
-    padding: 30px 0px 30px 0px;
-  }
-  .account_tabs .content .info_form .info_img {
-    margin: 0px 30px 0px 0px;
-  }
-  .account_tabs .content .info_form .info_img .img_input {
-    margin: 15px 10px 0px 10px;
-    width: auto;
-  }
-  .account_tabs .content .info_form .info_img .circle-image {
-    width: 100px;
-    height: 100px;
-  }
-  .account_tabs .content .info_form .info_img .circle-image .infoimg {
-    width: 100%;
-    height: 100%;
-  }
-  .account_tabs .content .info_form .info_left .form, .account_tabs .content .info_form .info_left .unform, .account_tabs .content .info_form .info_right .form, .account_tabs .content .info_form .info_right .unform, .account_tabs .content .info_form .info_edit .form, .account_tabs .content .info_form .info_edit .unform {
-    width: 70%;
-  }
-  .account_tabs .content .info_form .info_left .info_editbtn, .account_tabs .content .info_form .info_right .info_editbtn, .account_tabs .content .info_form .info_edit .info_editbtn {
-    margin-left: 0px;
-  }
-  .account_tabs .content .info_form .center {
-    margin: 0;
-  }
-  .account_tabs .content .row > * {
-    padding-right: 0px;
-    padding-left: 0px;
-  }
-  .account_tabs .content .info_editbtn, .account_tabs .content .pointbtn {
-    margin-left: 50px;
-    margin-bottom: 10px;
-  }
-  .account_tabs .content .info_editbtn:hover, .account_tabs .content .heartbtns:hover, .account_tabs .content .postbtns:hover, .account_tabs .content .pointbtn:hover, .account_tabs .content .img_input:hover, .account_tabs .content .heartbtns.active {
-    color: #ffff;
-    border: 1px solid #AD6E4A;
-    background: #AD6E4A;
-  }
-  .account_tabs .content .info_editbtn:focus + .btn-primary, .account_tabs .content .heartbtns:focus, .account_tabs .content .btn-primary:focus, .account_tabs .content .postbtns:focus, .account_tabs .content .pointbtn:focus, .account_tabs .content .img_input:focus {
-    color: #fff;
-    background-color: #AD6E4A;
-    border-color: #AD6E4A;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-  }
-  .account_tabs .content .heart_btns, .account_tabs .content .post_btns {
-    padding: 0px 70px 0px 70px;
-  }
-  .account_tabs .content .product_card, .account_tabs .content .tripcontent, .account_tabs .content .ordercontent, .account_tabs .content .pointcontent {
-    padding: 0px 70px 20px 70px;
-  }
-  .account_tabs .content .tripcontent, .account_tabs .content .ordercontent {
-    margin-left: 10px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-  .welcome {
-    padding: 15vh 50px 0px 50px;
-  }
-  .account_card {
-    margin: 30px 50px 0px 50px;
-    padding: 30px;
-  }
-  .account_card .lev_acc {
-    padding: 30px 0px 20px 45px;
-  }
-  .account_card .your_acc .next_rocket {
-    margin-left: -30px;
-    margin-top: 40px;
-  }
-  .account_card .your_acc .next_rocket .account_rocket {
-    max-width: 5%;
-  }
-  .account_tabs .account_nav {
-    margin: 40px 50px 0px 50px;
-  }
-  .account_tabs .account_line {
-    margin: 0px 50px 0px 50px;
-  }
-  .account_tabs .content {
-    padding-bottom: 100px;
-  }
-  .account_tabs .content .info_form {
-    margin: 0px 50px 0px 50px;
-    padding: 30px 0px 30px 0px;
-  }
-  .account_tabs .content .info_form .info_img {
-    margin: 0px 30px 0px 0px;
-  }
-  .account_tabs .content .info_form .info_img .img_input {
-    margin: 15px 10px 0px 10px;
-    width: auto;
-  }
-  .account_tabs .content .info_form .info_img .circle-image {
-    width: 100px;
-    height: 100px;
-  }
-  .account_tabs .content .info_form .info_img .circle-image .infoimg {
-    width: 100%;
-    height: 100%;
-  }
-  .account_tabs .content .info_form .info_left .form, .account_tabs .content .info_form .info_left .unform, .account_tabs .content .info_form .info_right .form, .account_tabs .content .info_form .info_right .unform, .account_tabs .content .info_form .info_edit .form, .account_tabs .content .info_form .info_edit .unform {
-    width: 70%;
-  }
-  .account_tabs .content .info_form .info_left .info_editbtn, .account_tabs .content .info_form .info_right .info_editbtn, .account_tabs .content .info_form .info_edit .info_editbtn {
-    margin-left: 0px;
-  }
-  .account_tabs .content .info_form .center {
-    margin: 0;
-  }
-  .account_tabs .content .row > * {
-    padding-right: 0px;
-    padding-left: 0px;
-  }
-  .account_tabs .content .info_editbtn, .account_tabs .content .pointbtn {
-    margin-left: 50px;
-    margin-bottom: 10px;
-  }
-  .account_tabs .content .info_editbtn:hover, .account_tabs .content .heartbtns:hover, .account_tabs .content .postbtns:hover, .account_tabs .content .pointbtn:hover, .account_tabs .content .img_input:hover, .account_tabs .content .heartbtns.active {
-    color: #ffff;
-    border: 1px solid #AD6E4A;
-    background: #AD6E4A;
-  }
-  .account_tabs .content .info_editbtn:focus + .btn-primary, .account_tabs .content .heartbtns:focus, .account_tabs .content .btn-primary:focus, .account_tabs .content .postbtns:focus, .account_tabs .content .pointbtn:focus, .account_tabs .content .img_input:focus {
-    color: #fff;
-    background-color: #AD6E4A;
-    border-color: #AD6E4A;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-  }
-  .account_tabs .content .heart_btns, .account_tabs .content .post_btns {
-    padding: 0px 70px 0px 70px;
-  }
-  .account_tabs .content .product_card, .account_tabs .content .tripcontent, .account_tabs .content .ordercontent, .account_tabs .content .pointcontent {
-    padding: 0px 70px 20px 70px;
-  }
-  .account_tabs .content .tripcontent, .account_tabs .content .ordercontent {
-    margin-left: 10px;
-  }
-}
-
-@media (max-width: 768px) {
   .welcome {
     padding: 15vh 50px 0px 50px;
   }

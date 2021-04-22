@@ -27,11 +27,12 @@
   <!-- 動態背景 -->
   <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
-  <link rel="stylesheet" href="./css/all.css">
+  <link rel="stylesheet" href="./css/pages/all.css">
   <link rel="stylesheet" href="./css/pages/photowall.css">
   <link rel="stylesheet" href="./css/pages/shop.css">
   <link rel="stylesheet" href="./css/pages/alltrip.css">
   <link rel="stylesheet" href="./css/pages/account.css">
+  <link rel="shortcut icon" href="./img/icon/shortcut.png" type="image/x-icon">
 
   <title>會員</title>
 
@@ -42,7 +43,6 @@
 </style>
 
 <body>
-
   <header>
     <nav id="nav">
       <div class="logo">
@@ -86,8 +86,12 @@
           </a>
         </li>
         <li>
-          <a href="./login.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png" alt=""
-              class="icon" /></a>
+          <?php
+            if(isset($_SESSION['mem_no'])){ ?>
+              <a href="./account.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png" alt="" class="icon"/></a>
+          <?php }else{ ?>
+            <a href="./login.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png" alt="" class="icon"/></a>
+          <?php } ?>
         </li>
       </ul>
       <div class="burger">
@@ -104,7 +108,6 @@
   <div id="particles-js">
     <script src="./js/background.js"></script>
   </div>
-  <div class="planet_banner"></div>
 
   <div id="accountapp">
 
@@ -245,11 +248,11 @@
         <!-- 行程管理 -->
         <div v-else-if="link ==='b'">
           <div class="heart_btns margin_top_3">
-            <button @click="visibility='全部'" :class="{'active': visibility == '全部'}" class="btn heartbtns p"
+            <button @click="visibility=3" :class="{'active': visibility == 3}" class="btn heartbtns p"
               type="button">全部</button>
-            <button @click="visibility='待出發'" :class="{'active': visibility == '待出發'}" class="btn heartbtns p"
+            <button @click="visibility=0" :class="{'active': visibility == 0}" class="btn heartbtns p"
               type="button">待出發</button>
-            <button @click="visibility='已結束'" :class="{'active': visibility == '已結束'}" class="btn heartbtns p"
+            <button @click="visibility=1" :class="{'active': visibility == 1}" class="btn heartbtns p"
               type="button">已結束</button>
           </div>
 
@@ -258,7 +261,7 @@
             <div v-for="(item,index) in travelstatus" class="table margin_top_5">
 
               <caption>
-                <span class="">訂單編號： {{item.ord_no}} </span>
+                <span class="">訂單編號： {{item.order_no}} </span>
               </caption>
               <table class="margin_top_1">
                 <thead class="table_title">
@@ -275,10 +278,14 @@
                   <tr>
                     <td>{{item.dep_date}}</td>
                     <td>NT.{{item.total_price}}</td>
-                    <td>{{item.scores}}</td>
+                    <td>{{item.miles}}</td>
                     <td>{{item.order_date}}</td>
-                    <td>{{item.state}}</td>
-                    <td>{{item.guide}}</td>
+                    <td v-if="item.order_status == 0">待出發</td>
+                    <td v-else="item.order_status == 1">已結束</td>
+                    <!-- <td>{{item.state}}</td> -->
+                    <td v-if="item.guide == 0">無</td>
+                    <td v-else="item.guide == 1">有</td>
+                    <!-- <td>{{item.guide}}</td> -->
                   </tr>
                 </tbody>
               </table>
@@ -299,13 +306,13 @@
                       <th scope="col">人數</th>
                     </tr>
                   </thead>
-                  <tbody v-for="item in spot_order_detail">
+                  <tbody v-for="item1 in spot_order_detail" v-if="item.order_no == item1.order_no">
                     <tr>
-                      <td>{{item.spot_no}}</td>
-                      <td>{{item.spot_name}}</td>
-                      <td>{{item.price}}</td>
-                      <td>{{item.integral}}</td>
-                      <td>{{item.people}}</td>
+                      <td>{{item1.spot_no}}</td>
+                      <td>{{item1.spot_name}}</td>
+                      <td>{{item1.price}}</td>
+                      <td>{{item1.integral}}</td>
+                      <td>{{item1.people}}</td>
                     </tr>
                   </tbody>
                 </table>
@@ -496,8 +503,9 @@
         <div v-else-if="link ==='d'">
 
           <div class="heart_btns">
-            <input type="date" id="date-1" value="<?php echo date("Y-m-d");?>"  class="btn orderbtns margin_top_3 btn-date data-down">
+            <input type="date" id="date-1" class="btn orderbtns margin_top_3 btn-date data-down">
           </div>
+          <!-- value="<?php echo date("Y-m-d");?>"  -->
 
           <div class="ordercontent margin_top_3">
 
@@ -755,9 +763,9 @@
 
             <div class="exchange margin_top_5">
               <p class="point_p">將</p>
-              <input type="text" class="form-control point_input" id="" placeholder=輸入欲轉換的積分>
+              <input type="text" v-model="miles" @input="miles2coin" class="form-control point_input" placeholder=輸入欲轉換的積分>
               <p class="point_p">積分，轉換為</p>
-              <input type="text" readonly class="form-control-plaintext point_input" id="" value="">
+              <input type="text" v-model="coin" readonly class="form-control-plaintext point_input">
               <p class="point_p">宇宙幣。</p>
             </div>
             <div class="point_btn">
@@ -796,12 +804,13 @@
       el: "#accountapp",
       data: {
         link: "a",
-        // dynamicComponent: 'bye',
         step: 1,
         isChange: false,
         isEditing: false,
         toggle: false,
-        visibility: '全部',
+        visibility: 3,
+        miles: 2,
+        coin: 1,
         customer: { //會員資料
           mem_no: '1010006',
           mem_lv: '初星者',
@@ -822,9 +831,6 @@
           mem_next_img: './img/icon/天星者.png',
           mem_next_miles: 100000,
         },
-
-        // prod_order: [],
-        // spot_order_detail: [],
 
         prod_order: [{ // 商品訂單+收件人
           ord_no: '#TW1637493',
@@ -873,59 +879,10 @@
           prod_point: '100',
           qty: '1',
         }],
-        spot_order: [{ // 行程訂單+收件人
-          ord_no: '#TW1637493',
-          dep_date: '2021/02/04',
-          total_price: '1,290',
-          scores: '10,000',
-          order_date: '2021/02/04',
-          state: '已結束',
-          guide: '加購',
-          order_name: '陳大大',
-          order_ph: '0988123456',
-          order_email: '台北市中正區大西路48號',
-        }, {
-          ord_no: '#TW1637493',
-          dep_date: '2021/02/04',
-          total_price: '1,290',
-          scores: '10,000',
-          order_date: '2021/02/04',
-          state: '待出發',
-          guide: '加購',
-          order_name: '陳中中',
-          order_ph: '0988123456',
-          order_email: '台北市中正區大西路48號',
-        }, {
-          ord_no: '#TW1637493',
-          dep_date: '2021/02/04',
-          total_price: '1,290',
-          scores: '10,000',
-          order_date: '2021/02/04',
-          state: '待出發',
-          guide: '加購',
-          order_name: '陳小小',
-          order_ph: '0988123456',
-          order_email: '台北市中正區大西路48號',
-        }],
-        spot_order_detail: [{ // 行程訂單明細
-          spot_no: '#24',
-          spot_name: '攀登太陽系第一高山-奧林帕斯山三日遊',
-          price: '1,290',
-          integral: '10,000',
-          people: '1',
-        }, {
-          spot_no: '#24',
-          spot_name: '攀登太陽系第一高山-奧林帕斯山三日遊',
-          price: '1,290',
-          integral: '10,000',
-          people: '1',
-        }, {
-          spot_no: '#24',
-          spot_name: '攀登太陽系第一高山-奧林帕斯山三日遊',
-          price: '1,290',
-          integral: '10,000',
-          people: '1',
-        }],
+        
+        spot_order: [], // 行程訂單+收件人
+        spot_order_detail: [], // 行程訂單明細
+
         active: [],
         spot1: [{ // 行程內容
           spot: "./img/trip/trip_moon/moon1.jpg",
@@ -980,31 +937,6 @@
           img: "./img/shop/shoes.png",
           name: "宇宙平衡鞋",
           price: 5000,
-          cart: "./img/shop/cart.png",
-        }, {
-          img: "./img/shop/cloth.png",
-          name: "太空衣",
-          price: 10000,
-          cart: "./img/shop/cart.png",
-        }, {
-          img: "./img/shop/cloth.png",
-          name: "太空衣",
-          price: 10000,
-          cart: "./img/shop/cart.png",
-        }, {
-          img: "./img/shop/shoes.png",
-          name: "宇宙平衡鞋",
-          price: 5000,
-          cart: "./img/shop/cart.png",
-        }, {
-          img: "./img/shop/shoes.png",
-          name: "宇宙平衡鞋",
-          price: 5000,
-          cart: "./img/shop/cart.png",
-        }, {
-          img: "./img/shop/cloth.png",
-          name: "太空衣",
-          price: 10000,
           cart: "./img/shop/cart.png",
         }],
       },
@@ -1064,6 +996,9 @@
             $(".order_icon").eq(e).attr("src", "./img/icon/drop-down-arrow.png");
           };
         },
+        miles2coin(){  // 轉換積分
+          this.coin = this.miles / 2
+        },
         mouseMe() {  // hover貼文功能
           $('.img1').mouseover(function () {
             $(this).parent().find(".action-box").css('display', 'flex');
@@ -1073,13 +1008,17 @@
           });
         },
       },
+      mounted(){
+        fetch('./php/getspot_order.php').then(res => res.json()).then(res => this.spot_order = res);
+        fetch('./php/getspot_order_datail.php').then(res => res.json()).then(res => this.spot_order_detail = res);
+      },
       computed: {
         travelstatus() {
-          if (this.visibility == '全部') {
+          if (this.visibility == 3) {
             return this.spot_order
           } else {
             return this.spot_order.filter(item => {
-              return item.state == this.visibility
+              return item.order_status == this.visibility
             })
           }
         },

@@ -10,7 +10,7 @@ if($_GET['prod_status'] == 0){
 }
 
 try{
-    require_once("../../../../connect_ced102_g3_local.php");
+    require_once("../../connect_ced102_g3_local.php");
     $sql = "UPDATE prod SET prod_status=$status WHERE prod_no=:prod_no";
     $product = $pdo->prepare($sql);
     $product->bindValue(":prod_no", $prod_no);

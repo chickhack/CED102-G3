@@ -2,7 +2,7 @@
 $order_no = $_REQUEST["order_no"];
 $errMsg='';
 try {
-	require_once("../../../../connect_ced102_g3_local.php");
+	require_once("../../connect_ced102_g3_local.php");
 	$sql = "select * from spot_order_datail where order_no=:order_no";
 	$order = $pdo->prepare($sql);	//執行指令
 	$order->bindValue(":order_no", $order_no);
@@ -40,15 +40,15 @@ try {
             </div>
             <button class="div-list-btn-a">商城</button>
             <div>
-                <a href="#" class="div-list-btn-s">商品管理</a>
+                <a href="../../../backstage/backstage_shop.php" class="div-list-btn-s">商品管理</a>
                 <a href="#" class="div-list-btn-s">商品評價</a>
                 <a href="#" class="div-list-btn-s">商品訂單管理</a>
             </div>
             <!-- <a href="#" class="div-list-btn-a">百科管理</a> -->
             <button class="div-list-btn-a">互動牆</button>
             <div>
-                <a href="#" class="div-list-btn-s">互動牆管理</a>
-                <a href="#" class="div-list-btn-s">互動牆檢舉管理</a>
+                <a href="../../../spaced_backstage_post.php" class="div-list-btn-s">互動牆管理</a>
+                
             </div>
             <a href="#" class="div-list-btn-a">會員管理</a>
             <a href="#" class="div-list-btn-a">管理員管理</a>
