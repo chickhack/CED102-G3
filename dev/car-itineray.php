@@ -26,54 +26,36 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vuex/3.6.2/vuex.min.js"></script>
     <title>我的行程</title>
     <style>
-    .count{
-        width: 25px;
-      height: 25px;
-      background-color: #AD6E4A;
-      border-radius: 50%;
-      text-align: center;
-      line-height: 1.5rem;
-      position: absolute;
-      transform: translate(50%, -150%);
-      display: block;
-      color: white; 
-    }
+    
     </style>
 </head>
 <body>
     <div class="container">
-        <nav id="nav">
-        <div class="logo">
-            <h1><a href="home.html">SPACED</a></h1>
-        </div>
-        <ul class="nav-links">
-            <li class="margin_left_5"><a href="alltrip.php">星球景點</a></li>
-            <li class="margin_left_5"><a href="planet.php">星星世界</a></li>
-            <li class="margin_left_5"><a href="shop.php">星球商城</a></li>
-            <li class="margin_left_5"><a href="photowall.php">太空互動</a></li>
-            <li class="margin_left_5"><a href="Leaderboard.php">玩家排行</a></li>
-            <!-- <li><a href=""><img src="./images/ticket.png" alt="" class="icon"></a></li>
-                <li><a href=""><img src="./images/shopping-cart_(1).png" alt="" class="icon"></a></li>
-                <li><a href=""><img src="./images/round-account-button-with-user-inside_(1).png" alt="" class="icon"></a></li> -->
-        </ul>
-        <ul class="nav-icons">
-            <li class="nav-itineray">
-            <a href="./car-itineray.php"
-                ><img src="./img/icon/header/luggage.png" alt="" class="icon"/>
-                <?php
-                        if(isset($_SESSION["trip-cart"])){
-                            $count = count($_SESSION["trip-cart"]);
-                            echo "<div class='count'>$count</div>";
-                        }else{
-                            echo "";
-                        }
-                        ?>
-            </a>
-            </li>
-            <li class="nav-cart">
-                <a href="./shop_cart.php">
-                    <img src="./img/icon/header/shopping-cart_(1).png" alt="" class="icon"/>
-                    <?php
+    <header>
+    <nav id="nav">
+  <div class="logo">
+    <h1><a href="home.php">SPACED</a></h1>
+  </div>
+  <ul class="nav-links">
+    <li class="margin_left_5"><a href="alltrip.php">星球景點</a></li>
+    <li class="margin_left_5"><a href="planet.php">星星世界</a></li>
+    <li class="margin_left_5"><a href="shop.php" class="bread">星球商城</a></li>
+    <li class="margin_left_5"><a href="photowall.php">太空互動</a></li>
+    <li class="margin_left_5"><a href="Leaderboard.php">玩家排行</a></li>
+    <!-- <li><a href=""><img src="./images/ticket.png" alt="" class="icon"></a></li>
+        <li><a href=""><img src="./images/shopping-cart_(1).png" alt="" class="icon"></a></li>
+        <li><a href=""><img src="./images/round-account-button-with-user-inside_(1).png" alt="" class="icon"></a></li> -->
+  </ul>
+  <ul class="nav-icons">
+    <li>
+      <a href="./car-itineray.php"
+        ><img src="./img/icon/header/luggage.png" alt="" class="icon"
+      /></a>
+    </li>
+    <li class="nav-cart">
+        <a href="./shop_cart.php">
+            <img src="./img/icon/header/shopping-cart_(1).png" alt="" class="icon"/>
+            <?php
                 if(isset($_SESSION["cart"])){
                     $count = count($_SESSION["cart"]);
                     echo "<div class='count'>$count</div>";
@@ -81,31 +63,34 @@
                     echo "";
                 }
             ?>
-                </a>
-            </li> 
-            <li>
-            <a href="./login.php"
-                ><img
-                src="./img/icon/header/round-account-button-with-user-inside_(1).png"
-                alt=""
-                class="icon"
-            /></a>
-            </li>
-        </ul>
-        <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
-        </nav>
+        </a>
+    </li> 
+    <li>
+        <?php
+            if(isset($_SESSION['mem_no'])){?>
+                <a href="./account.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png" alt="" class="icon"/></a>
+        <?php }else{ ?>
+                <a href="./login.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png" alt="" class="icon"/></a>
+        <?php } ?>
+    </li>
+  </ul>
+  <div class="burger">
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line3"></div>
+  </div>
+</nav>
 
-        <script src="./js/header.js"></script>
+<script src="./js/header.js"></script>
+
+
+  </header>
         <div id="particles-js"></div>
         <section class="cart" id="app">
             <form :action="name+id" method="post">
                 <h3 class="h2">我的行程</h3>
                 <?php
-                print_r($_SESSION["trip-cart"]);
+                // print_r($_SESSION["trip-cart"]);
                 ?>
                 <ul>
                     <cart @get="getId" :item="val" v-for="(val,index) in products"></cart>
@@ -126,15 +111,16 @@
                 </div>
             </form>
         </section>
+    <a href="#" class="go-top"></a>
         <footer class="padding_top_10">
             <div class="links">
                 <div class="logo"><img src="./img/logo.png" alt=""></div>
                 <ul class="footer-links margin_top_2">
-                    <li><a href="alltrip.html">星球景點</a></li>
-                    <li><a href="planet.html">星星世界</a></li>
-                    <li><a href="shop.html">星球商城</a></li>
-                    <li><a href="photowall.html">太空互動</a></li>
-                    <li><a href="Leaderboard.html">玩家排行</a></li>
+                    <li><a href="alltrip.php">星球景點</a></li>
+                    <li><a href="planet.php">星星世界</a></li>
+                    <li><a href="shop.php">星球商城</a></li>
+                    <li><a href="photowall.php">太空互動</a></li>
+                    <li><a href="Leaderboard.php">玩家排行</a></li>
                 </ul>
             </div>
             <img src="./img/footer_moon.png" alt="" class="footer_moon">
@@ -142,6 +128,28 @@
         </footer>
 
     </div>
+    <script>
+ $(document).ready(function() {
+        // Show or hide the sticky footer button
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+                $('.go-top').fadeIn(200);
+            } else {
+                $('.go-top').fadeOut(200);
+            }
+        });
+
+        // Animate the scroll to top
+        $('.go-top').click(function(event) {
+            event.preventDefault();
+
+            $('html, body').animate({
+                scrollTop: 0
+            }, 900);
+        })
+    });
+
+    </script>
     <script>
         Vue.use(Vuex);
 

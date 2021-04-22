@@ -3,6 +3,18 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button{
     -webkit-appearance: none;
 }
+.count{
+    width: 25px;
+  height: 25px;
+  background-color: #AD6E4A;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 1.5rem;
+  position: absolute;
+  transform: translate(50%, -150%);
+  display: block;
+  color: white; 
+}
 .margin-bottom-2{
     margin-bottom: 20px;
 }
