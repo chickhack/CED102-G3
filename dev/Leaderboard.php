@@ -40,24 +40,23 @@ session_start();
         <li><a href=""><img src="./images/round-account-button-with-user-inside_(1).png" alt="" class="icon"></a></li> -->
   </ul>
   <ul class="nav-icons">
-    <li>
-      <a href="./car-itineray.php">
-      <img src="./img/icon/header/luggage.png" alt="" class="icon"/>
-      <?php
-            if(isset($_SESSION["trip-cart"])){
-               $count = count($_SESSION["trip-cart"]);
-               echo "<div class='count'>$count</div>";
-            }else{
-                  echo "";
-               }
-      ?>
-      </a>
-    </li>
-    <li class="nav-cart">
-      <a href="./shop_cart.php">
-        <img src="./img/icon/header/shopping-cart_(1).png" alt="" class="icon"/>
-
-        <?php
+  <li class="nav-trip">
+                    <a href="./car-itineray.php">
+                        <img src="./img/icon/header/luggage.png" alt="" class="icon" />
+                        <?php
+                        if(isset($_SESSION["trip-cart"])){
+                            $count = count($_SESSION["trip-cart"]);
+                            echo "<div class='trip-count'>$count</div>";
+                        }else{
+                            echo "";
+                        }
+                     ?>
+                    </a>
+                </li>
+                <li class="nav-cart">
+        <a href="./shop_cart.php">
+            <img src="./img/icon/header/shopping-cart_(1).png" alt="" class="icon"/>
+            <?php
                 if(isset($_SESSION["cart"])){
                     $count = count($_SESSION["cart"]);
                     echo "<div class='count'>$count</div>";
@@ -65,16 +64,8 @@ session_start();
                     echo "";
                 }
             ?>
-      </a>
+        </a>
     </li> 
-    <li>
-      <a href="./login.php"
-        ><img
-          src="./img/icon/header/round-account-button-with-user-inside_(1).png"
-          alt=""
-          class="icon"
-      /></a>
-    </li>
     <li>
         <?php
             if(isset($_SESSION['mem_no'])){?>
