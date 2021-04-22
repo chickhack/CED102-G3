@@ -8,14 +8,8 @@
 
   $result = $dsn->query($query);
 
-  if ($result->num_rows > 0) {
-      echo 1;
-  }else{
-    $query = "INSERT INTO customer ('email, mem_psw') 
-              VALUES(''$email',?)";
-    $result = $dsn->query($query);
-    echo 0;
-  }
+    //送出登入者的姓名資料
+    // $res = ["email"=>$memRow["email"], "mem_psw"=>$memRow["mem_psw"], "mem_no" => $memRow['mem_no'] ];
 
 
 
