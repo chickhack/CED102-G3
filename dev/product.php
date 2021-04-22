@@ -115,12 +115,20 @@
         </a>
     </li> 
     <li>
-      <a href="./login.php"
-        ><img
-          src="./img/icon/header/round-account-button-with-user-inside_(1).png"
-          alt=""
-          class="icon"
-      /></a>
+        <?php
+            if(isset($_SESSION['mem_no'])){?>
+                <div class="member"  onclick="toggle()">
+                    <div class="info">
+                        <img src="<?= $_SESSION['mem_pic'] ?>" alt="">
+                        <div class="infoData">
+                            <a href="./account.php">會員中心</a>
+                            <a href="./login.php" onclick="show()">登出</a>
+                        </div>
+                    </div>  
+                </div>
+        <?php }else{ ?>
+                <a href="./login.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png" alt="" class="icon"/></a>
+        <?php } ?>
     </li>
   </ul>
   <div class="burger">
@@ -168,7 +176,7 @@
                     <input type="hidden" name="product_id" value=<?php echo $_GET["id"]?>>
                     <button type="submit" name="buy" class="button_large margin_top_2 margin_left_1 buy" href="./shop_cart.php">立即購買</button>
                 </div>
-                <img src="./img/icon/bookmark-outline.png" alt="" class="icon favorites">
+                <!-- <img @click="collective" src="./img/icon/bookmark-outline.png" alt="" class="icon favorites"> -->
             </form>
         </div>
         <p class="describe line_low">{{products[0]["prod_intro"]}}</p>
@@ -231,11 +239,11 @@
     <div class="links">
         <div class="logo"><img src="./img/logo.png" alt=""></div>
         <ul class="footer-links margin_top_2">
-            <li><a href="alltrip.html">星球景點</a></li>
-            <li><a href="planet.html">星星世界</a></li>
-            <li><a href="shop.html">星球商城</a></li>
-            <li><a href="photowall.html">太空互動</a></li>
-            <li><a href="Leaderboard.html">玩家排行</a></li>
+            <li><a href="alltrip.php">星球景點</a></li>
+            <li><a href="planet.php">星星世界</a></li>
+            <li><a href="shop.php">星球商城</a></li>
+            <li><a href="photowall.php">太空互動</a></li>
+            <li><a href="Leaderboard.php">玩家排行</a></li>
         </ul>
     </div>
     <img src="./img/footer_moon.png" alt="" class="footer_moon">
@@ -275,13 +283,14 @@
                     // console.log(this.message);
                     this.message = this.msg.prev;
                     e.target.style.opacity = 0 ;
-                }
+                },
             }
         })
         let vm = new Vue({
             el: "#app",
             data:{
                 verified: 1,
+                prod_keep: false,
                 products:[],
                 // second: [{
                 //     spot: "./img/trip/trip_jupiter/jupiter_a1_ps2.jpg",
@@ -335,6 +344,35 @@
                 addQuantity() {
                     this.verified += 1;
                 },
+                collective(e){
+                    <?php if(isset($_SESSION['mem_no'])){?>
+                        e.target.src = "./img/icon/bookmark-ribbon.png";
+                        const mem_no = <?= $_SESSION['mem_no'] ?>;
+                        const prod_no = this.products[0].prod_no;
+                        this.prod_keep = !this.prod_keep;
+                        let status = this.prod_keep ? 1 : 0;
+                        // console.log(status);
+
+                        let data = {
+                            mem_no: mem_no,
+                            prod_no: prod_no,
+                            keep: status,
+                        }
+
+                        let url = "./php/prod_keep.php";
+                        fetch(url,{
+                            method: "post",
+                            body: JSON.stringify(data),
+                            headers: new Headers({
+                                        'Content-Type': 'application/json'
+                                    })
+                            }).then(res => res.text())
+                            .catch(error => console.log(error))
+                            .then(body => console.log(body))
+                     <?php }else{ ?>
+                        window.location.href = "./login.php";
+                    <?php } ?>
+                }
             },
             computed: {
                 stars(){
@@ -363,11 +401,19 @@
                                                         let picArr = data[0]["prod_pic"].split("==");
                                                         picArr.shift();
                                                         vm.products[0]["prod_pic"] = picArr;
-                    });
+                                                })
+
             }
         });
-
-                                            
+        
+        function show(){
+            fetch("./php/logout.php");
+            window.location.href = "./login.php";
+        }                               
+        function toggle(){
+            const infoData = document.querySelector(".infoData");
+            infoData.classList.toggle("show");
+        }       
     </script>
     <script src="./js/background.js"></script>
     <script src="./js/gotop.js"></script>

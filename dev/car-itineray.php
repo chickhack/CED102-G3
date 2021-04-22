@@ -1,5 +1,6 @@
 <?php
     session_start();
+    // session_unset();
     if(isset($_POST['remove'])){
         if($_GET['action'] = 'remove'){ 
             foreach($_SESSION['trip-cart'] as $key => $value){
@@ -33,6 +34,57 @@
 </head>
 <body>
     <div class="container">
+<<<<<<< HEAD
+        <nav id="nav">
+        <div class="logo">
+            <h1><a href="home.html">SPACED</a></h1>
+        </div>
+        <ul class="nav-links">
+            <li class="margin_left_5"><a href="alltrip.php">星球景點</a></li>
+            <li class="margin_left_5"><a href="planet.php">星星世界</a></li>
+            <li class="margin_left_5"><a href="shop.php">星球商城</a></li>
+            <li class="margin_left_5"><a href="photowall.php">太空互動</a></li>
+            <li class="margin_left_5"><a href="Leaderboard.php">玩家排行</a></li>
+            <!-- <li><a href=""><img src="./images/ticket.png" alt="" class="icon"></a></li>
+                <li><a href=""><img src="./images/shopping-cart_(1).png" alt="" class="icon"></a></li>
+                <li><a href=""><img src="./images/round-account-button-with-user-inside_(1).png" alt="" class="icon"></a></li> -->
+        </ul>
+        <ul class="nav-icons">
+            <li class="nav-itineray">
+            <a href="./car-itineray.php"
+                ><img src="./img/icon/header/luggage.png" alt="" class="icon"/>
+                <?php
+                        if(isset($_SESSION["trip-cart"])){
+                            $count = count($_SESSION["trip-cart"]);
+                            echo "<div class='count'>$count</div>";
+                        }else{
+                            echo "";
+                        }
+                        ?>
+            </a>
+            </li>
+            <li class="nav-cart">
+                <a href="./shop_cart.php">
+                    <img src="./img/icon/header/shopping-cart_(1).png" alt="" class="icon"/>
+                    
+                </a>
+            </li> 
+            <li>
+            <a href="./login.html"
+                ><img
+                src="./img/icon/header/round-account-button-with-user-inside_(1).png"
+                alt=""
+                class="icon"
+            /></a>
+            </li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        </nav>
+=======
     <header>
     <nav id="nav">
   <div class="logo">
@@ -49,12 +101,20 @@
         <li><a href=""><img src="./images/round-account-button-with-user-inside_(1).png" alt="" class="icon"></a></li> -->
   </ul>
   <ul class="nav-icons">
-    <li>
-      <a href="./car-itineray.php"
-        ><img src="./img/icon/header/luggage.png" alt="" class="icon"
-      /></a>
-    </li>
-    <li class="nav-cart">
+  <li class="nav-trip">
+                    <a href="./car-itineray.php">
+                        <img src="./img/icon/header/luggage.png" alt="" class="icon" />
+                        <?php
+                        if(isset($_SESSION["trip-cart"])){
+                            $count = count($_SESSION["trip-cart"]);
+                            echo "<div class='trip-count'>$count</div>";
+                        }else{
+                            echo "";
+                        }
+                     ?>
+                    </a>
+                </li>
+                <li class="nav-cart">
         <a href="./shop_cart.php">
             <img src="./img/icon/header/shopping-cart_(1).png" alt="" class="icon"/>
             <?php
@@ -75,14 +135,6 @@
                 <a href="./login.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png" alt="" class="icon"/></a>
         <?php } ?>
     </li>
-    <li>
-        <?php
-            if(isset($_SESSION['mem_no'])){?>
-                <a href="./account.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png" alt="" class="icon"/></a>
-        <?php }else{ ?>
-                <a href="./login.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png" alt="" class="icon"/></a>
-        <?php } ?>
-    </li>
   </ul>
   <div class="burger">
     <div class="line1"></div>
@@ -92,6 +144,7 @@
 </nav>
 
 <script src="./js/header.js"></script>
+>>>>>>> dev
 
 
   </header>
@@ -218,6 +271,7 @@
                                     </div>
                                 </div>
                             </div>
+                            <input type="date" id="date-1" class="btn-date data-down margin_top_2" value="<?php foreach($_SESSION["trip-cart"] as $data){echo $data["spot_date"];}?>">
                             <p class="h3">$\{{mainPrice}}</p>
                             <button type="submit" name="remove"><img src="./img/icon/trashcan.png" class="icon trashcan" :data-no="item.spot_no" @click="increment"></button>
                         </div>

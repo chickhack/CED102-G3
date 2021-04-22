@@ -8,7 +8,8 @@ session_start();
             $count = count($_SESSION["trip-cart"]);
             $item_array = array(
                 "spot_id" => $_POST["spot_id"],
-                "spot_qty" => 1
+                "spot_qty" => 1,
+                "spot_date" => 0,
             );
             $_SESSION["trip-cart"][$count] =$item_array;
             // echo '<script>window.location="alltrip.php"</script>';
@@ -19,7 +20,8 @@ session_start();
         }else{
             $item_array = array(
                 "spot_id" => $_POST["spot_id"],
-                "spot_qty" => 1
+                "spot_qty" => 1,
+                "spot_date" => 0,
             );
             $_SESSION["trip-cart"][0] = $item_array;
     }
@@ -98,9 +100,13 @@ session_start();
                     </a>
                 </li>
                 <li>
-                    <a href="./login.html"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png"
-                            alt="" class="icon" /></a>
-                </li>
+        <?php
+            if(isset($_SESSION['mem_no'])){?>
+                <a href="./account.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png" alt="" class="icon"/></a>
+        <?php }else{ ?>
+                <a href="./login.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png" alt="" class="icon"/></a>
+        <?php } ?>
+    </li>
             </ul>
             <div class="burger">
                 <div class="line1"></div>
@@ -277,11 +283,11 @@ session_start();
         <div class="links">
             <div class="logo"><img src="./img/logo.png" alt=""></div>
             <ul class="footer-links margin_top_2">
-                <li><a href="alltrip.html">星球景點</a></li>
-                <li><a href="planet.html">星星世界</a></li>
-                <li><a href="shop.html">星球商城</a></li>
-                <li><a href="photowall.html">太空互動</a></li>
-                <li><a href="Leaderboard.html">玩家排行</a></li>
+                <li><a href="alltrip.php">星球景點</a></li>
+                <li><a href="planet.php">星星世界</a></li>
+                <li><a href="shop.php">星球商城</a></li>
+                <li><a href="photowall.php">太空互動</a></li>
+                <li><a href="Leaderboard.php">玩家排行</a></li>
             </ul>
         </div>
         <img src="./img/footer_moon.png" alt="" class="footer_moon">

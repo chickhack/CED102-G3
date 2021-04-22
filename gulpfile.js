@@ -109,9 +109,9 @@ exports.w = function watchFiles() {
     watch('./dev/**/*.html', includeHTML);
     watch('./dev/img/*', moveImg);
     watch('./dev/js/*.js', moveJS);
-    watch('./dev/php/*.php', movePhp);
+    watch('./dev/php/**', movePhp);
     watch("./dev/*.php",moveIndex);
-    watch("./dev/backsatge",moveBackstage);
+    watch("./dev/backstage",moveBackstage);
 };
 
 

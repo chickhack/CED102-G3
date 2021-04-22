@@ -33,7 +33,7 @@ try {
 		$to = "../images/$filename";
 		if(copy( $from, $to)===true){
 			//insert `資料表名稱`(`選擇要存入的欄位`,`選擇要存入的欄位`,`選擇要存入的欄位`)
-			$sql = "INSERT INTO `spot` (`spot_no`,`spot_name`, `spot_pic`, `spot_lv`, `spot_info`, `spot_intro`, `spot_dnt`,`spot_status`,`spot_s_status`,`spot_price`,`miles`)
+			$sql = "INSERT INTO `spot` (`spot_no`,spot_name, `spot_pic`, `spot_lv`, `spot_info`, `spot_intro`, `spot_dnt`,`spot_status`,`spot_s_status`,`spot_price`,`miles`)
 			values(null,:spot_name, :spot_pic, :spot_lv, :spot_info, :spot_intro, :spot_dnt,:spot_status,:spot_s_status,:spot_price,:miles )";
 			$products = $pdo->prepare( $sql );
 			$products -> bindValue(":spot_name",$_POST["spot_name"]);//bindvalue("values設定的名稱",$_POST["前台送回來的name"]) $_POST["spot_name"]
