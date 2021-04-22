@@ -414,6 +414,23 @@ nav .nav-links a {
   width: 100%;
   color: #ffffff;
   padding: 8px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+nav .nav-links a:hover {
+  color: #AD6E4A;
+}
+
+@media all and (max-width: 992px) {
+  nav .nav-links a:hover {
+    color: #0c0d18;
+  }
+}
+
+nav .nav-links .bread {
+  color: #AD6E4A;
+  font-weight: 900;
 }
 
 nav .nav-icons {
@@ -460,20 +477,23 @@ nav .nav-cart .count {
   text-align: center;
   line-height: 1.5rem;
   position: absolute;
-  transform: translate(50%, -150%);
+  -webkit-transform: translate(50%, -150%);
+          transform: translate(50%, -150%);
   display: block;
   color: white;
 }
 
 @media all and (max-width: 992px) {
   nav .nav-cart .count {
-    transform: translate(100%, -150%);
+    -webkit-transform: translate(100%, -150%);
+            transform: translate(100%, -150%);
   }
 }
 
 @media all and (max-width: 768px) {
   nav .nav-cart .count {
-    transform: translate(40%, -170%);
+    -webkit-transform: translate(40%, -170%);
+            transform: translate(40%, -170%);
     width: 20px;
     height: 20px;
     font-size: 12px;
@@ -494,20 +514,23 @@ nav .nav-trip .trip-count {
   text-align: center;
   line-height: 1.5rem;
   position: absolute;
-  transform: translate(50%, -150%);
+  -webkit-transform: translate(50%, -150%);
+          transform: translate(50%, -150%);
   display: block;
   color: white;
 }
 
 @media all and (max-width: 992px) {
   nav .nav-trip .trip-count {
-    transform: translate(100%, -150%);
+    -webkit-transform: translate(100%, -150%);
+            transform: translate(100%, -150%);
   }
 }
 
 @media all and (max-width: 768px) {
   nav .nav-trip .trip-count {
-    transform: translate(40%, -170%);
+    -webkit-transform: translate(40%, -170%);
+            transform: translate(40%, -170%);
     width: 20px;
     height: 20px;
     font-size: 12px;
@@ -1131,16 +1154,9 @@ input::-webkit-inner-spin-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
-  align-items: center;
-=======
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
->>>>>>> Min
   border-bottom: 1px solid #AD6E4A;
   padding: 16px 0;
   position: relative;
@@ -1155,13 +1171,6 @@ input::-webkit-inner-spin-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
-  justify-content: center;
-  align-items: center;
-  justify-content: start;
-  color: #cccaca;
-  font-weight: 600;
-=======
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1171,7 +1180,8 @@ input::-webkit-inner-spin-button {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
->>>>>>> Min
+  color: #cccaca;
+  font-weight: 600;
 }
 
 .parent_container .up_container .comment .messages .name hr {

@@ -59,13 +59,8 @@ session_start();
                 <h1><a href="home.php">SPACED</a></h1>
             </div>
             <ul class="nav-links">
-<<<<<<< HEAD
-                <li class="margin_left_5 now "><a href="alltrip.php" class="bread">星球景點</a></li>
-                <li class="margin_left_5"><a href="planet.php">星星世界</a></li>
-=======
                 <li class="margin_left_5 now"><a href="alltrip.php">星球景點</a></li>
-                <li class="margin_left_5"><a href="planet.html">星星世界</a></li>
->>>>>>> 297431834968603e149982f10b2e88b593556356
+                <li class="margin_left_5"><a href="planet.php">星星世界</a></li>
                 <li class="margin_left_5"><a href="shop.php">星球商城</a></li>
                 <li class="margin_left_5"><a href="photowall.php">太空互動</a></li>
                 <li class="margin_left_5"><a href="Leaderboard.php">玩家排行</a></li>
@@ -280,11 +275,11 @@ session_start();
         <div class="links">
             <div class="logo"><img src="./img/logo.png" alt=""></div>
             <ul class="footer-links margin_top_2">
-                <li><a href="alltrip.html">星球景點</a></li>
-                <li><a href="planet.html">星星世界</a></li>
-                <li><a href="shop.html">星球商城</a></li>
-                <li><a href="photowall.html">太空互動</a></li>
-                <li><a href="Leaderboard.html">玩家排行</a></li>
+                <li><a href="alltrip.php">星球景點</a></li>
+                <li><a href="planet.php">星星世界</a></li>
+                <li><a href="shop.php">星球商城</a></li>
+                <li><a href="photowall.php">太空互動</a></li>
+                <li><a href="Leaderboard.php">玩家排行</a></li>
             </ul>
         </div>
         <img src="./img/footer_moon.png" alt="" class="footer_moon">

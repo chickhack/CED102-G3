@@ -70,18 +70,25 @@
   <div class="container-fluid">
   <div class="post row">
     <div class="col-12 col-md-12 col-lg-12 col-xl-12">
-      <form method="post" action="post1.php" class="post" enctype="multipart/form-data">
+      <form method="post" action="./php/backstage/phptowall/photowall_post.php" class="post" enctype="multipart/form-data">
         <a href="./photowall.php"><img src="./img/icon/turnoff.png" alt=""></a>
         <div class="select_trip">
           <select name="upload"> 
             <option>請選擇行程</option>
-            <option value="moon">月球</option>
-            <option value="mars">火星</option>
-            <option value="jupiter">木星</option>
+            <option value="moon">日出太空體驗一日遊</option>
+            <option value="mars">熱氣球月球一日遊</option>
+            <option value="jupiter">宇宙雨林秘境一日遊</option>
+            <option value="sun">雪花堡及七彩河一日遊</option>
+            <option value="">反射谷及山羊夾谷一日遊</option>
+            <option value="">奧林帕斯山三日遊</option>
+            <option value="">極光團一日遊</option>
+            <option value="">冰原+冰洞一日遊</option>
+            <option value="">冰層探索一日遊</option>
         </select>
         </div>
         <div class="upload_img">
           <p class="upload_photo">圖片</p>
+          <!-- <input type="number" name="mem_no"> -->
           <input type="file" id="name2" hidden name="upFile1"><label for="name2" class="teaching"><img src="./img/icon/upload_button.png" alt=""></label>
           <input type="file" id="name3" hidden name="upFile2"><label for="name3" class="teaching"><img src="./img/icon/upload_button.png" alt=""></label>
           <input type="file" id="name4" hidden name="upFile3"><label for="name4" class="teaching"><img src="./img/icon/upload_button.png" alt=""></label>
@@ -100,9 +107,20 @@
     </div>
   </div>
 
-  <footer>
-    @@include('./layout/footer.html')
-  </footer>
+  <footer class="padding_top_10">
+        <div class="links">
+            <div class="logo"><img src="./img/logo.png" alt=""></div>
+            <ul class="footer-links margin_top_2">
+                <li><a href="alltrip.php">星球景點</a></li>
+                <li><a href="planet.php">星星世界</a></li>
+                <li><a href="shop.php">星球商城</a></li>
+                <li><a href="photowall.php">太空互動</a></li>
+                <li><a href="Leaderboard.php">玩家排行</a></li>
+            </ul>
+        </div>
+        <img src="./img/footer_moon.png" alt="" class="footer_moon">
+        <img src="./img/smoke.png" alt="" class="smoke">
+    </footer>
 
 
 

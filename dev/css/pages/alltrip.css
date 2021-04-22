@@ -414,6 +414,23 @@ nav .nav-links a {
   width: 100%;
   color: #ffffff;
   padding: 8px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+nav .nav-links a:hover {
+  color: #AD6E4A;
+}
+
+@media all and (max-width: 992px) {
+  nav .nav-links a:hover {
+    color: #0c0d18;
+  }
+}
+
+nav .nav-links .bread {
+  color: #AD6E4A;
+  font-weight: 900;
 }
 
 nav .nav-icons {
@@ -460,20 +477,23 @@ nav .nav-cart .count {
   text-align: center;
   line-height: 1.5rem;
   position: absolute;
-  transform: translate(50%, -150%);
+  -webkit-transform: translate(50%, -150%);
+          transform: translate(50%, -150%);
   display: block;
   color: white;
 }
 
 @media all and (max-width: 992px) {
   nav .nav-cart .count {
-    transform: translate(100%, -150%);
+    -webkit-transform: translate(100%, -150%);
+            transform: translate(100%, -150%);
   }
 }
 
 @media all and (max-width: 768px) {
   nav .nav-cart .count {
-    transform: translate(40%, -170%);
+    -webkit-transform: translate(40%, -170%);
+            transform: translate(40%, -170%);
     width: 20px;
     height: 20px;
     font-size: 12px;
@@ -494,20 +514,23 @@ nav .nav-trip .trip-count {
   text-align: center;
   line-height: 1.5rem;
   position: absolute;
-  transform: translate(50%, -150%);
+  -webkit-transform: translate(50%, -150%);
+          transform: translate(50%, -150%);
   display: block;
   color: white;
 }
 
 @media all and (max-width: 992px) {
   nav .nav-trip .trip-count {
-    transform: translate(100%, -150%);
+    -webkit-transform: translate(100%, -150%);
+            transform: translate(100%, -150%);
   }
 }
 
 @media all and (max-width: 768px) {
   nav .nav-trip .trip-count {
-    transform: translate(40%, -170%);
+    -webkit-transform: translate(40%, -170%);
+            transform: translate(40%, -170%);
     width: 20px;
     height: 20px;
     font-size: 12px;
@@ -751,7 +774,8 @@ input[type=number] {
   height: 100px;
   background-size: contain;
   background-repeat: no-repeat;
-  animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+  -webkit-animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+          animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
 }
 
 #marsloc {
@@ -876,6 +900,7 @@ div.bk3 {
   letter-spacing: 10px;
   font-size: 36px;
   color: #C9ADA7;
+  -webkit-animation: h2 1.2s infinite;
   animation: h2 1.2s infinite;
 }
 
@@ -924,11 +949,8 @@ div.bk3 {
 }
 
 .first .first_right .hottrip {
-<<<<<<< HEAD
-=======
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
->>>>>>> Min
   display: inline-flex;
   padding-top: 80px;
 }
@@ -1001,12 +1023,8 @@ div.bk3 {
   position: absolute;
   top: 15px;
   left: 50%;
-<<<<<<< HEAD
-  transform: translateX(-50%);
-=======
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
->>>>>>> Min
   z-index: 2;
 }
 
@@ -1029,12 +1047,6 @@ div.bk3 {
 .first .first_right .hottrip div.planet_top div.word {
   position: absolute;
   top: 190px;
-<<<<<<< HEAD
-=======
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
->>>>>>> Min
   text-align: center;
   margin: 0 auto;
   width: 100%;
@@ -1045,11 +1057,8 @@ div.bk3 {
 }
 
 .first .first_right .hottrip div.planet_top div.word .tag {
-<<<<<<< HEAD
-=======
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
->>>>>>> Min
   display: inline-flex;
   border: 1px solid #cccaca;
   border-radius: 5px;
@@ -1091,18 +1100,21 @@ div.bk3 {
   background-color: #bf896b;
 }
 
-<<<<<<< HEAD
 @media screen and (min-width: 577px) and (max-width: 768px) {
   .first .first_right .hottrip .planet_top:nth-child(3) {
     display: none;
-=======
-@-webkit-keyframes h2 {
-  0% {
-    text-shadow: 0 0 6px #FFF;
->>>>>>> Min
   }
   .first .first_right .hottrip .planet_top {
     margin: 0 36px;
+  }
+}
+
+@-webkit-keyframes h2 {
+  0% {
+    text-shadow: 0 0 6px #FFF;
+  }
+  100% {
+    text-shadow: 0 0 0px #000;
   }
 }
 
@@ -1116,11 +1128,8 @@ div.bk3 {
 }
 
 .tripselect {
-<<<<<<< HEAD
-=======
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
->>>>>>> Min
   display: inline-flex;
   width: 280px;
   -webkit-box-pack: justify;
@@ -1208,10 +1217,6 @@ div.bk3 {
 
 @media all and (max-width: 767px) {
   .stepsection .stepall {
-<<<<<<< HEAD
-    flex-direction: column;
-    align-items: center;
-=======
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1219,7 +1224,6 @@ div.bk3 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
->>>>>>> Min
   }
 }
 

@@ -1,5 +1,5 @@
 <?php 
-require_once("../../connect_ced102_g3_local.php");
+require_once("./php/connectBooks_wei.php");
 $sql = "select * from post_report";
 $spottrev = $pdo->query($sql);  //執行指令
 $spottrev ->execute();
@@ -15,27 +15,22 @@ $spottrev ->execute();
     <title>後台景點評價管理</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="stylesheet" href=".././css/all.css">
-    <link rel="stylesheet" href=".././css/pages/spaced_backstage.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/pages/spaced_backstage.css">
 </head>
 
 <body>
     <div class="top w-100 header">
         <!-- <p class="h1 padding_left_4 "></p> -->
-        <img src="../img/logo.png" class="imgs padding_left_4 padding_top_1" alt="">
+        <img src="./img/logo.png" class="imgs padding_left_4 padding_top_1" alt="">
         <p class="text-top padding_left_4 ">Backstage</p>
     </div>
     <div class="div-menu">
         <div class="div-list">
             <button class="div-list-btn-a">景點</button>
             <div>
-<<<<<<< HEAD:dev/backstage/spaced_backstage_trip_reviews.php
-                <a href="spaced_backstage_trip.php" class="div-list-btn-s ">景點管理</a>
-                <a href="spaced_backstage_trip_reviews.php" class="div-list-btn-s now">景點評價</a>
-=======
                 <a href="./spaced_backstage_trip.php" class="div-list-btn-s ">景點管理</a>
                 <a href="./spaced_backstage_trip_reviews.php" class="div-list-btn-s now">景點評價</a>
->>>>>>> denis:dev/backsatge/spaced_backstage_post_report2.php
                 <a href="#" class="div-list-btn-s">行程訂單管理</a>
             </div>
             <button class="div-list-btn-a">商城</button>
@@ -62,7 +57,7 @@ $spottrev ->execute();
                     <div class="span-1 margin_left_1">
                         <label for="search1">
 
-                            <img src=".././img/icon/loupe.png" alt="" class="">
+                            <img src="./img/icon/loupe.png" alt="" class="">
                         </label>
                         <input type="search" class="search1" id="search1" placeholder="輸入發文編號、會員編號、內容">
                     </div>
@@ -91,14 +86,6 @@ while($spottrevRow = $spottrev->fetch(PDO::FETCH_ASSOC)){
                         
 
                         <?php
-<<<<<<< HEAD:dev/backstage/spaced_backstage_trip_reviews.php
-                        if($spottrevRow['trev_stats'] == 0){
-                            echo "<p class='wi-5 text-1'><a href='../../dev/php/backstage/trip/edit_backstage_trip_reviews.php?trev_no=$spottrevRow[trev_no]&trev_stats=$spottrevRow[trev_stats]' name='update' type='button' class='btn btn-primary btn-sm'>上架</a></p>";
-                        }else{
-                            echo "<p class='wi-5 text-1'><a href='../../dev/php/backstage/trip/edit_backstage_trip_reviews.php?trev_no=$spottrevRow[trev_no]&trev_stats=$spottrevRow[trev_stats]' name='update' type='button' class='btn btn-danger btn-sm'>下架</a></p>";
-                            }
-                    ?>
-=======
                                 if($spottrevRow['rep_status'] == 0){
                                     echo "<p class='wi-10 text-1'><a href='./php/edit_backstage_post_report2.php?post_no=$spottrevRow[post_no]&post_stats=$spottrevRow[rep_status]' name='update' type='button' class='btn btn-primary btn-sm'>上架</a></p>";
                                 }else{
@@ -106,7 +93,6 @@ while($spottrevRow = $spottrev->fetch(PDO::FETCH_ASSOC)){
                                 }
                             ?>
                                 <!-- 狀態列 -->
->>>>>>> denis:dev/backsatge/spaced_backstage_post_report2.php
                     </div>
              </form>
                     <?php 
