@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>互動牆發文</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"><!-- bootstrap -->
+  <link rel="shortcut icon" href="./img/icon/shortcut.png" type="image/x-icon">
   <link rel="stylesheet" href="./css/all.css"> <!-- 共用CSS -->
   <link rel="stylesheet" href="./css/pages/post.css">
 </head>
@@ -75,20 +76,19 @@
         <div class="select_trip">
           <select name="upload"> 
             <option>請選擇行程</option>
-            <option value="moon">日出太空體驗一日遊</option>
-            <option value="mars">熱氣球月球一日遊</option>
+            <option value="moon">月球太空人體驗一日遊</option>
+            <option value="mars">熱氣球遊月球一日遊</option>
             <option value="jupiter">宇宙雨林秘境一日遊</option>
-            <option value="sun">雪花堡及七彩河一日遊</option>
-            <option value="">反射谷及山羊夾谷一日遊</option>
+            <option value="sun">雪花堡及七彩河探險一日遊</option>
+            <option value="">反射谷及山羊峽谷探險一日遊</option>
             <option value="">奧林帕斯山三日遊</option>
             <option value="">極光團一日遊</option>
-            <option value="">冰原+冰洞一日遊</option>
+            <option value="">冰原冰洞一日遊</option>
             <option value="">冰層探索一日遊</option>
         </select>
         </div>
         <div class="upload_img">
           <p class="upload_photo">圖片</p>
-          <!-- <input type="number" name="mem_no"> -->
           <input type="file" id="name2" hidden name="upFile1"><label for="name2" class="teaching"><img src="./img/icon/upload_button.png" alt=""></label>
           <input type="file" id="name3" hidden name="upFile2"><label for="name3" class="teaching"><img src="./img/icon/upload_button.png" alt=""></label>
           <input type="file" id="name4" hidden name="upFile3"><label for="name4" class="teaching"><img src="./img/icon/upload_button.png" alt=""></label>

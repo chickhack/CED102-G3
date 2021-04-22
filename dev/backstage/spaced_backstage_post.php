@@ -1,5 +1,5 @@
 <?php 
-require_once("./php/connectBooks_wei.php");
+require_once(".././php/connect_ced102_g3_local.php");
 $sql = "select * from  post";
 $spottrev = $pdo->query($sql);  //執行指令
 $spottrev ->execute();
@@ -14,8 +14,8 @@ $spottrev ->execute();
     <title>後台景點評價管理</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/all.css">
-    <link rel="stylesheet" href="./css/pages/spaced_backstage.css">
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../css/pages/spaced_backstage.css">
 </head>
 
 <body>
@@ -67,9 +67,9 @@ $spottrev ->execute();
                     <p class="wi-10 text-1">會員編號</p>
                     <p class="wi-10 text-1">景點標籤</p>
                     <p class="wi-15 text-1">發文日期</p>
-                    <p class="wi-15 text-1">發文主題</p>
-                    <p class="wi-15 text-1">發文內容</p>
-                    <p class="wi-20 text-1">圖片</p>
+                    <p class="wi-20 text-1">發文主題</p>
+                    <p class="wi-20 text-1">發文內容</p>
+                    <p class="wi-10 text-1">圖片</p>
                     <p class="wi-10 text-1">狀態</p>
 
                 </div>
@@ -87,10 +87,10 @@ while($spottrevRow = $spottrev->fetch(PDO::FETCH_ASSOC)){
                         
                         <p class="wi-10 text-1 toomuch"><?=$spottrevRow["mem_no"]?></p>
                         <p class="wi-10 text-1 toomuch"><?=$spottrevRow["post_teg"]?></p>
-                        <p class="wi-10 text-1 toomuch"><?=$spottrevRow["post_date"]?></p>
-                        <p class="wi-15 text-1 toomuch"><?=$spottrevRow["post_sub"]?></p>
-                        <p class="wi-15 text-1 toomuch"><?=$spottrevRow["post_content"]?></p>
-                        <p class="wi-20 text-1 toomuch"><?=$spottrevRow["post_pic1"]?><br><?=$spottrevRow["post_pic2"]?><br><?=$spottrevRow["post_pic3"]?></p>
+                        <p class="wi-15 text-1 toomuch"><?=$spottrevRow["post_date"]?></p>
+                        <p class="wi-20 text-1 toomuch"><?=$spottrevRow["post_sub"]?></p>
+                        <p class="wi-20 text-1 toomuch"><?=$spottrevRow["post_content"]?></p>
+                        <p class="wi-10 text-1 toomuch"><?=$spottrevRow["post_pic1"]?><br><?=$spottrevRow["post_pic2"]?><br><?=$spottrevRow["post_pic3"]?></p>
                         <?php
                                 if($spottrevRow['post_stats'] == 0){
                                     echo "<p class='wi-10 text-1'><a href='./php/edit_backstage_post.php?post_no=$spottrevRow[post_no]&post_stats=$spottrevRow[post_stats]' name='update' type='button' class='btn btn-primary btn-sm'>上架</a></p>";
