@@ -214,8 +214,8 @@ if( $errMsg != ""){ //例外
                                     <span class="minus btn-pull" id="minus">－</span>
                                     <!-- <input type="number" name="quantity" id="quantity" v-model.number="verified"
                                         :min="0" :max="100"> -->
-                                    <input type="hidden" name="spot_qty" :value="verified">
-                                    <input type="number" value="1" id="num" class="btn-nu p" min="1">
+                                    <!-- <input type="hidden" name="spot_qty" :value="verified"> -->
+                                    <input type="number" value="1" id="num" class="btn-nu p" min="1" name="spot_qty">
                                     <span class="add btn-pull" id="add">＋</span>
                                 </div>
                             </div>
@@ -225,7 +225,7 @@ if( $errMsg != ""){ //例外
                                 <button type="submit" name="add" class="addin small myTrip"><img class="plus"
                                         src="./img/icon/plus.png" alt="">
                                     加入我的行程</button>
-                                <input type="hidden" name="spot_id" :value="spot_no">
+                                <input type="hidden" name="spot_id" value="<?=$spot_no?>">
                                 <button type="submit" name="add" class="button_min p buy margin_left_3"><a
                                         href="./car-itineray.php">前往訂購</a></button>
                             </div>
