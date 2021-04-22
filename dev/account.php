@@ -1034,7 +1034,7 @@
       },
       computed: {
         travelstatus() {
-          if (this.visibility == '全部') {
+          if (this.visibility == 3) {
             return this.spot_order
           } else {
             return this.spot_order.filter(item => {
