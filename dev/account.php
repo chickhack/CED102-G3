@@ -139,7 +139,6 @@
             <span class="accmoney">{{customer.coin}}</span>宇宙幣
           </div>
         </div>
-<<<<<<< HEAD
 
         <div class="lev_acc">
           <little><span>12個月內累積</span></little>
@@ -158,26 +157,6 @@
           </div>
         </div>
 
-=======
-
-        <div class="lev_acc">
-          <little><span>12個月內累積</span></little>
-        </div>
-
-        <div class="your_acc">
-          <div class="now_lev align-items-center">
-            <img class="nowlev" :src="customer.lv_img" alt="lev"><br>
-            <p class="nowacc">{{customer.miles}} 積分</p>
-          </div>
-          <div class="next_rocket"><img class="account_rocket" src="./img/icon/rocket4.png" alt="rocket"></div>
-          <div class="next_lev align-items-center">
-            <img class="nextlev" :src="customer.mem_next_img" alt="lev"><br class="none">
-            <p class="nextacc">目前尚需 {{ minus_lev() }} 積分</p>
-            <p class="nextacc">才能升級至 {{customer.mem_next_lv}}</p>
-          </div>
-        </div>
-
->>>>>>> 598ba5df0bf3137fafc125593c0c546a2b21a527
       </div>
 
     </div>
