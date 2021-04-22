@@ -1,7 +1,7 @@
 <?php
 session_start();
 try{
-  require_once('./php/connect_ced102_g3_local.php');
+  require_once('connect_ced102_g3_local.php');
   $sql = "select * from customer where email=:email and mem_psw=:mem_psw"; 
 
   $member = $pdo->prepare($sql);
