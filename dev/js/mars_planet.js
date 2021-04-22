@@ -22,7 +22,7 @@ marsMaterial.bumpScale = 8;
 marsMaterial.specular = new THREE.Color('#000000');
 
 let renderer = new THREE.WebGLRenderer({antialiasing : true, alpha:true});
-renderer.setSize(window.innerWidth - 400, window.innerHeight -250)       
+renderer.setSize(window.innerWidth - 40, window.innerHeight -40)       
 marsloc.appendChild(renderer.domElement);
 
 let controls = new THREE.OrbitControls(camera, renderer.domElement);

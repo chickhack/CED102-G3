@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SPACED</title>
+    <link rel="shortcut icon" href="./img/icon/shortcut.png" type="image/x-icon">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
@@ -20,12 +21,9 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- 3D星球套件 -->
-    <script src="https://zimjs.org/cdn/1.2.3/createjs_min.js"></script>
-    <script src="https://zimjs.org/cdn/10.7.1/zim.js"></script>
-    <script src="https://zimjs.org/cdn/icon5.js"></script>
-    <script src="https://zimjs.org/cdn/three_r82.min.js"></script>
-    <script src="https://zimjs.org/cdn/three_2.0.js"></script>
+    <!-- THREE -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r127/three.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/orbitcontrols.js"></script>
 
     <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
@@ -54,122 +52,63 @@
 </head>
 
 <body>
-<header>
-        <nav id="nav">
-            <div class="logo">
-                <h1><a href="home.php">SPACED</a></h1>
-            </div>
-            <ul class="nav-links">
-                <li class="margin_left_5 now"><a href="alltrip.php">星球景點</a></li>
-                <li class="margin_left_5"><a href="planet.php">星星世界</a></li>
-                <li class="margin_left_5"><a href="shop.php">星球商城</a></li>
-                <li class="margin_left_5"><a href="photowall.php">太空互動</a></li>
-                <li class="margin_left_5"><a href="Leaderboard.php">玩家排行</a></li>
-                <!-- <li><a href=""><img src="./images/ticket.png" alt="" class="icon"></a></li>
-        <li><a href=""><img src="./images/shopping-cart_(1).png" alt="" class="icon"></a></li>
-        <li><a href=""><img src="./images/round-account-button-with-user-inside_(1).png" alt="" class="icon"></a></li> -->
-            </ul>
-            <ul class="nav-icons">
-                <li class="nav-trip">
-                    <a href="./car-itineray.php">
-                        <img src="./img/icon/header/luggage.png" alt="" class="icon" />
-                        <?php
-                        if(isset($_SESSION["trip-cart"])){
-                            $count = count($_SESSION["trip-cart"]);
-                            echo "<div class='trip-count'>$count</div>";
-                        }else{
-                            echo "";
-                        }
-                     ?>
-                    </a>
-                </li>
-                <li class="nav-cart">
-                    <a href="./shop_cart.php">
-                        <img src="./img/icon/header/shopping-cart_(1).png" alt="" class="icon" />
-                        <?php
-                if(isset($_SESSION["cart"])){
-                    $count = count($_SESSION["cart"]);
-                    echo "<div class='count'>$count</div>";
-                }else{
-                    echo "";
-                }
-            ?>
-                    </a>
-                </li>
-                <li>
-                    <a href="./login.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png"
-                            alt="" class="icon" /></a>
-                </li>
-            </ul>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-        </nav>
-        <script src="./js/header.js"></script>
-
-    </header>
     <div class="container-fluid" id="fullview">
-    <header>
-        <nav id="nav">
-            <div class="logo">
-                <h1><a href="home.php">SPACED</a></h1>
-            </div>
-            <ul class="nav-links">
-                <li class="margin_left_5"><a href="alltrip.php">星球景點</a></li>
-                <li class="margin_left_5"><a href="planet.html">星星世界</a></li>
-                <li class="margin_left_5"><a href="shop.php">星球商城</a></li>
-                <li class="margin_left_5"><a href="photowall.php">太空互動</a></li>
-                <li class="margin_left_5"><a href="Leaderboard.php">玩家排行</a></li>
-                <!-- <li><a href=""><img src="./images/ticket.png" alt="" class="icon"></a></li>
-        <li><a href=""><img src="./images/shopping-cart_(1).png" alt="" class="icon"></a></li>
-        <li><a href=""><img src="./images/round-account-button-with-user-inside_(1).png" alt="" class="icon"></a></li> -->
-            </ul>
-            <ul class="nav-icons">
-                <li class="nav-trip">
-                    <a href="./car-itineray.php">
-                        <img src="./img/icon/header/luggage.png" alt="" class="icon" />
-                        <?php
-                        if(isset($_SESSION["trip-cart"])){
-                            $count = count($_SESSION["trip-cart"]);
-                            echo "<div class='trip-count'>$count</div>";
+        <header>
+                <nav id="nav">
+                    <div class="logo">
+                        <h1><a href="home.php">SPACED</a></h1>
+                    </div>
+                    <ul class="nav-links">
+                        <li class="margin_left_5 now"><a href="alltrip.php">星球景點</a></li>
+                        <li class="margin_left_5"><a href="planet.php">星星世界</a></li>
+                        <li class="margin_left_5"><a href="shop.php">星球商城</a></li>
+                        <li class="margin_left_5"><a href="photowall.php">太空互動</a></li>
+                        <li class="margin_left_5"><a href="Leaderboard.php">玩家排行</a></li>
+                        <!-- <li><a href=""><img src="./images/ticket.png" alt="" class="icon"></a></li>
+                <li><a href=""><img src="./images/shopping-cart_(1).png" alt="" class="icon"></a></li>
+                <li><a href=""><img src="./images/round-account-button-with-user-inside_(1).png" alt="" class="icon"></a></li> -->
+                    </ul>
+                    <ul class="nav-icons">
+                        <li class="nav-trip">
+                            <a href="./car-itineray.php">
+                                <img src="./img/icon/header/luggage.png" alt="" class="icon" />
+                                <?php
+                                if(isset($_SESSION["trip-cart"])){
+                                    $count = count($_SESSION["trip-cart"]);
+                                    echo "<div class='trip-count'>$count</div>";
+                                }else{
+                                    echo "";
+                                }
+                             ?>
+                            </a>
+                        </li>
+                        <li class="nav-cart">
+                            <a href="./shop_cart.php">
+                                <img src="./img/icon/header/shopping-cart_(1).png" alt="" class="icon" />
+                                <?php
+                        if(isset($_SESSION["cart"])){
+                            $count = count($_SESSION["cart"]);
+                            echo "<div class='count'>$count</div>";
                         }else{
                             echo "";
                         }
-                     ?>
-                    </a>
-                </li>
-                <li class="nav-cart">
-                    <a href="./shop_cart.php">
-                        <img src="./img/icon/header/shopping-cart_(1).png" alt="" class="icon" />
-                        <?php
-                if(isset($_SESSION["cart"])){
-                    $count = count($_SESSION["cart"]);
-                    echo "<div class='count'>$count</div>";
-                }else{
-                    echo "";
-                }
-            ?>
-                    </a>
-                </li>
-                <li>
-                    <a href="./login.html"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png"
-                            alt="" class="icon" /></a>
-                </li>
-            </ul>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-        </nav>
-        <script src="./js/header.js"></script>
-
-    </header>
-
-       
-
+                    ?>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./login.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png"
+                                    alt="" class="icon" /></a>
+                        </li>
+                    </ul>
+                    <div class="burger">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div>
+                </nav>
+                <script src="./js/header.js"></script>
+        
+            </header>
         <div class="video-bg">
             <div class="video-overlay"></div>
             <video playsinline autoplay loop muted="true" style="opacity:1; width: 1600px; "
@@ -241,7 +180,6 @@
     <h2 align="center" class="margin_top_10" >星星世界</h2>
         <h3 class="margin_top_3 line_low" align="center">暢遊宇宙之前，進入星星世界，一起了解宇宙知識，做好萬全準備!</h3>
     <div class="planet_box margin_top_5">
-        <!-- <h2 align="center" class="">星星世界</h2> -->
         <div id="planet" class="planet_tab">
             <div class="tabList col-LG-12 ">
                 <ul class="tab-title">
@@ -296,19 +234,12 @@
                             </div>
                             <div class="tab-active col-lg-6 col-md-12 col-sm-12">
                                 <!-- 火星動圖 -->
-                                <div id="tag" class="col-md-12 col-sm-12" style=""></div>
+                                <div id="marsloc" class="col-md-12 col-sm-12"></div>
                                 <script src="./js/mars.js"></script>
                             </div>
                         </div>
-                      </div>
-                      <div class="tab-active col-lg-6 col-md-12 col-sm-12">
-                            <!-- 火星動圖 -->
-                            <div id="tag" class="col-md-12 col-sm-12" ></div>
-                            <script src="./js/mars.js"></script>
-                      </div>
                     </div>
-
-                    </div>
+                    <!-- </div> -->
                 </div>
             </div>
         </div>
@@ -356,7 +287,7 @@
             <!-- </div> -->
         </div>
             <a href="photowall.php">
-                <button class="button button_min margin_top_5">看遊記</button>
+                <button class="button button_min margin_top_5">看互動</button>
             </a>
     </section>
     <!-- 商城 -->
@@ -372,6 +303,7 @@
                         <img class="img-responsive" src="img/home/shop_1.jpeg" alt="">
                         <div class="overlay">
                             <h2><a href="#">太空衣</a></h2>
+                            <h4 class="margin_top_1">適應各種身型</h2>
                         </div>
                     </div>
                 </div>
@@ -381,6 +313,7 @@
                         <img class="img-responsive " src="img/home/shop_2.jpeg" alt="">
                         <div class="overlay">
                             <h2><a href="#">太空衣</a></h2>
+                            <h4 class="margin_top_1">輕便自在，行動自如</h2>
                         </div>
                     </div>
                 </div>
@@ -390,6 +323,7 @@
                         <img class="img-responsive" src="img/home/shop_5.jpeg" style="width:450px;" alt="">
                         <div class="overlay">
                             <h2><a href="#">太空衣</a></h2>
+                            <h4 class="margin_top_1">高科技材質，精心打造</h2>
                         </div>
                     </div>
                 </div>
@@ -399,6 +333,7 @@
                         <img class="img-responsive" src="img/home/shop_6.jpeg" alt="">
                         <div class="overlay">
                             <h2><a href="#">宇宙平衡鞋</a></h2>
+                            <h4 class="margin_top_1">循環透氣</h2>
                         </div>
                     </div>
                 </div>
@@ -408,6 +343,7 @@
                         <img class="img-responsive" src="img/home/shop_4.jpeg" alt="">
                         <div class="overlay">
                             <h2><a href="#">太空衣</a></h2>
+                            <h4 class="margin_top_1">最佳包覆力</h2>
                         </div>
                     </div>
                 </div>
@@ -487,7 +423,9 @@
             </div>
         </div>
         <div class="memberbtn">
+            <a href="register.php">
             <button class="button button_min margin_top_10">加入會員</button>
+            </a>
         </div>
     </div>
 
