@@ -398,9 +398,12 @@ nav .nav-links a {
   color: #ffffff;
   padding: 8px;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   -webkit-transition: all .3s;
 >>>>>>> denis
+=======
+>>>>>>> KAI
   transition: all .3s;
 }
 
@@ -732,10 +735,13 @@ section.login_container {
   padding: 0;
   border: 1px solid #ad6e4a83;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   display: -webkit-box;
   display: -ms-flexbox;
 >>>>>>> denis
+=======
+>>>>>>> KAI
   display: flex;
   border-radius: 5px;
 }
@@ -771,6 +777,7 @@ section.login_container .login_banner h2 {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 section.login_container .return_btn {
 <<<<<<< HEAD
   display: -webkit-box;
@@ -795,6 +802,9 @@ section.login_container .return_btn h4 a {
 =======
 section.login_container .return_btn h4 a {
 >>>>>>> denis
+=======
+section.login_container .return_btn h4 a {
+>>>>>>> KAI
   color: #AD6E4A;
   font-size: 20px;
   font-weight: 800;
@@ -813,20 +823,26 @@ section.login_container .fa, section.login_container .fas {
 
 section.login_container .modal-dialog {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   display: -webkit-box;
   display: -ms-flexbox;
 >>>>>>> denis
+=======
+>>>>>>> KAI
   display: flex;
   flex-direction: column;
 }
 
 section.login_container .modal-dialog .main-section {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   display: -webkit-box;
   display: -ms-flexbox;
 >>>>>>> denis
+=======
+>>>>>>> KAI
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -846,10 +862,14 @@ section.login_container .modal-dialog .fa-eye:before, section.login_container .m
 
 section.login_container form {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> KAI
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: inherit;
+<<<<<<< HEAD
 =======
   display: -webkit-box;
   display: -ms-flexbox;
@@ -865,6 +885,8 @@ section.login_container form {
       -ms-flex-align: inherit;
           align-items: inherit;
 >>>>>>> denis
+=======
+>>>>>>> KAI
 }
 
 section.login_container form .form-group input {
@@ -891,6 +913,7 @@ section.login_container form .form-group input:focus {
 
 section.login_container form .form-group input:hover {
 <<<<<<< HEAD
+<<<<<<< HEAD
   animation: pulse .5s 1;
 =======
   -webkit-animation: pulse .5s 1;
@@ -908,6 +931,9 @@ section.login_container form .form-group input:hover {
     -webkit-box-shadow: 0 0 0 0 rgba(204, 140, 44, 0);
   }
 >>>>>>> denis
+=======
+  animation: pulse .5s 1;
+>>>>>>> KAI
 }
 
 @keyframes pulse {
@@ -937,12 +963,16 @@ section.login_container form .form-group:last-of-type::before {
 
 section.login_container form .login_btn {
 <<<<<<< HEAD
+<<<<<<< HEAD
   align-self: center;
 =======
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
 >>>>>>> denis
+=======
+  align-self: center;
+>>>>>>> KAI
   background-color: transparent;
   color: #AD6E4A;
 }
@@ -955,6 +985,9 @@ section.login_container form .login_btn:hover {
 
 .bottom-section {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> KAI
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -964,6 +997,7 @@ section.login_container form .login_btn:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+<<<<<<< HEAD
 =======
   display: -webkit-box;
   display: -ms-flexbox;
@@ -988,6 +1022,8 @@ section.login_container form .login_btn:hover {
       -ms-flex-align: center;
           align-items: center;
 >>>>>>> denis
+=======
+>>>>>>> KAI
 }
 
 .bottom-section .forgot a, .bottom-section .signup a {

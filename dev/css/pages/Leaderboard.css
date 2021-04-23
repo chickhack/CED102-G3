@@ -397,9 +397,12 @@ nav .nav-links a {
   color: #ffffff;
   padding: 8px;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   -webkit-transition: all .3s;
 >>>>>>> denis
+=======
+>>>>>>> KAI
   transition: all .3s;
 }
 
@@ -722,6 +725,7 @@ input[type=number] {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 @font-face {
   font-family: "Nasalization";
   src: local("./fonts/Nasa.ttf");
@@ -729,6 +733,8 @@ input[type=number] {
 
 =======
 >>>>>>> denis
+=======
+>>>>>>> KAI
 .count {
   width: 25px;
   height: 25px;
@@ -738,11 +744,15 @@ input[type=number] {
   line-height: 1.5rem;
   position: absolute;
 <<<<<<< HEAD
+<<<<<<< HEAD
   transform: translate(50%, -150%);
 =======
   -webkit-transform: translate(50%, -150%);
           transform: translate(50%, -150%);
 >>>>>>> denis
+=======
+  transform: translate(50%, -150%);
+>>>>>>> KAI
   display: block;
   color: white;
 }
@@ -824,6 +834,7 @@ input[type=number] {
 .text-00 {
   display: flex;
 <<<<<<< HEAD
+<<<<<<< HEAD
   align-items: center;
   justify-content: center;
   font-family: "Nasalization";
@@ -835,6 +846,11 @@ input[type=number] {
       -ms-flex-pack: center;
           justify-content: center;
 >>>>>>> denis
+=======
+  align-items: center;
+  justify-content: center;
+  font-family: "Nasalization";
+>>>>>>> KAI
 }
 
 .text-01 {

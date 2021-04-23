@@ -397,9 +397,12 @@ nav .nav-links a {
   color: #ffffff;
   padding: 8px;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   -webkit-transition: all .3s;
 >>>>>>> denis
+=======
+>>>>>>> KAI
   transition: all .3s;
 }
 
@@ -748,10 +751,14 @@ section.orderDetail li .imgWord {
   width: 100%;
   display: flex;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> KAI
   justify-content: center;
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
+<<<<<<< HEAD
 =======
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -764,6 +771,8 @@ section.orderDetail li .imgWord {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 >>>>>>> denis
+=======
+>>>>>>> KAI
 }
 
 section.orderDetail li .imgWord .prod {
@@ -779,10 +788,13 @@ section.orderDetail li .imgWord .prod {
 
 section.orderDetail li .imgWord .imgRight {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   display: -webkit-box;
   display: -ms-flexbox;
 >>>>>>> denis
+=======
+>>>>>>> KAI
   display: flex;
   justify-content: center;
   align-items: center;
@@ -799,10 +811,13 @@ section.orderDetail li .imgWord .imgRight {
 
 section.orderDetail li .imgWord .integral {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   display: -webkit-box;
   display: -ms-flexbox;
 >>>>>>> denis
+=======
+>>>>>>> KAI
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1154,10 +1169,14 @@ section.orderer .detail small {
   top: 0;
   display: flex;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> KAI
   justify-content: center;
   align-items: center;
   opacity: 0;
   visibility: hidden;
+<<<<<<< HEAD
 =======
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -1169,6 +1188,8 @@ section.orderer .detail small {
   visibility: hidden;
   -webkit-transition: all .3s;
 >>>>>>> denis
+=======
+>>>>>>> KAI
   transition: all .3s;
 }
 

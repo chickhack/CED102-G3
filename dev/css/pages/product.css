@@ -397,9 +397,12 @@ nav .nav-links a {
   color: #ffffff;
   padding: 8px;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   -webkit-transition: all .3s;
 >>>>>>> denis
+=======
+>>>>>>> KAI
   transition: all .3s;
 }
 
@@ -766,11 +769,15 @@ body {
   width: 400px;
   height: 300px;
 <<<<<<< HEAD
+<<<<<<< HEAD
   object-fit: cover;
 =======
   -o-object-fit: cover;
      object-fit: cover;
 >>>>>>> denis
+=======
+  object-fit: cover;
+>>>>>>> KAI
   background-color: #ffffff;
 }
 
@@ -799,11 +806,15 @@ body {
   width: 80px;
   height: 60px;
 <<<<<<< HEAD
+<<<<<<< HEAD
   object-fit: cover;
 =======
   -o-object-fit: cover;
      object-fit: cover;
 >>>>>>> denis
+=======
+  object-fit: cover;
+>>>>>>> KAI
 }
 
 @media all and (max-width: 768px) {
@@ -1091,6 +1102,7 @@ body {
 .comment .messages {
   display: flex;
 <<<<<<< HEAD
+<<<<<<< HEAD
   justify-content: center;
   align-items: center;
   justify-content: start;
@@ -1105,6 +1117,11 @@ body {
       -ms-flex-pack: start;
           justify-content: start;
 >>>>>>> denis
+=======
+  justify-content: center;
+  align-items: center;
+  justify-content: start;
+>>>>>>> KAI
   border-bottom: 1px solid #AD6E4A;
   padding: 16px 0;
   position: relative;

@@ -1263,6 +1263,9 @@ button:hover a {
   display: -ms-flexbox;
   display: flex;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> KAI
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -1298,11 +1301,15 @@ button:hover a {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .shopItem .hovereffect:hover h2:after, .shopItem .hovereffect h4:after {
 =======
 .shopItem .hovereffect:hover h2:after {
   -webkit-transform: translate3d(0, 0, 0);
 >>>>>>> denis
+=======
+.shopItem .hovereffect:hover h2:after, .shopItem .hovereffect h4:after {
+>>>>>>> KAI
   transform: translate3d(0, 0, 0);
 }
 
@@ -1464,12 +1471,15 @@ button:hover a {
 <<<<<<< HEAD
     flex-direction: column;
     align-items: center;
+<<<<<<< HEAD
 =======
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
 >>>>>>> denis
+=======
+>>>>>>> KAI
   }
   .flow_member .flowall .flow .separator {
     width: 100%;

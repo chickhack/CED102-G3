@@ -397,9 +397,12 @@ nav .nav-links a {
   color: #ffffff;
   padding: 8px;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   -webkit-transition: all .3s;
 >>>>>>> denis
+=======
+>>>>>>> KAI
   transition: all .3s;
 }
 
@@ -852,10 +855,13 @@ div.bk3 {
 
 .first .first_right .hottrip {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
 >>>>>>> denis
+=======
+>>>>>>> KAI
   display: inline-flex;
   padding-top: 80px;
 }
@@ -875,11 +881,14 @@ div.bk3 {
     margin: 0 auto;
 <<<<<<< HEAD
     justify-content: space-between;
+<<<<<<< HEAD
 =======
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
 >>>>>>> denis
+=======
+>>>>>>> KAI
   }
 }
 
@@ -928,11 +937,15 @@ div.bk3 {
   top: 15px;
   left: 50%;
 <<<<<<< HEAD
+<<<<<<< HEAD
   transform: translateX(-50%);
 =======
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 >>>>>>> denis
+=======
+  transform: translateX(-50%);
+>>>>>>> KAI
   z-index: 2;
 }
 
@@ -942,11 +955,15 @@ div.bk3 {
 
 .first .first_right .hottrip div.planet_top img.planet_a1:hover {
 <<<<<<< HEAD
+<<<<<<< HEAD
   transform: translateY(0.2em);
 =======
   -webkit-transform: translateY(0.2em);
           transform: translateY(0.2em);
 >>>>>>> denis
+=======
+  transform: translateY(0.2em);
+>>>>>>> KAI
 }
 
 @media all and (max-width: 577px) {
@@ -970,10 +987,13 @@ div.bk3 {
 
 .first .first_right .hottrip div.planet_top div.word .tag {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
 >>>>>>> denis
+=======
+>>>>>>> KAI
   display: inline-flex;
   border: 1px solid #cccaca;
   border-radius: 5px;
@@ -1044,10 +1064,13 @@ div.bk3 {
 
 .tripselect {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
 >>>>>>> denis
+=======
+>>>>>>> KAI
   display: inline-flex;
   width: 280px;
   justify-content: space-between;
@@ -1105,6 +1128,7 @@ div.bk3 {
 @media all and (max-width: 767px) {
   .stepsection .stepall {
 <<<<<<< HEAD
+<<<<<<< HEAD
     flex-direction: column;
     align-items: center;
 =======
@@ -1116,6 +1140,10 @@ div.bk3 {
         -ms-flex-align: center;
             align-items: center;
 >>>>>>> denis
+=======
+    flex-direction: column;
+    align-items: center;
+>>>>>>> KAI
   }
 }
 

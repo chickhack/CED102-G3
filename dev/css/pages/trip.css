@@ -397,9 +397,12 @@ nav .nav-links a {
   color: #ffffff;
   padding: 8px;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   -webkit-transition: all .3s;
 >>>>>>> denis
+=======
+>>>>>>> KAI
   transition: all .3s;
 }
 
@@ -1059,12 +1062,16 @@ input::-webkit-inner-spin-button {
 .parent_container .up_container .comment .messages {
   display: flex;
 <<<<<<< HEAD
+<<<<<<< HEAD
   align-items: center;
 =======
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 >>>>>>> denis
+=======
+  align-items: center;
+>>>>>>> KAI
   border-bottom: 1px solid #AD6E4A;
   padding: 16px 0;
   position: relative;
@@ -1077,6 +1084,7 @@ input::-webkit-inner-spin-button {
 
 .parent_container .up_container .comment .messages .name {
   display: flex;
+<<<<<<< HEAD
 <<<<<<< HEAD
   justify-content: center;
   align-items: center;
@@ -1092,6 +1100,11 @@ input::-webkit-inner-spin-button {
       -ms-flex-pack: start;
           justify-content: start;
 >>>>>>> denis
+=======
+  justify-content: center;
+  align-items: center;
+  justify-content: start;
+>>>>>>> KAI
   color: #cccaca;
   font-weight: 600;
 }
@@ -1240,8 +1253,6 @@ input::-webkit-inner-spin-button {
 .parent_container .recommend .tripcard_all .tripcard .addin2:hover {
   background-color: #bf896b;
 }
-<<<<<<< HEAD
-=======
 
 @-webkit-keyframes float {
   0% {

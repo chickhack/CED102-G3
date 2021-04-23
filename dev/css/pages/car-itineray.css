@@ -397,9 +397,12 @@ nav .nav-links a {
   color: #ffffff;
   padding: 8px;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   -webkit-transition: all .3s;
 >>>>>>> denis
+=======
+>>>>>>> KAI
   transition: all .3s;
 }
 
@@ -728,11 +731,15 @@ input::-webkit-inner-spin-button {
   line-height: 1.5rem;
   position: absolute;
 <<<<<<< HEAD
+<<<<<<< HEAD
   transform: translate(50%, -150%);
 =======
   -webkit-transform: translate(50%, -150%);
           transform: translate(50%, -150%);
 >>>>>>> denis
+=======
+  transform: translate(50%, -150%);
+>>>>>>> KAI
   display: block;
   color: white;
 }
