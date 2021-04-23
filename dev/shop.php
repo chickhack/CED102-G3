@@ -218,7 +218,8 @@
         function toggle(){
             const infoData = document.querySelector(".infoData");
             infoData.classList.toggle("show");
-        }      
+        }
+              
     </script>
     <script src="./js/background.js"></script>
     <script src="./js/customSelect.js"></script>

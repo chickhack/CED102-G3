@@ -63,9 +63,17 @@
                     </a>
                 </li>
                 <li>
-        <?php
+                <?php
             if(isset($_SESSION['mem_no'])){?>
-                <a href="./account.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png" alt="" class="icon"/></a>
+                <div class="member"  onclick="toggle()">
+                    <div class="info">
+                        <img src="<?= $_SESSION['mem_pic'] ?>" alt="">
+                        <div class="infoData">
+                            <a href="./account.php">會員中心</a>
+                            <a href="./login.php" onclick="show()">登出</a>
+                        </div>
+                    </div>  
+                </div>
         <?php }else{ ?>
                 <a href="./login.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png" alt="" class="icon"/></a>
         <?php } ?>
@@ -136,7 +144,7 @@
          <div class="member_info">
            <div class="member_photo"><img :src="targetPost.mem_pic" alt=""></div>
            <div class="name">{{targetPost.person_name}}</div>
-           <a href="trip.html"><button type="button" class="button_large">{{targetPost.post_sub}}</button></a>
+           <a href="#"><button type="button" class="button_large">{{targetPost.post_sub}}</button></a>
          </div>
          <div class="post_text">
            {{targetPost.post_content}}
@@ -150,7 +158,7 @@
 		<div class="message_text">
 
 			<p class="message_title">
-				留言(3)
+				留言區
 			</p>
 
 			<!-- <div class="message_1" v-for="message in getpost_cmt " v-if="getcustomer.mem_no===getpost_cmt.mem_no">
