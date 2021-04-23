@@ -1,5 +1,5 @@
 <?php 
-$spot_no = @$_GET["spot_no"];
+$spot_no = $_GET["spot_no"];
 $errMsg = "";
 
 try{
@@ -38,7 +38,7 @@ catch(PDOException $e){
 <body>
     <div class="top w-100 header">
         <!-- <p class="h1 padding_left_4 "></p> -->
-        <img src="../img/logo.png" class="imgs padding_left_4 padding_top_1" alt="">
+        <img src="../../../img/logo.png" class="imgs padding_left_4 padding_top_1" alt="">
         <p class="text-top padding_left_4 ">Backstage</p>
     </div>
     <div class="div-menu">
@@ -77,10 +77,18 @@ if( $errMsg != ""){ //例外
                 編輯景點內容
             </div>
             <ul class="list-group list-group-flush align-middle">
-                <form action="edit_backstage_triptoDB.php" method="POST" enctype="multipart/form-data">
-                    <li class="list-group-item">景點編號 <input type="number" placeholder="景點編號" name="spot_no" value="<?=$spotRow -> spot_no ?>" disabled></li>
+                <form action="edit_backstage_triptoDB.php" method="post" enctype="multipart/form-data">
+                    <!-- <li class="list-group-item">景點編號 <input type="number" placeholder="景點編號" name="spot_no" value="<?php echo $spotRow -> spot_no ?>" disabled></li> -->
+                    <!-- <li class="list-group-item">景點名稱 <input type="text" placeholder="景點名稱" name="spot_no" value="<?=$spotRow -> spot_no ?>"></li> -->
+                    <li class="list-group-item">景點名稱 <input type="text" placeholder="景點名稱" name="spot_no" value="<?=$spotRow -> spot_no ?>"></li>
+                    
                     <li class="list-group-item">景點名稱 <input type="text" placeholder="景點名稱" name="spot_name" value="<?=$spotRow -> spot_name ?>"></li>
-                    <li class="list-group-item">圖片檔名 <input style="width:300px"type="text" name="spot_pic" value="<?=$spotRow -> spot_pic ?>"><br><input style="width:300px" type="text" name="spot_pic" value="<?=$spotRow -> spot_pic1 ?>"><br><input style="width:300px" type="text" name="spot_pic" value="<?=$spotRow -> spot_pic2 ?>"><br><input style="width:300px" type="text" name="spot_pic" value="<?=$spotRow -> spot_pic3 ?>"><br><input style="width:300px" type="text" name="spot_pic" value="<?=$spotRow -> spot_pic4 ?>"><br><input style="width:300px" type="text" name="spot_pic" value="<?=$spotRow -> spot_pics ?>"></li>
+                    <li class="list-group-item">圖片檔名 <input style="width:300px"type="text" name="spot_pic" value="<?=$spotRow -> spot_pic ?>"><br>
+                    <input style="width:300px" type="text" name="spot_pic1" value="<?=$spotRow -> spot_pic1 ?>"><br>
+                    <input style="width:300px" type="text" name="spot_pic2" value="<?=$spotRow -> spot_pic2 ?>"><br>
+                    <input style="width:300px" type="text" name="spot_pic3" value="<?=$spotRow -> spot_pic3 ?>"><br>
+                    <input style="width:300px" type="text" name="spot_pic4" value="<?=$spotRow -> spot_pic4 ?>"><br>
+                    <input style="width:300px" type="text" name="spot_pics" value="<?=$spotRow -> spot_pics ?>"></li>
                     <li class="list-group-item">等級(初階/高階) <input type="text" placeholder="等級(初階/高階)" name="spot_lv" value="<?=$spotRow -> spot_lv ?>"></li>
                     <li class="list-group-item">景點內容 <textarea style="width:800px;height:100px;" placeholder="景點內容" name="spot_info" ><?=$spotRow -> spot_info ?></textarea></li>
                     <li class="list-group-item">景點說明 <textarea style="width:800px;height:100px;" type="text" placeholder="景點說明" name="spot_intro" ><?=$spotRow -> spot_intro ?></textarea></li>

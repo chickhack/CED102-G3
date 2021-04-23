@@ -1,3 +1,6 @@
+<?php
+  session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -62,22 +65,7 @@
             ?>
                     </a>
                 </li>
-                <li>
-                <?php
-            if(isset($_SESSION['mem_no'])){?>
-                <div class="member"  onclick="toggle()">
-                    <div class="info">
-                        <img src="<?= $_SESSION['mem_pic'] ?>" alt="">
-                        <div class="infoData">
-                            <a href="./account.php">會員中心</a>
-                            <a href="./login.php" onclick="show()">登出</a>
-                        </div>
-                    </div>  
-                </div>
-        <?php }else{ ?>
-                <a href="./login.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png" alt="" class="icon"/></a>
-        <?php } ?>
-    </li>
+                
             </ul>
             <div class="burger">
                 <div class="line1"></div>
@@ -99,7 +87,11 @@
   <div class="grid">
     <!-- ==========資料庫卡片===== -->
     <div data-aos="fade-up" @click="openlightbox(card.post_no)" data-aos-duration="1000" class=" col-md-3 grid-item" v-for="card in getpost" >
+<<<<<<< HEAD
     <div class="img1"><img :src="'./img/photowall/post/'+card.post_pic1" alt="" class="lazy">
+=======
+    <div class="img1"><img :src="'./img/photowall/post/'+ card.post_pic1" alt="" class="lazy">
+>>>>>>> 69a4370c878bbff31807ab78596b5e981a6ef17a
         <div class="action-box">
 			<div class="heart"><img src="./img/icon/bookmark-outline.png" alt=""></div>
 			<div class="share"><img src="./img/icon/share.png" alt=""></div>
@@ -127,7 +119,11 @@
     </button>
 
     <div class="img-switch col-12 col-md-12 col-lg-6 col-xl-6">
+<<<<<<< HEAD
     <img :src="'./img/photowall/post/'+targetPost.post_pic1" alt="" id="BIG">
+=======
+    <img :src="'./img/photowall/post/'+./img/photowall/post/mars_b1.jpg" alt="" id="BIG">
+>>>>>>> 69a4370c878bbff31807ab78596b5e981a6ef17a
     <div id="SMALL">
     	<img :src="'./img/photowall/post/'+targetPost.post_pic1" alt="" width="150px" id="a"@click="chagePhoto1">
 
@@ -375,6 +371,16 @@
       }
     }
   });
+</script>
+<script>
+  function show(){
+            fetch("./php/logout.php");
+            window.location.href = "./login.php";
+        }                               
+        function toggle(){
+            const infoData = document.querySelector(".infoData");
+            infoData.classList.toggle("show");
+        }      
 </script>
 </body>
 </html>

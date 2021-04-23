@@ -54,16 +54,16 @@ button{
         text-decoration: none;
         color: $gold;
     }
+    &:hover{
+        color: #ffff;
+        border: 1px solid $gold;
+        background: $gold;
+        a{
+            text-decoration: none;
+            color: white;
+        
+        }
 }
-button:hover{
-    color: #ffff;
-    border: 1px solid $gold;
-    background: $gold;
-    a{
-        text-decoration: none;
-        color: white;
-    
-    }
 }
 
 //=========首頁標語
@@ -117,7 +117,6 @@ button:hover{
 }
 
 
-
 //=========流程
 .stepsection{
     background-color: transparent;
@@ -125,9 +124,6 @@ button:hover{
         flex-direction: column;
     }
 }
-
-
-
 
 
 //=========精選行程
@@ -277,11 +273,7 @@ button:hover{
 }
 
 
-
 //=========星球百科
-// .planet_box{
-//     margin-top: 65vh;
-// }
 @media all and (max-width:1100px) {
     .planet_box{
         margin-top: 48px;

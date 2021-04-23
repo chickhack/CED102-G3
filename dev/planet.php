@@ -33,13 +33,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r127/three.min.js"></script>
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/orbitcontrols.js"></script>
     <!-- 動態背景 -->
-    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> -->
     
   </head>
   <body>
 
 
-    <div class="container-fluid">
     <header>
         <nav id="nav">
             <div class="logo">
@@ -83,12 +82,20 @@
                     </a>
                 </li>
                 <li>
-                    <?php
-                        if(isset($_SESSION['mem_no'])){?>
-                            <a href="./account.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png" alt="" class="icon"/></a>
-                    <?php }else{ ?>
-                            <a href="./login.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png" alt="" class="icon"/></a>
-                    <?php } ?>
+                  <?php
+                      if(isset($_SESSION['mem_no'])){?>
+                          <div class="member"  onclick="toggle()">
+                              <div class="info">
+                                  <img src="<?= $_SESSION['mem_pic'] ?>" alt="">
+                                  <div class="infoData">
+                                      <a href="./account.php">會員中心</a>
+                                      <a href="./login.php" onclick="show()">登出</a>
+                                  </div>
+                              </div>  
+                          </div>
+                  <?php }else{ ?>
+                          <a href="./login.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png" alt="" class="icon"/></a>
+                  <?php } ?>
                 </li>
             </ul>
             <div class="burger">
@@ -100,10 +107,11 @@
         <script src="./js/header.js"></script>
 
     </header>
+    <div class="container-fluid">
     <!-- 動態背景 -->
-      <div id="particles-js">
+      <!-- <div id="particles-js">
         <script src="./js/background.js"></script>
-      </div>
+      </div> -->
       <div class="planet_banner">
         <h2 class="margin_top_5">星星世界帶你探索宇宙</h4>
       </div>
@@ -158,9 +166,9 @@
                     </div>
                   </div>
                   <div class="tab-active col-lg-6 col-md-12 col-sm-12">
-                    <!-- 火星動圖 -->
-                    <div id="marsloc" class="col-md-12 col-sm-12" style="background-color: #0c0d18;"></div>
-                    <script src="./js/mars_planet.js"></script>
+                      <!-- 火星動圖 -->
+                      <canvas><canvas>
+                      <script src="./js/mars_planet.js"></script>
                   </div>
                 </div>
                 <div class="planet_content ">
@@ -257,6 +265,16 @@
             }, 900);
         })
     });
+
+        // 會員
+        function show(){
+                fetch("./php/logout.php");
+                window.location.href = "./login.php";
+            }                               
+            function toggle(){
+                const infoData = document.querySelector(".infoData");
+                infoData.classList.toggle("show");
+            }    
     </script>
   </body>
 </html>

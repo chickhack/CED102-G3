@@ -415,6 +415,7 @@ nav .nav-links a {
   color: #ffffff;
   padding: 8px;
 <<<<<<< HEAD
+<<<<<<< HEAD
   -webkit-transition: all .3s;
 =======
 <<<<<<< HEAD
@@ -425,6 +426,8 @@ nav .nav-links a {
 =======
 >>>>>>> KAI
 >>>>>>> a08664c73a429d97437735d23f749a7d388ac617
+=======
+>>>>>>> KAI
   transition: all .3s;
 }
 
@@ -462,9 +465,13 @@ nav .nav-icons {
 
 @media all and (max-width: 768px) {
   nav .nav-icons {
+<<<<<<< HEAD
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+=======
+    justify-content: space-between;
+>>>>>>> KAI
   }
 }
 
@@ -493,8 +500,12 @@ nav .nav-icons .info .infoData {
   background-color: #AD6E4A;
   width: 80px;
   left: 50%;
+<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+=======
+  transform: translateX(-50%);
+>>>>>>> KAI
   display: none;
 }
 
@@ -504,8 +515,12 @@ nav .nav-icons .info .infoData::before {
   height: 10px;
   top: 0;
   left: 50%;
+<<<<<<< HEAD
   -webkit-transform: translate(-50%, -50%) rotate(45deg);
           transform: translate(-50%, -50%) rotate(45deg);
+=======
+  transform: translate(-50%, -50%) rotate(45deg);
+>>>>>>> KAI
   background-color: #AD6E4A;
   position: absolute;
   z-index: 0;
@@ -514,7 +529,10 @@ nav .nav-icons .info .infoData::before {
 nav .nav-icons .info .infoData a {
   text-align: center;
   color: #0c0d18;
+<<<<<<< HEAD
   -webkit-transition: all .3s;
+=======
+>>>>>>> KAI
   transition: all .3s;
   padding: 10px 0;
   z-index: 1;
@@ -556,23 +574,20 @@ nav .nav-cart .count {
   text-align: center;
   line-height: 1.5rem;
   position: absolute;
-  -webkit-transform: translate(50%, -150%);
-          transform: translate(50%, -150%);
+  transform: translate(50%, -150%);
   display: block;
   color: white;
 }
 
 @media all and (max-width: 992px) {
   nav .nav-cart .count {
-    -webkit-transform: translate(100%, -150%);
-            transform: translate(100%, -150%);
+    transform: translate(100%, -150%);
   }
 }
 
 @media all and (max-width: 768px) {
   nav .nav-cart .count {
-    -webkit-transform: translate(40%, -170%);
-            transform: translate(40%, -170%);
+    transform: translate(40%, -170%);
     width: 20px;
     height: 20px;
     font-size: 12px;
@@ -593,23 +608,20 @@ nav .nav-trip .trip-count {
   text-align: center;
   line-height: 1.5rem;
   position: absolute;
-  -webkit-transform: translate(50%, -150%);
-          transform: translate(50%, -150%);
+  transform: translate(50%, -150%);
   display: block;
   color: white;
 }
 
 @media all and (max-width: 992px) {
   nav .nav-trip .trip-count {
-    -webkit-transform: translate(100%, -150%);
-            transform: translate(100%, -150%);
+    transform: translate(100%, -150%);
   }
 }
 
 @media all and (max-width: 768px) {
   nav .nav-trip .trip-count {
-    -webkit-transform: translate(40%, -170%);
-            transform: translate(40%, -170%);
+    transform: translate(40%, -170%);
     width: 20px;
     height: 20px;
     font-size: 12px;
@@ -853,8 +865,7 @@ input[type=number] {
   height: 100px;
   background-size: contain;
   background-repeat: no-repeat;
-  -webkit-animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
-          animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+  animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
 }
 
 #particles-js {
@@ -865,15 +876,19 @@ input[type=number] {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> a08664c73a429d97437735d23f749a7d388ac617
+=======
+>>>>>>> KAI
 @font-face {
   font-family: "Nasalization";
   src: local("./fonts/Nasa.ttf");
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -881,6 +896,8 @@ input[type=number] {
 =======
 >>>>>>> KAI
 >>>>>>> a08664c73a429d97437735d23f749a7d388ac617
+=======
+>>>>>>> KAI
 .count {
   width: 25px;
   height: 25px;
@@ -890,6 +907,7 @@ input[type=number] {
   line-height: 1.5rem;
   position: absolute;
 <<<<<<< HEAD
+<<<<<<< HEAD
   -webkit-transform: translate(50%, -150%);
           transform: translate(50%, -150%);
 =======
@@ -904,6 +922,9 @@ input[type=number] {
   transform: translate(50%, -150%);
 >>>>>>> KAI
 >>>>>>> a08664c73a429d97437735d23f749a7d388ac617
+=======
+  transform: translate(50%, -150%);
+>>>>>>> KAI
   display: block;
   color: white;
 }
@@ -990,6 +1011,7 @@ input[type=number] {
   display: -ms-flexbox;
   display: flex;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1014,6 +1036,11 @@ input[type=number] {
   font-family: "Nasalization";
 >>>>>>> KAI
 >>>>>>> a08664c73a429d97437735d23f749a7d388ac617
+=======
+  align-items: center;
+  justify-content: center;
+  font-family: "Nasalization";
+>>>>>>> KAI
 }
 
 .text-01 {

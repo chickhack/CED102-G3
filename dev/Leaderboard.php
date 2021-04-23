@@ -1,4 +1,4 @@
-php<?php
+<?php
 session_start();
 ?>
 <!DOCTYPE html>
@@ -14,6 +14,8 @@ session_start();
     <link rel="shortcut icon" href="./img/icon/shortcut.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/pages/all.css">
     <link rel="stylesheet" href="./css/pages/Leaderboard.css">
+    <link rel="shortcut icon" href="./img/icon/shortcut.png" type="image/x-icon">
+
 </head>
 <style>
  #particles-js {
@@ -34,11 +36,7 @@ session_start();
     <li class="margin_left_5"><a href="planet.php">星星世界</a></li>
     <li class="margin_left_5"><a href="shop.php">星球商城</a></li>
     <li class="margin_left_5"><a href="photowall.php">太空互動</a></li>
-<<<<<<< HEAD
-    <li class="margin_left_5"><a href="Leaderboard.php">玩家排行</a></li>
-=======
     <li class="margin_left_5"><a href="Leaderboard.php" class="bread">玩家排行</a></li>
->>>>>>> dev
     <!-- <li><a href=""><img src="./images/ticket.png" alt="" class="icon"></a></li>
         <li><a href=""><img src="./images/shopping-cart_(1).png" alt="" class="icon"></a></li>
         <li><a href=""><img src="./images/round-account-button-with-user-inside_(1).png" alt="" class="icon"></a></li> -->
@@ -73,7 +71,15 @@ session_start();
     <li>
         <?php
             if(isset($_SESSION['mem_no'])){?>
-                <a href="./account.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png" alt="" class="icon"/></a>
+                <div class="member"  onclick="toggle()">
+                    <div class="info">
+                        <img src="<?= $_SESSION['mem_pic'] ?>" alt="">
+                        <div class="infoData">
+                            <a href="./account.php">會員中心</a>
+                            <a href="./login.php" onclick="show()">登出</a>
+                        </div>
+                    </div>  
+                </div>
         <?php }else{ ?>
                 <a href="./login.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png" alt="" class="icon"/></a>
         <?php } ?>
@@ -118,15 +124,15 @@ session_start();
                <div class="col-4 col-xxl-2 col-md-2 del">累積星球</div>
             </div>
         </div>
-        <div class="col-10 text-color line-he-75 hovers" >
+        <div class="col-10 text-color line-he-75 hovers" v-for="(me,index) in mydata" v-if="me.mem_no==<?php echo $_SESSION["mem_no"];?>">
            <div class="row ">
 
-              <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-75 ">{{me.Lead}}</div>
-              <div class="col-4 col-xxl-2 col-md-2 text-01 line-he-75"><img :src="me.mesrc" alt="" class="icon-2">{{me.name}}</div>
-              <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-75 del"><img :src="me.src" alt="" class="leve"></div>
-              <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-75">{{me.integral}}</div>
-              <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-75 del">{{me.itin}}</div>
-              <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-75 del">{{me.sp}}</div>
+              <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-75 ">{{index+1}}</div>
+              <div class="col-4 col-xxl-2 col-md-2 text-01 line-he-75"><img :src="me.mem_pic" alt="" class="icon-2">{{me.last_name}}{{me.first_name}}</div>
+              <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-75 del"><img V-if="me.mem_lv == '天星者'" :src="medal.medalSrc1"  alt="" class="leve-1"><img v-else :src="medal.medalSrc2"alt="" class="leve-1"> </div>
+              <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-75">{{me.miles}}</div>
+              <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-75 del">{{me.mem_arr}}</div>
+              <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-75 del">{{me.mem_sp}}</div>
            </div>
         </div>
         <div class="col-10 text-color-1 line-he-65 hovers" id="top-1" >
@@ -228,6 +234,15 @@ session_start();
             }, 900);
         })
     });
+    function show() {
+        fetch("./php/logout.php");
+        window.location.href = "./login.php";
+    }
+
+    function toggle() {
+        const infoData = document.querySelector(".infoData");
+        infoData.classList.toggle("show");
+    }
 </script>
 <script>
  var top0= new Vue({
