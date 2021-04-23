@@ -7,7 +7,12 @@
     @include respond(mobile){
         margin: 0;
     }
+
 }
+.nav-links a{
+    text-decoration: none;
+}
+
 //=========動態背景
 canvas {
     display: block;
@@ -30,10 +35,6 @@ section.login_container{
     @media only screen and ( max-width:1200px) {
         width: 90%;
         margin: 0 auto;
-    }
-    .rightbox{
-        // display: flex;
-        // flex-direction: column;
     }
     @include respond(mobile){
         padding-bottom: 20px;
@@ -87,7 +88,7 @@ section.login_container{
         font-weight: 900;
         position: absolute;
         right: 40px;
-        top: 150px;
+        top: 175px;
     }
     .modal-dialog{
         display: flex;
@@ -172,9 +173,13 @@ section.login_container{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        @include respond(mobile){
+        margin-right: 65px;
+        @include respond(pad){
             padding: 0;
+            margin: 0;
+            margin-top: 24px;
         }
+
     }
         .forgot, .signup{
             display: flex;
@@ -182,15 +187,15 @@ section.login_container{
             align-items: center;
         }
         .forgot a, .signup a{
+            text-decoration: none;
             color: $gray;
             margin-left: 4px;
         }
-        .forgot:hover , .signup:hover {
+        .signup a:hover {
             cursor: pointer;
-            text-decoration: underline;
+            color: $gold;
         }
      
-    
 
 
 
