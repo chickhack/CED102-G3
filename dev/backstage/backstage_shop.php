@@ -37,7 +37,7 @@
             <button class="div-list-btn-a">商城</button>
             <div>
                 <a href="./backstage_shop.php" class="div-list-btn-s now">商品管理</a>
-                <a href="#" class="div-list-btn-s">商品評價</a>
+                <a href="./backstage_shop_cmt.php" class="div-list-btn-s">商品評價</a>
                 <a href="./backstage_shop_order.php" class="div-list-btn-s">商品訂單管理</a>
             </div>
             <!-- <a href="#" class="div-list-btn-a">百科管理</a> -->
@@ -113,7 +113,7 @@
                     <?php }?>
                     <div id="linebox">
                     <div class="upbox">
-                        <form action="./php/shopupdate.php" method="POST" enctype="multipart/form-data">
+                        <form action="../php/backstage/shop/shopupdate.php" method="POST" enctype="multipart/form-data">
 
                             <input type="number" placeholder="類型" name="cat_no">
                             <input type="text" placeholder="商品名稱" name="prod_name">
