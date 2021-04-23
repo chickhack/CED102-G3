@@ -1,10 +1,6 @@
 <?php
 session_start();
 
-<<<<<<< HEAD
-$_SESSION["mem_no"]=1010001;
-=======
->>>>>>> 7ecc499740156129142ed4c15206f91eebb5fb61
 ?>
 
 <!DOCTYPE html>
@@ -95,7 +91,6 @@ $_SESSION["mem_no"]=1010001;
           </a>
         </li>
         <li>
-<<<<<<< HEAD
                 <?php
                     if(isset($_SESSION['mem_no'])){?>
                         <div class="member"  onclick="toggle()">
@@ -111,23 +106,6 @@ $_SESSION["mem_no"]=1010001;
                         <a href="./login.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png" alt="" class="icon"/></a>
                 <?php } ?>
             </li>
-=======
-          <?php
-          if (isset($_SESSION['mem_no'])) { ?>
-            <div class="member" onclick="toggle()">
-              <div class="info">
-                <img src="<?= $_SESSION['mem_pic'] ?>" alt="">
-                <div class="infoData">
-                  <a href="./account.php">會員中心</a>
-                  <a href="./login.php" onclick="show()">登出</a>
-                </div>
-              </div>
-            </div>
-          <?php } else { ?>
-            <a href="./login.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png" alt="" class="icon" /></a>
-          <?php } ?>
-        </li>
->>>>>>> 7ecc499740156129142ed4c15206f91eebb5fb61
       </ul>
       <div class="burger">
         <div class="line1"></div>
@@ -267,7 +245,6 @@ $_SESSION["mem_no"]=1010001;
                       :disabled="!isEditing" :class="{view: !isEditing}"></div></br>
                 </div>
               </div>
-<<<<<<< HEAD
               <div class="col-md-auto align-self-end info_right center">
                 <div class="form-group">
                   <label for="exampleInputPassword1">姓氏</label></br>
@@ -282,12 +259,6 @@ $_SESSION["mem_no"]=1010001;
                   <div class="edit_text"><input type="text" class="form focus" ref="item.address" :value="item.address"
                       :disabled="!isEditing" :class="{view: !isEditing}"></div></br>
                 </div>
-=======
-              <div class="form-group">
-                <label for="exampleInputPassword1">地址</label></br>
-                <div class="edit_text"><input type="text" class="form focus" ref="item.address" :value="item.address" :disabled="!isEditing" :class="{view: !isEditing}"></div></br>
-              </div>
->>>>>>> 7ecc499740156129142ed4c15206f91eebb5fb61
               </form>
             </div>
 
@@ -561,10 +532,6 @@ $_SESSION["mem_no"]=1010001;
           <div class="heart_btns">
             <input type="date" id="date-1" class="btn orderbtns margin_top_3 btn-date data-down">
           </div>
-<<<<<<< HEAD
-          <!-- value="<?php echo date("Y-m-d");?>"  -->
-=======
->>>>>>> 7ecc499740156129142ed4c15206f91eebb5fb61
 
           <div class="ordercontent margin_top_3">
 
@@ -1095,15 +1062,9 @@ $_SESSION["mem_no"]=1010001;
         function toggle(){
             const infoData = document.querySelector(".infoData");
             infoData.classList.toggle("show");
-<<<<<<< HEAD
-        }
-
-    window.onload = function () {        //  點擊menu變色
-=======
         } 
 
     window.onload = function() { //  點擊menu變色
->>>>>>> 7ecc499740156129142ed4c15206f91eebb5fb61
       for (var i = 0; i < document.links.length; i++) {
         var thisLink = document.links[i];
         thisLink.onclick = function () {

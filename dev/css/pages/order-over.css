@@ -4,12 +4,8 @@
 }
 
 .container-fluid .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .container-fluid .row .col-9 {
@@ -19,12 +15,8 @@
 }
 
 .container-fluid .row .col-9 .sub {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   padding: 24px 0 80px 0;
 }
 

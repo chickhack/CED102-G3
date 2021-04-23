@@ -118,9 +118,11 @@ try {
                     <p class="wi-10 text-1"><?=$orderRow ["car_insp"]?></p> -->
                     <?php
                         if($orderRow['order_status'] == 0){
-                            echo "<p class='wi-5 text-1'><a href='../php/backstage/spot_order/edit_backstage_spot_order.php?order_no=$orderRow[order_no]&order_status=$orderRow[order_status]' name='update' type='button' class='btn btn-primary btn-sm'>上架</a></p>";
+                            echo "<p class='wi-5 text-1'>待出發</p>";
+                            // echo "<p class='wi-5 text-1'><a href='../php/backstage/spot_order/edit_backstage_spot_order.php?order_no=$orderRow[order_no]&order_status=$orderRow[order_status]' name='update' type='button' class='btn btn-primary btn-sm'>待出發</a></p>";
                         }else{
-                            echo "<p class='wi-5 text-1'><a href='../php/backstage/spot_order/edit_backstage_spot_order.php?order_no=$orderRow[order_no]&order_status=$orderRow[order_status]' name='update' type='button' class='btn btn-danger btn-sm'>下架</a></p>";
+                            echo "<p class='wi-5 text-1'>待出發</p>";
+                            // echo "<p class='wi-5 text-1'><a href='../php/backstage/spot_order/edit_backstage_spot_order.php?order_no=$orderRow[order_no]&order_status=$orderRow[order_status]' name='update' type='button' class='btn btn-danger btn-sm'>已出發</a></p>";
                             }
                     ?>
                 </div>

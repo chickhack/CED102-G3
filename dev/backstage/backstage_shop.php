@@ -101,9 +101,9 @@
                                     <p class="wi-10 text-1"><?=$prodRow["prod_points"]?></p>
                                     <?php
                                             if($prodRow['prod_status'] == 0){
-                                                echo "<p class='wi-5 text-1'><a href='./php/edit_backstage_prod.php?prod_no=$prodRow[prod_no]&prod_status=$prodRow[prod_status]' name='update' type='button' class='btn btn-primary btn-sm'>上架</a></p>";
+                                                echo "<p class='wi-5 text-1'><a href='../php/edit_backstage_prod.php?prod_no=$prodRow[prod_no]&prod_status=$prodRow[prod_status]' name='update' type='button' class='btn btn-primary btn-sm'>上架</a></p>";
                                             }else{
-                                                echo "<p class='wi-5 text-1'><a href='./php/edit_backstage_prod.php?prod_no=$prodRow[prod_no]&prod_status=$prodRow[prod_status]' name='update' type='button' class='btn btn-danger btn-sm'>下架</a></p>";
+                                                echo "<p class='wi-5 text-1'><a href='../php/edit_backstage_prod.php?prod_no=$prodRow[prod_no]&prod_status=$prodRow[prod_status]' name='update' type='button' class='btn btn-danger btn-sm'>下架</a></p>";
                                             }
                                         ?>
                                 
