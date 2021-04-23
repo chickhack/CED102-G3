@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-// $_SESSION["mem_no"]=1010001;
+$_SESSION["mem_no"]=1010001;
 ?>
 
 <!DOCTYPE html>
