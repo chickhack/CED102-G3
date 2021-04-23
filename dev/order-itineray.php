@@ -25,19 +25,11 @@ session_start();
     <h1><a href="home.php">SPACED</a></h1>
   </div>
   <ul class="nav-links">
-<<<<<<< HEAD
-    <li class="margin_left_5"><a href="alltripphp">星球景點</a></li>
-    <li class="margin_left_5"><a href="planetphp">星星世界</a></li>
-    <li class="margin_left_5"><a href="shopphp">星球商城</a></li>
-    <li class="margin_left_5"><a href="photowallphp">太空互動</a></li>
-    <li class="margin_left_5"><a href="Leaderboardphp">玩家排行</a></li>
-=======
     <li class="margin_left_5"><a href="alltrip.php">星球景點</a></li>
     <li class="margin_left_5"><a href="planet.php">星星世界</a></li>
     <li class="margin_left_5"><a href="shop.php">星球商城</a></li>
     <li class="margin_left_5"><a href="photowall.php">太空互動</a></li>
     <li class="margin_left_5"><a href="Leaderboard.php">玩家排行</a></li>
->>>>>>> dev
     <!-- <li><a href=""><img src="./images/ticket.png" alt="" class="icon"></a></li>
         <li><a href=""><img src="./images/shopping-cart_(1).png" alt="" class="icon"></a></li>
         <li><a href=""><img src="./images/round-account-button-with-user-inside_(1).png" alt="" class="icon"></a></li> -->
@@ -72,7 +64,15 @@ session_start();
     <li>
         <?php
             if(isset($_SESSION['mem_no'])){?>
-                <a href="./account.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png" alt="" class="icon"/></a>
+                <div class="member"  onclick="toggle()">
+                    <div class="info">
+                        <img src="<?= $_SESSION['mem_pic'] ?>" alt="">
+                        <div class="infoData">
+                            <a href="./account.php">會員中心</a>
+                            <a href="./login.php" onclick="show()">登出</a>
+                        </div>
+                    </div>  
+                </div>
         <?php }else{ ?>
                 <a href="./login.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png" alt="" class="icon"/></a>
         <?php } ?>

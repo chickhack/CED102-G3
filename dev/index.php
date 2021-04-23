@@ -23,12 +23,8 @@
             <img class="logo"src="img/logo.png" alt="">
           
             <a href="home.php" class="btn btn-4"><span>前台</span></a>
-<<<<<<< HEAD
-            <a href="adminLogin.php" class="btn btn-4"><span>後台</span></a>
-=======
             <a href="backstage/spaced_backstage_trip.php" class="btn btn-4"><span>後台</span></a>
       
->>>>>>> b65c88ff3624267e36f27b8c34a6768e2b652cc7
         </div>
 
 </div>
