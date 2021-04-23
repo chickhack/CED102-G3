@@ -35,8 +35,9 @@
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  
+
     <link rel="stylesheet" href="./css/pages/shop.css">
     <link rel="shortcut icon" href="./img/icon/shortcut.png" type="image/x-icon">
     <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.12/vue.js'></script>
@@ -45,33 +46,42 @@
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous"></script>
 </head>
+
 <body>
     <div class="container">
-    <header>
-    <nav id="nav">
-  <div class="logo">
-    <h1><a href="home.php">SPACED</a></h1>
-  </div>
-  <ul class="nav-links">
-    <li class="margin_left_5"><a href="alltrip.php">星球景點</a></li>
-    <li class="margin_left_5"><a href="planet.php">星星世界</a></li>
-    <li class="margin_left_5"><a href="shop.php" class="bread">星球商城</a></li>
-    <li class="margin_left_5"><a href="photowall.php">太空互動</a></li>
-    <li class="margin_left_5"><a href="Leaderboard.php">玩家排行</a></li>
-    <!-- <li><a href=""><img src="./images/ticket.png" alt="" class="icon"></a></li>
+        <header>
+            <nav id="nav">
+                <div class="logo">
+                    <h1><a href="home.php">SPACED</a></h1>
+                </div>
+                <ul class="nav-links">
+                    <li class="margin_left_5"><a href="alltrip.php">星球景點</a></li>
+                    <li class="margin_left_5"><a href="planet.php">星星世界</a></li>
+                    <li class="margin_left_5"><a href="shop.php" class="bread">星球商城</a></li>
+                    <li class="margin_left_5"><a href="photowall.php">太空互動</a></li>
+                    <li class="margin_left_5"><a href="Leaderboard.php">玩家排行</a></li>
+                    <!-- <li><a href=""><img src="./images/ticket.png" alt="" class="icon"></a></li>
         <li><a href=""><img src="./images/shopping-cart_(1).png" alt="" class="icon"></a></li>
         <li><a href=""><img src="./images/round-account-button-with-user-inside_(1).png" alt="" class="icon"></a></li> -->
-  </ul>
-  <ul class="nav-icons">
-    <li>
-      <a href="./car-itineray.php"
-        ><img src="./img/icon/header/luggage.png" alt="" class="icon"
-      /></a>
-    </li>
-    <li class="nav-cart">
-        <a href="./shop_cart.php">
-            <img src="./img/icon/header/shopping-cart_(1).png" alt="" class="icon"/>
-            <?php
+                </ul>
+                <ul class="nav-icons">
+                    <li class="nav-trip">
+                        <a href="./car-itineray.php">
+                            <img src="./img/icon/header/luggage.png" alt="" class="icon" />
+                            <?php
+                        if(isset($_SESSION["trip-cart"])){
+                            $count = count($_SESSION["trip-cart"]);
+                            echo "<div class='trip-count'>$count</div>";
+                        }else{
+                            echo "";
+                        }
+                     ?>
+                        </a>
+                    </li>
+                    <li class="nav-cart">
+                        <a href="./shop_cart.php">
+                            <img src="./img/icon/header/shopping-cart_(1).png" alt="" class="icon" />
+                            <?php
                 if(isset($_SESSION["cart"])){
                     $count = count($_SESSION["cart"]);
                     echo "<div class='count'>$count</div>";
@@ -79,45 +89,48 @@
                     echo "";
                 }
             ?>
-        </a>
-    </li> 
-    <li>
-        <?php
+                        </a>
+                    </li>
+                    <li>
+                        <?php
             if(isset($_SESSION['mem_no'])){?>
-                <div class="member"  onclick="toggle()">
-                    <div class="info">
-                        <img src="<?= $_SESSION['mem_pic'] ?>" alt="">
-                        <div class="infoData">
-                            <a href="./account.php">會員中心</a>
-                            <a href="./login.php" onclick="show()">登出</a>
+                        <div class="member" onclick="toggle()">
+                            <div class="info">
+                                <img src="<?= $_SESSION['mem_pic'] ?>" alt="">
+                                <div class="infoData">
+                                    <a href="./account.php">會員中心</a>
+                                    <a href="./login.php" onclick="show()">登出</a>
+                                </div>
+                            </div>
                         </div>
-                    </div>  
+                        <?php }else{ ?>
+                        <a href="./login.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png"
+                                alt="" class="icon" /></a>
+                        <?php } ?>
+                    </li>
+                </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
                 </div>
-        <?php }else{ ?>
-                <a href="./login.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png" alt="" class="icon"/></a>
-        <?php } ?>
-    </li>
-  </ul>
-  <div class="burger">
-    <div class="line1"></div>
-    <div class="line2"></div>
-    <div class="line3"></div>
-  </div>
-</nav>
+            </nav>
 
-<script src="./js/header.js"></script>
+            <script src="./js/header.js"></script>
 
 
-  </header>
+        </header>
         <div id="particles-js"></div>
-        
+
         <a href="#" class="go-top"></a>
         <section class="shop">
-            <div class="banner"><h2>在這裡可以滿足你上外太空的一切需求!</h2></div>
+            <div class="banner">
+                <h2>在這裡可以滿足你上外太空的一切需求!</h2>
+            </div>
             <div id="app">
                 <div class="filter margin_top_5">
                     <h2>商品</h2>
-                    <div class="custom-select"  @click="pick">
+                    <div class="custom-select" @click="pick">
                         <select>
                             <option value="0">排序</option>
                             <option value="1">依時間排序</option>
@@ -160,49 +173,50 @@
     </div>
     <!-- vue -->
     <script>
-        let vm = new Vue({
-            el: "#app",
-            data: {
-                products: [],
-                cart: [],
-            },
-            methods: {
-                pick(e){
-                    switch(e.target.innerHTML){
-                        case "依時間排序":
-                            this.products.sort((a,b) => {
-                                const d1 = new Date(a.prod_ondate);
-                                const d2 = new Date(b.prod_ondate);
-                                return d2 - d1 ;
-                                // if(d1 > d2){
-                                //     return 1;
-                                // }else if(d1 < d2){
-                                //     return -1;
-                                // }
-                                // return 0;
-                            })
-                            break;
-                        case "依價格排序":
-                            this.products.sort((a,b) => {
-                                const p1 = parseInt(a.prod_price);
-                                const p2 = parseInt(b.prod_price);
-                                return p2 - p1;
-                            })
-                            console.log(this.products);
-                            break;
-                    }
-                },
-                getId(index){
-              
-                        sessionStorage.setItem("no", index+1);
-              
+    let vm = new Vue({
+        el: "#app",
+        data: {
+            products: [],
+            cart: [],
+        },
+        methods: {
+            pick(e) {
+                switch (e.target.innerHTML) {
+                    case "依時間排序":
+                        this.products.sort((a, b) => {
+                            const d1 = new Date(a.prod_ondate);
+                            const d2 = new Date(b.prod_ondate);
+                            return d2 - d1;
+                            // if(d1 > d2){
+                            //     return 1;
+                            // }else if(d1 < d2){
+                            //     return -1;
+                            // }
+                            // return 0;
+                        })
+                        break;
+                    case "依價格排序":
+                        this.products.sort((a, b) => {
+                            const p1 = parseInt(a.prod_price);
+                            const p2 = parseInt(b.prod_price);
+                            return p2 - p1;
+                        })
+                        console.log(this.products);
+                        break;
                 }
             },
-        })
-        
-        fetch("./php/getProduct.php").then(res => res.json())
+            getId(index) {
+
+                sessionStorage.setItem("no", index + 1);
+
+            }
+        },
+    })
+
+    fetch("./php/getProduct.php").then(res => res.json())
         .then(data => {
             vm.products = data;
+<<<<<<< HEAD
             for(let i=0 ; i<data.length ; i++){
                                              vm.products[i].png = data[i]["prod_pic"].split("==")[0];
                                              let url = `product.php?id=${data[i].prod_no}`;
@@ -210,10 +224,6 @@
                                              console.log(vm.products[i].url)
                                             }
                                         });
-        const member = document.querySelector(".member");
-        member.addEventListener("click", function(){
-            fetch("./php/logout.php");
-        })
 
         function show(){
             fetch("./php/logout.php");
@@ -222,10 +232,35 @@
         function toggle(){
             const infoData = document.querySelector(".infoData");
             infoData.classList.toggle("show");
-        }      
+        }
+              
+=======
+            for (let i = 0; i < data.length; i++) {
+                vm.products[i].png = data[i]["prod_pic"].split("==")[0];
+                let url = `product.php?id=${data[i].prod_no}`;
+                vm.products[i].url = encodeURI(url);
+                console.log(vm.products[i].url)
+            }
+        });
+    const member = document.querySelector(".member");
+    member.addEventListener("click", function() {
+        fetch("./php/logout.php");
+    })
+
+    function show() {
+        fetch("./php/logout.php");
+        window.location.href = "./login.php";
+    }
+
+    function toggle() {
+        const infoData = document.querySelector(".infoData");
+        infoData.classList.toggle("show");
+    }
+>>>>>>> KAI
     </script>
     <script src="./js/background.js"></script>
     <script src="./js/customSelect.js"></script>
     <script src="./js/gotop.js"></script>
 </body>
+
 </html>

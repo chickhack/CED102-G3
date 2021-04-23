@@ -56,8 +56,7 @@ img {
 *,
 *:before,
 *:after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
   margin: 0;
   padding: 0;
 }
@@ -78,11 +77,8 @@ body {
   font-size: 14px;
   background-color: #0c0d18;
   overflow-x: hidden;
-  -webkit-user-select: none;
-  -moz-user-select: none;
   -o-user-select: none;
-  -ms-user-select: none;
-      user-select: none;
+  user-select: none;
 }
 
 h1, .h1 {
@@ -363,15 +359,9 @@ body {
 }
 
 nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   justify-content: center;
   background-color: #0c0d18;
   position: fixed;
@@ -395,18 +385,10 @@ nav .logo h1 a {
 }
 
 nav .nav-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-end;
   width: 75%;
 }
 
@@ -414,7 +396,6 @@ nav .nav-links a {
   width: 100%;
   color: #ffffff;
   padding: 8px;
-  -webkit-transition: all .3s;
   transition: all .3s;
 }
 
@@ -435,19 +416,95 @@ nav .nav-links .bread {
 }
 
 nav .nav-icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
   width: 12%;
   margin-left: 50px;
+}
+
+@media all and (max-width: 768px) {
+  nav .nav-icons {
+<<<<<<< HEAD
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+=======
+    justify-content: space-between;
+>>>>>>> KAI
+  }
+}
+
+nav .nav-icons .member {
+  position: relative;
+}
+
+nav .nav-icons .info {
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+}
+
+nav .nav-icons .info img {
+  width: 40px;
+}
+
+@media all and (max-width: 768px) {
+  nav .nav-icons .info img {
+    width: 30px;
+  }
+}
+
+nav .nav-icons .info .infoData {
+  position: absolute;
+  background-color: #AD6E4A;
+  width: 80px;
+  left: 50%;
+<<<<<<< HEAD
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+=======
+  transform: translateX(-50%);
+>>>>>>> KAI
+  display: none;
+}
+
+nav .nav-icons .info .infoData::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  top: 0;
+  left: 50%;
+<<<<<<< HEAD
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+=======
+  transform: translate(-50%, -50%) rotate(45deg);
+>>>>>>> KAI
+  background-color: #AD6E4A;
+  position: absolute;
+  z-index: 0;
+}
+
+nav .nav-icons .info .infoData a {
+  text-align: center;
+  color: #0c0d18;
+<<<<<<< HEAD
+  -webkit-transition: all .3s;
+=======
+>>>>>>> KAI
+  transition: all .3s;
+  padding: 10px 0;
+  z-index: 1;
+}
+
+nav .nav-icons .info .infoData a:hover {
+  color: #dec2b2;
+}
+
+nav .nav-icons .info .show {
+  display: block;
 }
 
 nav .burger {
@@ -461,7 +518,6 @@ nav .burger div {
   height: 2px;
   background-color: #ffffff;
   margin: 5px;
-  -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
 
@@ -478,23 +534,20 @@ nav .nav-cart .count {
   text-align: center;
   line-height: 1.5rem;
   position: absolute;
-  -webkit-transform: translate(50%, -150%);
-          transform: translate(50%, -150%);
+  transform: translate(50%, -150%);
   display: block;
   color: white;
 }
 
 @media all and (max-width: 992px) {
   nav .nav-cart .count {
-    -webkit-transform: translate(100%, -150%);
-            transform: translate(100%, -150%);
+    transform: translate(100%, -150%);
   }
 }
 
 @media all and (max-width: 768px) {
   nav .nav-cart .count {
-    -webkit-transform: translate(40%, -170%);
-            transform: translate(40%, -170%);
+    transform: translate(40%, -170%);
     width: 20px;
     height: 20px;
     font-size: 12px;
@@ -515,23 +568,20 @@ nav .nav-trip .trip-count {
   text-align: center;
   line-height: 1.5rem;
   position: absolute;
-  -webkit-transform: translate(50%, -150%);
-          transform: translate(50%, -150%);
+  transform: translate(50%, -150%);
   display: block;
   color: white;
 }
 
 @media all and (max-width: 992px) {
   nav .nav-trip .trip-count {
-    -webkit-transform: translate(100%, -150%);
-            transform: translate(100%, -150%);
+    transform: translate(100%, -150%);
   }
 }
 
 @media all and (max-width: 768px) {
   nav .nav-trip .trip-count {
-    -webkit-transform: translate(40%, -170%);
-            transform: translate(40%, -170%);
+    transform: translate(40%, -170%);
     width: 20px;
     height: 20px;
     font-size: 12px;
@@ -541,8 +591,7 @@ nav .nav-trip .trip-count {
 
 @media (max-width: 992px) {
   nav {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
   }
   nav .nav-links {
     position: absolute;
@@ -550,20 +599,11 @@ nav .nav-trip .trip-count {
     height: 88vh;
     top: 12vh;
     background-color: #AD6E4A;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     width: 30%;
-    -webkit-transition: all .5s ease-in;
     transition: all .5s ease-in;
   }
   nav .nav-links li {
@@ -578,12 +618,10 @@ nav .nav-trip .trip-count {
   }
   nav .nav-icons {
     width: 100%;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    justify-content: flex-end;
   }
   nav .nav-icons .icon {
-    margin: 0 30px 0 15px;
+    margin: 0 50px 0 15px;
   }
   nav .burger {
     display: block;
@@ -603,44 +641,26 @@ nav .nav-trip .trip-count {
   nav .nav-icons {
     width: 50%;
     margin-left: 16px;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
   }
   nav .nav-icons .icon {
     margin: 0;
   }
 }
 
-@-webkit-keyframes navLinkFade {
-  from {
-    opacity: 0;
-    -webkit-transform: translateX(50px);
-            transform: translateX(50px);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-  }
-}
-
 @keyframes navLinkFade {
   from {
     opacity: 0;
-    -webkit-transform: translateX(50px);
-            transform: translateX(50px);
+    transform: translateX(50px);
   }
   to {
     opacity: 1;
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
+    transform: translateX(0px);
   }
 }
 
 .toggle .line1 {
-  -webkit-transform: rotate(45deg) translate(4px, 6px);
-          transform: rotate(45deg) translate(4px, 6px);
+  transform: rotate(45deg) translate(4px, 6px);
 }
 
 .toggle .line2 {
@@ -648,8 +668,7 @@ nav .nav-trip .trip-count {
 }
 
 .toggle .line3 {
-  -webkit-transform: rotate(-45deg) translate(3px, -6px);
-          transform: rotate(-45deg) translate(3px, -6px);
+  transform: rotate(-45deg) translate(3px, -6px);
 }
 
 footer {
@@ -669,28 +688,19 @@ footer .links .logo {
   position: relative;
   left: 50%;
   bottom: 50px;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 footer .links .footer-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
   width: 55%;
   position: relative;
   left: 50%;
   bottom: 30px;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 footer .links .footer-links a {
@@ -701,8 +711,7 @@ footer .footer_moon {
   position: relative;
   left: 50%;
   max-width: 40%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 footer .smoke {
@@ -711,8 +720,7 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 @media (max-width: 768px) {
@@ -775,8 +783,7 @@ input[type=number] {
   height: 100px;
   background-size: contain;
   background-repeat: no-repeat;
-  -webkit-animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
-          animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+  animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
 }
 
 .container-fluid {
@@ -792,14 +799,7 @@ input[type=number] {
 }
 
 nav {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(9%, rgba(12, 13, 24, 0.448915)), to(rgba(12, 13, 24, 0)));
   background: linear-gradient(-180deg, rgba(12, 13, 24, 0.448915) 9%, rgba(12, 13, 24, 0) 100%);
-}
-
-button:hover {
-  color: #ffff;
-  border: 1px solid #AD6E4A;
-  background: #AD6E4A;
 }
 
 .video-bg {
@@ -813,7 +813,6 @@ button:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, rgba(255, 255, 255, 0)), to(#0c0d18));
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 70%, #0c0d18 100%);
   z-index: 2;
 }
@@ -861,12 +860,8 @@ button:hover a {
 }
 
 .banner .slogan {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .banner .slogan p {
@@ -874,17 +869,12 @@ button:hover a {
   color: white;
   font-family: "Haettenschweiler", sans-serif;
   letter-spacing: 15px;
-  -webkit-box-shadow: grey;
-          box-shadow: grey;
+  box-shadow: grey;
 }
 
 .banner .scroll {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .banner .scroll img {
@@ -904,13 +894,8 @@ button:hover a {
 
 .home_intro {
   margin-top: 15vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .home_intro h2 {
@@ -927,21 +912,14 @@ button:hover a {
 
 @media all and (max-width: 768px) {
   .stepsection {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 }
 
 .first_right {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 @media all and (max-width: 1200px) {
@@ -952,21 +930,14 @@ button:hover a {
 }
 
 .first_right .hottrip {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
 @media screen and (max-width: 767px) {
   .first_right .hottrip {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     margin: 0 auto;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
   }
 }
 
@@ -980,28 +951,23 @@ button:hover a {
 }
 
 .first_right .hottrip div.planet_top:hover {
-  -webkit-transform: translateY(0.2em);
-          transform: translateY(0.2em);
+  transform: translateY(0.2em);
 }
 
 .first_right .hottrip div.planet_top.planet_top:nth-child(1) {
-  -webkit-animation: float 5s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
-          animation: float 5s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+  animation: float 5s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
 }
 
 .first_right .hottrip div.planet_top.planet_top:nth-child(2) {
-  -webkit-animation: float 5.5s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
-          animation: float 5.5s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+  animation: float 5.5s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
 }
 
 .first_right .hottrip div.planet_top.planet_top:nth-child(3) {
-  -webkit-animation: float 6s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
-          animation: float 6s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+  animation: float 6s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
 }
 
 .first_right .hottrip div.planet_top.planet_top:nth-child(4) {
-  -webkit-animation: float 6.5s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
-          animation: float 6.5s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+  animation: float 6.5s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
 }
 
 @media all and (max-width: 1200px) {
@@ -1020,8 +986,7 @@ button:hover a {
   position: absolute;
   top: 15px;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   z-index: 2;
 }
 
@@ -1030,16 +995,14 @@ button:hover a {
 }
 
 .first_right .hottrip div.planet_top img.planet_a1:hover {
-  -webkit-transform: translateY(0.2em);
-          transform: translateY(0.2em);
+  transform: translateY(0.2em);
 }
 
 .first_right .hottrip div.planet_top div.word {
   position: absolute;
   top: 190px;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   text-align: center;
   margin: 0 auto;
 }
@@ -1049,8 +1012,6 @@ button:hover a {
 }
 
 .first_right .hottrip div.planet_top div.word .tag {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   border: 1px solid #cccaca;
   border-radius: 5px;
@@ -1101,6 +1062,7 @@ button:hover a {
 @media all and (max-width: 1100px) {
   .planet_box {
     margin-top: 48px;
+    color: #a05509;
   }
   .separator {
     width: 90%;
@@ -1110,57 +1072,32 @@ button:hover a {
   }
 }
 
-#marsloc {
-  position: absolute;
-  top: 300vh;
-  left: 30vw;
-}
-
-@media all and (max-width: 768px) {
-  #marsloc {
-    position: relative;
-  }
+canvas {
+  height: 100%;
 }
 
 .home_photowall {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .home_photowall .tz-gallery {
   padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: center;
+  flex-direction: column;
   /* Override bootstrap column paddings */
 }
 
 .home_photowall .tz-gallery .upper, .home_photowall .tz-gallery .lower {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .home_photowall .tz-gallery .lightbox:hover img {
-  -webkit-transform: scale(1.3);
-          transform: scale(1.3);
+  transform: scale(1.3);
 }
 
 .home_photowall .tz-gallery .loghtbox:hover {
@@ -1171,7 +1108,6 @@ button:hover a {
   width: 100%;
   border-radius: 0;
   position: relative;
-  -webkit-transition: all .3s;
   transition: all .3s;
 }
 
@@ -1180,16 +1116,9 @@ button:hover a {
 }
 
 .shop_box .home_shop {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  justify-content: center;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .shop_box .home_shop a {
@@ -1209,12 +1138,8 @@ button:hover a {
     display: none;
   }
   .shop_box .home_shop .shopRWD {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   .shop_box .home_shop .shopRWD .shop_carousel {
     display: block;
@@ -1259,9 +1184,14 @@ button:hover a {
   overflow: hidden;
   top: 0;
   left: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
+<<<<<<< HEAD
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -1270,43 +1200,50 @@ button:hover a {
   justify-content: center;
   align-items: center;
 =======
+>>>>>>> a08664c73a429d97437735d23f749a7d388ac617
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
->>>>>>> denis
+=======
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+>>>>>>> KAI
 }
 
 .shopItem .hovereffect img {
   display: block;
   position: relative;
   max-width: none;
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
-  -webkit-transform: translate3d(-10px, 0, 0);
   transform: translate3d(-10px, 0, 0);
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
 .shopItem .hovereffect:hover img {
   opacity: 0.4;
   filter: alpha(opacity=40);
-  -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
 
 <<<<<<< HEAD
 <<<<<<< HEAD
-.shopItem .hovereffect:hover h2:after, .shopItem .hovereffect h4:after {
 =======
-.shopItem .hovereffect:hover h2:after {
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> a08664c73a429d97437735d23f749a7d388ac617
+.shopItem .hovereffect:hover h2:after, .shopItem .hovereffect h4:after {
   -webkit-transform: translate3d(0, 0, 0);
+<<<<<<< HEAD
+=======
 >>>>>>> denis
+=======
+.shopItem .hovereffect:hover h2:after, .shopItem .hovereffect h4:after {
+>>>>>>> KAI
+>>>>>>> a08664c73a429d97437735d23f749a7d388ac617
 =======
 .shopItem .hovereffect:hover h2:after, .shopItem .hovereffect h4:after {
 >>>>>>> KAI
@@ -1317,18 +1254,13 @@ button:hover a {
   color: #FFF;
   opacity: 0;
   filter: alpha(opacity=0);
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
-  -webkit-transform: translate3d(100%, 0, 0);
   transform: translate3d(100%, 0, 0);
 }
 
 .shopItem .hovereffect:hover a, .shopItem .hovereffect:hover h2, .shopItem .hovereffect:hover h4 {
   opacity: 1;
   filter: alpha(opacity=100);
-  -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
 
@@ -1397,37 +1329,20 @@ button:hover a {
 }
 
 .flow_member {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .flow_member .flowall {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-column-gap: 10%;
-          column-gap: 10%;
+  justify-content: center;
+  column-gap: 10%;
 }
 
 .flow_member .flowall .flow {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   text-align: center;
 }
 
@@ -1454,31 +1369,39 @@ button:hover a {
 }
 
 .flow_member .memberbtn {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 70px;
 }
 
 @media all and (max-width: 1200px) {
   .flow_member .flowall {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
     flex-direction: column;
     align-items: center;
 <<<<<<< HEAD
 =======
+>>>>>>> a08664c73a429d97437735d23f749a7d388ac617
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+<<<<<<< HEAD
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+=======
 >>>>>>> denis
 =======
+>>>>>>> KAI
+>>>>>>> a08664c73a429d97437735d23f749a7d388ac617
+=======
+    flex-direction: column;
+    align-items: center;
 >>>>>>> KAI
   }
   .flow_member .flowall .flow .separator {

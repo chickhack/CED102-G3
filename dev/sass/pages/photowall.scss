@@ -276,6 +276,9 @@ button.turnoff_lightbox img{
 .member_info a button{
   margin-top: 10px;
 }
+.member_info a .button_large{
+  width: 160px;
+}
 .member_info a button:hover{
   background-color: lighten($gold, 10%);
 }

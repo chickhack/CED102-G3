@@ -69,25 +69,25 @@ try{
 
 <body>
 <header>
-        <nav id="nav">
-            <div class="logo">
-                <h1><a href="home.php">SPACED</a></h1>
-            </div>
-            <ul class="nav-links">
-                <li class="margin_left_5 now "><a href="alltrip.php" class="bread">星球景點</a></li>
-                <li class="margin_left_5"><a href="planet.php">星星世界</a></li>
-                <li class="margin_left_5"><a href="shop.php">星球商城</a></li>
-                <li class="margin_left_5"><a href="photowall.php">太空互動</a></li>
-                <li class="margin_left_5"><a href="Leaderboard.php">玩家排行</a></li>
-                <!-- <li><a href=""><img src="./images/ticket.png" alt="" class="icon"></a></li>
+            <nav id="nav">
+                <div class="logo">
+                    <h1><a href="home.php">SPACED</a></h1>
+                </div>
+                <ul class="nav-links">
+                    <li class="margin_left_5"><a href="alltrip.php" class="bread">星球景點</a></li>
+                    <li class="margin_left_5"><a href="planet.php" >星星世界</a></li>
+                    <li class="margin_left_5"><a href="shop.php" >星球商城</a></li>
+                    <li class="margin_left_5"><a href="photowall.php">太空互動</a></li>
+                    <li class="margin_left_5"><a href="Leaderboard.php">玩家排行</a></li>
+                    <!-- <li><a href=""><img src="./images/ticket.png" alt="" class="icon"></a></li>
         <li><a href=""><img src="./images/shopping-cart_(1).png" alt="" class="icon"></a></li>
         <li><a href=""><img src="./images/round-account-button-with-user-inside_(1).png" alt="" class="icon"></a></li> -->
-            </ul>
-            <ul class="nav-icons">
-                <li class="nav-trip">
-                    <a href="./car-itineray.php">
-                        <img src="./img/icon/header/luggage.png" alt="" class="icon" />
-                        <?php
+                </ul>
+                <ul class="nav-icons">
+                    <li class="nav-trip">
+                        <a href="./car-itineray.php">
+                            <img src="./img/icon/header/luggage.png" alt="" class="icon" />
+                            <?php
                         if(isset($_SESSION["trip-cart"])){
                             $count = count($_SESSION["trip-cart"]);
                             echo "<div class='trip-count'>$count</div>";
@@ -95,12 +95,12 @@ try{
                             echo "";
                         }
                      ?>
-                    </a>
-                </li>
-                <li class="nav-cart">
-                    <a href="./shop_cart.php">
-                        <img src="./img/icon/header/shopping-cart_(1).png" alt="" class="icon" />
-                        <?php
+                        </a>
+                    </li>
+                    <li class="nav-cart">
+                        <a href="./shop_cart.php">
+                            <img src="./img/icon/header/shopping-cart_(1).png" alt="" class="icon" />
+                            <?php
                 if(isset($_SESSION["cart"])){
                     $count = count($_SESSION["cart"]);
                     echo "<div class='count'>$count</div>";
@@ -108,26 +108,37 @@ try{
                     echo "";
                 }
             ?>
-                    </a>
-                </li>
-                <li>
-        <?php
+                        </a>
+                    </li>
+                    <li>
+                        <?php
             if(isset($_SESSION['mem_no'])){?>
-                <a href="./account.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png" alt="" class="icon"/></a>
-        <?php }else{ ?>
-                <a href="./login.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png" alt="" class="icon"/></a>
-        <?php } ?>
-    </li>
-            </ul>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-        </nav>
-        <script src="./js/header.js"></script>
+                        <div class="member" onclick="toggle()">
+                            <div class="info">
+                                <img src="<?= $_SESSION['mem_pic'] ?>" alt="">
+                                <div class="infoData">
+                                    <a href="./account.php">會員中心</a>
+                                    <a href="./login.php" onclick="show()">登出</a>
+                                </div>
+                            </div>
+                        </div>
+                        <?php }else{ ?>
+                        <a href="./login.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png"
+                                alt="" class="icon" /></a>
+                        <?php } ?>
+                    </li>
+                </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
 
-    </header>
+            <script src="./js/header.js"></script>
+
+
+        </header>
     <!-- 動態背景 -->
     <div id="particles-js">
         <script src="./js/background.js"></script>
@@ -336,6 +347,16 @@ if( $errMsg != ""){ //例外
 
         },
     })
+
+    function show() {
+        fetch("./php/logout.php");
+        window.location.href = "./login.php";
+    }
+
+    function toggle() {
+        const infoData = document.querySelector(".infoData");
+        infoData.classList.toggle("show");
+    }
     </script>
 
     <!-- 頁籤 -->

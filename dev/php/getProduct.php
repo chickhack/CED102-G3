@@ -6,6 +6,6 @@ try {
 	$prodRows = $products->fetchAll(PDO::FETCH_ASSOC);
 	echo json_encode($prodRows);
 } catch (PDOException $e) {
-	
+	$e->getMessage();
 }
 ?>

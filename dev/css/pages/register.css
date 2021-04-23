@@ -57,7 +57,8 @@ img {
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
   margin: 0;
   padding: 0;
 }
@@ -78,8 +79,11 @@ body {
   font-size: 14px;
   background-color: #0c0d18;
   overflow-x: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
   -o-user-select: none;
-  user-select: none;
+  -ms-user-select: none;
+      user-select: none;
 }
 
 h1, .h1 {
@@ -360,9 +364,15 @@ body {
 }
 
 nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   justify-content: center;
   background-color: #0c0d18;
   position: fixed;
@@ -386,10 +396,18 @@ nav .logo h1 a {
 }
 
 nav .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   width: 75%;
 }
 
@@ -399,9 +417,16 @@ nav .nav-links a {
   padding: 8px;
 <<<<<<< HEAD
 <<<<<<< HEAD
+  -webkit-transition: all .3s;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
 =======
   -webkit-transition: all .3s;
 >>>>>>> denis
+=======
+>>>>>>> KAI
+>>>>>>> a08664c73a429d97437735d23f749a7d388ac617
 =======
 >>>>>>> KAI
   transition: all .3s;
@@ -424,12 +449,102 @@ nav .nav-links .bread {
 }
 
 nav .nav-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 12%;
   margin-left: 50px;
+}
+
+@media all and (max-width: 768px) {
+  nav .nav-icons {
+<<<<<<< HEAD
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+=======
+    justify-content: space-between;
+>>>>>>> KAI
+  }
+}
+
+nav .nav-icons .member {
+  position: relative;
+}
+
+nav .nav-icons .info {
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+}
+
+nav .nav-icons .info img {
+  width: 40px;
+}
+
+@media all and (max-width: 768px) {
+  nav .nav-icons .info img {
+    width: 30px;
+  }
+}
+
+nav .nav-icons .info .infoData {
+  position: absolute;
+  background-color: #AD6E4A;
+  width: 80px;
+  left: 50%;
+<<<<<<< HEAD
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+=======
+  transform: translateX(-50%);
+>>>>>>> KAI
+  display: none;
+}
+
+nav .nav-icons .info .infoData::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  top: 0;
+  left: 50%;
+<<<<<<< HEAD
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+=======
+  transform: translate(-50%, -50%) rotate(45deg);
+>>>>>>> KAI
+  background-color: #AD6E4A;
+  position: absolute;
+  z-index: 0;
+}
+
+nav .nav-icons .info .infoData a {
+  text-align: center;
+  color: #0c0d18;
+<<<<<<< HEAD
+  -webkit-transition: all .3s;
+=======
+>>>>>>> KAI
+  transition: all .3s;
+  padding: 10px 0;
+  z-index: 1;
+}
+
+nav .nav-icons .info .infoData a:hover {
+  color: #dec2b2;
+}
+
+nav .nav-icons .info .show {
+  display: block;
 }
 
 nav .burger {
@@ -443,6 +558,7 @@ nav .burger div {
   height: 2px;
   background-color: #ffffff;
   margin: 5px;
+  -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
 
@@ -459,23 +575,20 @@ nav .nav-cart .count {
   text-align: center;
   line-height: 1.5rem;
   position: absolute;
-  -webkit-transform: translate(50%, -150%);
-          transform: translate(50%, -150%);
+  transform: translate(50%, -150%);
   display: block;
   color: white;
 }
 
 @media all and (max-width: 992px) {
   nav .nav-cart .count {
-    -webkit-transform: translate(100%, -150%);
-            transform: translate(100%, -150%);
+    transform: translate(100%, -150%);
   }
 }
 
 @media all and (max-width: 768px) {
   nav .nav-cart .count {
-    -webkit-transform: translate(40%, -170%);
-            transform: translate(40%, -170%);
+    transform: translate(40%, -170%);
     width: 20px;
     height: 20px;
     font-size: 12px;
@@ -496,23 +609,20 @@ nav .nav-trip .trip-count {
   text-align: center;
   line-height: 1.5rem;
   position: absolute;
-  -webkit-transform: translate(50%, -150%);
-          transform: translate(50%, -150%);
+  transform: translate(50%, -150%);
   display: block;
   color: white;
 }
 
 @media all and (max-width: 992px) {
   nav .nav-trip .trip-count {
-    -webkit-transform: translate(100%, -150%);
-            transform: translate(100%, -150%);
+    transform: translate(100%, -150%);
   }
 }
 
 @media all and (max-width: 768px) {
   nav .nav-trip .trip-count {
-    -webkit-transform: translate(40%, -170%);
-            transform: translate(40%, -170%);
+    transform: translate(40%, -170%);
     width: 20px;
     height: 20px;
     font-size: 12px;
@@ -522,7 +632,8 @@ nav .nav-trip .trip-count {
 
 @media (max-width: 992px) {
   nav {
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   nav .nav-links {
     position: absolute;
@@ -530,11 +641,20 @@ nav .nav-trip .trip-count {
     height: 88vh;
     top: 12vh;
     background-color: #AD6E4A;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 30%;
+    -webkit-transition: all .5s ease-in;
     transition: all .5s ease-in;
   }
   nav .nav-links li {
@@ -549,10 +669,12 @@ nav .nav-trip .trip-count {
   }
   nav .nav-icons {
     width: 100%;
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
   nav .nav-icons .icon {
-    margin: 0 30px 0 15px;
+    margin: 0 50px 0 15px;
   }
   nav .burger {
     display: block;
@@ -572,26 +694,44 @@ nav .nav-trip .trip-count {
   nav .nav-icons {
     width: 50%;
     margin-left: 16px;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   nav .nav-icons .icon {
     margin: 0;
   }
 }
 
-@keyframes navLinkFade {
+@-webkit-keyframes navLinkFade {
   from {
     opacity: 0;
-    transform: translateX(50px);
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
   }
   to {
     opacity: 1;
-    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
   }
 }
 
 .toggle .line1 {
-  transform: rotate(45deg) translate(4px, 6px);
+  -webkit-transform: rotate(45deg) translate(4px, 6px);
+          transform: rotate(45deg) translate(4px, 6px);
 }
 
 .toggle .line2 {
@@ -599,7 +739,8 @@ nav .nav-trip .trip-count {
 }
 
 .toggle .line3 {
-  transform: rotate(-45deg) translate(3px, -6px);
+  -webkit-transform: rotate(-45deg) translate(3px, -6px);
+          transform: rotate(-45deg) translate(3px, -6px);
 }
 
 footer {
@@ -619,19 +760,28 @@ footer .links .logo {
   position: relative;
   left: 50%;
   bottom: 50px;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 footer .links .footer-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 55%;
   position: relative;
   left: 50%;
   bottom: 30px;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 footer .links .footer-links a {
@@ -642,7 +792,8 @@ footer .footer_moon {
   position: relative;
   left: 50%;
   max-width: 40%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 footer .smoke {
@@ -651,7 +802,8 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 @media (max-width: 768px) {
@@ -714,8 +866,7 @@ input[type=number] {
   height: 100px;
   background-size: contain;
   background-repeat: no-repeat;
-  -webkit-animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
-          animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+  animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
 }
 
 .container-fluid {
@@ -731,50 +882,122 @@ input[type=number] {
   }
 }
 
+canvas {
+  display: block;
+}
+
+/* ---- particles.js container ---- */
+#particles-js {
+  z-index: -10;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #0c0d18;
+}
+
+input {
+  background-color: transparent;
+  color: #AD6E4A;
+}
+
+input a {
+  text-decoration: none;
+  color: #AD6E4A;
+}
+
+input:hover {
+  color: #ffff;
+  border: 1px solid #AD6E4A;
+  background: #AD6E4A;
+}
+
+input:hover a {
+  text-decoration: none;
+  color: white;
+}
+
 section.login_container {
   padding: 0;
   border: 1px solid #ad6e4a83;
+<<<<<<< HEAD
+<<<<<<< HEAD
+  display: -webkit-box;
+  display: -ms-flexbox;
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
   display: -webkit-box;
   display: -ms-flexbox;
 >>>>>>> denis
+=======
+>>>>>>> KAI
+>>>>>>> a08664c73a429d97437735d23f749a7d388ac617
 =======
 >>>>>>> KAI
   display: flex;
   border-radius: 5px;
 }
 
-section.login_container .login_banner {
+@media only screen and (max-width: 1200px) {
+  section.login_container {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media all and (max-width: 768px) {
+  section.login_container {
+    padding-bottom: 20px;
+  }
+  section.login_container .rightbox {
+    width: 100%;
+  }
+}
+
+.login_banner {
   background-color: #353f61;
   height: 80vh;
   background-size: 110%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: #ffffff;
   row-gap: 2rem;
 }
 
-section.login_container .login_banner h2 {
+.login_banner h2 {
   font-family: nasalization, sans-serif;
 }
 
 @media all and (max-width: 992px) {
-  section.login_container .login_banner {
+  .login_banner {
     display: none;
   }
 }
 
 @media all and (max-width: 768px) {
-  section.login_container .login_banner {
+  .login_banner {
     display: none;
   }
 }
 
+<<<<<<< HEAD
 section.login_container .return_btn {
+<<<<<<< HEAD
+  display: -webkit-box;
+  display: -ms-flexbox;
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -783,29 +1006,41 @@ section.login_container .return_btn {
 >>>>>>> denis
 =======
 >>>>>>> KAI
+>>>>>>> a08664c73a429d97437735d23f749a7d388ac617
+=======
+.return_btn {
+>>>>>>> KAI
   display: flex;
-  align-self: flex-start;
-  align-items: baseline;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
-section.login_container .return_btn span a {
+.return_btn span a {
   color: #AD6E4A;
   font-size: 28px;
   letter-spacing: -6px;
   font-weight: 800;
 }
 
-section.login_container .return_btn h4 a {
+.return_btn h4 a {
   margin-left: 12px;
   color: #cccaca;
 }
 
-section.login_container .return_btn a:hover {
+.return_btn a:hover {
   text-decoration: underline;
 }
 
+<<<<<<< HEAD
 section.login_container .modal-dialog {
 <<<<<<< HEAD
+  display: -webkit-box;
+  display: -ms-flexbox;
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
   display: -webkit-box;
@@ -813,12 +1048,24 @@ section.login_container .modal-dialog {
 >>>>>>> denis
 =======
 >>>>>>> KAI
+>>>>>>> a08664c73a429d97437735d23f749a7d388ac617
+=======
+.modal-dialog {
+>>>>>>> KAI
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
+<<<<<<< HEAD
 section.login_container .modal-dialog .main-section {
 <<<<<<< HEAD
+  display: -webkit-box;
+  display: -ms-flexbox;
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
   display: -webkit-box;
@@ -826,20 +1073,35 @@ section.login_container .modal-dialog .main-section {
 >>>>>>> denis
 =======
 >>>>>>> KAI
+>>>>>>> a08664c73a429d97437735d23f749a7d388ac617
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+=======
+.modal-dialog .main-section {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin: 0 auto;
+  justify-content: center;
+>>>>>>> KAI
 }
 
-section.login_container .modal-dialog .main-section .modal-content {
+.modal-dialog .main-section .modal-content {
   opacity: .8;
   border-radius: 10px;
   background-color: transparent;
   border: none;
 }
 
+<<<<<<< HEAD
 section.login_container .modal-dialog form {
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -850,6 +1112,7 @@ section.login_container .modal-dialog form {
   align-items: inherit;
 <<<<<<< HEAD
 =======
+>>>>>>> a08664c73a429d97437735d23f749a7d388ac617
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -863,12 +1126,31 @@ section.login_container .modal-dialog form {
   -webkit-box-align: inherit;
       -ms-flex-align: inherit;
           align-items: inherit;
+<<<<<<< HEAD
+=======
 >>>>>>> denis
 =======
 >>>>>>> KAI
+>>>>>>> a08664c73a429d97437735d23f749a7d388ac617
 }
 
 section.login_container .modal-dialog form .form-group input {
+=======
+@media all and (max-width: 992px) {
+  .modal-dialog .main-section .modal-content {
+    margin-top: 48px;
+    align-items: flex-end;
+  }
+}
+
+.modal-dialog form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.modal-dialog form .form-group input {
+>>>>>>> KAI
   margin: 0 auto;
   margin-top: 24px;
   height: 42px;
@@ -881,9 +1163,11 @@ section.login_container .modal-dialog form .form-group input {
   background-color: transparent;
 }
 
-section.login_container .modal-dialog form .form-group input:focus {
+.modal-dialog form .form-group input:focus {
   padding-left: 28px;
-  transform: scale(1.08);
+<<<<<<< HEAD
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
   box-shadow: -1px 0px 20px 5px rgba(173, 110, 74, 0.45);
   -webkit-box-shadow: -1px 0px 20px 5px rgba(173, 110, 74, 0.45);
   -moz-box-shadow: -1px 0px 20px 5px rgba(173, 110, 74, 0.45);
@@ -892,9 +1176,12 @@ section.login_container .modal-dialog form .form-group input:focus {
 
 section.login_container .modal-dialog form .form-group input:hover {
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
   animation: pulse .5s 1;
 =======
+>>>>>>> a08664c73a429d97437735d23f749a7d388ac617
   -webkit-animation: pulse .5s 1;
           animation: pulse .5s 1;
 }
@@ -909,25 +1196,40 @@ section.login_container .modal-dialog form .form-group input:hover {
   100% {
     -webkit-box-shadow: 0 0 0 0 rgba(204, 140, 44, 0);
   }
+<<<<<<< HEAD
+=======
 >>>>>>> denis
 =======
   animation: pulse .5s 1;
 >>>>>>> KAI
+>>>>>>> a08664c73a429d97437735d23f749a7d388ac617
 }
 
 @keyframes pulse {
   0% {
-    box-shadow: 0 0 0 0 rgba(204, 140, 44, 0.4);
+    -webkit-box-shadow: 0 0 0 0 rgba(204, 140, 44, 0.4);
+            box-shadow: 0 0 0 0 rgba(204, 140, 44, 0.4);
   }
   70% {
-    box-shadow: 0 0 0 7px rgba(204, 140, 44, 0);
+    -webkit-box-shadow: 0 0 0 7px rgba(204, 140, 44, 0);
+            box-shadow: 0 0 0 7px rgba(204, 140, 44, 0);
   }
   100% {
-    box-shadow: 0 0 0 0 rgba(204, 140, 44, 0);
+    -webkit-box-shadow: 0 0 0 0 rgba(204, 140, 44, 0);
+            box-shadow: 0 0 0 0 rgba(204, 140, 44, 0);
   }
 }
 
 section.login_container .modal-dialog form .form-group::before {
+=======
+  box-shadow: -1px 0px 20px 5px rgba(173, 110, 74, 0.5);
+  -webkit-box-shadow: -1px 0px 20px 5px rgba(173, 110, 74, 0.5);
+  -moz-box-shadow: -1px 0px 20px 5px rgba(173, 110, 74, 0.5);
+  border: none;
+}
+
+.modal-dialog form .form-group::before {
+>>>>>>> KAI
   content: "電子信箱";
   position: absolute;
   font-size: 12px;
@@ -936,21 +1238,25 @@ section.login_container .modal-dialog form .form-group::before {
   color: #C9ADA7;
 }
 
-section.login_container .modal-dialog form .form-group:nth-last-of-type(2)::before {
+.modal-dialog form .form-group:nth-last-of-type(2)::before {
   content: "密碼";
 }
 
-section.login_container .modal-dialog form .form-group:last-of-type::before {
+.modal-dialog form .form-group:last-of-type::before {
   content: "確認密碼";
 }
 
-section.login_container .modal-dialog form span {
+.modal-dialog form span {
+  align-self: center;
+}
+
+<<<<<<< HEAD
+section.login_container .modal-dialog form #register {
+<<<<<<< HEAD
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-}
-
-section.login_container .modal-dialog form #register {
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
   align-self: center;
@@ -962,17 +1268,27 @@ section.login_container .modal-dialog form #register {
 =======
   align-self: center;
 >>>>>>> KAI
+>>>>>>> a08664c73a429d97437735d23f749a7d388ac617
+=======
+.modal-dialog form .register_btn {
+  align-self: center;
+>>>>>>> KAI
   background-color: transparent;
   color: #AD6E4A;
 }
 
-section.login_container .modal-dialog form #register:hover {
+.modal-dialog form .register_btn:hover {
   color: #ffff;
   border: 1px solid #AD6E4A;
   background: #AD6E4A;
 }
+<<<<<<< HEAD
 
 section.login_container .bottom-section {
+<<<<<<< HEAD
+  display: -webkit-box;
+  display: -ms-flexbox;
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -981,9 +1297,15 @@ section.login_container .bottom-section {
 >>>>>>> denis
 =======
 >>>>>>> KAI
+>>>>>>> a08664c73a429d97437735d23f749a7d388ac617
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 section.login_container .bottom-section .forgot a, section.login_container .bottom-section .signup a {
@@ -1000,4 +1322,6 @@ section.login_container .bottom-section .forgot:hover, section.login_container .
     margin-left: 32px;
   }
 }
+=======
+>>>>>>> KAI
 /*# sourceMappingURL=register.css.map */

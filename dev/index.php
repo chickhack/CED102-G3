@@ -20,11 +20,9 @@
         <script src="./js/indexbackground.js"></script>
         <img class="logo" src="img/logo.png" alt="">
         <div class="link">
-            
-
             <a href="home.php" class="btn btn-4"><span>前台</span></a>
             <a href="adminLogin.php" class="btn btn-4"><span>後台</span></a>
-            <a href="backstage/spaced_backstage_trip.php" class="btn btn-4"><span>後台</span></a>
+            <!-- <a href="backstage/spaced_backstage_trip.php" class="btn btn-4"><span>後台</span></a> -->
 
         </div>
         <div class="tibame">
@@ -32,8 +30,6 @@
                 本網站為緯育TibaMe_前端設計工程師班第65期學員專題成果作品<br>
                 提供給 Web/APP前端設計工程師養成班 學員展示作品之平台<br>
                 若有侵權疑慮，請私訊 <a href="https://www.facebook.com/webindex/">TibaMe-前端設計工程師養成班</a></span>
-
-
             </div>
 
     </div>

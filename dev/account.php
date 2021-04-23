@@ -1,3 +1,8 @@
+<?php
+session_start();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,24 +11,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <!--Bootstrap5 JavaScript Bundle with Popper -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <!--Bootstrap5 CSS only -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
   <!-- Vue.js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.12/vue.js"></script>
   <!-- jQuery -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"
-    integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA=="
-    crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css"
-    integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ=="
-    crossorigin="anonymous" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ==" crossorigin="anonymous" />
   <!-- 動態背景 -->
   <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
@@ -63,34 +59,42 @@
           <a href="./car-itineray.php">
             <img src="./img/icon/header/luggage.png" alt="" class="icon" />
             <?php
-                    if(isset($_SESSION["trip-cart"])){
-                        $count = count($_SESSION["trip-cart"]);
-                        echo "<div class='trip-count'>$count</div>";
-                    }else{
-                        echo "";
-                    }
-                 ?>
+            if (isset($_SESSION["trip-cart"])) {
+              $count = count($_SESSION["trip-cart"]);
+              echo "<div class='trip-count'>$count</div>";
+            } else {
+              echo "";
+            }
+            ?>
           </a>
         </li>
         <li class="nav-cart">
           <a href="./shop_cart.php">
             <img src="./img/icon/header/shopping-cart_(1).png" alt="" class="icon" />
             <?php
-            if(isset($_SESSION["cart"])){
-                $count = count($_SESSION["cart"]);
-                echo "<div class='count'>$count</div>";
-            }else{
-                echo "";
+            if (isset($_SESSION["cart"])) {
+              $count = count($_SESSION["cart"]);
+              echo "<div class='count'>$count</div>";
+            } else {
+              echo "";
             }
-        ?>
+            ?>
           </a>
         </li>
         <li>
           <?php
-            if(isset($_SESSION['mem_no'])){ ?>
-              <a href="./account.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png" alt="" class="icon"/></a>
-          <?php }else{ ?>
-            <a href="./login.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png" alt="" class="icon"/></a>
+          if (isset($_SESSION['mem_no'])) { ?>
+            <div class="member" onclick="toggle()">
+              <div class="info">
+                <img src="<?= $_SESSION['mem_pic'] ?>" alt="">
+                <div class="infoData">
+                  <a href="./account.php">會員中心</a>
+                  <a href="./login.php" onclick="show()">登出</a>
+                </div>
+              </div>
+            </div>
+          <?php } else { ?>
+            <a href="./login.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png" alt="" class="icon" /></a>
           <?php } ?>
         </li>
       </ul>
@@ -113,45 +117,56 @@
 
     <div class="">
 
-      <div class="welcome">
+      <div class="welcome" v-for="(item,index) in customer" v-if="item.mem_no == <?php echo $_SESSION["mem_no"] ?>">
         <div class="spacedinfo">
           <p class="account_hi">嗨，</p>
-          <p class="account_logo">{{customer.mem_id}}!</p><br>
+          <p class="account_logo">{{item.mem_id}}!</p><br>
           <p class="account_numlogo">SPACED</p>
           <p class="account_acnum">會員編號：</p>
-          <p class="account_num">{{customer.mem_no}}</p>
+          <p class="account_num">{{item.mem_no}}</p>
         </div>
-        <img class="account_levimg" :src="customer.lv_img" alt="lev">
+        <!-- <img class="account_levimg" :src="customer.lv_img" alt="lev"> -->
+        <div>
+          <img v-if="item.mem_lv == '初星者'" :src="level.lv_img" class="account_levimg">
+          <img v-else :src="level.mem_next_img" class="account_levimg">
+        </div>
       </div>
 
-      <div class="account_card">
+      <div class="account_card" v-for="(item,index) in customer" v-if="item.mem_no == <?php echo $_SESSION["mem_no"] ?>">
 
         <div class="your_nowlev row align-items-center">
-          <div class="col col-md-auto lev_name">{{customer.mem_lv}}</div>
+          <div class="col col-md-auto lev_name">{{item.mem_lv}}</div>
           <div class="col-md-auto"><img class="littleline" src="./img/icon/littleline.png" alt=""></div>
           <div class="col account_total">累積旅行
-            <span class="accnum">{{customer.mem_arr}} </span>顆星球、
-            <span class="accnum">{{customer.mem_sp}} </span>個景點
+            <span class="accnum">{{item.mem_arr}} </span>顆星球、
+            <span class="accnum">{{item.mem_sp}} </span>個景點
           </div>
           <div class="col col-md-auto account_money">目前持有
-            <span class="accmoney">{{customer.coin}}</span>宇宙幣
+            <span class="accmoney">{{item.coin}}</span>宇宙幣
           </div>
         </div>
 
         <div class="lev_acc">
-          <little><span>12個月內累積</span></little>
+          <small><span>12個月內累積</span></small>
         </div>
 
-        <div class="your_acc">
+        <div class="your_acc" v-for="(item,index) in customer" v-if="item.mem_no == <?php echo $_SESSION["mem_no"] ?>">
           <div class="now_lev align-items-center">
-            <img class="nowlev" :src="customer.lv_img" alt="lev"><br>
-            <p class="nowacc">{{customer.miles}} 積分</p>
+            <!-- <img class="nowlev" :src="level.lv_img" alt="lev"><br> -->
+            <img v-if="item.mem_lv == '初星者'" :src="level.lv_img" class="nowlev">
+            <img v-else :src="level.mem_next_img" class="nowlev">
+            <br>
+            <p class="nowacc">{{item.miles}} 積分</p>
           </div>
-          <div class="next_rocket"><img class="account_rocket" src="./img/icon/rocket4.png" alt="rocket"></div>
+          <div class="next_rocket">
+            <img class="account_rocket" src="./img/icon/rocket4.png" alt="rocket">
+          </div>
           <div class="next_lev align-items-center">
-            <img class="nextlev" :src="customer.mem_next_img" alt="lev"><br class="none">
-            <p class="nextacc">目前尚需 {{ minus_lev() }} 積分</p>
-            <p class="nextacc">才能升級至 {{customer.mem_next_lv}}</p>
+            <!-- <img class="nextlev" :src="level.mem_next_img" alt="lev"><br class="none"> -->
+            <img class="nextlev" :src="level.mem_next_img"><br>
+            <p class="nextacc">目前尚需 {{ level.mem_next_miles - item.miles}} 積分</p>
+            <p class="nextacc" v-if="item.mem_lv == '天星者'">才能維持 {{level.mem_next_lv}}</p>
+            <p class="nextacc" v-else>才能升級至 {{level.mem_next_lv}}</p>
           </div>
         </div>
 
@@ -162,18 +177,12 @@
     <div class="account_tabs">
 
       <ul class="nav nav-tabs nav-justified account_nav">
-        <li class="nav-item"><a class="nav-link" href="#" :class="{'active': link=='a'}"
-            @click.prevent=" link='a'">會員資料</a></li>
-        <li class="nav-item"><a class="nav-link" href="#" :class="{'active': link=='b'}"
-            @click.prevent=" link='b'">行程管理</a></li>
-        <li class="nav-item"><a class="nav-link" href="#" :class="{'active': link=='c'}"
-            @click.prevent=" link='c'">互動牆管理</a></li>
-        <li class="nav-item"><a class="nav-link" href="#" :class="{'active': link=='d'}"
-            @click.prevent=" link='d'">商城訂單</a></li>
-        <li class="nav-item"><a class="nav-link" href="#" :class="{'active': link=='e'}"
-            @click.prevent=" link='e'">收藏管理</a></li>
-        <li class="nav-item"><a class="nav-link" href="#" :class="{'active': link=='f'}"
-            @click.prevent=" link='f'">轉換積分</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" :class="{'active': link=='a'}" @click.prevent=" link='a'">會員資料</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" :class="{'active': link=='b'}" @click.prevent=" link='b'">行程管理</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" :class="{'active': link=='c'}" @click.prevent=" link='c'">互動牆管理</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" :class="{'active': link=='d'}" @click.prevent=" link='d'">商城訂單</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" :class="{'active': link=='e'}" @click.prevent=" link='e'">收藏管理</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" :class="{'active': link=='f'}" @click.prevent=" link='f'">轉換積分</a></li>
       </ul>
 
       <hr class="account_line">
@@ -182,63 +191,60 @@
 
         <!-- 會員資料 -->
         <div v-if="link ==='a'">
-          <div class="row info_form">
+          <div class="row info_form" v-for="(item,index) in customer" v-if="item.mem_no == <?php echo $_SESSION["mem_no"] ?>">
 
             <div class="col-md-auto align-self-start info_img">
               <div class="circle-image">
-                <img class="infoimg " ref="mem_pic" :src="customer.mem_pic">
+                <img class="infoimg " ref="mem_pic" :src="item.mem_pic">
               </div>
               <label @click="isChange = !isChange" v-if="!isChange">
-                <input @click="isChange = !isChange" v-if="!isChange" type="file" @change="fileChange"
-                  class="hideinput">
+                <input @click="isChange = !isChange" v-if="!isChange" type="file" @change="fileChange" class="hideinput">
                 <i class="btn img_input">上傳圖片</i>
               </label>
-              <button @click="saveImage" v-else-if="isChange" type="file"
-                class="btn btn-primary img_input">儲存編輯</button></br>
-              <button v-if="isChange" @click="isChange = false" type="file"
-                class="btn btn-primary img_input">取消編輯</button>
+              <button @click="saveImage" v-else-if="isChange" type="submit" class="btn btn-primary img_input">儲存編輯</button></br>
+              <button v-if="isChange" @click="isChange = false" type="file" class="btn btn-primary img_input">取消編輯</button>
             </div>
 
             <div class="col-md-auto align-self-center info_left center">
-              <div class="form-group">
-                <label for="exampleInputEmail1">暱稱</label></br>
-                <input type="text" class="form focus" ref="mem_id" :value="customer.mem_id" :disabled="!isEditing"
-                  :class="{view: !isEditing}"></br>
-              </div>
-              <div class="form-group">
-                <label for="exampleInputPassword1">姓名</label></br>
-                <input type="text" class="unform" id="" :value="customer.first_Name" disabled></br>
-              </div>
-              <div class="form-group">
-                <label for="exampleInputPassword1">性別</label></br>
-                <input type="text" class="unform" id="" :value="customer.gender" disabled></br>
-              </div>
-              <div class="form-group">
-                <label for="exampleInputPassword1">手機</label></br>
-                <div class="edit_text"><input type="text" class="form focus" ref="phone" :value="customer.phone"
-                    :disabled="!isEditing" :class="{view: !isEditing}"></div></br>
-              </div>
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">暱稱</label></br>
+                  <input type="text" class="form focus" ref="mem_id" :value="item.mem_id" :disabled="!isEditing" :class="{view: !isEditing}"></br>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">姓名</label></br>
+                  <input type="text" class="unform"  :value="item.first_name" disabled></br>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">性別</label></br>
+                  <!-- <input type="text" class="unform" :value="item.gender" disabled> -->
+                  <input v-if="item.gender == 1" type="text" class="unform" value="男" disabled></input>
+                  <input v-else="item.gender == 2" type="text" class="unform" value="女" disabled></input>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">手機</label></br>
+                  <div class="edit_text"><input type="text" class="form focus" ref="phone" :value="item.phone" :disabled="!isEditing" :class="{view: !isEditing}"></div></br>
+                </div>
             </div>
             <div class="col-md-auto align-self-end info_right center">
               <div class="form-group">
                 <label for="exampleInputPassword1">姓氏</label></br>
-                <input type="text" class="unform" id="" :value="customer.last_Name" disabled></br>
+                <input type="text" class="unform" id="" :value="item.last_name" disabled></br>
               </div>
               <div class="form-group">
                 <label for="exampleInputPassword1">生日</label></br>
-                <input type="text" class="unform" id="" :value="customer.bday" disabled></br>
+                <input type="text" class="unform" id="" :value="item.bday" disabled></br>
               </div>
               <div class="form-group">
                 <label for="exampleInputPassword1">地址</label></br>
-                <div class="edit_text"><input type="text" class="form focus" ref="address" :value="customer.address"
-                    :disabled="!isEditing" :class="{view: !isEditing}"></div></br>
+                <div class="edit_text"><input type="text" class="form focus" ref="item.address" :value="item.address" :disabled="!isEditing" :class="{view: !isEditing}"></div></br>
               </div>
+              </form>
             </div>
 
             <div class="col-md-auto align-self-start info_edit">
               <button @click="edit" v-if="!isEditing" type="button" class="btn btn-primary info_editbtn">編輯個人資料</button>
-              <button @click="save" v-else-if="isEditing" type="button"
-                class="btn btn-primary info_editbtn">儲存編輯</button></br>
+              <button @click="save" v-else-if="isEditing" type="button" class="btn btn-primary info_editbtn">儲存編輯</button></br>
               <button v-if="isEditing" @click="edit" type="button" class="btn btn-primary info_editbtn">取消編輯</button>
             </div>
 
@@ -248,12 +254,9 @@
         <!-- 行程管理 -->
         <div v-else-if="link ==='b'">
           <div class="heart_btns margin_top_3">
-            <button @click="visibility=3" :class="{'active': visibility == 3}" class="btn heartbtns p"
-              type="button">全部</button>
-            <button @click="visibility=0" :class="{'active': visibility == 0}" class="btn heartbtns p"
-              type="button">待出發</button>
-            <button @click="visibility=1" :class="{'active': visibility == 1}" class="btn heartbtns p"
-              type="button">已結束</button>
+            <button @click="visibility=3" :class="{'active': visibility == 3}" class="btn heartbtns p" type="button">全部</button>
+            <button @click="visibility=0" :class="{'active': visibility == 0}" class="btn heartbtns p" type="button">待出發</button>
+            <button @click="visibility=1" :class="{'active': visibility == 1}" class="btn heartbtns p" type="button">已結束</button>
           </div>
 
           <div class="tripcontent margin_top_3">
@@ -339,8 +342,7 @@
             <div class="postcontent">
               <div class="grid">
                 <div data-aos="fade-up" data-aos-duration="1000" class=" col-md-3 grid-item">
-                  <div class="img1" @mouseover="mouseMe"><img src="./img/photowall/samll/moon/moon_b1_ps.jpg" alt=""
-                      class="lazy"></div>
+                  <div class="img1" @mouseover="mouseMe"><img src="./img/photowall/samll/moon/moon_b1_ps.jpg" alt="" class="lazy"></div>
                   <div class="action-box">
                     <div class="heart"><img src="./img/icon/bookmark-outline.png" alt=""></div>
                     <div class="share"><img src="./img/icon/share.png" alt=""></div>
@@ -408,8 +410,7 @@
                   </div>
                 </div>
                 <div data-aos="fade-up" data-aos-duration="1000" class=" col-md-3 grid-item">
-                  <div class="img1" @mouseover="mouseMe"><img src="./img/photowall/samll/moon/moon_b1_ps.jpg" alt=""
-                      class="lazy"></div>
+                  <div class="img1" @mouseover="mouseMe"><img src="./img/photowall/samll/moon/moon_b1_ps.jpg" alt="" class="lazy"></div>
                   <div class="action-box">
                     <div class="heart"><img src="./img/icon/bookmark-outline.png" alt=""></div>
                     <div class="share"><img src="./img/icon/share.png" alt=""></div>
@@ -503,9 +504,8 @@
         <div v-else-if="link ==='d'">
 
           <div class="heart_btns">
-            <input type="date" id="date-1" class="btn orderbtns margin_top_3 btn-date data-down">
+            <input value="<?php echo date("Y-m-d");?>" type="date" id="date-1" class="btn orderbtns margin_top_3 btn-date data-down">
           </div>
-          <!-- value="<?php echo date("Y-m-d");?>"  -->
 
           <div class="ordercontent margin_top_3">
 
@@ -637,8 +637,7 @@
               <div class="post_card">
                 <div class="grid">
                   <div data-aos="fade-up" data-aos-duration="1000" class=" col-md-3 grid-item">
-                    <div class="img1" @mouseover="mouseMe"><img src="./img/photowall/samll/moon/moon_b1_ps.jpg" alt=""
-                        class="lazy"></div>
+                    <div class="img1" @mouseover="mouseMe"><img src="./img/photowall/samll/moon/moon_b1_ps.jpg" alt="" class="lazy"></div>
                     <div class="action-box">
                       <div class="heart"><img src="./img/icon/bookmark-outline.png" alt=""></div>
                       <div class="share"><img src="./img/icon/share.png" alt=""></div>
@@ -706,8 +705,7 @@
                     </div>
                   </div>
                   <div data-aos="fade-up" data-aos-duration="1000" class=" col-md-3 grid-item">
-                    <div class="img1" @mouseover="mouseMe"><img src="./img/photowall/samll/moon/moon_b1_ps.jpg" alt=""
-                        class="lazy"></div>
+                    <div class="img1" @mouseover="mouseMe"><img src="./img/photowall/samll/moon/moon_b1_ps.jpg" alt="" class="lazy"></div>
                     <div class="action-box">
                       <div class="heart"><img src="./img/icon/bookmark-outline.png" alt=""></div>
                       <div class="share"><img src="./img/icon/share.png" alt=""></div>
@@ -799,7 +797,6 @@
 
 
   <script>
-
     var account_tab = new Vue({
       el: "#accountapp",
       data: {
@@ -811,26 +808,13 @@
         visibility: 3,
         miles: 2,
         coin: 1,
-        customer: { //會員資料
-          mem_no: '1010006',
-          mem_lv: '初星者',
+        level: {
           lv_img: './img/icon/初星者.png',
-          miles: 7800,
-          coin: '58689',
-          mem_arr: '3',
-          mem_sp: '2',
-          mem_pic: './img/userprofile/user1.png',
-          mem_id: 'SPACED',
-          first_Name: 'John',
-          last_Name: 'Smith',
-          gender: '男',
-          bday: '1991/12/21',
-          phone: '0988123456',
-          address: '台北市大同區中正路一段32巷5弄7號',
           mem_next_lv: '天星者',
           mem_next_img: './img/icon/天星者.png',
           mem_next_miles: 100000,
         },
+        customer: [], //會員資料
 
         prod_order: [{ // 商品訂單+收件人
           ord_no: '#TW1637493',
@@ -879,7 +863,7 @@
           prod_point: '100',
           qty: '1',
         }],
-        
+
         spot_order: [], // 行程訂單+收件人
         spot_order_detail: [], // 行程訂單明細
 
@@ -941,17 +925,19 @@
         }],
       },
       methods: {
-        minus_lev: function () {  //計算與下一階段會員差距
-          return this.customer.mem_next_miles - this.customer.miles;
+        minus_lev: function() { //計算與下一階段會員差距
+          return this.level.mem_next_miles - this.customer.miles;
         },
         save() { // 修改儲存會員資料
           this.customer.mem_id = this.$refs['mem_id'].value;
           this.customer.phone = this.$refs['phone'].value;
           this.customer.address = this.$refs['address'].value;
+
           this.isEditing = !this.isEditing;
+
           $(".focus").removeAttr('style')
         },
-        edit() {  // 修改會員資料
+        edit() { // 修改會員資料
           if (this.isEditing) {
 
             // console.log('etest2')
@@ -968,24 +954,23 @@
             $(".focus").css('border-color', 'white');
           }
         },
-        fileChange(e) {  // 換照片
+        fileChange(e) { // 換照片
           let file = e.target.files[0];
           let readFile = new FileReader();
           readFile.readAsDataURL(file);
           readFile.addEventListener('load', this.loadImage);
         },
-        loadImage(e) {  // 上傳照片
+        loadImage(e) { // 上傳照片
           this.user.image = e.target.result;
         },
-        saveImage(e) {  // 儲存照片
+        saveImage(e) { // 儲存照片
           this.user.image = this.$refs['image'].value;
           this.isChange = !this.isChange;
         },
-        acitve(index) {  // 切換收藏分類
-          this.step = index
-          !this.active.includes(index) && this.active.push(index);
+        acitve(index) { // 切換收藏分類
+          this.step = index!this.active.includes(index) && this.active.push(index);
         },
-        toggleContent(e) {  // 展開滑出訂單明細
+        toggleContent(e) { // 展開滑出訂單明細
           this.toggle = !this.toggle;
           $('.toBeToggled').eq(e).toggle("show");
           if (this.toggle == true) {
@@ -996,21 +981,35 @@
             $(".order_icon").eq(e).attr("src", "./img/icon/drop-down-arrow.png");
           };
         },
-        miles2coin(){  // 轉換積分
+        miles2coin() { // 轉換積分
           this.coin = this.miles / 2
         },
-        mouseMe() {  // hover貼文功能
-          $('.img1').mouseover(function () {
+        mouseMe() { // hover貼文功能
+          $('.img1').mouseover(function() {
             $(this).parent().find(".action-box").css('display', 'flex');
           });
-          $('.img1').mouseout(function () {
+          $('.img1').mouseout(function() {
             $(this).parent().find(".action-box").css('display', 'none');
           });
         },
       },
-      mounted(){
-        fetch('./php/getspot_order.php').then(res => res.json()).then(res => this.spot_order = res);
-        fetch('./php/getspot_order_datail.php').then(res => res.json()).then(res => this.spot_order_detail = res);
+      mounted() {
+        // res是區域變數出去後不可使用
+        fetch('./php/account/getspot_order.php').then(res => res.json()).then(res => this.spot_order = res);
+        fetch('./php/account/getspot_order_datail.php').then(res => res.json()).then(res => this.spot_order_detail = res);
+        fetch('./php/account/getCustomer.php').then(res => res.json()).then(res => this.customer = res);
+
+
+        // )
+        // setTimeout(()=>{
+        //  console.log( this.customer);
+        // //  this.top1=this.mydata[0];
+        // //  this.top2=this.mydata[1];
+        // //  this.top3=this.mydata[2];
+        //  // this.mydata1.push(this.mydata[3]);
+        // console.log( this.mydata1)
+        // },1000);
+
       },
       computed: {
         travelstatus() {
@@ -1026,10 +1025,20 @@
       },
     });
 
-    window.onload = function () {        //  點擊menu變色
+
+    function show(){
+            fetch("./php/logout.php");
+            window.location.href = "./login.php";
+        }                               
+        function toggle(){
+            const infoData = document.querySelector(".infoData");
+            infoData.classList.toggle("show");
+        } 
+
+    window.onload = function() { //  點擊menu變色
       for (var i = 0; i < document.links.length; i++) {
         var thisLink = document.links[i];
-        thisLink.onclick = function () {
+        thisLink.onclick = function() {
           for (var i = 0; i < document.links.length; i++) {
             document.links[i].style = "";
           }
@@ -1037,7 +1046,6 @@
         }
       }
     };
-
   </script>
 
 </body>
