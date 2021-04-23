@@ -91,7 +91,7 @@ try {
 if( $errMsg != ""){ //例外
   echo "<div><center>$errMsg</center></div>";
 }elseif($order->rowCount()==0){
-      echo "<div><center>查無此商品資料</center></div>";
+      echo "<div><center>查無此會員資料</center></div>";
 }else{
       $orders = $order->fetchObject();
 ?>
