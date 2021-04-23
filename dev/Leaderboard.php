@@ -34,11 +34,7 @@ session_start();
     <li class="margin_left_5"><a href="planet.php">星星世界</a></li>
     <li class="margin_left_5"><a href="shop.php">星球商城</a></li>
     <li class="margin_left_5"><a href="photowall.php">太空互動</a></li>
-<<<<<<< HEAD
-    <li class="margin_left_5"><a href="Leaderboard.php">玩家排行</a></li>
-=======
     <li class="margin_left_5"><a href="Leaderboard.php" class="bread">玩家排行</a></li>
->>>>>>> dev
     <!-- <li><a href=""><img src="./images/ticket.png" alt="" class="icon"></a></li>
         <li><a href=""><img src="./images/shopping-cart_(1).png" alt="" class="icon"></a></li>
         <li><a href=""><img src="./images/round-account-button-with-user-inside_(1).png" alt="" class="icon"></a></li> -->
@@ -73,7 +69,15 @@ session_start();
     <li>
         <?php
             if(isset($_SESSION['mem_no'])){?>
-                <a href="./account.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png" alt="" class="icon"/></a>
+                <div class="member"  onclick="toggle()">
+                    <div class="info">
+                        <img src="<?= $_SESSION['mem_pic'] ?>" alt="">
+                        <div class="infoData">
+                            <a href="./account.php">會員中心</a>
+                            <a href="./login.php" onclick="show()">登出</a>
+                        </div>
+                    </div>  
+                </div>
         <?php }else{ ?>
                 <a href="./login.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png" alt="" class="icon"/></a>
         <?php } ?>
