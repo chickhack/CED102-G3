@@ -149,7 +149,7 @@ $_SESSION["mem_no"]=1010007;
         </div>
 
         <div class="lev_acc">
-          <little><span>12個月內累積</span></little>
+          <small><span>12個月內累積</span></small>
         </div>
 
         <div class="your_acc" v-for="(item,index) in customer" v-if="item.mem_no == <?php echo $_SESSION["mem_no"] ?>">
@@ -224,11 +224,11 @@ $_SESSION["mem_no"]=1010007;
                 </div>
                 <div class="form-group">
                   <label for="exampleInputPassword1">姓名</label></br>
-                  <input type="text" class="unform" id="" :value="item.first_name" disabled></br>
+                  <input type="text" class="unform"  :value="item.first_name" disabled></br>
                 </div>
                 <div class="form-group">
                   <label for="exampleInputPassword1">性別</label></br>
-                  <!-- <input type="text" class="unform" id="" :value="item.gender" disabled> -->
+                  <!-- <input type="text" class="unform" :value="item.gender" disabled> -->
                   <input v-if="item.gender == 1" type="text" class="unform" value="男" disabled></input>
                   <input v-else="item.gender == 2" type="text" class="unform" value="女" disabled></input>
                 </div>
@@ -241,11 +241,11 @@ $_SESSION["mem_no"]=1010007;
               <div class="col-md-auto align-self-end info_right center">
                 <div class="form-group">
                   <label for="exampleInputPassword1">姓氏</label></br>
-                  <input type="text" class="unform" id="" :value="item.last_name" disabled></br>
+                  <input type="text" class="unform" :value="item.last_name" disabled></br>
                 </div>
                 <div class="form-group">
                   <label for="exampleInputPassword1">生日</label></br>
-                  <input type="text" class="unform" id="" :value="item.bday" disabled></br>
+                  <input type="text" class="unform"  :value="item.bday" disabled></br>
                 </div>
                 <div class="form-group">
                   <label for="exampleInputPassword1">地址</label></br>
