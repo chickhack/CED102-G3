@@ -21,8 +21,14 @@
         <img class="logo" src="img/logo.png" alt="">
         <div class="link">
             <a href="home.php" class="btn btn-4"><span>前台</span></a>
+<<<<<<< HEAD
             <a href="backstage/spaced_backstage_trip.php" class="btn btn-4"><span>後台</span></a>
       
+=======
+            <a href="adminLogin.php" class="btn btn-4"><span>後台</span></a>
+            <!-- <a href="backstage/spaced_backstage_trip.php" class="btn btn-4"><span>後台</span></a> -->
+
+>>>>>>> KAI
         </div>
         <div class="tibame">
                 <span class="line_low">©2021 CED102 G3 SPACED <br>

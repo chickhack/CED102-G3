@@ -72,7 +72,7 @@ $spottrev ->execute();
                     <p class="wi-15 text-1">評價日期</p>
                     <p class="wi-15 text-1">評分</p>
                     <p class="wi-20 text-1">評價內容</p>
-                    <!-- <p class="wi-10 text-1">選擇上下架</p> -->
+                    <p class="wi-15 text-1">狀態</p>
 
                 </div>
             </div>
@@ -89,11 +89,11 @@ while($spottrevRow = $spottrev->fetch(PDO::FETCH_ASSOC)){
                         <p class="wi-15 text-1"><?=$spottrevRow["trev_date"]?></p>
                         <p class="wi-15 text-1"><?=$spottrevRow["trev_score"]?></p>
                         <p class="wi-20 text-1"><?=$spottrevRow["trev"]?></p>
-                        <p class="wi-10 text-1"> <?php
+                        <p class="wi-5 text-1"> <?php
                         if($spottrevRow['trev_stats'] == 0){
-                            echo "<p class='wi-5 text-1'><a href='../php/backstage/trip/edit_backstage_trip_reviews.php?trev_no=$spottrevRow[trev_no]&trev_stats=$spottrevRow[trev_stats]' name='update' type='button' class='btn btn-primary btn-sm'>上架</a></p>";
+                            echo "<p class='wi-5 text-1'><a href='../php/backstage/trip/edit_backstage_trip_reviews.php?trev_no=$spottrevRow[trev_no]&trev_stats=$spottrevRow[trev_stats]' name='update' type='button' class='btn btn-primary btn-sm'>顯示</a></p>";
                         }else{
-                            echo "<p class='wi-5 text-1'><a href='../php/backstage/trip/edit_backstage_trip_reviews.php?trev_no=$spottrevRow[trev_no]&trev_stats=$spottrevRow[trev_stats]' name='update' type='button' class='btn btn-danger btn-sm'>下架</a></p>";
+                            echo "<p class='wi-5 text-1'><a href='../php/backstage/trip/edit_backstage_trip_reviews.php?trev_no=$spottrevRow[trev_no]&trev_stats=$spottrevRow[trev_stats]' name='update' type='button' class='btn btn-danger btn-sm'>隱藏</a></p>";
                             }
                     ?></p>
                        

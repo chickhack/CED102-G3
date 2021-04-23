@@ -2,9 +2,12 @@
 session_start();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 $_SESSION["mem_no"]=1010001;
 =======
 >>>>>>> chickhack
+=======
+>>>>>>> KAI
 ?>
 
 <!DOCTYPE html>
@@ -96,6 +99,7 @@ $_SESSION["mem_no"]=1010001;
         </li>
         <li>
 <<<<<<< HEAD
+<<<<<<< HEAD
           <?php
           if (isset($_SESSION['mem_no'])) { ?>
             <div class="member" onclick="toggle()">
@@ -112,6 +116,8 @@ $_SESSION["mem_no"]=1010001;
           <?php } ?>
         </li>
 =======
+=======
+>>>>>>> KAI
                 <?php
                     if(isset($_SESSION['mem_no'])){?>
                         <div class="member"  onclick="toggle()">
@@ -127,7 +133,10 @@ $_SESSION["mem_no"]=1010001;
                         <a href="./login.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png" alt="" class="icon"/></a>
                 <?php } ?>
             </li>
+<<<<<<< HEAD
 >>>>>>> chickhack
+=======
+>>>>>>> KAI
       </ul>
       <div class="burger">
         <div class="line1"></div>
@@ -1049,7 +1058,7 @@ $_SESSION["mem_no"]=1010001;
         // res是區域變數出去後不可使用
         fetch('./php/account/getspot_order.php').then(res => res.json()).then(res => this.spot_order = res);
         fetch('./php/account/getspot_order_datail.php').then(res => res.json()).then(res => this.spot_order_detail = res);
-        fetch('./php/account/getCustomer.php').then(res => res.json()).then(res => this.customer = res);
+        fetch('./php/account/getcustomer.php').then(res => res.json()).then(res => this.customer = res);
         
 
         // )
