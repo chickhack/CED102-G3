@@ -50,6 +50,9 @@ try {
 		// $ff=$pdo->lastInsertId();//這會去抓取最後新增的ID，要放在新增送出之後
 
 			// echo "新增成功~". "<br>";
+			echo '<script language="javascript">';
+			echo 'alert(新增成功)';  //not showing an alert box.
+			echo '</script>';
 			echo "<script>window.location.href='../../../backstage/spaced_backstage_trip.php'</script>";
 
 		}else{

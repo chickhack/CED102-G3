@@ -10,5 +10,8 @@
     background-size: contain;
     background-repeat: no-repeat;
     animation: float 3s cubic-bezier(.1, .1, .88, .88) infinite;
-
+    z-index: 10;
+    @include respond(mobile){
+        background-image: none;
+    }
 }
