@@ -43,8 +43,5 @@
     }catch(PDOException $e){
         echo $e->getMessage();
     }
-<<<<<<< HEAD
-=======
     unset($_SESSION['cart']);
->>>>>>> 4ac592c9c7147349477b61321ddc551065e9e32b
 ?>
