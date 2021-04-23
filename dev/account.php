@@ -1,3 +1,9 @@
+<?php
+session_start();
+
+$_SESSION["mem_no"]=1010007;
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -113,28 +119,32 @@
 
     <div class="">
 
-      <div class="welcome">
+      <div class="welcome" v-for="(item,index) in customer" v-if="item.mem_no == <?php echo $_SESSION["mem_no"] ?>">
         <div class="spacedinfo">
           <p class="account_hi">嗨，</p>
-          <p class="account_logo">{{customer.mem_id}}!</p><br>
+          <p class="account_logo">{{item.mem_id}}!</p><br>
           <p class="account_numlogo">SPACED</p>
           <p class="account_acnum">會員編號：</p>
-          <p class="account_num">{{customer.mem_no}}</p>
+          <p class="account_num">{{item.mem_no}}</p>
         </div>
-        <img class="account_levimg" :src="customer.lv_img" alt="lev">
+        <!-- <img class="account_levimg" :src="customer.lv_img" alt="lev"> -->
+        <div>
+          <img v-if="item.mem_lv == '初星者'" :src="level.lv_img" class="account_levimg">
+          <img v-else :src="level.mem_next_img" class="account_levimg">
+        </div>
       </div>
 
-      <div class="account_card">
+      <div class="account_card" v-for="(item,index) in customer" v-if="item.mem_no == <?php echo $_SESSION["mem_no"] ?>">
 
         <div class="your_nowlev row align-items-center">
-          <div class="col col-md-auto lev_name">{{customer.mem_lv}}</div>
+          <div class="col col-md-auto lev_name">{{item.mem_lv}}</div>
           <div class="col-md-auto"><img class="littleline" src="./img/icon/littleline.png" alt=""></div>
           <div class="col account_total">累積旅行
-            <span class="accnum">{{customer.mem_arr}} </span>顆星球、
-            <span class="accnum">{{customer.mem_sp}} </span>個景點
+            <span class="accnum">{{item.mem_arr}} </span>顆星球、
+            <span class="accnum">{{item.mem_sp}} </span>個景點
           </div>
           <div class="col col-md-auto account_money">目前持有
-            <span class="accmoney">{{customer.coin}}</span>宇宙幣
+            <span class="accmoney">{{item.coin}}</span>宇宙幣
           </div>
         </div>
 
@@ -142,16 +152,22 @@
           <little><span>12個月內累積</span></little>
         </div>
 
-        <div class="your_acc">
+        <div class="your_acc" v-for="(item,index) in customer" v-if="item.mem_no == <?php echo $_SESSION["mem_no"] ?>">
           <div class="now_lev align-items-center">
-            <img class="nowlev" :src="customer.lv_img" alt="lev"><br>
-            <p class="nowacc">{{customer.miles}} 積分</p>
+            <!-- <img class="nowlev" :src="level.lv_img" alt="lev"><br> -->         
+            <img v-if="item.mem_lv == '初星者'" :src="level.lv_img" class="nowlev">
+            <img v-else :src="level.mem_next_img" class="nowlev">
+            <br><p class="nowacc">{{item.miles}} 積分</p>
           </div>
-          <div class="next_rocket"><img class="account_rocket" src="./img/icon/rocket4.png" alt="rocket"></div>
+          <div class="next_rocket">
+            <img class="account_rocket" src="./img/icon/rocket4.png" alt="rocket">
+          </div>
           <div class="next_lev align-items-center">
-            <img class="nextlev" :src="customer.mem_next_img" alt="lev"><br class="none">
-            <p class="nextacc">目前尚需 {{ minus_lev() }} 積分</p>
-            <p class="nextacc">才能升級至 {{customer.mem_next_lv}}</p>
+            <!-- <img class="nextlev" :src="level.mem_next_img" alt="lev"><br class="none"> -->
+            <img class="nextlev" :src="level.mem_next_img"><br>
+            <p class="nextacc">目前尚需 {{ level.mem_next_miles - item.miles}} 積分</p>
+            <p class="nextacc" v-if="item.mem_lv == '天星者'">才能維持 {{level.mem_next_lv}}</p>
+            <p class="nextacc" v-else>才能升級至 {{level.mem_next_lv}}</p>
           </div>
         </div>
 
@@ -182,57 +198,61 @@
 
         <!-- 會員資料 -->
         <div v-if="link ==='a'">
-          <div class="row info_form">
+          <div class="row info_form" v-for="(item,index) in customer" v-if="item.mem_no == <?php echo $_SESSION["mem_no"] ?>">
 
             <div class="col-md-auto align-self-start info_img">
               <div class="circle-image">
-                <img class="infoimg " ref="mem_pic" :src="customer.mem_pic">
+                <img class="infoimg " ref="mem_pic" :src="item.mem_pic">
               </div>
               <label @click="isChange = !isChange" v-if="!isChange">
                 <input @click="isChange = !isChange" v-if="!isChange" type="file" @change="fileChange"
                   class="hideinput">
                 <i class="btn img_input">上傳圖片</i>
               </label>
-              <button @click="saveImage" v-else-if="isChange" type="file"
+              <button @click="saveImage" v-else-if="isChange" type="submit"
                 class="btn btn-primary img_input">儲存編輯</button></br>
               <button v-if="isChange" @click="isChange = false" type="file"
                 class="btn btn-primary img_input">取消編輯</button>
             </div>
 
             <div class="col-md-auto align-self-center info_left center">
-              <div class="form-group">
-                <label for="exampleInputEmail1">暱稱</label></br>
-                <input type="text" class="form focus" ref="mem_id" :value="customer.mem_id" :disabled="!isEditing"
-                  :class="{view: !isEditing}"></br>
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">暱稱</label></br>
+                  <input type="text" class="form focus" ref="mem_id" :value="item.mem_id" :disabled="!isEditing"
+                    :class="{view: !isEditing}"></br>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">姓名</label></br>
+                  <input type="text" class="unform" id="" :value="item.first_name" disabled></br>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">性別</label></br>
+                  <!-- <input type="text" class="unform" id="" :value="item.gender" disabled> -->
+                  <input v-if="item.gender == 1" type="text" class="unform" value="男" disabled></input>
+                  <input v-else="item.gender == 2" type="text" class="unform" value="女" disabled></input>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">手機</label></br>
+                  <div class="edit_text"><input type="text" class="form focus" ref="phone" :value="item.phone"
+                      :disabled="!isEditing" :class="{view: !isEditing}"></div></br>
+                </div>
               </div>
-              <div class="form-group">
-                <label for="exampleInputPassword1">姓名</label></br>
-                <input type="text" class="unform" id="" :value="customer.first_Name" disabled></br>
-              </div>
-              <div class="form-group">
-                <label for="exampleInputPassword1">性別</label></br>
-                <input type="text" class="unform" id="" :value="customer.gender" disabled></br>
-              </div>
-              <div class="form-group">
-                <label for="exampleInputPassword1">手機</label></br>
-                <div class="edit_text"><input type="text" class="form focus" ref="phone" :value="customer.phone"
-                    :disabled="!isEditing" :class="{view: !isEditing}"></div></br>
-              </div>
-            </div>
-            <div class="col-md-auto align-self-end info_right center">
-              <div class="form-group">
-                <label for="exampleInputPassword1">姓氏</label></br>
-                <input type="text" class="unform" id="" :value="customer.last_Name" disabled></br>
-              </div>
-              <div class="form-group">
-                <label for="exampleInputPassword1">生日</label></br>
-                <input type="text" class="unform" id="" :value="customer.bday" disabled></br>
-              </div>
-              <div class="form-group">
-                <label for="exampleInputPassword1">地址</label></br>
-                <div class="edit_text"><input type="text" class="form focus" ref="address" :value="customer.address"
-                    :disabled="!isEditing" :class="{view: !isEditing}"></div></br>
-              </div>
+              <div class="col-md-auto align-self-end info_right center">
+                <div class="form-group">
+                  <label for="exampleInputPassword1">姓氏</label></br>
+                  <input type="text" class="unform" id="" :value="item.last_name" disabled></br>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">生日</label></br>
+                  <input type="text" class="unform" id="" :value="item.bday" disabled></br>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">地址</label></br>
+                  <div class="edit_text"><input type="text" class="form focus" ref="item.address" :value="item.address"
+                      :disabled="!isEditing" :class="{view: !isEditing}"></div></br>
+                </div>
+              </form>
             </div>
 
             <div class="col-md-auto align-self-start info_edit">
@@ -811,26 +831,13 @@
         visibility: 3,
         miles: 2,
         coin: 1,
-        customer: { //會員資料
-          mem_no: '1010006',
-          mem_lv: '初星者',
+        level: {
           lv_img: './img/icon/初星者.png',
-          miles: 7800,
-          coin: '58689',
-          mem_arr: '3',
-          mem_sp: '2',
-          mem_pic: './img/userprofile/user1.png',
-          mem_id: 'SPACED',
-          first_Name: 'John',
-          last_Name: 'Smith',
-          gender: '男',
-          bday: '1991/12/21',
-          phone: '0988123456',
-          address: '台北市大同區中正路一段32巷5弄7號',
           mem_next_lv: '天星者',
           mem_next_img: './img/icon/天星者.png',
           mem_next_miles: 100000,
         },
+        customer: [],//會員資料
 
         prod_order: [{ // 商品訂單+收件人
           ord_no: '#TW1637493',
@@ -942,13 +949,15 @@
       },
       methods: {
         minus_lev: function () {  //計算與下一階段會員差距
-          return this.customer.mem_next_miles - this.customer.miles;
+          return this.level.mem_next_miles - this.customer.miles;
         },
         save() { // 修改儲存會員資料
           this.customer.mem_id = this.$refs['mem_id'].value;
           this.customer.phone = this.$refs['phone'].value;
           this.customer.address = this.$refs['address'].value;
+
           this.isEditing = !this.isEditing;
+
           $(".focus").removeAttr('style')
         },
         edit() {  // 修改會員資料
@@ -1009,8 +1018,22 @@
         },
       },
       mounted(){
-        fetch('./php/getspot_order.php').then(res => res.json()).then(res => this.spot_order = res);
-        fetch('./php/getspot_order_datail.php').then(res => res.json()).then(res => this.spot_order_detail = res);
+        // res是區域變數出去後不可使用
+        fetch('./php/account/getspot_order.php').then(res => res.json()).then(res => this.spot_order = res);
+        fetch('./php/account/getspot_order_datail.php').then(res => res.json()).then(res => this.spot_order_detail = res);
+        fetch('./php/account/getCustomer.php').then(res => res.json()).then(res => this.customer = res);
+        
+
+        // )
+        // setTimeout(()=>{
+        //  console.log( this.customer);
+        // //  this.top1=this.mydata[0];
+        // //  this.top2=this.mydata[1];
+        // //  this.top3=this.mydata[2];
+        //  // this.mydata1.push(this.mydata[3]);
+         // console.log( this.mydata1)
+        // },1000);
+
       },
       computed: {
         travelstatus() {

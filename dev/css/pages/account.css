@@ -4032,11 +4032,15 @@ div.bk3 {
   font-size: 20px;
 }
 
-.welcome .spacedinfo .account_hi, .welcome .spacedinfo .account_acnum {
+.welcome .spacedinfo .account_hi, .welcome .spacedinfo .account_acnum, .welcome .spacedinfo .account_logo {
   font-family: "Microsoft JhengHei";
 }
 
-.welcome .spacedinfo .account_logo, .welcome .spacedinfo .account_numlogo {
+.welcome .spacedinfo .account_logo {
+  letter-spacing: 5px;
+}
+
+.welcome .spacedinfo .account_numlogo {
   font-family: "Nasalization";
   letter-spacing: 5px;
 }

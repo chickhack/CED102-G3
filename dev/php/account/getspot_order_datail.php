@@ -1,8 +1,9 @@
 <?php
 session_start();
 $mem_no=$_SESSION["mem_no"];
+
 try {
-	require_once("../connect_ced102_g3_local.php");
+	require_once("./connect_ced102_g3_local.php");
 	
 	$sql = "SELECT * FROM spot_order a INNER join spot_order_datail b on a.order_no=b.order_no WHERE mem_no=$mem_no";
 	
