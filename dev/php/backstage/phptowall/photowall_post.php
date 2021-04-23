@@ -1,3 +1,6 @@
+<?php
+  session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,15 +25,15 @@ try {
 		$pathinfoArr1 = pathinfo($_FILES["upFile1"]["name"]); //第一個[]接收post.php的name
 		$filename1 = "{$uniqid1}.{$pathinfoArr1["extension"]}";
 		//---先檢查images資料夾存不存在
-		if(file_exists("../images") === false){
-			mkdir("../images");
+		if(file_exists("../../../img/photowall/post") == false){
+			mkdir("../../../img/photowall/post");
 		}
 		// $ff=$pdo->lastInsertId();//這會去抓取最後新增的ID，放在新曾送出後
 		// $_SESSION["name"]=2;		//=============================去抓會員是誰
 		// $fff=$_SESSION["name"];
 		//---將檔案copy到要放的路徑
 		$from1 = $_FILES["upFile1"]["tmp_name"];//圖檔從我點選的名字
-		$to1 = "../images/$filename1";//把$filename放到images資料夾
+		$to1 = "../../../img/photowall/post/$filename1";//把$filename放到images資料夾
     copy( $from1, $to1);}
     else{$filename1 = null;}
     if( $_FILES["upFile2"]["error"] == UPLOAD_ERR_OK){
@@ -42,15 +45,15 @@ try {
       $pathinfoArr2 = pathinfo($_FILES["upFile2"]["name"]); //第一個[]接收post.php的name
       $filename2 = "{$uniqid2}.{$pathinfoArr2["extension"]}";
       //---先檢查images資料夾存不存在
-      if(file_exists("../images") === false){
-        mkdir("../images");
+      if(file_exists("../../../img/photowall/post") === false){
+        mkdir("../../../img/photowall/post");
       }
       // $ff=$pdo->lastInsertId();//這會去抓取最後新增的ID，放在新曾送出後
       // $_SESSION["name"]=2;		//=============================去抓會員是誰
       // $fff=$_SESSION["name"];
       //---將檔案copy到要放的路徑
       $from2 = $_FILES["upFile2"]["tmp_name"];//圖檔從我點選的名字
-      $to2 = "../images/$filename2";//把$filename放到images資料夾
+      $to2 = "../../../img/photowall/post/$filename2";//把$filename放到images資料夾
       copy( $from2, $to2);}
       else{$filename2 = null;}
       if( $_FILES["upFile3"]["error"] == UPLOAD_ERR_OK){
@@ -62,15 +65,15 @@ try {
         $pathinfoArr3 = pathinfo($_FILES["upFile3"]["name"]); //第一個[]接收post.php的name
         $filename3 = "{$uniqid3}.{$pathinfoArr3["extension"]}";
         //---先檢查images資料夾存不存在
-        if(file_exists("../images") === false){
-          mkdir("../images");
+        if(file_exists("../../../img/photowall/post") === false){
+          mkdir("../../../img/photowall/post");
         }
         // $ff=$pdo->lastInsertId();//這會去抓取最後新增的ID，放在新曾送出後
         // $_SESSION["name"]=2;		//=============================去抓會員是誰
         // $fff=$_SESSION["name"];
         //---將檔案copy到要放的路徑
         $from3 = $_FILES["upFile3"]["tmp_name"];//圖檔從我點選的名字
-        $to3 = "../images/$filename3";//把$filename放到images資料夾
+        $to3 = "../../../img/photowall/post/$filename3";//把$filename放到images資料夾
         copy( $from3, $to3);}
         else{$filename3 = null;}
 		// if(copy( $from, $to)===true){
@@ -88,7 +91,7 @@ try {
 			$products -> execute();
 		// $ff=$pdo->lastInsertId();//這會去抓取最後新增的ID，要放在新增送出之後  資料表除了有空直的不允許空直，基本上都要輸入，是否有些可以允許空直，就直接新增。
 
-
+      echo "<script>window.location.href = '../../../photowall.php'</script>";
 // 			echo "新增成功~";
 // 		}else{
 // 			echo "失敗~";
