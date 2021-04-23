@@ -414,17 +414,7 @@ nav .nav-links a {
   width: 100%;
   color: #ffffff;
   padding: 8px;
-<<<<<<< HEAD
   -webkit-transition: all .3s;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-  -webkit-transition: all .3s;
->>>>>>> denis
-=======
->>>>>>> KAI
->>>>>>> a08664c73a429d97437735d23f749a7d388ac617
   transition: all .3s;
 }
 
@@ -945,12 +935,6 @@ input[type=number] {
   display: none;
 }
 
-.img1:hover .action-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .grid .grid-item .img1 img {
   width: 100%;
   -o-object-fit: cover;
@@ -1100,6 +1084,8 @@ footer.padding_top_5 {
   z-index: 2;
   top: 100px;
   padding-top: 35px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .row {
@@ -1115,9 +1101,9 @@ button.turnoff_lightbox {
 }
 
 button.turnoff_lightbox img {
-  width: 30px;
+  width: 20px;
   position: absolute;
-  top: 5px;
+  top: 10px;
   right: 10px;
 }
 

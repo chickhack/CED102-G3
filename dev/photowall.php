@@ -99,7 +99,7 @@
   <div class="grid">
     <!-- ==========資料庫卡片===== -->
     <div data-aos="fade-up" @click="openlightbox(card.post_no)" data-aos-duration="1000" class=" col-md-3 grid-item" v-for="card in getpost" >
-    <div class="img1"><img :src="card.post_pic1" alt="" class="lazy">
+    <div class="img1"><img :src="'./img/photowall/post/'+card.post_pic1" alt="" class="lazy">
         <div class="action-box">
 			<div class="heart"><img src="./img/icon/bookmark-outline.png" alt=""></div>
 			<div class="share"><img src="./img/icon/share.png" alt=""></div>
@@ -127,15 +127,15 @@
     </button>
 
     <div class="img-switch col-12 col-md-12 col-lg-6 col-xl-6">
-    <img src="./img/photowall/big/mars_b1.jpg" alt="" id="BIG">
+    <img :src="'./img/photowall/post/'+targetPost.post_pic1" alt="" id="BIG">
     <div id="SMALL">
-    	<img :src="targetPost.post_pic1" alt="" width="150px" id="a"@click="chagePhoto1">
+    	<img :src="'./img/photowall/post/'+targetPost.post_pic1" alt="" width="150px" id="a"@click="chagePhoto1">
 
 
-        <img :src="targetPost.post_pic2" alt="" width="150px" id="b"@click="chagePhoto2">
+        <img :src="'./img/photowall/post/'+targetPost.post_pic2" alt="" width="150px" id="b"@click="chagePhoto2">
 
 
-        <img :src="targetPost.post_pic3" alt="" width="150px" id="c" @click="chagePhoto3">
+        <img :src="'./img/photowall/post/'+targetPost.post_pic3" alt="" width="150px" id="c" @click="chagePhoto3">
     </div>
     </div>
  <!-- ============發文及留言區============= -->
@@ -188,7 +188,7 @@
 			</div>
 		</div>
 		<form action="" class="post_message">
-			<input type="text" placeholder="留言...." >
+			<!-- <input type="text" placeholder="留言...." > -->
 		</form>
 		
      	</div>
@@ -352,18 +352,18 @@
 
 		chagePhoto1(){
 			const bigPhoto = document.getElementById('BIG')
-			bigPhoto.setAttribute('src',this.targetPost.post_pic1)
+			bigPhoto.setAttribute('src',"./img/photowall/post/" + this.targetPost.post_pic1)
 			console.log(this.targetPost.post_pic1)
 		},
 
 		chagePhoto2(){
 			const bigPhoto = document.getElementById('BIG')
-			bigPhoto.setAttribute('src',this.targetPost.post_pic2)
+			bigPhoto.setAttribute('src',"./img/photowall/post/" + this.targetPost.post_pic2)
 			console.log(this.targetPost.post_pic2)
 		},
 		chagePhoto3(){
 			const bigPhoto = document.getElementById('BIG')
-			bigPhoto.setAttribute('src',this.targetPost.post_pic3)
+			bigPhoto.setAttribute('src',"./img/photowall/post/" + this.targetPost.post_pic3)
 			console.log(this.targetPost.post_pic3)
 		},
     },
