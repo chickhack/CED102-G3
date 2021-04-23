@@ -396,13 +396,6 @@ nav .nav-links a {
   width: 100%;
   color: #ffffff;
   padding: 8px;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-  -webkit-transition: all .3s;
->>>>>>> denis
-=======
->>>>>>> KAI
   transition: all .3s;
 }
 
@@ -429,6 +422,69 @@ nav .nav-icons {
   justify-content: space-around;
   width: 12%;
   margin-left: 50px;
+}
+
+@media all and (max-width: 768px) {
+  nav .nav-icons {
+    justify-content: space-between;
+  }
+}
+
+nav .nav-icons .member {
+  position: relative;
+}
+
+nav .nav-icons .info {
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+}
+
+nav .nav-icons .info img {
+  width: 40px;
+}
+
+@media all and (max-width: 768px) {
+  nav .nav-icons .info img {
+    width: 30px;
+  }
+}
+
+nav .nav-icons .info .infoData {
+  position: absolute;
+  background-color: #AD6E4A;
+  width: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+}
+
+nav .nav-icons .info .infoData::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background-color: #AD6E4A;
+  position: absolute;
+  z-index: 0;
+}
+
+nav .nav-icons .info .infoData a {
+  text-align: center;
+  color: #0c0d18;
+  transition: all .3s;
+  padding: 10px 0;
+  z-index: 1;
+}
+
+nav .nav-icons .info .infoData a:hover {
+  color: #dec2b2;
+}
+
+nav .nav-icons .info .show {
+  display: block;
 }
 
 nav .burger {
@@ -458,23 +514,20 @@ nav .nav-cart .count {
   text-align: center;
   line-height: 1.5rem;
   position: absolute;
-  -webkit-transform: translate(50%, -150%);
-          transform: translate(50%, -150%);
+  transform: translate(50%, -150%);
   display: block;
   color: white;
 }
 
 @media all and (max-width: 992px) {
   nav .nav-cart .count {
-    -webkit-transform: translate(100%, -150%);
-            transform: translate(100%, -150%);
+    transform: translate(100%, -150%);
   }
 }
 
 @media all and (max-width: 768px) {
   nav .nav-cart .count {
-    -webkit-transform: translate(40%, -170%);
-            transform: translate(40%, -170%);
+    transform: translate(40%, -170%);
     width: 20px;
     height: 20px;
     font-size: 12px;
@@ -495,23 +548,20 @@ nav .nav-trip .trip-count {
   text-align: center;
   line-height: 1.5rem;
   position: absolute;
-  -webkit-transform: translate(50%, -150%);
-          transform: translate(50%, -150%);
+  transform: translate(50%, -150%);
   display: block;
   color: white;
 }
 
 @media all and (max-width: 992px) {
   nav .nav-trip .trip-count {
-    -webkit-transform: translate(100%, -150%);
-            transform: translate(100%, -150%);
+    transform: translate(100%, -150%);
   }
 }
 
 @media all and (max-width: 768px) {
   nav .nav-trip .trip-count {
-    -webkit-transform: translate(40%, -170%);
-            transform: translate(40%, -170%);
+    transform: translate(40%, -170%);
     width: 20px;
     height: 20px;
     font-size: 12px;
@@ -551,7 +601,7 @@ nav .nav-trip .trip-count {
     justify-content: flex-end;
   }
   nav .nav-icons .icon {
-    margin: 0 30px 0 15px;
+    margin: 0 50px 0 15px;
   }
   nav .burger {
     display: block;
@@ -713,8 +763,7 @@ input[type=number] {
   height: 100px;
   background-size: contain;
   background-repeat: no-repeat;
-  -webkit-animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
-          animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+  animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
 }
 
 .container-fluid {
@@ -790,29 +839,10 @@ button:hover {
 }
 
 .planet_tab ul.tab-title {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> KAI
   display: flex;
   justify-content: center;
   column-gap: 3%;
   flex-wrap: wrap;
-<<<<<<< HEAD
-=======
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-column-gap: 3%;
-          column-gap: 3%;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
->>>>>>> denis
-=======
->>>>>>> KAI
   list-style: none;
 }
 
@@ -831,16 +861,7 @@ button:hover {
 
 @media all and (max-width: 768px) {
   .planet_tab ul.tab-title {
-<<<<<<< HEAD
-<<<<<<< HEAD
     column-gap: 1%;
-=======
-    -webkit-column-gap: 1%;
-            column-gap: 1%;
->>>>>>> denis
-=======
-    column-gap: 1%;
->>>>>>> KAI
   }
   .planet_tab ul.tab-title li a {
     font-size: 14px;
@@ -863,42 +884,14 @@ button:hover {
 
 .planet_tab .tab-inner {
   display: flex;
-<<<<<<< HEAD
-<<<<<<< HEAD
   flex-direction: column;
-=======
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
->>>>>>> denis
-=======
-  flex-direction: column;
->>>>>>> KAI
   text-align: left;
 }
 
 .planet_tab .tab-inner .tab_top {
-<<<<<<< HEAD
-<<<<<<< HEAD
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-=======
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
->>>>>>> denis
-=======
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
->>>>>>> KAI
   padding: 0 15%;
 }
 
@@ -921,48 +914,17 @@ button:hover {
 }
 
 .planet_tab .tab-inner .tab_top .data {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-  display: -webkit-box;
-  display: -ms-flexbox;
->>>>>>> denis
-=======
->>>>>>> KAI
   display: flex;
   font-family: Haettenschweiler, sans-serif;
 }
 
 .planet_tab .tab-inner .tab_top .data .grav, .planet_tab .tab-inner .tab_top .data .day, .planet_tab .tab-inner .tab_top .data .temp {
   padding: 5px 0;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> KAI
   justify-content: center;
   align-items: center;
   border: 1px solid #AD6E4A;
   display: flex;
   flex-direction: column;
-<<<<<<< HEAD
-=======
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border: 1px solid #AD6E4A;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
->>>>>>> denis
-=======
->>>>>>> KAI
   min-width: 100px;
   max-height: 160px;
   border-right: 1px solid #AD6E4A;
@@ -999,14 +961,6 @@ button:hover {
 }
 
 .planet_tab .tab-inner .planet_content {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-  display: -webkit-box;
-  display: -ms-flexbox;
->>>>>>> denis
-=======
->>>>>>> KAI
   display: flex;
   flex-wrap: wrap;
 }
@@ -1020,8 +974,6 @@ button:hover {
 }
 
 .planet_tab .tab-inner .planet_content .imgs .img1 {
-<<<<<<< HEAD
-<<<<<<< HEAD
   transform: translate(20%);
 }
 
@@ -1034,31 +986,6 @@ button:hover {
 }
 
 .planet_tab .tab-inner .planet_content .desc {
-=======
-  -webkit-transform: translate(20%);
-          transform: translate(20%);
-=======
-  transform: translate(20%);
->>>>>>> KAI
-}
-
-.planet_tab .tab-inner .planet_content .imgs .img2 {
-  -webkit-transform: translateX(10%);
-          transform: translateX(10%);
-}
-
-.planet_tab .tab-inner .planet_content .imgs .img3 {
-  -webkit-transform: translate(-30%, -350px);
-          transform: translate(-30%, -350px);
-}
-
-.planet_tab .tab-inner .planet_content .desc {
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
->>>>>>> denis
-=======
->>>>>>> KAI
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1072,39 +999,15 @@ button:hover {
 
 @media only screen and (max-width: 1200px) {
   .planet_tab .tab-inner .tab-inner {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    display: -webkit-box;
-    display: -ms-flexbox;
->>>>>>> denis
-=======
->>>>>>> KAI
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   .planet_tab .tab-inner .tab-inner .tab-active {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    display: -webkit-box;
-    display: -ms-flexbox;
->>>>>>> denis
-=======
->>>>>>> KAI
     display: flex;
     justify-content: center;
   }
   .planet_tab .tab-inner .planet_content {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    display: -webkit-box;
-    display: -ms-flexbox;
->>>>>>> denis
-=======
->>>>>>> KAI
     display: flex;
     flex-direction: column;
     align-items: center;

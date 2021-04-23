@@ -396,13 +396,6 @@ nav .nav-links a {
   width: 100%;
   color: #ffffff;
   padding: 8px;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-  -webkit-transition: all .3s;
->>>>>>> denis
-=======
->>>>>>> KAI
   transition: all .3s;
 }
 
@@ -429,6 +422,69 @@ nav .nav-icons {
   justify-content: space-around;
   width: 12%;
   margin-left: 50px;
+}
+
+@media all and (max-width: 768px) {
+  nav .nav-icons {
+    justify-content: space-between;
+  }
+}
+
+nav .nav-icons .member {
+  position: relative;
+}
+
+nav .nav-icons .info {
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+}
+
+nav .nav-icons .info img {
+  width: 40px;
+}
+
+@media all and (max-width: 768px) {
+  nav .nav-icons .info img {
+    width: 30px;
+  }
+}
+
+nav .nav-icons .info .infoData {
+  position: absolute;
+  background-color: #AD6E4A;
+  width: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+}
+
+nav .nav-icons .info .infoData::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background-color: #AD6E4A;
+  position: absolute;
+  z-index: 0;
+}
+
+nav .nav-icons .info .infoData a {
+  text-align: center;
+  color: #0c0d18;
+  transition: all .3s;
+  padding: 10px 0;
+  z-index: 1;
+}
+
+nav .nav-icons .info .infoData a:hover {
+  color: #dec2b2;
+}
+
+nav .nav-icons .info .show {
+  display: block;
 }
 
 nav .burger {
@@ -458,23 +514,20 @@ nav .nav-cart .count {
   text-align: center;
   line-height: 1.5rem;
   position: absolute;
-  -webkit-transform: translate(50%, -150%);
-          transform: translate(50%, -150%);
+  transform: translate(50%, -150%);
   display: block;
   color: white;
 }
 
 @media all and (max-width: 992px) {
   nav .nav-cart .count {
-    -webkit-transform: translate(100%, -150%);
-            transform: translate(100%, -150%);
+    transform: translate(100%, -150%);
   }
 }
 
 @media all and (max-width: 768px) {
   nav .nav-cart .count {
-    -webkit-transform: translate(40%, -170%);
-            transform: translate(40%, -170%);
+    transform: translate(40%, -170%);
     width: 20px;
     height: 20px;
     font-size: 12px;
@@ -495,23 +548,20 @@ nav .nav-trip .trip-count {
   text-align: center;
   line-height: 1.5rem;
   position: absolute;
-  -webkit-transform: translate(50%, -150%);
-          transform: translate(50%, -150%);
+  transform: translate(50%, -150%);
   display: block;
   color: white;
 }
 
 @media all and (max-width: 992px) {
   nav .nav-trip .trip-count {
-    -webkit-transform: translate(100%, -150%);
-            transform: translate(100%, -150%);
+    transform: translate(100%, -150%);
   }
 }
 
 @media all and (max-width: 768px) {
   nav .nav-trip .trip-count {
-    -webkit-transform: translate(40%, -170%);
-            transform: translate(40%, -170%);
+    transform: translate(40%, -170%);
     width: 20px;
     height: 20px;
     font-size: 12px;
@@ -551,7 +601,7 @@ nav .nav-trip .trip-count {
     justify-content: flex-end;
   }
   nav .nav-icons .icon {
-    margin: 0 30px 0 15px;
+    margin: 0 50px 0 15px;
   }
   nav .burger {
     display: block;
@@ -713,8 +763,7 @@ input[type=number] {
   height: 100px;
   background-size: contain;
   background-repeat: no-repeat;
-  -webkit-animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
-          animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+  animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
 }
 
 #marsloc {
@@ -805,7 +854,6 @@ div.bk3 {
   letter-spacing: 10px;
   font-size: 36px;
   color: #C9ADA7;
-  -webkit-animation: h2 1.2s infinite;
   animation: h2 1.2s infinite;
 }
 
@@ -854,14 +902,6 @@ div.bk3 {
 }
 
 .first .first_right .hottrip {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
->>>>>>> denis
-=======
->>>>>>> KAI
   display: inline-flex;
   padding-top: 80px;
 }
@@ -874,21 +914,9 @@ div.bk3 {
 
 @media screen and (max-width: 576px) {
   .first .first_right .hottrip {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     margin: 0 auto;
-<<<<<<< HEAD
     justify-content: space-between;
-<<<<<<< HEAD
-=======
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
->>>>>>> denis
-=======
->>>>>>> KAI
   }
 }
 
@@ -936,16 +964,7 @@ div.bk3 {
   position: absolute;
   top: 15px;
   left: 50%;
-<<<<<<< HEAD
-<<<<<<< HEAD
   transform: translateX(-50%);
-=======
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
->>>>>>> denis
-=======
-  transform: translateX(-50%);
->>>>>>> KAI
   z-index: 2;
 }
 
@@ -954,16 +973,7 @@ div.bk3 {
 }
 
 .first .first_right .hottrip div.planet_top img.planet_a1:hover {
-<<<<<<< HEAD
-<<<<<<< HEAD
   transform: translateY(0.2em);
-=======
-  -webkit-transform: translateY(0.2em);
-          transform: translateY(0.2em);
->>>>>>> denis
-=======
-  transform: translateY(0.2em);
->>>>>>> KAI
 }
 
 @media all and (max-width: 577px) {
@@ -986,14 +996,6 @@ div.bk3 {
 }
 
 .first .first_right .hottrip div.planet_top div.word .tag {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
->>>>>>> denis
-=======
->>>>>>> KAI
   display: inline-flex;
   border: 1px solid #cccaca;
   border-radius: 5px;
@@ -1044,15 +1046,6 @@ div.bk3 {
   }
 }
 
-@-webkit-keyframes h2 {
-  0% {
-    text-shadow: 0 0 6px #FFF;
-  }
-  100% {
-    text-shadow: 0 0 0px #000;
-  }
-}
-
 @keyframes h2 {
   0% {
     text-shadow: 0 0 6px #FFF;
@@ -1063,14 +1056,6 @@ div.bk3 {
 }
 
 .tripselect {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
->>>>>>> denis
-=======
->>>>>>> KAI
   display: inline-flex;
   width: 280px;
   justify-content: space-between;
@@ -1127,23 +1112,8 @@ div.bk3 {
 
 @media all and (max-width: 767px) {
   .stepsection .stepall {
-<<<<<<< HEAD
-<<<<<<< HEAD
     flex-direction: column;
     align-items: center;
-=======
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
->>>>>>> denis
-=======
-    flex-direction: column;
-    align-items: center;
->>>>>>> KAI
   }
 }
 
