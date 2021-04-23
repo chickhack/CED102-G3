@@ -416,6 +416,7 @@ nav .nav-links a {
   color: #ffffff;
   padding: 8px;
 <<<<<<< HEAD
+<<<<<<< HEAD
   -webkit-transition: all .3s;
 =======
 <<<<<<< HEAD
@@ -426,6 +427,8 @@ nav .nav-links a {
 =======
 >>>>>>> KAI
 >>>>>>> a08664c73a429d97437735d23f749a7d388ac617
+=======
+>>>>>>> KAI
   transition: all .3s;
 }
 
@@ -463,9 +466,13 @@ nav .nav-icons {
 
 @media all and (max-width: 768px) {
   nav .nav-icons {
+<<<<<<< HEAD
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+=======
+    justify-content: space-between;
+>>>>>>> KAI
   }
 }
 
@@ -494,8 +501,12 @@ nav .nav-icons .info .infoData {
   background-color: #AD6E4A;
   width: 80px;
   left: 50%;
+<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+=======
+  transform: translateX(-50%);
+>>>>>>> KAI
   display: none;
 }
 
@@ -505,8 +516,12 @@ nav .nav-icons .info .infoData::before {
   height: 10px;
   top: 0;
   left: 50%;
+<<<<<<< HEAD
   -webkit-transform: translate(-50%, -50%) rotate(45deg);
           transform: translate(-50%, -50%) rotate(45deg);
+=======
+  transform: translate(-50%, -50%) rotate(45deg);
+>>>>>>> KAI
   background-color: #AD6E4A;
   position: absolute;
   z-index: 0;
@@ -515,7 +530,10 @@ nav .nav-icons .info .infoData::before {
 nav .nav-icons .info .infoData a {
   text-align: center;
   color: #0c0d18;
+<<<<<<< HEAD
   -webkit-transition: all .3s;
+=======
+>>>>>>> KAI
   transition: all .3s;
   padding: 10px 0;
   z-index: 1;
@@ -557,23 +575,20 @@ nav .nav-cart .count {
   text-align: center;
   line-height: 1.5rem;
   position: absolute;
-  -webkit-transform: translate(50%, -150%);
-          transform: translate(50%, -150%);
+  transform: translate(50%, -150%);
   display: block;
   color: white;
 }
 
 @media all and (max-width: 992px) {
   nav .nav-cart .count {
-    -webkit-transform: translate(100%, -150%);
-            transform: translate(100%, -150%);
+    transform: translate(100%, -150%);
   }
 }
 
 @media all and (max-width: 768px) {
   nav .nav-cart .count {
-    -webkit-transform: translate(40%, -170%);
-            transform: translate(40%, -170%);
+    transform: translate(40%, -170%);
     width: 20px;
     height: 20px;
     font-size: 12px;
@@ -594,23 +609,20 @@ nav .nav-trip .trip-count {
   text-align: center;
   line-height: 1.5rem;
   position: absolute;
-  -webkit-transform: translate(50%, -150%);
-          transform: translate(50%, -150%);
+  transform: translate(50%, -150%);
   display: block;
   color: white;
 }
 
 @media all and (max-width: 992px) {
   nav .nav-trip .trip-count {
-    -webkit-transform: translate(100%, -150%);
-            transform: translate(100%, -150%);
+    transform: translate(100%, -150%);
   }
 }
 
 @media all and (max-width: 768px) {
   nav .nav-trip .trip-count {
-    -webkit-transform: translate(40%, -170%);
-            transform: translate(40%, -170%);
+    transform: translate(40%, -170%);
     width: 20px;
     height: 20px;
     font-size: 12px;
@@ -854,8 +866,7 @@ input[type=number] {
   height: 100px;
   background-size: contain;
   background-repeat: no-repeat;
-  -webkit-animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
-          animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+  animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
 }
 
 .container-fluid {
@@ -871,9 +882,44 @@ input[type=number] {
   }
 }
 
+canvas {
+  display: block;
+}
+
+/* ---- particles.js container ---- */
+#particles-js {
+  z-index: -10;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #0c0d18;
+}
+
+input {
+  background-color: transparent;
+  color: #AD6E4A;
+}
+
+input a {
+  text-decoration: none;
+  color: #AD6E4A;
+}
+
+input:hover {
+  color: #ffff;
+  border: 1px solid #AD6E4A;
+  background: #AD6E4A;
+}
+
+input:hover a {
+  text-decoration: none;
+  color: white;
+}
+
 section.login_container {
   padding: 0;
   border: 1px solid #ad6e4a83;
+<<<<<<< HEAD
 <<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
@@ -887,11 +933,29 @@ section.login_container {
 =======
 >>>>>>> KAI
 >>>>>>> a08664c73a429d97437735d23f749a7d388ac617
+=======
+>>>>>>> KAI
   display: flex;
   border-radius: 5px;
 }
 
-section.login_container .login_banner {
+@media only screen and (max-width: 1200px) {
+  section.login_container {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media all and (max-width: 768px) {
+  section.login_container {
+    padding-bottom: 20px;
+  }
+  section.login_container .rightbox {
+    width: 100%;
+  }
+}
+
+.login_banner {
   background-color: #353f61;
   height: 80vh;
   background-size: 110%;
@@ -912,22 +976,23 @@ section.login_container .login_banner {
   row-gap: 2rem;
 }
 
-section.login_container .login_banner h2 {
+.login_banner h2 {
   font-family: nasalization, sans-serif;
 }
 
 @media all and (max-width: 992px) {
-  section.login_container .login_banner {
+  .login_banner {
     display: none;
   }
 }
 
 @media all and (max-width: 768px) {
-  section.login_container .login_banner {
+  .login_banner {
     display: none;
   }
 }
 
+<<<<<<< HEAD
 section.login_container .return_btn {
 <<<<<<< HEAD
   display: -webkit-box;
@@ -942,6 +1007,9 @@ section.login_container .return_btn {
 =======
 >>>>>>> KAI
 >>>>>>> a08664c73a429d97437735d23f749a7d388ac617
+=======
+.return_btn {
+>>>>>>> KAI
   display: flex;
   -ms-flex-item-align: start;
       align-self: flex-start;
@@ -950,22 +1018,23 @@ section.login_container .return_btn {
           align-items: baseline;
 }
 
-section.login_container .return_btn span a {
+.return_btn span a {
   color: #AD6E4A;
   font-size: 28px;
   letter-spacing: -6px;
   font-weight: 800;
 }
 
-section.login_container .return_btn h4 a {
+.return_btn h4 a {
   margin-left: 12px;
   color: #cccaca;
 }
 
-section.login_container .return_btn a:hover {
+.return_btn a:hover {
   text-decoration: underline;
 }
 
+<<<<<<< HEAD
 section.login_container .modal-dialog {
 <<<<<<< HEAD
   display: -webkit-box;
@@ -980,6 +1049,9 @@ section.login_container .modal-dialog {
 =======
 >>>>>>> KAI
 >>>>>>> a08664c73a429d97437735d23f749a7d388ac617
+=======
+.modal-dialog {
+>>>>>>> KAI
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -987,6 +1059,7 @@ section.login_container .modal-dialog {
           flex-direction: column;
 }
 
+<<<<<<< HEAD
 section.login_container .modal-dialog .main-section {
 <<<<<<< HEAD
   display: -webkit-box;
@@ -1010,15 +1083,22 @@ section.login_container .modal-dialog .main-section {
       -ms-flex-align: center;
           align-items: center;
   margin: 0 auto;
+=======
+.modal-dialog .main-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+>>>>>>> KAI
 }
 
-section.login_container .modal-dialog .main-section .modal-content {
+.modal-dialog .main-section .modal-content {
   opacity: .8;
   border-radius: 10px;
   background-color: transparent;
   border: none;
 }
 
+<<<<<<< HEAD
 section.login_container .modal-dialog form {
 <<<<<<< HEAD
 =======
@@ -1055,6 +1135,22 @@ section.login_container .modal-dialog form {
 }
 
 section.login_container .modal-dialog form .form-group input {
+=======
+@media all and (max-width: 992px) {
+  .modal-dialog .main-section .modal-content {
+    margin-top: 48px;
+    align-items: flex-end;
+  }
+}
+
+.modal-dialog form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.modal-dialog form .form-group input {
+>>>>>>> KAI
   margin: 0 auto;
   margin-top: 24px;
   height: 42px;
@@ -1067,8 +1163,9 @@ section.login_container .modal-dialog form .form-group input {
   background-color: transparent;
 }
 
-section.login_container .modal-dialog form .form-group input:focus {
+.modal-dialog form .form-group input:focus {
   padding-left: 28px;
+<<<<<<< HEAD
   -webkit-transform: scale(1.08);
           transform: scale(1.08);
   box-shadow: -1px 0px 20px 5px rgba(173, 110, 74, 0.45);
@@ -1124,6 +1221,15 @@ section.login_container .modal-dialog form .form-group input:hover {
 }
 
 section.login_container .modal-dialog form .form-group::before {
+=======
+  box-shadow: -1px 0px 20px 5px rgba(173, 110, 74, 0.5);
+  -webkit-box-shadow: -1px 0px 20px 5px rgba(173, 110, 74, 0.5);
+  -moz-box-shadow: -1px 0px 20px 5px rgba(173, 110, 74, 0.5);
+  border: none;
+}
+
+.modal-dialog form .form-group::before {
+>>>>>>> KAI
   content: "電子信箱";
   position: absolute;
   font-size: 12px;
@@ -1132,20 +1238,19 @@ section.login_container .modal-dialog form .form-group::before {
   color: #C9ADA7;
 }
 
-section.login_container .modal-dialog form .form-group:nth-last-of-type(2)::before {
+.modal-dialog form .form-group:nth-last-of-type(2)::before {
   content: "密碼";
 }
 
-section.login_container .modal-dialog form .form-group:last-of-type::before {
+.modal-dialog form .form-group:last-of-type::before {
   content: "確認密碼";
 }
 
-section.login_container .modal-dialog form span {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+.modal-dialog form span {
+  align-self: center;
 }
 
+<<<<<<< HEAD
 section.login_container .modal-dialog form #register {
 <<<<<<< HEAD
   -ms-flex-item-align: center;
@@ -1164,15 +1269,20 @@ section.login_container .modal-dialog form #register {
   align-self: center;
 >>>>>>> KAI
 >>>>>>> a08664c73a429d97437735d23f749a7d388ac617
+=======
+.modal-dialog form .register_btn {
+  align-self: center;
+>>>>>>> KAI
   background-color: transparent;
   color: #AD6E4A;
 }
 
-section.login_container .modal-dialog form #register:hover {
+.modal-dialog form .register_btn:hover {
   color: #ffff;
   border: 1px solid #AD6E4A;
   background: #AD6E4A;
 }
+<<<<<<< HEAD
 
 section.login_container .bottom-section {
 <<<<<<< HEAD
@@ -1212,4 +1322,6 @@ section.login_container .bottom-section .forgot:hover, section.login_container .
     margin-left: 32px;
   }
 }
+=======
+>>>>>>> KAI
 /*# sourceMappingURL=register.css.map */

@@ -453,9 +453,13 @@ nav .nav-icons {
 
 @media all and (max-width: 768px) {
   nav .nav-icons {
+<<<<<<< HEAD
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+=======
+    justify-content: space-between;
+>>>>>>> KAI
   }
 }
 
@@ -484,8 +488,12 @@ nav .nav-icons .info .infoData {
   background-color: #AD6E4A;
   width: 80px;
   left: 50%;
+<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+=======
+  transform: translateX(-50%);
+>>>>>>> KAI
   display: none;
 }
 
@@ -495,8 +503,12 @@ nav .nav-icons .info .infoData::before {
   height: 10px;
   top: 0;
   left: 50%;
+<<<<<<< HEAD
   -webkit-transform: translate(-50%, -50%) rotate(45deg);
           transform: translate(-50%, -50%) rotate(45deg);
+=======
+  transform: translate(-50%, -50%) rotate(45deg);
+>>>>>>> KAI
   background-color: #AD6E4A;
   position: absolute;
   z-index: 0;
@@ -505,7 +517,10 @@ nav .nav-icons .info .infoData::before {
 nav .nav-icons .info .infoData a {
   text-align: center;
   color: #0c0d18;
+<<<<<<< HEAD
   -webkit-transition: all .3s;
+=======
+>>>>>>> KAI
   transition: all .3s;
   padding: 10px 0;
   z-index: 1;
@@ -1302,9 +1317,13 @@ nav .nav-icons {
 
 @media all and (max-width: 768px) {
   nav .nav-icons {
+<<<<<<< HEAD
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+=======
+    justify-content: space-between;
+>>>>>>> KAI
   }
 }
 
@@ -1333,8 +1352,12 @@ nav .nav-icons .info .infoData {
   background-color: #AD6E4A;
   width: 80px;
   left: 50%;
+<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+=======
+  transform: translateX(-50%);
+>>>>>>> KAI
   display: none;
 }
 
@@ -1344,8 +1367,12 @@ nav .nav-icons .info .infoData::before {
   height: 10px;
   top: 0;
   left: 50%;
+<<<<<<< HEAD
   -webkit-transform: translate(-50%, -50%) rotate(45deg);
           transform: translate(-50%, -50%) rotate(45deg);
+=======
+  transform: translate(-50%, -50%) rotate(45deg);
+>>>>>>> KAI
   background-color: #AD6E4A;
   position: absolute;
   z-index: 0;
@@ -1354,7 +1381,10 @@ nav .nav-icons .info .infoData::before {
 nav .nav-icons .info .infoData a {
   text-align: center;
   color: #0c0d18;
+<<<<<<< HEAD
   -webkit-transition: all .3s;
+=======
+>>>>>>> KAI
   transition: all .3s;
   padding: 10px 0;
   z-index: 1;
@@ -2560,9 +2590,13 @@ nav .nav-icons {
 
 @media all and (max-width: 768px) {
   nav .nav-icons {
+<<<<<<< HEAD
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+=======
+    justify-content: space-between;
+>>>>>>> KAI
   }
 }
 
@@ -2591,8 +2625,12 @@ nav .nav-icons .info .infoData {
   background-color: #AD6E4A;
   width: 80px;
   left: 50%;
+<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+=======
+  transform: translateX(-50%);
+>>>>>>> KAI
   display: none;
 }
 
@@ -2602,8 +2640,12 @@ nav .nav-icons .info .infoData::before {
   height: 10px;
   top: 0;
   left: 50%;
+<<<<<<< HEAD
   -webkit-transform: translate(-50%, -50%) rotate(45deg);
           transform: translate(-50%, -50%) rotate(45deg);
+=======
+  transform: translate(-50%, -50%) rotate(45deg);
+>>>>>>> KAI
   background-color: #AD6E4A;
   position: absolute;
   z-index: 0;
@@ -2612,7 +2654,10 @@ nav .nav-icons .info .infoData::before {
 nav .nav-icons .info .infoData a {
   text-align: center;
   color: #0c0d18;
+<<<<<<< HEAD
   -webkit-transition: all .3s;
+=======
+>>>>>>> KAI
   transition: all .3s;
   padding: 10px 0;
   z-index: 1;
@@ -3048,8 +3093,12 @@ section.shop #app ul {
 =======
 =======
     justify-content: space-around;
+<<<<<<< HEAD
 >>>>>>> a08664c73a429d97437735d23f749a7d388ac617
 >>>>>>> 4cfc53d89a5a3c6e25fcb99d81e2a69dcdef643f
+=======
+    align-items: start;
+>>>>>>> KAI
     margin: 0 10px;
   }
 }
@@ -3732,9 +3781,13 @@ nav .nav-icons {
 
 @media all and (max-width: 768px) {
   nav .nav-icons {
+<<<<<<< HEAD
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+=======
+    justify-content: space-between;
+>>>>>>> KAI
   }
 }
 
@@ -3763,8 +3816,12 @@ nav .nav-icons .info .infoData {
   background-color: #AD6E4A;
   width: 80px;
   left: 50%;
+<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+=======
+  transform: translateX(-50%);
+>>>>>>> KAI
   display: none;
 }
 
@@ -3774,8 +3831,12 @@ nav .nav-icons .info .infoData::before {
   height: 10px;
   top: 0;
   left: 50%;
+<<<<<<< HEAD
   -webkit-transform: translate(-50%, -50%) rotate(45deg);
           transform: translate(-50%, -50%) rotate(45deg);
+=======
+  transform: translate(-50%, -50%) rotate(45deg);
+>>>>>>> KAI
   background-color: #AD6E4A;
   position: absolute;
   z-index: 0;
@@ -3784,7 +3845,10 @@ nav .nav-icons .info .infoData::before {
 nav .nav-icons .info .infoData a {
   text-align: center;
   color: #0c0d18;
+<<<<<<< HEAD
   -webkit-transition: all .3s;
+=======
+>>>>>>> KAI
   transition: all .3s;
   padding: 10px 0;
   z-index: 1;
@@ -5289,8 +5353,12 @@ div.bk3 {
     color: #fff;
     background-color: #AD6E4A;
     border-color: #AD6E4A;
+<<<<<<< HEAD
     -webkit-box-shadow: none;
             box-shadow: none;
+=======
+    box-shadow: none;
+>>>>>>> KAI
   }
   .account_tabs .content .heart_btns, .account_tabs .content .post_btns {
     padding: 0px 70px 0px 70px;

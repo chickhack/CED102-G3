@@ -415,6 +415,7 @@ nav .nav-links a {
   color: #ffffff;
   padding: 8px;
 <<<<<<< HEAD
+<<<<<<< HEAD
   -webkit-transition: all .3s;
 =======
 <<<<<<< HEAD
@@ -425,6 +426,8 @@ nav .nav-links a {
 =======
 >>>>>>> KAI
 >>>>>>> a08664c73a429d97437735d23f749a7d388ac617
+=======
+>>>>>>> KAI
   transition: all .3s;
 }
 
@@ -462,9 +465,13 @@ nav .nav-icons {
 
 @media all and (max-width: 768px) {
   nav .nav-icons {
+<<<<<<< HEAD
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+=======
+    justify-content: space-between;
+>>>>>>> KAI
   }
 }
 
@@ -493,8 +500,12 @@ nav .nav-icons .info .infoData {
   background-color: #AD6E4A;
   width: 80px;
   left: 50%;
+<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+=======
+  transform: translateX(-50%);
+>>>>>>> KAI
   display: none;
 }
 
@@ -504,8 +515,12 @@ nav .nav-icons .info .infoData::before {
   height: 10px;
   top: 0;
   left: 50%;
+<<<<<<< HEAD
   -webkit-transform: translate(-50%, -50%) rotate(45deg);
           transform: translate(-50%, -50%) rotate(45deg);
+=======
+  transform: translate(-50%, -50%) rotate(45deg);
+>>>>>>> KAI
   background-color: #AD6E4A;
   position: absolute;
   z-index: 0;
@@ -514,7 +529,10 @@ nav .nav-icons .info .infoData::before {
 nav .nav-icons .info .infoData a {
   text-align: center;
   color: #0c0d18;
+<<<<<<< HEAD
   -webkit-transition: all .3s;
+=======
+>>>>>>> KAI
   transition: all .3s;
   padding: 10px 0;
   z-index: 1;
@@ -556,23 +574,20 @@ nav .nav-cart .count {
   text-align: center;
   line-height: 1.5rem;
   position: absolute;
-  -webkit-transform: translate(50%, -150%);
-          transform: translate(50%, -150%);
+  transform: translate(50%, -150%);
   display: block;
   color: white;
 }
 
 @media all and (max-width: 992px) {
   nav .nav-cart .count {
-    -webkit-transform: translate(100%, -150%);
-            transform: translate(100%, -150%);
+    transform: translate(100%, -150%);
   }
 }
 
 @media all and (max-width: 768px) {
   nav .nav-cart .count {
-    -webkit-transform: translate(40%, -170%);
-            transform: translate(40%, -170%);
+    transform: translate(40%, -170%);
     width: 20px;
     height: 20px;
     font-size: 12px;
@@ -593,23 +608,20 @@ nav .nav-trip .trip-count {
   text-align: center;
   line-height: 1.5rem;
   position: absolute;
-  -webkit-transform: translate(50%, -150%);
-          transform: translate(50%, -150%);
+  transform: translate(50%, -150%);
   display: block;
   color: white;
 }
 
 @media all and (max-width: 992px) {
   nav .nav-trip .trip-count {
-    -webkit-transform: translate(100%, -150%);
-            transform: translate(100%, -150%);
+    transform: translate(100%, -150%);
   }
 }
 
 @media all and (max-width: 768px) {
   nav .nav-trip .trip-count {
-    -webkit-transform: translate(40%, -170%);
-            transform: translate(40%, -170%);
+    transform: translate(40%, -170%);
     width: 20px;
     height: 20px;
     font-size: 12px;
@@ -853,8 +865,7 @@ input[type=number] {
   height: 100px;
   background-size: contain;
   background-repeat: no-repeat;
-  -webkit-animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
-          animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+  animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
 }
 
 section.orderDetail {
@@ -901,15 +912,19 @@ section.orderDetail li .imgWord {
   display: -ms-flexbox;
   display: flex;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> KAI
 =======
 >>>>>>> KAI
   justify-content: center;
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> a08664c73a429d97437735d23f749a7d388ac617
@@ -929,6 +944,8 @@ section.orderDetail li .imgWord {
 =======
 >>>>>>> KAI
 >>>>>>> a08664c73a429d97437735d23f749a7d388ac617
+=======
+>>>>>>> KAI
 }
 
 section.orderDetail li .imgWord .prod {
@@ -944,6 +961,7 @@ section.orderDetail li .imgWord .prod {
 
 section.orderDetail li .imgWord .imgRight {
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
 =======
@@ -956,6 +974,8 @@ section.orderDetail li .imgWord .imgRight {
 =======
 >>>>>>> KAI
 >>>>>>> a08664c73a429d97437735d23f749a7d388ac617
+=======
+>>>>>>> KAI
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -979,6 +999,7 @@ section.orderDetail li .imgWord .imgRight {
 
 section.orderDetail li .imgWord .integral {
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
 =======
@@ -991,6 +1012,8 @@ section.orderDetail li .imgWord .integral {
 =======
 >>>>>>> KAI
 >>>>>>> a08664c73a429d97437735d23f749a7d388ac617
+=======
+>>>>>>> KAI
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -1429,15 +1452,19 @@ section.orderer .detail small {
   display: -ms-flexbox;
   display: flex;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> KAI
 =======
 >>>>>>> KAI
   justify-content: center;
   align-items: center;
   opacity: 0;
   visibility: hidden;
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> a08664c73a429d97437735d23f749a7d388ac617
@@ -1456,6 +1483,8 @@ section.orderer .detail small {
 =======
 >>>>>>> KAI
 >>>>>>> a08664c73a429d97437735d23f749a7d388ac617
+=======
+>>>>>>> KAI
   transition: all .3s;
 }
 
