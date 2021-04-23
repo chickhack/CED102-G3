@@ -1,7 +1,6 @@
 <?php
     session_start();
-    $_SESSION["mem_no"]=1010001;
-    ?>
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -58,10 +57,7 @@
             ?>
                     </a>
                 </li>
-                <li>
-                    <a href="./login.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png"
-                            alt="" class="icon" /></a>
-                </li>
+            
             </ul>
             <div class="burger">
                 <div class="line1"></div>
@@ -132,6 +128,16 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
   </div>
+  <script>
+  function show(){
+            fetch("./php/logout.php");
+            window.location.href = "./login.php";
+        }                               
+        function toggle(){
+            const infoData = document.querySelector(".infoData");
+            infoData.classList.toggle("show");
+        }      
+</script>
 </body>
 
 </html>
