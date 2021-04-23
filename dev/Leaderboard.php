@@ -122,15 +122,15 @@ session_start();
                <div class="col-4 col-xxl-2 col-md-2 del">累積星球</div>
             </div>
         </div>
-        <div class="col-10 text-color line-he-75 hovers" >
+        <div class="col-10 text-color line-he-75 hovers" v-for="(me,index) in mydata" v-if="me.mem_no==<?php echo $_SESSION["mem_no"];?>">
            <div class="row ">
 
-              <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-75 ">{{me.Lead}}</div>
-              <div class="col-4 col-xxl-2 col-md-2 text-01 line-he-75"><img :src="me.mesrc" alt="" class="icon-2">{{me.name}}</div>
-              <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-75 del"><img :src="me.src" alt="" class="leve"></div>
-              <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-75">{{me.integral}}</div>
-              <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-75 del">{{me.itin}}</div>
-              <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-75 del">{{me.sp}}</div>
+              <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-75 ">{{index+1}}</div>
+              <div class="col-4 col-xxl-2 col-md-2 text-01 line-he-75"><img :src="me.mem_pic" alt="" class="icon-2">{{me.last_name}}{{me.first_name}}</div>
+              <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-75 del"><img V-if="me.mem_lv == '天星者'" :src="medal.medalSrc1"  alt="" class="leve-1"><img v-else :src="medal.medalSrc2"alt="" class="leve-1"> </div>
+              <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-75">{{me.miles}}</div>
+              <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-75 del">{{me.mem_arr}}</div>
+              <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-75 del">{{me.mem_sp}}</div>
            </div>
         </div>
         <div class="col-10 text-color-1 line-he-65 hovers" id="top-1" >
