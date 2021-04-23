@@ -102,7 +102,15 @@
                         <li>
                             <?php
                                 if(isset($_SESSION['mem_no'])){?>
-                                    <a href="./account.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png" alt="" class="icon"/></a>
+                                    <div class="member"  onclick="toggle()">
+                                        <div class="info">
+                                            <img src="<?= $_SESSION['mem_pic'] ?>" alt="">
+                                            <div class="infoData">
+                                                <a href="./account.php">會員中心</a>
+                                                <a href="./login.php" onclick="show()">登出</a>
+                                            </div>
+                                        </div>  
+                                    </div>
                             <?php }else{ ?>
                                     <a href="./login.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png" alt="" class="icon"/></a>
                             <?php } ?>
@@ -243,7 +251,6 @@
                             <div class="tab-active col-lg-6 col-md-12 col-sm-12">
                                 <!-- 火星動圖 -->
                                 <canvas><canvas>
-                                <!-- <div id="marsloc" class="col-md-12 col-sm-12"></div> -->
                                 <script src="./js/mars.js"></script>
                             </div>
                         </div>
@@ -262,35 +269,35 @@
             <!-- <div class="row"> -->
             <div class="upper col-10">
                 <div class=" col-4">
-                    <a class="lightbox" href="./img/home/mars1.jpg">
+                    <div class="lightbox">
                         <img src="./img/home/mars2.jpg" alt="Bridge">
-                    </a>
+                    </div>
                 </div>
 
                 <div class="col-4">
-                    <a class="lightbox" href="./img/home/mars2.jpg">
+                <div class="lightbox">
                         <img src="./img/home/others/首頁-互動牆壁5.jpg" alt="Park">
-                    </a>
+                    </div>
                 </div>
 
                 <div class="col-4">
-                    <a class="lightbox" href="./img/home/首頁-互動牆壁9.jpg">
+                <div class="lightbox">
                         <img src="./img/home/首頁-互動牆壁9.jpg" alt="Tunnel">
-                    </a>
+                    </div>
                 </div>
             </div>
             <div class="lower col-10
               ">
                 <div class="col-6">
-                    <a class="lightbox" href="./img/home/首頁-互動牆壁8.jpg">
+                <div class="lightbox">
                         <img src="./img/home/首頁-互動牆壁8.jpg" alt="Tunnel">
-                    </a>
+                    </div>
                 </div>
 
                 <div class="col-6">
-                    <a class="lightbox" href="./img/home/首頁-互動牆壁2.jpg">
+                    <div class="lightbox">
                         <img src="./img/home/others/mars_landscape.jpg" alt="Tunnel">
-                    </a>
+                    </div>
                 </div>
             </div>
             <!-- </div> -->
@@ -495,6 +502,15 @@
 
 
     <script>
+        // 會員
+        function show(){
+                fetch("./php/logout.php");
+                window.location.href = "./login.php";
+            }                               
+            function toggle(){
+                const infoData = document.querySelector(".infoData");
+                infoData.classList.toggle("show");
+            }    
     //Header變顏色
     var controller = new ScrollMagic.Controller();
 
@@ -514,7 +530,7 @@
 
     //Slogan延遲出現
     var tl = new TimelineLite({
-        delay: 1
+        delay: 2
     });
     tl.from(['#slogan'], 2, {
         scale: 0.5,

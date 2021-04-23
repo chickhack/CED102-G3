@@ -10,17 +10,17 @@
       href="./img/icon/shortcut.png"
       type="image/x-icon"
     />
-    <link rel="stylesheet" type="text/css" href="./css/pages/adminLogin.css" />
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/pages/adminLogin.css" />
   </head>
   <body>
     <div class="login-div">
       <div class="row">
-        <div class="logo"></div>
+        <div class="logo "></div>
       </div>
       <div class="row center-align">
         <h5>管理員登入</h5>
@@ -28,7 +28,7 @@
       </div>
       <div class="row">
         <div class="input-field col s12">
-          <input id="email_input" type="email" class="validate" />
+          <input id="email_input" type="email" />
           <label for="email_input">員工帳號</label>
         </div>
       </div>
@@ -39,16 +39,15 @@
         </div>
       </div>
       <div class="row">
-        <div class="col s12">
-          忘記密碼或帳號？
-          <a href="#"><b>聯絡帳號管理員</b></a>
+        <div class="col s12 forget">
+          忘記密碼或帳號？<a href="mailto:Spaced@Mail.com"><b>聯絡帳號管理員</b></a>
         </div>
       </div>
       <div class="row"></div>
       <div class="row">
-        <div class="col s6"><a href="#">常見問題</a></div>
-        <div class="col s6 right-align">
-          <a href="backstage/spaced_backstage_trip.php" class="waves-effect waves-light btn">登入</a>
+        <div class="col s6 QA"><a href="#">常見問題</a></div>
+        <div class="col s6 right-align ">
+          <a href="backstage/spaced_backstage_trip.php" class="waves-effect waves-light btn login_btn">登入</a>
         </div>
       </div>
     </div>

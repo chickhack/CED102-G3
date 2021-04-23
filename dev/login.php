@@ -102,9 +102,10 @@
         </div>
             <div class="modal-dialog">
                 <div class="col-sm-9 main-section">
-                    <div class="modal-content margin_top_15">
+                    <div class="modal-content margin_top_8">
                         <div class="col-12 form-input">
                             <form id="login_form" action="./php/login_func.php" method="post">
+                            <h2 align="center">登入會員</h2>
                             <div class="form-group">
                                 <input type="email" name="email" id="email" class="form-control" placeholder="請輸入"></input>
                             </div>
