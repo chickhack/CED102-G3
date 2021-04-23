@@ -216,25 +216,6 @@
     fetch("./php/getProduct.php").then(res => res.json())
         .then(data => {
             vm.products = data;
-<<<<<<< HEAD
-            for(let i=0 ; i<data.length ; i++){
-                                             vm.products[i].png = data[i]["prod_pic"].split("==")[0];
-                                             let url = `product.php?id=${data[i].prod_no}`;
-                                             vm.products[i].url = encodeURI(url);
-                                             console.log(vm.products[i].url)
-                                            }
-                                        });
-
-        function show(){
-            fetch("./php/logout.php");
-            window.location.href = "./login.php";
-        }                               
-        function toggle(){
-            const infoData = document.querySelector(".infoData");
-            infoData.classList.toggle("show");
-        }
-              
-=======
             for (let i = 0; i < data.length; i++) {
                 vm.products[i].png = data[i]["prod_pic"].split("==")[0];
                 let url = `product.php?id=${data[i].prod_no}`;
@@ -256,7 +237,6 @@
         const infoData = document.querySelector(".infoData");
         infoData.classList.toggle("show");
     }
->>>>>>> KAI
     </script>
     <script src="./js/background.js"></script>
     <script src="./js/customSelect.js"></script>

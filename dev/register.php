@@ -100,9 +100,10 @@
             </div>
             <div class="modal-dialog">
                 <div class="col-sm-9 main-section">
-                    <div class="modal-content margin_top_10">
+                    <div class="modal-content margin_top_5">
                         <div class="col-12 form-input">
                             <form id="register_form" action="./php/check_username.php" method="post" >
+                            <h2 align="center">註冊會員</h2>
                             <div class="form-group">
                                 <input type="email" id="email" name="email" class="form-control" placeholder="請輸入" required></input>
                             </div>

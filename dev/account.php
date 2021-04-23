@@ -92,6 +92,7 @@ session_start();
           </a>
         </li>
         <li>
+<<<<<<< HEAD
                 <?php
                     if(isset($_SESSION['mem_no'])){?>
                         <div class="member"  onclick="toggle()">
@@ -106,6 +107,22 @@ session_start();
                 <?php }else{ ?>
                         <a href="./login.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png" alt="" class="icon"/></a>
                 <?php } ?>
+=======
+          <?php
+          if (isset($_SESSION['mem_no'])) { ?>
+            <div class="member" onclick="toggle()">
+              <div class="info">
+                <img src="<?= $_SESSION['mem_pic'] ?>" alt="">
+                <div class="infoData">
+                  <a href="./account.php">會員中心</a>
+                  <a href="./login.php" onclick="show()">登出</a>
+                </div>
+              </div>
+            </div>
+          <?php } else { ?>
+            <a href="./login.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png" alt="" class="icon" /></a>
+          <?php } ?>
+>>>>>>> dev
         </li>
       </ul>
       <div class="burger">
@@ -533,7 +550,10 @@ session_start();
           <div class="heart_btns">
             <input type="date" id="date-1" class="btn orderbtns margin_top_3 btn-date data-down">
           </div>
+<<<<<<< HEAD
           <!-- value="<?php echo date("Y-m-d");?>"  -->
+=======
+>>>>>>> 7ecc499740156129142ed4c15206f91eebb5fb61
 
           <div class="ordercontent margin_top_3">
 
@@ -1064,9 +1084,15 @@ session_start();
         function toggle(){
             const infoData = document.querySelector(".infoData");
             infoData.classList.toggle("show");
+<<<<<<< HEAD
         }
 
     window.onload = function () {        //  點擊menu變色
+=======
+        } 
+
+    window.onload = function() { //  點擊menu變色
+>>>>>>> 7ecc499740156129142ed4c15206f91eebb5fb61
       for (var i = 0; i < document.links.length; i++) {
         var thisLink = document.links[i];
         thisLink.onclick = function () {
