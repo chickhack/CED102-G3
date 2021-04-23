@@ -64,7 +64,7 @@ try{
 
     <!-- 動態背景 -->
     <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <title></title>
+    <title>星球景點</title>
 </head>
 
 <body>
@@ -245,7 +245,7 @@ if( $errMsg != ""){ //例外
                             </ul>
                             <div class="messageNum margin_top_1 margin_left_1">100則留言</div>
                         </div>
-                        <p class="more">瀏覽評論</p>
+                        <!-- <p class="more">瀏覽評論</p> -->
                     </div>
                     <ul class="margin_top_5">
                         <li class="messages" v-for="comment in comments" v-if="<?php echo $spot_no;?>==comment.spot_no">

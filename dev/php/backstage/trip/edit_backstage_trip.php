@@ -1,5 +1,5 @@
 <?php 
-$spot_no = $_GET["spot_no"];
+$spot_no = @$_GET["spot_no"];
 $errMsg = "";
 
 try{
@@ -77,7 +77,7 @@ if( $errMsg != ""){ //例外
                 編輯景點內容
             </div>
             <ul class="list-group list-group-flush align-middle">
-                <form action="edit_backstage_trip.php" method="POST" enctype="multipart/form-data">
+                <form action="edit_backstage_triptoDB.php" method="POST" enctype="multipart/form-data">
                     <li class="list-group-item">景點編號 <input type="number" placeholder="景點編號" name="spot_no" value="<?=$spotRow -> spot_no ?>" disabled></li>
                     <li class="list-group-item">景點名稱 <input type="text" placeholder="景點名稱" name="spot_name" value="<?=$spotRow -> spot_name ?>"></li>
                     <li class="list-group-item">圖片檔名 <input style="width:300px"type="text" name="spot_pic" value="<?=$spotRow -> spot_pic ?>"><br><input style="width:300px" type="text" name="spot_pic" value="<?=$spotRow -> spot_pic1 ?>"><br><input style="width:300px" type="text" name="spot_pic" value="<?=$spotRow -> spot_pic2 ?>"><br><input style="width:300px" type="text" name="spot_pic" value="<?=$spotRow -> spot_pic3 ?>"><br><input style="width:300px" type="text" name="spot_pic" value="<?=$spotRow -> spot_pic4 ?>"><br><input style="width:300px" type="text" name="spot_pic" value="<?=$spotRow -> spot_pics ?>"></li>
