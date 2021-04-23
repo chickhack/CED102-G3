@@ -414,7 +414,17 @@ nav .nav-links a {
   width: 100%;
   color: #ffffff;
   padding: 8px;
+<<<<<<< HEAD
   -webkit-transition: all .3s;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  -webkit-transition: all .3s;
+>>>>>>> denis
+=======
+>>>>>>> KAI
+>>>>>>> a08664c73a429d97437735d23f749a7d388ac617
   transition: all .3s;
 }
 
@@ -928,8 +938,21 @@ body {
 .product .imgs .img .bigImg {
   width: 400px;
   height: 300px;
+<<<<<<< HEAD
   -o-object-fit: cover;
      object-fit: cover;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+  object-fit: cover;
+=======
+  -o-object-fit: cover;
+     object-fit: cover;
+>>>>>>> denis
+=======
+  object-fit: cover;
+>>>>>>> KAI
+>>>>>>> a08664c73a429d97437735d23f749a7d388ac617
   background-color: #ffffff;
 }
 
@@ -965,8 +988,21 @@ body {
 .product .imgs .img .smallImg .imgDetail img {
   width: 80px;
   height: 60px;
+<<<<<<< HEAD
   -o-object-fit: cover;
      object-fit: cover;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+  object-fit: cover;
+=======
+  -o-object-fit: cover;
+     object-fit: cover;
+>>>>>>> denis
+=======
+  object-fit: cover;
+>>>>>>> KAI
+>>>>>>> a08664c73a429d97437735d23f749a7d388ac617
 }
 
 @media all and (max-width: 768px) {
@@ -1282,6 +1318,15 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+  justify-content: center;
+  align-items: center;
+  justify-content: start;
+=======
+>>>>>>> a08664c73a429d97437735d23f749a7d388ac617
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1291,6 +1336,15 @@ body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
+<<<<<<< HEAD
+=======
+>>>>>>> denis
+=======
+  justify-content: center;
+  align-items: center;
+  justify-content: start;
+>>>>>>> KAI
+>>>>>>> a08664c73a429d97437735d23f749a7d388ac617
   border-bottom: 1px solid #AD6E4A;
   padding: 16px 0;
   position: relative;

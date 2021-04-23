@@ -414,7 +414,17 @@ nav .nav-links a {
   width: 100%;
   color: #ffffff;
   padding: 8px;
+<<<<<<< HEAD
   -webkit-transition: all .3s;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  -webkit-transition: all .3s;
+>>>>>>> denis
+=======
+>>>>>>> KAI
+>>>>>>> a08664c73a429d97437735d23f749a7d388ac617
   transition: all .3s;
 }
 
@@ -1018,8 +1028,19 @@ div.bk3 {
 }
 
 .first .first_right .hottrip {
+<<<<<<< HEAD
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+>>>>>>> denis
+=======
+>>>>>>> KAI
+>>>>>>> a08664c73a429d97437735d23f749a7d388ac617
   display: inline-flex;
   padding-top: 80px;
 }
@@ -1037,9 +1058,22 @@ div.bk3 {
         -ms-flex-direction: column;
             flex-direction: column;
     margin: 0 auto;
+<<<<<<< HEAD
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+=======
+<<<<<<< HEAD
+    justify-content: space-between;
+<<<<<<< HEAD
+=======
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+>>>>>>> denis
+=======
+>>>>>>> KAI
+>>>>>>> a08664c73a429d97437735d23f749a7d388ac617
   }
 }
 
@@ -1092,8 +1126,21 @@ div.bk3 {
   position: absolute;
   top: 15px;
   left: 50%;
+<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+  transform: translateX(-50%);
+=======
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+>>>>>>> denis
+=======
+  transform: translateX(-50%);
+>>>>>>> KAI
+>>>>>>> a08664c73a429d97437735d23f749a7d388ac617
   z-index: 2;
 }
 
@@ -1102,8 +1149,21 @@ div.bk3 {
 }
 
 .first .first_right .hottrip div.planet_top img.planet_a1:hover {
+<<<<<<< HEAD
   -webkit-transform: translateY(0.2em);
           transform: translateY(0.2em);
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+  transform: translateY(0.2em);
+=======
+  -webkit-transform: translateY(0.2em);
+          transform: translateY(0.2em);
+>>>>>>> denis
+=======
+  transform: translateY(0.2em);
+>>>>>>> KAI
+>>>>>>> a08664c73a429d97437735d23f749a7d388ac617
 }
 
 @media all and (max-width: 577px) {
@@ -1126,8 +1186,19 @@ div.bk3 {
 }
 
 .first .first_right .hottrip div.planet_top div.word .tag {
+<<<<<<< HEAD
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+>>>>>>> denis
+=======
+>>>>>>> KAI
+>>>>>>> a08664c73a429d97437735d23f749a7d388ac617
   display: inline-flex;
   border: 1px solid #cccaca;
   border-radius: 5px;
@@ -1197,8 +1268,19 @@ div.bk3 {
 }
 
 .tripselect {
+<<<<<<< HEAD
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+>>>>>>> denis
+=======
+>>>>>>> KAI
+>>>>>>> a08664c73a429d97437735d23f749a7d388ac617
   display: inline-flex;
   width: 280px;
   -webkit-box-pack: justify;
@@ -1286,6 +1368,14 @@ div.bk3 {
 
 @media all and (max-width: 767px) {
   .stepsection .stepall {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    flex-direction: column;
+    align-items: center;
+=======
+>>>>>>> a08664c73a429d97437735d23f749a7d388ac617
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1293,6 +1383,14 @@ div.bk3 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+<<<<<<< HEAD
+=======
+>>>>>>> denis
+=======
+    flex-direction: column;
+    align-items: center;
+>>>>>>> KAI
+>>>>>>> a08664c73a429d97437735d23f749a7d388ac617
   }
 }
 

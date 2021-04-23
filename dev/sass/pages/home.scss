@@ -14,13 +14,6 @@
 nav{
     background: linear-gradient(-180deg, rgba(12,13,24,0.4489146000196954) 9%, rgba(12,13,24,0) 100%);
 }
-//=========按鈕設定
-button:hover{
-    color: #ffff;
-    border: 1px solid $gold;
-    background: $gold;
-}
-
 
 //=========背景影片
 .video-bg{
@@ -292,6 +285,7 @@ button:hover{
 @media all and (max-width:1100px) {
     .planet_box{
         margin-top: 48px;
+        color: #a05509
     }
     .separator{
         width: 90%;
@@ -300,13 +294,9 @@ button:hover{
         margin-top: 32px;
     }
 }
-#marsloc{
-    position: absolute;
-    top: 300vh;
-    left: 30vw;
-    @include respond(mobile){
-        position: relative;
-    }
+canvas{
+    // width: 100%;
+    height: 100%;
 }
 
 

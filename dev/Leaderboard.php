@@ -118,7 +118,7 @@ session_start();
                <div class="col-4 col-xxl-2 col-md-2 del">累積星球</div>
             </div>
         </div>
-        <div class="col-10 text-color line-he-75 hovers" id="top0">
+        <div class="col-10 text-color line-he-75 hovers" >
            <div class="row ">
 
               <div class="col-4 col-xxl-2 col-md-2 text-00 line-he-75 ">{{me.Lead}}</div>

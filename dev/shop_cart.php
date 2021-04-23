@@ -111,9 +111,11 @@
                     </div>
                     <?php if(empty($_SESSION['cart'])){?>
                         <button type="submit" name="check" class="button_min disabled margin_left_3" @click="location" disabled>前往結帳</button>
+                    <?php }else if(!isset($_SESSION['mem_no'])){ ?>
+                        <a href="./login.php" class="button_min margin_left_3">前往結帳</a>
                     <?php }else{?>
                         <button type="submit" name="check" class="button_min margin_left_3" @click="location">前往結帳</button>
-                    <?php }?>
+                    <?php } ?>
                 </div>
             </form>
         </section>

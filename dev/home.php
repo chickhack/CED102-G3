@@ -1,3 +1,7 @@
+<?php
+// start session
+ session_start();
+ ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -96,8 +100,12 @@
                             </a>
                         </li>
                         <li>
-                            <a href="./login.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png"
-                                    alt="" class="icon" /></a>
+                            <?php
+                                if(isset($_SESSION['mem_no'])){?>
+                                    <a href="./account.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png" alt="" class="icon"/></a>
+                            <?php }else{ ?>
+                                    <a href="./login.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png" alt="" class="icon"/></a>
+                            <?php } ?>
                         </li>
                     </ul>
                     <div class="burger">
@@ -234,7 +242,8 @@
                             </div>
                             <div class="tab-active col-lg-6 col-md-12 col-sm-12">
                                 <!-- 火星動圖 -->
-                                <div id="marsloc" class="col-md-12 col-sm-12"></div>
+                                <canvas><canvas>
+                                <!-- <div id="marsloc" class="col-md-12 col-sm-12"></div> -->
                                 <script src="./js/mars.js"></script>
                             </div>
                         </div>

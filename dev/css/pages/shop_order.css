@@ -414,7 +414,17 @@ nav .nav-links a {
   width: 100%;
   color: #ffffff;
   padding: 8px;
+<<<<<<< HEAD
   -webkit-transition: all .3s;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  -webkit-transition: all .3s;
+>>>>>>> denis
+=======
+>>>>>>> KAI
+>>>>>>> a08664c73a429d97437735d23f749a7d388ac617
   transition: all .3s;
 }
 
@@ -890,6 +900,19 @@ section.orderDetail li .imgWord {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> KAI
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+<<<<<<< HEAD
+=======
+>>>>>>> a08664c73a429d97437735d23f749a7d388ac617
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -900,6 +923,12 @@ section.orderDetail li .imgWord {
       justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+<<<<<<< HEAD
+=======
+>>>>>>> denis
+=======
+>>>>>>> KAI
+>>>>>>> a08664c73a429d97437735d23f749a7d388ac617
 }
 
 section.orderDetail li .imgWord .prod {
@@ -914,8 +943,19 @@ section.orderDetail li .imgWord .prod {
 }
 
 section.orderDetail li .imgWord .imgRight {
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> denis
+=======
+>>>>>>> KAI
+>>>>>>> a08664c73a429d97437735d23f749a7d388ac617
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -938,8 +978,19 @@ section.orderDetail li .imgWord .imgRight {
 }
 
 section.orderDetail li .imgWord .integral {
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> denis
+=======
+>>>>>>> KAI
+>>>>>>> a08664c73a429d97437735d23f749a7d388ac617
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -1377,6 +1428,19 @@ section.orderer .detail small {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> KAI
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+<<<<<<< HEAD
+=======
+>>>>>>> a08664c73a429d97437735d23f749a7d388ac617
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1386,6 +1450,12 @@ section.orderer .detail small {
   opacity: 0;
   visibility: hidden;
   -webkit-transition: all .3s;
+<<<<<<< HEAD
+=======
+>>>>>>> denis
+=======
+>>>>>>> KAI
+>>>>>>> a08664c73a429d97437735d23f749a7d388ac617
   transition: all .3s;
 }
 

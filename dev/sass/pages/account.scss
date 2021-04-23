@@ -31,10 +31,13 @@
     .account_hi, .account_logo {
       font-size: 20px;
     }
-    .account_hi, .account_acnum {
-      font-family: "Microsoft JhengHei";
+    .account_hi, .account_acnum, .account_logo {
+      font-family: "Microsoft JhengHei"
     }
-    .account_logo, .account_numlogo {
+    .account_logo {
+      letter-spacing: 5px;
+    }
+    .account_numlogo {
       font-family: "Nasalization";
       letter-spacing: 5px;
     }

@@ -2,7 +2,7 @@
 session_start();
 
 try{
-  require_once('./php/connect_ced102_g3_local.php');
+  require_once('./connect_ced102_g3_local.php');
   $sql = "select * from customer where email=:email and mem_psw=:mem_psw"; 
 
   $member = $pdo->prepare($sql);
@@ -18,9 +18,13 @@ try{
     
    $memRow = $member->fetch(PDO::FETCH_ASSOC);
    $_SESSION['mem_name'] = $memRow['last_name'].$memRow['first_name'];
-    $_SESSION['mem_no'] = $memRow['mem_no'];
-    $_SESSION["mem_pic"] = $memRow['mem_pic'];
-
+   $_SESSION['mem_fir'] = $memRow['first_name'];
+   $_SESSION['mem_last'] = $memRow['last_name'];
+   $_SESSION['mem_no'] = $memRow['mem_no'];
+   $_SESSION["mem_pic"] = $memRow['mem_pic'];
+   $_SESSION['mem_phone'] = $memRow['phone'];
+   $_SESSION['mem_email'] = $memRow['email'];
+   $_SESSION['mem_coin'] =$memRow['coin'];
     // print_r($memRow);
 
     //送出登入者的姓名資料

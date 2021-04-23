@@ -756,8 +756,21 @@ form .orderDetails .row .col-10 .btn-orderDetails::before {
   text-align: center;
   line-height: 1.5rem;
   position: absolute;
+<<<<<<< HEAD
   -webkit-transform: translate(50%, -150%);
           transform: translate(50%, -150%);
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+  transform: translate(50%, -150%);
+=======
+  -webkit-transform: translate(50%, -150%);
+          transform: translate(50%, -150%);
+>>>>>>> denis
+=======
+  transform: translate(50%, -150%);
+>>>>>>> KAI
+>>>>>>> a08664c73a429d97437735d23f749a7d388ac617
   display: block;
   color: white;
 }

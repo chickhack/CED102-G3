@@ -414,7 +414,17 @@ nav .nav-links a {
   width: 100%;
   color: #ffffff;
   padding: 8px;
+<<<<<<< HEAD
   -webkit-transition: all .3s;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  -webkit-transition: all .3s;
+>>>>>>> denis
+=======
+>>>>>>> KAI
+>>>>>>> a08664c73a429d97437735d23f749a7d388ac617
   transition: all .3s;
 }
 
@@ -1228,9 +1238,23 @@ input::-webkit-inner-spin-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+  align-items: center;
+=======
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+>>>>>>> denis
+=======
+  align-items: center;
+>>>>>>> KAI
+>>>>>>> a08664c73a429d97437735d23f749a7d388ac617
   border-bottom: 1px solid #AD6E4A;
   padding: 16px 0;
   position: relative;
@@ -1245,6 +1269,15 @@ input::-webkit-inner-spin-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+  justify-content: center;
+  align-items: center;
+  justify-content: start;
+=======
+>>>>>>> a08664c73a429d97437735d23f749a7d388ac617
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1254,6 +1287,15 @@ input::-webkit-inner-spin-button {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
+<<<<<<< HEAD
+=======
+>>>>>>> denis
+=======
+  justify-content: center;
+  align-items: center;
+  justify-content: start;
+>>>>>>> KAI
+>>>>>>> a08664c73a429d97437735d23f749a7d388ac617
   color: #cccaca;
   font-weight: 600;
 }

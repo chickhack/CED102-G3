@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>加入會員</title>
+    <link rel="shortcut icon" href="./img/icon/shortcut.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <!-- jQuery -->
@@ -19,6 +20,9 @@
       href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css"
     />
     <link rel="stylesheet" type="text/css" href="./css/pages/register.css" />
+    <!-- 動態背景 -->
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    
   </head>
   <body>
   <header>
@@ -77,36 +81,39 @@
         <script src="./js/header.js"></script>
 
 </header>
-       
+<!-- 動態背景 -->
+    <div id="particles-js">
+        <script src="./js/background.js"></script>
+    </div>
 
     <div class="container-fluid">
-        <section class="login_container col-12">
+        <section class="login_container col-lg-12 " align="center">
         <div class="login_banner col-3">
             <h2>加入 SPACED</h2>
             <h2>一同體驗</h2>
             <h2>航行宇宙</h2>
         </div>
-        <div class="rightbox col-8 col-sm-9">
-            <div class="return_btn margin_left_2">
+        <div class="rightbox col-lg-9  col-md-12 col-sm-12">
+            <div class="return_btn margin_left_2 margin_top_2">
                 <span><a href="./login.php"><<</a></span>
                 <h4><a href="./login.php">返回登入頁面</a></h4>
             </div>
             <div class="modal-dialog">
                 <div class="col-sm-9 main-section">
-                    <div class="modal-content margin_top_5">
-                        <div class="col-11 form-input">
+                    <div class="modal-content margin_top_10">
+                        <div class="col-12 form-input">
                             <form id="register_form" action="./php/check_username.php" method="post" >
                             <div class="form-group">
                                 <input type="email" id="email" name="email" class="form-control" placeholder="請輸入" required></input>
                             </div>
                             <!-- <input type="submit" class="button_min check_user" id="check_user" value="檢查"></input> -->
                             <span id="message"></span>
-                            <div class="form-group">
-                                <input type="password" id="mem_psw" name="mem_psw" class="form-control" placeholder="請輸入密碼" onkeyup="return passwordChanged();"></input>
+                            <div class="form-group input">
+                                <input type="password" id="mem_psw" name="mem_psw" class="form-control input__field" placeholder="請輸入" onkeyup="return passwordChanged();"></input>
                             </div>
                             <span id="strength"></span>
                             <div class="form-group">
-                                <input type="password" id="confirm_password" class="form-control" placeholder="請重新輸入密碼"></input>
+                                <input type="password" id="confirm_password" class="form-control" placeholder="請輸入"></input>
                             </div>
                             <span id='message'></span>
                             <input type="submit" class="button_min margin_top_3 register_btn" id="register_btn" name="register" value="註冊"></input>
@@ -119,8 +126,23 @@
 
         </section>
 
+<!-- container-fluid結尾 -->
     </div>
-
+<!-- footer  -->
+<footer class="padding_top_10">
+        <div class="links">
+            <div class="logo"><img src="./img/logo.png" alt=""></div>
+            <ul class="footer-links margin_top_2">
+                <li><a href="alltrip.php">星球景點</a></li>
+                <li><a href="planet.php">星星世界</a></li>
+                <li><a href="shop.php">星球商城</a></li>
+                <li><a href="photowall.php">太空互動</a></li>
+                <li><a href="Leaderboard.php">玩家排行</a></li>
+            </ul>
+        </div>
+        <img src="./img/footer_moon.png" alt="" class="footer_moon">
+        <img src="./img/smoke.png" alt="" class="smoke">
+    </footer>
     <script>
         function $id(id){
             return document.getElementById(id);
@@ -236,5 +258,6 @@
 
         
     </script>
+    
   </body>
 </html>

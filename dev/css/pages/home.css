@@ -1330,10 +1330,21 @@ button:hover a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> KAI
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+=======
+>>>>>>> a08664c73a429d97437735d23f749a7d388ac617
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1363,8 +1374,20 @@ button:hover a {
   transform: translate3d(0, 0, 0);
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> a08664c73a429d97437735d23f749a7d388ac617
 .shopItem .hovereffect:hover h2:after, .shopItem .hovereffect h4:after {
   -webkit-transform: translate3d(0, 0, 0);
+<<<<<<< HEAD
+=======
+>>>>>>> denis
+=======
+.shopItem .hovereffect:hover h2:after, .shopItem .hovereffect h4:after {
+>>>>>>> KAI
+>>>>>>> a08664c73a429d97437735d23f749a7d388ac617
   transform: translate3d(0, 0, 0);
 }
 
@@ -1523,13 +1546,27 @@ button:hover a {
 
 @media all and (max-width: 1200px) {
   .flow_member .flowall {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    flex-direction: column;
+    align-items: center;
+<<<<<<< HEAD
+=======
+>>>>>>> a08664c73a429d97437735d23f749a7d388ac617
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+<<<<<<< HEAD
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+=======
+>>>>>>> denis
+=======
+>>>>>>> KAI
+>>>>>>> a08664c73a429d97437735d23f749a7d388ac617
   }
   .flow_member .flowall .flow .separator {
     width: 100%;
