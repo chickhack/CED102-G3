@@ -1,5 +1,8 @@
 <?php
 session_start();
+// if(!isset($_SESSION["mem_no"])){
+//     $_SESSION["mem_no"]=0;
+// }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -245,21 +248,6 @@ session_start();
     }
 </script>
 <script>
- var top0= new Vue({
-     el:'#top0',
-     data:{
-         me:{
-            Lead:88,
-            name:'Melody',
-            src:'./img/account/lev1.png',
-            mesrc:'./img/userprofile/user9.png',
-            integral:2023,
-            sp:5,
-            itin:3,
-         },
-      }
- });
-
 var top4 = new Vue({
    el:'#top-4',
    data:{

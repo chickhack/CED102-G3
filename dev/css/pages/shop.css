@@ -426,13 +426,7 @@ nav .nav-icons {
 
 @media all and (max-width: 768px) {
   nav .nav-icons {
-<<<<<<< HEAD
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-=======
     justify-content: space-between;
->>>>>>> KAI
   }
 }
 
@@ -447,7 +441,7 @@ nav .nav-icons .info {
 }
 
 nav .nav-icons .info img {
-  width: 40px;
+  width: 35px;
 }
 
 @media all and (max-width: 768px) {
@@ -461,12 +455,7 @@ nav .nav-icons .info .infoData {
   background-color: #AD6E4A;
   width: 80px;
   left: 50%;
-<<<<<<< HEAD
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-=======
   transform: translateX(-50%);
->>>>>>> KAI
   display: none;
 }
 
@@ -476,12 +465,7 @@ nav .nav-icons .info .infoData::before {
   height: 10px;
   top: 0;
   left: 50%;
-<<<<<<< HEAD
-  -webkit-transform: translate(-50%, -50%) rotate(45deg);
-          transform: translate(-50%, -50%) rotate(45deg);
-=======
   transform: translate(-50%, -50%) rotate(45deg);
->>>>>>> KAI
   background-color: #AD6E4A;
   position: absolute;
   z-index: 0;
@@ -490,10 +474,6 @@ nav .nav-icons .info .infoData::before {
 nav .nav-icons .info .infoData a {
   text-align: center;
   color: #0c0d18;
-<<<<<<< HEAD
-  -webkit-transition: all .3s;
-=======
->>>>>>> KAI
   transition: all .3s;
   padding: 10px 0;
   z-index: 1;
@@ -859,16 +839,8 @@ section.shop #app ul {
 
 @media all and (max-width: 992px) {
   section.shop #app ul {
-<<<<<<< HEAD
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: start;
-=======
     justify-content: space-around;
     align-items: start;
->>>>>>> KAI
     margin: 0 10px;
   }
 }

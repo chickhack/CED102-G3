@@ -2,6 +2,7 @@
     $dbname = "g3";
     $user ="root";
 <<<<<<< HEAD
+<<<<<<< HEAD
     $password= "dan700629";
 <<<<<<< HEAD
 
@@ -27,6 +28,9 @@ $password= "root1009";
 >>>>>>> 4b796edc5c465c93376a906dd66858d342098218
 >>>>>>> 7f15494c97895f4034ce17c3e937e20b29fbae34
 >>>>>>> 69a4370c878bbff31807ab78596b5e981a6ef17a
+=======
+    $password= "rootpassword";
+>>>>>>> chickhack
     $dsn = "mysql:host=localhost;port=3306;dbname=$dbname;charset=utf8";
     $options = array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION,
                         PDO::ATTR_CASE=>PDO::CASE_NATURAL);
