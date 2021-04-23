@@ -1,11 +1,6 @@
 <?php
 session_start();
 
-<<<<<<< HEAD
-// $_SESSION["mem_no"]=1010007;
-=======
-// $_SESSION["mem_no"] = 1010007;
->>>>>>> Min
 ?>
 
 <!DOCTYPE html>
@@ -87,23 +82,6 @@ session_start();
           </a>
         </li>
         <li>
-<<<<<<< HEAD
-        <?php
-            if(isset($_SESSION['mem_no'])){?>
-                <div class="member"  onclick="toggle()">
-                    <div class="info">
-                        <img src="<?= $_SESSION['mem_pic'] ?>" alt="">
-                        <div class="infoData">
-                            <a href="./account.php">會員中心</a>
-                            <a href="./login.php" onclick="show()">登出</a>
-                        </div>
-                    </div>  
-                </div>
-        <?php }else{ ?>
-                <a href="./login.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png" alt="" class="icon"/></a>
-        <?php } ?>
-    </li>
-=======
           <?php
           if (isset($_SESSION['mem_no'])) { ?>
             <div class="member" onclick="toggle()">
@@ -119,7 +97,6 @@ session_start();
             <a href="./login.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png" alt="" class="icon" /></a>
           <?php } ?>
         </li>
->>>>>>> Min
       </ul>
       <div class="burger">
         <div class="line1"></div>
@@ -262,23 +239,6 @@ session_start();
                 <label for="exampleInputPassword1">地址</label></br>
                 <div class="edit_text"><input type="text" class="form focus" ref="item.address" :value="item.address" :disabled="!isEditing" :class="{view: !isEditing}"></div></br>
               </div>
-<<<<<<< HEAD
-              <div class="col-md-auto align-self-end info_right center">
-                <div class="form-group">
-                  <label for="exampleInputPassword1">姓氏</label></br>
-                  <input type="text" class="unform" :value="item.last_name" disabled></br>
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputPassword1">生日</label></br>
-                  <input type="text" class="unform"  :value="item.bday" disabled></br>
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputPassword1">地址</label></br>
-                  <div class="edit_text"><input type="text" class="form focus" ref="item.address" :value="item.address"
-                      :disabled="!isEditing" :class="{view: !isEditing}"></div></br>
-                </div>
-=======
->>>>>>> Min
               </form>
             </div>
 
@@ -546,10 +506,6 @@ session_start();
           <div class="heart_btns">
             <input value="<?php echo date("Y-m-d");?>" type="date" id="date-1" class="btn orderbtns margin_top_3 btn-date data-down">
           </div>
-<<<<<<< HEAD
-=======
-          <!-- value="<?php echo date("Y-m-d"); ?>"  -->
->>>>>>> Min
 
           <div class="ordercontent margin_top_3">
 
@@ -1077,16 +1033,9 @@ session_start();
         function toggle(){
             const infoData = document.querySelector(".infoData");
             infoData.classList.toggle("show");
-<<<<<<< HEAD
-        }
-
-
-    window.onload = function () {        //  點擊menu變色
-=======
         } 
 
     window.onload = function() { //  點擊menu變色
->>>>>>> Min
       for (var i = 0; i < document.links.length; i++) {
         var thisLink = document.links[i];
         thisLink.onclick = function() {
