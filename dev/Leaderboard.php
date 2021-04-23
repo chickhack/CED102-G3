@@ -14,6 +14,8 @@ session_start();
     <link rel="shortcut icon" href="./img/icon/shortcut.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/pages/all.css">
     <link rel="stylesheet" href="./css/pages/Leaderboard.css">
+    <link rel="shortcut icon" href="./img/icon/shortcut.png" type="image/x-icon">
+
 </head>
 <style>
  #particles-js {
@@ -34,11 +36,7 @@ session_start();
     <li class="margin_left_5"><a href="planet.php">星星世界</a></li>
     <li class="margin_left_5"><a href="shop.php">星球商城</a></li>
     <li class="margin_left_5"><a href="photowall.php">太空互動</a></li>
-<<<<<<< HEAD
-    <li class="margin_left_5"><a href="Leaderboard.php">玩家排行</a></li>
-=======
     <li class="margin_left_5"><a href="Leaderboard.php" class="bread">玩家排行</a></li>
->>>>>>> dev
     <!-- <li><a href=""><img src="./images/ticket.png" alt="" class="icon"></a></li>
         <li><a href=""><img src="./images/shopping-cart_(1).png" alt="" class="icon"></a></li>
         <li><a href=""><img src="./images/round-account-button-with-user-inside_(1).png" alt="" class="icon"></a></li> -->
