@@ -234,6 +234,15 @@ session_start();
             }, 900);
         })
     });
+    function show() {
+        fetch("./php/logout.php");
+        window.location.href = "./login.php";
+    }
+
+    function toggle() {
+        const infoData = document.querySelector(".infoData");
+        infoData.classList.toggle("show");
+    }
 </script>
 <script>
  var top0= new Vue({
