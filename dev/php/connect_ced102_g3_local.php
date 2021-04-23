@@ -1,4 +1,7 @@
 <?php
+ $dbname = "g3";
+ $user ="root";
+ $password= "root";
     $dbname = "spaced";
     $user ="root";
     $password= "a00000000";
