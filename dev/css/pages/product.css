@@ -396,6 +396,13 @@ nav .nav-links a {
   width: 100%;
   color: #ffffff;
   padding: 8px;
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  -webkit-transition: all .3s;
+>>>>>>> denis
+=======
+>>>>>>> KAI
   transition: all .3s;
 }
 
@@ -451,20 +458,23 @@ nav .nav-cart .count {
   text-align: center;
   line-height: 1.5rem;
   position: absolute;
-  transform: translate(50%, -150%);
+  -webkit-transform: translate(50%, -150%);
+          transform: translate(50%, -150%);
   display: block;
   color: white;
 }
 
 @media all and (max-width: 992px) {
   nav .nav-cart .count {
-    transform: translate(100%, -150%);
+    -webkit-transform: translate(100%, -150%);
+            transform: translate(100%, -150%);
   }
 }
 
 @media all and (max-width: 768px) {
   nav .nav-cart .count {
-    transform: translate(40%, -170%);
+    -webkit-transform: translate(40%, -170%);
+            transform: translate(40%, -170%);
     width: 20px;
     height: 20px;
     font-size: 12px;
@@ -485,20 +495,23 @@ nav .nav-trip .trip-count {
   text-align: center;
   line-height: 1.5rem;
   position: absolute;
-  transform: translate(50%, -150%);
+  -webkit-transform: translate(50%, -150%);
+          transform: translate(50%, -150%);
   display: block;
   color: white;
 }
 
 @media all and (max-width: 992px) {
   nav .nav-trip .trip-count {
-    transform: translate(100%, -150%);
+    -webkit-transform: translate(100%, -150%);
+            transform: translate(100%, -150%);
   }
 }
 
 @media all and (max-width: 768px) {
   nav .nav-trip .trip-count {
-    transform: translate(40%, -170%);
+    -webkit-transform: translate(40%, -170%);
+            transform: translate(40%, -170%);
     width: 20px;
     height: 20px;
     font-size: 12px;
@@ -700,7 +713,8 @@ input[type=number] {
   height: 100px;
   background-size: contain;
   background-repeat: no-repeat;
-  animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+  -webkit-animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+          animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
 }
 
 body {
@@ -754,7 +768,16 @@ body {
 .product .imgs .img .bigImg {
   width: 400px;
   height: 300px;
+<<<<<<< HEAD
+<<<<<<< HEAD
   object-fit: cover;
+=======
+  -o-object-fit: cover;
+     object-fit: cover;
+>>>>>>> denis
+=======
+  object-fit: cover;
+>>>>>>> KAI
   background-color: #ffffff;
 }
 
@@ -782,7 +805,16 @@ body {
 .product .imgs .img .smallImg .imgDetail img {
   width: 80px;
   height: 60px;
+<<<<<<< HEAD
+<<<<<<< HEAD
   object-fit: cover;
+=======
+  -o-object-fit: cover;
+     object-fit: cover;
+>>>>>>> denis
+=======
+  object-fit: cover;
+>>>>>>> KAI
 }
 
 @media all and (max-width: 768px) {
@@ -1069,9 +1101,27 @@ body {
 
 .comment .messages {
   display: flex;
+<<<<<<< HEAD
+<<<<<<< HEAD
   justify-content: center;
   align-items: center;
   justify-content: start;
+=======
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+>>>>>>> denis
+=======
+  justify-content: center;
+  align-items: center;
+  justify-content: start;
+>>>>>>> KAI
   border-bottom: 1px solid #AD6E4A;
   padding: 16px 0;
   position: relative;

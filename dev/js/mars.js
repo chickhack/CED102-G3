@@ -1,10 +1,13 @@
+"use strict";
 let clock = new THREE.Clock();
+const  renderer = new THREE.WebGLRenderer({canvas: document.querySelector("canvas"),antialiasing : true, alpha:true});
 
 const imgLoc = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/";
-let camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 10000),
-light = new THREE.PointLight(0xFFFFFF, 2, 5000);
-camera.position.set(1300, 0, 0),
-scene = new THREE.Scene();
+// let camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 10000),
+const  camera = new THREE.PerspectiveCamera(70, 2, 1, 1000);
+const light = new THREE.PointLight(0xFFFFFF, 2, 5000);
+camera.position.set(800, 0, 0);
+const scene = new THREE.Scene();
 
 camera.lookAt(scene.position);
 light.position.set(2000, 2000, 1500);
@@ -21,49 +24,77 @@ marsMaterial.bumpMap = loader.load(imgLoc+'mars-bump.jpg');
 marsMaterial.bumpScale = 8;
 marsMaterial.specular = new THREE.Color('#000000');
 
-let renderer = new THREE.WebGLRenderer({antialiasing : true, alpha:true});
-renderer.setSize(window.innerWidth - 400, window.innerHeight -250)       
-marsloc.appendChild(renderer.domElement);
+function resizeCanvasToDisplaySize() {
+  const canvas = renderer.domElement;
+  const width = canvas.clientWidth;
+  const height = canvas.clientHeight;
+  if (canvas.width !== width ||canvas.height !== height) {
+    // you must pass false here or three.js sadly fights the browser
+    renderer.setSize(width, height, false);
+    camera.aspect = width / height;
+    camera.updateProjectionMatrix();
 
-let controls = new THREE.OrbitControls(camera, renderer.domElement);
-controls.enableZoom = false;
-controls.addEventListener('change', render);
+    // set render target sizes here
 
-function animate(){
-  requestAnimationFrame(animate);
-  controls.update();
-  render();       
+  }
 }
+
+
+
+
+// let controls = new THREE.OrbitControls(camera, marsloc);
+// controls.enableZoom = false;
+// controls.addEventListener('change', render);
+
+// function animate(){
+//   requestAnimationFrame(animate);
+//   controls.update();
+//   render();       
+// }
             
-function render(){
-   var delta = clock.getDelta();
-   marsMesh.rotation.y += 0.1 * delta;
-   renderer.clear();
-   renderer.render(scene, camera); 
+// function render(){
+//    var delta = clock.getDelta();
+//    marsMesh.rotation.y += 0.1 * delta;
+//    renderer.clear();
+//    renderer.render(scene, camera); 
+// }
+
+// animate();
+
+// marsloc.addEventListener('mousedown', function() { 
+//   marsloc.style.cursor = "-moz-grabbing";
+//   marsloc.style.cursor = "-webkit-grabbing";
+//   marsloc.style.cursor = "grabbing";
+// })
+
+// marsloc.addEventListener('mouseup', function() { 
+//   marsloc.style.cursor = "-moz-grab";
+//   marsloc.style.cursor = "-webkit-grab";
+//   marsloc.style.cursor = "grab";
+// })
+// let renderer = new THREE.WebGLRenderer({antialiasing : true, alpha:true});
+
+
+function animate(time) {
+  time *= 0.001;  // seconds
+
+  resizeCanvasToDisplaySize();
+
+  // marsMesh.rotation.x = time * 0.5;
+  marsMesh.rotation.y = time * 0.1;
+
+  renderer.render(scene, camera);
+  requestAnimationFrame(animate);
 }
 
-animate();
+requestAnimationFrame(animate);
+// window.addEventListener( 'resize', onWindowResize, false );
 
-marsloc.addEventListener('mousedown', function() { 
-  marsloc.style.cursor = "-moz-grabbing";
-  marsloc.style.cursor = "-webkit-grabbing";
-  marsloc.style.cursor = "grabbing";
-})
-
-marsloc.addEventListener('mouseup', function() { 
-  marsloc.style.cursor = "-moz-grab";
-  marsloc.style.cursor = "-webkit-grab";
-  marsloc.style.cursor = "grab";
-})
-
-window.addEventListener( 'resize', onWindowResize, false );
-
-function onWindowResize(){
-  camera.aspect = window.innerWidth  / window.innerHeight ;
-  camera.updateProjectionMatrix();
-  renderer.setSize(window.innerWidth, (window.innerHeight -100));
-}
-
+// function onWindowResize(){
+//   camera.aspect =  marsWidth / marsHeight ;
+//   camera.updateProjectionMatrix();
+//   renderer.setSize(marsWidth, marsHeight);
+// }
 
 
 // const scaling = "tag"; // this will resize to fit inside the screen dimensions

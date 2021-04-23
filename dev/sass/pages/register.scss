@@ -8,22 +8,58 @@
         margin: 0;
     }
 }
-// .container{
-//     margin: 0 auto;
-//     max-width: 1100px;
-//     text-align: center;
-//     a{
-//         text-decoration: none;
-//     }
-//     @include respond(mobile){
-//         margin: 0;
-//     }
-// }
+
+//=========動態背景
+canvas {
+    display: block;
+
+  } /* ---- particles.js container ---- */
+  #particles-js {
+    z-index: -10;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: $darkblue;
+  } 
+  
+//=========按鈕
+input{
+    background-color: transparent;
+    color: $gold;
+    a{
+        text-decoration: none;
+        color: $gold;
+    }
+}
+input:hover{
+    color: #ffff;
+    border: 1px solid $gold;
+    background: $gold;
+    a{
+        text-decoration: none;
+        color: white;
+    
+    }
+}
+
 section.login_container{
     padding: 0;
     border: 1px solid #ad6e4a83;
     display: flex;
     border-radius: 5px;
+    @media only screen and ( max-width:1200px) {
+        width: 90%;
+        margin: 0 auto;
+
+    }
+    @include respond(mobile){
+        padding-bottom: 20px;
+        .rightbox{
+            width: 100%;
+        }
+    }
+}
+
     .login_banner{
         background-color: rgb(53, 63, 97);
         height: 80vh;
@@ -71,20 +107,23 @@ section.login_container{
         .main-section {
             display: flex;
             flex-direction: column;
-            align-items: center;
-            margin: 0 auto;
+            justify-content: center;
             .modal-content {
                 opacity: .8;
                 border-radius: 10px;
                 background-color: transparent;
                 border: none;
+                @include respond(pad){
+                    margin-top:48px;
+                    align-items: flex-end;
+                }
             }
         }
         form {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: inherit;
+            // align-items: inherit;
             .form-group input {
                 margin: 0 auto;
                 margin-top: 24px;
@@ -99,43 +138,17 @@ section.login_container{
                 background-color: transparent;
             }
             .form-group input:focus{
+
+                // border-radius: 10px;
                 padding-left: 28px; 
-                transform: scale(1.08);
+                // transform: scale(1.08);
                 box-shadow: 
-                                    -1px 0px 20px 5px rgba(#AD6E4A,0.45);
-                -webkit-box-shadow: -1px 0px 20px 5px rgba(#AD6E4A,0.45);
-                -moz-box-shadow:    -1px 0px 20px 5px rgba(#AD6E4A,0.45);
-                
+                                    -1px 0px 20px 5px rgba(#AD6E4A,0.5);
+                -webkit-box-shadow: -1px 0px 20px 5px rgba(#AD6E4A,0.5);
+                -moz-box-shadow:    -1px 0px 20px 5px rgba(#AD6E4A,0.5);
                 border: none;
+                // border-bottom: 1px solid $gold;
             }
-            .form-group input:hover{
-                animation: pulse .5s 1;
-            }
-            @-webkit-keyframes pulse {
-                0% {
-                  -webkit-box-shadow: 0 0 0 0 rgba(204, 140, 44, 0.4);
-                }
-                70% {
-                    -webkit-box-shadow: 0 0 0 7px rgba(204, 140, 44, 0);
-                }
-                100% {
-                    -webkit-box-shadow: 0 0 0 0 rgba(204, 140, 44, 0);
-                }
-              }
-              @keyframes pulse {
-                0% {
-                  -moz-box-shadow: 0 0 0 0 rgba(204, 140, 44, 0.4);
-                  box-shadow: 0 0 0 0 rgba(204, 140, 44, 0.4);
-                }
-                70% {
-                    -moz-box-shadow: 0 0 0 7px rgba(204, 140, 44, 0);
-                    box-shadow: 0 0 0 7px rgba(204, 140, 44, 0);
-                }
-                100% {
-                    -moz-box-shadow: 0 0 0 0 rgba(204, 140, 44, 0);
-                    box-shadow: 0 0 0 0 rgba(204, 140, 44, 0);
-                }
-              }
             .form-group::before {
                 content: "電子信箱";
                 position: absolute;
@@ -153,35 +166,21 @@ section.login_container{
             span{
                 align-self: center;
             }
-            #register{
+            .register_btn{
                 align-self: center;
                 background-color: transparent;
                 color: $gold;
             }
-            #register:hover{
+            .register_btn:hover{
                 color: #ffff;
                 border: 1px solid $gold;
                 background: $gold;
             }
         }
     }
-    .bottom-section{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
 
-        .forgot a, .signup a{
-            color: $gray;
-        }
-        .forgot:hover , .signup:hover {
-            cursor: pointer;
-            text-decoration: underline;
-        }
-        @include respond(mobile){
-            margin-left: 32px;
-        }
-     }
-    }
+
+
 
 
 

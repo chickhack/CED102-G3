@@ -10,7 +10,7 @@ if($_GET['post_stats'] == 0){
 }
 
 try{
-    require_once("connectbooks_wei.php");
+    require_once("connect_ced102_g3_local.php");
     $sql = "UPDATE post SET post_stats=$stats WHERE post_no=:post_no";
     $product = $pdo->prepare($sql);
     $product->bindValue(":post_no", $post_no);
@@ -18,7 +18,7 @@ try{
     if($product->execute()){
         
         // echo "<script>alert('已下架!')</script>"; <!-- 狀態列 -->
-	    echo "<script>window.location.href='../spaced_backstage_post.php'</script>";
+	    echo "<script>window.location.href='../backstage/spaced_backstage_post.php'</script>";
     }
 }
 catch(PDOException $e){

@@ -24,18 +24,19 @@ canvas {
 
 .link {
   position: absolute;
-  
+
   left: 50%;
-  top:45%;
+  top: 45%;
   transform: translate(-50%, -50%);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   z-index: 5;
+
   a {
     border-radius: 10px;
-    padding:16px;
+    padding: 16px;
     border: 0.5px solid $white;
     color: $white;
     text-decoration: none;
@@ -55,11 +56,11 @@ canvas {
   border: 1px solid;
   overflow: hidden;
   position: relative;
-  
+
   span {
     z-index: 20;
   }
-  
+
   &:after {
     background: #fff;
     content: "";
@@ -76,14 +77,51 @@ canvas {
 }
 
 .btn-4:hover {
-  
+
   &:after {
     left: 180%;
     transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
   }
 }
 
-.logo{
-max-width: 300px;
-display:block;
+.logo {
+  max-width: 300px;
+  display: block;
+  left: 50%;
+  width: 50%;
+  top: 25vh;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  @media all and (max-width:577px) {
+    top: 15vh;
+} 
+}
+
+.tibame {
+  background-color: rgba(12, 13, 24, 0.7);
+  font-family: "Nasalization";
+  left: 50%;
+  width: 50%;
+  bottom: 0;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  border-radius: 10px;
+  margin: 0;
+  padding: 8px;
+  text-align: center;
+  z-index: 20;
+  letter-spacing: 2px;
+  margin-top: -50px;
+  span> a {
+    text-decoration: none;
+    color: $gold;
+    display: inline-block;
+  }
+  span> a:visited {
+    text-decoration: none;
+    color: $gold;
+  }
+  @media all and (max-width:577px) {
+    display: none;
+} 
 }

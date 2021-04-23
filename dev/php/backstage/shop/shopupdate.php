@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>商品新增</title>
 </head>
 <body>
     <?php
@@ -17,7 +17,7 @@ try {
 		$allfile='';
 		foreach($_FILES["prod_pic"]["error"] as $i =>$data){
 			switch($_FILES["prod_pic"]["error"][$i]){
-				$dir="images"
+				$dir="images";
 				if(file_exists($dir)==false){
 					mkdir("images");
 				}
@@ -26,7 +26,7 @@ try {
 				$pathinfoArr = pathinfo($_FILES["prod_pic"]["name"][$i]);
 				$filename = "{$uniqid}.{$pathinfoArr["extension"]}";
 				$to ="{$dir}/".$filename;
-				copy($from,$to)
+				copy($from,$to);
 			}
 			$allfile .= "==".$filename;
 		}
@@ -72,7 +72,7 @@ try {
 		echo "錯誤代碼 : {$_FILES["prod_pic"]["error"]} <br>";
 		echo "新增失敗<br>";
 	}
-} catch (PDOException $e) {
+  catch (PDOException $e) {
 	$errMsg .= "錯誤原因 : ".$e -> getMessage(). "<br>";
 	$errMsg .= "錯誤行號 : ".$e -> getLine(). "<br>";	
 	echo $errMsg;

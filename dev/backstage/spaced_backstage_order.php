@@ -20,7 +20,7 @@ try {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>後台行程景點管理</title>
+    <title>行程訂單管理</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/all.css">
@@ -44,7 +44,7 @@ try {
             <button class="div-list-btn-a">商城</button>
             <div>
                 <a href="backstage_shop.php" class="div-list-btn-s">商品管理</a>
-                <a href="#" class="div-list-btn-s">商品評價</a>
+                <a href="./backstage_shop_cmt.php" class="div-list-btn-s">商品評價</a>
                 <a href="backstage_shop_order.php" class="div-list-btn-s">商品訂單管理</a>
             </div>
             <!-- <a href="#" class="div-list-btn-a">百科管理</a> -->
