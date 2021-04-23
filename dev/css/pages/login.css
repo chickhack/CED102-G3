@@ -57,7 +57,8 @@ img {
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
   margin: 0;
   padding: 0;
 }
@@ -78,8 +79,11 @@ body {
   font-size: 14px;
   background-color: #0c0d18;
   overflow-x: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
   -o-user-select: none;
-  user-select: none;
+  -ms-user-select: none;
+      user-select: none;
 }
 
 h1, .h1 {
@@ -360,9 +364,15 @@ body {
 }
 
 nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   justify-content: center;
   background-color: #0c0d18;
   position: fixed;
@@ -386,10 +396,18 @@ nav .logo h1 a {
 }
 
 nav .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   width: 75%;
 }
 
@@ -398,12 +416,16 @@ nav .nav-links a {
   color: #ffffff;
   padding: 8px;
 <<<<<<< HEAD
+  -webkit-transition: all .3s;
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
   -webkit-transition: all .3s;
 >>>>>>> denis
 =======
 >>>>>>> KAI
+>>>>>>> a08664c73a429d97437735d23f749a7d388ac617
   transition: all .3s;
 }
 
@@ -424,12 +446,87 @@ nav .nav-links .bread {
 }
 
 nav .nav-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 12%;
   margin-left: 50px;
+}
+
+@media all and (max-width: 768px) {
+  nav .nav-icons {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+nav .nav-icons .member {
+  position: relative;
+}
+
+nav .nav-icons .info {
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+}
+
+nav .nav-icons .info img {
+  width: 40px;
+}
+
+@media all and (max-width: 768px) {
+  nav .nav-icons .info img {
+    width: 30px;
+  }
+}
+
+nav .nav-icons .info .infoData {
+  position: absolute;
+  background-color: #AD6E4A;
+  width: 80px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: none;
+}
+
+nav .nav-icons .info .infoData::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+  background-color: #AD6E4A;
+  position: absolute;
+  z-index: 0;
+}
+
+nav .nav-icons .info .infoData a {
+  text-align: center;
+  color: #0c0d18;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  padding: 10px 0;
+  z-index: 1;
+}
+
+nav .nav-icons .info .infoData a:hover {
+  color: #dec2b2;
+}
+
+nav .nav-icons .info .show {
+  display: block;
 }
 
 nav .burger {
@@ -443,6 +540,7 @@ nav .burger div {
   height: 2px;
   background-color: #ffffff;
   margin: 5px;
+  -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
 
@@ -522,7 +620,8 @@ nav .nav-trip .trip-count {
 
 @media (max-width: 992px) {
   nav {
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   nav .nav-links {
     position: absolute;
@@ -530,11 +629,20 @@ nav .nav-trip .trip-count {
     height: 88vh;
     top: 12vh;
     background-color: #AD6E4A;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 30%;
+    -webkit-transition: all .5s ease-in;
     transition: all .5s ease-in;
   }
   nav .nav-links li {
@@ -549,10 +657,12 @@ nav .nav-trip .trip-count {
   }
   nav .nav-icons {
     width: 100%;
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
   nav .nav-icons .icon {
-    margin: 0 30px 0 15px;
+    margin: 0 50px 0 15px;
   }
   nav .burger {
     display: block;
@@ -572,26 +682,44 @@ nav .nav-trip .trip-count {
   nav .nav-icons {
     width: 50%;
     margin-left: 16px;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   nav .nav-icons .icon {
     margin: 0;
   }
 }
 
-@keyframes navLinkFade {
+@-webkit-keyframes navLinkFade {
   from {
     opacity: 0;
-    transform: translateX(50px);
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
   }
   to {
     opacity: 1;
-    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
   }
 }
 
 .toggle .line1 {
-  transform: rotate(45deg) translate(4px, 6px);
+  -webkit-transform: rotate(45deg) translate(4px, 6px);
+          transform: rotate(45deg) translate(4px, 6px);
 }
 
 .toggle .line2 {
@@ -599,7 +727,8 @@ nav .nav-trip .trip-count {
 }
 
 .toggle .line3 {
-  transform: rotate(-45deg) translate(3px, -6px);
+  -webkit-transform: rotate(-45deg) translate(3px, -6px);
+          transform: rotate(-45deg) translate(3px, -6px);
 }
 
 footer {
@@ -619,19 +748,28 @@ footer .links .logo {
   position: relative;
   left: 50%;
   bottom: 50px;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 footer .links .footer-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 55%;
   position: relative;
   left: 50%;
   bottom: 30px;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 footer .links .footer-links a {
@@ -642,7 +780,8 @@ footer .footer_moon {
   position: relative;
   left: 50%;
   max-width: 40%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 footer .smoke {
@@ -651,7 +790,8 @@ footer .smoke {
   bottom: 0;
   width: 100%;
   height: 80%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 @media (max-width: 768px) {
@@ -735,6 +875,10 @@ section.login_container {
   padding: 0;
   border: 1px solid #ad6e4a83;
 <<<<<<< HEAD
+  display: -webkit-box;
+  display: -ms-flexbox;
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
   display: -webkit-box;
@@ -742,6 +886,7 @@ section.login_container {
 >>>>>>> denis
 =======
 >>>>>>> KAI
+>>>>>>> a08664c73a429d97437735d23f749a7d388ac617
   display: flex;
   border-radius: 5px;
 }
@@ -750,10 +895,19 @@ section.login_container .login_banner {
   background-color: #161c2e;
   height: 80vh;
   background-size: 110%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: #ffffff;
   row-gap: 2rem;
 }
@@ -774,6 +928,9 @@ section.login_container .login_banner h2 {
   }
 }
 
+<<<<<<< HEAD
+section.login_container .return_btn h4 a {
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -805,6 +962,7 @@ section.login_container .return_btn h4 a {
 =======
 section.login_container .return_btn h4 a {
 >>>>>>> KAI
+>>>>>>> a08664c73a429d97437735d23f749a7d388ac617
   color: #AD6E4A;
   font-size: 20px;
   font-weight: 800;
@@ -823,6 +981,10 @@ section.login_container .fa, section.login_container .fas {
 
 section.login_container .modal-dialog {
 <<<<<<< HEAD
+  display: -webkit-box;
+  display: -ms-flexbox;
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
   display: -webkit-box;
@@ -830,12 +992,20 @@ section.login_container .modal-dialog {
 >>>>>>> denis
 =======
 >>>>>>> KAI
+>>>>>>> a08664c73a429d97437735d23f749a7d388ac617
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 section.login_container .modal-dialog .main-section {
 <<<<<<< HEAD
+  display: -webkit-box;
+  display: -ms-flexbox;
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
   display: -webkit-box;
@@ -843,9 +1013,15 @@ section.login_container .modal-dialog .main-section {
 >>>>>>> denis
 =======
 >>>>>>> KAI
+>>>>>>> a08664c73a429d97437735d23f749a7d388ac617
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0 auto;
 }
 
@@ -862,6 +1038,8 @@ section.login_container .modal-dialog .fa-eye:before, section.login_container .m
 
 section.login_container form {
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> KAI
@@ -871,6 +1049,7 @@ section.login_container form {
   align-items: inherit;
 <<<<<<< HEAD
 =======
+>>>>>>> a08664c73a429d97437735d23f749a7d388ac617
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -884,9 +1063,12 @@ section.login_container form {
   -webkit-box-align: inherit;
       -ms-flex-align: inherit;
           align-items: inherit;
+<<<<<<< HEAD
+=======
 >>>>>>> denis
 =======
 >>>>>>> KAI
+>>>>>>> a08664c73a429d97437735d23f749a7d388ac617
 }
 
 section.login_container form .form-group input {
@@ -904,7 +1086,8 @@ section.login_container form .form-group input {
 
 section.login_container form .form-group input:focus {
   padding-left: 28px;
-  transform: scale(1.08);
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
   box-shadow: -1px 0px 20px 5px rgba(173, 110, 74, 0.45);
   -webkit-box-shadow: -1px 0px 20px 5px rgba(173, 110, 74, 0.45);
   -moz-box-shadow: -1px 0px 20px 5px rgba(173, 110, 74, 0.45);
@@ -913,9 +1096,12 @@ section.login_container form .form-group input:focus {
 
 section.login_container form .form-group input:hover {
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
   animation: pulse .5s 1;
 =======
+>>>>>>> a08664c73a429d97437735d23f749a7d388ac617
   -webkit-animation: pulse .5s 1;
           animation: pulse .5s 1;
 }
@@ -930,21 +1116,27 @@ section.login_container form .form-group input:hover {
   100% {
     -webkit-box-shadow: 0 0 0 0 rgba(204, 140, 44, 0);
   }
+<<<<<<< HEAD
+=======
 >>>>>>> denis
 =======
   animation: pulse .5s 1;
 >>>>>>> KAI
+>>>>>>> a08664c73a429d97437735d23f749a7d388ac617
 }
 
 @keyframes pulse {
   0% {
-    box-shadow: 0 0 0 0 rgba(204, 140, 44, 0.4);
+    -webkit-box-shadow: 0 0 0 0 rgba(204, 140, 44, 0.4);
+            box-shadow: 0 0 0 0 rgba(204, 140, 44, 0.4);
   }
   70% {
-    box-shadow: 0 0 0 7px rgba(204, 140, 44, 0);
+    -webkit-box-shadow: 0 0 0 7px rgba(204, 140, 44, 0);
+            box-shadow: 0 0 0 7px rgba(204, 140, 44, 0);
   }
   100% {
-    box-shadow: 0 0 0 0 rgba(204, 140, 44, 0);
+    -webkit-box-shadow: 0 0 0 0 rgba(204, 140, 44, 0);
+            box-shadow: 0 0 0 0 rgba(204, 140, 44, 0);
   }
 }
 
@@ -963,6 +1155,11 @@ section.login_container form .form-group:last-of-type::before {
 
 section.login_container form .login_btn {
 <<<<<<< HEAD
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
   align-self: center;
 =======
@@ -973,6 +1170,7 @@ section.login_container form .login_btn {
 =======
   align-self: center;
 >>>>>>> KAI
+>>>>>>> a08664c73a429d97437735d23f749a7d388ac617
   background-color: transparent;
   color: #AD6E4A;
 }
@@ -984,6 +1182,8 @@ section.login_container form .login_btn:hover {
 }
 
 .bottom-section {
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -999,6 +1199,7 @@ section.login_container form .login_btn:hover {
   align-items: center;
 <<<<<<< HEAD
 =======
+>>>>>>> a08664c73a429d97437735d23f749a7d388ac617
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1021,9 +1222,12 @@ section.login_container form .login_btn:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+<<<<<<< HEAD
+=======
 >>>>>>> denis
 =======
 >>>>>>> KAI
+>>>>>>> a08664c73a429d97437735d23f749a7d388ac617
 }
 
 .bottom-section .forgot a, .bottom-section .signup a {

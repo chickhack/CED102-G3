@@ -428,6 +428,74 @@ nav .nav-icons {
   margin-left: 50px;
 }
 
+@media all and (max-width: 768px) {
+  nav .nav-icons {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+nav .nav-icons .member {
+  position: relative;
+}
+
+nav .nav-icons .info {
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+}
+
+nav .nav-icons .info img {
+  width: 40px;
+}
+
+@media all and (max-width: 768px) {
+  nav .nav-icons .info img {
+    width: 30px;
+  }
+}
+
+nav .nav-icons .info .infoData {
+  position: absolute;
+  background-color: #AD6E4A;
+  width: 80px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: none;
+}
+
+nav .nav-icons .info .infoData::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+  background-color: #AD6E4A;
+  position: absolute;
+  z-index: 0;
+}
+
+nav .nav-icons .info .infoData a {
+  text-align: center;
+  color: #0c0d18;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  padding: 10px 0;
+  z-index: 1;
+}
+
+nav .nav-icons .info .infoData a:hover {
+  color: #dec2b2;
+}
+
+nav .nav-icons .info .show {
+  display: block;
+}
+
 nav .burger {
   display: none;
   cursor: pointer;
@@ -548,7 +616,7 @@ nav .nav-trip .trip-count {
     justify-content: flex-end;
   }
   nav .nav-icons .icon {
-    margin: 0 30px 0 15px;
+    margin: 0 50px 0 15px;
   }
   nav .burger {
     display: block;
@@ -820,6 +888,9 @@ section.shop #app ul {
   section.shop #app ul {
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
     margin: 0 10px;
   }
 }

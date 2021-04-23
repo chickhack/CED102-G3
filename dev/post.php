@@ -81,15 +81,15 @@
         <div class="select_trip">
           <select name="upload"> 
             <option>請選擇行程</option>
-            <option value="moon">月球太空人體驗一日遊</option>
-            <option value="mars">熱氣球遊月球一日遊</option>
-            <option value="jupiter">宇宙雨林秘境一日遊</option>
-            <option value="sun">雪花堡及七彩河探險一日遊</option>
-            <option value="">反射谷及山羊峽谷探險一日遊</option>
-            <option value="">奧林帕斯山三日遊</option>
-            <option value="">極光團一日遊</option>
-            <option value="">冰原冰洞一日遊</option>
-            <option value="">冰層探索一日遊</option>
+            <option value="月球太空人體驗一日遊">月球太空人體驗一日遊</option>
+            <option value="熱氣球遊月球一日遊">熱氣球遊月球一日遊</option>
+            <option value="宇宙雨林秘境一日遊">宇宙雨林秘境一日遊</option>
+            <option value="雪花堡及七彩河探險一日遊">雪花堡及七彩河探險一日遊</option>
+            <option value="反射谷及山羊峽谷探險一日遊">反射谷及山羊峽谷探險一日遊</option>
+            <option value="奧林帕斯山三日遊">奧林帕斯山三日遊</option>
+            <option value="奧林帕斯山三日遊">極光團一日遊</option>
+            <option value="冰原冰洞一日遊">冰原冰洞一日遊</option>
+            <option value="冰層探索一日遊">冰層探索一日遊</option>
         </select>
         </div>
         <div class="upload_img">

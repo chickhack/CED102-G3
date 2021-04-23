@@ -2010,6 +2010,10 @@ button.turnoff_lightbox img {
   margin-top: 10px;
 }
 
+.member_info a .button_large {
+  width: 160px;
+}
+
 .member_info a button:hover {
   background-color: #bf896b;
 }
@@ -3031,11 +3035,21 @@ section.shop #app ul {
 
 @media all and (max-width: 992px) {
   section.shop #app ul {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 4cfc53d89a5a3c6e25fcb99d81e2a69dcdef643f
     -ms-flex-pack: distribute;
         justify-content: space-around;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: start;
+<<<<<<< HEAD
+=======
+=======
+    justify-content: space-around;
+>>>>>>> a08664c73a429d97437735d23f749a7d388ac617
+>>>>>>> 4cfc53d89a5a3c6e25fcb99d81e2a69dcdef643f
     margin: 0 10px;
   }
 }

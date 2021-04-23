@@ -210,10 +210,6 @@
                                              console.log(vm.products[i].url)
                                             }
                                         });
-        const member = document.querySelector(".member");
-        member.addEventListener("click", function(){
-            fetch("./php/logout.php");
-        })
 
         function show(){
             fetch("./php/logout.php");

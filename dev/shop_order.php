@@ -1,5 +1,6 @@
 <?php
     session_start();
+
     $arr = [];
     for($i=1; $i < count($_SESSION['cart'])+1 ; $i++){
         $no = $_SESSION['cart'][$i-1]['product_id'];
@@ -7,7 +8,6 @@
             array_push($arr, $_POST["prod_qty$no"]);
         }
     };
-    print_r($arr);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -101,7 +101,7 @@
                 <ul class="margin_top_3">
                     <li v-for="product in products" class="margin_top_5">
                         <div class="imgWord">
-                            <a href="product.html" class="prod"><img :src="'./img/shop/'+product.png"></a>
+                            <a :href="'product.php?id='+product['prod_no']" class="prod"><img :src="'./img/shop/'+product.png" @click="getId" :data-no="product['prod_no']"></a>
                             <div class="imgRight">
                                 <div class="name">
                                     <p>{{product.prod_name}}</p>
@@ -123,7 +123,7 @@
             <section class="orderer">
                 <form class="form" method="POST">
                     <div class="orderer_form retract">
-                        <div class="arrow">
+                        <div class="arrow" @click="retract">
                             <img src="./img/date-chevron-down.svg" alt="">
                             <h3 class="margin_left_1 orderer_click">訂購人資訊</h3>
                         </div>
@@ -131,24 +131,24 @@
                         <div class="info">
                             <div class="input_group">
                                 <label for="ofName">名字</label>
-                                <input type="text" class="margin_top_1" name="ofName" id="ofName">
+                                <input type="text" class="margin_top_1" name="ofName" id="ofName" value=<?= $_SESSION['mem_fir'] ?>>
                             </div>
                             <div class="input_group">
                                 <label for="olName">姓氏</label>
-                                <input type="text" class="margin_top_1" name="olName" id="olName">
+                                <input type="text" class="margin_top_1" name="olName" id="olName" value=<?= $_SESSION['mem_last'] ?>>
                             </div>
                             <div class="input_group">
                                 <label for="omobile">手機</label>
-                                <input type="tel" class="margin_top_1" name="omobile" id="omobile" maxlength="10">
+                                <input type="tel" class="margin_top_1" name="omobile" id="omobile" maxlength="10" value =<?= $_SESSION['mem_phone'] ?>>
                             </div>
                             <div class="input_group">
                                 <label for="oemail">電子信箱</label>
-                                <input type="email" class="margin_top_1" name="oemail" id="oemail" >
+                                <input type="email" class="margin_top_1" name="oemail" id="oemail" value=<?= $_SESSION['mem_email']?>>
                             </div>
                         </div>
                     </div>
                     <div class="recipient retract">
-                        <div class="arrow">
+                        <div class="arrow" @click="retract">
                             <img src="./img/date-chevron-down.svg" alt="">
                             <h3 class="margin_left_1 recipient_click">收件人資訊</h3>
                         </div>
@@ -181,27 +181,27 @@
                     </div>
                     <h3 class="payTitle">付款方式</h3>
                     <div class="payment retract">
-                        <div class="arrow">
+                        <div class="arrow" @click="retract">
                             <img src="./img/date-chevron-down.svg" alt="">
                             <h3 class="margin_left_1 orderer_click">請選擇付款方式</h3>
                         </div>
                         <div class="info margin_top_4">
                             <div class="group">
                                 <div class="checkbox_group">
-                                    <input type="checkbox" name="coins" id="coins" class="checkbox_custom">
+                                    <input type="checkbox" name="coins" id="coins" class="checkbox_custom" @click="coin">
                                     <label for="coins" class="checkbox_custom_label" id="coin">宇宙幣</label>
                                     <p>尚餘</p>
-                                    <span class="margin_left_1">$50000</span>
+                                    <span class="margin_left_1 left"><?=$_SESSION['mem_coin'] ?> </span>
                                     <img src="./img/dollar_(1).png" alt="" class="icon margin_left_1">
                                 </div>
                                 <div class="checkbox_group margin_left_2">
                                     <label for="discount">折抵</label>
-                                    <input type="text" name="discount" id="discount" class="margin_left_1">
+                                    <input type="text" name="discount" id="discount" class="margin_left_1" @keyup="changePrice">
                                 </div>
                             </div>
                             <div class="checkbox_group long margin_top_2">
                                 <input type="checkbox" name="credit" id="credit" class="checkbox_custom">
-                                <label for="credit" class="checkbox_custom_label">信用卡</label>
+                                <label for="credit" class="checkbox_custom_label" @click="credit">信用卡</label>
                                 <div class="credit_icon margin_left_4">
                                     <cleave v-model="card" :options="options" class="credit"></cleave> 
                                     <i class="fab fa-cc-amex"></i>
@@ -224,7 +224,7 @@
                     <div class="detail margin_top_2">
                         <div class="total">
                             <p class="h3">支付金額</p>
-                            <p class="h3">${{totalPrice}}</p>
+                            <p class="h3">${{finalPrice}}</p>
                         </div>
                         <div class="integral margin_top_2">
                             <p>可累積積分</p>
@@ -233,7 +233,7 @@
                                 <p>+{{totalPoints}}</p>
                             </div>
                         </div>
-                        <small class="margin_top_1">累積後目前有50000積分</small>
+                        <small class="margin_top_1">累積後目前有{{finalPoints}}積分</small>
                     </div>
                     <input type="button" value="確認付款" class="button_min" name="checkOut" @click="checkSubmit">
                 </form>
@@ -273,6 +273,9 @@
             data:{
                 products: [],
                 card: null,
+                discount: 0,
+                cDiscount:0,
+                memNo: <?= $_SESSION['mem_no'];?> ,
                 options: {
                     creditCard: true,
                     delimiter: "-",
@@ -313,12 +316,32 @@
                     })
                     return total;
                 },
+                finalPrice(){
+                    let total = this.totalPrice - this.discount;
+                    if(total >= 0){
+                        return total
+                    }else if(total < 0){
+                        return 0
+                    }else{
+                        return this.totalPrice;
+                    }
+                },
                 totalPoints(){
                     let total = 0;
                     this.products.forEach(prod => {
                         total += parseInt(prod.prod_points);
                     })
                     return total;
+                },
+                finalPoints(){
+                    let total = this.totalPoints + <?= $_SESSION['mem_coin'] ?> - this.discount ;
+                    if(total >= 0){
+                        return total
+                    }else if(total < 0){
+                        return 0;
+                    }else{
+                        return this.totalPoints + <?= intval($_SESSION['mem_coin']) ?>;
+                    }
                 }
             },
             methods: {
@@ -328,6 +351,7 @@
                     const lName = document.querySelector("#lName");
                     const ph = document.querySelector("#mobile");
                     const email = document.querySelector("#email");
+                    console.log(email);
 
                     if(!same.checked){
                         //名字
@@ -345,7 +369,7 @@
                         ph.value = mobile;
     
                         //電子郵件
-                        const oEmail = document.querySelector("#oEmail");
+                        const oEmail = document.querySelector("#oemail");
                         let em = oEmail.value;
                         email.value = em;
                     }else{
@@ -463,7 +487,7 @@
 
                     let url = "./php/shopOrder.php";
                     let data = {
-                        mem_no: "1010006",
+                        mem_no: this.memNo,
                         total_price: this.totalPrice,
                         order_status: '1',
                         orderer: lastName+firstName,
@@ -488,6 +512,56 @@
                 checkSubmit(){
                     this.checkInput();
                     this.insertData();
+                },
+                getId(e){
+                    // console.log(e.target.dataset.no);
+                    sessionStorage.setItem("no", e.target.dataset.no);
+                },
+                coin(){
+                    const vThis = this;
+                    const coin = document.querySelector("#coins");
+                    const discount = document.querySelector("#discount");
+                    const left = document.querySelector(".left");
+                    if(coin.checked){
+                        discount.focus();
+                        if(<?= intval($_SESSION['mem_coin']) ?> >= this.totalPrice) {
+                            this.discount = this.totalPrice;
+                            discount.value = this.totalPrice 
+                            left.textContent = parseInt(left.textContent) - this.totalPrice;
+                        }else{
+                            discount.value = <?= $_SESSION['mem_coin'] ?>;
+                            vThis.discount = <?= $_SESSION['mem_coin'] ?>;
+                        }
+                    }else{
+                        left.textContent = <?= intval($_SESSION['mem_coin']) ?>;
+                        discount.value = "";
+                        this.discount = 0
+                    }
+                },
+                changePrice(e){
+                    const coin = document.querySelector("#coins");
+                    if(coin.checked){
+                        this.discount = parseInt(e.target.value);
+                        if(this.finalPrice <= 0){
+                            this.finalPrice == 0 ;
+                        }
+                    }
+                },
+                retract(e){
+                    e.target.parentNode.classList.toggle("retract");
+                },
+                credit(){
+                    const credit = document.querySelector("#credit");
+                    const check = document.querySelector(".credit_check")
+                    const icon = document.querySelector(".credit_icon");
+
+                    if(!credit.checked){
+                        check.style.display = "flex"
+                        icon.style.display = "block";
+                    }else{
+                        check.style.display = "none";
+                        icon.style.display = "none";
+                    }
                 }
             }
         })

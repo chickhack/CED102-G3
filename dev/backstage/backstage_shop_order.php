@@ -79,7 +79,7 @@
 
 
 
-                </div>
+                </div
             </div>
 
             <main class="main">
