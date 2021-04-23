@@ -91,6 +91,7 @@ while($spottrevRow = $spottrev->fetch(PDO::FETCH_ASSOC)){
                         <p class="wi-15 text-1 toomuch"><?=$spottrevRow["post_date"]?></p>
                         <p class="wi-20 text-1 toomuch"><?=$spottrevRow["post_sub"]?></p>
                         <p class="wi-20 text-1 toomuch"><?=$spottrevRow["post_content"]?></p>
+                        <!-- 請閱讀!! 註解下方圖片 圖片統一不顯示 kai -->
                         <!-- <p class="wi-10 text-1 toomuch"><?=$spottrevRow["post_pic1"]?><br><?=$spottrevRow["post_pic2"]?><br><?=$spottrevRow["post_pic3"]?></p> -->
                         <?php
                                 if($spottrevRow['post_stats'] == 0){
