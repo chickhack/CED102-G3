@@ -125,7 +125,7 @@ $_SESSION["mem_no"]=1010001;
 
   <div id="accountapp">
 
-    <div class="">
+    <div>
 
       <div class="welcome" v-for="(item,index) in customer" v-if="item.mem_no == <?php echo $_SESSION["mem_no"] ?>">
         <div class="spacedinfo">
