@@ -343,6 +343,17 @@
         })
 
     </script>
+    <script>
+        function show() {
+        fetch("./php/logout.php");
+        window.location.href = "./login.php";
+    }
+
+    function toggle() {
+        const infoData = document.querySelector(".infoData");
+        infoData.classList.toggle("show");
+    }
+    </script>
     <script src="./js/background.js"></script>
 </body>
 </html>
