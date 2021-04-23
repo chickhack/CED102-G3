@@ -298,7 +298,7 @@
       getpost:[], 
       getcustomer:[],
       messages: [],
-	  getpost_cmt:[],
+	    getpost_cmt:[],
 
       targetPost: [],
       lightBoxShow: false,

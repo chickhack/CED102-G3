@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$_SESSION["mem_no"]=1010001;
+// $_SESSION["mem_no"]=1010001;
 ?>
 
 <!DOCTYPE html>
@@ -106,7 +106,7 @@ $_SESSION["mem_no"]=1010001;
                 <?php }else{ ?>
                         <a href="./login.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png" alt="" class="icon"/></a>
                 <?php } ?>
-            </li>
+        </li>
       </ul>
       <div class="burger">
         <div class="line1"></div>
