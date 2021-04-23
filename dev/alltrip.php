@@ -8,8 +8,7 @@ session_start();
             $count = count($_SESSION["trip-cart"]);
             $item_array = array(
                 "spot_id" => $_POST["spot_id"],
-                "spot_qty" => 1,
-                "spot_date" => 0,
+                "spot_qty" => 1
             );
             $_SESSION["trip-cart"][$count] =$item_array;
             // echo '<script>window.location="alltrip.php"</script>';
@@ -20,8 +19,7 @@ session_start();
         }else{
             $item_array = array(
                 "spot_id" => $_POST["spot_id"],
-                "spot_qty" => 1,
-                "spot_date" => 0,
+                "spot_qty" => 1
             );
             $_SESSION["trip-cart"][0] = $item_array;
     }
@@ -63,7 +61,7 @@ session_start();
                 <h1><a href="home.php">SPACED</a></h1>
             </div>
             <ul class="nav-links">
-                <li class="margin_left_5 now "><a href="alltrip.php" class="bread">星球景點</a></li>
+                <li class="margin_left_5"><a href="alltrip.php" class="bread">星球景點</a></li>
                 <li class="margin_left_5"><a href="planet.php">星星世界</a></li>
                 <li class="margin_left_5"><a href="shop.php">星球商城</a></li>
                 <li class="margin_left_5"><a href="photowall.php">太空互動</a></li>
@@ -100,13 +98,22 @@ session_start();
                     </a>
                 </li>
                 <li>
-        <?php
+                    <?php
             if(isset($_SESSION['mem_no'])){?>
-                <a href="./account.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png" alt="" class="icon"/></a>
-        <?php }else{ ?>
-                <a href="./login.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png" alt="" class="icon"/></a>
-        <?php } ?>
-    </li>
+                    <div class="member" onclick="toggle()">
+                        <div class="info">
+                            <img src="<?= $_SESSION['mem_pic'] ?>" alt="">
+                            <div class="infoData">
+                                <a href="./account.php">會員中心</a>
+                                <a href="./login.php" onclick="show()">登出</a>
+                            </div>
+                        </div>
+                    </div>
+                    <?php }else{ ?>
+                    <a href="./login.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png"
+                            alt="" class="icon" /></a>
+                    <?php } ?>
+                </li>
             </ul>
             <div class="burger">
                 <div class="line1"></div>
@@ -114,7 +121,9 @@ session_start();
                 <div class="line3"></div>
             </div>
         </nav>
+
         <script src="./js/header.js"></script>
+
 
     </header>
 
@@ -354,9 +363,21 @@ session_start();
 
         },
     });
+
+    function show() {
+        fetch("./php/logout.php");
+        window.location.href = "./login.php";
+    }
+
+    function toggle() {
+        const infoData = document.querySelector(".infoData");
+        infoData.classList.toggle("show");
+    }
     </script>
 
-
+    <script>
+ 
+    </script>
 
 
 

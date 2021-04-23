@@ -415,6 +415,7 @@ nav .nav-links a {
   color: #ffffff;
   padding: 8px;
 <<<<<<< HEAD
+<<<<<<< HEAD
   -webkit-transition: all .3s;
 =======
 <<<<<<< HEAD
@@ -425,6 +426,8 @@ nav .nav-links a {
 =======
 >>>>>>> KAI
 >>>>>>> a08664c73a429d97437735d23f749a7d388ac617
+=======
+>>>>>>> KAI
   transition: all .3s;
 }
 
@@ -462,9 +465,13 @@ nav .nav-icons {
 
 @media all and (max-width: 768px) {
   nav .nav-icons {
+<<<<<<< HEAD
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+=======
+    justify-content: space-between;
+>>>>>>> KAI
   }
 }
 
@@ -493,8 +500,12 @@ nav .nav-icons .info .infoData {
   background-color: #AD6E4A;
   width: 80px;
   left: 50%;
+<<<<<<< HEAD
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+=======
+  transform: translateX(-50%);
+>>>>>>> KAI
   display: none;
 }
 
@@ -504,8 +515,12 @@ nav .nav-icons .info .infoData::before {
   height: 10px;
   top: 0;
   left: 50%;
+<<<<<<< HEAD
   -webkit-transform: translate(-50%, -50%) rotate(45deg);
           transform: translate(-50%, -50%) rotate(45deg);
+=======
+  transform: translate(-50%, -50%) rotate(45deg);
+>>>>>>> KAI
   background-color: #AD6E4A;
   position: absolute;
   z-index: 0;
@@ -514,7 +529,10 @@ nav .nav-icons .info .infoData::before {
 nav .nav-icons .info .infoData a {
   text-align: center;
   color: #0c0d18;
+<<<<<<< HEAD
   -webkit-transition: all .3s;
+=======
+>>>>>>> KAI
   transition: all .3s;
   padding: 10px 0;
   z-index: 1;
@@ -556,23 +574,20 @@ nav .nav-cart .count {
   text-align: center;
   line-height: 1.5rem;
   position: absolute;
-  -webkit-transform: translate(50%, -150%);
-          transform: translate(50%, -150%);
+  transform: translate(50%, -150%);
   display: block;
   color: white;
 }
 
 @media all and (max-width: 992px) {
   nav .nav-cart .count {
-    -webkit-transform: translate(100%, -150%);
-            transform: translate(100%, -150%);
+    transform: translate(100%, -150%);
   }
 }
 
 @media all and (max-width: 768px) {
   nav .nav-cart .count {
-    -webkit-transform: translate(40%, -170%);
-            transform: translate(40%, -170%);
+    transform: translate(40%, -170%);
     width: 20px;
     height: 20px;
     font-size: 12px;
@@ -593,23 +608,20 @@ nav .nav-trip .trip-count {
   text-align: center;
   line-height: 1.5rem;
   position: absolute;
-  -webkit-transform: translate(50%, -150%);
-          transform: translate(50%, -150%);
+  transform: translate(50%, -150%);
   display: block;
   color: white;
 }
 
 @media all and (max-width: 992px) {
   nav .nav-trip .trip-count {
-    -webkit-transform: translate(100%, -150%);
-            transform: translate(100%, -150%);
+    transform: translate(100%, -150%);
   }
 }
 
 @media all and (max-width: 768px) {
   nav .nav-trip .trip-count {
-    -webkit-transform: translate(40%, -170%);
-            transform: translate(40%, -170%);
+    transform: translate(40%, -170%);
     width: 20px;
     height: 20px;
     font-size: 12px;
@@ -1239,6 +1251,7 @@ input::-webkit-inner-spin-button {
   display: -ms-flexbox;
   display: flex;
 <<<<<<< HEAD
+<<<<<<< HEAD
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1255,6 +1268,9 @@ input::-webkit-inner-spin-button {
   align-items: center;
 >>>>>>> KAI
 >>>>>>> a08664c73a429d97437735d23f749a7d388ac617
+=======
+  align-items: center;
+>>>>>>> KAI
   border-bottom: 1px solid #AD6E4A;
   padding: 16px 0;
   position: relative;
@@ -1269,6 +1285,7 @@ input::-webkit-inner-spin-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -1296,6 +1313,11 @@ input::-webkit-inner-spin-button {
   justify-content: start;
 >>>>>>> KAI
 >>>>>>> a08664c73a429d97437735d23f749a7d388ac617
+=======
+  justify-content: center;
+  align-items: center;
+  justify-content: start;
+>>>>>>> KAI
   color: #cccaca;
   font-weight: 600;
 }
@@ -1363,30 +1385,24 @@ input::-webkit-inner-spin-button {
 }
 
 .parent_container .recommend .tripcard_all .tripcard:hover {
-  -webkit-transform: translateY(0.2em);
-          transform: translateY(0.2em);
-  -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
-          box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  transform: translateY(0.2em);
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
 
 .parent_container .recommend .tripcard_all .tripcard.tripcard:nth-child(1) {
-  -webkit-animation: float 4s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
-          animation: float 4s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+  animation: float 4s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
 }
 
 .parent_container .recommend .tripcard_all .tripcard.tripcard:nth-child(2) {
-  -webkit-animation: float 4.5s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
-          animation: float 4.5s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+  animation: float 4.5s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
 }
 
 .parent_container .recommend .tripcard_all .tripcard.tripcard:nth-child(3) {
-  -webkit-animation: float 5s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
-          animation: float 5s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+  animation: float 5s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
 }
 
 .parent_container .recommend .tripcard_all .tripcard.tripcard:nth-child(4) {
-  -webkit-animation: float 5.5s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
-          animation: float 5.5s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+  animation: float 5.5s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
 }
 
 @media all and (max-width: 767px) {
@@ -1460,6 +1476,7 @@ input::-webkit-inner-spin-button {
   background-color: #bf896b;
 }
 
+<<<<<<< HEAD
 @-webkit-keyframes float {
   0% {
     -webkit-transform: translate(0, 0);
@@ -1479,22 +1496,20 @@ input::-webkit-inner-spin-button {
   }
 }
 
+=======
+>>>>>>> KAI
 @keyframes float {
   0% {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
+    transform: translate(0, 0);
   }
   30% {
-    -webkit-transform: translate(0, -3px);
-            transform: translate(0, -3px);
+    transform: translate(0, -3px);
   }
   70% {
-    -webkit-transform: translate(0, 5px);
-            transform: translate(0, 5px);
+    transform: translate(0, 5px);
   }
   100% {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
+    transform: translate(0, 0);
   }
 }
 /*# sourceMappingURL=trip.css.map */
