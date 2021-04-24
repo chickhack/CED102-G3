@@ -21,7 +21,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/pages/car-itineray.css">
-    <link rel="stylesheet" href="./css/pages/shop_cart.css">
+    <link rel="stylesheet" href="./css/pages/spot_cart.css">
     <link rel="stylesheet" href="./css/pages/all.css">
     <link rel="shortcut icon" href="./img/icon/shortcut.png" type="image/x-icon">
     <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.12/vue.js'></script>
@@ -110,8 +110,14 @@
             <form :action="name+id" method="post">
                 <h3 class="h2">我的行程</h3>
                 <?php
+                // foreach($_SESSION["trip-cart"] as $data){
+                //     $aaaa= $data["spot_date"];
+                //     // echo get_type($aaaa);
+                //     var_dump($aaaa);
+                // }
                 // print_r($_SESSION["trip-cart"]);
                 ?>
+                
                 <ul>
                     <cart @get="getId" :item="val" v-for="(val,index) in products"></cart>
                 </ul>
@@ -228,9 +234,13 @@
                                     </div>
                                 </div>
                             </div>
-                            <input type="date" id="date-1" class="btn-date data-down margin_top_2" value="<?php foreach($_SESSION["trip-cart"] as $data){echo $data["spot_date"];}?>">
-                            <p class="h3">$\{{mainPrice}}</p>
-                            <button type="submit" name="remove"><img src="./img/icon/trashcan.png" class="icon trashcan" :data-no="item.spot_no" @click="increment"></button>
+                            <div class="divdate">
+                            <input type="date" id="date-1" class="btn-date data-down margin_top_2" :value="item.date" name="spot_date">
+                                <div class="divnumb">
+                                    <p class="h3">$\{{mainPrice}}</p>
+                                    <button type="submit" name="remove"><img src="./img/icon/trashcan.png" class="icon trashcan" :data-no="item.spot_no" @click="increment"></button>
+                                </div>
+                            </div>
                         </div>
                     </li>
                     `,
@@ -293,10 +303,10 @@
                                             
                                             <?php
                                                 if(isset($_SESSION["trip-cart"])){
-                                                    foreach($_SESSION["trip-cart"] as $v1) {?>
+                                                    foreach($_SESSION["trip-cart"] as $v1) {   ?>
                                                             if(ky == <?php echo $v1['spot_id'] ?>){
                                                                 // console.log("hi");
-                                                                
+                                                                data[j-1].date = '<?php echo $v1['spot_date']?>';                                            
                                                                 data[j-1].qty = <?php echo $v1['spot_qty']?>;
                                                                 arr.push(data[j-1]);
                                                             }
