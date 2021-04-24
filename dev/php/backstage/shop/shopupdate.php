@@ -9,27 +9,63 @@
 <body>
     <?php
 $errMsg = "";
+$allfile="";
 try {
 	require_once("../../connect_ced102_g3_local.php");
-
+	
 	//.......確定是否上傳成功
-	if( $_FILES["prod_pic"]["error"] == UPLOAD_ERR_OK){
-		$allfile='';
-		foreach($_FILES["prod_pic"]["error"] as $i =>$data){
-			switch($_FILES["prod_pic"]["error"][$i]){
-				$dir="images";
-				if(file_exists($dir)==false){
-					mkdir("images");
-				}
-				$form = $_FILES["prod_pic"]["tmp_name"][$i];
-				$uniqid = uniqid();
-				$pathinfoArr = pathinfo($_FILES["prod_pic"]["name"][$i]);
-				$filename = "{$uniqid}.{$pathinfoArr["extension"]}";
-				$to ="{$dir}/".$filename;
-				copy($from,$to);
+	// if( $_FILES["prod_pic1"]["error"] == UPLOAD_ERR_OK){
+		if(!empty($_FILES["prod_pic1"])){
+			if(file_exists("../../images")==false){
+				mkdir("../../images");
 			}
-			$allfile .= "==".$filename;
+			// $from="";
+			$uniqid = uniqid();
+			$pathinfoArr = pathinfo($_FILES["prod_pic1"]["name"]);
+			$filename = "{$uniqid}.{$pathinfoArr["extension"]}";
+			$form = $_FILES["prod_pic1"]["tmp_name"];
+			$to ="../../images/$filename";
+			if(copy($form,$to)===true){
+				$allfile .= "==".$filename;
+
+			}
+			
 		}
+		if(!empty($_FILES["prod_pic2"])){
+			if(file_exists("../../images")==false){
+				mkdir("../../images");
+			}
+			// $from="";
+			$uniqid = uniqid();
+			$pathinfoArr = pathinfo($_FILES["prod_pic2"]["name"]);
+			$filename = "{$uniqid}.{$pathinfoArr["extension"]}";
+			$form = $_FILES["prod_pic2"]["tmp_name"];
+			$to ="../../images/$filename";
+			if(copy($form,$to)===true){
+				$allfile .= "==".$filename;
+
+			}
+			
+		}		
+		if(!empty($_FILES["prod_pic3"])){
+			if(file_exists("../../images")==false){
+				mkdir("../../images");
+			}
+			// $from="";
+			$uniqid = uniqid();
+			$pathinfoArr = pathinfo($_FILES["prod_pic3"]["name"]);
+			$filename = "{$uniqid}.{$pathinfoArr["extension"]}";
+			$form = $_FILES["prod_pic3"]["tmp_name"];
+			$to ="../../images/$filename";
+			if(copy($form,$to)===true){
+				$allfile .= "==".$filename;
+
+			}
+			
+		}	
+				
+			
+		
 		//---決定檔案名稱
 		//1.主檔名
 		// 亂數產生主檔名
@@ -68,15 +104,16 @@ try {
 			// echo "失敗~";
 		// }
 
-	}else{
-		echo "錯誤代碼 : {$_FILES["prod_pic"]["error"]} <br>";
-		echo "新增失敗<br>";
-	}
-  catch (PDOException $e) {
-	$errMsg .= "錯誤原因 : ".$e -> getMessage(). "<br>";
-	$errMsg .= "錯誤行號 : ".$e -> getLine(). "<br>";	
-	echo $errMsg;
+	// }else{
+		// echo "錯誤代碼 : {$_FILES["prod_pic"]["error"]} <br>";
+		// echo "新增失敗<br>";
+	// }
 	
+}
+catch (PDOException $e) {
+  $errMsg .= "錯誤原因 : ".$e -> getMessage(). "<br>";
+  $errMsg .= "錯誤行號 : ".$e -> getLine(). "<br>";	
+  echo $errMsg;
 }
 // 使用foreach迴圈來新增訂單明細
 // $sql = "INSERT INTO `spot` (`spot_no`) values(:spot)";
