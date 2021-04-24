@@ -377,9 +377,6 @@ session_start();
     }
     </script>
 
-    <script>
- 
-    </script>
 
 
 

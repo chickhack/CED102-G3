@@ -70,7 +70,7 @@ $spottrev ->execute();
                     <p class="wi-15 text-1">發文日期</p>
                     <p class="wi-20 text-1">發文主題</p>
                     <p class="wi-20 text-1">發文內容</p>
-                    <p class="wi-10 text-1">圖片</p>
+                    <!-- <p class="wi-10 text-1">圖片</p> -->
                     <p class="wi-10 text-1">狀態</p>
 
                 </div>
@@ -91,7 +91,8 @@ while($spottrevRow = $spottrev->fetch(PDO::FETCH_ASSOC)){
                         <p class="wi-15 text-1 toomuch"><?=$spottrevRow["post_date"]?></p>
                         <p class="wi-20 text-1 toomuch"><?=$spottrevRow["post_sub"]?></p>
                         <p class="wi-20 text-1 toomuch"><?=$spottrevRow["post_content"]?></p>
-                        <p class="wi-10 text-1 toomuch"><?=$spottrevRow["post_pic1"]?><br><?=$spottrevRow["post_pic2"]?><br><?=$spottrevRow["post_pic3"]?></p>
+                        <!-- 請閱讀!! 註解下方圖片 圖片統一不顯示 kai -->
+                        <!-- <p class="wi-10 text-1 toomuch"><?=$spottrevRow["post_pic1"]?><br><?=$spottrevRow["post_pic2"]?><br><?=$spottrevRow["post_pic3"]?></p> -->
                         <?php
                                 if($spottrevRow['post_stats'] == 0){
                                     echo "<p class='wi-10 text-1'><a href='../php/edit_backstage_post.php?post_no=$spottrevRow[post_no]&post_stats=$spottrevRow[post_stats]' name='update' type='button' class='btn btn-primary btn-sm'>上架</a></p>";

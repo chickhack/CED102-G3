@@ -1,3 +1,4 @@
+@import "../all.scss";
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button{
     -webkit-appearance: none;
@@ -290,9 +291,9 @@ body{
 .checkbox_custom:focus + .checkbox_custom-label{
     outline: 1px solid #ddd;
 }
-#row-traffic{
-    // justify-content: start;
-}
+// #row-traffic{
+//     // justify-content: start;
+// }
 //主內容
 form{
     padding: 0 0 0 0;

@@ -1,7 +1,6 @@
 <?php
 session_start();
 // $mem_no=$_SESSION["mem_no"];
-$_SESSION["mem_no"]=1010006;
 
 try {
 	require_once("../connect_ced102_g3_local.php");

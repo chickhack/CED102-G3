@@ -107,7 +107,7 @@ while($spotRow = $spot->fetch(PDO::FETCH_ASSOC)){
                     <p class="wi-5 text-1"><?=$spotRow["spot_s_status"]?></p>
                     <!-- <p class="wi-15 text-1 toomuch"><?=$spotRow["spot_pic"]?><br><?=$spotRow["spot_pic1"]?><br><?=$spotRow["spot_pic2"]?><br><?=$spotRow["spot_pic3"]?><br><?=$spotRow["spot_pic2"]?><br><?=$spotRow["spot_pic3"]?><br><?=$spotRow["spot_pic2"]?><br><?=$spotRow["spot_pic4"]?><br><?=$spotRow["spot_pic2"]?><br><?=$spotRow["spot_pics"]?></p> -->
                     <a href="../php/backstage/trip/edit_backstage_trip.php?spot_no=<?=$spotRow["spot_no"]?>" class="wi-5 text-1"><button type="button" class="btn btn-info btn-sm">修改</button></a>
-                    <a href="../php/backstage/trip/delete_backstage_trip.php?spot_no=<?=$spotRow["spot_no"]?>"class="wi-5 text-1"><button type="button" class="btn btn-danger btn-sm">刪除</button></a>
+                    <a  onclick="return confirm('確定要刪除嗎')" href="../php/backstage/trip/delete_backstage_trip.php?spot_no=<?=$spotRow["spot_no"]?>"class="wi-5 text-1"><button type="button" class="btn btn-danger btn-sm">刪除</button></a>
                 </div>
 
                 <?php 

@@ -20,6 +20,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/pages/car-itineray.css">
     <link rel="stylesheet" href="./css/pages/shop_cart.css">
     <link rel="stylesheet" href="./css/pages/all.css">
     <link rel="shortcut icon" href="./img/icon/shortcut.png" type="image/x-icon">
@@ -63,7 +64,7 @@
                      ?>
                     </a>
                 </li>
-                <li class="nav-cart">
+        <li class="nav-cart">
         <a href="./shop_cart.php">
             <img src="./img/icon/header/shopping-cart_(1).png" alt="" class="icon"/>
             <?php
