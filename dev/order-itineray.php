@@ -432,14 +432,14 @@ session_start();
                                 <div class="row">
                                     <div class="col-3 col-xxl-3 col-sm-3 allcoinmenu-list">
                                     </div>
-                                    <div class="col-3 col-xxl-3 col-xl-3 col-sm-3 allcoinmenu-con">
+                                    <div class="col-4 col-xxl-3 col-xl-3 col-sm-3 allcoinmenu-con">
                                         <p class="h6 line_low">總需支付金額</p>
                                         <p class="h6 ">可累積積分</p>
                                     </div>
-                                    <div class="col-4 col-xxl-3 col-lg-4 col-md-4 col-sm-4 allcoinmenu-right">
+                                    <div class="col-4 col-xxl-3 col-lg-3 col-md-4 col-sm-4 allcoinmenu-right">
                                         <p class="textcolor-1 line_low">$14000</p>
                                         <p class="textcolor-1 line_low">+1600</p>
-                                        <p class="h7 line_low">累積後目前有5000積分</p>
+                                        <p class="h7 line_low">累積後有5000積分</p>
                                         
                                     </div>
                                 </div>

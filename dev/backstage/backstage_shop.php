@@ -73,8 +73,8 @@
                     <p class="wi-15 text-1">商品介紹</p>
                     <p class="wi-10 text-1">上架日期</p>
                     <p class="wi-10 text-1">下架日期</p>
-                    <p class="wi-10 text-1">圖片</p>
                     <p class="wi-10 text-1">積分</p>
+                    <p class="wi-5 text-1">修改</p>
                     <p class="wi-5 text-1">狀態</p>
 
 
@@ -97,8 +97,9 @@
                                     <p class="wi-10 text-1 toomuch"><?=$prodRow["prod_ondate"]?></p>
                                     <p class="wi-10 text-1 toomuch"><?=$prodRow["prod_offdate"]?></p>
                                     
-                                    <p class="wi-10 text-1 toomuch"><?=$prodRow["prod_pic"]?></p>
+                                    <!-- <p class="wi-10 text-1 toomuch"><?=$prodRow["prod_pic"]?></p> -->
                                     <p class="wi-10 text-1"><?=$prodRow["prod_points"]?></p>
+                                    <a href="../php/backstage/shop/edit_backstage_shop.php?prod_no=<?=$prodRow["prod_no"]?>" class="wi-5 text-1"><button type="button" class="btn btn-info btn-sm">修改</button></a>
                                     <?php
                                             if($prodRow['prod_status'] == 0){
                                                 echo "<p class='wi-5 text-1'><a href='../php/backstage/shop/edit_backstage_prod.php?prod_no=$prodRow[prod_no]&prod_status=$prodRow[prod_status]' name='update' type='button' class='btn btn-primary btn-sm'>上架</a></p>";

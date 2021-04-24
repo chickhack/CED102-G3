@@ -54,7 +54,7 @@
 
             <div class="title">
                 <div class=" div-right-span padding_top_3 margin_left_3">
-                    <button type="button" class="btn-updata" onclick="open11()">＋新增</button>
+                    <!-- <button type="button" class="btn-updata" onclick="open11()">＋新增</button> -->
                     <div class="span-1 margin_left_1">
                         <label for="search1">
 
@@ -100,9 +100,9 @@
                                     <p class="wi-10 text-1"><?=$prodRow["order_total"]?></p>
                                     <?php
                                             if($prodRow['order_status'] == 0){
-                                                echo "<p class='wi-5 text-1'><a href='../php/edit_backstage_shop_order.php?order_no=$prodRow[order_no]&order_status=$prodRow[order_status]' name='update' type='button' class='btn btn-primary btn-sm'>上架</a></p>";
+                                                echo "<p class='wi-5 text-1'>未出貨</p>";
                                             }else{
-                                                echo "<p class='wi-5 text-1'><a href='../php/edit_backstage_shop_order.php?order_no=$prodRow[order_no]&order_status=$prodRow[order_status]' name='update' type='button' class='btn btn-danger btn-sm'>下架</a></p>";
+                                                echo "<p class='wi-5 text-1'>已出貨</p>";
                                             }
                                         ?>
                                 
