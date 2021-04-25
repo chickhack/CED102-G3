@@ -472,7 +472,10 @@
                             e.preventDefault();
                             return;
                         }
-                    }else{
+                    }else if(this.finalPrice == 0){
+                        console.log("不用付錢");
+                    }
+                    else{
                         alert("請輸入信用卡卡號")
                         e.preventDefault();
                         return;
