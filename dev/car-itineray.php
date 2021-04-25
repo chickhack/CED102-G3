@@ -245,6 +245,7 @@
                             </div>
                             <div class="divdate">
                             <input type="date" id="date-1" class="btn-date data-down margin_top_2" v-model="onedate" name="spot_date" required>
+                            <input type="hidden" id="date-1" class="btn-date data-down margin_top_2" :vaule="onedate" name="spot_date" >
                                 <div class="divnumb">
                                     <p class="h3">$\{{mainPrice}}</p>
                                     <button type="submit" name="remove"><img src="./img/icon/trashcan.png" class="icon trashcan" :data-no="item.spot_no" @click="increment"></button>
@@ -256,6 +257,7 @@
             data() {
                 return {
                     verified: this.item.qty,
+                    // dateone:this.item.date,
                     id: 0,
                     name: "",
                     onedate:this.item.date,

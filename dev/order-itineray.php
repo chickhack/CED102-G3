@@ -120,26 +120,26 @@ $arr = [];
                         <div class="col-10 col-sm-9 col-md-8 col-xl-7 col-xxl-7">
                             
                             <button class="btn-allAuto" type="button" id="btn-opmenu">訂購人資訊</button>
-                            <div id="orderinfo-automenu" class="padding_bottom-80">
+                            <div id="orderinfo-automenu" class="padding_bottom-80" >
                                     <!-- <div class="divider "></div> -->
-                                    <div class="row" id="">
+                                    <div class="row" id="" v-for="item in customer">
                                         <div class="col-7 col-xxl-4 col-lg-4 col-md-8 col-sm-7 ">
                                             <label for="last-name" class="textcolor line_high ">名字</label>
-                                            <input type="text" id="last-name" class="letter-spacing-1 " name="last-name" required>
+                                            <input type="text" id="last-name" class="letter-spacing-1 " name="last-name" :value="item.last_name" required>
                                             <label for="first-name" class="textcolor line_high">姓氏</label>
-                                            <input type="text" id="first-name" class="letter-spacing-1 " name="first-name" required>
+                                            <input type="text" id="first-name" class="letter-spacing-1 " name="first-name" :value="item.first_name" required>
                                             
                                         </div>
                                         <div class="col-7 col-xxl-4 col-lg-4 col-md-8 col-sm-7 ">
-                                            <label for="identity" class="textcolor line_high">身分證字號</label>
-                                            <input type="text" id="identity" pattern="[a-z]{1}[1-2]{1}[0-9]{8}" maxlength="10" required>
+                                            <label for="identity" class="textcolor line_high">電子信箱</label>
+                                            <input type="email" id="identity"  name="email" :value="item.email" required >
                                             <label for="phone" class="textcolor line_high">連絡電話</label>
-                                            <input type="tel" id="phone" class="letter-spacing-2 oioi " name="phone" pattern="[0-9]{4}[0-9]{6}" required>
+                                            <input type="tel" id="phone" class="letter-spacing-2 oioi " name="phone" pattern="[0-9]{4}[0-9]{6}" :value="item.phone" required>
                                         </div>
-                                        <div class="col-7 col-xxl-10 col-lg-10 col-md-8 col-sm-7 padding_bottom-1 ">
-                                            <label for="email" class="textcolor line_high">電子信箱</label>
-                                            <input type="email" name="email" class="letter-spacing-2" id="email" required>
-                                        </div>
+                                        <!-- <div class="col-7 col-xxl-10 col-lg-10 col-md-8 col-sm-7 padding_bottom-1 "> -->
+                                            <!-- <label for="email" class="textcolor line_high">電子信箱</label> -->
+                                            <!-- <input type="email" name="email" class="letter-spacing-2" id="email" :value="item.email" required> -->
+                                        <!-- </div> -->
                                     </div>
                                 </div>
                         </div>
@@ -425,7 +425,7 @@ $arr = [];
                                     <div class="col-4 col-xxl-3 col-lg-3 col-md-4 col-sm-4 allcoinmenu-right">
                                         <p class="textcolor-1 line_low">${{alltotal1}}</p>
                                         <p class="textcolor-1 line_low">{{integral}}</p>
-                                        <p class="h7 line_low" v-for="it in customer">累積後有{{it.miles}}積分</p>
+                                        <p class="h7 line_low">累積後有{{nowMiles}}積分</p>
                                         
                                     </div>
                                 </div>
@@ -463,7 +463,7 @@ $arr = [];
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="./js/order-itineray.js"></script>
+    <!-- <script src="./js/order-itineray.js"></script> -->
     <script>
      $(document).ready(function() {
         // Show or hide the sticky footer button
@@ -484,6 +484,7 @@ $arr = [];
             }, 900);
         })
     });
+            
     function show() {
         fetch("./php/logout.php");
         window.location.href = "./login.php";
@@ -506,9 +507,12 @@ $arr = [];
                 guideCheckbox:0,
                 guideCoin:0,
                 allintegral:0,
-                customer:[],
+                customer:{},
+                
            },
+          
            computed:{
+                
                addPay(){
                    let coo;
                 coo= this.guideCoin+this.spaceshipCion;
@@ -547,6 +551,14 @@ $arr = [];
                    this.allintegral=mi;
                    return this.allintegral;
                 },
+                nowMiles(){
+                    let mimi=0;
+                    for(var x in this.customer){
+                    mimi += parseInt(this.customer[x].miles);
+                   }
+                    mimi +=this.integral;
+                    return mimi;
+                },
            },
            methods: {
             spaceship(e){
@@ -557,11 +569,9 @@ $arr = [];
                        return this.spaceshipCion=2000;
                     }
                 },
-           },
-           guide(){
-                
-            },
+           },       
            mounted(){
+
             let total = 0;
             let points = 0;
                 fetch('./php/get_order_customer.php').then(res => res.json()).then(res => this.customer = res);
@@ -604,8 +614,29 @@ $arr = [];
                                         }).then(()=>{
                                             this.$store.commit('all', total);
                                             this.$store.commit('pt', points);
-                                        })
-           },
+                
+                                        });
+                 $('#btn-opmenu').click(function(){
+                $('#orderinfo-automenu').slideToggle();
+                $('#btn-opmenu').toggleClass("svgRight");
+            });
+            $('#addPay-btn').click(function(){
+                $('.automena').slideToggle();
+                $('#addPay-btn').toggleClass("svgRight");
+    
+            });
+            $('#paymethod-automanu-car').click(function(){
+                $('#car-auto').slideToggle();
+            });
+            $('#btn-paymethod').click(function(){
+                $('.paymethod-automanu').slideToggle();
+                $('#btn-paymethod').toggleClass("svgRight");
+    
+            });                           
+
+
+
+              },
         
         });
         
