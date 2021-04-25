@@ -1,11 +1,13 @@
 <?php
 session_start();
-
+$arr2=[];
 $arr = [];
     for($i=1; $i < count($_SESSION['trip-cart'])+1 ; $i++){
         $no = $_SESSION['trip-cart'][$i-1]['spot_id'];
+
         if($no){
             array_push($arr, $_POST["spot_qty$no"]);
+            // array_push($arr2, $_POST["spot_date$no"]);
             // array_push($arr, $_POST["spot_date$no"]);
         }
     };
@@ -112,8 +114,10 @@ $arr = [];
                 <h2 class="margin_top_5">星星世界帶你探索宇宙</h4>
                 </div> -->
             </div>
-                <form action="#" >
-       
+        <form action="./php/spot_order_newdate.php" method="POST">
+            <?php echo $_POST["spot_qty$no"];
+                    print_r($arr);
+            ?>
             <div class="orderinfo">
                 
                     <div class="row">
@@ -328,15 +332,15 @@ $arr = [];
                                             <div class="row ">
                                                 <div class="col-7 col-xxl-3 col-xl-3 col-lg-3 col-md-8 col-sm-8">
                                                 <label for="carnu" class="textcolor line_low">信用卡號碼</label>
-                                                <input type="text" class="textcolor letter-spacing-2 input-focus" id="carnu" pattern="[0-9]{16}" maxlength="16" required placeholder="0000000000000000">
+                                                <input type="text" class="textcolor letter-spacing-2 input-focus" id="carnu" pattern="[0-9]{16}" maxlength="16"  placeholder="0000000000000000">
                                                 </div>
                                                 <div class="col-7 col-xxl-3 col-xl-3 col-lg-3 col-md-8 col-sm-8">
                                                     <label for="cardata" class="textcolor line_low">有效期限</label>
-                                                    <input type="text" class="textcolor letter-spacing-1" id="cardata" pattern="[0-9]{2}[/]{1}[0-9]{2}" maxlength="5" placeholder="00/00" required>
+                                                    <input type="text" class="textcolor letter-spacing-1" id="cardata" pattern="[0-9]{2}[/]{1}[0-9]{2}" maxlength="5" placeholder="00/00" >
                                                 </div>
                                                 <div class="col-7 col-xxl-1 col-xl-1 col-lg-1 col-md-8 col-sm-8">
                                                     <label for="" class="textcolor line_low">檢查碼</label>
-                                                    <input type="text" class="textcolor letter-spacing-2" id="carcheck" pattern="[0-9]{3}" maxlength="3" placeholder="000" required>
+                                                    <input type="text" class="textcolor letter-spacing-2" id="carcheck" pattern="[0-9]{3}" maxlength="3" placeholder="000" >
                                                 </div>
                                                
                                             </div>
@@ -586,11 +590,11 @@ $arr = [];
                                             
                                             <?php
                                                 if(isset($_SESSION["trip-cart"])){
-                                                    foreach($_SESSION["trip-cart"] as $v1) {   ?>
+                                                    foreach($_SESSION["trip-cart"]  as $key => $v1) {   ?>
                                                             if(ky == <?php echo $v1['spot_id'] ?>){
                                                                 // console.log("hi");
                                                                 data[j-1].date = '<?php echo $v1['spot_date']?>';                                            
-                                                                data[j-1].qty = <?php echo $v1['spot_qty']?>;
+                                                                data[j-1].qty = <?php echo $arr[$key]?>;
                                                                 arr.push(data[j-1]);
                                                             }
                                                             <?php
