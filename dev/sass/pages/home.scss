@@ -9,13 +9,6 @@
     background: $darkblue;
 }
 
-// go-top
-.go-top{
-    display: block;
-    @include respond(mobile){
-        display: none;
-    }
-}
 //=========header設定
 nav{
     background: linear-gradient(-180deg, rgba(12,13,24,0.4489146000196954) 9%, rgba(12,13,24,0) 100%);
