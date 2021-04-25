@@ -311,6 +311,14 @@ canvas{
         display: flex;
         align-items: center;
         flex-direction: column;
+        .upper, .lower{
+            display: flex;
+        }
+        @include respond(pad){
+            .upper, .lower{
+                flex-direction: column;
+            }
+        }
     }
 
 }    
