@@ -1,13 +1,6 @@
 <?php
 session_start();
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-$_SESSION["mem_no"]=1010001;
-=======
->>>>>>> chickhack
-=======
->>>>>>> KAI
 ?>
 
 <!DOCTYPE html>
@@ -98,8 +91,6 @@ $_SESSION["mem_no"]=1010001;
           </a>
         </li>
         <li>
-<<<<<<< HEAD
-<<<<<<< HEAD
           <?php
           if (isset($_SESSION['mem_no'])) { ?>
             <div class="member" onclick="toggle()">
@@ -115,28 +106,6 @@ $_SESSION["mem_no"]=1010001;
             <a href="./login.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png" alt="" class="icon" /></a>
           <?php } ?>
         </li>
-=======
-=======
->>>>>>> KAI
-                <?php
-                    if(isset($_SESSION['mem_no'])){?>
-                        <div class="member"  onclick="toggle()">
-                            <div class="info">
-                                <img src="<?= $_SESSION['mem_pic'] ?>" alt="">
-                                <div class="infoData">
-                                    <a href="./account.php">會員中心</a>
-                                    <a href="./login.php" onclick="show()">登出</a>
-                                </div>
-                            </div>  
-                        </div>
-                <?php }else{ ?>
-                        <a href="./login.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png" alt="" class="icon"/></a>
-                <?php } ?>
-            </li>
-<<<<<<< HEAD
->>>>>>> chickhack
-=======
->>>>>>> KAI
       </ul>
       <div class="burger">
         <div class="line1"></div>
