@@ -268,19 +268,19 @@
         <div class="tz-gallery margin_top_10">
             <!-- <div class="row"> -->
             <div class="upper col-10">
-                <div class=" col-4">
+                <div class=" col-lg-4 col-sm-10">
                     <div class="lightbox">
                         <img src="./img/home/mars2.jpg" alt="Bridge">
                     </div>
                 </div>
 
-                <div class="col-4">
+                <div class="col-lg-4 col-sm-10">
                 <div class="lightbox">
                         <img src="./img/home/others/首頁-互動牆壁5.jpg" alt="Park">
                     </div>
                 </div>
 
-                <div class="col-4">
+                <div class="col-lg-4 col-sm-10">
                 <div class="lightbox">
                         <img src="./img/home/首頁-互動牆壁9.jpg" alt="Tunnel">
                     </div>
@@ -288,13 +288,13 @@
             </div>
             <div class="lower col-10
               ">
-                <div class="col-6">
+                <div class="col-lg-6 col-sm-10">
                 <div class="lightbox">
                         <img src="./img/home/首頁-互動牆壁8.jpg" alt="Tunnel">
                     </div>
                 </div>
 
-                <div class="col-6">
+                <div class="col-lg-6 col-sm-10">
                     <div class="lightbox">
                         <img src="./img/home/others/mars_landscape.jpg" alt="Tunnel">
                     </div>

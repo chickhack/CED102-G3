@@ -62,9 +62,25 @@ button:hover{
 //=========動態星球
 .tab-active{
     canvas{
-        width: 100%;
+        // width: 100%;
         height: 100%;
+
+        @include respond(pad){
+            width: 100%;
+            // min-height: 100vh;
+        }
     }
+}
+@media all and (max-width:500) {
+    .tab-active{
+        display: flex;
+        justify-content: center;
+        canvas{
+            width: 100%;
+            margin-left: 40%;
+        }
+    }
+
 }
 //=========星球Tab
 .planet_tab{
@@ -148,6 +164,10 @@ button:hover{
                         min-width: 100px;
                         max-height: 160px;
                         border-right: 1px solid $gold;
+                        
+                    }
+                    @include respond(mobile){
+                        margin-bottom: 24px;;
                     }
                     // .day{
                     //     justify-content: center;

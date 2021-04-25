@@ -95,11 +95,10 @@
             <h2>航行宇宙</h2>
         </div>
         <div class="rightbox col-lg-9 col-md-12 col-sm-12" align="center">
-
-        <div class="return_btn margin_left_2 margin_top_2">
-                <span><a href="./home.php"><<</a></span>
-                <h4><a href="./home.php">返回首頁</a></h4>
-        </div>
+            <div class="return_btn margin_left_2 margin_top_2">
+                    <span><a href="./home.php"><<</a></span>
+                    <h4><a href="./home.php">返回首頁</a></h4>
+            </div>
             <div class="modal-dialog">
                 <div class="col-sm-9 main-section">
                     <div class="modal-content margin_top_8">
@@ -134,7 +133,7 @@
         </section>
 
 <!-- container-fluid結尾 -->
-    </div>
+      </div>
 <!-- footer  -->
 <footer class="padding_top_10">
         <div class="links">
