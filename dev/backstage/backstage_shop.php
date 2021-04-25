@@ -73,8 +73,8 @@
                     <p class="wi-15 text-1">商品介紹</p>
                     <p class="wi-10 text-1">上架日期</p>
                     <p class="wi-10 text-1">下架日期</p>
-                    <p class="wi-10 text-1">圖片</p>
                     <p class="wi-10 text-1">積分</p>
+                    <p class="wi-5 text-1">修改</p>
                     <p class="wi-5 text-1">狀態</p>
 
 
@@ -97,13 +97,14 @@
                                     <p class="wi-10 text-1 toomuch"><?=$prodRow["prod_ondate"]?></p>
                                     <p class="wi-10 text-1 toomuch"><?=$prodRow["prod_offdate"]?></p>
                                     
-                                    <p class="wi-10 text-1 toomuch"><?=$prodRow["prod_pic"]?></p>
+                                    <!-- <p class="wi-10 text-1 toomuch"><?=$prodRow["prod_pic"]?></p> -->
                                     <p class="wi-10 text-1"><?=$prodRow["prod_points"]?></p>
+                                    <a href="../php/backstage/shop/edit_backstage_shop.php?prod_no=<?=$prodRow["prod_no"]?>" class="wi-5 text-1"><button type="button" class="btn btn-info btn-sm">修改</button></a>
                                     <?php
                                             if($prodRow['prod_status'] == 0){
-                                                echo "<p class='wi-5 text-1'><a href='./php/edit_backstage_prod.php?prod_no=$prodRow[prod_no]&prod_status=$prodRow[prod_status]' name='update' type='button' class='btn btn-primary btn-sm'>上架</a></p>";
+                                                echo "<p class='wi-5 text-1'><a href='../php/backstage/shop/edit_backstage_prod.php?prod_no=$prodRow[prod_no]&prod_status=$prodRow[prod_status]' name='update' type='button' class='btn btn-primary btn-sm'>上架</a></p>";
                                             }else{
-                                                echo "<p class='wi-5 text-1'><a href='./php/edit_backstage_prod.php?prod_no=$prodRow[prod_no]&prod_status=$prodRow[prod_status]' name='update' type='button' class='btn btn-danger btn-sm'>下架</a></p>";
+                                                echo "<p class='wi-5 text-1'><a href='../php/backstage/shop/edit_backstage_prod.php?prod_no=$prodRow[prod_no]&prod_status=$prodRow[prod_status]' name='update' type='button' class='btn btn-danger btn-sm'>下架</a></p>";
                                             }
                                         ?>
                                 
@@ -118,11 +119,11 @@
                             <input type="number" placeholder="類型" name="cat_no">
                             <input type="text" placeholder="商品名稱" name="prod_name">
                             <input type="text" placeholder="商品價格" name="prod_price">
-                            <input type="file" name="prod_pic[]">
-                            <input type="file" name="prod_pic[]">
-                            <input type="file" name="prod_pic[]">
+                            <input type="file" name="prod_pic1">
+                            <input type="file" name="prod_pic2">
+                            <input type="file" name="prod_pic3">
                             <input type="text" placeholder="商品說明" name="prod_info">
-                            <input type="text" placeholder="商品內容" name="spot_infro">
+                            <input type="text" placeholder="商品內容" name="prod_intro">
                             <!-- <input type="text" placeholder="上架日期" name="prod_ondate"> -->
                             <!-- <input type="text" placeholder="注意事項" name="prod_offdate"> -->
                             <input type="number" placeholder="商品狀態" name="prod_status" min="0" max="1">

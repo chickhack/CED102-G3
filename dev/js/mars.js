@@ -6,7 +6,7 @@ const imgLoc = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/";
 // let camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 10000),
 const  camera = new THREE.PerspectiveCamera(70, 2, 1, 1000);
 const light = new THREE.PointLight(0xFFFFFF, 2, 5000);
-camera.position.set(900, 0, 0);
+camera.position.set(700, 0, 0);
 const scene = new THREE.Scene();
 
 camera.lookAt(scene.position);
