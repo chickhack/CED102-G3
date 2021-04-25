@@ -15,6 +15,9 @@ session_start();
     <link rel="stylesheet" href="./css/pages/all.css">
     <link rel="stylesheet" href="./css/pages/order-itineray.css">
     <link rel="shortcut icon" href="./img/icon/shortcut.png" type="image/x-icon">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.12/vue.js'></script>
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vuex/3.6.2/vuex.min.js"></script>
     <!-- 動態背景 -->
     <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 </head>
@@ -134,12 +137,42 @@ session_start();
                 
             </div>
             
-            <div class="ltineraryinfo">
+            <div class="ltineraryinfo" id="app1">
                 
                 <div class="row">
                         <div class="col-10 col-sm-9 col-md-8 col-xl-7">
                             <h2 class="titi margin_top_4">訂購行程資訊</h2>
-                            <div class="row padding_bottom-20">
+                            <div class="row padding_bottom-20" v-for="item in products">
+                                        <div class="col-3 col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3">
+
+                                            <img :src="item.spot_pic1" alt="">
+                                        </div>
+                                        <div class="col-7 col-xxl-8 col-xl-8 col-lg-7 col-md-7 col-sm-7 textinfo ">
+                                            <div class="row">
+
+                                                <div class="text-div col-11 col-xxl-5 col-xl-6 col-lg-6">
+                                                    <p class=" h4 letter-spacing-2 padding_top_2">{{item.spot_name}}</p>
+                                                    <p class="line_low">{{item.date}}</p>
+
+                                                </div>
+                                                <div class="text-div col-11 col-xxl-2 col-xl-2 col-lg-2 ">
+                                                    
+                                                    <p>數量{{item.qty}}</p>
+
+                                                </div>
+                                                <div class="text-div col-11 col-xxl-3 col-xl-3 col-lg-3">
+                                                    <p class="line_low">總金額$ {{(item.qty * item.spot_price)}}</p>
+                                                    <P>積分{{item.miles}}</P>
+                                                </div>
+                                            </div>    
+                                            
+                                        </div>
+                            </div>
+
+
+
+
+                            <!-- <div class="row padding_bottom-20" v-for="item in products">
                                         <div class="col-3 col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3">
 
                                             <img src="./img/trip/trip_moon/moon_c1_ps.jpg" alt="">
@@ -164,8 +197,8 @@ session_start();
                                             </div>    
                                             
                                         </div>
-                            </div>
-                            <div class="row padding_bottom-20">
+                            </div> -->
+                            <!-- <div class="row padding_bottom-20">
                                 <div class="col-3 col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3">
 
                                     <img src="./img/trip/trip_mars/mars_b2_ps.jpg" alt="">
@@ -189,37 +222,9 @@ session_start();
                                         </div>
                                     </div>    
                                     
-                                </div>
-                    </div>
-                            <!-- <div class="row ">
-                                <div class="col-11">
-                                    <img src="./img/trip/trip_mars/mars_b2_ps.jpg" alt="">
-                                    <div class="textinfo padding_left_3">
-                                        <p class="h4 letter-spacing-2">火星<span class="text-va">∣</span>反射谷及山羊峽谷探險一日遊</p>
-                                        <div class="textinfo-1 line_high">
-                                            <p>2021-3-12</p>
-                                            <p class="padding_left_3">數量X2</p>
-                                            <P class="padding_left_3"><img class="" src="./img/icon/bonus.png" alt="">3000積分</P>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-11">
-                                
-                                    <img src="./img/trip/trip_mars/mars_a1_ps.jpg.png" alt="">
-                                    <div class="textinfo padding_left_3">
-                                        <p class="h4 letter-spacing-2 ">火星 <span class="text-va">∣</span> 攀登太陽系第一高山奧林帕斯山三日遊</p>
-                                        <div class="textinfo-1 line_high">
-                                            <p>2021-3-12</p>
-                                            <p class="padding_left_3">數量X2</p>
-                                            <P class="padding_left_3"><img class="" src="./img/icon/bonus.png" alt="">3000積分</P>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> -->
+                                </div> -->
+                            <!-- </div> -->
+                           
                         </div>
                 </div>
                 
@@ -274,36 +279,7 @@ session_start();
 
                                         </div>
                                     </div>
-                                    <!-- <div class="row">
-                                        <div class="col-11 padding_bottom-1 padding_left_5">
-                                            <input type="radio" id="traffic-0" name="traffic" value="基本" class="inputra">
-                                            <label for="traffic-0" class="traffic-div">
-
-                                                <img src="./img/shopping-cart_(1).png" alt="" class="imgs">
-                                                <div>
-                                                    <p class="textcolor textHeight-1">基本太空梭</p>
-                                                    <p class="textcolor textHeight-2 letter-spacing-1">基本速度</p>
-        
-                                                </div>
-                                                <div class="coin">
-                                                    <p class="textcolor textHeight-2 textRight" style="width: 60px;">＋0幣</p>
-                                                </div>
-                                            </label> 
-                                            <input type="radio" id="traffic-1" name="traffic" value="升級" class="inputra">
-                                            <label for="traffic-1" class="traffic-div">
-
-                                                <img src="./img/shopping-cart_(1).png" alt="" class="imgs">
-                                                <div class="w-50">
-                                                    <p class="textcolor textHeight-2">急速太空梭</p>
-                                                    <p class="textcolor textHeight-2 letter-spacing-1">加速1.5倍讓你節省更多時間前往下個旅程</p>
-        
-                                                </div>
-                                                <div class="coin w-25">
-                                                    <p class="textcolor textHeight-2 textRight w-100">＋2000幣</p>
-                                                </div>
-                                            </label> 
-                                        </div>
-                                    </div> -->
+                                   
                             </div>
                         </div>
                     </div>
@@ -432,14 +408,14 @@ session_start();
                                 <div class="row">
                                     <div class="col-3 col-xxl-3 col-sm-3 allcoinmenu-list">
                                     </div>
-                                    <div class="col-3 col-xxl-3 col-xl-3 col-sm-3 allcoinmenu-con">
+                                    <div class="col-4 col-xxl-3 col-xl-3 col-sm-3 allcoinmenu-con">
                                         <p class="h6 line_low">總需支付金額</p>
                                         <p class="h6 ">可累積積分</p>
                                     </div>
-                                    <div class="col-4 col-xxl-3 col-lg-4 col-md-4 col-sm-4 allcoinmenu-right">
+                                    <div class="col-4 col-xxl-3 col-lg-3 col-md-4 col-sm-4 allcoinmenu-right">
                                         <p class="textcolor-1 line_low">$14000</p>
                                         <p class="textcolor-1 line_low">+1600</p>
-                                        <p class="h7 line_low">累積後目前有5000積分</p>
+                                        <p class="h7 line_low">累積後有5000積分</p>
                                         
                                     </div>
                                 </div>
@@ -507,6 +483,62 @@ session_start();
         const infoData = document.querySelector(".infoData");
         infoData.classList.toggle("show");
     }
+    </script>
+    <script>
+        let neww=new Vue({
+           el:'#app1',
+        //    store,
+            data:{
+                products:[], 
+           },
+           mounted(){
+            let total = 0;
+            let points = 0;
+                // fetch('./php/Leaderboard.php').then(res => res.json()).then(res => this.mydata = res);
+
+                fetch("./php/get_car-itineray_spot.php").then(res => res.json())
+                                     .then(data => {
+                                         let arr = [];
+                                         let qty=[];
+                                         let ky =101;
+                                         let j=1;
+                                         for(let i=0 ; i<data.length ; i++){
+                                            
+                                            <?php
+                                                if(isset($_SESSION["trip-cart"])){
+                                                    foreach($_SESSION["trip-cart"] as $v1) {   ?>
+                                                            if(ky == <?php echo $v1['spot_id'] ?>){
+                                                                // console.log("hi");
+                                                                data[j-1].date = '<?php echo $v1['spot_date']?>';                                            
+                                                                data[j-1].qty = <?php echo $v1['spot_qty']?>;
+                                                                arr.push(data[j-1]);
+                                                            }
+                                                            <?php
+                                                        };
+                                                    }?>
+                                                    // console.log(qty);
+                                                    ky++;
+                                                    j++;
+                                                    console.log(arr);
+                                                }
+                                            arr.forEach(prod => {
+                                                prod.png = prod["spot_pic1"];
+                                                total += parseInt(prod['spot_price']) * parseInt(prod['qty']);
+                                                points += parseInt(prod['miles']);
+                                                console.log(points);
+                                                console.log(prod['qty']);
+
+                                            })
+                                            this.products = arr;
+                                            
+                                        }).then(()=>{
+                                            this.$store.commit('all', total);
+                                            this.$store.commit('pt', points);
+                                        })
+           },
+        
+        });
+        
     </script>
 </body>
 </html>
