@@ -1,7 +1,8 @@
 <?php
 session_start();
 
-$_SESSION["mem_no"]=1010001;
+$mem_no=$_SESSION["mem_no"];
+// $_SESSION["mem_no"]=1010001;
 ?>
 
 <!DOCTYPE html>
@@ -1001,6 +1002,7 @@ $_SESSION["mem_no"]=1010001;
         acitve(index) {  // 切換收藏分類
           this.step = index
           !this.active.includes(index) && this.active.push(index);
+          this.style = "color:#AD6E4A; border-bottom: 3px solid #AD6E4A";
         },
         toggleContent(e) {  // 展開滑出訂單明細
           this.toggle = !this.toggle;
@@ -1029,7 +1031,7 @@ $_SESSION["mem_no"]=1010001;
         // res是區域變數出去後不可使用
         fetch('./php/account/getspot_order.php').then(res => res.json()).then(res => this.spot_order = res);
         fetch('./php/account/getspot_order_datail.php').then(res => res.json()).then(res => this.spot_order_detail = res);
-        fetch('./php/account/getCustomer.php').then(res => res.json()).then(res => this.customer = res);
+        fetch('./php/account/getcustomer.php').then(res => res.json()).then(res => this.customer = res);
         
 
         // )
@@ -1060,23 +1062,25 @@ $_SESSION["mem_no"]=1010001;
     function show(){
             fetch("./php/logout.php");
             window.location.href = "./login.php";
-        }                               
+        }                             
         function toggle(){
             const infoData = document.querySelector(".infoData");
             infoData.classList.toggle("show");
         }
+        
+    // window.onload = function () {        //  點擊menu變色
+    //   for (var i = 0; i < document.links.length; i++) {
+    //     var thisLink = document.links[i];
+    //     thisLink.onclick = function () {
+    //       for (var i = 0; i < document.links.length; i++) {
+    //         document.links[i].style = "";
+    //       }
+    //       this.style = "color:#AD6E4A; border-bottom: 3px solid #AD6E4A";
+    //     }
+    //   }
+    // };
 
-    window.onload = function () {        //  點擊menu變色
-      for (var i = 0; i < document.links.length; i++) {
-        var thisLink = document.links[i];
-        thisLink.onclick = function () {
-          for (var i = 0; i < document.links.length; i++) {
-            document.links[i].style = "";
-          }
-          this.style = "color:#AD6E4A; border-bottom: 3px solid #AD6E4A";
-        }
-      }
-    };
+
 
   </script>
 
