@@ -108,6 +108,7 @@ $mem_no=$_SESSION["mem_no"];
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           <?php
           if (isset($_SESSION['mem_no'])) { ?>
             <div class="member" onclick="toggle()">
@@ -128,6 +129,9 @@ $mem_no=$_SESSION["mem_no"];
 >>>>>>> KAI
 =======
 >>>>>>> Min
+=======
+
+>>>>>>> chick
                 <?php
                     if(isset($_SESSION['mem_no'])){?>
                         <div class="member"  onclick="toggle()">
