@@ -1,6 +1,7 @@
 <?php
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     $dbname = "g3";
     $user ="root";
     $password= "rootpassword";
@@ -27,6 +28,12 @@
     $password= "root1009";
 
 >>>>>>> KAI
+=======
+
+    $dbname = "g3";
+    $user ="root";
+    $password= "rootpassword";
+>>>>>>> chick
     $dsn = "mysql:host=localhost;port=3306;dbname=$dbname;charset=utf8";
     $options = array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION,
                         PDO::ATTR_CASE=>PDO::CASE_NATURAL);
