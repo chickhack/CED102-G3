@@ -13,6 +13,8 @@ $_SESSION["mem_no"]=1010001;
 $mem_no=$_SESSION["mem_no"];
 // $_SESSION["mem_no"]=1010001;
 >>>>>>> Min
+=======
+>>>>>>> chick
 ?>
 
 <!DOCTYPE html>

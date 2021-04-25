@@ -13,6 +13,11 @@
             }
         }
     }
+
+
+
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -133,7 +138,11 @@
                             <small>+{{totalPoints}}</small>
                         </div>
                     </div>
+                    <?php if(isset($_SESSION["mem_no"])){?>
                     <button type="submit" name="check" class="button_min margin_left_3" @click="location">前往結帳</button>
+                    <?php }else{?>
+                        <a  href="./login.php"  class="button_min margin_left_3">前往結帳</a>
+                    <?php }?>
                 </div>
             </form>
         </section>
@@ -235,7 +244,7 @@
                                 </div>
                             </div>
                             <div class="divdate">
-                            <input type="date" id="date-1" class="btn-date data-down margin_top_2" :value="item.date" name="spot_date">
+                            <input type="date" id="date-1" class="btn-date data-down margin_top_2" v-model="onedate" name="spot_date" required>
                                 <div class="divnumb">
                                     <p class="h3">$\{{mainPrice}}</p>
                                     <button type="submit" name="remove"><img src="./img/icon/trashcan.png" class="icon trashcan" :data-no="item.spot_no" @click="increment"></button>
@@ -249,6 +258,7 @@
                     verified: this.item.qty,
                     id: 0,
                     name: "",
+                    onedate:this.item.date,
                 }
             },
             computed: {

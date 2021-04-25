@@ -1,5 +1,15 @@
 <?php
 session_start();
+
+$arr = [];
+    for($i=1; $i < count($_SESSION['trip-cart'])+1 ; $i++){
+        $no = $_SESSION['trip-cart'][$i-1]['spot_id'];
+        if($no){
+            array_push($arr, $_POST["spot_qty$no"]);
+            // array_push($arr, $_POST["spot_date$no"]);
+        }
+    };
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -93,7 +103,7 @@ session_start();
 
   </header>
 
-    <div class="container-fluid">
+    <div class="container-fluid" id="app1">
             <div id="particles-js">
             <!-- 動態背景 -->
             <script src="./js/background.js"></script>
@@ -137,7 +147,7 @@ session_start();
                 
             </div>
             
-            <div class="ltineraryinfo" id="app1">
+            <div class="ltineraryinfo" >
                 
                 <div class="row">
                         <div class="col-10 col-sm-9 col-md-8 col-xl-7">
@@ -241,7 +251,7 @@ session_start();
                                     <!-- <div class="divider"></div> -->
                                     <div class="row">
                                         <div class="col-11 align-items-center padding_left_5 ">
-                                            <input type="checkbox" id="guide-yes" value="是" name="guide" class="checkbox_custom">
+                                            <input type="checkbox" id="guide-yes" value="3000" name="guide" class="checkbox_custom" v-model="guideCheckbox">
                                             <label for="guide-yes" class=" textcolor letter-spacing-1 checkbox_custom_label">加購嚮導（＋3000）</label>
                                             <!-- <label for="guide-yes" class="textcolor padding_left_1 padding_right-1">是</label>
                                             <input type="radio" id="guide-no" value="否" name="guide" class="padding_left_3">
@@ -255,7 +265,7 @@ session_start();
                                     <div class="row " id="row-traffic">
                                         
                                         <div class="col-10 col-xxl-5 col-xl-5  col-md-6 textcolor   margin_left_3">
-                                            <input type="radio" id="traffic-0" value="基本" class="checkbox_custom" name="traffic">
+                                            <input type="radio" id="traffic-0" value="基本" class="checkbox_custom" name="traffic" @click="spaceship(0)">
                                             <label for="traffic-0" class="sss checkbox_custom_label">
                                                 <img src="./img/trip/others/ships-astero.png" alt="">
                                                <div class="padding_left_2">
@@ -266,8 +276,8 @@ session_start();
                                             </label>
                                         </div>
                                         <div class="col-10 col-xxl-5 col-xl-5 col-md-6 textcolor" id="fl-traffic">
-                                                
-                                            <input type="radio" id="traffic-1" value="升級" class="checkbox_custom" name="traffic">
+                                        <!-- data-price="2000" -->
+                                            <input type="radio" id="traffic-1" value="升級" class="checkbox_custom" name="traffic"  @click="spaceship(1)">
                                             <label for="traffic-1" class="sss checkbox_custom_label">
                                                 <img src="./img/trip/others/ships-rifter.png" alt="">
                                                 <div class="padding_left_2">
@@ -300,7 +310,7 @@ session_start();
                                 <div class="row justify-content-start padding_left_5">
                                     <div class="col-10 col-xxl-4 col-lg-5 col-md-6 col-sm-10">
                                         <input type="checkbox" class="checkbox-1 checkbox_custom" id="paymethod-coin" name="paymethod-coin" value="宇宙幣">
-                                        <label for="paymethod-coin" class="check  textcolor checkbox_custom_label letter-spacing-2 padding_left_1">宇宙幣尚餘50000 </label>
+                                        <label for="paymethod-coin" class="check  textcolor checkbox_custom_label letter-spacing-2 padding_left_1" v-for="co in customer">宇宙幣尚餘{{co.coin}} </label>
                                     </div>
                                     <div class="col-11 col-xxl-4 col-lg-5 col-md-8 col-sm-11 ">
                                         <label for="paymethod-coin-nu" class="textcolor" >折抵:</label>
@@ -352,7 +362,7 @@ session_start();
                                     </div>
                                     <div class="col-3 col-sm-3"></div>
                                     <div class="col-3 col-xxl-3 col-sm-3 order-coin-right">
-                                        <p class="textcolor-1 ">$9000</p>
+                                        <p class="textcolor-1 ">${{alltotal}}</p>
 
                                     </div>
                                 </div>
@@ -368,8 +378,8 @@ session_start();
                                         <p class="h7 line_low">升級交通工具</p>
                                     </div>
                                     <div class="col-3 col-xxl-3 col-sm-3 orderDetails-automanu-right">
-                                        <p class="textcolor line_low ">$3000</p>
-                                        <p class="textcolor line_low ">$2000</p>
+                                        <p class="textcolor line_low ">${{guide}}</p>
+                                        <p class="textcolor line_low ">${{spaceshipCion}}</p>
                                     </div>
                                 </div>
 
@@ -397,7 +407,7 @@ session_start();
                                     </div>
                                     <div class="col-3 col-xxl-3 col-xl-3 col-sm-3"></div>
                                     <div class="col-3 col-xxl-3 col-sm-3 orderDetails-automanu-allcoin-right">
-                                        <p class="textcolor-1">$5000</p>
+                                        <p class="textcolor-1">${{addPay}}</p>
                                     </div>
                                 </div>
                             </div>
@@ -413,9 +423,9 @@ session_start();
                                         <p class="h6 ">可累積積分</p>
                                     </div>
                                     <div class="col-4 col-xxl-3 col-lg-3 col-md-4 col-sm-4 allcoinmenu-right">
-                                        <p class="textcolor-1 line_low">$14000</p>
-                                        <p class="textcolor-1 line_low">+1600</p>
-                                        <p class="h7 line_low">累積後有5000積分</p>
+                                        <p class="textcolor-1 line_low">${{alltotal1}}</p>
+                                        <p class="textcolor-1 line_low">{{integral}}</p>
+                                        <p class="h7 line_low" v-for="it in customer">累積後有{{it.miles}}積分</p>
                                         
                                     </div>
                                 </div>
@@ -490,11 +500,71 @@ session_start();
         //    store,
             data:{
                 products:[], 
+                orderCoin:0,
+                allCoin:0,
+                spaceshipCion:0,
+                guideCheckbox:0,
+                guideCoin:0,
+                allintegral:0,
+                customer:[],
            },
+           computed:{
+               addPay(){
+                   let coo;
+                coo= this.guideCoin+this.spaceshipCion;
+                return coo;
+               },
+               guide(){
+                if(this.guideCheckbox==true){
+                     this.guideCoin=3000;
+
+                    return this.guideCoin;
+                }else{
+                    this.guideCoin=0;
+                    return this.guideCoin;
+                }
+               },
+
+                alltotal(){
+                   var all=0;
+                   for(var i in this.products){
+                    all += this.products[i].spot_price * this.products[i].qty;
+                   }
+                   this.orderCoin=all;
+                   this.orderCoin+=this.addPay;//funtion可以互相引用 addPay的輸出值是甚麼
+                   return this.orderCoin;
+                //    console.log (all);
+                },
+                alltotal1(){
+                   this.allCoin=this.orderCoin;
+                   return this.allCoin;
+                },
+                integral(){
+                    let mi=0;
+                    for(var z in this.products){
+                    mi += parseInt(this.products[z].miles);
+                   }
+                   this.allintegral=mi;
+                   return this.allintegral;
+                },
+           },
+           methods: {
+            spaceship(e){
+                // console.log(e.target.dataset.price);
+                    if(e==0){ 
+                       return this.spaceshipCion=0;
+                    }else{
+                       return this.spaceshipCion=2000;
+                    }
+                },
+           },
+           guide(){
+                
+            },
            mounted(){
             let total = 0;
             let points = 0;
-                // fetch('./php/Leaderboard.php').then(res => res.json()).then(res => this.mydata = res);
+                fetch('./php/get_order_customer.php').then(res => res.json()).then(res => this.customer = res);
 
                 fetch("./php/get_car-itineray_spot.php").then(res => res.json())
                                      .then(data => {
