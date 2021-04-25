@@ -3,11 +3,16 @@ session_start();
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 $_SESSION["mem_no"]=1010001;
 =======
 >>>>>>> chickhack
 =======
 >>>>>>> KAI
+=======
+$mem_no=$_SESSION["mem_no"];
+// $_SESSION["mem_no"]=1010001;
+>>>>>>> Min
 ?>
 
 <!DOCTYPE html>
@@ -100,6 +105,7 @@ $_SESSION["mem_no"]=1010001;
         <li>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           <?php
           if (isset($_SESSION['mem_no'])) { ?>
             <div class="member" onclick="toggle()">
@@ -118,6 +124,8 @@ $_SESSION["mem_no"]=1010001;
 =======
 =======
 >>>>>>> KAI
+=======
+>>>>>>> Min
                 <?php
                     if(isset($_SESSION['mem_no'])){?>
                         <div class="member"  onclick="toggle()">
@@ -134,9 +142,12 @@ $_SESSION["mem_no"]=1010001;
                 <?php } ?>
             </li>
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> chickhack
 =======
 >>>>>>> KAI
+=======
+>>>>>>> Min
       </ul>
       <div class="burger">
         <div class="line1"></div>
@@ -155,7 +166,7 @@ $_SESSION["mem_no"]=1010001;
 
   <div id="accountapp">
 
-    <div class="">
+    <div>
 
       <div class="welcome" v-for="(item,index) in customer" v-if="item.mem_no == <?php echo $_SESSION["mem_no"] ?>">
         <div class="spacedinfo">
@@ -563,6 +574,10 @@ $_SESSION["mem_no"]=1010001;
           <div class="heart_btns">
             <input type="date" id="date-1" class="btn orderbtns margin_top_3 btn-date data-down">
           </div>
+<<<<<<< HEAD
+=======
+          <!-- value="<?php echo date("Y-m-d");?>"  -->
+>>>>>>> Min
 
           <div class="ordercontent margin_top_3">
 
@@ -1030,6 +1045,7 @@ $_SESSION["mem_no"]=1010001;
         acitve(index) {  // 切換收藏分類
           this.step = index
           !this.active.includes(index) && this.active.push(index);
+          this.style = "color:#AD6E4A; border-bottom: 3px solid #AD6E4A";
         },
         toggleContent(e) {  // 展開滑出訂單明細
           this.toggle = !this.toggle;
@@ -1089,10 +1105,11 @@ $_SESSION["mem_no"]=1010001;
     function show(){
             fetch("./php/logout.php");
             window.location.href = "./login.php";
-        }                               
+        }                             
         function toggle(){
             const infoData = document.querySelector(".infoData");
             infoData.classList.toggle("show");
+<<<<<<< HEAD
         } 
 
     window.onload = function() { //  點擊menu變色
@@ -1106,6 +1123,23 @@ $_SESSION["mem_no"]=1010001;
         }
       }
     };
+=======
+        }
+        
+    // window.onload = function () {        //  點擊menu變色
+    //   for (var i = 0; i < document.links.length; i++) {
+    //     var thisLink = document.links[i];
+    //     thisLink.onclick = function () {
+    //       for (var i = 0; i < document.links.length; i++) {
+    //         document.links[i].style = "";
+    //       }
+    //       this.style = "color:#AD6E4A; border-bottom: 3px solid #AD6E4A";
+    //     }
+    //   }
+    // };
+
+
+>>>>>>> Min
 
   </script>
 

@@ -8,8 +8,11 @@
     <title>後台管理員管理</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/all.css">
-    <link rel="stylesheet" href="./css/pages/backstage_customer.css">
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../css/pages/backstage_customer.css">
+    <link rel="shortcut icon" href="../img/icon/shortcut.png" type="image/x-icon">
+
+
 </head>
 
 <body>
@@ -35,11 +38,11 @@
             <!-- <a href="#" class="div-list-btn-a">百科管理</a> -->
             <button class="div-list-btn-a">互動牆</button>
             <div>
-                <a href="#" class="div-list-btn-s">互動牆管理</a>
+                <a href="./spaced_backstage_post_cmt.php" class="div-list-btn-s">互動牆管理</a>
                 <a href="#" class="div-list-btn-s">互動牆檢舉管理</a>
             </div>
             <a href="./spaced_backstage_customer.php" class="div-list-btn-a">會員管理</a>
-            <a href="#" class="div-list-btn-a">管理員管理</a>
+            <a href="./spaced_backstage_admin.php" class="div-list-btn-a now">管理員管理</a>
         </div>
 
         <div class="div-right">
@@ -50,7 +53,7 @@
                     <div class="span-1 margin_left_3">
                         <label for="search1">
 
-                            <img src="./img/icon/loupe.png" alt="" class="">
+                            <img src="../img/icon/loupe.png" alt="" class="">
                         </label>
                         <input type="search" class="search1" id="search1" placeholder="輸入景點編號、名稱">
                     </div>
