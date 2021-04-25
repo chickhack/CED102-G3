@@ -1,5 +1,6 @@
 <?php
 session_start();
+<<<<<<< HEAD
 // $_SESSION["mem_no"]=1010001;
 <<<<<<< HEAD
 $mem_no=$_SESSION["mem_no"];
@@ -8,6 +9,9 @@ $mem_no=$_SESSION["mem_no"];
 =======
 >>>>>>> chick
 >>>>>>> 24a10dda290cd33b3978fc664573f65e22a1961c
+=======
+
+>>>>>>> KAI
 ?>
 
 <!DOCTYPE html>
@@ -99,12 +103,15 @@ $mem_no=$_SESSION["mem_no"];
         </li>
         <li>
 <<<<<<< HEAD
+<<<<<<< HEAD
          <?php
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> KAI
           <?php
 >>>>>>> 24a10dda290cd33b3978fc664573f65e22a1961c
           if (isset($_SESSION['mem_no'])) { ?>
@@ -121,6 +128,7 @@ $mem_no=$_SESSION["mem_no"];
             <a href="./login.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png" alt="" class="icon" /></a>
           <?php } ?>
         </li>
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -154,6 +162,8 @@ $mem_no=$_SESSION["mem_no"];
 =======
 >>>>>>> Min
 >>>>>>> 24a10dda290cd33b3978fc664573f65e22a1961c
+=======
+>>>>>>> KAI
       </ul>
       <div class="burger">
         <div class="line1"></div>

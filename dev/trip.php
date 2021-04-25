@@ -254,7 +254,7 @@ if( $errMsg != ""){ //例外
                                     <img class="icon" src="./img/shop/star.png">
                                 </li>
                             </ul>
-                            <div class="messageNum margin_top_1 margin_left_1">100則留言</div>
+                            <div class="messageNum margin_top_1 margin_left_1">3則留言</div>
                         </div>
                         <!-- <p class="more">瀏覽評論</p> -->
                     </div>
