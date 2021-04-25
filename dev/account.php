@@ -1,13 +1,7 @@
 <?php
-session_start();
-// $_SESSION["mem_no"]=1010001;
-<<<<<<< HEAD
-$mem_no=$_SESSION["mem_no"];
-=======
->>>>>>> Min
-=======
->>>>>>> chick
->>>>>>> 24a10dda290cd33b3978fc664573f65e22a1961c
+  session_start();
+  // $_SESSION["mem_no"]=1010001;
+  $mem_no=$_SESSION["mem_no"];
 ?>
 
 <!DOCTYPE html>
@@ -98,15 +92,7 @@ $mem_no=$_SESSION["mem_no"];
           </a>
         </li>
         <li>
-<<<<<<< HEAD
          <?php
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-          <?php
->>>>>>> 24a10dda290cd33b3978fc664573f65e22a1961c
           if (isset($_SESSION['mem_no'])) { ?>
             <div class="member" onclick="toggle()">
               <div class="info">
@@ -121,39 +107,6 @@ $mem_no=$_SESSION["mem_no"];
             <a href="./login.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png" alt="" class="icon" /></a>
           <?php } ?>
         </li>
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> KAI
-=======
->>>>>>> Min
-=======
-
->>>>>>> chick
-                <?php
-                    if(isset($_SESSION['mem_no'])){?>
-                        <div class="member"  onclick="toggle()">
-                            <div class="info">
-                                <img src="<?= $_SESSION['mem_pic'] ?>" alt="">
-                                <div class="infoData">
-                                    <a href="./account.php">會員中心</a>
-                                    <a href="./login.php" onclick="show()">登出</a>
-                                </div>
-                            </div>  
-                        </div>
-                <?php }else{ ?>
-                        <a href="./login.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png" alt="" class="icon"/></a>
-                <?php } ?>
-            </li>
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> chickhack
-=======
->>>>>>> KAI
-=======
->>>>>>> Min
->>>>>>> 24a10dda290cd33b3978fc664573f65e22a1961c
       </ul>
       <div class="burger">
         <div class="line1"></div>
@@ -207,17 +160,18 @@ $mem_no=$_SESSION["mem_no"];
           <small><span>12個月內累積</span></small>
         </div>
 
-        <div class="your_acc" v-for="(item,index) in customer" v-if="item.mem_no == <?php echo $_SESSION["mem_no"] ?>">
-          <div class="now_lev align-items-center">
+        <div class="your_acc align-items-center" v-for="(item,index) in customer" v-if="item.mem_no == <?php echo $_SESSION["mem_no"] ?>">
+          <div class="now_lev col">
             <!-- <img class="nowlev" :src="level.lv_img" alt="lev"><br> -->         
             <img v-if="item.mem_lv == '初星者'" :src="level.lv_img" class="nowlev">
             <img v-else :src="level.mem_next_img" class="nowlev">
             <br><p class="nowacc">{{item.miles}} 積分</p>
           </div>
-          <div class="next_rocket">
-            <img class="account_rocket" src="./img/icon/rocket4.png" alt="rocket">
+          <div class="next_rocket col">
+            <img class="account_rocket " src="./img/icon/rocket4.png">
           </div>
-          <div class="next_lev align-items-center">
+
+          <div class="next_lev col">
             <!-- <img class="nextlev" :src="level.mem_next_img" alt="lev"><br class="none"> -->
             <img class="nextlev" :src="level.mem_next_img"><br>
             <p class="nextacc">目前尚需 {{ level.mem_next_miles - item.miles}} 積分</p>
@@ -237,8 +191,8 @@ $mem_no=$_SESSION["mem_no"];
             @click.prevent=" link='a'">會員資料</a></li>
         <li class="nav-item"><a class="nav-link" href="#" :class="{'active': link=='b'}"
             @click.prevent=" link='b'">行程管理</a></li>
-        <li class="nav-item"><a class="nav-link" href="#" :class="{'active': link=='c'}"
-            @click.prevent=" link='c'">互動牆管理</a></li>
+        <!-- <li class="nav-item"><a class="nav-link" href="#" :class="{'active': link=='c'}"
+            @click.prevent=" link='c'">互動牆管理</a></li> -->
         <li class="nav-item"><a class="nav-link" href="#" :class="{'active': link=='d'}"
             @click.prevent=" link='d'">商城訂單</a></li>
         <li class="nav-item"><a class="nav-link" href="#" :class="{'active': link=='e'}"
@@ -253,6 +207,10 @@ $mem_no=$_SESSION["mem_no"];
 
         <!-- 會員資料 -->
         <div v-if="link ==='a'">
+          <?php
+            // while ($customerRow = $customer->fetch(PDO::FETCH_ASSOC)) {
+          ?>
+
           <div class="row info_form" v-for="(item,index) in customer" v-if="item.mem_no == <?php echo $_SESSION["mem_no"] ?>">
 
             <div class="col-md-auto align-self-start info_img">
@@ -312,8 +270,7 @@ $mem_no=$_SESSION["mem_no"];
 
             <div class="col-md-auto align-self-start info_edit">
               <button @click="edit" v-if="!isEditing" type="button" class="btn btn-primary info_editbtn">編輯個人資料</button>
-              <button @click="save" v-else-if="isEditing" type="button"
-                class="btn btn-primary info_editbtn">儲存編輯</button></br>
+              <button @click="save" v-else-if="isEditing" type="button"class="btn btn-primary info_editbtn">儲存編輯</button></br>
               <button v-if="isEditing" @click="edit" type="button" class="btn btn-primary info_editbtn">取消編輯</button>
             </div>
 
@@ -405,7 +362,7 @@ $mem_no=$_SESSION["mem_no"];
         </div>
 
         <!-- 互動牆管理 -->
-        <div v-else-if="link ==='c'">
+        <!-- <div v-else-if="link ==='c'">
           <div class="post_tab row justify-content-start container_heart heartnav">
             <div class="post_btns">
               <button class="col btn postbtns margin_top_3"><a href="./post.html">發文</a></button>
@@ -572,28 +529,29 @@ $mem_no=$_SESSION["mem_no"];
             </div>
           </div>
 
-        </div>
+        </div> -->
 
         <!-- 商品訂單管理 -->
         <div v-else-if="link ==='d'">
 
-          <div class="heart_btns">
-            <input type="date" id="date-1" class="btn orderbtns margin_top_3 btn-date data-down">
-          </div>
-          <!-- value="<?php echo date("Y-m-d");?>"  -->
+          <form class="heart_btns">
+            <input value="<?php echo date("Y-m-d");?>" type="date" id="date-1" class="btn orderbtns margin_top_3 btn-date data-down">
+            <input type="submit" name="button" id="button" value="搜尋" class="btn orderbtns searchbtns margin_top_3">
+          </form>
 
           <div class="ordercontent margin_top_3">
 
             <div v-for="(item,index) in prod_order" class="table margin_top_5">
 
+              <tr>
               <caption>
-                <span class="">訂單編號： {{item.ord_no}} </span>
+                <span class="">訂單編號： {{item.orders_no}} </span>
               </caption>
               <table class="margin_top_1">
                 <thead class="table_title">
                   <tr>
                     <th scope="col">總金額</th>
-                    <th scope="col">總積分</th>
+                    <!-- <th scope="col">總積分</th> -->
                     <th scope="col">下單日期</th>
                     <th scope="col">訂單狀態</th>
                   </tr>
@@ -601,9 +559,11 @@ $mem_no=$_SESSION["mem_no"];
                 <tbody>
                   <tr>
                     <td>NT.{{item.total_price}}</td>
-                    <td>{{item.order_total}}</td>
+                    <!-- <td>{{item.order_total}}</td> -->
                     <td>{{item.order_date}}</td>
-                    <td>{{item.order_status}}</td>
+                    <!-- <td>{{item.order_status}}</td> -->
+                    <td v-if="item.order_status == 0">待處理</td>
+                    <td v-else="item.order_status == 1">已出貨</td>
                   </tr>
                 </tbody>
               </table>
@@ -620,16 +580,16 @@ $mem_no=$_SESSION["mem_no"];
                       <th scope="col">商品編號</th>
                       <th scope="col">商品名稱</th>
                       <th scope="col">單價</th>
-                      <th scope="col">積分</th>
+                      <!-- <th scope="col">積分</th> -->
                       <th scope="col">數量</th>
                     </tr>
                   </thead>
-                  <tbody v-for="item in prod_order_detail">
+                  <tbody v-for="item1 in prod_order_detail" v-if="item.order_no == item1.order_no">
                     <tr>
                       <td>{{item.prod_no}}</td>
                       <td>{{item.prod_name}}</td>
                       <td>{{item.price}}</td>
-                      <td>{{item.prod_point}}</td>
+                      <!-- <td>{{item.prod_point}}</td> -->
                       <td>{{item.qty}}</td>
                     </tr>
                   </tbody>
@@ -653,14 +613,13 @@ $mem_no=$_SESSION["mem_no"];
           <div class="heart_tab row justify-content-start container_heart heartnav margin_top_3" id="accountapp">
 
             <div class="heart_btns">
-
               <button class="col btn heartbtns" @click="acitve(1)" :class="{active: step===1}">行程</button>
               <button class="col btn heartbtns" @click="acitve(2)" :class="{active: step===2}">商品</button>
               <button class="col btn heartbtns" @click="acitve(3)" :class="{active: step===3}">貼文</button>
-
             </div>
 
             <div v-if="step === 1 || active.includes(1)" v-show="step===1">
+
 
               <div class=" heart_tripcard second margin_top_4 ">
                 <div class=" heart_trip tripcard_all  ">
@@ -675,7 +634,7 @@ $mem_no=$_SESSION["mem_no"];
                         <div class="addin2 small margin_top_2"><img class="plus" src="./img/icon/plus.png" alt="">加入我的行程
                         </div>
                         <div class="trip_bookmark"></div>
-                        <!-- <img class="trip_bookmark" src="./img/icon/bookmark-outline.png" alt=""> -->
+                        <img class="trip_bookmark" src="./img/icon/bookmark-outline.png" alt="">
                       </div>
                     </a>
                   </div>
@@ -825,12 +784,12 @@ $mem_no=$_SESSION["mem_no"];
         <!-- 轉換積分 -->
         <div v-else-if="link ==='f'">
           <div class="pointcontent margin_top_3">
-            <div class="nowstate">
+            <div v-for="(item,index) in customer" v-if="item.mem_no == <?php echo $_SESSION["mem_no"] ?>" class="nowstate">
               <p class="point_p">可用的積分</p>
-              <p class="point">{{customer.miles}}</p>
+              <p class="point">{{item.miles}}</p>
               <p>，</p><br>
               <p class="point_p">目前會員等級</p>
-              <p class="level">{{customer.mem_lv}}</p>
+              <p class="level">{{item.mem_lv}}</p>
               <p class="point_p">，每1里程可以轉換為</p>
               <p class="level">2</p>
               <p class="point_p">宇宙幣。</p><br>
@@ -893,57 +852,13 @@ $mem_no=$_SESSION["mem_no"];
           mem_next_miles: 100000,
         },
         customer: [],//會員資料
-
-        prod_order: [{ // 商品訂單+收件人
-          ord_no: '#TW1637493',
-          total_price: '1,290',
-          order_total: '10,000',
-          order_date: '2021/02/04',
-          order_status: '已結束',
-          orderer: '陳大大',
-          tel: '0988123456',
-          address: '台北市中正區大西路48號'
-        }, {
-          ord_no: '#TW1637493',
-          total_price: '1,290',
-          order_total: '10,000',
-          order_date: '2021/02/04',
-          order_status: '已結束',
-          orderer: '陳中中',
-          tel: '0988123456',
-          address: '台北市中正區大西路48號'
-        }, {
-          ord_no: '#TW1637493',
-          total_price: '1,290',
-          order_total: '10,000',
-          order_date: '2021/02/02',
-          order_status: '已結束',
-          orderer: '陳小小',
-          tel: '0988123456',
-          address: '台北市中正區大西路48號'
-        }],
-        prod_order_detail: [{ // 商品訂單明細
-          prod_no: '#24',
-          prod_name: '攀登太陽系第一高山-奧林帕斯山三日遊',
-          price: '1,290',
-          prod_point: '100',
-          qty: '1',
-        }, {
-          prod_no: '#24',
-          prod_name: '攀登太陽系第一高山-奧林帕斯山三日遊',
-          price: '1,290',
-          prod_point: '100',
-          qty: '1',
-        }, {
-          prod_no: '#24',
-          prod_name: '攀登太陽系第一高山-奧林帕斯山三日遊',
-          price: '1,290',
-          prod_point: '100',
-          qty: '1',
-        }],
-        
+        prod_order: [], // 商品訂單+收件人
+        prod_order_detail: [], // 商品訂單明細
         spot_order: [], // 行程訂單+收件人
         spot_order_detail: [], // 行程訂單明細
+
+        spot: [], 
+        prod: [],
 
         active: [],
         spot1: [{ // 行程內容
@@ -1006,15 +921,6 @@ $mem_no=$_SESSION["mem_no"];
         minus_lev: function () {  //計算與下一階段會員差距
           return this.level.mem_next_miles - this.customer.miles;
         },
-        save() { // 修改儲存會員資料
-          this.customer.mem_id = this.$refs['mem_id'].value;
-          this.customer.phone = this.$refs['phone'].value;
-          this.customer.address = this.$refs['address'].value;
-
-          this.isEditing = !this.isEditing;
-
-          $(".focus").removeAttr('style')
-        },
         edit() {  // 修改會員資料
           if (this.isEditing) {
 
@@ -1032,6 +938,16 @@ $mem_no=$_SESSION["mem_no"];
             $(".focus").css('border-color', 'white');
           }
         },
+        save() { // 修改儲存會員資料
+          this.customer.mem_id = this.$refs['mem_id'].value;
+          this.customer.phone = this.$refs['phone'].value;
+          this.customer.address = this.$refs['address'].value;
+
+          this.isEditing = !this.isEditing;
+
+          $(".focus").removeAttr('style')
+        },
+        
         fileChange(e) {  // 換照片
           let file = e.target.files[0];
           let readFile = new FileReader();
@@ -1077,7 +993,15 @@ $mem_no=$_SESSION["mem_no"];
         // res是區域變數出去後不可使用
         fetch('./php/account/getspot_order.php').then(res => res.json()).then(res => this.spot_order = res);
         fetch('./php/account/getspot_order_datail.php').then(res => res.json()).then(res => this.spot_order_detail = res);
+
+        fetch('./php/account/getprod_order.php').then(res => res.json()).then(res => this.prod_order = res);
+        fetch('./php/account/getprod_order_datail.php').then(res => res.json()).then(res => this.prod_order_detail = res);
+
         fetch('./php/account/getcustomer.php').then(res => res.json()).then(res => this.customer = res);
+
+        fetch('./php/account/getspot.php').then(res => res.json()).then(res => this.customer = res);
+        fetch('./php/account/getprod.php').then(res => res.json()).then(res => this.customer = res);
+
         
 
         // )

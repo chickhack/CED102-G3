@@ -20,11 +20,9 @@
   @include respond(pad){
     padding: 15vh 50px 0px 50px;
   }           
-   @include respond(mobile){
+  @include respond(mobile){
     padding: 15vh 10px 0px 10px;
-
   }
-
 
   .spacedinfo {
     line-height: 30px;
@@ -54,6 +52,7 @@
     height: 65px;
     padding-left: 20px;
   }
+
 }
 
 
@@ -64,6 +63,14 @@
   margin: 30px 250px 0px 250px;
   padding: 30px;
   border-radius: 10px;
+
+  @include respond(pad){
+    margin: 30px 10px 0px 10px;
+    border: 1px solid red;
+  }           
+  @include respond(mobile){
+    margin: 30px 10px 0px 10px;
+  }
 
   .your_nowlev {
     /* 目前累積等級、星球、景點、宇宙幣 */
@@ -110,13 +117,16 @@
       }
     }
     .next_rocket {
-      margin-left: -50px;
-      margin-top: 60px;
+      display: inline;
       .account_rocket {
-        max-width: 5%;
+        max-width: 10%;
+        background: hr;
       }
     }
+
   }
+
+
 }
 
 
@@ -253,6 +263,10 @@
         color: $white;
       }
     }
+    .searchbtns {
+      width: 50px;
+    }
+
 
     //日期按鈕
     .btn-date {
@@ -280,7 +294,7 @@
       padding: 0px 270px 20px 270px;
       // 收藏行程內容 控制在270px內
       .heart_tripcard {
-        padding: 0px 200px 100px 200px;
+        padding: 0px 250px 100px 250px;
       }
       // 收藏貼文內容 控制在270px內
       .post_card {
@@ -292,7 +306,6 @@
       .grid-item {
         margin: 0px 12.5px 25px 12.5px;
       }
-
 
       // 轉換積分
       .nowstate {
@@ -350,7 +363,6 @@
     //行程管理 //商品管理
     .tripcontent, .ordercontent {
       margin-left: 10px;
-
       .table {
         width: 100%;
         font-family: "Microsoft JhengHei";
@@ -397,111 +409,158 @@
           display: none;
         }
       }
-      
     }
+
+    .table {
+      width: 100%;
+      font-family: "Microsoft JhengHei";
+      caption {
+        text-align: left;
+      }
+      span {
+        color: $pink;
+      }
+      span.num{
+        color: $gray;
+        margin-left: 15px;
+        line-height: 20px;
+      }
+      thead, td {
+        border: 1px solid #292b41;
+        padding: 8px 15px;
+      }
+      th {
+        padding: 8px 15px;
+      }
+      table {
+        width: 100%;
+        thead {
+          color: $white;
+        }
+        .table_title{
+          background-color: #292b41;
+
+        }
+        tbody {
+          color: $gray;
+        }
+      }
+      .orderdetail {
+        display: flex;
+        align-items: center;
+        img {
+          width: 18px;
+          margin-right: 5px;
+        }
+      }
+      .detail-open {
+        display: none;
+      }
+    }
+
 
   }
 }
 
 
-@media (min-width: 992px) and (max-width: 1200px){
-  .welcome {
-    padding: 15vh 50px 0px 50px;
-  }
-  .account_card {
-    margin: 30px 50px 0px 50px;
-    padding: 30px;
-    .lev_acc {
-      padding: 30px 0px 20px 45px;
-    }
-    .your_acc {
-      .next_rocket {
-        margin-left: -30px;
-        margin-top: 40px;
-        .account_rocket {
-          max-width: 5%;
-        }
-      }
-    }
-  }
-  .account_tabs {
-    .account_nav {
-      margin: 40px 50px 0px 50px;
-    }
-    .account_line {
-      margin: 0px 50px 0px 50px;
-    }
-    .content {
-      padding-bottom: 100px;
-      .info_form {
-        margin: 0px 50px 0px 50px;
-        padding: 30px 0px 30px 0px;
-        .info_img {  // 上團圖片表單距離
-          margin: 0px 30px 0px 0px;
-          .img_input {
-            margin: 15px 10px 0px 10px;
-            width: auto;
-          }
-          .circle-image {
-            width: 100px;
-            height: 100px;
-            .infoimg { // 圖片大小
-              width: 100%;
-              height: 100%;
-            }
-          }
-        }
-        .info_left, .info_right,.info_edit {
-          .form, .unform { // 編輯資料樣式
-            width: 70%;
-          }
-          .info_editbtn{
-            margin-left: 0px;
-          }
-        }
-        .center {
-          margin: 0;
-        }
-      }
-      .row>* {
-        padding-right: 0px;
-        padding-left: 0px;
-      }
-      .btn-check:focus+.btn, .btn:focus {  // 移除點擊時邊框陰影
-        // outline: 0;
-        // box-shadow: none;
-      }
-      // 編輯資料按鈕 // 收藏按鈕 // 互動管理按鈕 // 轉換積分按鈕
-      .info_editbtn, .pointbtn {
-        margin-left: 50px;
-        margin-bottom: 10px;
-      }
-      .info_editbtn:hover, .heartbtns:hover, .postbtns:hover, .pointbtn:hover, .img_input:hover, .heartbtns.active {
-        color: #ffff;
-        border: 1px solid #AD6E4A;
-        background: #AD6E4A;
-      }
-      .info_editbtn:focus+.btn-primary, .heartbtns:focus, .btn-primary:focus, .postbtns:focus, .pointbtn:focus, .img_input:focus {
-        color: #fff;
-        background-color: #AD6E4A;
-        border-color: #AD6E4A;
-        box-shadow: none;
-      }
-      // 互動牆管理按鈕 // 收藏按鈕 // 所有放在分頁內按鈕控制
-      .heart_btns, .post_btns {
-        padding: 0px 70px 0px 70px;
-      }
-      // 收藏內容、互動管理、訂單、行程內容 控制在270px內
-      .product_card, .tripcontent, .ordercontent, .pointcontent {
-        padding: 0px 70px 20px 70px;
-      }
-      //行程管理 //商品管理
-      .tripcontent, .ordercontent {
-        margin-left: 10px;
-      }
-    }
-  }
-}
+// @media (min-width: 992px){
+//   .welcome {
+//     padding: 15vh 50px 0px 50px;
+//   }
+//   .account_card {
+//     margin: 30px 50px 0px 50px;
+//     padding: 30px;
+//     .lev_acc {
+//       padding: 30px 0px 20px 45px;
+//     }
+//     .your_acc {
+//       .next_rocket {
+//         margin-left: -30px;
+//         margin-top: 40px;
+//         .account_rocket {
+//           max-width: 5%;
+//         }
+//       }
+//     }
+//   }
+//   .account_tabs {
+//     .account_nav {
+//       margin: 40px 50px 0px 50px;
+//     }
+//     .account_line {
+//       margin: 0px 50px 0px 50px;
+//     }
+//     .content {
+//       padding-bottom: 100px;
+//       .info_form {
+//         margin: 0px 50px 0px 50px;
+//         padding: 30px 0px 30px 0px;
+//         .info_img {  // 上團圖片表單距離
+//           margin: 0px 30px 0px 0px;
+//           .img_input {
+//             margin: 15px 10px 0px 10px;
+//             width: auto;
+//           }
+//           .circle-image {
+//             width: 100px;
+//             height: 100px;
+//             .infoimg { // 圖片大小
+//               width: 100%;
+//               height: 100%;
+//             }
+//           }
+//         }
+//         .info_left, .info_right,.info_edit {
+//           .form, .unform { // 編輯資料樣式
+//             width: 70%;
+//           }
+//           .info_editbtn{
+//             margin-left: 0px;
+//           }
+//         }
+//         .center {
+//           margin: 0;
+//         }
+//       }
+//       .row>* {
+//         padding-right: 0px;
+//         padding-left: 0px;
+//       }
+//       .btn-check:focus+.btn, .btn:focus {  // 移除點擊時邊框陰影
+//         // outline: 0;
+//         // box-shadow: none;
+//       }
+//       // 編輯資料按鈕 // 收藏按鈕 // 互動管理按鈕 // 轉換積分按鈕
+//       .info_editbtn, .pointbtn {
+//         margin-left: 50px;
+//         margin-bottom: 10px;
+//       }
+//       .info_editbtn:hover, .heartbtns:hover, .postbtns:hover, .pointbtn:hover, .img_input:hover, .heartbtns.active {
+//         color: #ffff;
+//         border: 1px solid #AD6E4A;
+//         background: #AD6E4A;
+//       }
+//       .info_editbtn:focus+.btn-primary, .heartbtns:focus, .btn-primary:focus, .postbtns:focus, .pointbtn:focus, .img_input:focus {
+//         color: #fff;
+//         background-color: #AD6E4A;
+//         border-color: #AD6E4A;
+//         box-shadow: none;
+//       }
+//       // 互動牆管理按鈕 // 收藏按鈕 // 所有放在分頁內按鈕控制
+//       .heart_btns, .post_btns {
+//         padding: 0px 70px 0px 70px;
+//       }
+//       // 收藏內容、互動管理、訂單、行程內容 控制在270px內
+//       .product_card, .tripcontent, .ordercontent, .pointcontent {
+//         padding: 0px 70px 20px 70px;
+//       }
+//       //行程管理 //商品管理
+//       .tripcontent, .ordercontent {
+//         margin-left: 10px;
+//       }
+//     }
+//   }
+// }
 
 // @media (min-width: 768px) and (max-width: 992px) {
 //   .welcome {
