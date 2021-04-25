@@ -1,18 +1,7 @@
 <?php
 session_start();
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-$_SESSION["mem_no"]=1010001;
-=======
->>>>>>> chickhack
-=======
->>>>>>> KAI
-=======
-$mem_no=$_SESSION["mem_no"];
 // $_SESSION["mem_no"]=1010001;
->>>>>>> Min
+$mem_no=$_SESSION["mem_no"];
 ?>
 
 <!DOCTYPE html>
@@ -103,10 +92,7 @@ $mem_no=$_SESSION["mem_no"];
           </a>
         </li>
         <li>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-          <?php
+         <?php
           if (isset($_SESSION['mem_no'])) { ?>
             <div class="member" onclick="toggle()">
               <div class="info">
@@ -121,33 +107,6 @@ $mem_no=$_SESSION["mem_no"];
             <a href="./login.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png" alt="" class="icon" /></a>
           <?php } ?>
         </li>
-=======
-=======
->>>>>>> KAI
-=======
->>>>>>> Min
-                <?php
-                    if(isset($_SESSION['mem_no'])){?>
-                        <div class="member"  onclick="toggle()">
-                            <div class="info">
-                                <img src="<?= $_SESSION['mem_pic'] ?>" alt="">
-                                <div class="infoData">
-                                    <a href="./account.php">會員中心</a>
-                                    <a href="./login.php" onclick="show()">登出</a>
-                                </div>
-                            </div>  
-                        </div>
-                <?php }else{ ?>
-                        <a href="./login.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png" alt="" class="icon"/></a>
-                <?php } ?>
-            </li>
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> chickhack
-=======
->>>>>>> KAI
-=======
->>>>>>> Min
       </ul>
       <div class="burger">
         <div class="line1"></div>
@@ -574,10 +533,7 @@ $mem_no=$_SESSION["mem_no"];
           <div class="heart_btns">
             <input type="date" id="date-1" class="btn orderbtns margin_top_3 btn-date data-down">
           </div>
-<<<<<<< HEAD
-=======
           <!-- value="<?php echo date("Y-m-d");?>"  -->
->>>>>>> Min
 
           <div class="ordercontent margin_top_3">
 
@@ -1109,22 +1065,9 @@ $mem_no=$_SESSION["mem_no"];
         function toggle(){
             const infoData = document.querySelector(".infoData");
             infoData.classList.toggle("show");
-<<<<<<< HEAD
         } 
 
-    window.onload = function() { //  點擊menu變色
-      for (var i = 0; i < document.links.length; i++) {
-        var thisLink = document.links[i];
-        thisLink.onclick = function () {
-          for (var i = 0; i < document.links.length; i++) {
-            document.links[i].style = "";
-          }
-          this.style = "color:#AD6E4A; border-bottom: 3px solid #AD6E4A";
-        }
-      }
-    };
-=======
-        }
+
         
     // window.onload = function () {        //  點擊menu變色
     //   for (var i = 0; i < document.links.length; i++) {
@@ -1139,7 +1082,6 @@ $mem_no=$_SESSION["mem_no"];
     // };
 
 
->>>>>>> Min
 
   </script>
 

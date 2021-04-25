@@ -1,13 +1,13 @@
-<?php 
+<?php
 require_once("../php/connect_ced102_g3_local.php");
 
 try {
-	$sql = "select * from spot";
-	$spot = $pdo->query($sql);  //執行指令
+    $sql = "select * from spot";
+    $spot = $pdo->query($sql);  //執行指令
 } catch (PDOException $e) {
-	// echo "系統忙碌, 請通知系統維護人員~";
-	echo "錯誤原因 : ", $e->getMessage(), "<br>";
-	echo "錯誤行號 : ", $e->getLine(), "<br>";	
+    // echo "系統忙碌, 請通知系統維護人員~";
+    echo "錯誤原因 : ", $e->getMessage(), "<br>";
+    echo "錯誤行號 : ", $e->getLine(), "<br>";
 }
 
 
@@ -20,8 +20,7 @@ try {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>後台景點管理</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/all.css">
     <link rel="stylesheet" href="../css/pages/spaced_backstage.css">
     <link rel="shortcut icon" href="./img/icon/shortcut.png" type="image/x-icon">
@@ -91,28 +90,28 @@ try {
             </div>
 
             <main class="main">
-                <?php		
-while($spotRow = $spot->fetch(PDO::FETCH_ASSOC)){ 
-?>
-                <div class="div-right-span-for line_low margin_top_2">
-                    <p class="wi-5 text-1"><?=$spotRow["spot_no"]?></p>
-                    <p class="wi-10 text-1"><?=$spotRow["spot_name"]?></p>
-                    <p class="wi-5 text-1"><?=$spotRow["spot_lv"]?></p>
-                    <p class="wi-15 text-1 toomuch"><?=$spotRow["spot_info"]?></p>
-                    <p class="wi-15 text-1  toomuch"><?=$spotRow["spot_intro"]?></p>
-                    <p class="wi-15 text-1  toomuch"><?=$spotRow["spot_dnt"]?></p>
-                    <p class="wi-5 text-1"><?=$spotRow["spot_price"]?></p>
-                    <p class="wi-5 text-1"><?=$spotRow["miles"]?></p>
-                    <p class="wi-5 text-1"><?=$spotRow["spot_status"]?></p>
-                    <p class="wi-5 text-1"><?=$spotRow["spot_s_status"]?></p>
-                    <!-- <p class="wi-15 text-1 toomuch"><?=$spotRow["spot_pic"]?><br><?=$spotRow["spot_pic1"]?><br><?=$spotRow["spot_pic2"]?><br><?=$spotRow["spot_pic3"]?><br><?=$spotRow["spot_pic2"]?><br><?=$spotRow["spot_pic3"]?><br><?=$spotRow["spot_pic2"]?><br><?=$spotRow["spot_pic4"]?><br><?=$spotRow["spot_pic2"]?><br><?=$spotRow["spot_pics"]?></p> -->
-                    <a href="../php/backstage/trip/edit_backstage_trip.php?spot_no=<?=$spotRow["spot_no"]?>" class="wi-5 text-1"><button type="button" class="btn btn-info btn-sm">修改</button></a>
-                    <a  onclick="return confirm('確定要刪除嗎')" href="../php/backstage/trip/delete_backstage_trip.php?spot_no=<?=$spotRow["spot_no"]?>"class="wi-5 text-1"><button type="button" class="btn btn-danger btn-sm">刪除</button></a>
-                </div>
+                <?php
+                while ($spotRow = $spot->fetch(PDO::FETCH_ASSOC)) {
+                ?>
+                    <div class="div-right-span-for line_low margin_top_2">
+                        <p class="wi-5 text-1"><?= $spotRow["spot_no"] ?></p>
+                        <p class="wi-10 text-1"><?= $spotRow["spot_name"] ?></p>
+                        <p class="wi-5 text-1"><?= $spotRow["spot_lv"] ?></p>
+                        <p class="wi-15 text-1 toomuch"><?= $spotRow["spot_info"] ?></p>
+                        <p class="wi-15 text-1  toomuch"><?= $spotRow["spot_intro"] ?></p>
+                        <p class="wi-15 text-1  toomuch"><?= $spotRow["spot_dnt"] ?></p>
+                        <p class="wi-5 text-1"><?= $spotRow["spot_price"] ?></p>
+                        <p class="wi-5 text-1"><?= $spotRow["miles"] ?></p>
+                        <p class="wi-5 text-1"><?= $spotRow["spot_status"] ?></p>
+                        <p class="wi-5 text-1"><?= $spotRow["spot_s_status"] ?></p>
+                        <!-- <p class="wi-15 text-1 toomuch"><?= $spotRow["spot_pic"] ?><br><?= $spotRow["spot_pic1"] ?><br><?= $spotRow["spot_pic2"] ?><br><?= $spotRow["spot_pic3"] ?><br><?= $spotRow["spot_pic2"] ?><br><?= $spotRow["spot_pic3"] ?><br><?= $spotRow["spot_pic2"] ?><br><?= $spotRow["spot_pic4"] ?><br><?= $spotRow["spot_pic2"] ?><br><?= $spotRow["spot_pics"] ?></p> -->
+                        <a href="../php/backstage/trip/edit_backstage_trip.php?spot_no=<?= $spotRow["spot_no"] ?>" class="wi-5 text-1"><button type="button" class="btn btn-info btn-sm">修改</button></a>
+                        <a onclick="return confirm('確定要刪除嗎')" href="../php/backstage/trip/delete_backstage_trip.php?spot_no=<?= $spotRow["spot_no"] ?>" class="wi-5 text-1"><button type="button" class="btn btn-danger btn-sm">刪除</button></a>
+                    </div>
 
-                <?php 
-}
-?>
+                <?php
+                }
+                ?>
 
                 <div id="linebox">
                     <div class="upbox">
@@ -144,23 +143,22 @@ while($spotRow = $spot->fetch(PDO::FETCH_ASSOC)){
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
     </script>
     <script>
-    var linebox = document.getElementById("linebox");
+        var linebox = document.getElementById("linebox");
 
-    function open11() {
-        // alert(1);
-        document.getElementById("linebox").style.display = 'block';
+        function open11() {
+            // alert(1);
+            document.getElementById("linebox").style.display = 'block';
 
-    }
+        }
 
-    function close11() {
-        // alert(1);
-        document.getElementById("linebox").style.display = 'none';
+        function close11() {
+            // alert(1);
+            document.getElementById("linebox").style.display = 'none';
 
-    }
+        }
     </script>
 </body>
 

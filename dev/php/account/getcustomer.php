@@ -1,11 +1,6 @@
 <?php
 session_start();
-<<<<<<< HEAD
 // $mem_no=$_SESSION["mem_no"];
-=======
-$mem_no=$_SESSION["mem_no"];
-// $_SESSION["mem_no"]=1010006;
->>>>>>> Min
 
 try {
 	require_once("../connect_ced102_g3_local.php");

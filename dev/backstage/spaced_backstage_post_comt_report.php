@@ -74,8 +74,8 @@ $spottrev ->execute();
 
             <main class="main">
                 <?php		
-while($spottrevRow = $spottrev->fetch(PDO::FETCH_ASSOC)){ 
-?>
+                    while($spottrevRow = $spottrev->fetch(PDO::FETCH_ASSOC)){ 
+                ?>
                 <form action="edit_backstage_trip_reviews.php" method="POST" enctype="multipart/form-data">
                     <div class="div-right-span-for line_low margin_top_3">
                         <p class="wi-10 text-1"><?=$spottrevRow["cmt_no"]?></p>
