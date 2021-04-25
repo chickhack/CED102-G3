@@ -1,18 +1,13 @@
 <?php
 session_start();
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-$_SESSION["mem_no"]=1010001;
-=======
->>>>>>> chickhack
-=======
->>>>>>> KAI
-=======
-$mem_no=$_SESSION["mem_no"];
 // $_SESSION["mem_no"]=1010001;
+<<<<<<< HEAD
+$mem_no=$_SESSION["mem_no"];
+=======
 >>>>>>> Min
+=======
+>>>>>>> chick
+>>>>>>> 24a10dda290cd33b3978fc664573f65e22a1961c
 ?>
 
 <!DOCTYPE html>
@@ -104,9 +99,14 @@ $mem_no=$_SESSION["mem_no"];
         </li>
         <li>
 <<<<<<< HEAD
+         <?php
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
           <?php
+>>>>>>> 24a10dda290cd33b3978fc664573f65e22a1961c
           if (isset($_SESSION['mem_no'])) { ?>
             <div class="member" onclick="toggle()">
               <div class="info">
@@ -121,11 +121,16 @@ $mem_no=$_SESSION["mem_no"];
             <a href="./login.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png" alt="" class="icon" /></a>
           <?php } ?>
         </li>
+<<<<<<< HEAD
+=======
 =======
 =======
 >>>>>>> KAI
 =======
 >>>>>>> Min
+=======
+
+>>>>>>> chick
                 <?php
                     if(isset($_SESSION['mem_no'])){?>
                         <div class="member"  onclick="toggle()">
@@ -148,6 +153,7 @@ $mem_no=$_SESSION["mem_no"];
 >>>>>>> KAI
 =======
 >>>>>>> Min
+>>>>>>> 24a10dda290cd33b3978fc664573f65e22a1961c
       </ul>
       <div class="burger">
         <div class="line1"></div>
@@ -574,10 +580,7 @@ $mem_no=$_SESSION["mem_no"];
           <div class="heart_btns">
             <input type="date" id="date-1" class="btn orderbtns margin_top_3 btn-date data-down">
           </div>
-<<<<<<< HEAD
-=======
           <!-- value="<?php echo date("Y-m-d");?>"  -->
->>>>>>> Min
 
           <div class="ordercontent margin_top_3">
 
@@ -1109,22 +1112,9 @@ $mem_no=$_SESSION["mem_no"];
         function toggle(){
             const infoData = document.querySelector(".infoData");
             infoData.classList.toggle("show");
-<<<<<<< HEAD
         } 
 
-    window.onload = function() { //  點擊menu變色
-      for (var i = 0; i < document.links.length; i++) {
-        var thisLink = document.links[i];
-        thisLink.onclick = function () {
-          for (var i = 0; i < document.links.length; i++) {
-            document.links[i].style = "";
-          }
-          this.style = "color:#AD6E4A; border-bottom: 3px solid #AD6E4A";
-        }
-      }
-    };
-=======
-        }
+
         
     // window.onload = function () {        //  點擊menu變色
     //   for (var i = 0; i < document.links.length; i++) {
@@ -1139,7 +1129,6 @@ $mem_no=$_SESSION["mem_no"];
     // };
 
 
->>>>>>> Min
 
   </script>
 
