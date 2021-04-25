@@ -1,7 +1,13 @@
 <?php
 session_start();
 // $_SESSION["mem_no"]=1010001;
+<<<<<<< HEAD
 $mem_no=$_SESSION["mem_no"];
+=======
+>>>>>>> Min
+=======
+>>>>>>> chick
+>>>>>>> 24a10dda290cd33b3978fc664573f65e22a1961c
 ?>
 
 <!DOCTYPE html>
@@ -92,7 +98,15 @@ $mem_no=$_SESSION["mem_no"];
           </a>
         </li>
         <li>
+<<<<<<< HEAD
          <?php
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+          <?php
+>>>>>>> 24a10dda290cd33b3978fc664573f65e22a1961c
           if (isset($_SESSION['mem_no'])) { ?>
             <div class="member" onclick="toggle()">
               <div class="info">
@@ -107,6 +121,39 @@ $mem_no=$_SESSION["mem_no"];
             <a href="./login.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png" alt="" class="icon" /></a>
           <?php } ?>
         </li>
+<<<<<<< HEAD
+=======
+=======
+=======
+>>>>>>> KAI
+=======
+>>>>>>> Min
+=======
+
+>>>>>>> chick
+                <?php
+                    if(isset($_SESSION['mem_no'])){?>
+                        <div class="member"  onclick="toggle()">
+                            <div class="info">
+                                <img src="<?= $_SESSION['mem_pic'] ?>" alt="">
+                                <div class="infoData">
+                                    <a href="./account.php">會員中心</a>
+                                    <a href="./login.php" onclick="show()">登出</a>
+                                </div>
+                            </div>  
+                        </div>
+                <?php }else{ ?>
+                        <a href="./login.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png" alt="" class="icon"/></a>
+                <?php } ?>
+            </li>
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> chickhack
+=======
+>>>>>>> KAI
+=======
+>>>>>>> Min
+>>>>>>> 24a10dda290cd33b3978fc664573f65e22a1961c
       </ul>
       <div class="burger">
         <div class="line1"></div>
