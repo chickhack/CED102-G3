@@ -7,7 +7,7 @@ $arr = [];
 
         if($no){
             array_push($arr, $_POST["spot_qty$no"]);
-            // array_push($arr2, $_POST["spot_date$no"]);
+            array_push($arr2, $_POST["spot_date$no"]);
             // array_push($arr, $_POST["spot_date$no"]);
         }
     };
@@ -115,9 +115,6 @@ $arr = [];
                 </div> -->
             </div>
         <form action="./php/spot_order_newdate.php" method="POST">
-            <?php echo $_POST["spot_qty$no"];
-                    print_r($arr);
-            ?>
             <div class="orderinfo">
                 
                     <div class="row">
@@ -160,23 +157,28 @@ $arr = [];
                                         <div class="col-3 col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3">
 
                                             <img :src="item.spot_pic1" alt="">
+                                            <input type="hidden" name="spot_pic1[]"  :value="item.spot_pic1">
+
                                         </div>
                                         <div class="col-7 col-xxl-8 col-xl-8 col-lg-7 col-md-7 col-sm-7 textinfo ">
                                             <div class="row">
 
                                                 <div class="text-div col-11 col-xxl-5 col-xl-6 col-lg-6">
                                                     <p class=" h4 letter-spacing-2 padding_top_2">{{item.spot_name}}</p>
+                                                    <input type="hidden" name="spot_name[]"  :value="item.spot_name">
                                                     <p class="line_low">{{item.date}}</p>
-
+                                                    <input type="hidden" name="spot_date"  :value="item.date">
                                                 </div>
                                                 <div class="text-div col-11 col-xxl-2 col-xl-2 col-lg-2 ">
                                                     
                                                     <p>數量{{item.qty}}</p>
-
+                                                    <input type="hidden" name="people[]"  :value="item.qty">
                                                 </div>
                                                 <div class="text-div col-11 col-xxl-3 col-xl-3 col-lg-3">
                                                     <p class="line_low">總金額$ {{(item.qty * item.spot_price)}}</p>
+                                                    <input type="hidden" name="spot_price[]"  :value="item.spot_price">
                                                     <P>積分{{item.miles}}</P>
+                                                    <input type="hidden" name="spot_miles[]"  :value="item.miles">
                                                 </div>
                                             </div>    
                                             
@@ -257,6 +259,7 @@ $arr = [];
                                         <div class="col-11 align-items-center padding_left_5 ">
                                             <input type="checkbox" id="guide-yes" value="3000" name="guide" class="checkbox_custom" v-model="guideCheckbox">
                                             <label for="guide-yes" class=" textcolor letter-spacing-1 checkbox_custom_label">加購嚮導（＋3000）</label>
+                                            
                                             <!-- <label for="guide-yes" class="textcolor padding_left_1 padding_right-1">是</label>
                                             <input type="radio" id="guide-no" value="否" name="guide" class="padding_left_3">
                                             <label for="guide-no" class="textcolor padding_left_1">否</label> -->
@@ -269,7 +272,7 @@ $arr = [];
                                     <div class="row " id="row-traffic">
                                         
                                         <div class="col-10 col-xxl-5 col-xl-5  col-md-6 textcolor   margin_left_3">
-                                            <input type="radio" id="traffic-0" value="基本" class="checkbox_custom" name="traffic" @click="spaceship(0)">
+                                            <input type="radio" id="traffic-0" value="0" class="checkbox_custom" name="traffic" @click="spaceship(0)">
                                             <label for="traffic-0" class="sss checkbox_custom_label">
                                                 <img src="./img/trip/others/ships-astero.png" alt="">
                                                <div class="padding_left_2">
@@ -281,7 +284,7 @@ $arr = [];
                                         </div>
                                         <div class="col-10 col-xxl-5 col-xl-5 col-md-6 textcolor" id="fl-traffic">
                                         <!-- data-price="2000" -->
-                                            <input type="radio" id="traffic-1" value="升級" class="checkbox_custom" name="traffic"  @click="spaceship(1)">
+                                            <input type="radio" id="traffic-1" value="1" class="checkbox_custom" name="traffic"  @click="spaceship(1)">
                                             <label for="traffic-1" class="sss checkbox_custom_label">
                                                 <img src="./img/trip/others/ships-rifter.png" alt="">
                                                 <div class="padding_left_2">
@@ -428,8 +431,13 @@ $arr = [];
                                     </div>
                                     <div class="col-4 col-xxl-3 col-lg-3 col-md-4 col-sm-4 allcoinmenu-right">
                                         <p class="textcolor-1 line_low">${{alltotal1}}</p>
+                                        <input type="hidden" name="total_price"  :value="allCoin">
                                         <p class="textcolor-1 line_low">{{integral}}</p>
+                                        
+                                        <input type="hidden" name="allintegral"  :value="allintegral">
+                                        <input type="hidden" name="miles"  :value="allmiles">
                                         <p class="h7 line_low">累積後有{{nowMiles}}積分</p>
+                                        
                                         
                                     </div>
                                 </div>
@@ -512,7 +520,7 @@ $arr = [];
                 guideCoin:0,
                 allintegral:0,
                 customer:{},
-                
+                allmiles:0,
            },
           
            computed:{
@@ -560,7 +568,9 @@ $arr = [];
                     for(var x in this.customer){
                     mimi += parseInt(this.customer[x].miles);
                    }
+                   
                     mimi +=this.integral;
+                    this.allmiles=mimi;
                     return mimi;
                 },
            },
@@ -593,7 +603,7 @@ $arr = [];
                                                     foreach($_SESSION["trip-cart"]  as $key => $v1) {   ?>
                                                             if(ky == <?php echo $v1['spot_id'] ?>){
                                                                 // console.log("hi");
-                                                                data[j-1].date = '<?php echo $v1['spot_date']?>';                                            
+                                                                data[j-1].date = '<?php echo $arr2[$key]?>';                                            
                                                                 data[j-1].qty = <?php echo $arr[$key]?>;
                                                                 arr.push(data[j-1]);
                                                             }

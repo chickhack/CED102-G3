@@ -243,8 +243,8 @@
                                 </div>
                             </div>
                             <div class="divdate">
-                            <input type="date" id="date-1" class="btn-date data-down margin_top_2" :value="onedate" name="spot_date" required>
-                            <input type="hidden"  class="btn-date data-down margin_top_2" :value="onedate" name="spot_date" >
+                            <input type="date" id="date-1" class="btn-date data-down margin_top_2" v-model="onedate" name="spot_date" required>
+                            <input type="hidden"  class="btn-date data-down margin_top_2" :value="onedate" :name="'spot_date'+item.spot_no" >
                                 <div class="divnumb">
                                     <p class="h3">$\{{mainPrice}}</p>
                                     <button type="submit" name="remove"><img src="./img/icon/trashcan.png" class="icon trashcan" :data-no="item.spot_no" @click="increment"></button>
