@@ -1,19 +1,10 @@
 <?php
 <<<<<<< HEAD
+<<<<<<< HEAD
     $dbname = "g3";
     $user ="root";
-<<<<<<< HEAD
-<<<<<<< HEAD
-    $password= "dan700629";
-=======
-<<<<<<< HEAD
-    $password= "root";
-=======
-<<<<<<< HEAD
-    $password= "dan700629";
-=======
-<<<<<<< HEAD
     $password= "rootpassword";
+<<<<<<< HEAD
 =======
     $password= "root";
 >>>>>>> Min
@@ -28,6 +19,14 @@
  $user ="root";
  $password= "root";
 >>>>>>> Yi
+=======
+>>>>>>> chick
+=======
+    $dbname = "spaced";
+    $user ="root";
+    $password= "root1009";
+
+>>>>>>> KAI
     $dsn = "mysql:host=localhost;port=3306;dbname=$dbname;charset=utf8";
     $options = array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION,
                         PDO::ATTR_CASE=>PDO::CASE_NATURAL);
