@@ -1,5 +1,5 @@
 <?php 
-require_once(".././php/connectBooks_wei.php");
+require_once(".././php/connect_ced102_g3_local.php");
 $sql = "select * from post_cmt";
 $spottrev = $pdo->query($sql);  //執行指令
 $spottrev ->execute();
@@ -46,8 +46,8 @@ $spottrev ->execute();
                 <a href="./spaced_backstage_post.php" class="div-list-btn-s now">互動牆管理</a>
                 <!-- <a href="./spaced_backstage_trip_reviews.php" class="div-list-btn-s">互動牆檢舉管理</a> -->
             </div>
-            <a href="#" class="div-list-btn-a">會員管理</a>
-            <a href="./spaced_backstage_post_report2.php" class="div-list-btn-a">管理員管理</a>
+            <a href="./spaced_backstage_customer.php" class="div-list-btn-a">會員管理</a>
+            <a href="./spaced_backstage_admin.php" class="div-list-btn-a">管理員管理</a>
         </div>
 
         <div class="div-right">

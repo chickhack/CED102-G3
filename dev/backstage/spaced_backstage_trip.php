@@ -53,8 +53,8 @@ try {
                 <a href="./spaced_backstage_post.php" class="div-list-btn-s">互動牆管理</a>
                 <!-- <a href="#" class="div-list-btn-s">互動牆檢舉管理</a> -->
             </div>
-            <a href="#" class="div-list-btn-a">會員管理</a>
-            <a href="#" class="div-list-btn-a">管理員管理</a>
+            <a href="./spaced_backstage_customer.php" class="div-list-btn-a">會員管理</a>
+            <a href="./spaced_backstage_admin.php" class="div-list-btn-a">管理員管理</a>
         </div>
 
         <div class="div-right">
