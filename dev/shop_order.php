@@ -573,9 +573,9 @@
                     }
                 },
                 changePrice(e){
-                    const coin = document.querySelector("#coins");
+                    const coin = document.querySelector("#coins")
                     if(coin.checked){
-                        this.discount = parseInt(e.target.value);
+                        this.discount = parseInt(e.target.value)
                         if(this.finalPrice <= 0){
                             this.finalPrice == 0 ;
                         }
