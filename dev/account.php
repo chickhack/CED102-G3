@@ -1,17 +1,6 @@
 <?php
 session_start();
-<<<<<<< HEAD
-// $_SESSION["mem_no"]=1010001;
-<<<<<<< HEAD
-$mem_no=$_SESSION["mem_no"];
-=======
->>>>>>> Min
-=======
->>>>>>> chick
->>>>>>> 24a10dda290cd33b3978fc664573f65e22a1961c
-=======
 
->>>>>>> KAI
 ?>
 
 <!DOCTYPE html>
