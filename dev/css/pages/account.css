@@ -3161,6 +3161,8 @@ section.shop #app .imgBx {
 }
 
 section.shop #app .imgBx img {
+  -o-object-fit: cover;
+     object-fit: cover;
   max-width: 50%;
   margin: 0 0 20px;
   -webkit-transition: .5s ease-in-out;
