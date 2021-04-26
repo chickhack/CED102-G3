@@ -14,7 +14,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <link rel="shortcut icon" href="./img/icon/shortcut.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/pages/shop_order.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
@@ -520,9 +521,31 @@
                         .catch(error => console.log(error))
                         .then(body => console.log(body))
                 },
+                email(){
+                    const email = document.querySelector("#email").value
+                    const firstName = document.querySelector("#ofName").value
+                    const lastName =  document.querySelector("#olName").value
+
+
+                    let url = "./php/email.php";
+                    let data = {
+                        orderer: lastName+firstName,
+                        email: email
+                    }
+                    fetch(url,{
+                        method: "post",
+                        body: JSON.stringify(data),
+                        headers: new Headers({
+                                'Content-Type': 'application/json'
+                            })
+                    }).then(res => res.text())
+                        .catch(error => console.log(error))
+                        .then(body => console.log(body))
+                },
                 checkSubmit(){
                     this.checkInput();
                     this.insertData();
+                    this.email();
                 },
                 getId(e){
                     // console.log(e.target.dataset.no);

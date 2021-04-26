@@ -220,6 +220,7 @@
   
 </div>
 <a href="#" class="go-top"></a>
+  </div>
 <footer class="padding_top_10">
         <div class="links">
             <div class="logo"><img src="./img/logo.png" alt=""></div>
