@@ -1,16 +1,7 @@
 <?php
-<<<<<<< HEAD
   session_start();
   // $_SESSION["mem_no"]=1010001;
   $mem_no=$_SESSION["mem_no"];
-=======
-session_start();
-
-<<<<<<< HEAD
-=======
-$mem_no=$_SESSION["mem_no"];
->>>>>>> 3811586fda94502973a285bdccbf2c2ecf0415bd
->>>>>>> 77263e571579ce11bd0db6436f972bc94369edfb
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -297,7 +288,7 @@ $mem_no=$_SESSION["mem_no"];
               type="button">已結束</button>
           </div>
 
-          <div class="tripcontent margin_top_3">
+          <div class="ordercontent margin_top_3">
 
             <div v-for="(item,index) in travelstatus" class="table margin_top_5">
 
@@ -317,10 +308,10 @@ $mem_no=$_SESSION["mem_no"];
                 </thead>
                 <tbody>
                   <tr>
-                    <td>{{item.dep_date}}</td>
-                    <td>NT.{{item.total_price}}</td>
+                    <td>{{item.dep_date.substring(0,10)}}</td>
+                    <td>{{item.total_price}}</td>
                     <td>{{item.miles}}</td>
-                    <td>{{item.order_date}}</td>
+                    <td>{{item.order_date.substring(0,10)}}</td>
                     <td v-if="item.order_status == 0">待出發</td>
                     <td v-else="item.order_status == 1">已結束</td>
                     <!-- <td>{{item.state}}</td> -->
@@ -331,7 +322,7 @@ $mem_no=$_SESSION["mem_no"];
                 </tbody>
               </table>
 
-              <div @click="toggleContent(index)" class="orderdetail margin_top_1">
+              <div @click="toggleContent(index)" class="orderdetail table margin_top_1">
                 <img class="order_icon" src="./img/icon/drop-down-arrow.png">
                 <span class="">訂單明細</span>
               </div>
@@ -569,7 +560,7 @@ $mem_no=$_SESSION["mem_no"];
                   <tr>
                     <td>NT.{{item.total_price}}</td>
                     <!-- <td>{{item.order_total}}</td> -->
-                    <td>{{item.order_date}}</td>
+                    <td>{{item.order_date.substring(0,10)}}</td>
                     <!-- <td>{{item.order_status}}</td> -->
                     <td v-if="item.order_status == 0">待處理</td>
                     <td v-else="item.order_status == 1">已出貨</td>
@@ -619,18 +610,17 @@ $mem_no=$_SESSION["mem_no"];
 
         <!-- 收藏管理 -->
         <div v-else-if="link ==='e'">
-          <div class="heart_tab row justify-content-start container_heart heartnav margin_top_3" id="accountapp">
+          <div class="heart_tab justify-content-start container_heart heartnav margin_top_3" id="accountapp">
 
-            <div class="heart_btns">
+            <div class="heartcontent">
               <button class="col btn heartbtns" @click="acitve(1)" :class="{active: step===1}">行程</button>
               <button class="col btn heartbtns" @click="acitve(2)" :class="{active: step===2}">商品</button>
               <button class="col btn heartbtns" @click="acitve(3)" :class="{active: step===3}">貼文</button>
             </div>
 
-            <div v-if="step === 1 || active.includes(1)" v-show="step===1">
+            <div class="heart_tripcard" v-if="step === 1 || active.includes(1)" v-show="step===1">
 
-
-              <div class=" heart_tripcard second margin_top_4 ">
+              <div class="heart_tripcard second margin_top_7">
                 <div class=" heart_trip tripcard_all  ">
                   <div v-for="item in spot1" class="tripcard">
                     <a href="trip.html">
@@ -652,8 +642,8 @@ $mem_no=$_SESSION["mem_no"];
 
             </div>
 
-            <div v-if="step === 2 || active.includes(2)" v-show="step===2">
-              <div class="main">
+            <div class="" v-if="step === 2 || active.includes(2)" v-show="step===2">
+              <div class="main margin_top_3">
                 <div class="product_card productAll ">
                   <ul>
                     <li v-for="item in products" class="margin_top_4">
@@ -676,8 +666,8 @@ $mem_no=$_SESSION["mem_no"];
               </div>
             </div>
 
-            <div v-if="step === 3 || active.includes(3)" v-show="step===3">
-              <div class="post_card">
+            <div class="" v-if="step === 3 || active.includes(3)" v-show="step===3">
+              <div class="post_card margin_top_3">
                 <div class="grid">
                   <div data-aos="fade-up" data-aos-duration="1000" class=" col-md-3 grid-item">
                     <div class="img1" @mouseover="mouseMe"><img src="./img/photowall/samll/moon/moon_b1_ps.jpg" alt=""
@@ -793,6 +783,7 @@ $mem_no=$_SESSION["mem_no"];
         <!-- 轉換積分 -->
         <div v-else-if="link ==='f'">
           <div class="pointcontent margin_top_3">
+
             <div v-for="(item,index) in customer" v-if="item.mem_no == <?php echo $_SESSION["mem_no"] ?>" class="nowstate">
               <p class="point_p">可用的積分</p>
               <p class="point">{{item.miles}}</p>
@@ -807,10 +798,11 @@ $mem_no=$_SESSION["mem_no"];
             <div class="exchange margin_top_5">
               <p class="point_p">將</p>
               <input type="text" v-model="miles" @input="miles2coin" class="form-control point_input" placeholder=輸入欲轉換的積分>
-              <p class="point_p">積分，轉換為</p>
+              <p class="point_p mobile-br">積分，轉換為</p>
               <input type="text" v-model="coin" readonly class="form-control-plaintext point_input">
               <p class="point_p">宇宙幣。</p>
             </div>
+
             <div class="point_btn">
               <button type="submit" class="btn heartbtns">確認轉換</button>
             </div>

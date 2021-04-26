@@ -4903,6 +4903,9 @@ div.bk3 {
   .account_card .your_nowlev .account_total {
     padding-left: 10px;
   }
+  .account_card .your_nowlev .mobilenone {
+    display: none;
+  }
 }
 
 .account_card .lev_acc {
@@ -5003,12 +5006,18 @@ div.bk3 {
 
 @media all and (max-width: 768px) {
   .account_tabs .account_nav {
-    margin: 40px 10px 0px 10px;
+    margin: 40px 0px 0px 0px;
   }
 }
 
 .account_tabs .account_nav a {
   color: #C9ADA7;
+}
+
+@media all and (max-width: 768px) {
+  .account_tabs .account_nav a {
+    padding: 0px 10px 10px 10px;
+  }
 }
 
 .account_tabs .account_nav .nav-link {
@@ -5038,7 +5047,7 @@ div.bk3 {
 
 @media all and (max-width: 768px) {
   .account_tabs .account_line {
-    margin: 0px 10px 0px 10px;
+    margin: 0px 0px 0px 0px;
   }
 }
 
@@ -5192,8 +5201,8 @@ div.bk3 {
 
 @media all and (max-width: 768px) {
   .heart_btns, .post_btns {
-    padding: 0px 0px 0px 10px;
-    margin-left: 10px;
+    padding: 0px 0px 0px 0px;
+    margin-left: 0px;
   }
 }
 
@@ -5210,6 +5219,12 @@ div.bk3 {
 
 .heartbtns a, .postbtns a, .orderbtns a {
   color: #ffffff;
+}
+
+@media all and (max-width: 768px) {
+  .heartbtns, .postbtns, .orderbtns {
+    width: 70px;
+  }
 }
 
 .searchbtns {
@@ -5236,75 +5251,79 @@ div.bk3 {
   top: 5px;
 }
 
-.product_card, .tripcontent, .ordercontent, .pointcontent {
-  padding: 0px 270px 20px 270px;
+.product_card, .tripcontent, .ordercontent, .pointcontent, .heartcontent {
+  padding: 0px 270px 0px 270px;
 }
 
 @media all and (max-width: 992px) {
-  .product_card, .tripcontent, .ordercontent, .pointcontent {
+  .product_card, .tripcontent, .ordercontent, .pointcontent, .heartcontent {
     padding: 0px 50px 0px 50px;
   }
 }
 
 @media all and (max-width: 768px) {
-  .product_card, .tripcontent, .ordercontent, .pointcontent {
+  .product_card, .tripcontent, .ordercontent, .pointcontent, .heartcontent {
     padding: 0px 10px 0px 10px;
   }
 }
 
-.product_card .heart_tripcard, .tripcontent .heart_tripcard, .ordercontent .heart_tripcard, .pointcontent .heart_tripcard {
+.product_card .heartcontent .row > *, .tripcontent .heartcontent .row > *, .ordercontent .heartcontent .row > *, .pointcontent .heartcontent .row > *, .heartcontent .heartcontent .row > * {
+  padding-left: 0;
+}
+
+.product_card .heart_tripcard, .tripcontent .heart_tripcard, .ordercontent .heart_tripcard, .pointcontent .heart_tripcard, .heartcontent .heart_tripcard {
+  padding: 0px 200px 100px 200px;
+}
+
+@media all and (max-width: 992px) {
+  .product_card .heart_tripcard, .tripcontent .heart_tripcard, .ordercontent .heart_tripcard, .pointcontent .heart_tripcard, .heartcontent .heart_tripcard {
+    padding: 0px 50px 0px 50px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .product_card .heart_tripcard, .tripcontent .heart_tripcard, .ordercontent .heart_tripcard, .pointcontent .heart_tripcard, .heartcontent .heart_tripcard {
+    padding: 0px 10px 0px 10px;
+  }
+}
+
+.product_card .post_card, .tripcontent .post_card, .ordercontent .post_card, .pointcontent .post_card, .heartcontent .post_card {
   padding: 0px 250px 100px 250px;
 }
 
 @media all and (max-width: 992px) {
-  .product_card .heart_tripcard, .tripcontent .heart_tripcard, .ordercontent .heart_tripcard, .pointcontent .heart_tripcard {
+  .product_card .post_card, .tripcontent .post_card, .ordercontent .post_card, .pointcontent .post_card, .heartcontent .post_card {
     padding: 0px 50px 0px 50px;
   }
 }
 
 @media all and (max-width: 768px) {
-  .product_card .heart_tripcard, .tripcontent .heart_tripcard, .ordercontent .heart_tripcard, .pointcontent .heart_tripcard {
+  .product_card .post_card, .tripcontent .post_card, .ordercontent .post_card, .pointcontent .post_card, .heartcontent .post_card {
     padding: 0px 10px 0px 10px;
   }
 }
 
-.product_card .post_card, .tripcontent .post_card, .ordercontent .post_card, .pointcontent .post_card {
-  padding: 0px 250px 100px 250px;
-}
-
-@media all and (max-width: 992px) {
-  .product_card .post_card, .tripcontent .post_card, .ordercontent .post_card, .pointcontent .post_card {
-    padding: 0px 50px 0px 50px;
-  }
-}
-
-@media all and (max-width: 768px) {
-  .product_card .post_card, .tripcontent .post_card, .ordercontent .post_card, .pointcontent .post_card {
-    padding: 0px 10px 0px 10px;
-  }
-}
-
-.product_card .grid, .tripcontent .grid, .ordercontent .grid, .pointcontent .grid {
+.product_card .grid, .tripcontent .grid, .ordercontent .grid, .pointcontent .grid, .heartcontent .grid {
   margin-top: 32px;
 }
 
-.product_card .grid-item, .tripcontent .grid-item, .ordercontent .grid-item, .pointcontent .grid-item {
+.product_card .grid-item, .tripcontent .grid-item, .ordercontent .grid-item, .pointcontent .grid-item, .heartcontent .grid-item {
   margin: 0px 12.5px 25px 12.5px;
 }
 
-.product_card .nowstate, .tripcontent .nowstate, .ordercontent .nowstate, .pointcontent .nowstate {
+.product_card .nowstate, .tripcontent .nowstate, .ordercontent .nowstate, .pointcontent .nowstate, .heartcontent .nowstate {
   font-family: "Microsoft JhengHei";
   font-size: 14px;
   line-height: 25px;
   letter-spacing: 2px;
 }
 
-.product_card .nowstate .point, .product_card .nowstate .level, .tripcontent .nowstate .point, .tripcontent .nowstate .level, .ordercontent .nowstate .point, .ordercontent .nowstate .level, .pointcontent .nowstate .point, .pointcontent .nowstate .level {
+.product_card .nowstate .point, .product_card .nowstate .level, .tripcontent .nowstate .point, .tripcontent .nowstate .level, .ordercontent .nowstate .point, .ordercontent .nowstate .level, .pointcontent .nowstate .point, .pointcontent .nowstate .level, .heartcontent .nowstate .point, .heartcontent .nowstate .level {
   color: #fff;
   padding: 0px 10px 0px 10px;
 }
 
-.product_card .exchange, .product_card .point_btn, .tripcontent .exchange, .tripcontent .point_btn, .ordercontent .exchange, .ordercontent .point_btn, .pointcontent .exchange, .pointcontent .point_btn {
+.product_card .exchange, .product_card .point_btn, .tripcontent .exchange, .tripcontent .point_btn, .ordercontent .exchange, .ordercontent .point_btn, .pointcontent .exchange, .pointcontent .point_btn, .heartcontent .exchange, .heartcontent .point_btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5319,7 +5338,22 @@ div.bk3 {
   max-width: auto;
 }
 
-.product_card input.form-control.point_input, .product_card input.form-control-plaintext.point_input, .tripcontent input.form-control.point_input, .tripcontent input.form-control-plaintext.point_input, .ordercontent input.form-control.point_input, .ordercontent input.form-control-plaintext.point_input, .pointcontent input.form-control.point_input, .pointcontent input.form-control-plaintext.point_input {
+@media all and (max-width: 992px) {
+  .product_card .exchange, .product_card .point_btn, .tripcontent .exchange, .tripcontent .point_btn, .ordercontent .exchange, .ordercontent .point_btn, .pointcontent .exchange, .pointcontent .point_btn, .heartcontent .exchange, .heartcontent .point_btn {
+    padding: 0px 50px 0px 50px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .product_card .exchange, .product_card .point_btn, .tripcontent .exchange, .tripcontent .point_btn, .ordercontent .exchange, .ordercontent .point_btn, .pointcontent .exchange, .pointcontent .point_btn, .heartcontent .exchange, .heartcontent .point_btn {
+    padding: 0px 10px 0px 10px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    line-height: 3rem;
+  }
+}
+
+.product_card input.form-control.point_input, .product_card input.form-control-plaintext.point_input, .tripcontent input.form-control.point_input, .tripcontent input.form-control-plaintext.point_input, .ordercontent input.form-control.point_input, .ordercontent input.form-control-plaintext.point_input, .pointcontent input.form-control.point_input, .pointcontent input.form-control-plaintext.point_input, .heartcontent input.form-control.point_input, .heartcontent input.form-control-plaintext.point_input {
   width: 120px;
   height: 20px;
   border: 0.5px solid rgba(173, 110, 74, 0.6);
@@ -5334,7 +5368,7 @@ div.bk3 {
   margin: 0px 15px 0px 15px;
 }
 
-.product_card input.form-control.point_input:focus, .product_card input.form-control-plaintext.point_input:focus, .tripcontent input.form-control.point_input:focus, .tripcontent input.form-control-plaintext.point_input:focus, .ordercontent input.form-control.point_input:focus, .ordercontent input.form-control-plaintext.point_input:focus, .pointcontent input.form-control.point_input:focus, .pointcontent input.form-control-plaintext.point_input:focus {
+.product_card input.form-control.point_input:focus, .product_card input.form-control-plaintext.point_input:focus, .tripcontent input.form-control.point_input:focus, .tripcontent input.form-control-plaintext.point_input:focus, .ordercontent input.form-control.point_input:focus, .ordercontent input.form-control-plaintext.point_input:focus, .pointcontent input.form-control.point_input:focus, .pointcontent input.form-control-plaintext.point_input:focus, .heartcontent input.form-control.point_input:focus, .heartcontent input.form-control-plaintext.point_input:focus {
   border-color: #cccaca;
   outline: none;
   -webkit-box-shadow: none;
@@ -5345,10 +5379,6 @@ div.bk3 {
   box-shadow: -1px 0px 20px 5px rgba(173, 110, 74, 0.45);
   -webkit-box-shadow: -1px 0px 20px 5px rgba(173, 110, 74, 0.45);
   -moz-box-shadow: -1px 0px 20px 5px rgba(173, 110, 74, 0.45);
-}
-
-.tripcontent, .ordercontent {
-  margin-left: 10px;
 }
 
 .tripcontent .table, .ordercontent .table {
@@ -5411,6 +5441,18 @@ div.bk3 {
 
 .tripcontent .table .detail-open, .ordercontent .table .detail-open {
   display: none;
+}
+
+@media all and (max-width: 992px) {
+  .tripcontent {
+    padding: 0px 10px 0px 10px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .tripcontent {
+    padding: 0px 20px 0px 20px;
+  }
 }
 
 /* footer */

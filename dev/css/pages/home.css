@@ -1218,7 +1218,6 @@ canvas {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1226,11 +1225,6 @@ canvas {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  /* Override bootstrap column paddings */
-=======
-  align-items: center;
-  flex-direction: column;
->>>>>>> dev
 }
 
 .home_photowall .tz-gallery .upper, .home_photowall .tz-gallery .lower {
@@ -1239,32 +1233,13 @@ canvas {
   display: flex;
 }
 
-<<<<<<< HEAD
-.home_photowall .tz-gallery .lightbox:hover img {
-  -webkit-transform: scale(1.3);
-          transform: scale(1.3);
-}
-
-.home_photowall .tz-gallery .loghtbox:hover {
-  color: green;
-}
-
-.home_photowall .tz-gallery .lightbox img {
-  width: 100%;
-  border-radius: 0;
-  position: relative;
-  -webkit-transition: all .3s;
-  transition: all .3s;
-}
-
-.home_photowall .tz-gallery .lightbox {
-  overflow: hidden;
-=======
 @media all and (max-width: 992px) {
   .home_photowall .tz-gallery .upper, .home_photowall .tz-gallery .lower {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
->>>>>>> dev
 }
 
 .shop_box .home_shop {
