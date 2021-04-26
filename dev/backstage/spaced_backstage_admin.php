@@ -80,8 +80,8 @@
                     <p class="wi-15 text-1">{{item.admin_name}}</p>
                     <p class="wi-15 text-1">{{item.admin_account}}</p>
                     <p class="wi-15 text-1">{{item.admin_psw}}</p>
-                    <p class='wi-10 text-1' v-if="item.admin_mem_stats == 1"><a name='update' type='button' class='btn btn-primary btn-sm'>正常</a></p>
-                    <p class='wi-10 text-1' v-else><a name='update' type='button' class='btn btn-danger btn-sm'>停權</a></p>
+                    <p class='wi-10 text-1' @click="statusOn(index)" v-if="item.admin_mem_stats == 1"><a name='update' type='button' class='btn btn-primary btn-sm'>正常</a></p>
+                    <p class='wi-10 text-1' @click="statusOff(index)" v-else><a name='update' type='button' class='btn btn-danger btn-sm'>停權</a></p>
                 </div>
 
             </main>
@@ -113,6 +113,7 @@
         var app1 = new Vue({
             el: "#app1",
             data: {
+                // statusOn: 0,
                 admin: [{
                     admin_no: 200001,
                     admin_name: 'chickhack',
@@ -152,12 +153,13 @@
                 }],
             },
             methods: {
-                statusOn() {
-                    this.status = !this.status;
+                statusOn: function(e) {
+                    this.admin[e].admin_mem_stats = 0;
+                    console.log(e);
                 },
-                statusOff() {
-
-                }
+                statusOff: function(e) {
+                    this.admin[e].admin_mem_stats = 1;
+                },
             },
         });
     </script>

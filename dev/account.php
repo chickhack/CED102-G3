@@ -536,7 +536,7 @@ $mem_no=$_SESSION["mem_no"];
 
           <form class="heart_btns">
             <input value="<?php echo date("Y-m-d");?>" type="date" id="date-1" class="btn orderbtns margin_top_3 btn-date data-down">
-            <input type="submit" name="button" id="button" value="搜尋" class="btn orderbtns searchbtns margin_top_3">
+            <input type="submit" name="button" id="button" value="搜尋" class="btn heartbtns orderbtns searchbtns margin_top_3">
           </form>
 
           <div class="ordercontent margin_top_3">
@@ -612,7 +612,7 @@ $mem_no=$_SESSION["mem_no"];
         <div v-else-if="link ==='e'">
           <div class="heart_tab justify-content-start container_heart heartnav margin_top_3" id="accountapp">
 
-            <div class="heartcontent">
+            <div class="heart_btns">
               <button class="col btn heartbtns" @click="acitve(1)" :class="{active: step===1}">行程</button>
               <button class="col btn heartbtns" @click="acitve(2)" :class="{active: step===2}">商品</button>
               <button class="col btn heartbtns" @click="acitve(3)" :class="{active: step===3}">貼文</button>
