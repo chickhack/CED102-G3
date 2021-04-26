@@ -1,10 +1,13 @@
-.container-fluid{
+@import "../all.scss";
+.container{
     padding: 15vh 0 0 0;
-    height: 50vh;
+    height: 70vh;
+    
     .row{
         display: flex;
         justify-content: center;
         .col-9{
+            margin-top: 10vh;
             background-color: #292B41;
             border: 1px solid #AD6E4A;
             // height: 8px;

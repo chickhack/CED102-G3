@@ -103,6 +103,7 @@ section.shop{
                     }
             }
             img{
+                object-fit: cover;
                 max-width: 50%;
                 margin: 0 0 20px;
                 transition: .5s ease-in-out;
