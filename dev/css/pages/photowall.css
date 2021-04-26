@@ -414,7 +414,10 @@ nav .nav-links a {
   width: 100%;
   color: #ffffff;
   padding: 8px;
+<<<<<<< HEAD
   -webkit-transition: all .3s;
+=======
+>>>>>>> KAI
   transition: all .3s;
 }
 
@@ -618,8 +621,11 @@ nav .nav-trip .trip-count {
     height: 88vh;
     top: 12vh;
     background-color: #292B41;
+<<<<<<< HEAD
     display: -webkit-box;
     display: -ms-flexbox;
+=======
+>>>>>>> KAI
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

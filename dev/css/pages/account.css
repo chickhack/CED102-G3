@@ -619,8 +619,11 @@ nav .nav-trip .trip-count {
     height: 88vh;
     top: 12vh;
     background-color: #292B41;
+<<<<<<< HEAD
     display: -webkit-box;
     display: -ms-flexbox;
+=======
+>>>>>>> KAI
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -844,8 +847,12 @@ input[type=number] {
   height: 100px;
   background-size: contain;
   background-repeat: no-repeat;
+<<<<<<< HEAD
   -webkit-animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
           animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+=======
+  animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+>>>>>>> KAI
   z-index: 10;
 }
 
@@ -1475,8 +1482,11 @@ nav .nav-trip .trip-count {
     height: 88vh;
     top: 12vh;
     background-color: #292B41;
+<<<<<<< HEAD
     display: -webkit-box;
     display: -ms-flexbox;
+=======
+>>>>>>> KAI
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1687,8 +1697,12 @@ input[type=number] {
   height: 100px;
   background-size: contain;
   background-repeat: no-repeat;
+<<<<<<< HEAD
   -webkit-animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
           animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+=======
+  animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+>>>>>>> KAI
   z-index: 10;
 }
 
@@ -2736,8 +2750,11 @@ nav .nav-trip .trip-count {
     height: 88vh;
     top: 12vh;
     background-color: #292B41;
+<<<<<<< HEAD
     display: -webkit-box;
     display: -ms-flexbox;
+=======
+>>>>>>> KAI
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2948,8 +2965,12 @@ input[type=number] {
   height: 100px;
   background-size: contain;
   background-repeat: no-repeat;
+<<<<<<< HEAD
   -webkit-animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
           animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+=======
+  animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+>>>>>>> KAI
   z-index: 10;
 }
 
@@ -3905,8 +3926,11 @@ nav .nav-trip .trip-count {
     height: 88vh;
     top: 12vh;
     background-color: #292B41;
+<<<<<<< HEAD
     display: -webkit-box;
     display: -ms-flexbox;
+=======
+>>>>>>> KAI
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -4117,8 +4141,12 @@ input[type=number] {
   height: 100px;
   background-size: contain;
   background-repeat: no-repeat;
+<<<<<<< HEAD
   -webkit-animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
           animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+=======
+  animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+>>>>>>> KAI
   z-index: 10;
 }
 
@@ -4360,7 +4388,7 @@ div.bk3 {
 
 @media all and (max-width: 1200px) {
   .first .first_right .hottrip div.planet_top {
-    width: 100%;
+    width: 90%;
   }
 }
 

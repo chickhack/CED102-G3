@@ -72,10 +72,10 @@ try {
                 </div>
 
                 <div class="data_name h3 div-right-span padding_top_3 line_low">
-                    <p class="wi-10 text-1">訂單編號</p>
+                    <p class="wi-5 text-1">訂單</p>
                     <p class="wi-10 text-1">會員編號</p>
-                    <p class="wi-15 text-1">出發日</p>
-                    <p class="wi-15 text-1">下單日</p>
+                    <p class="wi-10 text-1">出發日</p>
+                    <p class="wi-10 text-1">下單日</p>
                     <p class="wi-10 text-1">總金額</p>
                     <p class="wi-10 text-1">總積分</p>
                     <p class="wi-10 text-1">姓名</p>
@@ -86,7 +86,7 @@ try {
                     <p class="wi-5 text-1">飛船</p>
                     <!-- <p class="wi-15 text-1">信用卡</p>
                     <p class="wi-10 text-1">檢查碼</p> -->
-                    <p class="wi-5 text-1">修改</p>
+                    <p class="wi-5 text-1"></p>
 
 
                 </div>
@@ -98,19 +98,19 @@ try {
                 ?>
                 <div class="div-right-span-for line_low margin_top_2">
                     <a href="../php/backstage/spot_order/spot_order_datail.php?order_no=<?=$orderRow["order_no"]?>"
-                    class="wi-10 text-1"
+                    class="wi-5 text-1"
                     ><?=$orderRow ["order_no"]?></a> 
                     <a href="../php/backstage/spot_order/spaced_backstage_order_customer.php?mem_no=<?=$orderRow["mem_no"]?>"
                     class="wi-10 text-1"
                     ><?=$orderRow ["mem_no"]?></a>
                    
-                    <p class="wi-15 text-1"><?=$orderRow ["dep_date"]?></p>
-                    <p class="wi-15 text-1"><?=$orderRow ["order_date"]?></p>
+                    <p class="wi-10 text-1 toomuch"><?=$orderRow ["dep_date"]?></p>
+                    <p class="wi-10 text-1 toomuch"><?=$orderRow ["order_date"]?></p>
                     <p class="wi-10 text-1 "><?=$orderRow ["total_price"]?></p>
                     <p class="wi-10 text-1 "><?=$orderRow ["miles"]?></p>
                     <p class="wi-10 text-1"><?=$orderRow ["order_name"]?></p>
                     <p class="wi-15 text-1"><?=$orderRow ["order_ph"]?></p>
-                    <p class="wi-15 text-1"><?=$orderRow ["order_email"]?></p>
+                    <p class="wi-15 text-1 "><?=$orderRow ["order_email"]?></p>
                     <p class="wi-5 text-1"><?=$orderRow ["order_status"]?></p>
                     <p class="wi-5 text-1"><?=$orderRow ["guide"]?></p>
                     <p class="wi-5 text-1"><?=$orderRow ["rocket"]?></p>

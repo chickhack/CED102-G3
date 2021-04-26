@@ -14,10 +14,6 @@
         }
     }
 
-
-
-
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -124,7 +120,10 @@
                 ?>
                 
                 <ul>
-                    <cart @get="getId" :item="val" v-for="(val,index) in products"></cart>
+                    <!-- <form action="cat-itineray.php"> -->
+                        <cart @get="getId" :item="val" v-for="(val,index) in products"></cart>
+
+                    <!-- </form> -->
                 </ul>
                 <div class="checkout margin_top_8">
                     <div class="total">
@@ -245,6 +244,7 @@
                             </div>
                             <div class="divdate">
                             <input type="date" id="date-1" class="btn-date data-down margin_top_2" v-model="onedate" name="spot_date" required>
+                            <input type="hidden"  class="btn-date data-down margin_top_2" :value="onedate" :name="'spot_date'+item.spot_no" >
                                 <div class="divnumb">
                                     <p class="h3">$\{{mainPrice}}</p>
                                     <button type="submit" name="remove"><img src="./img/icon/trashcan.png" class="icon trashcan" :data-no="item.spot_no" @click="increment"></button>
@@ -256,6 +256,7 @@
             data() {
                 return {
                     verified: this.item.qty,
+                    // dateone:this.item.date,
                     id: 0,
                     name: "",
                     onedate:this.item.date,
