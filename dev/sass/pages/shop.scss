@@ -92,6 +92,7 @@ section.shop{
         .imgBx{
             position: relative;
             @include flex_middle();
+            justify-content: flex-end;
             flex-direction: column;
             padding: 20px;
             transition: 0.5s ease-in-out;
@@ -100,6 +101,9 @@ section.shop{
               padding: 20px 50px;
                     img{
                         transform: translateY(-40px) scale(1.3);
+                        @include respond(mobile){
+                          transform: translateY(-40px) scale(2);
+                        }
                     }
             }
             img{
