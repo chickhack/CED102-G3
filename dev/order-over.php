@@ -1,6 +1,6 @@
 <?php
 session_start();
-// unset($_SESSION["trip-cart"]);
+unset($_SESSION["trip-cart"]);
 ?>
 <!DOCTYPE html>
 <html lang="en">
