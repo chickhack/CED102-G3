@@ -56,6 +56,8 @@ try{
             $sql3="UPDATE `customer` SET miles='$upMiles' where mem_no=$mem_no";
             $upcustomer = $pdo->prepare($sql3);
             $upcustomer -> execute();
+
+			echo "<script>window.location.href='../order-over.php'</script>";
 }catch (PDOException $e) {
 	$errMsg .= "錯誤原因 : ".$e -> getMessage(). "<br>";
 	$errMsg .= "錯誤行號 : ".$e -> getLine(). "<br>";	

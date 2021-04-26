@@ -619,11 +619,8 @@ nav .nav-trip .trip-count {
     height: 88vh;
     top: 12vh;
     background-color: #292B41;
-<<<<<<< HEAD
     display: -webkit-box;
     display: -ms-flexbox;
-=======
->>>>>>> KAI
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -847,12 +844,8 @@ input[type=number] {
   height: 100px;
   background-size: contain;
   background-repeat: no-repeat;
-<<<<<<< HEAD
   -webkit-animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
           animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
-=======
-  animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
->>>>>>> KAI
   z-index: 10;
 }
 
@@ -1482,11 +1475,8 @@ nav .nav-trip .trip-count {
     height: 88vh;
     top: 12vh;
     background-color: #292B41;
-<<<<<<< HEAD
     display: -webkit-box;
     display: -ms-flexbox;
-=======
->>>>>>> KAI
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1697,12 +1687,8 @@ input[type=number] {
   height: 100px;
   background-size: contain;
   background-repeat: no-repeat;
-<<<<<<< HEAD
   -webkit-animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
           animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
-=======
-  animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
->>>>>>> KAI
   z-index: 10;
 }
 
@@ -2750,11 +2736,8 @@ nav .nav-trip .trip-count {
     height: 88vh;
     top: 12vh;
     background-color: #292B41;
-<<<<<<< HEAD
     display: -webkit-box;
     display: -ms-flexbox;
-=======
->>>>>>> KAI
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2965,12 +2948,8 @@ input[type=number] {
   height: 100px;
   background-size: contain;
   background-repeat: no-repeat;
-<<<<<<< HEAD
   -webkit-animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
           animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
-=======
-  animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
->>>>>>> KAI
   z-index: 10;
 }
 
@@ -3926,11 +3905,8 @@ nav .nav-trip .trip-count {
     height: 88vh;
     top: 12vh;
     background-color: #292B41;
-<<<<<<< HEAD
     display: -webkit-box;
     display: -ms-flexbox;
-=======
->>>>>>> KAI
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -4141,12 +4117,8 @@ input[type=number] {
   height: 100px;
   background-size: contain;
   background-repeat: no-repeat;
-<<<<<<< HEAD
   -webkit-animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
           animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
-=======
-  animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
->>>>>>> KAI
   z-index: 10;
 }
 
@@ -4878,12 +4850,28 @@ div.bk3 {
   /*  12個月內累積 */
 }
 
+@media all and (max-width: 992px) {
+  .account_card {
+    margin: 30px 50px 0px 50px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .account_card {
+    margin: 30px 10px 0px 10px;
+  }
+}
+
 .account_card .your_nowlev {
   /* 目前累積等級、星球、景點、宇宙幣 */
 }
 
 .account_card .your_nowlev img.littleline {
-  height: 18px;
+  height: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 10px;
 }
 
 .account_card .your_nowlev .lev_name, .account_card .your_nowlev .account_total, .account_card .your_nowlev .account_money {
@@ -4891,6 +4879,9 @@ div.bk3 {
   font-size: 14px;
   letter-spacing: 1px;
   color: #ffffff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .account_card .your_nowlev .lev_name .accnum, .account_card .your_nowlev .account_total .accnum, .account_card .your_nowlev .account_money .accnum {
@@ -4902,10 +4893,34 @@ div.bk3 {
   letter-spacing: 2px;
 }
 
+@media all and (max-width: 768px) {
+  .account_card .your_nowlev .lev_name, .account_card .your_nowlev .account_total, .account_card .your_nowlev .account_money {
+    line-height: 25px;
+    padding-left: 30px;
+  }
+  .account_card .your_nowlev .account_total {
+    padding-left: 10px;
+  }
+}
+
 .account_card .lev_acc {
   font-family: "Microsoft JhengHei";
   letter-spacing: 2px;
   padding: 30px 0px 20px 75px;
+}
+
+@media all and (max-width: 992px) {
+  .account_card .lev_acc {
+    padding: 30px 0px 20px 75px;
+    text-align: left;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .account_card .lev_acc {
+    padding: 30px 0px 20px 0px;
+    text-align: left;
+  }
 }
 
 .account_card .your_acc {
@@ -4927,6 +4942,12 @@ div.bk3 {
           align-items: center;
 }
 
+@media all and (max-width: 768px) {
+  .account_card .your_acc .now_lev .next_lev, .account_card .your_acc .next_lev .next_lev {
+    margin-top: 10px;
+  }
+}
+
 .account_card .your_acc .now_lev img, .account_card .your_acc .next_lev img {
   max-width: 50%;
 }
@@ -4939,13 +4960,28 @@ div.bk3 {
   font-size: 14px;
 }
 
+@media all and (max-width: 768px) {
+  .account_card .your_acc .now_lev p.nextacc, .account_card .your_acc .now_lev p.nowacc, .account_card .your_acc .next_lev p.nextacc, .account_card .your_acc .next_lev p.nowacc {
+    font-size: 10px;
+  }
+  .account_card .your_acc .now_lev p.mobilenone, .account_card .your_acc .next_lev p.mobilenone {
+    display: none;
+  }
+}
+
 .account_card .your_acc .next_rocket {
-  margin-left: -50px;
-  margin-top: 60px;
+  display: inline;
 }
 
 .account_card .your_acc .next_rocket .account_rocket {
-  max-width: 5%;
+  max-width: 10%;
+  background: hr;
+}
+
+@media all and (max-width: 768px) {
+  .account_card .your_acc .next_rocket .account_rocket {
+    max-width: 30%;
+  }
 }
 
 .account_tabs {
@@ -4955,6 +4991,18 @@ div.bk3 {
 .account_tabs .account_nav {
   margin: 50px 250px 0px 250px;
   border-bottom: none;
+}
+
+@media all and (max-width: 992px) {
+  .account_tabs .account_nav {
+    margin: 40px 50px 0px 50px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .account_tabs .account_nav {
+    margin: 40px 10px 0px 10px;
+  }
 }
 
 .account_tabs .account_nav a {
@@ -4980,6 +5028,18 @@ div.bk3 {
   background-color: #AD6E4A;
 }
 
+@media all and (max-width: 992px) {
+  .account_tabs .account_line {
+    margin: 0px 50px 0px 50px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .account_tabs .account_line {
+    margin: 0px 10px 0px 10px;
+  }
+}
+
 .account_tabs .content {
   /* 會員資料 */
 }
@@ -4994,35 +5054,73 @@ div.bk3 {
   color: #C9ADA7;
 }
 
-.account_tabs .content .info_form .info_img {
+@media all and (max-width: 992px) {
+  .account_tabs .content .info_form {
+    margin: 0px 50px 0px 50px;
+    padding: 30px 0px 30px 0px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .account_tabs .content .info_form {
+    margin: 0px 10px 0px 10px;
+  }
+  .account_tabs .content .info_form .info_edit {
+    margin: 15px 10px 0px 10px;
+  }
+  .account_tabs .content .info_form .info_editbtn {
+    margin-left: 0px;
+  }
+}
+
+.account_tabs .content .info_img {
   margin: 5px 50px 0px 0px;
 }
 
-.account_tabs .content .info_form .info_img .img_input {
+@media all and (max-width: 992px) {
+  .account_tabs .content .info_img {
+    margin: 0px 50px 0px 50px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .account_tabs .content .info_img {
+    margin: 0px 10px 0px 10px;
+    display: inline-block;
+  }
+}
+
+.account_tabs .content .info_img .img_input {
   margin: 15px 0px 0px 0px;
 }
 
-.account_tabs .content .info_form .info_img .circle-image {
+.account_tabs .content .info_img .circle-image {
   width: 120px;
   height: 120px;
   border-radius: 50%;
   overflow: hidden;
 }
 
-.account_tabs .content .info_form .info_img .circle-image .infoimg {
+.account_tabs .content .info_img .circle-image .infoimg {
   width: 100%;
   height: 100%;
 }
 
-.account_tabs .content .info_form .info_img .hideinput {
+.account_tabs .content .info_img .hideinput {
   display: none;
 }
 
-.account_tabs .content .info_form .info_left, .account_tabs .content .info_form .info_right, .account_tabs .content .info_form .info_edit {
+.account_tabs .content .info_left, .account_tabs .content .info_right, .account_tabs .content .info_edit {
   margin: 25px 10px 0px 10px;
 }
 
-.account_tabs .content .info_form .info_left .form, .account_tabs .content .info_form .info_left .unform, .account_tabs .content .info_form .info_right .form, .account_tabs .content .info_form .info_right .unform, .account_tabs .content .info_form .info_edit .form, .account_tabs .content .info_form .info_edit .unform {
+@media all and (max-width: 768px) {
+  .account_tabs .content .info_left, .account_tabs .content .info_right, .account_tabs .content .info_edit {
+    margin: 15px 10px 0px 10px;
+  }
+}
+
+.account_tabs .content .form, .account_tabs .content .unform {
   width: 85%;
   height: 20px;
   border: 0.5px solid rgba(173, 110, 74, 0.6);
@@ -5037,23 +5135,23 @@ div.bk3 {
   outline: none;
 }
 
-.account_tabs .content .info_form .center {
+.account_tabs .center {
   margin: 0 auto;
   float: none;
 }
 
-.account_tabs .content .info_form .center .form-group, .account_tabs .content .info_form .center label {
+.account_tabs .center .form-group, .account_tabs .center label {
   margin-top: 10px;
   margin-bottom: 5px;
 }
 
-.account_tabs .content .btn-check:focus + .btn, .account_tabs .content .btn:focus {
+.btn-check:focus + .btn, .btn:focus {
   outline: 0;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
-.account_tabs .content .info_editbtn, .account_tabs .content .pointbtn, .account_tabs .content .img_input {
+.info_editbtn, .pointbtn, .img_input {
   font-family: "Microsoft JhengHei";
   font-size: 12px;
   color: #ffff;
@@ -5065,13 +5163,13 @@ div.bk3 {
   margin-bottom: 10px;
 }
 
-.account_tabs .content .info_editbtn:hover, .account_tabs .content .heartbtns:hover, .account_tabs .content .postbtns:hover, .account_tabs .content .pointbtn:hover, .account_tabs .content .img_input:hover, .account_tabs .content .heartbtns.active {
+.info_editbtn:hover, .heartbtns:hover, .postbtns:hover, .pointbtn:hover, .img_input:hover, .heartbtns.active {
   color: #ffff;
   border: 1px solid #AD6E4A;
   background: #AD6E4A;
 }
 
-.account_tabs .content .info_editbtn:focus + .btn-primary, .account_tabs .content .heartbtns:focus, .account_tabs .content .btn-primary:focus, .account_tabs .content .postbtns:focus, .account_tabs .content .pointbtn:focus, .account_tabs .content .img_input:focus {
+.info_editbtn:focus + .btn-primary, .heartbtns:focus, .btn-primary:focus, .postbtns:focus, .pointbtn:focus, .img_input:focus {
   color: #fff;
   background-color: #AD6E4A;
   border-color: #AD6E4A;
@@ -5079,11 +5177,25 @@ div.bk3 {
           box-shadow: none;
 }
 
-.account_tabs .content .heart_btns, .account_tabs .content .post_btns {
+.heart_btns, .post_btns {
   padding: 0px 0px 0px 270px;
 }
 
-.account_tabs .content .heartbtns, .account_tabs .content .postbtns, .account_tabs .content .orderbtns {
+@media all and (max-width: 992px) {
+  .heart_btns, .post_btns {
+    padding: 0px 0px 0px 50px;
+    margin-left: 50px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .heart_btns, .post_btns {
+    padding: 0px 0px 0px 10px;
+    margin-left: 10px;
+  }
+}
+
+.heartbtns, .postbtns, .orderbtns {
   width: 90px;
   margin-left: 10px;
   font-family: "Microsoft JhengHei";
@@ -5094,11 +5206,15 @@ div.bk3 {
   border-radius: 0px;
 }
 
-.account_tabs .content .heartbtns a, .account_tabs .content .postbtns a, .account_tabs .content .orderbtns a {
+.heartbtns a, .postbtns a, .orderbtns a {
   color: #ffffff;
 }
 
-.account_tabs .content .btn-date {
+.searchbtns {
+  width: 50px;
+}
+
+.btn-date {
   letter-spacing: 2px;
   padding: 0 5px;
   border: 1px solid #AD6E4A;
@@ -5109,7 +5225,7 @@ div.bk3 {
   width: 180px;
 }
 
-.account_tabs .content ::-webkit-calendar-picker-indicator {
+::-webkit-calendar-picker-indicator {
   color: #AD6E4A;
   background-image: url(../../img/date-chevron-down.svg);
   width: 15px;
@@ -5118,39 +5234,75 @@ div.bk3 {
   top: 5px;
 }
 
-.account_tabs .content .product_card, .account_tabs .content .tripcontent, .account_tabs .content .ordercontent, .account_tabs .content .pointcontent {
+.product_card, .tripcontent, .ordercontent, .pointcontent {
   padding: 0px 270px 20px 270px;
 }
 
-.account_tabs .content .product_card .heart_tripcard, .account_tabs .content .tripcontent .heart_tripcard, .account_tabs .content .ordercontent .heart_tripcard, .account_tabs .content .pointcontent .heart_tripcard {
-  padding: 0px 200px 100px 200px;
+@media all and (max-width: 992px) {
+  .product_card, .tripcontent, .ordercontent, .pointcontent {
+    padding: 0px 50px 0px 50px;
+  }
 }
 
-.account_tabs .content .product_card .post_card, .account_tabs .content .tripcontent .post_card, .account_tabs .content .ordercontent .post_card, .account_tabs .content .pointcontent .post_card {
+@media all and (max-width: 768px) {
+  .product_card, .tripcontent, .ordercontent, .pointcontent {
+    padding: 0px 10px 0px 10px;
+  }
+}
+
+.product_card .heart_tripcard, .tripcontent .heart_tripcard, .ordercontent .heart_tripcard, .pointcontent .heart_tripcard {
   padding: 0px 250px 100px 250px;
 }
 
-.account_tabs .content .product_card .grid, .account_tabs .content .tripcontent .grid, .account_tabs .content .ordercontent .grid, .account_tabs .content .pointcontent .grid {
+@media all and (max-width: 992px) {
+  .product_card .heart_tripcard, .tripcontent .heart_tripcard, .ordercontent .heart_tripcard, .pointcontent .heart_tripcard {
+    padding: 0px 50px 0px 50px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .product_card .heart_tripcard, .tripcontent .heart_tripcard, .ordercontent .heart_tripcard, .pointcontent .heart_tripcard {
+    padding: 0px 10px 0px 10px;
+  }
+}
+
+.product_card .post_card, .tripcontent .post_card, .ordercontent .post_card, .pointcontent .post_card {
+  padding: 0px 250px 100px 250px;
+}
+
+@media all and (max-width: 992px) {
+  .product_card .post_card, .tripcontent .post_card, .ordercontent .post_card, .pointcontent .post_card {
+    padding: 0px 50px 0px 50px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .product_card .post_card, .tripcontent .post_card, .ordercontent .post_card, .pointcontent .post_card {
+    padding: 0px 10px 0px 10px;
+  }
+}
+
+.product_card .grid, .tripcontent .grid, .ordercontent .grid, .pointcontent .grid {
   margin-top: 32px;
 }
 
-.account_tabs .content .product_card .grid-item, .account_tabs .content .tripcontent .grid-item, .account_tabs .content .ordercontent .grid-item, .account_tabs .content .pointcontent .grid-item {
+.product_card .grid-item, .tripcontent .grid-item, .ordercontent .grid-item, .pointcontent .grid-item {
   margin: 0px 12.5px 25px 12.5px;
 }
 
-.account_tabs .content .product_card .nowstate, .account_tabs .content .tripcontent .nowstate, .account_tabs .content .ordercontent .nowstate, .account_tabs .content .pointcontent .nowstate {
+.product_card .nowstate, .tripcontent .nowstate, .ordercontent .nowstate, .pointcontent .nowstate {
   font-family: "Microsoft JhengHei";
   font-size: 14px;
   line-height: 25px;
   letter-spacing: 2px;
 }
 
-.account_tabs .content .product_card .nowstate .point, .account_tabs .content .product_card .nowstate .level, .account_tabs .content .tripcontent .nowstate .point, .account_tabs .content .tripcontent .nowstate .level, .account_tabs .content .ordercontent .nowstate .point, .account_tabs .content .ordercontent .nowstate .level, .account_tabs .content .pointcontent .nowstate .point, .account_tabs .content .pointcontent .nowstate .level {
+.product_card .nowstate .point, .product_card .nowstate .level, .tripcontent .nowstate .point, .tripcontent .nowstate .level, .ordercontent .nowstate .point, .ordercontent .nowstate .level, .pointcontent .nowstate .point, .pointcontent .nowstate .level {
   color: #fff;
   padding: 0px 10px 0px 10px;
 }
 
-.account_tabs .content .product_card .exchange, .account_tabs .content .product_card .point_btn, .account_tabs .content .tripcontent .exchange, .account_tabs .content .tripcontent .point_btn, .account_tabs .content .ordercontent .exchange, .account_tabs .content .ordercontent .point_btn, .account_tabs .content .pointcontent .exchange, .account_tabs .content .pointcontent .point_btn {
+.product_card .exchange, .product_card .point_btn, .tripcontent .exchange, .tripcontent .point_btn, .ordercontent .exchange, .ordercontent .point_btn, .pointcontent .exchange, .pointcontent .point_btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5165,7 +5317,7 @@ div.bk3 {
   max-width: auto;
 }
 
-.account_tabs .content .product_card input.form-control.point_input, .account_tabs .content .product_card input.form-control-plaintext.point_input, .account_tabs .content .tripcontent input.form-control.point_input, .account_tabs .content .tripcontent input.form-control-plaintext.point_input, .account_tabs .content .ordercontent input.form-control.point_input, .account_tabs .content .ordercontent input.form-control-plaintext.point_input, .account_tabs .content .pointcontent input.form-control.point_input, .account_tabs .content .pointcontent input.form-control-plaintext.point_input {
+.product_card input.form-control.point_input, .product_card input.form-control-plaintext.point_input, .tripcontent input.form-control.point_input, .tripcontent input.form-control-plaintext.point_input, .ordercontent input.form-control.point_input, .ordercontent input.form-control-plaintext.point_input, .pointcontent input.form-control.point_input, .pointcontent input.form-control-plaintext.point_input {
   width: 120px;
   height: 20px;
   border: 0.5px solid rgba(173, 110, 74, 0.6);
@@ -5180,7 +5332,7 @@ div.bk3 {
   margin: 0px 15px 0px 15px;
 }
 
-.account_tabs .content .product_card input.form-control.point_input:focus, .account_tabs .content .product_card input.form-control-plaintext.point_input:focus, .account_tabs .content .tripcontent input.form-control.point_input:focus, .account_tabs .content .tripcontent input.form-control-plaintext.point_input:focus, .account_tabs .content .ordercontent input.form-control.point_input:focus, .account_tabs .content .ordercontent input.form-control-plaintext.point_input:focus, .account_tabs .content .pointcontent input.form-control.point_input:focus, .account_tabs .content .pointcontent input.form-control-plaintext.point_input:focus {
+.product_card input.form-control.point_input:focus, .product_card input.form-control-plaintext.point_input:focus, .tripcontent input.form-control.point_input:focus, .tripcontent input.form-control-plaintext.point_input:focus, .ordercontent input.form-control.point_input:focus, .ordercontent input.form-control-plaintext.point_input:focus, .pointcontent input.form-control.point_input:focus, .pointcontent input.form-control-plaintext.point_input:focus {
   border-color: #cccaca;
   outline: none;
   -webkit-box-shadow: none;
@@ -5193,55 +5345,55 @@ div.bk3 {
   -moz-box-shadow: -1px 0px 20px 5px rgba(173, 110, 74, 0.45);
 }
 
-.account_tabs .content .tripcontent, .account_tabs .content .ordercontent {
+.tripcontent, .ordercontent {
   margin-left: 10px;
 }
 
-.account_tabs .content .tripcontent .table, .account_tabs .content .ordercontent .table {
+.tripcontent .table, .ordercontent .table {
   width: 100%;
   font-family: "Microsoft JhengHei";
 }
 
-.account_tabs .content .tripcontent .table caption, .account_tabs .content .ordercontent .table caption {
+.tripcontent .table caption, .ordercontent .table caption {
   text-align: left;
 }
 
-.account_tabs .content .tripcontent .table span, .account_tabs .content .ordercontent .table span {
+.tripcontent .table span, .ordercontent .table span {
   color: #C9ADA7;
 }
 
-.account_tabs .content .tripcontent .table span.num, .account_tabs .content .ordercontent .table span.num {
+.tripcontent .table span.num, .ordercontent .table span.num {
   color: #cccaca;
   margin-left: 15px;
   line-height: 20px;
 }
 
-.account_tabs .content .tripcontent .table thead, .account_tabs .content .tripcontent .table td, .account_tabs .content .ordercontent .table thead, .account_tabs .content .ordercontent .table td {
+.tripcontent .table thead, .tripcontent .table td, .ordercontent .table thead, .ordercontent .table td {
   border: 1px solid #292b41;
   padding: 8px 15px;
 }
 
-.account_tabs .content .tripcontent .table th, .account_tabs .content .ordercontent .table th {
+.tripcontent .table th, .ordercontent .table th {
   padding: 8px 15px;
 }
 
-.account_tabs .content .tripcontent .table table, .account_tabs .content .ordercontent .table table {
+.tripcontent .table table, .ordercontent .table table {
   width: 100%;
 }
 
-.account_tabs .content .tripcontent .table table thead, .account_tabs .content .ordercontent .table table thead {
+.tripcontent .table table thead, .ordercontent .table table thead {
   color: #ffffff;
 }
 
-.account_tabs .content .tripcontent .table table .table_title, .account_tabs .content .ordercontent .table table .table_title {
+.tripcontent .table table .table_title, .ordercontent .table table .table_title {
   background-color: #292b41;
 }
 
-.account_tabs .content .tripcontent .table table tbody, .account_tabs .content .ordercontent .table table tbody {
+.tripcontent .table table tbody, .ordercontent .table table tbody {
   color: #cccaca;
 }
 
-.account_tabs .content .tripcontent .table .orderdetail, .account_tabs .content .ordercontent .table .orderdetail {
+.tripcontent .table .orderdetail, .ordercontent .table .orderdetail {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5250,99 +5402,13 @@ div.bk3 {
           align-items: center;
 }
 
-.account_tabs .content .tripcontent .table .orderdetail img, .account_tabs .content .ordercontent .table .orderdetail img {
+.tripcontent .table .orderdetail img, .ordercontent .table .orderdetail img {
   width: 18px;
   margin-right: 5px;
 }
 
-.account_tabs .content .tripcontent .table .detail-open, .account_tabs .content .ordercontent .table .detail-open {
+.tripcontent .table .detail-open, .ordercontent .table .detail-open {
   display: none;
-}
-
-@media (min-width: 992px) and (max-width: 1200px) {
-  .welcome {
-    padding: 15vh 50px 0px 50px;
-  }
-  .account_card {
-    margin: 30px 50px 0px 50px;
-    padding: 30px;
-  }
-  .account_card .lev_acc {
-    padding: 30px 0px 20px 45px;
-  }
-  .account_card .your_acc .next_rocket {
-    margin-left: -30px;
-    margin-top: 40px;
-  }
-  .account_card .your_acc .next_rocket .account_rocket {
-    max-width: 5%;
-  }
-  .account_tabs .account_nav {
-    margin: 40px 50px 0px 50px;
-  }
-  .account_tabs .account_line {
-    margin: 0px 50px 0px 50px;
-  }
-  .account_tabs .content {
-    padding-bottom: 100px;
-  }
-  .account_tabs .content .info_form {
-    margin: 0px 50px 0px 50px;
-    padding: 30px 0px 30px 0px;
-  }
-  .account_tabs .content .info_form .info_img {
-    margin: 0px 30px 0px 0px;
-  }
-  .account_tabs .content .info_form .info_img .img_input {
-    margin: 15px 10px 0px 10px;
-    width: auto;
-  }
-  .account_tabs .content .info_form .info_img .circle-image {
-    width: 100px;
-    height: 100px;
-  }
-  .account_tabs .content .info_form .info_img .circle-image .infoimg {
-    width: 100%;
-    height: 100%;
-  }
-  .account_tabs .content .info_form .info_left .form, .account_tabs .content .info_form .info_left .unform, .account_tabs .content .info_form .info_right .form, .account_tabs .content .info_form .info_right .unform, .account_tabs .content .info_form .info_edit .form, .account_tabs .content .info_form .info_edit .unform {
-    width: 70%;
-  }
-  .account_tabs .content .info_form .info_left .info_editbtn, .account_tabs .content .info_form .info_right .info_editbtn, .account_tabs .content .info_form .info_edit .info_editbtn {
-    margin-left: 0px;
-  }
-  .account_tabs .content .info_form .center {
-    margin: 0;
-  }
-  .account_tabs .content .row > * {
-    padding-right: 0px;
-    padding-left: 0px;
-  }
-  .account_tabs .content .info_editbtn, .account_tabs .content .pointbtn {
-    margin-left: 50px;
-    margin-bottom: 10px;
-  }
-  .account_tabs .content .info_editbtn:hover, .account_tabs .content .heartbtns:hover, .account_tabs .content .postbtns:hover, .account_tabs .content .pointbtn:hover, .account_tabs .content .img_input:hover, .account_tabs .content .heartbtns.active {
-    color: #ffff;
-    border: 1px solid #AD6E4A;
-    background: #AD6E4A;
-  }
-  .account_tabs .content .info_editbtn:focus + .btn-primary, .account_tabs .content .heartbtns:focus, .account_tabs .content .btn-primary:focus, .account_tabs .content .postbtns:focus, .account_tabs .content .pointbtn:focus, .account_tabs .content .img_input:focus {
-    color: #fff;
-    background-color: #AD6E4A;
-    border-color: #AD6E4A;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-  }
-  .account_tabs .content .heart_btns, .account_tabs .content .post_btns {
-    padding: 0px 70px 0px 70px;
-  }
-  .account_tabs .content .product_card, .account_tabs .content .tripcontent, .account_tabs .content .ordercontent, .account_tabs .content .pointcontent {
-    padding: 0px 70px 20px 70px;
-  }
-  .account_tabs .content .tripcontent, .account_tabs .content .ordercontent {
-    margin-left: 10px;
-  }
 }
 
 /* footer */

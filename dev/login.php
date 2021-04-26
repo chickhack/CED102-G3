@@ -7,6 +7,8 @@
     <meta charset="utf-8">
     <title>登入頁面</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -22,7 +24,6 @@
     <link rel="stylesheet" type="text/css" href="./css/pages/login.css" />
     <!-- 動態背景 -->
     <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
- 
 
 </head>
 
