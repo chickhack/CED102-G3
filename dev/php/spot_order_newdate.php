@@ -40,11 +40,11 @@ try{
 			$products -> bindValue(":guide", $guide);
 			$products -> bindValue(":rocket", $_POST["traffic"]);
 			$products -> execute();
-            $newId=$pdo->lastInsertId();
+            $newId= $pdo->lastInsertId();
             foreach($_POST["spot_miles"] as $key=> $v){
-                $sql2 = "INSERT INTO `spot_order_datail`(`oreder_no`,`spot_no`,`spot_name`,`spot_pic`,`price`,`integral`,`people`)
-                values($newId,:spot_no,:spot_name,:spot_pic,:price,:integral,:people)"    
-			    $products1 = $pdo->prepare( $sql2 );
+                $sql2 = "INSERT INTO `spot_order_datail`(`order_no`,`spot_no`,`spot_name`,`spot_pic`,`price`,`integral`,`people`)
+                values('$newId',:spot_no,:spot_name,:spot_pic,:price,:integral,:people)";    
+			    $products1 = $pdo->prepare($sql2);
                 $products1 -> bindValue(":spot_no", $spot[$key]);
 			    $products1 -> bindValue(":spot_name",$_POST["spot_name"][$key]);
 			    $products1 -> bindValue(":spot_pic", $_POST["spot_pic1"][$key]);

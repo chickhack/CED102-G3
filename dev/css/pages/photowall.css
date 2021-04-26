@@ -396,6 +396,10 @@ nav .nav-links a {
   width: 100%;
   color: #ffffff;
   padding: 8px;
+<<<<<<< HEAD
+  -webkit-transition: all .3s;
+=======
+>>>>>>> dev
   transition: all .3s;
 }
 
@@ -579,6 +583,11 @@ nav .nav-trip .trip-count {
     height: 88vh;
     top: 12vh;
     background-color: #292B41;
+<<<<<<< HEAD
+    display: -webkit-box;
+    display: -ms-flexbox;
+=======
+>>>>>>> dev
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -763,7 +772,12 @@ input[type=number] {
   height: 100px;
   background-size: contain;
   background-repeat: no-repeat;
+<<<<<<< HEAD
+  -webkit-animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+          animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+=======
   animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+>>>>>>> dev
   z-index: 10;
 }
 
