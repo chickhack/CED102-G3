@@ -46,8 +46,8 @@
                 <a href="./spaced_backstage_post.php" class="div-list-btn-s">互動牆管理</a>
                
             </div>
-            <a href="#" class="div-list-btn-a">會員管理</a>
-            <a href="#" class="div-list-btn-a">管理員管理</a>
+            <a href="./spaced_backstage_customer.php" class="div-list-btn-a">會員管理</a>
+            <a href="./spaced_backstage_admin.php" class="div-list-btn-a">管理員管理</a>
         </div>
 
         <div class="div-right">
@@ -86,9 +86,9 @@
                     <?php while($prodRow = $product->fetch(PDO::FETCH_ASSOC)){?>
                         <form action="#" method="POST" enctype="multipart/form-data">
                                 <div class="div-right-span-for line_low margin_top_3">
-                                    <a href="./php/shop_order_datail.php?order_no=<?=$prodRow["order_no"]?>"
+                                    <a href="../php/backstage/shop/shop_order_datail.php?order_no=<?=$prodRow["order_no"]?>"
                                         class="wi-10 text-1"><?=$prodRow ["order_no"]?></a>  
-                                    <a href="./php/backstage_shop_customer.php?mem_no=<?=$prodRow["mem_no"]?>"
+                                    <a href="../php/backstage/shop/backstage_shop_customer.php?mem_no=<?=$prodRow["mem_no"]?>"
                                         class="wi-10 text-1"><?=$prodRow ["mem_no"]?></a>
                                     <p class="wi-10 text-1"><?=$prodRow["order_date"]?></p>
                                     <p class="wi-10 text-1"><?=$prodRow["total_price"]?></p>
