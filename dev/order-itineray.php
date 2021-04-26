@@ -19,6 +19,7 @@ $arr = [];
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <title>行程訂單明細</title>
     <!-- CSS only -->
     
@@ -113,6 +114,7 @@ $arr = [];
             <!-- <div class="planet_banner">
                 <h2 class="margin_top_5">星星世界帶你探索宇宙</h4>
                 </div> -->
+                
             </div>
         <form action="./php/spot_order_newdate.php" method="POST">
             <div class="orderinfo">
@@ -444,7 +446,7 @@ $arr = [];
                             </div>
                         </div>
                             <div class="col-7 padding_top_5 allpay-div">
-                                <button type="submit" class="button_large-1" id="submit-btn"  >確認付款</button>
+                                <button type="submit" class="button_large-1" id="submit-btn">確認付款</button>
                                 <!-- onclick="location.href='./order-over.html'" -->
                                 <!-- <button disabled class="button_min"></button> -->
                             </div>
@@ -452,7 +454,13 @@ $arr = [];
                 
             </div>
         </form>
-
+        <!-- <div class="modal">
+                <div class="window">
+                    <h3>訂購完成</h3>
+                    <p class="margin_top_2 h4">感謝您的訂購!</p>
+                    <a href="account.php" class="margin_top_5 button_large">查看訂單明細</a>
+                </div>
+        </div> -->
     
 </div>
 <a href="#" class="go-top"></a>
@@ -496,7 +504,7 @@ $arr = [];
             }, 900);
         })
     });
-            
+    
     function show() {
         fetch("./php/logout.php");
         window.location.href = "./login.php";
@@ -575,6 +583,11 @@ $arr = [];
                 },
            },
            methods: {
+               showmodel(){
+                    const modal = document.querySelector(".modal");
+                    modal.style.opacity= 1;
+                    modal.style.visibility = "inherit";
+               },
             spaceship(e){
                 // console.log(e.target.dataset.price);
                     if(e==0){ 
@@ -647,7 +660,9 @@ $arr = [];
                 $('#btn-paymethod').toggleClass("svgRight");
     
             });                           
+            // $().click(function(){
 
+            // });
 
 
               },
