@@ -12,7 +12,7 @@
     <?php
 $errMsg = "";
 try {
-	require_once("../../connectBooks_wei.php");
+	require_once("../../connect_ced102_g3_local.php");
 
 	//.......確定是否上傳成功
 	if( $_FILES["upFile1"]["error"] == UPLOAD_ERR_OK){
