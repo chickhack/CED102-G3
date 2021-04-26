@@ -1935,8 +1935,8 @@ footer.padding_top_5 {
   z-index: 2;
   top: 100px;
   padding-top: 35px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .row {
@@ -4360,7 +4360,7 @@ div.bk3 {
 
 @media all and (max-width: 1200px) {
   .first .first_right .hottrip div.planet_top {
-    width: 100%;
+    width: 90%;
   }
 }
 

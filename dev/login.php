@@ -7,6 +7,8 @@
     <meta charset="utf-8">
     <title>登入頁面</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -22,7 +24,6 @@
     <link rel="stylesheet" type="text/css" href="./css/pages/login.css" />
     <!-- 動態背景 -->
     <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
- 
 
 </head>
 
@@ -95,11 +96,10 @@
             <h2>航行宇宙</h2>
         </div>
         <div class="rightbox col-lg-9 col-md-12 col-sm-12" align="center">
-
-        <div class="return_btn margin_left_2 margin_top_2">
-                <span><a href="./home.php"><<</a></span>
-                <h4><a href="./home.php">返回首頁</a></h4>
-        </div>
+            <div class="return_btn margin_left_2 margin_top_2">
+                    <span><a href="./home.php"><<</a></span>
+                    <h4><a href="./home.php">返回首頁</a></h4>
+            </div>
             <div class="modal-dialog">
                 <div class="col-sm-9 main-section">
                     <div class="modal-content margin_top_8">
@@ -134,7 +134,7 @@
         </section>
 
 <!-- container-fluid結尾 -->
-    </div>
+      </div>
 <!-- footer  -->
 <footer class="padding_top_10">
         <div class="links">

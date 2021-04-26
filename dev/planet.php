@@ -9,6 +9,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
     <title>星星世界</title>
     <link rel="shortcut icon" href="./img/icon/shortcut.png" type="image/x-icon">
     <!-- Bootstrap CSS -->
@@ -208,7 +210,7 @@
         </div>
 
         <div class="planetbtn margin_top_5" align="center">
-          <!-- <button class="button_min" >更多關於火星</button> -->
+          <button class="button_min" >更多關於火星</button>
         </div>
       </div>
     <!-- 置頂火箭 -->

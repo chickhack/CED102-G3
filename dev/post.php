@@ -95,10 +95,10 @@
             <option value="月球太空人體驗一日遊">月球太空人體驗一日遊</option>
             <option value="熱氣球遊月球一日遊">熱氣球遊月球一日遊</option>
             <option value="宇宙雨林秘境一日遊">宇宙雨林秘境一日遊</option>
-            <option value="雪花堡及七彩河探險一日遊">雪花堡及七彩河探險一日遊</option>
-            <option value="反射谷及山羊峽谷探險一日遊">反射谷及山羊峽谷探險一日遊</option>
+            <option value="雪花堡及七彩河一日遊">雪花堡七彩河一日遊</option>
+            <option value="反射谷及山羊峽谷一日遊">反射谷山羊峽谷一日遊</option>
             <option value="奧林帕斯山三日遊">奧林帕斯山三日遊</option>
-            <option value="奧林帕斯山三日遊">極光團一日遊</option>
+            <option value="極光團一日遊">極光團一日遊</option>
             <option value="冰原冰洞一日遊">冰原冰洞一日遊</option>
             <option value="冰層探索一日遊">冰層探索一日遊</option>
         </select>

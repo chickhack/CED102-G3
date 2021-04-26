@@ -1618,6 +1618,46 @@ form .orderDetails .row .col-10 .btn-orderDetails::before {
   color: white;
 }
 
+.modal {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s;
+}
+
+.modal .window {
+  min-width: 250px;
+  width: 30vw;
+  padding: 40px 0;
+  border: 1px solid #AD6E4A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #0c0d18;
+}
+
+.modal .window h3 {
+  color: #AD6E4A;
+  font-weight: 900;
+}
+
+.modal .window a {
+  color: #ffffff;
+  transition: all .3s;
+}
+
+.modal .window a:hover {
+  background-color: #AD6E4A;
+}
+
 @media (max-width: 1200px) {
   #fl-traffic {
     margin-left: 24px;
