@@ -98,8 +98,8 @@ try {
 			$products -> bindValue(":prod_pic", $allfile);
 			$products -> execute();
 		// $ff=$pdo->lastInsertId();//這會去抓取最後新增的ID，要放在新增送出之後
-
-			echo "新增成功~";
+		echo "<script>window.location.href='../../../backstage_shop.php'</script>";
+			// echo "新增成功~";
 		// }else{
 			// echo "失敗~";
 		// }

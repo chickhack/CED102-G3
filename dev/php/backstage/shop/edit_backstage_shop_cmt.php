@@ -11,9 +11,9 @@ if($_GET['prev_stats'] == 0){
 
 try{
     require_once("../../connect_ced102_g3_local.php");
-    $sql = "UPDATE prod_trev SET prev_stats=$status WHERE prev_no=:prev_no";
+    $sql = "UPDATE prod_trev SET prev_stats=$status WHERE prev_no=$prev_no";
     $product = $pdo->prepare($sql);
-    $product->bindValue(":prev_no", $prev_no);
+    // $product->bindValue(":prev_no", $prev_no);
     $product->execute();
     if($product->execute()){
 	    echo "<script>window.location.href='../../../backstage/backstage_shop_cmt.php'</script>";
