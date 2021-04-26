@@ -778,9 +778,17 @@ input[type=number] {
   height: 70vh;
 }
 
+<<<<<<< HEAD
+.container-fluid .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+=======
 .container .row {
+>>>>>>> dev
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .container .row .col-9 {
@@ -790,9 +798,17 @@ input[type=number] {
   text-align: center;
 }
 
+<<<<<<< HEAD
+.container-fluid .row .col-9 .sub {
+  display: -webkit-box;
+  display: -ms-flexbox;
+=======
 .container .row .col-9 .sub {
+>>>>>>> dev
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 24px 0 80px 0;
 }
 
