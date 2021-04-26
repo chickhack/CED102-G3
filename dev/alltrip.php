@@ -38,6 +38,7 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>星球景點</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <!-- vue cdn-->
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
     <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
