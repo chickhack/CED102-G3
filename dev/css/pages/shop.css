@@ -1056,7 +1056,12 @@ section.shop #app .imgBx {
 }
 
 section.shop #app .imgBx img {
+<<<<<<< HEAD
   object-fit: cover;
+=======
+  -o-object-fit: cover;
+     object-fit: cover;
+>>>>>>> Min
   max-width: 50%;
   margin: 0 0 20px;
   -webkit-transition: .5s ease-in-out;
