@@ -1,17 +1,7 @@
 <?php
-<<<<<<< HEAD
-  session_start();
-  // $_SESSION["mem_no"]=1010001;
-  $mem_no=$_SESSION["mem_no"];
-=======
 session_start();
-
 $mem_no=$_SESSION["mem_no"];
-<<<<<<< HEAD
-=======
->>>>>>> 3811586fda94502973a285bdccbf2c2ecf0415bd
->>>>>>> 77263e571579ce11bd0db6436f972bc94369edfb
->>>>>>> 167e4b8cbb44efde442444c5380ec85351f78e2d
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
