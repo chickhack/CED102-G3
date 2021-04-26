@@ -1,5 +1,5 @@
 <?php
-  session_start();
+    session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -65,7 +65,22 @@
             ?>
                     </a>
                 </li>
-                
+                <li>
+                <?php
+            if(isset($_SESSION['mem_no'])){?>
+                <div class="member"  onclick="toggle()">
+                    <div class="info">
+                        <img src="<?= $_SESSION['mem_pic'] ?>" alt="">
+                        <div class="infoData">
+                            <a href="./account.php">會員中心</a>
+                            <a href="./login.php" onclick="show()">登出</a>
+                        </div>
+                    </div>  
+                </div>
+        <?php }else{ ?>
+                <a href="./login.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png" alt="" class="icon"/></a>
+        <?php } ?>
+    </li>
             </ul>
             <div class="burger">
                 <div class="line1"></div>
@@ -108,7 +123,7 @@
 <!-- ===============燈箱區============ -->
 <!-- =========點小圖換大圖區=========== --><!-- =========點小圖換大圖區=========== --><!-- =========點小圖換大圖區=========== --><!-- =========點小圖換大圖區=========== --><!-- =========點小圖換大圖區=========== -->
 	<div class="light-box-container container_1" id="destination_lightbox" v-show="lightBoxShow">
-	<div class="row"></div>
+	<div class="row">
     
     <button class="turnoff_lightbox" id="turnoff_lightbox1"@click="closeLightBox">
         <img src="./img/icon/turnoff.png" alt="">
@@ -132,7 +147,7 @@
          <div class="member_info">
            <div class="member_photo"><img :src="targetPost.mem_pic" alt=""></div>
            <div class="name">{{targetPost.person_name}}</div>
-           <a href="#"><button type="button" class="button_large">{{targetPost.post_sub}}</button></a>
+           <a href="#"><button type="button" class="button_large">{{targetPost.post_teg}}</button></a>
          </div>
          <div class="post_text">
            {{targetPost.post_content}}
@@ -196,11 +211,16 @@
 <!-- ============發文按鈕============= -->
 <div class="col-md-1">
   <div class="button_2">
-    <a href="./post.php"><button class="button_min"><img src="./img/photowall/icon/post.png" alt=""></button></a>
+  <?php if(isset($_SESSION["mem_no"])){?>
+      <a href="./post.php"><button class="button_min"><img src="./img/photowall/icon/post.png" alt=""></button></a>
+  <?php }else{?>
+    <a href="./login.php"><button class="button_min"><img src="./img/photowall/icon/post.png" alt=""></button></a>
+    <?php } ?>
   </div>
   
 </div>
 <a href="#" class="go-top"></a>
+  </div>
 <footer class="padding_top_10">
         <div class="links">
             <div class="logo"><img src="./img/logo.png" alt=""></div>
@@ -286,7 +306,7 @@
       getpost:[], 
       getcustomer:[],
       messages: [],
-	  getpost_cmt:[],
+	    getpost_cmt:[],
 
       targetPost: [],
       lightBoxShow: false,
@@ -363,8 +383,6 @@
       }
     }
   });
-</script>
-<script>
   function show(){
             fetch("./php/logout.php");
             window.location.href = "./login.php";

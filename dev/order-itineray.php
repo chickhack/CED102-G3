@@ -1,5 +1,17 @@
 <?php
 session_start();
+$arr2=[];
+$arr = [];
+    for($i=1; $i < count($_SESSION['trip-cart'])+1 ; $i++){
+        $no = $_SESSION['trip-cart'][$i-1]['spot_id'];
+
+        if($no){
+            array_push($arr, $_POST["spot_qty$no"]);
+            array_push($arr2, $_POST["spot_date$no"]);
+            // array_push($arr, $_POST["spot_date$no"]);
+        }
+    };
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -93,7 +105,7 @@ session_start();
 
   </header>
 
-    <div class="container-fluid">
+    <div class="container-fluid" id="app1">
             <div id="particles-js">
             <!-- 動態背景 -->
             <script src="./js/background.js"></script>
@@ -102,34 +114,33 @@ session_start();
                 <h2 class="margin_top_5">星星世界帶你探索宇宙</h4>
                 </div> -->
             </div>
-                <form action="#" >
-       
+        <form action="./php/spot_order_newdate.php" method="POST">
             <div class="orderinfo">
                 
                     <div class="row">
                         <div class="col-10 col-sm-9 col-md-8 col-xl-7 col-xxl-7">
                             
                             <button class="btn-allAuto" type="button" id="btn-opmenu">訂購人資訊</button>
-                            <div id="orderinfo-automenu" class="padding_bottom-80">
+                            <div id="orderinfo-automenu" class="padding_bottom-80" >
                                     <!-- <div class="divider "></div> -->
-                                    <div class="row" id="">
+                                    <div class="row" id="" v-for="item in customer">
                                         <div class="col-7 col-xxl-4 col-lg-4 col-md-8 col-sm-7 ">
                                             <label for="last-name" class="textcolor line_high ">名字</label>
-                                            <input type="text" id="last-name" class="letter-spacing-1 " name="last-name" required>
+                                            <input type="text" id="last-name" class="letter-spacing-1 " name="last-name" :value="item.last_name" required>
                                             <label for="first-name" class="textcolor line_high">姓氏</label>
-                                            <input type="text" id="first-name" class="letter-spacing-1 " name="first-name" required>
+                                            <input type="text" id="first-name" class="letter-spacing-1 " name="first-name" :value="item.first_name" required>
                                             
                                         </div>
                                         <div class="col-7 col-xxl-4 col-lg-4 col-md-8 col-sm-7 ">
-                                            <label for="identity" class="textcolor line_high">身分證字號</label>
-                                            <input type="text" id="identity" pattern="[a-z]{1}[1-2]{1}[0-9]{8}" maxlength="10" required>
+                                            <label for="identity" class="textcolor line_high">電子信箱</label>
+                                            <input type="email" id="identity"  name="email" :value="item.email" required >
                                             <label for="phone" class="textcolor line_high">連絡電話</label>
-                                            <input type="tel" id="phone" class="letter-spacing-2 oioi " name="phone" pattern="[0-9]{4}[0-9]{6}" required>
+                                            <input type="tel" id="phone" class="letter-spacing-2 oioi " name="phone" pattern="[0-9]{4}[0-9]{6}" :value="item.phone" required>
                                         </div>
-                                        <div class="col-7 col-xxl-10 col-lg-10 col-md-8 col-sm-7 padding_bottom-1 ">
-                                            <label for="email" class="textcolor line_high">電子信箱</label>
-                                            <input type="email" name="email" class="letter-spacing-2" id="email" required>
-                                        </div>
+                                        <!-- <div class="col-7 col-xxl-10 col-lg-10 col-md-8 col-sm-7 padding_bottom-1 "> -->
+                                            <!-- <label for="email" class="textcolor line_high">電子信箱</label> -->
+                                            <!-- <input type="email" name="email" class="letter-spacing-2" id="email" :value="item.email" required> -->
+                                        <!-- </div> -->
                                     </div>
                                 </div>
                         </div>
@@ -137,7 +148,7 @@ session_start();
                 
             </div>
             
-            <div class="ltineraryinfo" id="app1">
+            <div class="ltineraryinfo" >
                 
                 <div class="row">
                         <div class="col-10 col-sm-9 col-md-8 col-xl-7">
@@ -146,23 +157,28 @@ session_start();
                                         <div class="col-3 col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3">
 
                                             <img :src="item.spot_pic1" alt="">
+                                            <input type="hidden" name="spot_pic1[]"  :value="item.spot_pic1">
+
                                         </div>
                                         <div class="col-7 col-xxl-8 col-xl-8 col-lg-7 col-md-7 col-sm-7 textinfo ">
                                             <div class="row">
 
                                                 <div class="text-div col-11 col-xxl-5 col-xl-6 col-lg-6">
                                                     <p class=" h4 letter-spacing-2 padding_top_2">{{item.spot_name}}</p>
+                                                    <input type="hidden" name="spot_name[]"  :value="item.spot_name">
                                                     <p class="line_low">{{item.date}}</p>
-
+                                                    <input type="hidden" name="spot_date"  :value="item.date">
                                                 </div>
                                                 <div class="text-div col-11 col-xxl-2 col-xl-2 col-lg-2 ">
                                                     
                                                     <p>數量{{item.qty}}</p>
-
+                                                    <input type="hidden" name="people[]"  :value="item.qty">
                                                 </div>
                                                 <div class="text-div col-11 col-xxl-3 col-xl-3 col-lg-3">
                                                     <p class="line_low">總金額$ {{(item.qty * item.spot_price)}}</p>
+                                                    <input type="hidden" name="spot_price[]"  :value="item.spot_price">
                                                     <P>積分{{item.miles}}</P>
+                                                    <input type="hidden" name="spot_miles[]"  :value="item.miles">
                                                 </div>
                                             </div>    
                                             
@@ -241,8 +257,9 @@ session_start();
                                     <!-- <div class="divider"></div> -->
                                     <div class="row">
                                         <div class="col-11 align-items-center padding_left_5 ">
-                                            <input type="checkbox" id="guide-yes" value="是" name="guide" class="checkbox_custom">
+                                            <input type="checkbox" id="guide-yes" value="3000" name="guide" class="checkbox_custom" v-model="guideCheckbox">
                                             <label for="guide-yes" class=" textcolor letter-spacing-1 checkbox_custom_label">加購嚮導（＋3000）</label>
+                                            
                                             <!-- <label for="guide-yes" class="textcolor padding_left_1 padding_right-1">是</label>
                                             <input type="radio" id="guide-no" value="否" name="guide" class="padding_left_3">
                                             <label for="guide-no" class="textcolor padding_left_1">否</label> -->
@@ -255,7 +272,7 @@ session_start();
                                     <div class="row " id="row-traffic">
                                         
                                         <div class="col-10 col-xxl-5 col-xl-5  col-md-6 textcolor   margin_left_3">
-                                            <input type="radio" id="traffic-0" value="基本" class="checkbox_custom" name="traffic">
+                                            <input type="radio" id="traffic-0" value="0" class="checkbox_custom" name="traffic" @click="spaceship(0)">
                                             <label for="traffic-0" class="sss checkbox_custom_label">
                                                 <img src="./img/trip/others/ships-astero.png" alt="">
                                                <div class="padding_left_2">
@@ -266,8 +283,8 @@ session_start();
                                             </label>
                                         </div>
                                         <div class="col-10 col-xxl-5 col-xl-5 col-md-6 textcolor" id="fl-traffic">
-                                                
-                                            <input type="radio" id="traffic-1" value="升級" class="checkbox_custom" name="traffic">
+                                        <!-- data-price="2000" -->
+                                            <input type="radio" id="traffic-1" value="1" class="checkbox_custom" name="traffic"  @click="spaceship(1)">
                                             <label for="traffic-1" class="sss checkbox_custom_label">
                                                 <img src="./img/trip/others/ships-rifter.png" alt="">
                                                 <div class="padding_left_2">
@@ -300,7 +317,7 @@ session_start();
                                 <div class="row justify-content-start padding_left_5">
                                     <div class="col-10 col-xxl-4 col-lg-5 col-md-6 col-sm-10">
                                         <input type="checkbox" class="checkbox-1 checkbox_custom" id="paymethod-coin" name="paymethod-coin" value="宇宙幣">
-                                        <label for="paymethod-coin" class="check  textcolor checkbox_custom_label letter-spacing-2 padding_left_1">宇宙幣尚餘50000 </label>
+                                        <label for="paymethod-coin" class="check  textcolor checkbox_custom_label letter-spacing-2 padding_left_1" v-for="co in customer">宇宙幣尚餘{{co.coin}} </label>
                                     </div>
                                     <div class="col-11 col-xxl-4 col-lg-5 col-md-8 col-sm-11 ">
                                         <label for="paymethod-coin-nu" class="textcolor" >折抵:</label>
@@ -318,15 +335,15 @@ session_start();
                                             <div class="row ">
                                                 <div class="col-7 col-xxl-3 col-xl-3 col-lg-3 col-md-8 col-sm-8">
                                                 <label for="carnu" class="textcolor line_low">信用卡號碼</label>
-                                                <input type="text" class="textcolor letter-spacing-2 input-focus" id="carnu" pattern="[0-9]{16}" maxlength="16" required placeholder="0000000000000000">
+                                                <input type="text" class="textcolor letter-spacing-2 input-focus" id="carnu" pattern="[0-9]{16}" maxlength="16"  placeholder="0000000000000000">
                                                 </div>
                                                 <div class="col-7 col-xxl-3 col-xl-3 col-lg-3 col-md-8 col-sm-8">
                                                     <label for="cardata" class="textcolor line_low">有效期限</label>
-                                                    <input type="text" class="textcolor letter-spacing-1" id="cardata" pattern="[0-9]{2}[/]{1}[0-9]{2}" maxlength="5" placeholder="00/00" required>
+                                                    <input type="text" class="textcolor letter-spacing-1" id="cardata" pattern="[0-9]{2}[/]{1}[0-9]{2}" maxlength="5" placeholder="00/00" >
                                                 </div>
                                                 <div class="col-7 col-xxl-1 col-xl-1 col-lg-1 col-md-8 col-sm-8">
                                                     <label for="" class="textcolor line_low">檢查碼</label>
-                                                    <input type="text" class="textcolor letter-spacing-2" id="carcheck" pattern="[0-9]{3}" maxlength="3" placeholder="000" required>
+                                                    <input type="text" class="textcolor letter-spacing-2" id="carcheck" pattern="[0-9]{3}" maxlength="3" placeholder="000" >
                                                 </div>
                                                
                                             </div>
@@ -352,7 +369,7 @@ session_start();
                                     </div>
                                     <div class="col-3 col-sm-3"></div>
                                     <div class="col-3 col-xxl-3 col-sm-3 order-coin-right">
-                                        <p class="textcolor-1 ">$9000</p>
+                                        <p class="textcolor-1 ">${{alltotal}}</p>
 
                                     </div>
                                 </div>
@@ -368,8 +385,8 @@ session_start();
                                         <p class="h7 line_low">升級交通工具</p>
                                     </div>
                                     <div class="col-3 col-xxl-3 col-sm-3 orderDetails-automanu-right">
-                                        <p class="textcolor line_low ">$3000</p>
-                                        <p class="textcolor line_low ">$2000</p>
+                                        <p class="textcolor line_low ">${{guide}}</p>
+                                        <p class="textcolor line_low ">${{spaceshipCion}}</p>
                                     </div>
                                 </div>
 
@@ -397,7 +414,7 @@ session_start();
                                     </div>
                                     <div class="col-3 col-xxl-3 col-xl-3 col-sm-3"></div>
                                     <div class="col-3 col-xxl-3 col-sm-3 orderDetails-automanu-allcoin-right">
-                                        <p class="textcolor-1">$5000</p>
+                                        <p class="textcolor-1">${{addPay}}</p>
                                     </div>
                                 </div>
                             </div>
@@ -413,9 +430,14 @@ session_start();
                                         <p class="h6 ">可累積積分</p>
                                     </div>
                                     <div class="col-4 col-xxl-3 col-lg-3 col-md-4 col-sm-4 allcoinmenu-right">
-                                        <p class="textcolor-1 line_low">$14000</p>
-                                        <p class="textcolor-1 line_low">+1600</p>
-                                        <p class="h7 line_low">累積後有5000積分</p>
+                                        <p class="textcolor-1 line_low">${{alltotal1}}</p>
+                                        <input type="hidden" name="total_price"  :value="allCoin">
+                                        <p class="textcolor-1 line_low">{{integral}}</p>
+                                        
+                                        <input type="hidden" name="allintegral"  :value="allintegral">
+                                        <input type="hidden" name="miles"  :value="allmiles">
+                                        <p class="h7 line_low">累積後有{{nowMiles}}積分</p>
+                                        
                                         
                                     </div>
                                 </div>
@@ -453,7 +475,7 @@ session_start();
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="./js/order-itineray.js"></script>
+    <!-- <script src="./js/order-itineray.js"></script> -->
     <script>
      $(document).ready(function() {
         // Show or hide the sticky footer button
@@ -474,6 +496,7 @@ session_start();
             }, 900);
         })
     });
+            
     function show() {
         fetch("./php/logout.php");
         window.location.href = "./login.php";
@@ -490,11 +513,82 @@ session_start();
         //    store,
             data:{
                 products:[], 
+                orderCoin:0,
+                allCoin:0,
+                spaceshipCion:0,
+                guideCheckbox:0,
+                guideCoin:0,
+                allintegral:0,
+                customer:{},
+                allmiles:0,
            },
+          
+           computed:{
+                
+               addPay(){
+                   let coo;
+                coo= this.guideCoin+this.spaceshipCion;
+                return coo;
+               },
+               guide(){
+                if(this.guideCheckbox==true){
+                     this.guideCoin=3000;
+
+                    return this.guideCoin;
+                }else{
+                    this.guideCoin=0;
+                    return this.guideCoin;
+                }
+               },
+
+                alltotal(){
+                   var all=0;
+                   for(var i in this.products){
+                    all += this.products[i].spot_price * this.products[i].qty;
+                   }
+                   this.orderCoin=all;
+                   this.orderCoin+=this.addPay;//funtion可以互相引用 addPay的輸出值是甚麼
+                   return this.orderCoin;
+                //    console.log (all);
+                },
+                alltotal1(){
+                   this.allCoin=this.orderCoin;
+                   return this.allCoin;
+                },
+                integral(){
+                    let mi=0;
+                    for(var z in this.products){
+                    mi += parseInt(this.products[z].miles);
+                   }
+                   this.allintegral=mi;
+                   return this.allintegral;
+                },
+                nowMiles(){
+                    let mimi=0;
+                    for(var x in this.customer){
+                    mimi += parseInt(this.customer[x].miles);
+                   }
+                   
+                    mimi +=this.integral;
+                    this.allmiles=mimi;
+                    return mimi;
+                },
+           },
+           methods: {
+            spaceship(e){
+                // console.log(e.target.dataset.price);
+                    if(e==0){ 
+                       return this.spaceshipCion=0;
+                    }else{
+                       return this.spaceshipCion=2000;
+                    }
+                },
+           },       
            mounted(){
+
             let total = 0;
             let points = 0;
-                // fetch('./php/Leaderboard.php').then(res => res.json()).then(res => this.mydata = res);
+                fetch('./php/get_order_customer.php').then(res => res.json()).then(res => this.customer = res);
 
                 fetch("./php/get_car-itineray_spot.php").then(res => res.json())
                                      .then(data => {
@@ -506,11 +600,11 @@ session_start();
                                             
                                             <?php
                                                 if(isset($_SESSION["trip-cart"])){
-                                                    foreach($_SESSION["trip-cart"] as $v1) {   ?>
+                                                    foreach($_SESSION["trip-cart"]  as $key => $v1) {   ?>
                                                             if(ky == <?php echo $v1['spot_id'] ?>){
                                                                 // console.log("hi");
-                                                                data[j-1].date = '<?php echo $v1['spot_date']?>';                                            
-                                                                data[j-1].qty = <?php echo $v1['spot_qty']?>;
+                                                                data[j-1].date = '<?php echo $arr2[$key]?>';                                            
+                                                                data[j-1].qty = <?php echo $arr[$key]?>;
                                                                 arr.push(data[j-1]);
                                                             }
                                                             <?php
@@ -534,8 +628,29 @@ session_start();
                                         }).then(()=>{
                                             this.$store.commit('all', total);
                                             this.$store.commit('pt', points);
-                                        })
-           },
+                
+                                        });
+                 $('#btn-opmenu').click(function(){
+                $('#orderinfo-automenu').slideToggle();
+                $('#btn-opmenu').toggleClass("svgRight");
+            });
+            $('#addPay-btn').click(function(){
+                $('.automena').slideToggle();
+                $('#addPay-btn').toggleClass("svgRight");
+    
+            });
+            $('#paymethod-automanu-car').click(function(){
+                $('#car-auto').slideToggle();
+            });
+            $('#btn-paymethod').click(function(){
+                $('.paymethod-automanu').slideToggle();
+                $('#btn-paymethod').toggleClass("svgRight");
+    
+            });                           
+
+
+
+              },
         
         });
         

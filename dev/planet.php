@@ -208,7 +208,7 @@
         </div>
 
         <div class="planetbtn margin_top_5" align="center">
-          <!-- <button class="button_min" >更多關於火星</button> -->
+          <button class="button_min" >更多關於火星</button>
         </div>
       </div>
     <!-- 置頂火箭 -->

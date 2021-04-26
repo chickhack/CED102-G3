@@ -57,7 +57,22 @@
             ?>
                     </a>
                 </li>
-            
+                <li>
+                <?php
+            if(isset($_SESSION['mem_no'])){?>
+                <div class="member"  onclick="toggle()">
+                    <div class="info">
+                        <img src="<?= $_SESSION['mem_pic'] ?>" alt="">
+                        <div class="infoData">
+                            <a href="./account.php">會員中心</a>
+                            <a href="./login.php" onclick="show()">登出</a>
+                        </div>
+                    </div>  
+                </div>
+        <?php }else{ ?>
+                <a href="./login.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png" alt="" class="icon"/></a>
+        <?php } ?>
+    </li>
             </ul>
             <div class="burger">
                 <div class="line1"></div>
@@ -80,10 +95,10 @@
             <option value="月球太空人體驗一日遊">月球太空人體驗一日遊</option>
             <option value="熱氣球遊月球一日遊">熱氣球遊月球一日遊</option>
             <option value="宇宙雨林秘境一日遊">宇宙雨林秘境一日遊</option>
-            <option value="雪花堡及七彩河探險一日遊">雪花堡及七彩河探險一日遊</option>
-            <option value="反射谷及山羊峽谷探險一日遊">反射谷及山羊峽谷探險一日遊</option>
+            <option value="雪花堡及七彩河一日遊">雪花堡七彩河一日遊</option>
+            <option value="反射谷及山羊峽谷一日遊">反射谷山羊峽谷一日遊</option>
             <option value="奧林帕斯山三日遊">奧林帕斯山三日遊</option>
-            <option value="奧林帕斯山三日遊">極光團一日遊</option>
+            <option value="極光團一日遊">極光團一日遊</option>
             <option value="冰原冰洞一日遊">冰原冰洞一日遊</option>
             <option value="冰層探索一日遊">冰層探索一日遊</option>
         </select>

@@ -1,12 +1,16 @@
 <?php
 session_start();
+<<<<<<< HEAD
+// $_SESSION["mem_no"]=1010001;
+<<<<<<< HEAD
+$mem_no=$_SESSION["mem_no"];
+=======
+>>>>>>> Min
+=======
+>>>>>>> chick
+>>>>>>> 24a10dda290cd33b3978fc664573f65e22a1961c
+=======
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-$_SESSION["mem_no"]=1010001;
-=======
->>>>>>> chickhack
-=======
 >>>>>>> KAI
 ?>
 
@@ -100,7 +104,16 @@ $_SESSION["mem_no"]=1010001;
         <li>
 <<<<<<< HEAD
 <<<<<<< HEAD
+         <?php
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> KAI
           <?php
+>>>>>>> 24a10dda290cd33b3978fc664573f65e22a1961c
           if (isset($_SESSION['mem_no'])) { ?>
             <div class="member" onclick="toggle()">
               <div class="info">
@@ -115,9 +128,17 @@ $_SESSION["mem_no"]=1010001;
             <a href="./login.php"><img src="./img/icon/header/round-account-button-with-user-inside_(1).png" alt="" class="icon" /></a>
           <?php } ?>
         </li>
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
 =======
 =======
 >>>>>>> KAI
+=======
+>>>>>>> Min
+=======
+
+>>>>>>> chick
                 <?php
                     if(isset($_SESSION['mem_no'])){?>
                         <div class="member"  onclick="toggle()">
@@ -134,7 +155,13 @@ $_SESSION["mem_no"]=1010001;
                 <?php } ?>
             </li>
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> chickhack
+=======
+>>>>>>> KAI
+=======
+>>>>>>> Min
+>>>>>>> 24a10dda290cd33b3978fc664573f65e22a1961c
 =======
 >>>>>>> KAI
       </ul>
@@ -155,7 +182,7 @@ $_SESSION["mem_no"]=1010001;
 
   <div id="accountapp">
 
-    <div class="">
+    <div>
 
       <div class="welcome" v-for="(item,index) in customer" v-if="item.mem_no == <?php echo $_SESSION["mem_no"] ?>">
         <div class="spacedinfo">
@@ -563,6 +590,7 @@ $_SESSION["mem_no"]=1010001;
           <div class="heart_btns">
             <input type="date" id="date-1" class="btn orderbtns margin_top_3 btn-date data-down">
           </div>
+          <!-- value="<?php echo date("Y-m-d");?>"  -->
 
           <div class="ordercontent margin_top_3">
 
@@ -1030,6 +1058,7 @@ $_SESSION["mem_no"]=1010001;
         acitve(index) {  // 切換收藏分類
           this.step = index
           !this.active.includes(index) && this.active.push(index);
+          this.style = "color:#AD6E4A; border-bottom: 3px solid #AD6E4A";
         },
         toggleContent(e) {  // 展開滑出訂單明細
           this.toggle = !this.toggle;
@@ -1089,23 +1118,27 @@ $_SESSION["mem_no"]=1010001;
     function show(){
             fetch("./php/logout.php");
             window.location.href = "./login.php";
-        }                               
+        }                             
         function toggle(){
             const infoData = document.querySelector(".infoData");
             infoData.classList.toggle("show");
         } 
 
-    window.onload = function() { //  點擊menu變色
-      for (var i = 0; i < document.links.length; i++) {
-        var thisLink = document.links[i];
-        thisLink.onclick = function () {
-          for (var i = 0; i < document.links.length; i++) {
-            document.links[i].style = "";
-          }
-          this.style = "color:#AD6E4A; border-bottom: 3px solid #AD6E4A";
-        }
-      }
-    };
+
+        
+    // window.onload = function () {        //  點擊menu變色
+    //   for (var i = 0; i < document.links.length; i++) {
+    //     var thisLink = document.links[i];
+    //     thisLink.onclick = function () {
+    //       for (var i = 0; i < document.links.length; i++) {
+    //         document.links[i].style = "";
+    //       }
+    //       this.style = "color:#AD6E4A; border-bottom: 3px solid #AD6E4A";
+    //     }
+    //   }
+    // };
+
+
 
   </script>
 
