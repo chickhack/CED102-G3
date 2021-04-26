@@ -11,6 +11,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
   <!--Bootstrap5 JavaScript Bundle with Popper -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
@@ -61,8 +62,8 @@
         <li class="margin_left_5"><a href="photowall.php">太空互動</a></li>
         <li class="margin_left_5"><a href="Leaderboard.php">玩家排行</a></li>
         <!-- <li><a href=""><img src="./images/ticket.png" alt="" class="icon"></a></li>
-    <li><a href=""><img src="./images/shopping-cart_(1).png" alt="" class="icon"></a></li>
-    <li><a href=""><img src="./images/round-account-button-with-user-inside_(1).png" alt="" class="icon"></a></li> -->
+        <li><a href=""><img src="./images/shopping-cart_(1).png" alt="" class="icon"></a></li>
+        <li><a href=""><img src="./images/round-account-button-with-user-inside_(1).png" alt="" class="icon"></a></li> -->
       </ul>
       <ul class="nav-icons">
         <li class="nav-trip">
@@ -82,13 +83,13 @@
           <a href="./shop_cart.php">
             <img src="./img/icon/header/shopping-cart_(1).png" alt="" class="icon" />
             <?php
-            if(isset($_SESSION["cart"])){
-                $count = count($_SESSION["cart"]);
-                echo "<div class='count'>$count</div>";
-            }else{
-                echo "";
-            }
-        ?>
+              if(isset($_SESSION["cart"])){
+                  $count = count($_SESSION["cart"]);
+                  echo "<div class='count'>$count</div>";
+              }else{
+                  echo "";
+              }
+            ?>
           </a>
         </li>
         <li>
@@ -115,7 +116,6 @@
       </div>
     </nav>
     <script src="./js/header.js"></script>
-
   </header>
 
   <!-- 動態背景 -->
@@ -145,19 +145,20 @@
       <div class="account_card" v-for="(item,index) in customer" v-if="item.mem_no == <?php echo $_SESSION["mem_no"] ?>">
 
         <div class="your_nowlev row align-items-center">
-          <div class="col col-md-auto lev_name">{{item.mem_lv}}</div>
-          <div class="col-md-auto"><img class="littleline" src="./img/icon/littleline.png" alt=""></div>
+          <div class="col-sm-auto lev_name">{{item.mem_lv}}
+            <img class="littleline" src="./img/icon/littleline.png" alt="">
+          </div>
           <div class="col account_total">累積旅行
             <span class="accnum">{{item.mem_arr}} </span>顆星球、
             <span class="accnum">{{item.mem_sp}} </span>個景點
           </div>
-          <div class="col col-md-auto account_money">目前持有
+          <div class=" col-md-auto account_money">目前持有
             <span class="accmoney">{{item.coin}}</span>宇宙幣
           </div>
         </div>
 
         <div class="lev_acc">
-          <small><span>12個月內累積</span></small>
+          <small><span>12個月內累積</span></small><br>
         </div>
 
         <div class="your_acc align-items-center" v-for="(item,index) in customer" v-if="item.mem_no == <?php echo $_SESSION["mem_no"] ?>">
@@ -176,7 +177,7 @@
             <img class="nextlev" :src="level.mem_next_img"><br>
             <p class="nextacc">目前尚需 {{ level.mem_next_miles - item.miles}} 積分</p>
             <p class="nextacc" v-if="item.mem_lv == '天星者'">才能維持 {{level.mem_next_lv}}</p>
-            <p class="nextacc" v-else>才能升級至 {{level.mem_next_lv}}</p>
+            <p class="nextacc mobilenone" v-else>才能升級至 {{level.mem_next_lv}}</p>
           </div>
         </div>
 
@@ -634,7 +635,7 @@
                         <div class="addin2 small margin_top_2"><img class="plus" src="./img/icon/plus.png" alt="">加入我的行程
                         </div>
                         <div class="trip_bookmark"></div>
-                        <img class="trip_bookmark" src="./img/icon/bookmark-outline.png" alt="">
+                        <!-- <img class="trip_bookmark" src="./img/icon/bookmark-outline.png" alt=""> -->
                       </div>
                     </a>
                   </div>

@@ -65,8 +65,7 @@
   border-radius: 10px;
 
   @include respond(pad){
-    margin: 30px 10px 0px 10px;
-    border: 1px solid red;
+    margin: 30px 50px 0px 50px;
   }           
   @include respond(mobile){
     margin: 30px 10px 0px 10px;
@@ -75,13 +74,16 @@
   .your_nowlev {
     /* 目前累積等級、星球、景點、宇宙幣 */
     img.littleline {
-      height: 18px;
+      height: 10px;
+      align-items: center;
+      padding-left: 10px;
     }
     .lev_name, .account_total, .account_money {
       font-family: "Microsoft JhengHei";
       font-size: 14px;
       letter-spacing: 1px;
       color: #ffffff;
+      align-items: center;
       .accnum {
         font-family: "Nasalization";
       }
@@ -90,6 +92,17 @@
         letter-spacing: 2px;
       }
     }
+      
+    @include respond(mobile){
+      .lev_name, .account_total, .account_money {
+        line-height: 25px;
+        padding-left: 30px;
+      }
+      .account_total{
+        padding-left: 10px;
+      }
+    }
+
   }
 
   /*  12個月內累積 */  
@@ -97,6 +110,16 @@
     font-family: "Microsoft JhengHei";
     letter-spacing: 2px;
     padding: 30px 0px 20px 75px;
+
+    @include respond(pad){
+      padding: 30px 0px 20px 75px;
+      text-align: left;
+    }           
+    @include respond(mobile){
+      padding: 30px 0px 20px 0px;
+      text-align: left;
+    }
+
   }
   
   .your_acc {
@@ -105,6 +128,12 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+
+      @include respond(mobile){
+        .next_lev{
+          margin-top: 10px;
+        }
+      }
       img {
         max-width: 50%;
       }
@@ -115,14 +144,31 @@
         font-family: "Microsoft JhengHei";
         font-size: 14px;
       }
+
+      @include respond(mobile){
+        p.nextacc, p.nowacc {
+          font-size: 10px;
+        }
+        p.mobilenone{
+          display: none;
+        }
+      }
+
     }
     .next_rocket {
       display: inline;
       .account_rocket {
         max-width: 10%;
         background: hr;
+
+        @include respond(mobile){
+          max-width: 30%;
+
+        }
+
       }
     }
+
 
   }
 
@@ -137,6 +183,14 @@
   .account_nav {
     margin: 50px 250px 0px 250px;
     border-bottom: none;
+
+    @include respond(pad){
+      margin: 40px 50px 0px 50px;
+    }
+    @include respond(mobile){
+      margin: 40px 10px 0px 10px;
+    }
+
     a {
       color: #C9ADA7;
     }
@@ -154,6 +208,13 @@
   .account_line {
     margin: 0px 250px 0px 250px;
     background-color: #AD6E4A;
+
+    @include respond(pad){
+      margin: 0px 50px 0px 50px;
+    }
+    @include respond(mobile){
+      margin: 0px 10px 0px 10px;
+    }
   }
 
 
@@ -167,9 +228,34 @@
       font-family: "Microsoft JhengHei";
       font-size: 12px;
       color: #C9ADA7;
+
+      @include respond(pad){
+        margin: 0px 50px 0px 50px;
+        padding: 30px 0px 30px 0px;
+      }
+      @include respond(mobile){
+        margin: 0px 10px 0px 10px;
+        .info_edit{
+          margin: 15px 10px 0px 10px;
+        }
+        .info_editbtn {
+            margin-left: 0px;
+        }
+        }
+      }
+
       .info_img {
         // 上團圖片表單距離
         margin: 5px 50px 0px 0px;
+
+        @include respond(pad){
+          margin: 0px 50px 0px 50px;
+        }
+        @include respond(mobile){
+          margin: 0px 10px 0px 10px;
+          display: inline-block;
+        }
+
         .img_input {
           margin: 15px 0px 0px 0px;
         }
@@ -191,6 +277,10 @@
       }
       .info_left, .info_right,.info_edit {
         margin: 25px 10px 0px 10px;
+          @include respond(mobile){
+            margin: 15px 10px 0px 10px;
+          }
+        }
         // 編輯資料樣式
         .form, .unform {
           width: 85%;
@@ -248,6 +338,14 @@
     // 互動牆管理按鈕 // 收藏按鈕 // 所有放在分頁內按鈕控制
     .heart_btns, .post_btns {
       padding: 0px 0px 0px 270px;
+      @include respond(pad){
+        padding: 0px 0px 0px 50px;
+        margin-left: 50px;
+      }
+      @include respond(mobile){
+        padding: 0px 0px 0px 10px;
+        margin-left: 10px;
+      }
     }
 
     .heartbtns, .postbtns, .orderbtns {
@@ -292,13 +390,32 @@
     // 收藏內容、互動管理、訂單、行程內容 控制在270px內
     .product_card, .tripcontent, .ordercontent, .pointcontent {
       padding: 0px 270px 20px 270px;
+      @include respond(pad){
+        padding: 0px 50px 0px 50px;
+      }
+      @include respond(mobile){
+        padding: 0px 10px 0px 10px;
+      }
+
       // 收藏行程內容 控制在270px內
       .heart_tripcard {
         padding: 0px 250px 100px 250px;
+        @include respond(pad){
+          padding: 0px 50px 0px 50px;
+        }
+        @include respond(mobile){
+          padding: 0px 10px 0px 10px;
+        }
       }
       // 收藏貼文內容 控制在270px內
       .post_card {
         padding: 0px 250px 100px 250px;
+        @include respond(pad){
+          padding: 0px 50px 0px 50px;
+        }
+        @include respond(mobile){
+          padding: 0px 10px 0px 10px;
+        }
       }
       .grid{
         margin-top: 32px
@@ -411,56 +528,9 @@
       }
     }
 
-    .table {
-      width: 100%;
-      font-family: "Microsoft JhengHei";
-      caption {
-        text-align: left;
-      }
-      span {
-        color: $pink;
-      }
-      span.num{
-        color: $gray;
-        margin-left: 15px;
-        line-height: 20px;
-      }
-      thead, td {
-        border: 1px solid #292b41;
-        padding: 8px 15px;
-      }
-      th {
-        padding: 8px 15px;
-      }
-      table {
-        width: 100%;
-        thead {
-          color: $white;
-        }
-        .table_title{
-          background-color: #292b41;
-
-        }
-        tbody {
-          color: $gray;
-        }
-      }
-      .orderdetail {
-        display: flex;
-        align-items: center;
-        img {
-          width: 18px;
-          margin-right: 5px;
-        }
-      }
-      .detail-open {
-        display: none;
-      }
-    }
 
 
-  }
-}
+
 
 
 // @media (min-width: 992px){
