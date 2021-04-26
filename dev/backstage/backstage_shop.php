@@ -88,7 +88,7 @@
                                 <div class="div-right-span-for line_low margin_top_3">
                                     <p class="wi-10 text-1"><?=$prodRow["prod_no"]?></p>
                                     
-                                    <a href="./php/spot_order_datail.php?cat_no=<?=$prodRow["cat_no"]?>"
+                                    <a href="../php/backstage/shop/shop_order_datail.php?cat_no=<?=$prodRow["cat_no"]?>"
                                         class="wi-5 text-1"><?=$prodRow ["cat_no"]?></a> 
                                     <p class="wi-10 text-1"><?=$prodRow["prod_name"]?></p>
                                     <p class="wi-10 text-1"><?=$prodRow["prod_price"]?></p>

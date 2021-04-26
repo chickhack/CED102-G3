@@ -323,7 +323,7 @@ $arr = [];
                                     </div>
                                     <div class="col-11 col-xxl-4 col-lg-5 col-md-8 col-sm-11 ">
                                         <label for="paymethod-coin-nu" class="textcolor" >折抵:</label>
-                                        <input type="number" id="paymethod-coin-nu" min="0"  class="intput-nu padding_left_1 margin_left_2">
+                                        <input type="number" id="paymethod-coin-nu" min="0"  class="intput-nu padding_left_1 margin_left_2" v-model.number="Discount">
                                         <!-- <input type="button" class="paymethod-coin-btn margin_left_2" value="確認"> -->
                                     </div>
                                 </div>
@@ -529,6 +529,7 @@ $arr = [];
                 allintegral:0,
                 customer:{},
                 allmiles:0,
+                Discount:'',
            },
           
            computed:{
@@ -555,13 +556,19 @@ $arr = [];
                     all += this.products[i].spot_price * this.products[i].qty;
                    }
                    this.orderCoin=all;
-                   this.orderCoin+=this.addPay;//funtion可以互相引用 addPay的輸出值是甚麼
+                //    this.orderCoin+=this.addPay;//funtion可以互相引用 addPay的輸出值是甚麼
                    return this.orderCoin;
                 //    console.log (all);
                 },
                 alltotal1(){
-                   this.allCoin=this.orderCoin;
-                   return this.allCoin;
+                   this.allCoin=this.orderCoin+this.addPay;
+                   this.allCoin-=this.Discount;
+                   if(this.allCoin>0){
+                       return this.allCoin;
+
+                   }else{
+                       return 0;
+                   }
                 },
                 integral(){
                     let mi=0;
