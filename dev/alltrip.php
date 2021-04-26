@@ -138,7 +138,7 @@ session_start();
     <!-- 動的火星 -->
     <div id="marsloc"></div>
     <div class="bk3">
-        <img src="../dev/img/trip/bk3-01.png">
+        <img src="../div/img/trip/bk3-01.png">
     </div>
 
     <!-- ----------first -->
